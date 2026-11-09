@@ -1549,10 +1549,17 @@ $('zin').onclick = () => setZ(Zt * 1.6); $('zout').onclick = () => setZ(Zt / 1.6
 // "Show my location": the browser asks permission; the position stays on this device and is never sent anywhere.
 let userLoc = null;
 $('zloc').hidden = EMBED || !('geolocation' in navigator);
-$('zloc').onclick = () => { const b = $('zloc'); if (userLoc) { flyTo(userLoc.lo, userLoc.la, Math.max(Zt, 2.6), 1400); return; }
-  b.setAttribute('aria-busy', 'true');
-  navigator.geolocation.getCurrentPosition(p => { b.removeAttribute('aria-busy'); b.classList.add('on'); userLoc = { la: p.coords.latitude, lo: p.coords.longitude, t0: performance.now() }; flyTo(userLoc.lo, userLoc.la, Math.max(Zt, 2.6), 1400); },
-    () => { b.removeAttribute('aria-busy'); b.title = 'Location unavailable or not allowed'; }, { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }); };
+$('zloc').onclick = () => { const b = $('zloc'); if (userLoc) { flyTo(userLoc.lo, userLoc.la, ZMAX, 1400); return; }
+  // Ask for a fresh, high-accuracy fix; keep improving for up to 10 s and stop once within 50 m.
+  b.setAttribute('aria-busy', 'true'); let best = null, done = false, flown = false;
+  const finish = () => { if (done) return; done = true; navigator.geolocation.clearWatch(wid); b.removeAttribute('aria-busy');
+    if (!best) { b.title = 'Location unavailable or not allowed'; return; }
+    const km = best.acc / 1000; b.title = best.acc <= 200 ? 'Your location' : `Approximate location (±${km < 1 ? Math.round(best.acc) + ' m' : km.toFixed(km < 10 ? 1 : 0) + ' km'}). Your device did not provide a precise position.`; };
+  const wid = navigator.geolocation.watchPosition(p => { const acc = p.coords.accuracy || 1e6; if (best && acc >= best.acc) return;
+      best = { acc }; b.classList.add('on'); userLoc = { la: p.coords.latitude, lo: p.coords.longitude, acc, t0: userLoc ? userLoc.t0 : performance.now() };
+      flyTo(userLoc.lo, userLoc.la, acc <= 2000 ? ZMAX : Math.max(Zt, 3.2), flown ? 700 : 1400); flown = true; if (acc <= 50) finish(); },
+    () => finish(), { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 });
+  setTimeout(finish, 10000); };
 // keep the location button 10 px under the zoom group, wherever the layout puts it
 window.placeLoc = () => { const z = document.querySelector('.zoom'), b = $('zloc'); if (!z || b.hidden) return; z.style.top = ''; let r = z.getBoundingClientRect(); const h = b.offsetWidth || 44;
   // phone: keep the button above the article cards; move the zoom group up when needed
