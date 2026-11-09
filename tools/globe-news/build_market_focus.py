@@ -14,6 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from registry import Registry
+from tools.market_overview_evidence import market_relevance, physical_location, geo_allowed
 from tools.market_focus_relevance import overview_rank, corporate_significance
 
 GROUPS = ['Policy', 'Economic activity', 'Corporate', 'Energy & commodities', 'International impact']
@@ -34,7 +35,11 @@ def rank(article, name, code, classify=category, registry=None):
 
     `classify` is kept for call compatibility; policy weighting now comes from
     tools/market_focus_relevance.country_rank."""
-    return overview_rank(article, name, code, registry)
+    # Direct relevance = verified market relevance (explicit article text),
+    # never the robot-assigned physical location.
+    direct, score, published, aid = overview_rank(article, name, code, registry)
+    verified = int(market_relevance(article, code, name)['status'] == 'supported')
+    return (verified, score - direct + verified, published, aid)
 
 
 def reserve_corporate_slot(articles, group_for, registry=None, slots=4):
@@ -53,6 +58,8 @@ def project(news, exchanges, connections, registry, iso):
     countries = {}
     by_code = {v: k for k, v in iso.items()}
     article_ids = {a['id'] for a in news['stories']}
+    # Cross-border lines need a source-supported origin; unsupported claims are excluded, not repaired.
+    geo_ok = {a['id'] for a in news['stories'] if geo_allowed(a)}
     verified_events = {c['event'] for c in connections['connections'] if c.get('cross_border') and c.get('event') in article_ids}
     group_for = lambda a: category(a, verified_events)
     for code, name in sorted(by_code.items()):
@@ -67,7 +74,9 @@ def project(news, exchanges, connections, registry, iso):
         for a in selected:
             impacts = a.get('impacts', [])
             why = next((i['why'] for i in impacts if i.get('why') and i.get('country') == code), next((i['why'] for i in impacts if i.get('why')), 'No analysis in the source data yet.'))
-            developments.append({k: a[k] for k in ('id', 'headline', 'event_type', 'importance', 'published_at', 'source') if k in a} | {'category': group_for(a), 'why': why})
+            developments.append({k: a[k] for k in ('id', 'headline', 'event_type', 'importance', 'published_at', 'source') if k in a} | {'category': group_for(a), 'why': why} | {
+                'relevance': market_relevance(a, code, name)['status'],
+                'location_evidence': {k: v for k, v in physical_location(a).items() if k != 'recorded'}})
         companies, sectors = {}, Counter()
         for a in articles:
             seen, sector_seen = set(), set()
@@ -92,10 +101,11 @@ def project(news, exchanges, connections, registry, iso):
         # already loaded by the preview, rather than duplicating headlines/URLs.
         for item in investments:
             item['evidence_article_id'] = item.pop('evidence')['article_id']
-        label_counts = Counter(group_for(a) for a in articles if a.get('importance', 1) >= 2)
+        # Globe labels are physical claims: only articles whose location the source text supports.
+        label_counts = Counter(group_for(a) for a in articles if a.get('importance', 1) >= 2 and geo_allowed(a))
         venues = [mic for mic, e in exchanges.items() if e['country'] == code]
         primary = next((mic for mic in venues if exchanges[mic].get('benchmark_name')), venues[0] if venues else None)
-        links = [c['id'] for c in connections['connections'] if c.get('event') in article_ids and c.get('cross_border') and code in (c['origin']['country'], c['dest']['country'])]
+        links = [c['id'] for c in connections['connections'] if c.get('event') in geo_ok and c.get('cross_border') and code in (c['origin']['country'], c['dest']['country'])]
         countries[code] = {'name': name, 'region': next((a['location'].get('region') for a in articles), None),
             'exchange': primary, 'labels': [('International' if g == 'International impact' else g) for g, n in label_counts.most_common() if n >= 2],
             'significant': {'article_id': developments[0]['id']} if developments else None,
