@@ -1832,9 +1832,7 @@ pbody.addEventListener('pointerover',e=>{const b=e.target.closest('[data-story]'
 pbody.addEventListener('pointerleave',()=>{arcHover=null;});
 pbody.addEventListener('change', e => { const t = e.target.closest('[data-topic]'); if (t) setTopic(t.dataset.c, t.dataset.topic, t.checked); });
 let newsCat = '', newsQ = '';
-const SAVED = new Set((() => { try { return JSON.parse(localStorage.getItem('inv-saved-articles') || '[]'); } catch { return []; } })());
 pbody.addEventListener('click', e => {
-  const sv = e.target.closest('[data-nd-save]'); if (sv) { const id = sv.dataset.ndSave; SAVED.has(id) ? SAVED.delete(id) : SAVED.add(id); try { localStorage.setItem('inv-saved-articles', JSON.stringify([...SAVED])); } catch {} render(); return; }
   const mt = e.target.closest('[data-panel-tab="more"]'); if (mt) { e.stopPropagation(); const m = $('nb-more'); if (m) { m.remove(); return; } const r = mt.getBoundingClientRect(), d = document.createElement('div'); d.id = 'nb-more'; d.className = 'nb-more glass';
     d.innerHTML = [['countries', 'Countries'], ['topics', 'Topics'], ['watch', 'Watchlist']].map(([k, l]) => `<button type="button" data-more="${k}" aria-pressed="${panelTab === k}">${l}</button>`).join(''); d.style.top = r.bottom + 6 + 'px'; d.style.right = (innerWidth - r.right) + 'px'; document.body.append(d);
     d.onclick = ev => { const b = ev.target.closest('[data-more]'); if (b) { panelTab = b.dataset.more; d.remove(); render(); } }; setTimeout(() => addEventListener('click', () => d.remove(), { once: true }), 0); return; }
