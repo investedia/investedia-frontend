@@ -392,6 +392,22 @@ h1 span{color:var(--fg-3)}
 .reg{padding:6px 12px;border-radius:999px}.reg[aria-pressed=true]{background:rgba(255,255,255,.14);color:var(--fg)}
 .reg[data-k=global]::before{content:"";display:inline-block;width:11px;height:11px;margin:0 6px -1px 0;border:1.5px solid currentColor;border-radius:50%;opacity:.8}
 .panel{border-radius:28px;background:rgba(24,24,27,.62)!important;backdrop-filter:blur(28px) saturate(1.4);-webkit-backdrop-filter:blur(28px) saturate(1.4);border:1px solid rgba(255,255,255,.1)}
+/* News D (phone): photo lead, topic chips, thumbnail list; numbers in Inter (tabular) */
+.nd-hero{position:relative;display:block;width:100%;height:200px;border-radius:20px;overflow:hidden;margin:4px 0 14px;background:#1b1b1e center/cover;text-align:left;padding:0}
+.nd-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(0,0,0,.9))}
+.nd-hm{position:absolute;left:16px;right:16px;bottom:70px;z-index:1;font:500 12px Inter,system-ui,sans-serif;color:rgba(255,255,255,.8);font-variant-numeric:tabular-nums}
+.nd-hh{position:absolute;left:16px;right:16px;bottom:14px;z-index:1;color:#fff;font:650 19px/1.25 Inter,system-ui,sans-serif;letter-spacing:-.01em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.nd-chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 -16px 6px;padding:2px 16px}.nd-chips::-webkit-scrollbar{display:none}
+.nd-chips button{flex:none;height:36px;padding:0 14px;border-radius:999px;border:1px solid rgba(255,255,255,.14);color:var(--fg-2);font:600 13.5px Inter,system-ui,sans-serif;display:inline-flex;align-items:center;gap:6px}
+.nd-chips button b{font:500 12px Inter,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:var(--fg-3)}
+.nd-chips button[aria-pressed=true]{background:#fff;color:#111;border-color:#fff}.nd-chips button[aria-pressed=true] b{color:#555}
+.nd-item{display:flex;gap:12px;align-items:center;width:100%;text-align:left;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+.nd-tx{flex:1;min-width:0;display:grid;gap:4px}
+.nd-m{font:500 12.5px Inter,system-ui,sans-serif;color:var(--fg-3);font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nd-c{color:#FF7A1A;font-weight:600;font-size:11px;letter-spacing:.05em;text-transform:uppercase;margin-right:7px}
+.nd-h{font:600 15.5px/1.3 Inter,system-ui,sans-serif;color:var(--fg);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.nd-img{flex:none;width:68px;height:68px;border-radius:12px;object-fit:cover;background:#1a1a1f}
+html[data-theme=light] .nd-chips button{border-color:rgba(0,0,0,.12)}html[data-theme=light] .nd-chips button[aria-pressed=true]{background:#1d1d1f;color:#fff;border-color:#1d1d1f}html[data-theme=light] .nd-chips button[aria-pressed=true] b{color:#ccc}html[data-theme=light] .nd-item{border-color:rgba(0,0,0,.08)}html[data-theme=light] .nd-c{color:#c2410c}
 .panel-hero{position:relative;display:block;width:100%;height:168px;border-radius:20px;overflow:hidden;margin:4px 0 12px;background:#1b1b1e center/cover;text-align:left;padding:0}
 .panel-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 25%,rgba(0,0,0,.88))}
 .panel-hero span{position:absolute;left:14px;right:14px;bottom:12px;z-index:1;color:#fff;font-weight:600;font-size:15px;line-height:1.28;letter-spacing:-.01em}
@@ -1752,7 +1768,9 @@ pbody.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.matches('[data
 pbody.addEventListener('pointerover',e=>{const b=e.target.closest('[data-story]');if(b)arcHover={article:byId[b.dataset.story]};});
 pbody.addEventListener('pointerleave',()=>{arcHover=null;});
 pbody.addEventListener('change', e => { const t = e.target.closest('[data-topic]'); if (t) setTopic(t.dataset.c, t.dataset.topic, t.checked); });
+let newsCat = '';
 pbody.addEventListener('click', e => {
+  const nd = e.target.closest('[data-nd-cat]'); if (nd) { newsCat = nd.dataset.ndCat; render(); return; }
   const asset=e.target.closest('[data-asset]');if(asset){if(!selectAsset(asset.dataset.asset))window.InvPeek?.open(asset.dataset.asset);return;}  // assets open their globe view
   const b = e.target.closest('[data-story],[data-back],[data-country],[data-follow]'); if (!b) return; if (b.tagName !== 'LABEL') e.preventDefault();
   if (b.dataset.follow) return toggleFollow(b.dataset.follow);
@@ -1907,7 +1925,13 @@ function variantPanel(list) {
     items = countries.slice(0, panelExpanded ? countries.length : 3).map(([name, n]) => `<button class="compact-country" data-country="${esc(name)}">${flag(name)}<span>${esc(nm(name))}</span><small>${n} ${n === 1 ? 'article' : 'articles'}</small></button>`).join('');
   } else {
     const sorted = panelTab === 'latest' ? [...list].sort((a,b) => b.t-a.t) : F.region === 'global' ? regionMix(list) : list;
-    if (phone()) { count = sorted.length; items = sorted.slice(0, panelExpanded ? sorted.length : 20).map(lensItem).join(''); }
+    if (phone()) { // News D: photo lead, topic chips with counts, list with thumbnails (owner pick D)
+      const cats = Object.entries(sorted.reduce((m, x) => (m[x.category] = (m[x.category] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]);
+      const pool = newsCat ? sorted.filter(x => x.category === newsCat) : sorted, hs = pool.find(x => x.image && x.image.file), rest = hs ? pool.filter(x => x !== hs) : pool;
+      count = pool.length;
+      const chips = `<div class="nd-chips" role="group" aria-label="Topics"><button type="button" data-nd-cat="" aria-pressed="${!newsCat}">All <b>${sorted.length}</b></button>${cats.map(([k, n]) => `<button type="button" data-nd-cat="${esc(k)}" aria-pressed="${newsCat === k}">${esc(CAT[k] || k)} <b>${n}</b></button>`).join('')}</div>`;
+      const ndItem = x => { const im = x.image && x.image.file, src = x.source && x.source.name || ''; return `<button class="nd-item" data-story="${esc(x.id)}"><span class="nd-tx"><span class="nd-m"><span class="nd-c">${esc(x.flag ? FLAG[x.flag] : (CAT[x.category] || 'News'))}</span>${esc(src)}${src ? ' · ' : ''}${ago(x.t)}</span><span class="nd-h">${esc(x.headline)}</span></span>${im ? `<img class="nd-img" src="${esc(im)}" alt="" loading="lazy">` : ''}</button>`; };
+      items = (hs ? `<button class="nd-hero" data-story="${esc(hs.id)}" style="background-image:url('${esc(hs.image.file)}')"><span class="nd-hm"><span class="nd-c">${esc(CAT[hs.category] || 'News')}</span>${esc(hs.source && hs.source.name || '')} · ${ago(hs.t)}</span><span class="nd-hh">${esc(hs.headline)}</span></button>` : '') + chips + rest.slice(0, panelExpanded ? rest.length : 20).map(ndItem).join(''); }
     else {
     const hs = panelTab === 'top' && sorted.find(x => x.image && x.image.file), rest = hs ? sorted.filter(x => x !== hs) : sorted;
     count = sorted.length; items = (hs ? `<button class="panel-hero" data-story="${esc(hs.id)}" style="background-image:url('${esc(hs.image.file)}')"><small>${esc(CAT[hs.category] || 'News')} · ${ago(hs.t)}</small><span>${esc(hs.headline)}</span></button>` : '') + rest.slice(0, panelExpanded ? rest.length : 3).map(compactItem).join('');
