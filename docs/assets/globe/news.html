@@ -273,7 +273,7 @@ h1 span{color:var(--fg-3)}
   .pbody h2{font-size:19px}
   .hover{display:none}
   .hover.hv-b.pin{display:block;position:fixed;left:12px!important;right:12px;width:auto;top:76px!important;max-height:62vh;overflow:auto;z-index:30}  /* touch: tapped connection card */
-  .hover.brief.on{display:block;left:12px!important;right:12px;top:auto!important;bottom:100px;width:auto;pointer-events:auto}
+  .hover.brief.on{display:block;z-index:30;left:12px!important;right:12px;top:auto!important;bottom:100px;width:auto;pointer-events:auto}
 }
 /* Optional comparison layouts. Story and country views keep the original panel. */
 .compact-list{display:grid;gap:6px;margin-top:12px}
@@ -514,6 +514,26 @@ h1 span{color:var(--fg-3)}
 .market-panel{position:fixed;z-index:8;right:28px;top:80px;bottom:90px;width:360px;max-width:calc(100vw - 28px);overflow:auto;overscroll-behavior:contain;padding:18px;border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(16,16,18,.96);color:#eeeef0;font-family:Inter,sans-serif;text-align:left;box-sizing:border-box}.market-panel[hidden]{display:none}.market-close{position:absolute;right:12px;top:8px;font-size:22px;color:#999;cursor:pointer}.market-eyebrow{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#85858e}.market-panel h2{display:flex;align-items:center;gap:8px;font:600 22px Inter,sans-serif;margin:8px 0 4px}.market-panel .flag{width:24px;height:17px}.market-exchange{font-size:12px;color:#a0a0aa;line-height:1.5;margin:0 0 12px}.market-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.market-kpis>div{border:1px solid #ffffff13;border-radius:12px;padding:10px 9px;min-width:0;display:grid;align-content:start;gap:5px}.market-kpis small{font-size:10px;color:#85858e;line-height:1.4}.market-up{color:#34d399}.market-down{color:#f87171}.market-flat{color:#9999a3}.market-kpis b{font:600 15px Inter,sans-serif;font-variant-numeric:tabular-nums;white-space:nowrap}.market-section{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:14px 0 8px;font-size:12px;color:#a4a4ad}.market-section a{color:#FF7A1A}.market-article{display:block;padding:8px 0;border-top:1px solid #ffffff13;color:inherit;text-decoration:none}.market-article>span{font-size:13px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.market-article small{display:block;margin-top:5px;font-size:11px;color:#8c8c96}.market-tabs{display:flex;gap:5px;white-space:nowrap}.market-tabs button,.market-control button{border:1px solid #ffffff18;border-radius:999px;background:transparent;color:#9999a3;font:600 12px Inter,sans-serif;padding:8px 10px;cursor:pointer}.market-tabs button[aria-selected=true],.market-control button[aria-pressed=true]{color:#101012;background:#fff;border-color:#fff}.market-mention{display:flex;justify-content:space-between;gap:12px;font-size:12px;padding:8px 0;border-top:1px solid #ffffff14}.market-mention>span:last-child{flex:none;color:#9999a3}.market-empty,.market-footnote{font-size:11px;line-height:1.5;color:#8c8c96}.market-footnote{font-size:10px;margin:8px 0}.market-explore{display:inline-flex;background:#fff;color:#101012;text-decoration:none;padding:11px 16px;border-radius:999px;font-size:13px;font-weight:600;margin:5px 0 14px}.market-legend{display:flex;gap:16px;font-size:11px;color:#9999a3}.market-legend span:first-child{color:#FF7A1A}.market-source{display:block;color:#777781;font-size:10px;line-height:1.5;margin-top:10px}.market-handle{display:none}.market-control{display:none;position:fixed;right:28px;bottom:24px;z-index:12;border:1px solid #ffffff20;border-radius:999px;padding:4px;background:#111114}.market-mode .market-control{display:flex}.market-mode:not(.embed) .top .demo,.market-mode:not(.embed) .top .cats,.market-mode:not(.embed) .ddrow,.market-mode:not(.embed) .panel,.market-mode:not(.embed) .timeline,.market-mode:not(.embed) .dock,.market-mode:not(.embed) .peek{display:none!important}
 @media(max-width:760px){.market-panel{right:12px;left:12px;width:auto;top:auto;bottom:12px;height:26vh;max-height:55vh;padding:16px;touch-action:pan-y}.market-panel h2{font-size:21px}.market-handle{display:block;height:14px;margin:-10px auto 8px;width:70px;touch-action:none;cursor:grab}.market-handle:before{content:'';display:block;width:44px;height:4px;border-radius:4px;background:#666;margin:5px auto}.market-control{right:auto;left:16px;bottom:auto;top:16px}.market-up{color:#34d399}.market-down{color:#f87171}.market-flat{color:#9999a3}.market-kpis b{font-size:15px}.market-panel .market-section{margin-top:20px}}
 
+/* P11: grey glass surfaces and one persistent phone navigation. */
+.panel,.fsheet,.market-panel{background:rgba(18,18,22,.62)!important;backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px)}
+.panel .compact-list,.panel .list,.panel .panel-list,.panel .gm-companies,.panel .gm-kpis,.market-kpis>div{background:rgba(44,44,50,.55);border-radius:14px}
+.panel .compact-item{border-top:1px solid rgba(255,255,255,.08)}
+.panel .item,.panel .lens-item,.panel .compact-country,.market-article,.market-mention{border-color:rgba(255,255,255,.08)}
+.chips,.regions,.panel-tabs,.gm-tabs,.gm-regions,.market-tabs{gap:8px!important}.market-tabs button{padding:7px 13px}.market-tabs button:not([aria-selected=true]),.panel-tabs,.search,.chip,.reg{background:rgba(60,60,67,.45)}
+.panel .meta,.panel .lens-meta,.panel .lens-src,.panel .panel-tabs button,.panel .note,.panel .compact-country small,.market-panel small,.market-panel .market-source,.market-panel .market-eyebrow,.market-panel .market-empty,.market-panel .market-footnote,.market-panel .market-exchange{color:#b5b5bf}
+.sheet-actions{display:flex;position:absolute;right:10px;top:4px;z-index:4}.sheet-close{display:block;min-width:44px;min-height:44px;color:#ddd}
+.panel .pbody{padding-top:44px}.nav-grab{display:none}.peek.minimized .pk-h,.peek.minimized .pk-a{display:none}.peek.minimized{padding:8px 14px}.peek{touch-action:pan-x}.overlay-close{position:absolute;right:4px;top:4px;min-width:30px;min-height:30px;color:#ddd;background:rgba(60,60,67,.45);border-radius:50%}
+@media(max-width:760px){
+ .market-mode:not(.embed) .dock{display:grid!important}.market-mode:not(.embed) .panel.nav-open{display:flex!important}.market-control{display:none!important}
+ .panel.nav-open{visibility:visible!important;z-index:55}.panel:not(.nav-open)[data-sheet=closed]{visibility:hidden}
+ .panel,.market-panel,.fsheet{transition:transform .25s ease,clip-path .25s ease}
+ .market-panel{bottom:calc(90px + env(safe-area-inset-bottom));left:8px;right:8px;max-height:54dvh;border-radius:20px}
+ .nav-grab{display:block;position:fixed;bottom:calc(81px + env(safe-area-inset-bottom));left:calc(50% - 36px);width:72px;height:28px;border:0;border-radius:14px;z-index:65;background:rgba(60,60,67,.45);touch-action:none;color:#ddd}
+ .nav-grab::after{content:'';display:block;width:36px;height:4px;margin:auto;background:#b5b5bf;border-radius:4px}
+ .nav-grab[hidden]{display:none}.panel .pbody{padding-top:38px}.panel:not([data-sheet=closed]) .pbody{padding-top:38px!important}
+ .dock{background:rgba(44,44,50,.75);backdrop-filter:blur(26px)}
+}
+@media(prefers-reduced-motion:reduce){.panel,.market-panel,.fsheet{transition:none!important}}
 /* C — site light theme. All overrides are scoped; the dark design is unchanged. */
 html[data-theme=light]{--bg:#d9e5f4;--panel:rgba(255,255,255,.9);--card:#f5f8fc;
   --line:rgba(29,29,31,.13);--line-2:rgba(29,29,31,.24);
@@ -521,7 +541,8 @@ html[data-theme=light]{--bg:#d9e5f4;--panel:rgba(255,255,255,.9);--card:#f5f8fc;
 html[data-theme=light] .top::before{background:radial-gradient(120% 100% at 0% 0%,rgba(229,238,249,.94) 45%,rgba(229,238,249,0) 100%)}
 html[data-theme=light] :is(.glass,.chips,.regions,.search,.res,.dd-menu,.fsheet,.peek,.dock,.m-btn,.market-panel,.market-control){
   background:var(--panel);color:var(--fg);border-color:var(--line);box-shadow:0 12px 40px rgba(36,58,100,.1)}
-html[data-theme=light] .panel{background:var(--panel)!important;border-color:var(--line)}
+html[data-theme=light] :is(.panel,.fsheet,.market-panel){background:var(--panel)!important;border-color:var(--line)}
+html[data-theme=light] :is(.panel .compact-list,.panel .list,.panel .panel-list,.panel .gm-companies,.panel .gm-kpis,.market-kpis>div){background:rgba(255,255,255,.6)}
 html[data-theme=light] :is(.pk-h,.gm-row:hover .gm-name,.lens-item:hover strong,.mk-toggle:hover){color:var(--fg)}
 html[data-theme=light] :is(.chip[aria-pressed=true],.reg[aria-pressed=true],.win[aria-pressed=true],.dock button[aria-current=page],.mk-toggle[aria-pressed=true],.read,.fs-show){background:#1d1d1f;color:#fff;border-color:#1d1d1f}
 html[data-theme=light] :is(.ri:hover,.ri[aria-selected=true],.panel-tabs button[aria-selected=true],.zoom button:hover,.tl-play:hover,.item:hover,.item:focus-visible,.chain button:hover){background:rgba(36,58,100,.08);color:var(--fg)}
@@ -539,6 +560,9 @@ html[data-theme=light] #regions .reg[aria-pressed=true]{background:#1d1d1f;color
 html[data-theme=light] :is(.dd-btn,.tb,.tb-pop){background:var(--panel);color:var(--fg-2);border-color:var(--line-2)}
 html[data-theme=light] :is(.dd-btn:hover,.mine-row,.mine-empty b,.lay-btn:hover){color:var(--fg)}
 html[data-theme=light] :is(.mine-foot,.dd-btn b,.lay-btn b){color:#984400}
+html[data-theme=light] :is(.nav-grab,.overlay-close,.panel-tabs){background:var(--panel);color:var(--fg)}
+html[data-theme=light] .nav-grab::after{background:var(--fg-3)}
+html[data-theme=light] :is(.panel .meta,.panel .lens-meta,.panel .lens-src,.panel .panel-tabs button,.panel .note,.panel .compact-country small,.market-panel small){color:var(--fg-3)}
 
 </style>
 <script src="../locale.js"></script>
@@ -567,7 +591,7 @@ html[data-theme=light] :is(.mine-foot,.dd-btn b,.lay-btn b){color:#984400}
 </div>
 
 <div class="layers" id="layers">
-  <div class="lay-pop glass" id="lay-pop" role="group" aria-label="Map layers" hidden>
+  <div class="lay-pop glass" id="lay-pop" role="group" aria-label="Map layers" hidden><button type="button" class="overlay-close" aria-label="Close layers" onclick="layOpen(false)">×</button>
     <div id="lay-switches">
       <button type="button" class="lay-sw" id="sw-conn" role="switch" aria-checked="true"><span><b>News impact</b><small id="connection-count"></small></span><i class="tg"></i></button>
       <button type="button" class="lay-sw" id="sw-rel" role="switch" aria-checked="false"><span><b>Sector spread</b><small>Same-sector companies moving the same way</small></span><i class="tg"></i></button>
@@ -593,6 +617,7 @@ html[data-theme=light] :is(.mine-foot,.dd-btn b,.lay-btn b){color:#984400}
   <button type="button" class="fs-show" id="fs-show">Show articles</button>
 </section>
 <button type="button" class="peek" id="peek" hidden></button>
+<button type="button" id="nav-grab" class="nav-grab" aria-label="Open News panel" aria-expanded="false" hidden></button>
 <nav class="dock" id="dock" aria-label="Views"><button type="button" data-v="globe" aria-current="page">Globe</button><button type="button" data-v="news">News</button><button type="button" data-v="markets">Markets</button></nav>
 <div class="zoom glass"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button></div>
 <div class="hover glass" id="hover" aria-hidden="true"></div>
@@ -833,7 +858,19 @@ async function loadHistory(window) {
     if (!article || Date.parse(article.published_at) < start) continue;
     have.add(article.id); added.push(article);
   }
-  const normalized = normalize({ stories: added });
+  // Cache empty results and in-flight requests; only fetch files present in this build.
+  const histDays = [...CONNECTION_DAYS].filter(day => Date.parse(day+'T23:59:59Z') >= start && Date.parse(day) <= T0);
+  await Promise.all(histDays.map(day => {
+    if (!connectionDays.has(day)) connectionDays.set(day, fetch(`connections-history/${day}.json`, {cache:'no-cache'}).then(async r => {
+      if (!r.ok) throw Error('Historical connections could not load');
+      const data = await r.json();
+      if (!Array.isArray(data.connections)) throw Error('Invalid historical connections');
+      return data.connections.map(c => ({...c, day}));
+    }).catch(e => {connectionDays.delete(day);throw e;}));
+    return connectionDays.get(day);
+  }));
+  CONN_HIST = (await Promise.all([...connectionDays.values()])).flat();
+  const normalized = normalize({ stories: added }).filter(article => !byId[article.id]);
   stories = stories.concat(normalized);
   for (const article of normalized) byId[article.id] = article;
 }
@@ -910,7 +947,8 @@ let SECTORON = QS.get('sector') === '1', STORYON = QS.get('story') === '1';
 const MAIN = '255,122,26', RIPPLE = '255,150,64', SECTOR = '255,190,110';
 // Evidence-based connections (tools/globe-news/connections.py -> connections.json): every line has an event id, origin, destination,
 // relationship type, evidence, confidence and an explanation. ?lines=v3 shows the previous logic (for comparison).
-let CONN = null; const CONN_ON = QS.get('lines') !== 'v3';
+let CONN = null, CONN_HIST = [];
+const connectionDays = new Map(), CONNECTION_DAYS = new Set(["2026-10-15", "2026-10-16", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07"]); const CONN_ON = QS.get('lines') !== 'v3';
 if (CONN_ON) fetch('connections.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(d => { CONN = d; updateNetwork(); }).catch(() => {});
 let IND = {}; fetch('industries.json').then(r => r.json()).then(d => { IND = d.by || {}; updateNetwork(); }).catch(() => {});
 // Canonical identity: the registry is the single source of truth. An impact asset is usable only when the robot stamped it with a
@@ -979,16 +1017,18 @@ function archiveThreads(max, onlyId, focus) {
   }
   return out;
 }
-const cappedBy = cap => { const n = {}; return ks => { if (ks.some(k => (n[k] || 0) >= cap)) return false; ks.forEach(k => n[k] = (n[k] || 0) + 1); return true; }; };
+const cappedBy = cap => { const n = {}, allows = ks => !ks.some(k => (n[k] || 0) >= cap); const take = ks => { if (!allows(ks)) return false; ks.forEach(k => n[k] = (n[k] || 0) + 1); return true; }; take.allows = allows; return take; };
 function updateNetwork() {
   events = [];
-  if (CONN_ON && CONN) {  // one event per evidence-backed connection; direct (tier 1) before secondary (tier 2)
+  if (CONN_ON && (CONN || CONN_HIST.length)) {  // one event per evidence-backed connection; direct (tier 1) before secondary (tier 2)
     const byId = new Map(shown.map(a => [a.id, a]));
-    for (const c of CONN.connections || []) {
+    const wide = ['7d','30d'].includes(F.win);
+    const connections = wide ? [...(CONN?.connections || []), ...CONN_HIST].sort((a,b)=>b.score-a.score || String(a.published_at).localeCompare(String(b.published_at))) : CONN?.connections || [];
+    for (const c of connections) {
       const article = byId.get(c.event); if (!article) continue;
       const impact = impactsOf(article).find(i => i.name === c.evidence.impact) || { name: c.evidence.impact, why: c.evidence.why || '', direction: c.evidence.direction, kind: 'asset', country: c.dest.country };
       const asset = assetForImpact(impact) || { s: c.dest.asset, n: c.dest.name, d: NaN, id: c.dest.asset };
-      events.push({ article, impact, asset, target: { phi: c.dest.lat * rad, lam: c.dest.lon * rad }, dir: c.evidence.direction, ripples: [], sectors: [], score: c.score, tier: c.tier, conn: c });
+      events.push({ article, impact, asset, target: { phi: c.dest.lat * rad, lam: c.dest.lon * rad }, dir: c.evidence.direction, ripples: [], sectors: [], score: c.score, tier: c.tier, conn: c, historical: !!c.day, originVector: c.day ? vec(article.phi,article.lam) : null, destVector: c.day ? vec(c.dest.lat*rad,c.dest.lon*rad) : null });
     }
     // Newest first, so a longer window starts with exactly the lines of the shorter one and only adds older ones (24H ⊆ 48H ⊆ 7D).
     events.sort((a, b) => (b.article.t - a.article.t) || ((a.tier || 9) - (b.tier || 9)) || ((b.score || 0) - (a.score || 0)));
@@ -1025,7 +1065,30 @@ function drawConnections(t, focus, country) {
   const ph = k => reduce ? null : (t / 4200 + k * .17) % 1;
   const related = e => focus ? e.article === focus : sym ? touches_(e, sym) : iso ? e.article.location.country === country.name : false;
   const mains = [], cap = cappedBy(EMBED ? 3 : Math.round(4 * winLines()));  // per-country cap grows with the window like the budget
-  if (CONNON || sel) for (const e of events) { if (mains.length >= B.main) break; if (related(e)) continue; const pts = arcPts(e.article, e.target, 32); if (cap(['a' + e.article.location.country, 't' + geoKey(e.target)])) mains.push([e, pts]); }
+  const ca=Math.cos(lat0*rad),sa=Math.sin(lat0*rad),cl=Math.cos(lon0*rad),sl=Math.sin(lon0*rad);
+  const visibleVector=v=>{const d=v[0]*cl+v[1]*sl,z=sa*v[2]+ca*d;if(z<=.04)return false;const x=cx+R*(v[1]*cl-v[0]*sl),y=cy-R*(ca*v[2]-sa*d);return x>=globeBox.left&&x<=globeBox.right&&y>=globeBox.top&&y<=globeBox.bottom;};
+  if (CONNON || sel) {
+    // P0b port: keep the newer-first event model, but let wider windows visibly add
+    // archived connections. Use only slots above the existing 48H live allowance.
+    const wide = !EMBED && ['7d','30d'].includes(F.win);
+    const quota = wide ? Math.min(8, Math.max(0, B.main - Math.round((phone() ? 14 : 22) * WIN_LINES['48h']))) : 0;
+    const queued = new Set(), historyCap = cappedBy(2);
+    const enqueue = (e, counter) => {
+      if (queued.has(e) || related(e)) return false;
+      const keys = ['a' + e.article.location.country, 't' + geoKey(e.target)];
+      if (!counter.allows(keys)) return false;
+      if (e.historical && (!visibleVector(e.originVector) || !visibleVector(e.destVector))) return false;
+      const pts = arcPts(e.article, e.target, 32);
+      if (e.historical && ![pts[0],pts.at(-1)].every(p => p[2] && p[0]>=globeBox.left && p[0]<=globeBox.right && p[1]>=globeBox.top && p[1]<=globeBox.bottom)) return false;
+      if (!counter(keys)) return false;
+      queued.add(e); mains.push([e,pts]); return true;
+    };
+    const live = events.filter(e => !e.historical);
+    for (const e of live) { if (mains.length >= B.main - quota) break; enqueue(e,cap); }
+    let archived = 0;
+    if (quota) for (const e of events) { if (archived >= quota || mains.length >= B.main) break; if (e.historical && enqueue(e,historyCap)) archived++; }
+    for (const e of live) { if (mains.length >= B.main) break; enqueue(e,cap); }
+  }
   const ripples = [];  // default: only the single strongest ripple per event, and only for the strongest events
   if (CONNON || sel) for (const [e] of mains) { if (ripples.length >= B.ripple) break; const r = e.ripples[0]; if (!r) continue; ripples.push([r, arcPts(e.article, r.target, 28)]); }
   if (!EMBED && SECTORON) mains.forEach(([e]) => e.sectors.forEach(s => { strokeArc(arcPts(e.target, s.target, 26), SECTOR, .42 * fade, 1, false, null, [3, 4]); }));
@@ -1515,13 +1578,17 @@ function tap(x, y, touch) {
   const d = pick(x, y, touch ? 26 : 16);
   if (d) { hideHover(); if (d.list.length === 1) return openStory(d.list[0]); if (d.same || Z >= ZMAX - .2) return openPlace(d.list); return flyTo(d.lo, d.la, Math.min(ZMAX, Z * 2.2)); }
   const g = inv(x, y), c = g && countryAt(g[0], g[1]);
+  if (!c && !EMBED) { dismissPanel(); return; }
   if (c) { if (phone() && !EMBED) { const hv = $('hover'); hv.className = 'hover glass solo brief on'; hv.innerHTML = briefHTML(c); hv.dataset.country = c.name; return; } return openCountry(c); }
 }
 $('hover').addEventListener('click', e => { if (pinned && pinned.article) { const a = pinned.article; if (e.target.closest('.hv-open')) { tapEdge = null; hideHover(); openStory(a); } return; }
   if (pinned) { const d = pinned; hideHover(); return d.list.length === 1 ? openStory(d.list[0]) : openPlace(d.list); }
    const n = $('hover').dataset.country; if (n && byName[n] && $('hover').classList.contains('brief')) { $('hover').classList.remove('on'); delete $('hover').dataset.country; openCountry(byName[n]); } });
 
+// Dismiss transient connection/country popovers without changing the selection.
+new MutationObserver(()=>{const h=$('hover');if(!h.classList.contains('on')||h.querySelector('.overlay-close'))return;const b=document.createElement('button');b.type='button';b.className='overlay-close';b.setAttribute('aria-label','Close map detail');b.textContent='×';b.onclick=e=>{e.stopPropagation();hideHover();};h.append(b);}).observe($('hover'),{childList:true,attributes:true,attributeFilter:['class']});
 // ===== Panel =====
+let phoneView = 'globe';
 const panel = $('panel'), pbody = $('pbody'); size(); new MutationObserver(() => { if (!phone()) size(); }).observe(panel, { attributes: true, attributeFilter: ['class'] }); let view = { k: 'top' }, hist = [];
 function phoneMapArea() {
   const pk = $('peek').getBoundingClientRect(); if (pk.height) peekH = pk.height;
@@ -1537,7 +1604,7 @@ function placeSheet(st, h) {  // a resting position; CSS animates programmatic c
   paintSheet(h, true);
   $('grab').setAttribute('aria-label', st === 'closed' ? 'Open Top articles' : atMax ? 'Collapse the news panel' : 'Expand the news panel');
   $('grab').setAttribute('aria-expanded', String(st !== 'closed'));
-  phoneMapArea(); peekUpdate(); dockUpdate();
+  panel.classList.toggle('nav-open', st !== 'closed'); phoneMapArea(); peekUpdate(); dockUpdate();
 }
 // Programmatic requests: 'closed', 'full' (jump to the maximum), anything else = "make sure it is open" (opens at the minimum, never moves a sheet the user already placed).
 function setSheet(state) {
@@ -1547,17 +1614,18 @@ function setSheet(state) {
 }
 let sheetDraggedAt = -1000;
 $('grab').onclick = () => {
-  if (!phone()) return panel.classList.toggle('open');
+  if (!phone()) { panel.hidden=false; return panel.classList.toggle('open'); }
   if (performance.now() - sheetDraggedAt < 400) return;
   if (sheetState === 'closed') return setSheet('peek');
   sheetVisible >= SHEET_MAX() - 1 ? placeSheet('open', SHEET_MIN()) : setSheet('full');  // a tap on the handle toggles collapse / expand
 };
 $('sheet-expand').onclick = () => setSheet('full');
-$('sheet-close').onclick = () => {
-  if (!phone()) return;
-  setMarketsLayer(false);
-  sel = null; selCountry = null; hist = []; view = { k: 'top' }; render(); pbody.scrollTop = 0; setSheet('closed');
-};
+function dismissPanel() {
+  if (phone()) setSheet('closed');
+  else { panel.hidden = true; panel.classList.remove('open'); }
+  hideHover();
+}
+$('sheet-close').onclick = dismissPanel;
 // Sheet drag. Gesture ownership is decided once, at pointerdown, by WHERE the touch lands, and never changes until it ends:
 //   the handle / header zone (#grab and its 56 px overlay) -> this code resizes the sheet and nothing else moves
 //   the article list (#pbody)                               -> the browser scrolls it; this code never sees the gesture
@@ -1573,7 +1641,7 @@ const sheetApply = () => {
   document.querySelector('.zoom').style.top = Math.max(phoneMapTop, globeBox.bottom - 96) + 'px';
 };
 grab.addEventListener('pointerdown', e => {
-  if (!phone() || EMBED || sheetState === 'closed' || e.button !== 0) return;
+  if (!phone() || EMBED || e.button !== 0) return;
   sheetGesture = { id: e.pointerId, y0: e.clientY, h0: sheetVisible, moved: false }; sheetWant = sheetVisible;
   panel.classList.add('sheet-dragging');  // transitions off from the first touch
   try { grab.setPointerCapture(e.pointerId); } catch {}
@@ -1593,7 +1661,7 @@ function sheetEnd(e) {
   let h = sheetWant;
   // the magnet only pulls toward the edge the finger was moving to: dragging 10 px up from the minimum stays 10 px up
   if (h < g.h0 && h - SHEET_MIN() < MAGNET) h = SHEET_MIN(); else if (h > g.h0 && SHEET_MAX() - h < MAGNET) h = SHEET_MAX();
-  placeSheet('open', h);
+  if (g.y0 < e.clientY - 70 && sheetWant <= SHEET_MIN() + MAGNET) setSheet('closed'); else placeSheet('open', h);
 }
 grab.addEventListener('pointerup', sheetEnd); grab.addEventListener('pointercancel', sheetEnd);
 // On-device check: open the globe page with ?debugsheet=1 and a small readout shows what the sheet receives (touch events, finger Y, height in px).
@@ -1607,7 +1675,7 @@ pbody.addEventListener('click', e => { const b = e.target.closest('[data-share]'
 pbody.addEventListener('click', e => { if (phone() && sheetState === 'closed' && !e.target.closest('a,button,input')) setSheet('peek'); });
 const layoutObserver = new ResizeObserver(() => { if (!sheetGesture) size(); }); [document.querySelector('.top'), $('tl'), panel, $('peek')].forEach(e => layoutObserver.observe(e));
 document.fonts.ready.then(size);
-function go(v, push = true) { if (push && view.k !== v.k || push && view.id !== v.id) hist.push(view); view = v; render(); pbody.scrollTop = 0; if (phone()) setSheet('peek'); }
+function go(v, push = true) { panel.hidden = false; if(phone()&&phoneView==='globe')phoneView='news'; if (push && view.k !== v.k || push && view.id !== v.id) hist.push(view); view = v; render(); pbody.scrollTop = 0; if (phone()) setSheet('peek'); }
 function back() { view = hist.pop() || { k: 'top' }; if (view.k === 'top') { sel = null; selCountry = null; } else if (view.k === 'country') { sel = null; selCountry = byName[view.id]; } else if (view.k === 'article') { sel = byId[view.id]; } render(); }
 function openStory(s) {
   if (EMBED) { top.location.href = '/assets/globe/news.html?story=' + encodeURIComponent(s.id); return; }
@@ -1772,7 +1840,7 @@ pbody.addEventListener('keydown', e => {
 function variantPanel(list) {
   if (PANEL_TEMPLATE === 'a') return `<h2>Top articles</h2><div class="meta">${Math.min(8, list.length)} of ${list.length} articles</div><div class="compact-list">${list.slice(0, 8).map(compactItem).join('')}</div>${list.length > 8 ? '<a class="panel-more" href="../../news.html">See all news →</a>' : ''}${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
   if (PANEL_TEMPLATE === 'b') return `<h2>Top articles</h2><div class="strip-list" aria-label="Top articles">${list.slice(0, phone() ? 3 : 12).map(compactItem).join('')}</div>${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
-  const tabs = [['top', 'Top'], ['movers', 'Movers'], ['latest', 'Latest'], ['countries', 'Countries'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : [])];
+  const tabs = [['top', 'Top'], ...(!phone() ? [['movers', 'Movers']] : []), ['latest', 'Latest'], ['countries', 'Countries'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : [])];
   let items, count;
   if (panelTab === 'upcoming') { items = upcomingPanel(); count = 0; }
   else if (panelTab === 'markets') { items = marketsPanel(); count = 0; }
@@ -2227,6 +2295,10 @@ function placeFilters(on) {
 let fsOpener = null;
 function openFilters() { fsOpener = document.activeElement; $('fsback').hidden = false; $('fsheet').hidden = false; $('fs-title').focus(); }
 function closeFilters(restore = true) { if ($('fsheet').hidden) return; $('fsheet').hidden = true; $('fsback').hidden = true; if (restore && fsOpener && fsOpener.focus) fsOpener.focus(); }
+let filterDrag;
+$('fsheet').querySelector('.fs-head').addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;filterDrag=e.clientY;e.currentTarget.setPointerCapture(e.pointerId);});
+$('fsheet').querySelector('.fs-head').addEventListener('pointerup',e=>{if(filterDrag!==undefined&&e.clientY-filterDrag>60)closeFilters();filterDrag=undefined;});
+$('fsheet').querySelector('.fs-head').style.touchAction='none';
 $('m-filters').onclick = openFilters; $('fs-close').onclick = () => closeFilters(); $('fsback').onclick = () => closeFilters(); $('fs-show').onclick = () => closeFilters();
 $('m-search').onclick = () => { if (window.InvPeek) InvPeek.search(); else qi.focus(); };
 $('fs-reset').onclick = () => { F.mine = false; for (const [box, k] of [[$('cats'), 'all'], [$('regions'), 'global'], [$('wins'), '48h']]) box.querySelector(`[data-k="${k}"]`).click(); };
@@ -2245,26 +2317,50 @@ function updateFiltersUI() {
 }
 function peekUpdate() {
   const el = $('peek'); if (EMBED || !phone()) { el.hidden = true; return; }
-  const show = sheetState === 'closed' && view.k === 'top' && !!stories.length; el.hidden = !show; if (!stories.length) return;
+  const show = phoneView === 'globe' && sheetState === 'closed' && view.k === 'top' && !!stories.length; el.hidden = !show; if (!stories.length) return;
   const s = [...shown].sort(sortTop)[0];
   if (!s) { el.dataset.story = ''; el.innerHTML = '<span class="pk-h">No articles match these filters</span><span class="pk-m">Open Filters to widen the time window.</span>'; return; }
   const a = lensAsset(s), src = s.source && s.source.name ? s.source.name : '';
   el.dataset.story = s.id;
   el.innerHTML = `<span class="pk-e"><time datetime="${esc(s.published_at || '')}">${ago(s.t)}</time>${src ? `<span>· ${esc(src)}</span>` : ''}</span><span class="pk-h">${esc(s.headline)}</span>${a ? `<span class="pk-a"><span>${esc(a.n)}</span>${pctPill(a.d)}</span>` : ''}`;
 }
-$('peek').onclick = () => { const s = byId[$('peek').dataset.story]; if (s) openStory(s); else openFilters(); };
+$('peek').onclick = () => { if(performance.now()-peekDraggedAt<400)return; if($('peek').classList.contains('minimized')){$('peek').classList.remove('minimized');return;} const s = byId[$('peek').dataset.story]; if (s) openStory(s); else openFilters(); };
 function dockUpdate() {
-  const v = !phone() || sheetState === 'closed' ? 'globe' : panelTab === 'markets' ? 'markets' : 'news';
-  for (const b of $('dock').querySelectorAll('button')) b.dataset.v === v ? b.setAttribute('aria-current', 'page') : b.removeAttribute('aria-current');
+  for (const b of $('dock').querySelectorAll('button')) b.dataset.v === phoneView ? b.setAttribute('aria-current', 'page') : b.removeAttribute('aria-current');
+  const h = $('nav-grab'); h.hidden = EMBED || !phone() || phoneView === 'globe';
+  h.setAttribute('aria-label', `${sheetState === 'closed' ? 'Open' : 'Close'} ${phoneView === 'markets' ? 'Markets' : 'News'} panel`);
+  h.setAttribute('aria-expanded', String(sheetState !== 'closed'));
+}
+function toggleNavSheet() {
+  if (phoneView === 'globe') return;
+  if (sheetState !== 'closed') return setSheet('closed');
+  panel.hidden = false;
+  if (view.k === 'top') panelTab = phoneView === 'markets' ? 'markets' : (panelTab === 'markets' ? 'top' : panelTab);
+  render(); setSheet('full');
 }
 $('dock').onclick = e => {
   const b = e.target.closest('button'); if (!b || !phone()) return;
   gmAutoSheet = false;
-  setMarketsLayer(b.dataset.v === 'markets');
-  if (b.dataset.v === 'globe') return $('sheet-close').click();
-  hist = []; view = { k: 'top' }; sel = null; selCountry = null; panelTab = b.dataset.v === 'markets' ? 'markets' : (panelTab === 'markets' ? 'top' : panelTab); panelExpanded = false;
-  render(); pbody.scrollTop = 0; setSheet('full');
+  if (phoneView === b.dataset.v && phoneView !== 'globe') return toggleNavSheet();
+  phoneView = b.dataset.v; $('peek').classList.remove('minimized');
+  marketSetMode(phoneView === 'markets' ? 'markets' : 'news');
+  setSheet('closed');
+  $('peek').hidden = phoneView !== 'globe'; dockUpdate();
 };
+let navDraggedAt = -1000;
+$('nav-grab').onclick = () => {if(performance.now()-navDraggedAt>400) toggleNavSheet();};
+let navDrag;
+$('nav-grab').onpointerdown = e => { navDrag = e.clientY; e.currentTarget.setPointerCapture(e.pointerId); };
+$('nav-grab').onpointerup = e => { if (navDrag !== undefined && Math.abs(e.clientY-navDrag)>30) { navDraggedAt=performance.now(); if(e.clientY<navDrag && sheetState==='closed') toggleNavSheet(); else if(e.clientY>navDrag) setSheet('closed'); } navDrag=undefined; };
+$('nav-grab').onpointercancel = () => {navDrag=undefined;};
+let peekDrag, peekDraggedAt=-1000;
+$('peek').addEventListener('pointerdown', e => {peekDrag=e.clientY;e.currentTarget.setPointerCapture(e.pointerId);});
+$('peek').addEventListener('pointerup', e => {if(peekDrag!==undefined && e.clientY-peekDrag>35){$('peek').classList.add('minimized'); peekDraggedAt=performance.now(); e.preventDefault();}peekDrag=undefined;});
+addEventListener('keydown', e => {
+  if(e.key !== 'Escape' || e.defaultPrevented || e.cancelBubble || document.querySelector('.pk.on') || EMBED || !$('fsheet').hidden || !$('res').hidden || !$('lay-pop').hidden) return;
+  if(phone() && sheetState === 'closed' || !phone() && panel.hidden) return;
+  dismissPanel(); e.preventDefault(); e.stopImmediatePropagation();
+}, true);
 pbody.addEventListener('click', e => { const u = e.target.closest('[data-up]'); if (u && CAPS[u.dataset.up]) flyTo(CAPS[u.dataset.up][1], CAPS[u.dataset.up][0], 1.6); });
 $('sw-conn').onclick = () => { CONNON = !CONNON; syncLayers(); };
 $('sw-rel').onclick = () => { SECTORON = !SECTORON; syncLayers(); };
@@ -2338,9 +2434,9 @@ function marketSetMode(mode){
  qi.placeholder=MARKET.on?'Search countries, exchanges, indices & companies':'Search assets, countries & articles';if(MARKET.on)marketInit();else marketClose();
 }
 function marketVenue(name,id){const code=ISO[name];return MARKET.markers.find(e=>e.id===id&&e.country===code)||MARKET.markers.find(e=>e.id===MARKET.defaultVenues[code])||MARKET.markers.find(e=>e.country===code);}
-function marketSelect(name,venue){if(!byName[name])return;MARKET.selected=name;MARKET.selectedVenue=marketVenue(name,venue)?.id||venue||null;MARKET.tab='attention';selCountry=byName[name];flyTo(selCountry.c[0],selCountry.c[1],Zt);sel=null;spin=null;marketPanel.hidden=false;marketRender();marketInit();}
+function marketSelect(name,venue){if(!byName[name])return;if(MARKET.selected!==name)MARKET.tab='attention';MARKET.selected=name;MARKET.selectedVenue=marketVenue(name,venue)?.id||venue||null;selCountry=byName[name];flyTo(selCountry.c[0],selCountry.c[1],Zt);sel=null;spin=null;marketPanel.hidden=false;marketRender();marketInit();}
 function marketNotifyPanel(){if(!EMBED)return;const r=marketPanel.getBoundingClientRect();parent.postMessage({type:'investedia-market-panel',open:!marketPanel.hidden,rect:{left:r.left,top:r.top,right:r.right,bottom:r.bottom}},location.origin);}
-function marketClose(){MARKET.selected=null;MARKET.selectedVenue=null;selCountry=null;marketPanel.hidden=true;MARKET.labels=[];MARKET.drawnLines=[];marketNotifyPanel();}
+function marketClose(){marketPanel.hidden=true;MARKET.labels=[];MARKET.drawnLines=[];marketNotifyPanel();}
 function marketRows(){
  const name=MARKET.selected,list=MARKET.articles.filter(a=>a.location?.country===name),counts=new Map(),sectors=new Map();
  for(const article of list){const ids=new Set((article.entities||[]).map(e=>e.asset?.id).filter(Boolean));for(const e of article.historicalAssets||[])if(e.id&&e.src==='entity')ids.add(e.id);const cos=new Set(),inds=new Set();for(const id of ids){const a=MARKET.registry.assets[id];if(!a||a.class!=='equity')continue;const co=a.company||id;if(!cos.has(co)){cos.add(co);const old=counts.get(co)||{id:co,name:MARKET.registry.companies[co]?.name||a.name,n:0};old.n++;counts.set(co,old);}if(MARKET.sectorByAsset[id])inds.add(MARKET.sectorByAsset[id]);}for(const sector of inds)sectors.set(sector,(sectors.get(sector)||0)+1);}
@@ -2353,19 +2449,20 @@ function marketRender(){
  const news='../../assets/globe/news.html?country='+encodeURIComponent(name)+'&win=30d&country-tab=news',explore=new URL(news,location.href);explore.searchParams.set('win','30d');explore.searchParams.delete('country-tab');
  marketPanel.innerHTML=`<div class="market-handle" role="separator" tabindex="0" aria-label="Drag market sheet"></div><button class="market-close" type="button" aria-label="Close market">×</button><div class="market-eyebrow">${esc(region)} · Market</div><h2>${flag(name)} ${esc(nm(name))}</h2><p class="market-exchange">${ex?`${esc(ex.name)} (${esc(ex.short)}) · ${esc(ex.city)} · ${esc(fx?.n||ex.currency)} (${esc(ex.currency)})`:missing}</p><div class="market-kpis">${tile(ix?.n||ex?.benchmark_name||(ex?ex.short+' benchmark':'Benchmark index'),marketNum(ix?.p),Number.isFinite(ix?.d)?`<span class="${ix.d>0?'market-up':ix.d<0?'market-down':'market-flat'}">${ix.d>0?'↑':ix.d<0?'↓':'↔'} ${Math.abs(ix.d).toFixed(2)}%</span> · delayed`:missing)}${tile(fx?.s?.replace(/(.{3})(.{3})/,'$1/$2')||'Currency vs USD',marketNum(fx?.p),fx?'delayed':missing)}${tile('Inflation',infl?infl[1].toFixed(1)+'%':'—',infl?infl[0]+' · WB':missing)}</div><div class="market-section"><b>Notable developments</b><a href="${news}" target="${EMBED?'_top':'_self'}">${list.length} →</a></div>${important.map(a=>`<a class="market-article" href="../../assets/globe/news.html?story=${encodeURIComponent(a.id)}" target="${EMBED?'_top':'_self'}"><span>${esc(a.headline)}</span><small>${esc(a.source?.name||'')} · ${new Date(a.published_at).toLocaleDateString('en-GB',{day:'numeric',month:'short'})}</small></a>`).join('')||'<p class="market-empty">No important articles in the last 30 days.</p>'}<div class="market-section"><b>Market Momentum</b><small>30 days</small></div><div class="market-tabs" role="tablist">${['performers','attention','sectors'].map(t=>`<button type="button" role="tab" data-market-tab="${t}" aria-selected="${t===MARKET.tab}">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}</div><div role="tabpanel">${content}</div><p class="market-footnote">Verified article mentions, last 30 days. Not a recommendation.</p><a class="market-explore" href="${explore.href}" target="${EMBED?'_top':'_self'}">Explore ${esc(nm(name))} →</a><div class="market-legend"><span>━ Trade</span><span>━ Investment</span></div><small class="market-source">${MARKET.links.some(l=>l.from===code||l.to===code)?'Trade 2024 · UN Comtrade. Investment 2023 · IMF CPIS. ':'No bilateral link data yet.'} Prices delayed. Not investment advice.</small>`;
  marketPanel.querySelector('.market-close').onclick=marketClose;marketPanel.querySelectorAll('[data-market-tab]').forEach(b=>b.onclick=()=>{MARKET.tab=b.dataset.marketTab;marketRender();});
- const handle=marketPanel.querySelector('.market-handle');let start;handle.onpointerdown=e=>{start=e.clientY;handle.setPointerCapture(e.pointerId);};handle.onpointerup=e=>{if(start!==undefined){const delta=e.clientY-start;if(delta>35)marketPanel.style.height='26vh';if(delta< -35)marketPanel.style.height='36vh';}start=undefined;marketNotifyPanel();};handle.onkeydown=e=>{if(e.key==='ArrowDown')marketPanel.style.height='26vh';if(e.key==='ArrowUp')marketPanel.style.height='36vh';if(e.key==='Escape')marketClose();marketNotifyPanel();};marketNotifyPanel();
+ const handle=marketPanel.querySelector('.market-handle');let start;handle.onpointerdown=e=>{start=e.clientY;handle.setPointerCapture(e.pointerId);};handle.onpointerup=e=>{if(start!==undefined){const delta=e.clientY-start;if(delta>70)marketClose();else if(delta>35)marketPanel.style.height='26vh';if(delta< -35)marketPanel.style.height='36vh';}start=undefined;marketNotifyPanel();};handle.onkeydown=e=>{if(e.key==='ArrowDown')marketPanel.style.height='26vh';if(e.key==='ArrowUp')marketPanel.style.height='36vh';if(e.key==='Escape')marketClose();marketNotifyPanel();};marketNotifyPanel();
 }
 function marketTap(x,y){const ring=[...MARKET.hits].sort((a,b)=>Math.hypot(a.x-x,a.y-y)-Math.hypot(b.x-x,b.y-y)).find(h=>Math.hypot(h.x-x,h.y-y)<20);if(ring)return marketSelect(ring.e.countryName,ring.e.id);const g=inv(x,y),c=g&&countryAt(g[0],g[1]);if(c)return marketSelect(c.name);marketClose();}
 function drawMarketMode(){
- MARKET.labels=[];MARKET.drawnLines=[];MARKET.hits=[];const code=ISO[MARKET.selected],limit=phone()?5:10,links=code?MARKET.links.filter(l=>l.from===code||l.to===code).sort((a,b)=>b.value_usd-a.value_usd):[],selected=marketVenue(MARKET.selected,MARKET.selectedVenue),connected=new Set();
+ MARKET.labels=[];MARKET.drawnLines=[];MARKET.hits=[];const code=marketPanel.hidden?null:ISO[MARKET.selected],limit=phone()?5:8,links=code?MARKET.links.filter(l=>l.from===code||l.to===code).sort((a,b)=>b.value_usd-a.value_usd):[],selected=marketPanel.hidden?null:marketVenue(MARKET.selected,MARKET.selectedVenue),connected=new Set();
  if(selected)for(const l of links){if(MARKET.drawnLines.length>=limit)break;if(MARKET.drawnLines.filter(d=>d.kind===l.kind).length>=(phone()?(l.kind==='trade'?3:2):5))continue;const other=l.from===code?l.to:l.from,target=MARKET.markers.find(e=>e.id===MARKET.defaultVenues[other]);if(!target)continue;const source=proj(selected.phi,selected.lam),dest=proj(target.phi,target.lam);if(source[2]<=.04||dest[2]<=.04)continue;const points=arcGeom({phi:selected.phi,lam:selected.lam},{phi:target.phi,lam:target.lam},56,0).map(([phi,lam,h])=>{const p=proj(phi,lam,h);return[p[0],p[1],p[2]>0];});ctx.beginPath();let pen=false;for(const[x,y,visible]of points){if(!visible){pen=false;continue;}pen?ctx.lineTo(x,y):ctx.moveTo(x,y);pen=true;}ctx.strokeStyle=l.kind==='trade'?'rgba(255,122,26,.7)':'rgba(255,255,255,.32)';ctx.lineWidth=l.kind==='trade'?1.2:.8;ctx.stroke();MARKET.drawnLines.push(l);connected.add(target.id);}
  const panel=marketPanel.hidden?null:marketPanel.getBoundingClientRect(),boxes=[];ctx.font='500 9.5px Inter,sans-serif';ctx.textBaseline='alphabetic';
- for(const e of [...MARKET.markers].sort((a,b)=>Number(b.id===MARKET.selectedVenue)-Number(a.id===MARKET.selectedVenue))){const[x,y,z]=proj(e.phi,e.lam);if(z<=.04)continue;const chosen=e.id===MARKET.selectedVenue,related=connected.has(e.id);ctx.strokeStyle=chosen?'#fff':'rgba(255,255,255,.45)';ctx.lineWidth=chosen?1.7:1;ctx.shadowColor='#FF7A1A';ctx.shadowBlur=chosen?14:0;ctx.beginPath();ctx.arc(x,y,chosen?6:3.5,0,Math.PI*2);ctx.stroke();ctx.shadowBlur=0;MARKET.hits.push({x,y,e});if(!chosen&&!related)continue;const text=(e.short+' · '+nm(e.countryName)).toUpperCase(),w=ctx.measureText(text).width+8,h=16,b={x:x+9,y:y-13,w,h,id:e.id,text};const blocked=b=>MARKET.occlusions.some(a=>b.x<a.x+a.w&&b.x+b.w>a.x&&b.y<a.y+a.h&&b.y+b.h>a.y)||b.x<8||b.x+w>W-8||b.y<8||b.y+h>H-8||panel&&b.x<panel.right&&b.x+w>panel.left&&b.y<panel.bottom&&b.y+h>panel.top||boxes.some(a=>b.x<a.x+a.w&&b.x+b.w>a.x&&b.y<a.y+a.h&&b.y+b.h>a.y);if(blocked(b)){b.x=x-w-9;if(blocked(b))continue;}ctx.fillStyle='rgba(12,12,14,.76)';ctx.fillRect(b.x,b.y,w,h);ctx.fillStyle='#dedee3';ctx.fillText(text,b.x+4,b.y+11);boxes.push(b);MARKET.labels.push(b);}
+ for(const e of [...MARKET.markers].sort((a,b)=>Number(b.id===MARKET.selectedVenue)-Number(a.id===MARKET.selectedVenue))){const[x,y,z]=proj(e.phi,e.lam);if(z<=.04)continue;const chosen=!marketPanel.hidden&&e.id===MARKET.selectedVenue,related=connected.has(e.id);ctx.strokeStyle=chosen?'#fff':'rgba(255,255,255,.45)';ctx.lineWidth=chosen?1.7:1;ctx.shadowColor='#FF7A1A';ctx.shadowBlur=chosen?14:0;ctx.beginPath();ctx.arc(x,y,chosen?6:3.5,0,Math.PI*2);ctx.stroke();ctx.shadowBlur=0;MARKET.hits.push({x,y,e});if(!chosen&&!related)continue;const text=(e.short+' · '+nm(e.countryName)).toUpperCase(),w=ctx.measureText(text).width+8,h=16,b={x:x+9,y:y-13,w,h,id:e.id,text};const blocked=b=>MARKET.occlusions.some(a=>b.x<a.x+a.w&&b.x+b.w>a.x&&b.y<a.y+a.h&&b.y+b.h>a.y)||b.x<8||b.x+w>W-8||b.y<8||b.y+h>H-8||panel&&b.x<panel.right&&b.x+w>panel.left&&b.y<panel.bottom&&b.y+h>panel.top||boxes.some(a=>b.x<a.x+a.w&&b.x+b.w>a.x&&b.y<a.y+a.h&&b.y+b.h>a.y);if(blocked(b)){b.x=x-w-9;if(blocked(b))continue;}ctx.fillStyle='rgba(12,12,14,.76)';ctx.fillRect(b.x,b.y,w,h);ctx.fillStyle='#dedee3';ctx.fillText(text,b.x+4,b.y+11);boxes.push(b);MARKET.labels.push(b);}
 }
 marketControl.onclick=e=>{const b=e.target.closest('[data-mode]');if(b)marketSetMode(b.dataset.mode);};
 addEventListener('keydown',e=>{if(e.key==='Escape'&&MARKET.on)marketClose();});
 addEventListener('message',e=>{if(e.origin!==location.origin||e.source!==parent||e.data?.type!=='investedia-mode')return;if(Array.isArray(e.data.occlusions))MARKET.occlusions=e.data.occlusions.filter(a=>['x','y','w','h'].every(k=>Number.isFinite(a[k])));marketSetMode(e.data.mode);if(e.data.country)marketSelect(e.data.country,e.data.exchange);});
 marketSetMode(new URLSearchParams(location.search).get('mode'));
+if(phone()&&!EMBED&&MARKET.on){phoneView='markets';dockUpdate();}
 
 addEventListener('resize',()=>{if(MARKET.on)marketNotifyPanel();});
 
