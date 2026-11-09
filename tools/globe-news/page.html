@@ -408,6 +408,20 @@ h1 span{color:var(--fg-3)}
 .nd-h{font:600 15.5px/1.3 Inter,system-ui,sans-serif;color:var(--fg);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .nd-img{flex:none;width:68px;height:68px;border-radius:12px;object-fit:cover;background:#1a1a1f}
 html[data-theme=light] .nd-chips button{border-color:rgba(0,0,0,.12)}html[data-theme=light] .nd-chips button[aria-pressed=true]{background:#1d1d1f;color:#fff;border-color:#1d1d1f}html[data-theme=light] .nd-chips button[aria-pressed=true] b{color:#ccc}html[data-theme=light] .nd-item{border-color:rgba(0,0,0,.08)}html[data-theme=light] .nd-c{color:#c2410c}
+.nb-head{display:flex;justify-content:space-between;align-items:center;margin:2px 0 10px}.nb-head h2{margin:0;font:700 24px Inter,system-ui,sans-serif;letter-spacing:-.02em}
+.nb-pill{height:32px;padding:0 12px;border-radius:999px;background:rgba(255,255,255,.08);font:600 13px Inter,system-ui,sans-serif;color:var(--fg)}
+.nb-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}.nb-stats div{background:rgba(255,255,255,.05);border-radius:14px;padding:10px 12px}.nb-stats b{display:block;font:700 22px Inter,system-ui,sans-serif;font-variant-numeric:tabular-nums}.nb-stats span{white-space:nowrap;font-size:12px;color:var(--fg-3)}.nb-stats .o b{color:#FF7A1A}
+.panel-tabs{overflow-x:auto;scrollbar-width:none;flex-wrap:nowrap}.panel-tabs::-webkit-scrollbar{display:none}.panel-tabs button{flex:none;white-space:nowrap}
+.nd-row{display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.07)}.nd-row .nd-item{border-bottom:0}.nd-save{flex:none;width:40px;height:44px;font-size:18px;color:var(--fg-3)}.nd-save[aria-pressed=true]{color:#FF7A1A}
+.nd-topic{display:flex;justify-content:space-between;width:100%;padding:14px 2px;border-bottom:1px solid rgba(255,255,255,.07);font:600 15.5px Inter,system-ui,sans-serif;color:var(--fg)}.nd-topic b{font-weight:500;color:var(--fg-3);font-variant-numeric:tabular-nums}
+.mp-live{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--fg-3)}.mp-live i{width:7px;height:7px;border-radius:50%;background:#34d399;box-shadow:0 0 8px #34d399}
+.mp-k{display:flex;justify-content:space-between;align-items:baseline;font:600 11.5px Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3);margin:16px 0 8px}.mp-k span,.mp-k a{text-transform:none;letter-spacing:0;font-size:12px;color:#FF7A1A;text-decoration:none}.mp-k span{color:var(--fg-3)}
+.mp-sess{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px}.mp-sess::-webkit-scrollbar{display:none}
+.mp-ss{flex:none;width:112px;padding:10px 12px;border-radius:14px;background:rgba(255,255,255,.05)}.mp-ss img{width:20px;height:14px;border-radius:2px;object-fit:cover}.mp-ss b{display:block;font-size:14px;margin-top:6px}.mp-ss span{font-size:12px;font-variant-numeric:tabular-nums}.mp-ss .o{color:#34d399}.mp-ss .s{color:#FF9a55}.mp-ss .c{color:var(--fg-3)}
+.mp-row{display:flex;gap:10px;align-items:center;width:100%;text-align:left;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.07)}.mp-row>img{flex:none}.mp-tx{flex:1;min-width:0;display:grid;gap:2px}.mp-tx b{font-size:14.5px}.mp-tx small{font-size:12.5px;color:var(--fg-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mp-tx i{display:inline-block;margin:3px 4px 0 0;padding:2px 8px;border-radius:999px;background:rgba(255,122,26,.14);color:#ffb37a;font:600 11px Inter,system-ui,sans-serif;font-style:normal}
+.mp-n{flex:none;text-align:right;font-size:11.5px;color:var(--fg-3)}.mp-n b{display:block;font-size:15px;color:var(--fg);font-variant-numeric:tabular-nums}
+.mp-ev{display:flex;gap:12px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.07);font-size:13.5px}.mp-ev time{flex:none;width:72px;color:#FF9a55;font-weight:600;font-variant-numeric:tabular-nums}.mp-ev img{width:18px;height:13px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+html[data-theme=light] :is(.nb-stats div,.mp-ss){background:rgba(0,0,0,.04)}html[data-theme=light] .nb-pill{background:rgba(0,0,0,.06)}html[data-theme=light] :is(.nd-row,.nd-topic,.mp-row,.mp-ev){border-color:rgba(0,0,0,.08)}html[data-theme=light] .mp-tx i{color:#984400}
 .panel-hero{position:relative;display:block;width:100%;height:168px;border-radius:20px;overflow:hidden;margin:4px 0 12px;background:#1b1b1e center/cover;text-align:left;padding:0}
 .panel-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 25%,rgba(0,0,0,.88))}
 .panel-hero span{position:absolute;left:14px;right:14px;bottom:12px;z-index:1;color:#fff;font-weight:600;font-size:15px;line-height:1.28;letter-spacing:-.01em}
@@ -1244,6 +1258,18 @@ function upcomingPanel() {
     rows += `<button type="button" class="up-row" data-up="${esc(e.country)}"><img class="flag" src="flags/${e.country.toLowerCase()}.svg" alt="" onerror="this.remove()"><span class="up-main"><b>${esc(e.t)}</b><small>${e.fc ? 'Forecast ' + esc(e.fc) : 'No forecast published'}${e.prev ? ' · Previous ' + esc(e.prev) : ''}</small></span><span class="up-in">in ${untilText(Date.parse(e.at) - Date.now())}</span></button>`; }
   return `<div class="eb mk-eyebrow">Upcoming · high impact · ${list.length} ${list.length === 1 ? 'release' : 'releases'}</div><div class="up-list">${rows}</div><p class="note">Dates and forecasts come from official schedules (BLS, BEA, Federal Reserve) and the weekly calendar feed. Earnings dates will be added when we have a licensed source.</p>`;
 }
+// Markets tab (phone): sessions, most active markets (by article volume, not performance), upcoming high-impact events.
+let MPCAL = null; fetch('../calendar-live.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(j => { MPCAL = j; if (phone() && phoneView === 'markets') render(); }).catch(() => {});
+function marketsPhonePanel() {
+  const rows = exchangeRows(), open = rows.filter(r => r.st.open).length;
+  const sess = rows.map(({ e, st }) => `<div class="mp-ss"><img src="flags/${e.cc}.svg" alt=""><b>${esc(e.n)}</b><span class="${st.open ? 'o' : st.in < 3 * 3600e3 ? 's' : 'c'}">${st.open ? 'Open' : st.in < 3 * 3600e3 ? 'Opens ' + untilText(st.in) : 'Closed'}</span></div>`).join('');
+  const by = {}; for (const x of stories) { const c = x.location.country; (by[c] = by[c] || []).push(x); }
+  const act = Object.entries(by).sort((a, b) => b[1].length - a[1].length).slice(0, 5).map(([c, L]) => { const top = [...L].sort(sortTop)[0], cats = Object.entries(L.reduce((m, x) => (m[CAT[x.category] || x.category] = (m[CAT[x.category] || x.category] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]).slice(0, 2);
+    return `<button class="mp-row" data-country="${esc(c)}">${flag(c)}<span class="mp-tx"><b>${esc(nm(c))}</b><small>${esc(top.headline)}</small><span>${cats.map(([k]) => `<i>${esc(k)}</i>`).join('')}</span></span><span class="mp-n"><b>${L.length}</b>articles</span></button>`; }).join('');
+  const now = Date.now(), ev = (MPCAL && MPCAL.events || []).filter(x => x.imp >= 3 && Date.parse(x.at) >= now).sort((a, b) => Date.parse(a.at) - Date.parse(b.at)).slice(0, 4);
+  const evs = ev.length ? ev.map(x => `<div class="mp-ev"><time>${new Date(x.at).toLocaleString('en-GB', { weekday: 'short', hour: '2-digit', minute: '2-digit' })}</time><span>${x.country ? `<img src="flags/${esc(String(x.country).toLowerCase())}.svg" alt="">` : ''}${esc(x.t)}</span></div>`).join('') : '<p class="meta">No high-impact events scheduled.</p>';
+  return `<div class="nb-head"><h2>Markets</h2><span class="mp-live"><i></i>${open ? open + ' open now' : 'All closed'}</span></div><div class="mp-k">Market sessions</div><div class="mp-sess">${sess}</div><div class="mp-k">Most active markets <span>by article volume</span></div>${act}<div class="mp-k">Upcoming · high impact <a href="../../calendar.html">Calendar →</a></div>${evs}<p class="meta" style="margin-top:12px">Activity is article volume, not price performance. Not investment advice.</p>`;
+}
 function marketsPanel() {
   const now = Date.now(), d = new Date(now), stamp = d.toISOString().slice(0, 10) + ' ' + hm(now) + ' UTC';
   const rows = exchangeRows(now).map(({ e, st }) => `<button class="mk-row" data-asset="${esc(e.ix)}"><img class="flag" src="flags/${e.cc}.svg" alt=""><span class="mk-main"><b>${e.n}</b><small>${hoursText(e, now).replace(' · ', '<br>')}</small></span><span class="mk-st ${st.open ? 'mk-open' : ''}">${st.open ? 'Open · closes in ' + untilText(st.left) : 'Opens in ' + untilText(st.in)}</span></button>`).join('');
@@ -1312,6 +1338,21 @@ function drawExchanges(t) {
     }
     exHits.push(hit);
   }
+}
+function drawMarketsOverlay(t) {
+  const boxes = [], ov = (a, b) => a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y, pulse = reduce ? .5 : (Math.sin(t / 700) + 1) / 2;
+  for (const { e, st } of exchangeRows()) { const [x, y, z] = proj(e.la * rad, e.lo * rad); if (z <= .08) continue;
+    if (st.open) { const g = ctx.createRadialGradient(x, y, 0, x, y, 18); g.addColorStop(0, `rgba(52,211,153,${.4 + .2 * pulse})`); g.addColorStop(1, 'rgba(52,211,153,0)'); ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, 18, 0, 7); ctx.fill(); }
+    ctx.fillStyle = DAY ? '#fff' : '#0b0b0d'; ctx.strokeStyle = st.open ? '#34d399' : DAY ? 'rgba(36,58,100,.6)' : 'rgba(170,170,180,.75)'; ctx.lineWidth = 2; ctx.beginPath(); ctx.roundRect(x - 5.5, y - 5.5, 11, 11, 3); ctx.fill(); ctx.stroke(); boxes.push({ x: x - 8, y: y - 8, w: 16, h: 16 }); }
+  const by = {}; for (const x of stories) { const c = x.location.country; (by[c] = by[c] || {}); by[c][x.category] = (by[c][x.category] || 0) + 1; by[c].n = (by[c].n || 0) + 1; }
+  ctx.font = '600 11.5px Inter,sans-serif'; ctx.textBaseline = 'middle'; let shown = 0;
+  for (const [c, m] of Object.entries(by).sort((a, b) => b[1].n - a[1].n)) { if (shown >= (phone() ? 4 : 7)) break; const ctry = byName[c]; if (!ctry) continue;
+    const [x, y, z] = proj(ctry.c[1] * rad, ctry.c[0] * rad); if (z <= .2) continue;
+    const cat = Object.entries(m).filter(([k]) => k !== 'n').sort((a, b) => b[1] - a[1])[0][0], a1 = nm(c).replace('United States of America', 'United States'), a2 = ' · ' + (CAT[cat] || cat), w1 = ctx.measureText(a1).width, w = w1 + ctx.measureText(a2).width + 18, h = 24;
+    let b = null; for (const [dx, dy] of [[10, -30], [10, 8], [-w - 10, -30], [-w - 10, 8]]) { const q = { x: x + dx, y: y + dy, w, h }; if (q.x < globeBox.left + 4 || q.x + w > globeBox.right - 4 || q.y < globeBox.top + 4 || q.y + h > globeBox.bottom - 4 || boxes.some(o => ov(o, q))) continue; b = q; break; }
+    if (!b) continue; boxes.push(b); shown++;
+    ctx.fillStyle = DAY ? 'rgba(255,255,255,.92)' : 'rgba(17,17,20,.9)'; ctx.strokeStyle = DAY ? 'rgba(0,0,0,.1)' : 'rgba(255,255,255,.14)'; ctx.lineWidth = 1; ctx.beginPath(); ctx.roundRect(b.x, b.y, b.w, b.h, 9); ctx.fill(); ctx.stroke();
+    ctx.textAlign = 'left'; ctx.fillStyle = DAY ? '#1d1d1f' : '#fff'; ctx.fillText(a1, b.x + 9, b.y + h / 2 + .5); ctx.fillStyle = DAY ? '#c2410c' : '#FF9a55'; ctx.fillText(a2, b.x + 9 + w1, b.y + h / 2 + .5); }
 }
 const exPick = (x, y) => exHits.find(h => x >= h.x && x <= h.x + h.w && y >= h.y && y <= h.y + h.h);
 
@@ -1769,7 +1810,11 @@ pbody.addEventListener('pointerover',e=>{const b=e.target.closest('[data-story]'
 pbody.addEventListener('pointerleave',()=>{arcHover=null;});
 pbody.addEventListener('change', e => { const t = e.target.closest('[data-topic]'); if (t) setTopic(t.dataset.c, t.dataset.topic, t.checked); });
 let newsCat = '';
+const SAVED = new Set((() => { try { return JSON.parse(localStorage.getItem('inv-saved-articles') || '[]'); } catch { return []; } })());
 pbody.addEventListener('click', e => {
+  const sv = e.target.closest('[data-nd-save]'); if (sv) { const id = sv.dataset.ndSave; SAVED.has(id) ? SAVED.delete(id) : SAVED.add(id); try { localStorage.setItem('inv-saved-articles', JSON.stringify([...SAVED])); } catch {} render(); return; }
+  const tp = e.target.closest('[data-nd-topic]'); if (tp) { newsCat = tp.dataset.ndTopic; panelTab = 'top'; render(); return; }
+  if (e.target.closest('[data-nb-filters]')) { openFilters(); return; }
   const nd = e.target.closest('[data-nd-cat]'); if (nd) { newsCat = nd.dataset.ndCat; render(); return; }
   const asset=e.target.closest('[data-asset]');if(asset){if(!selectAsset(asset.dataset.asset))window.InvPeek?.open(asset.dataset.asset);return;}  // assets open their globe view
   const b = e.target.closest('[data-story],[data-back],[data-country],[data-follow]'); if (!b) return; if (b.tagName !== 'LABEL') e.preventDefault();
@@ -1911,9 +1956,12 @@ pbody.addEventListener('keydown', e => {
 function variantPanel(list) {
   if (PANEL_TEMPLATE === 'a') return `<h2>Top articles</h2><div class="meta">${Math.min(8, list.length)} of ${list.length} articles</div><div class="compact-list">${list.slice(0, 8).map(compactItem).join('')}</div>${list.length > 8 ? '<a class="panel-more" href="../../news.html">See all news →</a>' : ''}${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
   if (PANEL_TEMPLATE === 'b') return `<h2>Top articles</h2><div class="strip-list" aria-label="Top articles">${list.slice(0, phone() ? 3 : 12).map(compactItem).join('')}</div>${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
-  const tabs = [['top', 'Top'], ...(!phone() ? [['movers', 'Movers']] : []), ['latest', 'Latest'], ['countries', 'Countries'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : [])];
+  const tabs = phone() && phoneView !== 'markets' ? [['top', 'Top'], ['latest', 'Latest'], ['moving', 'Market-moving'], ['countries', 'Countries'], ['topics', 'Topics'], ['saved', 'Saved']] : [['top', 'Top'], ...(!phone() ? [['movers', 'Movers']] : []), ['latest', 'Latest'], ['countries', 'Countries'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : [])];
   let items, count;
-  if (panelTab === 'upcoming') { items = upcomingPanel(); count = 0; }
+  if (phone() && phoneView === 'markets') { items = marketsPhonePanel(); count = 0; }
+  else if (panelTab === 'topics') { const cats = Object.entries(list.reduce((m, x) => (m[x.category] = (m[x.category] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]); count = 0;
+    items = cats.map(([k, n]) => `<button class="nd-topic" data-nd-topic="${esc(k)}"><span>${esc(CAT[k] || k)}</span><b>${n}</b></button>`).join(''); }
+  else if (panelTab === 'upcoming') { items = upcomingPanel(); count = 0; }
   else if (panelTab === 'markets') { items = marketsPanel(); count = 0; }
   else if (panelTab === 'movers') {
     const sp = (v, c) => { if (!v || v.length < 2) return ''; const lo = Math.min(...v), hi = Math.max(...v), r = hi - lo || 1; return `<svg viewBox="0 0 58 20" preserveAspectRatio="none"><path d="${v.map((y, i) => (i ? 'L' : 'M') + (i / (v.length - 1) * 58).toFixed(1) + ' ' + (18 - (y - lo) / r * 16).toFixed(1)).join('')}" fill="none" stroke="${c}" stroke-width="1.8" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>`; };
@@ -1924,21 +1972,23 @@ function variantPanel(list) {
     count = countries.length;
     items = countries.slice(0, panelExpanded ? countries.length : 3).map(([name, n]) => `<button class="compact-country" data-country="${esc(name)}">${flag(name)}<span>${esc(nm(name))}</span><small>${n} ${n === 1 ? 'article' : 'articles'}</small></button>`).join('');
   } else {
-    const sorted = panelTab === 'latest' ? [...list].sort((a,b) => b.t-a.t) : F.region === 'global' ? regionMix(list) : list;
+    const base0 = panelTab === 'moving' ? list.filter(x => x.market_moving) : panelTab === 'saved' ? list.filter(x => SAVED.has(x.id)) : list;
+    const sorted = panelTab === 'latest' || panelTab === 'saved' ? [...base0].sort((a,b) => b.t-a.t) : F.region === 'global' ? regionMix(base0) : base0;
     if (phone()) { // News D: photo lead, topic chips with counts, list with thumbnails (owner pick D)
       const cats = Object.entries(sorted.reduce((m, x) => (m[x.category] = (m[x.category] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]);
       const pool = newsCat ? sorted.filter(x => x.category === newsCat) : sorted, hs = pool.find(x => x.image && x.image.file), rest = hs ? pool.filter(x => x !== hs) : pool;
       count = pool.length;
       const chips = `<div class="nd-chips" role="group" aria-label="Topics"><button type="button" data-nd-cat="" aria-pressed="${!newsCat}">All <b>${sorted.length}</b></button>${cats.map(([k, n]) => `<button type="button" data-nd-cat="${esc(k)}" aria-pressed="${newsCat === k}">${esc(CAT[k] || k)} <b>${n}</b></button>`).join('')}</div>`;
-      const ndItem = x => { const im = x.image && x.image.file, src = x.source && x.source.name || ''; return `<button class="nd-item" data-story="${esc(x.id)}"><span class="nd-tx"><span class="nd-m"><span class="nd-c">${esc(x.flag ? FLAG[x.flag] : (CAT[x.category] || 'News'))}</span>${esc(src)}${src ? ' · ' : ''}${ago(x.t)}</span><span class="nd-h">${esc(x.headline)}</span></span>${im ? `<img class="nd-img" src="${esc(im)}" alt="" loading="lazy">` : ''}</button>`; };
+      const ndItem = x => { const im = x.image && x.image.file, src = x.source && x.source.name || ''; return `<div class="nd-row"><button class="nd-item" data-story="${esc(x.id)}"><span class="nd-tx"><span class="nd-m"><span class="nd-c">${esc(x.flag ? FLAG[x.flag] : (CAT[x.category] || 'News'))}</span>${esc(src)}${src ? ' · ' : ''}${ago(x.t)}</span><span class="nd-h">${esc(x.headline)}</span></span>${im ? `<img class="nd-img" src="${esc(im)}" alt="" loading="lazy">` : ''}</button><button type="button" class="nd-save" data-nd-save="${esc(x.id)}" aria-pressed="${SAVED.has(x.id)}" aria-label="${SAVED.has(x.id) ? 'Remove from saved' : 'Save article'}">${SAVED.has(x.id) ? '★' : '☆'}</button></div>`; };
       items = (hs ? `<button class="nd-hero" data-story="${esc(hs.id)}" style="background-image:url('${esc(hs.image.file)}')"><span class="nd-hm"><span class="nd-c">${esc(CAT[hs.category] || 'News')}</span>${esc(hs.source && hs.source.name || '')} · ${ago(hs.t)}</span><span class="nd-hh">${esc(hs.headline)}</span></button>` : '') + chips + rest.slice(0, panelExpanded ? rest.length : 20).map(ndItem).join(''); }
     else {
     const hs = panelTab === 'top' && sorted.find(x => x.image && x.image.file), rest = hs ? sorted.filter(x => x !== hs) : sorted;
     count = sorted.length; items = (hs ? `<button class="panel-hero" data-story="${esc(hs.id)}" style="background-image:url('${esc(hs.image.file)}')"><small>${esc(CAT[hs.category] || 'News')} · ${ago(hs.t)}</small><span>${esc(hs.headline)}</span></button>` : '') + rest.slice(0, panelExpanded ? rest.length : 3).map(compactItem).join('');
     }
   }
-  const rgName = regionDefinition(F.region)[1], head = phone() && (panelTab === 'top' || panelTab === 'latest') ? `<h2 class="news-count"><b>${list.length}</b> ${list.length === 1 ? 'article' : 'articles'} · ${F.win.toUpperCase()} · ${esc(rgName)}</h2>` : '<h2>Top articles</h2>';
-  return `${head}<div class="panel-tabs" role="tablist" aria-label="News view">${tabs.map(([key,label]) => `<button role="tab" id="panel-tab-${key}" aria-selected="${key === panelTab}" aria-controls="panel-contents" tabindex="${key === panelTab ? 0 : -1}" data-panel-tab="${key}">${label}</button>`).join('')}</div><div class="compact-list" id="panel-contents" role="tabpanel" aria-labelledby="panel-tab-${panelTab}">${items || '<div class="empty">No articles match these filters.</div>'}</div>${count > 3 ? `<button class="panel-more" data-panel-more aria-expanded="${panelExpanded}">${panelExpanded ? 'Show less' : 'Show more'}</button>` : ''}${noteHTML()}`;
+  const rgName = regionDefinition(F.region)[1], nCty = new Set(list.map(x => x.location.country)).size, nMov = list.filter(x => x.market_moving).length;
+  const head = phone() && phoneView === 'markets' ? '' : phone() ? `<div class="nb-head"><h2>News</h2><button type="button" class="nb-pill" data-nb-filters>${F.win.toUpperCase()} · ${esc(rgName)} ▾</button></div><div class="nb-stats"><div><b>${list.length}</b><span>${list.length === 1 ? 'article' : 'articles'}</span></div><div><b>${nCty}</b><span>${nCty === 1 ? 'country' : 'countries'}</span></div><div class="o"><b>${nMov}</b><span>moving markets</span></div></div>` : '<h2>Top articles</h2>';
+  return `${head}<div class="panel-tabs" role="tablist" aria-label="News view"${phone() && phoneView === 'markets' ? ' hidden' : ''}>${tabs.map(([key,label]) => `<button role="tab" id="panel-tab-${key}" aria-selected="${key === panelTab}" aria-controls="panel-contents" tabindex="${key === panelTab ? 0 : -1}" data-panel-tab="${key}">${label}</button>`).join('')}</div><div class="compact-list" id="panel-contents" role="tabpanel" aria-labelledby="panel-tab-${panelTab}">${items || '<div class="empty">No articles match these filters.</div>'}</div>${count > 3 ? `<button class="panel-more" data-panel-more aria-expanded="${panelExpanded}">${panelExpanded ? 'Show less' : 'Show more'}</button>` : ''}${noteHTML()}`;
 }
 pbody.addEventListener('click', e => {
   const tab = e.target.closest('[data-panel-tab]'), more = e.target.closest('[data-panel-more]');
@@ -2249,7 +2299,7 @@ function frame(t) {
   if (selCountry) countryShape(selCountry, 'rgba(255,122,26,.10)', 'rgba(255,122,26,.75)', 1.2);
   ctx.restore();
 
-  if (MARKET.on) { drawMarketMode(); ctx.restore(); requestAnimationFrame(frame); return; }
+  if (MARKET.on) { drawMarketMode(); drawMarketsOverlay(t); ctx.restore(); requestAnimationFrame(frame); return; }
 
   // connections (only for the article you're looking at)
   const focus = impactFocus;
@@ -2410,7 +2460,7 @@ function peekUpdate() {
 $('peek').onclick = e => { if(performance.now()-peekDraggedAt<400)return; if($('peek').classList.contains('minimized')){$('peek').classList.remove('minimized');return;} const c = e.target.closest('[data-story]'), s = byId[c ? c.dataset.story : $('peek').dataset.story]; if (s) openStory(s); else if (!c) openFilters(); };
 function dockUpdate() {
   for (const b of $('dock').querySelectorAll('button')) b.dataset.v === phoneView ? b.setAttribute('aria-current', 'page') : b.removeAttribute('aria-current');
-  const h = $('nav-grab'); h.hidden = EMBED || !phone() || phoneView === 'globe' || (phoneView === 'news' && sheetState !== 'closed');
+  const h = $('nav-grab'); h.hidden = EMBED || !phone() || phoneView === 'globe' || sheetState !== 'closed';
   h.setAttribute('aria-label', `${sheetState === 'closed' ? 'Open' : 'Close'} ${phoneView === 'markets' ? 'Markets' : 'News'} panel`);
   h.setAttribute('aria-expanded', String(sheetState !== 'closed'));
 }
@@ -2430,7 +2480,7 @@ $('dock').onclick = e => {
   setSheet('closed');
   $('peek').hidden = phoneView !== 'globe'; dockUpdate();
   // News: one tap opens the article list straight away (no empty globe + lone handle)
-  if (phoneView === 'news') toggleNavSheet();
+  if (phoneView === 'news' || phoneView === 'markets') toggleNavSheet();
 };
 let navDraggedAt = -1000;
 $('nav-grab').onclick = () => {if(performance.now()-navDraggedAt>400) toggleNavSheet();};
