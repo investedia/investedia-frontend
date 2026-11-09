@@ -1561,7 +1561,7 @@ window.placeLoc = () => { const z = document.querySelector('.zoom'), b = $('zloc
   b.style.top = (r.bottom + 10) + 'px'; b.style.bottom = 'auto'; b.style.left = r.left + (r.width - h) / 2 + 'px'; b.style.right = 'auto'; };
 addEventListener('resize', () => placeLoc()); setTimeout(() => placeLoc(), 0); setTimeout(() => placeLoc(), 800);
 function drawUserLoc(t) { if (!userLoc) return; const q = proj(userLoc.la * rad, userLoc.lo * rad); if (q[2] <= 0) return;
-  const st = new URLSearchParams(location.search).get('ud') || 'a', k = ((t - userLoc.t0) % 2200) / 2200, x = q[0], y = q[1], fade = Math.min(1, q[2] * 3);
+  const st = 'b', k = ((t - userLoc.t0) % 2200) / 2200, x = q[0], y = q[1], fade = Math.min(1, q[2] * 3);
   ctx.save(); ctx.globalAlpha = fade;
   if (st === 'a') { // A · Halo: soft breathing glow, white ring, solid orange core (Apple-Maps-like)
     const br = .5 + .5 * Math.sin(t / 700), g = ctx.createRadialGradient(x, y, 0, x, y, 34);
