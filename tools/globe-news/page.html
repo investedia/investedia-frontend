@@ -421,6 +421,12 @@ h1 span{color:var(--fg-3)}
   .eyebrow,.meta,.compact-item time,.note,.lens-meta,.lens-meta time,.lens-asset,.pk-e,.pk-e span,.fs-lbl,.mk-eyebrow,.mk-row span,.lens-eyebrow,.pk-m{font-size:14px}.compact-headline{font-size:16px}.lens-item strong{font-size:16px}
   .peek{display:grid;gap:6px;position:fixed;left:12px;right:12px;bottom:calc(var(--dock-h,78px) + 12px + env(safe-area-inset-bottom));z-index:18;text-align:left;padding:14px;border-radius:22px;background:rgba(24,24,27,.96);border:1px solid rgba(255,255,255,.16);box-shadow:0 12px 40px rgba(0,0,0,.5)}
   .peek[hidden]{display:none}
+  .peek{left:0;right:0;padding:0;background:none;border:0;box-shadow:none;gap:8px}
+  .pk-row{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 12px;scroll-padding:0 12px;-webkit-overflow-scrolling:touch}.pk-row::-webkit-scrollbar{display:none}
+  .pk-card{flex:0 0 auto;width:calc(100vw - 56px);max-width:420px;scroll-snap-align:start;display:grid;gap:6px;align-content:start;text-align:left;padding:14px;border-radius:22px;background:rgba(24,24,27,.96);border:1px solid rgba(255,255,255,.16);box-shadow:0 12px 40px rgba(0,0,0,.5);color:inherit;font:inherit;cursor:pointer}
+  .pk-card:only-child{width:100%;max-width:none}
+  .pk-dots{display:flex;justify-content:center;gap:6px}.pk-dots i{width:6px;height:6px;border-radius:3px;background:rgba(255,255,255,.3);transition:width .2s}.pk-dots i.on{width:18px;background:#FF7A1A}
+  .peek.minimized .pk-dots{display:none}.peek.minimized .pk-card{padding:8px 14px}
   body:has(#inv-consent-panel:not([hidden])) .peek{visibility:hidden}
   .pk-e{font:600 14px 'Geist Mono',ui-monospace,monospace;color:#ff9a4d;text-transform:uppercase;letter-spacing:.03em}.pk-e span{font:500 14px Inter,system-ui,sans-serif;color:var(--fg-3);text-transform:none;margin-left:6px;letter-spacing:0}
   .pk-h{font-size:17px;line-height:1.3;font-weight:650;color:#fff}.pk-m{font-size:14px;color:var(--fg-2)}
@@ -543,6 +549,7 @@ html[data-theme=light] :is(.glass,.chips,.regions,.search,.res,.dd-menu,.fsheet,
   background:var(--panel);color:var(--fg);border-color:var(--line);box-shadow:0 12px 40px rgba(36,58,100,.1)}
 html[data-theme=light] :is(.panel,.fsheet,.market-panel){background:var(--panel)!important;border-color:var(--line)}
 html[data-theme=light] :is(.panel .compact-list,.panel .list,.panel .panel-list,.panel .gm-companies,.panel .gm-kpis,.market-kpis>div){background:rgba(255,255,255,.6)}
+html[data-theme=light] .pk-card{background:rgba(255,255,255,.92);border-color:rgba(0,0,0,.1);box-shadow:0 10px 30px rgba(15,23,42,.1)}html[data-theme=light] .pk-dots i{background:rgba(0,0,0,.2)}
 html[data-theme=light] :is(.pk-h,.gm-row:hover .gm-name,.lens-item:hover strong,.mk-toggle:hover){color:var(--fg)}
 html[data-theme=light] :is(.chip[aria-pressed=true],.reg[aria-pressed=true],.win[aria-pressed=true],.dock button[aria-current=page],.mk-toggle[aria-pressed=true],.read,.fs-show){background:#1d1d1f;color:#fff;border-color:#1d1d1f}
 html[data-theme=light] :is(.ri:hover,.ri[aria-selected=true],.panel-tabs button[aria-selected=true],.zoom button:hover,.tl-play:hover,.item:hover,.item:focus-visible,.chain button:hover){background:rgba(36,58,100,.08);color:var(--fg)}
@@ -616,7 +623,7 @@ html[data-theme=light] :is(.panel .meta,.panel .lens-meta,.panel .lens-src,.pane
   <div class="fs-body"><div class="fs-lbl">Topic</div><div id="fs-cats"></div><div class="fs-lbl">Region</div><div id="fs-regions"></div><div class="fs-lbl">Time</div><div id="fs-time"></div><div class="fs-lbl">Layers</div><div id="fs-layers"></div><div id="fs-foot"></div></div>
   <button type="button" class="fs-show" id="fs-show">Show articles</button>
 </section>
-<button type="button" class="peek" id="peek" hidden></button>
+<div class="peek" id="peek" role="region" aria-label="Top articles" hidden></div>
 <button type="button" id="nav-grab" class="nav-grab" aria-label="Open News panel" aria-expanded="false" hidden></button>
 <nav class="dock" id="dock" aria-label="Views"><button type="button" data-v="globe" aria-current="page">Globe</button><button type="button" data-v="news">News</button><button type="button" data-v="markets">Markets</button></nav>
 <div class="zoom glass"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button></div>
@@ -2318,13 +2325,17 @@ function updateFiltersUI() {
 function peekUpdate() {
   const el = $('peek'); if (EMBED || !phone()) { el.hidden = true; return; }
   const show = phoneView === 'globe' && sheetState === 'closed' && view.k === 'top' && !!stories.length; el.hidden = !show; if (!stories.length) return;
-  const s = [...shown].sort(sortTop)[0];
+  const top5 = [...shown].sort(sortTop).slice(0, 5), s = top5[0];
   if (!s) { el.dataset.story = ''; el.innerHTML = '<span class="pk-h">No articles match these filters</span><span class="pk-m">Open Filters to widen the time window.</span>'; return; }
-  const a = lensAsset(s), src = s.source && s.source.name ? s.source.name : '';
+  // Swipeable top articles (owner pick A): one card per article, scroll-snap, dots show the position.
   el.dataset.story = s.id;
-  el.innerHTML = `<span class="pk-e"><time datetime="${esc(s.published_at || '')}">${ago(s.t)}</time>${src ? `<span>· ${esc(src)}</span>` : ''}</span><span class="pk-h">${esc(s.headline)}</span>${a ? `<span class="pk-a"><span>${esc(a.n)}</span>${pctPill(a.d)}</span>` : ''}`;
+  const card = x => { const a = lensAsset(x), src = x.source && x.source.name ? x.source.name : '';
+    return `<button type="button" class="pk-card" data-story="${esc(x.id)}"><span class="pk-e"><time datetime="${esc(x.published_at || '')}">${ago(x.t)}</time>${src ? `<span>· ${esc(src)}</span>` : ''}</span><span class="pk-h">${esc(x.headline)}</span>${a ? `<span class="pk-a"><span>${esc(a.n)}</span>${pctPill(a.d)}</span>` : ''}</button>`; };
+  el.innerHTML = `<div class="pk-row">${top5.map(card).join('')}</div>${top5.length > 1 ? `<div class="pk-dots" aria-hidden="true">${top5.map((_, i) => `<i${i ? '' : ' class="on"'}></i>`).join('')}</div>` : ''}`;
+  const row = el.querySelector('.pk-row'), dots = [...el.querySelectorAll('.pk-dots i')];
+  row.onscroll = () => { const w = row.firstChild ? row.firstChild.offsetWidth + 10 : 1, i = Math.round(row.scrollLeft / w); dots.forEach((d, j) => d.classList.toggle('on', j === i)); if (top5[i]) el.dataset.story = top5[i].id; };
 }
-$('peek').onclick = () => { if(performance.now()-peekDraggedAt<400)return; if($('peek').classList.contains('minimized')){$('peek').classList.remove('minimized');return;} const s = byId[$('peek').dataset.story]; if (s) openStory(s); else openFilters(); };
+$('peek').onclick = e => { if(performance.now()-peekDraggedAt<400)return; if($('peek').classList.contains('minimized')){$('peek').classList.remove('minimized');return;} const c = e.target.closest('[data-story]'), s = byId[c ? c.dataset.story : $('peek').dataset.story]; if (s) openStory(s); else if (!c) openFilters(); };
 function dockUpdate() {
   for (const b of $('dock').querySelectorAll('button')) b.dataset.v === phoneView ? b.setAttribute('aria-current', 'page') : b.removeAttribute('aria-current');
   const h = $('nav-grab'); h.hidden = EMBED || !phone() || phoneView === 'globe';
