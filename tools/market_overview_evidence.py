@@ -60,8 +60,15 @@ def physical_location(article):
         return {'status': 'supported', 'granularity': 'country', 'basis': 'country named in source headline; exact place unverified', 'evidence': [country], 'recorded': loc}
     return {'status': 'unverifiable', 'basis': 'no source text names the recorded place; not inferred', 'evidence': [], 'recorded': loc}
 
+# Owner decision 9 Nov 2026: the limited Market Overview preview is relevance-only.
+# A headline naming a country shows what an article is about, not where an event
+# physically happened, so no physical claim is accepted from headlines alone.
+GEO_FEATURES_ENABLED = False
+
 def geo_allowed(article, granularity='country'):
-    """Physical markers / cross-border lines only with supported location.
-    granularity='place' requires the exact place in source text."""
+    """Physical markers / cross-border lines. Disabled until verified source-text
+    location evidence exists (article bodies are not stored)."""
+    if not GEO_FEATURES_ENABLED:
+        return False
     r = physical_location(article)
     return r['status'] == 'supported' and (granularity == 'country' or r['granularity'] == 'place')

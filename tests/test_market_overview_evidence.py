@@ -24,6 +24,9 @@ class Physical(unittest.TestCase):
         r = physical_location(art('Nigeria pushes exports'))
         self.assertEqual((r['status'], r['granularity']), ('supported', 'country'))
         self.assertFalse(geo_allowed(art('Nigeria pushes exports'), 'place'))
+    def test_geo_features_disabled_in_relevance_only_preview(self):
+        self.assertFalse(geo_allowed(art('Lagos port congestion worsens'), 'place'))
+        self.assertFalse(geo_allowed(art('Nigeria pushes exports')))
     def test_no_inference_from_hq_listing_or_dateline(self):
         # Recorded place (e.g. issuer HQ / dateline) absent from text -> unverifiable.
         a = art('MTN posts record data revenue', place='Johannesburg', country='South Africa')
@@ -51,10 +54,10 @@ class Builder(unittest.TestCase):
         cls.news = read('assets/globe/news-48h.json'); cls.conn = read('assets/globe/connections.json')
         cls.out = cls.m.project(cls.news, read('data/exchanges.json'), cls.conn, Registry(), read('assets/globe/iso.json'))
         cls.by = {a['id']: a for a in cls.news['stories']}
-    def test_connections_only_with_supported_origin(self):
-        lines = {c['id']: c for c in self.conn['connections']}
+    def test_no_connections_or_labels_in_relevance_only_preview(self):
         for c in self.out['countries'].values():
-            for lid in c['connections']: self.assertTrue(geo_allowed(self.by[lines[lid]['event']]))
+            self.assertEqual(c['connections'], [])
+            self.assertEqual(c['labels'], [])
     def test_developments_carry_both_statuses(self):
         for c in self.out['countries'].values():
             for d in c['developments']:
