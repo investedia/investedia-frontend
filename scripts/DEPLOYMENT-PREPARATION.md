@@ -2,7 +2,7 @@
 
 Nothing is deployed or switched on by this branch. The existing legal owner-fact gate is still unresolved; build success is not publication approval.
 
-Use a Cloudflare Pages project connected to `investedia/investedia-frontend`, production branch `main`, root directory `/`, output directory `docs` only. The checked-in `wrangler.toml` declares that output directory. Do not publish the repository root, environment files, tests, tooling, or the backend.
+The existing Cloudflare Pages project is `investedia`, connected to `investedia/investedia-frontend`, production branch `main`, with build command `python build.py` and output directory `docs`. Configure these settings in the Cloudflare dashboard; no root `wrangler.toml` is needed. Do not publish the repository root, environment files, tests, tooling, or the backend.
 
 Build from a clean checkout with Python 3.12:
 
