@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="assets/consent.css?v=5895172dc9">
+<script src="assets/consent.js?v=5895172dc9"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Investedia Dashboard</title>
+<meta name="description" content="Your premium market dashboard: watchlists, pro charts, global sessions, movers and AI insights.">
+<meta property="og:title" content="Investedia Dashboard">
+<meta property="og:description" content="Your premium market dashboard: watchlists, pro charts, global sessions, movers and AI insights.">
+<meta name="theme-color" content="#0A0A0B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Investedia">
+<meta property="og:url" content="https://investedia.com/dashboard.html">
+<meta property="og:image" content="https://investedia.com/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Investedia: invest with clarity, see the world move">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Investedia Dashboard">
+<meta name="twitter:description" content="Your premium market dashboard: watchlists, pro charts, global sessions, movers and AI insights.">
+<meta name="twitter:image" content="https://investedia.com/assets/og-default.png">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/app.css?v=5895172dc9">
+<link rel="stylesheet" href="assets/skin.css?v=5895172dc9">
+<link rel="apple-touch-icon" href="assets/app/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Investedia">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash-1320x2868.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash-1290x2796.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash-1206x2622.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash-1179x2556.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash-1284x2778.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash-1170x2532.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash-1125x2436.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash-1242x2688.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/app/splash-828x1792.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/app/splash-750x1334.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/app/splash-640x1136.png">
+</head>
+<body data-page="dashboard">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<script src="assets/quotes.js"></script>
+<script src="assets/news.js"></script>
+<script src="assets/mock.js?v=5895172dc9"></script>
+<link rel="stylesheet" href="assets/news-menu.css?v=5895172dc9">
+<script src="assets/runtime-config.js?v=5895172dc9"></script>
+<script src="assets/live-config.js?v=5895172dc9"></script>
+<script src="assets/live-data.js?v=5895172dc9" defer></script>
+<script src="assets/prefs.js?v=5895172dc9"></script>
+<script src="assets/peek.js?v=5895172dc9"></script>
+<script src="assets/sectors.js?v=5895172dc9"></script>
+<script src="assets/news-menu.js?v=5895172dc9"></script>
+<script src="assets/locale.js?v=5895172dc9"></script>
+<script src="assets/ui.js?v=5895172dc9"></script>
+<script src="assets/news-alerts.js?v=5895172dc9" defer></script>
+<main class="wrap" id="main-content" tabindex="-1">
+<div class="dash-top">
+  <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+    <h1 style="font-size:24px">Dashboard</h1>
+    <div class="tabs" id="ws"><button class="tab" data-tab="main" aria-selected="true">My markets</button><button class="tab" data-tab="crypto">Crypto desk</button><button class="tab" data-tab="macro">Macro</button></div>
+  </div>
+  <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap"><span class="demo" data-asof>Delayed data</span><button class="btn btn-ghost btn-sm" type="button" id="customize"><span data-icon="heat"></span>Customize</button></div>
+</div>
+<div class="sessions" id="sessions"></div>
+
+<div class="dash">
+  <!-- left: watchlist -->
+  <aside class="dash-col">
+    <div class="card wl">
+      <div class="card-head"><h3>Watchlist</h3><span class="meta" id="wl-count"></span></div>
+      <div style="padding:10px 12px;border-bottom:1px solid var(--line-soft)"><div class="ask" style="padding:0 4px 0 10px;border-radius:8px"><span class="dim" data-icon="search"></span><input id="wl-q" placeholder="Filter or add symbol…" aria-label="Filter watchlist" style="height:34px;font-size:13px"></div></div>
+      <div class="wl-head"><span>Symbol</span><span>Last</span><span>Chg</span></div>
+      <div id="wl-rows" role="listbox" aria-label="Watchlist"></div>
+      <div class="wl-foot"><span class="dim">↑ ↓ to move</span><button class="link" type="button" style="background:none;border:0" data-search>+ Add symbol</button></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><h3>Alerts</h3><span class="tag acc">3 active</span></div>
+      <div id="alerts"></div>
+    </div>
+  </aside>
+
+  <!-- center: chart -->
+  <section class="dash-col" style="min-width:0">
+    <div class="card">
+      <div class="chart-head">
+        <div class="ident" id="c-ident"></div>
+        <div class="ohlc mono" id="ohlc"></div>
+      </div>
+      <div class="toolbar">
+        <div class="range" id="tf"></div>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+          <div class="seg" id="ctype" style="width:auto"><button type="button" data-v="candles" class="on">Candles</button><button type="button" data-v="line">Line</button><button type="button" data-v="area">Area</button></div>
+          <div style="display:flex;gap:6px" id="ind"><button class="chip on" type="button" data-v="20"><i class="dot-l" style="background:#38BDF8"></i>MA 20</button><button class="chip" type="button" data-v="50"><i class="dot-l" style="background:#A78BFA"></i>MA 50</button><button class="chip on" type="button" data-v="vol">Volume</button></div>
+          <select class="select" id="palette" aria-label="Chart colours" style="height:30px;width:auto;font-size:12.5px"><option value="classic">Green / red</option><option value="blue">Blue / orange</option><option value="mono">Monochrome</option><option value="cb">Colour-blind safe</option></select>
+        </div>
+      </div>
+      <div style="padding:6px 6px 2px 14px"><div id="pro"></div></div>
+      <div class="stats-row" style="border-top:1px solid var(--line);grid-template-columns:repeat(auto-fit,minmax(110px,1fr))" id="c-stats"></div>
+    </div>
+    <div class="grid g-2" style="margin-top:16px">
+      <div class="card ai-glow"><div class="card-head"><span class="ai-badge"><span data-icon="sparkle"></span>AI insight</span><a class="link" href="ai-insights.html">Full AI brief</a></div><div class="card-pad" id="c-ai"></div></div>
+      <div class="card"><div class="card-head"><h3 id="c-news-t">News</h3><a class="link" id="c-open" href="asset.html">Full page</a></div><div id="c-news"></div></div>
+    </div>
+  </section>
+
+  <!-- right: market panels -->
+  <aside class="dash-col">
+    <div class="card"><div class="card-head"><h3>Markets</h3><div class="seg" id="mk" style="width:auto"><button type="button" data-v="indices" class="on">Indices</button><button type="button" data-v="crypto">Crypto</button><button type="button" data-v="fx">FX</button></div></div><div id="mk-rows"></div></div>
+    <div class="card"><div class="card-head"><h3>Movers</h3><div class="seg" id="mv" style="width:auto"><button type="button" data-v="up" class="on">Gainers</button><button type="button" data-v="down">Losers</button></div></div><div id="mv-rows"></div></div>
+    <div class="card"><div class="card-head"><h3>Next events</h3><a class="link" href="calendar.html">Calendar</a></div><div id="ev"></div></div>
+    <div class="card card-pad pro-card"><span class="ai-badge"><span data-icon="bell"></span>Daily brief</span><h3 style="margin:10px 0 6px">Get the market brief by email</h3><p class="muted" style="margin:0 0 14px;font-size:13.5px">The moves that matter, every morning before the open. Free.</p><button class="btn btn-primary btn-sm" type="button" data-subscribe>Subscribe</button></div>
+  </aside>
+</div>
+
+<div class="cust" id="cust" hidden>
+  <div class="card card-pad" style="max-width:420px;width:100%;display:grid;gap:12px">
+    <div style="display:flex;justify-content:space-between;align-items:center"><h3>Customize dashboard</h3><button class="icon-btn" type="button" id="cust-x" aria-label="Close"><span data-icon="x"></span></button></div>
+    <p class="muted" style="margin:0;font-size:13.5px">Choose which panels appear. Layouts are saved to your account once accounts are live.</p>
+    <div id="cust-list" style="display:grid;gap:4px"></div>
+    <button class="btn btn-primary" type="button" id="cust-done">Done</button>
+  </div>
+</div>
+<script>
+const { icon, fmtP, fmtC, cls, cap, logo, href, spark, colorFor, row, impact, tabs, proChart } = UI, M = MOCK;
+const LISTS = { main: ['NVDA', 'AAPL', 'MSFT', 'TSLA', 'AMZN', 'META', 'SPX', 'BTC', 'XAU', 'EURUSD'], crypto: ['BTC', 'ETH', 'SOL', 'XRP', 'BNB', 'DOGE', 'AVAX', 'LINK', 'IBIT'], macro: ['SPX', 'NDX', 'DAX', 'US10Y', 'US02Y', 'DXY', 'EURUSD', 'USDJPY', 'XAU', 'WTI'] };
+try { const saved = JSON.parse(localStorage.getItem('inv-lists') || 'null'); if (saved) Object.assign(LISTS, saved); } catch {}
+const saveLists = () => { try { localStorage.setItem('inv-lists', JSON.stringify(LISTS)); } catch {} };
+let list = 'main', sel = new URLSearchParams(location.search).get('s') || 'NVDA', tf = '6M', ctype = 'candles', ind = new Set(['20', 'vol']);
+if (!M.bySym[sel]) sel = 'NVDA';
+
+// world sessions (real local times, regular hours, holidays not included)
+const SES = [['New York', 'America/New_York', 570, 960], ['São Paulo', 'America/Sao_Paulo', 600, 1020], ['London', 'Europe/London', 480, 990], ['Paris', 'Europe/Paris', 540, 1050], ['Dubai', 'Asia/Dubai', 600, 900], ['Mumbai', 'Asia/Kolkata', 555, 930], ['Hong Kong', 'Asia/Hong_Kong', 570, 960], ['Tokyo', 'Asia/Tokyo', 540, 930], ['Sydney', 'Australia/Sydney', 600, 960]];
+function sessions() {
+  const now = new Date();
+  document.getElementById('sessions').innerHTML = SES.map(([n, tz, o, c]) => {
+    const p = new Intl.DateTimeFormat('en-GB', { timeZone: tz, weekday: 'short', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(now), g = t => p.find(x => x.type === t).value;
+    const m = +g('hour') * 60 + +g('minute'), wk = !['Sat', 'Sun'].includes(g('weekday')), open = wk && m >= o && m < c;
+    const left = open ? c - m : wk && m < o ? o - m : null, d = left == null ? '' : left >= 60 ? `${Math.floor(left / 60)}h ${left % 60}m` : `${left}m`;
+    return `<div class="ses ${open ? 'open' : ''}" title="Regular trading hours; public holidays not included"><i></i><b>${n}</b><span class="mono">${g('hour')}:${g('minute')}</span><small>${open ? 'closes ' + d : left != null ? 'opens ' + d : 'closed'}</small></div>`;
+  }).join('') + `<div class="ses open"><i></i><b>Crypto</b><span class="mono">24/7</span><small>always open</small></div>`;
+}
+sessions(); setInterval(sessions, 30000);
+
+// watchlist
+function renderList() {
+  const q = document.getElementById('wl-q').value.trim().toLowerCase();
+  const syms = LISTS[list].filter(s => !q || s.toLowerCase().includes(q) || M.bySym[s].n.toLowerCase().includes(q));
+  document.getElementById('wl-count').textContent = LISTS[list].length + ' symbols';
+  document.getElementById('wl-rows').innerHTML = syms.map(s => { const a = M.bySym[s]; return `<button type="button" role="option" class="wl-row" aria-selected="${s === sel}" data-s="${s}"><span class="ident">${logo(a)}<span><b>${a.c === 'indices' ? a.n : a.s}</b><small>${a.c === 'indices' ? a.s : a.n}</small></span></span><span class="num" data-lp="${a.s}">${fmtP(a)}</span><span class="num ${cls(a.d)}" data-lc="${a.s}">${fmtC(a.d, a.y)}</span>${spark(a.spark.slice(-24), colorFor(a.d), 260, 18, false)}</button>`; }).join('') || `<p class="muted" style="padding:14px;margin:0;font-size:13px">No match. Press Enter to search all markets.</p>`;
+  document.querySelectorAll('.wl-row').forEach(b => b.onclick = () => select(b.dataset.s));
+}
+document.getElementById('wl-q').oninput = renderList;
+document.getElementById('wl-q').onkeydown = e => { if (e.key === 'Enter') { const hit = M.assets.find(a => a.s.toLowerCase() === e.target.value.trim().toLowerCase() || a.n.toLowerCase().startsWith(e.target.value.trim().toLowerCase())); if (hit) { if (!LISTS[list].includes(hit.s)) { LISTS[list].unshift(hit.s); saveLists(); } e.target.value = ''; select(hit.s); } } };
+document.addEventListener('keydown', e => {
+  if (!['ArrowDown', 'ArrowUp'].includes(e.key) || e.target.matches('input,select,textarea')) return;
+  const l = LISTS[list], i = l.indexOf(sel); if (i < 0) return; e.preventDefault();
+  select(l[(i + (e.key === 'ArrowDown' ? 1 : -1) + l.length) % l.length]);
+});
+tabs(document.getElementById('ws'), k => { list = k; if (!LISTS[k].includes(sel)) sel = LISTS[k][0]; select(sel); });
+
+// chart
+const TF = { '1D': [78, .0025, ['09:30', '12:00', '14:00', '16:00']], '5D': [65, .005, ['Fri', 'Mon', 'Tue', 'Wed', 'Thu']], '1M': [22, .014, ['16 Sep', '1 Oct', '16 Oct']], '6M': [126, .015, ['May', 'Jul', 'Sep', 'Oct']], '1Y': [180, .016, ['Nov', 'Feb', 'May', 'Aug', 'Oct']], '5Y': [130, .04, ['2022', '2023', '2024', '2025', '2026']] };
+document.getElementById('tf').innerHTML = Object.keys(TF).map(k => `<button aria-pressed="${k === tf}">${k}</button>`).join('');
+document.querySelectorAll('#tf button').forEach(b => b.onclick = () => { document.querySelectorAll('#tf button').forEach(x => x.setAttribute('aria-pressed', x === b)); tf = b.textContent; chart(); });
+document.querySelectorAll('#ctype button').forEach(b => b.onclick = () => { document.querySelectorAll('#ctype button').forEach(x => x.classList.toggle('on', x === b)); ctype = b.dataset.v; chart(); });
+document.querySelectorAll('#ind .chip').forEach(b => b.onclick = () => { b.classList.toggle('on'); ind.has(b.dataset.v) ? ind.delete(b.dataset.v) : ind.add(b.dataset.v); chart(); });
+let bars = [];
+const PAL = { classic: ['#22C55E', '#F04444', UI.acc()], blue: ['#3B82F6', UI.acc(), '#3B82F6'], mono: ['#E4E4E7', '#71717A', '#E4E4E7'], cb: ['#0EA5E9', '#F59E0B', '#0EA5E9'] };
+let pal = 'classic'; try { pal = localStorage.getItem('inv-pal') || 'classic'; } catch {}
+const palSel = document.getElementById('palette'); palSel.value = pal; palSel.onchange = e => { pal = e.target.value; try { localStorage.setItem('inv-pal', pal); } catch {} chart(); };
+const fmtV = a => v => a.y ? v.toFixed(3) : v >= 1000 ? v.toLocaleString('en-US', { maximumFractionDigits: 0 }) : v >= 10 ? v.toFixed(2) : v.toFixed(4);
+function ohlcText(a, b) { const f = fmtV(a); const up = b.c >= b.o; return `<span>O <b>${f(b.o)}</b></span><span>H <b>${f(b.h)}</b></span><span>L <b>${f(b.l)}</b></span><span>C <b class="${up ? 'up' : 'down'}">${f(b.c)}</b></span>`; }
+let cseq = 0;
+async function chart() {
+  const my = ++cseq, a = M.bySym[sel], [n, vol, fake] = TF[tf], ch = tf === '1D' ? a.d : tf === '5D' ? a.w : tf === '5Y' ? 90 : 6 + a.w * 2;
+  const real = await M.history(a.s, tf);
+  if (my !== cseq) return;
+  bars = real ? real.bars : M.ohlc(a.s + tf, n, a.p, a.stable ? 0 : ch, a.stable ? .0005 : vol);
+  const labels = real ? real.labels : fake;
+  document.getElementById('ohlc').innerHTML = ohlcText(a, bars[bars.length - 1]);
+  proChart(document.getElementById('pro'), bars, { type: ctype, height: 440, labels, sma: [...ind].filter(x => x !== 'vol').map(Number), volume: ind.has('vol'), fmt: fmtV(a), upCol: PAL[pal][0], downCol: PAL[pal][1], lineCol: PAL[pal][2], onHover: b => document.getElementById('ohlc').innerHTML = ohlcText(a, b || bars[bars.length - 1]) });
+}
+function select(s) {
+  sel = s; const a = M.bySym[s], pf = (window.PROFILES || {})[s];
+  history.replaceState(null, '', '?s=' + s);
+  renderList();
+  document.getElementById('c-ident').innerHTML = `${logo(a, 'lg')}<span><b style="font-size:17px">${a.n}</b><small>${a.s} · ${a.x}</small></span><span style="margin-left:14px"><span class="num" style="font-size:24px;font-weight:500;display:block;line-height:1.1" data-lp="${a.s}">${fmtP(a)}</span><span class="num ${cls(a.d)}" data-lc="${a.s}" style="font-size:12.5px">${fmtC(a.d, a.y)} today</span></span><button class="star on" type="button" aria-label="In watchlist" style="margin-left:8px">${icon('star')}</button>`;
+  document.querySelector('#c-ident .star svg').setAttribute('fill', 'currentColor');
+  const P = a.p;
+  document.getElementById('c-stats').innerHTML = (a.c === 'stocks' ? [['Market cap', cap(a.m)], ['P/E', a.pe ? a.pe.toFixed(1) : '—'], ['Volume', a.vol], ['52W high', fmtP(a, P * 1.12)], ['52W low', fmtP(a, P * .62)], ['1 week', `<i style="font-style:normal" class="${cls(a.w)}">${fmtC(a.w)}</i>`]]
+    : [['Day high', fmtP(a, P * 1.006)], ['Day low', fmtP(a, P * .992)], ['1 week', `<i style="font-style:normal" class="${cls(a.w)}">${fmtC(a.w, a.y)}</i>`], ['52W high', fmtP(a, P * 1.1)], ['52W low', fmtP(a, P * .7)], ['Asset class', M.categories.find(c => c.k === a.c).t]]).map(([k, v]) => `<div class="stat"><span>${k}</span><b>${v}</b></div>`).join('');
+  M.details(s).then(h => { if (!h || sel !== s) return; document.querySelectorAll('#c-stats .stat').forEach(el => { const k = el.firstElementChild.textContent; if (k === '52W high') el.lastElementChild.textContent = fmtP(a, h.hi52); if (k === '52W low') el.lastElementChild.textContent = fmtP(a, h.lo52); }); });
+  document.getElementById('c-ai').innerHTML = pf && pf.ai ? `<p style="margin:0 0 12px;color:#d4d4d8;font-size:14px">${pf.ai.why}</p><div style="display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:6px"><span class="muted">Sentiment</span><span class="${pf.ai.score >= 60 ? 'up' : pf.ai.score < 40 ? 'down' : 'muted'} num">${pf.ai.score}/100</span></div><div class="meter"><i style="width:${pf.ai.score}%;background:${pf.ai.score >= 60 ? 'var(--up)' : pf.ai.score < 40 ? 'var(--down)' : 'var(--fg-2)'}"></i></div><div class="scen" style="margin:14px 0 0"><div><span class="tag bull">Bull case</span><p>${pf.ai.bull}</p></div><div><span class="tag bear">Bear case</span><p>${pf.ai.bear}</p></div></div>`
+    : `<p class="muted" style="margin:0 0 12px;font-size:14px">${a.n} ${a.d >= 0 ? 'rose' : 'fell'} ${fmtC(a.d, a.y).replace(/^[+−]/, '')} today, ${Math.abs(a.d) > 2 ? 'a larger move than usual' : 'in line with its normal range'}. A full AI breakdown is available for featured assets in this preview.</p><a class="btn btn-ghost btn-sm" href="?s=NVDA">See an example</a>`;
+  document.getElementById('c-news-t').textContent = 'News · ' + a.s;
+  document.getElementById('c-open').href = href(a);
+  M.newsFor(s).then(list => sel === s && (document.getElementById('c-news').innerHTML = (list.length ? list : M.news).slice(0, 4).map(n => `<a class="news-item" ${UI.nhref(n)} style="padding:12px 16px"><div class="news-meta"><span class="accent" style="font-weight:600">${n.cat}</span><i></i><span>${n.time}</span></div><h3 style="font-size:13.5px">${n.t}</h3></a>`).join('')));
+  chart();
+}
+
+// right panels
+const MK = { indices: ['SPX', 'NDX', 'DJI', 'DAX', 'UKX', 'NKY', 'HSI'], crypto: ['BTC', 'ETH', 'SOL', 'XRP', 'BNB'], fx: ['EURUSD', 'GBPUSD', 'USDJPY', 'DXY', 'USDCHF'] };
+const compact = a => `<a class="arow arow-sm" href="?s=${a.s}"><span class="ident">${logo(a)}<span><b>${a.c === 'indices' ? a.n : a.s}</b></span></span><span class="num" data-lp="${a.s}">${fmtP(a)}</span><span class="num ${cls(a.d)}" data-lc="${a.s}" style="text-align:right">${fmtC(a.d, a.y)}</span></a>`;
+const seg = (id, fn) => document.querySelectorAll(`#${id} button`).forEach(b => b.onclick = () => { document.querySelectorAll(`#${id} button`).forEach(x => x.classList.toggle('on', x === b)); fn(b.dataset.v); });
+const mk = k => document.getElementById('mk-rows').innerHTML = MK[k].map(s => compact(M.bySym[s])).join('');
+seg('mk', mk); mk('indices');
+const st = M.assets.filter(a => a.c === 'stocks').sort((a, b) => b.d - a.d);
+const mv = k => document.getElementById('mv-rows').innerHTML = (k === 'up' ? st.slice(0, 5) : st.slice(-5).reverse()).map(compact).join('');
+seg('mv', mv); mv('up');
+document.querySelectorAll('#mk-rows, #mv-rows').forEach(el => el.addEventListener('click', e => { const l = e.target.closest('a'); if (l) { e.preventDefault(); const s = new URL(l.href).searchParams.get('s'); if (!LISTS[list].includes(s)) { LISTS[list].push(s); saveLists(); } select(s); } }));
+document.getElementById('ev').innerHTML = M.calendar.slice(0, 4).map(e => `<a class="arow arow-sm" href="calendar.html" style="grid-template-columns:52px 1fr auto"><span class="num muted">${e.time}</span><span style="font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${e.c} · ${e.e}</span>${impact(e.imp)}</a>`).join('');
+document.getElementById('alerts').innerHTML = [['NVDA', 'Below $200.00', 1], ['BTC', 'Above $90,000', 1], ['XAU', 'Moves ±2% in a day', 1], ['AAPL', 'Earnings released', 0]].map(([s, t, on]) => { const a = M.bySym[s]; return `<div class="arow arow-sm" style="grid-template-columns:minmax(0,1fr) auto"><span class="ident">${logo(a)}<span><b>${a.s}</b><small>${t}</small></span></span><button class="switch ${on ? 'on' : ''}" type="button" aria-pressed="${!!on}" aria-label="Toggle alert" onclick="this.classList.toggle('on');this.setAttribute('aria-pressed',this.classList.contains('on'))"><i></i></button></div>`; }).join('');
+
+// customize panel (local demo state)
+const panels = ['Watchlist', 'Alerts', 'AI insight', 'News', 'Markets', 'Movers', 'Next events'];
+const cust = document.getElementById('cust');
+document.getElementById('cust-list').innerHTML = panels.map(p => `<label class="arow arow-sm" style="grid-template-columns:1fr auto;cursor:pointer;border-radius:6px"><span>${p}</span><input type="checkbox" checked style="accent-color:var(--accent);width:16px;height:16px"></label>`).join('');
+document.getElementById('customize').onclick = () => cust.hidden = false;
+document.getElementById('cust-x').onclick = document.getElementById('cust-done').onclick = () => cust.hidden = true;
+cust.onclick = e => { if (e.target === cust) cust.hidden = true; };
+select(sel);
+</script>
+</main>
+</body>
+</html>

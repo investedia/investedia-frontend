@@ -1,0 +1,49 @@
+{"title":"Stocks drift lower as inflation data keeps rate-cut bets in check — Investedia","desc":"Treasury yields eased while tech led a quiet session ahead of next week’s earnings wave.","key":"news"}
+<article style="padding-top:36px">
+  <div class="crumbs" style="display:flex;gap:6px;color:var(--fg-3);font-size:13px;margin-bottom:18px"><a href="index.html">Home</a><span>/</span><a href="news.html">News</a><span>/</span><span>Markets</span></div>
+  <div style="max-width:820px">
+    <span class="tag acc">Markets</span>
+    <h1 style="margin-top:14px;font-size:clamp(28px,3.4vw,44px)">Stocks drift lower as inflation data keeps rate-cut bets in check</h1>
+    <p class="lede" style="font-size:19px">Treasury yields eased while tech led a quiet session ahead of next week’s earnings wave.</p>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:22px;padding-block:16px;border-block:1px solid var(--line-soft)">
+      <div class="ident"><span class="avatar" style="width:40px;height:40px">LM</span><span><b>Léa Martin</b><small>Markets reporter · 16 Oct 2026, 17:42 · 4 min read</small></span></div>
+      <div style="display:flex;gap:6px"><button class="btn btn-ghost btn-sm" type="button" id="b-save"></button><button class="btn btn-ghost btn-sm" type="button">Share</button></div>
+    </div>
+  </div>
+
+  <div class="grid g-main" style="align-items:start;margin-top:28px;gap:48px">
+    <div>
+      <div class="cover" style="height:360px;border-radius:var(--r);border:1px solid var(--line);margin-bottom:28px" id="art-cover"></div>
+      <div class="card ai-glow card-pad" style="margin-bottom:28px;max-width:720px"><span class="ai-badge" id="ai"></span>
+        <ul class="bullets" style="margin-top:12px;gap:8px;font-size:14.5px" id="tldr"></ul></div>
+      <div class="prose">
+        <p>US stocks ended a choppy session slightly lower on Thursday after consumer prices rose faster than economists expected in September, pushing back the timing of the Federal Reserve’s next rate cut.</p>
+        <p>The S&amp;P 500 slipped 0.08% to 7,732.50, while the Nasdaq 100 fell 0.26%. The Dow Jones Industrial Average was little changed. Losses were concentrated in semiconductor stocks, where a downgrade of Dell Technologies revived questions about how long the AI spending boom can last.</p>
+        <blockquote>“The market isn’t worried about a recession. It’s worried that rates stay high long enough to squeeze valuations.”</blockquote>
+        <h2>Yields ease after early jump</h2>
+        <p>The 10-year Treasury yield briefly climbed above 4.10% after the report before settling at 4.03% by the close. Futures markets now put the odds of a December cut at about 38%, down from 55% a week ago.</p>
+        <p>Healthcare was the best-performing sector, lifted by Eli Lilly’s 3.5% gain on strong results from its oral weight-loss drug. Energy lagged as crude oil fell 1.7% on rising US inventories.</p>
+        <div class="card" style="margin:28px 0;padding:14px 16px 6px" id="inline-chart-wrap"><div style="display:flex;justify-content:space-between;align-items:center;font-size:13px"><b style="font-weight:600">S&amp;P 500 · 16 Oct</b><span class="num down">−0.08%</span></div><div id="inline-chart"></div></div>
+        <h2>What to watch next week</h2>
+        <p>Earnings season moves into high gear with Netflix on Tuesday and Tesla on Wednesday. The European Central Bank meets on Thursday, where policymakers are expected to hold rates at 2%.</p>
+      </div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:24px" id="tags"></div>
+    </div>
+    <aside class="grid" style="gap:16px;position:sticky;top:calc(var(--head) + 20px)">
+      <div class="card"><div class="card-head"><h3>In this story</h3></div><div id="mentioned"></div></div>
+      <div class="card"><div class="card-head"><h3>Related</h3></div><div id="related"></div></div>
+    </aside>
+  </div>
+</article>
+<section class="sec" style="margin-top:56px" data-newsletter></section>
+<script>
+const { icon, fmtP, fmtC, cls, logo, href, cover, areaChart } = UI, M = MOCK;
+document.getElementById('art-cover').innerHTML = cover('lead1');
+document.getElementById('ai').innerHTML = icon('sparkle') + 'Key points';
+document.getElementById('b-save').innerHTML = icon('star') + 'Save';
+document.getElementById('tldr').innerHTML = ['September inflation came in above forecasts.', 'Odds of a December Fed cut fell to about 38%.', 'Chip stocks fell, healthcare and Eli Lilly led.'].map(t => `<li>${icon('check')}<span>${t}</span></li>`).join('');
+areaChart(document.getElementById('inline-chart'), M.series('SPXday', 78, 7732.5, -0.08, .0025), { height: 180, labels: ['09:30', '12:00', '14:00', '16:00'], fmt: v => v.toLocaleString('en-US', { maximumFractionDigits: 0 }) });
+document.getElementById('tags').innerHTML = ['Federal Reserve', 'Inflation', 'S&P 500', 'Semiconductors', 'Earnings'].map(t => `<span class="chip">${t}</span>`).join('');
+document.getElementById('mentioned').innerHTML = ['SPX', 'NDX', 'US10Y', 'DELL', 'LLY'].map(s => M.bySym[s]).map(r => `<a class="dd-row" style="padding:10px 18px;border-radius:0;border-bottom:1px solid var(--line-soft)" href="${href(r)}"><span class="ident">${logo(r)}<span><b>${r.c === 'indices' ? r.n : r.s}</b><small>${r.c === 'indices' ? 'Index' : r.n}</small></span></span><span class="num">${fmtP(r)}</span><span class="pill ${cls(r.d)}">${fmtC(r.d, r.y)}</span></a>`).join('');
+document.getElementById('related').innerHTML = M.news.slice(3, 7).map(n => `<a class="news-item" ${UI.nhref(n)}><div class="news-meta"><span class="accent" style="font-weight:600">${n.cat}</span><i></i><span>${n.time}</span></div><h3 style="font-size:14px">${n.t}</h3></a>`).join('');
+</script>

@@ -1,0 +1,110 @@
+{"title":"Investedia AI Insights","desc":"Investedia AI: daily brief, market sentiment, scenarios, featured analysis and insight cards.","key":"ai"}
+<div class="page-head ai-glow">
+  <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>AI Insights</span></div>
+  <div class="grid g-main" style="align-items:end;gap:32px">
+    <div style="max-width:780px">
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span class="ai-badge"><span data-icon="sparkle"></span>Investedia AI · Beta</span><span class="demo">All content on this page is sample output</span></div>
+      <h1 style="margin-top:12px">Ask anything about the markets.</h1>
+      <p class="lede">Plain-English answers built from prices, filings and today’s news. Every answer shows its sources.</p>
+      <form class="ask" id="ask" style="margin-top:22px"><span class="dim" data-icon="search"></span><input id="q" placeholder="Why did Nvidia fall today?" aria-label="Ask a question"><button class="btn btn-primary" type="submit">Ask</button></form>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px" id="sugg"></div>
+    </div>
+    <div class="card card-pad" style="display:grid;gap:10px"><span class="muted" style="font-size:12.5px">Overall market mood</span><div id="big-gauge"></div></div>
+  </div>
+</div>
+<nav class="subnav" id="news-nav"></nav>
+
+<section class="sec" id="answer" hidden>
+  <div class="card ai-glow card-pad" style="max-width:900px">
+    <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><span class="ai-badge"><span data-icon="sparkle"></span>Investedia AI</span><span class="demo">Sample answer</span></div>
+    <h3 style="margin:10px 0 10px;font-size:18px" id="aq"></h3>
+    <p style="margin:0 0 14px;color:#d4d4d8;font-size:15px;line-height:1.65">Nvidia fell 1.8% as investors locked in gains after a two-week, 9% rally. A Barclays downgrade of Dell raised questions about how quickly companies are buying AI servers, which pulled most chip stocks lower. There was no company-specific news from Nvidia itself.</p>
+    <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="tag">Sources</span><span class="chip">Barclays note · 16 Oct</span><span class="chip">NVDA price data</span><span class="chip">Sector performance</span></div>
+  </div>
+</section>
+
+<section class="sec" id="brief">
+  <div class="grid g-main" style="align-items:start">
+    <div class="card">
+      <div class="card-head"><div><h3>Daily market brief</h3><span class="meta">Thursday 16 October · generated 07:00 CET</span></div><span class="tag">3 min read</span></div>
+      <div class="card-pad" style="display:grid;gap:22px" id="briefing"></div>
+    </div>
+    <aside class="grid" style="gap:16px">
+      <div class="card"><div class="card-head"><h3>Market sentiment</h3><span class="meta">0 fear · 100 greed</span></div><div class="card-pad" style="display:grid;grid-template-columns:1fr 1fr;gap:12px" id="gauges"></div></div>
+      <div class="card"><div class="card-head"><h3>Most asked today</h3></div><ol style="margin:0;padding:6px 0;list-style:none" id="asked"></ol></div>
+    </aside>
+  </div>
+</section>
+
+<section class="sec" id="scenarios">
+  <div class="sec-head"><div><h2>Bullish and bearish scenarios</h2><p>What could move the S&amp;P 500 over the next three months.</p></div></div>
+  <div class="grid g-3" id="scen"></div>
+</section>
+
+<section class="sec" id="featured">
+  <div class="sec-head"><div><h2>Featured stock analysis</h2><p>AI breakdown of today’s most-watched stock.</p></div><a class="link" href="asset.html?s=NVDA">Open NVDA</a></div>
+  <div class="card ai-glow"><div class="grid g-main" style="gap:0">
+    <div style="padding:20px;border-right:1px solid var(--line)"><div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap" id="fs-head"></div><div style="margin-top:14px" id="fs-chart"></div><div class="grid g-4" style="gap:10px;margin-top:14px" id="fs-scores"></div></div>
+    <div class="card-pad" style="display:grid;gap:14px;align-content:start"><h3>Summary</h3><p class="muted" style="margin:0">Fundamentals remain the strongest in the sector, with revenue up 56% year on year. The stock is consolidating after a strong run; momentum has cooled but the long-term trend is intact.</p><div class="scen" style="margin:0"><div><span class="tag bull">Strengths</span><p>Dominant share of AI training chips; 75% gross margins; strong balance sheet.</p></div><div><span class="tag bear">Risks</span><p>Customer concentration; export restrictions; custom chips from cloud providers.</p></div></div></div>
+  </div></div>
+</section>
+
+<section class="sec">
+  <div class="grid g-2">
+    <div class="card"><div class="card-head"><h3>Sector performance</h3><span class="meta">AI sentiment vs. today’s move</span></div><div class="tbl-wrap"><table class="tbl"><thead><tr><th>Sector</th><th>Today</th><th>1 month</th><th>AI sentiment</th></tr></thead><tbody id="sect"></tbody></table></div></div>
+    <div class="card"><div class="card-head"><h3>Market events</h3><span class="meta">AI-rated impact</span></div><div id="events"></div></div>
+  </div>
+</section>
+
+<section class="sec" id="picks">
+  <div class="sec-head"><div><h2>AI signal watchlist</h2><p>Stocks where several AI signals line up today. A starting point for research, not a recommendation.</p></div></div>
+  <div class="card"><div class="tbl-wrap"><table class="tbl"><thead><tr><th>Stock</th><th>Price</th><th>Today</th><th>Momentum</th><th>Sentiment</th><th>Quality</th><th style="text-align:left">Why it’s flagged</th></tr></thead><tbody id="pick-t"></tbody></table></div></div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><div><h2>Insight cards</h2><p>Short AI observations from the last 24 hours.</p></div><div class="tabs" id="ic-tabs"><button class="tab" data-tab="all" aria-selected="true">All</button><button class="tab" data-tab="Unusual activity">Unusual activity</button><button class="tab" data-tab="Theme">Themes</button><button class="tab" data-tab="Macro">Macro</button></div></div>
+  <div class="grid g-3" id="insights"></div>
+</section>
+
+<section class="sec">
+  <div class="panel card-pad" style="display:flex;gap:16px;align-items:flex-start"><span class="dd-ic" data-icon="shield"></span><p class="muted" style="margin:0;font-size:13.5px">Investedia AI summarises public information to help you understand markets. It is not personal investment advice and can be wrong. Always check the sources and consider your own situation before investing. Everything on this page is sample content for a design preview.</p></div>
+</section>
+<script>
+UI.newsNav('ai');
+const { icon, fmtP, fmtC, cls, logo, href, spark, colorFor, areaChart, sTag, impact, tabs } = UI, M = MOCK;
+const ask = q => { const s = document.getElementById('answer'); s.hidden = false; document.getElementById('aq').textContent = q; s.scrollIntoView({ behavior: 'smooth', block: 'center' }); };
+document.getElementById('ask').onsubmit = e => { e.preventDefault(); ask(document.getElementById('q').value || 'Why did Nvidia fall today?'); };
+document.getElementById('sugg').innerHTML = ['Why did Nvidia fall today?', 'Is gold still a good hedge?', 'What does the ECB meeting mean for the euro?', 'Compare Bitcoin ETFs'].map(s => `<button class="chip" type="button">${s}</button>`).join('');
+document.querySelectorAll('#sugg .chip').forEach(b => b.onclick = () => { document.getElementById('q').value = b.textContent; ask(b.textContent); });
+document.getElementById('asked').innerHTML = ['Will the Fed cut in December?', 'Why is Bitcoin falling?', 'Is Nvidia overvalued?', 'Best ETFs for beginners', 'What moves gold prices?'].map((t, i) => `<li><button class="arow" type="button" style="width:100%;grid-template-columns:24px 1fr;background:none;border:0;border-bottom:1px solid var(--line-soft);text-align:left"><span class="num dim">${i + 1}</span><span>${t}</span></button></li>`).join('');
+document.querySelectorAll('#asked button').forEach(b => b.onclick = () => { document.getElementById('q').value = b.lastChild.textContent; ask(b.lastChild.textContent); });
+
+const gauge = (v, t, big) => { const ang = Math.PI * (1 - v / 100), x = 60 + 44 * Math.cos(ang), y = 60 - 44 * Math.sin(ang), col = v >= 60 ? '#22C55E' : v < 40 ? '#F04444' : '#A1A1AA', lbl = v >= 75 ? 'Extreme greed' : v >= 60 ? 'Greed' : v >= 40 ? 'Neutral' : v >= 25 ? 'Fear' : 'Extreme fear';
+  return `<div style="text-align:center"><svg viewBox="0 0 120 70" style="width:100%;max-width:${big ? 220 : 150}px;margin:0 auto"><path d="M16 60a44 44 0 0 1 88 0" fill="none" stroke="#29292D" stroke-width="8" stroke-linecap="round"/><path d="M16 60A44 44 0 0 1 ${x.toFixed(1)} ${y.toFixed(1)}" fill="none" stroke="${col}" stroke-width="8" stroke-linecap="round"/><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="5" fill="#0A0A0B" stroke="${col}" stroke-width="2.5"/><text x="60" y="58" text-anchor="middle" font-family="Geist Mono,monospace" font-size="18" fill="#fff">${v}</text></svg>${t ? `<div style="font-size:13px;font-weight:550;margin-top:2px">${t}</div>` : ''}<div style="font-size:12px;color:${col}">${lbl}</div></div>`; };
+document.getElementById('big-gauge').innerHTML = gauge(52, '', true) + '<p class="dim" style="margin:6px 0 0;font-size:12px;text-align:center">Blends price momentum, volatility, news tone and fund flows.</p>';
+document.getElementById('gauges').innerHTML = [[58, 'US stocks'], [34, 'Crypto'], [71, 'Gold'], [49, 'Bonds']].map(([v, t]) => gauge(v, t)).join('');
+
+document.getElementById('briefing').innerHTML = [
+  ['The big picture', 'Hotter-than-expected inflation pushed the first rate cut further away. Stocks shrugged it off and closed nearly flat, a sign investors are more focused on earnings than on the Fed.', ['SPX', 'US10Y']],
+  ['Stocks', 'Chipmakers fell after a downgrade of Dell raised doubts about AI server demand. Healthcare led thanks to Eli Lilly’s 3.5% jump on weight-loss pill data.', ['NVDA', 'DELL', 'LLY']],
+  ['Crypto', 'Bitcoin is holding just above $80,000 after a third day of ETF outflows. Funding rates have reset, which often comes before calmer trading.', ['BTC', 'ETH']],
+  ['Today’s calendar', 'US retail sales and jobless claims at 08:30 ET. A strong retail number would add to the case for holding rates steady.', []],
+].map(([h, t, syms]) => `<div style="display:grid;gap:8px"><h4 style="font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3);margin:0">${h}</h4><p style="margin:0;font-size:15px;line-height:1.65;color:#d4d4d8">${t}</p>${syms.length ? `<div style="display:flex;gap:6px;flex-wrap:wrap">${syms.map(s => M.bySym[s]).map(a => `<a class="chip" href="${href(a)}"><b style="color:var(--fg);font-weight:600">${a.s}</b><span class="num ${cls(a.d)}" data-lc="${a.s}">${fmtC(a.d, a.y)}</span></a>`).join('')}</div>` : ''}</div>`).join('<hr style="border:0;border-top:1px solid var(--line-soft);margin:0">');
+
+document.getElementById('scen').innerHTML = [['Bearish', 'bear', '25%', '7,050', 'Inflation stays above 3% and the Fed signals no cuts until mid-2027. Valuations compress as yields rise back toward 4.5%.', ['US core CPI above 3.1%', '10-year yield above 4.4%']], ['Base case', '', '50%', '7,900', 'Earnings growth of 11% offsets steady rates. Leadership broadens from chips to software, healthcare and utilities.', ['Q3 earnings beat rate above 75%', 'Stable credit spreads']], ['Bullish', 'bull', '25%', '8,400', 'Inflation cools quickly, the Fed cuts in December and AI revenue shows up beyond the chipmakers.', ['Core CPI below 2.7%', 'Big Tech raises capex again']]].map(([t, c, p, lvl, d, sig]) => `<div class="card card-pad" style="display:grid;gap:12px;align-content:start"><div style="display:flex;justify-content:space-between;align-items:center"><span class="tag ${c}">${t}</span><span class="muted" style="font-size:12.5px">Probability <b class="num" style="color:var(--fg);font-weight:500">${p}</b></span></div><div><span class="dim" style="font-size:12px">S&amp;P 500 by January</span><div class="num" style="font-size:24px">${lvl}</div></div><p class="muted" style="margin:0;font-size:13.5px">${d}</p><div style="border-top:1px solid var(--line-soft);padding-top:10px"><span class="dim" style="font-size:12px">Signals to watch</span><ul class="bullets" style="gap:6px;margin-top:6px;font-size:13px">${sig.map(s => `<li>${icon('clock')}<span>${s}</span></li>`).join('')}</ul></div></div>`).join('');
+
+const nv = M.bySym.NVDA;
+document.getElementById('fs-head').innerHTML = `<span class="ident">${logo(nv, 'lg')}<span><b style="font-size:16px">${nv.n}</b><small>${nv.s} · ${fmtP(nv)} <span class="${cls(nv.d)}">${fmtC(nv.d)}</span></small></span></span><span class="tag bull">AI score 82 / 100</span>`;
+areaChart(document.getElementById('fs-chart'), M.series('NVDAai', 120, nv.p, 31, .016), { height: 220, labels: ['Nov', 'Feb', 'May', 'Aug', 'Oct'], fmt: v => '$' + v.toFixed(0) });
+document.getElementById('fs-scores').innerHTML = [['Fundamentals', 91], ['Momentum', 64], ['Sentiment', 68], ['Valuation', 52]].map(([k, v]) => `<div style="display:grid;gap:6px"><div style="display:flex;justify-content:space-between;font-size:12.5px"><span class="muted">${k}</span><span class="num">${v}</span></div><div class="meter"><i style="width:${v}%;background:${v >= 60 ? 'var(--accent)' : '#71717A'}"></i></div></div>`).join('');
+
+document.getElementById('sect').innerHTML = [['Healthcare', 1.38, 4.6, 74], ['Utilities', 0.66, 5.1, 69], ['Financials', 0.51, 2.2, 58], ['Communication', 0.22, 1.8, 61], ['Consumer', -0.21, -0.9, 47], ['Technology', -0.42, 3.4, 63], ['Energy', -1.24, -5.8, 31]].map(([n, d, m, s]) => `<tr><td><b style="font-weight:550">${n}</b></td><td class="num ${cls(d)}">${fmtC(d)}</td><td class="num ${cls(m)}">${fmtC(m)}</td><td><div style="display:flex;gap:8px;align-items:center;justify-content:flex-end"><div class="meter" style="width:80px"><i style="width:${s}%;background:${s >= 60 ? 'var(--up)' : s < 40 ? 'var(--down)' : 'var(--fg-2)'}"></i></div><span class="num">${s}</span></div></td></tr>`).join('');
+document.getElementById('events').innerHTML = M.calendar.filter(e => e.imp >= 2).slice(0, 6).map(e => `<a class="news-item" href="calendar.html" style="grid-template-columns:86px 1fr auto;align-items:center;gap:12px"><span><b class="num" style="font-weight:500">${e.time}</b><small class="dim" style="display:block;font-size:11.5px">${e.day.slice(0, 10)}</small></span><span><b style="font-weight:550">${e.e}</b><small class="dim" style="display:block;font-size:12px">${e.imp === 3 ? 'Could move stocks, bonds and the dollar' : 'Likely a modest market reaction'}</small></span>${impact(e.imp)}</a>`).join('');
+
+document.getElementById('pick-t').innerHTML = [['LLY', 88, 74, 91, 'Breakout on trial data; earnings revisions rising.'], ['MSFT', 71, 72, 94, 'Outperforming peers; steady cloud demand.'], ['NEE', 77, 69, 80, 'Power-demand theme; rates easing.'], ['V', 69, 63, 92, 'New highs on strong payment volumes.'], ['GS', 66, 61, 78, 'Deal activity recovering; curve steepening.']].map(([s, mo, se, q, w]) => { const a = M.bySym[s]; const cell = v => `<td><div style="display:flex;gap:8px;align-items:center;justify-content:flex-end"><div class="meter" style="width:56px"><i style="width:${v}%;background:var(--accent)"></i></div><span class="num">${v}</span></div></td>`; return `<tr data-href="${href(a)}"><td><a class="ident" href="${href(a)}">${logo(a)}<span><b>${a.s}</b><small>${a.n}</small></span></a></td><td class="num" data-lp="${a.s}">${fmtP(a)}</td><td><span class="pill ${cls(a.d)}">${fmtC(a.d)}</span></td>${cell(mo)}${cell(se)}${cell(q)}<td class="l muted" style="white-space:normal;min-width:220px">${w}</td></tr>`; }).join('');
+
+const cards = [['Unusual activity', 'WULF', 'Trading volume hit 4× its normal level after a reported hosting deal with a large cloud provider.', '12 min ago'], ['Theme', 'NVDA', 'Mentions of “AI capex” in earnings calls rose 38% this quarter. Power and cooling names are getting more attention than chips.', '1 h ago'], ['Macro', 'US10Y', 'Odds of a December Fed cut fell from 55% to 38% after today’s inflation report.', '2 h ago'], ['Unusual activity', 'DELL', 'Shares gapped down 7% at the open, the biggest one-day drop since March.', '3 h ago'], ['Theme', 'LLY', 'Weight-loss drug stocks have outperformed the S&P 500 by 14 points this year.', '4 h ago'], ['Macro', 'EURUSD', 'Euro-area inflation came in at target for the first time in 4 years, giving the ECB room to wait.', '5 h ago']];
+const ins = k => document.getElementById('insights').innerHTML = cards.filter(c => k === 'all' || c[0] === k).map(([t, s, d, time]) => { const a = M.bySym[s]; return `<a class="card card-pad ai-glow" href="${href(a)}" style="display:grid;gap:12px;align-content:start"><div style="display:flex;justify-content:space-between;align-items:center"><span class="tag acc">${t}</span><span class="dim" style="font-size:12px">${time}</span></div><p style="margin:0;color:#d4d4d8">${d}</p><div class="arow" style="padding:8px 0 0;border:0;border-top:1px solid var(--line-soft)">${'<span class="ident">' + logo(a) + `<span><b>${a.c === 'indices' || a.c === 'bonds' ? a.n : a.s}</b><small>${a.n}</small></span></span>`}<span class="num" data-lp="${a.s}">${fmtP(a)}</span><span class="pill ${cls(a.d)}">${fmtC(a.d, a.y)}</span></div></a>`; }).join('');
+tabs(document.getElementById('ic-tabs'), ins); ins('all');
+UI.routeHash({});
+</script>

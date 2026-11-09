@@ -1,0 +1,160 @@
+{"title":"Investedia Stocks","desc":"US, European and global stocks: movers, regions, extended hours, heatmap and ADRs.","key":"markets"}
+<div class="page-head">
+  <div class="crumbs"><a href="index.html">Home</a><span>/</span><a href="markets.html">Markets</a><span>/</span><span>Stocks</span></div>
+  <div class="sec-head" style="margin:0"><div><h1>Stocks</h1><p class="lede">Movers, regions, sectors and extended-hours trading across global equity markets.</p></div>
+  <div style="display:flex;gap:8px;align-items:center"><span class="demo" data-asof>Delayed data</span><a class="btn btn-primary" href="screener.html">Open screener</a></div></div>
+</div>
+<nav class="subnav" id="subnav"></nav>
+<div id="rg-bar" style="margin-bottom:18px"></div>
+
+<section class="sec">
+  <div class="card"><div class="stats-row" id="breadth"></div></div>
+</section>
+
+<section class="sec" id="rising">
+  <div class="sec-head"><div><h2>Rising now</h2><p id="rising-sub">The strongest gainers and the largest companies worldwide.</p></div></div>
+  <div id="rising-body"></div>
+</section>
+
+<section class="sec" id="movers">
+  <div class="sec-head"><div><h2>Market movers</h2><p id="mv-sub">US stocks over $2B market value.</p></div><div class="tabs" id="mv-tabs"><button class="tab" data-tab="trending" aria-selected="true">Trending</button><button class="tab" data-tab="active">Most active</button><button class="tab" data-tab="gainers">Top gainers</button><button class="tab" data-tab="losers">Top losers</button></div></div>
+  <div class="card" id="mv-table"></div>
+</section>
+
+<section class="sec" id="regions">
+  <div class="sec-head"><div><h2 id="rg-h">Stocks by region</h2><p id="rg-sub">The largest listed companies worldwide, with a benchmark index.</p></div></div>
+  <div class="grid g-main" style="align-items:start">
+    <div class="card" id="rg-table"></div>
+    <div class="card"><div class="card-head"><h3 id="rg-idx-title">Benchmark</h3><span class="meta">1 year</span></div><div style="padding:10px 10px 4px 16px"><div id="rg-chart"></div></div><div class="stats-row" style="border-top:1px solid var(--line)" id="rg-stats"></div></div>
+  </div>
+</section>
+
+<section class="sec" id="extended" data-us>
+  <div class="sec-head"><div><h2>Extended-hours trading</h2><p>Moves before the opening bell and after the close.</p></div><div class="tabs" id="ex-tabs"><button class="tab" data-tab="premarket" aria-selected="true">Pre-market</button><button class="tab" data-tab="afterhours">After hours</button></div></div>
+  <div class="card" id="ex-table"></div>
+</section>
+
+<section class="sec" id="heatmap">
+  <div class="sec-head"><div><h2 id="heat-h">S&amp;P 500 heatmap</h2><p>Size shows company value. Color shows today’s move.</p></div></div>
+  <div class="card"><div class="heat" id="heat" style="grid-auto-rows:54px"></div><div class="heat-legend" id="legend"></div></div>
+</section>
+
+<section class="sec">
+  <div class="grid g-2">
+    <div class="card"><div class="card-head"><h3 id="sec-h">Sector performance</h3><div class="range" id="sec-range"><button aria-pressed="true">1D</button><button aria-pressed="false">1W</button><button aria-pressed="false">1M</button></div></div><div class="card-pad" style="display:grid;gap:10px" id="sectors"></div></div>
+    <div class="card" id="adrs"><div class="card-head"><h3 id="adr-h">World ADRs</h3><span class="meta" id="adr-meta">Foreign companies listed in the US</span></div><div id="adr-list"></div></div>
+  </div>
+</section>
+
+<section class="sec" data-newsletter></section>
+<script>
+const { icon, fmtP, fmtC, cls, cap, logo, href, spark, colorFor, areaChart, assetTable, tabs, row, routeHash } = UI, M = MOCK;
+UI.subnav('stocks');
+const st = M.assets.filter(a => a.c === 'stocks');
+const $ = id => document.getElementById(id);
+const slug = r => r.toLowerCase().replace(/\s+/g, '-');
+const BENCH = { All: 'SPX', Americas: 'SPX', Europe: 'SX5E', Asia: 'NKY', Oceania: 'XJO', Africa: 'J203', 'Middle East': 'TASI', Global: 'SPX' };
+const usView = r => r === 'All' || r === 'Americas';
+let R = 'All', mvTab = 'trending', secPer = '1D';
+const pool = () => UI.inRegion(st, R);
+const byCap = l => [...l].sort((a, b) => b.m - a.m);
+
+function breadth() {
+  let cells;
+  if (R === 'All') cells = [['Advancing', '2,184', 'up'], ['Declining', '2,611', 'down'], ['New 52W highs', '142', 'up'], ['New 52W lows', '67', 'down'], ['Volume', '11.8B', ''], ['VIX', '17.42', '']];
+  else {
+    const l = pool(), up = l.filter(a => a.d > 0).length, dn = l.filter(a => a.d < 0).length, avg = l.reduce((s, a) => s + a.d, 0) / (l.length || 1);
+    const best = [...l].sort((a, b) => b.d - a.d)[0], worst = [...l].sort((a, b) => a.d - b.d)[0], b = M.bySym[BENCH[R]];
+    cells = [['Advancing', up, 'up'], ['Declining', dn, 'down'], ['Average move', fmtC(+avg.toFixed(2)), cls(avg)], ['Best today', `${best.s} ${fmtC(best.d)}`, cls(best.d)], ['Worst today', `${worst.s} ${fmtC(worst.d)}`, cls(worst.d)], [b.n, fmtC(b.d), cls(b.d)]];
+  }
+  $('breadth').innerHTML = cells.map(([k, v, c]) => `<div class="stat"><span>${k}</span><b class="${c}">${v}</b></div>`).join('');
+}
+
+function movers(k = mvTab) {
+  mvTab = k;
+  const l = pool(), trending = R === 'All' ? ['NVDA', 'TSLA', 'AAPL', 'DELL', 'LLY', 'AMD', 'GME', 'META'].map(s => M.bySym[s]) : [...l].sort((a, b) => Math.abs(b.d) * b.m - Math.abs(a.d) * a.m).slice(0, 8);
+  const mv = { trending, active: [...l].sort((a, b) => parseFloat(b.vol) - parseFloat(a.vol)).slice(0, 8), gainers: [...l].sort((a, b) => b.d - a.d).slice(0, 8), losers: [...l].sort((a, b) => a.d - b.d).slice(0, 8) };
+  $('mv-table').innerHTML = assetTable(mv[k], ['price', 'chg', 'week', 'cap', 'vol', 'spark']);
+  $('mv-sub').textContent = R === 'All' ? 'Stocks over $2B market value worldwide.' : `Stocks in ${R} over $2B market value.`;
+}
+
+let benchTok = 0;
+function largest() {
+  const rows = byCap(pool()).slice(0, 10), sym = BENCH[R], ia = M.bySym[sym], tok = ++benchTok;
+  $('rg-h').textContent = R === 'All' ? 'Largest companies' : `Largest in ${R}`;
+  $('rg-sub').textContent = R === 'All' ? 'The most valuable listed companies worldwide, with a benchmark index.' : `The most valuable companies in ${R}, alongside ${ia.n}.`;
+  $('rg-table').innerHTML = assetTable(rows, ['price', 'chg', 'cap', 'pe', 'spark']);
+  $('rg-idx-title').textContent = ia.n;
+  const draw = (vals, labels, chg) => {
+    if (tok !== benchTok) return;
+    areaChart($('rg-chart'), vals, { height: 220, labels, fmt: v => v.toLocaleString('en-US', { maximumFractionDigits: 0 }) });
+    $('rg-stats').innerHTML = [['Last', fmtP(ia)], ['Today', `<i style="font-style:normal" class="${cls(ia.d)}">${fmtC(ia.d)}</i>`], ['1 year', `<i style="font-style:normal" class="${cls(chg)}">${fmtC(chg)}</i>`]].map(([a, b]) => `<div class="stat"><span>${a}</span><b>${b}</b></div>`).join('');
+  };
+  const fallback = () => { const c = +(ia.m1 * 3 || 8).toFixed(1); draw(M.series(sym + 'rg', 120, ia.p, c, .007), ['Nov', 'Feb', 'May', 'Aug', 'Oct'], c); };
+  Promise.resolve(M.history ? M.history(sym, '1Y') : null).then(h => h && h.vals && h.vals.length > 1 && isFinite(h.chg) ? draw(h.vals, h.labels, h.chg) : fallback()).catch(fallback);
+}
+
+function ext(k) {
+  const rows = ['NVDA', 'TSLA', 'AAPL', 'AMD', 'DELL', 'WULF', 'GME', 'NFLX'].map(s => M.bySym[s]);
+  const f = k === 'premarket' ? .6 : -.45;
+  $('ex-table').innerHTML = `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Name</th><th>Last close</th><th>${k === 'premarket' ? 'Pre-market' : 'After hours'}</th><th>Change</th><th>Volume</th><th>Updated</th></tr></thead><tbody>${rows.map((a, i) => { const c = +((a.d * f) + (i % 3 - 1) * .4).toFixed(2); return `<tr data-href="${href(a)}"><td><a class="ident" href="${href(a)}">${logo(a)}<span><b>${a.s}</b><small>${a.n}</small></span></a></td><td class="num muted" data-lp="${a.s}">${fmtP(a)}</td><td class="num">${fmtP(a, a.p * (1 + c / 100))}</td><td><span class="pill ${cls(c)}">${fmtC(c)}</span></td><td class="num muted">${(Math.abs(c) * 0.8 + .2).toFixed(1)}M</td><td class="num dim">${k === 'premarket' ? '08:5' + i : '19:4' + i} ET</td></tr>`; }).join('')}</tbody></table></div>`;
+}
+tabs($('mv-tabs'), movers);
+tabs($('ex-tabs'), ext); ext('premarket');
+
+let HPER = 'd';
+const SPX_HEAT = [['NVDA', 3, 3], ['AAPL', 3, 3], ['MSFT', 3, 2], ['GOOGL', 3, 2], ['AMZN', 2, 2], ['META', 2, 2], ['AVGO', 2, 2], ['TSLA', 2, 1], ['LLY', 2, 1], ['JPM', 2, 1], ['V', 2, 1], ['WMT', 1, 1], ['ORCL', 1, 1], ['XOM', 1, 1], ['COST', 1, 1], ['NFLX', 1, 1], ['AMD', 1, 1], ['BAC', 1, 1], ['KO', 1, 1], ['CVX', 1, 1], ['INTC', 1, 1]];
+const SIZES = [[3, 3], [3, 3], [3, 2], [3, 2], [2, 2], [2, 2], [2, 2], [2, 1], [2, 1], [2, 1], [2, 1]];
+function heat() {
+  const items = R === 'All' ? SPX_HEAT.map(([s, w, h]) => [M.bySym[s], w, h]) : byCap(pool()).slice(0, 21).map((a, i) => [a, ...(SIZES[i] || [1, 1])]);
+  UI.heatmap2($('heat'), items, HPER);
+  $('heat-h').textContent = R === 'All' ? 'S&P 500 heatmap' : `${R} heatmap`;
+}
+const PERK = { '1D': 'd', '1W': 'w', '1M': 'm1' };
+function sectors(r = secPer) {
+  secPer = r; const k = PERK[r], g = {};
+  pool().forEach(a => { if (!isFinite(a[k])) return; (g[a.sector] = g[a.sector] || []).push(a[k]); });
+  const data = Object.entries(g).map(([n, v]) => [n, +(v.reduce((s, x) => s + x, 0) / v.length).toFixed(2)]).sort((a, b) => b[1] - a[1]);
+  const mx = Math.max(.01, ...data.map(x => Math.abs(x[1])));
+  $('sec-h').textContent = R === 'All' ? 'Sector performance' : `Sectors · ${R}`;
+  $('sectors').innerHTML = data.map(([n, v]) => UI.divBar(n, v, mx)).join('');
+}
+document.querySelectorAll('#sec-range button').forEach(b => b.onclick = () => { document.querySelectorAll('#sec-range button').forEach(x => x.setAttribute('aria-pressed', x === b)); sectors(b.textContent); });
+function adrs() {
+  let l = ['TSM', 'ASML', 'BABA', 'TM', 'NVO', 'SHEL'].map(s => M.bySym[s]).filter(Boolean), t = 'World ADRs', meta = 'Foreign companies listed in the US';
+  if (R !== 'All') {
+    l = UI.inRegion(l, R);
+    if (!l.length) { l = [...pool()].sort((a, b) => a.d - b.d).slice(0, 6); t = `Falling today · ${R}`; meta = 'Biggest decliners'; }
+    else t = `${R} ADRs`;
+  }
+  $('adr-h').textContent = t; $('adr-meta').textContent = meta;
+  $('adr-list').innerHTML = l.map(a => row(a)).join('');
+}
+
+function setRegion(r) {
+  R = r;
+  $('rising-sub').textContent = R === 'All' ? 'The strongest gainers and the largest companies worldwide.' : `Stocks in ${R} going up, and the region's largest companies.`;
+  UI.regionMovers($('rising-body'), st, R);
+  breadth(); movers(); largest(); heat(); sectors(); adrs();
+  $('extended').hidden = !usView(R);
+}
+UI.regionTabs($('rg-bar'), st, r => { setRegion(r); history.replaceState(null, '', r === 'All' ? location.pathname + location.search : '#' + slug(r)); });
+function selectRegion(r, scroll) {
+  const b = $('rg-bar').querySelector(`[data-r="${r}"]`); if (!b) return false;
+  b.click(); if (scroll) $('rg-bar').scrollIntoView({ block: 'start' }); return true;
+}
+setRegion('All');
+{
+  UI.heatLegend2($('legend'), 4);
+  const hd = document.querySelector('#heatmap .sec-head');
+  hd.insertAdjacentHTML('beforeend', `<div class="range" id="heat-per"><button type="button" aria-pressed="true" data-k="d">1D</button><button type="button" aria-pressed="false" data-k="w">1W</button><button type="button" aria-pressed="false" data-k="m1">1M</button></div>`);
+  hd.querySelector('p').textContent = 'Size shows company value. Colour shows the move. Hover or tap a tile for details.';
+  $('heat-per').onclick = e => { const b = e.target.closest('[data-k]'); if (!b) return; HPER = b.dataset.k; document.querySelectorAll('#heat-per button').forEach(x => x.setAttribute('aria-pressed', x === b)); heat(); };
+}
+const fromHash = () => {
+  const h = decodeURIComponent(location.hash.slice(1)).toLowerCase().replace(/^region-/, '').replace(/^us$/, 'americas');
+  const r = M.REGIONS.find(x => slug(x) === h); if (r) selectRegion(r, true);
+};
+addEventListener('hashchange', fromHash); fromHash();
+routeHash({ trending: ['mv-tabs', 'trending'], active: ['mv-tabs', 'active'], gainers: ['mv-tabs', 'gainers'], losers: ['mv-tabs', 'losers'], premarket: ['ex-tabs', 'premarket'], afterhours: ['ex-tabs', 'afterhours'] });
+</script>

@@ -1,0 +1,156 @@
+{"title":"Investedia Calculators","desc":"POV, compound interest, investment returns and dividend calculators.","key":"calc"}
+<div class="page-head">
+  <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Tools</span><span>/</span><span>Calculators</span></div>
+  <div class="sec-head" style="margin:0"><div><h1>Calculators</h1><p class="lede">Look back at what investing would have done, or look ahead at what it could do.</p></div>
+  <span class="demo">Illustrative results</span></div>
+</div>
+<nav class="subnav" id="calc-nav"><a href="#pov" aria-current="page">POV calculator</a><a href="#compound">Compound interest</a><a href="#returns">Investment returns</a><a href="#dividend">Dividends</a></nav>
+
+<section class="sec" id="pov">
+  <div class="calc-grid" id="pov-grid">
+    <div class="card card-pad" style="display:grid;gap:16px">
+      <div><span class="eyebrow">POV calculator</span><h2 style="margin-top:8px">“What if I had invested…”</h2></div>
+      <div class="field"><label for="p-asset">Asset</label><select class="select" id="p-asset"></select></div>
+      <div class="field"><label for="p-amt">Every month</label><input class="input num" id="p-amt" type="number" value="100" min="1" step="10"></div>
+      <div class="field"><label for="p-year">Starting in</label><select class="select" id="p-year"></select></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:8px;overflow:hidden">
+        <div class="stat" style="border-bottom:1px solid var(--line-soft)"><span>You put in</span><b id="r-inv"></b></div>
+        <div class="stat" style="border-bottom:1px solid var(--line-soft)"><span>Worth today</span><b class="up" id="r-val"></b></div>
+        <div class="stat"><span>Multiple</span><b class="accent" id="r-mul"></b></div>
+        <div class="stat"><span>Profit</span><b id="r-gain"></b></div>
+      </div>
+      <p class="dim" style="font-size:12px;margin:0">Uses monthly closing prices adjusted for splits and dividends, up to Oct 2026. Past performance does not predict future returns.</p>
+    </div>
+    <div class="card">
+      <div class="card-head"><h3 id="pov-title"></h3><div style="display:flex;gap:6px"><button class="btn btn-ghost btn-sm" type="button" onclick="this.textContent='Link copied'">Share</button><button class="btn btn-ghost btn-sm" type="button" onclick="this.textContent='Saved (demo)'">Save image</button></div></div>
+      <div style="padding:12px 10px 4px 18px"><div id="pov-chart"></div></div>
+      <div style="display:flex;gap:18px;padding:0 18px 16px;font-size:12.5px" class="muted"><span><span class="lg-line"></span>Portfolio value</span><span><span class="lg-dash"></span>Money put in</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><div><h2>Leaderboard</h2><p>$100 a month since <select class="select" id="lb-year" style="display:inline-block;width:auto;height:30px;padding:0 30px 0 10px;font-size:13px;margin-left:4px"></select></p></div></div>
+  <div class="card card-pad" style="display:grid;gap:10px" id="lb"></div>
+</section>
+
+<section class="sec" id="compound">
+  <div class="calc-grid" id="cmp-grid">
+    <div class="card card-pad" style="display:grid;gap:18px">
+      <div><span class="eyebrow">Compound interest</span><h2 style="margin-top:8px">Project your growth</h2></div>
+      <div class="field"><label for="c-start">Starting amount · <span class="num" id="c-start-v"></span></label><input type="range" id="c-start" min="0" max="50000" step="500" value="5000" style="accent-color:var(--accent)"></div>
+      <div class="field"><label for="c-month">Monthly contribution · <span class="num" id="c-month-v"></span></label><input type="range" id="c-month" min="0" max="2000" step="25" value="300" style="accent-color:var(--accent)"></div>
+      <div class="field"><label for="c-rate">Yearly return · <span class="num" id="c-rate-v"></span></label><input type="range" id="c-rate" min="1" max="12" step="0.5" value="7" style="accent-color:var(--accent)"></div>
+      <div class="field"><label for="c-years">Years · <span class="num" id="c-years-v"></span></label><input type="range" id="c-years" min="5" max="40" step="1" value="25" style="accent-color:var(--accent)"></div>
+    </div>
+    <div class="card">
+      <div class="stats-row" style="border-bottom:1px solid var(--line)"><div class="stat"><span>Final balance</span><b class="accent" style="font-size:22px" id="c-final"></b></div><div class="stat"><span>Total contributed</span><b id="c-contrib"></b></div><div class="stat"><span>Growth from returns</span><b class="up" id="c-growth"></b></div></div>
+      <div class="card-pad"><div id="c-bars" style="display:grid;align-items:end;gap:3px;height:260px"></div>
+      <div style="display:flex;justify-content:space-between;margin-top:8px" class="mono dim" id="c-axis"></div>
+      <div style="display:flex;gap:18px;margin-top:12px;font-size:12.5px" class="muted"><span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#3a3a40;margin-right:6px;vertical-align:-1px"></i>Contributions</span><span><i style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--accent);margin-right:6px;vertical-align:-1px"></i>Growth</span></div></div>
+    </div>
+  </div>
+</section>
+<section class="sec" id="returns">
+  <div class="calc-grid">
+    <div class="card card-pad" style="display:grid;gap:16px">
+      <div><span class="eyebrow">Investment returns</span><h2 style="margin-top:8px">How did my investment do?</h2></div>
+      <div class="field"><label for="r-buy">Amount invested ($)</label><input class="input num" id="r-buy" type="number" value="10000"></div>
+      <div class="field"><label for="r-now">Value today ($)</label><input class="input num" id="r-now" type="number" value="16850"></div>
+      <div class="field"><label for="r-yrs">Years held</label><input class="input num" id="r-yrs" type="number" value="5" min="0.1" step="0.5"></div>
+      <div class="field"><label for="r-div">Dividends received ($)</label><input class="input num" id="r-div" type="number" value="740"></div>
+    </div>
+    <div class="card">
+      <div class="stats-row" style="border-bottom:1px solid var(--line)"><div class="stat"><span>Total return</span><b class="accent" style="font-size:22px" id="r-total"></b></div><div class="stat"><span>Annualised return</span><b id="r-cagr"></b></div><div class="stat"><span>Profit</span><b class="up" id="r-profit"></b></div></div>
+      <div class="card-pad"><h3 style="font-size:14px;margin-bottom:14px">Compared with</h3><div style="display:grid;gap:12px" id="r-compare"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="dividend">
+  <div class="calc-grid">
+    <div class="card card-pad" style="display:grid;gap:16px">
+      <div><span class="eyebrow">Dividends</span><h2 style="margin-top:8px">Build a dividend income</h2></div>
+      <div class="field"><label for="d-amt">Investment ($)</label><input class="input num" id="d-amt" type="number" value="25000"></div>
+      <div class="field"><label for="d-yld">Dividend yield · <span class="num" id="d-yld-v"></span></label><input type="range" id="d-yld" min="0.5" max="8" step="0.1" value="3.5"></div>
+      <div class="field"><label for="d-grow">Dividend growth per year · <span class="num" id="d-grow-v"></span></label><input type="range" id="d-grow" min="0" max="12" step="0.5" value="6"></div>
+      <div class="field"><label for="d-yrs">Years · <span class="num" id="d-yrs-v"></span></label><input type="range" id="d-yrs" min="1" max="30" value="15"></div>
+      <label style="display:flex;gap:10px;align-items:center;font-size:13.5px"><input type="checkbox" id="d-drip" checked style="accent-color:var(--accent);width:16px;height:16px">Reinvest dividends</label>
+    </div>
+    <div class="card">
+      <div class="stats-row" style="border-bottom:1px solid var(--line)"><div class="stat"><span>Annual income, year 1</span><b id="d-y1"></b></div><div class="stat"><span>Annual income, final year</span><b class="accent" style="font-size:22px" id="d-last"></b></div><div class="stat"><span>Total dividends</span><b class="up" id="d-total"></b></div></div>
+      <div class="card-pad"><div class="bars" id="d-bars" style="height:240px;gap:3px"></div><div style="display:flex;justify-content:space-between;margin-top:8px" class="mono dim" id="d-axis"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" data-newsletter></section>
+<script src="assets/data.js"></script>
+<script>
+const { areaChart } = UI, A = window.POV_DATA;
+const money = v => '$' + Math.round(v).toLocaleString('en-US');
+A.forEach(a => { const [y, m] = a.s.split('-').map(Number); a.y0 = y; a.m0 = m; });
+const first = a => a.y0 + (a.m0 > 1 ? 1 : 0);
+function dca(a, amt, year) { const off = Math.max(0, (year - a.y0) * 12 - (a.m0 - 1)); let sh = 0, inv = 0; const v = [], iv = []; for (let i = off; i < a.p.length; i++) { sh += amt / a.p[i]; inv += amt; v.push(sh * a.p[i]); iv.push(inv); } return { v, iv, year }; }
+const as = document.getElementById('p-asset'), ys = document.getElementById('p-year'), am = document.getElementById('p-amt');
+A.forEach((a, i) => as.add(new Option(`${a.n} (${a.t})`, i)));
+const years = (a, pick) => { ys.innerHTML = ''; for (let y = first(a); y <= 2025; y++) ys.add(new Option(y, y)); ys.value = Math.max(first(a), Math.min(2025, pick)); };
+years(A[0], 2002);
+function pov() {
+  const a = A[as.value], amt = Math.max(1, +am.value || 100), r = dca(a, amt, +ys.value), last = r.v[r.v.length - 1], inv = r.iv[r.iv.length - 1];
+  document.getElementById('pov-title').textContent = `$${amt} a month in ${a.n} since ${ys.value}`;
+  document.getElementById('r-inv').textContent = money(inv); document.getElementById('r-val').textContent = money(last);
+  document.getElementById('r-mul').textContent = (last / inv).toFixed(2) + '×';
+  const g = last - inv, ge = document.getElementById('r-gain'); ge.textContent = (g < 0 ? '−' : '+') + money(Math.abs(g)); ge.className = g < 0 ? 'down' : 'up';
+  const span = 2026 - +ys.value, step = Math.max(1, Math.ceil(span / 5)), labels = []; for (let y = +ys.value; y <= 2026; y += step) labels.push(String(y));
+  const y0 = +ys.value;
+  areaChart(document.getElementById('pov-chart'), r.v, { compare: r.iv, height: 340, labels, fmt: v => (v < 0 ? '−' : '') + (Math.abs(v) >= 1e6 ? '$' + (Math.abs(v) / 1e6).toFixed(2) + 'M' : Math.abs(v) >= 1e3 ? '$' + (Math.abs(v) / 1e3).toFixed(0) + 'K' : '$' + Math.abs(v).toFixed(0)), tipLabel: i => `${['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][i % 12]} ${y0 + Math.floor(i / 12)} · put in ${money(r.iv[i])}` });
+}
+as.onchange = () => { years(A[as.value], +ys.value); pov(); }; ys.onchange = pov; am.oninput = pov; pov();
+
+const lb = document.getElementById('lb-year'); for (let y = 2015; y <= 2025; y++) lb.add(new Option(y, y)); lb.value = 2018;
+function board() {
+  const y = +lb.value, ok = a => a.y0 < y || (a.y0 === y && a.m0 === 1);
+  const rows = A.filter(ok).map(a => { const r = dca(a, 100, y); return { a, v: r.v[r.v.length - 1], inv: r.iv[r.iv.length - 1] }; }).sort((p, q) => q.v - p.v), mx = rows[0].v;
+  document.getElementById('lb').innerHTML = rows.map((r, i) => `<div class="lbr"><span class="num dim">${i + 1}</span><span style="font-weight:550">${r.a.n}</span><div style="height:20px;border-radius:3px;background:${i === 0 ? 'var(--accent)' : '#3a3a40'};width:${(r.v / mx * 100).toFixed(1)}%;min-width:3px"></div><span class="num" style="text-align:right">${money(r.v)}</span><span class="num muted" style="text-align:right">${(r.v / r.inv).toFixed(1)}×</span></div>`).join('');
+}
+lb.onchange = board; board();
+
+const ids = ['start', 'month', 'rate', 'years'], el = k => document.getElementById('c-' + k);
+function compound() {
+  const s = +el('start').value, m = +el('month').value, r = +el('rate').value / 100, n = +el('years').value;
+  el('start-v').textContent = money(s); el('month-v').textContent = money(m); el('rate-v').textContent = +(r * 100).toFixed(1) + '%'; el('years-v').textContent = n;
+  let bal = s, contrib = s; const bars = [];
+  for (let y = 1; y <= n; y++) { for (let k = 0; k < 12; k++) { bal = bal * (1 + r / 12) + m; contrib += m; } bars.push([contrib, bal]); }
+  el('final').textContent = money(bal); el('contrib').textContent = money(contrib); el('growth').textContent = '+' + money(bal - contrib);
+  const mx = bal; el('bars').style.gridTemplateColumns = `repeat(${n},1fr)`;
+  el('bars').innerHTML = bars.map(([c, b], i) => `<div title="Year ${i + 1}: ${money(b)}" style="display:flex;flex-direction:column;justify-content:flex-end;height:100%"><div style="height:${((b - c) / mx * 100).toFixed(2)}%;background:var(--accent);border-radius:2px 2px 0 0"></div><div style="height:${(c / mx * 100).toFixed(2)}%;background:#3a3a40"></div></div>`).join('');
+  el('axis').innerHTML = `<span>Year 1</span><span>Year ${Math.round(n / 2)}</span><span>Year ${n}</span>`;
+}
+ids.forEach(k => el(k).oninput = compound); compound();
+// investment returns
+const rv = id => +document.getElementById(id).value || 0;
+function returns() {
+  const buy = rv('r-buy') || 1, now = rv('r-now'), yrs = Math.max(.1, rv('r-yrs')), dv = rv('r-div');
+  const total = (now + dv - buy) / buy, cagr = Math.pow((now + dv) / buy, 1 / yrs) - 1;
+  document.getElementById('r-total').textContent = (total >= 0 ? '+' : '−') + Math.abs(total * 100).toFixed(1) + '%';
+  document.getElementById('r-cagr').textContent = (cagr * 100).toFixed(2) + '% a year';
+  const pr = document.getElementById('r-profit'); pr.textContent = (now + dv - buy >= 0 ? '+' : '−') + money(Math.abs(now + dv - buy)); pr.className = now + dv - buy >= 0 ? 'up' : 'down';
+  const cmp = [['Your investment', cagr * 100], ['S&P 500 (illustrative)', 13.2], ['Global stocks', 9.8], ['Savings account', 3.1], ['Inflation', 3.4]], mx = Math.max(...cmp.map(c => Math.abs(c[1])));
+  document.getElementById('r-compare').innerHTML = cmp.map(([n, v], i) => `<div style="display:grid;grid-template-columns:160px 1fr 70px;gap:12px;align-items:center;font-size:13px"><span class="${i ? 'muted' : ''}" style="${i ? '' : 'font-weight:550'}">${n}</span><div class="meter" style="height:10px"><i style="width:${Math.abs(v) / mx * 100}%;background:${i === 0 ? 'var(--accent)' : '#52525b'}"></i></div><span class="num" style="text-align:right">${v.toFixed(1)}%</span></div>`).join('');
+}
+['r-buy', 'r-now', 'r-yrs', 'r-div'].forEach(id => document.getElementById(id).oninput = returns); returns();
+// dividends
+function divs() {
+  let bal = rv('d-amt'), y = rv('d-yld') / 100, g = rv('d-grow') / 100, n = rv('d-yrs'), drip = document.getElementById('d-drip').checked, tot = 0, rows = [], yld = y;
+  document.getElementById('d-yld-v').textContent = (y * 100).toFixed(1) + '%'; document.getElementById('d-grow-v').textContent = (g * 100).toFixed(1) + '%'; document.getElementById('d-yrs-v').textContent = n;
+  for (let i = 0; i < n; i++) { const inc = bal * yld; rows.push(inc); tot += inc; if (drip) bal += inc; yld *= 1 + g; }
+  document.getElementById('d-y1').textContent = money(rows[0]); document.getElementById('d-last').textContent = money(rows[rows.length - 1]); document.getElementById('d-total').textContent = money(tot);
+  const mx = Math.max(...rows);
+  document.getElementById('d-bars').innerHTML = rows.map((v, i) => `<div title="Year ${i + 1}: ${money(v)}"><i style="height:${v / mx * 210}px;max-width:none;background:${i === rows.length - 1 ? 'var(--accent)' : '#3a3a40'}"></i></div>`).join('');
+  document.getElementById('d-axis').innerHTML = `<span>Year 1</span><span>Year ${n}</span>`;
+}
+['d-amt', 'd-yld', 'd-grow', 'd-yrs', 'd-drip'].forEach(id => document.getElementById(id).oninput = divs); document.getElementById('d-drip').onchange = divs; divs();
+const cl = document.querySelectorAll('#calc-nav a'); cl.forEach(l => l.onclick = () => cl.forEach(x => x.toggleAttribute('aria-current', x === l)));
+UI.routeHash({});
+</script>

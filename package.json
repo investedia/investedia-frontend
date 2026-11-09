@@ -1,0 +1,10 @@
+﻿{
+  "name": "investedia-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "python build.py",
+    "dev": "python scripts/serve.py",
+    "test": "python -m unittest discover -s tests -p test_configuration.py"
+  }
+}

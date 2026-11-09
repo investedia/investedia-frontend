@@ -1,0 +1,82 @@
+{"title":"Investedia Track Record","desc":"How Investedia's calls turned out: the Live Prediction Track Record (frozen before the outcome) and, separately, the Historical Prediction Track Record (backtests). Every call, hits and misses.","key":"news","scripts":["assets/calls-ui.js"]}
+<link rel="stylesheet" href="assets/calls-ui.css">
+<nav class="subnav" id="news-nav"></nav>
+<div class="cx-wrap">
+  <h1 class="cx-h1">Track Record</h1>
+  <p class="cx-lede">When Investedia says an event matters for an asset, we freeze the call and check what the price did afterwards. Hits and misses are both shown.</p>
+  <div id="tr" aria-live="polite"><p class="muted">Loading…</p></div>
+</div>
+<script>
+(async () => {
+  if (window.UI && UI.newsNav) UI.newsNav('track');
+  const U = window.CallsUI, root = document.getElementById('tr'), q = new URLSearchParams(location.search), concept = q.get('concept') === '1';
+  const [{ calls: everything, live_since }, early] = await Promise.all([U.load(), U.loadEarly()]);
+  let all = everything.filter(c => !c.bt), btAll = everything.filter(c => c.bt), ecur = 'all', elim = 40;
+  const WIN = [['7', '7D'], ['30', '30D'], ['90', '90D'], ['0', 'All']];
+  const F = [['all', 'All'], ['hit', 'Hits'], ['miss', 'Misses'], ['flat', 'No clear move'], ['pending', 'Pending'], ['up', 'Long calls'], ['down', 'Short calls']];
+  let win = q.get('w') || '0', cur = 'all', lim = 30;
+  const since = live_since ? new Date(live_since).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+  const group = (title, parts) => `<div class="tr2-grp"><h3>${title}</h3>${parts.map(([l, cs]) => { const n = U.counts(cs), ok = n.clear >= U.SUB;
+      return `<div class="tr2-gl"><span>${l}</span><span class="muted">${n.hit} hits · ${n.miss} misses · ${n.flat} no clear · ${n.pending} pending</span><b class="${ok ? '' : 'locked'}">${ok ? Math.round(100 * n.hit / n.clear) + '% of ' + n.clear : `needs ${U.SUB} · ${n.clear} so far`}</b></div>`; }).join('')}</div>`;
+  const EA = early.calls, E = EA.filter(c => !c.collapsed_into), en = U.counts(E), EB = U.bench(E), rng = 'Oct 21–30, 2026', v1 = early.v1;
+  const v1acc = v1 && (v1.hit + v1.miss) ? (100 * v1.hit / (v1.hit + v1.miss)).toFixed(1) : null, dups = EA.length - E.length;
+  const pctOf = cs => { const n = U.counts(cs); return n.clear ? Math.round(100 * n.hit / n.clear) + '% of ' + n.clear : '—'; };
+  const earlyBox = () => `<section class="tr2-box tr2-earlybox"><div class="tr2-k">Early calls · ${rng}<span class="tr2-tag">Historical</span></div>
+      <div class="tr2-big">${EB.acc === null ? '—' : EB.acc.toFixed(1) + '%'}</div><div class="tr2-sub">${EB.h} of ${EB.n} directional calls correct · ${en.flat} no clear move${en.pending ? ` · ${en.pending} still waiting` : ''}</div>
+      <div class="tr2-sub" style="font-size:13px">vs a coin flip: ${U.pFmt(EB.pCoin)} · always long: ${EB.long === null ? '—' : EB.long.toFixed(1) + '%'}</div>
+      <div class="tr2-note">First engine, before the frozen live ledger and event grouping. Scored with the frozen historical method v2. <a href="#early">See the early record ↓</a></div></section>`;
+  const earlySection = () => {
+    const sel = c => ecur === 'dup' ? !!c.collapsed_into : ecur === 'pending' ? !c.collapsed_into && c.res === 'pending' : !c.collapsed_into && c.res !== 'pending' && (ecur === 'all' || c.res === ecur || c.dir === ecur);
+    const list = EA.filter(sel), grp = (title, key, lab) => { const g = {}; E.forEach(c => { (g[c[key] || 'other'] = g[c[key] || 'other'] || []).push(c); });
+      return `<div class="tr2-grp"><h3>${title}</h3>${Object.entries(g).sort((x, y) => y[1].length - x[1].length).slice(0, 8).map(([k, cs]) => line(lab ? lab(k) : k, cs)).join('')}</div>`; };
+    const line = (l, cs) => { const n = U.counts(cs), ok = n.clear >= U.SUB; return `<div class="tr2-gl"><span>${U.esc(l)}</span><span class="muted">${n.hit} hits · ${n.miss} misses · ${n.flat} no clear${n.pending ? ` · ${n.pending} waiting` : ''}</span><b class="${ok ? '' : 'locked'}">${ok ? pctOf(cs) : `needs ${U.SUB} · ${n.clear} so far`}</b></div>`; };
+    const CLS = { equity: 'Equities', commodity: 'Commodities', fx: 'Currencies', crypto: 'Crypto', index: 'Indices', rate: 'Rates', fund: 'Funds' };
+    return `<section class="tr2-early" id="early">
+      <div class="tr2-early-h"><span class="tr2-tag">Historical</span><h2>Early Track Record <small>· ${rng}</small></h2>
+        <p>Calls made by the first engine, before the current methodology: no frozen ledger, no confidence or version stamps and no event grouping.
+        They are scored with a stricter historical method (v2), fixed before any result was computed: entry at the first traded price after the call
+        was provably public, an event-specific horizon (24 h, or 72 h for commodity, energy, geopolitical and trade stories), the session close as exit,
+        a minimum meaningful move scaled to each asset's normal volatility, and one outcome per cluster of overlapping calls on the same asset and direction.</p>
+        ${v1acc ? `<p class="tr2-v1">Old methodology, for comparison only: ${v1acc}% (${v1.hit} of ${v1.hit + v1.miss}). It credited some overnight gaps that happened before a call was public and counted duplicate calls about the same story separately; v2 removes both effects.</p>` : ''}</div>
+      <div class="tr2-kpis six">${[['Directional accuracy', EB.acc === null ? '—' : EB.acc.toFixed(1) + '%'], ['Hits', en.hit, 'ok'], ['Misses', en.miss, 'no'], ['No clear move', en.flat], ['Duplicates counted once', dups], ['Still waiting', en.pending, 'wait']].map(([l, v, k]) => `<div class="tr2-kpi ${k || ''}"><b>${v}</b><span>${l}</span></div>`).join('')}</div>
+      ${U.benchBlock(E, 30)}
+      <div class="tr2-groups">${grp('Direction', 'dir', k => k === 'up' ? 'Long calls' : 'Short calls')}${grp('Asset class', 'cls', k => CLS[k] || k)}${grp('Event type', 'fam', k => U.FAM[k] || k)}</div>
+      <p class="tr2-note">Confidence is not available for early calls: it was first recorded on 29 Oct with the live ledger.</p>
+      <details class="tr2-elist" id="early-list"${ecur !== 'all' ? ' open' : ''}><summary>Show every early call</summary>
+        <div class="cx-filters">${[['all', 'All judged'], ['hit', 'Hits'], ['miss', 'Misses'], ['flat', 'No clear move'], ['up', 'Long calls'], ['down', 'Short calls'], ...(en.pending ? [['pending', `Waiting (${en.pending})`]] : []), ['dup', `Duplicates (${dups})`]].map(([k, l]) => `<button type="button" data-ef="${k}" aria-pressed="${k === ecur}">${l}</button>`).join('')}</div>
+        ${list.slice(0, elim).map(U.earlyRow).join('') || '<p class="muted">No calls in this group.</p>'}
+        ${list.length > elim ? `<p style="text-align:center;margin-top:16px"><button type="button" class="btn" id="emore">Show more (${list.length - elim})</button></p>` : ''}</details>
+      <p class="tr2-note" style="margin-top:14px">Method: research/EARLY-SCORING-V2.md (frozen in git before scoring). The Historical Prediction Track Record (backtests with information available at the time) is still in validation and will be published separately.</p></section>`;
+  };
+  const draw = () => {
+    const cs = all.filter(c => U.inWin(c, +win)), scored = cs.filter(c => c.res !== 'void'), n = U.counts(scored), a = U.acc(n, U.NEED);
+    const sel = c => cur === 'all' || c.res === cur || c.dir === cur || (cur === 'bt' && c.bt), hist = cs.filter(sel).concat(cur === 'all' || cur === 'bt' ? btAll.filter(c => U.inWin(c, +win)) : []).filter((c, i, a) => cur !== 'bt' || c.bt);
+    const fams = [...new Set(scored.map(c => c.fam || 'other'))].sort((x, y) => scored.filter(c => (c.fam || 'other') === y).length - scored.filter(c => (c.fam || 'other') === x).length);
+    const lb = U.longBench(scored);
+    root.innerHTML = `<div class="tr2-two">
+      <section class="tr2-box"><div class="tr2-k">Live Prediction Track Record · current methodology</div>
+        ${a ? `<div class="tr2-big">${a.pct}%</div><div class="tr2-sub">${a.text}</div>` : `<div class="tr2-big building">Building — ${n.judged} of ${U.NEED} judged calls</div><div class="tr2-bar"><i style="width:${Math.min(100, 100 * n.judged / U.NEED)}%"></i></div><div class="tr2-sub">No accuracy is shown until ${U.NEED} calls are judged.</div>`}
+        <div class="tr2-note">Every call is frozen before its outcome. It is measured from the first traded price after it was publicly created (nothing that moved before publication is credited) to the first traded price at least 24 hours later, in the asset’s own market session. Call result reads each call as a position: a short gains when the price falls.${since ? ` Live since ${since}.` : ''}</div></section>
+      ${earlyBox()}</div>
+      <h2 class="cx-sec tr2-h">Current methodology <small class="muted">· frozen live calls since ${since || 'October 2026'}</small></h2>
+      <div class="cx-bar"><div class="cx-seg" role="group" aria-label="Time window">${WIN.map(([k, l]) => `<button type="button" data-w="${k}" aria-pressed="${k === win}">${l}</button>`).join('')}</div></div>
+      <div class="tr2-kpis six">${[['Judged', n.judged], ['Hits', n.hit, 'ok'], ['Misses', n.miss, 'no'], ['No clear move', n.flat], ['Pending', n.pending, 'wait'], ['Unresolved', n.unresolved]].map(([l, v, k]) => `<div class="tr2-kpi ${k || ''}"><b>${v}</b><span>${l}</span></div>`).join('')}</div>
+      ${U.benchBlock(scored, U.NEED)}
+      <div class="tr2-groups">${group('Direction', [['Long calls', scored.filter(c => c.dir === 'up')], ['Short calls', scored.filter(c => c.dir === 'down')]])}
+        ${U.PREV ? group('Confidence', ['high', 'medium', 'low'].map(k => [k[0].toUpperCase() + k.slice(1), scored.filter(c => c.conf === k)])) : group('Tier', [['Priority Insights', scored.filter(c => c.tier === 'priority')], ['Market Views', scored.filter(c => c.tier !== 'priority')]])}
+        ${group('Event type', fams.slice(0, 8).map(f => [U.FAM[f] || f, scored.filter(c => (c.fam || 'other') === f)]))}</div>
+      <h2 class="cx-sec">Every call <small class="muted">· ${hist.length}</small></h2>
+      <div class="cx-filters">${F.map(([k, l]) => `<button type="button" data-f="${k}" aria-pressed="${k === cur}">${l}</button>`).join('')}</div>
+      ${hist.slice(0, lim).map(U.row).join('') || '<p class="muted">No calls in this group yet.</p>'}
+      ${hist.length > lim ? `<p style="text-align:center;margin-top:16px"><button type="button" class="btn" id="more">Show more (${hist.length - lim})</button></p>` : ''}
+      ${earlySection()}`;
+    root.querySelectorAll('[data-ef]').forEach(b => b.onclick = () => { ecur = b.dataset.ef; elim = 40; draw(); root.querySelector('#early-list').open = true; root.querySelector('#early').scrollIntoView({ block: 'start' }); });
+    const em = document.getElementById('emore'); if (em) em.onclick = () => { elim += 40; draw(); root.querySelector('#early-list').open = true; };
+    root.querySelectorAll('[data-w]').forEach(b => b.onclick = () => { win = b.dataset.w; lim = 30; draw(); });
+    root.querySelectorAll('[data-f]').forEach(b => b.onclick = () => { cur = b.dataset.f; lim = 30; draw(); });
+    const m = document.getElementById('more'); if (m) m.onclick = () => { lim += 30; draw(); };
+  };
+  draw();
+  U.watch(async () => { ({ calls: everything, live_since } = await U.load()); all = everything.filter(c => !c.bt); btAll = everything.filter(c => c.bt); draw(); });
+})();
+</script>

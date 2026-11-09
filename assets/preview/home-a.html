@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650&family=Geist+Mono:wght@400;500&display=swap"><link rel="stylesheet" href="home.css"><meta name="referrer" content="strict-origin-when-cross-origin"><title>Option A · Globe first</title>
+<style>
+.hero{position:relative;height:min(860px,calc(100vh - 64px));min-height:620px;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.hero::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,var(--bg) 0%,rgba(5,5,6,.85) 28%,transparent 55%),linear-gradient(0deg,var(--bg),transparent 22%)}
+.hero .copy{position:absolute;z-index:2;left:0;right:0;top:12%;pointer-events:none}
+.hero .copy>.wrap>*{pointer-events:auto}
+.hero h1{font-size:clamp(38px,4.4vw,62px);max-width:560px;margin-top:18px}
+.hero p.lead{font-size:18px;line-height:1.55;color:var(--fg-2);max-width:500px;margin:20px 0 26px}
+.hs{display:flex;align-items:center;gap:10px;width:min(480px,100%);height:52px;padding:0 16px;border-radius:14px;border:1px solid var(--line-2);background:rgba(18,18,20,.8);backdrop-filter:blur(10px);color:var(--fg-3);font-size:15px}
+.ticker{position:absolute;z-index:2;left:0;right:0;bottom:0;border-top:1px solid var(--line);background:rgba(5,5,6,.7);backdrop-filter:blur(10px)}
+.ticker .wrap{display:flex;gap:28px;height:54px;align-items:center;overflow:hidden;white-space:nowrap;font-size:13.5px}
+.ticker b{color:var(--accent);font:500 12px var(--mono);margin-right:8px}
+.grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:28px}
+.grid .card:first-child{grid-row:span 2}
+.grid .card:first-child h3{font-size:26px}
+.whys{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:900px){.hero{height:auto;min-height:0}.hero iframe{position:relative;height:420px;margin-top:250px}.hero::after{background:linear-gradient(180deg,var(--bg) 0%,transparent 45%,transparent 80%,var(--bg))}.hero .copy{top:28px}.hero p.lead{font-size:16px;margin:14px 0 18px}.ticker{position:relative}
+  .grid,.whys{grid-template-columns:1fr}.grid .card:first-child{grid-row:auto}.grid .card:first-child h3{font-size:21px}}
+</style></head><body><div id="hd"></div>
+<section class="hero"><iframe src="../globe/news.html?embed=1&cx=.7&cy=.5&r=.4" title="News globe" loading="eager"></iframe>
+ <div class="copy"><div class="wrap"><span class="live" id="lv"><i></i>Live</span><h1>The world's financial news, <span>and why markets move.</span></h1>
+ <p class="lead">Every important business and economic story, placed on the globe and explained in plain language.</p>
+ <a class="hs" href="../globe/news.html"><svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Search a country, company or story</a></div></div>
+ <div class="ticker"><div class="wrap" id="tk"></div></div></section>
+<main class="wrap">
+ <section class="sec"><div class="sh"><div><span class="eyebrow">Top stories</span><h2>What matters right now</h2></div><a href="../globe/news.html">All news →</a></div><div class="grid" id="topEl"></div></section>
+ <section class="sec"><div class="sh"><div><span class="eyebrow">Why it moved</span><h2>The stories moving markets, explained</h2></div></div><div class="whys" id="whyEl"></div></section>
+ <section class="sec"><div class="sh"><div><span class="eyebrow">Countries</span><h2>Explore by country</h2></div><a href="../globe/news.html">Open the globe →</a></div><div class="ctys" id="cty"></div></section>
+ <div class="band"><div><h2>Follow the countries and companies you care about.</h2><p>Get the economy figures, rate decisions and market-moving news for them, explained simply.</p></div><a class="btn pri" href="#">Create a free account</a></div>
+</main><div id="ft"></div><span class="pv">Preview · Option A · Globe first</span>
+<script src="home.js"></script><script>
+hd.innerHTML = HEADER('News'); ft.innerHTML = FOOTER;
+loadNews().then(d => { lv.innerHTML = '<i></i>' + updatedText(d.updated); topEl.innerHTML = d.top.slice(0, 5).map((s, i) => card(s, i === 0)).join('');
+  whyEl.innerHTML = d.moved.slice(0, 3).map(why).join(''); cty.innerHTML = countries(d.stories);
+  tk.innerHTML = d.latest.slice(0, 6).map(s => '<a href="' + url(s) + '"><b>' + ago(s.published_at) + '</b>' + esc(s.headline) + '</a>').join(''); });
+</script></body></html>

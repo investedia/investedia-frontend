@@ -1,0 +1,24 @@
+/* Track record scoreboard (2A). Numbers come only from assets/globe/news-ledger.json. */
+.tr-lede{max-width:640px;color:var(--fg-2,#d4d4d8);font-size:17px;line-height:1.5;margin:8px 0 0}
+.tr{margin:28px 0}
+.tr h2{margin:34px 0 12px;font-size:22px;letter-spacing:-.02em}
+.tr-score{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:18px}
+.tr-big,.tr-stat{border:1px solid var(--line,rgba(255,255,255,.14));border-radius:20px;background:rgba(255,255,255,.04);padding:22px}
+.tr-big strong{display:block;font-size:64px;line-height:1;letter-spacing:-.04em}
+.tr-big.building strong{font-size:44px}
+.tr-big span{display:block;margin-top:8px;color:var(--fg-3,#a1a1aa);font-size:15px}
+.tr-bar{margin-top:14px;height:6px;border-radius:3px;background:rgba(255,255,255,.12);overflow:hidden}.tr-bar i{display:block;height:100%;background:#ff7a1a}
+.tr-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tr-stat strong{display:block;font-size:34px;line-height:1.1;letter-spacing:-.03em}.tr-stat span{display:block;margin-top:4px;font-size:13.5px;color:var(--fg-3,#a1a1aa)}
+.tr-stat.ok strong{color:#34d399}.tr-stat.no strong{color:#f87171}
+.tr-dirs{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:6px;color:var(--fg-2,#d4d4d8);font-size:15px}.tr-dirs b{margin-right:6px}
+.tr-list{display:grid;gap:0;border:1px solid var(--line,rgba(255,255,255,.14));border-radius:18px;overflow:hidden}
+.tr-row{display:grid;grid-template-columns:36px minmax(0,1fr) auto auto;gap:12px;align-items:center;padding:14px 16px;color:inherit;text-decoration:none;border-top:1px solid var(--line,rgba(255,255,255,.1))}.tr-row:first-child{border-top:0}.tr-row:hover{background:rgba(255,255,255,.04)}
+.tr-dir{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;font-weight:700}.tr-dir.up{background:rgba(52,211,153,.16);color:#34d399}.tr-dir.down{background:rgba(248,113,113,.16);color:#f87171}
+.tr-t b{display:block;font-size:15.5px}.tr-t small{display:block;margin-top:2px;color:var(--fg-3,#a1a1aa);font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tr-mv{font:600 14px 'Geist Mono',ui-monospace,monospace}.tr-mv.up{color:#34d399}.tr-mv.dn{color:#f87171}
+.tr-chip{padding:3px 10px;border-radius:99px;font-size:12.5px;font-weight:700;white-space:nowrap}.tr-chip.ok{background:rgba(48,209,88,.16);color:#6ef59a}.tr-chip.no{background:rgba(255,69,58,.16);color:#ff9a92}.tr-chip.na{background:rgba(255,255,255,.08);color:#d4d4d8}
+.tr-wait,.tr-since{color:var(--fg-3,#a1a1aa);font-size:15px;line-height:1.5}
+.tr-how{margin:36px 0 60px;max-width:760px}.tr-how h2{font-size:22px;letter-spacing:-.02em}.tr-how ul{padding-left:20px;display:grid;gap:10px;color:var(--fg-2,#d4d4d8);line-height:1.5}.tr-note{color:var(--fg-3,#a1a1aa);font-size:13.5px;line-height:1.5}
+@media(max-width:760px){.tr-score{grid-template-columns:1fr}.tr-big strong{font-size:52px}.tr-row{grid-template-columns:32px minmax(0,1fr) auto}.tr-row .tr-chip{grid-column:2/4;justify-self:start}.tr-t small{white-space:normal}.tr-how li,.tr-wait,.tr-since,.tr-dirs,.tr-t small,.tr-stat span,.tr-big span{font-size:14px}}
+.tr-b{font-style:normal;font-weight:600;font-size:11.5px;margin-left:6px;padding:1px 7px;border-radius:99px;background:rgba(255,255,255,.08);color:var(--fg-3,#a1a1aa)}

@@ -1,0 +1,3 @@
+# Investedia frontend
+
+Local-only recovery. No remotes, GitHub publishing, deployment, auth/schema changes or secrets without a new user instruction. Keep the news-first design and old public URLs. Edit src/pages and assets/js or assets/css, then build with python build.py. Generated root HTML and docs/ are retained. Never fabricate financial data or rewrite snapshot timestamps. Browser configuration is whitelisted from config.local.json (ignored). Never put a service-role key or Cloudflare token in frontend files. Keep Not investment advice visible. Original code/history and old rules are preserved in the workspace archive.

@@ -1,0 +1,13 @@
+{"title":"Investedia Markets","desc":"Live and delayed market board: sectors, indices, commodities, crypto and currencies.","key":"markets","scripts":["assets/home-news.js"]}
+<link rel="stylesheet" href="assets/news-board.css"><link rel="stylesheet" href="assets/markets-heat.css">
+<main class="nb mh">
+  <div class="mh-top"><span class="nb-eb">Markets · <span id="mh-up">Loading</span></span><span class="mh-status" id="mh-status"><i></i><span>Delayed</span></span></div>
+  <h1>The market, <span>in one glance.</span></h1>
+  <p class="nb-lead">Sectors, indices, commodities, crypto and currencies on one board. Prices are delayed by 15 to 30 minutes and refresh every 15 minutes; only crypto can stream in real time, and it says Live when it does.</p>
+  <div class="mh-bar"><div class="nb-seg" id="mh-view" role="group" aria-label="View"></div><div class="nb-seg" id="mh-win" role="group" aria-label="Time window"></div></div>
+  <div id="mh-live-note" class="mh-note2" hidden>Crypto prices are delayed. <button type="button" id="mh-live-on">Turn on live prices</button> to stream them from Coinbase.</div>
+  <div id="mh-body"></div>
+  <p class="mv-note">Prices come from public market data and are delayed by 15 to 30 minutes unless marked Live. Sector moves use sector funds (ETFs). Not investment advice.</p>
+</main>
+<script src="assets/asset-icons.js"></script>
+<script src="assets/markets-heat.js"></script>

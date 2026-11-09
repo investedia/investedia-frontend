@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650&family=Geist+Mono:wght@400;500&display=swap"><link rel="stylesheet" href="home.css"><meta name="referrer" content="strict-origin-when-cross-origin"><title>Option B · Front page</title>
+<style>
+.top{padding-top:40px}
+.mast{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.mast h1{font-size:clamp(30px,3.6vw,48px)}
+.front{display:grid;grid-template-columns:2fr 1fr;gap:36px;padding-top:28px}
+.lead .img{aspect-ratio:16/9}
+.lead h3{font-size:clamp(24px,2.6vw,34px)!important;letter-spacing:-.03em!important}
+.lead p{font-size:16px!important}
+.side h2{font-size:13px;margin:0 0 4px}
+.whys{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.globe{display:grid;grid-template-columns:1fr 1.3fr;gap:32px;align-items:center;margin-top:72px;padding:28px;border-radius:24px;border:1px solid var(--line);background:var(--bg-2);overflow:hidden}
+.globe iframe{width:100%;height:440px;border:0;border-radius:16px}
+.globe h2{margin:10px 0 12px;font-size:clamp(24px,2.6vw,34px);font-weight:600;letter-spacing:-.03em}
+.globe p{color:var(--fg-2);font-size:15.5px;line-height:1.6;margin:0 0 20px}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.cols h3{margin:0 0 6px;font-size:15px;font-weight:600;padding-bottom:10px;border-bottom:2px solid var(--fg)}
+@media (max-width:900px){.front,.whys,.globe,.cols{grid-template-columns:1fr}.globe{padding:18px}.globe iframe{height:340px}}
+</style></head><body><div id="hd"></div>
+<main class="wrap top">
+ <div class="mast"><div><span class="live" id="lv"><i></i>Live</span><h1 style="margin-top:14px">Today's financial news, <span>explained.</span></h1></div><span class="meta" id="dt"></span></div>
+ <div class="front"><div class="lead" id="lead"></div><aside class="side"><h2 class="eyebrow">Latest</h2><div id="lat"></div></aside></div>
+ <section class="sec"><div class="sh"><div><span class="eyebrow">Why it moved</span><h2>Markets moved because…</h2></div></div><div class="whys" id="whyEl"></div></section>
+ <div class="globe"><div><span class="eyebrow">The globe</span><h2>See where it's happening.</h2><p>Every story sits on the map. Tap a country for its news, its economy and its flag, and follow it.</p><div class="ctys" id="cty" style="flex-wrap:wrap;overflow:visible"></div><p></p><a class="btn pri" href="../globe/news.html">Open the globe</a></div><iframe src="../globe/news.html?embed=1&r=.4" title="News globe"></iframe></div>
+ <section class="sec"><div class="cols" id="cols"></div></section>
+ <div class="band"><div><h2>Learn what the news means.</h2><p>Short lessons on interest rates, inflation, earnings and more, linked from every story.</p></div><a class="btn pri" href="#">Start learning</a></div>
+</main><div id="ft"></div><span class="pv">Preview · Option B · Front page</span>
+<script src="home.js"></script><script>
+hd.innerHTML = HEADER('News'); ft.innerHTML = FOOTER; dt.textContent = new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+loadNews().then(d => { lv.innerHTML = '<i></i>' + updatedText(d.updated); lead.innerHTML = card(d.top[0]); lat.innerHTML = d.latest.filter(s => s !== d.top[0]).slice(0, 6).map(row).join('');
+  whyEl.innerHTML = d.moved.slice(1, 4).map(why).join(''); cty.innerHTML = countries(d.stories).split('</a>').slice(0, 6).join('</a>') + '</a>';
+  cols.innerHTML = [['economy', 'Economy'], ['companies', 'Companies'], ['markets', 'Markets']].map(([k, l]) => '<div><h3>' + l + '</h3>' + (d.latest.filter(s => s.category === k).slice(0, 4).map(row).join('') || '<p class="meta">No stories right now.</p>') + '</div>').join(''); });
+</script></body></html>

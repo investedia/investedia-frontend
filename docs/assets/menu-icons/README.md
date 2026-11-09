@@ -1,0 +1,1 @@
+Region globes use the site's Natural Earth country outlines (assets/globe/countries-50m.json, public domain), simplified for a small orthographic view. Each globe is centred on its named region. These represent geographic coverage, not political flags.

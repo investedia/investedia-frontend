@@ -1,0 +1,13 @@
+/* Investedia animated mark. Tune the look here; timing can also be passed as options to InvLogoAnim.mount(). */
+.ila{
+  --ila-orange:#FF7A1A;       /* the chart line */
+  --ila-orange-hi:#FFA462;    /* brightness of the line's leading edge while it draws (very subtle) */
+  --ila-bg:#000;              /* tile background */
+  --ila-charcoal:#1e1e21;     /* area under the line */
+  --ila-delay:.15s;           /* black screen before the line starts */
+  --ila-duration:1.7s;        /* time the line takes to draw, including the finishing ease */
+  --ila-hold:.35s;            /* completed mark stays still before the loop restarts (demo mode only) */
+  display:inline-block;width:var(--ila-size,128px);height:var(--ila-size,128px);line-height:0;contain:layout paint}
+.ila svg{display:block;width:100%;height:100%;overflow:visible}
+.ila .ila-head{opacity:0}
+@media (prefers-reduced-motion:reduce){.ila .ila-head{display:none}}

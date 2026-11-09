@@ -1,0 +1,46 @@
+/* Compact news filters, shared by the desktop dropdown and mobile drawer. */
+.dd-news{width:620px;padding:18px;max-width:calc(100vw - 32px)}
+.nn-menu{display:grid;grid-template-columns:114px minmax(0,1fr);gap:20px;color:var(--fg)}
+.nn-categories{display:flex;flex-direction:column;gap:4px;border-right:1px solid var(--line);padding-right:14px}
+.nn-categories button{border:0;background:none;color:var(--fg-2);font:inherit;font-size:12px;text-align:left;border-radius:7px;padding:10px;min-height:44px;cursor:pointer}
+.nn-categories button[aria-pressed=true]{background:rgba(255,122,26,.10);color:#ffad73}
+.nn-heading{font-size:12px;color:var(--fg-3);margin:4px 0 12px}.nn-items{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px}
+.nn-item{display:flex;align-items:center;gap:11px;padding:8px;min-height:52px;border-radius:8px;font-size:13px;font-weight:450;color:var(--fg)}
+.nn-item:hover{background:var(--bg-3)}.nn-icon{width:34px;height:34px;flex:none;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:var(--bg-2);color:var(--fg-2);position:relative;overflow:hidden}
+.nn-icon>svg{width:23px;height:23px}.nn-cluster>img,.nn-mini{position:absolute;width:17px;height:17px;object-fit:contain;border-radius:50%;border:1px solid var(--bg-2);background:#f3f3f5;color:#202024}
+.nn-cluster>:nth-child(1){left:1px;top:3px}.nn-cluster>:nth-child(2){right:1px;top:4px}.nn-cluster>:nth-child(3){left:8px;bottom:1px}.nn-mini{display:grid;place-items:center}.nn-mini svg{width:14px;height:14px}.nn-symbol{font:600 8px/1 sans-serif}.nn-region>img{width:32px;height:32px}.nn-foot{grid-column:1/-1;display:flex;justify-content:space-between;gap:12px;font-size:11px;border-top:1px solid var(--line);padding-top:14px;color:var(--fg-3)}.nn-foot a{color:#ffad73}
+.nn-categories button:focus-visible,.nn-item:focus-visible{outline:2px solid #ff7a1a;outline-offset:2px}
+:root[data-theme=light] .nn-categories button[aria-pressed=true],:root[data-theme=light] .nn-foot a{color:#9c4100}
+@media(max-width:1140px){.drawer .nn-menu{padding:14px 0;grid-template-columns:90px minmax(0,1fr);gap:10px}.drawer .nn-items{grid-template-columns:1fr;gap:1px}.drawer .nn-item{justify-content:flex-start;border:0;font-size:13px;padding:6px;min-height:46px}.drawer .nn-categories{padding-right:8px}.drawer .nn-categories button{font-size:11px;padding:8px}.drawer .nn-icon{width:30px;height:30px}.drawer .nn-cluster>img,.drawer .nn-mini{width:15px;height:15px}.drawer .nn-cluster>:nth-child(3){left:7px;bottom:1px}.drawer .nn-foot a{padding:0;border:0;font-size:12px}.drawer .nn-region img{width:29px;height:29px}.drawer .nn-foot{font-size:10px}.drawer .nn-mini svg{width:12px;height:12px}.drawer .nn-symbol{font-size:7px}}
+
+.nn-active-filter a{margin-left:16px;color:#ffad73}
+
+@media(max-width:1140px){.drawer>a{display:flex;align-items:center;justify-content:space-between;min-height:44px;padding:14px 4px;border-bottom:1px solid var(--line-soft)}.drawer .nn-foot a{min-height:0;display:inline;padding:0}.drawer .nn-menu{margin-bottom:10px}}
+
+/* Real logos and flags on dark glass, never white tiles */
+.nn-cluster>img{background:rgba(255,255,255,.08)!important;border:1px solid rgba(255,255,255,.14)!important;padding:1px}
+.nn-cluster>img.nn-fl{padding:0;object-fit:cover;background:none!important}
+.nn-icon.nn-cluster{background:rgba(255,255,255,.04)}
+
+/* Three overlapping circles: the middle one sits in front and overlaps both sides */
+.nn-icon.nn-cluster{display:flex;align-items:center;justify-content:center;width:74px;height:38px;flex:none;border:0;border-radius:0;background:none;overflow:visible;padding:0}
+.nn-cluster>img{position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:26px!important;height:26px!important;border-radius:50%!important;object-fit:cover;padding:4px!important;background:#1b1b1f!important;border:2px solid #0e0e10!important;box-sizing:border-box;flex:none;margin:0}
+.nn-cluster>img:nth-child(1){margin-right:-8px;z-index:1}.nn-cluster>img:nth-child(3){margin-left:-8px;z-index:1}
+.nn-cluster>img:nth-child(2){width:33px!important;height:33px!important;z-index:2;padding:5px!important;box-shadow:0 0 0 2px #0e0e10}
+.nn-cluster>img.nn-fl{padding:0!important;background:none!important;object-fit:cover}
+
+/* Hover menu v2: moving pill, cross-fade panel, in-panel search */
+.nn-categories{position:relative}.nn-pill{position:absolute;left:0;right:14px;top:0;height:44px;border-radius:8px;background:rgba(255,122,26,.10);transform:translateY(calc(var(--i,0) * 48px));transition:transform .22s cubic-bezier(.2,.8,.2,1);pointer-events:none}
+.nn-categories button{position:relative;z-index:1;transition:color .18s}.nn-categories button[aria-pressed=true]{background:none!important;color:#ffad73}
+.nn-content{min-height:292px;transition:opacity .11s ease,transform .18s cubic-bezier(.2,.8,.2,1)}.nn-content.nn-out{opacity:0;transform:translateY(6px)}
+.nn-search{position:relative;margin:0 0 10px}.nn-si{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--fg-3);pointer-events:none}.nn-si svg{width:16px;height:16px;display:block}
+.nn-q{width:100%;height:44px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--fg);font:inherit;font-size:14px;padding:0 14px 0 36px;outline:none;transition:border-color .15s,background .15s}
+.nn-q:focus{border-color:rgba(255,122,26,.6);background:rgba(255,255,255,.07)}.nn-q::-webkit-search-cancel-button{display:none}
+.nn-results{display:grid;gap:2px}.nn-res{min-height:48px}.nn-rt{min-width:0}.nn-rt b{display:block;font-weight:550;font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.nn-rt small{display:block;color:var(--fg-3);font-size:11.5px;margin-top:1px}
+.nn-rt mark{background:none;color:#ffad73}.nn-none{padding:14px 8px;color:var(--fg-3);font-size:13px}
+.nn-lg{overflow:hidden}.nn-lg>img{width:100%;height:100%;object-fit:contain;padding:5px;box-sizing:border-box}.nn-lg>img.nn-fl{padding:0;object-fit:cover}
+.nn-ini{font:700 13px Inter,system-ui,sans-serif;color:var(--fg-2)}.nn-sec svg{width:20px;height:20px}
+.nn-heading{display:none}
+@media(prefers-reduced-motion:reduce){.nn-pill,.nn-content{transition:none}}
+@media(max-width:1140px){.nn-pill{right:8px}.drawer .nn-content{min-height:0}.drawer .nn-q{font-size:16px}}
+.nn-q:focus-visible{outline:2px solid rgba(255,122,26,.45);outline-offset:1px}

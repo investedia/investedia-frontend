@@ -1,0 +1,52 @@
+{"title":"Investedia Lesson","desc":"Investedia course lesson.","key":"lesson","scripts":["assets/learn.js"]}
+<div class="lesson">
+  <aside class="lesson-side">
+    <a class="link" href="education.html" style="margin-bottom:14px"><span data-icon="arrow" style="transform:rotate(180deg)"></span>Library</a>
+    <div class="card">
+      <div class="card-head" style="display:grid;gap:8px"><span class="dim" style="font-size:12px" id="c-topic"></span><h3 id="c-title"></h3><div class="meter"><i id="c-meter" style="background:var(--accent)"></i></div><span class="dim" style="font-size:12px" id="c-prog"></span></div>
+      <ol class="mods" id="mods"></ol>
+    </div>
+  </aside>
+  <article class="lesson-main">
+    <div class="news-meta" id="l-meta"></div>
+    <h1 style="font-size:clamp(26px,3vw,38px);margin:10px 0 24px" id="l-title"></h1>
+    <div class="prose" id="l-body"></div>
+    <div id="l-extra"></div>
+    <div class="lesson-nav"><a class="btn btn-ghost" id="prev">← Previous</a><button class="btn btn-ghost" type="button" id="mark"></button><a class="btn btn-primary" id="next">Next lesson →</a></div>
+  </article>
+</div>
+<section class="sec" style="margin-top:48px" data-newsletter></section>
+<script>
+const { icon } = UI, L = LEARN;
+const qs = new URLSearchParams(location.search);
+const c = L.courses.find(x => x.id === qs.get('c')) || L.courses[0];
+let li = Math.max(0, Math.min(c.lessons.length - 1, +qs.get('l') || 0));
+const store = () => { try { return JSON.parse(localStorage.getItem('inv-learn') || '{}'); } catch { return {}; } };
+const save = d => { try { localStorage.setItem('inv-learn', JSON.stringify(d)); } catch {} };
+const topic = L.topics.find(t => t.k === c.topic);
+function render() {
+  const l = c.lessons[li], d = store(), isDone = !!d[c.id + ':' + li], n = c.lessons.filter((_, i) => d[c.id + ':' + i]).length;
+  document.title = `${l.t} — ${c.t} — Investedia`;
+  history.replaceState(null, '', `?c=${c.id}&l=${li}`);
+  document.getElementById('c-topic').textContent = topic.t + ' · ' + c.level;
+  document.getElementById('c-title').textContent = c.t;
+  document.getElementById('c-meter').style.width = n / c.lessons.length * 100 + '%';
+  document.getElementById('c-prog').textContent = `${n} of ${c.lessons.length} lessons complete`;
+  document.getElementById('mods').innerHTML = c.lessons.map((x, i) => `<li><a href="?c=${c.id}&l=${i}" data-i="${i}" class="${i === li ? 'cur' : ''} ${d[c.id + ':' + i] ? 'done' : ''}"><i>${d[c.id + ':' + i] ? icon('check') : i + 1}</i><span>${x.t}</span><small class="num">${x.min}m</small></a></li>`).join('');
+  document.querySelectorAll('#mods a').forEach(a => a.onclick = e => { e.preventDefault(); li = +a.dataset.i; render(); scrollTo(0, 0); });
+  document.getElementById('l-meta').innerHTML = `<span class="tag">Lesson ${li + 1} of ${c.lessons.length}</span><span>${l.min} min read</span>${l.body ? '' : '<span class="tag acc">Being written</span>'}`;
+  document.getElementById('l-title').textContent = l.t;
+  document.getElementById('l-body').innerHTML = l.body ? l.body.map(p => p.startsWith('## ') ? `<h2>${p.slice(3)}</h2>` : p.startsWith('> ') ? `<blockquote>${p.slice(2)}</blockquote>` : `<p>${p}</p>`).join('')
+    : `<p>This lesson is being written. Here’s what it will cover in the “${c.t}” course.</p><p class="muted">Want to know when it’s published? Join the list below and we’ll send it to you.</p>`;
+  document.getElementById('l-extra').innerHTML = l.body ? `<div class="card card-pad ai-glow" style="margin:28px 0;max-width:720px"><b style="font-size:14px">Key takeaways</b><ul class="bullets" style="margin-top:12px;gap:8px">${l.takeaways.map(t => `<li>${icon('check')}<span>${t}</span></li>`).join('')}</ul></div>
+    <div class="card card-pad quiz" style="max-width:720px"><span class="eyebrow">Quick check</span><h3 style="margin:8px 0 14px">${l.quiz.q}</h3><div style="display:grid;gap:8px">${l.quiz.a.map((a, i) => `<button type="button" class="quiz-a" data-i="${i}">${a}</button>`).join('')}</div><p class="quiz-r" hidden></p></div>` : '';
+  document.querySelectorAll('.quiz-a').forEach(b => b.onclick = () => { const ok = +b.dataset.i === l.quiz.ok; document.querySelectorAll('.quiz-a').forEach(x => { x.disabled = true; if (+x.dataset.i === l.quiz.ok) x.classList.add('right'); }); if (!ok) b.classList.add('wrong'); const r = document.querySelector('.quiz-r'); r.hidden = false; r.className = 'quiz-r ' + (ok ? 'up' : 'down'); r.textContent = ok ? 'Correct!' : 'Not quite. The right answer is highlighted.'; });
+  const mk = document.getElementById('mark'); mk.innerHTML = isDone ? icon('check') + 'Completed' : 'Mark as complete'; mk.classList.toggle('on', isDone);
+  mk.onclick = () => { const s = store(); s[c.id + ':' + li] ? delete s[c.id + ':' + li] : (s[c.id + ':' + li] = 1); save(s); render(); };
+  const prev = document.getElementById('prev'), next = document.getElementById('next');
+  prev.style.visibility = li ? 'visible' : 'hidden'; prev.href = `?c=${c.id}&l=${li - 1}`; prev.onclick = e => { e.preventDefault(); li--; render(); scrollTo(0, 0); };
+  if (li < c.lessons.length - 1) { next.textContent = 'Next lesson →'; next.href = `?c=${c.id}&l=${li + 1}`; next.onclick = e => { e.preventDefault(); const s = store(); s[c.id + ':' + li] = 1; save(s); li++; render(); scrollTo(0, 0); }; }
+  else { next.textContent = 'Back to library'; next.href = 'education.html'; next.onclick = null; }
+}
+render();
+</script>

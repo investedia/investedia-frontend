@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="assets/consent.css?v=5895172dc9">
+<script src="assets/consent.js?v=5895172dc9"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Investedia Analytics</title>
+<meta name="description" content="Private site analytics for the owner.">
+<meta property="og:title" content="Investedia Analytics">
+<meta property="og:description" content="Private site analytics for the owner.">
+<meta name="theme-color" content="#0A0A0B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Investedia">
+<meta property="og:url" content="https://investedia.com/admin.html">
+<meta property="og:image" content="https://investedia.com/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Investedia: invest with clarity, see the world move">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Investedia Analytics">
+<meta name="twitter:description" content="Private site analytics for the owner.">
+<meta name="twitter:image" content="https://investedia.com/assets/og-default.png">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/app.css?v=5895172dc9">
+<link rel="stylesheet" href="assets/skin.css?v=5895172dc9">
+<link rel="apple-touch-icon" href="assets/app/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Investedia">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash-1320x2868.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash-1290x2796.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash-1206x2622.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash-1179x2556.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash-1284x2778.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash-1170x2532.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash-1125x2436.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="assets/app/splash-1242x2688.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/app/splash-828x1792.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/app/splash-750x1334.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="assets/app/splash-640x1136.png">
+</head>
+<body data-page="admin">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<script src="assets/quotes.js"></script>
+<script src="assets/news.js"></script>
+<script src="assets/mock.js?v=5895172dc9"></script>
+<link rel="stylesheet" href="assets/news-menu.css?v=5895172dc9">
+<script src="assets/runtime-config.js?v=5895172dc9"></script>
+<script src="assets/live-config.js?v=5895172dc9"></script>
+<script src="assets/live-data.js?v=5895172dc9" defer></script>
+<script src="assets/prefs.js?v=5895172dc9"></script>
+<script src="assets/peek.js?v=5895172dc9"></script>
+<script src="assets/sectors.js?v=5895172dc9"></script>
+<script src="assets/news-menu.js?v=5895172dc9"></script>
+<script src="assets/locale.js?v=5895172dc9"></script>
+<script src="assets/ui.js?v=5895172dc9"></script>
+<script src="assets/news-alerts.js?v=5895172dc9" defer></script>
+<main class="wrap" id="main-content" tabindex="-1">
+<div class="an-head">
+  <div><span class="eyebrow">Owner · private</span><h1>Analytics</h1><p class="muted">How people find and use investedia.com. Optional usage events; access restricted to the owner.</p></div>
+  <div class="an-ctrl"><span class="an-live" id="live"><i></i>Live</span><div class="tabs an-range" id="range"><button class="tab" data-tab="1">Today</button><button class="tab" data-tab="7" aria-selected="true">7 days</button><button class="tab" data-tab="30">30 days</button></div></div>
+</div>
+
+<div id="an-msg"></div>
+<div id="an" hidden>
+  <section class="an-kpis" id="kpis"></section>
+
+  <section class="an-grid">
+    <div class="card an-card an-wide">
+      <div class="an-ch"><div><h3 id="chart-t">Page views</h3><p class="muted" id="chart-s"></p></div><div class="an-legend"><span><i class="ln"></i>This period</span><span><i class="ln dash"></i>Previous period</span></div></div>
+      <div class="an-plot" id="chart"></div>
+    </div>
+    <div class="card an-card">
+      <div class="an-ch"><h3>Sign-up funnel</h3></div>
+      <div id="funnel"></div>
+    </div>
+    <div class="card an-card">
+      <div class="an-ch"><h3>Right now</h3><span class="muted" id="feed-n"></span></div>
+      <div class="an-feed" id="feed"></div>
+    </div>
+    <div class="card an-card an-full"><div class="an-ch"><div><h3>Visitors by country</h3><p class="muted" id="geo-s"></p></div><div class="an-scale"><span>Fewer</span><i></i><span>More</span></div></div>
+      <div class="an-geo"><div class="an-map" id="map"><p class="an-none">Loading map…</p></div><div id="countries"></div></div></div>
+    <div class="card an-card"><div class="an-ch"><h3>Top pages</h3></div><div id="pages"></div></div>
+    <div class="card an-card"><div class="an-ch"><h3>Traffic sources</h3></div><div id="refs"></div></div>
+    <div class="card an-card"><div class="an-ch"><h3>Devices</h3></div><div id="devices"></div></div>
+    <div class="card an-card"><div class="an-ch"><h3>Most watched</h3></div><div id="watched"></div></div>
+    <div class="card an-card an-brain"><div class="an-ch"><h3>For your Second Brain</h3><button class="btn btn-ghost btn-sm" type="button" id="copy">Copy</button></div><p id="summary"></p></div>
+  </section>
+</div>
+<script>
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+const fmt = n => n.toLocaleString('en-US');
+const msg = (h, t, btn) => { document.getElementById('an-msg').innerHTML = `<div class="card an-empty"><h2>${h}</h2><p class="muted">${t}</p>${btn || ''}</div>`; };
+const dayKey = d => d.toLocaleDateString('en-CA');
+const ago = ts => { const m = Math.round((Date.now() - new Date(ts)) / 60000); return m < 1 ? 'just now' : m < 60 ? m + ' min ago' : m < 2880 ? Math.round(m / 60) + ' h ago' : Math.round(m / 1440) + ' days ago'; };
+const PAGE = p => ({ '/': 'Home', '/globe': 'World map', '/asset': 'Asset page', '/markets': 'Markets', '/news': 'News', '/watchlist': 'Watchlist', '/dashboard': 'Dashboard', '/admin': 'Analytics' })[p] || p.replace(/^\//, '');
+let EV = [], days = 7;
+
+// Time buckets for the period (hours for Today, days otherwise), shifted back one period for the comparison line
+function buckets(shift) {
+  const hourly = days === 1, n = hourly ? 24 : days, now = new Date(), out = [];
+  for (let i = n - 1; i >= 0; i--) { const d = new Date(now); if (hourly) { d.setHours(now.getHours() - i - shift * 24, 0, 0, 0); } else d.setDate(now.getDate() - i - shift * days); out.push({ d, key: hourly ? d.getHours() + ':' + dayKey(d) : dayKey(d), v: 0 }); }
+  return out;
+}
+function fill(bs, xs) { const idx = new Map(bs.map((b, i) => [b.key, i])); xs.forEach(e => { const t = new Date(e.ts), k = days === 1 ? t.getHours() + ':' + dayKey(t) : dayKey(t); if (idx.has(k)) bs[idx.get(k)].v++; }); return bs; }
+function period(shift) { const end = shift ? Date.now() - shift * (days === 1 ? 864e5 : days * 864e5) : Date.now(), start = days === 1 ? new Date(new Date(end).setHours(0, 0, 0, 0)).getTime() : end - days * 864e5; return EV.filter(e => { const t = +new Date(e.ts); return t >= start && t < end; }); }
+const spark = vals => { const W = 120, H = 32, max = Math.max(1, ...vals), pts = vals.map((v, i) => `${(i / Math.max(1, vals.length - 1) * W).toFixed(1)},${(H - 3 - v / max * (H - 6)).toFixed(1)}`).join(' ');
+  return `<svg class="an-spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true"><polyline points="${pts}" fill="none" stroke="var(--accent)" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round" stroke-linecap="round"/></svg>`; };
+const delta = (a, b) => { if (!b) return a ? '<span class="an-d up">new</span>' : '<span class="an-d">–</span>'; const p = (a - b) / b * 100; return `<span class="an-d ${p >= 0 ? 'up' : 'down'}">${p >= 0 ? '↑' : '↓'} ${Math.abs(p).toFixed(0)}%</span>`; };
+
+function chart(cur, prev) {
+  const W = 1000, H = 220, pad = { l: 36, r: 8, t: 10, b: 24 }, n = cur.length, max = Math.max(4, ...cur.map(b => b.v), ...prev.map(b => b.v));
+  const step = Math.pow(10, Math.floor(Math.log10(max))) * (max / Math.pow(10, Math.floor(Math.log10(max))) > 5 ? 2 : 1), top = Math.ceil(max / step) * step;
+  const x = i => pad.l + i / Math.max(1, n - 1) * (W - pad.l - pad.r), y = v => pad.t + (1 - v / top) * (H - pad.t - pad.b);
+  const path = bs => bs.map((b, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)} ${y(b.v).toFixed(1)}`).join(' ');
+  const label = b => days === 1 ? b.d.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }) : b.d.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+  const ticks = []; for (let v = 0; v <= top; v += step) ticks.push(v);
+  const xl = [0, Math.floor((n - 1) / 2), n - 1];
+  const el = document.getElementById('chart');
+  el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="Page views per ${days === 1 ? 'hour' : 'day'}">
+    <defs><linearGradient id="an-fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="var(--accent)" stop-opacity=".28"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></linearGradient></defs>
+    ${ticks.map(v => `<line x1="${pad.l}" x2="${W - pad.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line-soft)" vector-effect="non-scaling-stroke"/>`).join('')}
+    <path d="${path(prev)}" fill="none" stroke="var(--fg-3)" stroke-width="1.5" stroke-dasharray="4 5" vector-effect="non-scaling-stroke"/>
+    <path d="${path(cur)} L${x(n - 1)} ${y(0)} L${x(0)} ${y(0)}Z" fill="url(#an-fill)"/>
+    <path d="${path(cur)}" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <line class="an-x" x1="0" x2="0" y1="${pad.t}" y2="${H - pad.b}" stroke="var(--fg-3)" vector-effect="non-scaling-stroke" opacity="0"/>
+  </svg>
+  <div class="an-yl">${ticks.map(v => `<span style="top:${y(v) / H * 100}%">${fmt(v)}</span>`).join('')}</div>
+  <div class="an-xl">${xl.map(i => `<span style="left:${x(i) / W * 100}%">${label(cur[i])}</span>`).join('')}</div>
+  <i class="an-dot" hidden></i><div class="an-tip" hidden></div>`;
+  const svg = el.querySelector('svg'), tip = el.querySelector('.an-tip'), dot = el.querySelector('.an-dot'), xh = el.querySelector('.an-x');
+  svg.addEventListener('pointermove', e => { const r = svg.getBoundingClientRect(), fx = (e.clientX - r.left) / r.width * W, i = Math.max(0, Math.min(n - 1, Math.round((fx - pad.l) / (W - pad.l - pad.r) * (n - 1)))), b = cur[i];
+    xh.setAttribute('x1', x(i)); xh.setAttribute('x2', x(i)); xh.setAttribute('opacity', '.5');
+    const px = x(i) / W * r.width, py = y(b.v) / H * r.height; dot.style.left = px + 'px'; dot.style.top = py + 'px'; dot.hidden = false;
+    tip.innerHTML = `<small>${esc(label(b))}</small><b>${fmt(b.v)}</b> views<small>previous ${fmt(prev[i].v)}</small>`; tip.style.left = Math.max(60, Math.min(r.width - 60, px)) + 'px'; tip.style.top = py + 'px'; tip.hidden = false; });
+  svg.addEventListener('pointerleave', () => { tip.hidden = dot.hidden = true; xh.setAttribute('opacity', '0'); });
+}
+function ranked(id, rows, total, empty) {
+  document.getElementById(id).innerHTML = rows.length ? '<ol class="an-rank">' + rows.slice(0, 6).map(([k, n]) => { const p = total ? n / total * 100 : 0; return `<li><span class="an-rl">${esc(k)}</span><span class="an-rv">${fmt(n)}<small>${p.toFixed(0)}%</small></span><i style="--w:${Math.max(1.5, p)}"></i></li>`; }).join('') + '</ol>' : `<p class="an-none">${empty}</p>`;
+}
+const count = (xs, f) => { const m = new Map(); xs.forEach(x => { const k = f(x); if (k) m.set(k, (m.get(k) || 0) + 1); }); return [...m].sort((a, b) => b[1] - a[1]); };
+
+function draw() {
+  const xs = period(0), px = period(1), views = xs.filter(e => e.type === 'pageview'), pv = px.filter(e => e.type === 'pageview');
+  const visits = views.filter(e => e.entry), pvis = pv.filter(e => e.entry), T = t => xs.filter(e => e.type === t).length, P = t => px.filter(e => e.type === t).length;
+  const cur = fill(buckets(0), views), prev = fill(buckets(1), pv), vcur = fill(buckets(0), visits);
+  const kp = [['Visits', visits.length, pvis.length, vcur.map(b => b.v)], ['Page views', views.length, pv.length, cur.map(b => b.v)],
+    ['Pages per visit', visits.length ? +(views.length / visits.length).toFixed(1) : 0, pvis.length ? +(pv.length / pvis.length).toFixed(1) : 0, null],
+    ['Sign-ups', T('signup'), P('signup'), fill(buckets(0), xs.filter(e => e.type === 'signup')).map(b => b.v)], ['Watchlist adds', T('watch'), P('watch'), fill(buckets(0), xs.filter(e => e.type === 'watch')).map(b => b.v)]];
+  document.getElementById('kpis').innerHTML = kp.map(([k, v, was, s], i) => `<div class="card an-kpi${i === 0 ? ' an-hero' : ''}"><span class="an-kl">${k}</span><b>${fmt(v)}</b><div class="an-kf">${delta(v, was)}<span class="muted">vs previous</span></div>${s ? spark(s) : ''}</div>`).join('');
+  document.getElementById('chart-t').textContent = days === 1 ? 'Page views today' : `Page views, last ${days} days`;
+  document.getElementById('chart-s').innerHTML = `${fmt(views.length)} views · ${delta(views.length, pv.length)} vs the ${days === 1 ? 'day' : days + ' days'} before`;
+  chart(cur, prev);
+  // funnel: visits → explored (2+ pages) → signed up
+  const sess = visits.length, deep = Math.min(sess, Math.max(0, views.length - sess)), su = T('signup');
+  const fs = [['Visits', sess], ['Explored more pages', deep], ['Created an account', su]];
+  document.getElementById('funnel').innerHTML = '<div class="an-funnel">' + fs.map(([k, n], i) => `<div class="an-fs"><div class="an-fb"><i style="width:${sess ? Math.max(2, n / sess * 100) : 0}%"></i></div><div class="an-fl"><span>${k}</span><b>${fmt(n)}</b>${i ? `<small>${sess ? (n / sess * 100).toFixed(1) : 0}%</small>` : ''}</div></div>`).join('') + '</div>';
+  const recent = EV.filter(e => Date.now() - new Date(e.ts) < 30 * 60000);
+  document.getElementById('feed-n').textContent = `${recent.filter(e => e.type === 'pageview').length} views · 30 min`;
+  const what = e => e.type === 'signup' ? 'created an account' : e.type === 'login' ? 'logged in' : e.type === 'watch' ? 'added ' + (e.detail || '').replace(/^country:/, '') + ' to a watchlist' : 'viewed ' + PAGE(e.path);
+  document.getElementById('feed').innerHTML = EV.slice(0, 7).map(e => `<div class="an-fi"><i class="${e.type}"></i><span>${e.tz ? esc(e.tz.split('/').pop().replace(/_/g, ' ')) : 'Someone'} ${esc(what(e))}<small>${e.device || ''}${e.ref ? ' · from ' + esc(e.ref) : ''}</small></span><time>${ago(e.ts)}</time></div>`).join('') || '<p class="an-none">No visits yet.</p>';
+  ranked('pages', count(views, e => PAGE(e.path)), views.length, 'No visits in this period.');
+  ranked('refs', count(visits, e => e.ref || 'Direct'), visits.length, 'No visits in this period.');
+  geo(visits);
+  ranked('watched', count(xs.filter(e => e.type === 'watch'), e => e.detail && e.detail.replace(/^country:/, '')), T('watch'), 'Nobody added to a watchlist yet.');
+  const dv = count(views, e => e.device), tot = views.length || 1, DC = { phone: 'var(--accent)', desktop: 'var(--fg-2)', tablet: 'var(--fg-3)' };
+  document.getElementById('devices').innerHTML = dv.length ? `<div class="an-split">${dv.map(([k, n]) => `<i style="flex:${n};background:${DC[k]}" title="${k} ${fmt(n)}"></i>`).join('')}</div><div class="an-dl">${dv.map(([k, n]) => `<div><i style="background:${DC[k]}"></i><span>${k[0].toUpperCase() + k.slice(1)}</span><b>${(n / tot * 100).toFixed(0)}%</b><small>${fmt(n)}</small></div>`).join('')}</div>` : '<p class="an-none">No visits in this period.</p>';
+  const top = count(views, e => PAGE(e.path))[0], src = count(visits, e => e.ref || 'Direct')[0];
+  document.getElementById('summary').textContent = `Investedia, ${days === 1 ? 'today' : 'last ' + days + ' days'} (${new Date().toLocaleDateString('en-GB')}): ${fmt(visits.length)} visits (${pvis.length ? ((visits.length - pvis.length) / pvis.length * 100).toFixed(0) + '% vs before' : 'first period'}), ${fmt(views.length)} page views, ${su} sign-ups, ${T('watch')} watchlist adds.${top ? ` Top page: ${top[0]}.` : ''}${src ? ` Top source: ${src[0]}.` : ''}`;
+}
+document.getElementById('copy').onclick = e => navigator.clipboard.writeText(document.getElementById('summary').textContent).then(() => { e.target.textContent = 'Copied ✓'; setTimeout(() => e.target.textContent = 'Copy', 1500); });
+UI.tabs(document.getElementById('range'), k => { days = +k; if (EV.length) draw(); });
+async function load() {
+  try {
+    const c = await window.invSB(), { data: { session } } = await c.auth.getSession();
+    if (!session) { msg('Log in to see your analytics', 'This page is only for the owner of Investedia.', '<button class="btn btn-primary" type="button" onclick="openAuth(\'in\')">Log in</button>'); c.auth.onAuthStateChange((_, s) => { if (s) location.reload(); }); return; }
+    const get = () => c.from('events').select('ts,type,path,ref,entry,device,tz,member,detail').gte('ts', new Date(Date.now() - 61 * 864e5).toISOString()).order('ts', { ascending: false }).limit(50000);
+    const { data, error } = await get();
+    if (error) { msg('Analytics aren\'t set up yet', 'The events table is missing in Supabase. Run the setup SQL, then reload this page.'); return; }
+    if (!document.documentElement.classList.contains('is-owner') && !(data || []).length) { msg('This page is for the site owner', 'Your account can\'t see these analytics.'); return; }
+    EV = data || []; document.getElementById('an').hidden = false; document.getElementById('an-msg').innerHTML = ''; draw();
+    setInterval(async () => { const r = await get(); if (!r.error) { EV = r.data || []; draw(); } }, 60000);
+  } catch { msg('Couldn\'t load analytics', 'Check your connection and reload.'); }
+}
+// Country of each visit, from the browser's time zone (no IP, nothing personal); drawn on a world map
+let MAP = null;
+fetch('assets/world-map.json').then(r => r.json()).then(m => { MAP = m; if (EV.length) draw(); }).catch(() => { document.getElementById('map').innerHTML = '<p class="an-none">The map couldn\'t load.</p>'; });
+function geo(visits) {
+  if (!MAP) return;
+  const by = count(visits, e => (e.tz && MAP.tz[e.tz]) || '??'), tot = visits.length, known = by.filter(([k]) => k !== '??'), max = known.length ? known[0][1] : 1, n = Object.fromEntries(known);
+  const name = k => k === '??' ? 'Unknown' : MAP.names[k] || k;
+  document.getElementById('geo-s').textContent = known.length ? `${known.length} ${known.length === 1 ? 'country' : 'countries'} · ${fmt(tot)} visits` : 'No visits in this period.';
+  const el = document.getElementById('map');
+  el.innerHTML = `<svg viewBox="0 0 ${MAP.w} ${MAP.h}" role="img" aria-label="Visits by country: ${known.slice(0, 10).map(([k, v]) => name(k) + ' ' + v).join(', ')}"><path class="sea" d="${MAP.sphere}"/>${MAP.c.map(c => { const v = n[c.id] || 0; return `<path data-c="${c.id}" d="${c.d}"${v ? ` style="fill:rgba(255,122,26,${(.28 + .72 * Math.sqrt(v / max)).toFixed(2)})"` : ''}/>`; }).join('')}</svg><div class="an-tip" hidden></div>`;
+  const svg = el.querySelector('svg'), tip = el.querySelector('.an-tip');
+  svg.addEventListener('pointermove', e => { const p = e.target.closest('[data-c]'); svg.querySelectorAll('.on').forEach(x => x.classList.remove('on')); if (!p) { tip.hidden = true; return; } p.classList.add('on'); const k = p.dataset.c, v = n[k] || 0, r = el.getBoundingClientRect();
+    tip.innerHTML = `<small>${esc(name(k))}</small><b>${fmt(v)}</b> ${v === 1 ? 'visit' : 'visits'}${tot && v ? `<small>${(v / tot * 100).toFixed(0)}% of all visits</small>` : ''}`; tip.style.left = Math.max(70, Math.min(r.width - 70, e.clientX - r.left)) + 'px'; tip.style.top = (e.clientY - r.top) + 'px'; tip.hidden = false; });
+  svg.addEventListener('pointerleave', () => { tip.hidden = true; svg.querySelectorAll('.on').forEach(x => x.classList.remove('on')); });
+  document.getElementById('countries').innerHTML = by.length ? '<ol class="an-rank">' + by.slice(0, 8).map(([k, v]) => { const p = tot ? v / tot * 100 : 0; return `<li><span class="an-rl">${k !== '??' ? `<img class="an-flag" src="assets/logos/flags/${k.toLowerCase()}.svg" alt="" onerror="this.remove()">` : ''}${esc(name(k))}</span><span class="an-rv">${fmt(v)}<small>${p.toFixed(0)}%</small></span><i style="--w:${Math.max(1.5, p)}"></i></li>`; }).join('') + '</ol>' : '<p class="an-none">No visits in this period.</p>';
+}
+const hasSession = (() => { try { return Object.keys(localStorage).some(k=>/^sb-.*-auth-token$/.test(k)); } catch { return false; } })();
+if (hasSession) load(); else msg('Log in to see your analytics', 'This page is only for the owner of Investedia.', '<button class="btn btn-primary" type="button" onclick="openAuth(\'in\')">Log in</button>');
+</script>
+</main>
+</body>
+</html>

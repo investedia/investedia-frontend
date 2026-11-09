@@ -1,0 +1,22 @@
+{"title":"Investedia News","desc":"Live financial news from around the world. Filter markets, companies, economy, technology, crypto, commodities and geopolitics by region.","key":"news","scripts":["assets/home-news.js"]}
+<link rel="stylesheet" href="assets/news-board.css"><link rel="stylesheet" href="assets/news-feed.css">
+<div class="nb nf">
+  <span class="nb-eb">News · <span id="nf-up">Loading</span></span>
+  <h1>What's moving <span>money.</span></h1>
+  <p class="nb-lead">Every article, and what it did to prices. The news and its reaction, together.</p>
+  <div id="nf-hero"></div>
+  <div class="nf-sh"><h2>Biggest movers</h2><span>24h</span></div>
+  <div class="nf-strip" id="nf-strip"></div>
+  <div class="nf-sh"><h2>News and reactions</h2></div>
+  <div class="nf-bar">
+    <label class="nb-pill"><i class="nb-ic"></i><input id="nf-q" type="search" placeholder="Search an article, company, coin or country" autocomplete="off" aria-label="Search articles"><kbd>/</kbd></label>
+    <div class="nb-seg" id="nf-win" role="group" aria-label="Time window"></div>
+    <div class="nb-seg" id="nf-sort" role="group" aria-label="Sort"></div>
+  </div>
+  <div id="nf-chip" hidden></div>
+  <div id="nf-list"></div>
+  <button class="nb-more" id="nf-more" type="button" hidden>Load more articles</button>
+  <p class="mv-note">Price moves come from public market data and may be delayed. A reaction shows the price move around an article; it is not proof the article caused it. Summaries are written with the help of AI from each source's own reporting. Not investment advice.</p>
+</div>
+<script src="assets/asset-icons.js"></script>
+<script src="assets/news-feed.js"></script>

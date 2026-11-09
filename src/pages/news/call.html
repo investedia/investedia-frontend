@@ -1,0 +1,12 @@
+{"title":"Investedia Prediction result","desc":"One frozen Investedia call: the article, what it implied, and what the price did afterwards.","key":"news","scripts":["assets/calls-ui.js"]}
+<link rel="stylesheet" href="assets/calls-ui.css">
+<nav class="subnav" id="news-nav"></nav>
+<div class="cx-wrap"><p style="margin:22px 0 12px"><a href="track-record.html" class="muted">← Track Record</a></p><div id="cd"><p class="muted">Loading…</p></div></div>
+<script>
+(async () => {
+  if (window.UI && UI.newsNav) UI.newsNav('track');
+  const U = window.CallsUI, q = new URLSearchParams(location.search), root = document.getElementById('cd');
+  const { calls } = await U.load(), c = calls.find(x => x.id === q.get('id') && x.sym === q.get('sym'));
+  root.innerHTML = c ? U.detail(c) : '<p class="muted">This call is not in the ledger.</p>';
+})();
+</script>

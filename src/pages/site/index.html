@@ -1,0 +1,213 @@
+{"title":"Investedia","desc":"Follow market-moving news around the world, see where it happens, which assets react, and how prices move — all through Investedia’s live market intelligence platform.","key":"home","scripts":["assets/since-news.js","assets/implications.js","assets/home-news.js"]}
+<style>
+/* News-first homepage. The globe is the hero; everything below is live news. */
+body[data-page=home] main.wrap{max-width:none;padding:0}
+.hn{max-width:1240px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left))}
+.hn-hero{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}.hn-hero input,.hn-hero textarea{-webkit-user-select:text;user-select:text}
+.hn-hero{position:relative;height:min(820px,calc(100vh - 64px));min-height:600px;overflow:hidden;border-bottom:1px solid var(--line)}
+.hn-hero iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.hn-open{position:absolute;z-index:3;right:max(20px,env(safe-area-inset-right));bottom:74px;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:rgba(24,24,27,.55);backdrop-filter:blur(18px) saturate(1.3);-webkit-backdrop-filter:blur(18px) saturate(1.3);color:#fff;font-weight:600;font-size:14px;text-decoration:none}.hn-open svg{width:17px;height:17px;fill:none;stroke:#ff9a4d;stroke-width:1.8;stroke-linecap:round}.hn-open:hover{background:rgba(255,255,255,.14)}
+@media (min-width:901px){
+.hn-tick{display:none}
+.hn-open{bottom:30px}
+}
+.hn-open span{color:#ff9a4d}.hn-open .t{color:#fff}
+@media (max-width:900px){.hn-open{min-width:44px;padding:0 14px;gap:6px}.hn-open .t{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}}
+.hn-hero::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,var(--bg) 0%,rgba(10,10,11,.85) 28%,transparent 55%),linear-gradient(0deg,var(--bg),transparent 22%)}
+.hn-copy{position:absolute;z-index:2;left:0;right:0;top:15%;pointer-events:none}
+.hn-copy .hn>*{pointer-events:auto}
+.hn-copy .hn>.hn-title,.hn-copy .hn>.hn-lead{pointer-events:none}  /* full-width text boxes must not block the globe behind them */
+.hn-live{display:inline-flex;align-items:center;gap:8px;padding:5px 11px;border-radius:999px;border:1px solid rgba(255,122,26,.35);color:#FFB37A;font-size:12px;font-weight:550;background:rgba(255,122,26,.06)}
+.hn-live i{width:6px;height:6px;border-radius:50%;background:#FF7A1A;box-shadow:0 0 8px #FF7A1A;animation:hnp 1.8s ease-in-out infinite}
+@keyframes hnp{50%{opacity:.35}}
+.hn-title{margin:18px 0 0;font-weight:600;letter-spacing:-.04em;line-height:1.04;font-size:56px}
+.hn-title b,.hn-title span{display:block;width:max-content;white-space:nowrap;font-weight:600}
+.hn-title span{color:var(--fg-3)}
+.hn-lead{font-size:18px;line-height:1.55;color:var(--fg-2);max-width:500px;margin:18px 0 26px}
+.hn-search{display:flex;align-items:center;gap:10px;width:min(480px,100%);height:52px;padding:0 16px;border-radius:14px;border:1px solid var(--line-2,rgba(255,255,255,.15));background:rgba(18,18,20,.8);backdrop-filter:blur(10px);color:var(--fg-3);font-size:15px;text-decoration:none}
+.hn-pop{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:12px;max-width:min(560px,100%)}.hn-pop-l{color:var(--fg-3);font-size:12.5px;margin-right:2px}
+.hn-pop a{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 10px 0 6px;border-radius:999px;border:1px solid rgba(255,255,255,.16);background:rgba(18,18,20,.45);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--fg);font-size:12.5px;font-weight:500;text-decoration:none;transition:border-color .15s,background .15s}
+.hn-pop a:hover,.hn-pop a:focus-visible{border-color:var(--accent);background:rgba(30,30,34,.6)}.hn-pop .ai-t,.hn-pop .ai-i{width:16px;height:16px;border-radius:50%;object-fit:cover;flex:none}.hn-pop .pi{display:inline-grid;place-items:center;width:16px;height:16px;flex:none}.hn-pop .pi svg{width:14px;height:14px}.hn-pop .pi.eur{border-radius:50%;background:#1f4fd6;color:#fff;font-size:10px;font-weight:700}
+@media (max-width:760px){.hn-pop{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:8px;margin:12px -16px 0;padding:2px 16px;max-width:none;scroll-snap-type:x proximity;scroll-padding:0 16px;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 16px,#000 calc(100% - 28px),transparent)}.hn-pop::-webkit-scrollbar{display:none}.hn-pop-l{display:none}.hn-pop a{flex:none;scroll-snap-align:start;height:36px;padding:0 14px 0 9px;gap:8px;font-size:13.5px;border-radius:999px}.hn-pop .ai-t,.hn-pop .ai-i,.hn-pop .pi{width:20px;height:20px}}  /* phone: one swipeable row of evenly padded pills */
+.hn-search svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round}
+.hn-tick{position:absolute;z-index:2;left:0;right:0;bottom:0;border-top:1px solid var(--line);background:rgba(10,10,11,.7);backdrop-filter:blur(10px)}
+.hn-tick .hn{display:flex;gap:28px;height:54px;align-items:center;overflow:hidden;white-space:nowrap;font-size:13.5px}
+.hn-tick a{color:var(--fg);text-decoration:none}.hn-tick b{color:#FF7A1A;font:500 12px var(--mono,monospace);margin-right:8px}
+.grid3{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:28px}
+.grid3 .hn-card:first-child{grid-row:span 2}
+.grid3 .hn-card:first-child h3{font-size:26px}
+.whys{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:18px;align-items:start}
+@media (max-width:900px){.hn-hero{height:auto;min-height:0;display:flex;flex-direction:column}.hn-copy{position:relative;top:0;padding-top:28px}.hn-hero iframe{order:2;position:relative;inset:auto;height:min(96vw,460px);margin-top:8px;will-change:transform}.hn-tick{order:3}.hn-hero::after{background:linear-gradient(180deg,transparent 70%,var(--bg))}.hn-lead{font-size:16px;margin:14px 0 18px}.hn-tick{position:relative}
+  .grid3,.whys{grid-template-columns:1fr}.grid3 .hn-card:first-child{grid-row:auto}.grid3 .hn-card:first-child h3{font-size:21px}}
+/* phone hero: the globe is not boxed in; it continues behind the search bar and under itself */
+@media (max-width:900px){
+.hn-copy{z-index:2}.hn-hero .hn-search{background:rgba(18,18,20,.42);backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);border-color:rgba(255,255,255,.2)}
+.hn-hero.hv-a{position:relative;display:block;min-height:780px;overflow:hidden}
+.hn-hero.hv-a iframe{position:absolute;inset:0;width:100%;height:100%;margin:0;z-index:0}
+.hn-hero.hv-a .hn-tick{position:absolute;left:0;right:0;bottom:0;z-index:2;background:linear-gradient(0deg,rgba(10,10,11,.92),rgba(10,10,11,.35));backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.hn-hero.hv-a .hn-open{bottom:84px;z-index:3}
+.hn-hero.hv-a::after{z-index:1;background:linear-gradient(180deg,rgba(10,10,11,.9) 0,rgba(10,10,11,.5) 34%,transparent 55%,transparent 82%,var(--bg) 100%)}
+}
+
+.hn-mk{display:grid;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:10px}
+.hn-m{display:flex;align-items:center;gap:11px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:#101012}
+.hn-m img{width:26px;height:19px;border-radius:3px;object-fit:cover;flex:none}
+.hn-m b{display:block;font-size:13.5px;font-weight:600}
+.hn-m>span{min-width:0}
+.hn-m small{display:block;font-size:12px;color:var(--fg-3);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hn-m small i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#52525B;margin-right:6px;vertical-align:1px}
+.hn-m.on small{color:#4ADE80}.hn-m.on small i{background:#22C55E;box-shadow:0 0 8px #22C55E}
+.hn-cal{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.hn-box{border:1px solid var(--line);border-radius:16px;background:#0E0E10;padding:6px 18px 10px}
+.hn-bh{display:flex;justify-content:space-between;align-items:center;padding:12px 0 8px}
+.hn-bh h3{margin:0;font-size:16px;font-weight:600}.hn-bh a{font-size:13px;color:var(--fg-2);text-decoration:none}
+.hn-ci{display:grid;grid-template-columns:74px 1fr auto;gap:12px;align-items:center;padding:11px 0;border-top:1px solid var(--line)}
+.hn-ci .when{font:500 12.5px var(--mono,monospace);color:var(--fg)}.hn-ci .when small{display:block;font-family:inherit;color:var(--fg-3);font-size:11px}
+.hn-ci b{font-size:14px;font-weight:550}.hn-ci .sub{display:block;font-size:12px;color:var(--fg-3);margin-top:2px}
+.hn-imp{display:flex;gap:3px}.hn-imp i{width:5px;height:14px;border-radius:2px;background:#2a2a2e}.hn-imp i.on{background:#FF7A1A}
+.hn-ci .eps{font:500 12px var(--mono,monospace);color:var(--fg-3);text-align:right}.hn-ci .eps b{display:block;color:var(--fg);font-size:13px}
+.hn-ci img.lg{width:30px;height:30px;border-radius:7px;background:#fff;padding:3px;object-fit:contain}.hn-lgc{width:40px;height:40px;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:#fff;flex:none}.hn-lgc .ai-t,.hn-lgc .ai-i{width:100%!important;height:100%!important;border-radius:50%!important}.hn-lgc .ai-i{object-fit:contain;padding:7px;box-sizing:border-box;background:#fff}.hn-lgc .ai-t{background:#26262b;color:#e5e5ea;font-size:13px}
+@media (max-width:900px){.hn-cal{grid-template-columns:1fr}.hn-mk{grid-template-columns:1fr 1fr}#hnClock{display:none}.hn-m{padding:11px 12px;gap:9px}}
+/* day hero: light veil, light search and chips */
+:root[data-theme="light"] .hn-hero::after{background:linear-gradient(90deg,var(--bg) 0%,rgba(247,247,248,.82) 28%,transparent 55%),linear-gradient(0deg,var(--bg),transparent 22%)}
+:root[data-theme="light"] .hn-hero .hn-search{background:rgba(255,255,255,.72);border-color:rgba(10,10,11,.12)}
+:root[data-theme="light"] .hn-pop a{background:rgba(255,255,255,.6);border-color:rgba(10,10,11,.12)}
+:root[data-theme="light"] .hn-pop a:hover{background:rgba(255,255,255,.9)}
+:root[data-theme="light"] .hn-tick{background:rgba(255,255,255,.75)}
+:root[data-theme="light"] .hn-box,:root[data-theme="light"] .hn-m{background:#fff}:root[data-theme="light"] .hn-imp i{background:#E4E4E7}:root[data-theme="light"] .hn-imp i.on{background:#FF7A1A}:root[data-theme="light"] .hn-ci img.lg{border:1px solid var(--line)}
+@media (max-width:900px){:root[data-theme="light"] .hn-hero.hv-a::after{background:linear-gradient(180deg,rgba(247,247,248,.9) 0,rgba(247,247,248,.5) 34%,transparent 55%,transparent 82%,var(--bg) 100%)}
+:root[data-theme="light"] .hn-hero.hv-a .hn-tick{background:linear-gradient(0deg,rgba(255,255,255,.92),rgba(255,255,255,.4))}}
+
+/* headline pill under the globe (phones) */
+@media (max-width:900px){.hn-tick{background:none!important;border:0!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;padding:10px 16px 6px}
+.hn-tick .hn{height:auto;display:block;overflow:visible}
+.hn-pill{width:100%;box-sizing:border-box;display:flex;align-items:center;gap:12px;min-height:52px;padding:0 18px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.03);color:var(--fg);text-decoration:none;transition:opacity .26s,transform .26s}
+.hn-pill.out{opacity:0;transform:translateY(-4px)}
+.hn-pt{display:inline-flex;align-items:center;gap:8px;padding-right:12px;border-right:1px solid var(--line);color:#FF7A1A;font:500 13.5px var(--sans);white-space:nowrap}
+.hn-pt i{width:8px;height:8px;border-radius:50%;background:#FF7A1A;box-shadow:0 0 8px rgba(255,122,26,.7)}
+.hn-ph{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:500 14.5px var(--sans)}
+.hn-pa{font-size:18px;color:var(--fg)}
+:root[data-theme="light"] .hn-pill{background:rgba(0,0,0,.02)}}
+
+.hn-mode-row{position:absolute;z-index:4;bottom:30px;right:calc(var(--cta-width,195px) + 32px);display:flex;align-items:center;gap:8px}.hn-modes{display:flex;padding:4px;border:1px solid #ffffff20;border-radius:999px;background:#111114}.hn-modes button{height:34px;padding:0 16px;border:0;border-radius:999px;background:transparent;color:#9999a3;font:600 13px Inter,sans-serif;cursor:pointer}.hn-modes button[aria-pressed=true]{background:#fff;color:#111}.hn-map-caption{position:absolute;right:24px;bottom:8px;z-index:3;font-size:10px;color:#85858e;margin:0;max-width:90%;pointer-events:none}.hn-market-price{margin-top:12px;color:#a4a4ad;font-size:12px}.hn-market-price:empty{display:none}.hn-markets .hn-tick{visibility:hidden}.hn-hero.market-panel-open::after{clip-path:polygon(evenodd,0 0,100% 0,100% 100%,0 100%,0 0,var(--mp-left) var(--mp-top),var(--mp-right) var(--mp-top),var(--mp-right) var(--mp-bottom),var(--mp-left) var(--mp-bottom),var(--mp-left) var(--mp-top),0 0)}
+@media(max-width:900px){.hn-mode-row{left:20px;right:auto;bottom:auto;top:var(--mode-top,380px)}.hn-map-caption{left:20px;right:20px;bottom:auto;top:calc(var(--mode-top,380px) + 48px);max-width:none;font-size:10px;line-height:1.4}.hn-modes button{padding:0 14px}.hn-hero.hv-a .hn-open{z-index:4}.hn-hero.hv-a.hn-markets .hn-open{top:var(--mode-top,380px);bottom:auto;height:44px}.hn-market-price{font-size:11px}}
+
+</style>
+<link rel="stylesheet" href="assets/home-news.css"><link rel="stylesheet" href="assets/since-news.css">
+<section class="hn-hero" aria-label="Live news globe">
+  <iframe id="hnGlobe" title="Live news globe"></iframe>
+  <div class="hn-mode-row"><div class="hn-modes" role="group" aria-label="Globe mode"><button type="button" data-globe-mode="news" aria-pressed="true">News</button><button type="button" data-globe-mode="markets" aria-pressed="false">Markets</button></div></div><p class="hn-map-caption"></p>
+  <a class="hn-open" href="/assets/globe/news.html" aria-label="Open the globe"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></svg><span class="t">Open globe</span><span class="ar" aria-hidden="true">→</span></a>
+  <div class="hn-copy"><div class="hn">
+    <span class="hn-live" id="hnLive"><i></i>Live</span>
+    <h1 class="hn-title" id="hnTitle"><b>Invest with clarity.</b><span>See the world move.</span></h1>
+    <p class="hn-lead">Financial news and market intelligence: what happened, where, and what it means for markets and portfolios.</p>
+    <a class="hn-search" href="assets/globe/news.html"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Search assets, countries &amp; articles</a>
+    <div class="hn-pop" id="hnPop" aria-label="Popular searches"><span class="hn-pop-l">Popular searches:</span></div>
+  </div></div>
+  <div class="hn-tick"><div class="hn" id="hnTick"></div></div>
+</section>
+<div class="hn">
+  <section class="sec resources" aria-label="Recommended resources" style="margin-top:40px">
+    <p class="res-label">Learn alongside the best free resources</p>
+    <div class="res-strip"><div class="res-track" id="res-track"></div></div>
+    <p class="res-note">Independent recommendations.</p>
+  </section>
+  <section class="hn-sec"><div class="hn-sh"><div><span class="hn-eyebrow">Top articles</span><h2>What matters right now</h2></div><a href="assets/globe/news.html">All news →</a></div><div class="grid3" id="hnTop"></div></section>
+  <section class="hn-sec"><div class="hn-sh"><div><span class="hn-eyebrow">Why it moved</span><h2>Articles the market confirmed</h2></div></div><div class="whys" id="hnWhy"></div><div id="hnWhyMore"></div></section>
+  <section class="hn-sec"><div class="hn-sh"><div><span class="hn-eyebrow">Countries</span><h2>Explore by country</h2></div><a href="assets/globe/news.html">Open the globe →</a></div><div class="hn-ctys" id="hnCty"></div></section>
+  <section class="hn-sec"><div class="hn-cal">
+    <div class="hn-box"><div class="hn-bh"><h3>Upcoming economic events</h3><a href="calendar.html">Full calendar →</a></div><div id="hnEv"></div></div>
+    <div class="hn-box"><div class="hn-bh"><h3>Upcoming earnings</h3><a href="calendar.html#earnings">All earnings →</a></div><div id="hnEa"></div></div>
+  </div><p class="hn-disc" id="hnCalSrc"></p></section>
+  <div class="hn-band"><div><h2>Follow the countries and companies you care about.</h2><p>Their economy figures, rate decisions and market-moving news, analysed with precision.</p></div><button class="hn-btn hn-pri" type="button" data-auth="up">Create a free account</button></div>
+  <p class="hn-disc">Summaries are written with the help of AI from each source's own reporting. Every article links to its source. Not investment advice.</p>
+</div>
+<script>
+// day / night: tell the globe when the theme changes so it animates with the page
+(() => {
+  const reduce = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let cur = document.documentElement.dataset.theme;
+  const tell = instant => hnGlobe.contentWindow?.postMessage({ type: 'inv-theme', theme: document.documentElement.dataset.theme, dur: 800, instant }, location.origin);
+  hnGlobe.addEventListener('load', () => tell(true));
+  new MutationObserver(() => { const t = document.documentElement.dataset.theme; if (t === cur) return; cur = t; tell(reduce()); })
+    .observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+})();
+</script>
+<script>
+// two lines exactly: shrink the title until the longer line fits next to the globe (PC) or the screen (phone)
+function fitTitle() { const h = hnTitle, lim = innerWidth > 900 ? 540 : Math.min(document.documentElement.clientWidth, innerWidth) - 48;
+  for (let f = 60; f >= 22; f--) { h.style.fontSize = f + 'px'; if (Math.max(...[...h.children].map(c => c.offsetWidth)) <= lim) break; } }
+const isPhone = () => innerWidth <= 900;
+document.querySelector('.hn-hero').classList.add('hv-a');
+// phone: the globe is centred exactly in the free space between the search bar and the news ticker (side to side and top to bottom), a little smaller than the screen width
+function globeParams() {
+  if (!isPhone()) return 'cx=.7&cy=.5&r=.4';
+  const hr = document.querySelector('.hn-hero').getBoundingClientRect(), s = document.querySelector('.hn-search').getBoundingClientRect(), t = document.querySelector('.hn-tick').getBoundingClientRect();
+  const pop = document.querySelector('.hn-pop'), sb = pop ? Math.max(s.bottom, pop.getBoundingClientRect().bottom) : s.bottom;
+  const top = sb - hr.top, bot = t.top - hr.top, mid = (top + bot) / 2, free = bot - top, W = hr.width, base = Math.min(W, hr.height);
+  const radius = Math.min(W * .42, free / 2 * 1.02);
+  return 'cx=.5&cy=' + (mid / hr.height).toFixed(4) + '&r=' + (radius / base).toFixed(4);
+}
+// Popular searches under the search bar: well-known assets people look up most; each chip opens that asset (pop-up sheet when available).
+const POPULAR = [{ s: 'NVDA', n: 'Nvidia', t: 'stocks' }, { s: 'AAPL', n: 'Apple', t: 'stocks' }, { s: 'MSFT', n: 'Microsoft', t: 'stocks' },
+  { s: 'TSLA', n: 'Tesla', t: 'stocks' }, { s: 'BTC-USD', n: 'Bitcoin', t: 'crypto' }];
+const POP_IC = {  // small chip icons for commodities and currencies (the asset tiles are drawn for larger cards)
+  oil: '<span class="pi"><svg viewBox="0 0 24 24"><path d="M12 3c3.5 4.6 6 8 6 11a6 6 0 0 1-12 0c0-3 2.5-6.4 6-11Z" fill="#FF8A1F"/></svg></span>',
+  gold: '<span class="pi"><svg viewBox="0 0 24 24"><path d="M3 18 6 11h12l3 7H3Z" fill="#E8A92C"/><path d="M8 11 9.5 6h5L16 11" fill="#F4C451"/></svg></span>',
+  eur: '<span class="pi eur">€</span>' };
+function drawPopular() {
+  const el = document.getElementById('hnPop'); if (!el) return;
+  el.querySelectorAll('a').forEach(a => a.remove());
+  el.insertAdjacentHTML('beforeend', POPULAR.map(a => `<a href="asset.html?s=${encodeURIComponent(a.s)}" data-pop="${a.s}">${a.ic ? POP_IC[a.ic] : window.AssetIcons ? AssetIcons.icon(a) : ''}<span>${a.n}</span></a>`).join(''));
+}
+document.getElementById('hnPop')?.addEventListener('click', e => { const a = e.target.closest('[data-pop]'); if (a && window.InvPeek) { e.preventDefault(); InvPeek.open(a.dataset.pop); } });
+drawPopular();
+if (window.AssetIcons) (AssetIcons.ready || Promise.resolve()).then(drawPopular); else addEventListener('load', () => window.AssetIcons && (AssetIcons.ready || Promise.resolve()).then(drawPopular));
+let homeGlobeMode=new URLSearchParams(location.search).get('mode')==='markets'?'markets':'news';
+function syncHomeMode(){const on=homeGlobeMode==='markets',u=new URL(location.href);document.querySelector('.hn-hero').classList.toggle('hn-markets',on);window.InvGlobeNav=on?marketsHomeNav:previousHomeNav;on?u.searchParams.set('mode','markets'):u.searchParams.delete('mode');history.replaceState(null,'',u);document.querySelectorAll('[data-globe-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.globeMode===homeGlobeMode)));const cta=document.querySelector('.hn-open');cta.href=on?'assets/globe/news.html?mode=markets':'/assets/globe/news.html';cta.querySelector('.t').textContent=on?'Explore markets':'Open globe';cta.setAttribute('aria-label',on?'Explore markets':'Open the globe');const search=document.querySelector('.hn-search');search.lastChild.textContent=on?'Search countries, exchanges, indices & companies':'Search assets, countries & articles';search.href=cta.href;document.querySelector('.hn-map-caption').textContent=on?'World markets · each ring = a stock exchange · lines = trade (orange) and investment (white)':'Live news map · last 48 h · each light = where news happened · lines = markets it affects';const hero=document.querySelector('.hn-hero');hero.style.setProperty('--cta-width',cta.getBoundingClientRect().width+'px');const pop=document.querySelector('.hn-pop');if(isPhone()&&pop)hero.style.setProperty('--mode-top',(pop.getBoundingClientRect().bottom-hero.getBoundingClientRect().top+14)+'px');}
+addEventListener('message',e=>{if(e.origin!==location.origin||e.source!==hnGlobe.contentWindow||e.data?.type!=='investedia-market-panel')return;const hero=document.querySelector('.hn-hero'),r=e.data.rect;hero.classList.toggle('market-panel-open',!!e.data.open);if(r)for(const k of ['left','top','right','bottom'])if(Number.isFinite(r[k]))hero.style.setProperty('--mp-'+k,r[k]+'px');});
+function sendGlobeMode(){const r=hnGlobe.getBoundingClientRect(),occlusions=[...document.querySelectorAll('.hn-title b,.hn-title span,.hn-lead,.hn-search,.hn-pop,.hn-mode-row,.hn-map-caption,.hn-open')].map(el=>{const b=el.getBoundingClientRect();return{x:b.x-r.x,y:b.y-r.y,w:b.width,h:b.height};});hnGlobe.contentWindow?.postMessage({type:'investedia-mode',mode:homeGlobeMode,occlusions},location.origin);}
+hnGlobe.addEventListener('load',sendGlobeMode);
+const previousHomeNav=window.InvGlobeNav,marketsHomeNav={...previousHomeNav,market:value=>{if(homeGlobeMode!=='markets')return false;const split=value.indexOf(':');if(split<0)return false;hnGlobe.contentWindow?.postMessage({type:'investedia-mode',mode:'markets',country:value.slice(split+1),exchange:value.slice(0,split)},location.origin);return true;},country:name=>{if(homeGlobeMode!=='markets')return false;hnGlobe.contentWindow?.postMessage({type:'investedia-mode',mode:'markets',country:name},location.origin);return true;}};
+document.querySelector('.hn-modes').onclick=e=>{const b=e.target.closest('[data-globe-mode]');if(!b)return;homeGlobeMode=b.dataset.globeMode;syncHomeMode();sendGlobeMode();};
+const placeGlobe = () => { syncHomeMode();hnGlobe.src = 'assets/globe/news.html?embed=1&v=p4-markets-1&' + globeParams()+(homeGlobeMode==='markets'?'&mode=markets':''); };
+addEventListener('resize',()=>{syncHomeMode();sendGlobeMode();});
+
+(document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(() => requestAnimationFrame(placeGlobe));
+// phone: the globe glides up a little faster than the page as you scroll, then the news follows
+// while the globe is pinched the page behind stays exactly where it is (the globe iframe reports the gesture)
+let holdY = null;
+const holdScroll = () => { if (holdY != null && Math.abs(scrollY - holdY) > 0) scrollTo(0, holdY); };
+addEventListener('message', e => {
+  if (e.origin !== location.origin || e.source !== hnGlobe.contentWindow || !e.data || e.data.inv !== 'globe-gesture') return;
+  if (e.data.on) { holdY = scrollY; document.documentElement.style.overscrollBehavior = 'none'; addEventListener('scroll', holdScroll, { passive: true }); }
+  else { setTimeout(() => { holdY = null; document.documentElement.style.overscrollBehavior = ''; removeEventListener('scroll', holdScroll); }, 180); }
+});
+const glide = () => { if (holdY != null) return; if (!isPhone()) { hnGlobe.style.transform = ''; return; } const y = Math.min(scrollY, 600); hnGlobe.style.transform = `translateY(${-y * .18}px) scale(${1 - y / 3000})`; hnGlobe.style.opacity = Math.max(.25, 1 - y / 700); };
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches) addEventListener('scroll', () => requestAnimationFrame(glide), { passive: true });
+fitTitle(); addEventListener('resize', fitTitle); document.fonts && document.fonts.ready.then(fitTitle);
+loadNews().then(d => {
+  hnLive.innerHTML = '<i></i>' + updatedText(d.updated);
+  hnTop.innerHTML = d.top.slice(0, 5).map((s, i) => card(s, i === 0)).join('');
+  { const cs = confirmedSection(d); hnWhy.innerHTML = cs.body; hnWhyMore.innerHTML = cs.more; }
+  hnCty.innerHTML = countries(d.stories);
+  { const L = d.latest.slice(0, 6), short = t => { const m = Math.max(0, Math.round((Date.now() - Date.parse(t)) / 6e4)); return m < 60 ? m + 'm ago' : m < 1440 ? Math.round(m / 60) + 'h ago' : Math.round(m / 1440) + 'd ago'; };
+    let k = 0; const show = () => { const s = L[k % L.length]; if (!s) return; hnTick.innerHTML = '<a class="hn-pill" href="' + url(s) + '"><span class="hn-pt"><i></i>' + short(s.published_at) + '</span><span class="hn-ph">' + esc(s.headline) + '</span><span class="hn-pa" aria-hidden="true">→</span></a>'; };
+    show(); if (L.length > 1 && !matchMedia('(prefers-reduced-motion: reduce)').matches) setInterval(() => { if (document.hidden) return; const a = hnTick.firstChild; a && a.classList.add('out'); setTimeout(() => { k++; show(); }, 260); }, 6000); }
+}).catch(() => { hnTop.innerHTML = '<p class="hn-meta">News is loading. Please refresh in a moment.</p>'; });
+// Upcoming economic events + earnings (real, refreshed by update_calendar.py)
+const CC = { USD: 'us', EUR: 'eu', GBP: 'gb', JPY: 'jp', CNY: 'cn', CAD: 'ca', AUD: 'au', NZD: 'nz', CHF: 'ch' };
+const dfmt = d => new Date(d).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' });
+fetch('assets/calendar-live.json', { cache: 'no-cache' }).then(r => r.json()).then(c => {
+  const upcoming = c.events.filter(e => Date.parse(e.at) >= Date.now()).sort((a,b)=>Date.parse(a.at)-Date.parse(b.at)), ev = upcoming.filter(e=>Date.parse(e.at)<=Date.now()+7*864e5).sort((a,b)=>b.imp-a.imp || Date.parse(a.at)-Date.parse(b.at)).slice(0,5), ea = c.earnings.filter(e => e.date >= new Date().toISOString().slice(0, 10)).slice(0, 6);
+  hnEv.innerHTML = ev.map(e => `<div class="hn-ci"><span class="when">${new Date(e.at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}<small>${dfmt(e.at)}</small></span><span><b>${CC[e.c] ? `<img src="assets/globe/flags/${CC[e.c]}.svg" alt="" style="display:inline-block;width:16px;height:12px;border-radius:2px;margin-right:7px;vertical-align:-1px">` : ''}${esc(e.t)}</b><span class="sub">${esc(e.c)}${e.fc ? ' · Forecast ' + esc(e.fc) : ''}${e.prev ? ' · Prev. ' + esc(e.prev) : ''}</span></span><span class="hn-imp" title="${e.imp === 3 ? 'High' : e.imp === 2 ? 'Medium' : 'Low'} impact"><i class="on"></i><i class="${e.imp >= 2 ? 'on' : ''}"></i><i class="${e.imp === 3 ? 'on' : ''}"></i></span></div>`).join('') || `<p class="hn-meta" style="padding:12px 0">${upcoming.length ? 'Next scheduled event: '+dfmt(upcoming[0].at) : 'Upcoming economic releases are not supplied by the current feed. Check the full calendar for earnings.'}</p>`;
+  const drawEa = () => { hnEa.innerHTML = ea.map(e => `<div class="hn-ci" style="grid-template-columns:40px 1fr auto"><span class="hn-lgc">${window.AssetIcons ? AssetIcons.icon({ s: e.s, n: e.n, t: 'stocks' }) : ''}</span><span><b>${esc(e.n)}</b><span class="sub">${esc(e.s)} · ${dfmt(e.date + 'T12:00:00Z')}${e.when ? ' · ' + esc(e.when) : ''}</span></span><span class="eps">EPS est.<b>${esc(e.eps || '—')}</b></span></div>`).join('') || '<p class="hn-meta" style="padding:12px 0">No large-company earnings in the next days.</p>'; };
+  drawEa(); if (!window.AssetIcons) { const sc = document.createElement('script'); sc.src = 'assets/asset-icons.js'; sc.onload = () => (window.AssetIcons?.ready || Promise.resolve()).then(drawEa); document.head.appendChild(sc); }
+  hnCalSrc.textContent = 'Times in your time zone. Events: ' + c.sources.events + ' (all published impact levels). Earnings: ' + c.sources.earnings + ' (largest companies).';
+}).catch(() => {});
+// Free resources strip (moving logos)
+const RES = [['Investor.gov', 'https://www.investor.gov', 'sans'], ['TradingView', 'https://www.tradingview.com', 'sans'], ['Morningstar', 'https://www.morningstar.com', 'serif'], ['Yahoo Finance', 'https://finance.yahoo.com', 'sans'], ['Khan Academy', 'https://www.khanacademy.org/economics-finance-domain', 'sans'], ['FRED', 'https://fred.stlouisfed.org', 'mono'], ['CoinMarketCap', 'https://coinmarketcap.com', 'sans'], ['Bogleheads', 'https://www.bogleheads.org', 'serif'], ['Reuters Markets', 'https://www.reuters.com/markets/', 'sans'], ['SEC EDGAR', 'https://www.sec.gov/edgar', 'mono'], ['Federal Reserve', 'https://www.federalreserve.gov', 'serif'], ['ECB', 'https://www.ecb.europa.eu', 'sans'], ['IMF', 'https://www.imf.org', 'sans'], ['World Bank', 'https://data.worldbank.org', 'sans'], ['Finviz', 'https://finviz.com', 'sans'], ['BIS', 'https://www.bis.org', 'serif']];
+const resItems = RES.map(([n, u, f]) => `<a class="res-item res-${f}" href="${u}" target="_blank" rel="noopener noreferrer">${n}</a>`).join('<span class="res-sep" aria-hidden="true"></span>');
+document.getElementById('res-track').innerHTML = resItems + '<span class="res-sep" aria-hidden="true"></span>' + resItems.replace(/<a /g, '<a tabindex="-1" aria-hidden="true" ');
+</script>

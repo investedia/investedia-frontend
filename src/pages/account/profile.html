@@ -1,0 +1,129 @@
+{"title":"Investedia Profile","desc":"Your Investedia profile, preferences and notification settings.","key":"profile"}
+<div class="page-head">
+  <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Profile</span></div>
+  <div class="sec-head" style="margin:0"><div><h1>Profile</h1><p class="lede" id="who">Your account, saved everywhere you sign in.</p></div><button class="btn btn-ghost" type="button" data-logout>Log out</button></div>
+</div>
+
+<div class="prof">
+  <nav class="prof-nav" id="pnav"><a href="#account" aria-current="true">Account</a><a href="#security">Sign-in &amp; security</a><a href="#preferences">Preferences</a><a href="#notifications">Notifications</a><a href="watchlist.html">My watchlist</a></nav>
+  <div class="grid" style="gap:16px">
+    <section class="card" id="account">
+      <div class="card-head"><h3>Account</h3><span class="meta" id="since"></span></div>
+      <div class="card-pad" style="display:grid;gap:20px">
+        <div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap">
+          <div class="photo" id="photo"></div>
+          <div style="display:grid;gap:8px">
+            <b>Profile picture</b>
+            <div style="display:flex;gap:8px;flex-wrap:wrap"><label class="btn btn-ghost btn-sm" for="photo-in" style="cursor:pointer">Upload photo</label><button class="btn btn-ghost btn-sm" type="button" id="photo-rm">Remove</button></div>
+            <small class="dim">Square works best. Shown in the header on every device.</small>
+            <input type="file" id="photo-in" accept="image/*" hidden>
+          </div>
+        </div>
+        <div class="grid g-2" style="gap:14px">
+          <div class="field"><label for="p-name">Display name</label><input class="input" id="p-name" autocomplete="name" maxlength="60" placeholder="Your name"></div>
+          <div class="field"><label for="p-email">Email</label><input class="input" id="p-email" type="email" readonly></div>
+          <div class="field"><label for="p-country">Country</label><select class="select" id="p-country"><option>Belgium</option><option>France</option><option>Netherlands</option><option>Germany</option><option>Luxembourg</option><option>United Kingdom</option><option>United States</option><option>Canada</option><option>DR Congo</option><option>Other</option></select></div>
+          <div class="field"><label for="p-level">Investing experience</label><select class="select" id="p-level"><option>Just starting</option><option>Some experience</option><option>Experienced</option><option>Professional</option></select></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="security">
+      <div class="card-head"><h3>Sign-in &amp; security</h3></div>
+      <div class="card-pad" style="display:grid;gap:16px">
+        <div class="toggle-row"><span><b>Sign-in method</b><small id="method"></small></span></div>
+        <form id="pw-form" style="display:grid;gap:10px" hidden>
+          <b style="font-size:13.5px">Change password</b>
+          <div class="grid g-2" style="gap:12px"><input class="input" id="pw1" type="password" autocomplete="new-password" minlength="8" placeholder="New password (8+ characters)"><input class="input" id="pw2" type="password" autocomplete="new-password" placeholder="Repeat new password"></div>
+          <div><button class="btn btn-ghost btn-sm" type="submit">Update password</button></div>
+        </form>
+        <div class="toggle-row" style="border-top:1px solid var(--line-soft);padding-top:14px"><span><b>Log out</b><small>Sign out of Investedia on this device.</small></span><button class="btn btn-ghost btn-sm" type="button" data-logout>Log out</button></div>
+        <div class="toggle-row"><span><b>Delete account</b><small>We remove your account and data within 30 days.</small></span><a class="btn btn-ghost btn-sm" id="del" href="mailto:info@investedia.com">Request deletion</a></div>
+      </div>
+    </section>
+
+    <section class="card" id="preferences">
+      <div class="card-head"><h3>Preferences</h3></div>
+      <div class="card-pad">
+        <div class="toggle-row"><span><b>Appearance</b><small>Light or dark mode for the whole site</small></span><div class="seg" id="p-theme" style="width:auto"><button type="button" data-v="dark">Dark</button><button type="button" data-v="light">Light</button></div></div>
+        <div class="toggle-row"><span><b>Chart colours</b><small>Used for candles and lines on the dashboard</small></span><select class="select" id="p-pal" style="width:auto;height:34px"><option value="classic">Green / red</option><option value="blue">Blue / orange</option><option value="mono">Monochrome</option><option value="cb">Colour-blind safe</option></select></div>
+        <div class="toggle-row"><span><b>Currency</b><small>Show prices converted to</small></span><select class="select" id="p-cur" style="width:auto;height:34px"><option>USD</option><option>EUR</option><option>GBP</option></select></div>
+      </div>
+    </section>
+
+    <section class="card" id="notifications">
+      <div class="card-head"><h3>Notifications</h3><span class="meta">Choose what you hear about</span></div>
+      <div class="card-pad" id="n-rows"></div>
+      <div class="card-pad" style="border-top:1px solid var(--line);display:grid;gap:10px"><b style="font-size:13.5px">Deliver to</b><div style="display:flex;gap:6px;flex-wrap:wrap" id="n-ch"></div></div>
+    </section>
+
+    <div style="display:flex;gap:10px;justify-content:flex-end;align-items:center"><span class="dim" id="state" style="font-size:13px;margin-right:auto"></span><button class="btn btn-ghost" type="button" id="reset">Undo changes</button><button class="btn btn-primary" type="button" id="save">Save changes</button></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+// Everything here is stored on the signed-in account (Supabase user metadata), so it follows you to every device
+const $ = id => document.getElementById(id);
+const toast = t => { const el = $('toast'); el.textContent = t; el.classList.add('show'); setTimeout(() => el.classList.remove('show'), 2200); };
+const DEF = { country: 'Belgium', level: 'Some experience', cur: 'USD', notif: { breaking: true, watch: true, earn: true, events: false, price: true, brief: true }, ch: { app: true, email: true, push: false } };
+let U = null, pr = null, dirty = false;
+const meta = () => (U && U.user_metadata) || {};
+const initials = () => ($('p-name').value || U.email || '').split(/[\s@.]+/).filter(Boolean).map(w => w[0]).join('').slice(0, 2).toUpperCase();
+const paintPhoto = () => { const pic = pr.avatar === undefined ? (meta().avatar || meta().avatar_url || meta().picture) : pr.avatar; $('photo').innerHTML = pic ? `<img src="${String(pic).replace(/"/g, '&quot;')}" alt="Profile picture" referrerpolicy="no-referrer">` : initials(); };
+const mark = () => { dirty = true; $('state').textContent = 'Unsaved changes'; };
+function fromUser() {
+  const m = meta();
+  pr = { name: m.name || m.full_name || '', country: m.country || DEF.country, level: m.level || DEF.level, cur: m.cur || DEF.cur, notif: { ...DEF.notif, ...(m.notif || {}) }, ch: { ...DEF.ch, email: m.newsletter !== undefined ? !!m.newsletter : DEF.ch.email, ...(m.ch || {}) }, avatar: undefined };
+  $('p-name').value = pr.name; $('p-email').value = U.email || ''; $('p-country').value = pr.country; $('p-level').value = pr.level; $('p-cur').value = pr.cur;
+  let pal = 'classic'; try { pal = localStorage.getItem('inv-pal') || 'classic'; } catch {} $('p-pal').value = pal;
+  const th = document.documentElement.dataset.theme || 'dark'; document.querySelectorAll('#p-theme button').forEach(b => b.classList.toggle('on', b.dataset.v === th));
+  const prov = (U.app_metadata && U.app_metadata.provider) || 'email', google = prov === 'google' || (U.app_metadata.providers || []).includes('google');
+  $('method').textContent = google ? 'You sign in with Google (' + U.email + ').' : 'You sign in with your email and password.';
+  $('pw-form').hidden = google && prov === 'google';
+  $('who').textContent = 'Signed in as ' + U.email;
+  $('since').textContent = U.created_at ? 'Member since ' + new Date(U.created_at).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' }) : '';
+  $('del').href = 'mailto:info@investedia.com?subject=' + encodeURIComponent('Delete my Investedia account') + '&body=' + encodeURIComponent('Please delete the account for ' + U.email + '.');
+  paintPhoto(); rows(); dirty = false; $('state').textContent = '';
+}
+const NR = [['breaking', 'Breaking market news', 'Big moves in stocks, crypto and rates as they happen'], ['watch', 'News about my watchlist', 'Headlines that mention assets you follow'], ['earn', 'Earnings reminders', 'The day before companies on your watchlist report'], ['events', 'Economic events', 'Rate decisions, inflation and jobs data'], ['price', 'Price alerts', 'When an asset crosses a level you set'], ['brief', 'Daily market brief', 'A five-minute summary every morning']];
+function rows() {
+  $('n-rows').innerHTML = NR.map(([k, t, d]) => `<div class="toggle-row"><span><b>${t}</b><small>${d}</small></span><button class="switch ${pr.notif[k] ? 'on' : ''}" type="button" data-k="${k}" aria-pressed="${!!pr.notif[k]}" aria-label="${t}"><i></i></button></div>`).join('');
+  $('n-ch').innerHTML = [['app', 'On the site'], ['email', 'Email'], ['push', 'Browser notifications']].map(([k, t]) => `<button class="chip ${pr.ch[k] ? 'on' : ''}" type="button" data-c="${k}" aria-pressed="${!!pr.ch[k]}">${t}</button>`).join('');
+  document.querySelectorAll('#n-rows .switch').forEach(b => b.onclick = () => { pr.notif[b.dataset.k] = !pr.notif[b.dataset.k]; b.classList.toggle('on'); b.setAttribute('aria-pressed', pr.notif[b.dataset.k]); mark(); });
+  document.querySelectorAll('#n-ch .chip').forEach(b => b.onclick = async () => {
+    const k = b.dataset.c; pr.ch[k] = !pr.ch[k];
+    if (k === 'push' && pr.ch[k] && 'Notification' in window) { try { const r = await Notification.requestPermission(); if (r !== 'granted') { pr.ch[k] = false; toast('Browser notifications are blocked. Allow them in your browser settings.'); } } catch {} }
+    b.classList.toggle('on', pr.ch[k]); b.setAttribute('aria-pressed', pr.ch[k]); mark();
+  });
+}
+$('photo-in').onchange = e => {
+  const f = e.target.files[0]; if (!f) return;
+  const img = new Image(), rd = new FileReader();
+  rd.onload = () => { img.onload = () => { const c = document.createElement('canvas'), s = 96; c.width = c.height = s; const m = Math.min(img.width, img.height); c.getContext('2d').drawImage(img, (img.width - m) / 2, (img.height - m) / 2, m, m, 0, 0, s, s); pr.avatar = c.toDataURL('image/jpeg', .8); paintPhoto(); mark(); }; img.src = rd.result; };
+  rd.readAsDataURL(f); e.target.value = '';
+};
+$('photo-rm').onclick = () => { pr.avatar = null; paintPhoto(); mark(); };
+['p-name', 'p-country', 'p-level', 'p-cur'].forEach(id => $(id).addEventListener('input', () => { mark(); if (id === 'p-name') paintPhoto(); }));
+$('p-pal').onchange = () => { try { localStorage.setItem('inv-pal', $('p-pal').value); } catch {} toast('Chart colours updated'); };
+document.querySelectorAll('#p-theme button').forEach(b => b.onclick = () => { document.querySelectorAll('#p-theme button').forEach(x => x.classList.toggle('on', x === b)); window.setInvTheme && window.setInvTheme(b.dataset.v); });
+$('save').onclick = async () => {
+  const btn = $('save'); btn.disabled = true; btn.textContent = 'Saving…';
+  const data = { name: $('p-name').value.trim(), country: $('p-country').value, level: $('p-level').value, cur: $('p-cur').value, notif: pr.notif, ch: pr.ch, newsletter: !!pr.ch.email };
+  if (pr.avatar !== undefined) data.avatar = pr.avatar;
+  try { const c = await window.invSB(), { data: r, error } = await c.auth.updateUser({ data }); if (error) throw error; U = r.user; window.invUser = U; window.dispatchEvent(new Event('profile-change')); fromUser(); toast('Saved to your account'); }
+  catch (e) { toast('Could not save: ' + ((e && e.message) || 'try again')); }
+  btn.disabled = false; btn.textContent = 'Save changes';
+};
+$('reset').onclick = () => { fromUser(); toast('Changes undone'); };
+$('pw-form').onsubmit = async e => {
+  e.preventDefault(); const a = $('pw1').value, b = $('pw2').value;
+  if (a.length < 8) return toast('Use at least 8 characters.'); if (a !== b) return toast('The two passwords don\'t match.');
+  try { const c = await window.invSB(), { error } = await c.auth.updateUser({ password: a }); if (error) throw error; $('pw1').value = $('pw2').value = ''; toast('Password updated'); }
+  catch (err) { toast('Could not update password: ' + ((err && err.message) || 'try again')); }
+};
+addEventListener('beforeunload', e => { if (dirty) { e.preventDefault(); e.returnValue = ''; } });
+const pl = document.querySelectorAll('#pnav a[href^="#"]'); pl.forEach(l => l.onclick = () => pl.forEach(x => x.toggleAttribute('aria-current', x === l)));
+const start = u => { if (!u || U) return; U = u; fromUser(); };
+if (window.invUser) start(window.invUser); addEventListener('inv-user', e => start(e.detail));
+UI.routeHash({});
+</script>

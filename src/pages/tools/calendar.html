@@ -1,0 +1,17 @@
+{"title":"Investedia Economic calendar","desc":"Real economic releases and earnings by day, with forecast, previous, actual and the markets they move.","key":"calendar"}
+<link rel="stylesheet" href="assets/calendar.css">
+<div class="page-head"><div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Calendar</span></div><h1>Economic calendar</h1><p id="cal-next" aria-live="polite"></p><p id="cal-zone"></p></div>
+<div class="cal-bar" role="group" aria-label="Calendar filters">
+<div class="cal-dates" id="cal-dates" role="group" aria-label="Date"></div>
+<button type="button" class="cal-chip" id="cal-high" aria-pressed="true"><i class="cal-dot"></i>High impact only</button>
+<button type="button" class="cal-chip" id="cal-earn" aria-pressed="false">Earnings</button>
+<div class="cal-menu"><button type="button" class="cal-chip" id="cal-region-btn" aria-haspopup="true" aria-expanded="false" aria-controls="cal-regions">Region <span aria-hidden="true">▾</span></button><div id="cal-regions" role="group" aria-label="Region" hidden></div></div>
+<input type="search" id="cal-search" placeholder="Search events" aria-label="Search events">
+<label id="cal-mine-label" hidden><input type="checkbox" id="cal-mine"> Only my watchlist currencies</label>
+<button type="button" id="cal-reset" class="cal-chip cal-reset">Reset</button>
+</div>
+<div class="cal-custom" id="cal-custom" hidden><label>From <input type="date" id="cal-from"></label><label>To <input type="date" id="cal-to"></label></div>
+<p id="cal-count" role="status"></p>
+<div class="cal-layout"><div id="cal-results"></div><aside id="cal-detail" class="cal-detail" aria-label="Event details"></aside></div>
+<p class="muted" id="cal-source"></p>
+<script src="assets/calendar.js"></script>

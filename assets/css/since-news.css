@@ -1,0 +1,20 @@
+/* "Since the news" card: price change since an article appeared, with what the asset was doing before. */
+.sn{margin:0 0 18px;padding:16px;border:1px solid var(--line,rgba(255,255,255,.14));border-radius:18px;background:rgba(255,255,255,.04)}
+.sn-eb{font:600 12px 'Geist Mono',ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-3,#a1a1aa)}
+.sn-row{display:flex;gap:14px 24px;align-items:flex-end;flex-wrap:wrap;margin:8px 0 6px}
+.sn-big{font-size:40px;font-weight:700;letter-spacing:-.03em;line-height:1}.sn-big.dn{color:#f87171}.sn-big.up{color:#34d399}.sn-big.flat{color:#d4d4d8}
+.sn-ba{font-size:14px;line-height:1.45;color:var(--fg-2,#d4d4d8);max-width:300px}.sn-ba span{color:var(--fg-3,#a1a1aa)}.sn-ba b.dn{color:#f87171}.sn-ba b.up{color:#34d399}
+.sn svg{display:block;width:100%;height:130px}
+.sn-axis{display:flex;justify-content:space-between;gap:8px;color:var(--fg-3,#a1a1aa);font-size:12.5px;margin-top:2px}.sn-axis b{color:#ff9a4d;font-weight:600}
+.sn-leg{display:flex;gap:14px;flex-wrap:wrap;margin-top:6px;font-size:13px;color:var(--fg-2,#d4d4d8)}.sn-leg i{display:inline-block;width:18px;height:3px;border-radius:2px;margin-right:6px;vertical-align:middle}
+.sn-v{display:inline-flex;margin-top:10px;padding:3px 10px;border-radius:99px;font-size:13px;font-weight:700}.sn-v.ok{background:rgba(48,209,88,.16);color:#6ef59a}.sn-v.no{background:rgba(255,69,58,.16);color:#ff9a92}.sn-v.na{background:rgba(255,255,255,.08);color:#d4d4d8}
+.sn-note{margin:10px 0 0;color:var(--fg-3,#a1a1aa);font-size:12.5px;line-height:1.45}
+.sn-na{margin:0;color:var(--fg-2,#d4d4d8);font-size:14px;line-height:1.45}
+@media(max-width:760px){.sn{padding:14px}.sn-big{font-size:36px}.sn-eb,.sn-ba,.sn-axis,.sn-leg,.sn-note,.sn-na,.sn-v{font-size:14px}.sn svg{height:110px}}
+
+.sn-chart{position:relative;padding-top:30px}.sn-chart svg{margin-top:0}
+.sn-mark{position:absolute;top:0;transform:translateX(-50%);white-space:nowrap;font-size:12.5px;font-weight:700;padding:4px 10px;border-radius:99px;background:#ff7a1a;color:#111;pointer-events:none}
+.sn-chart[data-mark=flag] .sn-mark{transform:none;background:#1b1b1f;border:1px solid #ff7a1a;color:#ffb37a;font-weight:600;border-radius:8px}
+@media(max-width:760px){.sn-mark{font-size:13px}.sn-chart[data-mark=pill] .sn-mark{transform:translateX(-30%)}}
+.sn-chart svg{border-radius:14px}
+.sn-chart svg line{stroke-linecap:round}

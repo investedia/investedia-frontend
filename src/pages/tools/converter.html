@@ -1,0 +1,50 @@
+{"title":"Investedia Currency converter","desc":"Convert between major world currencies at illustrative rates.","key":"converter"}
+<div class="page-head">
+  <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Tools</span><span>/</span><span>Currency converter</span></div>
+  <div class="sec-head" style="margin:0"><div><h1>Currency converter</h1><p class="lede">Convert between the world’s major currencies.</p></div><span class="demo">Sample rates · not for trading</span></div>
+</div>
+
+<section class="sec">
+  <div class="card ai-glow" style="padding:clamp(18px,3vw,32px)">
+    <div class="conv">
+      <div class="field"><label for="amt">Amount</label><input class="input num" id="amt" type="number" value="1000" min="0" style="height:52px;font-size:20px"></div>
+      <div class="field"><label for="from">From</label><select class="select" id="from" style="height:52px;font-size:15px"></select></div>
+      <button class="icon-btn" type="button" id="swap" aria-label="Swap currencies" style="border:1px solid var(--line);width:44px;height:44px;align-self:end;margin-bottom:4px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 4 3 8l4 4M3 8h14M17 20l4-4-4-4M21 16H7"/></svg></button>
+      <div class="field"><label for="to">To</label><select class="select" id="to" style="height:52px;font-size:15px"></select></div>
+    </div>
+    <div style="margin-top:28px;display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap">
+      <div><div class="muted" id="res-from" style="font-size:15px"></div><div class="num" id="res" style="font-size:clamp(32px,4.4vw,48px);font-weight:500;letter-spacing:-.03em"></div><div class="dim num" id="rate" style="font-size:13px;margin-top:4px"></div></div>
+      <a class="btn btn-ghost" id="pair-link" href="markets.html">View chart</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="grid g-main" style="align-items:start">
+    <div class="card"><div class="card-head"><h3 id="tbl-title">1 EUR in other currencies</h3><span class="meta">Illustrative mid-market rates</span></div><div class="tbl-wrap"><table class="tbl"><thead><tr><th>Currency</th><th>Rate</th><th>Inverse</th><th>Today</th></tr></thead><tbody id="rates"></tbody></table></div></div>
+    <div class="card"><div class="card-head"><h3>Quick amounts</h3></div><div id="quick"></div></div>
+  </div>
+</section>
+<section class="sec" data-newsletter></section>
+<script>
+const { fmtC, cls } = UI;
+// USD value of one unit of each currency (sample)
+const C = { USD: ['US Dollar', 1, 0], EUR: ['Euro', 1.1642, 0.18], GBP: ['British Pound', 1.3384, -0.09], JPY: ['Japanese Yen', 1 / 151.82, -0.24], CHF: ['Swiss Franc', 1 / 0.7968, 0.15], CAD: ['Canadian Dollar', 1 / 1.3721, 0.05], AUD: ['Australian Dollar', 0.6612, 0.41], CNY: ['Chinese Yuan', 1 / 7.118, 0.02], INR: ['Indian Rupee', 1 / 88.42, -0.11], BRL: ['Brazilian Real', 1 / 5.41, 0.22], MXN: ['Mexican Peso', 1 / 18.46, 0.38], ZAR: ['South African Rand', 1 / 17.38, 0.21], TRY: ['Turkish Lira', 1 / 42.31, -0.12], AED: ['UAE Dirham', 1 / 3.6725, 0], SGD: ['Singapore Dollar', 1 / 1.289, 0.07] };
+const from = document.getElementById('from'), to = document.getElementById('to'), amt = document.getElementById('amt');
+Object.entries(C).forEach(([k, [n]]) => { from.add(new Option(`${k} · ${n}`, k)); to.add(new Option(`${k} · ${n}`, k)); });
+from.value = 'EUR'; to.value = 'USD';
+const f = (v, d = 2) => v.toLocaleString('en-US', { minimumFractionDigits: d, maximumFractionDigits: d });
+function conv() {
+  const a = +amt.value || 0, r = C[from.value][1] / C[to.value][1];
+  document.getElementById('res-from').textContent = `${f(a)} ${from.value} =`;
+  document.getElementById('res').textContent = `${f(a * r)} ${to.value}`;
+  document.getElementById('rate').textContent = `1 ${from.value} = ${f(r, 4)} ${to.value} · 1 ${to.value} = ${f(1 / r, 4)} ${from.value} · sample rate`;
+  const pair = from.value + to.value; document.getElementById('pair-link').href = MOCK.bySym[pair] ? 'asset.html?s=' + pair : 'markets.html';
+  document.getElementById('tbl-title').textContent = `1 ${from.value} in other currencies`;
+  document.getElementById('rates').innerHTML = Object.entries(C).filter(([k]) => k !== from.value).map(([k, [n, v, d]]) => { const rr = C[from.value][1] / v; return `<tr><td><span class="ident"><span class="logo" style="background:#27272a">${k}</span><span><b>${k}</b><small>${n}</small></span></span></td><td class="num">${f(rr, 4)}</td><td class="num muted">${f(1 / rr, 4)}</td><td class="num ${cls(-d)}">${fmtC(-d)}</td></tr>`; }).join('');
+  document.getElementById('quick').innerHTML = [1, 10, 100, 1000, 10000, 100000].map(x => `<div class="arow" style="grid-template-columns:1fr auto"><span class="num">${f(x, 0)} ${from.value}</span><b class="num" style="font-weight:500">${f(x * r)} ${to.value}</b></div>`).join('');
+}
+[amt, from, to].forEach(e => e.oninput = conv);
+document.getElementById('swap').onclick = () => { [from.value, to.value] = [to.value, from.value]; conv(); };
+conv();
+</script>

@@ -1,0 +1,34 @@
+{"title":"Investedia Recent market implications","desc":"See how the market reacted to recent Investedia calls: confirmed calls, misses and pending outcomes.","key":"news","scripts":["assets/calls-ui.js"]}
+<link rel="stylesheet" href="assets/calls-ui.css">
+<nav class="subnav" id="news-nav"></nav>
+<div class="cx-wrap">
+  <h1 class="cx-h1">Recent market implications</h1>
+  <p class="cx-lede">See how the market reacted to recent Investedia calls — confirmed calls, misses and pending outcomes.</p>
+  <div id="im" aria-live="polite"><p class="muted">Loading…</p></div>
+</div>
+<script>
+(async () => {
+  if (window.UI && UI.newsNav) UI.newsNav('impl');
+  const U = window.CallsUI, longBench = U.longBench, root = document.getElementById('im'), q = new URLSearchParams(location.search);
+  let { calls: all, live_since } = await U.load(), live = all.filter(c => c.res !== 'void'), btAll = all.filter(c => c.bt);
+  const WIN = [['1', '24H'], ['7', '7D'], ['30', '30D'], ['0', 'All']], F = [['all', 'All'], ['hit', 'Confirmed'], ['miss', 'Other way'], ['flat', 'No clear move'], ['pending', 'Pending']];
+  let win = q.get('w') || (U.PREV ? '7' : '30'), cur = q.get('f') || 'all', lim = 12;
+  const draw = () => {
+    const cs = live.filter(c => U.inWin(c, +win)), n = U.counts(cs.filter(c => !c.bt)), a = U.acc(n, U.NEED), bs = U.btStats(btAll), nb = cs.filter(c => c.bt).length, sel = c => cur === 'all' || c.res === cur;
+    const done = cs.filter(c => ['hit', 'miss', 'flat'].includes(c.res) && sel(c)).sort((x, y) => (y.end ? y.end[0] : 0) - (x.end ? x.end[0] : 0)), wait = cs.filter(c => c.res === 'pending' && sel(c));
+    const lb = longBench(cs.filter(c => !c.bt));
+    root.innerHTML = `<div class="cx-bar"><div class="cx-seg" role="group" aria-label="Time window">${WIN.map(([k, l]) => `<button type="button" data-w="${k}" aria-pressed="${k === win}">${l}</button>`).join('')}</div></div>
+      <div class="cx-sum"><div class="ok"><b>${n.hit}</b><span>Confirmed</span></div><div class="no"><b>${n.miss}</b><span>Went the other way</span></div><div><b>${n.flat}</b><span>No clear move</span></div><div class="wait"><b>${n.pending}</b><span>Pending</span></div></div>
+      <p class="cx-acc">${a ? `<b>${a.pct}%</b> resolved accuracy · ${a.text}` : `Resolved accuracy appears after ${U.NEED} judged calls · ${n.judged} judged in this window so far`}<br><span class="muted">Call result reads each call as a position: a long gains when the price rises, a short gains when it falls.</span></p>
+      <div class="cx-filters">${F.map(([k, l]) => `<button type="button" data-f="${k}" aria-pressed="${k === cur}">${l}</button>`).join('')}</div>`
+      + (done.length ? `<h2 class="cx-sec">Latest results</h2><div class="cx-grid">${done.slice(0, lim).map(U.card).join('')}</div>` + (done.length > lim ? `<p style="text-align:center;margin-top:16px"><button type="button" class="btn" id="more">Show more results (${done.length - lim})</button></p>` : '') : '')
+      + (wait.length ? `<h2 class="cx-sec">Pending <small class="muted">· ${wait.length} waiting for their outcome</small></h2>${wait.slice(0, 20).map(U.row).join('')}` + (wait.length > 20 ? `<p class="muted" style="margin-top:12px">${wait.length - 20} more pending calls are listed in the <a href="track-record.html">Track Record</a>.</p>` : '') : '')
+      + (!done.length && !wait.length ? '<p class="muted">No calls in this window yet.</p>' : '');
+    root.querySelectorAll('[data-w]').forEach(b => b.onclick = () => { win = b.dataset.w; lim = 12; draw(); });
+    root.querySelectorAll('[data-f]').forEach(b => b.onclick = () => { cur = b.dataset.f; lim = 12; draw(); });
+    const m = document.getElementById('more'); if (m) m.onclick = () => { lim += 12; draw(); };
+  };
+  draw();
+  U.watch(async () => { ({ calls: all, live_since } = await U.load()); live = all.filter(c => c.res !== 'void'); btAll = all.filter(c => c.bt); draw(); });
+})();
+</script>

@@ -1,0 +1,66 @@
+{"title":"Investedia Analysis","desc":"Market outlooks, stock analysis, sector insights, technical and fundamental research.","key":"analysis"}
+<div class="page-head">
+  <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Analysis</span></div>
+  <div class="sec-head" style="margin:0"><div><h1>Analysis</h1><p class="lede">Research and strategy from the Investedia desk. Fewer takes, better charts.</p></div><span class="demo">Sample editorial content</span></div>
+</div>
+<nav class="subnav" id="news-nav"></nav>
+<nav class="subnav" id="an-nav"><a href="#featured" aria-current="page">Featured</a><a href="#outlooks">Market outlooks</a><a href="#stocks">Stock analysis</a><a href="#sectors">Sector insights</a><a href="#methods">Technical &amp; fundamental</a><a href="#learn">Learn</a></nav>
+
+<section class="sec" id="featured">
+  <a class="card feature" href="analysis-article.html" id="feature"></a>
+</section>
+
+<section class="sec" id="outlooks">
+  <div class="sec-head"><div><h2>Market outlooks</h2><p>Where we think markets are heading over the next 6–12 months.</p></div></div>
+  <div class="grid g-3" id="outlook-cards"></div>
+</section>
+
+<section class="sec" id="stocks">
+  <div class="sec-head"><div><h2>Stock analysis</h2><p>Single-company deep dives with a clear view.</p></div></div>
+  <div class="grid g-main-l">
+    <a class="card card-pad" href="analysis-article.html" style="display:grid;gap:14px" id="stock-feature"></a>
+    <div class="card"><div class="card-head"><h3>Recent stock calls</h3><span class="meta">Investedia view</span></div><div id="calls"></div></div>
+  </div>
+</section>
+
+<section class="sec" id="sectors">
+  <div class="sec-head"><div><h2>Sector insights</h2><p>Our positioning view by sector.</p></div><span class="tag">Updated 1 Oct 2026</span></div>
+  <div class="card" style="margin-bottom:16px"><div class="tbl-wrap"><table class="tbl"><thead><tr><th>Sector</th><th>Outlook</th><th>YTD</th><th>Forward P/E</th><th style="text-align:left;width:42%">Why</th></tr></thead><tbody id="sector-t"></tbody></table></div></div>
+  <div class="grid g-2" id="sector-cards"></div>
+</section>
+
+<section class="sec" id="methods">
+  <div class="sec-head"><div><h2>Technical &amp; fundamental analysis</h2><p>Two ways of reading the market.</p></div><div class="tabs" id="m-tabs"><button class="tab" data-tab="Technical" aria-selected="true">Technical</button><button class="tab" data-tab="Fundamental">Fundamental</button></div></div>
+  <div class="grid g-3" id="method-cards"></div>
+</section>
+
+<section class="sec">
+  <div class="sec-head"><div><h2>Our analysts</h2></div></div>
+  <div class="grid g-4" id="people"></div>
+</section>
+
+<section class="sec" id="learn">
+  <div class="sec-head"><div><h2>Learn to invest</h2><p>Short courses, written by our analysts.</p></div></div>
+  <div class="grid g-4" id="courses"></div>
+</section>
+<section class="sec" data-newsletter></section>
+<script>
+UI.newsNav('analysis');
+const { icon, fmtP, fmtC, cls, logo, href, cover, tabs, sTag, analysisCard } = UI, M = MOCK;
+const f = M.analysis[0];
+document.getElementById('feature').innerHTML = `<div class="cover" style="min-height:320px">${cover('feat', UI.acc())}</div><div style="padding:clamp(20px,3vw,36px);display:grid;gap:14px;align-content:center"><div class="news-meta"><span class="tag acc">Featured · ${f.kind}</span>${sTag(f.sentiment)}</div><h2 style="font-size:clamp(24px,2.6vw,32px);line-height:1.15">${f.t}</h2><p class="muted" style="margin:0;font-size:16px">${f.d}</p><div class="ident" style="margin-top:6px"><span class="avatar">IR</span><span><b>${f.a}</b><small>${f.role} · ${f.read} min read</small></span></div></div>`;
+const by = k => M.analysis.filter(x => x.kind === k);
+document.getElementById('outlook-cards').innerHTML = by('Market outlook').concat(by('Fundamental').slice(1)).slice(0, 3).map(analysisCard).join('');
+const s0 = by('Stock analysis')[0], sa = M.bySym[s0.tag];
+document.getElementById('stock-feature').innerHTML = `<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><span class="ident">${logo(sa, 'lg')}<span><b style="font-size:16px">${sa.n}</b><small>${sa.s} · ${fmtP(sa)} <span class="${cls(sa.d)}">${fmtC(sa.d)}</span></small></span></span>${sTag(s0.sentiment)}</div><h2 style="font-size:24px">${s0.t}</h2><p class="muted" style="margin:0">${s0.d}</p><div class="stats-row" style="border:1px solid var(--line);border-radius:8px"><div class="stat"><span>Fair value</span><b>$335</b></div><div class="stat"><span>Upside</span><b class="muted">−2.0%</b></div><div class="stat"><span>Moat</span><b>Wide</b></div><div class="stat"><span>Uncertainty</span><b>Medium</b></div></div><div class="news-meta"><span>${s0.a}</span><i></i><span>${s0.read} min read</span></div>`;
+document.getElementById('calls').innerHTML = [['LLY', 'Bullish', 'Pill data widens the market'], ['MSFT', 'Bullish', 'Azure still the cleanest AI play'], ['TSLA', 'Neutral', 'Waiting for robotaxi proof'], ['XOM', 'Bearish', 'Oil glut not priced in yet'], ['NVDA', 'Bullish', 'Capex cycle has room to run']].map(([s, v, t]) => { const a = M.bySym[s]; return `<a class="arow" href="analysis-article.html" style="grid-template-columns:minmax(0,1fr) auto"><span class="ident">${logo(a)}<span><b>${a.s} · ${t}</b><small>${a.n}</small></span></span>${sTag(v)}</a>`; }).join('');
+document.getElementById('sector-t').innerHTML = [['Technology', 'Bullish', 21.4, 31.2, 'AI spending keeps lifting earnings, but valuations leave little room for disappointment.'], ['Healthcare', 'Bullish', 8.9, 18.7, 'Weight-loss drugs and cheaper valuations make a strong case.'], ['Financials', 'Neutral', 12.1, 14.9, 'A steeper yield curve helps banks; credit quality is the risk.'], ['Energy', 'Bearish', -4.2, 11.3, 'Oil supply is outrunning demand into 2027.'], ['Real estate', 'Neutral', 3.6, 35.8, 'Lower rates help, but office vacancies stay high.'], ['Utilities', 'Bullish', 14.8, 17.6, 'Data centers are driving the first real power-demand growth in decades.']].map(([s, o, y, pe, w]) => `<tr><td><b style="font-weight:550">${s}</b></td><td>${sTag(o)}</td><td class="num ${cls(y)}">${fmtC(y)}</td><td class="num muted">${pe.toFixed(1)}</td><td class="l muted" style="white-space:normal">${w}</td></tr>`).join('');
+document.getElementById('sector-cards').innerHTML = by('Sector insight').map(analysisCard).join('');
+const methods = k => document.getElementById('method-cards').innerHTML = by(k).concat(M.analysis.filter(x => x.kind !== k && x.kind !== 'Market outlook')).slice(0, 3).map(analysisCard).join('');
+tabs(document.getElementById('m-tabs'), methods); methods('Technical');
+document.getElementById('people').innerHTML = [['Daniel Okafor', 'DO', 'Macro & rates', 'Former rates strategist covering the Fed, ECB and bond markets.'], ['Sofia Rossi', 'SR', 'Equities & income', 'Covers US large caps, earnings and dividend strategies.'], ['Omar Haddad', 'OH', 'Digital assets & technicals', 'Tracks Bitcoin, ETF flows, on-chain data and chart patterns.'], ['Camille Dubois', 'CD', 'Real assets', 'Writes about European real estate, REITs and housing.']].map(([n, i, r, d]) => `<div class="card card-pad" style="display:grid;gap:10px"><div class="ident"><span class="avatar" style="width:44px;height:44px;font-size:14px">${i}</span><span><b style="font-size:15px">${n}</b><small style="color:var(--accent)">${r}</small></span></div><p class="muted" style="margin:0;font-size:13.5px">${d}</p><a class="link" href="#outlooks">Latest research</a></div>`).join('');
+document.getElementById('courses').innerHTML = [['book', 'Investing basics', 'Stocks, bonds and funds explained from scratch.', 'Beginner', 8, 45], ['funds', 'ETFs and index funds', 'Why most people should start with low-cost funds.', 'Beginner', 6, 30], ['stocks', 'Reading a stock chart', 'Trends, support, resistance and volume.', 'Intermediate', 7, 40], ['calc', 'Valuing a company', 'P/E, cash flow and what “cheap” really means.', 'Advanced', 9, 60]].map(([i, t, d, lv, n, min]) => `<a class="card tool" href="analysis-article.html"><div style="display:flex;justify-content:space-between;align-items:center"><span class="dd-ic">${icon(i)}</span><span class="tag">${lv}</span></div><h3>${t}</h3><p>${d}</p><div class="news-meta"><span>${n} lessons</span><i></i><span>${min} min</span></div></a>`).join('');
+const navLinks = document.querySelectorAll('#an-nav a');
+navLinks.forEach(l => l.onclick = () => navLinks.forEach(x => x.toggleAttribute('aria-current', x === l)));
+UI.routeHash({});
+</script>

@@ -1,0 +1,74 @@
+/* Aurora skin: Apple system numerals, frosted glass cards, soft colour glow, glowing change pills. Dark mode only; light mode keeps the plain look. */
+:root{--num:-apple-system,"SF Pro Display","SF Pro Rounded","Inter",system-ui,sans-serif}
+.mono,.num,.mh-big,.mh-chip,.mh-rk,.mh-dr small,.ap-p,.ap-chip,.pk-i .pv,.pf-btn{font-family:var(--num)!important;font-variant-numeric:tabular-nums}
+.mh-th{font-family:var(--num)!important;font-size:11px;letter-spacing:.06em;font-weight:600;opacity:.7}
+.mh-tr .mono{font-size:16px;font-weight:600;letter-spacing:-.02em}
+html:not([data-theme=light]){background:var(--bg)}
+html:not([data-theme=light]) body{background:transparent}
+html:not([data-theme=light]) body::before{content:"";position:fixed;inset:-20% -10% auto -10%;height:90vh;background:radial-gradient(55% 60% at 22% 0%,rgba(255,122,26,.4),transparent 70%),radial-gradient(45% 55% at 82% 8%,rgba(120,80,255,.3),transparent 70%);pointer-events:none;z-index:-1}
+html.embed body::before{display:none}
+.mh h1{font-size:clamp(44px,7vw,84px);letter-spacing:-.045em;line-height:1.02;font-weight:700;background:linear-gradient(180deg,#fff,#a8a8b0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.mh h1 span{background:linear-gradient(90deg,#ff7a1a,#ffb347);-webkit-background-clip:text;background-clip:text;color:transparent}
+html:not([data-theme=light]) :is(.mh-bt,.mh-tbl,.mh-ic3,.mh-p,.ap-card,.ap-ch){background:rgba(255,255,255,.045)!important;-webkit-backdrop-filter:blur(30px) saturate(1.5);backdrop-filter:blur(30px) saturate(1.5);border:1px solid rgba(255,255,255,.14)!important;border-radius:30px!important}
+.mh-big{font-size:52px!important;font-weight:700;letter-spacing:-.045em;background:linear-gradient(180deg,#fff,#c9c9d1);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ap-p{font-size:clamp(48px,8vw,76px)!important;font-weight:700;letter-spacing:-.045em;background:linear-gradient(180deg,#fff,#c9c9d1);-webkit-background-clip:text;background-clip:text;color:transparent}
+.mh-chip,.ap-chip{font-size:15px!important;font-weight:700!important;padding:7px 14px!important}
+.mh-chip.u,.ap-chip.u{background:rgba(48,209,88,.2)!important;color:#5df08a!important;box-shadow:0 0 24px rgba(48,209,88,.25)}
+.mh-chip.d,.ap-chip.d{background:rgba(255,69,58,.2)!important;color:#ff7b72!important;box-shadow:0 0 24px rgba(255,69,58,.25)}
+.mh-tr .mono.u{color:#5df08a}.mh-tr .mono.d{color:#ff7b72}
+.mh-tr:hover{background:rgba(255,255,255,.05);border-radius:18px}
+.pk-sheet,.pk-sb{background:rgba(14,14,17,.82)!important;-webkit-backdrop-filter:blur(40px) saturate(1.6);backdrop-filter:blur(40px) saturate(1.6);border-color:rgba(255,255,255,.16)!important}
+.pk-sheet{border-radius:32px!important}
+/* Commodity colour tiles: squircle, glyph with breathing room */
+.ai-c{border-radius:28%!important}.ai-c svg{width:100%!important;height:100%!important;display:block}
+.ic:has(.ai-c),.mh-ic2:has(.ai-c),.pv-h .ic:has(.ai-c){border-radius:28%!important;background:none!important}
+/* Smaller change pills */
+.mh-chip,.ap-chip{font-size:12.5px!important;padding:3px 9px!important;font-weight:650!important;box-shadow:none!important}
+.mh-tl .mh-chip{font-size:11.5px!important;padding:2px 8px!important}
+.pk-i .pc{font-size:11px;padding:1px 7px}
+@media(max-width:800px){.mh-big{font-size:38px!important}.ap-p{font-size:clamp(38px,11vw,52px)!important}.mh-bt{padding:18px!important}}
+/* the tile always fills its holder, so the glyph is centred at any size */
+.ai-c{width:100%!important;height:100%!important;min-width:0}
+.mh-ic2 .ai-c,.ic .ai-c{width:100%!important;height:100%!important}
+/* safety net: a logo tile is never larger than 64px, whatever container it lands in */
+.ai-c,.ai-t,.ai-i{max-width:64px!important;max-height:64px!important}
+
+/* Fallback initial tile (company without a logo): always a centred tile that fills its holder */
+.ai-t{flex:none;display:inline-grid;place-items:center;border-radius:28%;background:rgba(255,255,255,.1);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);font:700 13px/1 Inter,system-ui,sans-serif;color:#e5e5ea}
+.mh-ic2 .ai-t:not(.ai-c),.ic .ai-t:not(.ai-c),.ap-ic .ai-t:not(.ai-c){width:100%;height:100%}.ai-t b{font:inherit}
+/* Batch 2: notification cards, shared with the article rows. */
+.notif-dd{width:440px;max-width:calc(100vw - 24px)}.notif-head{gap:12px}.notif-head #notif-read{margin-left:auto;background:none;border:0;min-height:44px;font-size:12px;color:#b5b5be}.notif-filters{display:flex;gap:6px;padding:8px 16px}.notif-filters button{min-height:44px;background:transparent;border:1px solid #39393f;border-radius:24px;padding:0 12px;color:#d4d4db;cursor:pointer}.notif-filters button[aria-pressed=true]{background:#fff;color:#111}.notif-list{max-height:60vh;overflow:auto}.notif-item{display:grid!important;grid-template-columns:36px minmax(0,1fr)!important;gap:12px;padding:16px!important;position:relative}.notif-item.unread:after{content:'';position:absolute;right:10px;top:18px;width:6px;height:6px;border-radius:50%;background:#ff7a1a}.notif-source,.hn-source{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#222226;color:#ddd;font-size:11px;flex:none}.notif-msg{display:block;white-space:normal!important;overflow:visible!important;line-height:1.45!important;font-size:14px!important;padding-right:8px}.notif-assets{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0}.notif-assets>span{border:1px solid #3b3b42;border-radius:20px;padding:3px 8px;font-size:11px}.notif-assets i{font-style:normal}.notif-empty{padding:16px;color:#b5b5be}.notif-item small{font-size:11px;color:#b5b5be}@media(max-width:600px){.notif-dd{position:fixed!important;top:68px!important;right:12px!important;left:12px!important;width:auto!important}.notif-wrap #notif-btn{min-width:44px;min-height:44px}}
+.ai-pair{display:flex;width:100%;height:100%;border-radius:50%;overflow:hidden;background:#202024}.ai-pair img{width:50%!important;height:100%!important;object-fit:cover!important;padding:0!important}.hdr-tools .search-btn{width:40px;min-width:40px;padding:0;justify-content:center}.hdr-tools .search-btn span{display:none}@media(max-width:420px){.hdr-tools{gap:3px!important}.hdr{padding-left:12px!important;padding-right:12px!important}.hdr-tools #theme-btn{display:none}}
+@media(max-width:420px){.hdr-tools .hdr-login{display:none}.hdr-tools .search-btn{min-height:44px;width:44px;min-width:44px}}
+.direction-arrow,.nf-ar,.notif-assets i,.hn-impacts [class^=hn-impact-],.impact-dir{font-weight:900!important;-webkit-text-stroke:.45px currentColor}.direction-arrow{display:inline-block;font-size:1.12em;line-height:1}.nf-ar,.notif-assets i{font-size:16px!important}
+
+/* Notification icons: logo, flag or category glyph in a round tile */
+.notif-ic{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;overflow:hidden;flex:none;background:#fff}
+.notif-ic .ai-t,.notif-ic .ai-i{width:100%!important;height:100%!important;border-radius:50%!important}.notif-ic img{width:100%;height:100%;object-fit:cover}
+.notif-ic .ai-t:not(.ai-c){background:#26262b}
+.notif-gl{background:color-mix(in srgb,var(--c) 22%,#16161a);color:var(--c);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--c) 40%,transparent)}.notif-gl svg{width:22px;height:22px}
+@media(max-width:800px){.notif-ic{width:36px;height:36px}}
+/* round crops: show the whole canton of flags that have one at the hoist; everything else stays centred */
+img[src*="/flags/us.svg"],img[src*="/flags/au.svg"],img[src*="/flags/nz.svg"],img[src*="/flags/my.svg"],img[src*="/flags/lr.svg"],img[src*="/flags/cu.svg"],img[src*="/flags/pr.svg"],img[src*="/flags/uy.svg"],img[src*="/flags/cl.svg"],img[src*="/flags/ky.svg"],img[src*="/flags/tw.svg"],img[src*="/flags/ck.svg"],img[src*="/flags/fk.svg"],img[src*="/flags/gs.svg"],img[src*="/flags/hm.svg"],img[src*="/flags/io.svg"],img[src*="/flags/sh.svg"],img[src*="/flags/tc.svg"],img[src*="/flags/vg.svg"],img[src*="/flags/bm.svg"],img[src*="/flags/ai.svg"],img[src*="/flags/ms.svg"],img[src*="/flags/pn.svg"],img[src*="/flags/ws.svg"],img[src*="/flags/nu.svg"],img[src*="/flags/to.svg"],img[src*="/flags/as.svg"],img[src*="/flags/gu.svg"],img[src*="/flags/vi.svg"],img[src*="/flags/um.svg"],img[src*="/flags/tv.svg"],img[src*="/flags/ki.svg"],img[src*="/flags/fj.svg"],img[src*="/flags/ve.svg"],img[src*="/flags/mh.svg"]{object-position:22% 50%}
+img[src*="/flags/"]{object-fit:cover}
+.notif-ic img,.ai-i[src*="/flags/"],.pk-i .ic img,.hn-lgc img{object-fit:cover!important;padding:0!important;background:none!important}
+
+/* currency button shows the symbol only (e.g. $, €, £): a round button like the others */
+.hdr-tools .pf-btn{min-width:36px;width:auto;padding:0 10px;font:600 15px/1 var(--sans,inherit)!important;letter-spacing:0}
+@media(max-width:900px){.hdr-tools .pf-btn{min-width:34px;height:34px;padding:0 9px;font-size:14px!important}}
+
+/* phones: light/dark button in the header, currency in the menu */
+@media(max-width:900px){.hdr-tools #theme-btn{display:inline-grid!important}}
+.drawer-cur{display:flex;align-items:center;justify-content:space-between;padding:10px 4px;border-bottom:1px solid var(--line-soft);font-size:16px;font-weight:500}
+@media(min-width:901px){.drawer-cur{display:none}}
+.drawer-cur .pf-btn{height:36px!important;min-width:36px;padding:0 10px!important;border-radius:999px;font-size:15px!important}
+
+/* Style G (2026-11-01): quieter, more institutional. No violet/orange glow, solid cards instead of glass, grey section labels,
+   squarer chips, neutral selected tab, slimmer header. The globe keeps the visual spectacle. */
+html:not([data-theme=light]) body::before{display:none!important}
+:root{--line:#26262B;--accent-soft:rgba(255,122,26,.10)}
+html:not([data-theme=light]) :is(.mh-bt,.mh-tbl,.mh-ic3,.mh-p,.ap-card,.ap-ch,.cx-card,.tr2-box,.hn-box,.cx-sum){background:#121214!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.hn-eyebrow,.res-label{color:#71717A!important}
+.cx-filters button{border-radius:6px!important}
+.cx-seg button[aria-pressed=true]{background:var(--card-hi)!important;color:var(--fg)!important}
+:root{--head:56px}.hdr .wrap{height:56px}
