@@ -123,6 +123,12 @@ h1 span{color:var(--fg-3)}
 .zoom button:hover{color:var(--fg);background:rgba(255,255,255,.06)}
 .zoom button+button{border-top:1px solid var(--line)}
 
+.zloc{position:fixed;right:calc(var(--pw) + 40px);bottom:22px;z-index:3;width:36px;height:36px;display:grid;place-items:center;border-radius:12px;color:var(--fg-2)}
+.zloc svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+.zloc:hover{color:var(--fg)}.zloc[aria-busy=true] svg{animation:zl 1s linear infinite}.zloc.on{color:#FF7A1A}
+@keyframes zl{to{transform:rotate(360deg)}}
+.zoom{bottom:68px}
+
 /* Hover preview */
 .hover{position:fixed;z-index:5;width:280px;padding:12px;border-radius:14px;pointer-events:none;display:grid;grid-template-columns:52px 1fr;gap:12px;align-items:start;box-shadow:0 18px 50px rgba(0,0,0,.5);opacity:0;transform:translateY(4px);transition:opacity .14s,transform .14s}
 .hover.on{opacity:1;transform:none}
@@ -265,6 +271,7 @@ h1 span{color:var(--fg-3)}
   .win{min-width:0;padding:0 9px;height:32px}.tl-play{width:32px;height:32px}
   .tl-info{display:none}
   .zoom{right:16px;bottom:auto;top:calc(50% - 36px)}
+  .zloc{right:16px;bottom:auto;width:44px;height:44px;border-radius:14px}
   .panel{top:auto;left:0;right:0;bottom:0;width:auto;height:min(60vh,600px);border-radius:22px 22px 0 0;transform:translateY(calc(100% - 84px - env(safe-area-inset-bottom)));transition:transform .38s cubic-bezier(.2,.8,.2,1)}
   .panel.open{transform:none}
   .grab{display:block;flex:none;height:22px;width:100%;position:relative}
@@ -422,10 +429,16 @@ h1 span{color:var(--fg-3)}
   .peek{display:grid;gap:6px;position:fixed;left:12px;right:12px;bottom:calc(var(--dock-h,78px) + 12px + env(safe-area-inset-bottom));z-index:18;text-align:left;padding:14px;border-radius:22px;background:rgba(24,24,27,.96);border:1px solid rgba(255,255,255,.16);box-shadow:0 12px 40px rgba(0,0,0,.5)}
   .peek[hidden]{display:none}
   .peek{left:0;right:0;padding:0;background:none;border:0;box-shadow:none;gap:8px}
-  .pk-row{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 12px;scroll-padding:0 12px;-webkit-overflow-scrolling:touch}.pk-row::-webkit-scrollbar{display:none}
-  .pk-card{flex:0 0 auto;width:calc(100vw - 56px);max-width:420px;scroll-snap-align:start;display:grid;gap:6px;align-content:start;text-align:left;padding:14px;border-radius:22px;background:rgba(24,24,27,.96);border:1px solid rgba(255,255,255,.16);box-shadow:0 12px 40px rgba(0,0,0,.5);color:inherit;font:inherit;cursor:pointer}
+  .pk-row{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 24px 4px;scroll-padding:0 24px;-webkit-overflow-scrolling:touch}.pk-row::-webkit-scrollbar{display:none}
+  .pk-card{flex:0 0 auto;width:calc(100vw - 48px);max-width:440px;scroll-snap-align:center;display:flex;gap:14px;align-items:center;text-align:left;padding:16px 16px 16px 18px;border-radius:24px;background:rgba(22,22,25,.96);border:1px solid rgba(255,255,255,.14);box-shadow:0 12px 40px rgba(0,0,0,.5);color:inherit;font:inherit;cursor:pointer}
   .pk-card:only-child{width:100%;max-width:none}
-  .pk-dots{display:flex;justify-content:center;gap:6px}.pk-dots i{width:6px;height:6px;border-radius:3px;background:rgba(255,255,255,.3);transition:width .2s}.pk-dots i.on{width:18px;background:#FF7A1A}
+  .pk-txt{flex:1;min-width:0;display:grid;gap:8px}
+  .pk-card .pk-e{display:flex;align-items:center;gap:8px;flex-wrap:nowrap;white-space:nowrap;overflow:hidden;font:500 13.5px Inter,system-ui,sans-serif;text-transform:none;letter-spacing:0;color:var(--fg-3)}
+  .pk-card .pk-e time{color:#ff9a4d}.pk-card .pk-e span{margin:0}.pk-card .pk-e > span:last-child{overflow:hidden;text-overflow:ellipsis;min-width:0}.pk-card .pk-e time,.pk-chip{flex:none}
+  .pk-chip{padding:3px 10px;border-radius:999px;background:rgba(255,122,26,.16);color:#ffb37a;font-weight:600;font-size:12.5px}.pk-chip.brk{background:#c2410c;color:#fff}
+  .pk-card .pk-h{font-size:19px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .pk-img{flex:none;width:96px;height:96px;border-radius:16px;object-fit:cover;filter:saturate(.85)}
+  .pk-dots{display:flex;justify-content:center;gap:6px;margin-bottom:2px}.pk-dots i{width:6px;height:6px;border-radius:3px;background:rgba(255,255,255,.3);transition:width .2s}.pk-dots i.on{width:18px;background:#fff}
   .peek.minimized .pk-dots{display:none}.peek.minimized .pk-card{padding:8px 14px}
   body:has(#inv-consent-panel:not([hidden])) .peek{visibility:hidden}
   .pk-e{font:600 14px 'Geist Mono',ui-monospace,monospace;color:#ff9a4d;text-transform:uppercase;letter-spacing:.03em}.pk-e span{font:500 14px Inter,system-ui,sans-serif;color:var(--fg-3);text-transform:none;margin-left:6px;letter-spacing:0}
@@ -549,7 +562,7 @@ html[data-theme=light] :is(.glass,.chips,.regions,.search,.res,.dd-menu,.fsheet,
   background:var(--panel);color:var(--fg);border-color:var(--line);box-shadow:0 12px 40px rgba(36,58,100,.1)}
 html[data-theme=light] :is(.panel,.fsheet,.market-panel){background:var(--panel)!important;border-color:var(--line)}
 html[data-theme=light] :is(.panel .compact-list,.panel .list,.panel .panel-list,.panel .gm-companies,.panel .gm-kpis,.market-kpis>div){background:rgba(255,255,255,.6)}
-html[data-theme=light] .pk-card{background:rgba(255,255,255,.92);border-color:rgba(0,0,0,.1);box-shadow:0 10px 30px rgba(15,23,42,.1)}html[data-theme=light] .pk-dots i{background:rgba(0,0,0,.2)}
+html[data-theme=light] .pk-card{background:rgba(255,255,255,.92);border-color:rgba(0,0,0,.1);box-shadow:0 10px 30px rgba(15,23,42,.1)}html[data-theme=light] .pk-dots i.on{background:#1d1d1f}html[data-theme=light] .pk-card .pk-e time{color:#c2410c}html[data-theme=light] .pk-chip{background:rgba(255,122,26,.14);color:#984400}html[data-theme=light] .pk-dots i{background:rgba(0,0,0,.2)}
 html[data-theme=light] :is(.pk-h,.gm-row:hover .gm-name,.lens-item:hover strong,.mk-toggle:hover){color:var(--fg)}
 html[data-theme=light] :is(.chip[aria-pressed=true],.reg[aria-pressed=true],.win[aria-pressed=true],.dock button[aria-current=page],.mk-toggle[aria-pressed=true],.read,.fs-show){background:#1d1d1f;color:#fff;border-color:#1d1d1f}
 html[data-theme=light] :is(.ri:hover,.ri[aria-selected=true],.panel-tabs button[aria-selected=true],.zoom button:hover,.tl-play:hover,.item:hover,.item:focus-visible,.chain button:hover){background:rgba(36,58,100,.08);color:var(--fg)}
@@ -626,7 +639,7 @@ html[data-theme=light] :is(.panel .meta,.panel .lens-meta,.panel .lens-src,.pane
 <div class="peek" id="peek" role="region" aria-label="Top articles" hidden></div>
 <button type="button" id="nav-grab" class="nav-grab" aria-label="Open News panel" aria-expanded="false" hidden></button>
 <nav class="dock" id="dock" aria-label="Views"><button type="button" data-v="globe" aria-current="page">Globe</button><button type="button" data-v="news">News</button><button type="button" data-v="markets">Markets</button></nav>
-<div class="zoom glass"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button></div>
+<div class="zoom glass"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button></div><button type="button" class="zloc glass" id="zloc" aria-label="Show my location" title="Show my location (stays on this device)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3"/></svg></button>
 <div class="hover glass" id="hover" aria-hidden="true"></div>
 <aside class="panel glass" id="panel" aria-label="News panel">
   <button class="grab" id="grab" aria-label="Change news panel height" aria-controls="pbody"></button>
@@ -1533,6 +1546,25 @@ cv.addEventListener('wheel', e => { if (EMBED && !e.ctrlKey && !onGlobe(e.client
 cv.addEventListener('selectstart', e => e.preventDefault()); cv.addEventListener('dragstart', e => e.preventDefault());
 cv.addEventListener('dblclick', e => { const g = inv(e.clientX, e.clientY); if (g) setZ(Zt < ZMAX - .1 ? Zt * 1.8 : 1, e.clientX, e.clientY); });
 $('zin').onclick = () => setZ(Zt * 1.6); $('zout').onclick = () => setZ(Zt / 1.6);
+// "Show my location": the browser asks permission; the position stays on this device and is never sent anywhere.
+let userLoc = null;
+$('zloc').hidden = EMBED || !('geolocation' in navigator);
+$('zloc').onclick = () => { const b = $('zloc'); if (userLoc) { flyTo(userLoc.lo, userLoc.la, Math.max(Zt, 2.6), 1400); return; }
+  b.setAttribute('aria-busy', 'true');
+  navigator.geolocation.getCurrentPosition(p => { b.removeAttribute('aria-busy'); b.classList.add('on'); userLoc = { la: p.coords.latitude, lo: p.coords.longitude, t0: performance.now() }; flyTo(userLoc.lo, userLoc.la, Math.max(Zt, 2.6), 1400); },
+    () => { b.removeAttribute('aria-busy'); b.title = 'Location unavailable or not allowed'; }, { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }); };
+// keep the location button 10 px under the zoom group, wherever the layout puts it
+window.placeLoc = () => { const z = document.querySelector('.zoom'), b = $('zloc'); if (!z || b.hidden) return; z.style.top = ''; let r = z.getBoundingClientRect(); const h = b.offsetWidth || 44;
+  // phone: keep the button above the article cards; move the zoom group up when needed
+  const pk = $('peek'), lim = pk && !pk.hidden ? pk.getBoundingClientRect().top - 12 : innerHeight - 12;
+  if (r.bottom + 10 + h > lim) { z.style.top = (lim - h - 10 - r.height) + 'px'; z.style.bottom = 'auto'; r = z.getBoundingClientRect(); }
+  b.style.top = (r.bottom + 10) + 'px'; b.style.bottom = 'auto'; b.style.left = r.left + (r.width - h) / 2 + 'px'; b.style.right = 'auto'; };
+addEventListener('resize', () => placeLoc()); setTimeout(() => placeLoc(), 0); setTimeout(() => placeLoc(), 800);
+function drawUserLoc(t) { if (!userLoc) return; const q = proj(userLoc.la * rad, userLoc.lo * rad); if (q[2] <= 0) return;
+  const k = ((t - userLoc.t0) % 1800) / 1800, a = Math.min(1, q[2] * 3);
+  ctx.save(); ctx.globalAlpha = a; ctx.beginPath(); ctx.arc(q[0], q[1], 8 + 18 * k, 0, 7); ctx.strokeStyle = `rgba(255,122,26,${.6 * (1 - k)})`; ctx.lineWidth = 2; ctx.stroke();
+  ctx.beginPath(); ctx.arc(q[0], q[1], 7, 0, 7); ctx.fillStyle = '#fff'; ctx.fill(); ctx.beginPath(); ctx.arc(q[0], q[1], 4.5, 0, 7); ctx.fillStyle = '#FF7A1A'; ctx.fill(); ctx.restore(); }
+
 
 let cTimer = null, lastX = 0, lastY = 0;
 addEventListener('keydown', e => { if (e.key === 'Escape' && pinned) hideHover(); });
@@ -2257,6 +2289,7 @@ function frame(t) {
   for(const {x,y,w:W,h:H,nm,pt,w1,d} of pillRects){ctx.fillStyle='rgba(16,16,19,.94)';ctx.strokeStyle='rgba(255,255,255,.2)';ctx.lineWidth=1;ctx.beginPath();ctx.roundRect(x,y,W,H,13);ctx.fill();ctx.stroke();ctx.textAlign='left';ctx.font='650 12px Inter,sans-serif';ctx.fillStyle='#fff';ctx.fillText(nm,x+12,y+17);ctx.fillStyle=!Number.isFinite(d)||d===0?'#c4c4cc':d>0?'#5df08a':'#ff8a82';ctx.font='700 12px Inter,sans-serif';ctx.fillText(pt,x+12+w1+8,y+17);}
   if (!EMBED && MKTON) drawExchanges(t); else exHits = [];
   if (!EMBED && UPON) drawUpcoming(); else upHits = [];
+  drawUserLoc(t);
   ctx.restore();
   requestAnimationFrame(frame);
 }
@@ -2329,11 +2362,12 @@ function peekUpdate() {
   if (!s) { el.dataset.story = ''; el.innerHTML = '<span class="pk-h">No articles match these filters</span><span class="pk-m">Open Filters to widen the time window.</span>'; return; }
   // Swipeable top articles (owner pick A): one card per article, scroll-snap, dots show the position.
   el.dataset.story = s.id;
-  const card = x => { const a = lensAsset(x), src = x.source && x.source.name ? x.source.name : '';
-    return `<button type="button" class="pk-card" data-story="${esc(x.id)}"><span class="pk-e"><time datetime="${esc(x.published_at || '')}">${ago(x.t)}</time>${src ? `<span>· ${esc(src)}</span>` : ''}</span><span class="pk-h">${esc(x.headline)}</span>${a ? `<span class="pk-a"><span>${esc(a.n)}</span>${pctPill(a.d)}</span>` : ''}</button>`; };
-  el.innerHTML = `<div class="pk-row">${top5.map(card).join('')}</div>${top5.length > 1 ? `<div class="pk-dots" aria-hidden="true">${top5.map((_, i) => `<i${i ? '' : ' class="on"'}></i>`).join('')}</div>` : ''}`;
+  const card = x => { const a = lensAsset(x), src = x.source && x.source.name ? x.source.name : '', img = x.image && x.image.file, chip = x.flag ? FLAG[x.flag] : (CAT[x.category] || 'News');
+    return `<button type="button" class="pk-card${img ? ' has-img' : ''}" data-story="${esc(x.id)}"><span class="pk-txt"><span class="pk-e"><span class="pk-chip${x.flag === 'breaking' ? ' brk' : ''}">${esc(chip)}</span><time datetime="${esc(x.published_at || '')}">${ago(x.t)}</time>${src ? `<span>· ${esc(src)}</span>` : ''}</span><span class="pk-h">${esc(x.headline)}</span>${a ? `<span class="pk-a"><span>${esc(a.n)}</span>${pctPill(a.d)}</span>` : ''}</span>${img ? `<img class="pk-img" src="${esc(img)}" alt="" loading="lazy">` : ''}</button>`; };
+  el.innerHTML = `${top5.length > 1 ? `<div class="pk-dots" aria-hidden="true">${top5.map((_, i) => `<i${i ? '' : ' class="on"'}></i>`).join('')}</div>` : ''}<div class="pk-row">${top5.map(card).join('')}</div>`;
   const row = el.querySelector('.pk-row'), dots = [...el.querySelectorAll('.pk-dots i')];
-  row.onscroll = () => { const w = row.firstChild ? row.firstChild.offsetWidth + 10 : 1, i = Math.round(row.scrollLeft / w); dots.forEach((d, j) => d.classList.toggle('on', j === i)); if (top5[i]) el.dataset.story = top5[i].id; };
+  setTimeout(() => window.placeLoc && placeLoc(), 0);
+  row.onscroll = () => { const w = row.firstChild ? row.firstChild.offsetWidth + 10 : 1, i = Math.max(0, Math.min(top5.length - 1, Math.round(row.scrollLeft / w))); dots.forEach((d, j) => d.classList.toggle('on', j === i)); if (top5[i]) el.dataset.story = top5[i].id; };
 }
 $('peek').onclick = e => { if(performance.now()-peekDraggedAt<400)return; if($('peek').classList.contains('minimized')){$('peek').classList.remove('minimized');return;} const c = e.target.closest('[data-story]'), s = byId[c ? c.dataset.story : $('peek').dataset.story]; if (s) openStory(s); else if (!c) openFilters(); };
 function dockUpdate() {
