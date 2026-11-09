@@ -8,7 +8,9 @@ if not (source/'api/pom.xml').exists():raise SystemExit('Choose the backend repo
 pending=[]
 for directory in ['assets','data']:
  for f in (source/directory).rglob('*'):
-  if not f.is_file() or (f.suffix!='.json' and f.name not in {'quotes.js','news.js','data.js'}):continue
+  if not f.is_file():continue
+  photo = f.relative_to(source).parts[:3] == ('assets','globe','photos') and f.suffix.lower() in {'.jpg','.jpeg','.png','.webp','.avif'}
+  if f.suffix!='.json' and f.name not in {'quotes.js','news.js','data.js'} and not photo:continue
   target=root/f.relative_to(source)
   if f.name.startswith('v5-') and target.exists() and target.read_bytes()!=f.read_bytes():raise SystemExit('Frozen V5 data differs; stopping rather than overwriting history.')
   pending.append((f,target))

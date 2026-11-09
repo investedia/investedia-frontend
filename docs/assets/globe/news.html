@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
-<script src="../live-config.js"></script><script src="../prefs.js"></script><script src="../sectors.js"></script><script src="../peek.js"></script>
+<script src="../runtime-config.js"></script><script src="../live-config.js"></script><script src="../live-data.js"></script><script src="../news-source.js"></script><script src="../prefs.js"></script><script src="../sectors.js"></script><script src="../peek.js"></script>
 <script>document.addEventListener("DOMContentLoaded",()=>window.InvConsent?.mount());</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Investedia Globe News (concept)</title>
@@ -2253,7 +2253,7 @@ placeFilters(phone()); addEventListener('resize', () => placeFilters(phone()));
 // ===== Start =====
 let LIVE = null;
 const load = u => fetch(u, { cache: 'no-cache' }).then(r => { if (!r.ok) throw 0; return r.json(); });
-newsReady = load(NEWS_URL).then(d => { if (!d.stories || !d.stories.length) throw 0; return d; }).catch(() => load(DEMO_URL))
+newsReady = window.InvNewsSource.load(NEWS_URL)
   // homepage globe: the live file holds only the newest articles, so add the archive's articles from the last 48 hours
   .then(raw => raw.demo ? raw : load('news-48h.json').catch(() => load('news-archive.json')).then(a => { const have = new Set(raw.stories.map(s => s.id)), cut = Date.now() - 48 * 3600e3;
     return { ...raw, stories: raw.stories.concat((a.stories || []).filter(s => !have.has(s.id) && Date.parse(s.published_at) >= cut)) }; }).catch(() => raw))

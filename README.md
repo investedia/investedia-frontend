@@ -46,3 +46,11 @@ python build.py
 ```
 
 The workspace recovery browser harness checks Home, Globe, News and AAPL at desktop/phone widths, real local API reads and account-client initialization. Broader historical UI/consent/accessibility tests are preserved for follow-up and are not all claimed passing. No redesign or production deployment occurred. Saved quotes/news have their original timestamps and can be stale. **Not investment advice.**
+
+## Repaired news source
+
+`assets/js/news-source.js` is shared by Home, News and the standalone/embedded Globe. In worker mode it merges valid API articles with the real saved feed and preserves original source timestamps; in static mode or on API failure it retains saved articles. API results with older generation times do not undo newer saved corrections. Demo fallback is disabled. The News page displays elapsed age rather than an ambiguous time-of-day.
+
+`python scripts/sync-snapshots.py --backend ../backend` now includes new local news photo files as well as JSON. Frozen V5 conflicts still abort before any export. For pipeline operation and its live-service boundary, see the backend's `docs/NEWS-PIPELINE.md`.
+
+Focused checks: `node --test tests/news-source.test.mjs` and `python -m unittest discover -s tests -p test_snapshot_export.py`.

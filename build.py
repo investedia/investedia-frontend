@@ -58,6 +58,7 @@ HEAD = """<!doctype html>
 <script src="assets/runtime-config.js?v={ver}"></script>
 <script src="assets/live-config.js?v={ver}"></script>
 <script src="assets/live-data.js?v={ver}" defer></script>
+<script src="assets/news-source.js?v={ver}"></script>
 <script src="assets/prefs.js?v={ver}"></script>
 <script src="assets/peek.js?v={ver}"></script>
 <script src="assets/sectors.js?v={ver}"></script>
