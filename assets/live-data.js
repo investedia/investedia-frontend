@@ -25,7 +25,8 @@
   function get(path) {
     var hit = mem[path]; if (hit && Date.now() - hit.t < MEM_MS) return Promise.resolve({ data: hit.v.data, meta: hit.v.meta, source: 'memory' });
     if (!base) return Promise.reject(new Error('no worker url'));
-    if (window.InvConsent && !window.InvConsent.allows('live') && !window.INV_CONFIG?.localSnapshot) return Promise.reject(new Error('live data not allowed by the visitor'));  // same consent switch as the crypto relay: static files only
+    // News and globe come from Investedia's own API (no third parties, no tracking): essential, available to every visitor.
+    if (!/^(news|globe)\b/.test(path) && window.InvConsent && !window.InvConsent.allows('live') && !window.INV_CONFIG?.localSnapshot) return Promise.reject(new Error('live data not allowed by the visitor'));  // same consent switch as the crypto relay: static files only
     return withTimeout(base + '/v1/' + path, TIMEOUT).then(function (j) {
       if (!j || !j.data || !Object.keys(j.data).length) throw new Error('empty'); // never replace good data with nothing
       mem[path] = { t: Date.now(), v: j }; ssSet(path, j); return { data: j.data, meta: j.meta, source: window.INV_CONFIG?.localSnapshot ? 'snapshot' : 'worker' };
