@@ -11,6 +11,10 @@
 <meta name="robots" content="noindex">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<script>
+// Match the site preference before the first paint; storage may be unavailable.
+try { document.documentElement.dataset.theme = localStorage.getItem('inv-theme') === 'light' ? 'light' : 'dark'; } catch {}
+</script>
 <style>
 /* Globe News concept: the globe fills the screen; filters on top, timeline at the bottom, one glass panel on the right (bottom sheet on phones). */
 :root{
@@ -509,6 +513,32 @@ h1 span{color:var(--fg-3)}
 /* P4 Markets uses the existing camera and sphere; only this optional overlay changes. */
 .market-panel{position:fixed;z-index:8;right:28px;top:80px;bottom:90px;width:360px;max-width:calc(100vw - 28px);overflow:auto;overscroll-behavior:contain;padding:18px;border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(16,16,18,.96);color:#eeeef0;font-family:Inter,sans-serif;text-align:left;box-sizing:border-box}.market-panel[hidden]{display:none}.market-close{position:absolute;right:12px;top:8px;font-size:22px;color:#999;cursor:pointer}.market-eyebrow{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#85858e}.market-panel h2{display:flex;align-items:center;gap:8px;font:600 22px Inter,sans-serif;margin:8px 0 4px}.market-panel .flag{width:24px;height:17px}.market-exchange{font-size:12px;color:#a0a0aa;line-height:1.5;margin:0 0 12px}.market-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.market-kpis>div{border:1px solid #ffffff13;border-radius:12px;padding:10px 9px;min-width:0;display:grid;align-content:start;gap:5px}.market-kpis small{font-size:10px;color:#85858e;line-height:1.4}.market-up{color:#34d399}.market-down{color:#f87171}.market-flat{color:#9999a3}.market-kpis b{font:600 15px Inter,sans-serif;font-variant-numeric:tabular-nums;white-space:nowrap}.market-section{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:14px 0 8px;font-size:12px;color:#a4a4ad}.market-section a{color:#FF7A1A}.market-article{display:block;padding:8px 0;border-top:1px solid #ffffff13;color:inherit;text-decoration:none}.market-article>span{font-size:13px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.market-article small{display:block;margin-top:5px;font-size:11px;color:#8c8c96}.market-tabs{display:flex;gap:5px;white-space:nowrap}.market-tabs button,.market-control button{border:1px solid #ffffff18;border-radius:999px;background:transparent;color:#9999a3;font:600 12px Inter,sans-serif;padding:8px 10px;cursor:pointer}.market-tabs button[aria-selected=true],.market-control button[aria-pressed=true]{color:#101012;background:#fff;border-color:#fff}.market-mention{display:flex;justify-content:space-between;gap:12px;font-size:12px;padding:8px 0;border-top:1px solid #ffffff14}.market-mention>span:last-child{flex:none;color:#9999a3}.market-empty,.market-footnote{font-size:11px;line-height:1.5;color:#8c8c96}.market-footnote{font-size:10px;margin:8px 0}.market-explore{display:inline-flex;background:#fff;color:#101012;text-decoration:none;padding:11px 16px;border-radius:999px;font-size:13px;font-weight:600;margin:5px 0 14px}.market-legend{display:flex;gap:16px;font-size:11px;color:#9999a3}.market-legend span:first-child{color:#FF7A1A}.market-source{display:block;color:#777781;font-size:10px;line-height:1.5;margin-top:10px}.market-handle{display:none}.market-control{display:none;position:fixed;right:28px;bottom:24px;z-index:12;border:1px solid #ffffff20;border-radius:999px;padding:4px;background:#111114}.market-mode .market-control{display:flex}.market-mode:not(.embed) .top .demo,.market-mode:not(.embed) .top .cats,.market-mode:not(.embed) .ddrow,.market-mode:not(.embed) .panel,.market-mode:not(.embed) .timeline,.market-mode:not(.embed) .dock,.market-mode:not(.embed) .peek{display:none!important}
 @media(max-width:760px){.market-panel{right:12px;left:12px;width:auto;top:auto;bottom:12px;height:26vh;max-height:55vh;padding:16px;touch-action:pan-y}.market-panel h2{font-size:21px}.market-handle{display:block;height:14px;margin:-10px auto 8px;width:70px;touch-action:none;cursor:grab}.market-handle:before{content:'';display:block;width:44px;height:4px;border-radius:4px;background:#666;margin:5px auto}.market-control{right:auto;left:16px;bottom:auto;top:16px}.market-up{color:#34d399}.market-down{color:#f87171}.market-flat{color:#9999a3}.market-kpis b{font-size:15px}.market-panel .market-section{margin-top:20px}}
+
+/* C — site light theme. All overrides are scoped; the dark design is unchanged. */
+html[data-theme=light]{--bg:#d9e5f4;--panel:rgba(255,255,255,.9);--card:#f5f8fc;
+  --line:rgba(29,29,31,.13);--line-2:rgba(29,29,31,.24);
+  --fg:#1d1d1f;--fg-2:#484850;--fg-3:#51515a;color-scheme:light}
+html[data-theme=light] .top::before{background:radial-gradient(120% 100% at 0% 0%,rgba(229,238,249,.94) 45%,rgba(229,238,249,0) 100%)}
+html[data-theme=light] :is(.glass,.chips,.regions,.search,.res,.dd-menu,.fsheet,.peek,.dock,.m-btn,.market-panel,.market-control){
+  background:var(--panel);color:var(--fg);border-color:var(--line);box-shadow:0 12px 40px rgba(36,58,100,.1)}
+html[data-theme=light] .panel{background:var(--panel)!important;border-color:var(--line)}
+html[data-theme=light] :is(.pk-h,.gm-row:hover .gm-name,.lens-item:hover strong,.mk-toggle:hover){color:var(--fg)}
+html[data-theme=light] :is(.chip[aria-pressed=true],.reg[aria-pressed=true],.win[aria-pressed=true],.dock button[aria-current=page],.mk-toggle[aria-pressed=true],.read,.fs-show){background:#1d1d1f;color:#fff;border-color:#1d1d1f}
+html[data-theme=light] :is(.ri:hover,.ri[aria-selected=true],.panel-tabs button[aria-selected=true],.zoom button:hover,.tl-play:hover,.item:hover,.item:focus-visible,.chain button:hover){background:rgba(36,58,100,.08);color:var(--fg)}
+html[data-theme=light] :is(.sheet-actions button,.fs-btn,.mk-toggle,.ent,.market-tabs button,.market-control button){border-color:var(--line-2);color:var(--fg-2)}
+html[data-theme=light] :is(.tl-sep,.grab::before){background:var(--line-2)}
+html[data-theme=light] :is(.market-close,.market-eyebrow,.market-exchange,.market-kpis small,.market-section,.market-article small,.market-mention>span:last-child,.market-empty,.market-footnote,.market-legend,.market-source){color:var(--fg-3)}
+html[data-theme=light] :is(.lens-meta time,.pk-e,.hv-rel,.gm-underserved>button){color:#984400}
+
+html[data-theme=light] #cats .chip{background:var(--panel);border-color:var(--line-2);color:var(--fg-2)}
+html[data-theme=light] #cats .chip[aria-pressed=true]{background:#1d1d1f;color:#fff;border-color:#1d1d1f}
+html[data-theme=light] #cats .chip b{background:rgba(36,58,100,.92);color:#fff;box-shadow:0 0 0 1px #fff}
+html[data-theme=light] #regions.dd-menu{background:var(--panel)}
+html[data-theme=light] #regions .reg{color:var(--fg)}
+html[data-theme=light] #regions .reg[aria-pressed=true]{background:#1d1d1f;color:#fff}
+html[data-theme=light] :is(.dd-btn,.tb,.tb-pop){background:var(--panel);color:var(--fg-2);border-color:var(--line-2)}
+html[data-theme=light] :is(.dd-btn:hover,.mine-row,.mine-empty b,.lay-btn:hover){color:var(--fg)}
+html[data-theme=light] :is(.mine-foot,.dd-btn b,.lay-btn b){color:#984400}
 
 </style>
 <script src="../locale.js"></script>
@@ -1971,8 +2001,11 @@ const GB = Object.assign({}, GB0, ({
 // reveal animates the change; the sky is rebuilt once (its cache key includes the palette).
 const GB_NIGHT = Object.assign({}, GB), GB_DAY = { s0: '#d3e1f2', s1: '#b4cae6', atm: .3, atmRGB: '62,112,196', rgb: '28,38,54', land: .2, line: .25, rim: 1, rimRGB: '36,58,100', rimW: 1.6, glow: '56,108,200,.42', blur: 14 };
 let DAY = false;
-const setDay = on => { DAY = !!on; Object.assign(GB, on ? GB_DAY : GB_NIGHT); };
-try { if (localStorage.getItem('inv-theme') === 'light') setDay(true); } catch {}
+const setDay = on => {
+  DAY = !!on; Object.assign(GB, DAY ? GB_DAY : GB_NIGHT);
+  const theme = DAY ? 'light' : 'dark';
+  if (document.documentElement.dataset.theme !== theme) document.documentElement.dataset.theme = theme;
+};
 addEventListener('message', e => { if (e.origin === location.origin && e.data && e.data.type === 'inv-theme') setDay(e.data.theme === 'light'); });
 // Star field behind the globe (preview: ?st=1 sparse, 2 dense with a soft galaxy band, 3 dense + slow twinkle and parallax). Off by default.
 const STARS = 1;  // chosen: sparse stars, no twinkle
@@ -1984,6 +2017,11 @@ const starList = (() => { let seed = 7; const rnd = () => (seed = (seed * 16807)
 // Desktop look (chosen design B): a near-black grey globe background and dimmer stars. The outline, glow and grid are unchanged. Phones are untouched.
 if (innerWidth > 760) Object.assign(GB, EMBED ? { s0: '#17171b', s1: '#0a0a0d', glow: '255,122,26,.6', blur: 22 } : { s0: '#161618', s1: '#050506', glow: '255,122,26,.6', blur: 22 });  // homepage: the globe page's look, a little darker  // desktop: a bit more orange glow around the outline
 Object.assign(GB_NIGHT, GB);  // the dark palette snapshot must include the desktop colours above (the theme message restores it)
+// Apply only after the complete dark palette has been captured, including desktop overrides.
+const syncSiteTheme = () => setDay(document.documentElement.dataset.theme === 'light');
+syncSiteTheme();
+new MutationObserver(syncSiteTheme).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+addEventListener('storage', e => { if (e.key === 'inv-theme' || e.key === null) setDay(e.newValue === 'light'); });
 const STAR_DIM = innerWidth > 760 ? (P.has('sd') ? +P.get('sd') : .95) : 1;  // desktop stars: brighter than before (.4 was too faint), still subdued
 // Galaxy preview (?gx=1 violet band, 2 warm nebula, 3 spiral galaxy, 4 nebula + spiral). Drawn once into an offscreen canvas per size, then copied each frame: cheap for scrolling and dragging.
 const GALAXY = 0;  // Milky Way / galaxy concepts removed; only the stars remain  // desktop: nebula + spiral mix. Phones: no galaxy or Milky Way, only the thin stars
@@ -2003,7 +2041,7 @@ function drawGalaxy() {
 }
 let skyCv = null, skyKey = '';
 function drawSky() {
-  const key = W + 'x' + H + ':' + GALAXY + ':' + STARS + ':' + STAR_DIM + ':' + GB.s0;
+  const key = W + 'x' + H + ':' + GALAXY + ':' + STARS + ':' + STAR_DIM + ':' + DAY + ':' + GB.s0;
   if (key !== skyKey) {
     skyKey = key; skyCv = document.createElement('canvas'); skyCv.width = W; skyCv.height = H;
     const real = ctx; ctx = skyCv.getContext('2d');
@@ -2012,7 +2050,7 @@ function drawSky() {
   ctx.drawImage(skyCv, 0, 0, W, H);
 }
 function drawStars(now) {
-  if (!STARS) return;
+  if (DAY || !STARS) return;
   if (false) { const g = ctx.createLinearGradient(0, H * .85, W, H * .1); g.addColorStop(0, 'rgba(120,130,170,0)'); g.addColorStop(.5, 'rgba(150,160,200,.055)'); g.addColorStop(1, 'rgba(120,130,170,0)'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); }
   const par = 0;
   for (const st of starList) {
@@ -2130,7 +2168,7 @@ function frame(t) {
     if (imp === 3) { ctx.fillStyle = `rgba(255,255,255,${a})`; ctx.beginPath(); ctx.arc(d.x, d.y, 1.5 * e, 0, 7); ctx.fill(); }
     const isSel = sel && d.list.includes(sel), isHov = hoverC === d.key;
     if (isSel || isHov) { ctx.strokeStyle = `rgba(255,255,255,${isSel ? .9 : .6})`; ctx.lineWidth = 1.2; ctx.beginPath(); ctx.arc(d.x, d.y, r + 5, 0, 7); ctx.stroke(); }
-    if (n > 1) { const bx = d.x + 9, by = d.y - 9; ctx.fillStyle = `rgba(14,14,16,${.92 * e})`; ctx.strokeStyle = `rgba(255,122,26,${.7 * a})`; ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(bx, by, 8, 0, 7); ctx.fill(); ctx.stroke(); ctx.fillStyle = `rgba(255,255,255,${a})`; ctx.font = '500 9.5px "Geist Mono",monospace'; ctx.textAlign = 'center'; ctx.fillText(n, bx, by + .5); ctx.textAlign = 'left'; }
+    if (n > 1) { const bx = d.x + 9, by = d.y - 9; ctx.fillStyle = DAY ? 'rgba(36,58,100,.92)' : `rgba(14,14,16,${.92 * e})`; ctx.strokeStyle = DAY ? 'rgba(255,255,255,.95)' : `rgba(255,122,26,${.7 * a})`; ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(bx, by, 8, 0, 7); ctx.fill(); ctx.stroke(); ctx.fillStyle = `rgba(255,255,255,${a})`; ctx.font = '500 9.5px "Geist Mono",monospace'; ctx.textAlign = 'center'; ctx.fillText(n, bx, by + .5); ctx.textAlign = 'left'; }
     // a small label only for the few flagged articles
     if (s.flag && d.z > .35 && (n === 1 || d.same)) {
       const lx = d.x + (n > 1 ? 21 : 12), al = a * Math.min(1, (d.z - .35) * 4);
