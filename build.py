@@ -9,6 +9,7 @@ HEAD = """<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>try{{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t}}catch(e){{}}</script><style>html{{background:#0a0a0b}}html[data-theme=light]{{background:#fff}}</style>
 <link rel="stylesheet" href="assets/consent.css?v={ver}">
 <script src="assets/consent.js?v={ver}"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -186,7 +187,7 @@ def mirror_docs():
     docs = ROOT / "docs"
     docs.mkdir(exist_ok=True)
     pages = page_sources()
-    for f in [ROOT/p.name for p in pages] + [ROOT / n for n in ("CNAME", ".nojekyll", "sitemap.xml", "robots.txt", "manifest.webmanifest", "sw.js")]:
+    for f in [ROOT/p.name for p in pages] + [ROOT / n for n in ("CNAME", ".nojekyll", "sitemap.xml", "robots.txt", "manifest.webmanifest", "sw.js", "_redirects")]:
         if f.exists(): shutil.copy2(f, docs / f.name)
     def ignore_copies(directory, names):
         source_only = {"css", "js", "ASSET-OUTPUT.md"} if pathlib.Path(directory).resolve() == (ROOT / "assets").resolve() else set()
