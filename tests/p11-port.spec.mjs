@@ -31,6 +31,13 @@ try{for(const width of [1440,390])for(const theme of ['dark','light']){
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
  const surface=await page.locator('#panel').evaluate(e=>getComputedStyle(e).backgroundColor);
  assert.equal(surface,theme==='dark'?'rgba(18, 18, 22, 0.62)':'rgba(255, 255, 255, 0.9)');
+ if(theme==='light'){
+  const contrast=await page.locator('#panel .meta,#panel .lens-meta,#panel .lens-src,#panel .panel-tabs button').evaluateAll(nodes=>nodes.map(e=>{
+   const rgb=getComputedStyle(e).color.match(/\d+/g).slice(0,3).map(Number).map(x=>{x/=255;return x<=.04045?x/12.92:((x+.055)/1.055)**2.4;});
+   const luminance=rgb.reduce((v,x,i)=>v+x*[.2126,.7152,.0722][i],0);return 1.05/(luminance+.05);
+  }));
+  assert(contrast.length>0&&contrast.every(r=>r>=4.5),'light sheet secondary text contrast');
+ }
  await page.evaluate(label=>{const e=document.createElement('div');e.textContent=label;e.style.cssText='position:fixed;z-index:999999;top:4px;left:50%;transform:translateX(-50%);background:#1d1d1f;color:white;border-radius:8px;padding:5px 9px;font:11px system-ui;white-space:nowrap';document.body.append(e);},`P11 Glass Panels · New · ${width}px · ${theme}`);
  await page.screenshot({path:`.github/review/p11-ui-port/new-${width}-${theme}.png`});
  assert.deepEqual(errors,[]);
