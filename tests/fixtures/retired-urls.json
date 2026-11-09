@@ -1,0 +1,10 @@
+{
+  "bonds": "markets.html",
+  "commodities": "markets.html",
+  "crypto": "markets.html",
+  "currencies": "markets.html",
+  "funds": "markets.html",
+  "home-v2": "index.html",
+  "indices": "markets.html",
+  "real-estate": "markets.html"
+}
