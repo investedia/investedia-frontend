@@ -26,7 +26,9 @@ test('browser smoke passes healthy targets and exposes errors, overflow, leaked 
   }
   response.setHeader('Content-Type','text/html');
   const errors=broken&&request.url==='/news.html'?'<script>throw new Error("fixture exception")</script><div style="width:2000px">overflow fixture</div>':'';
-  response.end(`<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><main><h1>Smoke fixture</h1></main><script>window.INV_CONFIG={apiBaseUrl:${JSON.stringify(api)}}</script>${errors}</body></html>`);
+  const name=request.url==='/assets/globe/news.html'?'Globe':request.url==='/news.html'?'News':request.url==='/profile.html'?'Profile':'Home';
+  const marker=broken&&name==='Profile'?'home':name.toLowerCase();
+  response.end(`<!doctype html><html><head><title>Investedia ${name}</title><meta name="viewport" content="width=device-width, initial-scale=1"></head><body data-page="${marker}"><main><h1>Smoke fixture</h1></main><script>window.INV_CONFIG={apiBaseUrl:${JSON.stringify(api)}}</script>${errors}</body></html>`);
  });
  const base=await listen(website);
  try{
@@ -35,7 +37,7 @@ test('browser smoke passes healthy targets and exposes errors, overflow, leaked 
   assert.deepEqual(healthy.filter(row=>!row.pass),[]);
   broken=true;
   const failed=await runSmoke({baseUrl:base,settleMs:20,timeoutMs:5000});
-  for(const check of ['News 1440px','News 390px','Not served: .env','Worker /v1/news']){
+  for(const check of ['News 1440px','News 390px','Profile 1440px','Profile 390px','Not served: .env','Worker /v1/news']){
    assert.equal(failed.find(row=>row.check===check)?.pass,false,check);
   }
   assert.match(failed.find(row=>row.check==='News 390px').detail,/horizontal overflow/);

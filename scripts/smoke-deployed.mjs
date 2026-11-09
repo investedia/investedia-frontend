@@ -48,12 +48,14 @@ export async function runSmoke({baseUrl,apiUrl,settleMs=1500,timeoutMs=20000,exe
       const metrics=await page.evaluate(()=>({
        overflow:Math.max(document.documentElement.scrollWidth,document.body?.scrollWidth||0)>innerWidth+1,
        content:!!document.body?.innerText.trim(),
+       title:document.title,marker:document.body?.dataset.page||'',
        api:window.INV_CONFIG?.apiBaseUrl||''
       }));
       if(name==='Home'&&!discoveredApi)discoveredApi=metrics.api;
       if(name==='Home'&&width===1440&&response?.ok()&&response.headers()['content-type']?.includes('text/html'))homeBody=await response.text();
-      pass=!!response?.ok()&&response.headers()['content-type']?.includes('text/html')&&metrics.content&&!metrics.overflow&&!errors.length;
-      detail=[`HTTP ${response?.status()??'none'}`,`${errors.length} console/runtime errors`,metrics.overflow?'horizontal overflow':'no overflow',metrics.content?'content present':'empty page'].join('; ');
+      const identity=name==='Globe'?/investedia.*globe/i.test(metrics.title):/investedia/i.test(metrics.title)&&metrics.marker===name.toLowerCase();
+      pass=!!response?.ok()&&response.headers()['content-type']?.includes('text/html')&&metrics.content&&identity&&!metrics.overflow&&!errors.length;
+      detail=[`HTTP ${response?.status()??'none'}`,`${errors.length} console/runtime errors`,metrics.overflow?'horizontal overflow':'no overflow',metrics.content?'content present':'empty page',identity?'page identity matched':'wrong page/challenge/fallback'].join('; ');
      }catch{detail='Navigation failed or timed out; check target/network access.';}
      rows.push({check:`${name} ${width}px`,pass,detail});
      await page.close();
