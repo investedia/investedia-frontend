@@ -1,0 +1,72 @@
+[
+  {
+    "id": "n61fdaeb550",
+    "headline": "Nigeria Central Bank Imposes $11 Million Licensing Rule for Dollar Stablecoins",
+    "published_at": "2026-11-06T19:26:09Z",
+    "location": {
+      "place": "Abuja",
+      "country": "Nigeria",
+      "lat": 9.058,
+      "lon": 7.495,
+      "region": "af"
+    },
+    "importance": 2,
+    "category": "crypto",
+    "flag": null,
+    "event_type": "regulation",
+    "market_moving": false,
+    "links": [],
+    "source": {
+      "name": "The Rio Times",
+      "url": "https://www.riotimesonline.com/nigeria-stablecoin-capital-floor-us11-million-2026/"
+    },
+    "impacts": [
+      {
+        "kind": "country",
+        "name": "Nigeria",
+        "country": "NG",
+        "ticker": null,
+        "direction": "unclear",
+        "why": "New regulatory capital rules directly govern stablecoin issuers operating within Nigeria.",
+        "relation": "subject",
+        "role": "primary",
+        "confidence": "medium"
+      }
+    ]
+  },
+  {
+    "id": "n6b834d62c0",
+    "headline": "Africa $211B Corporate Debt Market Leaves Businesses Short of Long-Term Capital",
+    "published_at": "2026-11-06T12:24:13Z",
+    "location": {
+      "place": "Abuja",
+      "country": "Nigeria",
+      "lat": 9.076,
+      "lon": 7.399,
+      "region": "af"
+    },
+    "importance": 2,
+    "category": "economy",
+    "flag": null,
+    "event_type": "capital",
+    "market_moving": false,
+    "links": [],
+    "source": {
+      "name": "BusinessDay Nigeria",
+      "url": "https://businessday.ng/companies/article/africas-211bn-corporate-debt-market-leaves-businesses-short-of-long-term-capital/"
+    },
+    "impacts": [
+      {
+        "kind": "sector",
+        "name": "African corporate debt market",
+        "country": "NG",
+        "ticker": null,
+        "direction": "unclear",
+        "why": "Heavy reliance on syndicated loans rather than equity or bond markets restricts long-term corporate financing.",
+        "relation": "subject",
+        "role": "primary",
+        "confidence": "medium"
+      }
+    ]
+  }
+]
