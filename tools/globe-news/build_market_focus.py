@@ -14,6 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from registry import Registry
+from tools.market_focus_relevance import overview_rank, corporate_significance
 
 GROUPS = ['Policy', 'Economic activity', 'Corporate', 'Energy & commodities', 'International impact']
 
@@ -28,9 +29,24 @@ def category(article, verified_events=None):
     return 'Economic activity'
 
 
-def rank(article, name, code, classify=category):
-    direct = name.casefold() in article['headline'].casefold() or any(i.get('country') == code for i in article.get('impacts', []))
-    return (article.get('importance', 1) + int(direct) + (0.5 if classify(article) == 'Policy' else 0), article['published_at'])
+def rank(article, name, code, classify=category, registry=None):
+    """Market Overview order (spec §6 + corporate-event significance).
+
+    `classify` is kept for call compatibility; policy weighting now comes from
+    tools/market_focus_relevance.country_rank."""
+    return overview_rank(article, name, code, registry)
+
+
+def reserve_corporate_slot(articles, group_for, registry=None, slots=4):
+    """Option A (owner, 8 Nov): the first `slots` items (Most significant +
+    Also developing) keep one place for the highest-scoring corporate event."""
+    top = articles[:slots]
+    if len(articles) <= slots or any(group_for(a) == 'Corporate' for a in top): return articles
+    corp = [a for a in articles[slots:] if group_for(a) == 'Corporate' and corporate_significance(a, registry)[0] > 0]
+    if not corp: return articles
+    best = max(corp, key=lambda a: (corporate_significance(a, registry)[0], a['published_at']))
+    rest = [a for a in articles if a is not best]
+    return rest[:slots - 1] + [best] + rest[slots - 1:]
 
 
 def project(news, exchanges, connections, registry, iso):
@@ -41,7 +57,8 @@ def project(news, exchanges, connections, registry, iso):
     group_for = lambda a: category(a, verified_events)
     for code, name in sorted(by_code.items()):
         articles = [a for a in news['stories'] if iso.get(a['location']['country']) == code]
-        articles.sort(key=lambda a: rank(a, name, code, group_for), reverse=True)
+        articles.sort(key=lambda a: rank(a, name, code, group_for, registry), reverse=True)
+        articles = reserve_corporate_slot(articles, group_for, registry)
         # Two per group plus the leading items, within the 60-item schema cap.
         keep = {a['id'] for a in articles[:4]}
         for group in GROUPS: keep.update(a['id'] for a in [a for a in articles if group_for(a) == group][:2])
