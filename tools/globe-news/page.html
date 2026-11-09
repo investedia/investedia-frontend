@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="utf-8"><script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script><style>html{background:#050506}html[data-theme=light]{background:#e9f0fa}</style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
 <script src="../runtime-config.js"></script><script src="../live-config.js"></script><script src="../live-data.js"></script><script src="../news-source.js"></script><script src="../prefs.js"></script><script src="../sectors.js"></script><script src="../peek.js"></script>
@@ -1746,7 +1746,7 @@ $('grab').onclick = () => {
 };
 $('sheet-expand').onclick = () => setSheet('full');
 function dismissPanel() {
-  if (phone()) setSheet('closed');
+  if (phone()) { setSheet('closed'); if (phoneView !== 'globe') { phoneView = 'globe'; if (typeof marketSetMode === 'function' && MARKET.on) marketSetMode('news'); } peekUpdate(); dockUpdate(); }
   else { panel.hidden = true; panel.classList.remove('open'); }
   hideHover();
 }

@@ -118,7 +118,7 @@
   // Mega-menu content per market category: link columns + popular assets
   const MENU = {
     stocks: { cols: [
-      ['Discover', [['Stock Screener', 'screener.html'], ['Trending Stocks', 'stocks.html#trending'], ['Stocks Picked by AI', 'ai-insights.html#picks'], ['Most Active', 'stocks.html#active'], ['Top Gainers', 'stocks.html#gainers'], ['Top Losers', 'stocks.html#losers']]],
+      ['Discover', [['Stock Screener', 'screener.html'], ['Trending Stocks', 'stocks.html#trending'], ['Most Active', 'stocks.html#active'], ['Top Gainers', 'stocks.html#gainers'], ['Top Losers', 'stocks.html#losers']]],
       ['Opportunities', [['Undervalued Stocks', 'screener.html?preset=undervalued'], ['Overvalued Stocks', 'screener.html?preset=overvalued'], ['52-Week Highs', 'screener.html?preset=highs'], ['52-Week Lows', 'screener.html?preset=lows'], ['Top Bank Stocks', 'screener.html?preset=banks'], ['Renewable Energy Stocks', 'screener.html?preset=renewable']]],
       ['Markets and events', [['United States', 'stocks.html#region-us'], ['Americas', 'stocks.html#region-americas'], ['Europe', 'stocks.html#region-europe'], ['Pre-Market', 'stocks.html#premarket'], ['After Hours', 'stocks.html#afterhours'], ['Earnings Calendar', 'calendar.html#earnings'], ['World ADRs', 'stocks.html#adrs']]],
     ], pop: ['AAPL', 'TSLA', 'META', 'AMZN', 'MSFT', 'NVDA', 'NFLX', 'AMD', 'BA', 'GME'] },
@@ -588,7 +588,7 @@
   // News section tabs: News · Analysis · AI brief
   function newsNav(k) {
     const el = document.getElementById('news-nav'); if (!el) return;
-    el.innerHTML = [['news', 'Latest news', 'news.html'], ['analysis', 'Analysis', 'analysis.html'], ['ai', 'AI brief', 'ai-insights.html'], ['impl', 'Market implications', 'implications.html'], ['track', 'Track record', 'track-record.html']].map(([key, t, h]) => `<a href="${h}" ${key === k ? 'aria-current="page"' : ''}>${key === 'ai' ? icon('sparkle') : ''}${t}</a>`).join('');
+    el.innerHTML = [['news', 'Latest news', 'news.html'], ['analysis', 'Analysis', 'analysis.html'], ['impl', 'Market implications', 'implications.html'], ['track', 'Track record', 'track-record.html']].map(([key, t, h]) => `<a href="${h}" ${key === k ? 'aria-current="page"' : ''}>${key === 'ai' ? icon('sparkle') : ''}${t}</a>`).join('');
     const cur = el.querySelector('[aria-current]'); if (cur && el.scrollWidth > el.clientWidth) el.scrollLeft = Math.max(0, cur.offsetLeft - (el.clientWidth - cur.offsetWidth) / 2);
   }
   // Treemap-style heatmap from [asset, colSpan, rowSpan]
