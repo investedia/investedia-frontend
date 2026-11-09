@@ -41,12 +41,17 @@ class LegalPages(unittest.TestCase):
     def test_footer_links_and_signup_destinations(self):
         ui=(ROOT/'assets/ui.js').read_text()
         footer=ui.split('// ---------- footer ----------',1)[1].split('// ---------- charts ----------',1)[0]
-        for name in PAGES:self.assertIn(f'href="{name}.html"',footer)
-        self.assertIn('data-cookie-settings',footer)
+        # The compact footer routes through the legal hub and cookies page.
+        for name in ('legal', 'terms', 'privacy', 'cookies', 'disclaimer', 'contact'):
+            self.assertIn(f'href="{name}.html"', footer)
+        hub = (ROOT/'legal.html').read_text()
+        for name in PAGES:
+            if name != 'legal': self.assertIn(f'href="{name}.html"', hub)
+        self.assertIn('data-cookie-settings', (ROOT/'cookies.html').read_text())
         self.assertNotIn('about.html#terms',ui);self.assertNotIn('about.html#contact',ui)
         parser=Links();parser.feed(footer)
         for href in parser.hrefs:
-            if href.startswith(('http','${')):continue
+            if href.startswith(('http','mailto:','${')):continue
             self.assertTrue((ROOT/href.split('#')[0]).exists(),href)
 
     def test_storage_inventory_covers_real_literal_keys(self):

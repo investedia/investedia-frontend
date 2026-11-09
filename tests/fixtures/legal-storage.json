@@ -1,0 +1,98 @@
+[
+  {
+    "name": "inv-consent",
+    "purpose": "Versioned consent choice and date",
+    "category": "Strictly necessary",
+    "duration": "12 months; invalid after policy-version change"
+  },
+  {
+    "name": "sb-*-auth-token",
+    "purpose": "Supabase login/refresh session",
+    "category": "Strictly necessary when signing in",
+    "duration": "Provider-managed session; until sign-out or session expiry; verify configuration"
+  },
+  {
+    "name": "inv-watch, inv-lists",
+    "purpose": "Requested asset/country watchlists and dashboard lists",
+    "category": "Strictly necessary for requested feature",
+    "duration": "Until cleared or removed; account copies follow account retention"
+  },
+  {
+    "name": "inv-follow, inv-follow-topics, inv-follow-items",
+    "purpose": "Requested globe/article follows and topics",
+    "category": "Strictly necessary for requested feature",
+    "duration": "Until cleared or changed"
+  },
+  {
+    "name": "inv-auth-seen, inv-pop, inv-guest, inv-had-account",
+    "purpose": "Remember account/guest choice and dismissed prompts",
+    "category": "Strictly necessary to respect those choices",
+    "duration": "No coded expiry; until cleared"
+  },
+  {
+    "name": "inv-app-x",
+    "purpose": "Remember dismissal of install prompt",
+    "category": "Strictly necessary to respect dismissal",
+    "duration": "No coded expiry; until cleared"
+  },
+  {
+    "name": "inv-news-optin, inv-sub",
+    "purpose": "Newsletter choice / local form acknowledgement",
+    "category": "Strictly necessary to record requested choice",
+    "duration": "No coded expiry; inv-news-optin resets after account update"
+  },
+  {
+    "name": "inv-owner",
+    "purpose": "Suppress operator usage events",
+    "category": "Strictly necessary internal control",
+    "duration": "Until logout or cleared"
+  },
+  {
+    "name": "inv-wb (sessionStorage)",
+    "purpose": "Welcome-back prompt once per browser session",
+    "category": "Strictly necessary to respect dismissal",
+    "duration": "Browser session"
+  },
+  {
+    "name": "inv-theme, inv-pal, inv-studio",
+    "purpose": "Theme, chart palette and studio appearance",
+    "category": "Preference; opt-in",
+    "duration": "No coded expiry; cleared on rejecting/withdrawing Preferences"
+  },
+  {
+    "name": "inv-profile, inv-notif-read",
+    "purpose": "Legacy local display profile and notification-read count",
+    "category": "Preference; opt-in",
+    "duration": "No coded expiry; cleared on rejecting/withdrawing Preferences"
+  },
+  {
+    "name": "inv-learn",
+    "purpose": "Learning progress",
+    "category": "Preference; opt-in",
+    "duration": "No coded expiry; cleared on rejecting/withdrawing Preferences"
+  },
+  {
+    "name": "inv-* (Cache Storage, not a cookie)",
+    "purpose": "Versioned first-party offline app files and saved responses",
+    "category": "Strictly necessary for requested offline app",
+    "duration": "Older versions removed on service-worker activation; browser may evict"
+  },
+  {
+    "name": "Usage events (no separate analytics storage key)",
+    "purpose": "Optional page/interaction statistics sent to Supabase",
+    "category": "Analytics; opt-in",
+    "duration": "[OWNER: configure event retention]"
+  },
+  {
+    "name": "inv-notif-ids, inv-calendar-filters",
+    "purpose": "Read article IDs and requested calendar filters",
+    "category": "Necessary for requested feature",
+    "duration": "Until cleared; read IDs capped at 1000"
+  },
+  {
+    "name": "googtrans",
+    "purpose": "Language selected for Google Translate",
+    "category": "Cookie for translation you request",
+    "duration": "Managed by Google; removed by \u201cShow original English\u201d"
+  }
+]
