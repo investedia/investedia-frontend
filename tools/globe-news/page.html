@@ -833,7 +833,19 @@ async function loadHistory(window) {
     if (!article || Date.parse(article.published_at) < start) continue;
     have.add(article.id); added.push(article);
   }
-  const normalized = normalize({ stories: added });
+  // Cache empty results and in-flight requests; only fetch files present in this build.
+  const histDays = [...CONNECTION_DAYS].filter(day => Date.parse(day+'T23:59:59Z') >= start && Date.parse(day) <= T0);
+  await Promise.all(histDays.map(day => {
+    if (!connectionDays.has(day)) connectionDays.set(day, fetch(`connections-history/${day}.json`, {cache:'no-cache'}).then(async r => {
+      if (!r.ok) throw Error('Historical connections could not load');
+      const data = await r.json();
+      if (!Array.isArray(data.connections)) throw Error('Invalid historical connections');
+      return data.connections.map(c => ({...c, day}));
+    }).catch(e => {connectionDays.delete(day);throw e;}));
+    return connectionDays.get(day);
+  }));
+  CONN_HIST = (await Promise.all([...connectionDays.values()])).flat();
+  const normalized = normalize({ stories: added }).filter(article => !byId[article.id]);
   stories = stories.concat(normalized);
   for (const article of normalized) byId[article.id] = article;
 }
@@ -910,7 +922,8 @@ let SECTORON = QS.get('sector') === '1', STORYON = QS.get('story') === '1';
 const MAIN = '255,122,26', RIPPLE = '255,150,64', SECTOR = '255,190,110';
 // Evidence-based connections (tools/globe-news/connections.py -> connections.json): every line has an event id, origin, destination,
 // relationship type, evidence, confidence and an explanation. ?lines=v3 shows the previous logic (for comparison).
-let CONN = null; const CONN_ON = QS.get('lines') !== 'v3';
+let CONN = null, CONN_HIST = [];
+const connectionDays = new Map(), CONNECTION_DAYS = new Set(__CONNECTION_DAYS__); const CONN_ON = QS.get('lines') !== 'v3';
 if (CONN_ON) fetch('connections.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(d => { CONN = d; updateNetwork(); }).catch(() => {});
 let IND = {}; fetch('industries.json').then(r => r.json()).then(d => { IND = d.by || {}; updateNetwork(); }).catch(() => {});
 // Canonical identity: the registry is the single source of truth. An impact asset is usable only when the robot stamped it with a
@@ -979,16 +992,18 @@ function archiveThreads(max, onlyId, focus) {
   }
   return out;
 }
-const cappedBy = cap => { const n = {}; return ks => { if (ks.some(k => (n[k] || 0) >= cap)) return false; ks.forEach(k => n[k] = (n[k] || 0) + 1); return true; }; };
+const cappedBy = cap => { const n = {}, allows = ks => !ks.some(k => (n[k] || 0) >= cap); const take = ks => { if (!allows(ks)) return false; ks.forEach(k => n[k] = (n[k] || 0) + 1); return true; }; take.allows = allows; return take; };
 function updateNetwork() {
   events = [];
-  if (CONN_ON && CONN) {  // one event per evidence-backed connection; direct (tier 1) before secondary (tier 2)
+  if (CONN_ON && (CONN || CONN_HIST.length)) {  // one event per evidence-backed connection; direct (tier 1) before secondary (tier 2)
     const byId = new Map(shown.map(a => [a.id, a]));
-    for (const c of CONN.connections || []) {
+    const wide = ['7d','30d'].includes(F.win);
+    const connections = wide ? [...(CONN?.connections || []), ...CONN_HIST].sort((a,b)=>b.score-a.score || String(a.published_at).localeCompare(String(b.published_at))) : CONN?.connections || [];
+    for (const c of connections) {
       const article = byId.get(c.event); if (!article) continue;
       const impact = impactsOf(article).find(i => i.name === c.evidence.impact) || { name: c.evidence.impact, why: c.evidence.why || '', direction: c.evidence.direction, kind: 'asset', country: c.dest.country };
       const asset = assetForImpact(impact) || { s: c.dest.asset, n: c.dest.name, d: NaN, id: c.dest.asset };
-      events.push({ article, impact, asset, target: { phi: c.dest.lat * rad, lam: c.dest.lon * rad }, dir: c.evidence.direction, ripples: [], sectors: [], score: c.score, tier: c.tier, conn: c });
+      events.push({ article, impact, asset, target: { phi: c.dest.lat * rad, lam: c.dest.lon * rad }, dir: c.evidence.direction, ripples: [], sectors: [], score: c.score, tier: c.tier, conn: c, historical: !!c.day, originVector: c.day ? vec(article.phi,article.lam) : null, destVector: c.day ? vec(c.dest.lat*rad,c.dest.lon*rad) : null });
     }
     // Newest first, so a longer window starts with exactly the lines of the shorter one and only adds older ones (24H ⊆ 48H ⊆ 7D).
     events.sort((a, b) => (b.article.t - a.article.t) || ((a.tier || 9) - (b.tier || 9)) || ((b.score || 0) - (a.score || 0)));
@@ -1025,7 +1040,30 @@ function drawConnections(t, focus, country) {
   const ph = k => reduce ? null : (t / 4200 + k * .17) % 1;
   const related = e => focus ? e.article === focus : sym ? touches_(e, sym) : iso ? e.article.location.country === country.name : false;
   const mains = [], cap = cappedBy(EMBED ? 3 : Math.round(4 * winLines()));  // per-country cap grows with the window like the budget
-  if (CONNON || sel) for (const e of events) { if (mains.length >= B.main) break; if (related(e)) continue; const pts = arcPts(e.article, e.target, 32); if (cap(['a' + e.article.location.country, 't' + geoKey(e.target)])) mains.push([e, pts]); }
+  const ca=Math.cos(lat0*rad),sa=Math.sin(lat0*rad),cl=Math.cos(lon0*rad),sl=Math.sin(lon0*rad);
+  const visibleVector=v=>{const d=v[0]*cl+v[1]*sl,z=sa*v[2]+ca*d;if(z<=.04)return false;const x=cx+R*(v[1]*cl-v[0]*sl),y=cy-R*(ca*v[2]-sa*d);return x>=globeBox.left&&x<=globeBox.right&&y>=globeBox.top&&y<=globeBox.bottom;};
+  if (CONNON || sel) {
+    // P0b port: keep the newer-first event model, but let wider windows visibly add
+    // archived connections. Use only slots above the existing 48H live allowance.
+    const wide = !EMBED && ['7d','30d'].includes(F.win);
+    const quota = wide ? Math.min(8, Math.max(0, B.main - Math.round((phone() ? 14 : 22) * WIN_LINES['48h']))) : 0;
+    const queued = new Set(), historyCap = cappedBy(2);
+    const enqueue = (e, counter) => {
+      if (queued.has(e) || related(e)) return false;
+      const keys = ['a' + e.article.location.country, 't' + geoKey(e.target)];
+      if (!counter.allows(keys)) return false;
+      if (e.historical && (!visibleVector(e.originVector) || !visibleVector(e.destVector))) return false;
+      const pts = arcPts(e.article, e.target, 32);
+      if (e.historical && ![pts[0],pts.at(-1)].every(p => p[2] && p[0]>=globeBox.left && p[0]<=globeBox.right && p[1]>=globeBox.top && p[1]<=globeBox.bottom)) return false;
+      if (!counter(keys)) return false;
+      queued.add(e); mains.push([e,pts]); return true;
+    };
+    const live = events.filter(e => !e.historical);
+    for (const e of live) { if (mains.length >= B.main - quota) break; enqueue(e,cap); }
+    let archived = 0;
+    if (quota) for (const e of events) { if (archived >= quota || mains.length >= B.main) break; if (e.historical && enqueue(e,historyCap)) archived++; }
+    for (const e of live) { if (mains.length >= B.main) break; enqueue(e,cap); }
+  }
   const ripples = [];  // default: only the single strongest ripple per event, and only for the strongest events
   if (CONNON || sel) for (const [e] of mains) { if (ripples.length >= B.ripple) break; const r = e.ripples[0]; if (!r) continue; ripples.push([r, arcPts(e.article, r.target, 28)]); }
   if (!EMBED && SECTORON) mains.forEach(([e]) => e.sectors.forEach(s => { strokeArc(arcPts(e.target, s.target, 26), SECTOR, .42 * fade, 1, false, null, [3, 4]); }));
