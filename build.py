@@ -105,6 +105,8 @@ def publish_assets(root=None, *, update=False):
             shutil.copy2(source, target)
 
 def build(release=False, publish=False):
+    from scripts.runtime_config import build_config
+    build_config()
     if release and legal_check.main():
         raise SystemExit(1)
     values = legal_check.config()
@@ -146,6 +148,8 @@ def build(release=False, publish=False):
     write_sw(pages)
     print(f"Built {len(pages)} pages: " + ", ".join(p.name for p in pages))
     mirror_docs()
+    from scripts.runtime_config import write_build_config
+    write_build_config(ROOT)
 
 def write_companies():
     """Clean company addresses on a static host: /companies and /companies/<slug> are copies of companies.html and company.html
