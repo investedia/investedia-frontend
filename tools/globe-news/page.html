@@ -118,6 +118,7 @@ html.proj-mode :is(.panel,.act,.side-sec,.side-imp,.side-bar,#lcol,.timeline,#ca
 .pj-wl{margin-top:12px;border-top:1px solid #1f1f23;padding-top:12px}.pj-wl b{font-size:15px}.pj-wl input[type=email]{width:100%;height:40px;margin-top:8px;border:1px solid #2e2e33;border-radius:9px;background:#0b0b0d;color:#eee;padding:0 12px;font:inherit;box-sizing:border-box}.pj-wl .hp{position:absolute;left:-9999px}.pj-wl label.ck{display:flex;gap:8px;margin-top:8px;font-size:11.5px;color:#8a8a92}.pj-wl button[type=submit]{width:100%;height:40px;margin-top:10px;border:0;border-radius:9px;background:#ff7a1a;color:#111;font:650 13.5px Inter,sans-serif;cursor:pointer}.pj-msg{min-height:16px;margin:6px 0 0;font-size:12px;color:#ffb27a}.pj-foot{color:#6c6c74;font-size:10.5px;margin-top:10px}
 @media(max-width:760px){html.proj-mode .pj{top:auto;left:8px;right:8px;bottom:calc(var(--dock-h,78px) + 12px);width:auto;max-height:58vh;border-radius:18px}}
 .gswitch .gs-pro[aria-pressed=true]{background:rgba(255,122,26,.12);color:#ffb27a;box-shadow:inset 0 0 0 1px rgba(255,122,26,.45)}
+.pj-more{display:block;margin-top:10px;text-align:center;padding:9px;border:1px solid #2e2e33;border-radius:9px;color:#ececef!important;text-decoration:none;font-weight:500}.pj-more:hover{border-color:#ff7a1a}
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
@@ -2225,6 +2226,7 @@ function renderAct(){
 addEventListener('resize',()=>renderAct());
 
 // Projects · Pro preview mode: real developments as examples; nothing here is a working feature.
+const PROJ_START=new URLSearchParams(location.search).get('mode')==='projects';
 const PROJ={on:false,sel:'kx',list:[
  {k:'kx',n:"King's Cross Central",l:'London, United Kingdom',la:51.535,lo:-0.125,t:'Urban regeneration',st:null,ms:[['Coal Drops Yard opened','2018'],['Outline planning permission granted','Early 2006']],src:"https://en.wikipedia.org/wiki/King%27s_Cross_Central",cr:'Crookesmoor · CC BY-SA 4.0'},
  {k:'noor',n:'Noor Ouarzazate Solar Complex',l:'Ouarzazate, Morocco',la:30.99,lo:-6.86,t:'Renewable energy',st:'Operational',ms:[['Noor I commissioned','Feb 2016']],src:'https://en.wikipedia.org/wiki/Ouarzazate_Solar_Power_Station',cr:'Richard Allaway · CC BY 2.0'},
@@ -2236,6 +2238,7 @@ function projRender(){
  el.innerHTML=`<span class="pj-tag">Product preview · Coming soon</span><h2>Development projects, on a global scale</h2><p>Track real estate and infrastructure developments worldwide: who is building, what stage they are at, and the sources behind every update.</p>
  <div class="pj-cards">${P.map(x=>`<button type="button" class="pj-c${x.k===p.k?' on':''}" data-pj="${x.k}"><img src="../img/projects/${x.k}.jpg" alt="" loading="lazy"><b>${esc(x.n)}</b><small>Photo: ${esc(x.cr)}</small></button>`).join('')}</div>
  <div class="pj-d"><b>${esc(p.n)}</b><div class="mu">${esc(p.l)} · ${esc(p.t)}</div>${p.st?`<span class="pj-st g">${esc(p.st)}</span>`:'<span class="pj-st">Stage not shown</span>'}<ul>${p.ms.map(([a,d])=>`<li>${esc(a)}<br><small>${esc(d)} · <a href="${p.src}" target="_blank" rel="noopener">source ↗</a></small></li>`).join('')}</ul></div>
+ <a class="pj-more" href="../../pricing.html#real-estate">Read more about Real Estate in Pro →</a>
  <form class="pj-wl" data-waitlist="globe-projects" novalidate><b>Get early access to Pro</b><p style="margin:2px 0 0;font-size:12px">Pro is not available yet. No payment, no commitment.</p><input type="email" name="email" placeholder="name@company.com" autocomplete="email" required aria-label="Email"><input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true"><label class="ck"><input type="checkbox" name="consent"><span>I agree to receive emails about Pro. Unsubscribe any time. <a href="../../privacy.html">Privacy</a></span></label><button type="submit">Join the waitlist</button><p class="pj-msg" role="status" aria-live="polite"></p></form>
  <p class="pj-foot">Real developments shown as examples of planned coverage. Milestones from Wikipedia; stages only where sourced. Photos: Wikimedia Commons. Projects is not a working feature yet. <a href="../../projects.html">Full preview →</a> Not investment advice.</p>`;
  el.querySelectorAll('[data-pj]').forEach(b=>b.onclick=()=>{PROJ.sel=b.dataset.pj;const q=PROJ.list.find(x=>x.k===PROJ.sel);flyTo(q.lo,q.la,Z);projRender();});
@@ -2278,7 +2281,7 @@ function renderSide() {
     sideBar.innerHTML = `<div class="sb-t"><b>Moving on the news</b><small>Assets named in ${W} articles</small></div>${big.map(e => `<a class="sb-c" href="../../news.html?mover=${encodeURIComponent(e.a.s)}"><b>${esc(e.a.n || e.a.s)}</b><small>${e.n} art.</small><em class="${cl(e.a.d)}">${pc(e.a.d)}</em></a>`).join('')}<small class="meta" style="flex:none;font-size:10.5px">Daily moves. Not investment advice.</small>`;
 }
 addEventListener('resize', () => renderSide());
-setTimeout(()=>{placeLeft();size();if(new URLSearchParams(location.search).get('mode')==='projects')projSet(true);},0);
+setTimeout(()=>{placeLeft();size();if(PROJ_START)projSet(true);},0);
 function render() {
   panel.dataset.view = view.k; peekUpdate(); dockUpdate();
   document.documentElement.classList.toggle('panel-top', !!PANEL_TEMPLATE && view.k === 'top');
