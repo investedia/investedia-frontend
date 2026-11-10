@@ -10,7 +10,7 @@
  html.side-on .panel{bottom:252px!important;max-height:none}
  html.side-on .zoom{bottom:96px!important}html.side-on .zoom{bottom:150px!important}html.side-on .zloc{bottom:96px!important}
  html.side-on .side-imp{display:block;position:fixed;right:16px;bottom:16px;width:var(--pw);height:224px;border-radius:24px;z-index:4;padding:16px 18px;box-sizing:border-box}
- html.side-on .side-sec{display:block;position:fixed;left:24px;top:50%;transform:translateY(-50%);width:270px;border-radius:22px;z-index:3;padding:14px 16px}
+ html.side-on .side-sec{display:block;position:fixed;left:24px;top:50%;transform:translateY(-50%);width:270px;border-radius:22px;z-index:5;padding:14px 16px}
  html.side-on .side-bar{display:flex;position:fixed;left:24px;right:calc(var(--pw) + 40px);bottom:16px;height:64px;border-radius:20px;z-index:3;align-items:center;gap:10px;padding:0 14px;box-sizing:border-box;overflow:hidden}
  html.side-on .timeline{bottom:96px}html.side-on .layers{bottom:96px!important}
 }
@@ -37,6 +37,9 @@
 .side-sec[hidden],.side-imp[hidden],.side-bar[hidden]{display:none!important}
 .gswitch{display:none}
 @media(min-width:761px){html:not(.embed) .gs-old{display:none}html:not(.embed) .gswitch{display:inline-flex;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:3px;gap:2px}.gswitch button{padding:5px 13px;border-radius:8px;font:500 12.5px Inter,system-ui,sans-serif;color:var(--fg-3)}.gswitch button[aria-pressed=true]{background:#f2f2f2;color:#111}.market-control{display:none!important}}
+
+.sd-grip{color:var(--fg-3);cursor:grab;font-size:14px;margin-right:-2px}.side-sec:not(.pinned){cursor:grab}.side-sec.drag{cursor:grabbing;box-shadow:0 20px 60px rgba(0,0,0,.6);opacity:.95}.side-sec.pinned .sd-grip{display:none}.side-sec{touch-action:none;user-select:none}
+.sd-pin{margin-left:auto;width:26px;height:26px;border-radius:8px;display:grid;place-items:center;color:var(--fg-3)}.sd-pin svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round}.sd-pin[aria-pressed=true]{color:#ff9d5c;background:rgba(255,138,61,.14)}.sd-pin[aria-pressed=true] svg{fill:currentColor}
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
@@ -2088,6 +2091,18 @@ function lensPanel(list, nc) {
 
 function placeDD() { const d = $('ddrow'), b = $('sbox'), on = !EMBED && !phone() && d.parentNode === b.parentNode; document.documentElement.classList.toggle('dd-in', on); d.classList.toggle('in-s', on); if (!on) { d.style.top = d.style.left = ''; return; } d.style.top = (b.offsetTop + (b.offsetHeight - 36) / 2) + 'px'; d.style.left = (b.offsetLeft + b.offsetWidth - d.offsetWidth - 8) + 'px'; }
 addEventListener('resize', () => requestAnimationFrame(placeDD)); setTimeout(placeDD, 0); new ResizeObserver(() => placeDD()).observe(document.getElementById('ddrow'));
+let SL = { pin: false }; try { SL = { pin: false, ...JSON.parse(localStorage.getItem('inv-globe-layout') || '{}') }; } catch {}
+const slSave = () => { try { localStorage.setItem('inv-globe-layout', JSON.stringify(SL)); } catch {} };
+function secPlace() { if (SL.x == null) { sideSec.style.left = sideSec.style.top = sideSec.style.transform = ''; return; } const r = sideSec.getBoundingClientRect(); const x = Math.max(8, Math.min(innerWidth - r.width - 8, SL.x)), y = Math.max(8, Math.min(innerHeight - r.height - 8, SL.y)); sideSec.style.left = x + 'px'; sideSec.style.top = y + 'px'; sideSec.style.transform = 'none'; }
+function secPin() { SL.pin = !SL.pin; slSave(); renderSide(); }
+sideSec.addEventListener('pointerdown', e => {
+  if (SL.pin || e.button || e.target.closest('.sd-pin,.sd-r')) return;
+  const r = sideSec.getBoundingClientRect(), ox = e.clientX - r.left, oy = e.clientY - r.top; sideSec.setPointerCapture(e.pointerId); sideSec.classList.add('drag');
+  const mv = ev => { SL.x = ev.clientX - ox; SL.y = ev.clientY - oy; secPlace(); };
+  const up = () => { sideSec.classList.remove('drag'); sideSec.removeEventListener('pointermove', mv); slSave(); };
+  sideSec.addEventListener('pointermove', mv); sideSec.addEventListener('pointerup', up, { once: true }); sideSec.addEventListener('pointercancel', up, { once: true });
+});
+sideSec.addEventListener('dblclick', e => { if (SL.pin || !e.target.closest('.sd-h')) return; delete SL.x; delete SL.y; slSave(); secPlace(); });
 let mvF = 'all';
 $('gswitch').onclick = e => { const b = e.target.closest('button'); if (b && typeof marketSetMode === 'function') marketSetMode(b.dataset.m); };
 function sideData() {
@@ -2101,11 +2116,12 @@ function renderSide() {
   [sideSec, sideImp, sideBar].forEach(x => x.hidden = !on); sideImp.hidden = !on || panel.hidden; if (!on) return;
   const { vis, assets } = sideData(), W = F.win.toUpperCase(), pc = v => `${v > 0 ? '+' : v < 0 ? '−' : ''}${Math.abs(v).toFixed(1)}%`, cl = v => v > 0 ? 'u2' : v < 0 ? 'd2' : '';
   const secs = CATS.filter(([k]) => k !== 'all').map(([k, n]) => { const c = vis.filter(x => x.category === k).length, m = assets.filter(e => e.cats.has(k)), avg = m.length ? m.reduce((t, e) => t + e.a.d, 0) / m.length : null; return { k, n, c, avg }; }).filter(x => x.c).sort((a, b) => b.c - a.c);
-  sideSec.innerHTML = `<div class="sd-h"><b>Sector overview</b><span>${W}</span></div>${secs.map(x => `<button type="button" class="sd-r" onclick="F.cat='${x.k}';press($('cats'),'${x.k}');render()"><span>${esc(x.n)}</span><small>${x.c} art.</small><em class="${x.avg == null ? '' : cl(x.avg)}">${x.avg == null ? '—' : pc(x.avg)}</em></button>`).join('') || '<p class="meta">No articles in this window.</p>'}<p class="meta" style="margin:8px 0 0;font-size:11px">Avg. daily move of assets named in each sector's articles.</p>`;
+  sideSec.innerHTML = `<div class="sd-h"><span class="sd-grip" title="Drag to move" aria-hidden="true">⠿</span><b>Sector overview</b><span>${W}</span><button type="button" class="sd-pin" aria-pressed="${SL.pin}" aria-label="${SL.pin ? 'Unpin card' : 'Pin card here'}" title="${SL.pin ? 'Pinned: tap to unpin' : 'Pin here'}" onclick="secPin()"><svg viewBox="0 0 24 24"><path d="M9 3h6l-1 6 4 4H6l4-4z M12 13v8"/></svg></button></div>${secs.map(x => `<button type="button" class="sd-r" onclick="F.cat='${x.k}';press($('cats'),'${x.k}');render()"><span>${esc(x.n)}</span><small>${x.c} art.</small><em class="${x.avg == null ? '' : cl(x.avg)}">${x.avg == null ? '—' : pc(x.avg)}</em></button>`).join('') || '<p class="meta">No articles in this window.</p>'}<p class="meta" style="margin:8px 0 0;font-size:11px">Avg. daily move of assets named in each sector's articles.</p>`;
   const up = assets.filter(e => e.a.d > 0).sort((a, b) => b.a.d - a.a.d), dn = assets.filter(e => e.a.d < 0).sort((a, b) => a.a.d - b.a.d), avg = l => l.length ? l.reduce((t, e) => t + e.a.d, 0) / l.length : 0;
   const row = (lab, l) => { const v = avg(l); return `<div class="im-r"><div class="im-i ${cl(v)}" style="background:${v >= 0 ? 'rgba(52,211,153,.12)' : 'rgba(248,113,113,.12)'}">${v >= 0 ? '↗' : '↘'}</div><div><small>${lab}</small><strong class="${cl(v)}">${l.length ? pc(v) : '—'}</strong></div><div class="im-l">${l.slice(0, 3).map(e => `<a href="../../news.html?mover=${encodeURIComponent(e.a.s)}"><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:96px">${esc(e.a.n || e.a.s)}</span><span class="${cl(e.a.d)}">${pc(e.a.d)}</span></a>`).join('')}</div></div>`; };
   sideImp.innerHTML = `<div class="sd-h"><b>Market impact</b><span>${W}</span></div>${row('Most positive', up)}${row('Most negative', dn)}`;
   const big = [...assets].sort((a, b) => Math.abs(b.a.d) - Math.abs(a.a.d)).slice(0, 4);
+  secPlace(); sideSec.classList.toggle('pinned', !!SL.pin);
   sideBar.innerHTML = `<div class="sb-t"><b>Moving on the news</b><small>Assets named in ${W} articles</small></div>${big.map(e => `<a class="sb-c" href="../../news.html?mover=${encodeURIComponent(e.a.s)}"><b>${esc(e.a.n || e.a.s)}</b><small>${e.n} art.</small><em class="${cl(e.a.d)}">${pc(e.a.d)}</em></a>`).join('')}<small class="meta" style="flex:none;font-size:10.5px">Daily moves. Not investment advice.</small>`;
 }
 addEventListener('resize', () => renderSide());

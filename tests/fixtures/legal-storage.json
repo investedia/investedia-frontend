@@ -18,6 +18,12 @@
     "duration": "Until cleared or removed; account copies follow account retention"
   },
   {
+    "name": "inv-globe-layout",
+    "purpose": "Where you moved and pinned the Sector overview card on the Globe page",
+    "category": "Strictly necessary for requested feature",
+    "duration": "Until cleared or reset"
+  },
+  {
     "name": "inv-follow, inv-follow-topics, inv-follow-items",
     "purpose": "Requested globe/article follows and topics",
     "category": "Strictly necessary for requested feature",
@@ -93,6 +99,6 @@
     "name": "googtrans",
     "purpose": "Language selected for Google Translate",
     "category": "Cookie for translation you request",
-    "duration": "Managed by Google; removed by \u201cShow original English\u201d"
+    "duration": "Managed by Google; removed by “Show original English”"
   }
 ]
