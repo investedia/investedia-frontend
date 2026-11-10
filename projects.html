@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t==='system'?(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'):t}catch(e){}</script><style>html{background:#0a0a0b}html[data-theme=light]{background:#fff}</style>
-<link rel="stylesheet" href="assets/consent.css?v=9a50f9c6d3">
-<script src="assets/consent.js?v=9a50f9c6d3"></script>
+<script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script><style>html{background:#0a0a0b}html[data-theme=light]{background:#fff}</style>
+<link rel="stylesheet" href="assets/consent.css?v=c8d55a943f">
+<script src="assets/consent.js?v=c8d55a943f"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Projects · Pro (coming soon) · Investedia</title>
 <meta name="description" content="Product preview: track real estate and infrastructure developments worldwide with dated, sourced milestones. Coming soon in Pro.">
@@ -23,8 +23,8 @@
 <meta name="twitter:description" content="Product preview: track real estate and infrastructure developments worldwide with dated, sourced milestones. Coming soon in Pro.">
 <meta name="twitter:image" content="https://investedia.com/assets/og-default.png">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/app.css?v=9a50f9c6d3">
-<link rel="stylesheet" href="assets/skin.css?v=9a50f9c6d3">
+<link rel="stylesheet" href="assets/app.css?v=c8d55a943f">
+<link rel="stylesheet" href="assets/skin.css?v=c8d55a943f">
 <link rel="apple-touch-icon" href="assets/app/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -47,19 +47,21 @@
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <script src="assets/quotes.js"></script>
 <script src="assets/news.js"></script>
-<script src="assets/mock.js?v=9a50f9c6d3"></script>
-<link rel="stylesheet" href="assets/news-menu.css?v=9a50f9c6d3">
-<script src="assets/runtime-config.js?v=9a50f9c6d3"></script>
-<script src="assets/live-config.js?v=9a50f9c6d3"></script>
-<script src="assets/live-data.js?v=9a50f9c6d3" defer></script>
-<script src="assets/news-source.js?v=9a50f9c6d3"></script>
-<script src="assets/prefs.js?v=9a50f9c6d3"></script>
-<script src="assets/peek.js?v=9a50f9c6d3"></script>
-<script src="assets/sectors.js?v=9a50f9c6d3"></script>
-<script src="assets/news-menu.js?v=9a50f9c6d3"></script>
-<script src="assets/locale.js?v=9a50f9c6d3"></script>
-<script src="assets/ui.js?v=9a50f9c6d3"></script>
-<script src="assets/news-alerts.js?v=9a50f9c6d3" defer></script>
+<script src="assets/mock.js?v=c8d55a943f"></script>
+<link rel="stylesheet" href="assets/news-menu.css?v=c8d55a943f">
+<script src="assets/runtime-config.js?v=c8d55a943f"></script>
+<script src="assets/live-config.js?v=c8d55a943f"></script>
+<script src="assets/live-data.js?v=c8d55a943f" defer></script>
+<script src="assets/news-source.js?v=c8d55a943f"></script>
+<script src="assets/prefs.js?v=c8d55a943f"></script>
+<script src="assets/peek.js?v=c8d55a943f"></script>
+<script src="assets/sectors.js?v=c8d55a943f"></script>
+<script src="assets/news-menu.js?v=c8d55a943f"></script>
+<script src="assets/locale.js?v=c8d55a943f"></script>
+<script src="assets/ui.js?v=c8d55a943f"></script>
+<script src="assets/news-alerts.js?v=c8d55a943f" defer></script>
+<script src="assets/projects-data.js?v=c8d55a943f"></script>
+<script src="assets/projects-standalone.js?v=c8d55a943f"></script>
 <main class="wrap" id="main-content" tabindex="-1">
 <style>
 .pp{max-width:1240px;margin:0 auto;padding:28px 24px 40px;font-feature-settings:"cv11","tnum"}.pp a{color:inherit}
@@ -85,16 +87,13 @@
 .pp-foot{margin-top:18px;border-top:1px solid #18181c;padding-top:10px;color:#6c6c74;font-size:11.5px}
 @media(max-width:900px){.pp-hero{grid-template-columns:1fr;min-height:0}.pp-gw{justify-self:center;max-width:420px}.pp-call{display:none}.pp-cards{grid-template-columns:1fr 1fr}.pp-pv{grid-template-columns:1fr}.pp-wl{grid-template-columns:1fr;gap:18px;padding:20px}}
 @media(max-width:520px){.pp-card{height:190px}.pp-pb th:nth-child(2),.pp-pb td:nth-child(2){display:none}}
+.pp .pp-tx,.pp .pp-src{color:#fff}.pp .pp-foot,.pp .pp-pb li small{color:var(--fg-2,#a1a1aa)}.pp .pp-nt{color:var(--fg-2,#a1a1aa)!important}html[data-theme=light] .pp :is(.pp-pb,.pp-wl,.pp-form){background:#fff;border-color:#d9d9de;color:#1d1d1f}html[data-theme=light] .pp .pp-bar{border-color:#ddd;color:#53535b}html[data-theme=light] .pp .pp-bar b{color:#1d1d1f}html[data-theme=light] .pp .pp-form input[type=email]{background:#f7f7fa;color:#1d1d1f;border-color:#c7c7ce}html[data-theme=light] .pp :is(.pp-lead,.pp-wl p,.pp-wl li,.pp-form label,.pp-form .pp-ck,.pp-pb li small){color:#53535b!important}html[data-theme=light] .pp .pp-ck a{color:#984400!important}
 </style><main class="pp">
 <section class="pp-hero"><div><span class="pp-tag">Product preview · Coming soon</span><h1>Development projects,<br>on a global scale.</h1><p class="pp-lead">Track real estate and infrastructure developments worldwide: who is building, what stage they are at, and the sources behind every update.</p>
 <ul class="pp-fl"><li><b>Global project map</b><span>Developments by region, sector and stage.</span></li><li><b>Dated evidence</b><span>Every milestone linked to a public source.</span></li><li><b>Developers and companies</b><span>Who builds, finances and operates each project.</span></li><li><b>Tracking and alerts</b><span>Follow projects and get notified when something changes.</span></li></ul>
 </div>
-<div class="pp-gw" aria-hidden="true"><div class="pp-g"></div><i class="pp-d" style="left:50.14%;top:43.29%"></i><i class="pp-d" style="left:45.86%;top:47.14%"></i><i class="pp-d" style="left:49.57%;top:50.14%"></i><i class="pp-d" style="left:67.29%;top:65.14%"></i><i class="pp-d" style="left:79.29%;top:59.0%"></i><i class="pp-d" style="left:65.71%;top:61.0%"></i><i class="pp-d" style="left:81.43%;top:57.71%"></i><i class="pp-d" style="left:70.29%;top:63.29%"></i><i class="pp-d" style="left:51.43%;top:41.57%"></i><i class="pp-d" style="left:50.43%;top:38.0%"></i><i class="pp-d" style="left:41.43%;top:53.71%"></i><i class="pp-d" style="left:53.71%;top:47.71%"></i><i class="pp-d" style="left:61.86%;top:52.43%"></i><i class="pp-d" style="left:59.29%;top:55.86%"></i><i class="pp-d" style="left:37.86%;top:58.86%"></i><i class="pp-d" style="left:55.86%;top:44.0%"></i><i class="pp-d m" style="left:44.71%;top:44.71%"></i><i class="pp-d m" style="left:38.0%;top:61.14%"></i><i class="pp-d m" style="left:68.43%;top:61.86%"></i><div class="pp-call a"><img src="assets/img/projects/kx.jpg" alt=""><div><b>King's Cross Central</b><small>London, United Kingdom</small></div></div><div class="pp-call b"><img src="assets/img/projects/noor.jpg" alt=""><div><b>Noor Ouarzazate</b><small>Ouarzazate, Morocco</small><span class="pp-st g">Operational</span></div></div><div class="pp-call c"><img src="assets/img/projects/line.jpg" alt=""><div><b>The Line</b><small>Tabuk Province, Saudi Arabia</small></div></div><span class="pp-key">● Real developments, shown as examples of planned coverage</span></div></section>
-<div class="pp-sh"><h2>Featured projects</h2><span>Real developments of the kind Pro will cover.</span></div><div class="pp-cards"><article class="pp-card"><img src="assets/img/projects/kx.jpg" alt="King's Cross Central" loading="lazy"><span class="pp-ty">Urban regeneration</span><div class="pp-tx"><b>King's Cross Central</b><span>London, United Kingdom</span></div><a class="pp-src" href="https://en.wikipedia.org/wiki/King%27s_Cross_Central" target="_blank" rel="noopener" aria-label="Source for King's Cross Central">↗</a><a class="pp-cr" href="https://commons.wikimedia.org/wiki/File:King%27s_Cross_Central_2019.jpg" target="_blank" rel="noopener">Photo: Crookesmoor · CC BY-SA 4.0</a></article><article class="pp-card"><img src="assets/img/projects/noor.jpg" alt="Noor Ouarzazate Solar Complex" loading="lazy"><span class="pp-ty">Renewable energy</span><div class="pp-tx"><b>Noor Ouarzazate Solar Complex</b><span>Ouarzazate, Morocco</span></div><a class="pp-src" href="https://en.wikipedia.org/wiki/Ouarzazate_Solar_Power_Station" target="_blank" rel="noopener" aria-label="Source for Noor Ouarzazate Solar Complex">↗</a><a class="pp-cr" href="https://commons.wikimedia.org/wiki/File:Noor_1_and_2_-_Ouarzazate_Solar_Power_Station_(48962353822).jpg" target="_blank" rel="noopener">Photo: Richard Allaway · CC BY 2.0</a></article><article class="pp-card"><img src="assets/img/projects/hy.jpg" alt="Hudson Yards" loading="lazy"><span class="pp-ty">Mixed-use</span><div class="pp-tx"><b>Hudson Yards</b><span>New York, United States</span></div><a class="pp-src" href="https://en.wikipedia.org/wiki/Hudson_Yards,_Manhattan" target="_blank" rel="noopener" aria-label="Source for Hudson Yards">↗</a><a class="pp-cr" href="https://commons.wikimedia.org/wiki/File:Hudson_Yards_Plaza_March_2019_18.jpg" target="_blank" rel="noopener">Photo: Epicgenius · CC BY-SA 4.0</a></article><article class="pp-card"><img src="assets/img/projects/line.jpg" alt="The Line" loading="lazy"><span class="pp-ty">Urban megaproject</span><div class="pp-tx"><b>The Line</b><span>Tabuk Province, Saudi Arabia</span></div><a class="pp-src" href="https://en.wikipedia.org/wiki/The_Line,_Saudi_Arabia" target="_blank" rel="noopener" aria-label="Source for The Line">↗</a><a class="pp-cr" href="https://commons.wikimedia.org/wiki/File:Line_Progress_October_2022.png" target="_blank" rel="noopener">Photo: European Space Agency (cropped) · CC BY-SA 3.0</a></article></div>
-<div class="pp-sh"><h2>What you will be able to do</h2><small>Interface previews · not yet available</small></div>
-<div class="pp-pv"><div class="pp-pb"><div class="pp-bar"><b>Project database</b><span>4 projects</span><i>Product preview</i></div><table><tr><th>Project</th><th>Type</th><th>Stage</th><th>Latest milestone</th></tr><tr><td><b>King's Cross Central</b><small>London, United Kingdom</small></td><td>Urban regeneration</td><td><span class=pp-mu>Not shown</span></td><td class="pp-mu">2018</td></tr><tr><td><b>Noor Ouarzazate Solar Complex</b><small>Ouarzazate, Morocco</small></td><td>Renewable energy</td><td>Operational</td><td class="pp-mu">Feb 2016</td></tr><tr><td><b>Hudson Yards</b><small>New York, United States</small></td><td>Mixed-use</td><td>Phase 1 open</td><td class="pp-mu">15 Mar 2019</td></tr><tr><td><b>The Line</b><small>Tabuk Province, Saudi Arabia</small></td><td>Urban megaproject</td><td><span class=pp-mu>Not shown</span></td><td class="pp-mu">2021</td></tr></table></div>
-<div class="pp-pb"><div class="pp-bar"><b>Project profile</b><i>Product preview</i></div><div class="pp-pf"><img src="assets/img/projects/hy.jpg" alt=""><div><b>Hudson Yards</b><div class="pp-mu">New York, United States · Mixed-use</div><span class="pp-st g">Phase 1 open</span></div></div><ul><li><b>Phase 1 opened</b><small>15 Mar 2019 · <a href="https://en.wikipedia.org/wiki/Hudson_Yards,_Manhattan" target="_blank" rel="noopener">source ↗</a></small></li><li><b>Groundbreaking, 10 Hudson Yards</b><small>4 Dec 2012 · <a href="https://en.wikipedia.org/wiki/Hudson_Yards,_Manhattan" target="_blank" rel="noopener">source ↗</a></small></li></ul></div>
-<div class="pp-pb"><div class="pp-bar"><b>Map explorer</b><i>Product preview</i></div><div class="pp-map"><i class="pp-d m" style="left:32%;top:22%"></i><i class="pp-d m" style="left:22%;top:70%"></i><i class="pp-d m" style="left:80%;top:76%"></i><span style="left:36%;top:14%">King's Cross Central</span><span style="left:4%;top:78%">Noor Ouarzazate</span><span style="right:6%;top:84%">The Line</span></div></div></div>
+<div class="pp-gw"><iframe title="Projects globe preview" src="assets/globe/news.html?mode=projects&amp;embed=1" style="width:100%;height:100%;border:0;border-radius:50%"></iframe></div></section>
+<div class="pp-sh"><h2>Featured projects</h2><span>Real developments of the kind Pro will cover.</span></div><div class="pp-cards" data-project-cards><p>Loading sourced projects…</p></div><p><a class="btn btn-primary" href="assets/globe/news.html?mode=projects">Explore the Projects globe ↗</a></p><div class="pp-pv" data-project-milestones></div>
 <div class="pp-wl" id="waitlist"><div><div class="pp-eb">Pro · Waitlist</div><h2>Get early access to Pro</h2><p>Pro is in development and not available yet. Join the waitlist and we will let you know when it opens.</p><ul><li>Launch announcement and early-access invite</li><li>Occasional product updates, no marketing spam</li><li>No payment and no commitment</li></ul></div>
 <form class="pp-form" data-waitlist novalidate><label for="wl-email">Email</label><input id="wl-email" type="email" name="email" placeholder="name@company.com" autocomplete="email" required><input type="text" name="website" tabindex="-1" autocomplete="off" class="pp-hp" aria-hidden="true"><label class="pp-ck"><input type="checkbox" name="consent" required><span>I agree to receive emails about Pro. I can unsubscribe at any time. See the <a href="privacy.html">privacy policy</a>.</span></label><button type="submit">Join the waitlist</button><p class="pp-msg" role="status" aria-live="polite"></p><p class="pp-nt">We only use your email for Pro updates. It is never sold or shared.</p></form></div>
 <p class="pp-foot">Product preview: Projects is not a working feature yet. Projects shown are real developments used as examples of planned coverage. Milestones are from Wikipedia and will be replaced by primary sources before launch; stages are shown only where sourced. Photos from Wikimedia Commons, credited on each image. Not investment advice.</p></main><script>
