@@ -42,12 +42,12 @@ body[data-page=news] main.wrap{max-width:1240px;padding-inline:max(20px,env(safe
 .nb-pill:focus-within{border-color:rgba(255,122,26,.55);background:rgba(255,255,255,.09)}
 .nb-pill input{flex:1;min-width:0;background:none;border:0;outline:0;color:var(--fg);font:inherit;font-size:14px}.nb-pill input::-webkit-search-cancel-button{display:none}
 .nb-ic{flex:none;width:13px;height:13px;border:2px solid currentColor;border-radius:50%;position:relative}.nb-ic:after{content:"";position:absolute;width:6px;height:2px;background:currentColor;right:-6px;bottom:-3px;transform:rotate(45deg)}
-.nb-pill kbd{font:500 11px 'Geist Mono',monospace;border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:2px 6px}
+.nb-pill kbd{font:500 11px 'Inter',sans-serif;border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:2px 6px}
 .nb-dd{position:absolute;left:0;right:0;top:48px;z-index:30;background:rgba(24,24,27,.97);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:6px;box-shadow:0 20px 50px rgba(0,0,0,.5)}
 .nb-dd button{display:flex;align-items:center;gap:10px;width:100%;padding:9px 10px;border-radius:12px;border:0;background:none;color:inherit;font:inherit;font-size:14px;text-align:left;cursor:pointer}
 .nb-dd button:hover,.nb-dd button.on{background:rgba(255,255,255,.07)}.nb-dd small{margin-left:auto;color:var(--fg-2);font-size:12px}.nb-dd .nb-lg,.nb-dd .nb-fl{flex:none}
 .nb-dd .nb-no{padding:12px;color:var(--fg-2);font-size:13px}
 .nb-sel-chip{margin-top:10px}.nb-sel-chip button{display:inline-flex;align-items:center;gap:8px;height:32px;padding:0 12px;border-radius:999px;border:0;background:rgba(255,122,26,.16);color:#FF7A1A;font:inherit;font-size:13px;cursor:pointer}
 @media(max-width:600px){.nb-pill kbd{display:none}}
-.nb-px{display:inline;font:600 12px 'Geist Mono',monospace}.nb-px.u{color:#34d399}.nb-px.d{color:#f87171}.nb-px.o{color:var(--fg-2)}.nb-tabs{margin:0 0 18px}.nb-lead+.nb-find{margin-top:18px}
+.nb-px{display:inline;font:600 12px 'Inter',sans-serif}.nb-px.u{color:#34d399}.nb-px.d{color:#f87171}.nb-px.o{color:var(--fg-2)}.nb-tabs{margin:0 0 18px}.nb-lead+.nb-find{margin-top:18px}
 .nb-rh small{white-space:nowrap}.nb-tabs{margin:0 0 4px}

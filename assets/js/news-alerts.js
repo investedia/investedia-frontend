@@ -20,7 +20,7 @@
   .na-card .na-lg{position:absolute;left:12px;bottom:-14px;width:30px;height:30px;border-radius:8px;background:#fff;padding:4px;box-sizing:border-box;object-fit:contain;box-shadow:0 4px 14px rgba(0,0,0,.4)}
   .na-card .na-x{position:absolute;right:8px;top:8px;width:24px;height:24px;background:rgba(10,10,11,.6);backdrop-filter:blur(6px)}
   .na-card .na-bd{padding:20px 13px 12px}
-  .na-card .na-t{font:500 9.5px/1.4 'Geist Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:#FF7A1A}
+  .na-card .na-t{font:500 9.5px/1.4 'Inter',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#FF7A1A}
   .na-card h3{margin:4px 0 7px;font-size:13.5px;line-height:1.35;font-weight:600;letter-spacing:-.01em}
   .na-card .na-m{font-size:11px;color:#8b8b94}
   /* A: pill (phone) */

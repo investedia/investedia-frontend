@@ -34,13 +34,13 @@ body[data-page=news] main.wrap{max-width:1240px;padding-inline:max(20px,env(safe
 .sp-fi .hd small{margin-right:2px}
 
 /* Market implications: thesis + exposure ladder (PC), segmented panels (phone) */
-.mi-seg{display:none}.mi-p .mi-eb{display:block;font:500 10px 'Geist Mono',monospace;letter-spacing:.09em;text-transform:uppercase;color:var(--fg-3);margin-bottom:6px}
+.mi-seg{display:none}.mi-p .mi-eb{display:block;font:500 10px 'Inter',sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--fg-3);margin-bottom:6px}
 .mi-event{display:none}.mi-why{padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.04);margin:6px 0 8px}.mi-th{margin:0;font-size:17px;line-height:1.45;font-weight:550;letter-spacing:-.01em;color:var(--fg)}
 .mi-row{display:grid;grid-template-columns:190px minmax(0,1fr) auto;gap:16px;align-items:start;padding:16px 2px;border-top:1px solid var(--line)}
 .mi-n{display:flex;align-items:center;gap:10px}.mi-n b{display:block;font-weight:600;font-size:14.5px}.mi-n small{color:var(--fg-3);font-size:11.5px;text-transform:capitalize}
 .mi-bar{position:relative;height:10px;border-radius:6px;background:rgba(255,255,255,.06);margin:6px 0 10px}.mi-bar:before{content:"";position:absolute;left:50%;top:-4px;bottom:-4px;width:1px;background:rgba(255,255,255,.28)}
 .mi-bar i{position:absolute;top:0;bottom:0;border-radius:6px;background:#a1a1aa}.mi-bar.up i{left:50%;width:34%;background:#34d399}.mi-bar.down i{right:50%;width:34%;background:#f87171}.mi-bar.mixed i{left:42%;width:16%}.mi-bar.unclear i{left:46%;width:8%;background:#52525b}
-.mi-m p{margin:0;color:var(--fg-2);font-size:13.5px;line-height:1.5}.mi-px{margin-top:8px;min-height:0}.mi-chip{display:inline-block;padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.06);font:600 12px 'Geist Mono',monospace}.mi-chip.u{color:#34d399;background:rgba(52,211,153,.12)}.mi-chip.d{color:#f87171;background:rgba(248,113,113,.12)}.mi-chip small{font:500 10.5px Inter,system-ui,sans-serif;color:var(--fg-3)}
+.mi-m p{margin:0;color:var(--fg-2);font-size:13.5px;line-height:1.5}.mi-px{margin-top:8px;min-height:0}.mi-chip{display:inline-block;padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.06);font:600 12px 'Inter',sans-serif}.mi-chip.u{color:#34d399;background:rgba(52,211,153,.12)}.mi-chip.d{color:#f87171;background:rgba(248,113,113,.12)}.mi-chip small{font:500 10.5px Inter,system-ui,sans-serif;color:var(--fg-3)}
 .mi-none{color:var(--fg-2)}.mi .sp-also{margin-top:10px}
 @media(max-width:700px){
  .mi-seg{display:inline-flex;gap:3px;padding:3px;border-radius:999px;background:rgba(255,255,255,.06);margin:6px 0 14px;max-width:100%;overflow-x:auto}.mi-seg button{border:0;background:none;color:var(--fg-2);padding:9px 16px;min-height:40px;border-radius:999px;font:inherit;font-size:13.5px;white-space:nowrap;cursor:pointer}.mi-seg button[aria-selected=true]{background:#fafafa;color:#0a0a0b;font-weight:600}
