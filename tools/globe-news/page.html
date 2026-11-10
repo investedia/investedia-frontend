@@ -1,7 +1,38 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}if(!/[?&]embed=1/.test(location.search))document.documentElement.classList.add('standalone')</script><style>html.standalone{background:#050506}html.standalone[data-theme=light]{background:#e9f0fa}</style>
+<meta charset="utf-8"><script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}if(!/[?&]embed=1/.test(location.search))document.documentElement.classList.add('standalone')</script><style>html.standalone{background:#050506}html.standalone[data-theme=light]{background:#e9f0fa}
+/* PC side cards: sector overview, market impact, movers bar */
+.side-sec,.side-imp,.side-bar{display:none}
+.mv-f{display:flex;gap:6px;align-items:center;margin:2px 0 6px}.mv-f button{padding:4px 10px;border-radius:99px;background:rgba(255,255,255,.05);color:var(--fg-3);font-size:12px}.mv-f button[aria-pressed=true]{background:rgba(255,255,255,.14);color:var(--fg)}.mv-f small{margin-left:auto;color:var(--fg-3);font-size:11px}
+.mv-row .mono.u,.mv-row .mono.d{padding:3px 7px;border-radius:7px}.mv-row .mono.u{background:rgba(52,211,153,.12)}.mv-row .mono.d{background:rgba(248,113,113,.12)}
+@media(min-width:1180px){
+ html.side-on .panel{bottom:252px!important;max-height:none}
+ html.side-on .zoom{bottom:96px!important}html.side-on .zoom{bottom:150px!important}html.side-on .zloc{bottom:96px!important}
+ html.side-on .side-imp{display:block;position:fixed;right:16px;bottom:16px;width:var(--pw);height:224px;border-radius:24px;z-index:4;padding:16px 18px;box-sizing:border-box}
+ html.side-on .side-sec{display:block;position:fixed;left:24px;top:50%;transform:translateY(-50%);width:270px;border-radius:22px;z-index:3;padding:14px 16px}
+ html.side-on .side-bar{display:flex;position:fixed;left:24px;right:calc(var(--pw) + 40px);bottom:16px;height:64px;border-radius:20px;z-index:3;align-items:center;gap:10px;padding:0 14px;box-sizing:border-box;overflow:hidden}
+ html.side-on .timeline{bottom:96px}html.side-on .layers{bottom:96px!important}
+}
+.sd-h{display:flex;align-items:center;gap:8px;margin-bottom:8px}.sd-h b{font-size:15px}.sd-h span{font-size:11px;color:var(--fg-3);background:rgba(255,255,255,.06);padding:2px 6px;border-radius:6px}
+.sd-r{display:flex;align-items:center;gap:8px;padding:8px 0;border-top:1px solid rgba(255,255,255,.06);font-size:13px;width:100%;text-align:left;color:var(--fg)}.sd-r span{flex:1}.sd-r small{color:var(--fg-3);font-size:11px}.sd-r em{font:12.5px ui-monospace,monospace;font-style:normal;min-width:52px;text-align:right}
+.u2{color:#34d399}.d2{color:#f87171}
+.im-r{display:flex;align-items:center;gap:12px;padding:6px 0}.im-r+.im-r{border-top:1px solid rgba(255,255,255,.06)}.im-i{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:16px;flex:none}.im-r small{display:block;color:var(--fg-3);font-size:11.5px}.im-r strong{font-size:22px;font-weight:600}.im-l{margin-left:auto;width:170px}.im-l a{display:flex;justify-content:space-between;font:12px ui-monospace,monospace;color:var(--fg-2);padding:1px 0}
+.side-imp a,.side-bar a{text-decoration:none}.sb-t{flex:none;margin-right:6px}.sb-t b{display:block;font-size:13.5px}.sb-t small{color:var(--fg-3);font-size:11px}.sb-c{flex:1;min-width:0;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);border-radius:12px;padding:8px 10px;font-size:13px;color:var(--fg)}.sb-c b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sb-c em{margin-left:auto;font:12.5px ui-monospace,monospace;font-style:normal}.sb-c small{color:var(--fg-3);font-size:11px;white-space:nowrap}
+
+/* B: region + watchlist inside the search bar, slim topic chips (PC) */
+@media(min-width:761px){
+ html.dd-in #sbox{width:min(640px,100%)!important;padding-right:300px!important;box-sizing:border-box!important}
+ html.dd-in #sbox input{flex:1 1 0!important;width:0!important;min-width:0!important}html.dd-in #sbox kbd{display:none!important}
+ #ddrow.in-s{position:absolute!important;margin:0!important;gap:6px!important;flex-wrap:nowrap!important}
+ #ddrow.in-s .dd-btn{height:36px!important;padding:0 12px!important;gap:7px!important;font-size:13px!important;background:rgba(255,255,255,.07)!important;border-color:transparent!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+ #ddrow.in-s .dd-btn img{width:18px!important;height:18px!important}#ddrow.in-s .dd-bino{width:16px!important;height:16px!important}
+ #cats.chips{gap:6px!important;margin-top:12px!important}
+ #cats .chip{height:34px!important;padding:0 6px 0 13px!important;font-size:13px!important;font-weight:500!important;background:rgba(24,24,27,.55)!important;border-color:rgba(255,255,255,.12)!important}
+ #cats .chip b{min-width:0!important;height:auto!important;padding:0 6px 0 0!important;background:none!important;color:var(--fg-3)!important;font-weight:500!important;font-size:11.5px!important}
+ #cats .chip[aria-pressed=true]{background:rgba(255,138,61,.14)!important;color:#ffb27a!important;border-color:#ff8a3d!important}#cats .chip[aria-pressed=true] b{background:none!important;color:#ff9d5c!important}
+}
+</style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
 <script src="../runtime-config.js"></script><script src="../live-config.js"></script><script src="../live-data.js"></script><script src="../news-source.js"></script><script src="../prefs.js"></script><script src="../sectors.js"></script><script src="../peek.js"></script>
@@ -662,8 +693,6 @@ html[data-theme=light] :is(.panel .meta,.panel .lens-meta,.panel .lens-src,.pane
   <button type="button" class="lay-btn glass" id="lay-btn" aria-expanded="false" aria-controls="lay-pop" aria-haspopup="true" aria-label="Layers, 1 on"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg>Layers <b id="lay-n">1</b></button>
 </div>
 <div class="timeline glass" id="tl" role="group" aria-label="Time window">
-  <button class="tl-play" id="play" aria-label="Replay the last 7 days"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 2.8v10.4a.6.6 0 0 0 .9.5l8.4-5.2a.6.6 0 0 0 0-1L4.9 2.3a.6.6 0 0 0-.9.5z"/></svg></button>
-  <span class="tl-sep"></span>
   <span id="wins" style="display:flex;gap:2px"></span>
   <span class="tl-sep"></span>
   <span class="tl-info" id="tlInfo"></span>
@@ -684,6 +713,9 @@ html[data-theme=light] :is(.panel .meta,.panel .lens-meta,.panel .lens-src,.pane
   <div class="sheet-actions"><button id="sheet-expand" aria-label="Expand news panel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button><button id="sheet-close" class="sheet-close" aria-label="Close news panel">×</button></div>
   <div class="pbody" id="pbody" tabindex="-1"></div>
 </aside>
+<section class="side-sec glass" id="sideSec" aria-label="Sector overview" hidden></section>
+<section class="side-imp glass" id="sideImp" aria-label="Market impact" hidden></section>
+<section class="side-bar glass" id="sideBar" aria-label="Moving on the news" hidden></section>
 
 <script>if (/[?&]embed=1/.test(location.search)) document.documentElement.classList.add('embed');</script>
 <script src="../quotes.js"></script>
@@ -802,7 +834,7 @@ Promise.all([fetch('markets.json').then(r => r.json()), fetch('news-prices.json'
   const known = a => !/[.\d]/.test(a.s.replace(/[=^-]/g, '')) && a.t !== 'fx' && Math.abs(a.d) < 20 && (a.m || a.t === 'crypto' || a.t === 'cmd' || MKT.intra[a.s]);
   MKT.list = (m.assets || []).filter(known).sort((x, y) => Math.abs(y.d) - Math.abs(x.d)).slice(0, 12);
   MKT.all = m.assets || [];
-  updateNetwork(); if ((view.k === 'top' && (panelTab === 'movers' || F.region !== 'global')) || ['article', 'country'].includes(view.k)) render();
+  updateNetwork(); renderSide(); if ((view.k === 'top' && (panelTab === 'movers' || F.region !== 'global')) || ['article', 'country'].includes(view.k)) render();
 }).catch(() => {});
 let CAL = [];
 fetch('../calendar-live.json').then(r => r.json()).then(d => { CAL = (d.events || []).filter(e => e && e.imp >= 3 && e.at); }).catch(() => {});
@@ -1995,7 +2027,8 @@ function variantPanel(list) {
   else if (panelTab === 'markets') { items = marketsPanel(); count = 0; }
   else if (panelTab === 'movers') {
     const sp = (v, c) => { if (!v || v.length < 2) return ''; const lo = Math.min(...v), hi = Math.max(...v), r = hi - lo || 1; return `<svg viewBox="0 0 58 20" preserveAspectRatio="none"><path d="${v.map((y, i) => (i ? 'L' : 'M') + (i / (v.length - 1) * 58).toFixed(1) + ' ' + (18 - (y - lo) / r * 16).toFixed(1)).join('')}" fill="none" stroke="${c}" stroke-width="1.8" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>`; };
-    items = MKT.list.length ? MKT.list.slice(0, panelExpanded ? 12 : 6).map(a => { const v = MKT.intra[a.s]?.d1?.c || (a.sp || []).slice(-6), c = a.d > 0 ? '#34d399' : a.d < 0 ? '#f87171' : '#8b8b94'; return `<a class="mv-row" href="../../news.html?mover=${encodeURIComponent(a.s)}"><span>${window.AssetIcons ? AssetIcons.icon(a) : ''}</span><span><b>${esc(a.n)}</b><small>${esc(a.s.replace(/[=^]/g, ''))}</small></span>${sp(v, c)}<span class="mono ${a.d > 0 ? 'u' : a.d < 0 ? 'd' : ''}">${a.d > 0 ? '+' : a.d < 0 ? '−' : ''}${Math.abs(a.d).toFixed(2)}%</span></a>`; }).join('') : '<div class="empty">Loading movers…</div>';
+    const mvL = MKT.list.filter(a => mvF === 'all' || (mvF === 'up' ? a.d > 0 : a.d < 0));
+    items = `<div class="mv-f">${[['all','All'],['up','Gainers'],['down','Losers']].map(([k,n]) => `<button type="button" aria-pressed="${mvF===k}" onclick="mvF='${k}';render()">${n}</button>`).join('')}<small>Today</small></div>` + (MKT.list.length ? mvL.slice(0, panelExpanded ? 12 : 6).map(a => { const v = MKT.intra[a.s]?.d1?.c || (a.sp || []).slice(-6), c = a.d > 0 ? '#34d399' : a.d < 0 ? '#f87171' : '#8b8b94'; return `<a class="mv-row" href="../../news.html?mover=${encodeURIComponent(a.s)}"><span>${window.AssetIcons ? AssetIcons.icon(a) : ''}</span><span><b>${esc(a.n)}</b><small>${esc(a.s.replace(/[=^]/g, ''))}</small></span>${sp(v, c)}<span class="mono ${a.d > 0 ? 'u' : a.d < 0 ? 'd' : ''}">${a.d > 0 ? '+' : a.d < 0 ? '−' : ''}${Math.abs(a.d).toFixed(2)}%</span></a>`; }).join('') || '<div class="empty">None right now.</div>' : '<div class="empty">Loading movers…</div>');
     count = MKT.list.length;
   } else if (panelTab === 'countries') {
     const countries = Object.entries(list.reduce((all, s) => { all[s.location.country] = (all[s.location.country] || 0) + 1; return all; }, {})).sort((a,b) => b[1]-a[1]);
@@ -2047,11 +2080,34 @@ function lensPanel(list, nc) {
   return `<div class="eyebrow lens-eyebrow">${esc(name)} lens</div><h2 class="lens-count"><b>${list.length}</b> ${list.length === 1 ? 'article' : 'articles'} · ${nc} ${nc === 1 ? 'country' : 'countries'}</h2>
     ${list.length ? `<div class="lens-list">${list.slice(0, 20).map(lensItem).join('')}</div>` : `<div class="empty">No ${esc(name.toLowerCase())} articles in ${WLABEL[F.win]}. Try a wider time window.</div>`}${noteHTML()}`;
 }
+
+function placeDD() { const d = $('ddrow'), b = $('sbox'), on = !EMBED && !phone() && d.parentNode === b.parentNode; document.documentElement.classList.toggle('dd-in', on); d.classList.toggle('in-s', on); if (!on) { d.style.top = d.style.left = ''; return; } d.style.top = (b.offsetTop + (b.offsetHeight - 36) / 2) + 'px'; d.style.left = (b.offsetLeft + b.offsetWidth - d.offsetWidth - 8) + 'px'; }
+addEventListener('resize', () => requestAnimationFrame(placeDD)); setTimeout(placeDD, 0); new ResizeObserver(() => placeDD()).observe(document.getElementById('ddrow'));
+let mvF = 'all';
+function sideData() {
+  const vis = stories.filter(matchNoLens), seen = new Map();
+  vis.forEach(st => impactsOf(st).forEach(i => { const a = assetForImpact(i); if (!a || typeof a.d !== 'number' || !isFinite(a.d) || Math.abs(a.d) > 25 || a.u === 'bp') return; const k = a.s; const e = seen.get(k) || { a, n: 0, cats: new Set() }; e.n++; e.cats.add(st.category); seen.set(k, e); }));
+  return { vis, assets: [...seen.values()] };
+}
+function renderSide() {
+  const on = !EMBED && !phone() && innerWidth >= 1180 && view.k === 'top';
+  document.documentElement.classList.toggle('side-on', on);
+  [sideSec, sideImp, sideBar].forEach(x => x.hidden = !on); if (!on) return;
+  const { vis, assets } = sideData(), W = F.win.toUpperCase(), pc = v => `${v > 0 ? '+' : v < 0 ? '−' : ''}${Math.abs(v).toFixed(1)}%`, cl = v => v > 0 ? 'u2' : v < 0 ? 'd2' : '';
+  const secs = CATS.filter(([k]) => k !== 'all').map(([k, n]) => { const c = vis.filter(x => x.category === k).length, m = assets.filter(e => e.cats.has(k)), avg = m.length ? m.reduce((t, e) => t + e.a.d, 0) / m.length : null; return { k, n, c, avg }; }).filter(x => x.c).sort((a, b) => b.c - a.c);
+  sideSec.innerHTML = `<div class="sd-h"><b>Sector overview</b><span>${W}</span></div>${secs.map(x => `<button type="button" class="sd-r" onclick="F.cat='${x.k}';press($('cats'),'${x.k}');render()"><span>${esc(x.n)}</span><small>${x.c} art.</small><em class="${x.avg == null ? '' : cl(x.avg)}">${x.avg == null ? '—' : pc(x.avg)}</em></button>`).join('') || '<p class="meta">No articles in this window.</p>'}<p class="meta" style="margin:8px 0 0;font-size:11px">Avg. daily move of assets named in each sector's articles.</p>`;
+  const up = assets.filter(e => e.a.d > 0).sort((a, b) => b.a.d - a.a.d), dn = assets.filter(e => e.a.d < 0).sort((a, b) => a.a.d - b.a.d), avg = l => l.length ? l.reduce((t, e) => t + e.a.d, 0) / l.length : 0;
+  const row = (lab, l) => { const v = avg(l); return `<div class="im-r"><div class="im-i ${cl(v)}" style="background:${v >= 0 ? 'rgba(52,211,153,.12)' : 'rgba(248,113,113,.12)'}">${v >= 0 ? '↗' : '↘'}</div><div><small>${lab}</small><strong class="${cl(v)}">${l.length ? pc(v) : '—'}</strong></div><div class="im-l">${l.slice(0, 3).map(e => `<a href="../../news.html?mover=${encodeURIComponent(e.a.s)}"><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:96px">${esc(e.a.n || e.a.s)}</span><span class="${cl(e.a.d)}">${pc(e.a.d)}</span></a>`).join('')}</div></div>`; };
+  sideImp.innerHTML = `<div class="sd-h"><b>Market impact</b><span>${W}</span></div>${row('Most positive', up)}${row('Most negative', dn)}`;
+  const big = [...assets].sort((a, b) => Math.abs(b.a.d) - Math.abs(a.a.d)).slice(0, 4);
+  sideBar.innerHTML = `<div class="sb-t"><b>Moving on the news</b><small>Assets named in ${W} articles</small></div>${big.map(e => `<a class="sb-c" href="../../news.html?mover=${encodeURIComponent(e.a.s)}"><b>${esc(e.a.n || e.a.s)}</b><small>${e.n} art.</small><em class="${cl(e.a.d)}">${pc(e.a.d)}</em></a>`).join('')}<small class="meta" style="flex:none;font-size:10.5px">Daily moves. Not investment advice.</small>`;
+}
+addEventListener('resize', () => renderSide());
 function render() {
   panel.dataset.view = view.k; peekUpdate(); dockUpdate();
   document.documentElement.classList.toggle('panel-top', !!PANEL_TEMPLATE && view.k === 'top');
   if (!panelInitialized) { panelInitialized = true; if (phone() && PANEL_TEMPLATE === 'b') panel.classList.add('open'); }
-  requestAnimationFrame(size);
+  requestAnimationFrame(size); renderSide();
   if (view.k === 'top') {
     const list = [...shown].sort(sortTop), nc = new Set(list.map(s => s.location.country)).size, nb = list.filter(s => s.flag === 'breaking').length;
     const rg = regionDefinition(F.region)[1];
@@ -2160,7 +2216,6 @@ tbEl.onclick = e => { const k = e.target.closest('[data-k]'); if (k) { tbEl.clas
 addEventListener('pointerdown', e => { if (!e.target.closest('#tb')) tbEl.classList.remove('open'); });
 syncTb();
 // Replay: sweep the last 7 days so articles appear on Earth in the order they were published
-$('play').onclick = async () => { if (!await setWin('7d') || EMBED) return; play = { start: T0 - 7 * 1440 * 60000, cur: T0 - 7 * 1440 * 60000, t0: performance.now(), dur: reduce ? 1 : 7000 }; for (const s of stories) s.on = false; refresh(); };
 
 // ===== Draw =====
 function vec(phi, lam) { return [Math.cos(phi) * Math.cos(lam), Math.cos(phi) * Math.sin(lam), Math.sin(phi)]; }
