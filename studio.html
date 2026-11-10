@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t==='system'?(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'):t}catch(e){}</script><style>html{background:#0a0a0b}html[data-theme=light]{background:#fff}</style>
-<link rel="stylesheet" href="assets/consent.css?v=9a50f9c6d3">
-<script src="assets/consent.js?v=9a50f9c6d3"></script>
+<link rel="stylesheet" href="assets/consent.css?v=dfb294356e">
+<script src="assets/consent.js?v=dfb294356e"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Investedia Design studio</title>
 <meta name="description" content="Try different looks for Investedia and pick the one you like.">
@@ -23,8 +23,8 @@
 <meta name="twitter:description" content="Try different looks for Investedia and pick the one you like.">
 <meta name="twitter:image" content="https://investedia.com/assets/og-default.png">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/app.css?v=9a50f9c6d3">
-<link rel="stylesheet" href="assets/skin.css?v=9a50f9c6d3">
+<link rel="stylesheet" href="assets/app.css?v=dfb294356e">
+<link rel="stylesheet" href="assets/skin.css?v=dfb294356e">
 <link rel="apple-touch-icon" href="assets/app/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -47,19 +47,19 @@
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <script src="assets/quotes.js"></script>
 <script src="assets/news.js"></script>
-<script src="assets/mock.js?v=9a50f9c6d3"></script>
-<link rel="stylesheet" href="assets/news-menu.css?v=9a50f9c6d3">
-<script src="assets/runtime-config.js?v=9a50f9c6d3"></script>
-<script src="assets/live-config.js?v=9a50f9c6d3"></script>
-<script src="assets/live-data.js?v=9a50f9c6d3" defer></script>
-<script src="assets/news-source.js?v=9a50f9c6d3"></script>
-<script src="assets/prefs.js?v=9a50f9c6d3"></script>
-<script src="assets/peek.js?v=9a50f9c6d3"></script>
-<script src="assets/sectors.js?v=9a50f9c6d3"></script>
-<script src="assets/news-menu.js?v=9a50f9c6d3"></script>
-<script src="assets/locale.js?v=9a50f9c6d3"></script>
-<script src="assets/ui.js?v=9a50f9c6d3"></script>
-<script src="assets/news-alerts.js?v=9a50f9c6d3" defer></script>
+<script src="assets/mock.js?v=dfb294356e"></script>
+<link rel="stylesheet" href="assets/news-menu.css?v=dfb294356e">
+<script src="assets/runtime-config.js?v=dfb294356e"></script>
+<script src="assets/live-config.js?v=dfb294356e"></script>
+<script src="assets/live-data.js?v=dfb294356e" defer></script>
+<script src="assets/news-source.js?v=dfb294356e"></script>
+<script src="assets/prefs.js?v=dfb294356e"></script>
+<script src="assets/peek.js?v=dfb294356e"></script>
+<script src="assets/sectors.js?v=dfb294356e"></script>
+<script src="assets/news-menu.js?v=dfb294356e"></script>
+<script src="assets/locale.js?v=dfb294356e"></script>
+<script src="assets/ui.js?v=dfb294356e"></script>
+<script src="assets/news-alerts.js?v=dfb294356e" defer></script>
 <main class="wrap" id="main-content" tabindex="-1">
 <div class="page-head">
   <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Design studio</span></div>
@@ -114,24 +114,24 @@ const OPTS = [
   ['dropdown', 'Phone dropdowns', [['sheet', 'Bottom sheet'], ['popover', 'Small menu']]],
   ['motion', 'Animations', [['full', 'Smooth'], ['reduced', 'Minimal']]],
 ];
-let cfg = Object.assign({}, STUDIO_DEF);
-try { Object.assign(cfg, JSON.parse(localStorage.getItem('inv-studio') || '{}')); } catch {}
-const save = () => { try { localStorage.setItem('inv-studio', JSON.stringify(cfg)); } catch {} };
+let studioCfg = Object.assign({}, STUDIO_DEF);
+try { Object.assign(studioCfg, JSON.parse(localStorage.getItem('inv-studio') || '{}')); } catch {}
+const save = () => { try { localStorage.setItem('inv-studio', JSON.stringify(studioCfg)); } catch {} };
 
 function drawOpts() {
   document.getElementById('st-opts').innerHTML = OPTS.map(([k, label, list]) => `<div class="st-row"><span class="st-label">${label}</span>${k === 'accent'
-    ? `<div class="st-swatches">${list.map(([v, n]) => `<button type="button" class="st-sw" style="--sw:${v}" aria-label="${n}" aria-pressed="${cfg.accent.toLowerCase() === v.toLowerCase()}" data-k="accent" data-v="${v}"></button>`).join('')}<label class="st-sw st-custom" aria-label="Custom colour" style="--sw:${cfg.accent}"><input type="color" value="${cfg.accent}" id="st-color"></label></div>`
-    : `<div class="tabs st-tabs">${list.map(([v, n]) => `<button class="tab" type="button" aria-pressed="${cfg[k] === v}" data-k="${k}" data-v="${v}">${n}</button>`).join('')}</div>`}</div>`).join('');
+    ? `<div class="st-swatches">${list.map(([v, n]) => `<button type="button" class="st-sw" style="--sw:${v}" aria-label="${n}" aria-pressed="${studioCfg.accent.toLowerCase() === v.toLowerCase()}" data-k="accent" data-v="${v}"></button>`).join('')}<label class="st-sw st-custom" aria-label="Custom colour" style="--sw:${studioCfg.accent}"><input type="color" value="${studioCfg.accent}" id="st-color"></label></div>`
+    : `<div class="tabs st-tabs">${list.map(([v, n]) => `<button class="tab" type="button" aria-pressed="${studioCfg[k] === v}" data-k="${k}" data-v="${v}">${n}</button>`).join('')}</div>`}</div>`).join('');
   document.getElementById('st-color').oninput = e => set('accent', e.target.value);
 }
-function set(k, v) { cfg[k] = v; applyStudio(cfg); save(); if (k === 'accent') { drawOpts(); drawPreview(); } else document.querySelectorAll(`[data-k="${k}"]`).forEach(b => b.setAttribute(b.classList.contains('tab') ? 'aria-pressed' : 'aria-pressed', b.dataset.v === v)); }
+function set(k, v) { studioCfg[k] = v; applyStudio(studioCfg); save(); if (k === 'accent') { drawOpts(); drawPreview(); } else document.querySelectorAll(`[data-k="${k}"]`).forEach(b => b.setAttribute(b.classList.contains('tab') ? 'aria-pressed' : 'aria-pressed', b.dataset.v === v)); }
 document.getElementById('st-opts').addEventListener('click', e => { const b = e.target.closest('[data-k]'); if (b) set(b.dataset.k, b.dataset.v); });
 
-const ap = document.getElementById('st-apply'); ap.checked = !!cfg.apply;
-ap.onchange = () => { cfg.apply = ap.checked; save(); };
-document.getElementById('st-reset').onclick = () => { const keep = cfg.apply; cfg = Object.assign({}, STUDIO_DEF, { apply: keep }); applyStudio(cfg); save(); drawOpts(); drawPreview(); };
+const ap = document.getElementById('st-apply'); ap.checked = !!studioCfg.apply;
+ap.onchange = () => { studioCfg.apply = ap.checked; save(); };
+document.getElementById('st-reset').onclick = () => { const keep = studioCfg.apply; studioCfg = Object.assign({}, STUDIO_DEF, { apply: keep }); applyStudio(studioCfg); save(); drawOpts(); drawPreview(); };
 document.getElementById('st-copy').onclick = async () => {
-  const txt = 'Investedia look: ' + OPTS.map(([k, label, list]) => `${label}: ${(list.find(([v]) => v.toLowerCase() === String(cfg[k]).toLowerCase()) || [0, cfg[k]])[1]}`).join(' · ');
+  const txt = 'Investedia look: ' + OPTS.map(([k, label, list]) => `${label}: ${(list.find(([v]) => v.toLowerCase() === String(studioCfg[k]).toLowerCase()) || [0, studioCfg[k]])[1]}`).join(' · ');
   let ok = false; try { await navigator.clipboard.writeText(txt); ok = true; } catch {}
   document.getElementById('st-copied').textContent = ok ? 'Copied. Paste it in the chat.' : txt;
 };
@@ -151,7 +151,7 @@ document.querySelectorAll('#pv-chips .chip').forEach(b => b.onclick = () => docu
 
 const panel = document.querySelector('.studio-panel'), mb = document.getElementById('st-min');
 mb.onclick = () => { const min = panel.classList.toggle('min'); mb.setAttribute('aria-expanded', !min); mb.querySelector('.st-hint').textContent = min ? 'Tap to show' : 'Tap to hide'; };
-applyStudio(cfg); drawOpts(); drawPreview();
+applyStudio(studioCfg); drawOpts(); drawPreview();
 </script>
 </main>
 </body>
