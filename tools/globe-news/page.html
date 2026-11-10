@@ -1,7 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}if(!/[?&]embed=1/.test(location.search))document.documentElement.classList.add('standalone')</script><style>html.standalone{background:#050506}html.standalone[data-theme=light]{background:#e9f0fa}
+<meta charset="utf-8"><script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}if(!/[?&]embed=1/.test(location.search))document.documentElement.classList.add('standalone')</script><style>
+@font-face{font-family:"Inter";src:url("/assets/fonts/inter-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Geist Mono";src:url("/assets/fonts/geist-mono-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+html.standalone{background:#050506}html.standalone[data-theme=light]{background:#e9f0fa}
 /* PC side cards: sector overview, market impact, movers bar */
 .side-sec,.side-imp,.side-bar{display:none}
 .mv-f{display:flex;gap:6px;align-items:center;margin:2px 0 6px}.mv-f button{padding:4px 10px;border-radius:99px;background:rgba(255,255,255,.05);color:var(--fg-3);font-size:12px}.mv-f button[aria-pressed=true]{background:rgba(255,255,255,.14);color:var(--fg)}.mv-f small{margin-left:auto;color:var(--fg-3);font-size:11px}
