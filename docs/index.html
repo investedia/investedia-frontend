@@ -251,7 +251,7 @@ const isPhone = () => innerWidth <= 900;
 document.querySelector('.hn-hero').classList.add('hv-a');
 // phone: the globe is centred exactly in the free space between the search bar and the news ticker (side to side and top to bottom), a little smaller than the screen width
 function globeParams() {
-  if (!isPhone()) return 'cx=.7&cy=.5&r=.4';
+  if (!isPhone()) return 'cx=.7&cy=.445&r=.36';
   const hr = document.querySelector('.hn-hero').getBoundingClientRect(), s = document.querySelector('.hn-search').getBoundingClientRect(), t = document.querySelector('.hn-tick').getBoundingClientRect();
   const pop = document.querySelector('.hn-pop'), sb = pop ? Math.max(s.bottom, pop.getBoundingClientRect().bottom) : s.bottom;
   const top = sb - hr.top, bot = t.top - hr.top, mid = (top + bot) / 2, free = bot - top, W = hr.width, base = Math.min(W, hr.height);
