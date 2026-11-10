@@ -32,6 +32,11 @@
  #cats .chip b{min-width:0!important;height:auto!important;padding:0 6px 0 0!important;background:none!important;color:var(--fg-3)!important;font-weight:500!important;font-size:11.5px!important}
  #cats .chip[aria-pressed=true]{background:rgba(255,138,61,.14)!important;color:#ffb27a!important;border-color:#ff8a3d!important}#cats .chip[aria-pressed=true] b{background:none!important;color:#ff9d5c!important}
 }
+
+.market-mode:not(.embed) #cats{display:none!important}
+.side-sec[hidden],.side-imp[hidden],.side-bar[hidden]{display:none!important}
+.gswitch{display:none}
+@media(min-width:761px){html:not(.embed) .gs-old{display:none}html:not(.embed) .gswitch{display:inline-flex;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:3px;gap:2px}.gswitch button{padding:5px 13px;border-radius:8px;font:500 12.5px Inter,system-ui,sans-serif;color:var(--fg-3)}.gswitch button[aria-pressed=true]{background:#f2f2f2;color:#111}.market-control{display:none!important}}
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
@@ -662,7 +667,7 @@ html[data-theme=light] :is(.panel .meta,.panel .lens-meta,.panel .lens-src,.pane
 <div class="top">
   <div class="brand">
     <a class="wm" href="/">Invested<span class="i">i</span>a</a>
-    <span class="prod">Globe · News</span>
+    <span class="prod gs-old">Globe · News</span><span class="gswitch" id="gswitch" role="group" aria-label="Globe view"><button type="button" data-m="news" aria-pressed="true">News</button><button type="button" data-m="markets" aria-pressed="false">Markets</button></span>
     <button type="button" class="globe-privacy" data-cookie-settings>Privacy</button>
     <span class="demo" id="badge" title="Concept preview: every article is demo content written to show the design. Not real news.">Concept · demo articles</span>
   </div>
@@ -748,7 +753,7 @@ const lensesOf = s => { const text = (s.headline + ' ' + (s.summary || '')).toLo
 const REGIONS = [['global', 'Global', -15, 24, 1], ['na', 'North America', -97, 40, 2], ['eu', 'Europe', 10, 50, 2.6], ['asia', 'Asia', 108, 28, 1.8], ['me', 'Middle East', 46, 26, 2.8], ['af', 'Africa', 20, 3, 1.8], ['latam', 'Latin America', -62, -16, 1.8], ['oc', 'Oceania', 140, -26, 2]];
 const regionDefinition = key => key === 'am' ? ['am', 'Americas', -80, 12, 1.4] : REGIONS.find(r => r[0] === key);
 const inRegion = (region, key) => key === 'global' || region === key || (key === 'am' && ['na', 'latam'].includes(region));
-const WINS = [['now', 'Now', 15], ['1h', '1H', 60], ['6h', '6H', 360], ['24h', '24H', 1440], ['48h', '48H', 2880], ['7d', '7D', 10080], ['30d', '30D', 43200]];
+const WINS = [['24h', '24H', 1440], ['48h', '48H', 2880], ['7d', '7D', 10080], ['30d', '30D', 43200]];
 const WLABEL = { now: 'the last 15 minutes', '1h': 'the last hour', '6h': 'the last 6 hours', '24h': 'the last 24 hours', '48h': 'the last 48 hours', '7d': 'the last 7 days', '30d': 'the last 30 days' };
 const FLAG = { breaking: 'Breaking', trending: 'Trending', moving: 'Market moving' };
 const NAME = { 'United States of America': 'United States', 'Bosnia and Herz.': 'Bosnia and Herzegovina', 'Dem. Rep. Congo': 'DR Congo', 'Dominican Rep.': 'Dominican Republic', 'Central African Rep.': 'Central African Republic', 'S. Sudan': 'South Sudan', 'Eq. Guinea': 'Equatorial Guinea', 'W. Sahara': 'Western Sahara', 'Solomon Is.': 'Solomon Islands', 'Falkland Is.': 'Falkland Islands', 'Fr. S. Antarctic Lands': 'French Southern Lands', 'N. Cyprus': 'Northern Cyprus' };
@@ -1460,8 +1465,8 @@ function size() {
     $('tl').hidden = sheetOpen;
     const timeline = $('tl').getBoundingClientRect();
     globeBox = { left: phone() ? 8 : 24, top: header.bottom + 12,
-      right: phone() ? W - 8 : panel.getBoundingClientRect().left - 24,
-      bottom: sheetOpen ? H - panel.offsetHeight - 12 : timeline.top - 16 };
+      right: phone() ? W - 8 : (panel.hidden || !panel.offsetWidth || panel.getBoundingClientRect().left <= 0 ? W - 24 : panel.getBoundingClientRect().left - 24),
+      bottom: sheetOpen ? H - panel.offsetHeight - 12 : (timeline.height ? timeline.top - 16 : H - 90) };
     // template B (?panel=b): the articles sit in a strip along the bottom, so the globe uses the full width above it
     if (PANEL_TEMPLATE === 'b' && panel.dataset.view === 'top') { globeBox.right = W - (phone() ? 8 : 24); globeBox.bottom = Math.min(globeBox.bottom, (phone() ? $('tl').getBoundingClientRect().top : panel.getBoundingClientRect().top) - 16); }
     const aw = Math.max(1, globeBox.right - globeBox.left), ah = Math.max(1, globeBox.bottom - globeBox.top);
@@ -1779,7 +1784,7 @@ $('grab').onclick = () => {
 $('sheet-expand').onclick = () => setSheet('full');
 function dismissPanel() {
   if (phone()) { setSheet('closed'); if (phoneView !== 'globe') { phoneView = 'globe'; if (typeof marketSetMode === 'function' && MARKET.on) marketSetMode('news'); } peekUpdate(); dockUpdate(); }
-  else { panel.hidden = true; panel.classList.remove('open'); }
+  else { panel.hidden = true; panel.classList.remove('open'); renderSide(); requestAnimationFrame(size); }
   hideHover();
 }
 $('sheet-close').onclick = dismissPanel;
@@ -2084,15 +2089,16 @@ function lensPanel(list, nc) {
 function placeDD() { const d = $('ddrow'), b = $('sbox'), on = !EMBED && !phone() && d.parentNode === b.parentNode; document.documentElement.classList.toggle('dd-in', on); d.classList.toggle('in-s', on); if (!on) { d.style.top = d.style.left = ''; return; } d.style.top = (b.offsetTop + (b.offsetHeight - 36) / 2) + 'px'; d.style.left = (b.offsetLeft + b.offsetWidth - d.offsetWidth - 8) + 'px'; }
 addEventListener('resize', () => requestAnimationFrame(placeDD)); setTimeout(placeDD, 0); new ResizeObserver(() => placeDD()).observe(document.getElementById('ddrow'));
 let mvF = 'all';
+$('gswitch').onclick = e => { const b = e.target.closest('button'); if (b && typeof marketSetMode === 'function') marketSetMode(b.dataset.m); };
 function sideData() {
   const vis = stories.filter(matchNoLens), seen = new Map();
   vis.forEach(st => impactsOf(st).forEach(i => { const a = assetForImpact(i); if (!a || typeof a.d !== 'number' || !isFinite(a.d) || Math.abs(a.d) > 25 || a.u === 'bp') return; const k = a.s; const e = seen.get(k) || { a, n: 0, cats: new Set() }; e.n++; e.cats.add(st.category); seen.set(k, e); }));
   return { vis, assets: [...seen.values()] };
 }
 function renderSide() {
-  const on = !EMBED && !phone() && innerWidth >= 1180 && view.k === 'top';
+  const on = !EMBED && !phone() && innerWidth >= 1180 && view.k === 'top' && !(typeof MARKET !== 'undefined' && MARKET.on);
   document.documentElement.classList.toggle('side-on', on);
-  [sideSec, sideImp, sideBar].forEach(x => x.hidden = !on); if (!on) return;
+  [sideSec, sideImp, sideBar].forEach(x => x.hidden = !on); sideImp.hidden = !on || panel.hidden; if (!on) return;
   const { vis, assets } = sideData(), W = F.win.toUpperCase(), pc = v => `${v > 0 ? '+' : v < 0 ? '−' : ''}${Math.abs(v).toFixed(1)}%`, cl = v => v > 0 ? 'u2' : v < 0 ? 'd2' : '';
   const secs = CATS.filter(([k]) => k !== 'all').map(([k, n]) => { const c = vis.filter(x => x.category === k).length, m = assets.filter(e => e.cats.has(k)), avg = m.length ? m.reduce((t, e) => t + e.a.d, 0) / m.length : null; return { k, n, c, avg }; }).filter(x => x.c).sort((a, b) => b.c - a.c);
   sideSec.innerHTML = `<div class="sd-h"><b>Sector overview</b><span>${W}</span></div>${secs.map(x => `<button type="button" class="sd-r" onclick="F.cat='${x.k}';press($('cats'),'${x.k}');render()"><span>${esc(x.n)}</span><small>${x.c} art.</small><em class="${x.avg == null ? '' : cl(x.avg)}">${x.avg == null ? '—' : pc(x.avg)}</em></button>`).join('') || '<p class="meta">No articles in this window.</p>'}<p class="meta" style="margin:8px 0 0;font-size:11px">Avg. daily move of assets named in each sector's articles.</p>`;

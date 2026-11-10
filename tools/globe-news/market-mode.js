@@ -22,7 +22,7 @@ function marketInit(){
   MARKET.articles=[...articles.values()].sort((a,b)=>Date.parse(b.published_at)-Date.parse(a.published_at));MARKET.ready=true;if(MARKET.selected){MARKET.selectedVenue=marketVenue(MARKET.selected,MARKET.selectedVenue)?.id||null;marketRender();}
  }).catch(()=>{MARKET.error=true;if(MARKET.selected)marketRender();});return MARKET.promise;
 }
-function marketSetMode(mode){
+function marketSetMode(mode){setTimeout(()=>{if(typeof renderSide==='function')renderSide();document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.m==='markets')===(mode==='markets'))));size();},0);
  MARKET.on=mode==='markets';document.documentElement.classList.toggle('market-mode',MARKET.on);const u=new URL(location.href);MARKET.on?u.searchParams.set('mode','markets'):u.searchParams.delete('mode');history.replaceState(null,'',u);marketControl.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.mode==='markets')===MARKET.on)));
  qi.placeholder=MARKET.on?'Search countries, exchanges, indices & companies':'Search assets, countries & articles';if(MARKET.on)marketInit();else marketClose();
 }
