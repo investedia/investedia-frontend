@@ -509,7 +509,7 @@
         ${compare ? `<path d="${cpath}" fill="none" stroke="#A1A1AA" stroke-width="1.5" stroke-dasharray="4 4"/>` : ''}
         <path d="${path}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round"/>
         <line class="grid-l" x1="${padL}" x2="${W - padR}" y1="${sy(last)}" y2="${sy(last)}" stroke-dasharray="2 4" style="stroke:${color};opacity:.5"/>
-        <rect x="${W - padR + 4}" y="${sy(last) - 10}" width="${padR - 6}" height="20" rx="4" fill="${color}"/><text x="${W - padR + 10}" y="${sy(last) + 4}" font-family="Geist Mono, monospace" font-size="11" font-weight="600" fill="#0A0A0B">${fmt(last)}</text>
+        <rect x="${W - padR + 4}" y="${sy(last) - 10}" width="${padR - 6}" height="20" rx="4" fill="${color}"/><text x="${W - padR + 10}" y="${sy(last) + 4}" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#0A0A0B">${fmt(last)}</text>
         <g class="hover" style="display:none"><line class="xh" y1="${padT}" y2="${H - padB}"/><circle r="4.5" fill="${color}" stroke="#0A0A0B" stroke-width="2"/></g></svg><div class="tip" style="display:none"></div>`;
       const svg = el.querySelector('svg'), g = el.querySelector('.hover'), tip = el.querySelector('.tip');
       svg.addEventListener('pointermove', rafMove(e => {
@@ -832,8 +832,8 @@
       const maCol = { 20: '#38BDF8', 50: '#A78BFA', 200: '#F472B6' };
       sma.forEach(k => { const a = avg(k); body += `<path d="${a.map((v, i) => v == null ? '' : (a[i - 1] == null ? 'M' : 'L') + sx(i).toFixed(1) + ' ' + sy(v).toFixed(1)).join('')}" fill="none" stroke="${maCol[k] || '#fff'}" stroke-width="1.4" opacity=".9"/>`; });
       const last = bars[n - 1], lc = last.c >= last.o ? upCol : downCol;
-      body += `<line x1="${padL}" x2="${W - padR}" y1="${sy(last.c)}" y2="${sy(last.c)}" stroke="${lc}" stroke-dasharray="2 3" opacity=".7"/><rect x="${W - padR + 3}" y="${sy(last.c) - 10}" width="${padR - 5}" height="20" rx="4" fill="${lc}"/><text x="${W - padR + 8}" y="${sy(last.c) + 4}" font-family="Geist Mono,monospace" font-size="11" font-weight="600" fill="#0A0A0B">${fmt(last.c)}</text>`;
-      el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Price chart">${g}${body}<g class="hover" style="display:none"><line class="xh" y1="${padT}" y2="${H - padB}"/><line class="xh yh" x1="${padL}" x2="${W - padR}"/><rect class="ytag" x="${W - padR + 3}" width="${padR - 5}" height="20" rx="4" fill="#3f3f46"/><text class="ytxt" x="${W - padR + 8}" font-family="Geist Mono,monospace" font-size="11" fill="#fff"></text></g></svg>`;
+      body += `<line x1="${padL}" x2="${W - padR}" y1="${sy(last.c)}" y2="${sy(last.c)}" stroke="${lc}" stroke-dasharray="2 3" opacity=".7"/><rect x="${W - padR + 3}" y="${sy(last.c) - 10}" width="${padR - 5}" height="20" rx="4" fill="${lc}"/><text x="${W - padR + 8}" y="${sy(last.c) + 4}" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#0A0A0B">${fmt(last.c)}</text>`;
+      el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Price chart">${g}${body}<g class="hover" style="display:none"><line class="xh" y1="${padT}" y2="${H - padB}"/><line class="xh yh" x1="${padL}" x2="${W - padR}"/><rect class="ytag" x="${W - padR + 3}" width="${padR - 5}" height="20" rx="4" fill="#3f3f46"/><text class="ytxt" x="${W - padR + 8}" font-family="Inter,sans-serif" font-size="11" fill="#fff"></text></g></svg>`;
       const svg = el.querySelector('svg'), hv = el.querySelector('.hover');
       svg.addEventListener('pointermove', rafMove(e => {
         const r = svg.getBoundingClientRect(), x = (e.clientX - r.left) * W / r.width, y = (e.clientY - r.top) * H / r.height;

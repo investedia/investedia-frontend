@@ -1,0 +1,42 @@
+{
+  "as_of": "2026-11-08T00:45:00Z",
+  "fixture": "unchanged saved real feed; browser clock replay only",
+  "report": [
+    {
+      "width": 1180,
+      "layout": "pass"
+    },
+    {
+      "width": 1280,
+      "layout": "pass"
+    },
+    {
+      "width": 1440,
+      "layout": "pass"
+    },
+    {
+      "width": 1920,
+      "layout": "pass"
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "ui": "pass"
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "ui": "pass"
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "ui": "pass"
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "ui": "pass"
+    }
+  ]
+}

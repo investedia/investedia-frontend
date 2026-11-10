@@ -1,6 +1,6 @@
 /* "Since the news" card: price change since an article appeared, with what the asset was doing before. */
 .sn{margin:0 0 18px;padding:16px;border:1px solid var(--line,rgba(255,255,255,.14));border-radius:18px;background:rgba(255,255,255,.04)}
-.sn-eb{font:600 12px 'Geist Mono',ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-3,#a1a1aa)}
+.sn-eb{font:600 12px 'Inter',Inter,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-3,#a1a1aa)}
 .sn-row{display:flex;gap:14px 24px;align-items:flex-end;flex-wrap:wrap;margin:8px 0 6px}
 .sn-big{font-size:40px;font-weight:700;letter-spacing:-.03em;line-height:1}.sn-big.dn{color:#f87171}.sn-big.up{color:#34d399}.sn-big.flat{color:#d4d4d8}
 .sn-ba{font-size:14px;line-height:1.45;color:var(--fg-2,#d4d4d8);max-width:300px}.sn-ba span{color:var(--fg-3,#a1a1aa)}.sn-ba b.dn{color:#f87171}.sn-ba b.up{color:#34d399}
