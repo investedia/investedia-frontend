@@ -119,13 +119,24 @@ function mkdRender(){
  const cnt={};for(const st of stories)if(matchNoLens(st)&&['markets','companies','economy','commodities'].includes(st.category)){const c=st.location?.country;if(c)cnt[c]=(cnt[c]||0)+1;}
  const top=Object.entries(cnt).sort((a,b)=>b[1]-a[1]).slice(0,4),now=Date.now(),next=(typeof CAL!=='undefined'?CAL:[]).filter(e=>Date.parse(e.at)>now).sort((a,b)=>Date.parse(a.at)-Date.parse(b.at)).slice(0,4);
  const when=t=>{const d=new Date(t);return d.toLocaleDateString([], {weekday:'short'})+' '+d.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});};
+ const chg=(c,n)=>{const ds=days.filter(d=>H[d][c]!=null);return ds.length>n?(H[ds[ds.length-1]][c]/H[ds[ds.length-1-n]][c]-1)*100:null;};
+ const all=d1?Object.keys(H[d1]).map(c=>({c,v:H[d1][c],d1:chg(c,1),w1:chg(c,5),m1:chg(c,Math.min(21,days.length-1)),s:days.slice(-30).map(d=>H[d][c]).filter(Number.isFinite)})).filter(x=>x.d1!=null):[];
+ const sk=MARKET.fxSort||'d1';all.sort((a,b)=>sk==='c'?a.c.localeCompare(b.c):Math.abs(b[sk]??0)-Math.abs(a[sk]??0));
+ const pc=x=>x==null?'<span class="mu">—</span>':`<span class="${x>0?'u':x<0?'d':''}">${x>0?'+':x<0?'−':''}${Math.abs(x).toFixed(2)}%</span>`;
+ const openN=S.filter(x=>x.st.open).length,mArts=stories.filter(st=>matchNoLens(st)&&['markets','companies','economy','commodities'].includes(st.category));
+ const RG=[['Americas',['na','latam'],['BRL','MXN','CAD']],['Europe',['eu'],['GBP','EUR','CHF','SEK','NOK','PLN','CZK','HUF','DKK']],['Asia-Pacific',['asia','oc'],['JPY','CNY','KRW','INR','AUD','IDR','SGD','HKD','THB','PHP','MYR','NZD']],['Africa & Middle East',['af','me'],['ZAR','ILS','TRY']]];
+ const regRows=RG.map(([n,rs,cs])=>{const L=all.filter(x=>cs.includes(x.c)).sort((a,b)=>a.d1-b.d1),cnt=mArts.filter(st=>rs.includes(st.location?.region)).length;return `<div class="mkd-rg"><span>${n}</span><small>${cnt} art.</small><span>${L.length?esc(L[L.length-1].c)+' '+pc(L[L.length-1].d1):'—'}</span><span>${L.length?esc(L[0].c)+' '+pc(L[0].d1):'—'}</span></div>`;}).join('');
+ const th=(k,l)=>`<button type="button" data-fs="${k}" class="${sk===k?'on':''}">${l}${sk===k?' ↓':''}</button>`;
  mkO.innerHTML=`<h3>Markets overview</h3><p class="mkd-n" style="margin:0 0 10px">Pick a country on the globe for its detail.</p>
- <h4>Currencies vs USD <span>${d1?'ECB reference · '+fmtD(d1):'ECB'}</span></h4>${fx.length?fx.map(x=>`<div class="mkd-fx"><b>USD/${esc(x.c)}</b><span>${x.v.toLocaleString('en-US',{maximumFractionDigits:x.v>=100?2:4,minimumFractionDigits:x.v>=100?2:4})}</span>${x.s.length>2?mkdSpark(x.s,x.d<0?'#f87171':'#34d399'):''}<em class="${x.d<0?'d':'u'}">${x.d>0?'+':x.d<0?'−':''}${Math.abs(x.d).toFixed(2)}%</em></div>`).join(''):'<p class="mkd-e">Reference rates not available.</p>'}
- <p class="mkd-n">Biggest daily moves. Derived from ECB euro reference rates; not live or tradable prices.</p>
- <h4 style="margin-top:14px">Most covered markets <span>${F.win.toUpperCase()} · market articles</span></h4>${top.length?top.map(([c,n])=>`<button type="button" class="mkd-mc" data-c="${esc(c)}"><span>${esc(nm(c))}</span><small>${n} article${n>1?'s':''}</small></button>`).join(''):'<p class="mkd-e">No market articles in this window.</p>'}
- <h4 style="margin-top:14px">Next releases <span>official · US only</span></h4>${next.length?next.map(e=>`<div class="mkd-mc"><span>${esc(e.t)}</span><small>${when(e.at)}</small></div>`).join(''):'<p class="mkd-e">No upcoming releases in our calendar.</p>'}
+ <div class="mkd-kp"><div><b>${openN}/${S.length}</b><small>Exchanges open</small></div><div><b>${all.length}</b><small>Currencies (ECB)</small></div><div><b>${mArts.length}</b><small>Market articles ${F.win.toUpperCase()}</small></div><div><b>${next[0]?new Date(next[0].at).toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}):'—'}</b><small>Next release</small></div></div>
+ <h4>Currencies vs USD <span>${d1?'ECB reference · '+fmtD(d1):'ECB'}</span></h4>${all.length?`<div class="mkd-ft mkd-fh">${th('c','Pair')}<span>Rate</span>${th('d1','1D')}${th('w1','1W')}${th('m1','1M')}<span></span></div>`+all.slice(0,MARKET.fxAll?all.length:8).map(x=>`<div class="mkd-ft"><b>${esc(x.c)}</b><span>${x.v.toLocaleString('en-US',{maximumFractionDigits:x.v>=100?2:4,minimumFractionDigits:x.v>=100?2:4})}</span>${pc(x.d1)}${pc(x.w1)}${pc(x.m1)}${x.s.length>2?mkdSpark(x.s,(x.m1||0)<0?'#f87171':'#34d399'):'<span></span>'}</div>`).join('')+`<button type="button" class="mkd-more" data-fxall>${MARKET.fxAll?'Show fewer':'Show all '+all.length}</button>`:'<p class="mkd-e">Reference rates not available.</p>'}
+ <p class="mkd-n">Units of each currency per 1 USD; a rise means a weaker currency vs USD. Derived from ECB euro reference rates; not live or tradable prices.</p>
+ <h4 style="margin-top:14px">By region <span>articles · best · worst vs USD, 1D</span></h4>${regRows}
+ <h4 style="margin-top:14px">Next releases <span>official · US only</span></h4>${next.length?next.slice(0,3).map(e=>`<div class="mkd-mc"><span>${esc(e.t)}</span><small>${when(e.at)}</small></div>`).join(''):'<p class="mkd-e">No upcoming releases in our calendar.</p>'}
  <p class="mkd-n" style="margin-top:10px">Sources: ECB · exchange-calendars · BLS/BEA/Fed via our calendar · Investedia articles. Not investment advice.</p>`;
- mkO.querySelectorAll('[data-c]').forEach(b=>b.onclick=()=>marketSelect(b.dataset.c));
+ mkO.querySelectorAll('[data-fs]').forEach(b=>b.onclick=()=>{MARKET.fxSort=b.dataset.fs;mkdRender();});
+ const fa=mkO.querySelector('[data-fxall]');if(fa)fa.onclick=()=>{MARKET.fxAll=!MARKET.fxAll;mkdRender();};
+ 
  // activity strip
  const P=marketPanel.hidden?mkO.getBoundingClientRect():marketPanel.getBoundingClientRect(),L=mkL.getBoundingClientRect();mkA.style.left=(L.right+24)+'px';mkA.style.right=(innerWidth-P.left+24)+'px';
  let cards='';
