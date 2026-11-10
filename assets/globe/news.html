@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="../economy-charts.css">
+<script src="../economy-charts.js"></script>
+<script src="../news-filters.js"></script>
 <meta charset="utf-8"><script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}if(!/[?&]embed=1/.test(location.search))document.documentElement.classList.add('standalone')</script><style>
 @font-face{font-family:"Inter";src:url("/assets/fonts/inter-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
 @font-face{font-family:"Geist Mono";src:url("/assets/fonts/geist-mono-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
@@ -145,12 +148,28 @@ html.proj-mode :is(.panel,.act,.side-sec,.side-imp,.side-bar,#lcol,.timeline,#ca
 .mkd-ft svg{width:48px;height:18px}.mkd-fh{border-top:0;color:#6c6c74;font-size:10.5px;padding-bottom:2px}.mkd-fh button{font:10.5px Inter,sans-serif;color:#6c6c74;padding:0;text-align:right}.mkd-fh button:first-child{text-align:left}.mkd-fh button.on{color:#ffb27a}
 .mkd-more{display:block;width:100%;margin-top:6px;padding:6px;border:1px solid #2a2a2f;border-radius:8px;color:#ccc;font:12px Inter,sans-serif}
 .mkd-rg{display:grid;grid-template-columns:1fr 46px 82px 82px;gap:6px;padding:7px 0;border-top:1px solid #16161a;font-size:12.5px}.mkd-rg small{color:#77777f;font-size:11px}.mkd-rg .u{color:#34d399}.mkd-rg .d{color:#f87171}
+
+.pjl,.pjs{display:none}
+html.proj-mode .pjl{display:flex;flex-direction:column;position:fixed;left:16px;top:16px;bottom:16px;width:380px;z-index:5;border:1px solid #1f1f23;background:rgba(11,11,13,.96);border-radius:16px;padding:16px;font:13px/1.4 Inter,sans-serif;box-sizing:border-box}
+html.proj-mode .pjs{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;bottom:16px;left:calc(380px + 40px);right:calc(var(--pw) + 40px);z-index:4;border:1px solid #1f1f23;background:rgba(11,11,13,.96);border-radius:14px;font:13px Inter,sans-serif}
+html.proj-mode .pjs div{padding:10px 14px;border-right:1px solid #1f1f23}html.proj-mode .pjs div:last-child{border:0}.pjs b{display:block;font-size:18px;font-weight:600}.pjs small{color:#77777f;font-size:11px}
+html.proj-mode .top{display:none!important}
+.pjl-h b{display:block;font-size:19px}.pjl-h small{color:#8a8a92}.pjq{margin:12px 0 0;height:40px;border:1px solid #2a2a2f;border-radius:10px;background:#0e0e11;color:#eee;padding:0 12px;font:13px Inter,sans-serif}.pjl .pj-f{margin:8px 0 6px}.pjl .pj-f select{max-width:118px}
+.pjl-n{color:#8a8a92;font-size:12px;margin:2px 0 6px}.pjl-list{overflow:auto;flex:1;margin:0 -6px;padding:0 6px}
+.pjr{display:grid;grid-template-columns:72px 1fr 22px;gap:10px;padding:8px;border-radius:10px;border:1px solid transparent;cursor:pointer}.pjr:hover{background:rgba(255,255,255,.03)}.pjr.on{border-color:rgba(255,122,26,.6);background:rgba(255,122,26,.06)}.pjr img,.pji{width:72px;height:50px;border-radius:7px;object-fit:cover}.pji{display:grid;place-items:center;background:#16161a;color:#8a8a92;font-weight:600;font-size:12px}.pjr b{display:block;font-size:13px;line-height:1.25}.pjr small{color:#8a8a92;font-size:11.5px}
+.pjt{display:inline-block;font-size:10.5px;border:1px solid #2e2e33;border-radius:5px;padding:0 6px;margin:4px 4px 0 0;color:#c9c9cf}.pjt.g{color:#6ee7b7;border-color:rgba(110,231,183,.35)}.pjt.o{color:#fbbf24;border-color:rgba(251,191,36,.35)}
+.pjw{color:#9a9aa2;font-size:15px;align-self:start}.pjw[aria-pressed=true]{color:#ff9d5c}.pjmore{width:100%;margin:8px 0;padding:8px;border:1px solid #2a2a2f;border-radius:9px;color:#ccc;font:12.5px Inter,sans-serif}
+html.proj-mode .pj{padding:0!important;overflow:auto}.pjh{position:relative;height:190px}.pjh img{width:100%;height:100%;object-fit:cover;display:block;border-radius:20px 20px 0 0}.pjh span{position:absolute;left:12px;bottom:6px;font-size:9.5px;color:#ddd;text-shadow:0 1px 2px #000}
+.pjd{padding:16px 18px}.pjd h2{margin:8px 0 2px;font-size:21px;letter-spacing:-.015em}.pjd .mu{color:#8a8a92}.pjk{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:12px 0 4px}.pjk div{border:1px solid #1f1f23;border-radius:9px;padding:7px 9px;min-width:0}.pjk b{display:block;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.pjk small{color:#77777f;font-size:10.5px}
+.pjb{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}.pjb .pj-w{height:40px;border-radius:10px;font-size:13px}.pjgo{display:grid;place-items:center;height:40px;border-radius:10px;background:#ff7a1a;color:#111!important;font-weight:650;text-decoration:none}
+@media(max-width:1180px){html.proj-mode .pjs{display:none}}
+@media(max-width:760px){html.proj-mode .pjl{display:none}html.proj-mode .pj{max-height:62vh}}
 /* Swipe-to-watchlist: the orange action is hidden until a row is actually swiped */
 .nd-act{opacity:0;pointer-events:none;transition:opacity .15s}.nd-row.sw .nd-act{opacity:1}
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
-<script src="../runtime-config.js"></script><script src="../live-config.js"></script><script src="../live-data.js"></script><script src="../news-source.js"></script><script src="../connections-source.js"></script><script src="../prefs.js"></script><script src="../sectors.js"></script><script src="../peek.js"></script>
+<script src="../runtime-config.js"></script><script src="../live-config.js"></script><script src="../live-data.js"></script><script src="../news-source.js"></script><script src="../connections-source.js"></script><script src="../projects-data.js"></script><script src="../prefs.js"></script><script src="../sectors.js"></script><script src="../peek.js"></script>
 <script>document.addEventListener("DOMContentLoaded",()=>window.InvConsent?.mount());</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Investedia Globe News (concept)</title>
@@ -796,6 +815,63 @@ html{font-feature-settings:"tnum"}body,button,input,select,textarea{font-family:
 .market-panel .gf-article{text-decoration:none}.market-panel .gf-country-topics{margin:0}.market-panel .gf-day{margin-top:12px}
 html[data-theme=light] .gf-article-meta{color:#984400}html[data-theme=light] :is(.gf-country-topics button,.nd-chips button,.panel-tabs button,.gm-tabs button,.gswitch button,.dd-btn,.tf-btn,.lay-btn,.reg,.chip,.win):is([aria-pressed=true],[aria-selected=true],[aria-expanded=true]){background:rgba(29,29,31,.04)!important;color:var(--fg)!important;border-color:var(--accent)!important}
 .connections-freshness{display:block;padding:8px 4px;font:11px Inter,system-ui,sans-serif;color:var(--fg-2)}
+
+/* Detail controls share the scroll container and reserve their own space. */
+.impact-head .impact-dir{width:auto;height:auto;padding:4px 6px;border-radius:6px;font-size:11px!important;font-weight:500!important;-webkit-text-stroke:0;white-space:nowrap}
+.impact-head{flex-wrap:wrap}
+.detail-header{position:sticky;top:0;z-index:8;background:#121216;border-bottom:1px solid var(--line);margin:-1px 0 14px;padding:0 0 8px}
+.panel .pbody:has(.detail-header){padding-top:0!important}
+.detail-controls{display:flex;align-items:center;justify-content:space-between;min-height:44px;gap:8px}
+.panel .detail-header .sheet-actions{position:static;display:flex;align-items:center;gap:4px;margin-left:auto}
+.panel .detail-header .back{position:static!important;margin:0;min-height:44px;flex-shrink:0;color:var(--fg)!important;font-size:14px!important}
+.detail-header .gm-tabs{margin:4px 0 0}
+.detail-header .follow{padding:6px 10px;white-space:nowrap}
+.panel[data-view=asset] .pbody>.meta{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;line-height:1.5}
+html[data-theme=light] .detail-header{background:#f4f7fb}
+@media(max-width:760px){
+ html[data-panel] .panel:not([data-sheet=closed]) .pbody:has(.detail-header){padding-top:0!important}
+ html[data-panel] .panel:not([data-sheet=closed]) .grab::before{height:18px}
+ .panel .detail-header .sheet-actions button{min-width:36px;width:36px;min-height:44px}
+ .panel .detail-header .sheet-actions .follow{width:auto}
+ .detail-header .gm-tabs button{font-size:11px;min-height:40px;padding:7px 2px}
+}
+
+
+#news-details-filters{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:12px;font:12px Inter,sans-serif;margin:12px 0}#news-details-filters h3{margin:0 0 10px;font-size:12px;font-weight:600}#news-details-filters label{display:grid;gap:6px;color:var(--fg-2);font-size:11px;margin:8px 0;min-width:0}#news-details-filters :is(select,input){width:100%;min-width:0;min-height:40px;border:1px solid var(--line);border-radius:8px;color:var(--fg);background:var(--bg);padding:6px;font:11px Inter,sans-serif;box-sizing:border-box;color-scheme:dark}html[data-theme=light] #news-details-filters :is(select,input){color-scheme:light}.news-date-range{display:grid;grid-template-columns:1fr 1fr;gap:8px}#news-details-filters p{font-size:10px;line-height:1.5;color:var(--fg-2);margin:8px 0}#news-details-filters button{min-height:36px;font:11px Inter,sans-serif;color:var(--accent);text-align:left}html:not(.lcol-on) #lcol>#news-details-filters{display:none}html.market-mode #news-details-filters,html.proj-mode #news-details-filters{display:none}#news-details-filters :focus-visible{outline:2px solid #ff7a1a;outline-offset:2px}@media(max-width:760px){#news-details-filters{border:0;background:none;padding:0}#news-details-filters :is(input,select,button){min-height:44px;font-size:13px}#news-details-filters label{font-size:12px}#news-details-filters h3{font-size:14px}}
+
+#news-details-filters{position:relative;padding:0}#news-details-filters summary{min-height:44px;display:flex;align-items:center;padding:0 12px;cursor:pointer;color:var(--fg);font-weight:600;list-style:none}#news-details-filters summary::-webkit-details-marker{display:none}#news-details-filters summary:after{content:'▾';margin-left:auto;color:var(--accent)}#news-details-filters details[open]>summary:after{content:'▴'}.news-filter-options{position:absolute;top:48px;left:0;right:0;border:1px solid var(--line);border-radius:12px;padding:12px;background:var(--panel);z-index:65;box-shadow:0 12px 30px #0006}#news-details-filters:has(details[open]){z-index:65}@media(max-width:760px){#news-details-filters summary{display:none}.news-filter-options{position:static;padding:0;border:0;box-shadow:none;background:none}}
+.news-filter-options{background:rgba(14,14,16,.98);backdrop-filter:blur(20px)}html[data-theme=light] .news-filter-options{background:rgba(255,255,255,.98)}@media(max-width:760px){.news-filter-options,html[data-theme=light] .news-filter-options{background:none;backdrop-filter:none}}
+
+.mk-favourite{display:grid;place-items:center;min-width:44px;min-height:44px;color:var(--fg-2);background:none;border:0;border-radius:8px;flex:none}.mk-favourite[aria-pressed=true]{color:#ff7a1a}.mk-favourite:focus-visible{outline:2px solid #ff7a1a;outline-offset:2px}.mk-head>.mk-favourite{margin-left:auto}.mk-session-row{display:grid;grid-template-columns:minmax(0,1fr) 44px;align-items:center;border-bottom:1px solid var(--line)}.mk-session-row .mkd-sr{border:0;min-width:0}.mk-favourites{margin:8px 0 14px}.mk-favourites h4{font:600 13px Inter,sans-serif;margin:0 0 7px}.mk-favourites h4 small{font:10px Inter,sans-serif;color:var(--fg-2);margin-left:8px}.mk-favourites>div{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:6px}.mk-favourites [data-favourite-country]{min-height:44px;display:flex;align-items:center;gap:8px;flex:1;color:var(--fg);text-align:left;font:12px Inter,sans-serif}.mk-favourites img{width:20px;height:14px}.mk-favourites p{font:11px/1.5 Inter,sans-serif;color:var(--fg-2);margin:6px 0 10px}.mp-ss{position:relative;padding-right:44px}.mp-ss>.mk-favourite{position:absolute;right:0;top:0}.mp-ss{width:145px}
+/* Claude Projects target v6, scoped to Projects mode. */
+#project-topbar,#project-mode-subtitle{display:none}
+html.proj-mode{--pj-left:clamp(270px,26vw,370px);--pj-right:clamp(310px,28vw,400px)}
+html.proj-mode #project-topbar{position:fixed;inset:0 0 auto;z-index:12;height:58px;display:flex;align-items:center;gap:30px;padding:0 24px;background:var(--bg);border-bottom:1px solid var(--line);font:14px Inter,system-ui,sans-serif}
+.pj-brand{font-size:23px;font-weight:650;letter-spacing:-.03em;color:var(--fg);text-decoration:none}#project-topbar nav{display:flex;gap:24px}#project-topbar nav a{color:var(--fg-2);text-decoration:none;min-height:44px;display:inline-flex;align-items:center}#project-topbar nav a:first-child{color:var(--fg);background:rgba(255,255,255,.06);padding:0 12px;border-radius:10px}#project-topbar>label{margin-left:auto;width:min(30vw,380px)}#project-topbar input{width:100%;height:40px;color:var(--fg);background:transparent;border:1px solid var(--line);border-radius:10px;padding:0 12px;font:13px Inter,sans-serif}
+html.proj-mode .gswitch{position:fixed!important;top:78px!important;left:50%!important;transform:translateX(-50%)!important;z-index:10!important;display:flex!important;min-height:46px;padding:4px;border-radius:13px;background:var(--panel);border:1px solid var(--line);gap:4px}
+html.proj-mode .gswitch button{min-width:86px;min-height:40px;padding:0 15px;font:500 14px Inter,sans-serif;white-space:nowrap}html.proj-mode .gswitch [data-m=projects][aria-pressed=true]{background:#ff7a1a!important;color:#111!important;border-color:#ff7a1a!important;box-shadow:none!important}.gs-pro span{margin-left:5px}
+html.proj-mode #project-mode-subtitle{display:block;position:fixed;top:133px;left:var(--pj-left);right:var(--pj-right);text-align:center;color:var(--fg-2);font:12px Inter,sans-serif;z-index:6}
+html.proj-mode .pjl{top:76px;bottom:16px;left:16px;width:var(--pj-left);padding:17px;background:var(--panel);border-radius:18px;border-color:var(--line);color:var(--fg);z-index:8}
+html.proj-mode .pj{top:76px;right:16px;bottom:16px;width:var(--pj-right);display:flex;flex-direction:column;overflow:hidden;background:var(--panel);color:var(--fg);border-color:var(--line);border-radius:18px;padding:0!important}
+html.proj-mode .pjs{left:calc(var(--pj-left) + 36px);right:calc(var(--pj-right) + 36px);bottom:18px;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--panel);border-color:var(--line);color:var(--fg);border-radius:15px}
+html.proj-mode .pjs>div{min-width:0;padding:14px 12px;border-color:var(--line)}.pjs b{font-size:22px;font-feature-settings:"tnum"}.pjs small{display:block;font-size:10px;line-height:1.5;color:var(--fg-2);margin-top:4px}.pjl-h h2{font-size:21px;margin:0 0 4px;letter-spacing:-.02em}.pjl-h p{font-size:12px;color:var(--fg-2);margin:0 0 4px}.pj-search{display:block}.pjq{width:100%;min-width:0;height:40px;font-size:12px;color:var(--fg);background:transparent;border-color:var(--line);margin-top:12px}
+.pj-f{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0!important}.pj-f label{min-width:0;flex:1}.pj-f select,.pj-f>button{min-height:36px;max-width:100%!important;width:100%;border:1px solid var(--line);border-radius:8px;background:transparent;color:var(--fg);padding:5px 7px;font:11px Inter,sans-serif}.pj-f>button{width:auto;flex:1.1;white-space:nowrap}.pjl-n{display:flex;justify-content:space-between;align-items:center;gap:6px;color:var(--fg-2);font-size:11px;margin:4px 0 10px}.pjl-n label{white-space:nowrap}.pjl-n select{color:var(--fg-2);border:0;background:var(--panel);font:inherit;max-width:100px;min-height:32px}
+.pjl-list{margin:0 -5px;padding:0 5px;overflow-y:auto;overscroll-behavior:contain}.pjr{display:block;position:relative;padding:0;margin-bottom:8px;border-radius:13px;border-color:transparent;min-width:0}.pjr.on{border-color:#ff7a1a;background:rgba(255,122,26,.045)}.pj-pick{display:grid;grid-template-columns:82px minmax(0,1fr);gap:11px;width:100%;padding:10px 23px 10px 8px;min-height:93px;text-align:left;border:0;background:transparent;color:var(--fg);font:inherit}.pj-pick>img,.pj-pick .pji{width:82px;height:70px;border-radius:9px;object-fit:cover}.pji{color:var(--fg-2);background:rgba(255,255,255,.035);display:grid;place-items:center}.pj-type-icon{width:100%;height:100%;max-width:160px;max-height:105px;color:#ff7a1a}.pj-pick>span{min-width:0}.pj-pick b{display:block;font-size:13px;line-height:1.35;overflow-wrap:anywhere;margin:0 0 3px}.pj-pick small{display:block;font-size:11px;color:var(--fg-2)}.pj-row-tags{display:block;margin-top:4px}.pjt{display:inline-block;width:auto;height:auto;padding:1px 6px;margin:2px 4px 0 0;border:1px solid var(--line);border-radius:5px;background:rgba(255,255,255,.045);color:var(--fg-2);font:10px/1.45 Inter,sans-serif;white-space:normal}.pjt:after{content:none}.pjt.completed{color:#6ee7b7;background:rgba(52,211,153,.09);border-color:rgba(52,211,153,.1)}.pjt.progress{color:#fbbf24;background:rgba(251,191,36,.09);border-color:rgba(251,191,36,.1)}.pjt.planned{color:var(--fg-2)}.pjw{position:absolute;right:0;top:3px;min-width:28px;min-height:38px;color:var(--fg-3);display:grid;place-items:center}.pjw[aria-pressed=true]{color:#ff7a1a}.pjmore{min-height:44px;width:100%;border-color:var(--line);color:var(--fg);background:transparent;font-size:12px}.pj-empty{color:var(--fg-2);padding:14px 0;font-size:12px}
+.pjh{height:170px;min-height:170px;position:relative;overflow:hidden;border-radius:18px 18px 0 0;background:rgba(255,255,255,.025)}.pjh img{width:100%;height:100%;object-fit:cover;display:block}.pjh>a{position:absolute;left:0;right:0;bottom:0;padding:16px 10px 6px;font-size:9px;line-height:1.4;color:white;background:linear-gradient(transparent,rgba(0,0,0,.7));text-decoration:none}.pjh-icon{display:grid;place-items:center;padding:20px}.pjh-icon>span{font-size:11px;color:var(--fg-2);margin-top:5px}.pjh-icon svg{height:95px;max-width:140px}.pjd{padding:16px 16px 8px;overflow-y:auto;flex:1;min-height:0;overscroll-behavior:contain}.pjd h2{font-size:23px;line-height:1.2;letter-spacing:-.02em;margin:0 0 12px;white-space:normal;overflow-wrap:anywhere}.pj-detail-meta{display:flex;align-items:center;gap:5px;flex-wrap:wrap;color:var(--fg-2);font-size:12px;line-height:1.6}.pj-detail-meta>.pjt:last-child{margin-left:auto}.pj-tabs{display:flex;gap:10px;border-bottom:1px solid var(--line);margin-top:12px;overflow-x:auto}.pj-tabs button{flex:none;min-height:40px;color:var(--fg-2);border:0;border-bottom:2px solid transparent;border-radius:0;background:none;font:12px Inter,sans-serif;padding:6px 0}.pj-tabs button[aria-selected=true]{color:var(--fg);border-bottom-color:#ff7a1a;background:none!important}.pj-detail-body{padding-top:10px}.pj-description{font-size:12px;line-height:1.6;color:var(--fg-2);margin:0 0 12px}.pjk{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;margin:12px 0 18px;border:1px solid var(--line);border-radius:12px;overflow:hidden}.pjk>div{padding:11px 9px;border:0;border-radius:0;border-right:1px solid var(--line);min-width:0;text-align:center}.pjk>div:nth-child(even){border-right:0}.pjk dd{font-size:14px;font-weight:600;margin:0 0 3px;white-space:normal;overflow-wrap:anywhere;line-height:1.35}.pjk dt{font-size:10px;color:var(--fg-2)}.pjk a{font-size:10px;color:var(--fg-2)}.pj-detail-body h3{font-size:14px;font-weight:600;margin:12px 0}.pj-timeline{list-style:none;padding:0 0 0 9px;margin:16px 0}.pj-timeline li{display:flex;align-items:flex-start;gap:10px;justify-content:space-between;padding:0 0 22px 20px;border-left:1px solid var(--line);position:relative}.pj-timeline li:before{content:'';position:absolute;left:-5px;top:3px;width:9px;height:9px;border-radius:50%;background:var(--panel);border:1px solid var(--fg-3)}.pj-timeline li.completed:before{background:#34d399;border-color:#34d399}.pj-timeline li.progress:before{background:#ff7a1a;border-color:#ff7a1a}.pj-timeline li>div{min-width:0}.pj-timeline b{font-size:12px;font-weight:500;display:block}.pj-timeline time{display:block;color:var(--fg-2);font-size:10px;margin:4px 0}.pj-timeline a{font-size:10px;color:var(--fg-2);display:inline-flex;gap:3px;align-items:center;min-height:24px}.pj-timeline .pjt{font-size:9px;flex:none;margin-top:0}.pj-details{display:grid;grid-template-columns:100px minmax(0,1fr);font-size:12px;gap:10px}.pj-details dt{color:var(--fg-2)}.pj-details dd{margin:0;overflow-wrap:anywhere}.pj-sources{list-style:none;padding:0;margin:0}.pj-sources li{padding:10px 0;border-bottom:1px solid var(--line)}.pj-sources a{display:inline-flex;gap:4px;align-items:center;min-height:28px;color:var(--fg);font-size:12px}.pj-sources small{display:block;color:var(--fg-2);font-size:10px;margin-top:4px}.pj-note{font-size:10px;line-height:1.6;color:var(--fg-2);margin:15px 0 8px}.pjb{flex:none;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9px;padding:12px 15px 15px;margin:0;background:var(--panel)}.pjb button,.pjgo{min-height:44px;border-radius:11px;font:600 12px Inter,sans-serif;display:flex;align-items:center;justify-content:center;gap:5px;text-align:center;text-decoration:none}.pjb button{background:var(--fg);color:var(--bg);border:1px solid var(--line)}.pjgo{background:#ff7a1a;color:#111!important;border:0}
+.pj-back,.pj-sheet-handle{display:none}html.proj-mode :is(.market-panel,.mkd-o,.mkd-s,.mkd-strip,.market-control,.market-source){display:none!important}html:not(.proj-mode) :is(#pjList,#pjStats,#projPanel){display:none!important}
+:root[data-theme=light] .pjt.completed{color:#15624d}:root[data-theme=light] .pjt.progress{color:#825400}
+@media(min-width:761px) and (max-width:1179px){html.proj-mode{--pj-left:260px;--pj-right:310px}html.proj-mode .pjl{left:10px;padding:12px}html.proj-mode .pj{right:10px}html.proj-mode .pjs{display:grid;left:286px;right:336px;grid-template-columns:repeat(2,1fr)}html.proj-mode .pjs b{font-size:16px}.pj-pick{grid-template-columns:54px minmax(0,1fr);gap:7px;padding-right:20px}.pj-pick>img,.pj-pick .pji{width:54px;height:54px}.pj-f{flex-wrap:wrap}.pj-f>label,.pj-f>button{flex:1 0 40%}html.proj-mode .gswitch{left:calc((100vw - 50px)/2)!important}.pjd{padding:14px}.pj-tabs{gap:8px}.pj-tabs button{font-size:11px}}
+@media(max-width:760px){html.proj-mode #project-topbar{height:56px;padding:0 16px;gap:12px}.pj-brand{font-size:20px}#project-topbar nav{display:none}#project-topbar>label{width:auto;flex:1}#project-topbar input{font-size:11px;height:36px}html.proj-mode .gswitch{display:none!important}html.proj-mode #project-mode-subtitle{left:0;right:0;top:63px;font-size:11px}html.proj-mode .pjl{display:flex;left:10px;right:10px;width:auto;top:auto;bottom:calc(85px + env(safe-area-inset-bottom));height:49dvh;max-height:62dvh;border-radius:22px;padding:10px 14px 14px;z-index:8}html.proj-mode .pj{display:none;top:auto;left:10px;right:10px;width:auto;bottom:calc(85px + env(safe-area-inset-bottom));height:72dvh;max-height:78dvh;border-radius:22px}html.proj-mode.proj-detail-open .pj{display:flex}html.proj-mode.proj-detail-open .pjl{display:none}html.proj-mode.proj-collapsed .pjl{height:88px;overflow:hidden}html.proj-mode.proj-collapsed .pjl> :not(.pj-sheet-handle):not(.pjl-h){display:none}html.proj-mode .pjs{display:none}.pj-sheet-handle{display:grid;place-items:center;width:100%;height:22px;min-height:22px;padding:0;touch-action:none}.pj-sheet-handle span{width:36px;height:4px;background:var(--fg-3);border-radius:4px}.pj-back{display:flex;align-items:center;min-height:44px;padding:8px 14px;flex:none;color:var(--fg-2);font:12px Inter,sans-serif}.pjl-h h2{font-size:18px}.pjl-h p{font-size:11px}.pj-f select,.pj-f>button{min-height:44px}.pj-pick{grid-template-columns:75px minmax(0,1fr);padding-right:35px;min-height:93px}.pj-pick>img,.pj-pick .pji{width:75px;height:66px}.pjw{min-width:40px;min-height:44px}.pjmore{min-height:44px}.pjh{height:150px;min-height:150px;border-radius:0}.pjd{padding:14px}.pjd h2{font-size:23px}.pj-tabs button{min-height:44px}.pjb{padding:10px 13px 12px}.pj-sources a,.pj-timeline a{min-height:32px}#dock{grid-template-columns:repeat(4,minmax(0,1fr))!important}#dock button{min-width:0;font-size:12px!important;padding-left:4px;padding-right:4px}#dock button[data-v=projects][aria-current=page]{background:#ff7a1a!important;color:#111!important}}
+@media(prefers-reduced-motion:reduce){.pjr,.pj,.pjl{transition:none!important}}
+
+.proj-mode .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.proj-mode .gswitch{display:inline-flex;position:fixed;z-index:9}.proj-mode :is(.m-actions,.m-time,.tf-btn){display:none!important}
+html.embed.proj-mode :is(#project-topbar,#project-mode-subtitle,#gswitch,#pjList,#projPanel,#pjStats,.dock){display:none!important}
+
+html.proj-mode :is(#nav-grab,.tb-btn){display:none!important}
+
+html.proj-mode .gswitch [data-m=projects][aria-pressed=true] span{color:#111;border-color:rgba(0,0,0,.5)}html.proj-mode input::placeholder{color:var(--fg-2)}.pj-brand .pj-i{color:transparent;background:linear-gradient(#ff7a1a .385em,var(--fg) .385em);-webkit-background-clip:text;background-clip:text}
+html.proj-mode .pj :is(.pj-description,.pj-note){color:var(--fg-2)}html.proj-mode .pj .pj-tabs button[aria-selected=true]{color:var(--fg)!important}
+
 </style>
 <script src="../locale.js"></script>
 </head>
@@ -844,7 +920,7 @@ html[data-theme=light] .gf-article-meta{color:#984400}html[data-theme=light] :is
 <div class="fs-back" id="fsback" hidden></div>
 <section class="fsheet" id="fsheet" role="dialog" aria-modal="true" aria-labelledby="fs-title" hidden>
   <div class="fs-head"><h2 id="fs-title" tabindex="-1">Filters</h2><button type="button" class="fs-btn" id="fs-reset">Reset</button><button type="button" class="fs-btn fs-x" id="fs-close" aria-label="Close filters">✕</button></div>
-  <div class="fs-body"><div class="fs-lbl">Topic</div><div id="fs-cats"></div><div class="fs-lbl">Region</div><div id="fs-regions"></div><div class="fs-lbl">Time</div><div id="fs-time"></div><div class="fs-lbl">Layers</div><div id="fs-layers"></div><div id="fs-foot"></div></div>
+  <div class="fs-body"><div id="fs-details"></div><div class="fs-lbl">Topic</div><div id="fs-cats"></div><div class="fs-lbl">Region</div><div id="fs-regions"></div><div class="fs-lbl">Time</div><div id="fs-time"></div><div class="fs-lbl">Layers</div><div id="fs-layers"></div><div id="fs-foot"></div></div>
   <button type="button" class="fs-show" id="fs-show">Show articles</button>
 </section>
 <div class="peek" id="peek" role="region" aria-label="Top articles" hidden></div>
@@ -859,7 +935,7 @@ html[data-theme=light] .gf-article-meta{color:#984400}html[data-theme=light] :is
 </aside>
 <section class="side-sec glass" id="sideSec" aria-label="Sector overview" hidden></section>
 <section class="side-imp glass" id="sideImp" aria-label="Market impact" hidden></section>
-<aside class="pj glass" id="projPanel" aria-label="Projects preview" hidden></aside>
+<header id="project-topbar" hidden></header><div id="project-mode-subtitle" hidden>Real Estate &amp; Infrastructure</div><aside class="pj glass" id="projPanel" aria-label="Project detail" hidden></aside><section class="pjl glass" id="pjList" aria-label="Projects list"></section><section class="pjs glass" id="pjStats" aria-label="Projects stats"></section>
 <div class="presets" id="presets"></div>
 <section class="act glass" id="act" aria-label="Latest activity and coming up" hidden></section>
 <section class="side-bar glass" id="sideBar" aria-label="Moving on the news" hidden></section>
@@ -923,7 +999,7 @@ const logoOf = s => { for (const e of s.entities) { const l = logoFor(e); if (l)
 const limg = (lg, alt = '') => `<img src="${esc(lg.l)}" alt="${esc(alt)}"${lg.l.startsWith('https://cdn.brandfetch.io') ? ' class="bf"' : ''} data-logo${lg.fb ? ` data-fb="${esc(lg.fb)}"` : ''} loading="lazy" referrerpolicy="strict-origin-when-cross-origin">`;
 addEventListener('error', ev => { const t = ev.target; if (t.tagName !== 'IMG' || !t.hasAttribute('data-logo')) return; if (t.dataset.fb) { t.src = t.dataset.fb; t.removeAttribute('data-fb'); } else (t.closest('.plogo') || t).remove(); }, true);
 addEventListener('inv-consent-change', () => { if (!window.InvConsent.allows('images')) document.querySelectorAll('img.bf').forEach(i => { if(i.dataset.fb){ i.src=i.dataset.fb; delete i.dataset.fb; } else i.remove(); }); });
-const fmtP = (v, sym) => v.toLocaleString('en-US', { maximumFractionDigits: YLD.test(sym) ? 2 : v >= 1000 ? 0 : v >= 10 ? 2 : 4, minimumFractionDigits: YLD.test(sym) ? 2 : 0 });
+const fmtP = (v, sym) => !Number.isFinite(v) ? '—' : v.toLocaleString('en-US', { maximumFractionDigits: YLD.test(sym) ? 2 : v >= 1000 ? 0 : v >= 10 ? 2 : 4, minimumFractionDigits: YLD.test(sym) ? 2 : 0 });
 const outlineCache = {};
 function outline(name, lat, lon) {
   const c = byName[name]; if (!c) return '';
@@ -937,12 +1013,13 @@ function outline(name, lat, lon) {
   return outlineCache[key] = `<path d="${d}" fill="rgba(255,122,26,.07)" stroke="rgba(255,140,60,.55)" stroke-width=".7" vector-effect="non-scaling-stroke" fill-rule="evenodd"/>${dot}`;
 }
 function spark(sp, up) {
+  sp = (sp || []).filter(Number.isFinite); if (sp.length < 2) return '';
   const lo = Math.min(...sp), hi = Math.max(...sp), r = hi - lo || 1, pts = sp.map((v, i) => [(i / (sp.length - 1) * 300).toFixed(1), (6 + (1 - (v - lo) / r) * 62).toFixed(1)]);
   const col = up ? '34,197,94' : '240,68,68', id = 'g' + Math.random().toString(36).slice(2, 7);
   return `<svg class="cspark" viewBox="0 0 300 74" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(${col},.28)"/><stop offset="1" stop-color="rgba(${col},0)"/></linearGradient></defs><path d="M0 74L${pts.map(p => p.join(' ')).join('L')}L300 74Z" fill="url(#${id})"/><path d="M${pts.map(p => p.join(' ')).join('L')}" fill="none" stroke="rgb(${col})" stroke-width="1.6" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></svg>`;
 }
 function art(s, label = true) {
-  const qq = quoteOf(s), lg = logoOf(s), ol = outline(s.location.country, s.location.lat, s.location.lon);
+  const rawQuote = quoteOf(s), qq = rawQuote && Number.isFinite(rawQuote.q?.p) && Number.isFinite(rawQuote.q?.d) && rawQuote.q?.sp?.length > 1 && rawQuote.q.sp.every(v => Number.isFinite(v) && v > 0) ? rawQuote : null, lg = logoOf(s), ol = outline(s.location.country, s.location.lat, s.location.lon);
   // B / C: openly licensed photo, always with its credit and licence
   if (s.image && typeof s.image === 'object') {
     const im = s.image, src = esc(im.url || im.file);
@@ -996,22 +1073,23 @@ function briefHTML(c) {
     ${nx ? `<div class="brief-next">Next: <b>${esc(nx.t)}</b> in ${untilText(Date.parse(nx.at) - Date.now())}</div>` : ''}`;
 }
 let TRACK = null; if (window.SinceNews) SinceNews.load('news-track.json').then(t => { TRACK = t; if (view.k === 'article') render(); });
+window.InvEconomyOptions={...Object.fromEntries(Object.entries(ISO).map(([n,c])=>[c,n])),EMU:'Euro area',WLD:'World'};
 let ECON = null; fetch('economy.json').then(r => r.json()).then(d => { ECON = d; if (view.k === 'country') render(); }).catch(() => {});
-const usd = v => v >= 1e12 ? '$' + (v / 1e12).toFixed(v >= 1e13 ? 1 : 2) + ' trillion' : v >= 1e9 ? '$' + (v / 1e9).toFixed(v >= 1e11 ? 0 : 1) + ' billion' : '$' + (v / 1e6).toFixed(0) + ' million';
-const people = v => v >= 1e9 ? (v / 1e9).toFixed(2) + ' billion' : v >= 1e6 ? (v / 1e6).toFixed(1) + ' million' : Math.round(v / 1e3) + ' thousand';
-const usdS = v => v >= 1e12 ? '$' + (v / 1e12).toFixed(1) + 'T' : v >= 1e9 ? '$' + (v / 1e9).toFixed(v >= 1e11 ? 0 : 1) + 'B' : '$' + (v / 1e6).toFixed(0) + 'M';
-const peopleS = v => v >= 1e9 ? (v / 1e9).toFixed(2) + 'B' : v >= 1e6 ? (v / 1e6).toFixed(1) + 'M' : Math.round(v / 1e3) + 'K';
+const usd = v => !Number.isFinite(v) ? '—' : v >= 1e12 ? '$' + (v / 1e12).toFixed(v >= 1e13 ? 1 : 2) + ' trillion' : v >= 1e9 ? '$' + (v / 1e9).toFixed(v >= 1e11 ? 0 : 1) + ' billion' : '$' + (v / 1e6).toFixed(0) + ' million';
+const people = v => !Number.isFinite(v) ? '—' : v >= 1e9 ? (v / 1e9).toFixed(2) + ' billion' : v >= 1e6 ? (v / 1e6).toFixed(1) + ' million' : Math.round(v / 1e3) + ' thousand';
+const usdS = v => !Number.isFinite(v) ? '—' : v >= 1e12 ? '$' + (v / 1e12).toFixed(1) + 'T' : v >= 1e9 ? '$' + (v / 1e9).toFixed(v >= 1e11 ? 0 : 1) + 'B' : '$' + (v / 1e6).toFixed(0) + 'M';
+const peopleS = v => !Number.isFinite(v) ? '—' : v >= 1e9 ? (v / 1e9).toFixed(2) + 'B' : v >= 1e6 ? (v / 1e6).toFixed(1) + 'M' : Math.round(v / 1e3) + 'K';
 const THE = new Set(['United States of America', 'United Kingdom', 'Netherlands', 'Philippines', 'United Arab Emirates', 'Dem. Rep. Congo', 'Central African Rep.', 'Dominican Rep.', 'Czech Rep.', 'Bahamas', 'Gambia']);
-const pct = (v, sign) => (sign && v > 0 ? '+' : '') + v.toFixed(1) + '%';
+const pct = (v, sign) => !Number.isFinite(v) ? '—' : (sign && v > 0 ? '+' : '') + v.toFixed(1) + '%';
 function economy(name) {
   const c = ECON && ISO[name] && ECON.countries[ISO[name]]; if (!c) return ECON ? '' : '<div class="eco"><div class="sec-h">Economy</div><p class="meta">Loading…</p></div>';
-  const g = c.growth || [], last = g[g.length - 1], avg = g.length > 3 ? g.slice(0, -1).reduce((a, x) => a + x[1], 0) / (g.length - 1) : null, nmc = esc(nm(name));
+  const g = (c.growth || []).filter(x => Number.isFinite(x[1])), last = g[g.length - 1], avg = g.length > 3 ? g.slice(0, -1).reduce((a, x) => a + x[1], 0) / (g.length - 1) : null, nmc = esc(nm(name));
   // plain-language summary, built only from the numbers below
   const parts = [];
   const who = (THE.has(name) ? 'The ' : '') + nmc, poss = who + (/s$/.test(nm(name)) ? "'" : "'s");
   if (last) parts.push(`${poss} economy ${last[1] >= 0 ? 'grew' : 'shrank'} ${Math.abs(last[1]).toFixed(1)}% in ${last[0]}` + (avg != null ? `, ${Math.abs(last[1] - avg) < .3 ? 'close to' : last[1] > avg ? 'faster than' : 'slower than'} its ${g.length - 1}-year average of ${avg.toFixed(1)}%` : '') + '.');
-  if (c.infl) parts.push(`Prices rose ${c.infl[1].toFixed(1)}% in ${c.infl[0]}${c.infl[1] > 5 ? ', which is high' : c.infl[1] < 0 ? ' (falling prices)' : ''}.`);
-  if (c.unemp) parts.push(`${c.unemp[1].toFixed(1)}% of people who want a job don't have one (${c.unemp[0]}).`);
+  if (Number.isFinite(c.infl?.[1])) parts.push(`Prices rose ${c.infl[1].toFixed(1)}% in ${c.infl[0]}${c.infl[1] > 5 ? ', which is high' : c.infl[1] < 0 ? ' (falling prices)' : ''}.`);
+  if (Number.isFinite(c.unemp?.[1])) parts.push(`${c.unemp[1].toFixed(1)}% of people who want a job don't have one (${c.unemp[0]}).`);
   const stat = (l, v, y) => v == null ? '' : `<div><span>${l}</span><b>${v}</b><small>${y}</small></div>`;
   let chart = '';
   if (g.length > 2) {
@@ -1020,7 +1098,7 @@ function economy(name) {
       <div class="eco-yr"><span>${g[0][0]}</span><span>GDP growth per year</span><span>${last[0]}</span></div>`;
   }
   return `<div class="eco"><div class="sec-h" style="margin-top:0">Economy</div><p class="eco-s">${parts.join(' ')}</p>
-    <div class="eco-g">${stat('GDP', c.gdp && usdS(c.gdp[1]), c.gdp && c.gdp[0])}${stat('Growth', last && pct(last[1], 1), last && last[0])}${stat('Inflation', c.infl && pct(c.infl[1]), c.infl && c.infl[0])}${stat('Unemployment', c.unemp && pct(c.unemp[1]), c.unemp && c.unemp[0])}${stat('GDP per person', c.gdppc && '$' + Math.round(c.gdppc[1]).toLocaleString('en-US'), c.gdppc && c.gdppc[0])}${stat('Population', c.pop && peopleS(c.pop[1]), c.pop && c.pop[0])}</div>
+    <div class="eco-g">${stat('GDP', c.gdp && usdS(c.gdp[1]), c.gdp && c.gdp[0])}${stat('Growth', last && pct(last[1], 1), last && last[0])}${stat('Inflation', c.infl && pct(c.infl[1]), c.infl && c.infl[0])}${stat('Unemployment', c.unemp && pct(c.unemp[1]), c.unemp && c.unemp[0])}${stat('GDP per person', Number.isFinite(c.gdppc?.[1]) ? '$' + Math.round(c.gdppc[1]).toLocaleString('en-US') : '—', c.gdppc && c.gdppc[0])}${stat('Population', c.pop && peopleS(c.pop[1]), c.pop && c.pop[0])}</div>
     ${chart}<p class="eco-src">Source: <a href="${esc(ECON.source_url)}" target="_blank" rel="noopener">${esc(ECON.source)}</a> · ${esc(ECON.license)} · yearly data</p></div>`;
 }
 // Alert topics for a followed country (saved on this device until accounts + email alerts launch)
@@ -1131,7 +1209,7 @@ function sinceHTML(s, rows) {
 function impactHTML(s) {
   const rows = impactsOf(s), moved = s.market_moving && typeof s.why_moved === 'string' ? s.why_moved : '';
   if (!rows.length && !moved) return '';
-  return `<section class="impact-section" aria-label="Affected assets">${sinceHTML(s, rows)}${moved ? `<div class="why moved"><div class="eyebrow">Why it moved</div><p>${esc(moved)}</p></div>` : ''}<div class="sec-h">Affected assets</div><div class="impact-list">${rows.map(i => `<div><div class="impact-head" ${assetForImpact(i) ? `data-asset="${esc(assetForImpact(i).s)}" role="button" tabindex="0"` : ''}>${impactVisual(i)}<span>${esc(i.name)}</span>${assetForImpact(i) && Number.isFinite(assetForImpact(i).d) ? movePill(assetForImpact(i)) : ''}<span class="impact-dir impact-${i.direction}" aria-label="${i.direction}" title="${i.direction}">${IMPACT_ARROW[i.direction]}</span></div><p>${esc(i.why.slice(0, 200))}</p></div>`).join('')}</div></section>`;
+  return `<section class="impact-section" aria-label="Affected assets">${sinceHTML(s, rows)}${moved ? `<div class="why moved"><div class="eyebrow">Why it moved</div><p>${esc(moved)}</p></div>` : ''}<div class="sec-h">Affected assets</div><div class="impact-list">${rows.map(i => `<div><div class="impact-head" ${assetForImpact(i) ? `data-asset="${esc(assetForImpact(i).s)}" role="button" tabindex="0"` : ''}>${impactVisual(i)}<span>${esc(i.name)}</span>${assetForImpact(i) && Number.isFinite(assetForImpact(i).d) ? '<small>Today</small>' + movePill(assetForImpact(i)) : ''}<span class="impact-dir impact-${i.direction}" aria-label="${i.direction}" title="${i.direction}">Expected ${IMPACT_ARROW[i.direction]}</span></div><p>${esc(i.why.slice(0, 200))}</p></div>`).join('')}</div></section>`;
 }
 // Only an asset the canonical registry verified can draw a line or show a price: the news robot stamps each impact/entity with
 // `asset` (id, name, class, price symbol, place) or `unresolved` (why not). Raw ticker strings are never looked up here.
@@ -1143,11 +1221,12 @@ function assetForImpact(i) {
   const p = MKT.by[r.px] || MKT.np[r.px] || {};
   return MKT.reg[r.id] = { ...p, s: r.px || r.id, id: r.id, n: r.n, la: r.la, lo: r.lo, t: T_OF[r.c] || 'stocks', c: r.c, site: r.site || p.site };
 }
-const movePill = a => a && a.u === 'bp' ? `<span class="pct ${a.d > 0 ? 'up' : a.d < 0 ? 'down' : 'flat'}">${a.d > 0 ? '↑' : a.d < 0 ? '↓' : '↔'} ${Math.abs(a.d).toFixed(1)} bp</span>` : pctPill(a.d);
-const pctPill = v => `<span class="pct ${v > 0 ? 'up' : v < 0 ? 'down' : 'flat'}">${v > 0 ? '↑' : v < 0 ? '↓' : '↔'} ${Math.abs(v).toFixed(2)}%</span>`;
+const movePill = a => !Number.isFinite(a?.d) ? '' : a && a.u === 'bp' ? `<span class="pct ${a.d > 0 ? 'up' : a.d < 0 ? 'down' : 'flat'}">${a.d > 0 ? '↑' : a.d < 0 ? '↓' : '↔'} ${Math.abs(a.d).toFixed(1)} bp</span>` : pctPill(a.d);
+const pctPill = v => !Number.isFinite(v) ? '' : `<span class="pct ${v > 0 ? 'up' : v < 0 ? 'down' : 'flat'}">${v > 0 ? '↑' : v < 0 ? '↓' : '↔'} ${Math.abs(v).toFixed(2)}%</span>`;
 const dirWord = v => v > 0 ? 'up' : v < 0 ? 'down' : 'flat';
-function money(a) { if (a.u === 'bp') return Number(a.p).toFixed(2) + '%'; try { return new Intl.NumberFormat(undefined, { style: 'currency', currency: a.cur || 'USD', maximumFractionDigits: a.p < 10 ? 3 : 2 }).format(a.p); } catch { return String(a.p); } }
+function money(a) { if (!Number.isFinite(a?.p)) return '—'; if (a.u === 'bp') return Number(a.p).toFixed(2) + '%'; try { return new Intl.NumberFormat(undefined, { style: 'currency', currency: a.cur || 'USD', maximumFractionDigits: a.p < 10 ? 3 : 2 }).format(a.p); } catch { return String(a.p); } }
 function sparkSvg(sp, col) {
+  sp = (sp || []).filter(Number.isFinite);
   if (!Array.isArray(sp) || sp.length < 2) return '';
   const mn = Math.min(...sp), mx = Math.max(...sp), X = k => k / (sp.length - 1) * 300, Y = v => 40 - (v - mn) / ((mx - mn) || 1) * 34 - 3;
   const d = sp.map((v, k) => `${k ? 'L' : 'M'}${X(k).toFixed(1)} ${Y(v).toFixed(1)}`).join('');
@@ -1158,7 +1237,7 @@ const REL_LABEL = { direct: 'Direct impact', acquisition: 'Acquisition', 'supply
 function hoverCardHTML(edge) {
   const rows = impactsOf(edge.article).map(i => ({ i, a: assetForImpact(i) })).filter(x => x.a && Number.isFinite(x.a.d)).sort((a, b) => (b.i === edge.impact) - (a.i === edge.impact)).slice(0, 3);
   return `<div class="eyebrow">${rows.length ? `Affected assets · ${rows.length}` : `Connection · ${esc(edge.conn ? edge.conn.dest.name : edge.asset.n)}`}</div><h3>${esc(edge.article.headline)}</h3><div class="meta">${esc(edge.article.source?.name || '')}${edge.article.location?.place ? ' · ' + esc(edge.article.location.place.split(',')[0]) : ''} · ${ago(edge.article.t)}</div>`
-    + rows.map(({ i, a }) => `<div class="hv-row"><div class="hv-top">${impactVisual(i)}<div class="hv-name"><b>${esc(a.n)}</b><span>${esc(a.s.replace(/-USD$/, ''))} · ${esc(money(a))}</span></div><div class="hv-pct">${movePill(a)}<small>7 days ${a.w > 0 ? '+' : ''}${Number(a.w).toFixed(a.u === 'bp' ? 1 : 2)}${a.u === 'bp' ? ' bp' : '%'}</small></div></div><div class="hv-impl">Article implies <b class="${i.direction === 'up' ? 'up' : i.direction === 'down' ? 'down' : 'flat'}">${IMPACT_ARROW[i.direction]} ${i.direction === 'mixed' || i.direction === 'unclear' ? i.direction : i.direction}</b> · price today <b class="${dirWord(a.d)}">${a.d > 0 ? '↑ up' : a.d < 0 ? '↓ down' : '↔ flat'}</b></div>${sparkSvg(a.sp, a.d >= 0 ? '#34d399' : '#f87171')}`).join('')
+    + rows.map(({ i, a }) => `<div class="hv-row"><div class="hv-top">${impactVisual(i)}<div class="hv-name"><b>${esc(a.n)}</b><span>${esc(a.s.replace(/-USD$/, ''))} · ${esc(money(a))}</span></div><div class="hv-pct">${movePill(a)}<small>7 days ${a.w > 0 ? '+' : ''}${Number.isFinite(a.w) ? a.w.toFixed(a.u === 'bp' ? 1 : 2) : '—'}${a.u === 'bp' ? ' bp' : '%'}</small></div></div><div class="hv-impl">Article implies <b class="${i.direction === 'up' ? 'up' : i.direction === 'down' ? 'down' : 'flat'}">${IMPACT_ARROW[i.direction]} ${i.direction === 'mixed' || i.direction === 'unclear' ? i.direction : i.direction}</b> · price today <b class="${dirWord(a.d)}">${a.d > 0 ? '↑ up' : a.d < 0 ? '↓ down' : '↔ flat'}</b></div>${sparkSvg(a.sp, a.d >= 0 ? '#34d399' : '#f87171')}`).join('')
     + (edge.conn ? `<p class="hv-rel"><b>${esc(REL_LABEL[edge.conn.type] || edge.conn.type)}</b> · ${edge.conn.tier === 1 ? 'direct' : 'secondary'} · confidence ${Math.round(edge.conn.confidence * 100)}%</p><p class="hv-why">${esc(edge.conn.explanation)}</p>` : '')
     + `<p class="hv-why">${esc(String(edge.impact.why || '').slice(0, 170))}</p>`;
 }
@@ -1465,13 +1544,13 @@ function upcomingPanel() {
 let MPCAL = null; fetch('../calendar-live.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(j => { MPCAL = j; if (phone() && phoneView === 'markets') render(); }).catch(() => {});
 function marketsPhonePanel() {
   const rows = exchangeRows(), open = rows.filter(r => r.st.open).length;
-  const sess = rows.map(({ e, st }) => `<div class="mp-ss"><img src="flags/${e.cc}.svg" alt=""><b>${esc(e.n)}</b><span class="${st.open ? 'o' : st.in < 3 * 3600e3 ? 's' : 'c'}">${st.open ? 'Open' : st.in < 3 * 3600e3 ? 'Opens ' + untilText(st.in) : 'Closed'}</span></div>`).join('');
+  const sess = rows.map(({ e, st }) => `<div class="mp-ss"><img src="flags/${e.cc}.svg" alt=""><b>${esc(e.n)}</b>${mkFavouriteButton(marketCountry(e.cc.toUpperCase()))}<span class="${st.open ? 'o' : st.in < 3 * 3600e3 ? 's' : 'c'}">${st.open ? 'Open' : st.in < 3 * 3600e3 ? 'Opens ' + untilText(st.in) : 'Closed'}</span></div>`).join('');
   const by = {}; for (const x of stories) { const c = x.location.country; (by[c] = by[c] || []).push(x); }
   const act = Object.entries(by).sort((a, b) => b[1].length - a[1].length).slice(0, 5).map(([c, L]) => { const top = [...L].sort(sortTop)[0], cats = Object.entries(L.reduce((m, x) => (m[CAT[x.category] || x.category] = (m[CAT[x.category] || x.category] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]).slice(0, 2);
     return `<button class="mp-row" data-country="${esc(c)}">${flag(c)}<span class="mp-tx"><b>${esc(nm(c))}</b><small>${esc(top.headline)}</small><span>${cats.map(([k]) => `<i>${esc(k)}</i>`).join('')}</span></span><span class="mp-n"><b>${L.length}</b>articles</span></button>`; }).join('');
   const now = Date.now(), ev = (MPCAL && MPCAL.events || []).filter(x => x.imp >= 3 && Date.parse(x.at) >= now).sort((a, b) => Date.parse(a.at) - Date.parse(b.at)).slice(0, 4);
   const evs = ev.length ? ev.map(x => `<div class="mp-ev"><time>${new Date(x.at).toLocaleString('en-GB', { weekday: 'short', hour: '2-digit', minute: '2-digit' })}</time><span>${x.country ? `<img src="flags/${esc(String(x.country).toLowerCase())}.svg" alt="">` : ''}${esc(x.t)}</span></div>`).join('') : '<p class="meta">No high-impact events scheduled.</p>';
-  return `<div class="nb-head"><h2>Markets</h2><span class="mp-live"><i></i>${open ? open + ' open now' : 'All closed'}</span></div><div class="mp-k">Market sessions</div><div class="mp-sess">${sess}</div><div class="mp-k">Most active markets <span>by article volume</span></div>${act}<div class="mp-k">Upcoming · high impact <a href="../../calendar.html">Calendar →</a></div>${evs}<p class="meta" style="margin-top:12px">Activity is article volume, not price performance. Not investment advice.</p>`;
+  return `<div class="nb-head"><h2>Markets</h2><span class="mp-live"><i></i>${open ? open + ' open now' : 'All closed'}</span></div>${mkFavouritesHTML()}<div class="mp-k">Market sessions</div><div class="mp-sess">${sess}</div><div class="mp-k">Most active markets <span>by article volume</span></div>${act}<div class="mp-k">Upcoming · high impact <a href="../../calendar.html">Calendar →</a></div>${evs}<p class="meta" style="margin-top:12px">Activity is article volume, not price performance. Not investment advice.</p>`;
 }
 function marketsPanel() {
   const now = Date.now(), d = new Date(now), stamp = d.toISOString().slice(0, 10) + ' ' + hm(now) + ' UTC';
@@ -1560,7 +1639,7 @@ function drawMarketsOverlay(t) {
 const exPick = (x, y) => exHits.find(h => x >= h.x && x <= h.x + h.w && y >= h.y && y <= h.y + h.h);
 
 // ===== Filters =====
-const F = { cat: 'all', lens: 'all', region: 'global', win: '48h',  // homepage and Globe page open on the last 48 hours
+const F = { country:'', from:'', to:'', cat: 'all', lens: 'all', region: 'global', win: '48h',  // homepage and Globe page open on the last 48 hours
   mine: new URLSearchParams(location.search).get('mine') === '1' }; let play = null;
 const winMin = () => (WINS.find(w => w[0] === F.win) || [F.win, '', 2880])[2];  // '48h' is the homepage-only window (no button)
 const inTime = s => play ? s.t >= play.start && s.t <= play.cur : (!s.historical || winMin() > 2880) && T0 - s.t <= winMin() * 60000;
@@ -1568,7 +1647,7 @@ const inTime = s => play ? s.t >= play.start && s.t <= play.cur : (!s.historical
 function watchSyms() { try { const L = JSON.parse(localStorage.getItem('inv-watch') || '{}'); return new Set((L.a || []).map(x => String(x.s || '').toUpperCase()).filter(Boolean)); } catch { return new Set(); } }
 let WATCH = watchSyms();
 const touchesWatch = s => impactsOf(s).some(i => { const a = assetForImpact(i); return (a && WATCH.has(a.s.toUpperCase())) || WATCH.has(String(i.ticker || '').toUpperCase()); });
-const matchNoLens = s => (F.cat === 'all' || s.category === F.cat) && inRegion(s.location.region, F.region) && inTime(s) && (!F.mine || touchesWatch(s));
+const matchNoLens = s => InvNewsFilters.match(s,F) && (F.cat === 'all' || s.category === F.cat) && inRegion(s.location.region, F.region) && inTime(s) && (!F.mine || touchesWatch(s));
 const match = s => (F.lens === 'all' || s.lens.includes(F.lens)) && matchNoLens(s);
 // Top articles: within the same importance level, take regions in turn so one busy region cannot fill the whole list.
 // Order changes only among equally important articles; nothing is hidden and no coordinate changes.
@@ -1581,11 +1660,13 @@ function regionMix(list) {
 const sortTop = (a, b) => (b.importance - a.importance) || (b.t - a.t);
 let shown = [], dimmed = [], activity = {};
 function refresh() {
-  shown = stories.filter(match); dimmed = F.lens === 'all' ? [] : stories.filter(s => matchNoLens(s) && !s.lens.includes(F.lens)); activity = {}; WATCH = watchSyms(); updateLensChips(); updateFiltersUI(); updateDropdowns(); for (const s of shown) activity[s.location.country] = (activity[s.location.country] || 0) + 1;
+  shown = stories.filter(match); dimmed = F.lens === 'all' ? [] : stories.filter(s => matchNoLens(s) && !s.lens.includes(F.lens)); activity = {}; WATCH = watchSyms(); updateLensChips(); updateFiltersUI(); if(typeof newsFilterUI==='function')newsFilterUI(); updateDropdowns(); for (const s of shown) activity[s.location.country] = (activity[s.location.country] || 0) + 1;
   $('tlInfo').setAttribute('aria-busy', String(historyLoading));
   $('tlInfo').innerHTML = historyLoading ? 'Loading history…' : historyError ? 'History could not be loaded. Please try again.' : play ? `Replaying · <b>${new Date(play.cur).toLocaleDateString('en-GB', { weekday: 'short' })} ${new Date(play.cur).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })}</b>` : `<b>${shown.length.toLocaleString('en-US')}</b> ${shown.length === 1 ? 'article' : 'articles'} · ${F.win.toUpperCase()}`;
   updateNetwork(); if (!play) render();
 }
+
+
 
 // ===== Globe =====
 const cv = $('cv'); let ctx = cv.getContext('2d');
@@ -1608,7 +1689,7 @@ function size() {
   // Measure the real controls: the drawing area stays clear of every panel and filter.
   if (EMBED) { const q = new URLSearchParams(location.search); cx = W * (+q.get('cx') || .5); cyT = H * (+q.get('cy') || .5); R0 = Math.min(W, H) * (+q.get('r') || .42); globeBox = { left: 0, top: 0, right: W, bottom: H }; }
   else if (phone()) {
-    phoneMapTop = document.querySelector('.top').getBoundingClientRect().bottom + 12;
+    phoneMapTop = document.documentElement.classList.contains('proj-mode') ? 72 : document.querySelector('.top').getBoundingClientRect().bottom + 12;
     // Size against the unobstructed map, never against the sheet's remaining space.
     R0 = Math.min(W * .47, Math.max(120, H - phoneMapTop - (BOTTOM_DOCK + peekH + 28)) * .47);
     cx = W / 2;
@@ -1622,9 +1703,9 @@ function size() {
     const sheetOpen = phone() && panel.classList.contains('open');
     $('tl').hidden = sheetOpen;
     const timeline = $('tl').getBoundingClientRect();
-    globeBox = { left: phone() ? 8 : document.documentElement.classList.contains('mkd-on') ? 378 : (LC ? document.getElementById('lcol').getBoundingClientRect().right + 24 : 24), top: header.bottom + 12,
+    globeBox = { left: phone() ? 8 : document.documentElement.classList.contains('proj-mode') ? $('pjList').getBoundingClientRect().right + 16 : document.documentElement.classList.contains('mkd-on') ? 378 : (LC ? document.getElementById('lcol').getBoundingClientRect().right + 24 : 24), top: document.documentElement.classList.contains('proj-mode') ? 150 : header.bottom + 12,
       right: phone() ? W - 8 : document.documentElement.classList.contains('mkd-on') && document.querySelector('.mkd-o:not([hidden])') ? document.querySelector('.mkd-o').getBoundingClientRect().left - 24 : document.documentElement.classList.contains('proj-mode') && $('projPanel') ? $('projPanel').getBoundingClientRect().left - 24 : ((mp => mp && document.documentElement.classList.contains('market-mode') && !mp.hidden && mp.offsetWidth)(document.querySelector('.market-panel')) ? document.querySelector('.market-panel').getBoundingClientRect().left - 24 : panel.hidden || !panel.offsetWidth || panel.getBoundingClientRect().left <= 0 ? W - 24 : panel.getBoundingClientRect().left - 24),
-      bottom: sheetOpen ? H - panel.offsetHeight - 12 : document.documentElement.classList.contains('mkd-on') ? H - 190 : LC ? H - (document.documentElement.classList.contains('act-on') ? 190 : 24) : (timeline.height ? timeline.top - 16 : H - (document.documentElement.classList.contains('market-mode') ? 72 : 90)) };
+      bottom: sheetOpen ? H - panel.offsetHeight - 12 : document.documentElement.classList.contains('proj-mode') && !phone() ? H - 110 : document.documentElement.classList.contains('mkd-on') ? H - 190 : LC ? H - (document.documentElement.classList.contains('act-on') ? 190 : 24) : (timeline.height ? timeline.top - 16 : H - (document.documentElement.classList.contains('market-mode') ? 72 : 90)) };
     // template B (?panel=b): the articles sit in a strip along the bottom, so the globe uses the full width above it
     if (PANEL_TEMPLATE === 'b' && panel.dataset.view === 'top') { globeBox.right = W - (phone() ? 8 : 24); globeBox.bottom = Math.min(globeBox.bottom, (phone() ? $('tl').getBoundingClientRect().top : panel.getBoundingClientRect().top) - 16); }
     const aw = Math.max(1, globeBox.right - globeBox.left), ah = Math.max(1, globeBox.bottom - globeBox.top);
@@ -1914,6 +1995,7 @@ new MutationObserver(()=>{const h=$('hover');if(!h.classList.contains('on')||h.q
 // ===== Panel =====
 let phoneView = 'globe';
 const panel = $('panel'), pbody = $('pbody'); size(); new MutationObserver(() => { if (!phone()) size(); }).observe(panel, { attributes: true, attributeFilter: ['class'] }); let view = { k: 'top' }, hist = [];
+new MutationObserver(records=>{if(records.some(r=>[...r.addedNodes].some(n=>n.nodeType===1&&(n.matches?.('.ec-history')||n.querySelector?.('.ec-history')))))InvEconomy.bind(pbody,code=>ECON?.countries?.[code]);}).observe(pbody,{childList:true,subtree:true});
 function phoneMapArea() {
   const pk = $('peek').getBoundingClientRect(); if (pk.height) peekH = pk.height;
   const bottom = sheetState === 'closed' ? (pk.height ? pk.top : H - BOTTOM_DOCK - peekH - 20) - 10 : H - sheetVisible - 12;
@@ -2157,12 +2239,7 @@ function gmCountryPanel(c) {
   else if (countryTab === 'news') content = `<h3 class="sec-h">Country news · ${F.win.toUpperCase()}</h3>${gmCountryNews(news)}`;
   else if (countryTab === 'companies') content = `<h3 class="sec-h">Listed companies · ${esc(gmExchanges(code).map(([, e]) => e.short).join(' / '))}</h3>${companies.length ? gmCompanyRows(companies) : `<p class="empty">${gmMissing}</p>`}`;
   else if (countryTab === 'economy') {
-    const v = k => macro?.[k], yr = k => v(k) ? ` <small>${v(k)[0]}</small>` : '', big = n => n >= 1e12 ? '$' + (n / 1e12).toFixed(2) + 'T' : n >= 1e9 ? '$' + (n / 1e9).toFixed(1) + 'B' : '$' + (n / 1e6).toFixed(0) + 'M';
-    const g = Array.isArray(v('growth')) ? v('growth').filter(x => Number.isFinite(x[1])) : [], last = g[g.length - 1];
-    const rows = [['GDP', v('gdp') && big(v('gdp')[1]), '', 'gdp'], ['Growth', last && `${last[1] >= 0 ? '+' : '−'}${Math.abs(last[1]).toFixed(1)}%`, last && (last[1] >= 0 ? 'up' : 'down'), null, last && last[0]], ['Inflation', v('infl') && v('infl')[1].toFixed(1) + '%', v('infl') && v('infl')[1] > 5 ? 'down' : '', 'infl'], ['Unemployment', v('unemp') && v('unemp')[1].toFixed(1) + '%', '', 'unemp'], ['GDP per person', v('gdppc') && '$' + Math.round(v('gdppc')[1]).toLocaleString('en-US'), '', 'gdppc'], ['Population', v('pop') && (v('pop')[1] >= 1e9 ? (v('pop')[1] / 1e9).toFixed(2) + 'B' : (v('pop')[1] / 1e6).toFixed(1) + 'M'), '', 'pop']];
-    let spark = '';
-    if (g.length > 2) { const lo = Math.min(0, ...g.map(x => x[1])), hi = Math.max(0, ...g.map(x => x[1])), Y = val => 44 - (val - lo) / ((hi - lo) || 1) * 40, X = i => i * 300 / (g.length - 1); spark = `<div class="ec-sp"><div class="ec-k">GDP growth ${g[0][0]}–${last[0]}</div><svg viewBox="0 0 300 48" preserveAspectRatio="none" aria-label="GDP growth by year"><line x1="0" x2="300" y1="${Y(0)}" y2="${Y(0)}" stroke="rgba(255,255,255,.18)" stroke-dasharray="3 4"/><polyline points="${g.map((x, i) => X(i).toFixed(1) + ',' + Y(x[1]).toFixed(1)).join(' ')}" fill="none" stroke="#FF7A1A" stroke-width="1.8" vector-effect="non-scaling-stroke"/></svg></div>`; }
-    content = macro ? `<div class="ec-rows">${rows.map(([l, val, cl, k, y]) => `<div class="ec-r"><span>${l}</span><b class="${cl ? 'pct-' + cl : ''}">${val || '<em>—</em>'}${val ? (k ? yr(k) : y ? ` <small>${y}</small>` : '') : ''}</b></div>`).join('')}</div>${spark}<p class="meta" style="margin-top:10px;font-size:11px">${esc(ECON.source || 'World Bank')} · ${esc(ECON.license || 'CC BY 4.0')}. Latest available year shown. Not investment advice.</p>` : `<p class="empty">${gmMissing}</p>`;
+    content = InvEconomy.render(code, macro);
   }
   else if (countryTab === 'markets') {
     const funds = gmFunds(c.name);
@@ -2170,7 +2247,7 @@ function gmCountryPanel(c) {
   } else {
     const important = news.filter(s => s.importance >= 2).slice(0, 3), abroad = gmAbroad(companies,code);
     const indicator = (key, digits = 1) => Number.isFinite(macro?.[key]?.[1]) ? `${macro[key][1].toFixed(digits)}% <small>(${macro[key][0]})</small>` : gmMissing;
-    content = `<div class="gm-kpis"><div data-gm-kpi="benchmark"><span>${esc(benchmark?.n || 'Benchmark index')}</span><b${benchmark?.p >= 1e6 ? ' style="font-size:12px"' : ''}>${Number.isFinite(benchmark?.p) ? gmNumber(benchmark.p) : gmMissing}</b>${gmMove(benchmark?.d)}</div><div data-gm-kpi="currency"><span>${esc(fx ? fx.s.replace(/^([A-Z]{3})([A-Z]{3})$/, '$1/$2') : 'Currency vs USD')}</span><b>${Number.isFinite(fx?.p) ? gmNumber(fx.p, 4) : gmMissing}</b><span class="gm-fx-move" title="Currency strength against the US dollar"><small>${esc(exchange?.currency || fx?.s.replace('USD', '') || '')}</small>${gmMove(fx?.d)}</span></div><div data-gm-kpi="macro"><span>Inflation · Unemp.</span><b data-gm-inflation>${indicator('infl')}</b><span data-gm-unemployment>${indicator('unemp')}</span></div></div>
+    content = `<div class="gm-kpis"><div data-gm-kpi="benchmark"><span>${esc(benchmark?.n || 'Benchmark index')}</span><b${benchmark?.p >= 1e6 ? ' style="font-size:12px"' : ''}>${Number.isFinite(benchmark?.p) ? gmNumber(benchmark.p) : gmMissing}</b>${gmMove(benchmark?.d)}</div><div data-gm-kpi="currency"><span>${esc(fx ? fx.s.replace(/^([A-Z]{3})([A-Z]{3})$/, '$1/$2') : 'Currency vs USD')}</span><b>${exchange?.currency === 'USD' ? 'USD (base)' : Number.isFinite(fx?.p) ? gmNumber(fx.p, 4) : gmMissing}</b><span class="gm-fx-move" title="Currency strength against the US dollar"><small>${esc(exchange?.currency || fx?.s.replace('USD', '') || '')}</small>${exchange?.currency === 'USD' ? '' : gmMove(fx?.d)}</span></div><div data-gm-kpi="macro"><span>Inflation · Unemp.</span><b data-gm-inflation>${indicator('infl')}</b><span data-gm-unemployment>${indicator('unemp')}</span></div></div>
       <div class="gm-section-head"><h3>Latest market developments</h3><button class="gm-link" data-gm-tab="news">All ${news.length} →</button></div>${important.length ? gmNewsRows(important) : '<p class="empty">No important articles in this time window.</p>'}
       <div class="gm-section-head"><h3>Listed companies · ${esc(exchange?.short || '—')}</h3><button class="gm-link" data-gm-tab="companies">${companies.length} →</button></div>${companies.length ? gmCompanyRows(companies.slice(0, 4)) : `<p class="empty">${gmMissing}</p>`}
       <div class="gm-section-head"><h3>Also listed abroad</h3><span class="meta">${abroad.length} listings</span></div>${abroad.length?gmAbroadTable(abroad.slice(0,5)):gmMissing}${abroad.length>5?`<button type="button" class="gf-show-all" data-gm-tab="abroad">Show all ${abroad.length} →</button>`:''}`;
@@ -2188,7 +2265,7 @@ function gmContinentPanel() {
   if (!GM) return `<section class="gm-continent"><div class="eyebrow">Global Markets</div><h2>${esc(name)}</h2>${tabs}<p class="meta">${gmError ? 'Market directory could not load.' : 'Loading market directory…'}</p>${gmError ? '<button class="gm-link" data-gm-retry>Try again</button>' : ''}</section>`;
   const underserved = rows.filter(r => r.count >= 1 && r.count <= 9), benchmarks = rows.map(r => ({ ...r, benchmark: gmBenchmark(r.c.name), funds: gmFunds(r.c.name) }));
   const currencies = [...new Map(rows.map(({ c, code }) => { const fx = gmCurrency(c.name), currency = gmExchanges(code)[0]?.[1].currency || fx?.s.replace('USD', ''); return [fx?.s || currency, { fx, currency }]; }).filter(([key]) => key)).values()];
-  const currencyChip = ({ fx, currency }) => `<span>${esc(currency)} ${gmMove(fx?.d)}</span>`;
+  const currencyChip = ({ fx, currency }) => `<span>${esc(currency)} ${currency === 'USD' ? '(base)' : gmMove(fx?.d)}</span>`;
   const missingBenchmarks = benchmarks.filter(r => !r.benchmark && !r.funds.length).length;
   const underservedChip = ({ c, count }) => `<button type="button" data-country="${esc(c.name)}">${esc(nm(c.name))} · ${count}</button>`;
   return `<section class="gm-continent" data-gm-region-panel="${esc(F.region)}"><div class="eyebrow">Global Markets</div><h2>${esc(name)}</h2><p class="meta" data-gm-region-summary>${rows.length} countries · ${activeExchanges.length} ${activeExchanges.length === 1 ? 'exchange' : 'exchanges'} with data · ${F.win.toUpperCase()}</p>${tabs}
@@ -2199,7 +2276,7 @@ function gmContinentPanel() {
 }
 pbody.addEventListener('click', e => {
   const tab = e.target.closest('[data-gm-tab]'), region = e.target.closest('[data-gm-region]');
-  if (tab) { countryTab = tab.dataset.gmTab; render(); pbody.scrollTop = 0; pbody.querySelector(`[role=tab][data-gm-tab="${countryTab}"]`)?.focus({ preventScroll: true }); }
+  if (tab) { countryTab = tab.dataset.gmTab; render(); InvEconomy.bind(pbody, code=>ECON?.countries?.[code]); pbody.scrollTop = 0; pbody.querySelector(`[role=tab][data-gm-tab="${countryTab}"]`)?.focus({ preventScroll: true }); }
   else if (region) { gmCountriesExpanded = false; setRegion(region.dataset.gmRegion); }
   else if (e.target.closest('[data-gm-countries]')) { gmCountriesExpanded = !gmCountriesExpanded; render(); if (!gmCountriesExpanded) pbody.scrollTop = 0; }
   else if (e.target.closest('[data-gm-retry]')) { gmReady = null; gmError = false; render(); }
@@ -2321,65 +2398,138 @@ function renderAct(){
 }
 addEventListener('resize',()=>renderAct());
 
-// Projects · Pro preview mode: real developments as examples; nothing here is a working feature.
+// Projects dashboard, built on Claude's supplied layout. Data lives in shared JSON.
 const PROJ_START=new URLSearchParams(location.search).get('mode')==='projects';
-const PROJ={on:false,sel:'kx',list:[
- {k:'kx',n:"King's Cross Central",l:'London, United Kingdom',la:51.535,lo:-0.125,t:'Urban regeneration',st:null,ms:[['Coal Drops Yard opened','2018'],['Outline planning permission granted','Early 2006']],src:"https://en.wikipedia.org/wiki/King%27s_Cross_Central",cr:'Crookesmoor · CC BY-SA 4.0'},
- {k:'noor',n:'Noor Ouarzazate Solar Complex',l:'Ouarzazate, Morocco',la:30.99,lo:-6.86,t:'Renewable energy',st:'Operational',ms:[['Noor I commissioned','Feb 2016']],src:'https://en.wikipedia.org/wiki/Ouarzazate_Solar_Power_Station',cr:'Richard Allaway · CC BY 2.0'},
- {k:'hy',n:'Hudson Yards',l:'New York, United States',la:40.754,lo:-74.002,t:'Mixed-use',st:'Phase 1 open',ms:[['Phase 1 opened','15 Mar 2019'],['Groundbreaking, 10 Hudson Yards','4 Dec 2012']],src:'https://en.wikipedia.org/wiki/Hudson_Yards,_Manhattan',cr:'Epicgenius · CC BY-SA 4.0'},
- {k:'line',n:'The Line',l:'Tabuk Province, Saudi Arabia',la:28.0,lo:35.2,t:'Urban megaproject',st:null,ms:[['Project announced','2021']],src:'https://en.wikipedia.org/wiki/The_Line,_Saudi_Arabia',cr:'European Space Agency (cropped) · CC BY-SA 3.0'}],
- more:[[51.481,-0.145],[53.541,9.997],[48.86,2.35],[45.484,9.19],[24.45,32.73],[25.42,51.49],[30.02,31.76],[25.2,55.35],[25.6,37.2],[55.6,12.9],[59.907,10.756],[40.48,-3.69],[48.22,16.43],[41.26,28.74],[37.88,23.73],[33.6,-7.65],[52.23,21.0]],hits:[]};
-const PW=new Set((()=>{try{return JSON.parse(localStorage.getItem('inv-proj-watch')||'[]')}catch{return[]}})());PROJ.f={c:'',t:'',s:'',w:false};
+const PROJ={on:false,sel:'line',tab:'overview',list:[],vis:[],hits:[],f:{c:'',t:'',s:'',w:false},sort:'relevance',n:30,phoneDetail:false,collapsed:false};
+const PW=new Set((()=>{try{return JSON.parse(localStorage.getItem('inv-proj-watch')||'[]')}catch{return[]}})());
+const pjArrow='<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>';
+const pjStar=on=>`<svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1 6.2-5.5-2.9-5.5 2.9 1-6.2L3 9.6l6.2-.9z" fill="${on?'currentColor':'none'}" stroke="currentColor" stroke-width="1.4"/></svg>`;
+const pjIcon=p=>`<svg class="pj-type-icon" viewBox="0 0 100 70" aria-hidden="true"><path d="M10 58h80M23 58V25l20-8v41m0-24h18v24m0-38h19v38M30 30v6m0 6v6m20-8v8m18-20v7m0 7v7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>`;
+const pjUrl=p=>p.sources?.find(x=>x.name==='Wikipedia')?.url||p.sources?.[0]?.url;
+const pjStage=p=>p.stage||'Not stated';
+const pjPhoto=p=>p.photo?.file?new URL(p.photo.file,new URL('assets/globe/',new URL('../../',location.href))).href:null;
+function pjImage(p){const file=pjPhoto(p);return file?`<img src="${esc(file)}" alt="${esc(p.name)}" loading="lazy">`: `<span class="pji" aria-hidden="true">${pjIcon(p)}</span>`;}
+function pjTag(stage){return stage?`<span class="pjt ${/operational|open|completed/i.test(stage)?'completed':/construction|progress/i.test(stage)?'progress':'planned'}">${esc(stage)}</span>`:'';}
+function projAll(){
+ if(!PROJ.ready){PROJ.ready=InvProjectsData.load().then(data=>{PROJ.list=data.projects;PROJ.curation=data.curation;PROJ.error=false;if(PROJ.on)projRender();}).catch(()=>{PROJ.ready=null;PROJ.error=true;if(PROJ.on)projRender();});}
+ return PROJ.list;
+}
+function projFiltered(){
+ const f=PROJ.f,q=(PROJ.q||'').trim().toLowerCase();let list=projAll().filter(p=>(!f.c||p.country===f.c)&&(!f.t||p.type===f.t)&&(!f.s||pjStage(p)===f.s)&&(!f.w||PW.has(p.id))&&(!q||[p.name,p.location,p.country,p.type,p.developer].some(x=>String(x||'').toLowerCase().includes(q))));
+ return list.sort((a,b)=>PROJ.sort==='name'?a.name.localeCompare(b.name):PROJ.sort==='recent'?(Number(b.start_year)||0)-(Number(a.start_year)||0)||a.name.localeCompare(b.name):(Number(b.featured)-Number(a.featured))||a.name.localeCompare(b.name));
+}
+function projPick(id,fly=true){PROJ.sel=id;PROJ.tab='overview';PROJ.phoneDetail=phone();PROJ.collapsed=false;const p=PROJ.list.find(x=>x.id===id);if(fly&&p)flyTo(p.lon,p.lat,Math.max(1,Zt));projRender();}
+function pjMilestones(p){
+ if(!p.milestones?.length)return '<p class="pj-empty">No dated milestones have been verified for this project.</p>';
+ return `<ol class="pj-timeline">${[...p.milestones].sort((a,b)=>a.date.localeCompare(b.date)).map(m=>{const status=InvProjectsData.milestoneStatus(m);return `<li class="${status==='Completed'?'completed':status==='In progress'?'progress':'planned'}"><div><b>${esc(m.title)}</b><time>${esc(m.label||m.date)}</time><a href="${esc(m.source.url)}" target="_blank" rel="noopener">${esc(m.source.name||'Source')} ${pjArrow}</a></div>${status?pjTag(status):''}</li>`;}).join('')}</ol>`;
+}
+function pjFacts(p){
+ const figures=(p.figures||[]).filter(x=>x.source?.url);
+ const facts=[{label:'Country',value:p.country},{label:'Type',value:p.type},...(p.start_year?[{label:'Started · Wikidata',value:p.start_year}]:[]),...figures];
+ return `<dl class="pjk">${facts.map(f=>`<div><dd>${esc(String(f.value))}${f.unit?` ${esc(f.unit)}`:''}</dd><dt>${esc(f.label)}</dt>${f.source?`<a href="${esc(f.source.url)}" target="_blank" rel="noopener">Source ${pjArrow}</a>`:''}</div>`).join('')}</dl>`;
+}
 function projRender(){
- const ctry=x=>x.l.split(', ').pop(),stg=x=>x.st||'Stage not shown',F2=PROJ.f,P=PROJ.list.filter(x=>(!F2.c||ctry(x)===F2.c)&&(!F2.t||x.t===F2.t)&&(!F2.s||stg(x)===F2.s)&&(!F2.w||PW.has(x.k))),p=P.find(x=>x.k===PROJ.sel)||P[0],el=$('projPanel');
- const opt=(k,lab,vals)=>`<select data-pf="${k}" aria-label="${lab}"><option value="">${lab}: All</option>${[...new Set(vals)].sort().map(v=>`<option${F2[k]===v?' selected':''}>${esc(v)}</option>`).join('')}</select>`;
- const filt=`<div class="pj-f">${opt('c','Country',PROJ.list.map(ctry))}${opt('t','Type',PROJ.list.map(x=>x.t))}${opt('s','Stage',PROJ.list.map(stg))}<button type="button" data-pw-only aria-pressed="${F2.w}">★ Watching ${PW.size}</button></div>`;
- el.innerHTML=`<span class="pj-tag">Product preview · Coming soon</span><h2>Development projects, on a global scale</h2><p>Track real estate and infrastructure developments worldwide: who is building, what stage they are at, and the sources behind every update.</p>
- ${filt}${P.length?'':'<p class="pj-foot">No projects match these filters.</p>'}<div class="pj-cards">${P.map(x=>`<button type="button" class="pj-c${x.k===p.k?' on':''}" data-pj="${x.k}"><img src="../img/projects/${x.k}.jpg" alt="" loading="lazy"><b>${esc(x.n)}</b><small>Photo: ${esc(x.cr)}</small></button>`).join('')}</div>
- ${p?`<div class="pj-d"><div style="display:flex;gap:8px;align-items:start"><b style="flex:1">${esc(p.n)}</b><button type="button" class="pj-w" data-pw="${p.k}" aria-pressed="${PW.has(p.k)}">${PW.has(p.k)?'★ Watching':'☆ Watch'}</button></div><div class="mu">${esc(p.l)} · ${esc(p.t)}</div>${p.st?`<span class="pj-st g">${esc(p.st)}</span>`:'<span class="pj-st">Stage not shown</span>'}<div class="pj-tl-h">Milestones (sourced)</div><ul class="pj-tl">${p.ms.map(([a,d])=>`<li><small>${esc(d)}</small>${esc(a)} <a href="${p.src}" target="_blank" rel="noopener">source ↗</a></li>`).join('')}</ul><div class="pj-foot" style="margin-top:6px">Watchlist is saved on this device only.</div></div>`:''}
- <a class="pj-more" href="../../pricing.html#real-estate">Read more about Real Estate in Pro →</a>
- <form class="pj-wl" data-waitlist="globe-projects" novalidate><b>Get early access to Pro</b><p style="margin:2px 0 0;font-size:12px">Pro is not available yet. No payment, no commitment.</p><input type="email" name="email" placeholder="name@company.com" autocomplete="email" required aria-label="Email"><input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true"><label class="ck"><input type="checkbox" name="consent"><span>I agree to receive emails about Pro. Unsubscribe any time. <a href="../../privacy.html">Privacy</a></span></label><button type="submit">Join the waitlist</button><p class="pj-msg" role="status" aria-live="polite"></p></form>
- <p class="pj-foot">Real developments shown as examples of planned coverage. Milestones from Wikipedia; stages only where sourced. Photos: Wikimedia Commons. Projects is not a working feature yet. <a href="../../projects.html">Full preview →</a> Not investment advice.</p>`;
- el.querySelectorAll('[data-pf]').forEach(x=>x.onchange=()=>{F2[x.dataset.pf]=x.value;projRender();});el.querySelector('[data-pw-only]').onclick=()=>{F2.w=!F2.w;projRender();};el.querySelectorAll('[data-pw]').forEach(b=>b.onclick=()=>{const k=b.dataset.pw;PW.has(k)?PW.delete(k):PW.add(k);try{localStorage.setItem('inv-proj-watch',JSON.stringify([...PW]))}catch{}projRender();});
- el.querySelectorAll('[data-pj]').forEach(b=>b.onclick=()=>{PROJ.sel=b.dataset.pj;const q=PROJ.list.find(x=>x.k===PROJ.sel);flyTo(q.lo,q.la,Z);projRender();});
- const f=el.querySelector('form');f.onsubmit=async e=>{e.preventDefault();const m=f.querySelector('.pj-msg'),em=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)){m.textContent='Please enter a valid email address.';return}if(!f.consent.checked){m.textContent='Please tick the box to agree to emails about Pro.';return}
-  m.textContent='Joining…';try{const r=await fetch('https://api.investedia.com/v1/waitlist',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em,consent:true,website:f.website.value,source:'globe-projects'})});m.textContent=r.ok?'You are on the list. We will email you when Pro opens.':r.status===404?'The waitlist opens soon.':r.status===429?'Too many attempts. Please try again tomorrow.':'Something went wrong. Please try again.';if(r.ok)f.reset();}catch{m.textContent='Could not connect. Please try again.'}};
+ const all=projAll(),list=projFiltered();PROJ.vis=list;
+ if(list.length&&!list.some(p=>p.id===PROJ.sel))PROJ.sel=list[0].id;
+ const p=list.find(p=>p.id===PROJ.sel),ls=$('pjList'),detail=$('projPanel');
+ document.documentElement.classList.toggle('proj-detail-open',phone()&&PROJ.phoneDetail&&!!p);document.documentElement.classList.toggle('proj-collapsed',PROJ.collapsed);
+ const opt=(key,label,values)=>`<label><span class="sr-only">${label}</span><select data-pf="${key}" aria-label="${label}"><option value="">${label}</option>${[...new Set(values.filter(Boolean))].sort().map(v=>`<option value="${esc(v)}"${PROJ.f[key]===v?' selected':''}>${esc(v)}</option>`).join('')}</select></label>`;
+ ls.innerHTML=`<button type="button" class="pj-sheet-handle" data-pj-collapse aria-label="${PROJ.collapsed?'Expand':'Collapse'} projects list"><span></span></button><div class="pjl-h"><h2>Projects</h2><p>Global real estate &amp; infrastructure developments</p></div><label class="pj-search"><span class="sr-only">Search projects</span><input class="pjq" type="search" placeholder="Search projects, locations, developers…" value="${esc(PROJ.q||'')}"></label><div class="pj-f"><button type="button" data-pw-only aria-pressed="${PROJ.f.w}">${PROJ.f.w?'Watching':'All projects'} <span aria-hidden="true">▾</span></button>${opt('c','Country',all.map(p=>p.country))}${opt('t','Type',all.map(p=>p.type))}${opt('s','Stage',all.map(pjStage))}</div><div class="pjl-n"><span>${list.length} projects</span><label>Sort: <select data-pj-sort aria-label="Sort projects">${[['relevance','Relevance'],['name','Name'],['recent','Start year']].map(([key,label])=>`<option value="${key}"${key===PROJ.sort?' selected':''}>${label}</option>`).join('')}</select></label></div><div class="pjl-list">${list.slice(0,PROJ.n).map(p=>`<article class="pjr${p.id===PROJ.sel?' on':''}"><button type="button" class="pj-pick" data-pj="${esc(p.id)}">${pjImage(p)}<span><b>${esc(p.name)}</b><small>${esc(p.country)}</small><span class="pj-row-tags"><span class="pjt">${esc(p.type)}</span>${pjTag(p.stage)}</span></span></button><button type="button" class="pjw" data-pw="${esc(p.id)}" aria-label="${PW.has(p.id)?'Remove '+esc(p.name)+' from':'Add '+esc(p.name)+' to'} watchlist" aria-pressed="${PW.has(p.id)}">${pjStar(PW.has(p.id))}</button></article>`).join('')||`<p class="pj-empty">${PROJ.error?'Projects could not load. Please try again.':PROJ.ready&&all.length===0?'Loading projects…':'No projects match these filters.'}</p>`}${list.length>PROJ.n?'<button type="button" class="pjmore" data-pjmore>Load more projects</button>':''}</div>`;
+ const costs=list.filter(p=>p.cost?.source?.url&&Number.isFinite(p.cost.value)&&p.cost.currency==='USD'),milestones=list.filter(p=>p.milestones?.length);
+ $('pjStats').innerHTML=`<div><b>${list.length.toLocaleString()}</b><small>Projects</small></div><div><b>${costs.length?'$'+costs.reduce((sum,p)=>sum+p.cost.value,0).toLocaleString('en-US'):milestones.length}</b><small>${costs.length?`Disclosed value · ${costs.length} projects`:'With sourced milestones'}</small></div><div><b>${new Set(list.map(p=>p.country)).size}</b><small>Countries</small></div><div><b>${new Set(list.map(p=>p.type)).size}</b><small>Project types</small></div>`;
+ bindProjectControls(ls);
+ if(!p){detail.innerHTML='<p class="pj-empty">Select a project to see its sources.</p>';return;}
+ const source=pjUrl(p),tabs=[['overview','Overview'],['milestones','Milestones'],['details','Details'],['sources','Sources']];
+ let body=PROJ.tab==='overview'?`${p.description?`<p class="pj-description">${esc(p.description)}</p>`:''}${pjFacts(p)}<h3>Project timeline</h3>${pjMilestones(p)}`:PROJ.tab==='milestones'?`<h3>Dated milestones</h3>${pjMilestones(p)}`:PROJ.tab==='details'?`${pjFacts(p)}<dl class="pj-details"><dt>Map location</dt><dd>${p.lat.toFixed(4)}, ${p.lon.toFixed(4)}</dd>${p.wikidata_id?`<dt>Wikidata</dt><dd>${esc(p.wikidata_id)}</dd>`:''}</dl><p class="pj-note">Coordinates identify the project's reported location, not its boundary. Unverified cost, population and target figures are not shown.</p>`:`<h3>Sources &amp; credits</h3><ul class="pj-sources">${p.sources.map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)} ${pjArrow}</a>${s.checked_at?`<small>Source check: ${esc(s.checked_at)}</small>`:''}</li>`).join('')}${p.photo?`<li><a href="${esc(p.photo.source_url)}" target="_blank" rel="noopener">Photo: ${esc(p.photo.author)} ${pjArrow}</a><small>${esc(p.photo.licence)} · Wikimedia Commons</small></li>`:''}</ul><p class="pj-note">Wikidata structured data: CC0. Milestones retain their individual sources and original date precision. No sample figures are published.</p>`;
+ detail.innerHTML=`<button type="button" class="pj-back" data-pj-back>‹ Back to projects</button>${p.photo?`<div class="pjh">${pjImage(p)}<a href="${esc(p.photo.source_url)}" target="_blank" rel="noopener">Image: ${esc(p.photo.author)} · ${esc(p.photo.licence)}</a></div>`:`<div class="pjh pjh-icon">${pjIcon(p)}<span>${esc(p.type)} · location from Wikidata</span></div>`}<div class="pjd"><h2>${esc(p.name)}</h2><div class="pj-detail-meta"><span>${esc(p.country)}</span><span class="pjt">${esc(p.type)}</span>${pjTag(p.stage)}</div><div class="pj-tabs" role="tablist" aria-label="Project details">${tabs.map(([key,label])=>`<button type="button" role="tab" id="pj-tab-${key}" aria-controls="pj-tab-body" data-pjtab="${key}" aria-selected="${key===PROJ.tab}" tabindex="${key===PROJ.tab?0:-1}">${label}</button>`).join('')}</div><div class="pj-detail-body" id="pj-tab-body" role="tabpanel" aria-labelledby="pj-tab-${PROJ.tab}">${body}</div><p class="pj-note">Product preview · not a working feature yet. Watchlist stays on this device. Not investment advice.</p></div><div class="pjb"><button type="button" data-pw="${esc(p.id)}" aria-pressed="${PW.has(p.id)}">${pjStar(PW.has(p.id))} ${PW.has(p.id)?'On watchlist':'Add to watchlist'}</button>${source?`<a class="pjgo" href="${esc(source)}" target="_blank" rel="noopener">Read more ${pjArrow}</a>`:''}</div>`;
+ bindProjectControls(detail);requestAnimationFrame(size);
 }
-function projSet(on){
- if(PROJ.on===on&&!on)return;PROJ.on=on;const d=document.documentElement;d.classList.toggle('proj-mode',on);$('projPanel').hidden=!on;
- document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String(on?b.dataset.m==='projects':b.dataset.m===(MARKET.on?'markets':'news'))));
- const u=new URL(location.href);if(on){if(MARKET.on&&typeof marketSetMode==='function')marketSetMode('news');document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.m==='projects')));u.searchParams.set('mode','projects');projRender();hideHover();flyTo(15,38,1);}else if(u.searchParams.get('mode')==='projects')u.searchParams.delete('mode');
- history.replaceState(null,'',u);requestAnimationFrame(size);
+function bindProjectControls(el){
+ el.querySelectorAll('[data-pj]').forEach(b=>b.onclick=()=>projPick(b.dataset.pj));
+ el.querySelectorAll('[data-pw]').forEach(b=>b.onclick=()=>{const key=b.dataset.pw;PW.has(key)?PW.delete(key):PW.add(key);try{localStorage.setItem('inv-proj-watch',JSON.stringify([...PW]))}catch{}projRender();});
+ el.querySelectorAll('[data-pjtab]').forEach(b=>{b.onclick=()=>{PROJ.tab=b.dataset.pjtab;projRender();$('projPanel').querySelector(`[data-pjtab="${PROJ.tab}"]`)?.focus({preventScroll:true});};b.onkeydown=e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();const tabs=[...el.querySelectorAll('[data-pjtab]')],i=tabs.indexOf(b);tabs[e.key==='Home'?0:e.key==='End'?tabs.length-1:(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length].click();};});
+ const input=el.querySelector('.pjq');if(input)input.oninput=()=>{PROJ.q=input.value;PROJ.n=30;const pos=input.selectionStart;projRender();const next=$('pjList').querySelector('.pjq');next.focus({preventScroll:true});next.setSelectionRange(pos,pos);};
+ el.querySelectorAll('[data-pf]').forEach(b=>b.onchange=()=>{PROJ.f[b.dataset.pf]=b.value;PROJ.n=30;projRender();});
+ const sort=el.querySelector('[data-pj-sort]');if(sort)sort.onchange=()=>{PROJ.sort=sort.value;projRender();};
+ const watch=el.querySelector('[data-pw-only]');if(watch)watch.onclick=()=>{PROJ.f.w=!PROJ.f.w;projRender();};
+ const more=el.querySelector('[data-pjmore]');if(more)more.onclick=()=>{const scroll=$('pjList').querySelector('.pjl-list').scrollTop;PROJ.n+=30;projRender();$('pjList').querySelector('.pjl-list').scrollTop=scroll;};
+ const back=el.querySelector('[data-pj-back]');if(back)back.onclick=()=>{PROJ.phoneDetail=false;PROJ.collapsed=false;projRender();};
+ const handle=el.querySelector('[data-pj-collapse]');if(handle){handle.onclick=()=>{PROJ.collapsed=!PROJ.collapsed;projRender();};let y;handle.onpointerdown=e=>{y=e.clientY;handle.setPointerCapture(e.pointerId);};handle.onpointerup=e=>{if(y!=null&&Math.abs(e.clientY-y)>40){PROJ.collapsed=e.clientY>y;projRender();}y=null;};}
 }
+function projectTopbar(){
+ const bar=$('project-topbar');bar.innerHTML='<a class="pj-brand" href="../../index.html" aria-label="Investedia home">Invested<span class="pj-i">i</span>a</a><nav aria-label="Site"><a href="news.html" data-proj-news>Globe</a><a href="../../news.html">News</a><a href="../../markets.html">Markets</a><a href="../../pricing.html">Pricing</a></nav><label><span class="sr-only">Search projects</span><input type="search" placeholder="Search projects, countries…" aria-label="Search projects and countries"></label>';
+ bar.querySelector('[data-proj-news]').onclick=e=>{e.preventDefault();projSet(false,{mode:'news'});marketSetMode('news');};
+ bar.querySelector('input').oninput=e=>{PROJ.q=e.target.value;PROJ.n=30;projRender();};
+}
+projectTopbar();
+const projectSwitchHome=document.createComment('Globe switch home');$('gswitch').before(projectSwitchHome);
+function projSet(on,options={}){
+ const was=PROJ.on;if(on&&!was){PROJ.previousPhone=phoneView;setSheet('closed');PROJ.savedCamera=[lon0,lat0,Zt];PROJ.phoneDetail=false;PROJ.collapsed=false;}
+ if(on)$('project-topbar').after($('gswitch'));else projectSwitchHome.after($('gswitch'));
+ PROJ.on=on;const html=document.documentElement;html.classList.toggle('proj-mode',on);$('projPanel').hidden=!on;$('project-topbar').hidden=!on;$('project-mode-subtitle').hidden=!on;
+ if(on){if(MARKET.on)marketSetMode('news');phoneView='projects';hideHover();projRender();}
+ else if(was){html.classList.remove('proj-detail-open','proj-collapsed');phoneView=options.mode==='markets'?'markets':PROJ.previousPhone==='projects'?'globe':PROJ.previousPhone||'globe';if(PROJ.savedCamera)flyTo(...PROJ.savedCamera);}
+ const u=new URL(location.href);if(on)u.searchParams.set('mode','projects');else if(was){if(options.mode==='markets')u.searchParams.set('mode','markets');else u.searchParams.delete('mode');}
+ if(was!==on){if(options.history===false)history.replaceState(null,'',u);else history.pushState(null,'',u);}
+ document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String(on?b.dataset.m==='projects':b.dataset.m===(options.mode==='markets'?'markets':MARKET.on?'markets':'news'))));
+ $('peek').hidden=on||phoneView!=='globe';dockUpdate();requestAnimationFrame(size);
+}
+addEventListener('popstate',()=>{const mode=new URL(location.href).searchParams.get('mode');projSet(mode==='projects',{history:false,mode});if(mode!=='projects')marketSetMode(mode);});
+addEventListener('resize',()=>{if(PROJ.on)projRender();});
+const projectDock=document.createElement('button');projectDock.type='button';projectDock.dataset.v='projects';projectDock.textContent='Projects';$('dock').append(projectDock);
 function drawProj(){
- PROJ.hits=[];const rad=Math.PI/180,dot=(la,lo,r,f,g)=>{const[x,y,z]=proj(la*rad,lo*rad);if(z<=.04)return null;ctx.beginPath();ctx.arc(x,y,r*2.2,0,7);ctx.fillStyle=g;ctx.fill();ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fillStyle=f;ctx.fill();return[x,y];};
- for(const[la,lo]of PROJ.more)dot(la,lo,2.6,'#ff9d5c','rgba(255,122,26,.14)');
- ctx.font='600 11.5px Inter,sans-serif';
- for(const p of PROJ.list){if(PROJ.f&&((PROJ.f.c&&p.l.split(', ').pop()!==PROJ.f.c)||(PROJ.f.t&&p.t!==PROJ.f.t)||(PROJ.f.s&&(p.st||'Stage not shown')!==PROJ.f.s)||(PROJ.f.w&&!PW.has(p.k))))continue;const xy=dot(p.la,p.lo,p.k===PROJ.sel?5.5:4.5,'#ff7a1a','rgba(255,122,26,.22)');if(!xy)continue;PROJ.hits.push({x:xy[0],y:xy[1],k:p.k});const tx=p.n.replace(' Solar Complex','');const w=ctx.measureText(tx).width+14;ctx.fillStyle='rgba(12,12,14,.92)';ctx.strokeStyle=p.k===PROJ.sel?'#ff7a1a':'#2e2e33';ctx.beginPath();ctx.roundRect(xy[0]+10,xy[1]-11,w,22,6);ctx.fill();ctx.stroke();ctx.fillStyle='#ececef';ctx.fillText(tx,xy[0]+17,xy[1]+4);}
+ PROJ.hits=[];const nodes=PROJ.vis||[],buckets=new Map(),singles=[];
+ for(const p of nodes){const[x,y,z]=proj(p.lat*rad,p.lon*rad);if(z<=.04)continue;const node={p,x,y};if(p.featured||p.id===PROJ.sel||Zt>=2.2)singles.push(node);else{const k=Math.floor(x/32)+':'+Math.floor(y/32);if(!buckets.has(k))buckets.set(k,[]);buckets.get(k).push(node);}}
+ for(const group of buckets.values()){
+  if(group.length===1){singles.push(group[0]);continue;}const x=group.reduce((s,n)=>s+n.x,0)/group.length,y=group.reduce((s,n)=>s+n.y,0)/group.length;
+  ctx.beginPath();ctx.arc(x,y,9,0,7);ctx.fillStyle=DAY?'rgba(36,58,100,.92)':'rgba(12,12,14,.95)';ctx.strokeStyle=DAY?'white':'#9b5726';ctx.fill();ctx.stroke();ctx.font='500 9px Inter,sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillStyle='white';ctx.fillText(group.length,x,y);PROJ.hits.push({x,y,group});
+ }
+ for(const {p,x,y} of singles){const selected=p.id===PROJ.sel,r=selected?5.5:p.featured?4:2.5;ctx.beginPath();ctx.arc(x,y,r*2.6,0,7);ctx.fillStyle=selected?'rgba(255,122,26,.25)':'rgba(255,122,26,.08)';ctx.fill();ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fillStyle='#ff7a1a';ctx.fill();PROJ.hits.push({x,y,id:p.id});
+  if(['kx','noor','line'].includes(p.id)||selected){const title=p.id==='kx'?"King's Cross":p.id==='noor'?'Noor Ouarzazate':p.name;ctx.font='600 11.5px Inter,sans-serif';const w=Math.min(230,Math.max(ctx.measureText(title).width,ctx.measureText(p.country).width)+22),h=43,l=Math.min(W-w-8,Math.max(8,x+12)),t=Math.min(H-100,Math.max(65,y-22));ctx.beginPath();ctx.roundRect(l,t,w,h,10);ctx.fillStyle=DAY?'rgba(255,255,255,.96)':'rgba(12,12,14,.96)';ctx.strokeStyle=selected?'#ff7a1a':DAY?'#d5d5d9':'#2a2a2f';ctx.fill();ctx.stroke();ctx.textAlign='left';ctx.textBaseline='alphabetic';ctx.fillStyle=DAY?'#1d1d1f':'#eee';ctx.fillText(title.length>30?title.slice(0,29)+'…':title,l+10,t+17);ctx.font='10px Inter,sans-serif';ctx.fillStyle=DAY?'#52525b':'#a1a1aa';ctx.fillText(p.country,l+10,t+33);PROJ.hits.push({x:l+w/2,y:t+h/2,id:p.id,rect:{l,t,w,h}});}}
+ ctx.textAlign='left';ctx.textBaseline='alphabetic';
 }
-function projTap(x,y){const h=PROJ.hits.find(h=>Math.hypot(h.x-x,h.y-y)<22);if(h){PROJ.sel=h.k;projRender();}}
+function projTap(x,y){const h=PROJ.hits.find(h=>h.rect&&x>=h.rect.l&&x<=h.rect.l+h.rect.w&&y>=h.rect.t&&y<=h.rect.t+h.rect.h)||[...PROJ.hits].sort((a,b)=>Math.hypot(a.x-x,a.y-y)-Math.hypot(b.x-x,b.y-y)).find(h=>Math.hypot(h.x-x,h.y-y)<16);if(!h)return;if(h.group){const n=h.group.reduce((a,b)=>Math.hypot(a.x-h.x,a.y-h.y)<Math.hypot(b.x-h.x,b.y-h.y)?a:b);flyTo(n.p.lon,n.p.lat,Math.min(ZMAX,Zt*1.7));}else projPick(h.id);}
+
 
 // Reading list + news filter presets (this browser only; not synced to an account)
 const RL=new Set((()=>{try{return JSON.parse(localStorage.getItem('inv-reading')||'[]')}catch{return[]}})());
 const rlSave=()=>{try{localStorage.setItem('inv-reading',JSON.stringify([...RL].slice(-200)))}catch{}};
 document.addEventListener('click',e=>{const b=e.target.closest('[data-rl]');if(!b)return;const id=b.dataset.rl;RL.has(id)?RL.delete(id):RL.add(id);rlSave();render();});
+// One set of controls is moved between the desktop column and phone Filters sheet.
+var newsFilterPanel=document.createElement('section');newsFilterPanel.id='news-details-filters';newsFilterPanel.setAttribute('aria-label','Article filters');
+function newsFilterUI(){
+ const el=newsFilterPanel;if(!el)return;const wasOpen=el.querySelector('details')?.open,focused=el.contains(document.activeElement)?document.activeElement.dataset.newsFilter:null;
+ const countries=[...new Set(stories.map(s=>s.location?.country).filter(Boolean))].sort((a,b)=>nm(a).localeCompare(nm(b))),limits=InvNewsFilters.bounds(T0,winMin());
+ el.innerHTML=`<details${phone()||wasOpen?' open':''}><summary>Article filters${F.country||F.cat!=='all'||F.from||F.to?' · active':''}</summary><div class="news-filter-options"><label>Country<select data-news-filter="country"><option value="">All countries</option>${countries.map(c=>`<option value="${esc(c)}"${F.country===c?' selected':''}>${esc(nm(c))}</option>`).join('')}</select></label><label>Sector<select data-news-filter="cat">${CATS.map(([k,n])=>`<option value="${k}"${F.cat===k?' selected':''}>${esc(n)}</option>`).join('')}</select></label><div class="news-date-range"><label>From (UTC)<input type="date" data-news-filter="from" value="${esc(F.from)}" min="${limits.min}" max="${F.to||limits.max}"></label><label>To (UTC)<input type="date" data-news-filter="to" value="${esc(F.to)}" min="${F.from||limits.min}" max="${limits.max}"></label></div><p>Within the selected ${esc(F.win.toUpperCase())} window. Original publication dates.</p><button type="button" data-news-filter-clear>Clear country &amp; dates</button></div></details>`;
+ el.querySelector('details').ontoggle=()=>{if(el.querySelector('details').open)closeGlobeMenus();};
+ el.querySelectorAll('[data-news-filter]').forEach(input=>input.onchange=()=>{if(['from','to'].includes(input.dataset.newsFilter)&&input.value&&!InvNewsFilters.day(input.value))return;F[input.dataset.newsFilter]=input.value;Object.assign(F,InvNewsFilters.normalize(F,T0,winMin()));if(input.dataset.newsFilter==='cat')press($('cats'),F.cat);refresh();});
+ el.querySelector('[data-news-filter-clear]').onclick=()=>{F.country=F.from=F.to='';refresh();};if(focused)el.querySelector(`[data-news-filter="${focused}"]`)?.focus({preventScroll:true});
+ placeNewsFilters();
+}
+function placeNewsFilters(){const dest=phone()?$('fs-details'):$('lcol');if(dest&&newsFilterPanel.parentNode!==dest)phone()?dest.append(newsFilterPanel):dest.prepend(newsFilterPanel);}
+addEventListener('resize',newsFilterUI);
+
+addEventListener('click',e=>{const details=newsFilterPanel?.querySelector('details');if(!phone()&&details?.open&&!e.composedPath().includes(newsFilterPanel))details.open=false;});
+addEventListener('keydown',e=>{const details=newsFilterPanel?.querySelector('details');if(e.key==='Escape'&&!phone()&&details?.open){details.open=false;details.querySelector('summary').focus();}});
+
 const PRE=(()=>{try{return JSON.parse(localStorage.getItem('inv-news-presets')||'[]')}catch{return[]}})();
 function presetUI(){const el=$('presets');if(!el)return;el.innerHTML=`<b>Saved views</b>${PRE.map((p,i)=>`<span class="ps"><button type="button" data-ps="${i}">${esc(p.n)}</button><button type="button" class="x" data-psx="${i}" aria-label="Delete ${esc(p.n)}">×</button></span>`).join('')}<button type="button" class="add" data-psadd>+ Save current view</button><small>Saved on this device only</small>`;}
 document.addEventListener('click',async e=>{const a=e.target.closest('[data-psadd],[data-ps],[data-psx]');if(!a)return;
- if(a.dataset.psadd!==undefined){const parts=[F.region==='global'?'All regions':(regionDefinition(F.region)?.[1]||F.region),F.cat==='all'?null:CAT[F.cat],F.win.toUpperCase()].filter(Boolean);PRE.push({n:parts.join(' · '),r:F.region,c:F.cat,w:F.win});if(PRE.length>8)PRE.shift();}
+ if(a.dataset.psadd!==undefined){const parts=[F.region==='global'?'All regions':(regionDefinition(F.region)?.[1]||F.region),F.cat==='all'?null:CAT[F.cat],F.country?nm(F.country):null,F.from||null,F.to||null,F.win.toUpperCase()].filter(Boolean);PRE.push({n:parts.join(' · '),r:F.region,c:F.cat,w:F.win,country:F.country,from:F.from,to:F.to});if(PRE.length>8)PRE.shift();}
  else if(a.dataset.psx!==undefined)PRE.splice(+a.dataset.psx,1);
- else{const p=PRE[+a.dataset.ps];if(p){F.region=p.r;F.cat=p.c;press($('cats'),p.c);press($('regions'),p.r);await setWin(p.w);try{$('reg-label').textContent=(p.r==='global'?'All regions':regionDefinition(p.r)[1]);}catch{}render();}}
+ else{const p=PRE[+a.dataset.ps];if(p){F.region=p.r;F.cat=p.c;F.country=p.country||'';F.from=p.from||'';F.to=p.to||'';press($('cats'),p.c);press($('regions'),p.r);await setWin(p.w);try{$('reg-label').textContent=(p.r==='global'?'All regions':regionDefinition(p.r)[1]);}catch{}render();}}
  try{localStorage.setItem('inv-news-presets',JSON.stringify(PRE))}catch{}presetUI();});
 let mvF = 'all';
-$('gswitch').onclick = e => { const b = e.target.closest('button'); if (!b) return; if (b.dataset.m === 'projects') return projSet(true); projSet(false); if (typeof marketSetMode === 'function') marketSetMode(b.dataset.m); };
+$('gswitch').onclick = e => { const b=e.target.closest('button');if(!b)return;if(b.dataset.m==='projects')return projSet(true);projSet(false,{mode:b.dataset.m});if(typeof marketSetMode==='function')marketSetMode(b.dataset.m); };
 function sideData() {
-  const vis = stories.filter(st => inRegion(st.location.region,F.region)&&inTime(st)&&(!F.mine||touchesWatch(st))&&(F.lens==='all'||st.lens.includes(F.lens))), seen = new Map();
+  const vis = stories.filter(st => InvNewsFilters.match(st,F)&&inRegion(st.location.region,F.region)&&inTime(st)&&(!F.mine||touchesWatch(st))&&(F.lens==='all'||st.lens.includes(F.lens))), seen = new Map();
   vis.forEach(st => impactsOf(st).forEach(i => { const a = assetForImpact(i); if (!a || typeof a.d !== 'number' || !isFinite(a.d) || Math.abs(a.d) > 25 || a.u === 'bp') return; const k = a.s; const e = seen.get(k) || { a, n: 0, cats: new Set() }; e.n++; e.cats.add(st.category); seen.set(k, e); }));
   return { vis, assets: [...seen.values()] };
 }
 function renderSide() {
-  try{const was=document.documentElement.classList.contains('act-on');renderAct();if(was!==document.documentElement.classList.contains('act-on'))requestAnimationFrame(size);}catch(e){console.warn(e)}
+  // Restore News layout before evaluating the activity strip's visibility.
   try{placeLeft()}catch{}
+  try{const was=document.documentElement.classList.contains('act-on');renderAct();if(was!==document.documentElement.classList.contains('act-on'))requestAnimationFrame(size);}catch(e){console.warn(e)}
   const on = !EMBED && !phone() && innerWidth >= 1180 && view.k === 'top' && !document.documentElement.classList.contains('market-mode');
   document.documentElement.classList.toggle('side-on', on);
   [sideSec, sideImp, sideBar].forEach(x => x.hidden = !on); sideImp.hidden = !on || panel.hidden; if (!on) return;
@@ -2399,8 +2549,24 @@ function renderSide() {
     sideBar.innerHTML = `<div class="sb-t"><b>Moving on the news</b><small>Assets named in ${W} articles</small></div>${big.map(e => `<a class="sb-c" href="../../news.html?mover=${encodeURIComponent(e.a.s)}"><b>${esc(e.a.n || e.a.s)}</b><small>${e.n} art.</small><em class="${cl(e.a.d)}">${pc(e.a.d)}</em></a>`).join('')}<small class="meta" style="flex:none;font-size:10.5px">Daily moves. Not investment advice.</small>`;
 }
 addEventListener('resize', () => renderSide());
-setTimeout(()=>{presetUI();placeLeft();size();if(PROJ_START)projSet(true);},0);
+const sheetActions = document.querySelector('.sheet-actions');
+function detailHeader() {
+  const back = pbody.querySelector('[data-back]');
+  if (!back) { panel.insertBefore(sheetActions, pbody); return; }
+  const header = document.createElement('div'); header.className = 'detail-header';
+  const row = document.createElement('div'); row.className = 'detail-controls';
+  row.append(back, sheetActions);
+  const follow = pbody.querySelector('[data-follow]');
+  if (follow) sheetActions.insertBefore(follow, sheetActions.querySelector('#sheet-close'));
+  header.append(row);
+  const tabs = pbody.querySelector('.gm-tabs'); if (tabs) header.append(tabs);
+  pbody.prepend(header);
+}
+setTimeout(()=>{presetUI();placeLeft();newsFilterUI();size();if(PROJ_START)projSet(true);},0);
 function render() {
+  // Preserve the existing action buttons and their listeners across renders.
+  sheetActions.querySelector('[data-follow]')?.remove();
+  panel.insertBefore(sheetActions, pbody);
   panel.dataset.view = view.k; peekUpdate(); dockUpdate();
   document.documentElement.classList.toggle('panel-top', !!PANEL_TEMPLATE && view.k === 'top');
   if (!panelInitialized) { panelInitialized = true; if (phone() && PANEL_TEMPLATE === 'b') panel.classList.add('open'); }
@@ -2434,7 +2600,7 @@ function render() {
     const list = view.ids.map(i => byId[i]).sort(sortTop);
     pbody.innerHTML = `<button class="back" data-back>← Back</button><div class="eyebrow">${esc(nm(list[0].location.country))}</div><h2>${esc(list[0].location.place)}</h2><div class="stats"><div><b>${list.length}</b>articles here</div></div><div class="list">${list.map(item).join('')}</div>${noteHTML()}`;
   }
-  syncDetailActions();
+  detailHeader();
 }
 
 // ===== Search: countries, places, companies and stories =====
@@ -2453,11 +2619,11 @@ function search() {
   res.hidden = false; mark();
 }
 const mark = () => res.querySelectorAll('.ri').forEach(b => b.setAttribute('aria-selected', +b.dataset.i === hi));
-async function choose(h) { if (!h) return; res.hidden = true; qi.value = ''; qi.blur(); if (h.k === 'country') openCountry(h.c); else { if (!match(h.s)) { F.cat = 'all'; F.lens = 'all'; F.region = 'global'; press($('cats'), 'all'); press($('regions'), 'global'); await setWin('7d'); } openStory(h.s); } }
+async function choose(h) { if (!h) return; res.hidden = true; qi.value = ''; qi.blur(); if (h.k === 'country') openCountry(h.c); else { if (!match(h.s)) { F.cat = 'all'; F.lens = 'all'; F.region = 'global'; F.country=F.from=F.to=''; press($('cats'), 'all'); press($('regions'), 'global'); await setWin('7d'); } openStory(h.s); } }
 qi.addEventListener('focus', () => { qi.blur(); if (window.InvPeek) InvPeek.search(); else search(); });
 window.InvGlobeNav = {
   country: n => { const c = byName[n]; if (!c) return false; openCountry(c); return true; },
-  story: async id => { const s = byId[id]; if (!s) return false; if (!match(s)) { F.cat = 'all'; F.lens = 'all'; F.region = 'global'; press($('cats'), 'all'); press($('regions'), 'global'); await setWin('7d'); } openStory(s); return true; }
+  story: async id => { const s = byId[id]; if (!s) return false; if (!match(s)) { F.cat = 'all'; F.lens = 'all'; F.region = 'global'; F.country=F.from=F.to=''; press($('cats'), 'all'); press($('regions'), 'global'); await setWin('7d'); } openStory(s); return true; }
 };
 qi.addEventListener('keydown', e => {
   if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); hi = (hi + (e.key === 'ArrowDown' ? 1 : -1) + hits.length) % Math.max(1, hits.length); mark(); }
@@ -2528,7 +2694,7 @@ const TB = 'a';  // chosen design: time pill under Filters (owner, 2026-11-06)
 const tbEl = document.createElement('div'); tbEl.id = 'tb'; tbEl.className = 'tb tb-' + TB + ' glass'; document.body.appendChild(tbEl);
 async function setWin(k) {
   const selection = ++historySelection;
-  play = null; F.win = k; historyError = false;
+  play = null; F.win = k; Object.assign(F,InvNewsFilters.normalize(F,T0,winMin()));historyError = false;
   historyLoading = !EMBED && ['7d', '30d'].includes(k);
   press($('wins'), k); refresh(); syncTb();
   if (historyLoading) {
@@ -2849,17 +3015,17 @@ $('fsheet').querySelector('.fs-head').addEventListener('pointerup',e=>{if(filter
 $('fsheet').querySelector('.fs-head').style.touchAction='none';
 $('m-filters').onclick = openFilters; $('fs-close').onclick = () => closeFilters(); $('fsback').onclick = () => closeFilters(); $('fs-show').onclick = () => closeFilters();
 $('m-search').onclick = () => { if (window.InvPeek) InvPeek.search(); else qi.focus(); };
-$('fs-reset').onclick = () => { F.mine = false; for (const [box, k] of [[$('cats'), 'all'], [$('regions'), 'global'], [$('wins'), '48h']]) box.querySelector(`[data-k="${k}"]`).click(); };
+$('fs-reset').onclick = () => { F.mine = false;F.country=F.from=F.to='';for (const [box, k] of [[$('cats'), 'all'], [$('regions'), 'global'], [$('wins'), '48h']]) box.querySelector(`[data-k="${k}"]`).click(); };
 $('fsheet').addEventListener('keydown', e => {
   if (e.key === 'Escape') { e.stopPropagation(); closeFilters(); return; }
   if (e.key !== 'Tab') return;
-  const f = [...$('fsheet').querySelectorAll('button,[href],input')].filter(x => x.offsetParent !== null); if (!f.length) return;
+  const f = [...$('fsheet').querySelectorAll('button,[href],input,select')].filter(x => x.offsetParent !== null); if (!f.length) return;
   const first = f[0], last = f[f.length - 1];
   if (e.shiftKey && (document.activeElement === first || document.activeElement === $('fs-title'))) { e.preventDefault(); last.focus(); }
   else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
 });
 function updateFiltersUI() {
-  const n = (F.lens !== 'all') + (F.region !== 'global') + (F.win !== '48h'), c = $('m-fcount');
+  const n = (F.lens !== 'all') + (F.region !== 'global') + (F.win !== '48h') + !!F.country + !!F.from + !!F.to, c = $('m-fcount');
   c.hidden = !n; c.textContent = n; $('m-filters').setAttribute('aria-label', n ? `Filters, ${n} active` : 'Filters');
   $('fs-show').textContent = `Show ${shown.length} ${shown.length === 1 ? 'article' : 'articles'}`;
 }
@@ -2894,6 +3060,8 @@ function toggleNavSheet() {
 $('dock').onclick = e => {
   const b = e.target.closest('button'); if (!b || !phone()) return;
   gmAutoSheet = false;
+  if(b.dataset.v==='projects')return projSet(true);
+  if(PROJ.on)projSet(false,{mode:b.dataset.v==='markets'?'markets':'news'});
   if (phoneView === b.dataset.v && phoneView !== 'globe') return toggleNavSheet();
   phoneView = b.dataset.v; $('peek').classList.remove('minimized');
   marketSetMode(phoneView === 'markets' ? 'markets' : 'news');
@@ -2967,6 +3135,16 @@ const marketControl=document.createElement('div');marketControl.className='marke
 const marketNum=v=>Number.isFinite(v)?v.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}):'—';
 const marketCountry=code=>Object.keys(ISO).find(n=>ISO[n]===code);
 const marketGroup=name=>(MKT.all||[]).filter(a=>a.k===nm(name));
+// Device-local country favourites reuse inv-watch.c; no new account sync is claimed.
+function mkWatchRead(){try{const v=JSON.parse(localStorage.getItem('inv-watch')||'{}');return v&&typeof v==='object'&&!Array.isArray(v)?v:{}}catch{return {}}}
+function mkFavouriteName(name){return Object.hasOwn(ISO,name)?name:Object.entries(NAME).find(([,display])=>display===name)?.[0]||null;}
+function mkFavourites(){const c=mkWatchRead().c;return (Array.isArray(c)?c:[]).filter(x=>x&&typeof x.k==='string').map(x=>({...x,k:mkFavouriteName(x.k)})).filter(x=>x.k);}
+function mkIsFavourite(name){return mkFavourites().some(c=>c.k===name);}
+function mkFavouriteButton(name){if(!name)return '';const on=mkIsFavourite(name);return `<button type="button" class="mk-favourite" data-market-favourite="${esc(name)}" aria-pressed="${on}" aria-label="${on?'Remove '+esc(nm(name))+' from':'Add '+esc(nm(name))+' to'} favourite markets"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z" fill="${on?'currentColor':'none'}" stroke="currentColor" stroke-width="1.5"/></svg></button>`;}
+function mkFavouritesHTML(){const list=mkFavourites();return `<section class="mk-favourites" aria-label="Favourite markets"><h4>Favourites <small>this device only</small></h4>${list.length?list.map(c=>`<div><button type="button" data-favourite-country="${esc(c.k)}">${flag(c.k)}<span>${esc(nm(c.k))}</span></button>${mkFavouriteButton(c.k)}</div>`).join(''):'<p>Star a country or a market session to keep it here.</p>'}</section>`;}
+function mkToggleFavourite(name){if(!Object.hasOwn(ISO,name))return;const L=mkWatchRead(),countries=Array.isArray(L.c)?L.c:[],on=countries.some(c=>mkFavouriteName(c?.k)===name);L.c=on?countries.filter(c=>mkFavouriteName(c?.k)!==name):[{k:name},...countries];try{localStorage.setItem('inv-watch',JSON.stringify(L));}catch{toast('Favourites could not be saved on this device.');return;}if(!marketPanel.hidden&&MARKET.selected)marketRender();mkdRender();mkSessRender();if(phone()&&phoneView==='markets')render();toast(on?'Market removed from favourites':'Market saved · this device only');}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-market-favourite]');if(b){e.preventDefault();e.stopPropagation();mkToggleFavourite(b.dataset.marketFavourite);return;}const c=e.target.closest('[data-favourite-country]');if(c){e.preventDefault();marketSelect(c.dataset.favouriteCountry);}});
+addEventListener('storage',e=>{if(e.key==='inv-watch'||e.key===null){if(!marketPanel.hidden&&MARKET.selected)marketRender();mkdRender();if(phone()&&phoneView==='markets')render();}});
 function marketInit(){
  if(!MARKET.ecbP)MARKET.ecbP=fetch('fx-ecb.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(j=>{MARKET.ecb=j;if(MARKET.selected)marketRender();mkdRender();}).catch(()=>{});
  if(MARKET.promise)return MARKET.promise;
@@ -2985,12 +3163,12 @@ function marketInit(){
   MARKET.articles=[...articles.values()].sort((a,b)=>Date.parse(b.published_at)-Date.parse(a.published_at));MARKET.ready=true;try{mkSessRender();mkdRender()}catch{};if(MARKET.selected){MARKET.selectedVenue=marketVenue(MARKET.selected,MARKET.selectedVenue)?.id||null;marketRender();}
  }).catch(()=>{MARKET.error=true;if(MARKET.selected)marketRender();});return MARKET.promise;
 }
-function marketSetMode(mode){setTimeout(()=>{try{mkSessRender();mkdRender()}catch{}},0);setTimeout(()=>{if(typeof renderSide==='function')renderSide();document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.m==='projects'?false:(b.dataset.m==='markets')===(mode==='markets'))));size();},0);
+function marketSetMode(mode){setTimeout(()=>{try{mkSessRender();mkdRender()}catch{}},0);setTimeout(()=>{if(typeof renderSide==='function')renderSide();document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String(document.documentElement.classList.contains('proj-mode')?b.dataset.m==='projects':b.dataset.m==='projects'?false:(b.dataset.m==='markets')===(mode==='markets'))));size();},0);
  MARKET.on=mode==='markets';document.documentElement.classList.toggle('market-mode',MARKET.on);const u=new URL(location.href);MARKET.on?u.searchParams.set('mode','markets'):u.searchParams.delete('mode');history.replaceState(null,'',u);marketControl.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.mode==='markets')===MARKET.on)));
  qi.placeholder=MARKET.on?'Search countries, exchanges, indices & companies':'Search assets, countries & articles';if(MARKET.on)marketInit();else marketClose();
 }
 function marketVenue(name,id){const code=ISO[name];return MARKET.markers.find(e=>e.id===id&&e.country===code)||MARKET.markers.find(e=>e.id===MARKET.defaultVenues[code])||MARKET.markers.find(e=>e.country===code);}
-function marketSelect(name,venue){if(!byName[name])return;if(MARKET.selected!==name){MARKET.tab='attention';MARKET.ctab='overview';}MARKET.selected=name;MARKET.selectedVenue=marketVenue(name,venue)?.id||venue||null;selCountry=byName[name];flyTo(selCountry.c[0],selCountry.c[1],Zt);sel=null;spin=null;marketPanel.hidden=false;marketRender();marketInit();}
+function marketSelect(name,venue){if(!byName[name])return;if(phone())setSheet('closed');if(MARKET.selected!==name){MARKET.tab='attention';MARKET.ctab='overview';}MARKET.selected=name;MARKET.selectedVenue=marketVenue(name,venue)?.id||venue||null;selCountry=byName[name];flyTo(selCountry.c[0],selCountry.c[1],Zt);sel=null;spin=null;marketPanel.hidden=false;marketRender();marketInit();}
 function marketNotifyPanel(){if(!EMBED)return;const r=marketPanel.getBoundingClientRect();parent.postMessage({type:'investedia-market-panel',open:!marketPanel.hidden,rect:{left:r.left,top:r.top,right:r.right,bottom:r.bottom}},location.origin);}
 function marketClose(){marketPanel.hidden=true;setTimeout(mkdRender,0);requestAnimationFrame(size);MARKET.labels=[];MARKET.drawnLines=[];marketNotifyPanel();}
 function marketRows(){
@@ -3003,7 +3181,7 @@ function marketRenderOld(){
  const tile=(label,value,sub)=>`<div><small>${esc(label)}</small><b>${value}</b><small>${sub}</small></div>`,missing='—';
  const content=MARKET.tab==='performers'?'<p class="market-empty">Licensed historical prices are not available. No 30-day performance ranking is shown.</p>':(MARKET.tab==='sectors'?sectors:attention).slice(0,3).map(r=>`<div class="market-mention"><span>${esc(r.name)}</span><span>${r.n} ${r.n===1?'article':'articles'}</span></div>`).join('')||`<p class="market-empty">${MARKET.ready?'No verified '+(MARKET.tab==='sectors'?'sector':'company')+' mentions in the last 30 days.':MARKET.error?'Market data could not load. Please try again.':'Loading market data…'}</p>`;
  const news='../../assets/globe/news.html?country='+encodeURIComponent(name)+'&win=30d&country-tab=news',explore=new URL(news,location.href);explore.searchParams.set('win','30d');explore.searchParams.delete('country-tab');
- marketPanel.innerHTML=`<div class="market-handle" role="separator" tabindex="0" aria-label="Drag market sheet"></div><button class="market-close" type="button" aria-label="Close market">×</button><div class="market-eyebrow">${esc(region)} · Market</div><h2>${flag(name)} ${esc(nm(name))}</h2><p class="market-exchange">${ex?`${esc(ex.name)} (${esc(ex.short)}) · ${esc(ex.city)} · ${esc(fx?.n||ex.currency)} (${esc(ex.currency)})`:missing}</p><div class="market-kpis">${tile(ix?.n||ex?.benchmark_name||(ex?ex.short+' benchmark':'Benchmark index'),marketNum(ix?.p),Number.isFinite(ix?.d)?`<span class="${ix.d>0?'market-up':ix.d<0?'market-down':'market-flat'}">${ix.d>0?'↑':ix.d<0?'↓':'↔'} ${Math.abs(ix.d).toFixed(2)}%</span> · delayed`:missing)}${tile(fx?.s?.replace(/(.{3})(.{3})/,'$1/$2')||'Currency vs USD',marketNum(fx?.p),fx?'delayed':missing)}${tile('Inflation',infl?infl[1].toFixed(1)+'%':'—',infl?infl[0]+' · WB':missing)}</div><div class="market-section"><b>Notable developments</b><a href="${news}" target="${EMBED?'_top':'_self'}">${list.length} →</a></div>${important.map(a=>`<a class="market-article" href="../../assets/globe/news.html?story=${encodeURIComponent(a.id)}" target="${EMBED?'_top':'_self'}"><span>${esc(a.headline)}</span><small>${esc(a.source?.name||'')} · ${new Date(a.published_at).toLocaleDateString('en-GB',{day:'numeric',month:'short'})}</small></a>`).join('')||'<p class="market-empty">No important articles in the last 30 days.</p>'}<div class="market-section"><b>Market Momentum</b><small>30 days</small></div><div class="market-tabs" role="tablist">${['performers','attention','sectors'].map(t=>`<button type="button" role="tab" data-market-tab="${t}" aria-selected="${t===MARKET.tab}">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}</div><div role="tabpanel">${content}</div><p class="market-footnote">Verified article mentions, last 30 days. Not a recommendation.</p><a class="market-explore" href="${explore.href}" target="${EMBED?'_top':'_self'}">Explore ${esc(nm(name))} →</a><div class="market-legend"><span>━ Trade</span><span>━ Investment</span></div><small class="market-source">${MARKET.links.some(l=>l.from===code||l.to===code)?'Trade 2024 · UN Comtrade. Investment 2023 · IMF CPIS. ':'No bilateral link data yet.'} Prices delayed. Not investment advice.</small>`;
+ marketPanel.innerHTML=`<div class="market-handle" role="separator" tabindex="0" aria-label="Drag market sheet"></div><button class="market-close" type="button" aria-label="Close market">×</button><div class="market-eyebrow">${esc(region)} · Market</div><h2>${flag(name)} ${esc(nm(name))}</h2><p class="market-exchange">${ex?`${esc(ex.name)} (${esc(ex.short)}) · ${esc(ex.city)} · ${esc(fx?.n||ex.currency)} (${esc(ex.currency)})`:missing}</p><div class="market-kpis">${tile(ix?.n||ex?.benchmark_name||(ex?ex.short+' benchmark':'Benchmark index'),marketNum(ix?.p),Number.isFinite(ix?.d)?`<span class="${ix.d>0?'market-up':ix.d<0?'market-down':'market-flat'}">${ix.d>0?'↑':ix.d<0?'↓':'↔'} ${Math.abs(ix.d).toFixed(2)}%</span> · delayed`:missing)}${ex?.currency === 'USD' ? tile('Currency', 'USD (base)', '') : tile(fx?.s?.replace(/(.{3})(.{3})/,'$1/$2')||'Currency vs USD',marketNum(fx?.p),fx?'delayed':missing)}${tile('Inflation',Number.isFinite(infl?.[1])?infl[1].toFixed(1)+'%':'—',infl?infl[0]+' · WB':missing)}</div><div class="market-section"><b>Notable developments</b><a href="${news}" target="${EMBED?'_top':'_self'}">${list.length} →</a></div>${important.map(a=>`<a class="market-article" href="../../assets/globe/news.html?story=${encodeURIComponent(a.id)}" target="${EMBED?'_top':'_self'}"><span>${esc(a.headline)}</span><small>${esc(a.source?.name||'')} · ${new Date(a.published_at).toLocaleDateString('en-GB',{day:'numeric',month:'short'})}</small></a>`).join('')||'<p class="market-empty">No important articles in the last 30 days.</p>'}<div class="market-section"><b>Market Momentum</b><small>30 days</small></div><div class="market-tabs" role="tablist">${['performers','attention','sectors'].map(t=>`<button type="button" role="tab" data-market-tab="${t}" aria-selected="${t===MARKET.tab}">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}</div><div role="tabpanel">${content}</div><p class="market-footnote">Verified article mentions, last 30 days. Not a recommendation.</p><a class="market-explore" href="${explore.href}" target="${EMBED?'_top':'_self'}">Explore ${esc(nm(name))} →</a><div class="market-legend"><span>━ Trade</span><span>━ Investment</span></div><small class="market-source">${MARKET.links.some(l=>l.from===code||l.to===code)?'Trade 2024 · UN Comtrade. Investment 2023 · IMF CPIS. ':'No bilateral link data yet.'} Prices delayed. Not investment advice.</small>`;
  marketPanel.querySelector('.market-close').onclick=marketClose;marketPanel.querySelectorAll('[data-market-tab]').forEach(b=>b.onclick=()=>{MARKET.tab=b.dataset.marketTab;marketRender();});
  const handle=marketPanel.querySelector('.market-handle');let start;handle.onpointerdown=e=>{start=e.clientY;handle.setPointerCapture(e.pointerId);};handle.onpointerup=e=>{if(start!==undefined){const delta=e.clientY-start;if(delta>70)marketClose();else if(delta>35)marketPanel.style.height='26vh';if(delta< -35)marketPanel.style.height='36vh';}start=undefined;marketNotifyPanel();};handle.onkeydown=e=>{if(e.key==='ArrowDown')marketPanel.style.height='26vh';if(e.key==='ArrowUp')marketPanel.style.height='36vh';if(e.key==='Escape')marketClose();marketNotifyPanel();};marketNotifyPanel();
 }
@@ -3028,7 +3206,7 @@ function marketRender(){
  if(MARKET.ctab==='overview'){
   body=`<div class="mk-strip">${cell('Exchange',main?esc(main[1].short)+(main[2]?` <i class="mk-dot ${main[2].open?'on':''}" title="${main[2].label}"></i>`:''):'—','now')}${cell('Currency',esc(cur||'—'),'ISO 4217')}${cell('GDP growth',g?pct(g[1],1):'—',g?g[0]:'')}${cell('Inflation',v('infl')?pct(v('infl')[1]):'—',v('infl')?.[0]||'')}</div>`
   +`<h5 class="mk-h">Exchanges<em>exchange-calendars · regular hours</em></h5>${st.length?`<table class="mk-t"><tr><th>Exchange</th><th>MIC</th><th>Session (local)</th><th class="r">Now</th></tr>${st.map(([mic,e,s])=>`<tr><td>${esc(e.short)}<small>${esc(e.city||'')}</small></td><td class="mn">${esc(mic)}</td><td class="mn">${s?s.hours:'—'}<small>${s?esc(s.tz):''}</small></td><td class="r">${s?`<span class="${s.open?'mk-open':'mk-closed'}">● ${s.label}</span>`:'—'}</td></tr>`).join('')}</table><p class="mk-note">Regular hours; holidays and half days not shown.</p>`:'<p class="mk-empty">No verified stock exchange for this country yet.</p>'}`
-  +`<h5 class="mk-h">Currency<em>ECB reference rate</em></h5>${(()=>{const r=cur&&cur!=='USD'?MARKET.ecb?.usd?.[cur]:null;if(cur==='USD')return '<p class="mk-empty">US dollar is the base currency.</p>';return r?`<table class="mk-t"><tr><td>USD/${esc(cur)}<span class="mk-tag">Daily ref.</span></td><td class="r mn">${r.toFixed(r>=100?2:4)}</td><td class="r mu">${new Date(MARKET.ecb.as_of+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}</td></tr></table><p class="mk-note">Derived from ECB euro reference rates (EUR/${esc(cur)} ÷ EUR/USD). Not a live or tradable price.</p>`:`<table class="mk-t"><tr><td>${cur?'USD/'+esc(cur):'Currency rate'}</td><td class="r na">Not available</td></tr></table><p class="mk-note">The ECB publishes reference rates for about 30 currencies only.</p>`;})()}`+`<h5 class="mk-h">Economy<em>World Bank WDI · annual</em></h5>${eco?`<table class="mk-t"><tr><th>Indicator</th><th class="r">Value</th><th class="r">Period</th></tr>${[...rows,['Policy interest rate',null],['Government debt (% GDP)',null]].map(([l,val,y])=>`<tr><td>${l}</td><td class="r ${val?'mn':'na'}">${val||'Not available'}</td><td class="r mu">${val?y:''}</td></tr>`).join('')}</table>`:'<p class="mk-empty">No World Bank data for this country.</p>'}`
+  +`<h5 class="mk-h">Currency<em>ECB reference rate</em></h5>${(()=>{const r=cur&&cur!=='USD'?MARKET.ecb?.usd?.[cur]:null;if(cur==='USD')return '<p class="mk-empty">US dollar is the base currency.</p>';return r?`<table class="mk-t"><tr><td>USD/${esc(cur)}<span class="mk-tag">Daily ref.</span></td><td class="r mn">${r.toFixed(r>=100?2:4)}</td><td class="r mu">${new Date(MARKET.ecb.as_of+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}</td></tr></table><p class="mk-note">Derived from ECB euro reference rates (EUR/${esc(cur)} ÷ EUR/USD). Not a live or tradable price.</p>`:`<table class="mk-t"><tr><td>${cur?'USD/'+esc(cur):'Currency rate'}</td><td class="r na">Not available</td></tr></table><p class="mk-note">The ECB publishes reference rates for about 30 currencies only.</p>`;})()}`+`<h5 class="mk-h">Economy<em>World Bank WDI · annual</em></h5>${InvEconomy.render(code,eco)}`
   +`<div class="mk-cov"><span class="${st.some(x=>x[2])?'ok':'na'}">${st.some(x=>x[2])?'✓':'—'} Sessions</span><span class="${eco?'ok':'na'}">${eco?'✓':'—'} Economy</span><span class="${MARKET.ecb?.usd?.[cur]||cur==='USD'?'ok':'na'}">${MARKET.ecb?.usd?.[cur]||cur==='USD'?'✓':'—'} Currency (ECB)</span><span class="pa">◐ Companies: in the news only</span><span class="na">— ETFs, bonds: not yet</span></div>`
   +`<p class="mk-src">Sources: ISO 10383 (MIC) · exchange-calendars (Apache 2.0) · ECB · World Bank (CC BY 4.0). Historical annual data unless marked. Not investment advice.</p>`;
  }else if(MARKET.ctab==='companies'){
@@ -3040,8 +3218,8 @@ function marketRender(){
   const dated=list.map(a=>({...a,t:Date.parse(a.published_at)})).filter(a=>Number.isFinite(a.t)).sort((a,b)=>b.t-a.t);
   body=`<h5 class="mk-h">Articles · 30 days</h5>${gmCountryNews(dated,MARKET.newsTopic||'','mk-news')}`;
  }
- marketPanel.innerHTML=`<div class="market-handle" role="separator" tabindex="0" aria-label="Drag market sheet"></div><div class="mk-head">${flag(name)}<div><small>Markets · Country</small><h2>${esc(nm(name))}</h2></div><button class="market-close" type="button" aria-label="Close market">×</button></div><div class="mk-tabs" role="tablist">${tabs.map(([k,l])=>`<button type="button" role="tab" data-ctab="${k}" aria-selected="${MARKET.ctab===k}">${l}</button>`).join('')}</div><div class="mk-body">${body}</div>`;
- marketPanel.hidden=false;setTimeout(mkdRender,0);
+ marketPanel.innerHTML=`<div class="market-handle" role="separator" tabindex="0" aria-label="Drag market sheet"></div><div class="mk-head">${flag(name)}<div><small>Markets · Country</small><h2>${esc(nm(name))}</h2></div>${mkFavouriteButton(name)}<button class="market-close" type="button" aria-label="Close market">×</button></div><div class="mk-tabs" role="tablist">${tabs.map(([k,l])=>`<button type="button" role="tab" data-ctab="${k}" aria-selected="${MARKET.ctab===k}">${l}</button>`).join('')}</div><div class="mk-body">${body}</div>`;
+ InvEconomy.bind(marketPanel,code=>MARKET.economy?.countries?.[code]);marketPanel.hidden=false;setTimeout(mkdRender,0);
  marketPanel.querySelector('.market-close').onclick=marketClose;marketPanel.querySelectorAll('[data-ctab]').forEach(b=>b.onclick=()=>{MARKET.ctab=b.dataset.ctab;marketRender();});
  const handle=marketPanel.querySelector('.market-handle');let start;handle.onpointerdown=e=>{start=e.clientY;handle.setPointerCapture(e.pointerId);};handle.onpointerup=e=>{if(start!==undefined){const delta=e.clientY-start;if(delta>70)marketClose();else if(delta>35)marketPanel.style.height='26vh';if(delta< -35)marketPanel.style.height='60vh';}start=undefined;marketNotifyPanel();};
  marketNotifyPanel();requestAnimationFrame(size);
@@ -3072,7 +3250,7 @@ function mkdRender(){
  const sb=document.getElementById('sbox')?.getBoundingClientRect();mkL.style.top=((sb?.bottom||100)+12)+'px';
  // sessions
  const S=MKD_EX.filter(([m])=>MARKET.exchanges?.[m]).map(([m,c])=>{const e=MARKET.exchanges[m],st=mkStatus(e);return {m,c,e,st};}).filter(x=>x.st);
- mkL.innerHTML=`<h4>Market sessions <span>now · regular hours</span></h4>${S.map(x=>`<button type="button" class="mkd-sr" data-mic="${x.m}"><span>${esc(x.c)}<small>${esc(x.e.short)} · ${x.st.hours} local</small></span><em class="${x.st.open?'u':''}">● ${x.st.open?'Open':'Closed'}</em></button>`).join('')||'<p class="mkd-e">Loading sessions…</p>'}<p class="mkd-n">Holidays and half days not shown.</p>`;
+ mkL.innerHTML=`<h4>Market sessions <span>now · regular hours</span></h4>${S.map(x=>`<div class="mk-session-row"><button type="button" class="mkd-sr" data-mic="${x.m}"><span>${esc(x.c)}<small>${esc(x.e.short)} · ${x.st.hours} local</small></span><em class="${x.st.open?'u':''}">● ${x.st.open?'Open':'Closed'}</em></button>${mkFavouriteButton(marketCountry(x.e.country))}</div>`).join('')||'<p class="mkd-e">Loading sessions…</p>'}<p class="mkd-n">Holidays and half days not shown.</p>`;
  mkL.querySelectorAll('[data-mic]').forEach(b=>b.onclick=()=>{const e=MARKET.exchanges[b.dataset.mic],n=Object.keys(ISO).find(k=>ISO[k]===e.country);if(n)marketSelect(n,b.dataset.mic);});
  // overview
  const H=MARKET.ecb?.usd_hist,days=H?Object.keys(H).sort():[],d1=days[days.length-1],d0=days[days.length-2];
@@ -3089,7 +3267,7 @@ function mkdRender(){
  const RG=[['Americas',['na','latam'],['BRL','MXN','CAD']],['Europe',['eu'],['GBP','EUR','CHF','SEK','NOK','PLN','CZK','HUF','DKK']],['Asia-Pacific',['asia','oc'],['JPY','CNY','KRW','INR','AUD','IDR','SGD','HKD','THB','PHP','MYR','NZD']],['Africa & Middle East',['af','me'],['ZAR','ILS','TRY']]];
  const regRows=RG.map(([n,rs,cs])=>{const L=all.filter(x=>cs.includes(x.c)).sort((a,b)=>a.d1-b.d1),cnt=mArts.filter(st=>rs.includes(st.location?.region)).length;return `<div class="mkd-rg"><span>${n}</span><small>${cnt} art.</small><span>${L.length?esc(L[L.length-1].c)+' '+pc(L[L.length-1].d1):'—'}</span><span>${L.length?esc(L[0].c)+' '+pc(L[0].d1):'—'}</span></div>`;}).join('');
  const th=(k,l)=>`<button type="button" data-fs="${k}" class="${sk===k?'on':''}">${l}${sk===k?' ↓':''}</button>`;
- mkO.innerHTML=`<h3>Markets overview</h3><p class="mkd-n" style="margin:0 0 10px">Pick a country on the globe for its detail.</p>
+ mkO.innerHTML=`<h3>Markets overview</h3>${mkFavouritesHTML()}<p class="mkd-n" style="margin:0 0 10px">Pick a country on the globe for its detail.</p>
  <div class="mkd-kp"><div><b>${openN}/${S.length}</b><small>Exchanges open</small></div><div><b>${all.length}</b><small>Currencies (ECB)</small></div><div><b>${mArts.length}</b><small>Market articles ${F.win.toUpperCase()}</small></div><div><b>${next[0]?new Date(next[0].at).toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}):'—'}</b><small>Next release</small></div></div>
  <h4>Currencies vs USD <span>${d1?'ECB reference · '+fmtD(d1):'ECB'}</span></h4>${all.length?`<div class="mkd-ft mkd-fh">${th('c','Pair')}<span>Rate</span>${th('d1','1D')}${th('w1','1W')}${th('m1','1M')}<span></span></div>`+all.slice(0,MARKET.fxAll?all.length:8).map(x=>`<div class="mkd-ft"><b>${esc(x.c)}</b><span>${x.v.toLocaleString('en-US',{maximumFractionDigits:x.v>=100?2:4,minimumFractionDigits:x.v>=100?2:4})}</span>${pc(x.d1)}${pc(x.w1)}${pc(x.m1)}${x.s.length>2?mkdSpark(x.s,(x.m1||0)<0?'#f87171':'#34d399'):'<span></span>'}</div>`).join('')+`<button type="button" class="mkd-more" data-fxall>${MARKET.fxAll?'Show fewer':'Show all '+all.length}</button>`:'<p class="mkd-e">Reference rates not available.</p>'}
  <p class="mkd-n">Units of each currency per 1 USD; a rise means a weaker currency vs USD. Derived from ECB euro reference rates; not live or tradable prices.</p>

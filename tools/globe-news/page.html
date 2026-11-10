@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="../economy-charts.css">
+<script src="../economy-charts.js"></script>
+<script src="../news-filters.js"></script>
 <meta charset="utf-8"><script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}if(!/[?&]embed=1/.test(location.search))document.documentElement.classList.add('standalone')</script><style>
 @font-face{font-family:"Inter";src:url("/assets/fonts/inter-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
 @font-face{font-family:"Geist Mono";src:url("/assets/fonts/geist-mono-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
@@ -145,12 +148,28 @@ html.proj-mode :is(.panel,.act,.side-sec,.side-imp,.side-bar,#lcol,.timeline,#ca
 .mkd-ft svg{width:48px;height:18px}.mkd-fh{border-top:0;color:#6c6c74;font-size:10.5px;padding-bottom:2px}.mkd-fh button{font:10.5px Inter,sans-serif;color:#6c6c74;padding:0;text-align:right}.mkd-fh button:first-child{text-align:left}.mkd-fh button.on{color:#ffb27a}
 .mkd-more{display:block;width:100%;margin-top:6px;padding:6px;border:1px solid #2a2a2f;border-radius:8px;color:#ccc;font:12px Inter,sans-serif}
 .mkd-rg{display:grid;grid-template-columns:1fr 46px 82px 82px;gap:6px;padding:7px 0;border-top:1px solid #16161a;font-size:12.5px}.mkd-rg small{color:#77777f;font-size:11px}.mkd-rg .u{color:#34d399}.mkd-rg .d{color:#f87171}
+
+.pjl,.pjs{display:none}
+html.proj-mode .pjl{display:flex;flex-direction:column;position:fixed;left:16px;top:16px;bottom:16px;width:380px;z-index:5;border:1px solid #1f1f23;background:rgba(11,11,13,.96);border-radius:16px;padding:16px;font:13px/1.4 Inter,sans-serif;box-sizing:border-box}
+html.proj-mode .pjs{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;bottom:16px;left:calc(380px + 40px);right:calc(var(--pw) + 40px);z-index:4;border:1px solid #1f1f23;background:rgba(11,11,13,.96);border-radius:14px;font:13px Inter,sans-serif}
+html.proj-mode .pjs div{padding:10px 14px;border-right:1px solid #1f1f23}html.proj-mode .pjs div:last-child{border:0}.pjs b{display:block;font-size:18px;font-weight:600}.pjs small{color:#77777f;font-size:11px}
+html.proj-mode .top{display:none!important}
+.pjl-h b{display:block;font-size:19px}.pjl-h small{color:#8a8a92}.pjq{margin:12px 0 0;height:40px;border:1px solid #2a2a2f;border-radius:10px;background:#0e0e11;color:#eee;padding:0 12px;font:13px Inter,sans-serif}.pjl .pj-f{margin:8px 0 6px}.pjl .pj-f select{max-width:118px}
+.pjl-n{color:#8a8a92;font-size:12px;margin:2px 0 6px}.pjl-list{overflow:auto;flex:1;margin:0 -6px;padding:0 6px}
+.pjr{display:grid;grid-template-columns:72px 1fr 22px;gap:10px;padding:8px;border-radius:10px;border:1px solid transparent;cursor:pointer}.pjr:hover{background:rgba(255,255,255,.03)}.pjr.on{border-color:rgba(255,122,26,.6);background:rgba(255,122,26,.06)}.pjr img,.pji{width:72px;height:50px;border-radius:7px;object-fit:cover}.pji{display:grid;place-items:center;background:#16161a;color:#8a8a92;font-weight:600;font-size:12px}.pjr b{display:block;font-size:13px;line-height:1.25}.pjr small{color:#8a8a92;font-size:11.5px}
+.pjt{display:inline-block;font-size:10.5px;border:1px solid #2e2e33;border-radius:5px;padding:0 6px;margin:4px 4px 0 0;color:#c9c9cf}.pjt.g{color:#6ee7b7;border-color:rgba(110,231,183,.35)}.pjt.o{color:#fbbf24;border-color:rgba(251,191,36,.35)}
+.pjw{color:#9a9aa2;font-size:15px;align-self:start}.pjw[aria-pressed=true]{color:#ff9d5c}.pjmore{width:100%;margin:8px 0;padding:8px;border:1px solid #2a2a2f;border-radius:9px;color:#ccc;font:12.5px Inter,sans-serif}
+html.proj-mode .pj{padding:0!important;overflow:auto}.pjh{position:relative;height:190px}.pjh img{width:100%;height:100%;object-fit:cover;display:block;border-radius:20px 20px 0 0}.pjh span{position:absolute;left:12px;bottom:6px;font-size:9.5px;color:#ddd;text-shadow:0 1px 2px #000}
+.pjd{padding:16px 18px}.pjd h2{margin:8px 0 2px;font-size:21px;letter-spacing:-.015em}.pjd .mu{color:#8a8a92}.pjk{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:12px 0 4px}.pjk div{border:1px solid #1f1f23;border-radius:9px;padding:7px 9px;min-width:0}.pjk b{display:block;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.pjk small{color:#77777f;font-size:10.5px}
+.pjb{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}.pjb .pj-w{height:40px;border-radius:10px;font-size:13px}.pjgo{display:grid;place-items:center;height:40px;border-radius:10px;background:#ff7a1a;color:#111!important;font-weight:650;text-decoration:none}
+@media(max-width:1180px){html.proj-mode .pjs{display:none}}
+@media(max-width:760px){html.proj-mode .pjl{display:none}html.proj-mode .pj{max-height:62vh}}
 /* Swipe-to-watchlist: the orange action is hidden until a row is actually swiped */
 .nd-act{opacity:0;pointer-events:none;transition:opacity .15s}.nd-row.sw .nd-act{opacity:1}
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
-<script src="../runtime-config.js"></script><script src="../live-config.js"></script><script src="../live-data.js"></script><script src="../news-source.js"></script><script src="../connections-source.js"></script><script src="../prefs.js"></script><script src="../sectors.js"></script><script src="../peek.js"></script>
+<script src="../runtime-config.js"></script><script src="../live-config.js"></script><script src="../live-data.js"></script><script src="../news-source.js"></script><script src="../connections-source.js"></script><script src="../projects-data.js"></script><script src="../prefs.js"></script><script src="../sectors.js"></script><script src="../peek.js"></script>
 <script>document.addEventListener("DOMContentLoaded",()=>window.InvConsent?.mount());</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Investedia Globe News (concept)</title>
@@ -796,6 +815,30 @@ html{font-feature-settings:"tnum"}body,button,input,select,textarea{font-family:
 .market-panel .gf-article{text-decoration:none}.market-panel .gf-country-topics{margin:0}.market-panel .gf-day{margin-top:12px}
 html[data-theme=light] .gf-article-meta{color:#984400}html[data-theme=light] :is(.gf-country-topics button,.nd-chips button,.panel-tabs button,.gm-tabs button,.gswitch button,.dd-btn,.tf-btn,.lay-btn,.reg,.chip,.win):is([aria-pressed=true],[aria-selected=true],[aria-expanded=true]){background:rgba(29,29,31,.04)!important;color:var(--fg)!important;border-color:var(--accent)!important}
 .connections-freshness{display:block;padding:8px 4px;font:11px Inter,system-ui,sans-serif;color:var(--fg-2)}
+
+/* Detail controls share the scroll container and reserve their own space. */
+.impact-head .impact-dir{width:auto;height:auto;padding:4px 6px;border-radius:6px;font-size:11px!important;font-weight:500!important;-webkit-text-stroke:0;white-space:nowrap}
+.impact-head{flex-wrap:wrap}
+.detail-header{position:sticky;top:0;z-index:8;background:#121216;border-bottom:1px solid var(--line);margin:-1px 0 14px;padding:0 0 8px}
+.panel .pbody:has(.detail-header){padding-top:0!important}
+.detail-controls{display:flex;align-items:center;justify-content:space-between;min-height:44px;gap:8px}
+.panel .detail-header .sheet-actions{position:static;display:flex;align-items:center;gap:4px;margin-left:auto}
+.panel .detail-header .back{position:static!important;margin:0;min-height:44px;flex-shrink:0;color:var(--fg)!important;font-size:14px!important}
+.detail-header .gm-tabs{margin:4px 0 0}
+.detail-header .follow{padding:6px 10px;white-space:nowrap}
+.panel[data-view=asset] .pbody>.meta{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;line-height:1.5}
+html[data-theme=light] .detail-header{background:#f4f7fb}
+@media(max-width:760px){
+ html[data-panel] .panel:not([data-sheet=closed]) .pbody:has(.detail-header){padding-top:0!important}
+ html[data-panel] .panel:not([data-sheet=closed]) .grab::before{height:18px}
+ .panel .detail-header .sheet-actions button{min-width:36px;width:36px;min-height:44px}
+ .panel .detail-header .sheet-actions .follow{width:auto}
+ .detail-header .gm-tabs button{font-size:11px;min-height:40px;padding:7px 2px}
+}
+
+/* NEWS_FILTERS_CSS */
+.mk-favourite{display:grid;place-items:center;min-width:44px;min-height:44px;color:var(--fg-2);background:none;border:0;border-radius:8px;flex:none}.mk-favourite[aria-pressed=true]{color:#ff7a1a}.mk-favourite:focus-visible{outline:2px solid #ff7a1a;outline-offset:2px}.mk-head>.mk-favourite{margin-left:auto}.mk-session-row{display:grid;grid-template-columns:minmax(0,1fr) 44px;align-items:center;border-bottom:1px solid var(--line)}.mk-session-row .mkd-sr{border:0;min-width:0}.mk-favourites{margin:8px 0 14px}.mk-favourites h4{font:600 13px Inter,sans-serif;margin:0 0 7px}.mk-favourites h4 small{font:10px Inter,sans-serif;color:var(--fg-2);margin-left:8px}.mk-favourites>div{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:6px}.mk-favourites [data-favourite-country]{min-height:44px;display:flex;align-items:center;gap:8px;flex:1;color:var(--fg);text-align:left;font:12px Inter,sans-serif}.mk-favourites img{width:20px;height:14px}.mk-favourites p{font:11px/1.5 Inter,sans-serif;color:var(--fg-2);margin:6px 0 10px}.mp-ss{position:relative;padding-right:44px}.mp-ss>.mk-favourite{position:absolute;right:0;top:0}.mp-ss{width:145px}
+/* PROJECTS_CSS */
 </style>
 <script src="../locale.js"></script>
 </head>
@@ -844,7 +887,7 @@ html[data-theme=light] .gf-article-meta{color:#984400}html[data-theme=light] :is
 <div class="fs-back" id="fsback" hidden></div>
 <section class="fsheet" id="fsheet" role="dialog" aria-modal="true" aria-labelledby="fs-title" hidden>
   <div class="fs-head"><h2 id="fs-title" tabindex="-1">Filters</h2><button type="button" class="fs-btn" id="fs-reset">Reset</button><button type="button" class="fs-btn fs-x" id="fs-close" aria-label="Close filters">✕</button></div>
-  <div class="fs-body"><div class="fs-lbl">Topic</div><div id="fs-cats"></div><div class="fs-lbl">Region</div><div id="fs-regions"></div><div class="fs-lbl">Time</div><div id="fs-time"></div><div class="fs-lbl">Layers</div><div id="fs-layers"></div><div id="fs-foot"></div></div>
+  <div class="fs-body"><div id="fs-details"></div><div class="fs-lbl">Topic</div><div id="fs-cats"></div><div class="fs-lbl">Region</div><div id="fs-regions"></div><div class="fs-lbl">Time</div><div id="fs-time"></div><div class="fs-lbl">Layers</div><div id="fs-layers"></div><div id="fs-foot"></div></div>
   <button type="button" class="fs-show" id="fs-show">Show articles</button>
 </section>
 <div class="peek" id="peek" role="region" aria-label="Top articles" hidden></div>
@@ -859,7 +902,7 @@ html[data-theme=light] .gf-article-meta{color:#984400}html[data-theme=light] :is
 </aside>
 <section class="side-sec glass" id="sideSec" aria-label="Sector overview" hidden></section>
 <section class="side-imp glass" id="sideImp" aria-label="Market impact" hidden></section>
-<aside class="pj glass" id="projPanel" aria-label="Projects preview" hidden></aside>
+<header id="project-topbar" hidden></header><div id="project-mode-subtitle" hidden>Real Estate &amp; Infrastructure</div><aside class="pj glass" id="projPanel" aria-label="Project detail" hidden></aside><section class="pjl glass" id="pjList" aria-label="Projects list"></section><section class="pjs glass" id="pjStats" aria-label="Projects stats"></section>
 <div class="presets" id="presets"></div>
 <section class="act glass" id="act" aria-label="Latest activity and coming up" hidden></section>
 <section class="side-bar glass" id="sideBar" aria-label="Moving on the news" hidden></section>
@@ -923,7 +966,7 @@ const logoOf = s => { for (const e of s.entities) { const l = logoFor(e); if (l)
 const limg = (lg, alt = '') => `<img src="${esc(lg.l)}" alt="${esc(alt)}"${lg.l.startsWith('https://cdn.brandfetch.io') ? ' class="bf"' : ''} data-logo${lg.fb ? ` data-fb="${esc(lg.fb)}"` : ''} loading="lazy" referrerpolicy="strict-origin-when-cross-origin">`;
 addEventListener('error', ev => { const t = ev.target; if (t.tagName !== 'IMG' || !t.hasAttribute('data-logo')) return; if (t.dataset.fb) { t.src = t.dataset.fb; t.removeAttribute('data-fb'); } else (t.closest('.plogo') || t).remove(); }, true);
 addEventListener('inv-consent-change', () => { if (!window.InvConsent.allows('images')) document.querySelectorAll('img.bf').forEach(i => { if(i.dataset.fb){ i.src=i.dataset.fb; delete i.dataset.fb; } else i.remove(); }); });
-const fmtP = (v, sym) => v.toLocaleString('en-US', { maximumFractionDigits: YLD.test(sym) ? 2 : v >= 1000 ? 0 : v >= 10 ? 2 : 4, minimumFractionDigits: YLD.test(sym) ? 2 : 0 });
+const fmtP = (v, sym) => !Number.isFinite(v) ? '—' : v.toLocaleString('en-US', { maximumFractionDigits: YLD.test(sym) ? 2 : v >= 1000 ? 0 : v >= 10 ? 2 : 4, minimumFractionDigits: YLD.test(sym) ? 2 : 0 });
 const outlineCache = {};
 function outline(name, lat, lon) {
   const c = byName[name]; if (!c) return '';
@@ -937,12 +980,13 @@ function outline(name, lat, lon) {
   return outlineCache[key] = `<path d="${d}" fill="rgba(255,122,26,.07)" stroke="rgba(255,140,60,.55)" stroke-width=".7" vector-effect="non-scaling-stroke" fill-rule="evenodd"/>${dot}`;
 }
 function spark(sp, up) {
+  sp = (sp || []).filter(Number.isFinite); if (sp.length < 2) return '';
   const lo = Math.min(...sp), hi = Math.max(...sp), r = hi - lo || 1, pts = sp.map((v, i) => [(i / (sp.length - 1) * 300).toFixed(1), (6 + (1 - (v - lo) / r) * 62).toFixed(1)]);
   const col = up ? '34,197,94' : '240,68,68', id = 'g' + Math.random().toString(36).slice(2, 7);
   return `<svg class="cspark" viewBox="0 0 300 74" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(${col},.28)"/><stop offset="1" stop-color="rgba(${col},0)"/></linearGradient></defs><path d="M0 74L${pts.map(p => p.join(' ')).join('L')}L300 74Z" fill="url(#${id})"/><path d="M${pts.map(p => p.join(' ')).join('L')}" fill="none" stroke="rgb(${col})" stroke-width="1.6" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></svg>`;
 }
 function art(s, label = true) {
-  const qq = quoteOf(s), lg = logoOf(s), ol = outline(s.location.country, s.location.lat, s.location.lon);
+  const rawQuote = quoteOf(s), qq = rawQuote && Number.isFinite(rawQuote.q?.p) && Number.isFinite(rawQuote.q?.d) && rawQuote.q?.sp?.length > 1 && rawQuote.q.sp.every(v => Number.isFinite(v) && v > 0) ? rawQuote : null, lg = logoOf(s), ol = outline(s.location.country, s.location.lat, s.location.lon);
   // B / C: openly licensed photo, always with its credit and licence
   if (s.image && typeof s.image === 'object') {
     const im = s.image, src = esc(im.url || im.file);
@@ -996,22 +1040,23 @@ function briefHTML(c) {
     ${nx ? `<div class="brief-next">Next: <b>${esc(nx.t)}</b> in ${untilText(Date.parse(nx.at) - Date.now())}</div>` : ''}`;
 }
 let TRACK = null; if (window.SinceNews) SinceNews.load('news-track.json').then(t => { TRACK = t; if (view.k === 'article') render(); });
+window.InvEconomyOptions={...Object.fromEntries(Object.entries(ISO).map(([n,c])=>[c,n])),EMU:'Euro area',WLD:'World'};
 let ECON = null; fetch('economy.json').then(r => r.json()).then(d => { ECON = d; if (view.k === 'country') render(); }).catch(() => {});
-const usd = v => v >= 1e12 ? '$' + (v / 1e12).toFixed(v >= 1e13 ? 1 : 2) + ' trillion' : v >= 1e9 ? '$' + (v / 1e9).toFixed(v >= 1e11 ? 0 : 1) + ' billion' : '$' + (v / 1e6).toFixed(0) + ' million';
-const people = v => v >= 1e9 ? (v / 1e9).toFixed(2) + ' billion' : v >= 1e6 ? (v / 1e6).toFixed(1) + ' million' : Math.round(v / 1e3) + ' thousand';
-const usdS = v => v >= 1e12 ? '$' + (v / 1e12).toFixed(1) + 'T' : v >= 1e9 ? '$' + (v / 1e9).toFixed(v >= 1e11 ? 0 : 1) + 'B' : '$' + (v / 1e6).toFixed(0) + 'M';
-const peopleS = v => v >= 1e9 ? (v / 1e9).toFixed(2) + 'B' : v >= 1e6 ? (v / 1e6).toFixed(1) + 'M' : Math.round(v / 1e3) + 'K';
+const usd = v => !Number.isFinite(v) ? '—' : v >= 1e12 ? '$' + (v / 1e12).toFixed(v >= 1e13 ? 1 : 2) + ' trillion' : v >= 1e9 ? '$' + (v / 1e9).toFixed(v >= 1e11 ? 0 : 1) + ' billion' : '$' + (v / 1e6).toFixed(0) + ' million';
+const people = v => !Number.isFinite(v) ? '—' : v >= 1e9 ? (v / 1e9).toFixed(2) + ' billion' : v >= 1e6 ? (v / 1e6).toFixed(1) + ' million' : Math.round(v / 1e3) + ' thousand';
+const usdS = v => !Number.isFinite(v) ? '—' : v >= 1e12 ? '$' + (v / 1e12).toFixed(1) + 'T' : v >= 1e9 ? '$' + (v / 1e9).toFixed(v >= 1e11 ? 0 : 1) + 'B' : '$' + (v / 1e6).toFixed(0) + 'M';
+const peopleS = v => !Number.isFinite(v) ? '—' : v >= 1e9 ? (v / 1e9).toFixed(2) + 'B' : v >= 1e6 ? (v / 1e6).toFixed(1) + 'M' : Math.round(v / 1e3) + 'K';
 const THE = new Set(['United States of America', 'United Kingdom', 'Netherlands', 'Philippines', 'United Arab Emirates', 'Dem. Rep. Congo', 'Central African Rep.', 'Dominican Rep.', 'Czech Rep.', 'Bahamas', 'Gambia']);
-const pct = (v, sign) => (sign && v > 0 ? '+' : '') + v.toFixed(1) + '%';
+const pct = (v, sign) => !Number.isFinite(v) ? '—' : (sign && v > 0 ? '+' : '') + v.toFixed(1) + '%';
 function economy(name) {
   const c = ECON && ISO[name] && ECON.countries[ISO[name]]; if (!c) return ECON ? '' : '<div class="eco"><div class="sec-h">Economy</div><p class="meta">Loading…</p></div>';
-  const g = c.growth || [], last = g[g.length - 1], avg = g.length > 3 ? g.slice(0, -1).reduce((a, x) => a + x[1], 0) / (g.length - 1) : null, nmc = esc(nm(name));
+  const g = (c.growth || []).filter(x => Number.isFinite(x[1])), last = g[g.length - 1], avg = g.length > 3 ? g.slice(0, -1).reduce((a, x) => a + x[1], 0) / (g.length - 1) : null, nmc = esc(nm(name));
   // plain-language summary, built only from the numbers below
   const parts = [];
   const who = (THE.has(name) ? 'The ' : '') + nmc, poss = who + (/s$/.test(nm(name)) ? "'" : "'s");
   if (last) parts.push(`${poss} economy ${last[1] >= 0 ? 'grew' : 'shrank'} ${Math.abs(last[1]).toFixed(1)}% in ${last[0]}` + (avg != null ? `, ${Math.abs(last[1] - avg) < .3 ? 'close to' : last[1] > avg ? 'faster than' : 'slower than'} its ${g.length - 1}-year average of ${avg.toFixed(1)}%` : '') + '.');
-  if (c.infl) parts.push(`Prices rose ${c.infl[1].toFixed(1)}% in ${c.infl[0]}${c.infl[1] > 5 ? ', which is high' : c.infl[1] < 0 ? ' (falling prices)' : ''}.`);
-  if (c.unemp) parts.push(`${c.unemp[1].toFixed(1)}% of people who want a job don't have one (${c.unemp[0]}).`);
+  if (Number.isFinite(c.infl?.[1])) parts.push(`Prices rose ${c.infl[1].toFixed(1)}% in ${c.infl[0]}${c.infl[1] > 5 ? ', which is high' : c.infl[1] < 0 ? ' (falling prices)' : ''}.`);
+  if (Number.isFinite(c.unemp?.[1])) parts.push(`${c.unemp[1].toFixed(1)}% of people who want a job don't have one (${c.unemp[0]}).`);
   const stat = (l, v, y) => v == null ? '' : `<div><span>${l}</span><b>${v}</b><small>${y}</small></div>`;
   let chart = '';
   if (g.length > 2) {
@@ -1020,7 +1065,7 @@ function economy(name) {
       <div class="eco-yr"><span>${g[0][0]}</span><span>GDP growth per year</span><span>${last[0]}</span></div>`;
   }
   return `<div class="eco"><div class="sec-h" style="margin-top:0">Economy</div><p class="eco-s">${parts.join(' ')}</p>
-    <div class="eco-g">${stat('GDP', c.gdp && usdS(c.gdp[1]), c.gdp && c.gdp[0])}${stat('Growth', last && pct(last[1], 1), last && last[0])}${stat('Inflation', c.infl && pct(c.infl[1]), c.infl && c.infl[0])}${stat('Unemployment', c.unemp && pct(c.unemp[1]), c.unemp && c.unemp[0])}${stat('GDP per person', c.gdppc && '$' + Math.round(c.gdppc[1]).toLocaleString('en-US'), c.gdppc && c.gdppc[0])}${stat('Population', c.pop && peopleS(c.pop[1]), c.pop && c.pop[0])}</div>
+    <div class="eco-g">${stat('GDP', c.gdp && usdS(c.gdp[1]), c.gdp && c.gdp[0])}${stat('Growth', last && pct(last[1], 1), last && last[0])}${stat('Inflation', c.infl && pct(c.infl[1]), c.infl && c.infl[0])}${stat('Unemployment', c.unemp && pct(c.unemp[1]), c.unemp && c.unemp[0])}${stat('GDP per person', Number.isFinite(c.gdppc?.[1]) ? '$' + Math.round(c.gdppc[1]).toLocaleString('en-US') : '—', c.gdppc && c.gdppc[0])}${stat('Population', c.pop && peopleS(c.pop[1]), c.pop && c.pop[0])}</div>
     ${chart}<p class="eco-src">Source: <a href="${esc(ECON.source_url)}" target="_blank" rel="noopener">${esc(ECON.source)}</a> · ${esc(ECON.license)} · yearly data</p></div>`;
 }
 // Alert topics for a followed country (saved on this device until accounts + email alerts launch)
@@ -1131,7 +1176,7 @@ function sinceHTML(s, rows) {
 function impactHTML(s) {
   const rows = impactsOf(s), moved = s.market_moving && typeof s.why_moved === 'string' ? s.why_moved : '';
   if (!rows.length && !moved) return '';
-  return `<section class="impact-section" aria-label="Affected assets">${sinceHTML(s, rows)}${moved ? `<div class="why moved"><div class="eyebrow">Why it moved</div><p>${esc(moved)}</p></div>` : ''}<div class="sec-h">Affected assets</div><div class="impact-list">${rows.map(i => `<div><div class="impact-head" ${assetForImpact(i) ? `data-asset="${esc(assetForImpact(i).s)}" role="button" tabindex="0"` : ''}>${impactVisual(i)}<span>${esc(i.name)}</span>${assetForImpact(i) && Number.isFinite(assetForImpact(i).d) ? movePill(assetForImpact(i)) : ''}<span class="impact-dir impact-${i.direction}" aria-label="${i.direction}" title="${i.direction}">${IMPACT_ARROW[i.direction]}</span></div><p>${esc(i.why.slice(0, 200))}</p></div>`).join('')}</div></section>`;
+  return `<section class="impact-section" aria-label="Affected assets">${sinceHTML(s, rows)}${moved ? `<div class="why moved"><div class="eyebrow">Why it moved</div><p>${esc(moved)}</p></div>` : ''}<div class="sec-h">Affected assets</div><div class="impact-list">${rows.map(i => `<div><div class="impact-head" ${assetForImpact(i) ? `data-asset="${esc(assetForImpact(i).s)}" role="button" tabindex="0"` : ''}>${impactVisual(i)}<span>${esc(i.name)}</span>${assetForImpact(i) && Number.isFinite(assetForImpact(i).d) ? '<small>Today</small>' + movePill(assetForImpact(i)) : ''}<span class="impact-dir impact-${i.direction}" aria-label="${i.direction}" title="${i.direction}">Expected ${IMPACT_ARROW[i.direction]}</span></div><p>${esc(i.why.slice(0, 200))}</p></div>`).join('')}</div></section>`;
 }
 // Only an asset the canonical registry verified can draw a line or show a price: the news robot stamps each impact/entity with
 // `asset` (id, name, class, price symbol, place) or `unresolved` (why not). Raw ticker strings are never looked up here.
@@ -1143,11 +1188,12 @@ function assetForImpact(i) {
   const p = MKT.by[r.px] || MKT.np[r.px] || {};
   return MKT.reg[r.id] = { ...p, s: r.px || r.id, id: r.id, n: r.n, la: r.la, lo: r.lo, t: T_OF[r.c] || 'stocks', c: r.c, site: r.site || p.site };
 }
-const movePill = a => a && a.u === 'bp' ? `<span class="pct ${a.d > 0 ? 'up' : a.d < 0 ? 'down' : 'flat'}">${a.d > 0 ? '↑' : a.d < 0 ? '↓' : '↔'} ${Math.abs(a.d).toFixed(1)} bp</span>` : pctPill(a.d);
-const pctPill = v => `<span class="pct ${v > 0 ? 'up' : v < 0 ? 'down' : 'flat'}">${v > 0 ? '↑' : v < 0 ? '↓' : '↔'} ${Math.abs(v).toFixed(2)}%</span>`;
+const movePill = a => !Number.isFinite(a?.d) ? '' : a && a.u === 'bp' ? `<span class="pct ${a.d > 0 ? 'up' : a.d < 0 ? 'down' : 'flat'}">${a.d > 0 ? '↑' : a.d < 0 ? '↓' : '↔'} ${Math.abs(a.d).toFixed(1)} bp</span>` : pctPill(a.d);
+const pctPill = v => !Number.isFinite(v) ? '' : `<span class="pct ${v > 0 ? 'up' : v < 0 ? 'down' : 'flat'}">${v > 0 ? '↑' : v < 0 ? '↓' : '↔'} ${Math.abs(v).toFixed(2)}%</span>`;
 const dirWord = v => v > 0 ? 'up' : v < 0 ? 'down' : 'flat';
-function money(a) { if (a.u === 'bp') return Number(a.p).toFixed(2) + '%'; try { return new Intl.NumberFormat(undefined, { style: 'currency', currency: a.cur || 'USD', maximumFractionDigits: a.p < 10 ? 3 : 2 }).format(a.p); } catch { return String(a.p); } }
+function money(a) { if (!Number.isFinite(a?.p)) return '—'; if (a.u === 'bp') return Number(a.p).toFixed(2) + '%'; try { return new Intl.NumberFormat(undefined, { style: 'currency', currency: a.cur || 'USD', maximumFractionDigits: a.p < 10 ? 3 : 2 }).format(a.p); } catch { return String(a.p); } }
 function sparkSvg(sp, col) {
+  sp = (sp || []).filter(Number.isFinite);
   if (!Array.isArray(sp) || sp.length < 2) return '';
   const mn = Math.min(...sp), mx = Math.max(...sp), X = k => k / (sp.length - 1) * 300, Y = v => 40 - (v - mn) / ((mx - mn) || 1) * 34 - 3;
   const d = sp.map((v, k) => `${k ? 'L' : 'M'}${X(k).toFixed(1)} ${Y(v).toFixed(1)}`).join('');
@@ -1158,7 +1204,7 @@ const REL_LABEL = { direct: 'Direct impact', acquisition: 'Acquisition', 'supply
 function hoverCardHTML(edge) {
   const rows = impactsOf(edge.article).map(i => ({ i, a: assetForImpact(i) })).filter(x => x.a && Number.isFinite(x.a.d)).sort((a, b) => (b.i === edge.impact) - (a.i === edge.impact)).slice(0, 3);
   return `<div class="eyebrow">${rows.length ? `Affected assets · ${rows.length}` : `Connection · ${esc(edge.conn ? edge.conn.dest.name : edge.asset.n)}`}</div><h3>${esc(edge.article.headline)}</h3><div class="meta">${esc(edge.article.source?.name || '')}${edge.article.location?.place ? ' · ' + esc(edge.article.location.place.split(',')[0]) : ''} · ${ago(edge.article.t)}</div>`
-    + rows.map(({ i, a }) => `<div class="hv-row"><div class="hv-top">${impactVisual(i)}<div class="hv-name"><b>${esc(a.n)}</b><span>${esc(a.s.replace(/-USD$/, ''))} · ${esc(money(a))}</span></div><div class="hv-pct">${movePill(a)}<small>7 days ${a.w > 0 ? '+' : ''}${Number(a.w).toFixed(a.u === 'bp' ? 1 : 2)}${a.u === 'bp' ? ' bp' : '%'}</small></div></div><div class="hv-impl">Article implies <b class="${i.direction === 'up' ? 'up' : i.direction === 'down' ? 'down' : 'flat'}">${IMPACT_ARROW[i.direction]} ${i.direction === 'mixed' || i.direction === 'unclear' ? i.direction : i.direction}</b> · price today <b class="${dirWord(a.d)}">${a.d > 0 ? '↑ up' : a.d < 0 ? '↓ down' : '↔ flat'}</b></div>${sparkSvg(a.sp, a.d >= 0 ? '#34d399' : '#f87171')}`).join('')
+    + rows.map(({ i, a }) => `<div class="hv-row"><div class="hv-top">${impactVisual(i)}<div class="hv-name"><b>${esc(a.n)}</b><span>${esc(a.s.replace(/-USD$/, ''))} · ${esc(money(a))}</span></div><div class="hv-pct">${movePill(a)}<small>7 days ${a.w > 0 ? '+' : ''}${Number.isFinite(a.w) ? a.w.toFixed(a.u === 'bp' ? 1 : 2) : '—'}${a.u === 'bp' ? ' bp' : '%'}</small></div></div><div class="hv-impl">Article implies <b class="${i.direction === 'up' ? 'up' : i.direction === 'down' ? 'down' : 'flat'}">${IMPACT_ARROW[i.direction]} ${i.direction === 'mixed' || i.direction === 'unclear' ? i.direction : i.direction}</b> · price today <b class="${dirWord(a.d)}">${a.d > 0 ? '↑ up' : a.d < 0 ? '↓ down' : '↔ flat'}</b></div>${sparkSvg(a.sp, a.d >= 0 ? '#34d399' : '#f87171')}`).join('')
     + (edge.conn ? `<p class="hv-rel"><b>${esc(REL_LABEL[edge.conn.type] || edge.conn.type)}</b> · ${edge.conn.tier === 1 ? 'direct' : 'secondary'} · confidence ${Math.round(edge.conn.confidence * 100)}%</p><p class="hv-why">${esc(edge.conn.explanation)}</p>` : '')
     + `<p class="hv-why">${esc(String(edge.impact.why || '').slice(0, 170))}</p>`;
 }
@@ -1465,13 +1511,13 @@ function upcomingPanel() {
 let MPCAL = null; fetch('../calendar-live.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(j => { MPCAL = j; if (phone() && phoneView === 'markets') render(); }).catch(() => {});
 function marketsPhonePanel() {
   const rows = exchangeRows(), open = rows.filter(r => r.st.open).length;
-  const sess = rows.map(({ e, st }) => `<div class="mp-ss"><img src="flags/${e.cc}.svg" alt=""><b>${esc(e.n)}</b><span class="${st.open ? 'o' : st.in < 3 * 3600e3 ? 's' : 'c'}">${st.open ? 'Open' : st.in < 3 * 3600e3 ? 'Opens ' + untilText(st.in) : 'Closed'}</span></div>`).join('');
+  const sess = rows.map(({ e, st }) => `<div class="mp-ss"><img src="flags/${e.cc}.svg" alt=""><b>${esc(e.n)}</b>${mkFavouriteButton(marketCountry(e.cc.toUpperCase()))}<span class="${st.open ? 'o' : st.in < 3 * 3600e3 ? 's' : 'c'}">${st.open ? 'Open' : st.in < 3 * 3600e3 ? 'Opens ' + untilText(st.in) : 'Closed'}</span></div>`).join('');
   const by = {}; for (const x of stories) { const c = x.location.country; (by[c] = by[c] || []).push(x); }
   const act = Object.entries(by).sort((a, b) => b[1].length - a[1].length).slice(0, 5).map(([c, L]) => { const top = [...L].sort(sortTop)[0], cats = Object.entries(L.reduce((m, x) => (m[CAT[x.category] || x.category] = (m[CAT[x.category] || x.category] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]).slice(0, 2);
     return `<button class="mp-row" data-country="${esc(c)}">${flag(c)}<span class="mp-tx"><b>${esc(nm(c))}</b><small>${esc(top.headline)}</small><span>${cats.map(([k]) => `<i>${esc(k)}</i>`).join('')}</span></span><span class="mp-n"><b>${L.length}</b>articles</span></button>`; }).join('');
   const now = Date.now(), ev = (MPCAL && MPCAL.events || []).filter(x => x.imp >= 3 && Date.parse(x.at) >= now).sort((a, b) => Date.parse(a.at) - Date.parse(b.at)).slice(0, 4);
   const evs = ev.length ? ev.map(x => `<div class="mp-ev"><time>${new Date(x.at).toLocaleString('en-GB', { weekday: 'short', hour: '2-digit', minute: '2-digit' })}</time><span>${x.country ? `<img src="flags/${esc(String(x.country).toLowerCase())}.svg" alt="">` : ''}${esc(x.t)}</span></div>`).join('') : '<p class="meta">No high-impact events scheduled.</p>';
-  return `<div class="nb-head"><h2>Markets</h2><span class="mp-live"><i></i>${open ? open + ' open now' : 'All closed'}</span></div><div class="mp-k">Market sessions</div><div class="mp-sess">${sess}</div><div class="mp-k">Most active markets <span>by article volume</span></div>${act}<div class="mp-k">Upcoming · high impact <a href="../../calendar.html">Calendar →</a></div>${evs}<p class="meta" style="margin-top:12px">Activity is article volume, not price performance. Not investment advice.</p>`;
+  return `<div class="nb-head"><h2>Markets</h2><span class="mp-live"><i></i>${open ? open + ' open now' : 'All closed'}</span></div>${mkFavouritesHTML()}<div class="mp-k">Market sessions</div><div class="mp-sess">${sess}</div><div class="mp-k">Most active markets <span>by article volume</span></div>${act}<div class="mp-k">Upcoming · high impact <a href="../../calendar.html">Calendar →</a></div>${evs}<p class="meta" style="margin-top:12px">Activity is article volume, not price performance. Not investment advice.</p>`;
 }
 function marketsPanel() {
   const now = Date.now(), d = new Date(now), stamp = d.toISOString().slice(0, 10) + ' ' + hm(now) + ' UTC';
@@ -1560,7 +1606,7 @@ function drawMarketsOverlay(t) {
 const exPick = (x, y) => exHits.find(h => x >= h.x && x <= h.x + h.w && y >= h.y && y <= h.y + h.h);
 
 // ===== Filters =====
-const F = { cat: 'all', lens: 'all', region: 'global', win: '48h',  // homepage and Globe page open on the last 48 hours
+const F = { country:'', from:'', to:'', cat: 'all', lens: 'all', region: 'global', win: '48h',  // homepage and Globe page open on the last 48 hours
   mine: new URLSearchParams(location.search).get('mine') === '1' }; let play = null;
 const winMin = () => (WINS.find(w => w[0] === F.win) || [F.win, '', 2880])[2];  // '48h' is the homepage-only window (no button)
 const inTime = s => play ? s.t >= play.start && s.t <= play.cur : (!s.historical || winMin() > 2880) && T0 - s.t <= winMin() * 60000;
@@ -1568,7 +1614,7 @@ const inTime = s => play ? s.t >= play.start && s.t <= play.cur : (!s.historical
 function watchSyms() { try { const L = JSON.parse(localStorage.getItem('inv-watch') || '{}'); return new Set((L.a || []).map(x => String(x.s || '').toUpperCase()).filter(Boolean)); } catch { return new Set(); } }
 let WATCH = watchSyms();
 const touchesWatch = s => impactsOf(s).some(i => { const a = assetForImpact(i); return (a && WATCH.has(a.s.toUpperCase())) || WATCH.has(String(i.ticker || '').toUpperCase()); });
-const matchNoLens = s => (F.cat === 'all' || s.category === F.cat) && inRegion(s.location.region, F.region) && inTime(s) && (!F.mine || touchesWatch(s));
+const matchNoLens = s => InvNewsFilters.match(s,F) && (F.cat === 'all' || s.category === F.cat) && inRegion(s.location.region, F.region) && inTime(s) && (!F.mine || touchesWatch(s));
 const match = s => (F.lens === 'all' || s.lens.includes(F.lens)) && matchNoLens(s);
 // Top articles: within the same importance level, take regions in turn so one busy region cannot fill the whole list.
 // Order changes only among equally important articles; nothing is hidden and no coordinate changes.
@@ -1581,11 +1627,13 @@ function regionMix(list) {
 const sortTop = (a, b) => (b.importance - a.importance) || (b.t - a.t);
 let shown = [], dimmed = [], activity = {};
 function refresh() {
-  shown = stories.filter(match); dimmed = F.lens === 'all' ? [] : stories.filter(s => matchNoLens(s) && !s.lens.includes(F.lens)); activity = {}; WATCH = watchSyms(); updateLensChips(); updateFiltersUI(); updateDropdowns(); for (const s of shown) activity[s.location.country] = (activity[s.location.country] || 0) + 1;
+  shown = stories.filter(match); dimmed = F.lens === 'all' ? [] : stories.filter(s => matchNoLens(s) && !s.lens.includes(F.lens)); activity = {}; WATCH = watchSyms(); updateLensChips(); updateFiltersUI(); if(typeof newsFilterUI==='function')newsFilterUI(); updateDropdowns(); for (const s of shown) activity[s.location.country] = (activity[s.location.country] || 0) + 1;
   $('tlInfo').setAttribute('aria-busy', String(historyLoading));
   $('tlInfo').innerHTML = historyLoading ? 'Loading history…' : historyError ? 'History could not be loaded. Please try again.' : play ? `Replaying · <b>${new Date(play.cur).toLocaleDateString('en-GB', { weekday: 'short' })} ${new Date(play.cur).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })}</b>` : `<b>${shown.length.toLocaleString('en-US')}</b> ${shown.length === 1 ? 'article' : 'articles'} · ${F.win.toUpperCase()}`;
   updateNetwork(); if (!play) render();
 }
+
+
 
 // ===== Globe =====
 const cv = $('cv'); let ctx = cv.getContext('2d');
@@ -1608,7 +1656,7 @@ function size() {
   // Measure the real controls: the drawing area stays clear of every panel and filter.
   if (EMBED) { const q = new URLSearchParams(location.search); cx = W * (+q.get('cx') || .5); cyT = H * (+q.get('cy') || .5); R0 = Math.min(W, H) * (+q.get('r') || .42); globeBox = { left: 0, top: 0, right: W, bottom: H }; }
   else if (phone()) {
-    phoneMapTop = document.querySelector('.top').getBoundingClientRect().bottom + 12;
+    phoneMapTop = document.documentElement.classList.contains('proj-mode') ? 72 : document.querySelector('.top').getBoundingClientRect().bottom + 12;
     // Size against the unobstructed map, never against the sheet's remaining space.
     R0 = Math.min(W * .47, Math.max(120, H - phoneMapTop - (BOTTOM_DOCK + peekH + 28)) * .47);
     cx = W / 2;
@@ -1622,9 +1670,9 @@ function size() {
     const sheetOpen = phone() && panel.classList.contains('open');
     $('tl').hidden = sheetOpen;
     const timeline = $('tl').getBoundingClientRect();
-    globeBox = { left: phone() ? 8 : document.documentElement.classList.contains('mkd-on') ? 378 : (LC ? document.getElementById('lcol').getBoundingClientRect().right + 24 : 24), top: header.bottom + 12,
+    globeBox = { left: phone() ? 8 : document.documentElement.classList.contains('proj-mode') ? $('pjList').getBoundingClientRect().right + 16 : document.documentElement.classList.contains('mkd-on') ? 378 : (LC ? document.getElementById('lcol').getBoundingClientRect().right + 24 : 24), top: document.documentElement.classList.contains('proj-mode') ? 150 : header.bottom + 12,
       right: phone() ? W - 8 : document.documentElement.classList.contains('mkd-on') && document.querySelector('.mkd-o:not([hidden])') ? document.querySelector('.mkd-o').getBoundingClientRect().left - 24 : document.documentElement.classList.contains('proj-mode') && $('projPanel') ? $('projPanel').getBoundingClientRect().left - 24 : ((mp => mp && document.documentElement.classList.contains('market-mode') && !mp.hidden && mp.offsetWidth)(document.querySelector('.market-panel')) ? document.querySelector('.market-panel').getBoundingClientRect().left - 24 : panel.hidden || !panel.offsetWidth || panel.getBoundingClientRect().left <= 0 ? W - 24 : panel.getBoundingClientRect().left - 24),
-      bottom: sheetOpen ? H - panel.offsetHeight - 12 : document.documentElement.classList.contains('mkd-on') ? H - 190 : LC ? H - (document.documentElement.classList.contains('act-on') ? 190 : 24) : (timeline.height ? timeline.top - 16 : H - (document.documentElement.classList.contains('market-mode') ? 72 : 90)) };
+      bottom: sheetOpen ? H - panel.offsetHeight - 12 : document.documentElement.classList.contains('proj-mode') && !phone() ? H - 110 : document.documentElement.classList.contains('mkd-on') ? H - 190 : LC ? H - (document.documentElement.classList.contains('act-on') ? 190 : 24) : (timeline.height ? timeline.top - 16 : H - (document.documentElement.classList.contains('market-mode') ? 72 : 90)) };
     // template B (?panel=b): the articles sit in a strip along the bottom, so the globe uses the full width above it
     if (PANEL_TEMPLATE === 'b' && panel.dataset.view === 'top') { globeBox.right = W - (phone() ? 8 : 24); globeBox.bottom = Math.min(globeBox.bottom, (phone() ? $('tl').getBoundingClientRect().top : panel.getBoundingClientRect().top) - 16); }
     const aw = Math.max(1, globeBox.right - globeBox.left), ah = Math.max(1, globeBox.bottom - globeBox.top);
@@ -1914,6 +1962,7 @@ new MutationObserver(()=>{const h=$('hover');if(!h.classList.contains('on')||h.q
 // ===== Panel =====
 let phoneView = 'globe';
 const panel = $('panel'), pbody = $('pbody'); size(); new MutationObserver(() => { if (!phone()) size(); }).observe(panel, { attributes: true, attributeFilter: ['class'] }); let view = { k: 'top' }, hist = [];
+new MutationObserver(records=>{if(records.some(r=>[...r.addedNodes].some(n=>n.nodeType===1&&(n.matches?.('.ec-history')||n.querySelector?.('.ec-history')))))InvEconomy.bind(pbody,code=>ECON?.countries?.[code]);}).observe(pbody,{childList:true,subtree:true});
 function phoneMapArea() {
   const pk = $('peek').getBoundingClientRect(); if (pk.height) peekH = pk.height;
   const bottom = sheetState === 'closed' ? (pk.height ? pk.top : H - BOTTOM_DOCK - peekH - 20) - 10 : H - sheetVisible - 12;
@@ -2157,12 +2206,7 @@ function gmCountryPanel(c) {
   else if (countryTab === 'news') content = `<h3 class="sec-h">Country news · ${F.win.toUpperCase()}</h3>${gmCountryNews(news)}`;
   else if (countryTab === 'companies') content = `<h3 class="sec-h">Listed companies · ${esc(gmExchanges(code).map(([, e]) => e.short).join(' / '))}</h3>${companies.length ? gmCompanyRows(companies) : `<p class="empty">${gmMissing}</p>`}`;
   else if (countryTab === 'economy') {
-    const v = k => macro?.[k], yr = k => v(k) ? ` <small>${v(k)[0]}</small>` : '', big = n => n >= 1e12 ? '$' + (n / 1e12).toFixed(2) + 'T' : n >= 1e9 ? '$' + (n / 1e9).toFixed(1) + 'B' : '$' + (n / 1e6).toFixed(0) + 'M';
-    const g = Array.isArray(v('growth')) ? v('growth').filter(x => Number.isFinite(x[1])) : [], last = g[g.length - 1];
-    const rows = [['GDP', v('gdp') && big(v('gdp')[1]), '', 'gdp'], ['Growth', last && `${last[1] >= 0 ? '+' : '−'}${Math.abs(last[1]).toFixed(1)}%`, last && (last[1] >= 0 ? 'up' : 'down'), null, last && last[0]], ['Inflation', v('infl') && v('infl')[1].toFixed(1) + '%', v('infl') && v('infl')[1] > 5 ? 'down' : '', 'infl'], ['Unemployment', v('unemp') && v('unemp')[1].toFixed(1) + '%', '', 'unemp'], ['GDP per person', v('gdppc') && '$' + Math.round(v('gdppc')[1]).toLocaleString('en-US'), '', 'gdppc'], ['Population', v('pop') && (v('pop')[1] >= 1e9 ? (v('pop')[1] / 1e9).toFixed(2) + 'B' : (v('pop')[1] / 1e6).toFixed(1) + 'M'), '', 'pop']];
-    let spark = '';
-    if (g.length > 2) { const lo = Math.min(0, ...g.map(x => x[1])), hi = Math.max(0, ...g.map(x => x[1])), Y = val => 44 - (val - lo) / ((hi - lo) || 1) * 40, X = i => i * 300 / (g.length - 1); spark = `<div class="ec-sp"><div class="ec-k">GDP growth ${g[0][0]}–${last[0]}</div><svg viewBox="0 0 300 48" preserveAspectRatio="none" aria-label="GDP growth by year"><line x1="0" x2="300" y1="${Y(0)}" y2="${Y(0)}" stroke="rgba(255,255,255,.18)" stroke-dasharray="3 4"/><polyline points="${g.map((x, i) => X(i).toFixed(1) + ',' + Y(x[1]).toFixed(1)).join(' ')}" fill="none" stroke="#FF7A1A" stroke-width="1.8" vector-effect="non-scaling-stroke"/></svg></div>`; }
-    content = macro ? `<div class="ec-rows">${rows.map(([l, val, cl, k, y]) => `<div class="ec-r"><span>${l}</span><b class="${cl ? 'pct-' + cl : ''}">${val || '<em>—</em>'}${val ? (k ? yr(k) : y ? ` <small>${y}</small>` : '') : ''}</b></div>`).join('')}</div>${spark}<p class="meta" style="margin-top:10px;font-size:11px">${esc(ECON.source || 'World Bank')} · ${esc(ECON.license || 'CC BY 4.0')}. Latest available year shown. Not investment advice.</p>` : `<p class="empty">${gmMissing}</p>`;
+    content = InvEconomy.render(code, macro);
   }
   else if (countryTab === 'markets') {
     const funds = gmFunds(c.name);
@@ -2170,7 +2214,7 @@ function gmCountryPanel(c) {
   } else {
     const important = news.filter(s => s.importance >= 2).slice(0, 3), abroad = gmAbroad(companies,code);
     const indicator = (key, digits = 1) => Number.isFinite(macro?.[key]?.[1]) ? `${macro[key][1].toFixed(digits)}% <small>(${macro[key][0]})</small>` : gmMissing;
-    content = `<div class="gm-kpis"><div data-gm-kpi="benchmark"><span>${esc(benchmark?.n || 'Benchmark index')}</span><b${benchmark?.p >= 1e6 ? ' style="font-size:12px"' : ''}>${Number.isFinite(benchmark?.p) ? gmNumber(benchmark.p) : gmMissing}</b>${gmMove(benchmark?.d)}</div><div data-gm-kpi="currency"><span>${esc(fx ? fx.s.replace(/^([A-Z]{3})([A-Z]{3})$/, '$1/$2') : 'Currency vs USD')}</span><b>${Number.isFinite(fx?.p) ? gmNumber(fx.p, 4) : gmMissing}</b><span class="gm-fx-move" title="Currency strength against the US dollar"><small>${esc(exchange?.currency || fx?.s.replace('USD', '') || '')}</small>${gmMove(fx?.d)}</span></div><div data-gm-kpi="macro"><span>Inflation · Unemp.</span><b data-gm-inflation>${indicator('infl')}</b><span data-gm-unemployment>${indicator('unemp')}</span></div></div>
+    content = `<div class="gm-kpis"><div data-gm-kpi="benchmark"><span>${esc(benchmark?.n || 'Benchmark index')}</span><b${benchmark?.p >= 1e6 ? ' style="font-size:12px"' : ''}>${Number.isFinite(benchmark?.p) ? gmNumber(benchmark.p) : gmMissing}</b>${gmMove(benchmark?.d)}</div><div data-gm-kpi="currency"><span>${esc(fx ? fx.s.replace(/^([A-Z]{3})([A-Z]{3})$/, '$1/$2') : 'Currency vs USD')}</span><b>${exchange?.currency === 'USD' ? 'USD (base)' : Number.isFinite(fx?.p) ? gmNumber(fx.p, 4) : gmMissing}</b><span class="gm-fx-move" title="Currency strength against the US dollar"><small>${esc(exchange?.currency || fx?.s.replace('USD', '') || '')}</small>${exchange?.currency === 'USD' ? '' : gmMove(fx?.d)}</span></div><div data-gm-kpi="macro"><span>Inflation · Unemp.</span><b data-gm-inflation>${indicator('infl')}</b><span data-gm-unemployment>${indicator('unemp')}</span></div></div>
       <div class="gm-section-head"><h3>Latest market developments</h3><button class="gm-link" data-gm-tab="news">All ${news.length} →</button></div>${important.length ? gmNewsRows(important) : '<p class="empty">No important articles in this time window.</p>'}
       <div class="gm-section-head"><h3>Listed companies · ${esc(exchange?.short || '—')}</h3><button class="gm-link" data-gm-tab="companies">${companies.length} →</button></div>${companies.length ? gmCompanyRows(companies.slice(0, 4)) : `<p class="empty">${gmMissing}</p>`}
       <div class="gm-section-head"><h3>Also listed abroad</h3><span class="meta">${abroad.length} listings</span></div>${abroad.length?gmAbroadTable(abroad.slice(0,5)):gmMissing}${abroad.length>5?`<button type="button" class="gf-show-all" data-gm-tab="abroad">Show all ${abroad.length} →</button>`:''}`;
@@ -2188,7 +2232,7 @@ function gmContinentPanel() {
   if (!GM) return `<section class="gm-continent"><div class="eyebrow">Global Markets</div><h2>${esc(name)}</h2>${tabs}<p class="meta">${gmError ? 'Market directory could not load.' : 'Loading market directory…'}</p>${gmError ? '<button class="gm-link" data-gm-retry>Try again</button>' : ''}</section>`;
   const underserved = rows.filter(r => r.count >= 1 && r.count <= 9), benchmarks = rows.map(r => ({ ...r, benchmark: gmBenchmark(r.c.name), funds: gmFunds(r.c.name) }));
   const currencies = [...new Map(rows.map(({ c, code }) => { const fx = gmCurrency(c.name), currency = gmExchanges(code)[0]?.[1].currency || fx?.s.replace('USD', ''); return [fx?.s || currency, { fx, currency }]; }).filter(([key]) => key)).values()];
-  const currencyChip = ({ fx, currency }) => `<span>${esc(currency)} ${gmMove(fx?.d)}</span>`;
+  const currencyChip = ({ fx, currency }) => `<span>${esc(currency)} ${currency === 'USD' ? '(base)' : gmMove(fx?.d)}</span>`;
   const missingBenchmarks = benchmarks.filter(r => !r.benchmark && !r.funds.length).length;
   const underservedChip = ({ c, count }) => `<button type="button" data-country="${esc(c.name)}">${esc(nm(c.name))} · ${count}</button>`;
   return `<section class="gm-continent" data-gm-region-panel="${esc(F.region)}"><div class="eyebrow">Global Markets</div><h2>${esc(name)}</h2><p class="meta" data-gm-region-summary>${rows.length} countries · ${activeExchanges.length} ${activeExchanges.length === 1 ? 'exchange' : 'exchanges'} with data · ${F.win.toUpperCase()}</p>${tabs}
@@ -2199,7 +2243,7 @@ function gmContinentPanel() {
 }
 pbody.addEventListener('click', e => {
   const tab = e.target.closest('[data-gm-tab]'), region = e.target.closest('[data-gm-region]');
-  if (tab) { countryTab = tab.dataset.gmTab; render(); pbody.scrollTop = 0; pbody.querySelector(`[role=tab][data-gm-tab="${countryTab}"]`)?.focus({ preventScroll: true }); }
+  if (tab) { countryTab = tab.dataset.gmTab; render(); InvEconomy.bind(pbody, code=>ECON?.countries?.[code]); pbody.scrollTop = 0; pbody.querySelector(`[role=tab][data-gm-tab="${countryTab}"]`)?.focus({ preventScroll: true }); }
   else if (region) { gmCountriesExpanded = false; setRegion(region.dataset.gmRegion); }
   else if (e.target.closest('[data-gm-countries]')) { gmCountriesExpanded = !gmCountriesExpanded; render(); if (!gmCountriesExpanded) pbody.scrollTop = 0; }
   else if (e.target.closest('[data-gm-retry]')) { gmReady = null; gmError = false; render(); }
@@ -2321,65 +2365,31 @@ function renderAct(){
 }
 addEventListener('resize',()=>renderAct());
 
-// Projects · Pro preview mode: real developments as examples; nothing here is a working feature.
-const PROJ_START=new URLSearchParams(location.search).get('mode')==='projects';
-const PROJ={on:false,sel:'kx',list:[
- {k:'kx',n:"King's Cross Central",l:'London, United Kingdom',la:51.535,lo:-0.125,t:'Urban regeneration',st:null,ms:[['Coal Drops Yard opened','2018'],['Outline planning permission granted','Early 2006']],src:"https://en.wikipedia.org/wiki/King%27s_Cross_Central",cr:'Crookesmoor · CC BY-SA 4.0'},
- {k:'noor',n:'Noor Ouarzazate Solar Complex',l:'Ouarzazate, Morocco',la:30.99,lo:-6.86,t:'Renewable energy',st:'Operational',ms:[['Noor I commissioned','Feb 2016']],src:'https://en.wikipedia.org/wiki/Ouarzazate_Solar_Power_Station',cr:'Richard Allaway · CC BY 2.0'},
- {k:'hy',n:'Hudson Yards',l:'New York, United States',la:40.754,lo:-74.002,t:'Mixed-use',st:'Phase 1 open',ms:[['Phase 1 opened','15 Mar 2019'],['Groundbreaking, 10 Hudson Yards','4 Dec 2012']],src:'https://en.wikipedia.org/wiki/Hudson_Yards,_Manhattan',cr:'Epicgenius · CC BY-SA 4.0'},
- {k:'line',n:'The Line',l:'Tabuk Province, Saudi Arabia',la:28.0,lo:35.2,t:'Urban megaproject',st:null,ms:[['Project announced','2021']],src:'https://en.wikipedia.org/wiki/The_Line,_Saudi_Arabia',cr:'European Space Agency (cropped) · CC BY-SA 3.0'}],
- more:[[51.481,-0.145],[53.541,9.997],[48.86,2.35],[45.484,9.19],[24.45,32.73],[25.42,51.49],[30.02,31.76],[25.2,55.35],[25.6,37.2],[55.6,12.9],[59.907,10.756],[40.48,-3.69],[48.22,16.43],[41.26,28.74],[37.88,23.73],[33.6,-7.65],[52.23,21.0]],hits:[]};
-const PW=new Set((()=>{try{return JSON.parse(localStorage.getItem('inv-proj-watch')||'[]')}catch{return[]}})());PROJ.f={c:'',t:'',s:'',w:false};
-function projRender(){
- const ctry=x=>x.l.split(', ').pop(),stg=x=>x.st||'Stage not shown',F2=PROJ.f,P=PROJ.list.filter(x=>(!F2.c||ctry(x)===F2.c)&&(!F2.t||x.t===F2.t)&&(!F2.s||stg(x)===F2.s)&&(!F2.w||PW.has(x.k))),p=P.find(x=>x.k===PROJ.sel)||P[0],el=$('projPanel');
- const opt=(k,lab,vals)=>`<select data-pf="${k}" aria-label="${lab}"><option value="">${lab}: All</option>${[...new Set(vals)].sort().map(v=>`<option${F2[k]===v?' selected':''}>${esc(v)}</option>`).join('')}</select>`;
- const filt=`<div class="pj-f">${opt('c','Country',PROJ.list.map(ctry))}${opt('t','Type',PROJ.list.map(x=>x.t))}${opt('s','Stage',PROJ.list.map(stg))}<button type="button" data-pw-only aria-pressed="${F2.w}">★ Watching ${PW.size}</button></div>`;
- el.innerHTML=`<span class="pj-tag">Product preview · Coming soon</span><h2>Development projects, on a global scale</h2><p>Track real estate and infrastructure developments worldwide: who is building, what stage they are at, and the sources behind every update.</p>
- ${filt}${P.length?'':'<p class="pj-foot">No projects match these filters.</p>'}<div class="pj-cards">${P.map(x=>`<button type="button" class="pj-c${x.k===p.k?' on':''}" data-pj="${x.k}"><img src="../img/projects/${x.k}.jpg" alt="" loading="lazy"><b>${esc(x.n)}</b><small>Photo: ${esc(x.cr)}</small></button>`).join('')}</div>
- ${p?`<div class="pj-d"><div style="display:flex;gap:8px;align-items:start"><b style="flex:1">${esc(p.n)}</b><button type="button" class="pj-w" data-pw="${p.k}" aria-pressed="${PW.has(p.k)}">${PW.has(p.k)?'★ Watching':'☆ Watch'}</button></div><div class="mu">${esc(p.l)} · ${esc(p.t)}</div>${p.st?`<span class="pj-st g">${esc(p.st)}</span>`:'<span class="pj-st">Stage not shown</span>'}<div class="pj-tl-h">Milestones (sourced)</div><ul class="pj-tl">${p.ms.map(([a,d])=>`<li><small>${esc(d)}</small>${esc(a)} <a href="${p.src}" target="_blank" rel="noopener">source ↗</a></li>`).join('')}</ul><div class="pj-foot" style="margin-top:6px">Watchlist is saved on this device only.</div></div>`:''}
- <a class="pj-more" href="../../pricing.html#real-estate">Read more about Real Estate in Pro →</a>
- <form class="pj-wl" data-waitlist="globe-projects" novalidate><b>Get early access to Pro</b><p style="margin:2px 0 0;font-size:12px">Pro is not available yet. No payment, no commitment.</p><input type="email" name="email" placeholder="name@company.com" autocomplete="email" required aria-label="Email"><input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true"><label class="ck"><input type="checkbox" name="consent"><span>I agree to receive emails about Pro. Unsubscribe any time. <a href="../../privacy.html">Privacy</a></span></label><button type="submit">Join the waitlist</button><p class="pj-msg" role="status" aria-live="polite"></p></form>
- <p class="pj-foot">Real developments shown as examples of planned coverage. Milestones from Wikipedia; stages only where sourced. Photos: Wikimedia Commons. Projects is not a working feature yet. <a href="../../projects.html">Full preview →</a> Not investment advice.</p>`;
- el.querySelectorAll('[data-pf]').forEach(x=>x.onchange=()=>{F2[x.dataset.pf]=x.value;projRender();});el.querySelector('[data-pw-only]').onclick=()=>{F2.w=!F2.w;projRender();};el.querySelectorAll('[data-pw]').forEach(b=>b.onclick=()=>{const k=b.dataset.pw;PW.has(k)?PW.delete(k):PW.add(k);try{localStorage.setItem('inv-proj-watch',JSON.stringify([...PW]))}catch{}projRender();});
- el.querySelectorAll('[data-pj]').forEach(b=>b.onclick=()=>{PROJ.sel=b.dataset.pj;const q=PROJ.list.find(x=>x.k===PROJ.sel);flyTo(q.lo,q.la,Z);projRender();});
- const f=el.querySelector('form');f.onsubmit=async e=>{e.preventDefault();const m=f.querySelector('.pj-msg'),em=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)){m.textContent='Please enter a valid email address.';return}if(!f.consent.checked){m.textContent='Please tick the box to agree to emails about Pro.';return}
-  m.textContent='Joining…';try{const r=await fetch('https://api.investedia.com/v1/waitlist',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em,consent:true,website:f.website.value,source:'globe-projects'})});m.textContent=r.ok?'You are on the list. We will email you when Pro opens.':r.status===404?'The waitlist opens soon.':r.status===429?'Too many attempts. Please try again tomorrow.':'Something went wrong. Please try again.';if(r.ok)f.reset();}catch{m.textContent='Could not connect. Please try again.'}};
-}
-function projSet(on){
- if(PROJ.on===on&&!on)return;PROJ.on=on;const d=document.documentElement;d.classList.toggle('proj-mode',on);$('projPanel').hidden=!on;
- document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String(on?b.dataset.m==='projects':b.dataset.m===(MARKET.on?'markets':'news'))));
- const u=new URL(location.href);if(on){if(MARKET.on&&typeof marketSetMode==='function')marketSetMode('news');document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.m==='projects')));u.searchParams.set('mode','projects');projRender();hideHover();flyTo(15,38,1);}else if(u.searchParams.get('mode')==='projects')u.searchParams.delete('mode');
- history.replaceState(null,'',u);requestAnimationFrame(size);
-}
-function drawProj(){
- PROJ.hits=[];const rad=Math.PI/180,dot=(la,lo,r,f,g)=>{const[x,y,z]=proj(la*rad,lo*rad);if(z<=.04)return null;ctx.beginPath();ctx.arc(x,y,r*2.2,0,7);ctx.fillStyle=g;ctx.fill();ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fillStyle=f;ctx.fill();return[x,y];};
- for(const[la,lo]of PROJ.more)dot(la,lo,2.6,'#ff9d5c','rgba(255,122,26,.14)');
- ctx.font='600 11.5px Inter,sans-serif';
- for(const p of PROJ.list){if(PROJ.f&&((PROJ.f.c&&p.l.split(', ').pop()!==PROJ.f.c)||(PROJ.f.t&&p.t!==PROJ.f.t)||(PROJ.f.s&&(p.st||'Stage not shown')!==PROJ.f.s)||(PROJ.f.w&&!PW.has(p.k))))continue;const xy=dot(p.la,p.lo,p.k===PROJ.sel?5.5:4.5,'#ff7a1a','rgba(255,122,26,.22)');if(!xy)continue;PROJ.hits.push({x:xy[0],y:xy[1],k:p.k});const tx=p.n.replace(' Solar Complex','');const w=ctx.measureText(tx).width+14;ctx.fillStyle='rgba(12,12,14,.92)';ctx.strokeStyle=p.k===PROJ.sel?'#ff7a1a':'#2e2e33';ctx.beginPath();ctx.roundRect(xy[0]+10,xy[1]-11,w,22,6);ctx.fill();ctx.stroke();ctx.fillStyle='#ececef';ctx.fillText(tx,xy[0]+17,xy[1]+4);}
-}
-function projTap(x,y){const h=PROJ.hits.find(h=>Math.hypot(h.x-x,h.y-y)<22);if(h){PROJ.sel=h.k;projRender();}}
+/* PROJECTS_MODE */
 
 // Reading list + news filter presets (this browser only; not synced to an account)
 const RL=new Set((()=>{try{return JSON.parse(localStorage.getItem('inv-reading')||'[]')}catch{return[]}})());
 const rlSave=()=>{try{localStorage.setItem('inv-reading',JSON.stringify([...RL].slice(-200)))}catch{}};
 document.addEventListener('click',e=>{const b=e.target.closest('[data-rl]');if(!b)return;const id=b.dataset.rl;RL.has(id)?RL.delete(id):RL.add(id);rlSave();render();});
+/* NEWS_DETAILS_FILTERS */
 const PRE=(()=>{try{return JSON.parse(localStorage.getItem('inv-news-presets')||'[]')}catch{return[]}})();
 function presetUI(){const el=$('presets');if(!el)return;el.innerHTML=`<b>Saved views</b>${PRE.map((p,i)=>`<span class="ps"><button type="button" data-ps="${i}">${esc(p.n)}</button><button type="button" class="x" data-psx="${i}" aria-label="Delete ${esc(p.n)}">×</button></span>`).join('')}<button type="button" class="add" data-psadd>+ Save current view</button><small>Saved on this device only</small>`;}
 document.addEventListener('click',async e=>{const a=e.target.closest('[data-psadd],[data-ps],[data-psx]');if(!a)return;
- if(a.dataset.psadd!==undefined){const parts=[F.region==='global'?'All regions':(regionDefinition(F.region)?.[1]||F.region),F.cat==='all'?null:CAT[F.cat],F.win.toUpperCase()].filter(Boolean);PRE.push({n:parts.join(' · '),r:F.region,c:F.cat,w:F.win});if(PRE.length>8)PRE.shift();}
+ if(a.dataset.psadd!==undefined){const parts=[F.region==='global'?'All regions':(regionDefinition(F.region)?.[1]||F.region),F.cat==='all'?null:CAT[F.cat],F.country?nm(F.country):null,F.from||null,F.to||null,F.win.toUpperCase()].filter(Boolean);PRE.push({n:parts.join(' · '),r:F.region,c:F.cat,w:F.win,country:F.country,from:F.from,to:F.to});if(PRE.length>8)PRE.shift();}
  else if(a.dataset.psx!==undefined)PRE.splice(+a.dataset.psx,1);
- else{const p=PRE[+a.dataset.ps];if(p){F.region=p.r;F.cat=p.c;press($('cats'),p.c);press($('regions'),p.r);await setWin(p.w);try{$('reg-label').textContent=(p.r==='global'?'All regions':regionDefinition(p.r)[1]);}catch{}render();}}
+ else{const p=PRE[+a.dataset.ps];if(p){F.region=p.r;F.cat=p.c;F.country=p.country||'';F.from=p.from||'';F.to=p.to||'';press($('cats'),p.c);press($('regions'),p.r);await setWin(p.w);try{$('reg-label').textContent=(p.r==='global'?'All regions':regionDefinition(p.r)[1]);}catch{}render();}}
  try{localStorage.setItem('inv-news-presets',JSON.stringify(PRE))}catch{}presetUI();});
 let mvF = 'all';
-$('gswitch').onclick = e => { const b = e.target.closest('button'); if (!b) return; if (b.dataset.m === 'projects') return projSet(true); projSet(false); if (typeof marketSetMode === 'function') marketSetMode(b.dataset.m); };
+$('gswitch').onclick = e => { const b=e.target.closest('button');if(!b)return;if(b.dataset.m==='projects')return projSet(true);projSet(false,{mode:b.dataset.m});if(typeof marketSetMode==='function')marketSetMode(b.dataset.m); };
 function sideData() {
-  const vis = stories.filter(st => inRegion(st.location.region,F.region)&&inTime(st)&&(!F.mine||touchesWatch(st))&&(F.lens==='all'||st.lens.includes(F.lens))), seen = new Map();
+  const vis = stories.filter(st => InvNewsFilters.match(st,F)&&inRegion(st.location.region,F.region)&&inTime(st)&&(!F.mine||touchesWatch(st))&&(F.lens==='all'||st.lens.includes(F.lens))), seen = new Map();
   vis.forEach(st => impactsOf(st).forEach(i => { const a = assetForImpact(i); if (!a || typeof a.d !== 'number' || !isFinite(a.d) || Math.abs(a.d) > 25 || a.u === 'bp') return; const k = a.s; const e = seen.get(k) || { a, n: 0, cats: new Set() }; e.n++; e.cats.add(st.category); seen.set(k, e); }));
   return { vis, assets: [...seen.values()] };
 }
 function renderSide() {
-  try{const was=document.documentElement.classList.contains('act-on');renderAct();if(was!==document.documentElement.classList.contains('act-on'))requestAnimationFrame(size);}catch(e){console.warn(e)}
+  // Restore News layout before evaluating the activity strip's visibility.
   try{placeLeft()}catch{}
+  try{const was=document.documentElement.classList.contains('act-on');renderAct();if(was!==document.documentElement.classList.contains('act-on'))requestAnimationFrame(size);}catch(e){console.warn(e)}
   const on = !EMBED && !phone() && innerWidth >= 1180 && view.k === 'top' && !document.documentElement.classList.contains('market-mode');
   document.documentElement.classList.toggle('side-on', on);
   [sideSec, sideImp, sideBar].forEach(x => x.hidden = !on); sideImp.hidden = !on || panel.hidden; if (!on) return;
@@ -2399,8 +2409,24 @@ function renderSide() {
     sideBar.innerHTML = `<div class="sb-t"><b>Moving on the news</b><small>Assets named in ${W} articles</small></div>${big.map(e => `<a class="sb-c" href="../../news.html?mover=${encodeURIComponent(e.a.s)}"><b>${esc(e.a.n || e.a.s)}</b><small>${e.n} art.</small><em class="${cl(e.a.d)}">${pc(e.a.d)}</em></a>`).join('')}<small class="meta" style="flex:none;font-size:10.5px">Daily moves. Not investment advice.</small>`;
 }
 addEventListener('resize', () => renderSide());
-setTimeout(()=>{presetUI();placeLeft();size();if(PROJ_START)projSet(true);},0);
+const sheetActions = document.querySelector('.sheet-actions');
+function detailHeader() {
+  const back = pbody.querySelector('[data-back]');
+  if (!back) { panel.insertBefore(sheetActions, pbody); return; }
+  const header = document.createElement('div'); header.className = 'detail-header';
+  const row = document.createElement('div'); row.className = 'detail-controls';
+  row.append(back, sheetActions);
+  const follow = pbody.querySelector('[data-follow]');
+  if (follow) sheetActions.insertBefore(follow, sheetActions.querySelector('#sheet-close'));
+  header.append(row);
+  const tabs = pbody.querySelector('.gm-tabs'); if (tabs) header.append(tabs);
+  pbody.prepend(header);
+}
+setTimeout(()=>{presetUI();placeLeft();newsFilterUI();size();if(PROJ_START)projSet(true);},0);
 function render() {
+  // Preserve the existing action buttons and their listeners across renders.
+  sheetActions.querySelector('[data-follow]')?.remove();
+  panel.insertBefore(sheetActions, pbody);
   panel.dataset.view = view.k; peekUpdate(); dockUpdate();
   document.documentElement.classList.toggle('panel-top', !!PANEL_TEMPLATE && view.k === 'top');
   if (!panelInitialized) { panelInitialized = true; if (phone() && PANEL_TEMPLATE === 'b') panel.classList.add('open'); }
@@ -2434,7 +2460,7 @@ function render() {
     const list = view.ids.map(i => byId[i]).sort(sortTop);
     pbody.innerHTML = `<button class="back" data-back>← Back</button><div class="eyebrow">${esc(nm(list[0].location.country))}</div><h2>${esc(list[0].location.place)}</h2><div class="stats"><div><b>${list.length}</b>articles here</div></div><div class="list">${list.map(item).join('')}</div>${noteHTML()}`;
   }
-  syncDetailActions();
+  detailHeader();
 }
 
 // ===== Search: countries, places, companies and stories =====
@@ -2453,11 +2479,11 @@ function search() {
   res.hidden = false; mark();
 }
 const mark = () => res.querySelectorAll('.ri').forEach(b => b.setAttribute('aria-selected', +b.dataset.i === hi));
-async function choose(h) { if (!h) return; res.hidden = true; qi.value = ''; qi.blur(); if (h.k === 'country') openCountry(h.c); else { if (!match(h.s)) { F.cat = 'all'; F.lens = 'all'; F.region = 'global'; press($('cats'), 'all'); press($('regions'), 'global'); await setWin('7d'); } openStory(h.s); } }
+async function choose(h) { if (!h) return; res.hidden = true; qi.value = ''; qi.blur(); if (h.k === 'country') openCountry(h.c); else { if (!match(h.s)) { F.cat = 'all'; F.lens = 'all'; F.region = 'global'; F.country=F.from=F.to=''; press($('cats'), 'all'); press($('regions'), 'global'); await setWin('7d'); } openStory(h.s); } }
 qi.addEventListener('focus', () => { qi.blur(); if (window.InvPeek) InvPeek.search(); else search(); });
 window.InvGlobeNav = {
   country: n => { const c = byName[n]; if (!c) return false; openCountry(c); return true; },
-  story: async id => { const s = byId[id]; if (!s) return false; if (!match(s)) { F.cat = 'all'; F.lens = 'all'; F.region = 'global'; press($('cats'), 'all'); press($('regions'), 'global'); await setWin('7d'); } openStory(s); return true; }
+  story: async id => { const s = byId[id]; if (!s) return false; if (!match(s)) { F.cat = 'all'; F.lens = 'all'; F.region = 'global'; F.country=F.from=F.to=''; press($('cats'), 'all'); press($('regions'), 'global'); await setWin('7d'); } openStory(s); return true; }
 };
 qi.addEventListener('keydown', e => {
   if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); hi = (hi + (e.key === 'ArrowDown' ? 1 : -1) + hits.length) % Math.max(1, hits.length); mark(); }
@@ -2528,7 +2554,7 @@ const TB = 'a';  // chosen design: time pill under Filters (owner, 2026-11-06)
 const tbEl = document.createElement('div'); tbEl.id = 'tb'; tbEl.className = 'tb tb-' + TB + ' glass'; document.body.appendChild(tbEl);
 async function setWin(k) {
   const selection = ++historySelection;
-  play = null; F.win = k; historyError = false;
+  play = null; F.win = k; Object.assign(F,InvNewsFilters.normalize(F,T0,winMin()));historyError = false;
   historyLoading = !EMBED && ['7d', '30d'].includes(k);
   press($('wins'), k); refresh(); syncTb();
   if (historyLoading) {
@@ -2849,17 +2875,17 @@ $('fsheet').querySelector('.fs-head').addEventListener('pointerup',e=>{if(filter
 $('fsheet').querySelector('.fs-head').style.touchAction='none';
 $('m-filters').onclick = openFilters; $('fs-close').onclick = () => closeFilters(); $('fsback').onclick = () => closeFilters(); $('fs-show').onclick = () => closeFilters();
 $('m-search').onclick = () => { if (window.InvPeek) InvPeek.search(); else qi.focus(); };
-$('fs-reset').onclick = () => { F.mine = false; for (const [box, k] of [[$('cats'), 'all'], [$('regions'), 'global'], [$('wins'), '48h']]) box.querySelector(`[data-k="${k}"]`).click(); };
+$('fs-reset').onclick = () => { F.mine = false;F.country=F.from=F.to='';for (const [box, k] of [[$('cats'), 'all'], [$('regions'), 'global'], [$('wins'), '48h']]) box.querySelector(`[data-k="${k}"]`).click(); };
 $('fsheet').addEventListener('keydown', e => {
   if (e.key === 'Escape') { e.stopPropagation(); closeFilters(); return; }
   if (e.key !== 'Tab') return;
-  const f = [...$('fsheet').querySelectorAll('button,[href],input')].filter(x => x.offsetParent !== null); if (!f.length) return;
+  const f = [...$('fsheet').querySelectorAll('button,[href],input,select')].filter(x => x.offsetParent !== null); if (!f.length) return;
   const first = f[0], last = f[f.length - 1];
   if (e.shiftKey && (document.activeElement === first || document.activeElement === $('fs-title'))) { e.preventDefault(); last.focus(); }
   else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
 });
 function updateFiltersUI() {
-  const n = (F.lens !== 'all') + (F.region !== 'global') + (F.win !== '48h'), c = $('m-fcount');
+  const n = (F.lens !== 'all') + (F.region !== 'global') + (F.win !== '48h') + !!F.country + !!F.from + !!F.to, c = $('m-fcount');
   c.hidden = !n; c.textContent = n; $('m-filters').setAttribute('aria-label', n ? `Filters, ${n} active` : 'Filters');
   $('fs-show').textContent = `Show ${shown.length} ${shown.length === 1 ? 'article' : 'articles'}`;
 }
@@ -2894,6 +2920,8 @@ function toggleNavSheet() {
 $('dock').onclick = e => {
   const b = e.target.closest('button'); if (!b || !phone()) return;
   gmAutoSheet = false;
+  if(b.dataset.v==='projects')return projSet(true);
+  if(PROJ.on)projSet(false,{mode:b.dataset.v==='markets'?'markets':'news'});
   if (phoneView === b.dataset.v && phoneView !== 'globe') return toggleNavSheet();
   phoneView = b.dataset.v; $('peek').classList.remove('minimized');
   marketSetMode(phoneView === 'markets' ? 'markets' : 'news');

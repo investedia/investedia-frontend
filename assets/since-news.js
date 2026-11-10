@@ -50,10 +50,10 @@
   function card(o) {
     const s = o.story, a = o.asset, name = esc(a.n || o.impact?.name || ''), published = s.t || Date.parse(s.published_at), now = o.now || Date.now();
     const c = compute(published, o.series, now);
-    const head = `<div class="sn-eb">${name} · since the article</div>`;
+    const head = `<div class="sn-eb">${name} · ${c.state === 'none' || c.state === 'first' ? Number.isFinite(a.d) ? 'today' : 'price unavailable' : 'since the article'}</div>`;
     if (c.state === 'none' || c.state === 'first') {
       const msg = c.state === 'first' ? `Tracking started at ${hhmm(c.at)} UTC. The chart appears after the next price update (about 15 minutes).` : `We started recording this article's price after it was published, so the since-the-news chart is not available.${Number.isFinite(a.d) ? ' Showing today\'s move instead.' : ''}`;
-      return `<section class="sn" aria-label="Since the article: ${name}">${head}${Number.isFinite(a.d) ? `<div class="sn-row"><div class="sn-big ${cls(a.d)}">${arrow(a.d)} ${pct(a.d)}</div><div class="sn-ba"><span>today</span></div></div>` : ''}<p class="sn-na">${esc(msg)}</p></section>`;
+      return `<section class="sn" aria-label="${name}: today">${head}${Number.isFinite(a.d) ? `<div class="sn-row"><div class="sn-big ${cls(a.d)}">${arrow(a.d)} ${pct(a.d)}</div><div class="sn-ba"><span>today</span></div></div>` : ''}<p class="sn-na">${esc(msg)}</p></section>`;
     }
     const ba = (c.before.length ? `<span>Before:</span> <b class="${cls(c.beforeMove)}">${arrow(c.beforeMove)} ${pct(c.beforeMove)}</b> · ${span(c.beforeSpan)}<br>` : '') + `<span>After:</span> <b class="${cls(c.move)}">${arrow(c.move)} ${pct(c.move)}</b> · ${span(c.now - published)}`;
     const lateNote = c.lateMs > 15 * MIN ? ` The first price was recorded ${span(c.lateMs)} after the article, so the change is measured from ${hhmm(c.base[0])} UTC.` : '';
