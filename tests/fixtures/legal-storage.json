@@ -93,6 +93,30 @@
     "name": "googtrans",
     "purpose": "Language selected for Google Translate",
     "category": "Cookie for translation you request",
-    "duration": "Managed by Google; removed by \u201cShow original English\u201d"
+    "duration": "Managed by Google; removed by “Show original English”"
+  },
+  {
+    "name": "inv-globe-layout",
+    "purpose": "Where you moved and pinned the Sector overview card on the Globe page",
+    "category": "Strictly necessary for requested feature",
+    "duration": "Until cleared or removed"
+  },
+  {
+    "name": "inv-reading",
+    "purpose": "Articles you saved to your reading list on the Globe page (this device only)",
+    "category": "Strictly necessary for requested feature",
+    "duration": "Until cleared or removed"
+  },
+  {
+    "name": "inv-news-presets",
+    "purpose": "Saved news filter views on the Globe page (this device only)",
+    "category": "Strictly necessary for requested feature",
+    "duration": "Until cleared or removed"
+  },
+  {
+    "name": "inv-proj-watch",
+    "purpose": "Projects you chose to watch in the Projects preview (this device only)",
+    "category": "Strictly necessary for requested feature",
+    "duration": "Until cleared or removed"
   }
 ]
