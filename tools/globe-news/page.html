@@ -19,6 +19,19 @@
 .u2{color:#34d399}.d2{color:#f87171}
 .im-r{display:flex;align-items:center;gap:12px;padding:6px 0}.im-r+.im-r{border-top:1px solid rgba(255,255,255,.06)}.im-i{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:16px;flex:none}.im-r small{display:block;color:var(--fg-3);font-size:11.5px}.im-r strong{font-size:22px;font-weight:600}.im-l{margin-left:auto;width:170px}.im-l a{display:flex;justify-content:space-between;font:12px ui-monospace,monospace;color:var(--fg-2);padding:1px 0}
 .side-imp a,.side-bar a{text-decoration:none}.sb-t{flex:none;margin-right:6px}.sb-t b{display:block;font-size:13.5px}.sb-t small{color:var(--fg-3);font-size:11px}.sb-c{flex:1;min-width:0;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);border-radius:12px;padding:8px 10px;font-size:13px;color:var(--fg)}.sb-c b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sb-c em{margin-left:auto;font:12.5px ui-monospace,monospace;font-style:normal}.sb-c small{color:var(--fg-3);font-size:11px;white-space:nowrap}
+
+/* B: region + watchlist inside the search bar, slim topic chips (PC) */
+@media(min-width:761px){
+ html.dd-in #sbox{width:min(640px,100%)!important;padding-right:300px!important;box-sizing:border-box!important}
+ html.dd-in #sbox input{flex:1 1 0!important;width:0!important;min-width:0!important}html.dd-in #sbox kbd{display:none!important}
+ #ddrow.in-s{position:absolute!important;margin:0!important;gap:6px!important;flex-wrap:nowrap!important}
+ #ddrow.in-s .dd-btn{height:36px!important;padding:0 12px!important;gap:7px!important;font-size:13px!important;background:rgba(255,255,255,.07)!important;border-color:transparent!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+ #ddrow.in-s .dd-btn img{width:18px!important;height:18px!important}#ddrow.in-s .dd-bino{width:16px!important;height:16px!important}
+ #cats.chips{gap:6px!important;margin-top:12px!important}
+ #cats .chip{height:34px!important;padding:0 6px 0 13px!important;font-size:13px!important;font-weight:500!important;background:rgba(24,24,27,.55)!important;border-color:rgba(255,255,255,.12)!important}
+ #cats .chip b{min-width:0!important;height:auto!important;padding:0 6px 0 0!important;background:none!important;color:var(--fg-3)!important;font-weight:500!important;font-size:11.5px!important}
+ #cats .chip[aria-pressed=true]{background:rgba(255,138,61,.14)!important;color:#ffb27a!important;border-color:#ff8a3d!important}#cats .chip[aria-pressed=true] b{background:none!important;color:#ff9d5c!important}
+}
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
@@ -2068,6 +2081,8 @@ function lensPanel(list, nc) {
     ${list.length ? `<div class="lens-list">${list.slice(0, 20).map(lensItem).join('')}</div>` : `<div class="empty">No ${esc(name.toLowerCase())} articles in ${WLABEL[F.win]}. Try a wider time window.</div>`}${noteHTML()}`;
 }
 
+function placeDD() { const d = $('ddrow'), b = $('sbox'), on = !EMBED && !phone() && d.parentNode === b.parentNode; document.documentElement.classList.toggle('dd-in', on); d.classList.toggle('in-s', on); if (!on) { d.style.top = d.style.left = ''; return; } d.style.top = (b.offsetTop + (b.offsetHeight - 36) / 2) + 'px'; d.style.left = (b.offsetLeft + b.offsetWidth - d.offsetWidth - 8) + 'px'; }
+addEventListener('resize', () => requestAnimationFrame(placeDD)); setTimeout(placeDD, 0); new ResizeObserver(() => placeDD()).observe(document.getElementById('ddrow'));
 let mvF = 'all';
 function sideData() {
   const vis = stories.filter(matchNoLens), seen = new Map();
