@@ -146,6 +146,8 @@ html.proj-mode :is(.panel,.act,.side-sec,.side-imp,.side-bar,#lcol,.timeline,#ca
 .mkd-ft svg{width:48px;height:18px}.mkd-fh{border-top:0;color:#6c6c74;font-size:10.5px;padding-bottom:2px}.mkd-fh button{font:10.5px Inter,sans-serif;color:#6c6c74;padding:0;text-align:right}.mkd-fh button:first-child{text-align:left}.mkd-fh button.on{color:#ffb27a}
 .mkd-more{display:block;width:100%;margin-top:6px;padding:6px;border:1px solid #2a2a2f;border-radius:8px;color:#ccc;font:12px Inter,sans-serif}
 .mkd-rg{display:grid;grid-template-columns:1fr 46px 82px 82px;gap:6px;padding:7px 0;border-top:1px solid #16161a;font-size:12.5px}.mkd-rg small{color:#77777f;font-size:11px}.mkd-rg .u{color:#34d399}.mkd-rg .d{color:#f87171}
+/* Swipe-to-watchlist: the orange action is hidden until a row is actually swiped */
+.nd-act{opacity:0;pointer-events:none;transition:opacity .15s}.nd-row.sw .nd-act{opacity:1}
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>

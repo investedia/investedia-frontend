@@ -52,24 +52,24 @@ const OPTS = [
   ['dropdown', 'Phone dropdowns', [['sheet', 'Bottom sheet'], ['popover', 'Small menu']]],
   ['motion', 'Animations', [['full', 'Smooth'], ['reduced', 'Minimal']]],
 ];
-let cfg = Object.assign({}, STUDIO_DEF);
-try { Object.assign(cfg, JSON.parse(localStorage.getItem('inv-studio') || '{}')); } catch {}
-const save = () => { try { localStorage.setItem('inv-studio', JSON.stringify(cfg)); } catch {} };
+let studioCfg = Object.assign({}, STUDIO_DEF);
+try { Object.assign(studioCfg, JSON.parse(localStorage.getItem('inv-studio') || '{}')); } catch {}
+const save = () => { try { localStorage.setItem('inv-studio', JSON.stringify(studioCfg)); } catch {} };
 
 function drawOpts() {
   document.getElementById('st-opts').innerHTML = OPTS.map(([k, label, list]) => `<div class="st-row"><span class="st-label">${label}</span>${k === 'accent'
-    ? `<div class="st-swatches">${list.map(([v, n]) => `<button type="button" class="st-sw" style="--sw:${v}" aria-label="${n}" aria-pressed="${cfg.accent.toLowerCase() === v.toLowerCase()}" data-k="accent" data-v="${v}"></button>`).join('')}<label class="st-sw st-custom" aria-label="Custom colour" style="--sw:${cfg.accent}"><input type="color" value="${cfg.accent}" id="st-color"></label></div>`
-    : `<div class="tabs st-tabs">${list.map(([v, n]) => `<button class="tab" type="button" aria-pressed="${cfg[k] === v}" data-k="${k}" data-v="${v}">${n}</button>`).join('')}</div>`}</div>`).join('');
+    ? `<div class="st-swatches">${list.map(([v, n]) => `<button type="button" class="st-sw" style="--sw:${v}" aria-label="${n}" aria-pressed="${studioCfg.accent.toLowerCase() === v.toLowerCase()}" data-k="accent" data-v="${v}"></button>`).join('')}<label class="st-sw st-custom" aria-label="Custom colour" style="--sw:${studioCfg.accent}"><input type="color" value="${studioCfg.accent}" id="st-color"></label></div>`
+    : `<div class="tabs st-tabs">${list.map(([v, n]) => `<button class="tab" type="button" aria-pressed="${studioCfg[k] === v}" data-k="${k}" data-v="${v}">${n}</button>`).join('')}</div>`}</div>`).join('');
   document.getElementById('st-color').oninput = e => set('accent', e.target.value);
 }
-function set(k, v) { cfg[k] = v; applyStudio(cfg); save(); if (k === 'accent') { drawOpts(); drawPreview(); } else document.querySelectorAll(`[data-k="${k}"]`).forEach(b => b.setAttribute(b.classList.contains('tab') ? 'aria-pressed' : 'aria-pressed', b.dataset.v === v)); }
+function set(k, v) { studioCfg[k] = v; applyStudio(studioCfg); save(); if (k === 'accent') { drawOpts(); drawPreview(); } else document.querySelectorAll(`[data-k="${k}"]`).forEach(b => b.setAttribute(b.classList.contains('tab') ? 'aria-pressed' : 'aria-pressed', b.dataset.v === v)); }
 document.getElementById('st-opts').addEventListener('click', e => { const b = e.target.closest('[data-k]'); if (b) set(b.dataset.k, b.dataset.v); });
 
-const ap = document.getElementById('st-apply'); ap.checked = !!cfg.apply;
-ap.onchange = () => { cfg.apply = ap.checked; save(); };
-document.getElementById('st-reset').onclick = () => { const keep = cfg.apply; cfg = Object.assign({}, STUDIO_DEF, { apply: keep }); applyStudio(cfg); save(); drawOpts(); drawPreview(); };
+const ap = document.getElementById('st-apply'); ap.checked = !!studioCfg.apply;
+ap.onchange = () => { studioCfg.apply = ap.checked; save(); };
+document.getElementById('st-reset').onclick = () => { const keep = studioCfg.apply; studioCfg = Object.assign({}, STUDIO_DEF, { apply: keep }); applyStudio(studioCfg); save(); drawOpts(); drawPreview(); };
 document.getElementById('st-copy').onclick = async () => {
-  const txt = 'Investedia look: ' + OPTS.map(([k, label, list]) => `${label}: ${(list.find(([v]) => v.toLowerCase() === String(cfg[k]).toLowerCase()) || [0, cfg[k]])[1]}`).join(' · ');
+  const txt = 'Investedia look: ' + OPTS.map(([k, label, list]) => `${label}: ${(list.find(([v]) => v.toLowerCase() === String(studioCfg[k]).toLowerCase()) || [0, studioCfg[k]])[1]}`).join(' · ');
   let ok = false; try { await navigator.clipboard.writeText(txt); ok = true; } catch {}
   document.getElementById('st-copied').textContent = ok ? 'Copied. Paste it in the chat.' : txt;
 };
@@ -89,5 +89,5 @@ document.querySelectorAll('#pv-chips .chip').forEach(b => b.onclick = () => docu
 
 const panel = document.querySelector('.studio-panel'), mb = document.getElementById('st-min');
 mb.onclick = () => { const min = panel.classList.toggle('min'); mb.setAttribute('aria-expanded', !min); mb.querySelector('.st-hint').textContent = min ? 'Tap to show' : 'Tap to hide'; };
-applyStudio(cfg); drawOpts(); drawPreview();
+applyStudio(studioCfg); drawOpts(); drawPreview();
 </script>
