@@ -59,6 +59,11 @@ html.standalone{background:#050506}html.standalone[data-theme=light]{background:
 .mk-note,.mk-src{color:#5f5f67;font-size:10.5px;margin:6px 0 0}.mk-empty{border:1px dashed #2a2a2f;border-radius:8px;padding:10px;color:#9a9aa2;font-size:12px;margin:0}
 .mk-cov{display:flex;flex-wrap:wrap;gap:4px;margin-top:12px;font-size:11px}.mk-cov span{padding:2px 7px;border:1px solid #26262a;border-radius:4px}.mk-cov .ok{color:#6ee7b7}.mk-cov .pa{color:#fbbf24}.mk-cov .na{color:#7c7c84}
 .mk-news{display:block;padding:8px 0;border-bottom:1px solid #17171a;color:inherit;text-decoration:none}.mk-news small{display:block;color:#ff9d5c;font-size:10px;letter-spacing:.04em}.mk-news span{font-size:13px;line-height:1.35}
+
+.mk-sess{position:fixed;z-index:6;left:24px;bottom:16px;right:472px;height:40px;display:flex;align-items:center;gap:4px;padding:0 10px;border:1px solid #232327;border-radius:10px;background:rgba(11,11,13,.94);overflow:hidden;font:12px Inter,sans-serif}.mk-sess[hidden]{display:none}
+.mk-sess-t{color:#9a9aa2;margin-right:6px;white-space:nowrap}.mk-sess-t b{color:#34d399;font-weight:500}.mk-sess button{flex:none;padding:3px 8px;border-radius:5px;border:1px solid #232327;color:#7c7c84;font:500 11.5px Inter,sans-serif;white-space:nowrap}.mk-sess button.on{color:#6ee7b7;border-color:rgba(110,231,183,.3)}.mk-sess button:hover{color:#fff}.mk-sess-n{margin-left:auto;color:#5f5f67;font-size:10.5px;white-space:nowrap}
+html.market-mode:not(.embed) .layers{bottom:68px!important}html.market-mode:not(.embed) .zoom{bottom:68px!important}html.market-mode:not(.embed) .zloc{bottom:152px!important}
+@media(max-width:760px){.mk-sess{display:none!important}html .market-panel{height:50vh}}
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
@@ -1488,7 +1493,7 @@ function size() {
     const timeline = $('tl').getBoundingClientRect();
     globeBox = { left: phone() ? 8 : 24, top: header.bottom + 12,
       right: phone() ? W - 8 : ((mp => mp && document.documentElement.classList.contains('market-mode') && !mp.hidden && mp.offsetWidth)(document.querySelector('.market-panel')) ? document.querySelector('.market-panel').getBoundingClientRect().left - 24 : panel.hidden || !panel.offsetWidth || panel.getBoundingClientRect().left <= 0 ? W - 24 : panel.getBoundingClientRect().left - 24),
-      bottom: sheetOpen ? H - panel.offsetHeight - 12 : (timeline.height ? timeline.top - 16 : H - 90) };
+      bottom: sheetOpen ? H - panel.offsetHeight - 12 : (timeline.height ? timeline.top - 16 : H - (document.documentElement.classList.contains('market-mode') ? 72 : 90)) };
     // template B (?panel=b): the articles sit in a strip along the bottom, so the globe uses the full width above it
     if (PANEL_TEMPLATE === 'b' && panel.dataset.view === 'top') { globeBox.right = W - (phone() ? 8 : 24); globeBox.bottom = Math.min(globeBox.bottom, (phone() ? $('tl').getBoundingClientRect().top : panel.getBoundingClientRect().top) - 16); }
     const aw = Math.max(1, globeBox.right - globeBox.left), ah = Math.max(1, globeBox.bottom - globeBox.top);

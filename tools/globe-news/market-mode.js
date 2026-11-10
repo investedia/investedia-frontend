@@ -19,10 +19,10 @@ function marketInit(){
   const cut=Date.now()-30*864e5,articles=new Map();for(const a of [...live.stories,...archive.stories])if(Date.parse(a.published_at)>=cut)articles.set(a.id,a);
   const days=(index.days||[]).map(d=>typeof d==='string'?d:d.date||d.day).filter(d=>d&&Date.parse(d+'T23:59:59Z')>=cut);
   await Promise.all(days.map(async d=>{try{const raw=await read('events/'+d+'.json');for(const e of raw.events||[])if(!articles.has(e.id)&&Date.parse(e.at)>=cut)articles.set(e.id,{id:e.id,headline:e.title,published_at:e.at,importance:e.imp,location:e.loc,source:{name:e.src,url:e.url},entities:(e.cos||[]).map(x=>({asset:{id:x.id}})),historicalAssets:e.assets||[]});}catch{}}));
-  MARKET.articles=[...articles.values()].sort((a,b)=>Date.parse(b.published_at)-Date.parse(a.published_at));MARKET.ready=true;if(MARKET.selected){MARKET.selectedVenue=marketVenue(MARKET.selected,MARKET.selectedVenue)?.id||null;marketRender();}
+  MARKET.articles=[...articles.values()].sort((a,b)=>Date.parse(b.published_at)-Date.parse(a.published_at));MARKET.ready=true;try{mkSessRender()}catch{};if(MARKET.selected){MARKET.selectedVenue=marketVenue(MARKET.selected,MARKET.selectedVenue)?.id||null;marketRender();}
  }).catch(()=>{MARKET.error=true;if(MARKET.selected)marketRender();});return MARKET.promise;
 }
-function marketSetMode(mode){setTimeout(()=>{if(typeof renderSide==='function')renderSide();document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.m==='markets')===(mode==='markets'))));size();},0);
+function marketSetMode(mode){setTimeout(()=>{try{mkSessRender()}catch{}},0);setTimeout(()=>{if(typeof renderSide==='function')renderSide();document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.m==='markets')===(mode==='markets'))));size();},0);
  MARKET.on=mode==='markets';document.documentElement.classList.toggle('market-mode',MARKET.on);const u=new URL(location.href);MARKET.on?u.searchParams.set('mode','markets'):u.searchParams.delete('mode');history.replaceState(null,'',u);marketControl.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.mode==='markets')===MARKET.on)));
  qi.placeholder=MARKET.on?'Search countries, exchanges, indices & companies':'Search assets, countries & articles';if(MARKET.on)marketInit();else marketClose();
 }
@@ -83,6 +83,19 @@ function marketRender(){
  const handle=marketPanel.querySelector('.market-handle');let start;handle.onpointerdown=e=>{start=e.clientY;handle.setPointerCapture(e.pointerId);};handle.onpointerup=e=>{if(start!==undefined){const delta=e.clientY-start;if(delta>70)marketClose();else if(delta>35)marketPanel.style.height='26vh';if(delta< -35)marketPanel.style.height='60vh';}start=undefined;marketNotifyPanel();};
  marketNotifyPanel();requestAnimationFrame(size);
 }
+
+// Market sessions bar (PC, Markets mode): which major exchanges are open now
+const mkBar=document.createElement('nav');mkBar.className='mk-sess';mkBar.setAttribute('aria-label','Market sessions');mkBar.hidden=true;document.body.append(mkBar);
+const MK_MAJOR=['XTKS','XHKG','XSHG','XNSE','XBOM','XSAU','XJSE','XETR','XPAR','XLON','XNYS','XNAS','XTSE','BVMF','XASX'];
+function mkSessRender(){
+ const on=MARKET.on&&!phone()&&!EMBED&&MARKET.exchanges&&Object.keys(MARKET.exchanges).length;mkBar.hidden=!on;if(!on)return;
+ const byCode=Object.fromEntries(Object.keys(ISO).map(n=>[ISO[n],n]));
+ const items=MK_MAJOR.filter(m=>MARKET.exchanges[m]).map(m=>[m,MARKET.exchanges[m],mkStatus(MARKET.exchanges[m])]).filter(x=>x[2]);
+ const open=items.filter(x=>x[2].open).length;
+ mkBar.innerHTML=`<span class="mk-sess-t">Sessions <b>${open} open</b></span>`+items.map(([m,e,st])=>`<button type="button" class="${st.open?'on':''}" data-mic="${m}" title="${esc(e.name)} · ${st.hours} ${esc(st.tz)} · ${st.label}">${esc(e.short)}</button>`).join('')+'<span class="mk-sess-n">Regular hours</span>';
+ mkBar.querySelectorAll('[data-mic]').forEach(b=>b.onclick=()=>{const e=MARKET.exchanges[b.dataset.mic],n=byCode[e.country];if(n)marketSelect(n,b.dataset.mic);});
+}
+setInterval(()=>{if(MARKET.on)mkSessRender();},60000);addEventListener('resize',()=>mkSessRender());
 function marketTap(x,y){const ring=[...MARKET.hits].sort((a,b)=>Math.hypot(a.x-x,a.y-y)-Math.hypot(b.x-x,b.y-y)).find(h=>Math.hypot(h.x-x,h.y-y)<20);if(ring)return marketSelect(ring.e.countryName,ring.e.id);const g=inv(x,y),c=g&&countryAt(g[0],g[1]);if(c)return marketSelect(c.name);marketClose();}
 function drawMarketMode(){
  MARKET.labels=[];MARKET.drawnLines=[];MARKET.hits=[];const code=marketPanel.hidden?null:ISO[MARKET.selected],limit=phone()?5:8,links=code?MARKET.links.filter(l=>l.from===code||l.to===code).sort((a,b)=>b.value_usd-a.value_usd):[],selected=marketPanel.hidden?null:marketVenue(MARKET.selected,MARKET.selectedVenue),connected=new Set();
