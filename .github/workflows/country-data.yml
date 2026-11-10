@@ -1,11 +1,12 @@
 # Refreshes the ECB reference rates used by the Markets country panel and opens a PR.
-# Manual only for now; a daily schedule is added only after owner approval. No secrets.
+# Runs every weekday after the ECB publishes (owner approved 10 Nov 2026), and by hand. No secrets.
 name: Country data refresh (ECB rates)
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '37 15 * * 1-5'  # after the ECB publishes (~16:00 CET)
 permissions:
   contents: write
-  pull-requests: write
 concurrency:
   group: country-data
   cancel-in-progress: false
@@ -20,13 +21,11 @@ jobs:
           python-version: '3.12'
       - name: Fetch ECB reference rates (keeps previous file on failure)
         run: python scripts/fx_ecb.py
-      - name: Open PR if changed
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Commit the new rates (data files only)
         run: |
           if git diff --quiet -- assets/globe/fx-ecb.json docs/assets/globe/fx-ecb.json; then echo "No change"; exit 0; fi
-          b="data/ecb-$(date -u +%Y%m%d)"
+          if [ -n "$(git status --porcelain | grep -v 'assets/globe/fx-ecb.json')" ]; then echo "::error::Unexpected changes; refusing to commit"; exit 1; fi
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$b"; git add assets/globe/fx-ecb.json docs/assets/globe/fx-ecb.json
-          git commit -m "ECB reference rates $(jq -r .as_of assets/globe/fx-ecb.json)"; git push -u origin "$b"
-          gh pr create --title "ECB reference rates update" --body "Automated ECB reference-rate refresh. Source: ECB (reuse with source named)." --base main --head "$b"
+          git add assets/globe/fx-ecb.json docs/assets/globe/fx-ecb.json
+          git commit -m "Data: ECB reference rates $(jq -r .as_of assets/globe/fx-ecb.json)"
+          git push origin HEAD:main
