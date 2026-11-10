@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';const s={window:{},document:{currentScript:{src:'https://example.org/assets/economy-charts.js'}},URL,Intl};vm.runInNewContext(fs.readFileSync('assets/js/economy-charts.js','utf8'),s);const e=s.window.InvEconomy;
+test('missing years split the line',()=>{assert.equal(e.segments([[2019,1],[2020,2],[2022,4]]).length,2);});
+test('percentages compare in points; levels in percent; zero baseline missing',()=>{assert.equal(e.delta(2,3,'pct').value,-1);assert.equal(e.delta(120,100,'usd').value,20);assert.equal(e.delta(1,0,'usd'),null);});
+test('summary uses actual last-ten-year observations and actual prior year',()=>{const a=[[2000,100],[2016,1],[2020,2],[2025,3]],v=e.summary(a,'pct');assert.equal(v.average,2);assert.equal(v.count,3);assert.equal(v.change,null);});
+test('fewer than three values never creates a chart',()=>{const html=e.render('US',{gdp:[2025,10]});assert(!html.includes('<svg'));assert(html.includes('aria-expanded="false"'));});
