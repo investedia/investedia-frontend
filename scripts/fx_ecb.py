@@ -11,7 +11,11 @@ def main():
         raw = urllib.request.urlopen(urllib.request.Request(URL, headers={'User-Agent': 'InvestediaRobot/1.0'}), timeout=30).read()
         ns = {'e': 'http://www.ecb.int/vocabulary/2002-08-01/eurofxref'}
         days = ET.fromstring(raw).findall('.//e:Cube/e:Cube[@time]', ns)
-        day = max(days, key=lambda d: d.get('time'))
+        days = sorted(days, key=lambda d: d.get('time')); day = days[-1]
+        hist = {}
+        for dd in days[-31:]:
+            r = {c.get('currency'): float(c.get('rate')) for c in dd.findall('e:Cube', ns)}
+            if 'USD' in r: hist[dd.get('time')] = {k: round(v / r['USD'], 6) for k, v in r.items() if k != 'USD'} | {'EUR': round(1 / r['USD'], 6)}
         eur = {c.get('currency'): float(c.get('rate')) for c in day.findall('e:Cube', ns)}
         if 'USD' not in eur or len(eur) < 20: raise ValueError('incomplete ECB data')
     except Exception as e:
@@ -21,7 +25,7 @@ def main():
     out = {'schema': 'investedia.fx-ecb/v1', 'as_of': day.get('time'), 'source': 'European Central Bank, euro foreign exchange reference rates',
            'source_url': URL, 'terms': 'Reuse permitted with the source named (ECB). Reference rates are for information purposes only.',
            'method': 'USD/XXX = (EUR/XXX) / (EUR/USD), same ECB reference date', 'kind': 'daily reference rate, not a live or tradable price',
-           'eur': eur, 'usd': dict(sorted(usd.items()))}
+           'eur': eur, 'usd': dict(sorted(usd.items())), 'usd_hist': hist}
     for p in OUTS:
         p.parent.mkdir(parents=True, exist_ok=True); p.write_text(json.dumps(out, indent=1) + '\n', encoding='utf-8')
     print(json.dumps({'as_of': out['as_of'], 'currencies': len(usd)})); return 0
