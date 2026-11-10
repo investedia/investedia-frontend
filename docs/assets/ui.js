@@ -265,6 +265,8 @@
     const r = from?.getBoundingClientRect(), x = r ? r.left + r.width / 2 : innerWidth - 40, y = r ? r.top + r.height / 2 : 30;
     const end = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
     const vt = document.startViewTransition(() => setTheme(t));
+    vt.finished.catch(() => {});
+    vt.updateCallbackDone.catch(() => {});
     vt.ready.then(() => document.documentElement.animate({ clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${end}px at ${x}px ${y}px)`] },
       { duration: 650, easing: 'cubic-bezier(.65,0,.35,1)', pseudoElement: '::view-transition-new(root)' })).catch(() => {});
   };
