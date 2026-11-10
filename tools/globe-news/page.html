@@ -46,6 +46,24 @@ html.standalone{background:#050506}html.standalone[data-theme=light]{background:
 .ec-r{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-top:1px solid rgba(255,255,255,.07);font-size:14px}.ec-r b{font:600 14px 'Geist Mono',ui-monospace,monospace}.ec-r b small{font:400 11px Inter,sans-serif;color:var(--fg-3);margin-left:4px}.ec-r em{font:400 12px Inter,sans-serif;color:var(--fg-3);font-style:normal}.ec-r .pct-up{color:#34d399}.ec-r .pct-down{color:#f87171}
 .ec-sp{border-top:1px solid rgba(255,255,255,.07);padding-top:10px}.ec-k{font-size:14px;margin-bottom:6px}.ec-sp svg{width:100%;height:52px;display:block}
 .gm-tabs{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto;scrollbar-width:none;gap:4px!important}.gm-tabs::-webkit-scrollbar{display:none}.gm-tabs button{white-space:nowrap;flex:none;padding-left:11px!important;padding-right:11px!important}
+
+/* Markets inspector: design C with A's tables (right side) */
+@media(min-width:761px){.market-panel{right:16px!important;top:16px!important;bottom:16px!important;width:440px!important;border-radius:14px!important;padding:16px 18px!important;background:rgba(11,11,13,.96)!important;border:1px solid #232327!important}}
+.mk-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}.mk-head .flag{width:28px;height:20px}.mk-head small{display:block;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#7c7c84}.mk-head h2{margin:0;font:600 19px Inter,sans-serif;letter-spacing:-.01em}.mk-head .market-close{position:static;margin-left:auto}
+.mk-tabs{display:flex;border-bottom:1px solid #1f1f23;margin-bottom:12px;overflow-x:auto;scrollbar-width:none}.mk-tabs button{padding:8px 11px;font:500 12.5px Inter,sans-serif;color:#8a8a92;border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap}.mk-tabs button[aria-selected=true]{color:#fff;border-color:#FF7A1A}
+.mk-strip{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #1f1f23;border-radius:8px;margin-bottom:6px}.mk-strip span{padding:8px 10px;border-right:1px solid #1f1f23;min-width:0}.mk-strip span:last-child{border:0}.mk-strip small{display:block;color:#7c7c84;font-size:10.5px}.mk-strip b{font:600 14px Inter,sans-serif;font-feature-settings:"tnum";white-space:nowrap}
+.mk-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#f87171;vertical-align:middle;margin-left:3px}.mk-dot.on{background:#34d399}
+.mk-h{margin:14px 0 6px;font:600 10.5px Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#7c7c84}
+.mk-t{width:100%;border-collapse:collapse;font-size:12.5px}.mk-t th{font-weight:500;color:#6f6f77;text-align:left;font-size:11px;padding:4px 6px;border-bottom:1px solid #1f1f23}.mk-t td{padding:5px 6px;border-bottom:1px solid #17171a;vertical-align:top}.mk-t .r{text-align:right}.mk-t small{display:block;color:#6f6f77;font-size:10.5px}.mk-t .mn{font-family:"Geist Mono",ui-monospace,monospace;font-size:12px}.mk-t .mu{color:#7c7c84}.mk-t em{color:#6f6f77;font-style:normal;font-size:11px}
+.mk-open{color:#34d399;font-size:11.5px;white-space:nowrap}.mk-closed{color:#f87171;font-size:11.5px;white-space:nowrap}
+.mk-note,.mk-src{color:#5f5f67;font-size:10.5px;margin:6px 0 0}.mk-empty{border:1px dashed #2a2a2f;border-radius:8px;padding:10px;color:#9a9aa2;font-size:12px;margin:0}
+.mk-cov{display:flex;flex-wrap:wrap;gap:4px;margin-top:12px;font-size:11px}.mk-cov span{padding:2px 7px;border:1px solid #26262a;border-radius:4px}.mk-cov .ok{color:#6ee7b7}.mk-cov .pa{color:#fbbf24}.mk-cov .na{color:#7c7c84}
+.mk-news{display:block;padding:8px 0;border-bottom:1px solid #17171a;color:inherit;text-decoration:none}.mk-news small{display:block;color:#ff9d5c;font-size:10px;letter-spacing:.04em}.mk-news span{font-size:13px;line-height:1.35}
+
+.mk-sess{position:fixed;z-index:6;left:24px;bottom:16px;right:472px;height:40px;display:flex;align-items:center;gap:4px;padding:0 10px;border:1px solid #232327;border-radius:10px;background:rgba(11,11,13,.94);overflow:hidden;font:12px Inter,sans-serif}.mk-sess[hidden]{display:none}
+.mk-sess-t{color:#9a9aa2;margin-right:6px;white-space:nowrap}.mk-sess-t b{color:#34d399;font-weight:500}.mk-sess button{flex:none;padding:3px 8px;border-radius:5px;border:1px solid #232327;color:#7c7c84;font:500 11.5px Inter,sans-serif;white-space:nowrap}.mk-sess button.on{color:#6ee7b7;border-color:rgba(110,231,183,.3)}.mk-sess button:hover{color:#fff}.mk-sess-n{margin-left:auto;color:#5f5f67;font-size:10.5px;white-space:nowrap}
+html.market-mode:not(.embed) .layers{bottom:68px!important}html.market-mode:not(.embed) .zoom{bottom:68px!important}html.market-mode:not(.embed) .zloc{bottom:152px!important}
+@media(max-width:760px){.mk-sess{display:none!important}html .market-panel{height:50vh}}
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
@@ -1474,8 +1492,8 @@ function size() {
     $('tl').hidden = sheetOpen;
     const timeline = $('tl').getBoundingClientRect();
     globeBox = { left: phone() ? 8 : 24, top: header.bottom + 12,
-      right: phone() ? W - 8 : (panel.hidden || !panel.offsetWidth || panel.getBoundingClientRect().left <= 0 ? W - 24 : panel.getBoundingClientRect().left - 24),
-      bottom: sheetOpen ? H - panel.offsetHeight - 12 : (timeline.height ? timeline.top - 16 : H - 90) };
+      right: phone() ? W - 8 : ((mp => mp && document.documentElement.classList.contains('market-mode') && !mp.hidden && mp.offsetWidth)(document.querySelector('.market-panel')) ? document.querySelector('.market-panel').getBoundingClientRect().left - 24 : panel.hidden || !panel.offsetWidth || panel.getBoundingClientRect().left <= 0 ? W - 24 : panel.getBoundingClientRect().left - 24),
+      bottom: sheetOpen ? H - panel.offsetHeight - 12 : (timeline.height ? timeline.top - 16 : H - (document.documentElement.classList.contains('market-mode') ? 72 : 90)) };
     // template B (?panel=b): the articles sit in a strip along the bottom, so the globe uses the full width above it
     if (PANEL_TEMPLATE === 'b' && panel.dataset.view === 'top') { globeBox.right = W - (phone() ? 8 : 24); globeBox.bottom = Math.min(globeBox.bottom, (phone() ? $('tl').getBoundingClientRect().top : panel.getBoundingClientRect().top) - 16); }
     const aw = Math.max(1, globeBox.right - globeBox.left), ah = Math.max(1, globeBox.bottom - globeBox.top);
@@ -2113,7 +2131,7 @@ function sideData() {
   return { vis, assets: [...seen.values()] };
 }
 function renderSide() {
-  const on = !EMBED && !phone() && innerWidth >= 1180 && view.k === 'top' && !(typeof MARKET !== 'undefined' && MARKET.on);
+  const on = !EMBED && !phone() && innerWidth >= 1180 && view.k === 'top' && !document.documentElement.classList.contains('market-mode');
   document.documentElement.classList.toggle('side-on', on);
   [sideSec, sideImp, sideBar].forEach(x => x.hidden = !on); sideImp.hidden = !on || panel.hidden; if (!on) return;
   const { vis, assets } = sideData(), W = F.win.toUpperCase(), pc = v => `${v > 0 ? '+' : v < 0 ? '−' : ''}${Math.abs(v).toFixed(1)}%`, cl = v => v > 0 ? 'u2' : v < 0 ? 'd2' : '';

@@ -19,23 +19,23 @@ function marketInit(){
   const cut=Date.now()-30*864e5,articles=new Map();for(const a of [...live.stories,...archive.stories])if(Date.parse(a.published_at)>=cut)articles.set(a.id,a);
   const days=(index.days||[]).map(d=>typeof d==='string'?d:d.date||d.day).filter(d=>d&&Date.parse(d+'T23:59:59Z')>=cut);
   await Promise.all(days.map(async d=>{try{const raw=await read('events/'+d+'.json');for(const e of raw.events||[])if(!articles.has(e.id)&&Date.parse(e.at)>=cut)articles.set(e.id,{id:e.id,headline:e.title,published_at:e.at,importance:e.imp,location:e.loc,source:{name:e.src,url:e.url},entities:(e.cos||[]).map(x=>({asset:{id:x.id}})),historicalAssets:e.assets||[]});}catch{}}));
-  MARKET.articles=[...articles.values()].sort((a,b)=>Date.parse(b.published_at)-Date.parse(a.published_at));MARKET.ready=true;if(MARKET.selected){MARKET.selectedVenue=marketVenue(MARKET.selected,MARKET.selectedVenue)?.id||null;marketRender();}
+  MARKET.articles=[...articles.values()].sort((a,b)=>Date.parse(b.published_at)-Date.parse(a.published_at));MARKET.ready=true;try{mkSessRender()}catch{};if(MARKET.selected){MARKET.selectedVenue=marketVenue(MARKET.selected,MARKET.selectedVenue)?.id||null;marketRender();}
  }).catch(()=>{MARKET.error=true;if(MARKET.selected)marketRender();});return MARKET.promise;
 }
-function marketSetMode(mode){setTimeout(()=>{if(typeof renderSide==='function')renderSide();document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.m==='markets')===(mode==='markets'))));size();},0);
+function marketSetMode(mode){setTimeout(()=>{try{mkSessRender()}catch{}},0);setTimeout(()=>{if(typeof renderSide==='function')renderSide();document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.m==='markets')===(mode==='markets'))));size();},0);
  MARKET.on=mode==='markets';document.documentElement.classList.toggle('market-mode',MARKET.on);const u=new URL(location.href);MARKET.on?u.searchParams.set('mode','markets'):u.searchParams.delete('mode');history.replaceState(null,'',u);marketControl.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.mode==='markets')===MARKET.on)));
  qi.placeholder=MARKET.on?'Search countries, exchanges, indices & companies':'Search assets, countries & articles';if(MARKET.on)marketInit();else marketClose();
 }
 function marketVenue(name,id){const code=ISO[name];return MARKET.markers.find(e=>e.id===id&&e.country===code)||MARKET.markers.find(e=>e.id===MARKET.defaultVenues[code])||MARKET.markers.find(e=>e.country===code);}
-function marketSelect(name,venue){if(!byName[name])return;if(MARKET.selected!==name)MARKET.tab='attention';MARKET.selected=name;MARKET.selectedVenue=marketVenue(name,venue)?.id||venue||null;selCountry=byName[name];flyTo(selCountry.c[0],selCountry.c[1],Zt);sel=null;spin=null;marketPanel.hidden=false;marketRender();marketInit();}
+function marketSelect(name,venue){if(!byName[name])return;if(MARKET.selected!==name){MARKET.tab='attention';MARKET.ctab='overview';}MARKET.selected=name;MARKET.selectedVenue=marketVenue(name,venue)?.id||venue||null;selCountry=byName[name];flyTo(selCountry.c[0],selCountry.c[1],Zt);sel=null;spin=null;marketPanel.hidden=false;marketRender();marketInit();}
 function marketNotifyPanel(){if(!EMBED)return;const r=marketPanel.getBoundingClientRect();parent.postMessage({type:'investedia-market-panel',open:!marketPanel.hidden,rect:{left:r.left,top:r.top,right:r.right,bottom:r.bottom}},location.origin);}
-function marketClose(){marketPanel.hidden=true;MARKET.labels=[];MARKET.drawnLines=[];marketNotifyPanel();}
+function marketClose(){marketPanel.hidden=true;requestAnimationFrame(size);MARKET.labels=[];MARKET.drawnLines=[];marketNotifyPanel();}
 function marketRows(){
  const name=MARKET.selected,list=MARKET.articles.filter(a=>a.location?.country===name),counts=new Map(),sectors=new Map();
  for(const article of list){const ids=new Set((article.entities||[]).map(e=>e.asset?.id).filter(Boolean));for(const e of article.historicalAssets||[])if(e.id&&e.src==='entity')ids.add(e.id);const cos=new Set(),inds=new Set();for(const id of ids){const a=MARKET.registry.assets[id];if(!a||a.class!=='equity')continue;const co=a.company||id;if(!cos.has(co)){cos.add(co);const old=counts.get(co)||{id:co,name:MARKET.registry.companies[co]?.name||a.name,n:0};old.n++;counts.set(co,old);}if(MARKET.sectorByAsset[id])inds.add(MARKET.sectorByAsset[id]);}for(const sector of inds)sectors.set(sector,(sectors.get(sector)||0)+1);}
  return {list,attention:[...counts.values()].sort((a,b)=>b.n-a.n||a.name.localeCompare(b.name)),sectors:[...sectors].map(([name,n])=>({name,n})).sort((a,b)=>b.n-a.n)};
 }
-function marketRender(){
+function marketRenderOld(){
  if(!MARKET.selected)return;const name=MARKET.selected,code=ISO[name],ex=MARKET.exchanges[MARKET.selectedVenue]||Object.values(MARKET.exchanges).find(e=>e.country===code),quotes=(MARKET.prices||[]).filter(a=>a.k===nm(name)),ix=quotes.find(a=>a.g==='Index'&&a.m)||quotes.find(a=>a.g==='Index'),fx=quotes.find(a=>a.t==='fx'),infl=MARKET.economy?.countries?.[code]?.infl,{list,attention,sectors}=marketRows(),important=list.filter(a=>a.importance>=2).slice(0,2),region=quotes.find(a=>a.r)?.r||REGIONS.find(r=>r[0]===list[0]?.location?.region)?.[1]||'World';
  const tile=(label,value,sub)=>`<div><small>${esc(label)}</small><b>${value}</b><small>${sub}</small></div>`,missing='no data yet';
  const content=MARKET.tab==='performers'?'<p class="market-empty">Licensed historical prices are not available. No 30-day performance ranking is shown.</p>':(MARKET.tab==='sectors'?sectors:attention).slice(0,3).map(r=>`<div class="market-mention"><span>${esc(r.name)}</span><span>${r.n} ${r.n===1?'article':'articles'}</span></div>`).join('')||`<p class="market-empty">${MARKET.ready?'No verified '+(MARKET.tab==='sectors'?'sector':'company')+' mentions in the last 30 days.':MARKET.error?'Market data could not load. Please try again.':'Loading market data…'}</p>`;
@@ -44,6 +44,58 @@ function marketRender(){
  marketPanel.querySelector('.market-close').onclick=marketClose;marketPanel.querySelectorAll('[data-market-tab]').forEach(b=>b.onclick=()=>{MARKET.tab=b.dataset.marketTab;marketRender();});
  const handle=marketPanel.querySelector('.market-handle');let start;handle.onpointerdown=e=>{start=e.clientY;handle.setPointerCapture(e.pointerId);};handle.onpointerup=e=>{if(start!==undefined){const delta=e.clientY-start;if(delta>70)marketClose();else if(delta>35)marketPanel.style.height='26vh';if(delta< -35)marketPanel.style.height='36vh';}start=undefined;marketNotifyPanel();};handle.onkeydown=e=>{if(e.key==='ArrowDown')marketPanel.style.height='26vh';if(e.key==='ArrowUp')marketPanel.style.height='36vh';if(e.key==='Escape')marketClose();marketNotifyPanel();};marketNotifyPanel();
 }
+
+// Markets inspector (design C with A's tables): Overview · Companies · Connections · News
+function mkStatus(e){
+ const ss=(e?.sessions||[])[0];if(!ss||!e.timezone)return null;
+ try{const parts=Object.fromEntries(new Intl.DateTimeFormat('en-GB',{timeZone:e.timezone,weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date()).map(p=>[p.type,p.value]));
+  const day=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].indexOf(parts.weekday),mins=(+parts.hour%24)*60+(+parts.minute),hm=t=>{const[a,b]=t.split(':');return +a*60+ +b;};
+  const tradingDay=(ss.weekmask||'1111100')[day]==='1',open=tradingDay&&mins>=hm(ss.open)&&mins<hm(ss.close);
+  return {open,label:open?'Open':'Closed',hours:ss.open.slice(0,5)+'–'+ss.close.slice(0,5),tz:e.timezone.split('/').pop().replace(/_/g,' ')};}catch{return null;}
+}
+function marketRender(){
+ if(!MARKET.selected)return;const name=MARKET.selected,code=ISO[name];MARKET.ctab=MARKET.ctab||'overview';
+ const exs=Object.entries(MARKET.exchanges||{}).filter(([,e])=>e.country===code),quotes=(MARKET.prices||[]).filter(a=>a.k===nm(name)),fx=quotes.find(a=>a.t==='fx'),eco=MARKET.economy?.countries?.[code],{list,attention}=marketRows();
+ const v=k=>eco?.[k],last=a=>Array.isArray(a)&&Array.isArray(a[0])?a.filter(x=>Number.isFinite(x[1])).slice(-1)[0]:a,big=n=>n>=1e12?'$'+(n/1e12).toFixed(2)+'T':n>=1e9?'$'+(n/1e9).toFixed(1)+'B':'$'+(n/1e6).toFixed(0)+'M',pct=(x,s)=>(s&&x>0?'+':x<0?'−':'')+Math.abs(x).toFixed(1)+'%';
+ const g=last(v('growth')),rows=[['GDP',v('gdp')&&big(v('gdp')[1]),v('gdp')?.[0]],['GDP growth',g&&pct(g[1],1),g?.[0]],['Inflation (CPI)',v('infl')&&pct(v('infl')[1]),v('infl')?.[0]],['Unemployment',v('unemp')&&pct(v('unemp')[1]),v('unemp')?.[0]],['GDP per person',v('gdppc')&&'$'+Math.round(v('gdppc')[1]).toLocaleString('en-US'),v('gdppc')?.[0]],['Population',v('pop')&&(v('pop')[1]>=1e9?(v('pop')[1]/1e9).toFixed(2)+'B':(v('pop')[1]/1e6).toFixed(1)+'M'),v('pop')?.[0]]];
+ const st=exs.map(([mic,e])=>[mic,e,mkStatus(e)]),main=st[0],cur=exs[0]?.[1]?.currency;
+ const tabs=[['overview','Overview'],['companies','Companies'],['connections','Connections'],['news','News']];
+ const cell=(l,b)=>`<span><small>${l}</small><b>${b}</b></span>`;
+ let body='';
+ if(MARKET.ctab==='overview'){
+  body=`<div class="mk-strip">${cell('Exchange',main?esc(main[1].short)+(main[2]?` <i class="mk-dot ${main[2].open?'on':''}" title="${main[2].label}"></i>`:''):'—')}${cell('Currency',esc(cur||'—'))}${cell('Growth',g?pct(g[1],1):'—')}${cell('Inflation',v('infl')?pct(v('infl')[1]):'—')}</div>`
+  +`<h5 class="mk-h">Exchanges</h5>${st.length?`<table class="mk-t"><tr><th>Exchange</th><th>MIC</th><th>Session (local)</th><th class="r">Now</th></tr>${st.map(([mic,e,s])=>`<tr><td>${esc(e.short)}<small>${esc(e.city||'')}</small></td><td class="mn">${esc(mic)}</td><td class="mn">${s?s.hours:'—'}<small>${s?esc(s.tz):''}</small></td><td class="r">${s?`<span class="${s.open?'mk-open':'mk-closed'}">● ${s.label}</span>`:'—'}</td></tr>`).join('')}</table><p class="mk-note">Regular hours; holidays and half days not shown.</p>`:'<p class="mk-empty">No verified stock exchange for this country yet.</p>'}`
+  +`<h5 class="mk-h">Currency</h5>${fx&&Number.isFinite(fx.p)?`<table class="mk-t"><tr><td>${esc(fx.s.replace(/=X$/,'').replace(/(.{3})(.{3})/,'$1/$2'))}</td><td class="r mn">${marketNum(fx.p)}</td><td class="r"><small>delayed</small></td></tr></table>`:`<p class="mk-empty">${cur?esc(cur)+' rate not available yet.':'No currency data.'}</p>`}`
+  +`<h5 class="mk-h">Economy</h5>${eco?`<table class="mk-t"><tr><th>Indicator</th><th class="r">Value</th><th class="r">Period</th></tr>${rows.map(([l,val,y])=>`<tr><td>${l}</td><td class="r mn">${val||'<em>no data</em>'}</td><td class="r mu">${val?y:''}</td></tr>`).join('')}</table>`:'<p class="mk-empty">No World Bank data for this country.</p>'}`
+  +`<div class="mk-cov"><span class="${st.some(x=>x[2])?'ok':'na'}">${st.some(x=>x[2])?'✓':'—'} Sessions</span><span class="${eco?'ok':'na'}">${eco?'✓':'—'} Economy</span><span class="${fx?'ok':'na'}">${fx?'✓':'—'} Currency</span><span class="pa">◐ Companies: in the news only</span><span class="na">— ETFs, bonds: not yet</span></div>`
+  +`<p class="mk-src">Sources: exchange-calendars (Apache 2.0) · ISO 10383 MIC · World Bank (CC BY 4.0) · delayed quotes. Not investment advice.</p>`;
+ }else if(MARKET.ctab==='companies'){
+  body=`<h5 class="mk-h">Companies in the news · 30 days</h5>${attention.length?`<table class="mk-t"><tr><th>Company</th><th class="r">Articles</th></tr>${attention.slice(0,15).map(r=>`<tr><td>${esc(r.name)}</td><td class="r mn">${r.n}</td></tr>`).join('')}</table>`:`<p class="mk-empty">${MARKET.ready?'No companies from this country named in articles in the last 30 days.':'Loading…'}</p>`}<p class="mk-note">Full listed-company directory is being built (pilot: United States, United Kingdom). Only verified listings will be shown.</p>`;
+ }else if(MARKET.ctab==='connections'){
+  const ln=(MARKET.links||[]).filter(l=>l.from===code||l.to===code).sort((a,b)=>b.value_usd-a.value_usd).slice(0,8),byC=Object.fromEntries(Object.keys(ISO).map(n=>[ISO[n],n]));
+  body=`<h5 class="mk-h">Trade &amp; investment links</h5>${ln.length?`<table class="mk-t"><tr><th>Partner</th><th>Type</th><th class="r">Value</th><th class="r">Year</th></tr>${ln.map(l=>{const o=l.from===code?l.to:l.from;return `<tr><td>${esc(nm(byC[o]||o))}</td><td>${l.kind==='trade'?'Trade':'Investment'}</td><td class="r mn">${big(l.value_usd)}</td><td class="r mu">${l.year}</td></tr>`;}).join('')}</table>`:'<p class="mk-empty">No sourced links for this country.</p>'}<h5 class="mk-h">Currency relationships</h5><p class="mk-empty">Coming soon: which currencies moved together over 30 days (ECB rates, vs USD). Co-movement, not money flows.</p><h5 class="mk-h">Corporate relationships</h5><p class="mk-empty">Coming soon: reported parent and subsidiary links (GLEIF).</p>`;
+ }else{
+  body=`<h5 class="mk-h">Articles · 30 days</h5>${list.length?list.slice(0,12).map(a=>`<a class="mk-news" href="${esc(a.links?.source||a.source?.url||'#')}" target="_blank" rel="noopener"><small>${esc((a.category||'').toUpperCase())} · ${esc(a.source?.name||'')} · ${new Date(a.published_at).toLocaleDateString('en-GB',{day:'numeric',month:'short'})}</small><span>${esc(a.headline)}</span></a>`).join(''):'<p class="mk-empty">No articles about this country in the last 30 days.</p>'}`;
+ }
+ marketPanel.innerHTML=`<div class="market-handle" role="separator" tabindex="0" aria-label="Drag market sheet"></div><div class="mk-head">${flag(name)}<div><small>Markets · Country</small><h2>${esc(nm(name))}</h2></div><button class="market-close" type="button" aria-label="Close market">×</button></div><div class="mk-tabs" role="tablist">${tabs.map(([k,l])=>`<button type="button" role="tab" data-ctab="${k}" aria-selected="${MARKET.ctab===k}">${l}</button>`).join('')}</div><div class="mk-body">${body}</div>`;
+ marketPanel.hidden=false;
+ marketPanel.querySelector('.market-close').onclick=marketClose;marketPanel.querySelectorAll('[data-ctab]').forEach(b=>b.onclick=()=>{MARKET.ctab=b.dataset.ctab;marketRender();});
+ const handle=marketPanel.querySelector('.market-handle');let start;handle.onpointerdown=e=>{start=e.clientY;handle.setPointerCapture(e.pointerId);};handle.onpointerup=e=>{if(start!==undefined){const delta=e.clientY-start;if(delta>70)marketClose();else if(delta>35)marketPanel.style.height='26vh';if(delta< -35)marketPanel.style.height='60vh';}start=undefined;marketNotifyPanel();};
+ marketNotifyPanel();requestAnimationFrame(size);
+}
+
+// Market sessions bar (PC, Markets mode): which major exchanges are open now
+const mkBar=document.createElement('nav');mkBar.className='mk-sess';mkBar.setAttribute('aria-label','Market sessions');mkBar.hidden=true;document.body.append(mkBar);
+const MK_MAJOR=['XTKS','XHKG','XSHG','XNSE','XBOM','XSAU','XJSE','XETR','XPAR','XLON','XNYS','XNAS','XTSE','BVMF','XASX'];
+function mkSessRender(){
+ const on=MARKET.on&&!phone()&&!EMBED&&MARKET.exchanges&&Object.keys(MARKET.exchanges).length;mkBar.hidden=!on;if(!on)return;
+ const byCode=Object.fromEntries(Object.keys(ISO).map(n=>[ISO[n],n]));
+ const items=MK_MAJOR.filter(m=>MARKET.exchanges[m]).map(m=>[m,MARKET.exchanges[m],mkStatus(MARKET.exchanges[m])]).filter(x=>x[2]);
+ const open=items.filter(x=>x[2].open).length;
+ mkBar.innerHTML=`<span class="mk-sess-t">Sessions <b>${open} open</b></span>`+items.map(([m,e,st])=>`<button type="button" class="${st.open?'on':''}" data-mic="${m}" title="${esc(e.name)} · ${st.hours} ${esc(st.tz)} · ${st.label}">${esc(e.short)}</button>`).join('')+'<span class="mk-sess-n">Regular hours</span>';
+ mkBar.querySelectorAll('[data-mic]').forEach(b=>b.onclick=()=>{const e=MARKET.exchanges[b.dataset.mic],n=byCode[e.country];if(n)marketSelect(n,b.dataset.mic);});
+}
+setInterval(()=>{if(MARKET.on)mkSessRender();},60000);addEventListener('resize',()=>mkSessRender());
 function marketTap(x,y){const ring=[...MARKET.hits].sort((a,b)=>Math.hypot(a.x-x,a.y-y)-Math.hypot(b.x-x,b.y-y)).find(h=>Math.hypot(h.x-x,h.y-y)<20);if(ring)return marketSelect(ring.e.countryName,ring.e.id);const g=inv(x,y),c=g&&countryAt(g[0],g[1]);if(c)return marketSelect(c.name);marketClose();}
 function drawMarketMode(){
  MARKET.labels=[];MARKET.drawnLines=[];MARKET.hits=[];const code=marketPanel.hidden?null:ISO[MARKET.selected],limit=phone()?5:8,links=code?MARKET.links.filter(l=>l.from===code||l.to===code).sort((a,b)=>b.value_usd-a.value_usd):[],selected=marketPanel.hidden?null:marketVenue(MARKET.selected,MARKET.selectedVenue),connected=new Set();
