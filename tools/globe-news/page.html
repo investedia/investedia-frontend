@@ -108,6 +108,23 @@ html.market-mode:not(.embed) .layers{bottom:68px!important}html.market-mode:not(
 .act-m{font-size:11px;color:#8a8a92;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.act-m b{color:#ff9d5c;font-weight:500;margin-right:6px}.act-t{margin-top:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.act-f{margin-top:6px;font-size:11px;color:#77777f;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.act-f .u{color:#34d399}.act-f .d{color:#f87171}.act-f .hi{color:#ff9d5c}
 .act-e{grid-column:1/-1;border:1px dashed #2a2a2f;border-radius:11px;padding:16px;color:#9a9aa2;font-size:12.5px}
 @media(min-width:1180px){html.act-on .zoom{bottom:236px!important}html.act-on .zloc{bottom:184px!important}}
+
+/* Projects · Pro preview mode (inside the Globe) */
+.pj{display:none}html.proj-mode .pj{display:block;position:fixed;right:16px;top:16px;bottom:16px;width:var(--pw);z-index:5;border-radius:20px;overflow:auto;padding:18px 18px 14px;box-sizing:border-box;background:rgba(11,11,13,.96);border:1px solid #232327;font:13px/1.45 Inter,sans-serif}
+html.proj-mode :is(.panel,.act,.side-sec,.side-imp,.side-bar,#lcol,.timeline,#cats,.peek,.legend){display:none!important}
+.pj-tag{display:inline-block;font-size:11.5px;font-weight:600;color:#ffb27a;border:1px solid rgba(255,122,26,.45);border-radius:6px;padding:2px 8px}.pj h2{font-size:22px;letter-spacing:-.02em;margin:10px 0 4px}.pj p{color:#9a9aa2;margin:0 0 12px}
+.pj-cards{display:grid;grid-template-columns:1fr 1fr;gap:8px}.pj-c{position:relative;height:132px;border-radius:10px;overflow:hidden;border:1px solid #232327;text-align:left;padding:0;cursor:pointer;background:#000}.pj-c img{width:100%;height:100%;object-fit:cover;display:block}.pj-c:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.9));pointer-events:none}.pj-c b{position:absolute;left:9px;right:9px;bottom:18px;z-index:2;font-size:12.5px;color:#fff}.pj-c small{position:absolute;left:9px;bottom:5px;right:9px;z-index:2;font-size:8.5px;color:#9a9aa2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.pj-c.on{border-color:#ff7a1a}
+.pj-d{margin-top:10px;border:1px solid #232327;border-radius:12px;padding:12px}.pj-d b{font-size:15px}.pj-d .mu{color:#8a8a92;font-size:12px}.pj-st{display:inline-block;font-size:10.5px;border:1px solid #2e2e33;border-radius:4px;padding:0 6px;margin-top:4px}.pj-st.g{color:#6ee7b7;border-color:rgba(110,231,183,.35)}.pj-d ul{list-style:none;padding:0;margin:8px 0 0}.pj-d li{position:relative;padding:4px 0 4px 14px;font-size:12.5px}.pj-d li:before{content:"";position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:#ff7a1a}.pj-d li small{color:#77777f}.pj a{color:#ffb27a}
+.pj-wl{margin-top:12px;border-top:1px solid #1f1f23;padding-top:12px}.pj-wl b{font-size:15px}.pj-wl input[type=email]{width:100%;height:40px;margin-top:8px;border:1px solid #2e2e33;border-radius:9px;background:#0b0b0d;color:#eee;padding:0 12px;font:inherit;box-sizing:border-box}.pj-wl .hp{position:absolute;left:-9999px}.pj-wl label.ck{display:flex;gap:8px;margin-top:8px;font-size:11.5px;color:#8a8a92}.pj-wl button[type=submit]{width:100%;height:40px;margin-top:10px;border:0;border-radius:9px;background:#ff7a1a;color:#111;font:650 13.5px Inter,sans-serif;cursor:pointer}.pj-msg{min-height:16px;margin:6px 0 0;font-size:12px;color:#ffb27a}.pj-foot{color:#6c6c74;font-size:10.5px;margin-top:10px}
+@media(max-width:760px){html.proj-mode .pj{top:auto;left:8px;right:8px;bottom:calc(var(--dock-h,78px) + 12px);width:auto;max-height:58vh;border-radius:18px}}
+.gswitch .gs-pro[aria-pressed=true]{background:rgba(255,122,26,.12);color:#ffb27a;box-shadow:inset 0 0 0 1px rgba(255,122,26,.45)}
+.pj-more{display:block;margin-top:10px;text-align:center;padding:9px;border:1px solid #2e2e33;border-radius:9px;color:#ececef!important;text-decoration:none;font-weight:500}.pj-more:hover{border-color:#ff7a1a}
+
+.rl-row{display:flex;align-items:center;gap:8px}.rl-btn{margin-left:auto;font:500 12px Inter,sans-serif;color:#ddd;border:1px solid #2e2e33;border-radius:8px;padding:5px 10px}.rl-btn[aria-pressed=true]{color:#ffb27a;border-color:rgba(255,122,26,.5)}
+.presets{display:none}@media(min-width:1180px){html.lcol-on .presets{display:flex;flex-wrap:wrap;gap:6px;align-items:center;border:1px solid #1f1f23;background:rgba(12,12,14,.9);border-radius:11px;padding:10px 12px;font:12px Inter,sans-serif}}
+.presets b{width:100%;font-size:12.5px}.presets small{width:100%;color:#6c6c74;font-size:10.5px}.presets .ps{display:inline-flex;border:1px solid #2a2a2f;border-radius:99px;overflow:hidden}.presets .ps button{padding:3px 9px;color:#ddd;font:12px Inter,sans-serif}.presets .ps .x{padding:3px 7px;color:#77777f;border-left:1px solid #2a2a2f}.presets .add{color:#ffb27a;font:12px Inter,sans-serif;padding:3px 4px}
+.pj-f{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}.pj-f select,.pj-f button{height:30px;border:1px solid #2a2a2f;border-radius:8px;background:#0e0e11;color:#ddd;font:12px Inter,sans-serif;padding:0 8px}.pj-f button[aria-pressed=true],.pj-w[aria-pressed=true]{color:#ffb27a;border-color:rgba(255,122,26,.5)}.pj-w{border:1px solid #2a2a2f;border-radius:8px;padding:3px 9px;color:#ddd;font:12px Inter,sans-serif;white-space:nowrap}
+.pj-tl-h{margin-top:10px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#77777f}.pj-tl{list-style:none;margin:6px 0 0;padding:0 0 0 12px;border-left:1px solid #2e2e33}.pj-tl li{position:relative;padding:4px 0 8px 8px;font-size:12.5px}.pj-tl li:before{content:"";position:absolute;left:-16px;top:8px;width:7px;height:7px;border-radius:50%;background:#ff7a1a}.pj-tl small{display:block;color:#8a8a92;font-size:11px}
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
@@ -765,7 +782,7 @@ html[data-theme=light] .gf-article-meta{color:#984400}html[data-theme=light] :is
 <div class="top">
   <div class="brand">
     <a class="wm" href="/">Invested<span class="i">i</span>a</a>
-    <span class="prod gs-old">Globe · News</span><span class="gswitch" id="gswitch" role="group" aria-label="Globe view"><button type="button" data-m="news" aria-pressed="true">News</button><button type="button" data-m="markets" aria-pressed="false">Markets</button><a href="../../projects.html" class="gs-pro">Projects<span>PRO</span></a></span>
+    <span class="prod gs-old">Globe · News</span><span class="gswitch" id="gswitch" role="group" aria-label="Globe view"><button type="button" data-m="news" aria-pressed="true">News</button><button type="button" data-m="markets" aria-pressed="false">Markets</button><button type="button" data-m="projects" class="gs-pro" aria-pressed="false">Projects<span>PRO</span></button></span>
     <button type="button" class="globe-privacy" data-cookie-settings>Privacy</button>
     <span class="demo" id="badge" title="Concept preview: every article is demo content written to show the design. Not real news.">Concept · demo articles</span>
   </div>
@@ -818,6 +835,8 @@ html[data-theme=light] .gf-article-meta{color:#984400}html[data-theme=light] :is
 </aside>
 <section class="side-sec glass" id="sideSec" aria-label="Sector overview" hidden></section>
 <section class="side-imp glass" id="sideImp" aria-label="Market impact" hidden></section>
+<aside class="pj glass" id="projPanel" aria-label="Projects preview" hidden></aside>
+<div class="presets" id="presets"></div>
 <section class="act glass" id="act" aria-label="Latest activity and coming up" hidden></section>
 <section class="side-bar glass" id="sideBar" aria-label="Moving on the news" hidden></section>
 
@@ -1564,7 +1583,7 @@ function size() {
     $('tl').hidden = sheetOpen;
     const timeline = $('tl').getBoundingClientRect();
     globeBox = { left: phone() ? 8 : (LC ? document.getElementById('lcol').getBoundingClientRect().right + 24 : 24), top: header.bottom + 12,
-      right: phone() ? W - 8 : ((mp => mp && document.documentElement.classList.contains('market-mode') && !mp.hidden && mp.offsetWidth)(document.querySelector('.market-panel')) ? document.querySelector('.market-panel').getBoundingClientRect().left - 24 : panel.hidden || !panel.offsetWidth || panel.getBoundingClientRect().left <= 0 ? W - 24 : panel.getBoundingClientRect().left - 24),
+      right: phone() ? W - 8 : document.documentElement.classList.contains('proj-mode') && $('projPanel') ? $('projPanel').getBoundingClientRect().left - 24 : ((mp => mp && document.documentElement.classList.contains('market-mode') && !mp.hidden && mp.offsetWidth)(document.querySelector('.market-panel')) ? document.querySelector('.market-panel').getBoundingClientRect().left - 24 : panel.hidden || !panel.offsetWidth || panel.getBoundingClientRect().left <= 0 ? W - 24 : panel.getBoundingClientRect().left - 24),
       bottom: sheetOpen ? H - panel.offsetHeight - 12 : LC ? H - (document.documentElement.classList.contains('act-on') ? 190 : 24) : (timeline.height ? timeline.top - 16 : H - (document.documentElement.classList.contains('market-mode') ? 72 : 90)) };
     // template B (?panel=b): the articles sit in a strip along the bottom, so the globe uses the full width above it
     if (PANEL_TEMPLATE === 'b' && panel.dataset.view === 'top') { globeBox.right = W - (phone() ? 8 : 24); globeBox.bottom = Math.min(globeBox.bottom, (phone() ? $('tl').getBoundingClientRect().top : panel.getBoundingClientRect().top) - 16); }
@@ -1827,6 +1846,7 @@ function placeHover(x, y) { const hv = $('hover'), w = hv.offsetWidth, h = hv.of
 function hideHover() { $('hover').classList.remove('pin'); pinned = null; delete $('hover').dataset.country; arcHover=null; clearTimeout(cTimer); hoverC = null; hoverCountry = null; $('hover').classList.remove('on');  }
 let tapEdge = null;
 function tap(x, y, touch) {
+  if (PROJ.on) return projTap(x, y);
   if (MARKET.on) return marketTap(x,y);
   if (pinned) hideHover(); else if (touch) hideHover();
   const up = !EMBED && upPick(x, y); if (up) { hist = []; view = { k: 'top' }; sel = null; selCountry = null; panelTab = 'upcoming'; render(); if (phone()) setSheet('full'); return; }
@@ -2152,7 +2172,7 @@ pbody.addEventListener('keydown', e => {
 function variantPanel(list) {
   if (PANEL_TEMPLATE === 'a') return `<h2>Top articles</h2><div class="meta">${Math.min(8, list.length)} of ${list.length} articles</div><div class="compact-list">${list.slice(0, 8).map(compactItem).join('')}</div>${list.length > 8 ? '<a class="panel-more" href="../../news.html">See all news →</a>' : ''}${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
   if (PANEL_TEMPLATE === 'b') return `<h2>Top articles</h2><div class="strip-list" aria-label="Top articles">${list.slice(0, phone() ? 3 : 12).map(compactItem).join('')}</div>${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
-  const tabs = phone() && phoneView !== 'markets' ? [['top', 'Top'], ['latest', 'Latest'], ['moving', 'Moving'], ['more', ['countries', 'topics', 'watch'].includes(panelTab) ? ({ countries: 'Countries', topics: 'Topics', watch: 'Watchlist' })[panelTab] + ' ▾' : 'More ▾']] : [['top', 'Top'], ...(!phone() ? [['movers', 'Movers']] : []), ['latest', 'Latest'], ['countries', 'Countries'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : [])];
+  const tabs = phone() && phoneView !== 'markets' ? [['top', 'Top'], ['latest', 'Latest'], ['moving', 'Moving'], ['more', ['countries', 'topics', 'watch', 'saved'].includes(panelTab) ? ({ countries: 'Countries', topics: 'Topics', watch: 'Watchlist', saved: 'Saved' })[panelTab] + ' ▾' : 'More ▾']] : [['top', 'Top'], ...(!phone() ? [['movers', 'Movers']] : []), ['latest', 'Latest'], ['countries', 'Countries'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : []), ['saved', `Saved${RL.size ? ' ' + RL.size : ''}`]];
   let items, count;
   if (phone() && phoneView === 'markets') { items = marketsPhonePanel(); count = 0; }
   else if (panelTab === 'topics') { const cats = Object.entries(list.reduce((m, x) => (m[x.category] = (m[x.category] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]); count = 0;
@@ -2170,7 +2190,7 @@ function variantPanel(list) {
     items = countries.slice(0, panelExpanded ? countries.length : 3).map(([name, n]) => `<button class="compact-country" data-country="${esc(name)}">${flag(name)}<span>${esc(nm(name))}</span><small>${n} ${n === 1 ? 'article' : 'articles'}</small></button>`).join('');
   } else {
     const q = (newsQ || '').trim().toLowerCase(), qf = x => !q || [x.headline, x.source && x.source.name, nm(x.location.country), CAT[x.category]].some(v => String(v || '').toLowerCase().includes(q));
-    const base0 = (panelTab === 'moving' ? list.filter(x => x.market_moving) : panelTab === 'watch' ? (WATCH = watchSyms(), (() => { let C = new Set(); try { C = new Set((JSON.parse(localStorage.getItem('inv-watch') || '{}').c || []).map(x => x.k)); } catch {} return list.filter(x => touchesWatch(x) || C.has(x.location.country)); })()) : list).filter(qf);
+    const base0 = panelTab === 'saved' ? stories.filter(x => RL.has(x.id)).filter(qf) : (panelTab === 'moving' ? list.filter(x => x.market_moving) : panelTab === 'watch' ? (WATCH = watchSyms(), (() => { let C = new Set(); try { C = new Set((JSON.parse(localStorage.getItem('inv-watch') || '{}').c || []).map(x => x.k)); } catch {} return list.filter(x => touchesWatch(x) || C.has(x.location.country)); })()) : list).filter(qf);
     const sorted = panelTab === 'latest' || panelTab === 'watch' ? [...base0].sort((a,b) => b.t-a.t) : F.region === 'global' ? regionMix(base0) : base0;
     if (phone()) { // News D: photo lead, topic chips with counts, list with thumbnails (owner pick D)
       const cats = Object.entries(sorted.reduce((m, x) => (m[x.category] = (m[x.category] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]);
@@ -2225,7 +2245,7 @@ function placeLeft(){
  const tl=$('tl'),lay=$('layers');
  let tf=document.querySelector('.tf-dd');if(!tf){tf=document.createElement('div');tf.className='dd tf-dd';tf.innerHTML='<button type="button" class="dd-btn tf-btn" aria-haspopup="true" aria-expanded="false"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg><span class="tf-l"></span><span class="dd-car" style="margin-left:auto">▾</span></button>';tf.querySelector('button').onclick=e=>{e.stopPropagation();const open=!tf.classList.contains('open');closeGlobeMenus();tf.classList.toggle('open',open);tf.querySelector('button').setAttribute('aria-expanded',String(open));};addEventListener('click',e=>{if(!tf.contains(e.target)){tf.classList.remove('open');tf.querySelector('button').setAttribute('aria-expanded','false');}});}
  d.classList.toggle('lcol-on',on);
- if(on){if(!placeLeft.home)placeLeft.home={tl:[tl.parentNode,tl.nextSibling],lay:[lay.parentNode,lay.nextSibling]};$('ddrow').append(tf);tf.append(tl);let free=true;try{free=SL.x==null}catch{}if(sideSec.parentNode!==col&&free)col.append(sideSec);col.append(lay);}
+ if(on){if(!placeLeft.home)placeLeft.home={tl:[tl.parentNode,tl.nextSibling],lay:[lay.parentNode,lay.nextSibling]};$('ddrow').append(tf);tf.append(tl);let free=true;try{free=SL.x==null}catch{}if(sideSec.parentNode!==col&&free)col.append(sideSec);col.append(lay);const pr=$('presets');if(pr)col.append(pr);}
  else if(placeLeft.home){placeLeft.home.tl[0].insertBefore(tl,placeLeft.home.tl[1]);placeLeft.home.lay[0].insertBefore(lay,placeLeft.home.lay[1]);if(sideSec.parentNode===col)document.body.append(sideSec);placeLeft.home=null;}
  const l=document.querySelector('.tf-l');if(l)l.textContent='Last '+({'24h':'24 hours','48h':'48 hours','7d':'7 days','30d':'30 days'}[F.win]||F.win);
  tl.querySelectorAll('button').forEach(b=>{if(b.dataset.tfBound)return;b.dataset.tfBound='1';b.addEventListener('click',()=>{tf.classList.remove('open');tf.querySelector('button').setAttribute('aria-expanded','false');setTimeout(placeLeft,50);});});
@@ -2260,8 +2280,58 @@ function renderAct(){
  el.querySelectorAll('[data-act]').forEach(b=>b.onclick=()=>{const g=el._groups[+b.dataset.act];if(g)openStory(g.top);});
 }
 addEventListener('resize',()=>renderAct());
+
+// Projects · Pro preview mode: real developments as examples; nothing here is a working feature.
+const PROJ_START=new URLSearchParams(location.search).get('mode')==='projects';
+const PROJ={on:false,sel:'kx',list:[
+ {k:'kx',n:"King's Cross Central",l:'London, United Kingdom',la:51.535,lo:-0.125,t:'Urban regeneration',st:null,ms:[['Coal Drops Yard opened','2018'],['Outline planning permission granted','Early 2006']],src:"https://en.wikipedia.org/wiki/King%27s_Cross_Central",cr:'Crookesmoor · CC BY-SA 4.0'},
+ {k:'noor',n:'Noor Ouarzazate Solar Complex',l:'Ouarzazate, Morocco',la:30.99,lo:-6.86,t:'Renewable energy',st:'Operational',ms:[['Noor I commissioned','Feb 2016']],src:'https://en.wikipedia.org/wiki/Ouarzazate_Solar_Power_Station',cr:'Richard Allaway · CC BY 2.0'},
+ {k:'hy',n:'Hudson Yards',l:'New York, United States',la:40.754,lo:-74.002,t:'Mixed-use',st:'Phase 1 open',ms:[['Phase 1 opened','15 Mar 2019'],['Groundbreaking, 10 Hudson Yards','4 Dec 2012']],src:'https://en.wikipedia.org/wiki/Hudson_Yards,_Manhattan',cr:'Epicgenius · CC BY-SA 4.0'},
+ {k:'line',n:'The Line',l:'Tabuk Province, Saudi Arabia',la:28.0,lo:35.2,t:'Urban megaproject',st:null,ms:[['Project announced','2021']],src:'https://en.wikipedia.org/wiki/The_Line,_Saudi_Arabia',cr:'European Space Agency (cropped) · CC BY-SA 3.0'}],
+ more:[[51.481,-0.145],[53.541,9.997],[48.86,2.35],[45.484,9.19],[24.45,32.73],[25.42,51.49],[30.02,31.76],[25.2,55.35],[25.6,37.2],[55.6,12.9],[59.907,10.756],[40.48,-3.69],[48.22,16.43],[41.26,28.74],[37.88,23.73],[33.6,-7.65],[52.23,21.0]],hits:[]};
+const PW=new Set((()=>{try{return JSON.parse(localStorage.getItem('inv-proj-watch')||'[]')}catch{return[]}})());PROJ.f={c:'',t:'',s:'',w:false};
+function projRender(){
+ const ctry=x=>x.l.split(', ').pop(),stg=x=>x.st||'Stage not shown',F2=PROJ.f,P=PROJ.list.filter(x=>(!F2.c||ctry(x)===F2.c)&&(!F2.t||x.t===F2.t)&&(!F2.s||stg(x)===F2.s)&&(!F2.w||PW.has(x.k))),p=P.find(x=>x.k===PROJ.sel)||P[0],el=$('projPanel');
+ const opt=(k,lab,vals)=>`<select data-pf="${k}" aria-label="${lab}"><option value="">${lab}: All</option>${[...new Set(vals)].sort().map(v=>`<option${F2[k]===v?' selected':''}>${esc(v)}</option>`).join('')}</select>`;
+ const filt=`<div class="pj-f">${opt('c','Country',PROJ.list.map(ctry))}${opt('t','Type',PROJ.list.map(x=>x.t))}${opt('s','Stage',PROJ.list.map(stg))}<button type="button" data-pw-only aria-pressed="${F2.w}">★ Watching ${PW.size}</button></div>`;
+ el.innerHTML=`<span class="pj-tag">Product preview · Coming soon</span><h2>Development projects, on a global scale</h2><p>Track real estate and infrastructure developments worldwide: who is building, what stage they are at, and the sources behind every update.</p>
+ ${filt}${P.length?'':'<p class="pj-foot">No projects match these filters.</p>'}<div class="pj-cards">${P.map(x=>`<button type="button" class="pj-c${x.k===p.k?' on':''}" data-pj="${x.k}"><img src="../img/projects/${x.k}.jpg" alt="" loading="lazy"><b>${esc(x.n)}</b><small>Photo: ${esc(x.cr)}</small></button>`).join('')}</div>
+ ${p?`<div class="pj-d"><div style="display:flex;gap:8px;align-items:start"><b style="flex:1">${esc(p.n)}</b><button type="button" class="pj-w" data-pw="${p.k}" aria-pressed="${PW.has(p.k)}">${PW.has(p.k)?'★ Watching':'☆ Watch'}</button></div><div class="mu">${esc(p.l)} · ${esc(p.t)}</div>${p.st?`<span class="pj-st g">${esc(p.st)}</span>`:'<span class="pj-st">Stage not shown</span>'}<div class="pj-tl-h">Milestones (sourced)</div><ul class="pj-tl">${p.ms.map(([a,d])=>`<li><small>${esc(d)}</small>${esc(a)} <a href="${p.src}" target="_blank" rel="noopener">source ↗</a></li>`).join('')}</ul><div class="pj-foot" style="margin-top:6px">Watchlist is saved on this device only.</div></div>`:''}
+ <a class="pj-more" href="../../pricing.html#real-estate">Read more about Real Estate in Pro →</a>
+ <form class="pj-wl" data-waitlist="globe-projects" novalidate><b>Get early access to Pro</b><p style="margin:2px 0 0;font-size:12px">Pro is not available yet. No payment, no commitment.</p><input type="email" name="email" placeholder="name@company.com" autocomplete="email" required aria-label="Email"><input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true"><label class="ck"><input type="checkbox" name="consent"><span>I agree to receive emails about Pro. Unsubscribe any time. <a href="../../privacy.html">Privacy</a></span></label><button type="submit">Join the waitlist</button><p class="pj-msg" role="status" aria-live="polite"></p></form>
+ <p class="pj-foot">Real developments shown as examples of planned coverage. Milestones from Wikipedia; stages only where sourced. Photos: Wikimedia Commons. Projects is not a working feature yet. <a href="../../projects.html">Full preview →</a> Not investment advice.</p>`;
+ el.querySelectorAll('[data-pf]').forEach(x=>x.onchange=()=>{F2[x.dataset.pf]=x.value;projRender();});el.querySelector('[data-pw-only]').onclick=()=>{F2.w=!F2.w;projRender();};el.querySelectorAll('[data-pw]').forEach(b=>b.onclick=()=>{const k=b.dataset.pw;PW.has(k)?PW.delete(k):PW.add(k);try{localStorage.setItem('inv-proj-watch',JSON.stringify([...PW]))}catch{}projRender();});
+ el.querySelectorAll('[data-pj]').forEach(b=>b.onclick=()=>{PROJ.sel=b.dataset.pj;const q=PROJ.list.find(x=>x.k===PROJ.sel);flyTo(q.lo,q.la,Z);projRender();});
+ const f=el.querySelector('form');f.onsubmit=async e=>{e.preventDefault();const m=f.querySelector('.pj-msg'),em=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)){m.textContent='Please enter a valid email address.';return}if(!f.consent.checked){m.textContent='Please tick the box to agree to emails about Pro.';return}
+  m.textContent='Joining…';try{const r=await fetch('https://api.investedia.com/v1/waitlist',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em,consent:true,website:f.website.value,source:'globe-projects'})});m.textContent=r.ok?'You are on the list. We will email you when Pro opens.':r.status===404?'The waitlist opens soon.':r.status===429?'Too many attempts. Please try again tomorrow.':'Something went wrong. Please try again.';if(r.ok)f.reset();}catch{m.textContent='Could not connect. Please try again.'}};
+}
+function projSet(on){
+ if(PROJ.on===on&&!on)return;PROJ.on=on;const d=document.documentElement;d.classList.toggle('proj-mode',on);$('projPanel').hidden=!on;
+ document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String(on?b.dataset.m==='projects':b.dataset.m===(MARKET.on?'markets':'news'))));
+ const u=new URL(location.href);if(on){if(MARKET.on&&typeof marketSetMode==='function')marketSetMode('news');document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.m==='projects')));u.searchParams.set('mode','projects');projRender();hideHover();flyTo(15,38,1);}else if(u.searchParams.get('mode')==='projects')u.searchParams.delete('mode');
+ history.replaceState(null,'',u);requestAnimationFrame(size);
+}
+function drawProj(){
+ PROJ.hits=[];const rad=Math.PI/180,dot=(la,lo,r,f,g)=>{const[x,y,z]=proj(la*rad,lo*rad);if(z<=.04)return null;ctx.beginPath();ctx.arc(x,y,r*2.2,0,7);ctx.fillStyle=g;ctx.fill();ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fillStyle=f;ctx.fill();return[x,y];};
+ for(const[la,lo]of PROJ.more)dot(la,lo,2.6,'#ff9d5c','rgba(255,122,26,.14)');
+ ctx.font='600 11.5px Inter,sans-serif';
+ for(const p of PROJ.list){if(PROJ.f&&((PROJ.f.c&&p.l.split(', ').pop()!==PROJ.f.c)||(PROJ.f.t&&p.t!==PROJ.f.t)||(PROJ.f.s&&(p.st||'Stage not shown')!==PROJ.f.s)||(PROJ.f.w&&!PW.has(p.k))))continue;const xy=dot(p.la,p.lo,p.k===PROJ.sel?5.5:4.5,'#ff7a1a','rgba(255,122,26,.22)');if(!xy)continue;PROJ.hits.push({x:xy[0],y:xy[1],k:p.k});const tx=p.n.replace(' Solar Complex','');const w=ctx.measureText(tx).width+14;ctx.fillStyle='rgba(12,12,14,.92)';ctx.strokeStyle=p.k===PROJ.sel?'#ff7a1a':'#2e2e33';ctx.beginPath();ctx.roundRect(xy[0]+10,xy[1]-11,w,22,6);ctx.fill();ctx.stroke();ctx.fillStyle='#ececef';ctx.fillText(tx,xy[0]+17,xy[1]+4);}
+}
+function projTap(x,y){const h=PROJ.hits.find(h=>Math.hypot(h.x-x,h.y-y)<22);if(h){PROJ.sel=h.k;projRender();}}
+
+// Reading list + news filter presets (this browser only; not synced to an account)
+const RL=new Set((()=>{try{return JSON.parse(localStorage.getItem('inv-reading')||'[]')}catch{return[]}})());
+const rlSave=()=>{try{localStorage.setItem('inv-reading',JSON.stringify([...RL].slice(-200)))}catch{}};
+document.addEventListener('click',e=>{const b=e.target.closest('[data-rl]');if(!b)return;const id=b.dataset.rl;RL.has(id)?RL.delete(id):RL.add(id);rlSave();render();});
+const PRE=(()=>{try{return JSON.parse(localStorage.getItem('inv-news-presets')||'[]')}catch{return[]}})();
+function presetUI(){const el=$('presets');if(!el)return;el.innerHTML=`<b>Saved views</b>${PRE.map((p,i)=>`<span class="ps"><button type="button" data-ps="${i}">${esc(p.n)}</button><button type="button" class="x" data-psx="${i}" aria-label="Delete ${esc(p.n)}">×</button></span>`).join('')}<button type="button" class="add" data-psadd>+ Save current view</button><small>Saved on this device only</small>`;}
+document.addEventListener('click',async e=>{const a=e.target.closest('[data-psadd],[data-ps],[data-psx]');if(!a)return;
+ if(a.dataset.psadd!==undefined){const parts=[F.region==='global'?'All regions':(regionDefinition(F.region)?.[1]||F.region),F.cat==='all'?null:CAT[F.cat],F.win.toUpperCase()].filter(Boolean);PRE.push({n:parts.join(' · '),r:F.region,c:F.cat,w:F.win});if(PRE.length>8)PRE.shift();}
+ else if(a.dataset.psx!==undefined)PRE.splice(+a.dataset.psx,1);
+ else{const p=PRE[+a.dataset.ps];if(p){F.region=p.r;F.cat=p.c;press($('cats'),p.c);press($('regions'),p.r);await setWin(p.w);try{$('reg-label').textContent=(p.r==='global'?'All regions':regionDefinition(p.r)[1]);}catch{}render();}}
+ try{localStorage.setItem('inv-news-presets',JSON.stringify(PRE))}catch{}presetUI();});
 let mvF = 'all';
-$('gswitch').onclick = e => { const b = e.target.closest('button'); if (b && typeof marketSetMode === 'function') marketSetMode(b.dataset.m); };
+$('gswitch').onclick = e => { const b = e.target.closest('button'); if (!b) return; if (b.dataset.m === 'projects') return projSet(true); projSet(false); if (typeof marketSetMode === 'function') marketSetMode(b.dataset.m); };
 function sideData() {
   const vis = stories.filter(st => inRegion(st.location.region,F.region)&&inTime(st)&&(!F.mine||touchesWatch(st))&&(F.lens==='all'||st.lens.includes(F.lens))), seen = new Map();
   vis.forEach(st => impactsOf(st).forEach(i => { const a = assetForImpact(i); if (!a || typeof a.d !== 'number' || !isFinite(a.d) || Math.abs(a.d) > 25 || a.u === 'bp') return; const k = a.s; const e = seen.get(k) || { a, n: 0, cats: new Set() }; e.n++; e.cats.add(st.category); seen.set(k, e); }));
@@ -2289,7 +2359,7 @@ function renderSide() {
     sideBar.innerHTML = `<div class="sb-t"><b>Moving on the news</b><small>Assets named in ${W} articles</small></div>${big.map(e => `<a class="sb-c" href="../../news.html?mover=${encodeURIComponent(e.a.s)}"><b>${esc(e.a.n || e.a.s)}</b><small>${e.n} art.</small><em class="${cl(e.a.d)}">${pc(e.a.d)}</em></a>`).join('')}<small class="meta" style="flex:none;font-size:10.5px">Daily moves. Not investment advice.</small>`;
 }
 addEventListener('resize', () => renderSide());
-setTimeout(()=>{placeLeft();size();},0);
+setTimeout(()=>{presetUI();placeLeft();size();if(PROJ_START)projSet(true);},0);
 function render() {
   panel.dataset.view = view.k; peekUpdate(); dockUpdate();
   document.documentElement.classList.toggle('panel-top', !!PANEL_TEMPLATE && view.k === 'top');
@@ -2306,7 +2376,7 @@ function render() {
     if (F.region !== 'global') pbody.insertAdjacentHTML('afterbegin', gmContinentPanel());
   } else if (view.k === 'article') {
     const s = byId[view.id], ch = chainOf(s);
-    pbody.innerHTML = `<div class="story"><button class="back" data-back>← Back</button>${art(s)}
+    pbody.innerHTML = `<div class="story"><div class="rl-row"><button class="back" data-back>← Back</button><button type="button" class="rl-btn" data-rl="${esc(s.id)}" aria-pressed="${RL.has(s.id)}">${RL.has(s.id) ? 'Saved ✓' : 'Save to reading list'}</button></div>${art(s)}
       <div class="story-heading"><div class="eyebrow">${s.flag ? `<span class="tag">${FLAG[s.flag]}</span>` : ''}${esc(CAT[s.category])}</div>
       <h2>${esc(s.headline)}</h2>
       <div class="meta"><b>${esc(s.location.place)}</b>, <a href="#" data-country="${esc(s.location.country)}" style="color:inherit">${esc(nm(s.location.country))}</a> · ${ago(s.t)} · <button type="button" class="share-link" data-share="${esc(s.id)}">Share</button>${s.demo ? '<span class="dtag">DEMO</span>' : ''}</div></div>
@@ -2608,6 +2678,7 @@ function frame(t) {
   if (selCountry) countryShape(selCountry, 'rgba(255,122,26,.10)', 'rgba(255,122,26,.75)', 1.2);
   ctx.restore();
 
+  if (PROJ.on) { drawProj(); ctx.restore(); requestAnimationFrame(frame); return; }
   if (MARKET.on) { drawMarketMode(); drawMarketsOverlay(t); ctx.restore(); requestAnimationFrame(frame); return; }
 
   // connections (only for the article you're looking at)
