@@ -680,8 +680,6 @@ html[data-theme=light] :is(.panel .meta,.panel .lens-meta,.panel .lens-src,.pane
   <button type="button" class="lay-btn glass" id="lay-btn" aria-expanded="false" aria-controls="lay-pop" aria-haspopup="true" aria-label="Layers, 1 on"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg>Layers <b id="lay-n">1</b></button>
 </div>
 <div class="timeline glass" id="tl" role="group" aria-label="Time window">
-  <button class="tl-play" id="play" aria-label="Replay the last 7 days"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 2.8v10.4a.6.6 0 0 0 .9.5l8.4-5.2a.6.6 0 0 0 0-1L4.9 2.3a.6.6 0 0 0-.9.5z"/></svg></button>
-  <span class="tl-sep"></span>
   <span id="wins" style="display:flex;gap:2px"></span>
   <span class="tl-sep"></span>
   <span class="tl-info" id="tlInfo"></span>
@@ -2203,7 +2201,6 @@ tbEl.onclick = e => { const k = e.target.closest('[data-k]'); if (k) { tbEl.clas
 addEventListener('pointerdown', e => { if (!e.target.closest('#tb')) tbEl.classList.remove('open'); });
 syncTb();
 // Replay: sweep the last 7 days so articles appear on Earth in the order they were published
-$('play').onclick = async () => { if (!await setWin('7d') || EMBED) return; play = { start: T0 - 7 * 1440 * 60000, cur: T0 - 7 * 1440 * 60000, t0: performance.now(), dur: reduce ? 1 : 7000 }; for (const s of stories) s.on = false; refresh(); };
 
 // ===== Draw =====
 function vec(phi, lam) { return [Math.cos(phi) * Math.cos(lam), Math.cos(phi) * Math.sin(lam), Math.sin(phi)]; }
