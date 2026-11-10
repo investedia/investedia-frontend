@@ -2376,8 +2376,9 @@ function sideData() {
   return { vis, assets: [...seen.values()] };
 }
 function renderSide() {
-  try{const was=document.documentElement.classList.contains('act-on');renderAct();if(was!==document.documentElement.classList.contains('act-on'))requestAnimationFrame(size);}catch(e){console.warn(e)}
+  // Restore News layout before evaluating the activity strip's visibility.
   try{placeLeft()}catch{}
+  try{const was=document.documentElement.classList.contains('act-on');renderAct();if(was!==document.documentElement.classList.contains('act-on'))requestAnimationFrame(size);}catch(e){console.warn(e)}
   const on = !EMBED && !phone() && innerWidth >= 1180 && view.k === 'top' && !document.documentElement.classList.contains('market-mode');
   document.documentElement.classList.toggle('side-on', on);
   [sideSec, sideImp, sideBar].forEach(x => x.hidden = !on); sideImp.hidden = !on || panel.hidden; if (!on) return;
