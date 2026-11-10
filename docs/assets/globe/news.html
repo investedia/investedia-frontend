@@ -119,6 +119,12 @@ html.proj-mode :is(.panel,.act,.side-sec,.side-imp,.side-bar,#lcol,.timeline,#ca
 @media(max-width:760px){html.proj-mode .pj{top:auto;left:8px;right:8px;bottom:calc(var(--dock-h,78px) + 12px);width:auto;max-height:58vh;border-radius:18px}}
 .gswitch .gs-pro[aria-pressed=true]{background:rgba(255,122,26,.12);color:#ffb27a;box-shadow:inset 0 0 0 1px rgba(255,122,26,.45)}
 .pj-more{display:block;margin-top:10px;text-align:center;padding:9px;border:1px solid #2e2e33;border-radius:9px;color:#ececef!important;text-decoration:none;font-weight:500}.pj-more:hover{border-color:#ff7a1a}
+
+.rl-row{display:flex;align-items:center;gap:8px}.rl-btn{margin-left:auto;font:500 12px Inter,sans-serif;color:#ddd;border:1px solid #2e2e33;border-radius:8px;padding:5px 10px}.rl-btn[aria-pressed=true]{color:#ffb27a;border-color:rgba(255,122,26,.5)}
+.presets{display:none}@media(min-width:1180px){html.lcol-on .presets{display:flex;flex-wrap:wrap;gap:6px;align-items:center;border:1px solid #1f1f23;background:rgba(12,12,14,.9);border-radius:11px;padding:10px 12px;font:12px Inter,sans-serif}}
+.presets b{width:100%;font-size:12.5px}.presets small{width:100%;color:#6c6c74;font-size:10.5px}.presets .ps{display:inline-flex;border:1px solid #2a2a2f;border-radius:99px;overflow:hidden}.presets .ps button{padding:3px 9px;color:#ddd;font:12px Inter,sans-serif}.presets .ps .x{padding:3px 7px;color:#77777f;border-left:1px solid #2a2a2f}.presets .add{color:#ffb27a;font:12px Inter,sans-serif;padding:3px 4px}
+.pj-f{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}.pj-f select,.pj-f button{height:30px;border:1px solid #2a2a2f;border-radius:8px;background:#0e0e11;color:#ddd;font:12px Inter,sans-serif;padding:0 8px}.pj-f button[aria-pressed=true],.pj-w[aria-pressed=true]{color:#ffb27a;border-color:rgba(255,122,26,.5)}.pj-w{border:1px solid #2a2a2f;border-radius:8px;padding:3px 9px;color:#ddd;font:12px Inter,sans-serif;white-space:nowrap}
+.pj-tl-h{margin-top:10px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#77777f}.pj-tl{list-style:none;margin:6px 0 0;padding:0 0 0 12px;border-left:1px solid #2e2e33}.pj-tl li{position:relative;padding:4px 0 8px 8px;font-size:12.5px}.pj-tl li:before{content:"";position:absolute;left:-16px;top:8px;width:7px;height:7px;border-radius:50%;background:#ff7a1a}.pj-tl small{display:block;color:#8a8a92;font-size:11px}
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
@@ -803,6 +809,7 @@ html[data-theme=light] :is(.panel .meta,.panel .lens-meta,.panel .lens-src,.pane
 <section class="side-sec glass" id="sideSec" aria-label="Sector overview" hidden></section>
 <section class="side-imp glass" id="sideImp" aria-label="Market impact" hidden></section>
 <aside class="pj glass" id="projPanel" aria-label="Projects preview" hidden></aside>
+<div class="presets" id="presets"></div>
 <section class="act glass" id="act" aria-label="Latest activity and coming up" hidden></section>
 <section class="side-bar glass" id="sideBar" aria-label="Moving on the news" hidden></section>
 
@@ -2116,7 +2123,7 @@ pbody.addEventListener('keydown', e => {
 function variantPanel(list) {
   if (PANEL_TEMPLATE === 'a') return `<h2>Top articles</h2><div class="meta">${Math.min(8, list.length)} of ${list.length} articles</div><div class="compact-list">${list.slice(0, 8).map(compactItem).join('')}</div>${list.length > 8 ? '<a class="panel-more" href="../../news.html">See all news →</a>' : ''}${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
   if (PANEL_TEMPLATE === 'b') return `<h2>Top articles</h2><div class="strip-list" aria-label="Top articles">${list.slice(0, phone() ? 3 : 12).map(compactItem).join('')}</div>${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
-  const tabs = phone() && phoneView !== 'markets' ? [['top', 'Top'], ['latest', 'Latest'], ['moving', 'Moving'], ['more', ['countries', 'topics', 'watch'].includes(panelTab) ? ({ countries: 'Countries', topics: 'Topics', watch: 'Watchlist' })[panelTab] + ' ▾' : 'More ▾']] : [['top', 'Top'], ...(!phone() ? [['movers', 'Movers']] : []), ['latest', 'Latest'], ['countries', 'Countries'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : [])];
+  const tabs = phone() && phoneView !== 'markets' ? [['top', 'Top'], ['latest', 'Latest'], ['moving', 'Moving'], ['more', ['countries', 'topics', 'watch', 'saved'].includes(panelTab) ? ({ countries: 'Countries', topics: 'Topics', watch: 'Watchlist', saved: 'Saved' })[panelTab] + ' ▾' : 'More ▾']] : [['top', 'Top'], ...(!phone() ? [['movers', 'Movers']] : []), ['latest', 'Latest'], ['countries', 'Countries'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : []), ['saved', `Saved${RL.size ? ' ' + RL.size : ''}`]];
   let items, count;
   if (phone() && phoneView === 'markets') { items = marketsPhonePanel(); count = 0; }
   else if (panelTab === 'topics') { const cats = Object.entries(list.reduce((m, x) => (m[x.category] = (m[x.category] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]); count = 0;
@@ -2134,7 +2141,7 @@ function variantPanel(list) {
     items = countries.slice(0, panelExpanded ? countries.length : 3).map(([name, n]) => `<button class="compact-country" data-country="${esc(name)}">${flag(name)}<span>${esc(nm(name))}</span><small>${n} ${n === 1 ? 'article' : 'articles'}</small></button>`).join('');
   } else {
     const q = (newsQ || '').trim().toLowerCase(), qf = x => !q || [x.headline, x.source && x.source.name, nm(x.location.country), CAT[x.category]].some(v => String(v || '').toLowerCase().includes(q));
-    const base0 = (panelTab === 'moving' ? list.filter(x => x.market_moving) : panelTab === 'watch' ? (WATCH = watchSyms(), (() => { let C = new Set(); try { C = new Set((JSON.parse(localStorage.getItem('inv-watch') || '{}').c || []).map(x => x.k)); } catch {} return list.filter(x => touchesWatch(x) || C.has(x.location.country)); })()) : list).filter(qf);
+    const base0 = panelTab === 'saved' ? stories.filter(x => RL.has(x.id)).filter(qf) : (panelTab === 'moving' ? list.filter(x => x.market_moving) : panelTab === 'watch' ? (WATCH = watchSyms(), (() => { let C = new Set(); try { C = new Set((JSON.parse(localStorage.getItem('inv-watch') || '{}').c || []).map(x => x.k)); } catch {} return list.filter(x => touchesWatch(x) || C.has(x.location.country)); })()) : list).filter(qf);
     const sorted = panelTab === 'latest' || panelTab === 'watch' ? [...base0].sort((a,b) => b.t-a.t) : F.region === 'global' ? regionMix(base0) : base0;
     if (phone()) { // News D: photo lead, topic chips with counts, list with thumbnails (owner pick D)
       const cats = Object.entries(sorted.reduce((m, x) => (m[x.category] = (m[x.category] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]);
@@ -2189,7 +2196,7 @@ function placeLeft(){
  const tl=$('tl'),lay=$('layers');
  let tf=document.querySelector('.tf-dd');if(!tf){tf=document.createElement('div');tf.className='dd tf-dd';tf.innerHTML='<button type="button" class="dd-btn tf-btn" aria-haspopup="true" aria-expanded="false"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg><span class="tf-l"></span><span class="dd-car" style="margin-left:auto">▾</span></button>';tf.querySelector('button').onclick=e=>{e.stopPropagation();tf.classList.toggle('open');tf.querySelector('button').setAttribute('aria-expanded',tf.classList.contains('open'));};addEventListener('click',e=>{if(!tf.contains(e.target))tf.classList.remove('open');});}
  d.classList.toggle('lcol-on',on);
- if(on){if(!placeLeft.home)placeLeft.home={tl:[tl.parentNode,tl.nextSibling],lay:[lay.parentNode,lay.nextSibling]};$('ddrow').append(tf);tf.append(tl);let free=true;try{free=SL.x==null}catch{}if(sideSec.parentNode!==col&&free)col.append(sideSec);col.append(lay);}
+ if(on){if(!placeLeft.home)placeLeft.home={tl:[tl.parentNode,tl.nextSibling],lay:[lay.parentNode,lay.nextSibling]};$('ddrow').append(tf);tf.append(tl);let free=true;try{free=SL.x==null}catch{}if(sideSec.parentNode!==col&&free)col.append(sideSec);col.append(lay);const pr=$('presets');if(pr)col.append(pr);}
  else if(placeLeft.home){placeLeft.home.tl[0].insertBefore(tl,placeLeft.home.tl[1]);placeLeft.home.lay[0].insertBefore(lay,placeLeft.home.lay[1]);if(sideSec.parentNode===col)document.body.append(sideSec);placeLeft.home=null;}
  const l=document.querySelector('.tf-l');if(l)l.textContent='Last '+({'24h':'24 hours','48h':'48 hours','7d':'7 days','30d':'30 days'}[F.win]||F.win);
  tl.querySelectorAll('button').forEach(b=>b.onclick||(b.addEventListener('click',()=>{tf.classList.remove('open');setTimeout(placeLeft,50);})));
@@ -2233,14 +2240,18 @@ const PROJ={on:false,sel:'kx',list:[
  {k:'hy',n:'Hudson Yards',l:'New York, United States',la:40.754,lo:-74.002,t:'Mixed-use',st:'Phase 1 open',ms:[['Phase 1 opened','15 Mar 2019'],['Groundbreaking, 10 Hudson Yards','4 Dec 2012']],src:'https://en.wikipedia.org/wiki/Hudson_Yards,_Manhattan',cr:'Epicgenius · CC BY-SA 4.0'},
  {k:'line',n:'The Line',l:'Tabuk Province, Saudi Arabia',la:28.0,lo:35.2,t:'Urban megaproject',st:null,ms:[['Project announced','2021']],src:'https://en.wikipedia.org/wiki/The_Line,_Saudi_Arabia',cr:'European Space Agency (cropped) · CC BY-SA 3.0'}],
  more:[[51.481,-0.145],[53.541,9.997],[48.86,2.35],[45.484,9.19],[24.45,32.73],[25.42,51.49],[30.02,31.76],[25.2,55.35],[25.6,37.2],[55.6,12.9],[59.907,10.756],[40.48,-3.69],[48.22,16.43],[41.26,28.74],[37.88,23.73],[33.6,-7.65],[52.23,21.0]],hits:[]};
+const PW=new Set((()=>{try{return JSON.parse(localStorage.getItem('inv-proj-watch')||'[]')}catch{return[]}})());PROJ.f={c:'',t:'',s:'',w:false};
 function projRender(){
- const P=PROJ.list,p=P.find(x=>x.k===PROJ.sel)||P[0],el=$('projPanel');
+ const ctry=x=>x.l.split(', ').pop(),stg=x=>x.st||'Stage not shown',F2=PROJ.f,P=PROJ.list.filter(x=>(!F2.c||ctry(x)===F2.c)&&(!F2.t||x.t===F2.t)&&(!F2.s||stg(x)===F2.s)&&(!F2.w||PW.has(x.k))),p=P.find(x=>x.k===PROJ.sel)||P[0],el=$('projPanel');
+ const opt=(k,lab,vals)=>`<select data-pf="${k}" aria-label="${lab}"><option value="">${lab}: All</option>${[...new Set(vals)].sort().map(v=>`<option${F2[k]===v?' selected':''}>${esc(v)}</option>`).join('')}</select>`;
+ const filt=`<div class="pj-f">${opt('c','Country',PROJ.list.map(ctry))}${opt('t','Type',PROJ.list.map(x=>x.t))}${opt('s','Stage',PROJ.list.map(stg))}<button type="button" data-pw-only aria-pressed="${F2.w}">★ Watching ${PW.size}</button></div>`;
  el.innerHTML=`<span class="pj-tag">Product preview · Coming soon</span><h2>Development projects, on a global scale</h2><p>Track real estate and infrastructure developments worldwide: who is building, what stage they are at, and the sources behind every update.</p>
- <div class="pj-cards">${P.map(x=>`<button type="button" class="pj-c${x.k===p.k?' on':''}" data-pj="${x.k}"><img src="../img/projects/${x.k}.jpg" alt="" loading="lazy"><b>${esc(x.n)}</b><small>Photo: ${esc(x.cr)}</small></button>`).join('')}</div>
- <div class="pj-d"><b>${esc(p.n)}</b><div class="mu">${esc(p.l)} · ${esc(p.t)}</div>${p.st?`<span class="pj-st g">${esc(p.st)}</span>`:'<span class="pj-st">Stage not shown</span>'}<ul>${p.ms.map(([a,d])=>`<li>${esc(a)}<br><small>${esc(d)} · <a href="${p.src}" target="_blank" rel="noopener">source ↗</a></small></li>`).join('')}</ul></div>
+ ${filt}${P.length?'':'<p class="pj-foot">No projects match these filters.</p>'}<div class="pj-cards">${P.map(x=>`<button type="button" class="pj-c${x.k===p.k?' on':''}" data-pj="${x.k}"><img src="../img/projects/${x.k}.jpg" alt="" loading="lazy"><b>${esc(x.n)}</b><small>Photo: ${esc(x.cr)}</small></button>`).join('')}</div>
+ ${p?`<div class="pj-d"><div style="display:flex;gap:8px;align-items:start"><b style="flex:1">${esc(p.n)}</b><button type="button" class="pj-w" data-pw="${p.k}" aria-pressed="${PW.has(p.k)}">${PW.has(p.k)?'★ Watching':'☆ Watch'}</button></div><div class="mu">${esc(p.l)} · ${esc(p.t)}</div>${p.st?`<span class="pj-st g">${esc(p.st)}</span>`:'<span class="pj-st">Stage not shown</span>'}<div class="pj-tl-h">Milestones (sourced)</div><ul class="pj-tl">${p.ms.map(([a,d])=>`<li><small>${esc(d)}</small>${esc(a)} <a href="${p.src}" target="_blank" rel="noopener">source ↗</a></li>`).join('')}</ul><div class="pj-foot" style="margin-top:6px">Watchlist is saved on this device only.</div></div>`:''}
  <a class="pj-more" href="../../pricing.html#real-estate">Read more about Real Estate in Pro →</a>
  <form class="pj-wl" data-waitlist="globe-projects" novalidate><b>Get early access to Pro</b><p style="margin:2px 0 0;font-size:12px">Pro is not available yet. No payment, no commitment.</p><input type="email" name="email" placeholder="name@company.com" autocomplete="email" required aria-label="Email"><input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true"><label class="ck"><input type="checkbox" name="consent"><span>I agree to receive emails about Pro. Unsubscribe any time. <a href="../../privacy.html">Privacy</a></span></label><button type="submit">Join the waitlist</button><p class="pj-msg" role="status" aria-live="polite"></p></form>
  <p class="pj-foot">Real developments shown as examples of planned coverage. Milestones from Wikipedia; stages only where sourced. Photos: Wikimedia Commons. Projects is not a working feature yet. <a href="../../projects.html">Full preview →</a> Not investment advice.</p>`;
+ el.querySelectorAll('[data-pf]').forEach(x=>x.onchange=()=>{F2[x.dataset.pf]=x.value;projRender();});el.querySelector('[data-pw-only]').onclick=()=>{F2.w=!F2.w;projRender();};el.querySelectorAll('[data-pw]').forEach(b=>b.onclick=()=>{const k=b.dataset.pw;PW.has(k)?PW.delete(k):PW.add(k);try{localStorage.setItem('inv-proj-watch',JSON.stringify([...PW]))}catch{}projRender();});
  el.querySelectorAll('[data-pj]').forEach(b=>b.onclick=()=>{PROJ.sel=b.dataset.pj;const q=PROJ.list.find(x=>x.k===PROJ.sel);flyTo(q.lo,q.la,Z);projRender();});
  const f=el.querySelector('form');f.onsubmit=async e=>{e.preventDefault();const m=f.querySelector('.pj-msg'),em=f.email.value.trim();if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)){m.textContent='Please enter a valid email address.';return}if(!f.consent.checked){m.textContent='Please tick the box to agree to emails about Pro.';return}
   m.textContent='Joining…';try{const r=await fetch('https://api.investedia.com/v1/waitlist',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em,consent:true,website:f.website.value,source:'globe-projects'})});m.textContent=r.ok?'You are on the list. We will email you when Pro opens.':r.status===404?'The waitlist opens soon.':r.status===429?'Too many attempts. Please try again tomorrow.':'Something went wrong. Please try again.';if(r.ok)f.reset();}catch{m.textContent='Could not connect. Please try again.'}};
@@ -2255,9 +2266,21 @@ function drawProj(){
  PROJ.hits=[];const rad=Math.PI/180,dot=(la,lo,r,f,g)=>{const[x,y,z]=proj(la*rad,lo*rad);if(z<=.04)return null;ctx.beginPath();ctx.arc(x,y,r*2.2,0,7);ctx.fillStyle=g;ctx.fill();ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fillStyle=f;ctx.fill();return[x,y];};
  for(const[la,lo]of PROJ.more)dot(la,lo,2.6,'#ff9d5c','rgba(255,122,26,.14)');
  ctx.font='600 11.5px Inter,sans-serif';
- for(const p of PROJ.list){const xy=dot(p.la,p.lo,p.k===PROJ.sel?5.5:4.5,'#ff7a1a','rgba(255,122,26,.22)');if(!xy)continue;PROJ.hits.push({x:xy[0],y:xy[1],k:p.k});const tx=p.n.replace(' Solar Complex','');const w=ctx.measureText(tx).width+14;ctx.fillStyle='rgba(12,12,14,.92)';ctx.strokeStyle=p.k===PROJ.sel?'#ff7a1a':'#2e2e33';ctx.beginPath();ctx.roundRect(xy[0]+10,xy[1]-11,w,22,6);ctx.fill();ctx.stroke();ctx.fillStyle='#ececef';ctx.fillText(tx,xy[0]+17,xy[1]+4);}
+ for(const p of PROJ.list){if(PROJ.f&&((PROJ.f.c&&p.l.split(', ').pop()!==PROJ.f.c)||(PROJ.f.t&&p.t!==PROJ.f.t)||(PROJ.f.s&&(p.st||'Stage not shown')!==PROJ.f.s)||(PROJ.f.w&&!PW.has(p.k))))continue;const xy=dot(p.la,p.lo,p.k===PROJ.sel?5.5:4.5,'#ff7a1a','rgba(255,122,26,.22)');if(!xy)continue;PROJ.hits.push({x:xy[0],y:xy[1],k:p.k});const tx=p.n.replace(' Solar Complex','');const w=ctx.measureText(tx).width+14;ctx.fillStyle='rgba(12,12,14,.92)';ctx.strokeStyle=p.k===PROJ.sel?'#ff7a1a':'#2e2e33';ctx.beginPath();ctx.roundRect(xy[0]+10,xy[1]-11,w,22,6);ctx.fill();ctx.stroke();ctx.fillStyle='#ececef';ctx.fillText(tx,xy[0]+17,xy[1]+4);}
 }
 function projTap(x,y){const h=PROJ.hits.find(h=>Math.hypot(h.x-x,h.y-y)<22);if(h){PROJ.sel=h.k;projRender();}}
+
+// Reading list + news filter presets (this browser only; not synced to an account)
+const RL=new Set((()=>{try{return JSON.parse(localStorage.getItem('inv-reading')||'[]')}catch{return[]}})());
+const rlSave=()=>{try{localStorage.setItem('inv-reading',JSON.stringify([...RL].slice(-200)))}catch{}};
+document.addEventListener('click',e=>{const b=e.target.closest('[data-rl]');if(!b)return;const id=b.dataset.rl;RL.has(id)?RL.delete(id):RL.add(id);rlSave();render();});
+const PRE=(()=>{try{return JSON.parse(localStorage.getItem('inv-news-presets')||'[]')}catch{return[]}})();
+function presetUI(){const el=$('presets');if(!el)return;el.innerHTML=`<b>Saved views</b>${PRE.map((p,i)=>`<span class="ps"><button type="button" data-ps="${i}">${esc(p.n)}</button><button type="button" class="x" data-psx="${i}" aria-label="Delete ${esc(p.n)}">×</button></span>`).join('')}<button type="button" class="add" data-psadd>+ Save current view</button><small>Saved on this device only</small>`;}
+document.addEventListener('click',async e=>{const a=e.target.closest('[data-psadd],[data-ps],[data-psx]');if(!a)return;
+ if(a.dataset.psadd!==undefined){const parts=[F.region==='global'?'All regions':(regionDefinition(F.region)?.[1]||F.region),F.cat==='all'?null:CAT[F.cat],F.win.toUpperCase()].filter(Boolean);PRE.push({n:parts.join(' · '),r:F.region,c:F.cat,w:F.win});if(PRE.length>8)PRE.shift();}
+ else if(a.dataset.psx!==undefined)PRE.splice(+a.dataset.psx,1);
+ else{const p=PRE[+a.dataset.ps];if(p){F.region=p.r;F.cat=p.c;press($('cats'),p.c);press($('regions'),p.r);await setWin(p.w);try{$('reg-label').textContent=(p.r==='global'?'All regions':regionDefinition(p.r)[1]);}catch{}render();}}
+ try{localStorage.setItem('inv-news-presets',JSON.stringify(PRE))}catch{}presetUI();});
 let mvF = 'all';
 $('gswitch').onclick = e => { const b = e.target.closest('button'); if (!b) return; if (b.dataset.m === 'projects') return projSet(true); projSet(false); if (typeof marketSetMode === 'function') marketSetMode(b.dataset.m); };
 function sideData() {
@@ -2281,7 +2304,7 @@ function renderSide() {
     sideBar.innerHTML = `<div class="sb-t"><b>Moving on the news</b><small>Assets named in ${W} articles</small></div>${big.map(e => `<a class="sb-c" href="../../news.html?mover=${encodeURIComponent(e.a.s)}"><b>${esc(e.a.n || e.a.s)}</b><small>${e.n} art.</small><em class="${cl(e.a.d)}">${pc(e.a.d)}</em></a>`).join('')}<small class="meta" style="flex:none;font-size:10.5px">Daily moves. Not investment advice.</small>`;
 }
 addEventListener('resize', () => renderSide());
-setTimeout(()=>{placeLeft();size();if(PROJ_START)projSet(true);},0);
+setTimeout(()=>{presetUI();placeLeft();size();if(PROJ_START)projSet(true);},0);
 function render() {
   panel.dataset.view = view.k; peekUpdate(); dockUpdate();
   document.documentElement.classList.toggle('panel-top', !!PANEL_TEMPLATE && view.k === 'top');
@@ -2298,7 +2321,7 @@ function render() {
     if (F.region !== 'global') pbody.insertAdjacentHTML('afterbegin', gmContinentPanel());
   } else if (view.k === 'article') {
     const s = byId[view.id], ch = chainOf(s);
-    pbody.innerHTML = `<div class="story"><button class="back" data-back>← Back</button>${art(s)}
+    pbody.innerHTML = `<div class="story"><div class="rl-row"><button class="back" data-back>← Back</button><button type="button" class="rl-btn" data-rl="${esc(s.id)}" aria-pressed="${RL.has(s.id)}">${RL.has(s.id) ? 'Saved ✓' : 'Save to reading list'}</button></div>${art(s)}
       <div class="story-heading"><div class="eyebrow">${s.flag ? `<span class="tag">${FLAG[s.flag]}</span>` : ''}${esc(CAT[s.category])}</div>
       <h2>${esc(s.headline)}</h2>
       <div class="meta"><b>${esc(s.location.place)}</b>, <a href="#" data-country="${esc(s.location.country)}" style="color:inherit">${esc(nm(s.location.country))}</a> · ${ago(s.t)} · <button type="button" class="share-link" data-share="${esc(s.id)}">Share</button>${s.demo ? '<span class="dtag">DEMO</span>' : ''}</div></div>
