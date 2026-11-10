@@ -1,0 +1,99 @@
+{
+  "replay_as_of": "2026-11-08T00:45:00Z",
+  "real_generator_snapshot": "2026-11-08T00:42:51Z",
+  "reports": [
+    {
+      "width": 1440,
+      "theme": "dark",
+      "counts": {
+        "24h": 47,
+        "48h": 118,
+        "7d": 278,
+        "30d": 380
+      },
+      "source": "api",
+      "pre_existing_missing_history_days": [
+        "2026-11-08.json",
+        "2026-10-09.json",
+        "2026-10-10.json",
+        "2026-10-11.json",
+        "2026-10-13.json",
+        "2026-10-12.json",
+        "2026-10-14.json",
+        "2026-10-17.json",
+        "2026-10-18.json"
+      ]
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "counts": {
+        "24h": 47,
+        "48h": 118,
+        "7d": 278,
+        "30d": 380
+      },
+      "source": "api",
+      "pre_existing_missing_history_days": [
+        "2026-11-08.json",
+        "2026-10-09.json",
+        "2026-10-10.json",
+        "2026-10-11.json",
+        "2026-10-14.json",
+        "2026-10-13.json",
+        "2026-10-12.json",
+        "2026-10-17.json",
+        "2026-10-18.json"
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "counts": {
+        "24h": 47,
+        "48h": 118,
+        "7d": 278,
+        "30d": 380
+      },
+      "source": "api",
+      "pre_existing_missing_history_days": [
+        "2026-11-08.json",
+        "2026-10-09.json",
+        "2026-10-10.json",
+        "2026-10-11.json",
+        "2026-10-13.json",
+        "2026-10-14.json",
+        "2026-10-12.json",
+        "2026-10-17.json",
+        "2026-10-18.json"
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "counts": {
+        "24h": 47,
+        "48h": 118,
+        "7d": 278,
+        "30d": 380
+      },
+      "source": "api",
+      "pre_existing_missing_history_days": [
+        "2026-11-08.json",
+        "2026-10-09.json",
+        "2026-10-10.json",
+        "2026-10-11.json",
+        "2026-10-13.json",
+        "2026-10-14.json",
+        "2026-10-12.json",
+        "2026-10-17.json",
+        "2026-10-18.json"
+      ]
+    }
+  ],
+  "api_failure_fallback": "pass",
+  "healthy_empty_does_not_use_static": "pass",
+  "malformed_api_uses_static": "pass",
+  "api_last_good_retained_on_failure": "pass",
+  "live_ingestion_performed": false
+}

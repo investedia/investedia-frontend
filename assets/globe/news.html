@@ -143,7 +143,7 @@ html.proj-mode :is(.panel,.act,.side-sec,.side-imp,.side-bar,#lcol,.timeline,#ca
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
-<script src="../runtime-config.js"></script><script src="../live-config.js"></script><script src="../live-data.js"></script><script src="../news-source.js"></script><script src="../prefs.js"></script><script src="../sectors.js"></script><script src="../peek.js"></script>
+<script src="../runtime-config.js"></script><script src="../live-config.js"></script><script src="../live-data.js"></script><script src="../news-source.js"></script><script src="../connections-source.js"></script><script src="../prefs.js"></script><script src="../sectors.js"></script><script src="../peek.js"></script>
 <script>document.addEventListener("DOMContentLoaded",()=>window.InvConsent?.mount());</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Investedia Globe News (concept)</title>
@@ -788,6 +788,7 @@ html{font-feature-settings:"tnum"}body,button,input,select,textarea{font-family:
 .gf-detail-actions .back{font-size:12px!important;display:inline-flex!important;align-items:center;gap:6px;justify-content:flex-start;width:auto!important}.gf-detail-actions .back:before{display:none!important}.gf-detail-expand{align-items:center;justify-content:center}
 .market-panel .gf-article{text-decoration:none}.market-panel .gf-country-topics{margin:0}.market-panel .gf-day{margin-top:12px}
 html[data-theme=light] .gf-article-meta{color:#984400}html[data-theme=light] :is(.gf-country-topics button,.nd-chips button,.panel-tabs button,.gm-tabs button,.gswitch button,.dd-btn,.tf-btn,.lay-btn,.reg,.chip,.win):is([aria-pressed=true],[aria-selected=true],[aria-expanded=true]){background:rgba(29,29,31,.04)!important;color:var(--fg)!important;border-color:var(--accent)!important}
+.connections-freshness{display:block;padding:8px 4px;font:11px Inter,system-ui,sans-serif;color:var(--fg-2)}
 </style>
 <script src="../locale.js"></script>
 </head>
@@ -822,6 +823,7 @@ html[data-theme=light] .gf-article-meta{color:#984400}html[data-theme=light] :is
       <button type="button" class="lay-sw" id="sw-story" role="switch" aria-checked="false"><span><b>Story threads</b><small>Earlier → later articles on the same asset</small></span><i class="tg"></i></button>
       <button type="button" class="lay-sw" id="sw-up" role="switch" aria-checked="false"><span><b>Upcoming</b><small id="up-sub">Releases in the next 7 days</small></span><i class="tg"></i></button>
       <button type="button" class="lay-sw" id="sw-mkt" role="switch" aria-checked="false"><span><b>Market hours</b><small>Night shade, open exchanges</small></span><i class="tg"></i></button>
+      <small id="connections-freshness" class="connections-freshness" role="status">Lines update unavailable</small>
     </div>
     <div class="lay-legend" aria-label="Connections legend"><span><i></i>News origin</span><span style="color:rgb(255,122,26)">━ Main impact</span><span style="color:rgb(255,150,64)">─ Ripple</span><span style="color:rgb(255,190,110)">┄ Sector</span></div>
   </div>
@@ -1177,7 +1179,23 @@ const MAIN = '255,122,26', RIPPLE = '255,150,64', SECTOR = '255,190,110';
 // relationship type, evidence, confidence and an explanation. ?lines=v3 shows the previous logic (for comparison).
 let CONN = null, CONN_HIST = [];
 const connectionDays = new Map(), CONNECTION_DAYS = new Set(["2026-10-15", "2026-10-16", "2026-10-19", "2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26", "2026-10-27", "2026-10-28", "2026-10-29", "2026-10-30", "2026-10-31", "2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07"]); const CONN_ON = QS.get('lines') !== 'v3';
-if (CONN_ON) fetch('connections.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(d => { CONN = d; updateNetwork(); }).catch(() => {});
+let connectionsPending=null;
+function connectionsFreshness(){
+ const node=$('connections-freshness');if(!node)return;
+ const t=Date.parse(CONN?.generated_at),age=Number.isFinite(t)?Math.max(0,Math.floor((Date.now()-t)/60000)):null;
+ node.textContent=age==null?'Lines update unavailable':`Lines updated ${age<1?'just now':age<60?age+'m ago':age<1440?Math.floor(age/60)+'h ago':Math.floor(age/1440)+'d ago'}${CONN?.connectionSource==='static'?' · saved fallback':''}`;
+ node.dataset.source=CONN?.connectionSource||'unavailable';node.dataset.generatedAt=CONN?.generated_at||'';
+}
+function refreshConnections(){
+ if(connectionsPending)return connectionsPending;
+ connectionsPending=window.InvConnectionsSource.load('connections.json').then(d=>{
+  // A transient API failure must not replace a newer in-memory copy with an old static fallback.
+  if(!CONN||Date.parse(d.generated_at)>Date.parse(CONN.generated_at)||(d.connectionSource==='api'&&d.generated_at===CONN.generated_at)){CONN=d;updateNetwork();}
+  connectionsFreshness();
+ }).catch(()=>connectionsFreshness()).finally(()=>{connectionsPending=null;});return connectionsPending;
+}
+if(CONN_ON){refreshConnections();setInterval(()=>{if(!document.hidden)refreshConnections();},300000);setInterval(connectionsFreshness,60000);addEventListener('visibilitychange',()=>{if(!document.hidden)refreshConnections();});}
+
 let IND = {}; fetch('industries.json').then(r => r.json()).then(d => { IND = d.by || {}; updateNetwork(); }).catch(() => {});
 // Canonical identity: the registry is the single source of truth. An impact asset is usable only when the robot stamped it with a
 // registry id (assetForImpact); a Globe stock can be a sector peer only when industries.json (built from the registry) lists it.
@@ -1248,10 +1266,10 @@ function archiveThreads(max, onlyId, focus) {
 const cappedBy = cap => { const n = {}, allows = ks => !ks.some(k => (n[k] || 0) >= cap); const take = ks => { if (!allows(ks)) return false; ks.forEach(k => n[k] = (n[k] || 0) + 1); return true; }; take.allows = allows; return take; };
 function updateNetwork() {
   events = [];
-  if (CONN_ON && (CONN || CONN_HIST.length)) {  // one event per evidence-backed connection; direct (tier 1) before secondary (tier 2)
+  if (CONN_ON) {  // one event per evidence-backed connection; direct (tier 1) before secondary (tier 2)
     const byId = new Map(shown.map(a => [a.id, a]));
     const wide = ['7d','30d'].includes(F.win);
-    const connections = wide ? [...(CONN?.connections || []), ...CONN_HIST].sort((a,b)=>b.score-a.score || String(a.published_at).localeCompare(String(b.published_at))) : CONN?.connections || [];
+    const connections = wide ? InvConnectionsSource.dedupe([...(CONN?.connections || []), ...CONN_HIST]).sort((a,b)=>b.score-a.score || String(a.published_at).localeCompare(String(b.published_at))) : CONN?.connections || [];
     for (const c of connections) {
       const article = byId.get(c.event); if (!article) continue;
       const impact = impactsOf(article).find(i => i.name === c.evidence.impact) || { name: c.evidence.impact, why: c.evidence.why || '', direction: c.evidence.direction, kind: 'asset', country: c.dest.country };
