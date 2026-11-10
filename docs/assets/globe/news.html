@@ -584,6 +584,27 @@ html[data-theme=light] :is(.nav-grab,.overlay-close,.panel-tabs){background:var(
 html[data-theme=light] .nav-grab::after{background:var(--fg-3)}
 html[data-theme=light] :is(.panel .meta,.panel .lens-meta,.panel .lens-src,.panel .panel-tabs button,.panel .note,.panel .compact-country small,.market-panel small){color:var(--fg-3)}
 
+
+/* Detail controls share the scroll container and reserve their own space. */
+.impact-head .impact-dir{width:auto;height:auto;padding:4px 6px;border-radius:6px;font-size:11px!important;font-weight:500!important;-webkit-text-stroke:0;white-space:nowrap}
+.impact-head{flex-wrap:wrap}
+.detail-header{position:sticky;top:0;z-index:8;background:#121216;border-bottom:1px solid var(--line);margin:-1px 0 14px;padding:0 0 8px}
+.panel .pbody:has(.detail-header){padding-top:0!important}
+.detail-controls{display:flex;align-items:center;justify-content:space-between;min-height:44px;gap:8px}
+.panel .detail-header .sheet-actions{position:static;display:flex;align-items:center;gap:4px;margin-left:auto}
+.panel .detail-header .back{position:static!important;margin:0;min-height:44px;flex-shrink:0;color:var(--fg)!important;font-size:14px!important}
+.detail-header .gm-tabs{margin:4px 0 0}
+.detail-header .follow{padding:6px 10px;white-space:nowrap}
+.panel[data-view=asset] .pbody>.meta{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;line-height:1.5}
+html[data-theme=light] .detail-header{background:#f4f7fb}
+@media(max-width:760px){
+ html[data-panel] .panel:not([data-sheet=closed]) .pbody:has(.detail-header){padding-top:0!important}
+ html[data-panel] .panel:not([data-sheet=closed]) .grab::before{height:18px}
+ .panel .detail-header .sheet-actions button{min-width:36px;width:36px;min-height:44px}
+ .panel .detail-header .sheet-actions .follow{width:auto}
+ .detail-header .gm-tabs button{font-size:11px;min-height:40px;padding:7px 2px}
+}
+
 </style>
 <script src="../locale.js"></script>
 </head>
@@ -706,7 +727,7 @@ const logoOf = s => { for (const e of s.entities) { const l = logoFor(e); if (l)
 const limg = (lg, alt = '') => `<img src="${esc(lg.l)}" alt="${esc(alt)}"${lg.l.startsWith('https://cdn.brandfetch.io') ? ' class="bf"' : ''} data-logo${lg.fb ? ` data-fb="${esc(lg.fb)}"` : ''} loading="lazy" referrerpolicy="strict-origin-when-cross-origin">`;
 addEventListener('error', ev => { const t = ev.target; if (t.tagName !== 'IMG' || !t.hasAttribute('data-logo')) return; if (t.dataset.fb) { t.src = t.dataset.fb; t.removeAttribute('data-fb'); } else (t.closest('.plogo') || t).remove(); }, true);
 addEventListener('inv-consent-change', () => { if (!window.InvConsent.allows('images')) document.querySelectorAll('img.bf').forEach(i => { if(i.dataset.fb){ i.src=i.dataset.fb; delete i.dataset.fb; } else i.remove(); }); });
-const fmtP = (v, sym) => v.toLocaleString('en-US', { maximumFractionDigits: YLD.test(sym) ? 2 : v >= 1000 ? 0 : v >= 10 ? 2 : 4, minimumFractionDigits: YLD.test(sym) ? 2 : 0 });
+const fmtP = (v, sym) => !Number.isFinite(v) ? '—' : v.toLocaleString('en-US', { maximumFractionDigits: YLD.test(sym) ? 2 : v >= 1000 ? 0 : v >= 10 ? 2 : 4, minimumFractionDigits: YLD.test(sym) ? 2 : 0 });
 const outlineCache = {};
 function outline(name, lat, lon) {
   const c = byName[name]; if (!c) return '';
@@ -720,12 +741,13 @@ function outline(name, lat, lon) {
   return outlineCache[key] = `<path d="${d}" fill="rgba(255,122,26,.07)" stroke="rgba(255,140,60,.55)" stroke-width=".7" vector-effect="non-scaling-stroke" fill-rule="evenodd"/>${dot}`;
 }
 function spark(sp, up) {
+  sp = (sp || []).filter(Number.isFinite); if (sp.length < 2) return '';
   const lo = Math.min(...sp), hi = Math.max(...sp), r = hi - lo || 1, pts = sp.map((v, i) => [(i / (sp.length - 1) * 300).toFixed(1), (6 + (1 - (v - lo) / r) * 62).toFixed(1)]);
   const col = up ? '34,197,94' : '240,68,68', id = 'g' + Math.random().toString(36).slice(2, 7);
   return `<svg class="cspark" viewBox="0 0 300 74" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(${col},.28)"/><stop offset="1" stop-color="rgba(${col},0)"/></linearGradient></defs><path d="M0 74L${pts.map(p => p.join(' ')).join('L')}L300 74Z" fill="url(#${id})"/><path d="M${pts.map(p => p.join(' ')).join('L')}" fill="none" stroke="rgb(${col})" stroke-width="1.6" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></svg>`;
 }
 function art(s, label = true) {
-  const qq = quoteOf(s), lg = logoOf(s), ol = outline(s.location.country, s.location.lat, s.location.lon);
+  const rawQuote = quoteOf(s), qq = rawQuote && Number.isFinite(rawQuote.q?.p) && Number.isFinite(rawQuote.q?.d) && rawQuote.q?.sp?.length > 1 && rawQuote.q.sp.every(v => Number.isFinite(v) && v > 0) ? rawQuote : null, lg = logoOf(s), ol = outline(s.location.country, s.location.lat, s.location.lon);
   // B / C: openly licensed photo, always with its credit and licence
   if (s.image && typeof s.image === 'object') {
     const im = s.image, src = esc(im.url || im.file);
@@ -780,21 +802,21 @@ function briefHTML(c) {
 }
 let TRACK = null; if (window.SinceNews) SinceNews.load('news-track.json').then(t => { TRACK = t; if (view.k === 'article') render(); });
 let ECON = null; fetch('economy.json').then(r => r.json()).then(d => { ECON = d; if (view.k === 'country') render(); }).catch(() => {});
-const usd = v => v >= 1e12 ? '$' + (v / 1e12).toFixed(v >= 1e13 ? 1 : 2) + ' trillion' : v >= 1e9 ? '$' + (v / 1e9).toFixed(v >= 1e11 ? 0 : 1) + ' billion' : '$' + (v / 1e6).toFixed(0) + ' million';
-const people = v => v >= 1e9 ? (v / 1e9).toFixed(2) + ' billion' : v >= 1e6 ? (v / 1e6).toFixed(1) + ' million' : Math.round(v / 1e3) + ' thousand';
-const usdS = v => v >= 1e12 ? '$' + (v / 1e12).toFixed(1) + 'T' : v >= 1e9 ? '$' + (v / 1e9).toFixed(v >= 1e11 ? 0 : 1) + 'B' : '$' + (v / 1e6).toFixed(0) + 'M';
-const peopleS = v => v >= 1e9 ? (v / 1e9).toFixed(2) + 'B' : v >= 1e6 ? (v / 1e6).toFixed(1) + 'M' : Math.round(v / 1e3) + 'K';
+const usd = v => !Number.isFinite(v) ? '—' : v >= 1e12 ? '$' + (v / 1e12).toFixed(v >= 1e13 ? 1 : 2) + ' trillion' : v >= 1e9 ? '$' + (v / 1e9).toFixed(v >= 1e11 ? 0 : 1) + ' billion' : '$' + (v / 1e6).toFixed(0) + ' million';
+const people = v => !Number.isFinite(v) ? '—' : v >= 1e9 ? (v / 1e9).toFixed(2) + ' billion' : v >= 1e6 ? (v / 1e6).toFixed(1) + ' million' : Math.round(v / 1e3) + ' thousand';
+const usdS = v => !Number.isFinite(v) ? '—' : v >= 1e12 ? '$' + (v / 1e12).toFixed(1) + 'T' : v >= 1e9 ? '$' + (v / 1e9).toFixed(v >= 1e11 ? 0 : 1) + 'B' : '$' + (v / 1e6).toFixed(0) + 'M';
+const peopleS = v => !Number.isFinite(v) ? '—' : v >= 1e9 ? (v / 1e9).toFixed(2) + 'B' : v >= 1e6 ? (v / 1e6).toFixed(1) + 'M' : Math.round(v / 1e3) + 'K';
 const THE = new Set(['United States of America', 'United Kingdom', 'Netherlands', 'Philippines', 'United Arab Emirates', 'Dem. Rep. Congo', 'Central African Rep.', 'Dominican Rep.', 'Czech Rep.', 'Bahamas', 'Gambia']);
-const pct = (v, sign) => (sign && v > 0 ? '+' : '') + v.toFixed(1) + '%';
+const pct = (v, sign) => !Number.isFinite(v) ? '—' : (sign && v > 0 ? '+' : '') + v.toFixed(1) + '%';
 function economy(name) {
   const c = ECON && ISO[name] && ECON.countries[ISO[name]]; if (!c) return ECON ? '' : '<div class="eco"><div class="sec-h">Economy</div><p class="meta">Loading…</p></div>';
-  const g = c.growth || [], last = g[g.length - 1], avg = g.length > 3 ? g.slice(0, -1).reduce((a, x) => a + x[1], 0) / (g.length - 1) : null, nmc = esc(nm(name));
+  const g = (c.growth || []).filter(x => Number.isFinite(x[1])), last = g[g.length - 1], avg = g.length > 3 ? g.slice(0, -1).reduce((a, x) => a + x[1], 0) / (g.length - 1) : null, nmc = esc(nm(name));
   // plain-language summary, built only from the numbers below
   const parts = [];
   const who = (THE.has(name) ? 'The ' : '') + nmc, poss = who + (/s$/.test(nm(name)) ? "'" : "'s");
   if (last) parts.push(`${poss} economy ${last[1] >= 0 ? 'grew' : 'shrank'} ${Math.abs(last[1]).toFixed(1)}% in ${last[0]}` + (avg != null ? `, ${Math.abs(last[1] - avg) < .3 ? 'close to' : last[1] > avg ? 'faster than' : 'slower than'} its ${g.length - 1}-year average of ${avg.toFixed(1)}%` : '') + '.');
-  if (c.infl) parts.push(`Prices rose ${c.infl[1].toFixed(1)}% in ${c.infl[0]}${c.infl[1] > 5 ? ', which is high' : c.infl[1] < 0 ? ' (falling prices)' : ''}.`);
-  if (c.unemp) parts.push(`${c.unemp[1].toFixed(1)}% of people who want a job don't have one (${c.unemp[0]}).`);
+  if (Number.isFinite(c.infl?.[1])) parts.push(`Prices rose ${c.infl[1].toFixed(1)}% in ${c.infl[0]}${c.infl[1] > 5 ? ', which is high' : c.infl[1] < 0 ? ' (falling prices)' : ''}.`);
+  if (Number.isFinite(c.unemp?.[1])) parts.push(`${c.unemp[1].toFixed(1)}% of people who want a job don't have one (${c.unemp[0]}).`);
   const stat = (l, v, y) => v == null ? '' : `<div><span>${l}</span><b>${v}</b><small>${y}</small></div>`;
   let chart = '';
   if (g.length > 2) {
@@ -803,7 +825,7 @@ function economy(name) {
       <div class="eco-yr"><span>${g[0][0]}</span><span>GDP growth per year</span><span>${last[0]}</span></div>`;
   }
   return `<div class="eco"><div class="sec-h" style="margin-top:0">Economy</div><p class="eco-s">${parts.join(' ')}</p>
-    <div class="eco-g">${stat('GDP', c.gdp && usdS(c.gdp[1]), c.gdp && c.gdp[0])}${stat('Growth', last && pct(last[1], 1), last && last[0])}${stat('Inflation', c.infl && pct(c.infl[1]), c.infl && c.infl[0])}${stat('Unemployment', c.unemp && pct(c.unemp[1]), c.unemp && c.unemp[0])}${stat('GDP per person', c.gdppc && '$' + Math.round(c.gdppc[1]).toLocaleString('en-US'), c.gdppc && c.gdppc[0])}${stat('Population', c.pop && peopleS(c.pop[1]), c.pop && c.pop[0])}</div>
+    <div class="eco-g">${stat('GDP', c.gdp && usdS(c.gdp[1]), c.gdp && c.gdp[0])}${stat('Growth', last && pct(last[1], 1), last && last[0])}${stat('Inflation', c.infl && pct(c.infl[1]), c.infl && c.infl[0])}${stat('Unemployment', c.unemp && pct(c.unemp[1]), c.unemp && c.unemp[0])}${stat('GDP per person', Number.isFinite(c.gdppc?.[1]) ? '$' + Math.round(c.gdppc[1]).toLocaleString('en-US') : '—', c.gdppc && c.gdppc[0])}${stat('Population', c.pop && peopleS(c.pop[1]), c.pop && c.pop[0])}</div>
     ${chart}<p class="eco-src">Source: <a href="${esc(ECON.source_url)}" target="_blank" rel="noopener">${esc(ECON.source)}</a> · ${esc(ECON.license)} · yearly data</p></div>`;
 }
 // Alert topics for a followed country (saved on this device until accounts + email alerts launch)
@@ -914,7 +936,7 @@ function sinceHTML(s, rows) {
 function impactHTML(s) {
   const rows = impactsOf(s), moved = s.market_moving && typeof s.why_moved === 'string' ? s.why_moved : '';
   if (!rows.length && !moved) return '';
-  return `<section class="impact-section" aria-label="Affected assets">${sinceHTML(s, rows)}${moved ? `<div class="why moved"><div class="eyebrow">Why it moved</div><p>${esc(moved)}</p></div>` : ''}<div class="sec-h">Affected assets</div><div class="impact-list">${rows.map(i => `<div><div class="impact-head" ${assetForImpact(i) ? `data-asset="${esc(assetForImpact(i).s)}" role="button" tabindex="0"` : ''}>${impactVisual(i)}<span>${esc(i.name)}</span>${assetForImpact(i) && Number.isFinite(assetForImpact(i).d) ? movePill(assetForImpact(i)) : ''}<span class="impact-dir impact-${i.direction}" aria-label="${i.direction}" title="${i.direction}">${IMPACT_ARROW[i.direction]}</span></div><p>${esc(i.why.slice(0, 200))}</p></div>`).join('')}</div></section>`;
+  return `<section class="impact-section" aria-label="Affected assets">${sinceHTML(s, rows)}${moved ? `<div class="why moved"><div class="eyebrow">Why it moved</div><p>${esc(moved)}</p></div>` : ''}<div class="sec-h">Affected assets</div><div class="impact-list">${rows.map(i => `<div><div class="impact-head" ${assetForImpact(i) ? `data-asset="${esc(assetForImpact(i).s)}" role="button" tabindex="0"` : ''}>${impactVisual(i)}<span>${esc(i.name)}</span>${assetForImpact(i) && Number.isFinite(assetForImpact(i).d) ? '<small>Today</small>' + movePill(assetForImpact(i)) : ''}<span class="impact-dir impact-${i.direction}" aria-label="${i.direction}" title="${i.direction}">Expected ${IMPACT_ARROW[i.direction]}</span></div><p>${esc(i.why.slice(0, 200))}</p></div>`).join('')}</div></section>`;
 }
 // Only an asset the canonical registry verified can draw a line or show a price: the news robot stamps each impact/entity with
 // `asset` (id, name, class, price symbol, place) or `unresolved` (why not). Raw ticker strings are never looked up here.
@@ -926,11 +948,12 @@ function assetForImpact(i) {
   const p = MKT.by[r.px] || MKT.np[r.px] || {};
   return MKT.reg[r.id] = { ...p, s: r.px || r.id, id: r.id, n: r.n, la: r.la, lo: r.lo, t: T_OF[r.c] || 'stocks', c: r.c, site: r.site || p.site };
 }
-const movePill = a => a && a.u === 'bp' ? `<span class="pct ${a.d > 0 ? 'up' : a.d < 0 ? 'down' : 'flat'}">${a.d > 0 ? '↑' : a.d < 0 ? '↓' : '↔'} ${Math.abs(a.d).toFixed(1)} bp</span>` : pctPill(a.d);
-const pctPill = v => `<span class="pct ${v > 0 ? 'up' : v < 0 ? 'down' : 'flat'}">${v > 0 ? '↑' : v < 0 ? '↓' : '↔'} ${Math.abs(v).toFixed(2)}%</span>`;
+const movePill = a => !Number.isFinite(a?.d) ? '' : a && a.u === 'bp' ? `<span class="pct ${a.d > 0 ? 'up' : a.d < 0 ? 'down' : 'flat'}">${a.d > 0 ? '↑' : a.d < 0 ? '↓' : '↔'} ${Math.abs(a.d).toFixed(1)} bp</span>` : pctPill(a.d);
+const pctPill = v => !Number.isFinite(v) ? '' : `<span class="pct ${v > 0 ? 'up' : v < 0 ? 'down' : 'flat'}">${v > 0 ? '↑' : v < 0 ? '↓' : '↔'} ${Math.abs(v).toFixed(2)}%</span>`;
 const dirWord = v => v > 0 ? 'up' : v < 0 ? 'down' : 'flat';
-function money(a) { if (a.u === 'bp') return Number(a.p).toFixed(2) + '%'; try { return new Intl.NumberFormat(undefined, { style: 'currency', currency: a.cur || 'USD', maximumFractionDigits: a.p < 10 ? 3 : 2 }).format(a.p); } catch { return String(a.p); } }
+function money(a) { if (!Number.isFinite(a?.p)) return '—'; if (a.u === 'bp') return Number(a.p).toFixed(2) + '%'; try { return new Intl.NumberFormat(undefined, { style: 'currency', currency: a.cur || 'USD', maximumFractionDigits: a.p < 10 ? 3 : 2 }).format(a.p); } catch { return String(a.p); } }
 function sparkSvg(sp, col) {
+  sp = (sp || []).filter(Number.isFinite);
   if (!Array.isArray(sp) || sp.length < 2) return '';
   const mn = Math.min(...sp), mx = Math.max(...sp), X = k => k / (sp.length - 1) * 300, Y = v => 40 - (v - mn) / ((mx - mn) || 1) * 34 - 3;
   const d = sp.map((v, k) => `${k ? 'L' : 'M'}${X(k).toFixed(1)} ${Y(v).toFixed(1)}`).join('');
@@ -941,7 +964,7 @@ const REL_LABEL = { direct: 'Direct impact', acquisition: 'Acquisition', 'supply
 function hoverCardHTML(edge) {
   const rows = impactsOf(edge.article).map(i => ({ i, a: assetForImpact(i) })).filter(x => x.a && Number.isFinite(x.a.d)).sort((a, b) => (b.i === edge.impact) - (a.i === edge.impact)).slice(0, 3);
   return `<div class="eyebrow">${rows.length ? `Affected assets · ${rows.length}` : `Connection · ${esc(edge.conn ? edge.conn.dest.name : edge.asset.n)}`}</div><h3>${esc(edge.article.headline)}</h3><div class="meta">${esc(edge.article.source?.name || '')}${edge.article.location?.place ? ' · ' + esc(edge.article.location.place.split(',')[0]) : ''} · ${ago(edge.article.t)}</div>`
-    + rows.map(({ i, a }) => `<div class="hv-row"><div class="hv-top">${impactVisual(i)}<div class="hv-name"><b>${esc(a.n)}</b><span>${esc(a.s.replace(/-USD$/, ''))} · ${esc(money(a))}</span></div><div class="hv-pct">${movePill(a)}<small>7 days ${a.w > 0 ? '+' : ''}${Number(a.w).toFixed(a.u === 'bp' ? 1 : 2)}${a.u === 'bp' ? ' bp' : '%'}</small></div></div><div class="hv-impl">Article implies <b class="${i.direction === 'up' ? 'up' : i.direction === 'down' ? 'down' : 'flat'}">${IMPACT_ARROW[i.direction]} ${i.direction === 'mixed' || i.direction === 'unclear' ? i.direction : i.direction}</b> · price today <b class="${dirWord(a.d)}">${a.d > 0 ? '↑ up' : a.d < 0 ? '↓ down' : '↔ flat'}</b></div>${sparkSvg(a.sp, a.d >= 0 ? '#34d399' : '#f87171')}`).join('')
+    + rows.map(({ i, a }) => `<div class="hv-row"><div class="hv-top">${impactVisual(i)}<div class="hv-name"><b>${esc(a.n)}</b><span>${esc(a.s.replace(/-USD$/, ''))} · ${esc(money(a))}</span></div><div class="hv-pct">${movePill(a)}<small>7 days ${a.w > 0 ? '+' : ''}${Number.isFinite(a.w) ? a.w.toFixed(a.u === 'bp' ? 1 : 2) : '—'}${a.u === 'bp' ? ' bp' : '%'}</small></div></div><div class="hv-impl">Article implies <b class="${i.direction === 'up' ? 'up' : i.direction === 'down' ? 'down' : 'flat'}">${IMPACT_ARROW[i.direction]} ${i.direction === 'mixed' || i.direction === 'unclear' ? i.direction : i.direction}</b> · price today <b class="${dirWord(a.d)}">${a.d > 0 ? '↑ up' : a.d < 0 ? '↓ down' : '↔ flat'}</b></div>${sparkSvg(a.sp, a.d >= 0 ? '#34d399' : '#f87171')}`).join('')
     + (edge.conn ? `<p class="hv-rel"><b>${esc(REL_LABEL[edge.conn.type] || edge.conn.type)}</b> · ${edge.conn.tier === 1 ? 'direct' : 'secondary'} · confidence ${Math.round(edge.conn.confidence * 100)}%</p><p class="hv-why">${esc(edge.conn.explanation)}</p>` : '')
     + `<p class="hv-why">${esc(String(edge.impact.why || '').slice(0, 170))}</p>`;
 }
@@ -1858,7 +1881,7 @@ function gmCountryPanel(c) {
       abroad.push({ id, asset, other, quote: gmQuote(other) });
     }
     const indicator = (key, digits = 1) => Number.isFinite(macro?.[key]?.[1]) ? `${macro[key][1].toFixed(digits)}% <small>(${macro[key][0]})</small>` : gmMissing;
-    content = `<div class="gm-kpis"><div data-gm-kpi="benchmark"><span>${esc(benchmark?.n || 'Benchmark index')}</span><b${benchmark?.p >= 1e6 ? ' style="font-size:12px"' : ''}>${Number.isFinite(benchmark?.p) ? gmNumber(benchmark.p) : gmMissing}</b>${gmMove(benchmark?.d)}</div><div data-gm-kpi="currency"><span>${esc(fx ? fx.s.replace(/^([A-Z]{3})([A-Z]{3})$/, '$1/$2') : 'Currency vs USD')}</span><b>${Number.isFinite(fx?.p) ? gmNumber(fx.p, 4) : gmMissing}</b><span class="gm-fx-move" title="Currency strength against the US dollar"><small>${esc(exchange?.currency || fx?.s.replace('USD', '') || '')}</small>${gmMove(fx?.d)}</span></div><div data-gm-kpi="macro"><span>Inflation · Unemp.</span><b data-gm-inflation>${indicator('infl')}</b><span data-gm-unemployment>${indicator('unemp')}</span></div></div>
+    content = `<div class="gm-kpis"><div data-gm-kpi="benchmark"><span>${esc(benchmark?.n || 'Benchmark index')}</span><b${benchmark?.p >= 1e6 ? ' style="font-size:12px"' : ''}>${Number.isFinite(benchmark?.p) ? gmNumber(benchmark.p) : gmMissing}</b>${gmMove(benchmark?.d)}</div><div data-gm-kpi="currency"><span>${esc(fx ? fx.s.replace(/^([A-Z]{3})([A-Z]{3})$/, '$1/$2') : 'Currency vs USD')}</span><b>${exchange?.currency === 'USD' ? 'USD (base)' : Number.isFinite(fx?.p) ? gmNumber(fx.p, 4) : gmMissing}</b><span class="gm-fx-move" title="Currency strength against the US dollar"><small>${esc(exchange?.currency || fx?.s.replace('USD', '') || '')}</small>${exchange?.currency === 'USD' ? '' : gmMove(fx?.d)}</span></div><div data-gm-kpi="macro"><span>Inflation · Unemp.</span><b data-gm-inflation>${indicator('infl')}</b><span data-gm-unemployment>${indicator('unemp')}</span></div></div>
       <div class="gm-section-head"><h3>Latest market developments</h3><button class="gm-link" data-gm-tab="news">All ${news.length} →</button></div>${important.length ? gmNewsRows(important) : '<p class="empty">No important articles in this time window.</p>'}
       <div class="gm-section-head"><h3>Listed companies · ${esc(exchange?.short || 'no data yet')}</h3><button class="gm-link" data-gm-tab="companies">${companies.length} →</button></div>${companies.length ? gmCompanyRows(companies.slice(0, 4)) : `<p class="empty">${gmMissing}</p>`}
       <h3 class="sec-h">Also listed abroad</h3><div class="gm-chips">${abroad.length ? abroad.map(({ asset, other, quote }) => `<a data-gm-abroad="${esc(other.id)}" href="${gmCompanyLink(asset)}">${esc(asset.name)} · ${esc(GM.exchanges[other.mic].short)} · ${esc(other.sym)} ${gmMove(quote?.d)}</a>`).join('') : gmMissing}</div>`;
@@ -1876,7 +1899,7 @@ function gmContinentPanel() {
   if (!GM) return `<section class="gm-continent"><div class="eyebrow">Global Markets</div><h2>${esc(name)}</h2>${tabs}<p class="meta">${gmError ? 'Market directory could not load.' : 'Loading market directory…'}</p>${gmError ? '<button class="gm-link" data-gm-retry>Try again</button>' : ''}</section>`;
   const underserved = rows.filter(r => r.count >= 1 && r.count <= 9), benchmarks = rows.map(r => ({ ...r, benchmark: gmBenchmark(r.c.name), funds: gmFunds(r.c.name) }));
   const currencies = [...new Map(rows.map(({ c, code }) => { const fx = gmCurrency(c.name), currency = gmExchanges(code)[0]?.[1].currency || fx?.s.replace('USD', ''); return [fx?.s || currency, { fx, currency }]; }).filter(([key]) => key)).values()];
-  const currencyChip = ({ fx, currency }) => `<span>${esc(currency)} ${gmMove(fx?.d)}</span>`;
+  const currencyChip = ({ fx, currency }) => `<span>${esc(currency)} ${currency === 'USD' ? '(base)' : gmMove(fx?.d)}</span>`;
   const missingBenchmarks = benchmarks.filter(r => !r.benchmark && !r.funds.length).length;
   const underservedChip = ({ c, count }) => `<button type="button" data-country="${esc(c.name)}">${esc(nm(c.name))} · ${count}</button>`;
   return `<section class="gm-continent" data-gm-region-panel="${esc(F.region)}"><div class="eyebrow">Global Markets</div><h2>${esc(name)}</h2><p class="meta" data-gm-region-summary>${rows.length} countries · ${activeExchanges.length} ${activeExchanges.length === 1 ? 'exchange' : 'exchanges'} with data · ${F.win.toUpperCase()}</p>${tabs}
@@ -1949,7 +1972,23 @@ function lensPanel(list, nc) {
   return `<div class="eyebrow lens-eyebrow">${esc(name)} lens</div><h2 class="lens-count"><b>${list.length}</b> ${list.length === 1 ? 'article' : 'articles'} · ${nc} ${nc === 1 ? 'country' : 'countries'}</h2>
     ${list.length ? `<div class="lens-list">${list.slice(0, 20).map(lensItem).join('')}</div>` : `<div class="empty">No ${esc(name.toLowerCase())} articles in ${WLABEL[F.win]}. Try a wider time window.</div>`}${noteHTML()}`;
 }
+const sheetActions = document.querySelector('.sheet-actions');
+function detailHeader() {
+  const back = pbody.querySelector('[data-back]');
+  if (!back) { panel.insertBefore(sheetActions, pbody); return; }
+  const header = document.createElement('div'); header.className = 'detail-header';
+  const row = document.createElement('div'); row.className = 'detail-controls';
+  row.append(back, sheetActions);
+  const follow = pbody.querySelector('[data-follow]');
+  if (follow) sheetActions.insertBefore(follow, sheetActions.querySelector('#sheet-close'));
+  header.append(row);
+  const tabs = pbody.querySelector('.gm-tabs'); if (tabs) header.append(tabs);
+  pbody.prepend(header);
+}
 function render() {
+  // Preserve the existing action buttons and their listeners across renders.
+  sheetActions.querySelector('[data-follow]')?.remove();
+  panel.insertBefore(sheetActions, pbody);
   panel.dataset.view = view.k; peekUpdate(); dockUpdate();
   document.documentElement.classList.toggle('panel-top', !!PANEL_TEMPLATE && view.k === 'top');
   if (!panelInitialized) { panelInitialized = true; if (phone() && PANEL_TEMPLATE === 'b') panel.classList.add('open'); }
@@ -1983,6 +2022,7 @@ function render() {
     const list = view.ids.map(i => byId[i]).sort(sortTop);
     pbody.innerHTML = `<button class="back" data-back>← Back</button><div class="eyebrow">${esc(nm(list[0].location.country))}</div><h2>${esc(list[0].location.place)}</h2><div class="stats"><div><b>${list.length}</b>articles here</div></div><div class="list">${list.map(item).join('')}</div>${noteHTML()}`;
   }
+  detailHeader();
 }
 
 // ===== Search: countries, places, companies and stories =====
@@ -2515,7 +2555,7 @@ function marketRender(){
  const tile=(label,value,sub)=>`<div><small>${esc(label)}</small><b>${value}</b><small>${sub}</small></div>`,missing='no data yet';
  const content=MARKET.tab==='performers'?'<p class="market-empty">Licensed historical prices are not available. No 30-day performance ranking is shown.</p>':(MARKET.tab==='sectors'?sectors:attention).slice(0,3).map(r=>`<div class="market-mention"><span>${esc(r.name)}</span><span>${r.n} ${r.n===1?'article':'articles'}</span></div>`).join('')||`<p class="market-empty">${MARKET.ready?'No verified '+(MARKET.tab==='sectors'?'sector':'company')+' mentions in the last 30 days.':MARKET.error?'Market data could not load. Please try again.':'Loading market data…'}</p>`;
  const news='../../assets/globe/news.html?country='+encodeURIComponent(name)+'&win=30d&country-tab=news',explore=new URL(news,location.href);explore.searchParams.set('win','30d');explore.searchParams.delete('country-tab');
- marketPanel.innerHTML=`<div class="market-handle" role="separator" tabindex="0" aria-label="Drag market sheet"></div><button class="market-close" type="button" aria-label="Close market">×</button><div class="market-eyebrow">${esc(region)} · Market</div><h2>${flag(name)} ${esc(nm(name))}</h2><p class="market-exchange">${ex?`${esc(ex.name)} (${esc(ex.short)}) · ${esc(ex.city)} · ${esc(fx?.n||ex.currency)} (${esc(ex.currency)})`:missing}</p><div class="market-kpis">${tile(ix?.n||ex?.benchmark_name||(ex?ex.short+' benchmark':'Benchmark index'),marketNum(ix?.p),Number.isFinite(ix?.d)?`<span class="${ix.d>0?'market-up':ix.d<0?'market-down':'market-flat'}">${ix.d>0?'↑':ix.d<0?'↓':'↔'} ${Math.abs(ix.d).toFixed(2)}%</span> · delayed`:missing)}${tile(fx?.s?.replace(/(.{3})(.{3})/,'$1/$2')||'Currency vs USD',marketNum(fx?.p),fx?'delayed':missing)}${tile('Inflation',infl?infl[1].toFixed(1)+'%':'—',infl?infl[0]+' · WB':missing)}</div><div class="market-section"><b>Notable developments</b><a href="${news}" target="${EMBED?'_top':'_self'}">${list.length} →</a></div>${important.map(a=>`<a class="market-article" href="../../assets/globe/news.html?story=${encodeURIComponent(a.id)}" target="${EMBED?'_top':'_self'}"><span>${esc(a.headline)}</span><small>${esc(a.source?.name||'')} · ${new Date(a.published_at).toLocaleDateString('en-GB',{day:'numeric',month:'short'})}</small></a>`).join('')||'<p class="market-empty">No important articles in the last 30 days.</p>'}<div class="market-section"><b>Market Momentum</b><small>30 days</small></div><div class="market-tabs" role="tablist">${['performers','attention','sectors'].map(t=>`<button type="button" role="tab" data-market-tab="${t}" aria-selected="${t===MARKET.tab}">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}</div><div role="tabpanel">${content}</div><p class="market-footnote">Verified article mentions, last 30 days. Not a recommendation.</p><a class="market-explore" href="${explore.href}" target="${EMBED?'_top':'_self'}">Explore ${esc(nm(name))} →</a><div class="market-legend"><span>━ Trade</span><span>━ Investment</span></div><small class="market-source">${MARKET.links.some(l=>l.from===code||l.to===code)?'Trade 2024 · UN Comtrade. Investment 2023 · IMF CPIS. ':'No bilateral link data yet.'} Prices delayed. Not investment advice.</small>`;
+ marketPanel.innerHTML=`<div class="market-handle" role="separator" tabindex="0" aria-label="Drag market sheet"></div><button class="market-close" type="button" aria-label="Close market">×</button><div class="market-eyebrow">${esc(region)} · Market</div><h2>${flag(name)} ${esc(nm(name))}</h2><p class="market-exchange">${ex?`${esc(ex.name)} (${esc(ex.short)}) · ${esc(ex.city)} · ${esc(fx?.n||ex.currency)} (${esc(ex.currency)})`:missing}</p><div class="market-kpis">${tile(ix?.n||ex?.benchmark_name||(ex?ex.short+' benchmark':'Benchmark index'),marketNum(ix?.p),Number.isFinite(ix?.d)?`<span class="${ix.d>0?'market-up':ix.d<0?'market-down':'market-flat'}">${ix.d>0?'↑':ix.d<0?'↓':'↔'} ${Math.abs(ix.d).toFixed(2)}%</span> · delayed`:missing)}${ex?.currency === 'USD' ? tile('Currency', 'USD (base)', '') : tile(fx?.s?.replace(/(.{3})(.{3})/,'$1/$2')||'Currency vs USD',marketNum(fx?.p),fx?'delayed':missing)}${tile('Inflation',Number.isFinite(infl?.[1])?infl[1].toFixed(1)+'%':'—',infl?infl[0]+' · WB':missing)}</div><div class="market-section"><b>Notable developments</b><a href="${news}" target="${EMBED?'_top':'_self'}">${list.length} →</a></div>${important.map(a=>`<a class="market-article" href="../../assets/globe/news.html?story=${encodeURIComponent(a.id)}" target="${EMBED?'_top':'_self'}"><span>${esc(a.headline)}</span><small>${esc(a.source?.name||'')} · ${new Date(a.published_at).toLocaleDateString('en-GB',{day:'numeric',month:'short'})}</small></a>`).join('')||'<p class="market-empty">No important articles in the last 30 days.</p>'}<div class="market-section"><b>Market Momentum</b><small>30 days</small></div><div class="market-tabs" role="tablist">${['performers','attention','sectors'].map(t=>`<button type="button" role="tab" data-market-tab="${t}" aria-selected="${t===MARKET.tab}">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}</div><div role="tabpanel">${content}</div><p class="market-footnote">Verified article mentions, last 30 days. Not a recommendation.</p><a class="market-explore" href="${explore.href}" target="${EMBED?'_top':'_self'}">Explore ${esc(nm(name))} →</a><div class="market-legend"><span>━ Trade</span><span>━ Investment</span></div><small class="market-source">${MARKET.links.some(l=>l.from===code||l.to===code)?'Trade 2024 · UN Comtrade. Investment 2023 · IMF CPIS. ':'No bilateral link data yet.'} Prices delayed. Not investment advice.</small>`;
  marketPanel.querySelector('.market-close').onclick=marketClose;marketPanel.querySelectorAll('[data-market-tab]').forEach(b=>b.onclick=()=>{MARKET.tab=b.dataset.marketTab;marketRender();});
  const handle=marketPanel.querySelector('.market-handle');let start;handle.onpointerdown=e=>{start=e.clientY;handle.setPointerCapture(e.pointerId);};handle.onpointerup=e=>{if(start!==undefined){const delta=e.clientY-start;if(delta>70)marketClose();else if(delta>35)marketPanel.style.height='26vh';if(delta< -35)marketPanel.style.height='36vh';}start=undefined;marketNotifyPanel();};handle.onkeydown=e=>{if(e.key==='ArrowDown')marketPanel.style.height='26vh';if(e.key==='ArrowUp')marketPanel.style.height='36vh';if(e.key==='Escape')marketClose();marketNotifyPanel();};marketNotifyPanel();
 }
