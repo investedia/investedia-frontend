@@ -1,0 +1,32 @@
+# Refreshes the ECB reference rates used by the Markets country panel and opens a PR.
+# Manual only for now; a daily schedule is added only after owner approval. No secrets.
+name: Country data refresh (ECB rates)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: country-data
+  cancel-in-progress: false
+jobs:
+  ecb:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch ECB reference rates (keeps previous file on failure)
+        run: python scripts/fx_ecb.py
+      - name: Open PR if changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- assets/globe/fx-ecb.json docs/assets/globe/fx-ecb.json; then echo "No change"; exit 0; fi
+          b="data/ecb-$(date -u +%Y%m%d)"
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$b"; git add assets/globe/fx-ecb.json docs/assets/globe/fx-ecb.json
+          git commit -m "ECB reference rates $(jq -r .as_of assets/globe/fx-ecb.json)"; git push -u origin "$b"
+          gh pr create --title "ECB reference rates update" --body "Automated ECB reference-rate refresh. Source: ECB (reuse with source named)." --base main --head "$b"
