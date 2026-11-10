@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="../economy-charts.css">
+<script src="../economy-charts.js"></script>
 <meta charset="utf-8"><script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}if(!/[?&]embed=1/.test(location.search))document.documentElement.classList.add('standalone')</script><style>
 @font-face{font-family:"Inter";src:url("/assets/fonts/inter-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
 @font-face{font-family:"Geist Mono";src:url("/assets/fonts/geist-mono-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
@@ -994,6 +996,7 @@ function briefHTML(c) {
     ${nx ? `<div class="brief-next">Next: <b>${esc(nx.t)}</b> in ${untilText(Date.parse(nx.at) - Date.now())}</div>` : ''}`;
 }
 let TRACK = null; if (window.SinceNews) SinceNews.load('news-track.json').then(t => { TRACK = t; if (view.k === 'article') render(); });
+window.InvEconomyOptions={...Object.fromEntries(Object.entries(ISO).map(([n,c])=>[c,n])),EMU:'Euro area',WLD:'World'};
 let ECON = null; fetch('economy.json').then(r => r.json()).then(d => { ECON = d; if (view.k === 'country') render(); }).catch(() => {});
 const usd = v => v >= 1e12 ? '$' + (v / 1e12).toFixed(v >= 1e13 ? 1 : 2) + ' trillion' : v >= 1e9 ? '$' + (v / 1e9).toFixed(v >= 1e11 ? 0 : 1) + ' billion' : '$' + (v / 1e6).toFixed(0) + ' million';
 const people = v => v >= 1e9 ? (v / 1e9).toFixed(2) + ' billion' : v >= 1e6 ? (v / 1e6).toFixed(1) + ' million' : Math.round(v / 1e3) + ' thousand';
@@ -1585,6 +1588,8 @@ function refresh() {
   updateNetwork(); if (!play) render();
 }
 
+
+
 // ===== Globe =====
 const cv = $('cv'); let ctx = cv.getContext('2d');
 const BOTTOM_DOCK = 90; let peekH = 140;
@@ -1912,6 +1917,7 @@ new MutationObserver(()=>{const h=$('hover');if(!h.classList.contains('on')||h.q
 // ===== Panel =====
 let phoneView = 'globe';
 const panel = $('panel'), pbody = $('pbody'); size(); new MutationObserver(() => { if (!phone()) size(); }).observe(panel, { attributes: true, attributeFilter: ['class'] }); let view = { k: 'top' }, hist = [];
+new MutationObserver(records=>{if(records.some(r=>[...r.addedNodes].some(n=>n.nodeType===1&&(n.matches?.('.ec-history')||n.querySelector?.('.ec-history')))))InvEconomy.bind(pbody,code=>ECON?.countries?.[code]);}).observe(pbody,{childList:true,subtree:true});
 function phoneMapArea() {
   const pk = $('peek').getBoundingClientRect(); if (pk.height) peekH = pk.height;
   const bottom = sheetState === 'closed' ? (pk.height ? pk.top : H - BOTTOM_DOCK - peekH - 20) - 10 : H - sheetVisible - 12;
@@ -2155,12 +2161,7 @@ function gmCountryPanel(c) {
   else if (countryTab === 'news') content = `<h3 class="sec-h">Country news · ${F.win.toUpperCase()}</h3>${gmCountryNews(news)}`;
   else if (countryTab === 'companies') content = `<h3 class="sec-h">Listed companies · ${esc(gmExchanges(code).map(([, e]) => e.short).join(' / '))}</h3>${companies.length ? gmCompanyRows(companies) : `<p class="empty">${gmMissing}</p>`}`;
   else if (countryTab === 'economy') {
-    const v = k => macro?.[k], yr = k => v(k) ? ` <small>${v(k)[0]}</small>` : '', big = n => n >= 1e12 ? '$' + (n / 1e12).toFixed(2) + 'T' : n >= 1e9 ? '$' + (n / 1e9).toFixed(1) + 'B' : '$' + (n / 1e6).toFixed(0) + 'M';
-    const g = Array.isArray(v('growth')) ? v('growth').filter(x => Number.isFinite(x[1])) : [], last = g[g.length - 1];
-    const rows = [['GDP', v('gdp') && big(v('gdp')[1]), '', 'gdp'], ['Growth', last && `${last[1] >= 0 ? '+' : '−'}${Math.abs(last[1]).toFixed(1)}%`, last && (last[1] >= 0 ? 'up' : 'down'), null, last && last[0]], ['Inflation', v('infl') && v('infl')[1].toFixed(1) + '%', v('infl') && v('infl')[1] > 5 ? 'down' : '', 'infl'], ['Unemployment', v('unemp') && v('unemp')[1].toFixed(1) + '%', '', 'unemp'], ['GDP per person', v('gdppc') && '$' + Math.round(v('gdppc')[1]).toLocaleString('en-US'), '', 'gdppc'], ['Population', v('pop') && (v('pop')[1] >= 1e9 ? (v('pop')[1] / 1e9).toFixed(2) + 'B' : (v('pop')[1] / 1e6).toFixed(1) + 'M'), '', 'pop']];
-    let spark = '';
-    if (g.length > 2) { const lo = Math.min(0, ...g.map(x => x[1])), hi = Math.max(0, ...g.map(x => x[1])), Y = val => 44 - (val - lo) / ((hi - lo) || 1) * 40, X = i => i * 300 / (g.length - 1); spark = `<div class="ec-sp"><div class="ec-k">GDP growth ${g[0][0]}–${last[0]}</div><svg viewBox="0 0 300 48" preserveAspectRatio="none" aria-label="GDP growth by year"><line x1="0" x2="300" y1="${Y(0)}" y2="${Y(0)}" stroke="rgba(255,255,255,.18)" stroke-dasharray="3 4"/><polyline points="${g.map((x, i) => X(i).toFixed(1) + ',' + Y(x[1]).toFixed(1)).join(' ')}" fill="none" stroke="#FF7A1A" stroke-width="1.8" vector-effect="non-scaling-stroke"/></svg></div>`; }
-    content = macro ? `<div class="ec-rows">${rows.map(([l, val, cl, k, y]) => `<div class="ec-r"><span>${l}</span><b class="${cl ? 'pct-' + cl : ''}">${val || '<em>—</em>'}${val ? (k ? yr(k) : y ? ` <small>${y}</small>` : '') : ''}</b></div>`).join('')}</div>${spark}<p class="meta" style="margin-top:10px;font-size:11px">${esc(ECON.source || 'World Bank')} · ${esc(ECON.license || 'CC BY 4.0')}. Latest available year shown. Not investment advice.</p>` : `<p class="empty">${gmMissing}</p>`;
+    content = InvEconomy.render(code, macro);
   }
   else if (countryTab === 'markets') {
     const funds = gmFunds(c.name);
@@ -2197,7 +2198,7 @@ function gmContinentPanel() {
 }
 pbody.addEventListener('click', e => {
   const tab = e.target.closest('[data-gm-tab]'), region = e.target.closest('[data-gm-region]');
-  if (tab) { countryTab = tab.dataset.gmTab; render(); pbody.scrollTop = 0; pbody.querySelector(`[role=tab][data-gm-tab="${countryTab}"]`)?.focus({ preventScroll: true }); }
+  if (tab) { countryTab = tab.dataset.gmTab; render(); InvEconomy.bind(pbody, code=>ECON?.countries?.[code]); pbody.scrollTop = 0; pbody.querySelector(`[role=tab][data-gm-tab="${countryTab}"]`)?.focus({ preventScroll: true }); }
   else if (region) { gmCountriesExpanded = false; setRegion(region.dataset.gmRegion); }
   else if (e.target.closest('[data-gm-countries]')) { gmCountriesExpanded = !gmCountriesExpanded; render(); if (!gmCountriesExpanded) pbody.scrollTop = 0; }
   else if (e.target.closest('[data-gm-retry]')) { gmReady = null; gmError = false; render(); }
@@ -3026,7 +3027,7 @@ function marketRender(){
  if(MARKET.ctab==='overview'){
   body=`<div class="mk-strip">${cell('Exchange',main?esc(main[1].short)+(main[2]?` <i class="mk-dot ${main[2].open?'on':''}" title="${main[2].label}"></i>`:''):'—','now')}${cell('Currency',esc(cur||'—'),'ISO 4217')}${cell('GDP growth',g?pct(g[1],1):'—',g?g[0]:'')}${cell('Inflation',v('infl')?pct(v('infl')[1]):'—',v('infl')?.[0]||'')}</div>`
   +`<h5 class="mk-h">Exchanges<em>exchange-calendars · regular hours</em></h5>${st.length?`<table class="mk-t"><tr><th>Exchange</th><th>MIC</th><th>Session (local)</th><th class="r">Now</th></tr>${st.map(([mic,e,s])=>`<tr><td>${esc(e.short)}<small>${esc(e.city||'')}</small></td><td class="mn">${esc(mic)}</td><td class="mn">${s?s.hours:'—'}<small>${s?esc(s.tz):''}</small></td><td class="r">${s?`<span class="${s.open?'mk-open':'mk-closed'}">● ${s.label}</span>`:'—'}</td></tr>`).join('')}</table><p class="mk-note">Regular hours; holidays and half days not shown.</p>`:'<p class="mk-empty">No verified stock exchange for this country yet.</p>'}`
-  +`<h5 class="mk-h">Currency<em>ECB reference rate</em></h5>${(()=>{const r=cur&&cur!=='USD'?MARKET.ecb?.usd?.[cur]:null;if(cur==='USD')return '<p class="mk-empty">US dollar is the base currency.</p>';return r?`<table class="mk-t"><tr><td>USD/${esc(cur)}<span class="mk-tag">Daily ref.</span></td><td class="r mn">${r.toFixed(r>=100?2:4)}</td><td class="r mu">${new Date(MARKET.ecb.as_of+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}</td></tr></table><p class="mk-note">Derived from ECB euro reference rates (EUR/${esc(cur)} ÷ EUR/USD). Not a live or tradable price.</p>`:`<table class="mk-t"><tr><td>${cur?'USD/'+esc(cur):'Currency rate'}</td><td class="r na">Not available</td></tr></table><p class="mk-note">The ECB publishes reference rates for about 30 currencies only.</p>`;})()}`+`<h5 class="mk-h">Economy<em>World Bank WDI · annual</em></h5>${eco?`<table class="mk-t"><tr><th>Indicator</th><th class="r">Value</th><th class="r">Period</th></tr>${[...rows,['Policy interest rate',null],['Government debt (% GDP)',null]].map(([l,val,y])=>`<tr><td>${l}</td><td class="r ${val?'mn':'na'}">${val||'Not available'}</td><td class="r mu">${val?y:''}</td></tr>`).join('')}</table>`:'<p class="mk-empty">No World Bank data for this country.</p>'}`
+  +`<h5 class="mk-h">Currency<em>ECB reference rate</em></h5>${(()=>{const r=cur&&cur!=='USD'?MARKET.ecb?.usd?.[cur]:null;if(cur==='USD')return '<p class="mk-empty">US dollar is the base currency.</p>';return r?`<table class="mk-t"><tr><td>USD/${esc(cur)}<span class="mk-tag">Daily ref.</span></td><td class="r mn">${r.toFixed(r>=100?2:4)}</td><td class="r mu">${new Date(MARKET.ecb.as_of+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'})}</td></tr></table><p class="mk-note">Derived from ECB euro reference rates (EUR/${esc(cur)} ÷ EUR/USD). Not a live or tradable price.</p>`:`<table class="mk-t"><tr><td>${cur?'USD/'+esc(cur):'Currency rate'}</td><td class="r na">Not available</td></tr></table><p class="mk-note">The ECB publishes reference rates for about 30 currencies only.</p>`;})()}`+`<h5 class="mk-h">Economy<em>World Bank WDI · annual</em></h5>${InvEconomy.render(code,eco)}`
   +`<div class="mk-cov"><span class="${st.some(x=>x[2])?'ok':'na'}">${st.some(x=>x[2])?'✓':'—'} Sessions</span><span class="${eco?'ok':'na'}">${eco?'✓':'—'} Economy</span><span class="${MARKET.ecb?.usd?.[cur]||cur==='USD'?'ok':'na'}">${MARKET.ecb?.usd?.[cur]||cur==='USD'?'✓':'—'} Currency (ECB)</span><span class="pa">◐ Companies: in the news only</span><span class="na">— ETFs, bonds: not yet</span></div>`
   +`<p class="mk-src">Sources: ISO 10383 (MIC) · exchange-calendars (Apache 2.0) · ECB · World Bank (CC BY 4.0). Historical annual data unless marked. Not investment advice.</p>`;
  }else if(MARKET.ctab==='companies'){
@@ -3039,7 +3040,7 @@ function marketRender(){
   body=`<h5 class="mk-h">Articles · 30 days</h5>${gmCountryNews(dated,MARKET.newsTopic||'','mk-news')}`;
  }
  marketPanel.innerHTML=`<div class="market-handle" role="separator" tabindex="0" aria-label="Drag market sheet"></div><div class="mk-head">${flag(name)}<div><small>Markets · Country</small><h2>${esc(nm(name))}</h2></div><button class="market-close" type="button" aria-label="Close market">×</button></div><div class="mk-tabs" role="tablist">${tabs.map(([k,l])=>`<button type="button" role="tab" data-ctab="${k}" aria-selected="${MARKET.ctab===k}">${l}</button>`).join('')}</div><div class="mk-body">${body}</div>`;
- marketPanel.hidden=false;setTimeout(mkdRender,0);
+ InvEconomy.bind(marketPanel,code=>MARKET.economy?.countries?.[code]);marketPanel.hidden=false;setTimeout(mkdRender,0);
  marketPanel.querySelector('.market-close').onclick=marketClose;marketPanel.querySelectorAll('[data-ctab]').forEach(b=>b.onclick=()=>{MARKET.ctab=b.dataset.ctab;marketRender();});
  const handle=marketPanel.querySelector('.market-handle');let start;handle.onpointerdown=e=>{start=e.clientY;handle.setPointerCapture(e.pointerId);};handle.onpointerup=e=>{if(start!==undefined){const delta=e.clientY-start;if(delta>70)marketClose();else if(delta>35)marketPanel.style.height='26vh';if(delta< -35)marketPanel.style.height='60vh';}start=undefined;marketNotifyPanel();};
  marketNotifyPanel();requestAnimationFrame(size);

@@ -1,0 +1,1 @@
+{"schema":"investedia.economy-history/v1","country":"VG","source":"World Bank WDI","source_url":"https://data.worldbank.org","license":"CC BY 4.0","as_of":"2026-11-02T06:13Z","frequency":"annual","series":{"pop":{"code":"SP.POP.TOTL","values":[[2025,39732]]}}}
