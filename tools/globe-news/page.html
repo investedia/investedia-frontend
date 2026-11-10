@@ -3,6 +3,7 @@
 <head>
 <link rel="stylesheet" href="../economy-charts.css">
 <script src="../economy-charts.js"></script>
+<script src="../news-filters.js"></script>
 <meta charset="utf-8"><script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}if(!/[?&]embed=1/.test(location.search))document.documentElement.classList.add('standalone')</script><style>
 @font-face{font-family:"Inter";src:url("/assets/fonts/inter-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
 @font-face{font-family:"Geist Mono";src:url("/assets/fonts/geist-mono-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
@@ -819,6 +820,7 @@ html[data-theme=light] .detail-header{background:#f4f7fb}
  .detail-header .gm-tabs button{font-size:11px;min-height:40px;padding:7px 2px}
 }
 
+/* NEWS_FILTERS_CSS */
 </style>
 <script src="../locale.js"></script>
 </head>
@@ -867,7 +869,7 @@ html[data-theme=light] .detail-header{background:#f4f7fb}
 <div class="fs-back" id="fsback" hidden></div>
 <section class="fsheet" id="fsheet" role="dialog" aria-modal="true" aria-labelledby="fs-title" hidden>
   <div class="fs-head"><h2 id="fs-title" tabindex="-1">Filters</h2><button type="button" class="fs-btn" id="fs-reset">Reset</button><button type="button" class="fs-btn fs-x" id="fs-close" aria-label="Close filters">✕</button></div>
-  <div class="fs-body"><div class="fs-lbl">Topic</div><div id="fs-cats"></div><div class="fs-lbl">Region</div><div id="fs-regions"></div><div class="fs-lbl">Time</div><div id="fs-time"></div><div class="fs-lbl">Layers</div><div id="fs-layers"></div><div id="fs-foot"></div></div>
+  <div class="fs-body"><div id="fs-details"></div><div class="fs-lbl">Topic</div><div id="fs-cats"></div><div class="fs-lbl">Region</div><div id="fs-regions"></div><div class="fs-lbl">Time</div><div id="fs-time"></div><div class="fs-lbl">Layers</div><div id="fs-layers"></div><div id="fs-foot"></div></div>
   <button type="button" class="fs-show" id="fs-show">Show articles</button>
 </section>
 <div class="peek" id="peek" role="region" aria-label="Top articles" hidden></div>
@@ -1586,7 +1588,7 @@ function drawMarketsOverlay(t) {
 const exPick = (x, y) => exHits.find(h => x >= h.x && x <= h.x + h.w && y >= h.y && y <= h.y + h.h);
 
 // ===== Filters =====
-const F = { cat: 'all', lens: 'all', region: 'global', win: '48h',  // homepage and Globe page open on the last 48 hours
+const F = { country:'', from:'', to:'', cat: 'all', lens: 'all', region: 'global', win: '48h',  // homepage and Globe page open on the last 48 hours
   mine: new URLSearchParams(location.search).get('mine') === '1' }; let play = null;
 const winMin = () => (WINS.find(w => w[0] === F.win) || [F.win, '', 2880])[2];  // '48h' is the homepage-only window (no button)
 const inTime = s => play ? s.t >= play.start && s.t <= play.cur : (!s.historical || winMin() > 2880) && T0 - s.t <= winMin() * 60000;
@@ -1594,7 +1596,7 @@ const inTime = s => play ? s.t >= play.start && s.t <= play.cur : (!s.historical
 function watchSyms() { try { const L = JSON.parse(localStorage.getItem('inv-watch') || '{}'); return new Set((L.a || []).map(x => String(x.s || '').toUpperCase()).filter(Boolean)); } catch { return new Set(); } }
 let WATCH = watchSyms();
 const touchesWatch = s => impactsOf(s).some(i => { const a = assetForImpact(i); return (a && WATCH.has(a.s.toUpperCase())) || WATCH.has(String(i.ticker || '').toUpperCase()); });
-const matchNoLens = s => (F.cat === 'all' || s.category === F.cat) && inRegion(s.location.region, F.region) && inTime(s) && (!F.mine || touchesWatch(s));
+const matchNoLens = s => InvNewsFilters.match(s,F) && (F.cat === 'all' || s.category === F.cat) && inRegion(s.location.region, F.region) && inTime(s) && (!F.mine || touchesWatch(s));
 const match = s => (F.lens === 'all' || s.lens.includes(F.lens)) && matchNoLens(s);
 // Top articles: within the same importance level, take regions in turn so one busy region cannot fill the whole list.
 // Order changes only among equally important articles; nothing is hidden and no coordinate changes.
@@ -1607,7 +1609,7 @@ function regionMix(list) {
 const sortTop = (a, b) => (b.importance - a.importance) || (b.t - a.t);
 let shown = [], dimmed = [], activity = {};
 function refresh() {
-  shown = stories.filter(match); dimmed = F.lens === 'all' ? [] : stories.filter(s => matchNoLens(s) && !s.lens.includes(F.lens)); activity = {}; WATCH = watchSyms(); updateLensChips(); updateFiltersUI(); updateDropdowns(); for (const s of shown) activity[s.location.country] = (activity[s.location.country] || 0) + 1;
+  shown = stories.filter(match); dimmed = F.lens === 'all' ? [] : stories.filter(s => matchNoLens(s) && !s.lens.includes(F.lens)); activity = {}; WATCH = watchSyms(); updateLensChips(); updateFiltersUI(); if(typeof newsFilterUI==='function')newsFilterUI(); updateDropdowns(); for (const s of shown) activity[s.location.country] = (activity[s.location.country] || 0) + 1;
   $('tlInfo').setAttribute('aria-busy', String(historyLoading));
   $('tlInfo').innerHTML = historyLoading ? 'Loading history…' : historyError ? 'History could not be loaded. Please try again.' : play ? `Replaying · <b>${new Date(play.cur).toLocaleDateString('en-GB', { weekday: 'short' })} ${new Date(play.cur).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })}</b>` : `<b>${shown.length.toLocaleString('en-US')}</b> ${shown.length === 1 ? 'article' : 'articles'} · ${F.win.toUpperCase()}`;
   updateNetwork(); if (!play) render();
@@ -2387,17 +2389,18 @@ function projTap(x,y){const h=PROJ.hits.find(h=>Math.hypot(h.x-x,h.y-y)<22);if(h
 const RL=new Set((()=>{try{return JSON.parse(localStorage.getItem('inv-reading')||'[]')}catch{return[]}})());
 const rlSave=()=>{try{localStorage.setItem('inv-reading',JSON.stringify([...RL].slice(-200)))}catch{}};
 document.addEventListener('click',e=>{const b=e.target.closest('[data-rl]');if(!b)return;const id=b.dataset.rl;RL.has(id)?RL.delete(id):RL.add(id);rlSave();render();});
+/* NEWS_DETAILS_FILTERS */
 const PRE=(()=>{try{return JSON.parse(localStorage.getItem('inv-news-presets')||'[]')}catch{return[]}})();
 function presetUI(){const el=$('presets');if(!el)return;el.innerHTML=`<b>Saved views</b>${PRE.map((p,i)=>`<span class="ps"><button type="button" data-ps="${i}">${esc(p.n)}</button><button type="button" class="x" data-psx="${i}" aria-label="Delete ${esc(p.n)}">×</button></span>`).join('')}<button type="button" class="add" data-psadd>+ Save current view</button><small>Saved on this device only</small>`;}
 document.addEventListener('click',async e=>{const a=e.target.closest('[data-psadd],[data-ps],[data-psx]');if(!a)return;
- if(a.dataset.psadd!==undefined){const parts=[F.region==='global'?'All regions':(regionDefinition(F.region)?.[1]||F.region),F.cat==='all'?null:CAT[F.cat],F.win.toUpperCase()].filter(Boolean);PRE.push({n:parts.join(' · '),r:F.region,c:F.cat,w:F.win});if(PRE.length>8)PRE.shift();}
+ if(a.dataset.psadd!==undefined){const parts=[F.region==='global'?'All regions':(regionDefinition(F.region)?.[1]||F.region),F.cat==='all'?null:CAT[F.cat],F.country?nm(F.country):null,F.from||null,F.to||null,F.win.toUpperCase()].filter(Boolean);PRE.push({n:parts.join(' · '),r:F.region,c:F.cat,w:F.win,country:F.country,from:F.from,to:F.to});if(PRE.length>8)PRE.shift();}
  else if(a.dataset.psx!==undefined)PRE.splice(+a.dataset.psx,1);
- else{const p=PRE[+a.dataset.ps];if(p){F.region=p.r;F.cat=p.c;press($('cats'),p.c);press($('regions'),p.r);await setWin(p.w);try{$('reg-label').textContent=(p.r==='global'?'All regions':regionDefinition(p.r)[1]);}catch{}render();}}
+ else{const p=PRE[+a.dataset.ps];if(p){F.region=p.r;F.cat=p.c;F.country=p.country||'';F.from=p.from||'';F.to=p.to||'';press($('cats'),p.c);press($('regions'),p.r);await setWin(p.w);try{$('reg-label').textContent=(p.r==='global'?'All regions':regionDefinition(p.r)[1]);}catch{}render();}}
  try{localStorage.setItem('inv-news-presets',JSON.stringify(PRE))}catch{}presetUI();});
 let mvF = 'all';
 $('gswitch').onclick = e => { const b = e.target.closest('button'); if (!b) return; if (b.dataset.m === 'projects') return projSet(true); projSet(false); if (typeof marketSetMode === 'function') marketSetMode(b.dataset.m); };
 function sideData() {
-  const vis = stories.filter(st => inRegion(st.location.region,F.region)&&inTime(st)&&(!F.mine||touchesWatch(st))&&(F.lens==='all'||st.lens.includes(F.lens))), seen = new Map();
+  const vis = stories.filter(st => InvNewsFilters.match(st,F)&&inRegion(st.location.region,F.region)&&inTime(st)&&(!F.mine||touchesWatch(st))&&(F.lens==='all'||st.lens.includes(F.lens))), seen = new Map();
   vis.forEach(st => impactsOf(st).forEach(i => { const a = assetForImpact(i); if (!a || typeof a.d !== 'number' || !isFinite(a.d) || Math.abs(a.d) > 25 || a.u === 'bp') return; const k = a.s; const e = seen.get(k) || { a, n: 0, cats: new Set() }; e.n++; e.cats.add(st.category); seen.set(k, e); }));
   return { vis, assets: [...seen.values()] };
 }
@@ -2424,7 +2427,6 @@ function renderSide() {
     sideBar.innerHTML = `<div class="sb-t"><b>Moving on the news</b><small>Assets named in ${W} articles</small></div>${big.map(e => `<a class="sb-c" href="../../news.html?mover=${encodeURIComponent(e.a.s)}"><b>${esc(e.a.n || e.a.s)}</b><small>${e.n} art.</small><em class="${cl(e.a.d)}">${pc(e.a.d)}</em></a>`).join('')}<small class="meta" style="flex:none;font-size:10.5px">Daily moves. Not investment advice.</small>`;
 }
 addEventListener('resize', () => renderSide());
-setTimeout(()=>{presetUI();placeLeft();size();if(PROJ_START)projSet(true);},0);
 const sheetActions = document.querySelector('.sheet-actions');
 function detailHeader() {
   const back = pbody.querySelector('[data-back]');
@@ -2438,6 +2440,7 @@ function detailHeader() {
   const tabs = pbody.querySelector('.gm-tabs'); if (tabs) header.append(tabs);
   pbody.prepend(header);
 }
+setTimeout(()=>{presetUI();placeLeft();newsFilterUI();size();if(PROJ_START)projSet(true);},0);
 function render() {
   // Preserve the existing action buttons and their listeners across renders.
   sheetActions.querySelector('[data-follow]')?.remove();
@@ -2494,11 +2497,11 @@ function search() {
   res.hidden = false; mark();
 }
 const mark = () => res.querySelectorAll('.ri').forEach(b => b.setAttribute('aria-selected', +b.dataset.i === hi));
-async function choose(h) { if (!h) return; res.hidden = true; qi.value = ''; qi.blur(); if (h.k === 'country') openCountry(h.c); else { if (!match(h.s)) { F.cat = 'all'; F.lens = 'all'; F.region = 'global'; press($('cats'), 'all'); press($('regions'), 'global'); await setWin('7d'); } openStory(h.s); } }
+async function choose(h) { if (!h) return; res.hidden = true; qi.value = ''; qi.blur(); if (h.k === 'country') openCountry(h.c); else { if (!match(h.s)) { F.cat = 'all'; F.lens = 'all'; F.region = 'global'; F.country=F.from=F.to=''; press($('cats'), 'all'); press($('regions'), 'global'); await setWin('7d'); } openStory(h.s); } }
 qi.addEventListener('focus', () => { qi.blur(); if (window.InvPeek) InvPeek.search(); else search(); });
 window.InvGlobeNav = {
   country: n => { const c = byName[n]; if (!c) return false; openCountry(c); return true; },
-  story: async id => { const s = byId[id]; if (!s) return false; if (!match(s)) { F.cat = 'all'; F.lens = 'all'; F.region = 'global'; press($('cats'), 'all'); press($('regions'), 'global'); await setWin('7d'); } openStory(s); return true; }
+  story: async id => { const s = byId[id]; if (!s) return false; if (!match(s)) { F.cat = 'all'; F.lens = 'all'; F.region = 'global'; F.country=F.from=F.to=''; press($('cats'), 'all'); press($('regions'), 'global'); await setWin('7d'); } openStory(s); return true; }
 };
 qi.addEventListener('keydown', e => {
   if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); hi = (hi + (e.key === 'ArrowDown' ? 1 : -1) + hits.length) % Math.max(1, hits.length); mark(); }
@@ -2569,7 +2572,7 @@ const TB = 'a';  // chosen design: time pill under Filters (owner, 2026-11-06)
 const tbEl = document.createElement('div'); tbEl.id = 'tb'; tbEl.className = 'tb tb-' + TB + ' glass'; document.body.appendChild(tbEl);
 async function setWin(k) {
   const selection = ++historySelection;
-  play = null; F.win = k; historyError = false;
+  play = null; F.win = k; Object.assign(F,InvNewsFilters.normalize(F,T0,winMin()));historyError = false;
   historyLoading = !EMBED && ['7d', '30d'].includes(k);
   press($('wins'), k); refresh(); syncTb();
   if (historyLoading) {
@@ -2890,17 +2893,17 @@ $('fsheet').querySelector('.fs-head').addEventListener('pointerup',e=>{if(filter
 $('fsheet').querySelector('.fs-head').style.touchAction='none';
 $('m-filters').onclick = openFilters; $('fs-close').onclick = () => closeFilters(); $('fsback').onclick = () => closeFilters(); $('fs-show').onclick = () => closeFilters();
 $('m-search').onclick = () => { if (window.InvPeek) InvPeek.search(); else qi.focus(); };
-$('fs-reset').onclick = () => { F.mine = false; for (const [box, k] of [[$('cats'), 'all'], [$('regions'), 'global'], [$('wins'), '48h']]) box.querySelector(`[data-k="${k}"]`).click(); };
+$('fs-reset').onclick = () => { F.mine = false;F.country=F.from=F.to='';for (const [box, k] of [[$('cats'), 'all'], [$('regions'), 'global'], [$('wins'), '48h']]) box.querySelector(`[data-k="${k}"]`).click(); };
 $('fsheet').addEventListener('keydown', e => {
   if (e.key === 'Escape') { e.stopPropagation(); closeFilters(); return; }
   if (e.key !== 'Tab') return;
-  const f = [...$('fsheet').querySelectorAll('button,[href],input')].filter(x => x.offsetParent !== null); if (!f.length) return;
+  const f = [...$('fsheet').querySelectorAll('button,[href],input,select')].filter(x => x.offsetParent !== null); if (!f.length) return;
   const first = f[0], last = f[f.length - 1];
   if (e.shiftKey && (document.activeElement === first || document.activeElement === $('fs-title'))) { e.preventDefault(); last.focus(); }
   else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
 });
 function updateFiltersUI() {
-  const n = (F.lens !== 'all') + (F.region !== 'global') + (F.win !== '48h'), c = $('m-fcount');
+  const n = (F.lens !== 'all') + (F.region !== 'global') + (F.win !== '48h') + !!F.country + !!F.from + !!F.to, c = $('m-fcount');
   c.hidden = !n; c.textContent = n; $('m-filters').setAttribute('aria-label', n ? `Filters, ${n} active` : 'Filters');
   $('fs-show').textContent = `Show ${shown.length} ${shown.length === 1 ? 'article' : 'articles'}`;
 }
