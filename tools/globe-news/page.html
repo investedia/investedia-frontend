@@ -914,7 +914,7 @@ Promise.all([fetch('markets.json').then(r => r.json()), fetch('news-prices.json'
   updateNetwork(); renderSide(); if ((view.k === 'top' && (panelTab === 'movers' || F.region !== 'global')) || ['article', 'country'].includes(view.k)) render();
 }).catch(() => {});
 let CAL = [];
-fetch('../calendar-live.json').then(r => r.json()).then(d => { CAL = (d.events || []).filter(e => e && e.imp >= 3 && e.at); }).catch(() => {});
+fetch('https://api.investedia.com/v1/calendar').then(r => { if (!r.ok) throw 0; return r.json(); }).catch(() => fetch('../calendar-live.json').then(r => r.json())).then(d => { CAL = (d.events || []).filter(e => e && e.imp >= 3 && e.at); }).catch(() => {});
 const untilText = ms => { const m = Math.max(1, Math.round(ms / 60000)), d = Math.floor(m / 1440), h = Math.floor(m % 1440 / 60); return d ? `${d} d ${h} h` : h ? `${h} h ${m % 60} min` : `${m} min`; };
 function mainIndex(country) { return (MKT.all || []).find(a => a.g === 'Index' && a.k === nm(country) && a.m && Number.isFinite(a.d)) || null; }
 function nextRelease(country) { const code = ISO[country], now = Date.now(); return code ? CAL.filter(e => e.country === code && Date.parse(e.at) > now).sort((a, b) => Date.parse(a.at) - Date.parse(b.at))[0] || null : null; }
