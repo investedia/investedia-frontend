@@ -186,6 +186,7 @@
     ['news', 'News', 'news.html', `<div class="dd dd-news" id="dd-news">${InvNewsMenu.html('nn-desktop')}</div>`],
     ['markets', 'Markets', 'markets.html'],
     ['education', 'Learn', 'education.html'],
+    ['pricing', 'Pricing', 'pricing.html'],
     ['tools', 'Tools', null, ddTools],
     ['about', 'About', 'about.html'],
   ];
