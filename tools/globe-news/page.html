@@ -821,6 +821,7 @@ html[data-theme=light] .detail-header{background:#f4f7fb}
 }
 
 /* NEWS_FILTERS_CSS */
+.mk-favourite{display:grid;place-items:center;min-width:44px;min-height:44px;color:var(--fg-2);background:none;border:0;border-radius:8px;flex:none}.mk-favourite[aria-pressed=true]{color:#ff7a1a}.mk-favourite:focus-visible{outline:2px solid #ff7a1a;outline-offset:2px}.mk-head>.mk-favourite{margin-left:auto}.mk-session-row{display:grid;grid-template-columns:minmax(0,1fr) 44px;align-items:center;border-bottom:1px solid var(--line)}.mk-session-row .mkd-sr{border:0;min-width:0}.mk-favourites{margin:8px 0 14px}.mk-favourites h4{font:600 13px Inter,sans-serif;margin:0 0 7px}.mk-favourites h4 small{font:10px Inter,sans-serif;color:var(--fg-2);margin-left:8px}.mk-favourites>div{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:6px}.mk-favourites [data-favourite-country]{min-height:44px;display:flex;align-items:center;gap:8px;flex:1;color:var(--fg);text-align:left;font:12px Inter,sans-serif}.mk-favourites img{width:20px;height:14px}.mk-favourites p{font:11px/1.5 Inter,sans-serif;color:var(--fg-2);margin:6px 0 10px}.mp-ss{position:relative;padding-right:44px}.mp-ss>.mk-favourite{position:absolute;right:0;top:0}.mp-ss{width:145px}
 </style>
 <script src="../locale.js"></script>
 </head>
@@ -1493,13 +1494,13 @@ function upcomingPanel() {
 let MPCAL = null; fetch('../calendar-live.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(j => { MPCAL = j; if (phone() && phoneView === 'markets') render(); }).catch(() => {});
 function marketsPhonePanel() {
   const rows = exchangeRows(), open = rows.filter(r => r.st.open).length;
-  const sess = rows.map(({ e, st }) => `<div class="mp-ss"><img src="flags/${e.cc}.svg" alt=""><b>${esc(e.n)}</b><span class="${st.open ? 'o' : st.in < 3 * 3600e3 ? 's' : 'c'}">${st.open ? 'Open' : st.in < 3 * 3600e3 ? 'Opens ' + untilText(st.in) : 'Closed'}</span></div>`).join('');
+  const sess = rows.map(({ e, st }) => `<div class="mp-ss"><img src="flags/${e.cc}.svg" alt=""><b>${esc(e.n)}</b>${mkFavouriteButton(marketCountry(e.cc.toUpperCase()))}<span class="${st.open ? 'o' : st.in < 3 * 3600e3 ? 's' : 'c'}">${st.open ? 'Open' : st.in < 3 * 3600e3 ? 'Opens ' + untilText(st.in) : 'Closed'}</span></div>`).join('');
   const by = {}; for (const x of stories) { const c = x.location.country; (by[c] = by[c] || []).push(x); }
   const act = Object.entries(by).sort((a, b) => b[1].length - a[1].length).slice(0, 5).map(([c, L]) => { const top = [...L].sort(sortTop)[0], cats = Object.entries(L.reduce((m, x) => (m[CAT[x.category] || x.category] = (m[CAT[x.category] || x.category] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]).slice(0, 2);
     return `<button class="mp-row" data-country="${esc(c)}">${flag(c)}<span class="mp-tx"><b>${esc(nm(c))}</b><small>${esc(top.headline)}</small><span>${cats.map(([k]) => `<i>${esc(k)}</i>`).join('')}</span></span><span class="mp-n"><b>${L.length}</b>articles</span></button>`; }).join('');
   const now = Date.now(), ev = (MPCAL && MPCAL.events || []).filter(x => x.imp >= 3 && Date.parse(x.at) >= now).sort((a, b) => Date.parse(a.at) - Date.parse(b.at)).slice(0, 4);
   const evs = ev.length ? ev.map(x => `<div class="mp-ev"><time>${new Date(x.at).toLocaleString('en-GB', { weekday: 'short', hour: '2-digit', minute: '2-digit' })}</time><span>${x.country ? `<img src="flags/${esc(String(x.country).toLowerCase())}.svg" alt="">` : ''}${esc(x.t)}</span></div>`).join('') : '<p class="meta">No high-impact events scheduled.</p>';
-  return `<div class="nb-head"><h2>Markets</h2><span class="mp-live"><i></i>${open ? open + ' open now' : 'All closed'}</span></div><div class="mp-k">Market sessions</div><div class="mp-sess">${sess}</div><div class="mp-k">Most active markets <span>by article volume</span></div>${act}<div class="mp-k">Upcoming · high impact <a href="../../calendar.html">Calendar →</a></div>${evs}<p class="meta" style="margin-top:12px">Activity is article volume, not price performance. Not investment advice.</p>`;
+  return `<div class="nb-head"><h2>Markets</h2><span class="mp-live"><i></i>${open ? open + ' open now' : 'All closed'}</span></div>${mkFavouritesHTML()}<div class="mp-k">Market sessions</div><div class="mp-sess">${sess}</div><div class="mp-k">Most active markets <span>by article volume</span></div>${act}<div class="mp-k">Upcoming · high impact <a href="../../calendar.html">Calendar →</a></div>${evs}<p class="meta" style="margin-top:12px">Activity is article volume, not price performance. Not investment advice.</p>`;
 }
 function marketsPanel() {
   const now = Date.now(), d = new Date(now), stamp = d.toISOString().slice(0, 10) + ' ' + hm(now) + ' UTC';
