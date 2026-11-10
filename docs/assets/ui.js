@@ -178,31 +178,28 @@
     ]],
   ];
   const tools = TOOL_GROUPS.flatMap(g => g[1]);
-  const ddTools = `<div class="dd dd-tools" id="dd-tools" role="menu">${TOOL_GROUPS.map(([h, items]) => `<div class="tools-col"><h6>${h}</h6>${items.map(([i, t, d, u]) => `<a class="dd-item" role="menuitem" href="${u}"><span class="dd-ic">${icon(i)}</span><span><b>${t}</b><small>${d}</small></span></a>`).join('')}</div>`).join('')}</div>`;
-  // News-first navigation (markets, dashboard and screener pages are no longer in the menu)
+  const PRO_CTA = false;
+  const morePages = ['education','lesson','screener','calendar','calc','calculator','compare','converter','realestate','real-estate','about','contact'];
+  const themeChoices = () => `<div class="account-theme" role="group" aria-label="Theme"><span>Theme</span>${['light','dark','system'].map(t=>`<button type="button" role="menuitemradio" data-theme-choice="${t}" aria-checked="false">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}</div>`;
+  const ddMore = `<div class="dd dd-more" id="dd-more" role="menu" aria-label="More pages"><section><h6>Learn</h6><a role="menuitem" href="education.html">Education</a></section>${TOOL_GROUPS.map(([h, items])=>`<section><h6>${h}</h6>${items.map(([,t,,u])=>`<a role="menuitem" href="${u}">${t}</a>`).join('')}</section>`).join('')}<section><h6>Company</h6><a role="menuitem" href="about.html">About</a><a role="menuitem" href="contact.html">Contact</a></section><section class="guest-only more-display"><h6>Display</h6><button type="button" role="menuitem" data-open-settings>Settings</button>${themeChoices()}</section></div>`;
   const nav = [
-    ['home', 'Home', 'index.html'],
     ['globe', 'Globe', 'assets/globe/news.html'],
     ['news', 'News', 'news.html', `<div class="dd dd-news" id="dd-news">${InvNewsMenu.html('nn-desktop')}</div>`],
     ['markets', 'Markets', 'markets.html'],
-    ['education', 'Learn', 'education.html'],
-    ['pricing', 'Pricing', 'pricing.html'],
-    ['tools', 'Tools', null, ddTools],
-    ['about', 'About', 'about.html'],
+    ['pricing', PRO_CTA ? 'Explore Pro' : 'Pricing', 'pricing.html'],
+    ['more', 'More', null, ddMore],
   ];
   const hdr = document.createElement('header');
   hdr.className = 'hdr';
   hdr.innerHTML = `<div class="wrap">${brand}
     <ul class="nav">${nav.map(([k, t, h, dd, isNew]) => dd
-      ? `<li><button class="nav-link" type="button" aria-expanded="false" aria-haspopup="true" data-dd="dd-${k}" ${page === k || (k === 'tools' && ['screener', 'calendar', 'calc', 'compare', 'converter', 'realestate'].includes(page)) || (k === 'education' && page === 'lesson') ? 'aria-current="page"' : ''}>${t}${icon('chev', 'chev')}</button>${dd}</li>`
+      ? `<li><button class="nav-link" type="button" aria-expanded="false" aria-haspopup="true" data-dd="dd-${k}" ${page === k || (k === 'more' && morePages.includes(page)) || (k === 'education' && page === 'lesson') ? 'aria-current="page"' : ''}>${t}${icon('chev', 'chev')}</button>${dd}</li>`
       : `<li><a class="nav-link" href="${h}" ${page === k || (k === 'news' && ['analysis', 'article'].includes(page)) || (k === 'dashboard' && page === 'ai') || (k === 'education' && page === 'lesson') ? 'aria-current="page"' : ''}>${t}${isNew ? '<span class="badge-new">NEW</span>' : ''}</a></li>`).join('')}</ul>
     <div class="hdr-tools">
       ${page === 'home' ? '' : `<a class="search-btn" href="assets/globe/news.html" aria-label="Search assets, countries and articles">${icon('search')}<span>Search assets, countries &amp; articles</span></a>`}
       <div class="notif-wrap"><button class="icon-btn" type="button" id="notif-btn" aria-label="Notifications" aria-expanded="false" aria-haspopup="true" title="Notifications">${icon('bell')}<span class="dot" id="notif-dot"></span></button>
         <div class="dd notif-dd" id="notif-dd" role="dialog" aria-label="Notifications"></div></div>
-      <a class="icon-btn hide-sm owner-only" href="admin.html" aria-label="Analytics dashboard" title="Analytics dashboard">${icon('heat')}</a>
-      <div class="notif-wrap acct-wrap hide-sm"><button class="avatar" type="button" id="hdr-avatar" aria-label="Your account" aria-haspopup="true" aria-expanded="false" title="Your account">AK</button><div class="dd acct-dd" id="acct-dd" role="menu" aria-label="Your account"></div></div>
-      <button class="icon-btn" type="button" id="theme-btn" aria-label="Switch light or dark mode" title="Light / dark mode"></button>
+      <div class="notif-wrap acct-wrap"><button class="avatar" type="button" id="hdr-avatar" aria-label="Your account" aria-haspopup="true" aria-expanded="false" title="Your account">AK</button><div class="dd acct-dd" id="acct-dd" role="menu" aria-label="Your account"></div></div>
       <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span></button>
     </div></div>`;
   document.body.prepend(hdr);
@@ -212,13 +209,13 @@
   const paintAvatar = () => { const u = window.invUser; if (!u) return; const md = u.user_metadata || {}, av = hdr.querySelector('#hdr-avatar'), nm = md.name || md.full_name || u.email || '', pic = md.avatar || md.avatar_url || md.picture, ini = nm.split(/[\s@.]+/).filter(Boolean).map(w => w[0]).join('').slice(0, 2).toUpperCase();
     av.innerHTML = pic ? `<img src="${String(pic).replace(/"/g, '&quot;')}" alt="" referrerpolicy="no-referrer">` : ini;
     const esc2 = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
-    hdr.querySelector('#acct-dd').innerHTML = `<div class="acct-head"><b>${esc2(md.name || md.full_name || 'Your account')}</b><small>${esc2(u.email || '')}</small></div><a class="acct-item" role="menuitem" href="profile.html">${icon('user')}Profile &amp; settings</a><a class="acct-item" role="menuitem" href="watchlist.html">${icon('star')}My watchlist</a><a class="acct-item owner-only" role="menuitem" href="admin.html">${icon('heat')}Analytics</a><button class="acct-item acct-out" role="menuitem" type="button" data-logout>${icon('logout')}Log out</button>`; };
-  window.addEventListener('profile-change', paintAvatar);
+    hdr.querySelector('#acct-dd').innerHTML = `<div class="acct-head"><b>${esc2(md.name || md.full_name || 'Your account')}</b><small>${esc2(u.email || '')}</small></div><a class="acct-item" role="menuitem" href="profile.html">${icon('user')}Account</a><a class="acct-item" role="menuitem" href="watchlist.html">${icon('star')}Watchlist</a><button class="acct-item" role="menuitem" type="button" data-open-settings>Settings</button>${themeChoices()}<a class="acct-item owner-only" role="menuitem" href="admin.html">${icon('heat')}Analytics</a><button class="acct-item acct-out" role="menuitem" type="button" data-logout>${icon('logout')}Log out</button>`; };
+  window.addEventListener('profile-change',()=>{paintAvatar();paintThemeChoices();});
   { const ab = hdr.querySelector('#hdr-avatar'), ad = hdr.querySelector('#acct-dd');
     const close = () => { ad.classList.remove('open'); ab.setAttribute('aria-expanded', 'false'); };
     ab.addEventListener('click', e => { e.stopPropagation(); if (!window.invUser) { location.href = 'profile.html'; return; } const o = !ad.classList.contains('open'); ad.classList.toggle('open', o); ab.setAttribute('aria-expanded', String(o)); });
     document.addEventListener('click', e => { if (!e.target.closest('#acct-dd')) close(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); }); }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && ad.classList.contains('open')) {close(); ab.focus();} }); }
   // Real article notifications. IDs stay read across feed refreshes.
   let NOTIFS = [], notifFilter = 'all', readIds = new Set();
   try { readIds = new Set(JSON.parse(localStorage.getItem('inv-notif-ids') || '[]')); } catch {}
@@ -254,9 +251,12 @@
   nb.onclick = e => { e.stopPropagation(); const o = !nd.classList.contains('open'); closeAll(); paintNotif(); nd.classList.toggle('open', o); nb.setAttribute('aria-expanded', o); };
   document.addEventListener('click', e => { if (!e.target.closest('.notif-wrap')) { nd.classList.remove('open'); nb.setAttribute('aria-expanded', 'false'); } });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && nd.classList.contains('open')) { nd.classList.remove('open'); nb.setAttribute('aria-expanded', 'false'); nb.focus(); } });
-  const tb = hdr.querySelector('#theme-btn');
+  const tb = null;
+  const systemTheme=matchMedia('(prefers-color-scheme: light)');let themeMode='dark';
   const sun = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>', moon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
-  const setTheme = t => { document.documentElement.dataset.theme = t; document.querySelector('meta[name=theme-color]')?.setAttribute('content', t === 'light' ? '#FFFFFF' : '#0A0A0B'); tb.innerHTML = t === 'light' ? moon : sun; try { localStorage.setItem('inv-theme', t); } catch {} };
+  const paintThemeChoices=()=>document.querySelectorAll('[data-theme-choice]').forEach(b=>b.setAttribute('aria-checked',String(b.dataset.themeChoice===themeMode)));
+  const setTheme = t => {themeMode=['light','dark','system'].includes(t)?t:'dark';const effective=themeMode==='system'?(systemTheme.matches?'light':'dark'):themeMode;document.documentElement.dataset.theme=effective;document.querySelector('meta[name=theme-color]')?.setAttribute('content',effective==='light'?'#FFFFFF':'#0A0A0B');try{localStorage.setItem('inv-theme',themeMode)}catch{}paintThemeChoices();};
+  systemTheme.addEventListener('change',()=>{if(themeMode==='system')setTheme('system');});
   let th = 'dark'; try { th = localStorage.getItem('inv-theme') || 'dark'; } catch {}
   // animated switch: the new theme spreads in a circle from the button that was pressed (View Transitions; GPU-composited, smooth on
   // phones). Browsers without it, and reduced motion, switch instantly.
@@ -271,7 +271,7 @@
       { duration: 650, easing: 'cubic-bezier(.65,0,.35,1)', pseudoElement: '::view-transition-new(root)' })).catch(() => {});
   };
   setTheme(th); window.setInvTheme = setTheme; window.switchInvTheme = switchTheme;
-  tb.onclick = () => switchTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light', tb);
+  document.addEventListener('click',e=>{const choice=e.target.closest('[data-theme-choice]');if(choice)switchTheme(choice.dataset.themeChoice,choice);const settings=e.target.closest('[data-open-settings]');if(settings){closeAll();hdr.querySelector('#acct-dd').classList.remove('open');hdr.querySelector('#hdr-avatar').setAttribute('aria-expanded','false');if(drawer.classList.contains('open'))closeDrawer();window.InvPrefs?.openSettings(settings.closest('.drawer')?mt:settings.closest('#acct-dd')?hdr.querySelector('#hdr-avatar'):hdr.querySelector('[data-dd=dd-more]'));}});
 
   const onScrollHdr = () => hdr.classList.toggle('scrolled', scrollY > 8); addEventListener('scroll', onScrollHdr, { passive: true }); onScrollHdr();
   document.addEventListener('DOMContentLoaded', () => { const m = document.querySelector('main'); if (m) { m.id = m.id || 'main'; if (!('onpagereveal' in window)) m.classList.add('enter'); } });
@@ -304,12 +304,14 @@
   hdr.querySelectorAll('[data-dd]').forEach(btn => {
     const dd = document.getElementById(btn.dataset.dd), li = btn.parentElement;
     const open = v => { if (v) closeAll(btn); btn.setAttribute('aria-expanded', v); dd.classList.toggle('open', v); };
+    btn.addEventListener('keydown',e=>{if(e.key==='ArrowDown'){e.preventDefault();open(true);dd.querySelector('a,button')?.focus();}});
     let openedByHover = false;
     btn.addEventListener('click', e => { const keepOpen = openedByHover && e.detail > 0; openedByHover = false; open(keepOpen || btn.getAttribute('aria-expanded') !== 'true'); });
     let t;
-    li.addEventListener('mouseenter', () => { if (matchMedia('(hover:hover)').matches) { clearTimeout(t); openedByHover = dd.classList.contains('dd-news') && btn.getAttribute('aria-expanded') !== 'true'; open(true); } });
+    li.addEventListener('mouseenter', () => { if (matchMedia('(hover:hover)').matches) { clearTimeout(t); openedByHover = (dd.classList.contains('dd-news')||dd.classList.contains('dd-more')) && btn.getAttribute('aria-expanded') !== 'true'; open(true); } });
     li.addEventListener('mouseleave', () => { if (matchMedia('(hover:hover)').matches) t = setTimeout(() => open(false), 120); });
   });
+  hdr.addEventListener('keydown',e=>{const menu=e.target.closest('.dd.open');if(!menu||!['ArrowDown','ArrowUp','Home','End'].includes(e.key))return;const items=[...menu.querySelectorAll('a,button')].filter(x=>x.getClientRects().length);if(!items.length)return;e.preventDefault();const i=items.indexOf(e.target);items[e.key==='Home'?0:e.key==='End'?items.length-1:(i+(e.key==='ArrowDown'?1:-1)+items.length)%items.length].focus();});
   const rail = hdr.querySelectorAll('.mega-cat');
   const pick = k => { rail.forEach(r => r.toggleAttribute('aria-current', r.dataset.cat === k)); hdr.querySelectorAll('.mega-panel').forEach(p => p.hidden = p.dataset.panel !== k); };
   rail.forEach(r => { r.addEventListener('mouseenter', () => pick(r.dataset.cat)); r.addEventListener('focus', () => pick(r.dataset.cat)); });
@@ -320,18 +322,16 @@
   const drawer = document.createElement('div');
   drawer.className = 'drawer';
   drawer.innerHTML = `${page === 'home' ? '' : `<a class="search-btn" href="assets/globe/news.html">${icon('search')}<span>Search assets, countries &amp; articles</span></a>`}
-    <a href="index.html">Home</a><a href="assets/globe/news.html">Globe</a><details class="nn-drawer-news"><summary>News ${icon('chev')}</summary>${InvNewsMenu.html('nn-mobile')}</details><a href="markets.html">Markets</a><a href="education.html">Learn</a>
+    <a href="assets/globe/news.html">Globe</a><details class="nn-drawer-news"><summary>News ${icon('chev')}</summary>${InvNewsMenu.html('nn-mobile')}</details><a href="markets.html">Markets</a><a href="pricing.html">Pricing</a><a href="education.html">Learn</a>
     <details><summary>Tools ${icon('chev')}</summary>${tools.map(([, t, , h]) => `<a href="${h}">${t}</a>`).join('')}</details><a href="about.html">About</a>
-    <button class="drawer-theme" type="button"><span>Light mode</span><i aria-hidden="true"></i></button>
+    <button class="drawer-settings" type="button" data-open-settings>Settings</button>${themeChoices()}
     <div class="drawer-cur"><span>Currency</span><span class="dc-host"></span></div>
     <div class="drawer-acct guest-only"><p>Save your watchlist and alerts on every device.</p><button class="btn btn-primary" type="button" data-auth="up">Create free account</button><button class="btn btn-ghost" type="button" data-auth="in">Log in</button></div>
     <div class="drawer-acct member-only"><a class="owner-only" href="admin.html">Analytics dashboard</a><a href="profile.html">Profile &amp; notifications</a><button class="btn btn-ghost" type="button" data-logout>Log out</button></div>`;
   hdr.after(drawer);
   const mt = hdr.querySelector('.menu-toggle');
   // light / dark switch in the phone menu (the header button is hidden on small phones); closes the menu first so the switch is seen
-  const dth = drawer.querySelector('.drawer-theme'), paintDth = () => { const l = document.documentElement.dataset.theme === 'light'; dth.firstElementChild.textContent = l ? 'Dark mode' : 'Light mode'; dth.lastElementChild.innerHTML = l ? moon : sun; };
-  paintDth(); new MutationObserver(paintDth).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
-  dth.onclick = () => { const t = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light'; closeDrawer(); setTimeout(() => switchTheme(t, dth.lastElementChild), 200); };
+  paintThemeChoices();
   function closeDrawer() { if(drawer.classList.contains('open')) modalClose(drawer); drawer.classList.remove('open'); mt.setAttribute('aria-expanded', 'false'); mt.classList.remove('is-open'); document.body.style.overflow = ''; }
   mt.onclick = () => { const o = !drawer.classList.contains('open'); if(o)modalOpen(drawer);else modalClose(drawer); drawer.classList.toggle('open', o); mt.setAttribute('aria-expanded', o); mt.classList.toggle('is-open', o); mt.setAttribute('aria-label', o ? 'Close menu' : 'Open menu'); document.body.style.overflow = o ? 'hidden' : ''; if(o)drawer.querySelector('a').focus(); };
 
@@ -457,7 +457,7 @@
   ftr.innerHTML = `<div class="wrap">
     <div class="ftr-head"><div class="ftr-brand">${brand}</div><p class="ftr-tag">Invest with clarity.</p><button type="button" class="ftr-top-btn" aria-label="Back to top">Back to top <span aria-hidden="true">↑</span></button></div>
     <div class="ftr-meta"><span class="ftr-socials"><a class="icon-btn" href="https://www.linkedin.com/company/investedia/" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.1 2.1 2.1 0 0 1 0 4.1zM7.1 20.5H3.6V9h3.5v11.5z"/></svg></a><a class="icon-btn" href="https://x.com/investedia" aria-label="X" title="X"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M18.2 2H21l-6.5 7.4L22 22h-6.1l-4.8-6.3L5.6 22H2.8l7-8L2 2h6.2l4.3 5.7L18.2 2zm-1.1 18h1.7L7 3.9H5.2L17.1 20z"/></svg></a><a class="icon-btn" href="https://www.youtube.com/@investedia" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1z"/></svg></a><a class="icon-btn" href="https://www.instagram.com/investedia/" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a><a class="icon-btn" href="mailto:contact@investedia.com" aria-label="Email contact@investedia.com" title="contact@investedia.com"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a></span><label class="ftr-lang"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></svg><select aria-label="Language"><option value="en">English</option><option value="fr">Français</option><option value="nl">Nederlands</option><option value="de">Deutsch</option><option value="es">Español</option><option value="it">Italiano</option><option value="pt">Português</option></select></label><p class="ftr-data">Market data: Yahoo Finance, FRED &amp; Coinbase. Company filings: SEC EDGAR. News summaries are written with AI from each source’s reporting. <a href="sources.html">All sources</a></p></div>
-    <nav class="ftr-cols" aria-label="Footer"><details class="ftr-col" open><summary><h6>News</h6><span class="ftr-chev" aria-hidden="true"></span></summary><ul><li><a href="news.html">Latest news</a></li><li><a href="assets/globe/news.html">Globe</a></li><li><a href="implications.html">Market Implications</a></li><li><a href="track-record.html">Track Record</a></li></ul></details><details class="ftr-col" open><summary><h6>Markets</h6><span class="ftr-chev" aria-hidden="true"></span></summary><ul><li><a href="markets.html">Markets</a></li><li><a href="companies/">Companies</a></li><li><a href="calendar.html">Economic Calendar</a></li><li><a href="screener.html">Stock Screener</a></li><li><a href="movers.html">Market Heatmaps</a></li></ul></details><details class="ftr-col" open><summary><h6>Learn</h6><span class="ftr-chev" aria-hidden="true"></span></summary><ul><li><a href="education.html">Education</a></li></ul></details><details class="ftr-col" open><summary><h6>Company</h6><span class="ftr-chev" aria-hidden="true"></span></summary><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="about.html#app">Get the app</a></li></ul></details><details class="ftr-col" open><summary><h6>Legal</h6><span class="ftr-chev" aria-hidden="true"></span></summary><ul><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="cookies.html">Cookies</a></li><li><a href="disclaimer.html">Disclaimer</a></li><li><a href="legal.html">All legal</a></li></ul></details></nav>
+    <nav class="ftr-cols" aria-label="Footer"><details class="ftr-col" open><summary><h6>News</h6><span class="ftr-chev" aria-hidden="true"></span></summary><ul><li><a href="news.html">Latest news</a></li><li><a href="assets/globe/news.html">Globe</a></li><li><a href="implications.html">Market Implications</a></li><li><a href="track-record.html">Track Record</a></li></ul></details><details class="ftr-col" open><summary><h6>Markets</h6><span class="ftr-chev" aria-hidden="true"></span></summary><ul><li><a href="markets.html">Markets</a></li><li><a href="companies/">Companies</a></li><li><a href="calendar.html">Economic Calendar</a></li><li><a href="screener.html">Stock Screener</a></li><li><a href="movers.html">Market Heatmaps</a></li></ul></details><details class="ftr-col" open><summary><h6>Learn</h6><span class="ftr-chev" aria-hidden="true"></span></summary><ul><li><a href="education.html">Education</a></li></ul></details><details class="ftr-col" open><summary><h6>Tools</h6><span class="ftr-chev" aria-hidden="true"></span></summary><ul>${tools.map(([,t,,u])=>`<li><a href="${u}">${t}</a></li>`).join('')}</ul></details><details class="ftr-col" open><summary><h6>Company</h6><span class="ftr-chev" aria-hidden="true"></span></summary><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="about.html#app">Get the app</a></li></ul></details><details class="ftr-col" open><summary><h6>Legal</h6><span class="ftr-chev" aria-hidden="true"></span></summary><ul><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="cookies.html">Cookies</a></li><li><a href="disclaimer.html">Disclaimer</a></li><li><a href="legal.html">All legal</a></li></ul></details></nav>
     `;
   // phones: footer sections fold into tap-to-open rows; wider screens: always open
   const ftrQ = matchMedia('(max-width: 760px)'), ftrFold = () => ftr.querySelectorAll('.ftr-col').forEach(d => { d.open = !ftrQ.matches; });
@@ -733,7 +733,7 @@
   const paintUser = u => { if (gated && u) document.documentElement.classList.remove('auth-gate');
     const av = hdr.querySelector('#hdr-avatar'), lb = hdr.querySelector('#hdr-login'); if (!lb) return;
     lb.hidden = !!u; av.hidden = !u; document.documentElement.classList.toggle('is-member', !!u); document.documentElement.classList.remove('is-owner'); if (u) isOwnerEmail(u.email).then(owner => { document.documentElement.classList.toggle('is-owner', owner); if (owner) store('inv-owner', '1'); }); INVWATCH.login(u); window.invUser = u || null; window.dispatchEvent(new CustomEvent('inv-user', { detail: u || null })); if (!u) return; store('inv-had-account', '1'); const nm = (u.user_metadata && (u.user_metadata.name || u.user_metadata.full_name)) || u.email;
-    av.textContent = nm.split(/[\s@.]+/).filter(Boolean).map(w => w[0]).join('').slice(0, 2).toUpperCase(); paintAvatar();
+    av.textContent = nm.split(/[\s@.]+/).filter(Boolean).map(w => w[0]).join('').slice(0, 2).toUpperCase(); paintAvatar();paintThemeChoices();
     if (u.app_metadata && u.app_metadata.provider === 'google' && store('inv-news-optin') === '1' && !u.user_metadata.newsletter) { sb.auth.updateUser({ data: { newsletter: true } }); store('inv-news-optin', '0'); } };
   {
     const av = hdr.querySelector('#hdr-avatar'), lb = document.createElement('button');
