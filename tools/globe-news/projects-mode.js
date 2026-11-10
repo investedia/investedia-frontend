@@ -57,7 +57,7 @@ function bindProjectControls(el){
  const handle=el.querySelector('[data-pj-collapse]');if(handle){handle.onclick=()=>{PROJ.collapsed=!PROJ.collapsed;projRender();};let y;handle.onpointerdown=e=>{y=e.clientY;handle.setPointerCapture(e.pointerId);};handle.onpointerup=e=>{if(y!=null&&Math.abs(e.clientY-y)>40){PROJ.collapsed=e.clientY>y;projRender();}y=null;};}
 }
 function projectTopbar(){
- const bar=$('project-topbar');bar.innerHTML='<a class="pj-brand" href="../../index.html" aria-label="Investedia home">Investedia</a><nav aria-label="Site"><a href="news.html" data-proj-news>Globe</a><a href="../../news.html">News</a><a href="../../markets.html">Markets</a><a href="../../pricing.html">Pricing</a></nav><label><span class="sr-only">Search projects</span><input type="search" placeholder="Search projects, countries…" aria-label="Search projects and countries"></label>';
+ const bar=$('project-topbar');bar.innerHTML='<a class="pj-brand" href="../../index.html" aria-label="Investedia home">Invested<span class="pj-i">i</span>a</a><nav aria-label="Site"><a href="news.html" data-proj-news>Globe</a><a href="../../news.html">News</a><a href="../../markets.html">Markets</a><a href="../../pricing.html">Pricing</a></nav><label><span class="sr-only">Search projects</span><input type="search" placeholder="Search projects, countries…" aria-label="Search projects and countries"></label>';
  bar.querySelector('[data-proj-news]').onclick=e=>{e.preventDefault();projSet(false,{mode:'news'});marketSetMode('news');};
  bar.querySelector('input').oninput=e=>{PROJ.q=e.target.value;PROJ.n=30;projRender();};
 }

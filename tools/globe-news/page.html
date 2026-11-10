@@ -161,6 +161,8 @@ html.proj-mode .pj{padding:0!important;overflow:auto}.pjh{position:relative;heig
 .pjb{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}.pjb .pj-w{height:40px;border-radius:10px;font-size:13px}.pjgo{display:grid;place-items:center;height:40px;border-radius:10px;background:#ff7a1a;color:#111!important;font-weight:650;text-decoration:none}
 @media(max-width:1180px){html.proj-mode .pjs{display:none}}
 @media(max-width:760px){html.proj-mode .pjl{display:none}html.proj-mode .pj{max-height:62vh}}
+/* Swipe-to-watchlist: the orange action is hidden until a row is actually swiped */
+.nd-act{opacity:0;pointer-events:none;transition:opacity .15s}.nd-row.sw .nd-act{opacity:1}
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>

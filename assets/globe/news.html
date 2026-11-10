@@ -161,6 +161,8 @@ html.proj-mode .pj{padding:0!important;overflow:auto}.pjh{position:relative;heig
 .pjb{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}.pjb .pj-w{height:40px;border-radius:10px;font-size:13px}.pjgo{display:grid;place-items:center;height:40px;border-radius:10px;background:#ff7a1a;color:#111!important;font-weight:650;text-decoration:none}
 @media(max-width:1180px){html.proj-mode .pjs{display:none}}
 @media(max-width:760px){html.proj-mode .pjl{display:none}html.proj-mode .pj{max-height:62vh}}
+/* Swipe-to-watchlist: the orange action is hidden until a row is actually swiped */
+.nd-act{opacity:0;pointer-events:none;transition:opacity .15s}.nd-row.sw .nd-act{opacity:1}
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
@@ -835,6 +837,8 @@ html.proj-mode .pjs>div{min-width:0;padding:14px 12px;border-color:var(--line)}.
 html.embed.proj-mode :is(#project-topbar,#project-mode-subtitle,#gswitch,#pjList,#projPanel,#pjStats,.dock){display:none!important}
 
 html.proj-mode :is(#nav-grab,.tb-btn){display:none!important}
+
+html.proj-mode .gswitch [data-m=projects][aria-pressed=true] span{color:#111;border-color:rgba(0,0,0,.5)}html.proj-mode input::placeholder{color:var(--fg-2)}.pj-brand .pj-i{color:transparent;background:linear-gradient(#ff7a1a .385em,var(--fg) .385em);-webkit-background-clip:text;background-clip:text}
 
 </style>
 <script src="../locale.js"></script>
@@ -2420,7 +2424,7 @@ function bindProjectControls(el){
  const handle=el.querySelector('[data-pj-collapse]');if(handle){handle.onclick=()=>{PROJ.collapsed=!PROJ.collapsed;projRender();};let y;handle.onpointerdown=e=>{y=e.clientY;handle.setPointerCapture(e.pointerId);};handle.onpointerup=e=>{if(y!=null&&Math.abs(e.clientY-y)>40){PROJ.collapsed=e.clientY>y;projRender();}y=null;};}
 }
 function projectTopbar(){
- const bar=$('project-topbar');bar.innerHTML='<a class="pj-brand" href="../../index.html" aria-label="Investedia home">Investedia</a><nav aria-label="Site"><a href="news.html" data-proj-news>Globe</a><a href="../../news.html">News</a><a href="../../markets.html">Markets</a><a href="../../pricing.html">Pricing</a></nav><label><span class="sr-only">Search projects</span><input type="search" placeholder="Search projects, countries…" aria-label="Search projects and countries"></label>';
+ const bar=$('project-topbar');bar.innerHTML='<a class="pj-brand" href="../../index.html" aria-label="Investedia home">Invested<span class="pj-i">i</span>a</a><nav aria-label="Site"><a href="news.html" data-proj-news>Globe</a><a href="../../news.html">News</a><a href="../../markets.html">Markets</a><a href="../../pricing.html">Pricing</a></nav><label><span class="sr-only">Search projects</span><input type="search" placeholder="Search projects, countries…" aria-label="Search projects and countries"></label>';
  bar.querySelector('[data-proj-news]').onclick=e=>{e.preventDefault();projSet(false,{mode:'news'});marketSetMode('news');};
  bar.querySelector('input').oninput=e=>{PROJ.q=e.target.value;PROJ.n=30;projRender();};
 }
