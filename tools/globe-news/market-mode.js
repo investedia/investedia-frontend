@@ -51,7 +51,7 @@ function mkStatus(e){
  try{const parts=Object.fromEntries(new Intl.DateTimeFormat('en-GB',{timeZone:e.timezone,weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date()).map(p=>[p.type,p.value]));
   const day=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].indexOf(parts.weekday),mins=(+parts.hour%24)*60+(+parts.minute),hm=t=>{const[a,b]=t.split(':');return +a*60+ +b;};
   const tradingDay=(ss.weekmask||'1111100')[day]==='1',open=tradingDay&&mins>=hm(ss.open)&&mins<hm(ss.close);
-  return {open,label:open?'Open':'Closed',hours:ss.open.slice(0,5)+'–'+ss.close.slice(0,5),tz:e.timezone.split('/').pop().replace(/_/g,' ')};}catch{return null;}
+  return {open,label:open?'Open':'Closed',hours:ss.open.slice(0,5)+'–'+ss.close.slice(0,5),tz:e.city||e.timezone.split('/').pop().replace(/_/g,' ')};}catch{return null;}
 }
 function marketRender(){
  if(!MARKET.selected)return;const name=MARKET.selected,code=ISO[name];MARKET.ctab=MARKET.ctab||'overview';
@@ -65,7 +65,7 @@ function marketRender(){
  if(MARKET.ctab==='overview'){
   body=`<div class="mk-strip">${cell('Exchange',main?esc(main[1].short)+(main[2]?` <i class="mk-dot ${main[2].open?'on':''}" title="${main[2].label}"></i>`:''):'—')}${cell('Currency',esc(cur||'—'))}${cell('Growth',g?pct(g[1],1):'—')}${cell('Inflation',v('infl')?pct(v('infl')[1]):'—')}</div>`
   +`<h5 class="mk-h">Exchanges</h5>${st.length?`<table class="mk-t"><tr><th>Exchange</th><th>MIC</th><th>Session (local)</th><th class="r">Now</th></tr>${st.map(([mic,e,s])=>`<tr><td>${esc(e.short)}<small>${esc(e.city||'')}</small></td><td class="mn">${esc(mic)}</td><td class="mn">${s?s.hours:'—'}<small>${s?esc(s.tz):''}</small></td><td class="r">${s?`<span class="${s.open?'mk-open':'mk-closed'}">● ${s.label}</span>`:'—'}</td></tr>`).join('')}</table><p class="mk-note">Regular hours; holidays and half days not shown.</p>`:'<p class="mk-empty">No verified stock exchange for this country yet.</p>'}`
-  +`<h5 class="mk-h">Currency</h5>${fx&&Number.isFinite(fx.p)?`<table class="mk-t"><tr><td>${esc(fx.s.replace(/=X$/,'').replace(/(.{3})(.{3})/,'$1/$2'))}</td><td class="r mn">${marketNum(fx.p)}</td><td class="r"><small>delayed</small></td></tr></table>`:`<p class="mk-empty">${cur?esc(cur)+' rate not available yet.':'No currency data.'}</p>`}`
+  +`<h5 class="mk-h">Currency</h5>${fx&&Number.isFinite(fx.p)?`<table class="mk-t"><tr><td>${esc(fx.s.replace(/=X$/,'').replace(/(.{3})(.{3})/,'$1/$2'))}</td><td class="r mn">${marketNum(fx.p)}</td><td class="r"><span class="mk-del">Delayed</span></td></tr></table>`:`<p class="mk-empty">${cur?esc(cur)+' rate not available yet.':'No currency data.'}</p>`}`
   +`<h5 class="mk-h">Economy</h5>${eco?`<table class="mk-t"><tr><th>Indicator</th><th class="r">Value</th><th class="r">Period</th></tr>${rows.map(([l,val,y])=>`<tr><td>${l}</td><td class="r mn">${val||'<em>no data</em>'}</td><td class="r mu">${val?y:''}</td></tr>`).join('')}</table>`:'<p class="mk-empty">No World Bank data for this country.</p>'}`
   +`<div class="mk-cov"><span class="${st.some(x=>x[2])?'ok':'na'}">${st.some(x=>x[2])?'✓':'—'} Sessions</span><span class="${eco?'ok':'na'}">${eco?'✓':'—'} Economy</span><span class="${fx?'ok':'na'}">${fx?'✓':'—'} Currency</span><span class="pa">◐ Companies: in the news only</span><span class="na">— ETFs, bonds: not yet</span></div>`
   +`<p class="mk-src">Sources: exchange-calendars (Apache 2.0) · ISO 10383 MIC · World Bank (CC BY 4.0) · delayed quotes. Not investment advice.</p>`;
