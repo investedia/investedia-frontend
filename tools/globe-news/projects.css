@@ -25,3 +25,4 @@ html.embed.proj-mode :is(#project-topbar,#project-mode-subtitle,#gswitch,#pjList
 html.proj-mode :is(#nav-grab,.tb-btn){display:none!important}
 
 html.proj-mode .gswitch [data-m=projects][aria-pressed=true] span{color:#111;border-color:rgba(0,0,0,.5)}html.proj-mode input::placeholder{color:var(--fg-2)}.pj-brand .pj-i{color:transparent;background:linear-gradient(#ff7a1a .385em,var(--fg) .385em);-webkit-background-clip:text;background-clip:text}
+html.proj-mode .pj :is(.pj-description,.pj-note){color:var(--fg-2)}html.proj-mode .pj .pj-tabs button[aria-selected=true]{color:var(--fg)!important}

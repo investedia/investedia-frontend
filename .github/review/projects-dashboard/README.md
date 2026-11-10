@@ -47,3 +47,11 @@ Tracker/licensing updates are on the same branch name in the docs repository.
 
 No new secrets, 0 daily Actions minutes, 0 Gemini calls. Manual registry refresh
 estimate 2–8 Actions minutes, with no automatic publish or deployment.
+
+Follow-up review: incorporated main922c12bf (Pricing clip, phone swipe control,
+Studio fix), retaining Claude's WIP/source. The screenshot fixture now explicitly
+checks both data-theme and the globe DAY palette; corrected Now/New light images
+are genuine light mode. Selected PRO badge, light-mode descriptive text and
+standalone Projects surfaces have appropriate contrasting foregrounds. The
+four-theme/device browser matrix,58 Python checks and legal9+13 subtests pass
+again. No new data facts were added; profile curation is still partial.

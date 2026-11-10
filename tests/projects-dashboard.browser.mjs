@@ -4,9 +4,10 @@ import {launch,base} from './browser-support.mjs';
 const browser=await launch(),out='.github/review/projects-dashboard';fs.mkdirSync(out,{recursive:true});
 try{
 for(const theme of ['dark','light'])for(const width of [1440,390]){
- const context=await browser.newContext({viewport:{width,height:900}});await context.addInitScript(theme=>{localStorage.setItem('inv-theme',theme);localStorage.setItem('inv-consent',JSON.stringify({version:1,at:Date.now(),necessary:true,preferences:true,images:false,analytics:false,live:false}));},theme);
+ const context=await browser.newContext({viewport:{width,height:900}});await context.addInitScript(theme=>{localStorage.setItem('inv-theme',theme);localStorage.setItem('inv-consent',JSON.stringify({version:1,date:new Date().toISOString(),necessary:true,preferences:true,images:false,analytics:false,live:false}));},theme);
  const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto(base+'/assets/globe/news.html?mode=projects');await page.locator('[data-pj="line"]').waitFor();if(await page.locator('[data-consent=essential]').isVisible())await page.locator('[data-consent=essential]').click();
+ assert.equal(await page.locator('html').getAttribute('data-theme'),theme);assert.equal(await page.evaluate(()=>DAY),theme==='light');
  assert.equal(await page.locator('#pjStats div:first-child b').innerText(),'637');
  assert.equal(await page.locator('#gswitch [data-m=projects]').getAttribute('aria-pressed'),'true');
  assert.equal(await page.locator('.pjd h2').innerText(),'The Line');
