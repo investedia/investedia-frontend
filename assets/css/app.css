@@ -1,3 +1,5 @@
+@font-face{font-family:"Inter";src:url("/assets/fonts/inter-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Geist Mono";src:url("/assets/fonts/geist-mono-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
 /* Investedia UI — dark terminal-grade layout: dense data tables, hairline borders, one orange accent */
 :root{
   --bg:#0A0A0B;--bg-2:#111113;--card:#171719;--card-hi:#1d1d20;--line:#29292D;--line-soft:#1f1f23;
