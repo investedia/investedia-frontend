@@ -1983,7 +1983,8 @@ function tap(x, y, touch) {
   const d = pick(x, y, touch ? 26 : 16);
   if (d) { hideHover(); if (d.list.length === 1) return openStory(d.list[0]); if (d.same || Z >= ZMAX - .2) return openPlace(d.list); return flyTo(d.lo, d.la, Math.min(ZMAX, Z * 2.2)); }
   const g = inv(x, y), c = g && countryAt(g[0], g[1]);
-  if (!c && !EMBED) { dismissPanel(); return; }
+  // PC: clicking empty space keeps the dashboard; it only closes an open detail view (back to the overview). Phone keeps closing the sheet.
+  if (!c && !EMBED) { if (phone()) { dismissPanel(); return; } hideHover(); if (view.k !== 'top') { hist = []; sel = null; selCountry = null; view = { k: 'top' }; panel.hidden = false; render(); } return; }
   if (c) { if (phone() && !EMBED) { const hv = $('hover'); hv.className = 'hover glass solo brief on'; hv.innerHTML = briefHTML(c); hv.dataset.country = c.name; return; } return openCountry(c); }
 }
 $('hover').addEventListener('click', e => { if (pinned && pinned.article) { const a = pinned.article; if (e.target.closest('.hv-open')) { tapEdge = null; hideHover(); openStory(a); } return; }
