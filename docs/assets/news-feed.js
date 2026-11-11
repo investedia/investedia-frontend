@@ -21,6 +21,9 @@
   const cls = v => v > 0.005 ? 'u' : v < -0.005 ? 'd' : 'o';
   const col = v => v > 0.005 ? '#34d399' : v < -0.005 ? '#f87171' : '#8b8b94';
   const series = (a, k) => k === 'd' ? (S.intra[a.s]?.d1?.c || (a.sp || []).slice(-2)) : k === 'w' ? (a.sp || []).slice(-6) : (a.sp || []);
+  // filled mini-chart for the movers cards
+  const area = (v, w, h, c) => { if (v.length < 2) return ''; const lo = Math.min(...v), hi = Math.max(...v), r = hi - lo || 1, pts = v.map((y, i) => (i / (v.length - 1) * w).toFixed(1) + ' ' + (h - 3 - (y - lo) / r * (h - 6)).toFixed(1)), id = 'g' + Math.random().toString(36).slice(2, 8);
+    return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${c}" stop-opacity=".28"/><stop offset="1" stop-color="${c}" stop-opacity="0"/></linearGradient></defs><path d="M0 ${h}L${pts.join('L')}L${w} ${h}Z" fill="url(#${id})"/><path d="M${pts.join('L')}" fill="none" stroke="${c}" stroke-width="2" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></svg>`; };
   const line = (v, w, h, c) => { if (v.length < 2) return ''; const lo = Math.min(...v), hi = Math.max(...v), r = hi - lo || 1; return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none"><path d="${v.map((y, i) => (i ? 'L' : 'M') + (i / (v.length - 1) * w).toFixed(1) + ' ' + (h - 3 - (y - lo) / r * (h - 6)).toFixed(1)).join('')}" fill="none" stroke="${c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></svg>`; };
   const arrow = d => `<span role="img" aria-label="${d==='up'?'up':d==='down'?'down':'mixed or neutral'}" class="nf-ar ${d === 'up' ? 'u' : d === 'down' ? 'd' : 'o'}">${d === 'up' ? '↑' : d === 'down' ? '↓' : d === 'mixed' ? '↔' : '–'}</span>`;
   const bf = a => !window.InvConsent?.allows('images') ? '' : a.t === 'crypto' ? `https://cdn.brandfetch.io/crypto/${encodeURIComponent(a.s.split('-')[0])}/w/96/h/96/fallback/404?c=${BF}` : a.t === 'stocks' && !/[\^=]/.test(a.s) ? `https://cdn.brandfetch.io/ticker/${encodeURIComponent(a.s)}/w/96/h/96/fallback/404?c=${BF}` : '';
@@ -49,7 +52,12 @@
   function strip() {
     const known = a => !/[.\d]/.test(a.s.replace(/[=^-]/g, '')) && a.t !== 'fx' && (a.m || a.t === 'crypto' || a.t === 'cmd' || S.intra[a.s]);
     const L = S.mk.filter(known).filter(a => isFinite(a.d) && Math.abs(a.d) < 40 && series(a, 'd').length >= (a.t === 'stocks' ? 6 : 2)).sort((x, y) => Math.abs(y.d) - Math.abs(x.d)).slice(0, 10);
-    $('nf-strip').innerHTML = L.map(a => `<button type="button" class="nf-t" data-s="${esc(a.s)}"><small>${aIcon(a)}<span>${esc(a.n)}</span></small><span class="mono ${cls(a.d)}">${fmt(a.d)}</span>${line(series(a, 'd'), 100, 28, col(a.d))}</button>`).join('');
+    // design A (11 Nov 2026): equal cards, ticker + one-line name, big move, filled chart, and the newest linked article as the reason
+    const nm = x => String(x || '').toLowerCase().replace(/\b(inc|corp|corporation|group|plc|ltd|co|sa|ag|nv|holdings?)\b|[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
+    const about = (st, a) => reactions(st).some(r => r.a && r.a.s === a.s) || [...(st.impacts || []).map(i => i.name), ...(st.entities || []).map(e => e.name)].some(n => n && nm(n) === nm(a.n));
+    const why = a => S.stories.filter(st => about(st, a)).sort((x, y) => Date.parse(y.published_at) - Date.parse(x.published_at))[0];
+    const tick = a => String(a.s).replace(/[=^].*$/, '').replace(/-USD$/, '');
+    $('nf-strip').innerHTML = L.map(a => { const w = why(a); return `<div class="nf-t" role="group" aria-label="${esc(a.n)}"><button type="button" class="nf-tb" data-s="${esc(a.s)}"><span class="nf-tk">${aIcon(a)}<b>${esc(tick(a))}</b></span><span class="nf-tn">${esc(a.n)}</span><span class="mono ${cls(a.d)}">${fmt(a.d)}</span>${area(series(a, 'd'), 200, 40, col(a.d))}</button>${w ? `<a class="nf-why" href="story.html?id=${encodeURIComponent(w.id)}" title="${esc(w.headline)}">${esc(w.headline)}</a>` : '<span class="nf-why none">No linked article in this window</span>'}</div>`; }).join('');
   }
   function draw() {
     const cut = Date.now() - WIN.find(w => w[0] === S.win)[2] * 864e5, q = S.q.trim().toLowerCase();
@@ -112,7 +120,8 @@
   $('nf-q').addEventListener('input', e => { S.q = e.target.value; S.shown = 10; draw(); });
   $('nf-more').onclick = () => { S.shown += 10; draw(); };
   $('nf-chip').onclick = () => { S.q = ''; $('nf-q').value = ''; draw(); };
-  $('nf-strip').onclick = e => { const t = e.target.closest('.nf-t'); if (t) openSheet(t.dataset.s, 'w'); };
+  $('nf-strip').onclick = e => { const t = e.target.closest('.nf-tb'); if (t) openSheet(t.dataset.s, 'w'); };
+  document.querySelectorAll('[data-strip]').forEach(b => b.onclick = () => $('nf-strip').scrollBy({ left: (+b.dataset.strip) * Math.max(240, $('nf-strip').clientWidth * .8), behavior: 'smooth' }));
   $('nf-list').addEventListener('click', e => { const r = e.target.closest('.nf-rx[data-s]'); if (r) openSheet(r.dataset.s); });
   document.addEventListener('keydown', e => { if (e.key === '/' && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) { e.preventDefault(); $('nf-q').focus(); } });
   Promise.all([AssetIcons.ready, window.InvNewsSource.load('assets/globe/news-archive.json').catch(() => loadNews()), fetch('assets/globe/markets.json', { cache: 'no-cache' }).then(r => r.json()).catch(() => ({ assets: [] })), fetch('assets/globe/news-prices.json', { cache: 'no-cache' }).then(r => r.json()).catch(() => ({ assets: {} })), fetch('assets/intraday.json', { cache: 'no-cache' }).then(r => r.json()).catch(() => ({ s: {} }))])
