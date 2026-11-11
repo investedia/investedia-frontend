@@ -761,7 +761,7 @@ html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(h3,h4,b,strong,.mkd-sr,.mkd
 html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(span,small,.mkd-n,.mkd-ft,.mkd-cs,p){color:var(--fg-3)}
 html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(.mkd-kp>*,.mkd-c,.mkd-e,.mkd-more,button.mkd-more){background:rgba(0,0,0,.04)!important;border-color:var(--line)!important;color:var(--fg)}
 html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(.up,.pos,[class*=up]){color:#15803d}html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(.dn,.neg,[class*=dn],[class*=down]){color:#b91c1c}
-html.mswap :is(.panel,#lcol,.act,.timeline,.mkd-l,.mkd-o,.mkd-a,.pjl,.pj,.pjs,.side-sec,.side-imp,.market-panel){transition:opacity .38s cubic-bezier(.2,.7,.2,1),transform .38s cubic-bezier(.2,.7,.2,1);will-change:opacity,transform}html.mswap :is(.panel,.mkd-o,.pj){transition-delay:60ms}html.mswap :is(.act,.timeline,.mkd-a,.pjs){transition-delay:120ms}
+html.mswap :is(.panel,#lcol,.act,.timeline,.mkd-l,.mkd-o,.mkd-a,.pjl,.pj,.pjs,.side-sec,.side-imp,.market-panel){transition:opacity .2s ease-in,transform .2s ease-in;}html.mswap:not(.mswap-out) :is(.panel,#lcol,.act,.timeline,.mkd-l,.mkd-o,.mkd-a,.pjl,.pj,.pjs,.side-sec,.side-imp,.market-panel){transition:opacity .38s cubic-bezier(.2,.7,.2,1),transform .38s cubic-bezier(.2,.7,.2,1);will-change:opacity,transform}html.mswap :is(.panel,.mkd-o,.pj){transition-delay:60ms}html.mswap :is(.act,.timeline,.mkd-a,.pjs){transition-delay:120ms}
 html.mswap-out :is(.panel,.mkd-o,.pj){opacity:0!important;transform:translateX(8px)}html.mswap-out :is(#lcol,.mkd-l,.pjl){opacity:0!important;transform:translateX(-8px)}html.mswap-out :is(.act,.timeline,.mkd-a,.pjs){opacity:0!important;transform:translateY(8px)}
 html.mswap #sbox input::placeholder{transition:opacity .17s}html.mswap-out #sbox input::placeholder{opacity:0}
 .mkd-unu{display:flex;width:100%;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;background:none;border:0;border-top:1px solid #1f1f23;color:inherit;font:inherit;text-align:left;cursor:pointer}.mkd-unu small{display:block;color:#77777f;font-size:11.5px}.mkd-unu em{font-style:normal;font-weight:600;color:#a1a1aa}.mkd-unu em.hot{color:#ff7a1a}.mkd-unu:hover b{color:#ff7a1a}
@@ -2400,18 +2400,26 @@ let mvF = 'all';
 // mode switch: panels fade out, the globe turns a little in place, the new panels fade in (instant with reduced motion)
 let modeSpin = null;  // one smooth 360° on a mode switch, added on top of the slow idle turn so it hands back seamlessly
 const spinEase = k => (1 - Math.cos(Math.PI * k)) / 2;  // sine ease: gentle start and end, low peak speed
+// Mode transition: the new mode is ready at once; the old globe picture (a snapshot of the last frame) dissolves
+// over the live globe while the globe drifts a little further on its axis, and the new panels slide in.
 function modeSwap(fn, spin = true) {
   const h = document.documentElement;
   if (reduce) return fn();
-  const go = () => { if (spin) modeSpin = { t0: performance.now(), dur: 1200, done: 0 }; };
-  if (phone()) { fn(); requestAnimationFrame(() => requestAnimationFrame(go)); return; }
-  // fade the panels out, swap the content while the globe is still slow (any layout work happens before the spin),
-  // then spin and fade the new panels in during the turn
-  // the new panels are built at once (hidden), then the spin starts and they slide in with it, left, right, bottom
+  document.querySelectorAll('canvas.mswap-snap').forEach(x => x.remove()); clearTimeout(modeSwap.t);
+  const r = cv.getBoundingClientRect(), o = document.createElement('canvas');
+  o.className = 'mswap-snap'; o.width = cv.width; o.height = cv.height; o.getContext('2d').drawImage(cv, 0, 0);
+  const z = getComputedStyle(cv).zIndex;
+  o.style.cssText = `position:fixed;left:${r.left}px;top:${r.top}px;width:${r.width}px;height:${r.height}px;pointer-events:none;z-index:${z === 'auto' ? 0 : z};transform-origin:${cx}px ${cy}px;transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1);will-change:opacity,transform`;
+  cv.after(o);
   h.classList.add('mswap-out'); fn();
-  requestAnimationFrame(() => requestAnimationFrame(() => { h.classList.add('mswap'); go(); h.classList.remove('mswap-out'); clearTimeout(modeSwap.t); modeSwap.t = setTimeout(() => h.classList.remove('mswap'), 700); }));
+  if (spin) modeSpin = { t0: performance.now(), dur: 900, done: 0, deg: 22 };
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    o.style.opacity = '0'; o.style.transform = 'scale(.985)';
+    h.classList.add('mswap'); h.classList.remove('mswap-out');
+    setTimeout(() => o.remove(), 650); modeSwap.t = setTimeout(() => h.classList.remove('mswap'), 700);
+  }));
 }
-$('gswitch').onclick = e => { const b=e.target.closest('button');if(!b||b.getAttribute('aria-pressed')==='true')return;const leavingProj=PROJ.on;
+$('gswitch').onclick = e => { const b=e.target.closest('button');if(!b||b.getAttribute('aria-pressed')==='true')return;const leavingProj=PROJ.on;document.querySelectorAll('#gswitch button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
   modeSwap(()=>{if(b.dataset.m==='projects')return projSet(true);projSet(false,{mode:b.dataset.m});if(typeof marketSetMode==='function')marketSetMode(b.dataset.m);}, !leavingProj); };
 function sideData() {
   const vis = stories.filter(st => InvNewsFilters.match(st,F)&&inRegion(st.location.region,F.region)&&inTime(st)&&(!F.mine||touchesWatch(st))&&(F.lens==='all'||st.lens.includes(F.lens))), seen = new Map();
@@ -2735,7 +2743,7 @@ function drawStars(now) {
 let last = performance.now();
 function frame(t) {
   const dt = Math.min(50, t - last); last = t;
-  if (modeSpin) { const k = Math.min(1, (t - modeSpin.t0) / modeSpin.dur), inc = -360 * spinEase(k) - modeSpin.done; modeSpin.done += inc; lon0 += inc; if (k >= 1) modeSpin = null; }
+  if (modeSpin) { const k = Math.min(1, (t - modeSpin.t0) / modeSpin.dur), inc = -(modeSpin.deg || 360) * spinEase(k) - modeSpin.done; modeSpin.done += inc; lon0 += inc; if (k >= 1) modeSpin = null; }
   if (fly) { spin = null; const k = Math.min(1, (t - fly.t0) / fly.dur), e = ease(k); lon0 = fly.from[0] + fly.dl * e; lat0 = fly.from[1] + (fly.la - fly.from[1]) * e; Zt = fly.from[2] + (fly.z - fly.from[2]) * e; if (k >= 1) fly = null; }
   else if (spin) { lon0 += spin.vx * dt; lat0 = Math.max(-70, Math.min(70, lat0 + spin.vy * dt)); const f = Math.exp(-dt / 380); spin.vx *= f; spin.vy *= f; if (Math.hypot(spin.vx, spin.vy) < .004) spin = null; }  // friction: glides to a stop in about a second
   else if (!drag && !pinch && !reduce && !sel && !selCountry && !hoverC && !hoverCountry && view.k === 'top' && F.region === 'global' && Zt < 1.05 && !zoomAnchor) lon0 -= dt * .0022;
