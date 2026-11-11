@@ -270,6 +270,7 @@
     vt.ready.then(() => document.documentElement.animate({ clipPath: [`circle(0px at ${x}px ${y}px)`, `circle(${end}px at ${x}px ${y}px)`] },
       { duration: 650, easing: 'cubic-bezier(.65,0,.35,1)', pseudoElement: '::view-transition-new(root)' })).catch(() => {});
   };
+  document.addEventListener('click',e=>{const b=e.target.closest('[data-dd="dd-more"]');if(!b)return;const m=document.getElementById('dd-more');if(!m)return;requestAnimationFrame(()=>{const r=b.getBoundingClientRect(),w=m.offsetWidth;m.style.left=Math.max(12,Math.min(r.left-16,innerWidth-w-12))+'px';});});
   setTheme(th); window.setInvTheme = setTheme; window.switchInvTheme = switchTheme;
   document.addEventListener('click',e=>{const choice=e.target.closest('[data-theme-choice]');if(choice)switchTheme(choice.dataset.themeChoice,choice);const settings=e.target.closest('[data-open-settings]');if(settings){closeAll();hdr.querySelector('#acct-dd').classList.remove('open');hdr.querySelector('#hdr-avatar').setAttribute('aria-expanded','false');if(drawer.classList.contains('open'))closeDrawer();window.InvPrefs?.openSettings(settings.closest('.drawer')?mt:settings.closest('#acct-dd')?hdr.querySelector('#hdr-avatar'):hdr.querySelector('[data-dd=dd-more]'));}});
 

@@ -1256,3 +1256,12 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 @media(min-width:761px) and (max-width:1140px){.hdr .nav{display:flex}.hdr .menu-toggle{display:none}.hdr .acct-wrap{display:block}.hdr .hdr-signup{display:inline-flex}.hdr .nav-link{font-size:12px;padding:0 9px}.hdr .brand{margin-right:12px}.hdr .search-btn{width:40px}.dd-more{right:-120px}}
 @media(max-width:760px){.hdr .nav{display:none}.hdr .menu-toggle{display:grid}.hdr .acct-wrap{display:block!important}.hdr .hdr-tools .search-btn{display:none}.hdr .hdr-tools{gap:1px}.hdr .icon-btn,.hdr .avatar{min-width:36px;min-height:44px}.hdr .hdr-login{padding:0 6px;font-size:12px}.hdr .acct-dd{position:fixed;right:12px;left:auto;top:64px;width:min(290px,calc(100vw - 24px))}.hdr .pf-dd{left:12px;right:12px;width:auto}.drawer .account-theme{border-top:0}.ftr-cols{gap:18px}}
 .hdr .dd-more{position:fixed;top:58px;left:max(12px,calc(50vw - 325px));right:auto;width:min(650px,calc(100vw - 24px));transform:translateY(-4px)}.hdr .dd-more.open{transform:none}.hdr .avatar{width:44px;height:44px;min-width:44px;min-height:44px}
+
+/* More menu: compact, anchored under the More button (owner 11 Nov) */
+.hdr .dd-more{width:min(600px,calc(100vw - 24px))!important;grid-template-columns:150px 1fr 1fr!important;grid-template-rows:auto auto 1fr;gap:6px 24px!important;padding:16px 20px!important;align-content:start}
+.hdr .dd-more>section:nth-of-type(1){grid-column:1;grid-row:1}
+.hdr .dd-more>section:nth-of-type(2){grid-column:2;grid-row:1/4}
+.hdr .dd-more>section:nth-of-type(3){grid-column:3;grid-row:1/4}
+.hdr .dd-more>section:nth-of-type(4){grid-column:1;grid-row:2;margin-top:10px}
+.hdr .dd-more>section:nth-of-type(5){grid-column:1;grid-row:3;margin-top:10px}
+.hdr .dd-more a,.hdr .dd-more>section>button{min-height:32px!important;padding:4px 0!important;font-size:13px!important}
