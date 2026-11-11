@@ -68,7 +68,7 @@ function projSet(on,options={}){
  const was=PROJ.on;if(on&&!was){PROJ.previousPhone=phoneView;setSheet('closed');PROJ.savedCamera=[lon0,lat0,Zt];PROJ.phoneDetail=false;PROJ.collapsed=false;}
  const wide=innerWidth>760;if(!wide){if(on)$('project-topbar').after($('gswitch'));else projectSwitchHome.after($('gswitch'));}
  PROJ.on=on;const html=document.documentElement;html.classList.toggle('proj-mode',on);$('projPanel').hidden=!on;$('project-topbar').hidden=!on||wide;$('project-mode-subtitle').hidden=!on||wide;const qi=$('q');if(on){qi.placeholder='Search projects or places';qi.value=PROJ.q||'';$('res').hidden=true;}else if(was){qi.value='';qi.placeholder=MARKET.on?'Search countries, exchanges, indices & companies':'Search assets, countries & articles';}
- if(on){if(MARKET.on)marketSetMode('news');phoneView='projects';hideHover();projRender();}
+ if(on){if(MARKET.on)marketSetMode('news');phoneView='projects';hideHover();if(phone()&&!was){PROJ.collapsed=true;PROJ.phoneDetail=false;}projRender();}
  else if(was){html.classList.remove('proj-detail-open','proj-collapsed');phoneView=options.mode==='markets'?'markets':PROJ.previousPhone==='projects'?'globe':PROJ.previousPhone||'globe';if(PROJ.savedCamera)flyTo(...PROJ.savedCamera);}
  const u=new URL(location.href);if(on)u.searchParams.set('mode','projects');else if(was){if(options.mode==='markets')u.searchParams.set('mode','markets');else u.searchParams.delete('mode');}
  if(was!==on){if(options.history===false)history.replaceState(null,'',u);else history.pushState(null,'',u);}
