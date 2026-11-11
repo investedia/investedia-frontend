@@ -80,10 +80,7 @@ const projectDock=document.createElement('button');projectDock.type='button';pro
 function drawProj(){
  PROJ.hits=[];const nodes=PROJ.vis||[],buckets=new Map(),singles=[];
  for(const p of nodes){const[x,y,z]=proj(p.lat*rad,p.lon*rad);if(z<=.04)continue;const node={p,x,y};if(p.featured||p.id===PROJ.sel||Zt>=2.2)singles.push(node);else{const k=Math.floor(x/32)+':'+Math.floor(y/32);if(!buckets.has(k))buckets.set(k,[]);buckets.get(k).push(node);}}
- for(const group of buckets.values()){
-  if(group.length===1){singles.push(group[0]);continue;}const x=group.reduce((s,n)=>s+n.x,0)/group.length,y=group.reduce((s,n)=>s+n.y,0)/group.length;
-  ctx.beginPath();ctx.arc(x,y,9,0,7);ctx.fillStyle=DAY?'rgba(36,58,100,.92)':'rgba(12,12,14,.95)';ctx.strokeStyle=DAY?'white':'#9b5726';ctx.fill();ctx.stroke();ctx.font='500 9px Inter,sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillStyle='white';ctx.fillText(group.length,x,y);PROJ.hits.push({x,y,group});
- }
+ for(const group of buckets.values())singles.push(...group);
  for(const {p,x,y} of singles){const selected=p.id===PROJ.sel,r=selected?5.5:p.featured?4:2.5;ctx.beginPath();ctx.arc(x,y,r*2.6,0,7);ctx.fillStyle=selected?'rgba(255,122,26,.25)':'rgba(255,122,26,.08)';ctx.fill();ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fillStyle='#ff7a1a';ctx.fill();PROJ.hits.push({x,y,id:p.id});
   if(['kx','noor','line'].includes(p.id)||selected){const title=p.id==='kx'?"King's Cross":p.id==='noor'?'Noor Ouarzazate':p.name;ctx.font='600 11.5px Inter,sans-serif';const w=Math.min(230,Math.max(ctx.measureText(title).width,ctx.measureText(p.country).width)+22),h=43,l=Math.min(W-w-8,Math.max(8,x+12)),t=Math.min(H-100,Math.max(65,y-22));ctx.beginPath();ctx.roundRect(l,t,w,h,10);ctx.fillStyle=DAY?'rgba(255,255,255,.96)':'rgba(12,12,14,.96)';ctx.strokeStyle=selected?'#ff7a1a':DAY?'#d5d5d9':'#2a2a2f';ctx.fill();ctx.stroke();ctx.textAlign='left';ctx.textBaseline='alphabetic';ctx.fillStyle=DAY?'#1d1d1f':'#eee';ctx.fillText(title.length>30?title.slice(0,29)+'…':title,l+10,t+17);ctx.font='10px Inter,sans-serif';ctx.fillStyle=DAY?'#52525b':'#a1a1aa';ctx.fillText(p.country,l+10,t+33);PROJ.hits.push({x:l+w/2,y:t+h/2,id:p.id,rect:{l,t,w,h}});}}
  ctx.textAlign='left';ctx.textBaseline='alphabetic';
