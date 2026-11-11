@@ -139,11 +139,11 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
 .hn-kicker{margin:14px 0 0;color:var(--accent,#ff7a1a);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
 .hn-title.hn-e{margin:10px 0 22px}.hn-title.hn-e b{font-size:clamp(52px,6.2vw,84px);letter-spacing:-.04em;line-height:1}
 .hn-facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:0 0 24px;max-width:560px}
-.hn-facts div{padding:14px 0}.hn-facts div+div{padding-left:16px;border-left:1px solid var(--line)}.hn-facts b{display:block;font-size:19px;font-weight:600;color:var(--fg)}.hn-facts span{color:var(--fg-3,#8e8e96);font-size:13px}
+.hn-facts div{padding:14px 0}.hn-facts div+div{padding-left:16px;border-left:1px solid var(--line)}.hn-facts b{display:block;font-size:clamp(26px,2.6vw,36px);font-weight:700;letter-spacing:-.03em;color:var(--fg);font-feature-settings:"tnum"}.hn-facts span{color:var(--fg-3,#8e8e96);font-size:13px}
 @media (min-width:901px){.hn-copy .hn{margin-left:max(52%,calc(50vw + 20px));max-width:600px;padding-right:32px}
  .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(10,10,11,.85) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}
  :root[data-theme="light"] .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(247,247,248,.82) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}}
-@media (max-width:900px){.hn-facts b{font-size:16px}.hn-facts span{font-size:11.5px}.hn-facts div+div{padding-left:10px}}
+@media (max-width:900px){.hn-facts b{font-size:24px}.hn-facts span{font-size:11.5px}.hn-facts div+div{padding-left:10px}}
 </style>
 <link rel="stylesheet" href="assets/home-news.css"><link rel="stylesheet" href="assets/since-news.css">
 <section class="hn-hero" aria-label="Live news globe">
@@ -152,7 +152,7 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
     <span class="hn-live" id="hnLive"><i></i>Live</span>
     <p class="hn-kicker">Live globe · financial news</p>
     <h1 class="hn-title hn-e" id="hnTitle"><b>Investedia</b></h1>
-    <div class="hn-facts"><div><b>Hourly</b><span>news updates</span></div><div><b>Named</b><span>sources on every article</span></div><div><b>Global</b><span>countries &amp; markets</span></div></div>
+    <div class="hn-facts" id="hnFacts"><div><b data-stat="articles">—</b><span>articles in the last 48 hours</span></div><div><b data-stat="sources">—</b><span>news sources</span></div><div><b data-stat="projects">—</b><span>real estate &amp; infrastructure projects</span></div></div>
     <a class="hn-search" href="assets/globe/news.html"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Search assets, countries &amp; articles</a>
     <div class="hn-pop" id="hnPop" aria-label="Popular searches"><span class="hn-pop-l">Popular searches:</span></div>
   </div></div>
@@ -250,8 +250,16 @@ addEventListener('message', e => {
 const glide = () => { if (holdY != null) return; if (!isPhone()) { hnGlobe.style.transform = ''; return; } const y = Math.min(scrollY, 600); hnGlobe.style.transform = `translateY(${-y * .18}px) scale(${1 - y / 3000})`; hnGlobe.style.opacity = Math.max(.25, 1 - y / 700); };
 if (!matchMedia('(prefers-reduced-motion: reduce)').matches) addEventListener('scroll', () => requestAnimationFrame(glide), { passive: true });
 fitTitle(); addEventListener('resize', fitTitle); document.fonts && document.fonts.ready.then(fitTitle);
+// Live numbers under the name: counted from the same feed and project data the page already shows.
+function countTo(el, v) { if (!el || !Number.isFinite(v)) return; const fmt = n => Math.round(n).toLocaleString('en-US');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = fmt(v); return; }
+  const from = +(el.dataset.v || 0), t0 = performance.now(), f = t => { const k = Math.min(1, (t - t0) / 1200), e = 1 - Math.pow(1 - k, 3); el.textContent = fmt(from + (v - from) * e); if (k < 1) requestAnimationFrame(f); }; el.dataset.v = v; requestAnimationFrame(f); }
+fetch('assets/globe/projects-count.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(c => c && countTo(document.querySelector('[data-stat=projects]'), c.projects)).catch(() => {});
 loadNews().then(d => {
   hnLive.innerHTML = '<i></i>' + updatedText(d.updated);
+  { const cut = Date.now() - 48 * 36e5, S = (d.stories || []).filter(s => Date.parse(s.published_at) >= cut);
+    countTo(document.querySelector('[data-stat=articles]'), S.length);
+    countTo(document.querySelector('[data-stat=sources]'), new Set(S.map(s => s.source && s.source.name).filter(Boolean)).size); }
   hnTop.innerHTML = d.top.slice(0, 5).map((s, i) => card(s, i === 0)).join('');
   { const cs = confirmedSection(d); hnWhy.innerHTML = cs.body; hnWhyMore.innerHTML = cs.more; }
   hnCty.innerHTML = countries(d.stories);
