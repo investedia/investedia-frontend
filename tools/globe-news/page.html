@@ -2400,24 +2400,27 @@ let mvF = 'all';
 // mode switch: panels fade out, the globe turns a little in place, the new panels fade in (instant with reduced motion)
 let modeSpin = null;  // one smooth 360° on a mode switch, added on top of the slow idle turn so it hands back seamlessly
 const spinEase = k => (1 - Math.cos(Math.PI * k)) / 2;  // sine ease: gentle start and end, low peak speed
-// Mode transition: the new mode is ready at once; the old globe picture (a snapshot of the last frame) dissolves
-// over the live globe while the globe drifts a little further on its axis, and the new panels slide in.
+// Mode transition (design D, dots morph): the new mode is ready at once; a snapshot of the old globe sits on top and is
+// wiped away in a soft wave from the globe's west edge to its east edge, so the old dots give way to the new ones in turn.
 function modeSwap(fn, spin = true) {
   const h = document.documentElement;
   if (reduce) return fn();
-  document.querySelectorAll('canvas.mswap-snap').forEach(x => x.remove()); clearTimeout(modeSwap.t);
+  document.querySelectorAll('canvas.mswap-snap').forEach(x => x.remove()); cancelAnimationFrame(modeSwap.raf); clearTimeout(modeSwap.t);
   const r = cv.getBoundingClientRect(), o = document.createElement('canvas');
   o.className = 'mswap-snap'; o.width = cv.width; o.height = cv.height; o.getContext('2d').drawImage(cv, 0, 0);
   const z = getComputedStyle(cv).zIndex;
-  o.style.cssText = `position:fixed;left:${r.left}px;top:${r.top}px;width:${r.width}px;height:${r.height}px;pointer-events:none;z-index:${z === 'auto' ? 0 : z};transform-origin:${cx}px ${cy}px;transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1);will-change:opacity,transform`;
+  o.style.cssText = `position:fixed;left:${r.left}px;top:${r.top}px;width:${r.width}px;height:${r.height}px;pointer-events:none;z-index:${z === 'auto' ? 0 : z};will-change:mask-image`;
   cv.after(o);
   h.classList.add('mswap-out'); fn();
-  if (spin) modeSpin = { t0: performance.now(), dur: 900, done: 0, deg: 22 };
-  requestAnimationFrame(() => requestAnimationFrame(() => {
-    o.style.opacity = '0'; o.style.transform = 'scale(.985)';
-    h.classList.add('mswap'); h.classList.remove('mswap-out');
-    setTimeout(() => o.remove(), 650); modeSwap.t = setTimeout(() => h.classList.remove('mswap'), 700);
-  }));
+  const x0 = cx - R - r.left, span = 2 * R, soft = R * .55, t0 = performance.now(), DUR = 850;
+  const step = now => {
+    const k = Math.min(1, (now - t0) / DUR), e = k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2, edge = x0 - soft + (span + 2 * soft) * e;
+    const m = `linear-gradient(90deg, transparent ${edge - soft}px, #000 ${edge}px)`;
+    o.style.maskImage = m; o.style.webkitMaskImage = m;
+    if (k < 1) modeSwap.raf = requestAnimationFrame(step); else o.remove();
+  };
+  modeSwap.raf = requestAnimationFrame(step);
+  requestAnimationFrame(() => requestAnimationFrame(() => { h.classList.add('mswap'); h.classList.remove('mswap-out'); modeSwap.t = setTimeout(() => h.classList.remove('mswap'), 700); }));
 }
 $('gswitch').onclick = e => { const b=e.target.closest('button');if(!b||b.getAttribute('aria-pressed')==='true')return;const leavingProj=PROJ.on;document.querySelectorAll('#gswitch button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
   modeSwap(()=>{if(b.dataset.m==='projects')return projSet(true);projSet(false,{mode:b.dataset.m});if(typeof marketSetMode==='function')marketSetMode(b.dataset.m);}, !leavingProj); };
