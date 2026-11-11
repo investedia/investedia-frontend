@@ -31,6 +31,14 @@
   "retrieved": "2026-11-11",
   "wikidata": "Q14662364"
  },
+ "ABT": {
+  "author": "Abbott Laboratories",
+  "company": "Abbott Laboratories",
+  "file": "https://commons.wikimedia.org/wiki/File:Abbott_Laboratories_2025_logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q306764"
+ },
  "ADANIENT.NS": {
   "author": "Adani Group",
   "company": "Adani Enterprises",
@@ -38,6 +46,14 @@
   "licence": "Public domain",
   "retrieved": "2026-11-11",
   "wikidata": "Q107646415"
+ },
+ "ADI": {
+  "author": "Connormah",
+  "company": "Analog Devices",
+  "file": "https://commons.wikimedia.org/wiki/File:Analog_Devices_Logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q484930"
  },
  "AGL.JO": {
   "author": "Anglo American plc",
@@ -47,6 +63,14 @@
   "retrieved": "2026-11-11",
   "wikidata": "Q541451"
  },
+ "AIG": {
+  "author": "American International GroupSVG version by JBarta",
+  "company": "American International Group",
+  "file": "https://commons.wikimedia.org/wiki/File:AIG_logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q212235"
+ },
  "ALL": {
   "author": "Allstate",
   "company": "Allstate",
@@ -54,6 +78,14 @@
   "licence": "Public domain",
   "retrieved": "2026-11-11",
   "wikidata": "Q2645636"
+ },
+ "AMAT": {
+  "author": "Unknown authorUnknown author",
+  "company": "Applied Materials",
+  "file": "https://commons.wikimedia.org/wiki/File:Applied_Materials_Logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q621610"
  },
  "AMT": {
   "author": "American Tower CorporationSVG version by JBarta",
@@ -63,6 +95,22 @@
   "retrieved": "2026-11-11",
   "wikidata": "Q4745263"
  },
+ "CAT": {
+  "author": "Caterpillar Inc.",
+  "company": "Caterpillar",
+  "file": "https://commons.wikimedia.org/wiki/File:Caterpillar_logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q459965"
+ },
+ "COP": {
+  "author": "Unknown authorUnknown author",
+  "company": "ConocoPhillips",
+  "file": "https://commons.wikimedia.org/wiki/File:ConocoPhillips_Logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q214763"
+ },
  "D": {
   "author": "Dominion Energy",
   "company": "Dominion Energy",
@@ -70,6 +118,22 @@
   "licence": "Public domain",
   "retrieved": "2026-11-11",
   "wikidata": "Q677464"
+ },
+ "DE": {
+  "author": "John Deere",
+  "company": "Deere & Company",
+  "file": "https://commons.wikimedia.org/wiki/File:John_Deere_text_only.png",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q496302"
+ },
+ "DOW": {
+  "author": "Unknown authorUnknown author",
+  "company": "Dow",
+  "file": "https://commons.wikimedia.org/wiki/File:Dow_Chemical_logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q855639"
  },
  "DUK": {
   "author": "Duke Energy",
@@ -87,6 +151,14 @@
   "retrieved": "2026-11-11",
   "wikidata": "Q1127536"
  },
+ "EOG": {
+  "author": "EOG Resources, Inc.",
+  "company": "EOG Resources",
+  "file": "https://commons.wikimedia.org/wiki/File:EOG_Resources_logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q1275577"
+ },
  "EQIX": {
   "author": "™/®Equinix",
   "company": "Equinix",
@@ -95,6 +167,70 @@
   "retrieved": "2026-11-11",
   "wikidata": "Q851641"
  },
+ "ETN": {
+  "author": "Unknown authorUnknown author",
+  "company": "Eaton",
+  "file": "https://commons.wikimedia.org/wiki/File:Eaton_Corporation_Logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q48872"
+ },
+ "EXC": {
+  "author": "Exelon",
+  "company": "Exelon",
+  "file": "https://commons.wikimedia.org/wiki/File:Exelon_logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q1383669"
+ },
+ "F": {
+  "author": "Ford Motor Company",
+  "company": "Ford Motor",
+  "file": "https://commons.wikimedia.org/wiki/File:Ford_logo_flat.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q44294"
+ },
+ "FCX": {
+  "author": "Freeport-McMoRan",
+  "company": "Freeport-McMoRan",
+  "file": "https://commons.wikimedia.org/wiki/File:Freeport_McMoRan.png",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q1453620"
+ },
+ "FDX": {
+  "author": "Logo: FedEx\nFile: The original uploader was Tkgd2007 at English Wikipedia.",
+  "company": "FedEx",
+  "file": "https://commons.wikimedia.org/wiki/File:FedEx_Corporation_-_2016_Logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q459477"
+ },
+ "GE": {
+  "author": "GE Aerospace/Interbrand (design firm)",
+  "company": "GE Aerospace",
+  "file": "https://commons.wikimedia.org/wiki/File:GE_Aerospace_logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q1485061"
+ },
+ "GM": {
+  "author": "General Motors",
+  "company": "General Motors",
+  "file": "https://commons.wikimedia.org/wiki/File:General_motors_logo_with_wordmark.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q81965"
+ },
+ "HMC": {
+  "author": "TTTNIS",
+  "company": "Honda Motor",
+  "file": "https://commons.wikimedia.org/wiki/File:Honda_logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q9584"
+ },
  "IFT.NZ": {
   "author": "Updater437",
   "company": "Infratil",
@@ -102,6 +238,30 @@
   "licence": "CC BY-SA 4.0",
   "retrieved": "2026-11-11",
   "wikidata": "Q1662683"
+ },
+ "LHX": {
+  "author": "L3Harris Technologies",
+  "company": "L3Harris",
+  "file": "https://commons.wikimedia.org/wiki/File:L3Harris_Technologies_logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q30291091"
+ },
+ "LIN": {
+  "author": "Linde plc",
+  "company": "Linde",
+  "file": "https://commons.wikimedia.org/wiki/File:Linde_plc_logo.png",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q682759"
+ },
+ "LMT": {
+  "author": "Lockheed Martin",
+  "company": "Lockheed Martin",
+  "file": "https://commons.wikimedia.org/wiki/File:Lockheed_Martin_logo_%282011%E2%80%932022%29.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q7240"
  },
  "MET": {
   "author": "MetLife",
@@ -127,6 +287,30 @@
   "retrieved": "2026-11-11",
   "wikidata": "Q156959"
  },
+ "MRVL": {
+  "author": "Marvell Technology Group",
+  "company": "Marvell Technology",
+  "file": "https://commons.wikimedia.org/wiki/File:Marvell_Logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q1347782"
+ },
+ "MU": {
+  "author": "Micron Technology, Inc.",
+  "company": "Micron Technology",
+  "file": "https://commons.wikimedia.org/wiki/File:Micron_Technology_logo_2024.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q1197548"
+ },
+ "NEM": {
+  "author": "Newmont Corporation",
+  "company": "Newmont",
+  "file": "https://commons.wikimedia.org/wiki/File:Newmont-logo.png",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q1785405"
+ },
  "NGG": {
   "author": "Unknown authorUnknown author",
   "company": "National Grid",
@@ -134,6 +318,30 @@
   "licence": "Public domain",
   "retrieved": "2026-11-11",
   "wikidata": "Q1465461"
+ },
+ "NIO": {
+  "author": "Original:  NIO (car company)\n\nVectorization:  UnknownUnknown",
+  "company": "NIO",
+  "file": "https://commons.wikimedia.org/wiki/File:NIO_logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q29921278"
+ },
+ "NOC": {
+  "author": "Northrop Grumman",
+  "company": "Northrop Grumman",
+  "file": "https://commons.wikimedia.org/wiki/File:Northrop_Grumman_logo_blue-on-clear_2020.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q329953"
+ },
+ "NXPI": {
+  "author": "Great Brightstar",
+  "company": "NXP Semiconductors",
+  "file": "https://commons.wikimedia.org/wiki/File:NXP_Semiconductors_logo_2023.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q1155668"
  },
  "O": {
   "author": "Realty Income Corporation",
@@ -151,6 +359,14 @@
   "retrieved": "2026-11-11",
   "wikidata": "Q2013357"
  },
+ "PGR": {
+  "author": "Progressive Corporation",
+  "company": "Progressive",
+  "file": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Progressive_Corporation.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q7248721"
+ },
  "POLI.TA": {
   "author": "Open Studio, Tel Aviv",
   "company": "Bank Hapoalim",
@@ -159,6 +375,14 @@
   "retrieved": "2026-11-11",
   "wikidata": "Q2666775"
  },
+ "PRU": {
+  "author": "Prudential do Brasil Seguros de Vida S.A.",
+  "company": "Prudential Financial",
+  "file": "https://commons.wikimedia.org/wiki/File:Logo-prudential-do-brasil.png",
+  "licence": "CC BY-SA 3.0",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q2114414"
+ },
  "PSA": {
   "author": "Public Storage",
   "company": "Public Storage",
@@ -166,6 +390,38 @@
   "licence": "Public domain",
   "retrieved": "2026-11-11",
   "wikidata": "Q1156045"
+ },
+ "QCOM": {
+  "author": "Original:  Qualcomm",
+  "company": "Qualcomm",
+  "file": "https://commons.wikimedia.org/wiki/File:Qualcomm-Logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q544847"
+ },
+ "RIVN": {
+  "author": "Rivian, LLC",
+  "company": "Rivian Automotive",
+  "file": "https://commons.wikimedia.org/wiki/File:Rivian_logo_and_wordmark.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q7338847"
+ },
+ "RTX": {
+  "author": "RTX Corporation",
+  "company": "RTX",
+  "file": "https://commons.wikimedia.org/wiki/File:RTX_Raytheon_Technologies_logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q89368734"
+ },
+ "SLB": {
+  "author": "Schlumberger Limited",
+  "company": "SLB",
+  "file": "https://commons.wikimedia.org/wiki/File:SLB_Logo_2022.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q1425316"
  },
  "SPG": {
   "author": "Simon Property Group",
@@ -207,6 +463,22 @@
   "retrieved": "2026-11-11",
   "wikidata": "Q7829730"
  },
+ "TXN": {
+  "author": "Texas Instruments",
+  "company": "Texas Instruments",
+  "file": "https://commons.wikimedia.org/wiki/File:TexasInstruments-Logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q193412"
+ },
+ "UNP": {
+  "author": "Union Pacific (Union Pacific Railroad and Union Pacific Corporation)",
+  "company": "Union Pacific",
+  "file": "https://commons.wikimedia.org/wiki/File:Union_pacific_railroad_logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q20183163"
+ },
  "UPS": {
   "author": "United Parcel Service (UPS)",
   "company": "United Parcel Service",
@@ -214,6 +486,14 @@
   "licence": "Public domain",
   "retrieved": "2026-11-11",
   "wikidata": "Q155026"
+ },
+ "VICI": {
+  "author": "Original: Vici Properties Vector:  Masumrezarock100",
+  "company": "VICI Properties",
+  "file": "https://commons.wikimedia.org/wiki/File:Vici_Properties_logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q54263910"
  },
  "WELL": {
   "author": "Welltower Inc.",
@@ -230,5 +510,13 @@
   "licence": "Public domain",
   "retrieved": "2026-11-11",
   "wikidata": "Q1486956"
+ },
+ "XPEV": {
+  "author": "XPeng Motor",
+  "company": "XPeng",
+  "file": "https://commons.wikimedia.org/wiki/File:XPeng_logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q63035278"
  }
 }
