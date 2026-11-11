@@ -2,3 +2,5 @@
 .wf-thumb{align-self:start}
 
 .wf-move.positive i{background:rgba(99,223,178,.12)}.wf-move.negative i{background:rgba(255,148,148,.12)}
+
+.wf-article.wf-noimg{grid-template-columns:minmax(0,1fr)}
