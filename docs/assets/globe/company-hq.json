@@ -1,0 +1,5045 @@
+{
+ "schema": "investedia.company-hq.v1",
+ "licence": "CC0 1.0 (Wikidata)",
+ "checked_at": "2026-11-11",
+ "matched": 324,
+ "asked": 613,
+ "companies": {
+  "NVDA": {
+   "hq_city": "Santa Clara",
+   "hq_lat": 37.35,
+   "hq_lon": -121.9667,
+   "qid": "Q182477",
+   "hq_qid": "Q159260",
+   "company_label": "Nvidia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q182477",
+   "checked_at": "2026-11-11"
+  },
+  "AAPL": {
+   "hq_city": "Cupertino",
+   "hq_lat": 37.3175,
+   "hq_lon": -122.0419,
+   "qid": "Q312",
+   "hq_qid": "Q189471",
+   "company_label": "Apple Inc.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q312",
+   "checked_at": "2026-11-11"
+  },
+  "MSFT": {
+   "hq_city": "Redmond",
+   "hq_lat": 47.6694,
+   "hq_lon": -122.1239,
+   "qid": "Q2283",
+   "hq_qid": "Q223718",
+   "company_label": "Microsoft",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2283",
+   "checked_at": "2026-11-11"
+  },
+  "AMZN": {
+   "hq_city": "Seattle",
+   "hq_lat": 47.605,
+   "hq_lon": -122.33,
+   "qid": "Q3884",
+   "hq_qid": "Q5083",
+   "company_label": "Amazon",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3884",
+   "checked_at": "2026-11-11"
+  },
+  "GOOGL": {
+   "hq_city": "Mountain View",
+   "hq_lat": 37.3928,
+   "hq_lon": -122.0419,
+   "qid": "Q20800404",
+   "hq_qid": "Q486860",
+   "company_label": "Alphabet Inc.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q20800404",
+   "checked_at": "2026-11-11"
+  },
+  "META": {
+   "hq_city": "Menlo Park",
+   "hq_lat": 37.4542,
+   "hq_lon": -122.1786,
+   "qid": "Q380",
+   "hq_qid": "Q74195",
+   "company_label": "Meta Platforms",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q380",
+   "checked_at": "2026-11-11"
+  },
+  "TSLA": {
+   "hq_city": "Austin",
+   "hq_lat": 30.3,
+   "hq_lon": -97.7333,
+   "qid": "Q478214",
+   "hq_qid": "Q16559",
+   "company_label": "Tesla",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q478214",
+   "checked_at": "2026-11-11"
+  },
+  "AVGO": {
+   "hq_city": "Palo Alto",
+   "hq_lat": 37.4444,
+   "hq_lon": -122.16,
+   "qid": "Q790060",
+   "hq_qid": "Q47265",
+   "company_label": "Broadcom",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q790060",
+   "checked_at": "2026-11-11"
+  },
+  "JPM": {
+   "hq_city": "New York City",
+   "hq_lat": 40.7128,
+   "hq_lon": -74.0061,
+   "qid": "Q192314",
+   "hq_qid": "Q60",
+   "company_label": "JPMorgan Chase",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q192314",
+   "checked_at": "2026-11-11"
+  },
+  "LLY": {
+   "hq_city": "Indianapolis",
+   "hq_lat": 39.7686,
+   "hq_lon": -86.1581,
+   "qid": "Q632240",
+   "hq_qid": "Q6346",
+   "company_label": "Eli Lilly and Company",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q632240",
+   "checked_at": "2026-11-11"
+  },
+  "V": {
+   "hq_city": "Mission Rock",
+   "hq_lat": 37.7744,
+   "hq_lon": -122.3883,
+   "qid": "Q328840",
+   "hq_qid": "Q110653013",
+   "company_label": "Visa Inc.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q328840",
+   "checked_at": "2026-11-11"
+  },
+  "DELL": {
+   "hq_city": "Round Rock",
+   "hq_lat": 30.515,
+   "hq_lon": -97.6725,
+   "qid": "Q27500963",
+   "hq_qid": "Q128334",
+   "company_label": "Dell Technologies",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q27500963",
+   "checked_at": "2026-11-11"
+  },
+  "INTC": {
+   "hq_city": "Santa Clara",
+   "hq_lat": 37.35,
+   "hq_lon": -121.9667,
+   "qid": "Q248",
+   "hq_qid": "Q159260",
+   "company_label": "Intel",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q248",
+   "checked_at": "2026-11-11"
+  },
+  "NFLX": {
+   "hq_city": "Los Gatos",
+   "hq_lat": 37.2361,
+   "hq_lon": -121.9617,
+   "qid": "Q116452644",
+   "hq_qid": "Q747509",
+   "company_label": "Netflix, Inc.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q116452644",
+   "checked_at": "2026-11-11"
+  },
+  "GME": {
+   "hq_city": "Grapevine",
+   "hq_lat": 32.935,
+   "hq_lon": -97.0858,
+   "qid": "Q202210",
+   "hq_qid": "Q185216",
+   "company_label": "GameStop",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q202210",
+   "checked_at": "2026-11-11"
+  },
+  "ORCL": {
+   "hq_city": "Austin",
+   "hq_lat": 30.3,
+   "hq_lon": -97.7333,
+   "qid": "Q19900",
+   "hq_qid": "Q16559",
+   "company_label": "Oracle Corporation",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q19900",
+   "checked_at": "2026-11-11"
+  },
+  "ADBE": {
+   "hq_city": "San Jose",
+   "hq_lat": 37.3042,
+   "hq_lon": -121.8728,
+   "qid": "Q11463",
+   "hq_qid": "Q16553",
+   "company_label": "Adobe",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q11463",
+   "checked_at": "2026-11-11"
+  },
+  "SAP": {
+   "hq_city": "Walldorf",
+   "hq_lat": 49.3,
+   "hq_lon": 8.65,
+   "qid": "Q552581",
+   "hq_qid": "Q22872",
+   "company_label": "SAP",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q552581",
+   "checked_at": "2026-11-11"
+  },
+  "KO": {
+   "hq_city": "Atlanta",
+   "hq_lat": 33.7544,
+   "hq_lon": -84.3897,
+   "qid": "Q3295867",
+   "hq_qid": "Q23556",
+   "company_label": "The Coca-Cola Company",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3295867",
+   "checked_at": "2026-11-11"
+  },
+  "PEP": {
+   "hq_city": "Purchase",
+   "hq_lat": 41.0406,
+   "hq_lon": -73.7144,
+   "qid": "Q334800",
+   "hq_qid": "Q642275",
+   "company_label": "PepsiCo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q334800",
+   "checked_at": "2026-11-11"
+  },
+  "BAC": {
+   "hq_city": "Charlotte",
+   "hq_lat": 35.2269,
+   "hq_lon": -80.8433,
+   "qid": "Q487907",
+   "hq_qid": "Q16565",
+   "company_label": "Bank of America",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q487907",
+   "checked_at": "2026-11-11"
+  },
+  "WFC": {
+   "hq_city": "San Francisco",
+   "hq_lat": 37.775,
+   "hq_lon": -122.4194,
+   "qid": "Q744149",
+   "hq_qid": "Q62",
+   "company_label": "Wells Fargo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q744149",
+   "checked_at": "2026-11-11"
+  },
+  "UNH": {
+   "hq_city": "Minnetonka",
+   "hq_lat": 44.9133,
+   "hq_lon": -93.5033,
+   "qid": "Q2103926",
+   "hq_qid": "Q923384",
+   "company_label": "UnitedHealth Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2103926",
+   "checked_at": "2026-11-11"
+  },
+  "JNJ": {
+   "hq_city": "New Brunswick",
+   "hq_lat": 40.4867,
+   "hq_lon": -74.4444,
+   "qid": "Q333718",
+   "hq_qid": "Q138338",
+   "company_label": "Johnson & Johnson",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q333718",
+   "checked_at": "2026-11-11"
+  },
+  "PFE": {
+   "hq_city": "New York City",
+   "hq_lat": 40.7128,
+   "hq_lon": -74.0061,
+   "qid": "Q206921",
+   "hq_qid": "Q60",
+   "company_label": "Pfizer",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q206921",
+   "checked_at": "2026-11-11"
+  },
+  "SHEL": {
+   "hq_city": "London",
+   "hq_lat": 51.5072,
+   "hq_lon": -0.1275,
+   "qid": "Q154950",
+   "hq_qid": "Q84",
+   "company_label": "Shell",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q154950",
+   "checked_at": "2026-11-11"
+  },
+  "TTE": {
+   "hq_city": "Courbevoie",
+   "hq_lat": 48.8972,
+   "hq_lon": 2.2522,
+   "qid": "Q154037",
+   "hq_qid": "Q189715",
+   "company_label": "TotalEnergies",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q154037",
+   "checked_at": "2026-11-11"
+  },
+  "NEE": {
+   "hq_city": "Juno Beach",
+   "hq_lat": 26.8733,
+   "hq_lon": -80.0542,
+   "qid": "Q967868",
+   "hq_qid": "Q668308",
+   "company_label": "NextEra Energy",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q967868",
+   "checked_at": "2026-11-11"
+  },
+  "FSLR": {
+   "hq_city": "Tempe",
+   "hq_lat": 33.4256,
+   "hq_lon": -111.94,
+   "qid": "Q1138888",
+   "hq_qid": "Q51685",
+   "company_label": "First Solar",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1138888",
+   "checked_at": "2026-11-11"
+  },
+  "MC": {
+   "hq_city": "Paris",
+   "hq_lat": 48.8663,
+   "hq_lon": 2.3055,
+   "qid": "Q504998",
+   "hq_qid": "Q114703685",
+   "company_label": "LVMH",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
+   "source_url": "https://www.wikidata.org/entity/Q504998",
+   "checked_at": "2026-11-11",
+   "hq_site_label": "Headquarters of LVMH",
+   "hq_city_qid": "Q90",
+   "city_admin_path": [
+    "Q114703685",
+    "Q270230",
+    "Q90"
+   ],
+   "city_source_url": "https://www.wikidata.org/wiki/Q90",
+   "city_evidence": {
+    "classification": "P31/P279 city",
+    "capital_of": [
+     "Q142"
+    ]
+   }
+  },
+  "BABA": {
+   "hq_city": "Binjiang District",
+   "hq_lat": 30.2108,
+   "hq_lon": 120.2075,
+   "qid": "Q1359568",
+   "hq_qid": "Q863888",
+   "company_label": "Alibaba Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1359568",
+   "checked_at": "2026-11-11"
+  },
+  "SHOP": {
+   "hq_city": "Ottawa",
+   "hq_lat": 45.4247,
+   "hq_lon": -75.695,
+   "qid": "Q7501150",
+   "hq_qid": "Q1930",
+   "company_label": "Shopify",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7501150",
+   "checked_at": "2026-11-11"
+  },
+  "PBR": {
+   "hq_city": "Rio de Janeiro",
+   "hq_lat": -22.9111,
+   "hq_lon": -43.2056,
+   "qid": "Q210047",
+   "hq_qid": "Q8678",
+   "company_label": "Petrobras",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q210047",
+   "checked_at": "2026-11-11"
+  },
+  "NESN": {
+   "hq_city": "Vevey",
+   "hq_lat": 46.4667,
+   "hq_lon": 6.85,
+   "qid": "Q160746",
+   "hq_qid": "Q68160",
+   "company_label": "Nestlé",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q160746",
+   "checked_at": "2026-11-11"
+  },
+  "NOVN": {
+   "hq_city": "Basel",
+   "hq_lat": 47.5581,
+   "hq_lon": 7.5878,
+   "qid": "Q507154",
+   "hq_qid": "Q78",
+   "company_label": "Novartis",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q507154",
+   "checked_at": "2026-11-11"
+  },
+  "ROG": {
+   "hq_city": "Basel",
+   "hq_lat": 47.5581,
+   "hq_lon": 7.5878,
+   "qid": "Q25463170",
+   "hq_qid": "Q78",
+   "company_label": "Roche Holding",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q25463170",
+   "checked_at": "2026-11-11"
+  },
+  "ULVR": {
+   "hq_city": "London",
+   "hq_lat": 51.5072,
+   "hq_lon": -0.1275,
+   "qid": "Q157062",
+   "hq_qid": "Q84",
+   "company_label": "Unilever",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q157062",
+   "checked_at": "2026-11-11"
+  },
+  "SIE": {
+   "hq_city": "Munich",
+   "hq_lat": 48.1375,
+   "hq_lon": 11.575,
+   "qid": "Q81230",
+   "hq_qid": "Q1726",
+   "company_label": "Siemens",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q81230",
+   "checked_at": "2026-11-11"
+  },
+  "ALV": {
+   "hq_city": "Munich",
+   "hq_lat": 48.1375,
+   "hq_lon": 11.575,
+   "qid": "Q487292",
+   "hq_qid": "Q1726",
+   "company_label": "Allianz SE",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q487292",
+   "checked_at": "2026-11-11"
+  },
+  "RHM": {
+   "hq_city": "Düsseldorf",
+   "hq_lat": 51.2256,
+   "hq_lon": 6.7767,
+   "qid": "Q161544",
+   "hq_qid": "Q1718",
+   "company_label": "Rheinmetall AG",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q161544",
+   "checked_at": "2026-11-11"
+  },
+  "AIR": {
+   "hq_city": "Leiden",
+   "hq_lat": 52.16,
+   "hq_lon": 4.49,
+   "qid": "Q2311",
+   "hq_qid": "Q43631",
+   "company_label": "Airbus",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2311",
+   "checked_at": "2026-11-11"
+  },
+  "OR": {
+   "hq_city": "Paris",
+   "hq_lat": 48.8567,
+   "hq_lon": 2.3522,
+   "qid": "Q156077",
+   "hq_qid": "Q90",
+   "company_label": "L'Oréal",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q156077",
+   "checked_at": "2026-11-11"
+  },
+  "ITX": {
+   "hq_city": "Arteixo",
+   "hq_lat": 43.3,
+   "hq_lon": -8.5,
+   "qid": "Q44504",
+   "hq_qid": "Q996161",
+   "company_label": "Inditex",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q44504",
+   "checked_at": "2026-11-11"
+  },
+  "SAN": {
+   "hq_city": "Santander",
+   "hq_lat": 43.4667,
+   "hq_lon": -3.8,
+   "qid": "Q6496310",
+   "hq_qid": "Q12233",
+   "company_label": "Banco Santander",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q6496310",
+   "checked_at": "2026-11-11"
+  },
+  "ENEL": {
+   "hq_city": "Rome",
+   "hq_lat": 41.8931,
+   "hq_lon": 12.4828,
+   "qid": "Q651222",
+   "hq_qid": "Q220",
+   "company_label": "Enel",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q651222",
+   "checked_at": "2026-11-11"
+  },
+  "SONY": {
+   "hq_city": "Minato",
+   "hq_lat": 35.658,
+   "hq_lon": 139.7515,
+   "qid": "Q41187",
+   "hq_qid": "Q190088",
+   "company_label": "Sony Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q41187",
+   "checked_at": "2026-11-11"
+  },
+  "NTDOY": {
+   "hq_city": "Kyoto",
+   "hq_lat": 35.0116,
+   "hq_lon": 135.7681,
+   "qid": "Q8093",
+   "hq_qid": "Q34600",
+   "company_label": "Nintendo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q8093",
+   "checked_at": "2026-11-11"
+  },
+  "INFY": {
+   "hq_city": "Bengaluru",
+   "hq_lat": 12.9791,
+   "hq_lon": 77.5913,
+   "qid": "Q26989",
+   "hq_qid": "Q1355",
+   "company_label": "Infosys limited",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q26989",
+   "checked_at": "2026-11-11"
+  },
+  "HDB": {
+   "hq_city": "Mumbai",
+   "hq_lat": 19.0758,
+   "hq_lon": 72.8775,
+   "qid": "Q631047",
+   "hq_qid": "Q1156",
+   "company_label": "HDFC Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q631047",
+   "checked_at": "2026-11-11"
+  },
+  "ENB": {
+   "hq_city": "Calgary",
+   "hq_lat": 51.0475,
+   "hq_lon": -114.0625,
+   "qid": "Q1339966",
+   "hq_qid": "Q36312",
+   "company_label": "Enbridge",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1339966",
+   "checked_at": "2026-11-11"
+  },
+  "CNQ": {
+   "hq_city": "Calgary",
+   "hq_lat": 51.0475,
+   "hq_lon": -114.0625,
+   "qid": "Q1032229",
+   "hq_qid": "Q36312",
+   "company_label": "Canadian Natural Resources",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1032229",
+   "checked_at": "2026-11-11"
+  },
+  "VALE": {
+   "hq_city": "Rio de Janeiro",
+   "hq_lat": -22.9111,
+   "hq_lon": -43.2056,
+   "qid": "Q583268",
+   "hq_qid": "Q8678",
+   "company_label": "Vale",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q583268",
+   "checked_at": "2026-11-11"
+  },
+  "ITUB": {
+   "hq_city": "São Paulo",
+   "hq_lat": -23.5504,
+   "hq_lon": -46.6339,
+   "qid": "Q1424293",
+   "hq_qid": "Q174",
+   "company_label": "Itaú Unibanco",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1424293",
+   "checked_at": "2026-11-11"
+  },
+  "AMX": {
+   "hq_city": "Mexico City",
+   "hq_lat": 19.3538,
+   "hq_lon": -99.1359,
+   "qid": "Q482267",
+   "hq_qid": "Q1489",
+   "company_label": "América Móvil",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q482267",
+   "checked_at": "2026-11-11"
+  },
+  "FMX": {
+   "hq_city": "Monterrey",
+   "hq_lat": 25.6844,
+   "hq_lon": -100.3181,
+   "qid": "Q1435628",
+   "hq_qid": "Q81033",
+   "company_label": "FEMSA",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1435628",
+   "checked_at": "2026-11-11"
+  },
+  "BHP": {
+   "hq_city": "Melbourne",
+   "hq_lat": -37.8142,
+   "hq_lon": 144.9631,
+   "qid": "Q625713",
+   "hq_qid": "Q3141",
+   "company_label": "BHP Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q625713",
+   "checked_at": "2026-11-11"
+  },
+  "FMG": {
+   "hq_city": "Perth",
+   "hq_lat": -31.9558,
+   "hq_lon": 115.8597,
+   "qid": "Q1438957",
+   "hq_qid": "Q3183",
+   "company_label": "Fortescue Ltd",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1438957",
+   "checked_at": "2026-11-11"
+  },
+  "CBA": {
+   "hq_city": "Sydney",
+   "hq_lat": -33.8678,
+   "hq_lon": 151.21,
+   "qid": "Q285328",
+   "hq_qid": "Q3130",
+   "company_label": "Commonwealth Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q285328",
+   "checked_at": "2026-11-11"
+  },
+  "WBC": {
+   "hq_city": "Westpac Place",
+   "hq_lat": -33.8658,
+   "hq_lon": 151.2041,
+   "qid": "Q2031726",
+   "hq_qid": "Q7989541",
+   "company_label": "Westpac",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2031726",
+   "checked_at": "2026-11-11"
+  },
+  "NAB": {
+   "hq_city": "Melbourne",
+   "hq_lat": -37.8142,
+   "hq_lon": 144.9631,
+   "qid": "Q1430985",
+   "hq_qid": "Q3141",
+   "company_label": "National Australia Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1430985",
+   "checked_at": "2026-11-11"
+  },
+  "CSL": {
+   "hq_city": "Melbourne",
+   "hq_lat": -37.8142,
+   "hq_lon": 144.9631,
+   "qid": "Q908265",
+   "hq_qid": "Q3141",
+   "company_label": "CSL Limited",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q908265",
+   "checked_at": "2026-11-11"
+  },
+  "WES": {
+   "hq_city": "Perth",
+   "hq_lat": -31.9558,
+   "hq_lon": 115.8597,
+   "qid": "Q908144",
+   "hq_qid": "Q3183",
+   "company_label": "Wesfarmers",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q908144",
+   "checked_at": "2026-11-11"
+  },
+  "FPH": {
+   "hq_city": "Auckland",
+   "hq_lat": -36.8492,
+   "hq_lon": 174.7653,
+   "qid": "Q5454753",
+   "hq_qid": "Q37100",
+   "company_label": "Fisher & Paykel Healthcare",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5454753",
+   "checked_at": "2026-11-11"
+  },
+  "GFI": {
+   "hq_city": "Johannesburg",
+   "hq_lat": -26.2044,
+   "hq_lon": 28.0416,
+   "qid": "Q1534597",
+   "hq_qid": "Q34647",
+   "company_label": "Gold Fields",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1534597",
+   "checked_at": "2026-11-11"
+  },
+  "SSL": {
+   "hq_city": "Johannesburg",
+   "hq_lat": -26.2044,
+   "hq_lon": 28.0416,
+   "qid": "Q905998",
+   "hq_qid": "Q34647",
+   "company_label": "Sasol",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q905998",
+   "checked_at": "2026-11-11"
+  },
+  "SHP": {
+   "hq_city": "Brackenfell",
+   "hq_lat": -33.8667,
+   "hq_lon": 18.6833,
+   "qid": "Q1857639",
+   "hq_qid": "Q4805472",
+   "company_label": "Shoprite",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1857639",
+   "checked_at": "2026-11-11"
+  },
+  "EMAAR": {
+   "hq_city": "Dubai",
+   "hq_lat": 25.2697,
+   "hq_lon": 55.3094,
+   "qid": "Q1153463",
+   "hq_qid": "Q612",
+   "company_label": "Emaar Properties",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1153463",
+   "checked_at": "2026-11-11"
+  },
+  "NICE": {
+   "hq_city": "Ra'anana",
+   "hq_lat": 32.1833,
+   "hq_lon": 34.8667,
+   "qid": "Q2091479",
+   "hq_qid": "Q309164",
+   "company_label": "Nice Ltd",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2091479",
+   "checked_at": "2026-11-11"
+  },
+  "BP.L": {
+   "hq_city": "London",
+   "hq_lat": 51.5072,
+   "hq_lon": -0.1275,
+   "qid": "Q152057",
+   "hq_qid": "Q84",
+   "company_label": "BP",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q152057",
+   "checked_at": "2026-11-11"
+  },
+  "GSK.L": {
+   "hq_city": "London",
+   "hq_lat": 51.5072,
+   "hq_lon": -0.1275,
+   "qid": "Q212322",
+   "hq_qid": "Q84",
+   "company_label": "GSK",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q212322",
+   "checked_at": "2026-11-11"
+  },
+  "BATS.L": {
+   "hq_city": "London",
+   "hq_lat": 51.5072,
+   "hq_lon": -0.1275,
+   "qid": "Q856411",
+   "hq_qid": "Q84",
+   "company_label": "British American Tobacco",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q856411",
+   "checked_at": "2026-11-11"
+  },
+  "DGE.L": {
+   "hq_city": "London",
+   "hq_lat": 51.5072,
+   "hq_lon": -0.1275,
+   "qid": "Q161140",
+   "hq_qid": "Q84",
+   "company_label": "Diageo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q161140",
+   "checked_at": "2026-11-11"
+  },
+  "LSEG.L": {
+   "hq_city": "London",
+   "hq_lat": 51.5072,
+   "hq_lon": -0.1275,
+   "qid": "Q5573225",
+   "hq_qid": "Q84",
+   "company_label": "London Stock Exchange Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5573225",
+   "checked_at": "2026-11-11"
+  },
+  "LLOY.L": {
+   "hq_city": "London",
+   "hq_lat": 51.5072,
+   "hq_lon": -0.1275,
+   "qid": "Q1152764",
+   "hq_qid": "Q84",
+   "company_label": "Lloyds Banking Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1152764",
+   "checked_at": "2026-11-11"
+  },
+  "RR.L": {
+   "hq_city": "London",
+   "hq_lat": 51.5072,
+   "hq_lon": -0.1275,
+   "qid": "Q243278",
+   "hq_qid": "Q84",
+   "company_label": "Rolls-Royce",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q243278",
+   "checked_at": "2026-11-11"
+  },
+  "DTE.DE": {
+   "hq_city": "Bonn",
+   "hq_lat": 50.7353,
+   "hq_lon": 7.1022,
+   "qid": "Q9396",
+   "hq_qid": "Q586",
+   "company_label": "Deutsche Telekom",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q9396",
+   "checked_at": "2026-11-11"
+  },
+  "MBG.DE": {
+   "hq_city": "Stuttgart",
+   "hq_lat": 48.7775,
+   "hq_lon": 9.18,
+   "qid": "Q27530",
+   "hq_qid": "Q1022",
+   "company_label": "Mercedes-Benz Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q27530",
+   "checked_at": "2026-11-11"
+  },
+  "BAS.DE": {
+   "hq_city": "Ludwigshafen",
+   "hq_lat": 49.4811,
+   "hq_lon": 8.4353,
+   "qid": "Q9401",
+   "hq_qid": "Q2910",
+   "company_label": "BASF",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q9401",
+   "checked_at": "2026-11-11"
+  },
+  "BAYN.DE": {
+   "hq_city": "Leverkusen",
+   "hq_lat": 51.0333,
+   "hq_lon": 6.9833,
+   "qid": "Q152051",
+   "hq_qid": "Q2938",
+   "company_label": "Bayer",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q152051",
+   "checked_at": "2026-11-11"
+  },
+  "ADS.DE": {
+   "hq_city": "Herzogenaurach",
+   "hq_lat": 49.57,
+   "hq_lon": 10.8819,
+   "qid": "Q3895",
+   "hq_qid": "Q1615401",
+   "company_label": "Adidas AG",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3895",
+   "checked_at": "2026-11-11"
+  },
+  "IFX.DE": {
+   "hq_city": "Neubiberg",
+   "hq_lat": 48.0747,
+   "hq_lon": 11.6769,
+   "qid": "Q311394",
+   "hq_qid": "Q258208",
+   "company_label": "Infineon Technologies",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q311394",
+   "checked_at": "2026-11-11"
+  },
+  "VOW3.DE": {
+   "hq_city": "Wolfsburg",
+   "hq_lat": 52.4231,
+   "hq_lon": 10.7872,
+   "qid": "Q156578",
+   "hq_qid": "Q3014",
+   "company_label": "Volkswagen Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q156578",
+   "checked_at": "2026-11-11"
+  },
+  "DHL.DE": {
+   "hq_city": "Bonn",
+   "hq_lat": 50.7155,
+   "hq_lon": 7.13,
+   "qid": "Q157645",
+   "hq_qid": "Q167195",
+   "company_label": "DHL Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
+   "source_url": "https://www.wikidata.org/entity/Q157645",
+   "checked_at": "2026-11-11",
+   "hq_site_label": "Post Tower",
+   "hq_city_qid": "Q586",
+   "city_admin_path": [
+    "Q167195",
+    "Q892684",
+    "Q586"
+   ],
+   "city_source_url": "https://www.wikidata.org/wiki/Q586",
+   "city_evidence": {
+    "classification": "P31/P279 city",
+    "capital_of": []
+   }
+  },
+  "OR.PA": {
+   "hq_city": "Paris",
+   "hq_lat": 48.8567,
+   "hq_lon": 2.3522,
+   "qid": "Q156077",
+   "hq_qid": "Q90",
+   "company_label": "L'Oréal",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q156077",
+   "checked_at": "2026-11-11"
+  },
+  "SAN.PA": {
+   "hq_city": "Paris",
+   "hq_lat": 48.8567,
+   "hq_lon": 2.3522,
+   "qid": "Q158205",
+   "hq_qid": "Q90",
+   "company_label": "Sanofi",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q158205",
+   "checked_at": "2026-11-11"
+  },
+  "KER.PA": {
+   "hq_city": "Paris",
+   "hq_lat": 48.8567,
+   "hq_lon": 2.3522,
+   "qid": "Q931207",
+   "hq_qid": "Q90",
+   "company_label": "Kering",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q931207",
+   "checked_at": "2026-11-11"
+  },
+  "AI.PA": {
+   "hq_city": "Paris",
+   "hq_lat": 48.8628,
+   "hq_lon": 2.31,
+   "qid": "Q407448",
+   "hq_qid": "Q1146988",
+   "company_label": "Air Liquide",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
+   "source_url": "https://www.wikidata.org/entity/Q407448",
+   "checked_at": "2026-11-11",
+   "hq_site_label": "quai d'Orsay",
+   "hq_city_qid": "Q90",
+   "city_admin_path": [
+    "Q1146988",
+    "Q259463",
+    "Q90"
+   ],
+   "city_source_url": "https://www.wikidata.org/wiki/Q90",
+   "city_evidence": {
+    "classification": "P31/P279 city",
+    "capital_of": [
+     "Q142"
+    ]
+   }
+  },
+  "SAF.PA": {
+   "hq_city": "Paris",
+   "hq_lat": 48.8567,
+   "hq_lon": 2.3522,
+   "qid": "Q1886126",
+   "hq_qid": "Q90",
+   "company_label": "Safran",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1886126",
+   "checked_at": "2026-11-11"
+  },
+  "CS.PA": {
+   "hq_city": "Paris",
+   "hq_lat": 48.8567,
+   "hq_lon": 2.3522,
+   "qid": "Q160054",
+   "hq_qid": "Q90",
+   "company_label": "AXA",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q160054",
+   "checked_at": "2026-11-11"
+  },
+  "DG.PA": {
+   "hq_city": "Nanterre",
+   "hq_lat": 48.8906,
+   "hq_lon": 2.2036,
+   "qid": "Q1475312",
+   "hq_qid": "Q170507",
+   "company_label": "Vinci",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1475312",
+   "checked_at": "2026-11-11"
+  },
+  "EL.PA": {
+   "hq_city": "Charenton-le-Pont",
+   "hq_lat": 48.8214,
+   "hq_lon": 2.4119,
+   "qid": "Q56853086",
+   "hq_qid": "Q212793",
+   "company_label": "EssilorLuxottica",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q56853086",
+   "checked_at": "2026-11-11"
+  },
+  "PRX.AS": {
+   "hq_city": "Amsterdam",
+   "hq_lat": 52.3667,
+   "hq_lon": 4.8833,
+   "qid": "Q67389109",
+   "hq_qid": "Q727",
+   "company_label": "Prosus",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q67389109",
+   "checked_at": "2026-11-11"
+  },
+  "ADYEN.AS": {
+   "hq_city": "Amsterdam",
+   "hq_lat": 52.3667,
+   "hq_lon": 4.8833,
+   "qid": "Q4686934",
+   "hq_qid": "Q727",
+   "company_label": "Adyen",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4686934",
+   "checked_at": "2026-11-11"
+  },
+  "HEIA.AS": {
+   "hq_city": "Amsterdam",
+   "hq_lat": 52.3667,
+   "hq_lon": 4.8833,
+   "qid": "Q180855",
+   "hq_qid": "Q727",
+   "company_label": "Heineken International",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q180855",
+   "checked_at": "2026-11-11"
+  },
+  "WKL.AS": {
+   "hq_city": "Alphen aan den Rijn",
+   "hq_lat": 52.1333,
+   "hq_lon": 4.65,
+   "qid": "Q249798",
+   "hq_qid": "Q213246",
+   "company_label": "Wolters Kluwer",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q249798",
+   "checked_at": "2026-11-11"
+  },
+  "NESN.SW": {
+   "hq_city": "Vevey",
+   "hq_lat": 46.4667,
+   "hq_lon": 6.85,
+   "qid": "Q160746",
+   "hq_qid": "Q68160",
+   "company_label": "Nestlé",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q160746",
+   "checked_at": "2026-11-11"
+  },
+  "UBSG.SW": {
+   "hq_city": "Zurich",
+   "hq_lat": 47.3744,
+   "hq_lon": 8.5411,
+   "qid": "Q193199",
+   "hq_qid": "Q72",
+   "company_label": "UBS",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q193199",
+   "checked_at": "2026-11-11"
+  },
+  "ZURN.SW": {
+   "hq_city": "Zurich",
+   "hq_lat": 47.3744,
+   "hq_lon": 8.5411,
+   "qid": "Q230426",
+   "hq_qid": "Q72",
+   "company_label": "Zurich Insurance Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q230426",
+   "checked_at": "2026-11-11"
+  },
+  "SIKA.SW": {
+   "hq_city": "Baar",
+   "hq_lat": 47.1956,
+   "hq_lon": 8.5264,
+   "qid": "Q691382",
+   "hq_qid": "Q64087",
+   "company_label": "Sika AG",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q691382",
+   "checked_at": "2026-11-11"
+  },
+  "REP.MC": {
+   "hq_city": "Madrid",
+   "hq_lat": 40.3978,
+   "hq_lon": -3.6831,
+   "qid": "Q174747",
+   "hq_qid": "Q17449249",
+   "company_label": "Repsol",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P36 country capital",
+   "source_url": "https://www.wikidata.org/entity/Q174747",
+   "checked_at": "2026-11-11",
+   "hq_site_label": "Repsol Campus",
+   "hq_city_qid": "Q2807",
+   "city_admin_path": [
+    "Q17449249",
+    "Q2807"
+   ],
+   "city_source_url": "https://www.wikidata.org/wiki/Q2807",
+   "city_evidence": {
+    "classification": "P36 country capital",
+    "capital_of": [
+     "Q29"
+    ]
+   }
+  },
+  "AMS.MC": {
+   "hq_city": "Madrid",
+   "hq_lat": 40.4169,
+   "hq_lon": -3.7033,
+   "qid": "Q696061",
+   "hq_qid": "Q2807",
+   "company_label": "Amadeus IT Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q696061",
+   "checked_at": "2026-11-11"
+  },
+  "ISP.MI": {
+   "hq_city": "Turin",
+   "hq_lat": 45.0792,
+   "hq_lon": 7.6761,
+   "qid": "Q1343118",
+   "hq_qid": "Q495",
+   "company_label": "Gruppo Intesa Sanpaolo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1343118",
+   "checked_at": "2026-11-11"
+  },
+  "UCG.MI": {
+   "hq_city": "Milan",
+   "hq_lat": 45.4838,
+   "hq_lon": 9.1899,
+   "qid": "Q45568",
+   "hq_qid": "Q963111",
+   "company_label": "UniCredit",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
+   "source_url": "https://www.wikidata.org/entity/Q45568",
+   "checked_at": "2026-11-11",
+   "hq_site_label": "UniCredit Tower",
+   "hq_city_qid": "Q490",
+   "city_admin_path": [
+    "Q963111",
+    "Q490"
+   ],
+   "city_source_url": "https://www.wikidata.org/wiki/Q490",
+   "city_evidence": {
+    "classification": "P31/P279 city",
+    "capital_of": []
+   }
+  },
+  "STLAM.MI": {
+   "hq_city": "Amsterdam",
+   "hq_lat": 52.3667,
+   "hq_lon": 4.8833,
+   "qid": "Q97439162",
+   "hq_qid": "Q727",
+   "company_label": "Stellantis",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q97439162",
+   "checked_at": "2026-11-11"
+  },
+  "G.MI": {
+   "hq_city": "Trieste",
+   "hq_lat": 45.6503,
+   "hq_lon": 13.7703,
+   "qid": "Q670482",
+   "hq_qid": "Q546",
+   "company_label": "Assicurazioni Generali",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q670482",
+   "checked_at": "2026-11-11"
+  },
+  "DSV.CO": {
+   "hq_city": "Hedehusene",
+   "hq_lat": 55.65,
+   "hq_lon": 12.1986,
+   "qid": "Q1155771",
+   "hq_qid": "Q2248624",
+   "company_label": "DSV",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1155771",
+   "checked_at": "2026-11-11"
+  },
+  "EQNR.OL": {
+   "hq_city": "Stavanger",
+   "hq_lat": 58.97,
+   "hq_lon": 5.7314,
+   "qid": "Q1776022",
+   "hq_qid": "Q25416",
+   "company_label": "Equinor ASA",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1776022",
+   "checked_at": "2026-11-11"
+  },
+  "DNB.OL": {
+   "hq_city": "Oslo",
+   "hq_lat": 59.9133,
+   "hq_lon": 10.7389,
+   "qid": "Q80788",
+   "hq_qid": "Q585",
+   "company_label": "DNB Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q80788",
+   "checked_at": "2026-11-11"
+  },
+  "NHY.OL": {
+   "hq_city": "Oslo",
+   "hq_lat": 59.9133,
+   "hq_lon": 10.7389,
+   "qid": "Q511031",
+   "hq_qid": "Q585",
+   "company_label": "Norsk Hydro",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q511031",
+   "checked_at": "2026-11-11"
+  },
+  "TEL.OL": {
+   "hq_city": "Fornebu",
+   "hq_lat": 59.8958,
+   "hq_lon": 10.6167,
+   "qid": "Q845632",
+   "hq_qid": "Q2363688",
+   "company_label": "Telenor",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q845632",
+   "checked_at": "2026-11-11"
+  },
+  "MOWI.OL": {
+   "hq_city": "Bergen",
+   "hq_lat": 60.3925,
+   "hq_lon": 5.3233,
+   "qid": "Q776750",
+   "hq_qid": "Q26793",
+   "company_label": "Mowi",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q776750",
+   "checked_at": "2026-11-11"
+  },
+  "KNEBV.HE": {
+   "hq_city": "Espoo",
+   "hq_lat": 60.2056,
+   "hq_lon": 24.6556,
+   "qid": "Q1146592",
+   "hq_qid": "Q47034",
+   "company_label": "Kone",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1146592",
+   "checked_at": "2026-11-11"
+  },
+  "SAMPO.HE": {
+   "hq_city": "Helsinki",
+   "hq_lat": 60.1708,
+   "hq_lon": 24.9375,
+   "qid": "Q1640495",
+   "hq_qid": "Q1757",
+   "company_label": "Sampo Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1640495",
+   "checked_at": "2026-11-11"
+  },
+  "6861.T": {
+   "hq_city": "Osaka",
+   "hq_lat": 34.6938,
+   "hq_lon": 135.5021,
+   "qid": "Q1475699",
+   "hq_qid": "Q35765",
+   "company_label": "Keyence",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1475699",
+   "checked_at": "2026-11-11"
+  },
+  "6098.T": {
+   "hq_city": "Chiyoda",
+   "hq_lat": 35.6939,
+   "hq_lon": 139.7536,
+   "qid": "Q2135836",
+   "hq_qid": "Q214051",
+   "company_label": "Recruit Holdings",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2135836",
+   "checked_at": "2026-11-11"
+  },
+  "9432.T": {
+   "hq_city": "Ōtemachi",
+   "hq_lat": 35.6871,
+   "hq_lon": 139.7643,
+   "qid": "Q1054787",
+   "hq_qid": "Q1332496",
+   "company_label": "NTT, Inc.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1054787",
+   "checked_at": "2026-11-11"
+  },
+  "8035.T": {
+   "hq_city": "Akasaka",
+   "hq_lat": 35.6714,
+   "hq_lon": 139.7344,
+   "qid": "Q1351484",
+   "hq_qid": "Q416131",
+   "company_label": "Tokyo Electron",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1351484",
+   "checked_at": "2026-11-11"
+  },
+  "4063.T": {
+   "hq_city": "Chiyoda",
+   "hq_lat": 35.6939,
+   "hq_lon": 139.7536,
+   "qid": "Q904284",
+   "hq_qid": "Q214051",
+   "company_label": "Shin-Etsu Chemical",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q904284",
+   "checked_at": "2026-11-11"
+  },
+  "600519.SS": {
+   "hq_city": "Renhuai",
+   "hq_lat": 27.8116,
+   "hq_lon": 106.4133,
+   "qid": "Q1518607",
+   "hq_qid": "Q1355792",
+   "company_label": "Kweichow Moutai Company",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1518607",
+   "checked_at": "2026-11-11"
+  },
+  "600036.SS": {
+   "hq_city": "Shenzhen",
+   "hq_lat": 22.5467,
+   "hq_lon": 114.0544,
+   "qid": "Q1073327",
+   "hq_qid": "Q15174",
+   "company_label": "China Merchants Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1073327",
+   "checked_at": "2026-11-11"
+  },
+  "000858.SZ": {
+   "hq_city": "Yibin",
+   "hq_lat": 28.7596,
+   "hq_lon": 104.64,
+   "qid": "Q3570160",
+   "hq_qid": "Q427265",
+   "company_label": "Wuliangye",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3570160",
+   "checked_at": "2026-11-11"
+  },
+  "1299.HK": {
+   "hq_city": "AIA Central",
+   "hq_lat": 22.2812,
+   "hq_lon": 114.1618,
+   "qid": "Q1152465",
+   "hq_qid": "Q841968",
+   "company_label": "AIA Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1152465",
+   "checked_at": "2026-11-11"
+  },
+  "0941.HK": {
+   "hq_city": "Xicheng District",
+   "hq_lat": 39.91,
+   "hq_lon": 116.36,
+   "qid": "Q741618",
+   "hq_qid": "Q30138",
+   "company_label": "China Mobile",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q741618",
+   "checked_at": "2026-11-11"
+  },
+  "2318.HK": {
+   "hq_city": "Shenzhen",
+   "hq_lat": 22.5467,
+   "hq_lon": 114.0544,
+   "qid": "Q1256188",
+   "hq_qid": "Q15174",
+   "company_label": "Ping An Insurance",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1256188",
+   "checked_at": "2026-11-11"
+  },
+  "ICICIBANK.NS": {
+   "hq_city": "Mumbai City district",
+   "hq_lat": 18.96,
+   "hq_lon": 72.82,
+   "qid": "Q1653258",
+   "hq_qid": "Q2341660",
+   "company_label": "ICICI Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1653258",
+   "checked_at": "2026-11-11"
+  },
+  "ITC.NS": {
+   "hq_city": "Kolkata",
+   "hq_lat": 22.5675,
+   "hq_lon": 88.37,
+   "qid": "Q1655008",
+   "hq_qid": "Q1348",
+   "company_label": "ITC Limited",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1655008",
+   "checked_at": "2026-11-11"
+  },
+  "SBIN.NS": {
+   "hq_city": "Mumbai",
+   "hq_lat": 19.0758,
+   "hq_lon": 72.8775,
+   "qid": "Q1340361",
+   "hq_qid": "Q1156",
+   "company_label": "State Bank of India",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1340361",
+   "checked_at": "2026-11-11"
+  },
+  "HINDUNILVR.NS": {
+   "hq_city": "Mumbai",
+   "hq_lat": 19.0758,
+   "hq_lon": 72.8775,
+   "qid": "Q1619376",
+   "hq_qid": "Q1156",
+   "company_label": "Hindustan Unilever",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1619376",
+   "checked_at": "2026-11-11"
+  },
+  "000660.KS": {
+   "hq_city": "Icheon",
+   "hq_lat": 37.2792,
+   "hq_lon": 127.4425,
+   "qid": "Q370719",
+   "hq_qid": "Q42136",
+   "company_label": "SK Hynix",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q370719",
+   "checked_at": "2026-11-11"
+  },
+  "373220.KS": {
+   "hq_city": "Seoul",
+   "hq_lat": 37.56,
+   "hq_lon": 126.99,
+   "qid": "Q109464416",
+   "hq_qid": "Q8684",
+   "company_label": "LG Energy Solution",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q109464416",
+   "checked_at": "2026-11-11"
+  },
+  "035420.KS": {
+   "hq_city": "Seongnam",
+   "hq_lat": 37.4386,
+   "hq_lon": 127.1378,
+   "qid": "Q489247",
+   "hq_qid": "Q42108",
+   "company_label": "Naver Corporation",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q489247",
+   "checked_at": "2026-11-11"
+  },
+  "2454.TW": {
+   "hq_city": "Hsinchu City",
+   "hq_lat": 24.8047,
+   "hq_lon": 120.9714,
+   "qid": "Q699848",
+   "hq_qid": "Q249994",
+   "company_label": "MediaTek",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q699848",
+   "checked_at": "2026-11-11"
+  },
+  "2412.TW": {
+   "hq_city": "Taipei",
+   "hq_lat": 25.0375,
+   "hq_lon": 121.5625,
+   "qid": "Q717531",
+   "hq_qid": "Q1867",
+   "company_label": "Chunghwa Telecom",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q717531",
+   "checked_at": "2026-11-11"
+  },
+  "CBA.AX": {
+   "hq_city": "Sydney",
+   "hq_lat": -33.8678,
+   "hq_lon": 151.21,
+   "qid": "Q285328",
+   "hq_qid": "Q3130",
+   "company_label": "Commonwealth Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q285328",
+   "checked_at": "2026-11-11"
+  },
+  "NAB.AX": {
+   "hq_city": "Melbourne",
+   "hq_lat": -37.8142,
+   "hq_lon": 144.9631,
+   "qid": "Q1430985",
+   "hq_qid": "Q3141",
+   "company_label": "National Australia Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1430985",
+   "checked_at": "2026-11-11"
+  },
+  "WES.AX": {
+   "hq_city": "Perth",
+   "hq_lat": -31.9558,
+   "hq_lon": 115.8597,
+   "qid": "Q908144",
+   "hq_qid": "Q3183",
+   "company_label": "Wesfarmers",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q908144",
+   "checked_at": "2026-11-11"
+  },
+  "BMO.TO": {
+   "hq_city": "First Canadian Place",
+   "hq_lat": 43.6486,
+   "hq_lon": -79.3817,
+   "qid": "Q806693",
+   "hq_qid": "Q1052475",
+   "company_label": "Bank of Montreal",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q806693",
+   "checked_at": "2026-11-11"
+  },
+  "CNQ.TO": {
+   "hq_city": "Calgary",
+   "hq_lat": 51.0475,
+   "hq_lon": -114.0625,
+   "qid": "Q1032229",
+   "hq_qid": "Q36312",
+   "company_label": "Canadian Natural Resources",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1032229",
+   "checked_at": "2026-11-11"
+  },
+  "TRI.TO": {
+   "hq_city": "Toronto",
+   "hq_lat": 43.6703,
+   "hq_lon": -79.3867,
+   "qid": "Q1141267",
+   "hq_qid": "Q172",
+   "company_label": "Thomson Reuters",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1141267",
+   "checked_at": "2026-11-11"
+  },
+  "ITUB4.SA": {
+   "hq_city": "São Paulo",
+   "hq_lat": -23.5504,
+   "hq_lon": -46.6339,
+   "qid": "Q1424293",
+   "hq_qid": "Q174",
+   "company_label": "Itaú Unibanco",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1424293",
+   "checked_at": "2026-11-11"
+  },
+  "ABEV3.SA": {
+   "hq_city": "São Paulo",
+   "hq_lat": -23.5504,
+   "hq_lon": -46.6339,
+   "qid": "Q2142669",
+   "hq_qid": "Q174",
+   "company_label": "AmBev",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2142669",
+   "checked_at": "2026-11-11"
+  },
+  "WEGE3.SA": {
+   "hq_city": "Jaraguá do Sul",
+   "hq_lat": -26.4858,
+   "hq_lon": -49.0669,
+   "qid": "Q634794",
+   "hq_qid": "Q849584",
+   "company_label": "WEG Industries",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q634794",
+   "checked_at": "2026-11-11"
+  },
+  "PRX.JO": {
+   "hq_city": "Amsterdam",
+   "hq_lat": 52.3667,
+   "hq_lon": 4.8833,
+   "qid": "Q67389109",
+   "hq_qid": "Q727",
+   "company_label": "Prosus",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q67389109",
+   "checked_at": "2026-11-11"
+  },
+  "AGL.JO": {
+   "hq_city": "London",
+   "hq_lat": 51.5072,
+   "hq_lon": -0.1275,
+   "qid": "Q541451",
+   "hq_qid": "Q84",
+   "company_label": "Anglo American plc",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q541451",
+   "checked_at": "2026-11-11"
+  },
+  "Z74.SI": {
+   "hq_city": "Singapore",
+   "hq_lat": 1.3,
+   "hq_lon": 103.8,
+   "qid": "Q864923",
+   "hq_qid": "Q334",
+   "company_label": "Singtel",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q864923",
+   "checked_at": "2026-11-11"
+  },
+  "C6L.SI": {
+   "hq_city": "Singapore",
+   "hq_lat": 1.3,
+   "hq_lon": 103.8,
+   "qid": "Q32245",
+   "hq_qid": "Q334",
+   "company_label": "Singapore Airlines",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q32245",
+   "checked_at": "2026-11-11"
+  },
+  "BBCA.JK": {
+   "hq_city": "Jakarta",
+   "hq_lat": -6.1753,
+   "hq_lon": 106.8269,
+   "qid": "Q806626",
+   "hq_qid": "Q3630",
+   "company_label": "Bank Central Asia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q806626",
+   "checked_at": "2026-11-11"
+  },
+  "TLKM.JK": {
+   "hq_city": "Bandung",
+   "hq_lat": -6.9219,
+   "hq_lon": 107.6069,
+   "qid": "Q2305438",
+   "hq_qid": "Q10389",
+   "company_label": "Telkom Indonesia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2305438",
+   "checked_at": "2026-11-11"
+  },
+  "ASII.JK": {
+   "hq_city": "Jakarta",
+   "hq_lat": -6.1753,
+   "hq_lon": 106.8269,
+   "qid": "Q4688912",
+   "hq_qid": "Q3630",
+   "company_label": "Astra International",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4688912",
+   "checked_at": "2026-11-11"
+  },
+  "POLI.TA": {
+   "hq_city": "Tel Aviv",
+   "hq_lat": 32.08,
+   "hq_lon": 34.78,
+   "qid": "Q2666775",
+   "hq_qid": "Q33935",
+   "company_label": "Bank Hapoalim B.M.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2666775",
+   "checked_at": "2026-11-11"
+  },
+  "ESLT.TA": {
+   "hq_city": "Haifa",
+   "hq_lat": 32.8192,
+   "hq_lon": 34.9992,
+   "qid": "Q1325369",
+   "hq_qid": "Q41621",
+   "company_label": "Elbit Systems Ltd.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1325369",
+   "checked_at": "2026-11-11"
+  },
+  "THYAO.IS": {
+   "hq_city": "Istanbul",
+   "hq_lat": 41.01,
+   "hq_lon": 28.9603,
+   "qid": "Q4548",
+   "hq_qid": "Q406",
+   "company_label": "Turkish Airlines",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4548",
+   "checked_at": "2026-11-11"
+  },
+  "KCHOL.IS": {
+   "hq_city": "Istanbul",
+   "hq_lat": 41.01,
+   "hq_lon": 28.9603,
+   "qid": "Q1306571",
+   "hq_qid": "Q406",
+   "company_label": "Koç Holding",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1306571",
+   "checked_at": "2026-11-11"
+  },
+  "BIMAS.IS": {
+   "hq_city": "Istanbul",
+   "hq_lat": 41.01,
+   "hq_lon": 28.9603,
+   "qid": "Q1022075",
+   "hq_qid": "Q406",
+   "company_label": "BIM",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1022075",
+   "checked_at": "2026-11-11"
+  },
+  "AKBNK.IS": {
+   "hq_city": "Istanbul",
+   "hq_lat": 41.01,
+   "hq_lon": 28.9603,
+   "qid": "Q416624",
+   "hq_qid": "Q406",
+   "company_label": "Akbank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q416624",
+   "checked_at": "2026-11-11"
+  },
+  "1295.KL": {
+   "hq_city": "Kuala Lumpur",
+   "hq_lat": 3.1478,
+   "hq_lon": 101.6953,
+   "qid": "Q3046561",
+   "hq_qid": "Q1865",
+   "company_label": "Public Bank Berhad",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3046561",
+   "checked_at": "2026-11-11"
+  },
+  "5347.KL": {
+   "hq_city": "Kuala Lumpur",
+   "hq_lat": 3.1478,
+   "hq_lon": 101.6953,
+   "qid": "Q1584297",
+   "hq_qid": "Q1865",
+   "company_label": "Tenaga Nasional",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1584297",
+   "checked_at": "2026-11-11"
+  },
+  "PTT.BK": {
+   "hq_city": "Chatuchak",
+   "hq_lat": 13.7962,
+   "hq_lon": 100.5505,
+   "qid": "Q1810389",
+   "hq_qid": "Q15735843",
+   "company_label": "PTT Public Company Limited",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1810389",
+   "checked_at": "2026-11-11"
+  },
+  "AOT.BK": {
+   "hq_city": "Bangkok",
+   "hq_lat": 13.75,
+   "hq_lon": 100.5167,
+   "qid": "Q409075",
+   "hq_qid": "Q1861",
+   "company_label": "Airports of Thailand",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q409075",
+   "checked_at": "2026-11-11"
+  },
+  "PKN.WA": {
+   "hq_city": "Płock",
+   "hq_lat": 52.55,
+   "hq_lon": 19.7,
+   "qid": "Q971649",
+   "hq_qid": "Q104725",
+   "company_label": "Orlen",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q971649",
+   "checked_at": "2026-11-11"
+  },
+  "YPFD.BA": {
+   "hq_city": "Buenos Aires",
+   "hq_lat": -34.5997,
+   "hq_lon": -58.3819,
+   "qid": "Q2006989",
+   "hq_qid": "Q1486",
+   "company_label": "YPF",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2006989",
+   "checked_at": "2026-11-11"
+  },
+  "CHILE.SN": {
+   "hq_city": "Santiago",
+   "hq_lat": -33.4375,
+   "hq_lon": -70.65,
+   "qid": "Q2882085",
+   "hq_qid": "Q2887",
+   "company_label": "Banco de Chile",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2882085",
+   "checked_at": "2026-11-11"
+  },
+  "FALABELLA.SN": {
+   "hq_city": "Santiago",
+   "hq_lat": -33.4375,
+   "hq_lon": -70.65,
+   "qid": "Q5135229",
+   "hq_qid": "Q2887",
+   "company_label": "Falabella",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5135229",
+   "checked_at": "2026-11-11"
+  },
+  "GALP.LS": {
+   "hq_city": "Lisbon",
+   "hq_lat": 38.708,
+   "hq_lon": -9.139,
+   "qid": "Q1492739",
+   "hq_qid": "Q597",
+   "company_label": "Galp Energia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1492739",
+   "checked_at": "2026-11-11"
+  },
+  "RYA.IR": {
+   "hq_city": "Dublin Airport",
+   "hq_lat": 53.4214,
+   "hq_lon": -6.27,
+   "qid": "Q170614",
+   "hq_qid": "Q178021",
+   "company_label": "Ryanair",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q170614",
+   "checked_at": "2026-11-11"
+  },
+  "ETE.AT": {
+   "hq_city": "Athens",
+   "hq_lat": 37.9842,
+   "hq_lon": 23.7281,
+   "qid": "Q1816028",
+   "hq_qid": "Q1524",
+   "company_label": "National Bank of Greece",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1816028",
+   "checked_at": "2026-11-11"
+  },
+  "CPG.L": {
+   "hq_city": "Chertsey",
+   "hq_lat": 51.3902,
+   "hq_lon": -0.5074,
+   "qid": "Q782697",
+   "hq_qid": "Q1070428",
+   "company_label": "Compass Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q782697",
+   "checked_at": "2026-11-11"
+  },
+  "AAL.L": {
+   "hq_city": "London",
+   "hq_lat": 51.5072,
+   "hq_lon": -0.1275,
+   "qid": "Q541451",
+   "hq_qid": "Q84",
+   "company_label": "Anglo American plc",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q541451",
+   "checked_at": "2026-11-11"
+  },
+  "GLEN.L": {
+   "hq_city": "Baar",
+   "hq_lat": 47.1956,
+   "hq_lon": 8.5264,
+   "qid": "Q169339",
+   "hq_qid": "Q64087",
+   "company_label": "Glencore",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q169339",
+   "checked_at": "2026-11-11"
+  },
+  "TSCO.L": {
+   "hq_city": "Welwyn Garden City",
+   "hq_lat": 51.8062,
+   "hq_lon": -0.1932,
+   "qid": "Q487494",
+   "hq_qid": "Q19789",
+   "company_label": "Tesco",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q487494",
+   "checked_at": "2026-11-11"
+  },
+  "III.L": {
+   "hq_city": "London",
+   "hq_lat": 51.5072,
+   "hq_lon": -0.1275,
+   "qid": "Q229764",
+   "hq_qid": "Q84",
+   "company_label": "3i",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q229764",
+   "checked_at": "2026-11-11"
+  },
+  "EXPN.L": {
+   "hq_city": "Dublin",
+   "hq_lat": 53.3497,
+   "hq_lon": -6.2603,
+   "qid": "Q692157",
+   "hq_qid": "Q1761",
+   "company_label": "Experian",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q692157",
+   "checked_at": "2026-11-11"
+  },
+  "IMB.L": {
+   "hq_city": "Bristol",
+   "hq_lat": 51.4536,
+   "hq_lon": -2.5975,
+   "qid": "Q1471161",
+   "hq_qid": "Q23154",
+   "company_label": "Imperial Brands",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1471161",
+   "checked_at": "2026-11-11"
+  },
+  "SSE.L": {
+   "hq_city": "Perth",
+   "hq_lat": 56.3958,
+   "hq_lon": -3.4333,
+   "qid": "Q493854",
+   "hq_qid": "Q203000",
+   "company_label": "SSE plc",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q493854",
+   "checked_at": "2026-11-11"
+  },
+  "HEN3.DE": {
+   "hq_city": "Düsseldorf",
+   "hq_lat": 51.2256,
+   "hq_lon": 6.7767,
+   "qid": "Q276507",
+   "hq_qid": "Q1718",
+   "company_label": "Henkel KGaA",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q276507",
+   "checked_at": "2026-11-11"
+  },
+  "SY1.DE": {
+   "hq_city": "Holzminden",
+   "hq_lat": 51.8297,
+   "hq_lon": 9.4483,
+   "qid": "Q73251",
+   "hq_qid": "Q55425",
+   "company_label": "Symrise",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q73251",
+   "checked_at": "2026-11-11"
+  },
+  "BN.PA": {
+   "hq_city": "Paris",
+   "hq_lat": 48.8567,
+   "hq_lon": 2.3522,
+   "qid": "Q329426",
+   "hq_qid": "Q90",
+   "company_label": "Danone",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q329426",
+   "checked_at": "2026-11-11"
+  },
+  "ORA.PA": {
+   "hq_city": "Issy-les-Moulineaux",
+   "hq_lat": 48.8231,
+   "hq_lon": 2.2692,
+   "qid": "Q1431486",
+   "hq_qid": "Q135265",
+   "company_label": "Orange",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1431486",
+   "checked_at": "2026-11-11"
+  },
+  "DSY.PA": {
+   "hq_city": "Vélizy-Villacoublay",
+   "hq_lat": 48.7833,
+   "hq_lon": 2.1883,
+   "qid": "Q1172038",
+   "hq_qid": "Q387447",
+   "company_label": "Dassault Systèmes",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1172038",
+   "checked_at": "2026-11-11"
+  },
+  "CAP.PA": {
+   "hq_city": "Paris",
+   "hq_lat": 48.8567,
+   "hq_lon": 2.3522,
+   "qid": "Q1034621",
+   "hq_qid": "Q90",
+   "company_label": "Capgemini",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1034621",
+   "checked_at": "2026-11-11"
+  },
+  "ENGI.PA": {
+   "hq_city": "Paris",
+   "hq_lat": 48.8567,
+   "hq_lon": 2.3522,
+   "qid": "Q13416787",
+   "hq_qid": "Q90",
+   "company_label": "Engie",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q13416787",
+   "checked_at": "2026-11-11"
+  },
+  "UNA.AS": {
+   "hq_city": "London",
+   "hq_lat": 51.5072,
+   "hq_lon": -0.1275,
+   "qid": "Q157062",
+   "hq_qid": "Q84",
+   "company_label": "Unilever",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q157062",
+   "checked_at": "2026-11-11"
+  },
+  "NN.AS": {
+   "hq_city": "The Hague",
+   "hq_lat": 52.08,
+   "hq_lon": 4.31,
+   "qid": "Q1834291",
+   "hq_qid": "Q36600",
+   "company_label": "NN Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1834291",
+   "checked_at": "2026-11-11"
+  },
+  "ASM.AS": {
+   "hq_city": "Almere",
+   "hq_lat": 52.3758,
+   "hq_lon": 5.2256,
+   "qid": "Q2478569",
+   "hq_qid": "Q83178",
+   "company_label": "ASM International",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2478569",
+   "checked_at": "2026-11-11"
+  },
+  "RAND.AS": {
+   "hq_city": "Diemen",
+   "hq_lat": 52.3439,
+   "hq_lon": 4.9625,
+   "qid": "Q267840",
+   "hq_qid": "Q9913",
+   "company_label": "Randstad N.V.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q267840",
+   "checked_at": "2026-11-11"
+  },
+  "ALC.SW": {
+   "hq_city": "Geneva",
+   "hq_lat": 46.2,
+   "hq_lon": 6.15,
+   "qid": "Q684825",
+   "hq_qid": "Q71",
+   "company_label": "Alcon",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q684825",
+   "checked_at": "2026-11-11"
+  },
+  "FER.MC": {
+   "hq_city": "Madrid",
+   "hq_lat": 40.4169,
+   "hq_lon": -3.7033,
+   "qid": "Q1408037",
+   "hq_qid": "Q2807",
+   "company_label": "Ferrovial",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1408037",
+   "checked_at": "2026-11-11"
+  },
+  "PRY.MI": {
+   "hq_city": "Milan",
+   "hq_lat": 45.4669,
+   "hq_lon": 9.19,
+   "qid": "Q1964784",
+   "hq_qid": "Q490",
+   "company_label": "Prysmian Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1964784",
+   "checked_at": "2026-11-11"
+  },
+  "LDO.MI": {
+   "hq_city": "Rome",
+   "hq_lat": 41.8931,
+   "hq_lon": 12.4828,
+   "qid": "Q910379",
+   "hq_qid": "Q220",
+   "company_label": "Leonardo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q910379",
+   "checked_at": "2026-11-11"
+  },
+  "MONC.MI": {
+   "hq_city": "Milan",
+   "hq_lat": 45.4384,
+   "hq_lon": 9.2049,
+   "qid": "Q1548951",
+   "hq_qid": "Q134580223",
+   "company_label": "Moncler",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
+   "source_url": "https://www.wikidata.org/entity/Q1548951",
+   "checked_at": "2026-11-11",
+   "hq_site_label": "Palazzo Moncler",
+   "hq_city_qid": "Q490",
+   "city_admin_path": [
+    "Q134580223",
+    "Q490"
+   ],
+   "city_source_url": "https://www.wikidata.org/wiki/Q490",
+   "city_evidence": {
+    "classification": "P31/P279 city",
+    "capital_of": []
+   }
+  },
+  "SOLB.BR": {
+   "hq_city": "Brussels",
+   "hq_lat": 50.8467,
+   "hq_lon": 4.3517,
+   "qid": "Q706184",
+   "hq_qid": "Q239",
+   "company_label": "Solvay S.A.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q706184",
+   "checked_at": "2026-11-11"
+  },
+  "AGS.BR": {
+   "hq_city": "Saint-Josse-ten-Noode",
+   "hq_lat": 50.8508,
+   "hq_lon": 4.3692,
+   "qid": "Q392338",
+   "hq_qid": "Q272243",
+   "company_label": "Ageas",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q392338",
+   "checked_at": "2026-11-11"
+  },
+  "UMI.BR": {
+   "hq_city": "Brussels metropolitan area",
+   "hq_lat": 50.8467,
+   "hq_lon": 4.3525,
+   "qid": "Q902769",
+   "hq_qid": "Q9005",
+   "company_label": "Umicore",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q902769",
+   "checked_at": "2026-11-11"
+  },
+  "DANSKE.CO": {
+   "hq_city": "Copenhagen",
+   "hq_lat": 55.6761,
+   "hq_lon": 12.5689,
+   "qid": "Q1636974",
+   "hq_qid": "Q1748",
+   "company_label": "Danske Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1636974",
+   "checked_at": "2026-11-11"
+  },
+  "ORK.OL": {
+   "hq_city": "Oslo",
+   "hq_lat": 59.9133,
+   "hq_lon": 10.7389,
+   "qid": "Q60003",
+   "hq_qid": "Q585",
+   "company_label": "Orkla Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q60003",
+   "checked_at": "2026-11-11"
+  },
+  "YAR.OL": {
+   "hq_city": "Oslo",
+   "hq_lat": 59.9133,
+   "hq_lon": 10.7389,
+   "qid": "Q901886",
+   "hq_qid": "Q585",
+   "company_label": "Yara International",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q901886",
+   "checked_at": "2026-11-11"
+  },
+  "KOG.OL": {
+   "hq_city": "Kongsberg",
+   "hq_lat": 59.665,
+   "hq_lon": 9.6464,
+   "qid": "Q1770909",
+   "hq_qid": "Q108988",
+   "company_label": "Kongsberg Gruppen",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1770909",
+   "checked_at": "2026-11-11"
+  },
+  "AKRBP.OL": {
+   "hq_city": "Fornebu",
+   "hq_lat": 59.8958,
+   "hq_lon": 10.6167,
+   "qid": "Q25434685",
+   "hq_qid": "Q2363688",
+   "company_label": "Aker BP",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q25434685",
+   "checked_at": "2026-11-11"
+  },
+  "SALM.OL": {
+   "hq_city": "Frøya Municipality",
+   "hq_lat": 63.7256,
+   "hq_lon": 8.7442,
+   "qid": "Q7403259",
+   "hq_qid": "Q484119",
+   "company_label": "SalMar",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7403259",
+   "checked_at": "2026-11-11"
+  },
+  "ELISA.HE": {
+   "hq_city": "Helsinki",
+   "hq_lat": 60.1708,
+   "hq_lon": 24.9375,
+   "qid": "Q965268",
+   "hq_qid": "Q1757",
+   "company_label": "Elisa",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q965268",
+   "checked_at": "2026-11-11"
+  },
+  "WRT1V.HE": {
+   "hq_city": "Helsinki",
+   "hq_lat": 60.1708,
+   "hq_lon": 24.9375,
+   "qid": "Q327429",
+   "hq_qid": "Q1757",
+   "company_label": "Wärtsilä",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q327429",
+   "checked_at": "2026-11-11"
+  },
+  "BIRG.IR": {
+   "hq_city": "Dublin",
+   "hq_lat": 53.3497,
+   "hq_lon": -6.2603,
+   "qid": "Q806689",
+   "hq_qid": "Q1761",
+   "company_label": "Bank of Ireland",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q806689",
+   "checked_at": "2026-11-11"
+  },
+  "VER.VI": {
+   "hq_city": "Vienna",
+   "hq_lat": 48.2083,
+   "hq_lon": 16.3725,
+   "qid": "Q688816",
+   "hq_qid": "Q1741",
+   "company_label": "Verbund",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q688816",
+   "checked_at": "2026-11-11"
+  },
+  "ANDR.VI": {
+   "hq_city": "Graz",
+   "hq_lat": 47.0708,
+   "hq_lon": 15.4386,
+   "qid": "Q442018",
+   "hq_qid": "Q13298",
+   "company_label": "Andritz",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q442018",
+   "checked_at": "2026-11-11"
+  },
+  "VOE.VI": {
+   "hq_city": "Linz",
+   "hq_lat": 48.3058,
+   "hq_lon": 14.2864,
+   "qid": "Q689750",
+   "hq_qid": "Q41329",
+   "company_label": "Voestalpine",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q689750",
+   "checked_at": "2026-11-11"
+  },
+  "ALPHA.AT": {
+   "hq_city": "Athens",
+   "hq_lat": 37.9842,
+   "hq_lon": 23.7281,
+   "qid": "Q747394",
+   "hq_qid": "Q1524",
+   "company_label": "Alpha Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q747394",
+   "checked_at": "2026-11-11"
+  },
+  "TUPRS.IS": {
+   "hq_city": "Körfez",
+   "hq_lat": 40.7608,
+   "hq_lon": 29.7839,
+   "qid": "Q3546423",
+   "hq_qid": "Q27161",
+   "company_label": "Tüpraş",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3546423",
+   "checked_at": "2026-11-11"
+  },
+  "CEZ.PR": {
+   "hq_city": "Prague",
+   "hq_lat": 50.0875,
+   "hq_lon": 14.4214,
+   "qid": "Q336735",
+   "hq_qid": "Q1085",
+   "company_label": "ČEZ Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q336735",
+   "checked_at": "2026-11-11"
+  },
+  "6501.T": {
+   "hq_city": "Marunouchi",
+   "hq_lat": 35.6814,
+   "hq_lon": 139.7658,
+   "qid": "Q53238",
+   "hq_qid": "Q1196955",
+   "company_label": "Hitachi",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q53238",
+   "checked_at": "2026-11-11"
+  },
+  "8031.T": {
+   "hq_city": "Tokyo",
+   "hq_lat": 35.6894,
+   "hq_lon": 139.6917,
+   "qid": "Q904240",
+   "hq_qid": "Q1490",
+   "company_label": "Mitsui & Co.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q904240",
+   "checked_at": "2026-11-11"
+  },
+  "6902.T": {
+   "hq_city": "Kariya",
+   "hq_lat": 34.9893,
+   "hq_lon": 137.0021,
+   "qid": "Q176508",
+   "hq_qid": "Q389515",
+   "company_label": "Denso",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q176508",
+   "checked_at": "2026-11-11"
+  },
+  "8316.T": {
+   "hq_city": "Tokyo",
+   "hq_lat": 35.6849,
+   "hq_lon": 139.7623,
+   "qid": "Q2094989",
+   "hq_qid": "Q17349580",
+   "company_label": "Sumitomo Mitsui Financial Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
+   "source_url": "https://www.wikidata.org/entity/Q2094989",
+   "checked_at": "2026-11-11",
+   "hq_site_label": "Sumitomo Mitsui Banking Corporation Head Office Building",
+   "hq_city_qid": "Q1490",
+   "city_admin_path": [
+    "Q17349580",
+    "Q214051",
+    "Q1490"
+   ],
+   "city_source_url": "https://www.wikidata.org/wiki/Q1490",
+   "city_evidence": {
+    "classification": "P31/P279 city",
+    "capital_of": [
+     "Q17"
+    ]
+   }
+  },
+  "8766.T": {
+   "hq_city": "Chiyoda",
+   "hq_lat": 35.6939,
+   "hq_lon": 139.7536,
+   "qid": "Q1812086",
+   "hq_qid": "Q214051",
+   "company_label": "Tokio Marine",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1812086",
+   "checked_at": "2026-11-11"
+  },
+  "6367.T": {
+   "hq_city": "Umeda",
+   "hq_lat": 34.7,
+   "hq_lon": 135.497,
+   "qid": "Q1157589",
+   "hq_qid": "Q1194307",
+   "company_label": "Daikin Industries",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1157589",
+   "checked_at": "2026-11-11"
+  },
+  "601988.SS": {
+   "hq_city": "Xicheng District",
+   "hq_lat": 39.91,
+   "hq_lon": 116.36,
+   "qid": "Q790068",
+   "hq_qid": "Q30138",
+   "company_label": "Bank of China",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q790068",
+   "checked_at": "2026-11-11"
+  },
+  "000333.SZ": {
+   "hq_city": "Beijiao Town",
+   "hq_lat": 22.9311,
+   "hq_lon": 113.2018,
+   "qid": "Q2609533",
+   "hq_qid": "Q4881089",
+   "company_label": "Midea",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2609533",
+   "checked_at": "2026-11-11"
+  },
+  "600030.SS": {
+   "hq_city": "Shenzhen",
+   "hq_lat": 22.5467,
+   "hq_lon": 114.0544,
+   "qid": "Q737443",
+   "hq_qid": "Q15174",
+   "company_label": "CITIC Securities",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q737443",
+   "checked_at": "2026-11-11"
+  },
+  "0883.HK": {
+   "hq_city": "Hong Kong",
+   "hq_lat": 22.2783,
+   "hq_lon": 114.1586,
+   "qid": "Q795221",
+   "hq_qid": "Q8646",
+   "company_label": "CNOOC Limited",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q795221",
+   "checked_at": "2026-11-11"
+  },
+  "KOTAKBANK.NS": {
+   "hq_city": "Mumbai",
+   "hq_lat": 19.0758,
+   "hq_lon": 72.8775,
+   "qid": "Q2040404",
+   "hq_qid": "Q1156",
+   "company_label": "Kotak Mahindra Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2040404",
+   "checked_at": "2026-11-11"
+  },
+  "AXISBANK.NS": {
+   "hq_city": "Mumbai",
+   "hq_lat": 19.0758,
+   "hq_lon": 72.8775,
+   "qid": "Q2003549",
+   "hq_qid": "Q1156",
+   "company_label": "Axis Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2003549",
+   "checked_at": "2026-11-11"
+  },
+  "HCLTECH.NS": {
+   "hq_city": "Noida",
+   "hq_lat": 28.57,
+   "hq_lon": 77.32,
+   "qid": "Q5629103",
+   "hq_qid": "Q278204",
+   "company_label": "HCL Technologies",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5629103",
+   "checked_at": "2026-11-11"
+  },
+  "WIPRO.NS": {
+   "hq_city": "Bengaluru",
+   "hq_lat": 12.9791,
+   "hq_lon": 77.5913,
+   "qid": "Q1364176",
+   "hq_qid": "Q1355",
+   "company_label": "Wipro",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1364176",
+   "checked_at": "2026-11-11"
+  },
+  "ADANIENT.NS": {
+   "hq_city": "Ahmedabad",
+   "hq_lat": 23.0219,
+   "hq_lon": 72.5797,
+   "qid": "Q107646415",
+   "hq_qid": "Q1070",
+   "company_label": "Adani Enterprises",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q107646415",
+   "checked_at": "2026-11-11"
+  },
+  "BAJFINANCE.NS": {
+   "hq_city": "Pune",
+   "hq_lat": 18.5211,
+   "hq_lon": 73.8553,
+   "qid": "Q28173355",
+   "hq_qid": "Q1538",
+   "company_label": "Bajaj Finance",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q28173355",
+   "checked_at": "2026-11-11"
+  },
+  "068270.KS": {
+   "hq_city": "Incheon",
+   "hq_lat": 37.4639,
+   "hq_lon": 126.6486,
+   "qid": "Q16175734",
+   "hq_qid": "Q20934",
+   "company_label": "Celltrion",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q16175734",
+   "checked_at": "2026-11-11"
+  },
+  "000270.KS": {
+   "hq_city": "Seoul",
+   "hq_lat": 37.56,
+   "hq_lon": 126.99,
+   "qid": "Q35349",
+   "hq_qid": "Q8684",
+   "company_label": "Kia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q35349",
+   "checked_at": "2026-11-11"
+  },
+  "2891.TW": {
+   "hq_city": "Taipei",
+   "hq_lat": 25.0375,
+   "hq_lon": 121.5625,
+   "qid": "Q5100188",
+   "hq_qid": "Q1867",
+   "company_label": "CTBC Financial Holding",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5100188",
+   "checked_at": "2026-11-11"
+  },
+  "2886.TW": {
+   "hq_city": "Taipei",
+   "hq_lat": 25.0375,
+   "hq_lon": 121.5625,
+   "qid": "Q1791912",
+   "hq_qid": "Q1867",
+   "company_label": "Mega Financial Holding",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1791912",
+   "checked_at": "2026-11-11"
+  },
+  "BCE.TO": {
+   "hq_city": "Montreal",
+   "hq_lat": 45.5033,
+   "hq_lon": -73.5868,
+   "qid": "Q24525746",
+   "hq_qid": "Q340",
+   "company_label": "BCE Inc.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q24525746",
+   "checked_at": "2026-11-11"
+  },
+  "SU.TO": {
+   "hq_city": "Calgary",
+   "hq_lat": 51.0475,
+   "hq_lon": -114.0625,
+   "qid": "Q1516410",
+   "hq_qid": "Q36312",
+   "company_label": "Suncor Energy",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1516410",
+   "checked_at": "2026-11-11"
+  },
+  "NTR.TO": {
+   "hq_city": "Saskatoon",
+   "hq_lat": 52.1352,
+   "hq_lon": -106.6584,
+   "qid": "Q48742870",
+   "hq_qid": "Q10566",
+   "company_label": "Nutrien",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q48742870",
+   "checked_at": "2026-11-11"
+  },
+  "CSU.TO": {
+   "hq_city": "Toronto",
+   "hq_lat": 43.6703,
+   "hq_lon": -79.3867,
+   "qid": "Q48801091",
+   "hq_qid": "Q172",
+   "company_label": "Constellation Software",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q48801091",
+   "checked_at": "2026-11-11"
+  },
+  "L.TO": {
+   "hq_city": "Brampton",
+   "hq_lat": 43.6833,
+   "hq_lon": -79.7667,
+   "qid": "Q909856",
+   "hq_qid": "Q44198",
+   "company_label": "Loblaw Companies",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q909856",
+   "checked_at": "2026-11-11"
+  },
+  "RENT3.SA": {
+   "hq_city": "Belo Horizonte",
+   "hq_lat": -19.9281,
+   "hq_lon": -43.9419,
+   "qid": "Q10319490",
+   "hq_qid": "Q42800",
+   "company_label": "Localiza",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q10319490",
+   "checked_at": "2026-11-11"
+  },
+  "EQTL3.SA": {
+   "hq_city": "Brasília",
+   "hq_lat": -15.7939,
+   "hq_lon": -47.8828,
+   "qid": "Q18474582",
+   "hq_qid": "Q2844",
+   "company_label": "Equatorial Energia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q18474582",
+   "checked_at": "2026-11-11"
+  },
+  "ABG.JO": {
+   "hq_city": "Johannesburg",
+   "hq_lat": -26.2044,
+   "hq_lon": 28.0416,
+   "qid": "Q58641733",
+   "hq_qid": "Q34647",
+   "company_label": "ABSA Group Limited",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q58641733",
+   "checked_at": "2026-11-11"
+  },
+  "VOD.JO": {
+   "hq_city": "Midrand",
+   "hq_lat": -26.0,
+   "hq_lon": 28.1333,
+   "qid": "Q1856518",
+   "hq_qid": "Q639518",
+   "company_label": "Vodacom",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1856518",
+   "checked_at": "2026-11-11"
+  },
+  "2280.SR": {
+   "hq_city": "Riyadh",
+   "hq_lat": 24.6383,
+   "hq_lon": 46.715,
+   "qid": "Q3535226",
+   "hq_qid": "Q3692",
+   "company_label": "Almarai Company",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3535226",
+   "checked_at": "2026-11-11"
+  },
+  "2050.SR": {
+   "hq_city": "Jeddah",
+   "hq_lat": 21.5292,
+   "hq_lon": 39.1611,
+   "qid": "Q7762363",
+   "hq_qid": "Q374365",
+   "company_label": "Savola Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7762363",
+   "checked_at": "2026-11-11"
+  },
+  "1150.SR": {
+   "hq_city": "Riyadh",
+   "hq_lat": 24.6383,
+   "hq_lon": 46.715,
+   "qid": "Q4120111",
+   "hq_qid": "Q3692",
+   "company_label": "Alinma Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4120111",
+   "checked_at": "2026-11-11"
+  },
+  "4280.SR": {
+   "hq_city": "Riyadh",
+   "hq_lat": 24.6383,
+   "hq_lon": 46.715,
+   "qid": "Q1742118",
+   "hq_qid": "Q3692",
+   "company_label": "Kingdom Holding Company",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1742118",
+   "checked_at": "2026-11-11"
+  },
+  "Y92.SI": {
+   "hq_city": "Bangkok",
+   "hq_lat": 13.75,
+   "hq_lon": 100.5167,
+   "qid": "Q15304350",
+   "hq_qid": "Q1861",
+   "company_label": "ThaiBev",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q15304350",
+   "checked_at": "2026-11-11"
+  },
+  "ICL.TA": {
+   "hq_city": "Tel Aviv",
+   "hq_lat": 32.08,
+   "hq_lon": 34.78,
+   "qid": "Q903957",
+   "hq_qid": "Q33935",
+   "company_label": "Icl Group Ltd",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q903957",
+   "checked_at": "2026-11-11"
+  },
+  "AZRG.TA": {
+   "hq_city": "Tel Aviv",
+   "hq_lat": 32.08,
+   "hq_lon": 34.78,
+   "qid": "Q7220966",
+   "hq_qid": "Q33935",
+   "company_label": "Azrieli Group Ltd",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7220966",
+   "checked_at": "2026-11-11"
+  },
+  "1023.KL": {
+   "hq_city": "Kuala Lumpur",
+   "hq_lat": 3.1478,
+   "hq_lon": 101.6953,
+   "qid": "Q3045976",
+   "hq_qid": "Q1865",
+   "company_label": "CIMB",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3045976",
+   "checked_at": "2026-11-11"
+  },
+  "6888.KL": {
+   "hq_city": "Kuala Lumpur",
+   "hq_lat": 3.1478,
+   "hq_lon": 101.6953,
+   "qid": "Q792500",
+   "hq_qid": "Q1865",
+   "company_label": "Axiata",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q792500",
+   "checked_at": "2026-11-11"
+  },
+  "5225.KL": {
+   "hq_city": "Kuala Lumpur",
+   "hq_lat": 3.1478,
+   "hq_lon": 101.6953,
+   "qid": "Q18342621",
+   "hq_qid": "Q1865",
+   "company_label": "IHH Healthcare",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q18342621",
+   "checked_at": "2026-11-11"
+  },
+  "SPK.NZ": {
+   "hq_city": "Auckland",
+   "hq_lat": -36.8492,
+   "hq_lon": 174.7653,
+   "qid": "Q1549526",
+   "hq_qid": "Q37100",
+   "company_label": "Spark New Zealand",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1549526",
+   "checked_at": "2026-11-11"
+  },
+  "IFT.NZ": {
+   "hq_city": "Wellington",
+   "hq_lat": -41.2889,
+   "hq_lon": 174.7772,
+   "qid": "Q1662683",
+   "hq_qid": "Q23661",
+   "company_label": "Infratil",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1662683",
+   "checked_at": "2026-11-11"
+  },
+  "CEN.NZ": {
+   "hq_city": "Wellington",
+   "hq_lat": -41.2889,
+   "hq_lon": 174.7772,
+   "qid": "Q1128439",
+   "hq_qid": "Q23661",
+   "company_label": "Contact Energy",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1128439",
+   "checked_at": "2026-11-11"
+  },
+  "FBU.NZ": {
+   "hq_city": "Auckland City",
+   "hq_lat": -36.873,
+   "hq_lon": 174.755,
+   "qid": "Q246946",
+   "hq_qid": "Q758634",
+   "company_label": "Fletcher Building",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q246946",
+   "checked_at": "2026-11-11"
+  },
+  "MFT.NZ": {
+   "hq_city": "Auckland",
+   "hq_lat": -36.8492,
+   "hq_lon": 174.7653,
+   "qid": "Q3278352",
+   "hq_qid": "Q37100",
+   "company_label": "Mainfreight",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3278352",
+   "checked_at": "2026-11-11"
+  },
+  "EC": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.6097,
+   "hq_lon": -74.0817,
+   "qid": "Q1282130",
+   "hq_qid": "Q2841",
+   "company_label": "Ecopetrol",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1282130",
+   "checked_at": "2026-11-11"
+  },
+  "PLD": {
+   "hq_city": "San Francisco",
+   "hq_lat": 37.775,
+   "hq_lon": -122.4194,
+   "qid": "Q16983765",
+   "hq_qid": "Q62",
+   "company_label": "Prologis",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q16983765",
+   "checked_at": "2026-11-11"
+  },
+  "AMT": {
+   "hq_city": "Boston",
+   "hq_lat": 42.3603,
+   "hq_lon": -71.0578,
+   "qid": "Q4745263",
+   "hq_qid": "Q100",
+   "company_label": "American Tower Corporation",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4745263",
+   "checked_at": "2026-11-11"
+  },
+  "EQIX": {
+   "hq_city": "Redwood City",
+   "hq_lat": 37.4828,
+   "hq_lon": -122.2361,
+   "qid": "Q851641",
+   "hq_qid": "Q505549",
+   "company_label": "Equinix",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q851641",
+   "checked_at": "2026-11-11"
+  },
+  "WELL": {
+   "hq_city": "Toledo",
+   "hq_lat": 41.6528,
+   "hq_lon": -83.5378,
+   "qid": "Q20486917",
+   "hq_qid": "Q49239",
+   "company_label": "Welltower",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q20486917",
+   "checked_at": "2026-11-11"
+  },
+  "SPG": {
+   "hq_city": "Indianapolis",
+   "hq_lat": 39.7667,
+   "hq_lon": -86.1624,
+   "qid": "Q2287759",
+   "hq_qid": "Q7519585",
+   "company_label": "Simon Property Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
+   "source_url": "https://www.wikidata.org/entity/Q2287759",
+   "checked_at": "2026-11-11",
+   "hq_site_label": "Simon Property Group Headquarters",
+   "hq_city_qid": "Q6346",
+   "city_admin_path": [
+    "Q7519585",
+    "Q6346"
+   ],
+   "city_source_url": "https://www.wikidata.org/wiki/Q6346",
+   "city_evidence": {
+    "classification": "P31/P279 city",
+    "capital_of": []
+   }
+  },
+  "PSA": {
+   "hq_city": "Glendale",
+   "hq_lat": 34.1708,
+   "hq_lon": -118.25,
+   "qid": "Q1156045",
+   "hq_qid": "Q485716",
+   "company_label": "Public Storage",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1156045",
+   "checked_at": "2026-11-11"
+  },
+  "O": {
+   "hq_city": "San Diego",
+   "hq_lat": 32.715,
+   "hq_lon": -117.1625,
+   "qid": "Q7301386",
+   "hq_qid": "Q16552",
+   "company_label": "Realty Income Corporation",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7301386",
+   "checked_at": "2026-11-11"
+  },
+  "DLR": {
+   "hq_city": "Austin",
+   "hq_lat": 30.3,
+   "hq_lon": -97.7333,
+   "qid": "Q5275969",
+   "hq_qid": "Q16559",
+   "company_label": "Digital Realty Trust",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5275969",
+   "checked_at": "2026-11-11"
+  },
+  "CCI": {
+   "hq_city": "Houston",
+   "hq_lat": 29.7628,
+   "hq_lon": -95.3831,
+   "qid": "Q5189320",
+   "hq_qid": "Q16555",
+   "company_label": "Crown Castle International Corp.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5189320",
+   "checked_at": "2026-11-11"
+  },
+  "VICI": {
+   "hq_city": "New York City",
+   "hq_lat": 40.7128,
+   "hq_lon": -74.0061,
+   "qid": "Q54263910",
+   "hq_qid": "Q60",
+   "company_label": "Vici Properties",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q54263910",
+   "checked_at": "2026-11-11"
+  },
+  "DUK": {
+   "hq_city": "Charlotte",
+   "hq_lat": 35.2269,
+   "hq_lon": -80.8433,
+   "qid": "Q1264404",
+   "hq_qid": "Q16565",
+   "company_label": "Duke Energy",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1264404",
+   "checked_at": "2026-11-11"
+  },
+  "SO": {
+   "hq_city": "Atlanta",
+   "hq_lat": 33.7544,
+   "hq_lon": -84.3897,
+   "qid": "Q2304693",
+   "hq_qid": "Q23556",
+   "company_label": "Southern Company",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2304693",
+   "checked_at": "2026-11-11"
+  },
+  "D": {
+   "hq_city": "Richmond",
+   "hq_lat": 37.5408,
+   "hq_lon": -77.4367,
+   "qid": "Q677464",
+   "hq_qid": "Q43421",
+   "company_label": "Dominion Energy",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q677464",
+   "checked_at": "2026-11-11"
+  },
+  "EXC": {
+   "hq_city": "Chicago",
+   "hq_lat": 41.8819,
+   "hq_lon": -87.6278,
+   "qid": "Q1383669",
+   "hq_qid": "Q1297",
+   "company_label": "Exelon",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1383669",
+   "checked_at": "2026-11-11"
+  },
+  "SRE": {
+   "hq_city": "San Diego",
+   "hq_lat": 32.715,
+   "hq_lon": -117.1625,
+   "qid": "Q7449804",
+   "hq_qid": "Q16552",
+   "company_label": "Sempra",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7449804",
+   "checked_at": "2026-11-11"
+  },
+  "XEL": {
+   "hq_city": "Minneapolis",
+   "hq_lat": 44.9819,
+   "hq_lon": -93.2692,
+   "qid": "Q1486956",
+   "hq_qid": "Q36091",
+   "company_label": "Xcel Energy",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1486956",
+   "checked_at": "2026-11-11"
+  },
+  "ED": {
+   "hq_city": "Manhattan",
+   "hq_lat": 40.7283,
+   "hq_lon": -73.9942,
+   "qid": "Q1127536",
+   "hq_qid": "Q11299",
+   "company_label": "Consolidated Edison",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1127536",
+   "checked_at": "2026-11-11"
+  },
+  "NGG": {
+   "hq_city": "London",
+   "hq_lat": 51.5072,
+   "hq_lon": -0.1275,
+   "qid": "Q1465461",
+   "hq_qid": "Q84",
+   "company_label": "National Grid plc",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1465461",
+   "checked_at": "2026-11-11"
+  },
+  "PEG": {
+   "hq_city": "Newark",
+   "hq_lat": 40.7356,
+   "hq_lon": -74.1722,
+   "qid": "Q930919",
+   "hq_qid": "Q25395",
+   "company_label": "Public Service Enterprise Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q930919",
+   "checked_at": "2026-11-11"
+  },
+  "WEC": {
+   "hq_city": "Milwaukee",
+   "hq_lat": 43.05,
+   "hq_lon": -87.95,
+   "qid": "Q8027166",
+   "hq_qid": "Q37836",
+   "company_label": "WEC Energy Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q8027166",
+   "checked_at": "2026-11-11"
+  },
+  "PGR": {
+   "hq_city": "Mayfield",
+   "hq_lat": 41.5478,
+   "hq_lon": -81.4433,
+   "qid": "Q7248721",
+   "hq_qid": "Q2604968",
+   "company_label": "Progressive Corporation",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7248721",
+   "checked_at": "2026-11-11"
+  },
+  "AIG": {
+   "hq_city": "New York City",
+   "hq_lat": 40.7128,
+   "hq_lon": -74.0061,
+   "qid": "Q212235",
+   "hq_qid": "Q60",
+   "company_label": "American International Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q212235",
+   "checked_at": "2026-11-11"
+  },
+  "MET": {
+   "hq_city": "New York City",
+   "hq_lat": 40.7128,
+   "hq_lon": -74.0061,
+   "qid": "Q607131",
+   "hq_qid": "Q60",
+   "company_label": "MetLife",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q607131",
+   "checked_at": "2026-11-11"
+  },
+  "ALL": {
+   "hq_city": "Northbrook",
+   "hq_lat": 42.1292,
+   "hq_lon": -87.8408,
+   "qid": "Q2645636",
+   "hq_qid": "Q570986",
+   "company_label": "Allstate",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2645636",
+   "checked_at": "2026-11-11"
+  },
+  "AFL": {
+   "hq_city": "Columbus",
+   "hq_lat": 32.4922,
+   "hq_lon": -84.9403,
+   "qid": "Q26311",
+   "hq_qid": "Q239870",
+   "company_label": "Aflac",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q26311",
+   "checked_at": "2026-11-11"
+  },
+  "GM": {
+   "hq_city": "Detroit",
+   "hq_lat": 42.3317,
+   "hq_lon": -83.0475,
+   "qid": "Q81965",
+   "hq_qid": "Q12439",
+   "company_label": "General Motors",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q81965",
+   "checked_at": "2026-11-11"
+  },
+  "F": {
+   "hq_city": "Dearborn",
+   "hq_lat": 42.3113,
+   "hq_lon": -83.2135,
+   "qid": "Q44294",
+   "hq_qid": "Q430464",
+   "company_label": "Ford Motor Company",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q44294",
+   "checked_at": "2026-11-11"
+  },
+  "STLA": {
+   "hq_city": "Amsterdam",
+   "hq_lat": 52.3667,
+   "hq_lon": 4.8833,
+   "qid": "Q97439162",
+   "hq_qid": "Q727",
+   "company_label": "Stellantis",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q97439162",
+   "checked_at": "2026-11-11"
+  },
+  "LCID": {
+   "hq_city": "Newark",
+   "hq_lat": 37.5333,
+   "hq_lon": -122.0333,
+   "qid": "Q28027517",
+   "hq_qid": "Q850812",
+   "company_label": "Lucid Motors",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q28027517",
+   "checked_at": "2026-11-11"
+  },
+  "NIO": {
+   "hq_city": "Hefei",
+   "hq_lat": 31.8639,
+   "hq_lon": 117.2808,
+   "qid": "Q29921278",
+   "hq_qid": "Q185684",
+   "company_label": "Nio Inc.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q29921278",
+   "checked_at": "2026-11-11"
+  },
+  "XPEV": {
+   "hq_city": "Guangzhou",
+   "hq_lat": 23.13,
+   "hq_lon": 113.26,
+   "qid": "Q63035278",
+   "hq_qid": "Q16572",
+   "company_label": "XPeng",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q63035278",
+   "checked_at": "2026-11-11"
+  },
+  "LI": {
+   "hq_city": "Beijing",
+   "hq_lat": 39.904,
+   "hq_lon": 116.4075,
+   "qid": "Q98139925",
+   "hq_qid": "Q956",
+   "company_label": "Li Auto",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q98139925",
+   "checked_at": "2026-11-11"
+  },
+  "LMT": {
+   "hq_city": "Bethesda",
+   "hq_lat": 38.9848,
+   "hq_lon": -77.0946,
+   "qid": "Q7240",
+   "hq_qid": "Q584451",
+   "company_label": "Lockheed Martin",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7240",
+   "checked_at": "2026-11-11"
+  },
+  "RTX": {
+   "hq_city": "Arlington County",
+   "hq_lat": 38.8803,
+   "hq_lon": -77.1083,
+   "qid": "Q89368734",
+   "hq_qid": "Q107126",
+   "company_label": "RTX",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q89368734",
+   "checked_at": "2026-11-11"
+  },
+  "NOC": {
+   "hq_city": "Falls Church",
+   "hq_lat": 38.8822,
+   "hq_lon": -77.1711,
+   "qid": "Q329953",
+   "hq_qid": "Q408744",
+   "company_label": "Northrop Grumman Corporation",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q329953",
+   "checked_at": "2026-11-11"
+  },
+  "GD": {
+   "hq_city": "Reston",
+   "hq_lat": 38.9589,
+   "hq_lon": -77.3586,
+   "qid": "Q502940",
+   "hq_qid": "Q1375280",
+   "company_label": "General Dynamics",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q502940",
+   "checked_at": "2026-11-11"
+  },
+  "LHX": {
+   "hq_city": "Melbourne",
+   "hq_lat": 28.0836,
+   "hq_lon": -80.6081,
+   "qid": "Q30291091",
+   "hq_qid": "Q949779",
+   "company_label": "L3Harris Technologies",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q30291091",
+   "checked_at": "2026-11-11"
+  },
+  "HII": {
+   "hq_city": "Newport News",
+   "hq_lat": 37.0708,
+   "hq_lon": -76.4844,
+   "qid": "Q7257522",
+   "hq_qid": "Q335017",
+   "company_label": "Huntington Ingalls Industries",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7257522",
+   "checked_at": "2026-11-11"
+  },
+  "TDG": {
+   "hq_city": "Cleveland",
+   "hq_lat": 41.4992,
+   "hq_lon": -81.6947,
+   "qid": "Q7833612",
+   "hq_qid": "Q37320",
+   "company_label": "TransDigm Group Inc.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7833612",
+   "checked_at": "2026-11-11"
+  },
+  "CAT": {
+   "hq_city": "Irving",
+   "hq_lat": 32.8117,
+   "hq_lon": -96.9508,
+   "qid": "Q459965",
+   "hq_qid": "Q51690",
+   "company_label": "Caterpillar Inc.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q459965",
+   "checked_at": "2026-11-11"
+  },
+  "DE": {
+   "hq_city": "Moline",
+   "hq_lat": 41.4858,
+   "hq_lon": -90.4997,
+   "qid": "Q496302",
+   "hq_qid": "Q579736",
+   "company_label": "Deere & Company",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q496302",
+   "checked_at": "2026-11-11"
+  },
+  "HON": {
+   "hq_city": "Charlotte",
+   "hq_lat": 35.2269,
+   "hq_lon": -80.8433,
+   "qid": "Q898208",
+   "hq_qid": "Q16565",
+   "company_label": "Honeywell",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q898208",
+   "checked_at": "2026-11-11"
+  },
+  "GE": {
+   "hq_city": "Evendale",
+   "hq_lat": 39.2475,
+   "hq_lon": -84.4311,
+   "qid": "Q1485061",
+   "hq_qid": "Q606839",
+   "company_label": "GE Aerospace",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1485061",
+   "checked_at": "2026-11-11"
+  },
+  "UPS": {
+   "hq_city": "Sandy Springs",
+   "hq_lat": 33.9375,
+   "hq_lon": -84.3686,
+   "qid": "Q155026",
+   "hq_qid": "Q914884",
+   "company_label": "United Parcel Service",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q155026",
+   "checked_at": "2026-11-11"
+  },
+  "MMM": {
+   "hq_city": "Maplewood",
+   "hq_lat": 44.9531,
+   "hq_lon": -92.9953,
+   "qid": "Q159433",
+   "hq_qid": "Q990856",
+   "company_label": "3M",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q159433",
+   "checked_at": "2026-11-11"
+  },
+  "UNP": {
+   "hq_city": "Omaha",
+   "hq_lat": 41.2586,
+   "hq_lon": -95.9375,
+   "qid": "Q20183163",
+   "hq_qid": "Q43199",
+   "company_label": "Union Pacific Corporation",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q20183163",
+   "checked_at": "2026-11-11"
+  },
+  "ETN": {
+   "hq_city": "Cleveland",
+   "hq_lat": 41.4992,
+   "hq_lon": -81.6947,
+   "qid": "Q48872",
+   "hq_qid": "Q37320",
+   "company_label": "Eaton Corporation",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q48872",
+   "checked_at": "2026-11-11"
+  },
+  "EMR": {
+   "hq_city": "St. Louis",
+   "hq_lat": 38.6264,
+   "hq_lon": -90.1994,
+   "qid": "Q1335585",
+   "hq_qid": "Q38022",
+   "company_label": "Emerson Electric",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1335585",
+   "checked_at": "2026-11-11"
+  },
+  "FDX": {
+   "hq_city": "Memphis",
+   "hq_lat": 35.1461,
+   "hq_lon": -90.0519,
+   "qid": "Q459477",
+   "hq_qid": "Q16563",
+   "company_label": "FedEx",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q459477",
+   "checked_at": "2026-11-11"
+  },
+  "SLB": {
+   "hq_city": "Houston",
+   "hq_lat": 29.7628,
+   "hq_lon": -95.3831,
+   "qid": "Q1425316",
+   "hq_qid": "Q16555",
+   "company_label": "SLB",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1425316",
+   "checked_at": "2026-11-11"
+  },
+  "COP": {
+   "hq_city": "Houston",
+   "hq_lat": 29.7628,
+   "hq_lon": -95.3831,
+   "qid": "Q214763",
+   "hq_qid": "Q16555",
+   "company_label": "ConocoPhillips",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q214763",
+   "checked_at": "2026-11-11"
+  },
+  "EOG": {
+   "hq_city": "Houston",
+   "hq_lat": 29.7628,
+   "hq_lon": -95.3831,
+   "qid": "Q1275577",
+   "hq_qid": "Q16555",
+   "company_label": "EOG Resources",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1275577",
+   "checked_at": "2026-11-11"
+  },
+  "OXY": {
+   "hq_city": "Houston",
+   "hq_lat": 29.7628,
+   "hq_lon": -95.3831,
+   "qid": "Q2013357",
+   "hq_qid": "Q16555",
+   "company_label": "Occidental Petroleum",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2013357",
+   "checked_at": "2026-11-11"
+  },
+  "ABBV": {
+   "hq_city": "North Chicago",
+   "hq_lat": 42.3172,
+   "hq_lon": -87.8594,
+   "qid": "Q14662364",
+   "hq_qid": "Q338720",
+   "company_label": "AbbVie",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q14662364",
+   "checked_at": "2026-11-11"
+  },
+  "TMO": {
+   "hq_city": "Waltham",
+   "hq_lat": 42.3806,
+   "hq_lon": -71.235,
+   "qid": "Q643674",
+   "hq_qid": "Q49190",
+   "company_label": "Thermo Fisher Scientific Inc.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q643674",
+   "checked_at": "2026-11-11"
+  },
+  "ABT": {
+   "hq_city": "North Chicago",
+   "hq_lat": 42.3172,
+   "hq_lon": -87.8594,
+   "qid": "Q306764",
+   "hq_qid": "Q338720",
+   "company_label": "Abbott Laboratories",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q306764",
+   "checked_at": "2026-11-11"
+  },
+  "SHW": {
+   "hq_city": "Cleveland",
+   "hq_lat": 41.4992,
+   "hq_lon": -81.6947,
+   "qid": "Q48881",
+   "hq_qid": "Q37320",
+   "company_label": "Sherwin-Williams",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q48881",
+   "checked_at": "2026-11-11"
+  },
+  "FCX": {
+   "hq_city": "Phoenix",
+   "hq_lat": 33.4483,
+   "hq_lon": -112.0739,
+   "qid": "Q1453620",
+   "hq_qid": "Q16556",
+   "company_label": "Freeport-McMoRan",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1453620",
+   "checked_at": "2026-11-11"
+  },
+  "NEM": {
+   "hq_city": "Denver",
+   "hq_lat": 39.7392,
+   "hq_lon": -104.9847,
+   "qid": "Q1785405",
+   "hq_qid": "Q16554",
+   "company_label": "Newmont Mining Corporation",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1785405",
+   "checked_at": "2026-11-11"
+  },
+  "DOW": {
+   "hq_city": "Midland",
+   "hq_lat": 43.6156,
+   "hq_lon": -84.2472,
+   "qid": "Q62739842",
+   "hq_qid": "Q1005953",
+   "company_label": "Dow Inc.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q62739842",
+   "checked_at": "2026-11-11"
+  },
+  "MU": {
+   "hq_city": "Boise",
+   "hq_lat": 43.6136,
+   "hq_lon": -116.2378,
+   "qid": "Q1197548",
+   "hq_qid": "Q35775",
+   "company_label": "Micron Technology",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1197548",
+   "checked_at": "2026-11-11"
+  },
+  "QCOM": {
+   "hq_city": "San Diego",
+   "hq_lat": 32.715,
+   "hq_lon": -117.1625,
+   "qid": "Q544847",
+   "hq_qid": "Q16552",
+   "company_label": "Qualcomm",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q544847",
+   "checked_at": "2026-11-11"
+  },
+  "TXN": {
+   "hq_city": "Dallas",
+   "hq_lat": 32.7792,
+   "hq_lon": -96.8089,
+   "qid": "Q193412",
+   "hq_qid": "Q16557",
+   "company_label": "Texas Instruments",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q193412",
+   "checked_at": "2026-11-11"
+  },
+  "AMAT": {
+   "hq_city": "Santa Clara",
+   "hq_lat": 37.35,
+   "hq_lon": -121.9667,
+   "qid": "Q621610",
+   "hq_qid": "Q159260",
+   "company_label": "Applied Materials",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q621610",
+   "checked_at": "2026-11-11"
+  },
+  "LRCX": {
+   "hq_city": "Fremont",
+   "hq_lat": 37.5486,
+   "hq_lon": -121.9883,
+   "qid": "Q1342041",
+   "hq_qid": "Q49220",
+   "company_label": "Lam Research",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1342041",
+   "checked_at": "2026-11-11"
+  },
+  "KLAC": {
+   "hq_city": "Milpitas",
+   "hq_lat": 37.4347,
+   "hq_lon": -121.895,
+   "qid": "Q624649",
+   "hq_qid": "Q927510",
+   "company_label": "KLA Corporation",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q624649",
+   "checked_at": "2026-11-11"
+  },
+  "MRVL": {
+   "hq_city": "Santa Clara",
+   "hq_lat": 37.35,
+   "hq_lon": -121.9667,
+   "qid": "Q1347782",
+   "hq_qid": "Q159260",
+   "company_label": "Marvell Technology",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1347782",
+   "checked_at": "2026-11-11"
+  },
+  "ARM": {
+   "hq_city": "Cambridge",
+   "hq_lat": 52.2081,
+   "hq_lon": 0.1225,
+   "qid": "Q296782",
+   "hq_qid": "Q350",
+   "company_label": "Arm Holdings",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q296782",
+   "checked_at": "2026-11-11"
+  },
+  "NXPI": {
+   "hq_city": "Eindhoven",
+   "hq_lat": 51.4344,
+   "hq_lon": 5.4842,
+   "qid": "Q1155668",
+   "hq_qid": "Q9832",
+   "company_label": "NXP Semiconductors",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1155668",
+   "checked_at": "2026-11-11"
+  },
+  "MCHP": {
+   "hq_city": "Chandler",
+   "hq_lat": 33.3033,
+   "hq_lon": -111.8414,
+   "qid": "Q1545076",
+   "hq_qid": "Q49272",
+   "company_label": "Microchip Technology",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1545076",
+   "checked_at": "2026-11-11"
+  },
+  "STM": {
+   "hq_city": "Plan-les-Ouates",
+   "hq_lat": 46.1667,
+   "hq_lon": 6.1167,
+   "qid": "Q661845",
+   "hq_qid": "Q65273",
+   "company_label": "STMicroelectronics",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q661845",
+   "checked_at": "2026-11-11"
+  }
+ },
+ "not_matched": [
+  {
+   "s": "XOM",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "WULF",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "CRWV",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "AMD",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "CRM",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "ASML",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "TSM",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "WMT",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "COST",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "GS",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "BNP",
+   "why": "multiple company identities"
+  },
+  {
+   "s": "NVO",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "CVX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "TM",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "RY",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "MELI",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "AZN",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "RACE",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "SMSN",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "HYMTF",
+   "why": "multiple company identities"
+  },
+  {
+   "s": "MUFG",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "SFTBY",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "TCEHY",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "BYDDY",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "XIACY",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "RELI",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "DBS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "BRKB",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "TD",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "RIO",
+   "why": "multiple company identities"
+  },
+  {
+   "s": "MEL",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "NPN",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "MTN",
+   "why": "multiple company identities"
+  },
+  {
+   "s": "SBK",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "FSR",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "CPI",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ANG",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "COMI",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ARMCO",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "RJHI",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "SABIC",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "STC",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "QNBK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ENBD",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "TEVA",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "CHKP",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "RIO.L",
+   "why": "multiple company identities"
+  },
+  {
+   "s": "REL.L",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "BARC.L",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "VOD.L",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "BA.L",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "NG.L",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "BMW.DE",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "MUV2.DE",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "SU.PA",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "RMS.PA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "INGA.AS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "AD.AS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "PHIA.AS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ABBN.SW",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "CFR.SW",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "LONN.SW",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ITX.MC",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "IBE.MC",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "TEF.MC",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ENI.MI",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "ABI.BR",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "UCB.BR",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "KBC.BR",
+   "why": "headquarters label unavailable"
+  },
+  {
+   "s": "MAERSK-B.CO",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ORSTED.CO",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "CARL-B.CO",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ATCO-A.ST",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "VOLV-B.ST",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "INVE-B.ST",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ERIC-B.ST",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "HM-B.ST",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "SEB-A.ST",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "NOKIA.HE",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "NESTE.HE",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "7267.T",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "601398.SS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "601318.SS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "300750.SZ",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "0700.HK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "9988.HK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "3690.HK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "1810.HK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "TCS.NS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "BHARTIARTL.NS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "LT.NS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "005930.KS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "005380.KS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "051910.KS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "2317.TW",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "2308.TW",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ANZ.AX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "BBDC4.SA",
+   "why": "headquarters label unavailable"
+  },
+  {
+   "s": "BBAS3.SA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "AMXB.MX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "WALMEX.MX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "FEMSAUBD.MX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "GFNORTEO.MX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "CEMEXCPO.MX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "O39.SI",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "U11.SI",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "LUMI.TA",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "ASELS.IS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "1155.KL",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "CPALL.BK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "PKO.WA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "PZU.WA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "AIA.NZ",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "GGAL.BA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "PAMP.BA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "SQM-B.SN",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "COMI.CA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "EDP.LS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "OMV.VI",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "EBS.VI",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "PRU.L",
+   "why": "multiple company identities"
+  },
+  {
+   "s": "MRK.DE",
+   "why": "headquarters label unavailable"
+  },
+  {
+   "s": "DTG.DE",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "CBK.DE",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "VIE.PA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "KPN.AS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "HOLN.SW",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "GIVN.SW",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "SREN.SW",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "PGHN.SW",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "CABK.MC",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "AENA.MC",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ELE.MC",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ACS.MC",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "MB.MI",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "TIT.MI",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "TRN.MI",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "SRG.MI",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ACKB.BR",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "GBLB.BR",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "NSIS-B.CO",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "COLO-B.CO",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "VWS.CO",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "GMAB.CO",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "PNDORA.CO",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ABB.ST",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "ESSITY-B.ST",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "SAND.ST",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "SWED-A.ST",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "TELIA.ST",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ASSA-B.ST",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "EVO.ST",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "FORTUM.HE",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "UPM.HE",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "NDA-FI.HE",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "KRZ.IR",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "GL9.IR",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "RBI.VI",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "JMT.LS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "BCP.LS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "NOS.LS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "PEO.WA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "KGH.WA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "LPP.WA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ALE.WA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "CDR.WA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "DNP.WA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "EUROB.AT",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "TPEIR.AT",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "GARAN.IS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ISCTR.IS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "SAHOL.IS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "EREGL.IS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "FROTO.IS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "KOMB.PR",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "MONET.PR",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "OTP.BD",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "MOL.BD",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "RICHTER.BD",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "8001.T",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "4502.T",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "7741.T",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "6273.T",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "601857.SS",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "600276.SS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "000001.SZ",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "0388.HK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "0001.HK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "0016.HK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "2020.HK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "1211.HK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "0027.HK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ASIANPAINT.NS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "MARUTI.NS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "SUNPHARMA.NS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "105560.KS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "055550.KS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "035720.KS",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "012330.KS",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "2881.TW",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "2882.TW",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "2303.TW",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "1301.TW",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "3711.TW",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "TLS.AX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "WOW.AX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "GMG.AX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "TCL.AX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "WDS.AX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ALL.AX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "REA.AX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "COL.AX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ATD.TO",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "MFC.TO",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "WCN.TO",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "B3SA3.SA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "SUZB3.SA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "RADL3.SA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ORBIA.MX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "KOFUBL.MX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ASURB.MX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "PE&OLES.MX",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "BID.JO",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "SLM.JO",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "2082.SR",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "S68.SI",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "BN4.SI",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "C38U.SI",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "UNVR.JK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ICBP.JK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ADRO.JK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "GOTO.JK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "TSEM.TA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "DSCT.TA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "MZTF.TA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "5183.KL",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "4707.KL",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "KBANK.BK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "SCB.BK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ADVANC.BK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "BDMS.BK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "GULF.BK",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "VCB.VN",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "VIC.VN",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "HPG.VN",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "FPT.VN",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "BMA.BA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "TXAR.BA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "CEPU.BA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "CENCOSUD.SN",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "COPEC.SN",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ENELAM.SN",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "CREDITC1.LM",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "BAP",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "CIB",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "HRHO.CA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "TMGH.CA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "EAST.CA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "IQCD.QA",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "NBK.KW",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ZAIN.KW",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "AEP",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "BRK-B",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "TRV",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "HIG",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "AXAHY",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ZURVY",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "HMC",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "VWAGY",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "MBGYY",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "POAHY",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "RNMBY",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "BAESY",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "SAFRY",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "THLLY",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "MRK",
+   "why": "multiple company identities"
+  },
+  {
+   "s": "LIN",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "ON",
+   "why": "no ticker/name match with headquarters coordinates"
+  },
+  {
+   "s": "ADI",
+   "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "BA",
+   "why": "review required: Potentially stale Boeing HQ location; independent current-source review required.",
+   "candidate": {
+    "hq_city": "Chicago",
+    "hq_lat": 41.8819,
+    "hq_lon": -87.6278,
+    "qid": "Q66",
+    "hq_qid": "Q1297",
+    "company_label": "Boeing",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q66",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Potentially stale Boeing HQ location; independent current-source review required."
+    ]
+   }
+  },
+  {
+   "s": "HSBA",
+   "why": "review required: Source HQ label is a site/address; city name has not been resolved.",
+   "candidate": {
+    "hq_city": "8 Canada Square",
+    "hq_lat": 51.5053,
+    "hq_lon": -0.0174,
+    "qid": "Q190464",
+    "hq_qid": "Q572887",
+    "company_label": "HSBC",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q190464",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Source HQ label is a site/address; city name has not been resolved."
+    ]
+   }
+  },
+  {
+   "s": "ENPH",
+   "why": "review required: Potentially stale Enphase HQ location; independent current-source review required.",
+   "candidate": {
+    "hq_city": "Petaluma",
+    "hq_lat": 38.2458,
+    "hq_lon": -122.6314,
+    "qid": "Q17012234",
+    "hq_qid": "Q720087",
+    "company_label": "Enphase Energy",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q17012234",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Potentially stale Enphase HQ location; independent current-source review required."
+    ]
+   }
+  },
+  {
+   "s": "NU",
+   "why": "review required: HQ source identifies a country/territory, not a city.",
+   "candidate": {
+    "hq_city": "Cayman Islands",
+    "hq_lat": 19.5,
+    "hq_lon": -80.5,
+    "qid": "Q107453017",
+    "hq_qid": "Q5785",
+    "company_label": "Nu Holdings Ltd.",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q107453017",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "HQ source identifies a country/territory, not a city."
+    ]
+   }
+  },
+  {
+   "s": "MQG",
+   "why": "review required: Source HQ label is a site/address; city name has not been resolved.",
+   "candidate": {
+    "hq_city": "State Savings Bank building",
+    "hq_lat": -33.8673,
+    "hq_lon": 151.2102,
+    "qid": "Q1200904",
+    "hq_qid": "Q7603516",
+    "company_label": "Macquarie Group",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q1200904",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Source HQ label is a site/address; city name has not been resolved."
+    ]
+   }
+  },
+  {
+   "s": "0005.HK",
+   "why": "review required: Source HQ label is a site/address; city name has not been resolved.",
+   "candidate": {
+    "hq_city": "8 Canada Square",
+    "hq_lat": 51.5053,
+    "hq_lon": -0.0174,
+    "qid": "Q190464",
+    "hq_qid": "Q572887",
+    "company_label": "HSBC",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q190464",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Source HQ label is a site/address; city name has not been resolved."
+    ]
+   }
+  },
+  {
+   "s": "MQG.AX",
+   "why": "review required: Source HQ label is a site/address; city name has not been resolved.",
+   "candidate": {
+    "hq_city": "State Savings Bank building",
+    "hq_lat": -33.8673,
+    "hq_lon": 151.2102,
+    "qid": "Q1200904",
+    "hq_qid": "Q7603516",
+    "company_label": "Macquarie Group",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q1200904",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Source HQ label is a site/address; city name has not been resolved."
+    ]
+   }
+  },
+  {
+   "s": "CB",
+   "why": "review required: Legacy Chubb Corp entity; current CB issuer identity requires review.",
+   "candidate": {
+    "hq_city": "Warren",
+    "hq_lat": 40.6346,
+    "hq_lon": -74.519,
+    "qid": "Q1089060",
+    "hq_qid": "Q367280",
+    "company_label": "Chubb Corp.",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q1089060",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Legacy Chubb Corp entity; current CB issuer identity requires review."
+    ]
+   }
+  },
+  {
+   "s": "PRU",
+   "why": "review required: Wikidata classifies the HQ site as a destroyed building; current office needs review.; Source HQ label is a site/address; city name has not been resolved.",
+   "candidate": {
+    "hq_city": "Prudential Headquarters",
+    "hq_lat": 40.7335,
+    "hq_lon": -74.1711,
+    "qid": "Q2114414",
+    "hq_qid": "Q7252985",
+    "company_label": "Prudential Financial",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q2114414",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Wikidata classifies the HQ site as a destroyed building; current office needs review.",
+     "Source HQ label is a site/address; city name has not been resolved."
+    ]
+   }
+  },
+  {
+   "s": "RIVN",
+   "why": "review required: Potentially stale Rivian HQ location; independent current-source review required.",
+   "candidate": {
+    "hq_city": "Detroit",
+    "hq_lat": 42.3317,
+    "hq_lon": -83.0475,
+    "qid": "Q7338847",
+    "hq_qid": "Q12439",
+    "company_label": "Rivian Automotive",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q7338847",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Potentially stale Rivian HQ location; independent current-source review required."
+    ]
+   }
+  }
+ ],
+ "review_required": [
+  {
+   "s": "BA",
+   "why": [
+    "Potentially stale Boeing HQ location; independent current-source review required."
+   ]
+  },
+  {
+   "s": "HSBA",
+   "why": [
+    "Source HQ label is a site/address; city name has not been resolved."
+   ]
+  },
+  {
+   "s": "ENPH",
+   "why": [
+    "Potentially stale Enphase HQ location; independent current-source review required."
+   ]
+  },
+  {
+   "s": "NU",
+   "why": [
+    "HQ source identifies a country/territory, not a city."
+   ]
+  },
+  {
+   "s": "MQG",
+   "why": [
+    "Source HQ label is a site/address; city name has not been resolved."
+   ]
+  },
+  {
+   "s": "0005.HK",
+   "why": [
+    "Source HQ label is a site/address; city name has not been resolved."
+   ]
+  },
+  {
+   "s": "MQG.AX",
+   "why": [
+    "Source HQ label is a site/address; city name has not been resolved."
+   ]
+  },
+  {
+   "s": "CB",
+   "why": [
+    "Legacy Chubb Corp entity; current CB issuer identity requires review."
+   ]
+  },
+  {
+   "s": "PRU",
+   "why": [
+    "Wikidata classifies the HQ site as a destroyed building; current office needs review.",
+    "Source HQ label is a site/address; city name has not been resolved."
+   ]
+  },
+  {
+   "s": "RIVN",
+   "why": [
+    "Potentially stale Rivian HQ location; independent current-source review required."
+   ]
+  }
+ ],
+ "city_labels_resolved": [
+  "MC",
+  "DHL.DE",
+  "AI.PA",
+  "REP.MC",
+  "UCG.MI",
+  "MONC.MI",
+  "8316.T",
+  "SPG"
+ ]
+}
