@@ -146,9 +146,9 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
  .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(10,10,11,.85) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}
  :root[data-theme="light"] .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(247,247,248,.82) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}}
 @media (max-width:900px){.hn-facts{width:100%;grid-template-columns:repeat(3,1fr)}.hn-facts div,.hn-facts div:last-child{padding-right:8px}.hn-facts div+div{padding-left:12px}.hn-facts b{font-size:21px}.hn-facts span{font-size:11.5px}.hn-facts div+div{padding-left:10px}}
-/* Homepage starfield: stars run behind the header and across the page */
-.hdr{background:transparent!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;border-bottom-color:transparent!important}
-#hnStars{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;pointer-events:none}
+/* Homepage starfield: stars sit behind the globe only (left part of the hero) */
+#hnStars{position:absolute;left:0;top:0;width:52%;height:100%;z-index:0;pointer-events:none}
+@media (max-width:900px){#hnStars{display:none}}
 </style>
 <link rel="stylesheet" href="assets/home-news.css"><link rel="stylesheet" href="assets/since-news.css">
 <section class="hn-hero" aria-label="Live news globe">
@@ -294,11 +294,11 @@ document.getElementById('res-track').innerHTML = resItems + '<span class="res-se
 (function(){
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   const c = document.createElement('canvas'); c.id = 'hnStars'; c.setAttribute('aria-hidden', 'true');
-  document.body.prepend(c);
+  document.querySelector('.hn-hero').prepend(c);
   const x = c.getContext('2d'); let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
   const stars = []; for (let i = 0; i < 340; i++) stars.push([rnd(), rnd(), 0.15 + rnd() * 0.6, 0.3 + rnd() * 1.1]);
   const draw = () => {
-    const dpr = Math.min(devicePixelRatio || 1, 2), W = c.width = innerWidth * dpr, H = c.height = innerHeight * dpr;
+    const dpr = Math.min(devicePixelRatio || 1, 2), R = c.getBoundingClientRect(), W = c.width = R.width * dpr, H = c.height = R.height * dpr;
     x.clearRect(0, 0, W, H); x.fillStyle = '#fff';
     for (const [px, py, a, r] of stars) { x.globalAlpha = a; x.beginPath(); x.arc(px * W, py * H, r * dpr, 0, 7); x.fill(); }
   };
