@@ -55,6 +55,14 @@
   "retrieved": "2026-11-11",
   "wikidata": "Q2645636"
  },
+ "AMT": {
+  "author": "American Tower CorporationSVG version by JBarta",
+  "company": "American Tower",
+  "file": "https://commons.wikimedia.org/wiki/File:American_Tower_Corporation_logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q4745263"
+ },
  "D": {
   "author": "Dominion Energy",
   "company": "Dominion Energy",
@@ -78,6 +86,22 @@
   "licence": "Public domain",
   "retrieved": "2026-11-11",
   "wikidata": "Q1127536"
+ },
+ "EQIX": {
+  "author": "™/®Equinix",
+  "company": "Equinix",
+  "file": "https://commons.wikimedia.org/wiki/File:Equinix_logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q851641"
+ },
+ "IFT.NZ": {
+  "author": "Updater437",
+  "company": "Infratil",
+  "file": "https://commons.wikimedia.org/wiki/File:Infratil_2022_new.png",
+  "licence": "CC BY-SA 4.0",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q1662683"
  },
  "MET": {
   "author": "MetLife",
@@ -111,6 +135,14 @@
   "retrieved": "2026-11-11",
   "wikidata": "Q1465461"
  },
+ "O": {
+  "author": "Realty Income Corporation",
+  "company": "Realty Income",
+  "file": "https://commons.wikimedia.org/wiki/File:Realty_Income_logo.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q7301386"
+ },
  "OXY": {
   "author": "Occidental Petroleum",
   "company": "Occidental Petroleum",
@@ -134,6 +166,14 @@
   "licence": "Public domain",
   "retrieved": "2026-11-11",
   "wikidata": "Q1156045"
+ },
+ "SPG": {
+  "author": "Simon Property Group",
+  "company": "Simon Property Group",
+  "file": "https://commons.wikimedia.org/wiki/File:Simon_Property_Group_Logo_2014.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q2287759"
  },
  "STLA": {
   "author": "Original: Unknown Vector:  Sushant savla",
@@ -174,6 +214,14 @@
   "licence": "Public domain",
   "retrieved": "2026-11-11",
   "wikidata": "Q155026"
+ },
+ "WELL": {
+  "author": "Welltower Inc.",
+  "company": "Welltower",
+  "file": "https://commons.wikimedia.org/wiki/File:Welltower_Logo_2025.svg",
+  "licence": "Public domain",
+  "retrieved": "2026-11-11",
+  "wikidata": "Q20486917"
  },
  "XEL": {
   "author": "Xcel Energy Inc.",
