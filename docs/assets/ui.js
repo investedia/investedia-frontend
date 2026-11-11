@@ -238,14 +238,27 @@
     return `<span class="notif-ic notif-gl" style="--c:${GC.geopolitics}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${GL.geopolitics}</svg></span>`;
   };
   const paintNotif = () => {
-    const unread = NOTIFS.filter(s=>!readIds.has(s.id)).length;
+    const unread = NOTIFS.filter(s=>!readIds.has(s.id)).length + (window.INVALERTS?.unseen || 0);
     hdr.querySelector('#notif-dot').hidden = !unread;
+    if (notifFilter === 'alerts') { paintAlertsTab(); return; }
     const list = NOTIFS.filter(s=>notifFilter === 'high' ? s.importance === 3 : notifFilter === 'mine' ? mine(s) : true);
-    nd.innerHTML = `<div class="notif-head"><b>Notifications</b><button type="button" class="link" id="notif-read">Mark all read</button></div><nav class="notif-filters" aria-label="Notification filters">${[['all','All'],['high','High impact'],['mine','My assets']].map(([k,n])=>`<button type="button" data-nf="${k}" aria-pressed="${notifFilter===k}">${n}</button>`).join('')}</nav><div class="notif-list">${list.slice(0,20).map(s=>`<a class="notif-item ${readIds.has(s.id)?'':'unread'}" data-nid="${ne(s.id)}" href="story.html?id=${encodeURIComponent(s.id)}">${notifIcon(s)}<span><span class="notif-msg">${ne(s.headline)}</span><span class="notif-assets">${(s.impacts || []).slice(0,3).map(i=>`<span title="${ne(i.ticker || '')}">${ne(i.name)} <i class="${i.direction==='up'?'up':i.direction==='down'?'down':''}">${i.direction==='up'?'↑':i.direction==='down'?'↓':'↔'}</i></span>`).join('')}</span><small class="dim">${ne(s.source?.name)} · ${relative(s.published_at)}</small></span></a>`).join('') || '<p class="notif-empty">No articles match this filter.</p>'}</div>`;
+    nd.innerHTML = `<div class="notif-head"><b>Notifications</b><button type="button" class="link" id="notif-read">Mark all read</button></div><nav class="notif-filters" aria-label="Notification filters">${[['all','All'],['alerts','Alerts'],['high','High impact'],['mine','My assets']].map(([k,n])=>`<button type="button" data-nf="${k}" aria-pressed="${notifFilter===k}">${n}</button>`).join('')}</nav><div class="notif-list">${list.slice(0,20).map(s=>`<a class="notif-item ${readIds.has(s.id)?'':'unread'}" data-nid="${ne(s.id)}" href="story.html?id=${encodeURIComponent(s.id)}">${notifIcon(s)}<span><span class="notif-msg">${ne(s.headline)}</span><span class="notif-assets">${(s.impacts || []).slice(0,3).map(i=>`<span title="${ne(i.ticker || '')}">${ne(i.name)} <i class="${i.direction==='up'?'up':i.direction==='down'?'down':''}">${i.direction==='up'?'↑':i.direction==='down'?'↓':'↔'}</i></span>`).join('')}</span><small class="dim">${ne(s.source?.name)} · ${relative(s.published_at)}</small></span></a>`).join('') || '<p class="notif-empty">No articles match this filter.</p>'}</div>`;
     nd.querySelector('#notif-read').onclick = e => { e.stopPropagation(); NOTIFS.forEach(s=>readIds.add(s.id)); saveRead(); paintNotif(); };
     nd.querySelectorAll('[data-nf]').forEach(b=>b.onclick=e=>{e.stopPropagation();notifFilter=b.dataset.nf;paintNotif();});
     nd.querySelectorAll('[data-nid]').forEach(a=>a.addEventListener('click',()=>{readIds.add(a.dataset.nid);saveRead();}));
   };
+  // Smart alerts tab: articles that matched what this person follows (from the alerts module)
+  const paintAlertsTab = () => {
+    const A = window.INVALERTS, ev = A ? A.events : [];
+    const body = !window.invUser ? '<p class="notif-empty">Log in to get alerts for the countries, assets and topics you follow.</p>'
+      : ev.length ? `<div class="notif-list">${ev.slice(0,20).map(e=>`<a class="notif-item ${e.seen_at?'':'unread'}" data-aid="${ne(e.id)}" href="${e.article_id?'story.html?id='+encodeURIComponent(e.article_id):ne(e.url)}"><span class="notif-ic notif-gl" style="--c:#ff7a1a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></span><span class="notif-tx"><b>${ne(e.headline)}</b><small>${ne(e.label||e.ref)} · ${relative(e.created_at)}</small></span></a>`).join('')}</div>`
+      : `<p class="notif-empty">No alerts yet. You follow ${A ? A.follows.length : 0} of ${A?.pro ? 'unlimited' : 5}.</p>`;
+    nd.innerHTML = `<div class="notif-head"><b>Notifications</b>${ev.some(e=>!e.seen_at)?'<button type="button" class="link" id="notif-read">Mark all read</button>':''}</div><nav class="notif-filters" aria-label="Notification filters">${[['all','All'],['alerts','Alerts'],['high','High impact'],['mine','My assets']].map(([k,n])=>`<button type="button" data-nf="${k}" aria-pressed="${notifFilter===k}">${n}</button>`).join('')}</nav>${body}<a class="notif-more" href="alerts.html">Manage alerts</a>`;
+    nd.querySelector('#notif-read')?.addEventListener('click', e => { e.stopPropagation(); A?.markSeen(); });
+    nd.querySelectorAll('[data-nf]').forEach(b=>b.onclick=e=>{e.stopPropagation();notifFilter=b.dataset.nf;paintNotif();});
+    nd.querySelectorAll('[data-aid]').forEach(a=>a.addEventListener('click',()=>A?.markSeen([+a.dataset.aid])));
+  };
+  { const sc = document.createElement('script'); sc.src = 'assets/smart-alerts.js'; sc.defer = true; sc.onload = () => { INVALERTS.on(() => { try { paintNotif(); } catch {} }); paintNotif(); }; document.head.append(sc); }
   const saveRead = () => { try { localStorage.setItem('inv-notif-ids',JSON.stringify([...readIds].slice(-1000))); } catch {} };
   paintNotif();
   fetch('assets/globe/news-live.json').then(r=>r.json()).then(n=>{NOTIFS=(n.stories || []).sort((a,b)=>Date.parse(b.published_at)-Date.parse(a.published_at));paintNotif();}).catch(()=>{});

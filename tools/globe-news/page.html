@@ -166,6 +166,7 @@ html.proj-mode .pj{padding:0!important;overflow:auto}.pjh{position:relative;heig
 @media(max-width:760px){html.proj-mode .pjl{display:none}html.proj-mode .pj{max-height:62vh}}
 /* Swipe-to-watchlist: the orange action is hidden until a row is actually swiped */
 .nd-act{opacity:0;pointer-events:none;transition:opacity .15s}.nd-row.sw .nd-act{opacity:1}
+.gswitch .gs-pro .pro-spark-g{display:inline-flex;align-items:center;gap:2px;border:0!important;padding:0!important;background:none!important;color:#ff9a4a;font-size:11px;font-weight:600;letter-spacing:0}
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
@@ -861,7 +862,7 @@ html[data-theme=light] .detail-header{background:#f4f7fb}
 <div class="top">
   <div class="brand">
     <a class="wm" href="/">Invested<span class="i">i</span>a</a>
-    <span class="prod gs-old">Globe · News</span><span class="gswitch" id="gswitch" role="group" aria-label="Globe view"><button type="button" data-m="news" aria-pressed="true">News</button><button type="button" data-m="markets" aria-pressed="false">Markets</button><button type="button" data-m="projects" class="gs-pro" aria-pressed="false">Projects<span>PRO</span></button></span>
+    <span class="prod gs-old">Globe · News</span><span class="gswitch" id="gswitch" role="group" aria-label="Globe view"><button type="button" data-m="news" aria-pressed="true">News</button><button type="button" data-m="markets" aria-pressed="false">Markets</button><button type="button" data-m="projects" class="gs-pro" aria-pressed="false">Projects<span class="pro-spark-g"><svg viewBox="0 0 24 24" width="10" height="10" aria-hidden="true"><path fill="currentColor" d="M12 2l2.2 6.6L21 11l-6.8 2.4L12 20l-2.2-6.6L3 11l6.8-2.4z"/></svg>Pro</span></button></span>
     <button type="button" class="globe-privacy" data-cookie-settings>Privacy</button>
     <span class="demo" id="badge" title="Concept preview: every article is demo content written to show the design. Not real news.">Concept · demo articles</span>
   </div>
@@ -2212,7 +2213,7 @@ function gmMarketRow(asset, label = '') {
 function gmCountryPanel(c) {
   loadGlobalMarkets();
   const code = ISO[c.name], region = COUNTRY_REGIONS[code], continent = regionDefinition(region)?.[1] || 'Global';
-  const header = `<div class="gf-detail-actions"><button type="button" class="back gm-back" data-back>← Back</button><span><button type="button" class="follow${follows().includes(c.name) ? ' on' : ''}" data-follow="${esc(c.name)}" aria-pressed="${follows().includes(c.name)}">${follows().includes(c.name) ? 'Following' : 'Follow'}</button><button type="button" data-detail-close aria-label="Close country panel">×</button></span></div><section class="gm-country" data-gm-country="${esc(code || '')}"><div class="eyebrow">${esc(continent)} · Country</div><div class="gm-country-title">${flag(c.name)}<h2>${esc(nm(c.name))}</h2></div>`;
+  const header = `<div class="gf-detail-actions"><button type="button" class="back gm-back" data-back>← Back</button><span>${code ? (()=>{let on=false;try{on=JSON.parse(localStorage.getItem('inv-alert-follows')||'[]').some(f=>f.kind==='country'&&f.ref===String(code).toUpperCase());}catch{}return `<a class="follow${on?' on':''}" target="_top" href="../../alerts.html?add=country&amp;ref=${encodeURIComponent(code)}&amp;label=${encodeURIComponent(c.name)}" title="Get an alert when a new article about ${esc(c.name)} appears">${on?'Alerts on':'Alert me'}</a>`;})() : ''}<button type="button" class="follow${follows().includes(c.name) ? ' on' : ''}" data-follow="${esc(c.name)}" aria-pressed="${follows().includes(c.name)}">${follows().includes(c.name) ? 'Following' : 'Follow'}</button><button type="button" data-detail-close aria-label="Close country panel">×</button></span></div><section class="gm-country" data-gm-country="${esc(code || '')}"><div class="eyebrow">${esc(continent)} · Country</div><div class="gm-country-title">${flag(c.name)}<h2>${esc(nm(c.name))}</h2></div>`;
   if (!GM) return `${header}<p class="meta">${gmError ? 'Market directory could not load.' : 'Loading country markets…'}</p>${gmError ? '<button class="gm-link" data-gm-retry>Try again</button>' : ''}</section>${gmFooter}`;
   const exchange = gmExchanges(code)[0]?.[1], companies = gmCompanies(code), news = gmCountryArticles(c.name).sort((a, b) => b.t - a.t);
   const benchmark = gmBenchmark(c.name), fx = gmCurrency(c.name), macro = ECON?.countries[code];

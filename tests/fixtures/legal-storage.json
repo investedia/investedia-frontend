@@ -118,5 +118,11 @@
     "purpose": "Projects you chose to watch in the Projects preview (this device only)",
     "category": "Strictly necessary for requested feature",
     "duration": "Until cleared or removed"
+  },
+  {
+    "name": "inv-alert-follows",
+    "purpose": "A copy of the smart alerts you follow, so buttons show the right state (your account holds the real list)",
+    "category": "Strictly necessary for requested feature",
+    "duration": "Until cleared or you log out"
   }
 ]
