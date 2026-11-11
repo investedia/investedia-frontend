@@ -11,7 +11,7 @@ function initArticles() {
   const img = r => r.i ? 'assets/globe/' + r.i : null;
   let meta, all = null, live = [];
   const state = () => { const u = new URLSearchParams(location.search); return { page: Math.max(1, parseInt(u.get('page')) || 1), cat: u.get('cat') || '', date: u.get('date') || '', reg: u.get('reg') || '', q: (u.get('q') || '').trim(), sort: u.get('sort') || 'new' }; };
-  const href = (s, ch) => { const n = { ...s, ...ch }, u = new URLSearchParams(); if (n.page > 1) u.set('page', n.page); for (const k of ['cat', 'date', 'reg', 'q']) if (n[k]) u.set(k, n[k]); if (n.sort !== 'new') u.set('sort', n.sort); const q = u.toString(); return 'articles.html' + (q ? '?' + q : ''); };
+  const href = (s, ch) => { const n = { ...s, ...ch }, u = new URLSearchParams(); if (n.page > 1) u.set('page', n.page); for (const k of ['cat', 'date', 'reg', 'q']) if (n[k]) u.set(k, n[k]); if (n.sort !== 'new') u.set('sort', n.sort); const q = u.toString(); return (location.pathname.split('/').pop() || 'news.html') + (q ? '?' + q : '') + (document.querySelector('.al-onnews') ? '#all' : ''); };
   const go = (ch, push = true) => { const url = href(state(), { page: 1, ...ch }); if (push) history.pushState(null, '', url); else history.replaceState(null, '', url); render(); };
   const get = f => fetch(BASE + f, { cache: 'no-cache' }).then(r => { if (!r.ok) throw Error(f); return r.json(); });
   const day = t => new Date(t).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
@@ -55,11 +55,11 @@ function initArticles() {
     let html = '', d0 = ''; for (const r of list) { const d = day(r.t); if (d !== d0) { html += `<div class="al-day">${d}</div>`; d0 = d; } html += row(r); }
     $('al-list').innerHTML = html || '<p class="al-empty">No articles match these filters.</p>';
     $('al-pg').innerHTML = pager(s, pages);
-    document.title = 'All articles' + (s.page > 1 ? ' · page ' + s.page : '') + ' · Investedia';
+    if (!document.querySelector('.al-onnews')) document.title = 'All articles' + (s.page > 1 ? ' · page ' + s.page : '') + ' · Investedia';
   }
   document.addEventListener('click', e => {
     const b = e.target.closest('[data-k]'); if (b) { go({ [b.dataset.k]: b.dataset.v }); return; }
-    const p = e.target.closest('#al-pg a[data-page]'); if (p && !e.metaKey && !e.ctrlKey) { e.preventDefault(); history.pushState(null, '', p.getAttribute('href')); render(); scrollTo({ top: 0, behavior: 'smooth' }); }
+    const p = e.target.closest('#al-pg a[data-page]'); if (p && !e.metaKey && !e.ctrlKey) { e.preventDefault(); history.pushState(null, '', p.getAttribute('href')); render(); const top = document.getElementById('all'); top ? top.scrollIntoView({ behavior: 'smooth' }) : scrollTo({ top: 0, behavior: 'smooth' }); }
   });
   let qt; $('al-q').addEventListener('input', e => { clearTimeout(qt); qt = setTimeout(() => go({ q: e.target.value.trim() }, false), 250); });
   $('al-sort').addEventListener('change', e => go({ sort: e.target.value }));

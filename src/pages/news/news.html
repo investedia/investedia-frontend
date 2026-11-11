@@ -1,5 +1,5 @@
-{"title":"Investedia News","desc":"Live financial news from around the world. Filter markets, companies, economy, technology, crypto, commodities and geopolitics by region.","key":"news","scripts":["assets/home-news.js"]}
-<link rel="stylesheet" href="assets/news-board.css"><link rel="stylesheet" href="assets/news-feed.css">
+{"title":"Investedia News","desc":"Live financial news from around the world. Filter markets, companies, economy, technology, crypto, commodities and geopolitics by region.","key":"news","scripts":["assets/home-news.js","assets/articles-lib.js"]}
+<link rel="stylesheet" href="assets/news-board.css"><link rel="stylesheet" href="assets/articles-lib.css"><style>#nf-more{display:none!important}.al-onnews{border-top:1px solid var(--line);margin-top:40px}</style><link rel="stylesheet" href="assets/news-feed.css">
 <div class="nb nf">
   <span class="nb-eb">News · <span id="nf-up">Loading</span></span>
   <h1>What's moving <span>money.</span></h1>
@@ -16,8 +16,28 @@
   <div id="nf-chip" hidden></div>
   <div id="nf-list"></div>
   <button class="nb-more" id="nf-more" type="button" hidden>Load more articles</button>
-  <a class="nb-more nb-all" href="articles.html">See all articles →</a>
   <p class="mv-note">Price moves come from public market data and may be delayed. A reaction shows the price move around an article; it is not proof the article caused it. Summaries are written with the help of AI from each source's own reporting. Not investment advice.</p>
 </div>
+<!-- All articles: the full library with numbered pages (same component as articles.html) -->
+<div class="al al-onnews" id="all">
+  <aside class="al-side" id="al-side" aria-label="Filters">
+    <h1>All articles</h1>
+    <p class="al-sub" id="al-sub">Loading…</p>
+    <label class="al-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="al-q" type="search" placeholder="Search headlines, sources, countries" autocomplete="off" aria-label="Search articles"></label>
+    <h2>Category</h2><div class="al-opts" id="al-cat"></div>
+    <h2>Date</h2><div class="al-opts" id="al-date"></div>
+    <h2>Region</h2><div class="al-opts" id="al-reg"></div>
+    <button type="button" class="al-done" id="al-done">Show results</button>
+  </aside>
+  <main class="al-main">
+    <div class="al-phone"><h1>All articles</h1><p class="al-sub" id="al-sub2"></p><button type="button" class="al-fbtn" id="al-fbtn" aria-controls="al-side" aria-expanded="false">Filters</button><div class="al-chips" id="al-chips"></div></div>
+    <div id="al-lead"></div>
+    <div class="al-meta"><span id="al-count"></span><label>Sort <select id="al-sort" aria-label="Sort"><option value="new">Newest</option><option value="old">Oldest</option><option value="src">Most sources</option></select></label></div>
+    <div id="al-list" aria-live="polite"></div>
+    <nav class="al-pg" id="al-pg" aria-label="Pages"></nav>
+    <p class="al-note">Summaries are written with the help of AI from each source's own reporting; every article links to its source. Not investment advice.</p>
+  </main>
+</div>
+
 <script src="assets/asset-icons.js"></script>
 <script src="assets/news-feed.js"></script>
