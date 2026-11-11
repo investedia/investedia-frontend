@@ -756,6 +756,11 @@ html[data-theme=light] .nb-search{background:rgba(0,0,0,.05)}html[data-theme=lig
  .dock{background:rgba(44,44,50,.75);backdrop-filter:blur(26px)}
 }
 @media(prefers-reduced-motion:reduce){.panel,.market-panel,.fsheet{transition:none!important}}
+html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a){background:var(--panel)!important;border-color:var(--line)!important;color:var(--fg);box-shadow:0 8px 30px rgba(36,58,100,.12)}
+html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(h3,h4,b,strong,.mkd-sr,.mkd-fx,.mkd-rg,th){color:var(--fg)!important}
+html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(span,small,.mkd-n,.mkd-ft,.mkd-cs,p){color:var(--fg-3)}
+html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(.mkd-kp>*,.mkd-c,.mkd-e,.mkd-more,button.mkd-more){background:rgba(0,0,0,.04)!important;border-color:var(--line)!important;color:var(--fg)}
+html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(.up,.pos,[class*=up]){color:#15803d}html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(.dn,.neg,[class*=dn],[class*=down]){color:#b91c1c}
 /* C — site light theme. All overrides are scoped; the dark design is unchanged. */
 html[data-theme=light]{--bg:#d9e5f4;--panel:rgba(255,255,255,.9);--card:#f5f8fc;
   --line:rgba(29,29,31,.13);--line-2:rgba(29,29,31,.24);
