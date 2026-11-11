@@ -1,0 +1,70 @@
+[
+  {
+    "width": 1440,
+    "theme": "dark",
+    "projects": 308,
+    "errors": [],
+    "overflow": false,
+    "lazy": true,
+    "real": {
+      "fps": 39,
+      "p95_ms": 33
+    },
+    "synthetic_5000": {
+      "fps": 32,
+      "p95_ms": 33
+    },
+    "fixture_only": true
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "projects": 308,
+    "errors": [],
+    "overflow": false,
+    "lazy": true,
+    "real": {
+      "fps": 49,
+      "p95_ms": 33
+    },
+    "synthetic_5000": {
+      "fps": 39,
+      "p95_ms": 33
+    },
+    "fixture_only": true
+  },
+  {
+    "width": 1440,
+    "theme": "light",
+    "projects": 308,
+    "errors": [],
+    "overflow": false,
+    "lazy": true,
+    "real": {
+      "fps": 38,
+      "p95_ms": 50
+    },
+    "synthetic_5000": {
+      "fps": 28,
+      "p95_ms": 50
+    },
+    "fixture_only": true
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "projects": 308,
+    "errors": [],
+    "overflow": false,
+    "lazy": true,
+    "real": {
+      "fps": 48,
+      "p95_ms": 33
+    },
+    "synthetic_5000": {
+      "fps": 30,
+      "p95_ms": 50
+    },
+    "fixture_only": true
+  }
+]

@@ -33,3 +33,5 @@ html.proj-mode .pjs{left:378px!important}}
 @media(min-width:761px){html.proj-mode .pj .pjb{padding:12px 0 4px;background:none}html.proj-mode .pjb button{background:transparent!important;color:var(--fg)!important;border:1px solid var(--line-2,#2a2a2f)!important}}
 @media(min-width:761px){html.proj-mode .pj-f{display:grid!important;grid-template-columns:1fr 1fr;gap:6px}html.proj-mode .pj-f>*{width:100%;max-width:none!important;min-width:0}html.proj-mode .pj-f select{max-width:none!important;width:100%}}
 @media(max-width:760px){html.proj-mode :is(#project-topbar,#project-mode-subtitle){display:none!important}html.proj-mode .top{display:flex!important}html.proj-mode .top :is(.m-actions,#sbox,#cats,#ddrow,.globe-privacy,.demo,.m-time){display:none!important}}
+
+.pj-pro-preview{border:1px solid var(--line-2,#2a2a2f);border-radius:12px;padding:14px;margin-top:18px}.pj-pro-preview h3{margin:0 0 6px}.pj-pro-preview p{color:var(--fg-2);font-size:13px}.pj-pro-preview a{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:var(--fg);text-decoration:underline;text-underline-offset:4px}

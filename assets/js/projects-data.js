@@ -11,17 +11,20 @@
  }
  function merge(raw,featured){
   const byId=new Map();
-  const v2=raw.schema==='investedia.projects.v2';
+  const v2=raw.schema==='investedia.projects.v2',current=raw.policy?.name==='projects-scale-current-v1';
   if(raw.schema&&!['investedia.projects.v1','investedia.projects.v2'].includes(raw.schema))throw Error('Unsupported projects schema');
   const has=(r,f)=>(r.src||[]).some(s=>s.licence&&s.checked_at&&url(s.url)&&(s.field_list||[]).includes(f));
   for(const r of raw.projects||[]){
    // Verified rows need evidence for every core field; the inherited 10 Nov Wikidata snapshot (CC0) stays visible, marked unverified.
    if(v2&&(!['verified','retained_unverified'].includes(r.validation_status)||!['k','n','lo','la','c','cc','t'].every(f=>has(r,f))))continue;
+   if(current&&(r.validation_status!=='verified'||!has(r,'s')||!['Proposed','Approved','Under construction','In development','Completed'].includes(r.s)))continue;
+   if(current&&r.s==='Completed'&&(!/^20[2-9][0-9]$/.test(String(r.y||''))||!has(r,'y')))continue;
    if(!v2&&/decommission|cancelled|canceled|demolish|closed|retired/i.test(r.s||''))continue;
-   const p={id:r.k,wikidata_id:/^Q[1-9]\d*$/.test(r.k)?r.k:null,name:r.n,country:r.c,location:r.c,lat:r.la,lon:r.lo,type:r.t,stage:(!v2||has(r,'s'))?r.s||null:null,start_year:!v2?r.y||null:null,status_year:v2&&has(r,'y')?r.y||null:null,milestones:[],figures:[],sources:v2?(r.src||[]).filter(s=>url(s.url)&&s.licence&&s.checked_at):[{name:'Wikidata (CC0)',url:'https://www.wikidata.org/wiki/'+r.k,checked_at:'2026-11-10'},...(url(r.wiki)?[{name:'Wikipedia',url:url(r.wiki)}]:[])],wiki:url(r.wiki),featured:false,verified:!v2||r.validation_status==='verified',cc:r.cc||null,capacity:v2&&has(r,'cap')?r.cap:null,cost:v2&&has(r,'cost')?r.cost:null,owners:v2&&has(r,'own')?r.own||[]:[],aliases:v2&&has(r,'aliases')?r.aliases||[]:[]};
+   const p={id:r.k,wikidata_id:/^Q[1-9]\d*$/.test(r.k)?r.k:null,name:r.n,country:r.c,location:r.c,lat:r.la,lon:r.lo,type:r.t,stage:(!v2||has(r,'s'))?(has(r,'display_status')?r.display_status:r.s)||null:null,stage_group:current?(r.s==='Completed'?'Completed':r.s==='Under construction'?'Under construction':'In development'):null,start_year:!v2?r.y||null:null,status_year:v2&&has(r,'y')?r.y||null:null,milestones:[],figures:[],sources:v2?(r.src||[]).filter(s=>url(s.url)&&s.licence&&s.checked_at):[{name:'Wikidata (CC0)',url:'https://www.wikidata.org/wiki/'+r.k,checked_at:'2026-11-10'},...(url(r.wiki)?[{name:'Wikipedia',url:url(r.wiki)}]:[])],wiki:url(r.wiki),featured:false,verified:!v2||r.validation_status==='verified',cc:r.cc||null,capacity:v2&&has(r,'cap')?r.cap:null,cost:v2&&has(r,'cost')?r.cost:null,owners:v2&&has(r,'own')?r.own||[]:[],aliases:v2&&has(r,'aliases')?r.aliases||[]:[]};
+   for(const kind of ['photo','satellite']){const m=r[kind];if(v2&&has(r,kind)&&m&&/^assets\/img\/projects\/scale\/[a-zA-Z0-9_.-]+\.(?:png|jpe?g|webp)$/.test(m.file||'')&&m.author&&m.licence&&url(m.source_url))p[kind]={...m,file:new URL('../../'+m.file,base).href};}
    if(valid(p))byId.set(p.id,p);
   }
-  for(const f of featured.projects||[]){if(!valid(f)||v2&&!['reviewed','inherited_preview'].includes(f.review_status))continue;const existing=f.wikidata_id?byId.get(f.wikidata_id):null;if(existing)byId.delete(f.wikidata_id);
+  for(const f of featured.projects||[]){if(!valid(f)||v2&&!['reviewed','inherited_preview'].includes(f.review_status))continue;const existing=f.wikidata_id?byId.get(f.wikidata_id):null;if(current&&!existing)continue;if(existing)byId.delete(f.wikidata_id);
    byId.set(f.id,{...existing,...f,featured:true,stage:f.stage&&f.stage_source?.url?f.stage:existing?.stage||null,milestones:(f.milestones||[]).filter(m=>m.title&&m.date&&url(m.source?.url)),figures:(f.figures||[]).filter(x=>x.label&&x.value!=null&&url(x.source?.url)),sources:[...(f.sources||[]),...(existing?.sources||[])].filter((x,i,a)=>x.url&&a.findIndex(y=>y.url===x.url)===i)});
   }
   return [...byId.values()];

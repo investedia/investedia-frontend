@@ -1,0 +1,22 @@
+[
+  {
+    "width": 1440,
+    "theme": "dark",
+    "baseline_fps": 29
+  },
+  {
+    "width": 390,
+    "theme": "dark",
+    "baseline_fps": 37
+  },
+  {
+    "width": 1440,
+    "theme": "light",
+    "baseline_fps": 26
+  },
+  {
+    "width": 390,
+    "theme": "light",
+    "baseline_fps": 33
+  }
+]
