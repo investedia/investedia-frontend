@@ -204,3 +204,4 @@ if __name__ == "__main__":
     parser.add_argument("--publish-assets", action="store_true", help="Publish reviewed UI source edits to flat compatibility copies")
     args = parser.parse_args()
     build(release=args.release, publish=args.publish_assets)
+    import tools.site_stats as site_stats; site_stats.write()  # homepage numbers

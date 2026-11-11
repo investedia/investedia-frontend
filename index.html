@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t==='system'?(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'):t}catch(e){}</script><style>html{background:#0a0a0b}html[data-theme=light]{background:#fff}</style>
-<link rel="stylesheet" href="assets/consent.css?v=505a43a822">
-<script src="assets/consent.js?v=505a43a822"></script>
+<link rel="stylesheet" href="assets/consent.css?v=058aae1b36">
+<script src="assets/consent.js?v=058aae1b36"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Investedia</title>
 <meta name="description" content="Follow market-moving news around the world, see where it happens, which assets react, and how prices move — all through Investedia’s live market intelligence platform.">
@@ -23,8 +23,8 @@
 <meta name="twitter:description" content="Follow market-moving news around the world, see where it happens, which assets react, and how prices move — all through Investedia’s live market intelligence platform.">
 <meta name="twitter:image" content="https://investedia.com/assets/og-default.png">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/app.css?v=505a43a822">
-<link rel="stylesheet" href="assets/skin.css?v=505a43a822">
+<link rel="stylesheet" href="assets/app.css?v=058aae1b36">
+<link rel="stylesheet" href="assets/skin.css?v=058aae1b36">
 <link rel="apple-touch-icon" href="assets/app/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -47,22 +47,22 @@
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <script src="assets/quotes.js"></script>
 <script src="assets/news.js"></script>
-<script src="assets/mock.js?v=505a43a822"></script>
-<link rel="stylesheet" href="assets/news-menu.css?v=505a43a822">
-<script src="assets/runtime-config.js?v=505a43a822"></script>
-<script src="assets/live-config.js?v=505a43a822"></script>
-<script src="assets/live-data.js?v=505a43a822" defer></script>
-<script src="assets/news-source.js?v=505a43a822"></script>
-<script src="assets/prefs.js?v=505a43a822"></script>
-<script src="assets/peek.js?v=505a43a822"></script>
-<script src="assets/sectors.js?v=505a43a822"></script>
-<script src="assets/news-menu.js?v=505a43a822"></script>
-<script src="assets/locale.js?v=505a43a822"></script>
-<script src="assets/ui.js?v=505a43a822"></script>
-<script src="assets/news-alerts.js?v=505a43a822" defer></script>
-<script src="assets/since-news.js?v=505a43a822"></script>
-<script src="assets/implications.js?v=505a43a822"></script>
-<script src="assets/home-news.js?v=505a43a822"></script>
+<script src="assets/mock.js?v=058aae1b36"></script>
+<link rel="stylesheet" href="assets/news-menu.css?v=058aae1b36">
+<script src="assets/runtime-config.js?v=058aae1b36"></script>
+<script src="assets/live-config.js?v=058aae1b36"></script>
+<script src="assets/live-data.js?v=058aae1b36" defer></script>
+<script src="assets/news-source.js?v=058aae1b36"></script>
+<script src="assets/prefs.js?v=058aae1b36"></script>
+<script src="assets/peek.js?v=058aae1b36"></script>
+<script src="assets/sectors.js?v=058aae1b36"></script>
+<script src="assets/news-menu.js?v=058aae1b36"></script>
+<script src="assets/locale.js?v=058aae1b36"></script>
+<script src="assets/ui.js?v=058aae1b36"></script>
+<script src="assets/news-alerts.js?v=058aae1b36" defer></script>
+<script src="assets/since-news.js?v=058aae1b36"></script>
+<script src="assets/implications.js?v=058aae1b36"></script>
+<script src="assets/home-news.js?v=058aae1b36"></script>
 <main class="wrap" id="main-content" tabindex="-1">
 <style>
 /* News-first homepage. The globe is the hero; everything below is live news. */
@@ -203,12 +203,12 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
 /* Design E (11 Nov 2026): globe left, name + three facts + search on the right; no headline sentence */
 .hn-kicker{margin:14px 0 0;color:var(--accent,#ff7a1a);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
 .hn-title.hn-e{margin:10px 0 22px}.hn-title.hn-e b{font-size:clamp(52px,6.2vw,84px);letter-spacing:-.04em;line-height:1}
-.hn-facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:0 0 24px;max-width:560px}
-.hn-facts div{padding:14px 0}.hn-facts div+div{padding-left:16px;border-left:1px solid var(--line)}.hn-facts b{display:block;font-size:19px;font-weight:600;color:var(--fg)}.hn-facts span{color:var(--fg-3,#8e8e96);font-size:13px}
+.hn-facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;column-gap:0;width:max-content;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:0 0 24px;max-width:560px}
+.hn-facts div{padding:14px 0}.hn-facts div{padding-right:28px}.hn-facts div:last-child{padding-right:0}.hn-facts div+div{padding-left:28px;border-left:1px solid var(--line)}.hn-facts b{display:block;font-size:clamp(22px,2vw,28px);font-weight:700;letter-spacing:-.03em;color:var(--fg);font-feature-settings:"tnum"}.hn-facts span{color:var(--fg-3,#8e8e96);font-size:13px}
 @media (min-width:901px){.hn-copy .hn{margin-left:max(52%,calc(50vw + 20px));max-width:600px;padding-right:32px}
  .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(10,10,11,.85) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}
  :root[data-theme="light"] .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(247,247,248,.82) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}}
-@media (max-width:900px){.hn-facts b{font-size:16px}.hn-facts span{font-size:11.5px}.hn-facts div+div{padding-left:10px}}
+@media (max-width:900px){.hn-facts b{font-size:21px}.hn-facts span{font-size:11.5px}.hn-facts div+div{padding-left:10px}}
 </style>
 <link rel="stylesheet" href="assets/home-news.css"><link rel="stylesheet" href="assets/since-news.css">
 <section class="hn-hero" aria-label="Live news globe">
@@ -217,7 +217,7 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
     <span class="hn-live" id="hnLive"><i></i>Live</span>
     <p class="hn-kicker">Live globe · financial news</p>
     <h1 class="hn-title hn-e" id="hnTitle"><b>Investedia</b></h1>
-    <div class="hn-facts"><div><b>Hourly</b><span>news updates</span></div><div><b>Named</b><span>sources on every article</span></div><div><b>Global</b><span>countries &amp; markets</span></div></div>
+    <div class="hn-facts" id="hnFacts"><div><b data-stat="articles">—</b><span>articles</span></div><div><b data-stat="sources">—</b><span>news sources</span></div><div><b data-stat="projects">—</b><span>projects</span></div></div>
     <a class="hn-search" href="assets/globe/news.html"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Search assets, countries &amp; articles</a>
     <div class="hn-pop" id="hnPop" aria-label="Popular searches"><span class="hn-pop-l">Popular searches:</span></div>
   </div></div>
@@ -315,6 +315,11 @@ addEventListener('message', e => {
 const glide = () => { if (holdY != null) return; if (!isPhone()) { hnGlobe.style.transform = ''; return; } const y = Math.min(scrollY, 600); hnGlobe.style.transform = `translateY(${-y * .18}px) scale(${1 - y / 3000})`; hnGlobe.style.opacity = Math.max(.25, 1 - y / 700); };
 if (!matchMedia('(prefers-reduced-motion: reduce)').matches) addEventListener('scroll', () => requestAnimationFrame(glide), { passive: true });
 fitTitle(); addEventListener('resize', fitTitle); document.fonts && document.fonts.ready.then(fitTitle);
+// Live numbers under the name: counted from the same feed and project data the page already shows.
+function countTo(el, v) { if (!el || !Number.isFinite(v)) return; const fmt = n => Math.round(n).toLocaleString('en-US');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = fmt(v); return; }
+  const from = +(el.dataset.v || 0), t0 = performance.now(), f = t => { const k = Math.min(1, (t - t0) / 1200), e = 1 - Math.pow(1 - k, 3); el.textContent = fmt(from + (v - from) * e); if (k < 1) requestAnimationFrame(f); }; el.dataset.v = v; requestAnimationFrame(f); }
+fetch('assets/globe/site-stats.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(c => { if (!c) return; for (const k of ['articles', 'sources', 'projects']) countTo(document.querySelector('[data-stat=' + k + ']'), c[k]); }).catch(() => {});
 loadNews().then(d => {
   hnLive.innerHTML = '<i></i>' + updatedText(d.updated);
   hnTop.innerHTML = d.top.slice(0, 5).map((s, i) => card(s, i === 0)).join('');
