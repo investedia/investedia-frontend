@@ -14,5 +14,4 @@ for p in d['projects']:
     rows.append(r)
 json.dump({'schema': d['schema'], 'build_date': d['build_date'], 'projects': rows}, open(out / 'projects.json', 'w'), separators=(',', ':'), ensure_ascii=False)
 (out / 'projects-featured.json').write_text((src / 'projects-featured.json').read_text())
-json.dump({'projects': len(rows), 'build_date': d['build_date']}, open(out / 'projects-count.json', 'w'))  # homepage number
 print(len(rows), 'projects;', round((out / 'projects.json').stat().st_size / 1e6, 2), 'MB')
