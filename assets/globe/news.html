@@ -814,7 +814,7 @@ html{font-feature-settings:"tnum"}body,button,input,select,textarea{font-family:
 .panel .compact-list,.panel .list,.nd-row{background:transparent!important;border-radius:0!important}.panel .compact-list{gap:0}.panel-tabs button[aria-selected=true],.nd-chips button[aria-pressed=true],.gm-tabs button[aria-selected=true],.mine-top button[aria-pressed=true]{background:rgba(255,255,255,.06)!important;color:var(--accent)!important;border-color:rgba(255,122,26,.5)!important;box-shadow:none!important}
 @media(min-width:1180px){html.lcol-on #ddrow{top:auto!important;left:auto!important;margin-top:12px!important}}
 .gswitch button[aria-pressed=true]{background:rgba(255,255,255,.06)!important;color:var(--accent)!important;border:1px solid rgba(255,122,26,.5)!important;box-shadow:none!important}
-.gf-article strong{color:var(--fg)!important}.gf-article-source,.gf-article-meta time{color:var(--fg-2)!important}.gf-article-source{font-size:11px}
+.gf-no-image{display:grid!important;place-items:center;font-size:9px;letter-spacing:.04em;text-transform:uppercase;color:var(--fg-2);background:linear-gradient(160deg,#1d1d20,#0b0b0d);text-align:center;overflow:hidden}.gf-article strong{color:var(--fg)!important}.gf-article-source,.gf-article-meta time{color:var(--fg-2)!important}.gf-article-source{font-size:11px}
 .lay-sw>span{min-width:0}.lay-sw small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .gf-detail-actions .back{font-size:12px!important;display:inline-flex!important;align-items:center;gap:6px;justify-content:flex-start;width:auto!important}.gf-detail-actions .back:before{display:none!important}.gf-detail-expand{align-items:center;justify-content:center}
 .market-panel .gf-article{text-decoration:none}.market-panel .gf-country-topics{margin:0}.market-panel .gf-day{margin-top:12px}
@@ -2152,7 +2152,7 @@ function articleRow(s, cls='compact-item') {
   const sources=new Set((s.sources||[]).map(x=>x.url||x.name).filter(Boolean));
   const a=impactsOf(s).map(assetForImpact).find(x=>x&&Number.isFinite(x.d));
   const tag=cls==='mk-news'?'a':'button',link=cls==='mk-news'?`href="${esc(s.source?.url||s.links?.source||'#')}" target="_blank" rel="noopener"`:'type="button"';
-  return `<${tag} ${link} class="${cls} gf-article" data-story="${esc(s.id)}">${image?`<img class="gf-thumb" src="${esc(image)}" alt="" loading="lazy">`:'<span class="gf-thumb gf-no-image" aria-hidden="true"></span>'}<span class="gf-article-copy"><span class="gf-article-meta">${esc(CAT[s.category]||'News')} · <time datetime="${esc(s.published_at||'')}">${ago(s.t)}</time></span><strong>${esc(s.headline)}</strong><span class="gf-article-source">${esc(src)}${sources.size>1?` · ${sources.size} sources`:''}${cls==='gm-news'&&a?` · ${esc(a.n||a.s)} ${pctPill(a.d)}`:''}</span></span></${tag}>`;
+  return `<${tag} ${link} class="${cls} gf-article" data-story="${esc(s.id)}">${image?`<img class="gf-thumb" src="${esc(image)}" alt="" loading="lazy">`:`<span class="gf-thumb gf-no-image" aria-hidden="true">${esc((CAT[s.category]||'News').slice(0,12))}</span>`}<span class="gf-article-copy"><span class="gf-article-meta">${esc(CAT[s.category]||'News')} · <time datetime="${esc(s.published_at||'')}">${ago(s.t)}</time></span><strong>${esc(s.headline)}</strong><span class="gf-article-source">${esc(src)}${sources.size>1?` · ${sources.size} sources`:''}${cls==='gm-news'&&a?` · ${esc(a.n||a.s)} ${pctPill(a.d)}`:''}</span></span></${tag}>`;
 }
 function compactItem(s) { return articleRow(s); }
 // Global Markets reuses the existing country panel and region selection. Large
@@ -2295,7 +2295,7 @@ pbody.addEventListener('keydown', e => {
 function variantPanel(list) {
   if (PANEL_TEMPLATE === 'a') return `<h2>Top articles</h2><div class="meta">${Math.min(8, list.length)} of ${list.length} articles</div><div class="compact-list">${list.slice(0, 8).map(compactItem).join('')}</div>${list.length > 8 ? '<a class="panel-more" href="../../news.html">See all news →</a>' : ''}${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
   if (PANEL_TEMPLATE === 'b') return `<h2>Top articles</h2><div class="strip-list" aria-label="Top articles">${list.slice(0, phone() ? 3 : 12).map(compactItem).join('')}</div>${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
-  const tabs = phone() && phoneView !== 'markets' ? [['top', 'Top'], ['latest', 'Latest'], ['moving', 'Moving'], ['more', ['countries', 'topics', 'watch', 'saved'].includes(panelTab) ? ({ countries: 'Countries', topics: 'Topics', watch: 'Watchlist', saved: 'Saved' })[panelTab] + ' ▾' : 'More ▾']] : [['top', 'Top'], ...(!phone() ? [['movers', 'Movers']] : []), ['latest', 'Latest'], ['countries', 'Countries'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : []), ['saved', `Saved${RL.size ? ' ' + RL.size : ''}`]];
+  const tabs = phone() && phoneView !== 'markets' ? [['top', 'Top'], ['latest', 'Latest'], ['moving', 'Moving'], ['more', ['countries', 'topics', 'watch', 'saved'].includes(panelTab) ? ({ countries: 'Countries', topics: 'Topics', watch: 'Watchlist', saved: 'Saved' })[panelTab] + ' ▾' : 'More ▾']] : [['top', 'Top'], ...(!phone() ? [['movers', 'Movers']] : []), ['latest', 'Latest'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : []), ['watch', `Watchlist${WATCH.size ? ' ' + WATCH.size : ''}`]];
   let items, count;
   if (phone() && phoneView === 'markets') { items = marketsPhonePanel(); count = 0; }
   else if (panelTab === 'topics') { const cats = Object.entries(list.reduce((m, x) => (m[x.category] = (m[x.category] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]); count = 0;
@@ -2398,7 +2398,7 @@ function renderAct(){
   right=`<span>Your time zone · G10 currencies only</span><a href="../../calendar.html">Calendar →</a>`;
   cards=ev.length?ev.map(e=>{const d=new Date(e.at);return `<a class="act-k" href="../../calendar.html"><div class="act-m"><b>${d.toLocaleDateString([], {weekday:'short'})} ${tm(d)}</b>${esc(e.country||e.c)}${e.src?' · '+esc(e.src):''}</div><div class="act-t">${esc(e.t)}</div><div class="act-f"><span class="hi">● High impact</span></div></a>`}).join(''):'<div class="act-e">No scheduled high-impact releases for this region in our calendar. Coverage is limited to major currencies for now.</div>';
  }
- el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Coming up</button><span class="act-r">${right}</span></div><div class="act-c">${cards}</div>`;
+ el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Upcoming</button><span class="act-r">${right}</span></div><div class="act-c">${cards}</div>`;
  el.querySelectorAll('[data-at]').forEach(b=>b.onclick=()=>{actTab=b.dataset.at;renderAct();});
  el.querySelectorAll('[data-act]').forEach(b=>b.onclick=()=>{const g=el._groups[+b.dataset.act];if(g)openStory(g.top);});
 }
@@ -3292,7 +3292,7 @@ function mkdRender(){
   if(art)ev.push({k:'News',m:new Date(art.t).toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})+' · '+nm(art.location.country),t:art.headline,f:'Markets · '+(art.source?.name||''),o:2.8,id:art.id});
   cards=ev.sort((a,b)=>b.o-a.o).slice(0,4).map(e=>`<div class="mkd-c"${e.id?` data-art="${esc(e.id)}" role="button" tabindex="0"`:''}><div class="m"><b>${e.k}</b> ${esc(e.m)}</div><div class="t">${esc(e.t)}</div><div class="f">${esc(e.f)}</div></div>`).join('');
  }else cards=next.length?next.map(e=>`<a class="mkd-c" href="../../calendar.html"><div class="m"><b>${when(e.at)}</b> ${esc(e.country||'US')}</div><div class="t">${esc(e.t)}</div><div class="f">● High impact · ${esc(e.src||'official')}</div></a>`).join(''):'<p class="mkd-e">No scheduled releases in our calendar.</p>';
- mkA.innerHTML=`<div class="mkd-th"><button type="button" data-mt="act" aria-selected="${mkTab==='act'}">Market activity</button><button type="button" data-mt="up" aria-selected="${mkTab==='up'}">Coming up</button><em>${d1?'ECB '+fmtD(d1)+' · ':''}sessions now</em></div><div class="mkd-cs">${cards}</div>`;
+ mkA.innerHTML=`<div class="mkd-th"><button type="button" data-mt="act" aria-selected="${mkTab==='act'}">Market activity</button><button type="button" data-mt="up" aria-selected="${mkTab==='up'}">Upcoming</button><em>${d1?'ECB '+fmtD(d1)+' · ':''}sessions now</em></div><div class="mkd-cs">${cards}</div>`;
  mkA.querySelectorAll('[data-mt]').forEach(b=>b.onclick=()=>{mkTab=b.dataset.mt;mkdRender();});
  mkA.querySelectorAll('[data-art]').forEach(b=>b.onclick=()=>{const st=stories.find(x=>x.id===b.dataset.art);if(st){marketSetMode('news');openStory(st);}});
 }
