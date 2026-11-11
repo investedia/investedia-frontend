@@ -1,5 +1,5 @@
 {"title":"Investedia News","desc":"Live financial news from around the world. Filter markets, companies, economy, technology, crypto, commodities and geopolitics by region.","key":"news","scripts":["assets/home-news.js","assets/articles-lib.js"]}
-<link rel="stylesheet" href="assets/news-board.css"><link rel="stylesheet" href="assets/articles-lib.css"><style>#nf-more{display:none!important}.al-onnews{border-top:1px solid var(--line);margin-top:40px}</style><link rel="stylesheet" href="assets/news-feed.css">
+<link rel="stylesheet" href="assets/news-board.css"><link rel="stylesheet" href="assets/articles-lib.css"><style>#nf-more{display:none!important}.al-onnews{padding-top:8px}.al-onnews h1{font-size:22px}</style><link rel="stylesheet" href="assets/news-feed.css">
 <div class="nb nf">
   <span class="nb-eb">News · <span id="nf-up">Loading</span></span>
   <h1>What's moving <span>money.</span></h1>
@@ -7,6 +7,8 @@
   <div id="nf-hero"></div>
   <div class="nf-sh"><h2>Biggest movers</h2><span>24h</span></div>
   <div class="nf-strip" id="nf-strip"></div>
+  <!-- the old 48-hour feed list is replaced by the article library below; kept hidden so the page script still finds its elements -->
+  <div hidden aria-hidden="true">
   <div class="nf-sh"><h2>News and reactions</h2></div>
   <div class="nf-bar">
     <label class="nb-pill"><i class="nb-ic"></i><input id="nf-q" type="search" placeholder="Search an article, company, coin or country" autocomplete="off" aria-label="Search articles"><kbd>/</kbd></label>
@@ -16,7 +18,8 @@
   <div id="nf-chip" hidden></div>
   <div id="nf-list"></div>
   <button class="nb-more" id="nf-more" type="button" hidden>Load more articles</button>
-  <p class="mv-note">Price moves come from public market data and may be delayed. A reaction shows the price move around an article; it is not proof the article caused it. Summaries are written with the help of AI from each source's own reporting. Not investment advice.</p>
+  </div>
+
 </div>
 <!-- All articles: the full library with numbered pages (same component as articles.html) -->
 <div class="al al-onnews" id="all">
@@ -35,7 +38,7 @@
     <div class="al-meta"><span id="al-count"></span><label>Sort <select id="al-sort" aria-label="Sort"><option value="new">Newest</option><option value="old">Oldest</option><option value="src">Most sources</option></select></label></div>
     <div id="al-list" aria-live="polite"></div>
     <nav class="al-pg" id="al-pg" aria-label="Pages"></nav>
-    <p class="al-note">Summaries are written with the help of AI from each source's own reporting; every article links to its source. Not investment advice.</p>
+    <p class="mv-note">Price moves come from public market data and may be delayed. A reaction shows the price move around an article; it is not proof the article caused it. Summaries are written with the help of AI from each source's own reporting. Not investment advice.</p>
   </main>
 </div>
 

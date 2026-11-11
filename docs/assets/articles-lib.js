@@ -46,7 +46,7 @@ function initArticles() {
     const s = state(); options(s);
     let res; try { res = await rows(s); } catch { $('al-list').innerHTML = '<p class="al-empty">Articles could not load. Please try again.</p>'; return; }
     const pages = Math.max(1, Math.ceil(res.total / meta.per_page)); let list = res.list, lead = '';
-    if (s.page === 1 && !s.q) { const i = list.findIndex(img); if (i >= 0) { const r = list[i]; list = list.filter((_, k) => k !== i);
+    if (s.page === 1 && !s.q && !document.querySelector('.al-onnews')) { const i = list.findIndex(img); if (i >= 0) { const r = list[i]; list = list.filter((_, k) => k !== i);
       lead = `<a class="al-lead" href="${link(r)}"><img src="${esc(img(r))}" alt=""><div><div class="al-ct">${esc(nice(r.c))} · ${day(r.t)} ${time(r.t)}</div><h2>${esc(r.h)}</h2><p id="al-lead-sum"></p><div class="al-sr">${esc(r.s || '')}${r.n ? ' · ' + esc(r.n) : ''}</div></div></a>`;
       fetch('assets/globe/library/' + encodeURIComponent(r.id) + '.json').then(x => x.ok ? x.json() : null).then(d => { const p = $('al-lead-sum'); if (p && d?.summary) p.textContent = d.summary; }).catch(() => {}); } }
     $('al-lead').innerHTML = lead;
@@ -71,7 +71,15 @@ function initArticles() {
     // newest articles that arrived after the last site build come from the live feed, without duplicates
     try { const n = await fetch('assets/globe/news-live.json', { cache: 'no-cache' }).then(r => r.json()); const first = (await get('page-1.json'))[0];
       live = (n.stories || []).filter(x => first && x.published_at > first.t).map(x => ({ id: x.id, h: x.headline, c: x.category, t: x.published_at, s: x.source?.name, n: x.location?.country, g: x.location?.region, k: (x.sources || []).length || 1, i: x.image?.file })); } catch {}
-    $('al-sub').textContent = sub; $('al-sub2').textContent = sub; render();
+    // days the hourly robot added after the last site build (news service); deduplicated by id
+    try { const D = window.InvData, first = (await get('page-1.json'))[0], newest = first ? first.t.slice(0, 10) : '';
+      if (D && D.get) { const days = Object.keys((await D.get('library')).data.days || {}).filter(d => d >= newest).sort().reverse();
+        const extra = (await Promise.all(days.map(d => D.get('library?day=' + d).then(r => r.data.rows || []).catch(() => [])))).flat();
+        const have = new Set([...live.map(r => r.id)]); const pageIds = new Set((await get('page-1.json')).map(r => r.id));
+        for (const r of extra) if (!have.has(r.id) && !pageIds.has(r.id) && (!first || r.t > first.t)) { live.push(r); have.add(r.id); }
+        live.sort((a, b) => (a.t < b.t ? 1 : -1)); } } catch {}
+    const subN = m.total + live.length; const sub2 = `${fmt(subN)} articles from ${fmt(m.sources)} sources since ${new Date(m.first).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}`;
+    $('al-sub').textContent = sub2; $('al-sub2').textContent = sub2; render(); return; $('al-sub2').textContent = sub; render();
   }).catch(() => { $('al-sub').textContent = 'Articles could not load.'; });
 }
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initArticles); else initArticles();
