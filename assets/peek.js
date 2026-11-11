@@ -122,6 +122,8 @@
   function search(q) {
     const out = []; if (!DATA) return out;
     const ranked = q ? DATA.assets.map(a => [rank(q, a), a]).filter(x => x[0] < 9).sort((a, b) => a[0] - b[0] || (b[1].m || 0) - (a[1].m || 0)).map(x => x[1]) : [...DATA.assets].sort((a,b) => (DATA.importance[a.s] || 10000) - (DATA.importance[b.s] || 10000) || (b.v || b.m || 0) - (a.v || a.m || 0));
+    // one row per company: the same name listed in several places (e.g. Berkshire BRKB and BRK-B, ADR and local line) shows once, the most important listing
+    { const seen = new Set(); const keep = []; for (const x of [...ranked].sort((p, q) => (DATA.importance[p.s] || 10000) - (DATA.importance[q.s] || 10000))) { const key = (x.n || '').toLowerCase().replace(/[^a-z0-9]/g, '') + '|' + x.t; if (x.t !== 'stocks' || !seen.has(key)) { seen.add(key); keep.push(x); } } const ok = new Set(keep); ranked.splice(0, ranked.length, ...ranked.filter(x => ok.has(x))); }
     for (const k of ['stocks', 'crypto', 'idx', 'cmd', 'fx']) { const items = ranked.filter(GROUPS[k][1]); if(k === 'idx') {const major=['^GSPC','^IXIC','^DJI','^FTSE','^GDAXI','^FCHI','^N225','^HSI','000001.SS','^BSESN','^NSEI','^AXJO'];items.sort((a,b)=>(major.includes(a.s)?major.indexOf(a.s):100)-(major.includes(b.s)?major.indexOf(b.s):100));} if (k === 'crypto' && !q) items.sort((a, b) => DATA.cryptoRank[label(a)] - DATA.cryptoRank[label(b)]);
       if (items.length) out.push({ key: k, title: GROUPS[k][0], items, html: (i, c) => row(i, c), type: 'asset' }); }
     const sec = q ? (window.InvSectors ? InvSectors.list : []).filter(x => x.name.toLowerCase().includes(q)) : [];
