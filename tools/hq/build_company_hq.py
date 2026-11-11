@@ -12,6 +12,8 @@ Usage: python3 tools/hq/build_company_hq.py [--limit N] [--output PATH]
 import argparse, hashlib, json, math, re, sys, time, urllib.error, urllib.parse, urllib.request, datetime, pathlib, unicodedata
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
+if str(ROOT) not in sys.path: sys.path.insert(0, str(ROOT))
+from tools.hq.city_resolution import resolve_city_paths
 MARKETS = ROOT / 'assets/globe/markets.json'
 OUT = ROOT / 'assets/globe/company-hq.json'
 NETWORK_REQUESTS = 0
@@ -186,9 +188,11 @@ def annotate_review(companies):
         ('Q17012234','Q720087'): 'Potentially stale Enphase HQ location; independent current-source review required.',
         ('Q1089060','Q367280'): 'Legacy Chubb Corp entity; current CB issuer identity requires review.',
         ('Q107453017','Q5785'): 'HQ source identifies a country/territory, not a city.',
+        ('Q2114414', 'Q7252985'): 'Wikidata classifies the HQ site as a destroyed building; current office needs review.',
     }
     flagged = []
     for symbol, row in companies.items():
+        row.pop('review_notes', None)
         warnings = []
         note = notes.get((row['qid'], row.get('hq_qid')))
         if note: warnings.append(note)
@@ -198,6 +202,41 @@ def annotate_review(companies):
             row['review_notes'] = warnings
             flagged.append({'s':symbol,'why':warnings})
     return flagged
+
+
+def resolve_and_hold_review_rows(doc, resolver=None):
+    resolver=resolver or (lambda roots: resolve_city_paths(roots, fetch_rows))
+    pending=annotate_review(doc['companies'])
+    roots={doc['companies'][r['s']]['hq_qid'] for r in pending
+           if any('site/address' in why for why in r['why'])}
+    paths=resolver(roots) if roots else {}
+    resolved=[]
+    for symbol,row in doc['companies'].items():
+        if row['hq_qid'] not in roots: continue
+        choices=paths.get(row['hq_qid'],[])
+        if len(choices)!=1: continue
+        city=choices[0]
+        if not city.get('label') or re.fullmatch(r'Q[1-9]\d*',city['label']): continue
+        path=city.get('path',[])
+        if not path or path[0]!=row['hq_qid'] or path[-1]!=city['city']: raise ValueError('Invalid city evidence path')
+        row['hq_site_label']=row['hq_city']
+        row['hq_city']=city['label'];row['hq_city_qid']=city['city'];row['city_admin_path']=path
+        row['city_source_url']='https://www.wikidata.org/wiki/'+city['city']
+        row['city_evidence']={'classification':city.get('classification','P31/P279 city'),'capital_of':city.get('capital_of',[])}
+        row['source'] += '; city from P131 administrative containment; '+city.get('classification','P31/P279 city')
+        resolved.append(symbol)
+    remaining=annotate_review(doc['companies'])
+    held=[]
+    for review in remaining:
+        symbol=review['s'];candidate=doc['companies'].pop(symbol)
+        reason='review required: '+'; '.join(review['why'])
+        doc['not_matched'].append({'s':symbol,'why':reason,'candidate':candidate})
+        held.append({'s':symbol,'why':review['why']})
+    doc['matched']=len(doc['companies'])
+    doc['review_required']=held
+    doc['city_labels_resolved']=resolved
+    if doc['asked']!=doc['matched']+len(doc['not_matched']): raise ValueError('HQ accounting mismatch')
+    return doc
 
 
 def main():
@@ -215,7 +254,8 @@ def main():
     doc = collect(stocks[:args.limit])
     if args.limit is None or {'NVDA','AAPL','MSFT'} <= {a['s'] for a in stocks[:args.limit]}:
         check_reference_rows(doc['companies'])
-    doc['review_required'] = annotate_review(doc['companies'])
+    resolve_and_hold_review_rows(doc)
+    if args.limit is None: check_reference_rows(doc['companies'])
     # Limited checks never overwrite a complete registry.
     target = args.output or (OUT.with_name('company-hq.sample.json') if args.limit is not None else OUT)
     temp = target.with_suffix(target.suffix + '.tmp')

@@ -2,7 +2,7 @@
  "schema": "investedia.company-hq.v1",
  "licence": "CC0 1.0 (Wikidata)",
  "checked_at": "2026-11-11",
- "matched": 334,
+ "matched": 324,
  "asked": 613,
  "companies": {
   "NVDA": {
@@ -159,20 +159,6 @@
    "source_url": "https://www.wikidata.org/entity/Q116452644",
    "checked_at": "2026-11-11"
   },
-  "BA": {
-   "hq_city": "Chicago",
-   "hq_lat": 41.8819,
-   "hq_lon": -87.6278,
-   "qid": "Q66",
-   "hq_qid": "Q1297",
-   "company_label": "Boeing",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q66",
-   "checked_at": "2026-11-11",
-   "review_notes": [
-    "Potentially stale Boeing HQ location; independent current-source review required."
-   ]
-  },
   "GME": {
    "hq_city": "Grapevine",
    "hq_lat": 32.935,
@@ -261,20 +247,6 @@
    "source_url": "https://www.wikidata.org/entity/Q744149",
    "checked_at": "2026-11-11"
   },
-  "HSBA": {
-   "hq_city": "8 Canada Square",
-   "hq_lat": 51.5053,
-   "hq_lon": -0.0174,
-   "qid": "Q190464",
-   "hq_qid": "Q572887",
-   "company_label": "HSBC",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q190464",
-   "checked_at": "2026-11-11",
-   "review_notes": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
-  },
   "UNH": {
    "hq_city": "Minnetonka",
    "hq_lat": 44.9133,
@@ -341,20 +313,6 @@
    "source_url": "https://www.wikidata.org/entity/Q967868",
    "checked_at": "2026-11-11"
   },
-  "ENPH": {
-   "hq_city": "Petaluma",
-   "hq_lat": 38.2458,
-   "hq_lon": -122.6314,
-   "qid": "Q17012234",
-   "hq_qid": "Q720087",
-   "company_label": "Enphase Energy",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q17012234",
-   "checked_at": "2026-11-11",
-   "review_notes": [
-    "Potentially stale Enphase HQ location; independent current-source review required."
-   ]
-  },
   "FSLR": {
    "hq_city": "Tempe",
    "hq_lat": 33.4256,
@@ -367,18 +325,29 @@
    "checked_at": "2026-11-11"
   },
   "MC": {
-   "hq_city": "Headquarters of LVMH",
+   "hq_city": "Paris",
    "hq_lat": 48.8663,
    "hq_lon": 2.3055,
    "qid": "Q504998",
    "hq_qid": "Q114703685",
    "company_label": "LVMH",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
    "source_url": "https://www.wikidata.org/entity/Q504998",
    "checked_at": "2026-11-11",
-   "review_notes": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
+   "hq_site_label": "Headquarters of LVMH",
+   "hq_city_qid": "Q90",
+   "city_admin_path": [
+    "Q114703685",
+    "Q270230",
+    "Q90"
+   ],
+   "city_source_url": "https://www.wikidata.org/wiki/Q90",
+   "city_evidence": {
+    "classification": "P31/P279 city",
+    "capital_of": [
+     "Q142"
+    ]
+   }
   },
   "BABA": {
    "hq_city": "Binjiang District",
@@ -412,20 +381,6 @@
    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
    "source_url": "https://www.wikidata.org/entity/Q210047",
    "checked_at": "2026-11-11"
-  },
-  "NU": {
-   "hq_city": "Cayman Islands",
-   "hq_lat": 19.5,
-   "hq_lon": -80.5,
-   "qid": "Q107453017",
-   "hq_qid": "Q5785",
-   "company_label": "Nu Holdings Ltd.",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q107453017",
-   "checked_at": "2026-11-11",
-   "review_notes": [
-    "HQ source identifies a country/territory, not a city."
-   ]
   },
   "NESN": {
    "hq_city": "Vevey",
@@ -724,20 +679,6 @@
    "source_url": "https://www.wikidata.org/entity/Q1430985",
    "checked_at": "2026-11-11"
   },
-  "MQG": {
-   "hq_city": "State Savings Bank building",
-   "hq_lat": -33.8673,
-   "hq_lon": 151.2102,
-   "qid": "Q1200904",
-   "hq_qid": "Q7603516",
-   "company_label": "Macquarie Group",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q1200904",
-   "checked_at": "2026-11-11",
-   "review_notes": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
-  },
   "CSL": {
    "hq_city": "Melbourne",
    "hq_lat": -37.8142,
@@ -981,18 +922,27 @@
    "checked_at": "2026-11-11"
   },
   "DHL.DE": {
-   "hq_city": "Post Tower",
+   "hq_city": "Bonn",
    "hq_lat": 50.7155,
    "hq_lon": 7.13,
    "qid": "Q157645",
    "hq_qid": "Q167195",
    "company_label": "DHL Group",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
    "source_url": "https://www.wikidata.org/entity/Q157645",
    "checked_at": "2026-11-11",
-   "review_notes": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
+   "hq_site_label": "Post Tower",
+   "hq_city_qid": "Q586",
+   "city_admin_path": [
+    "Q167195",
+    "Q892684",
+    "Q586"
+   ],
+   "city_source_url": "https://www.wikidata.org/wiki/Q586",
+   "city_evidence": {
+    "classification": "P31/P279 city",
+    "capital_of": []
+   }
   },
   "OR.PA": {
    "hq_city": "Paris",
@@ -1028,18 +978,29 @@
    "checked_at": "2026-11-11"
   },
   "AI.PA": {
-   "hq_city": "quai d'Orsay",
+   "hq_city": "Paris",
    "hq_lat": 48.8628,
    "hq_lon": 2.31,
    "qid": "Q407448",
    "hq_qid": "Q1146988",
    "company_label": "Air Liquide",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
    "source_url": "https://www.wikidata.org/entity/Q407448",
    "checked_at": "2026-11-11",
-   "review_notes": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
+   "hq_site_label": "quai d'Orsay",
+   "hq_city_qid": "Q90",
+   "city_admin_path": [
+    "Q1146988",
+    "Q259463",
+    "Q90"
+   ],
+   "city_source_url": "https://www.wikidata.org/wiki/Q90",
+   "city_evidence": {
+    "classification": "P31/P279 city",
+    "capital_of": [
+     "Q142"
+    ]
+   }
   },
   "SAF.PA": {
    "hq_city": "Paris",
@@ -1174,18 +1135,28 @@
    "checked_at": "2026-11-11"
   },
   "REP.MC": {
-   "hq_city": "Repsol Campus",
+   "hq_city": "Madrid",
    "hq_lat": 40.3978,
    "hq_lon": -3.6831,
    "qid": "Q174747",
    "hq_qid": "Q17449249",
    "company_label": "Repsol",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P36 country capital",
    "source_url": "https://www.wikidata.org/entity/Q174747",
    "checked_at": "2026-11-11",
-   "review_notes": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
+   "hq_site_label": "Repsol Campus",
+   "hq_city_qid": "Q2807",
+   "city_admin_path": [
+    "Q17449249",
+    "Q2807"
+   ],
+   "city_source_url": "https://www.wikidata.org/wiki/Q2807",
+   "city_evidence": {
+    "classification": "P36 country capital",
+    "capital_of": [
+     "Q29"
+    ]
+   }
   },
   "AMS.MC": {
    "hq_city": "Madrid",
@@ -1210,18 +1181,26 @@
    "checked_at": "2026-11-11"
   },
   "UCG.MI": {
-   "hq_city": "UniCredit Tower",
+   "hq_city": "Milan",
    "hq_lat": 45.4838,
    "hq_lon": 9.1899,
    "qid": "Q45568",
    "hq_qid": "Q963111",
    "company_label": "UniCredit",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
    "source_url": "https://www.wikidata.org/entity/Q45568",
    "checked_at": "2026-11-11",
-   "review_notes": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
+   "hq_site_label": "UniCredit Tower",
+   "hq_city_qid": "Q490",
+   "city_admin_path": [
+    "Q963111",
+    "Q490"
+   ],
+   "city_source_url": "https://www.wikidata.org/wiki/Q490",
+   "city_evidence": {
+    "classification": "P31/P279 city",
+    "capital_of": []
+   }
   },
   "STLAM.MI": {
    "hq_city": "Amsterdam",
@@ -1432,20 +1411,6 @@
    "source_url": "https://www.wikidata.org/entity/Q1152465",
    "checked_at": "2026-11-11"
   },
-  "0005.HK": {
-   "hq_city": "8 Canada Square",
-   "hq_lat": 51.5053,
-   "hq_lon": -0.0174,
-   "qid": "Q190464",
-   "hq_qid": "Q572887",
-   "company_label": "HSBC",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q190464",
-   "checked_at": "2026-11-11",
-   "review_notes": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
-  },
   "0941.HK": {
    "hq_city": "Xicheng District",
    "hq_lat": 39.91,
@@ -1599,20 +1564,6 @@
    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
    "source_url": "https://www.wikidata.org/entity/Q908144",
    "checked_at": "2026-11-11"
-  },
-  "MQG.AX": {
-   "hq_city": "State Savings Bank building",
-   "hq_lat": -33.8673,
-   "hq_lon": 151.2102,
-   "qid": "Q1200904",
-   "hq_qid": "Q7603516",
-   "company_label": "Macquarie Group",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q1200904",
-   "checked_at": "2026-11-11",
-   "review_notes": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
   },
   "BMO.TO": {
    "hq_city": "First Canadian Place",
@@ -2198,18 +2149,26 @@
    "checked_at": "2026-11-11"
   },
   "MONC.MI": {
-   "hq_city": "Palazzo Moncler",
+   "hq_city": "Milan",
    "hq_lat": 45.4384,
    "hq_lon": 9.2049,
    "qid": "Q1548951",
    "hq_qid": "Q134580223",
    "company_label": "Moncler",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
    "source_url": "https://www.wikidata.org/entity/Q1548951",
    "checked_at": "2026-11-11",
-   "review_notes": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
+   "hq_site_label": "Palazzo Moncler",
+   "hq_city_qid": "Q490",
+   "city_admin_path": [
+    "Q134580223",
+    "Q490"
+   ],
+   "city_source_url": "https://www.wikidata.org/wiki/Q490",
+   "city_evidence": {
+    "classification": "P31/P279 city",
+    "capital_of": []
+   }
   },
   "SOLB.BR": {
    "hq_city": "Brussels",
@@ -2443,18 +2402,29 @@
    "checked_at": "2026-11-11"
   },
   "8316.T": {
-   "hq_city": "Sumitomo Mitsui Banking Corporation Head Office Building",
+   "hq_city": "Tokyo",
    "hq_lat": 35.6849,
    "hq_lon": 139.7623,
    "qid": "Q2094989",
    "hq_qid": "Q17349580",
    "company_label": "Sumitomo Mitsui Financial Group",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
    "source_url": "https://www.wikidata.org/entity/Q2094989",
    "checked_at": "2026-11-11",
-   "review_notes": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
+   "hq_site_label": "Sumitomo Mitsui Banking Corporation Head Office Building",
+   "hq_city_qid": "Q1490",
+   "city_admin_path": [
+    "Q17349580",
+    "Q214051",
+    "Q1490"
+   ],
+   "city_source_url": "https://www.wikidata.org/wiki/Q1490",
+   "city_evidence": {
+    "classification": "P31/P279 city",
+    "capital_of": [
+     "Q17"
+    ]
+   }
   },
   "8766.T": {
    "hq_city": "Chiyoda",
@@ -2952,18 +2922,26 @@
    "checked_at": "2026-11-11"
   },
   "SPG": {
-   "hq_city": "Simon Property Group Headquarters",
+   "hq_city": "Indianapolis",
    "hq_lat": 39.7667,
    "hq_lon": -86.1624,
    "qid": "Q2287759",
    "hq_qid": "Q7519585",
    "company_label": "Simon Property Group",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates; city from P131 administrative containment; P31/P279 city",
    "source_url": "https://www.wikidata.org/entity/Q2287759",
    "checked_at": "2026-11-11",
-   "review_notes": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
+   "hq_site_label": "Simon Property Group Headquarters",
+   "hq_city_qid": "Q6346",
+   "city_admin_path": [
+    "Q7519585",
+    "Q6346"
+   ],
+   "city_source_url": "https://www.wikidata.org/wiki/Q6346",
+   "city_evidence": {
+    "classification": "P31/P279 city",
+    "capital_of": []
+   }
   },
   "PSA": {
    "hq_city": "Glendale",
@@ -3130,20 +3108,6 @@
    "source_url": "https://www.wikidata.org/entity/Q8027166",
    "checked_at": "2026-11-11"
   },
-  "CB": {
-   "hq_city": "Warren",
-   "hq_lat": 40.6346,
-   "hq_lon": -74.519,
-   "qid": "Q1089060",
-   "hq_qid": "Q367280",
-   "company_label": "Chubb Corp.",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q1089060",
-   "checked_at": "2026-11-11",
-   "review_notes": [
-    "Legacy Chubb Corp entity; current CB issuer identity requires review."
-   ]
-  },
   "PGR": {
    "hq_city": "Mayfield",
    "hq_lat": 41.5478,
@@ -3176,20 +3140,6 @@
    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
    "source_url": "https://www.wikidata.org/entity/Q607131",
    "checked_at": "2026-11-11"
-  },
-  "PRU": {
-   "hq_city": "Prudential Headquarters",
-   "hq_lat": 40.7335,
-   "hq_lon": -74.1711,
-   "qid": "Q2114414",
-   "hq_qid": "Q7252985",
-   "company_label": "Prudential Financial",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q2114414",
-   "checked_at": "2026-11-11",
-   "review_notes": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
   },
   "ALL": {
    "hq_city": "Northbrook",
@@ -3245,20 +3195,6 @@
    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
    "source_url": "https://www.wikidata.org/entity/Q97439162",
    "checked_at": "2026-11-11"
-  },
-  "RIVN": {
-   "hq_city": "Detroit",
-   "hq_lat": 42.3317,
-   "hq_lon": -83.0475,
-   "qid": "Q7338847",
-   "hq_qid": "Q12439",
-   "company_label": "Rivian Automotive",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q7338847",
-   "checked_at": "2026-11-11",
-   "review_notes": [
-    "Potentially stale Rivian HQ location; independent current-source review required."
-   ]
   },
   "LCID": {
    "hq_city": "Newark",
@@ -4850,6 +4786,187 @@
   {
    "s": "ADI",
    "why": "multiple headquarters or conflicting coordinates"
+  },
+  {
+   "s": "BA",
+   "why": "review required: Potentially stale Boeing HQ location; independent current-source review required.",
+   "candidate": {
+    "hq_city": "Chicago",
+    "hq_lat": 41.8819,
+    "hq_lon": -87.6278,
+    "qid": "Q66",
+    "hq_qid": "Q1297",
+    "company_label": "Boeing",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q66",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Potentially stale Boeing HQ location; independent current-source review required."
+    ]
+   }
+  },
+  {
+   "s": "HSBA",
+   "why": "review required: Source HQ label is a site/address; city name has not been resolved.",
+   "candidate": {
+    "hq_city": "8 Canada Square",
+    "hq_lat": 51.5053,
+    "hq_lon": -0.0174,
+    "qid": "Q190464",
+    "hq_qid": "Q572887",
+    "company_label": "HSBC",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q190464",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Source HQ label is a site/address; city name has not been resolved."
+    ]
+   }
+  },
+  {
+   "s": "ENPH",
+   "why": "review required: Potentially stale Enphase HQ location; independent current-source review required.",
+   "candidate": {
+    "hq_city": "Petaluma",
+    "hq_lat": 38.2458,
+    "hq_lon": -122.6314,
+    "qid": "Q17012234",
+    "hq_qid": "Q720087",
+    "company_label": "Enphase Energy",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q17012234",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Potentially stale Enphase HQ location; independent current-source review required."
+    ]
+   }
+  },
+  {
+   "s": "NU",
+   "why": "review required: HQ source identifies a country/territory, not a city.",
+   "candidate": {
+    "hq_city": "Cayman Islands",
+    "hq_lat": 19.5,
+    "hq_lon": -80.5,
+    "qid": "Q107453017",
+    "hq_qid": "Q5785",
+    "company_label": "Nu Holdings Ltd.",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q107453017",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "HQ source identifies a country/territory, not a city."
+    ]
+   }
+  },
+  {
+   "s": "MQG",
+   "why": "review required: Source HQ label is a site/address; city name has not been resolved.",
+   "candidate": {
+    "hq_city": "State Savings Bank building",
+    "hq_lat": -33.8673,
+    "hq_lon": 151.2102,
+    "qid": "Q1200904",
+    "hq_qid": "Q7603516",
+    "company_label": "Macquarie Group",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q1200904",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Source HQ label is a site/address; city name has not been resolved."
+    ]
+   }
+  },
+  {
+   "s": "0005.HK",
+   "why": "review required: Source HQ label is a site/address; city name has not been resolved.",
+   "candidate": {
+    "hq_city": "8 Canada Square",
+    "hq_lat": 51.5053,
+    "hq_lon": -0.0174,
+    "qid": "Q190464",
+    "hq_qid": "Q572887",
+    "company_label": "HSBC",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q190464",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Source HQ label is a site/address; city name has not been resolved."
+    ]
+   }
+  },
+  {
+   "s": "MQG.AX",
+   "why": "review required: Source HQ label is a site/address; city name has not been resolved.",
+   "candidate": {
+    "hq_city": "State Savings Bank building",
+    "hq_lat": -33.8673,
+    "hq_lon": 151.2102,
+    "qid": "Q1200904",
+    "hq_qid": "Q7603516",
+    "company_label": "Macquarie Group",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q1200904",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Source HQ label is a site/address; city name has not been resolved."
+    ]
+   }
+  },
+  {
+   "s": "CB",
+   "why": "review required: Legacy Chubb Corp entity; current CB issuer identity requires review.",
+   "candidate": {
+    "hq_city": "Warren",
+    "hq_lat": 40.6346,
+    "hq_lon": -74.519,
+    "qid": "Q1089060",
+    "hq_qid": "Q367280",
+    "company_label": "Chubb Corp.",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q1089060",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Legacy Chubb Corp entity; current CB issuer identity requires review."
+    ]
+   }
+  },
+  {
+   "s": "PRU",
+   "why": "review required: Wikidata classifies the HQ site as a destroyed building; current office needs review.; Source HQ label is a site/address; city name has not been resolved.",
+   "candidate": {
+    "hq_city": "Prudential Headquarters",
+    "hq_lat": 40.7335,
+    "hq_lon": -74.1711,
+    "qid": "Q2114414",
+    "hq_qid": "Q7252985",
+    "company_label": "Prudential Financial",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q2114414",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Wikidata classifies the HQ site as a destroyed building; current office needs review.",
+     "Source HQ label is a site/address; city name has not been resolved."
+    ]
+   }
+  },
+  {
+   "s": "RIVN",
+   "why": "review required: Potentially stale Rivian HQ location; independent current-source review required.",
+   "candidate": {
+    "hq_city": "Detroit",
+    "hq_lat": 42.3317,
+    "hq_lon": -83.0475,
+    "qid": "Q7338847",
+    "hq_qid": "Q12439",
+    "company_label": "Rivian Automotive",
+    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+    "source_url": "https://www.wikidata.org/entity/Q7338847",
+    "checked_at": "2026-11-11",
+    "review_notes": [
+     "Potentially stale Rivian HQ location; independent current-source review required."
+    ]
+   }
   }
  ],
  "review_required": [
@@ -4872,12 +4989,6 @@
    ]
   },
   {
-   "s": "MC",
-   "why": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
-  },
-  {
    "s": "NU",
    "why": [
     "HQ source identifies a country/territory, not a city."
@@ -4885,30 +4996,6 @@
   },
   {
    "s": "MQG",
-   "why": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
-  },
-  {
-   "s": "DHL.DE",
-   "why": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
-  },
-  {
-   "s": "AI.PA",
-   "why": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
-  },
-  {
-   "s": "REP.MC",
-   "why": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
-  },
-  {
-   "s": "UCG.MI",
    "why": [
     "Source HQ label is a site/address; city name has not been resolved."
    ]
@@ -4926,24 +5013,6 @@
    ]
   },
   {
-   "s": "MONC.MI",
-   "why": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
-  },
-  {
-   "s": "8316.T",
-   "why": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
-  },
-  {
-   "s": "SPG",
-   "why": [
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
-  },
-  {
    "s": "CB",
    "why": [
     "Legacy Chubb Corp entity; current CB issuer identity requires review."
@@ -4952,6 +5021,7 @@
   {
    "s": "PRU",
    "why": [
+    "Wikidata classifies the HQ site as a destroyed building; current office needs review.",
     "Source HQ label is a site/address; city name has not been resolved."
    ]
   },
@@ -4961,5 +5031,15 @@
     "Potentially stale Rivian HQ location; independent current-source review required."
    ]
   }
+ ],
+ "city_labels_resolved": [
+  "MC",
+  "DHL.DE",
+  "AI.PA",
+  "REP.MC",
+  "UCG.MI",
+  "MONC.MI",
+  "8316.T",
+  "SPG"
  ]
 }
