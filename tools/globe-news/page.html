@@ -768,6 +768,7 @@ html.mswap #sbox input::placeholder{transition:opacity .17s}html.mswap-out #sbox
 html[data-theme=light] .mkd-unu{border-color:var(--line)}
 @media(min-width:1180px){html:not(.embed) .gswitch{position:static!important;transform:none!important;left:auto!important;top:auto!important}html:not(.embed) .top .brand{width:max-content;white-space:nowrap;flex-wrap:nowrap}
 html:is(.mkd-on,.proj-mode) #sbox{padding-right:12px!important}html:is(.mkd-on,.proj-mode) #sbox input{flex:1!important;width:auto!important}html:is(.mkd-on,.proj-mode) #sbox kbd{display:none}}
+#dock button{flex:1 1 0}
 /* C — site light theme. All overrides are scoped; the dark design is unchanged. */
 html[data-theme=light]{--bg:#d9e5f4;--panel:rgba(255,255,255,.9);--card:#f5f8fc;
   --line:rgba(29,29,31,.13);--line-2:rgba(29,29,31,.24);
@@ -904,7 +905,7 @@ html[data-theme=light] .detail-header{background:#f4f7fb}
 </section>
 <div class="peek" id="peek" role="region" aria-label="Top articles" hidden></div>
 <button type="button" id="nav-grab" class="nav-grab" aria-label="Open News panel" aria-expanded="false" hidden></button>
-<nav class="dock" id="dock" aria-label="Views"><button type="button" data-v="globe" aria-current="page">Globe</button><button type="button" data-v="news">News</button><button type="button" data-v="markets">Markets</button></nav>
+<nav class="dock" id="dock" aria-label="Views"><button type="button" data-v="news" aria-current="page">News</button><button type="button" data-v="markets">Markets</button></nav>
 <div class="zoom glass"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button></div><button type="button" class="zloc glass" id="zloc" aria-label="Show my location" title="Show my location (stays on this device)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3"/></svg></button>
 <div class="hover glass" id="hover" aria-hidden="true"></div>
 <aside class="panel glass" id="panel" aria-label="News panel">
@@ -1917,6 +1918,7 @@ addEventListener('keydown', e => { if (e.key === 'Escape' && pinned) hideHover()
 addEventListener('wheel', () => { clearTimeout(cTimer); hideHover(); }, { passive: true });
 function pick(x, y, r) { let best = null, bd = r * r; for (const d of drawn) { const q = (d.x - x) ** 2 + (d.y - y) ** 2; if (q < bd) { bd = q; best = d; } } return best; }
 function hoverAt(x, y) {
+  if (typeof PROJ !== 'undefined' && PROJ.on) { $('hover').classList.remove('on'); hoverC = null; return; }  // Projects mode: no news or country cards on hover
   if (pinned) return;  // an article popup opened by a click stays until you click elsewhere or press Escape
   cv.style.cursor = !EMBED || onGlobe(x, y) ? 'grab' : 'default';  // full Globe page: hand everywhere; homepage: only over the globe
   const ex = !EMBED && (exPick(x, y) || upPick(x, y)); if (ex) { $('hover').classList.remove('on'); return; }
@@ -2928,7 +2930,7 @@ function peekUpdate() {
 }
 $('peek').onclick = e => { if(performance.now()-peekDraggedAt<400)return; if($('peek').classList.contains('minimized')){$('peek').classList.remove('minimized');return;} const c = e.target.closest('[data-story]'), s = byId[c ? c.dataset.story : $('peek').dataset.story]; if (s) openStory(s); else if (!c) openFilters(); };
 function dockUpdate() {
-  for (const b of $('dock').querySelectorAll('button')) b.dataset.v === phoneView ? b.setAttribute('aria-current', 'page') : b.removeAttribute('aria-current');
+  for (const b of $('dock').querySelectorAll('button')) b.dataset.v === (phoneView === 'globe' ? 'news' : phoneView) ? b.setAttribute('aria-current', 'page') : b.removeAttribute('aria-current');
   const h = $('nav-grab'); h.hidden = EMBED || !phone() || phoneView === 'globe' || sheetState !== 'closed';
   h.setAttribute('aria-label', `${sheetState === 'closed' ? 'Open' : 'Close'} ${phoneView === 'markets' ? 'Markets' : 'News'} panel`);
   h.setAttribute('aria-expanded', String(sheetState !== 'closed'));

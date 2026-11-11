@@ -31,3 +31,4 @@ html.proj-mode .pj :is(.pj-description,.pj-note){color:var(--fg-2)}html.proj-mod
 html.proj-mode .pjl{left:24px!important;width:330px!important;top:var(--pj-top,130px)!important}
 html.proj-mode .pjs{left:378px!important}}
 @media(min-width:761px){html.proj-mode .pj .pjb{padding:12px 0 4px;background:none}html.proj-mode .pjb button{background:transparent!important;color:var(--fg)!important;border:1px solid var(--line-2,#2a2a2f)!important}}
+@media(min-width:761px){html.proj-mode .pj-f{display:grid!important;grid-template-columns:1fr 1fr;gap:6px}html.proj-mode .pj-f>*{width:100%;max-width:none!important;min-width:0}html.proj-mode .pj-f select{max-width:none!important;width:100%}}
