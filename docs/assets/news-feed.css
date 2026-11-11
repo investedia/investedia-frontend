@@ -65,3 +65,16 @@
 .nf-t small .ai-c{width:22px!important;height:22px!important}
 .nf-lg .ai-c{width:38px!important;height:38px!important}
 .nf-rx .ai-c{width:26px!important;height:26px!important}
+
+/* Biggest movers, design A (11 Nov 2026) */
+.nf-strip{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent);padding-right:48px}
+.nf-t{width:232px!important;padding:0!important;display:flex;flex-direction:column;cursor:default}.nf-t:hover{background:#101012}
+.nf-tb{display:block;width:100%;padding:14px 14px 6px;background:none;border:0;color:inherit;font:inherit;text-align:left;cursor:pointer;border-radius:20px 20px 0 0}.nf-tb:hover{background:#151517}
+.nf-tk{display:flex;align-items:center;gap:8px}.nf-tk b{font-size:15px;font-weight:700}.nf-tk .ai-t,.nf-tk .ai-i{width:22px;height:22px}
+.nf-tn{display:block;color:var(--fg-2);font-size:12.5px;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nf-t .mono{display:block;font-size:26px!important;font-weight:700;margin:8px 0 4px!important;letter-spacing:-.02em}
+.nf-t svg{display:block;width:100%;height:40px!important}
+.nf-why{display:block;margin:0 14px 12px;padding-top:9px;border-top:1px solid var(--line);color:var(--fg-2);font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}a.nf-why:hover{color:var(--accent,#ff7a1a)}.nf-why.none{color:var(--fg-3,#71717a)}
+.nf-arw{margin-left:auto;display:flex;gap:6px}.nf-arw button{width:34px;height:34px;border:1px solid var(--line);border-radius:10px;background:none;color:inherit;font-size:18px;cursor:pointer}.nf-arw button:hover{border-color:var(--accent,#ff7a1a)}
+:root[data-theme=light] .nf-t,:root[data-theme=light] .nf-t:hover{background:#fff}:root[data-theme=light] .nf-tb:hover{background:#f4f4f5}
+@media(max-width:760px){.nf-t{width:200px!important}.nf-arw{display:none}.nf-strip{padding-right:24px}}
