@@ -146,6 +146,9 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
  .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(10,10,11,.85) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}
  :root[data-theme="light"] .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(247,247,248,.82) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}}
 @media (max-width:900px){.hn-facts{width:100%;grid-template-columns:repeat(3,1fr)}.hn-facts div,.hn-facts div:last-child{padding-right:8px}.hn-facts div+div{padding-left:12px}.hn-facts b{font-size:21px}.hn-facts span{font-size:11.5px}.hn-facts div+div{padding-left:10px}}
+/* Homepage starfield: stars run behind the header and across the page */
+.hdr{background:transparent!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;border-bottom-color:transparent!important}
+#hnStars{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;pointer-events:none}
 </style>
 <link rel="stylesheet" href="assets/home-news.css"><link rel="stylesheet" href="assets/since-news.css">
 <section class="hn-hero" aria-label="Live news globe">
@@ -285,4 +288,20 @@ fetch('assets/calendar-live.json', { cache: 'no-cache' }).then(r => r.json()).th
 const RES = [['Investor.gov', 'https://www.investor.gov', 'sans'], ['TradingView', 'https://www.tradingview.com', 'sans'], ['Morningstar', 'https://www.morningstar.com', 'serif'], ['Yahoo Finance', 'https://finance.yahoo.com', 'sans'], ['Khan Academy', 'https://www.khanacademy.org/economics-finance-domain', 'sans'], ['FRED', 'https://fred.stlouisfed.org', 'mono'], ['CoinMarketCap', 'https://coinmarketcap.com', 'sans'], ['Bogleheads', 'https://www.bogleheads.org', 'serif'], ['Reuters Markets', 'https://www.reuters.com/markets/', 'sans'], ['SEC EDGAR', 'https://www.sec.gov/edgar', 'mono'], ['Federal Reserve', 'https://www.federalreserve.gov', 'serif'], ['ECB', 'https://www.ecb.europa.eu', 'sans'], ['IMF', 'https://www.imf.org', 'sans'], ['World Bank', 'https://data.worldbank.org', 'sans'], ['Finviz', 'https://finviz.com', 'sans'], ['BIS', 'https://www.bis.org', 'serif']];
 const resItems = RES.map(([n, u, f]) => `<a class="res-item res-${f}" href="${u}" target="_blank" rel="noopener noreferrer">${n}</a>`).join('<span class="res-sep" aria-hidden="true"></span>');
 document.getElementById('res-track').innerHTML = resItems + '<span class="res-sep" aria-hidden="true"></span>' + resItems.replace(/<a /g, '<a tabindex="-1" aria-hidden="true" ');
+</script>
+<script>
+/* Homepage starfield (fixed canvas, behind the header and content) */
+(function(){
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const c = document.createElement('canvas'); c.id = 'hnStars'; c.setAttribute('aria-hidden', 'true');
+  document.body.prepend(c);
+  const x = c.getContext('2d'); let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const stars = []; for (let i = 0; i < 340; i++) stars.push([rnd(), rnd(), 0.15 + rnd() * 0.6, 0.3 + rnd() * 1.1]);
+  const draw = () => {
+    const dpr = Math.min(devicePixelRatio || 1, 2), W = c.width = innerWidth * dpr, H = c.height = innerHeight * dpr;
+    x.clearRect(0, 0, W, H); x.fillStyle = '#fff';
+    for (const [px, py, a, r] of stars) { x.globalAlpha = a; x.beginPath(); x.arc(px * W, py * H, r * dpr, 0, 7); x.fill(); }
+  };
+  draw(); addEventListener('resize', draw);
+})();
 </script>

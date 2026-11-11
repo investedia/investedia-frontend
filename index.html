@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t==='system'?(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'):t}catch(e){}</script><style>html{background:#0a0a0b}html[data-theme=light]{background:#fff}</style>
-<link rel="stylesheet" href="assets/consent.css?v=6e206da282">
-<script src="assets/consent.js?v=6e206da282"></script>
+<link rel="stylesheet" href="assets/consent.css?v=94518d510b">
+<script src="assets/consent.js?v=94518d510b"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Investedia</title>
 <meta name="description" content="Follow market-moving news around the world, see where it happens, which assets react, and how prices move — all through Investedia’s live market intelligence platform.">
@@ -23,8 +23,8 @@
 <meta name="twitter:description" content="Follow market-moving news around the world, see where it happens, which assets react, and how prices move — all through Investedia’s live market intelligence platform.">
 <meta name="twitter:image" content="https://investedia.com/assets/og-default.png">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/app.css?v=6e206da282">
-<link rel="stylesheet" href="assets/skin.css?v=6e206da282">
+<link rel="stylesheet" href="assets/app.css?v=94518d510b">
+<link rel="stylesheet" href="assets/skin.css?v=94518d510b">
 <link rel="apple-touch-icon" href="assets/app/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -47,22 +47,22 @@
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <script src="assets/quotes.js"></script>
 <script src="assets/news.js"></script>
-<script src="assets/mock.js?v=6e206da282"></script>
-<link rel="stylesheet" href="assets/news-menu.css?v=6e206da282">
-<script src="assets/runtime-config.js?v=6e206da282"></script>
-<script src="assets/live-config.js?v=6e206da282"></script>
-<script src="assets/live-data.js?v=6e206da282" defer></script>
-<script src="assets/news-source.js?v=6e206da282"></script>
-<script src="assets/prefs.js?v=6e206da282"></script>
-<script src="assets/peek.js?v=6e206da282"></script>
-<script src="assets/sectors.js?v=6e206da282"></script>
-<script src="assets/news-menu.js?v=6e206da282"></script>
-<script src="assets/locale.js?v=6e206da282"></script>
-<script src="assets/ui.js?v=6e206da282"></script>
-<script src="assets/news-alerts.js?v=6e206da282" defer></script>
-<script src="assets/since-news.js?v=6e206da282"></script>
-<script src="assets/implications.js?v=6e206da282"></script>
-<script src="assets/home-news.js?v=6e206da282"></script>
+<script src="assets/mock.js?v=94518d510b"></script>
+<link rel="stylesheet" href="assets/news-menu.css?v=94518d510b">
+<script src="assets/runtime-config.js?v=94518d510b"></script>
+<script src="assets/live-config.js?v=94518d510b"></script>
+<script src="assets/live-data.js?v=94518d510b" defer></script>
+<script src="assets/news-source.js?v=94518d510b"></script>
+<script src="assets/prefs.js?v=94518d510b"></script>
+<script src="assets/peek.js?v=94518d510b"></script>
+<script src="assets/sectors.js?v=94518d510b"></script>
+<script src="assets/news-menu.js?v=94518d510b"></script>
+<script src="assets/locale.js?v=94518d510b"></script>
+<script src="assets/ui.js?v=94518d510b"></script>
+<script src="assets/news-alerts.js?v=94518d510b" defer></script>
+<script src="assets/since-news.js?v=94518d510b"></script>
+<script src="assets/implications.js?v=94518d510b"></script>
+<script src="assets/home-news.js?v=94518d510b"></script>
 <main class="wrap" id="main-content" tabindex="-1">
 <style>
 /* News-first homepage. The globe is the hero; everything below is live news. */
@@ -211,6 +211,9 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
  .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(10,10,11,.85) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}
  :root[data-theme="light"] .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(247,247,248,.82) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}}
 @media (max-width:900px){.hn-facts{width:100%;grid-template-columns:repeat(3,1fr)}.hn-facts div,.hn-facts div:last-child{padding-right:8px}.hn-facts div+div{padding-left:12px}.hn-facts b{font-size:21px}.hn-facts span{font-size:11.5px}.hn-facts div+div{padding-left:10px}}
+/* Homepage starfield: stars run behind the header and across the page */
+.hdr{background:transparent!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;border-bottom-color:transparent!important}
+#hnStars{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;pointer-events:none}
 </style>
 <link rel="stylesheet" href="assets/home-news.css"><link rel="stylesheet" href="assets/since-news.css">
 <section class="hn-hero" aria-label="Live news globe">
@@ -350,6 +353,22 @@ fetch('assets/calendar-live.json', { cache: 'no-cache' }).then(r => r.json()).th
 const RES = [['Investor.gov', 'https://www.investor.gov', 'sans'], ['TradingView', 'https://www.tradingview.com', 'sans'], ['Morningstar', 'https://www.morningstar.com', 'serif'], ['Yahoo Finance', 'https://finance.yahoo.com', 'sans'], ['Khan Academy', 'https://www.khanacademy.org/economics-finance-domain', 'sans'], ['FRED', 'https://fred.stlouisfed.org', 'mono'], ['CoinMarketCap', 'https://coinmarketcap.com', 'sans'], ['Bogleheads', 'https://www.bogleheads.org', 'serif'], ['Reuters Markets', 'https://www.reuters.com/markets/', 'sans'], ['SEC EDGAR', 'https://www.sec.gov/edgar', 'mono'], ['Federal Reserve', 'https://www.federalreserve.gov', 'serif'], ['ECB', 'https://www.ecb.europa.eu', 'sans'], ['IMF', 'https://www.imf.org', 'sans'], ['World Bank', 'https://data.worldbank.org', 'sans'], ['Finviz', 'https://finviz.com', 'sans'], ['BIS', 'https://www.bis.org', 'serif']];
 const resItems = RES.map(([n, u, f]) => `<a class="res-item res-${f}" href="${u}" target="_blank" rel="noopener noreferrer">${n}</a>`).join('<span class="res-sep" aria-hidden="true"></span>');
 document.getElementById('res-track').innerHTML = resItems + '<span class="res-sep" aria-hidden="true"></span>' + resItems.replace(/<a /g, '<a tabindex="-1" aria-hidden="true" ');
+</script>
+<script>
+/* Homepage starfield (fixed canvas, behind the header and content) */
+(function(){
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const c = document.createElement('canvas'); c.id = 'hnStars'; c.setAttribute('aria-hidden', 'true');
+  document.body.prepend(c);
+  const x = c.getContext('2d'); let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const stars = []; for (let i = 0; i < 340; i++) stars.push([rnd(), rnd(), 0.15 + rnd() * 0.6, 0.3 + rnd() * 1.1]);
+  const draw = () => {
+    const dpr = Math.min(devicePixelRatio || 1, 2), W = c.width = innerWidth * dpr, H = c.height = innerHeight * dpr;
+    x.clearRect(0, 0, W, H); x.fillStyle = '#fff';
+    for (const [px, py, a, r] of stars) { x.globalAlpha = a; x.beginPath(); x.arc(px * W, py * H, r * dpr, 0, 7); x.fill(); }
+  };
+  draw(); addEventListener('resize', draw);
+})();
 </script>
 </main>
 </body>
