@@ -134,14 +134,25 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
 }
 .hn-mkc{flex:none;padding:3px 9px;border-radius:999px;background:rgba(255,122,26,.16);color:#ffb37a;font:600 11.5px Inter,sans-serif}.hn-mk .hn-ph b{font-weight:650}.hn-mka{flex:none;font:500 12px Inter,sans-serif;color:var(--fg-3,#8d8d98)}
 :root[data-theme="light"] .hn-mkc{background:rgba(255,122,26,.14);color:#984400}
+
+/* Design E (11 Nov 2026): globe left, name + three facts + search on the right; no headline sentence */
+.hn-kicker{margin:14px 0 0;color:var(--accent,#ff7a1a);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.hn-title.hn-e{margin:10px 0 22px}.hn-title.hn-e b{font-size:clamp(52px,6.2vw,84px);letter-spacing:-.04em;line-height:1}
+.hn-facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:0 0 24px;max-width:560px}
+.hn-facts div{padding:14px 0}.hn-facts div+div{padding-left:16px;border-left:1px solid var(--line)}.hn-facts b{display:block;font-size:19px;font-weight:600;color:var(--fg)}.hn-facts span{color:var(--fg-3,#8e8e96);font-size:13px}
+@media (min-width:901px){.hn-copy .hn{margin-left:max(52%,calc(50vw + 20px));max-width:600px;padding-right:32px}
+ .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(10,10,11,.85) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}
+ :root[data-theme="light"] .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(247,247,248,.82) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}}
+@media (max-width:900px){.hn-facts b{font-size:16px}.hn-facts span{font-size:11.5px}.hn-facts div+div{padding-left:10px}}
 </style>
 <link rel="stylesheet" href="assets/home-news.css"><link rel="stylesheet" href="assets/since-news.css">
 <section class="hn-hero" aria-label="Live news globe">
   <iframe id="hnGlobe" title="Live news globe"></iframe>
   <div class="hn-copy"><div class="hn">
     <span class="hn-live" id="hnLive"><i></i>Live</span>
-    <h1 class="hn-title" id="hnTitle"><b>Invest with clarity.</b><span>See the world move.</span></h1>
-    <p class="hn-lead">Financial news and market intelligence: what happened, where, and what it means for markets and portfolios.</p>
+    <p class="hn-kicker">Live globe · financial news</p>
+    <h1 class="hn-title hn-e" id="hnTitle"><b>Investedia</b></h1>
+    <div class="hn-facts"><div><b>Hourly</b><span>news updates</span></div><div><b>Named</b><span>sources on every article</span></div><div><b>Global</b><span>countries &amp; markets</span></div></div>
     <a class="hn-search" href="assets/globe/news.html"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Search assets, countries &amp; articles</a>
     <div class="hn-pop" id="hnPop" aria-label="Popular searches"><span class="hn-pop-l">Popular searches:</span></div>
   </div></div>
@@ -186,7 +197,7 @@ const isPhone = () => innerWidth <= 900;
 document.querySelector('.hn-hero').classList.add('hv-a');
 // phone: the globe is centred exactly in the free space between the search bar and the news ticker (side to side and top to bottom), a little smaller than the screen width
 function globeParams() {
-  if (!isPhone()) return 'cx=.7&cy=.445&r=.36';
+  if (!isPhone()) return 'cx=.27&cy=.47&r=.42';  // design E: globe on the left, partly past the edge
   const hr = document.querySelector('.hn-hero').getBoundingClientRect(), s = document.querySelector('.hn-search').getBoundingClientRect(), t = document.querySelector('.hn-tick').getBoundingClientRect();
   const pop = document.querySelector('.hn-pop'), sb = pop ? Math.max(s.bottom, pop.getBoundingClientRect().bottom) : s.bottom;
   const top = sb - hr.top, bot = t.top - hr.top, mid = (top + bot) / 2, free = bot - top, W = hr.width, base = Math.min(W, hr.height);
@@ -219,7 +230,7 @@ function showMarketHeadline() { const el = document.getElementById('hnTick'), S 
   el.innerHTML = '<a class="hn-pill hn-mk" href="' + href + '"><span class="hn-mkc">' + MK_CHIP(s.event_type) + '</span><span class="hn-ph"><b>' + esc(c) + '</b> · ' + esc(s.headline) + '</span><span class="hn-mka">' + age + '</span><span class="hn-pa" aria-hidden="true">→</span></a>'; }
 function syncHomeMode(){const on=homeGlobeMode==='markets',u=new URL(location.href);document.querySelector('.hn-hero').classList.toggle('hn-markets',on);window.InvGlobeNav=on?marketsHomeNav:previousHomeNav;on?u.searchParams.set('mode','markets'):u.searchParams.delete('mode');history.replaceState(null,'',u);document.querySelectorAll('[data-globe-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.globeMode===homeGlobeMode)));const cta=document.querySelector('.hn-open');cta.href=on?'assets/globe/news.html?mode=markets':'/assets/globe/news.html';cta.querySelector('.t').textContent=on?'Explore markets':'Open globe';cta.setAttribute('aria-label',on?'Explore markets':'Open the globe');const search=document.querySelector('.hn-search');search.lastChild.textContent=on?'Search countries, exchanges, indices & companies':'Search assets, countries & articles';search.href=cta.href;const hero=document.querySelector('.hn-hero');hero.style.setProperty('--cta-width',cta.getBoundingClientRect().width+'px');const pop=document.querySelector('.hn-pop');if(isPhone()&&pop)hero.style.setProperty('--mode-top',(pop.getBoundingClientRect().bottom-hero.getBoundingClientRect().top+14)+'px');}
 addEventListener('message',e=>{if(e.origin!==location.origin||e.source!==hnGlobe.contentWindow||e.data?.type!=='investedia-market-panel')return;const hero=document.querySelector('.hn-hero'),r=e.data.rect;hero.classList.toggle('market-panel-open',!!e.data.open);if(r)for(const k of ['left','top','right','bottom'])if(Number.isFinite(r[k]))hero.style.setProperty('--mp-'+k,r[k]+'px');});
-function sendGlobeMode(){const r=hnGlobe.getBoundingClientRect(),occlusions=[...document.querySelectorAll('.hn-title b,.hn-title span,.hn-lead,.hn-search,.hn-pop,.hn-ctl')].map(el=>{const b=el.getBoundingClientRect();return{x:b.x-r.x,y:b.y-r.y,w:b.width,h:b.height};});hnGlobe.contentWindow?.postMessage({type:'investedia-mode',mode:homeGlobeMode,occlusions},location.origin);}
+function sendGlobeMode(){const r=hnGlobe.getBoundingClientRect(),occlusions=[...document.querySelectorAll('.hn-title b,.hn-title span,.hn-lead,.hn-kicker,.hn-facts,.hn-search,.hn-pop,.hn-ctl')].map(el=>{const b=el.getBoundingClientRect();return{x:b.x-r.x,y:b.y-r.y,w:b.width,h:b.height};});hnGlobe.contentWindow?.postMessage({type:'investedia-mode',mode:homeGlobeMode,occlusions},location.origin);}
 hnGlobe.addEventListener('load',()=>{sendGlobeMode();requestAnimationFrame(()=>hnGlobe.classList.add('ready'));});
 const previousHomeNav=window.InvGlobeNav,marketsHomeNav={...previousHomeNav,market:value=>{if(homeGlobeMode!=='markets')return false;const split=value.indexOf(':');if(split<0)return false;hnGlobe.contentWindow?.postMessage({type:'investedia-mode',mode:'markets',country:value.slice(split+1),exchange:value.slice(0,split)},location.origin);return true;},country:name=>{if(homeGlobeMode!=='markets')return false;hnGlobe.contentWindow?.postMessage({type:'investedia-mode',mode:'markets',country:name},location.origin);return true;}};
 document.querySelector('.hn-modes').onclick=e=>{const b=e.target.closest('[data-globe-mode]');if(!b)return;homeGlobeMode=b.dataset.globeMode;syncHomeMode();sendGlobeMode();if(homeGlobeMode==='markets')showMarketHeadline();else if(window.hnShowNews)hnShowNews();};
