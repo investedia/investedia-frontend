@@ -2505,7 +2505,8 @@ const projectDock=document.createElement('button');projectDock.type='button';pro
 function drawProj(){
  PROJ.hits=[];
  const visible=InvProjectsCluster.project(PROJ.vis||[],{lon:lon0,lat:lat0,cx,cy,radius:R,width:W,height:H});
- const singles=InvProjectsCluster.cluster(visible,{width:W,height:H,zoom:Zt,selected:PROJ.sel,phone:phone()});
+ // Owner choice (11 Nov 2026): every project is its own dot, no grouping.
+ const singles=visible.map(n=>({p:n.p,x:n.x,y:n.y}));
  const co=[],boxes=[];for(const {p,x,y,group} of singles){const selected=p.id===PROJ.sel,r=selected?5.5:p.featured?4:2.5;ctx.beginPath();ctx.arc(x,y,r*2.6,0,7);ctx.fillStyle=selected?'rgba(255,122,26,.25)':'rgba(255,122,26,.08)';ctx.fill();ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fillStyle='#ff7a1a';ctx.fill();PROJ.hits.push({x,y,id:p.id,group});
   if(!group&&(['kx','noor','line'].includes(p.id)||selected))co.push({p,x,y,selected});}
  for(const {p,x,y,selected} of co){{const title=p.id==='kx'?"King's Cross":p.id==='noor'?'Noor Ouarzazate':p.name;ctx.font='600 11.5px Inter,sans-serif';let w=Math.min(230,Math.max(ctx.measureText(title).width,ctx.measureText(p.country).width)+22),h=43,l=Math.min((phone()?W:globeBox.right+20)-w-8,Math.max(8,x+12)),t=Math.min(H-100,Math.max(65,y-22));for(let k=0;k<6&&boxes.some(b=>l<b.l+b.w+4&&l+w+4>b.l&&t<b.t+b.h+4&&t+h+4>b.t);k++)t+=h+6;boxes.push({l,t,w,h});ctx.beginPath();ctx.roundRect(l,t,w,h,10);ctx.fillStyle=DAY?'rgba(255,255,255,.96)':'rgba(12,12,14,.96)';ctx.strokeStyle=selected?'#ff7a1a':DAY?'#d5d5d9':'#2a2a2f';ctx.fill();ctx.stroke();ctx.textAlign='left';ctx.textBaseline='alphabetic';ctx.fillStyle=DAY?'#1d1d1f':'#eee';ctx.fillText(title.length>30?title.slice(0,29)+'…':title,l+10,t+17);ctx.font='10px Inter,sans-serif';ctx.fillStyle=DAY?'#52525b':'#a1a1aa';ctx.fillText(p.country,l+10,t+33);PROJ.hits.push({x:l+w/2,y:t+h/2,id:p.id,rect:{l,t,w,h}});}}
