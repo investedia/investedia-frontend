@@ -46,7 +46,7 @@ function initArticles() {
     const s = state(); options(s);
     let res; try { res = await rows(s); } catch { $('al-list').innerHTML = '<p class="al-empty">Articles could not load. Please try again.</p>'; return; }
     const pages = Math.max(1, Math.ceil(res.total / meta.per_page)); let list = res.list, lead = '';
-    if (s.page === 1 && !s.q) { const i = list.findIndex(img); if (i >= 0) { const r = list[i]; list = list.filter((_, k) => k !== i);
+    if (s.page === 1 && !s.q && !document.querySelector('.al-onnews')) { const i = list.findIndex(img); if (i >= 0) { const r = list[i]; list = list.filter((_, k) => k !== i);
       lead = `<a class="al-lead" href="${link(r)}"><img src="${esc(img(r))}" alt=""><div><div class="al-ct">${esc(nice(r.c))} · ${day(r.t)} ${time(r.t)}</div><h2>${esc(r.h)}</h2><p id="al-lead-sum"></p><div class="al-sr">${esc(r.s || '')}${r.n ? ' · ' + esc(r.n) : ''}</div></div></a>`;
       fetch('assets/globe/library/' + encodeURIComponent(r.id) + '.json').then(x => x.ok ? x.json() : null).then(d => { const p = $('al-lead-sum'); if (p && d?.summary) p.textContent = d.summary; }).catch(() => {}); } }
     $('al-lead').innerHTML = lead;
