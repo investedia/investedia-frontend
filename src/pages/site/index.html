@@ -143,7 +143,7 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
 @media (min-width:901px){.hn-copy .hn{margin-left:max(52%,calc(50vw + 20px));max-width:600px;padding-right:32px}
  .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(10,10,11,.85) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}
  :root[data-theme="light"] .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(247,247,248,.82) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}}
-@media (max-width:900px){.hn-facts b{font-size:21px}.hn-facts span{font-size:11.5px}.hn-facts div+div{padding-left:10px}}
+@media (max-width:900px){.hn-facts{width:100%;grid-template-columns:repeat(3,1fr)}.hn-facts div,.hn-facts div:last-child{padding-right:8px}.hn-facts div+div{padding-left:12px}.hn-facts b{font-size:21px}.hn-facts span{font-size:11.5px}.hn-facts div+div{padding-left:10px}}
 </style>
 <link rel="stylesheet" href="assets/home-news.css"><link rel="stylesheet" href="assets/since-news.css">
 <section class="hn-hero" aria-label="Live news globe">
@@ -254,9 +254,13 @@ fitTitle(); addEventListener('resize', fitTitle); document.fonts && document.fon
 function countTo(el, v) { if (!el || !Number.isFinite(v)) return; const fmt = n => Math.round(n).toLocaleString('en-US');
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = fmt(v); return; }
   const from = +(el.dataset.v || 0), t0 = performance.now(), f = t => { const k = Math.min(1, (t - t0) / 1200), e = 1 - Math.pow(1 - k, 3); el.textContent = fmt(from + (v - from) * e); if (k < 1) requestAnimationFrame(f); }; el.dataset.v = v; requestAnimationFrame(f); }
-fetch('assets/globe/site-stats.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(c => { if (!c) return; for (const k of ['articles', 'sources', 'projects']) countTo(document.querySelector('[data-stat=' + k + ']'), c[k]); }).catch(() => {});
+// Totals: the news service sends the robot's live counts with every hourly update; the file built with the site is the fallback.
+// Each number shows the larger of the two, so it never jumps backwards.
+const homeStats = {}; function showStats(c) { if (!c) return; for (const k of ['articles', 'sources', 'projects']) if (Number.isFinite(c[k]) && c[k] > (homeStats[k] || 0)) { homeStats[k] = c[k]; countTo(document.querySelector('[data-stat=' + k + ']'), c[k]); } }
+fetch('assets/globe/site-stats.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(showStats).catch(() => {});
 loadNews().then(d => {
   hnLive.innerHTML = '<i></i>' + updatedText(d.updated);
+  showStats(d.stats);
   hnTop.innerHTML = d.top.slice(0, 5).map((s, i) => card(s, i === 0)).join('');
   { const cs = confirmedSection(d); hnWhy.innerHTML = cs.body; hnWhyMore.innerHTML = cs.more; }
   hnCty.innerHTML = countries(d.stories);
