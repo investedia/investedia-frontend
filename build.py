@@ -205,3 +205,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
     build(release=args.release, publish=args.publish_assets)
     import tools.site_stats as site_stats; site_stats.write()  # homepage numbers
+    import tools.news_library_index as news_index; news_index.write()  # articles.html pages
