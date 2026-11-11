@@ -71,7 +71,15 @@ function initArticles() {
     // newest articles that arrived after the last site build come from the live feed, without duplicates
     try { const n = await fetch('assets/globe/news-live.json', { cache: 'no-cache' }).then(r => r.json()); const first = (await get('page-1.json'))[0];
       live = (n.stories || []).filter(x => first && x.published_at > first.t).map(x => ({ id: x.id, h: x.headline, c: x.category, t: x.published_at, s: x.source?.name, n: x.location?.country, g: x.location?.region, k: (x.sources || []).length || 1, i: x.image?.file })); } catch {}
-    $('al-sub').textContent = sub; $('al-sub2').textContent = sub; render();
+    // days the hourly robot added after the last site build (news service); deduplicated by id
+    try { const D = window.InvData, first = (await get('page-1.json'))[0], newest = first ? first.t.slice(0, 10) : '';
+      if (D && D.get) { const days = Object.keys((await D.get('library')).data.days || {}).filter(d => d >= newest).sort().reverse();
+        const extra = (await Promise.all(days.map(d => D.get('library?day=' + d).then(r => r.data.rows || []).catch(() => [])))).flat();
+        const have = new Set([...live.map(r => r.id)]); const pageIds = new Set((await get('page-1.json')).map(r => r.id));
+        for (const r of extra) if (!have.has(r.id) && !pageIds.has(r.id) && (!first || r.t > first.t)) { live.push(r); have.add(r.id); }
+        live.sort((a, b) => (a.t < b.t ? 1 : -1)); } } catch {}
+    const subN = m.total + live.length; const sub2 = `${fmt(subN)} articles from ${fmt(m.sources)} sources since ${new Date(m.first).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}`;
+    $('al-sub').textContent = sub2; $('al-sub2').textContent = sub2; render(); return; $('al-sub2').textContent = sub; render();
   }).catch(() => { $('al-sub').textContent = 'Articles could not load.'; });
 }
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initArticles); else initArticles();
