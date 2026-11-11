@@ -1275,3 +1275,4 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .ftr-a .ftr-bar{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;border-top:1px solid var(--line);margin-top:28px;padding:16px 0 4px;font-size:12px;color:var(--fg-3)}.ftr-a .ftr-legal{display:flex;flex-wrap:wrap;gap:4px 16px}.ftr-a .ftr-bar a{color:var(--fg-3)}.ftr-a .ftr-bar a:hover{color:var(--fg)}.ftr-a .ftr-note{margin-left:auto}.ftr-a .ftr-note a{color:var(--accent)}.ftr-a .ftr-top-btn{border:1px solid var(--line);border-radius:8px;padding:2px 9px;color:var(--fg-2);background:none}
 @media(max-width:760px){.ftr-a .ftr-grid{grid-template-columns:1fr;gap:20px}.ftr-a .ftr-cols{grid-template-columns:1fr 1fr}.ftr-a .ftr-note{margin-left:0;width:100%}}
 .hdr .theme-tgl svg{width:18px;height:18px}
+.hdr .hdr-settings svg{width:18px;height:18px}
