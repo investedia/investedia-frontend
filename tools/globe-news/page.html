@@ -153,7 +153,7 @@ html.proj-mode :is(.panel,.act,.side-sec,.side-imp,.side-bar,#lcol,.timeline,#ca
 html.proj-mode .pjl{display:flex;flex-direction:column;position:fixed;left:16px;top:16px;bottom:16px;width:380px;z-index:5;border:1px solid #1f1f23;background:rgba(11,11,13,.96);border-radius:16px;padding:16px;font:13px/1.4 Inter,sans-serif;box-sizing:border-box}
 html.proj-mode .pjs{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;bottom:16px;left:calc(380px + 40px);right:calc(var(--pw) + 40px);z-index:4;border:1px solid #1f1f23;background:rgba(11,11,13,.96);border-radius:14px;font:13px Inter,sans-serif}
 html.proj-mode .pjs div{padding:10px 14px;border-right:1px solid #1f1f23}html.proj-mode .pjs div:last-child{border:0}.pjs b{display:block;font-size:18px;font-weight:600}.pjs small{color:#77777f;font-size:11px}
-@media(max-width:760px){html.proj-mode .top{display:none!important}}
+
 .pjl-h b{display:block;font-size:19px}.pjl-h small{color:#8a8a92}.pjq{margin:12px 0 0;height:40px;border:1px solid #2a2a2f;border-radius:10px;background:#0e0e11;color:#eee;padding:0 12px;font:13px Inter,sans-serif}.pjl .pj-f{margin:8px 0 6px}.pjl .pj-f select{max-width:118px}
 .pjl-n{color:#8a8a92;font-size:12px;margin:2px 0 6px}.pjl-list{overflow:auto;flex:1;margin:0 -6px;padding:0 6px}
 .pjr{display:grid;grid-template-columns:72px 1fr 22px;gap:10px;padding:8px;border-radius:10px;border:1px solid transparent;cursor:pointer}.pjr:hover{background:rgba(255,255,255,.03)}.pjr.on{border-color:rgba(255,122,26,.6);background:rgba(255,122,26,.06)}.pjr img,.pji{width:72px;height:50px;border-radius:7px;object-fit:cover}.pji{display:grid;place-items:center;background:#16161a;color:#8a8a92;font-weight:600;font-size:12px}.pjr b{display:block;font-size:13px;line-height:1.25}.pjr small{color:#8a8a92;font-size:11.5px}
@@ -517,7 +517,7 @@ h1 span{color:var(--fg-3)}
   /* Open sheet = a card floating above the dock (never under it); header is one slim row: Back, expand, close. */
   /* The open sheet is ONE full-height card moved with transform (compositor only) and cropped with clip-path, so dragging never re-lays-out the article list.
      --sheet-drop = how far it is pulled down from fully open. The page never decides a height: JS writes any pixel value between the minimum and maximum. */
-  html[data-panel] .panel:not([data-sheet=closed]){left:12px;right:12px;top:auto;bottom:calc(var(--dock-gap,90px) + env(safe-area-inset-bottom));height:calc(var(--sheet-max,92dvh) - var(--dock-gap,90px));border-radius:22px;border:1px solid rgba(255,255,255,.16);box-shadow:none;transform:translate3d(0,var(--sheet-drop,0px),0);clip-path:inset(0 0 var(--sheet-drop,0px) 0 round 22px);transition:transform .32s cubic-bezier(.2,.8,.2,1),clip-path .32s cubic-bezier(.2,.8,.2,1);will-change:transform,clip-path}
+  html[data-panel] .panel:not([data-sheet=closed]){left:12px;right:12px;top:auto;bottom:calc(var(--dock-gap,100px) + env(safe-area-inset-bottom));height:calc(var(--sheet-max,92dvh) - var(--dock-gap,100px));border-radius:22px;border:1px solid rgba(255,255,255,.16);box-shadow:none;transform:translate3d(0,var(--sheet-drop,0px),0);clip-path:inset(0 0 var(--sheet-drop,0px) 0 round 22px);transition:transform .32s cubic-bezier(.2,.8,.2,1),clip-path .32s cubic-bezier(.2,.8,.2,1);will-change:transform,clip-path}
   html[data-panel] .panel:not([data-sheet=closed]) .grab{height:18px;min-height:18px}
   html[data-panel] .panel:not([data-sheet=closed]) .grab::after{top:7px}
   html[data-panel] .panel:not([data-sheet=closed]) .grab{touch-action:none;position:relative;z-index:2}
@@ -526,7 +526,7 @@ h1 span{color:var(--fg-3)}
   html[data-panel] .panel:not([data-sheet=closed]) .sheet-actions{z-index:4}
   html[data-panel] .panel:not([data-sheet=closed]) .sheet-actions{top:0}
   html[data-panel] .panel:not([data-sheet=closed]) .sheet-actions button{min-width:44px;min-height:44px;width:44px;height:44px}
-  html[data-panel] .panel:not([data-sheet=closed]) .pbody{height:calc(var(--sheet-max,92dvh) - var(--dock-gap,90px) - 18px);padding-bottom:calc(24px + var(--sheet-pad,0px));transition:none}
+  html[data-panel] .panel:not([data-sheet=closed]) .pbody{height:calc(var(--sheet-max,92dvh) - var(--dock-gap,100px) - 18px);padding-bottom:calc(24px + var(--sheet-pad,0px));transition:none}
   html[data-panel] .panel:not([data-sheet=closed]) .pbody:has(.back){padding-top:44px}
   html[data-panel] .panel:not([data-sheet=closed]) .pbody .back{position:absolute;left:12px;top:0;margin:0;min-height:44px;z-index:3;color:#fff;font-size:15px;font-weight:600;background:none}
   .panel[data-sheet=closed] .pbody{cursor:pointer}
@@ -761,7 +761,7 @@ html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(h3,h4,b,strong,.mkd-sr,.mkd
 html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(span,small,.mkd-n,.mkd-ft,.mkd-cs,p){color:var(--fg-3)}
 html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(.mkd-kp>*,.mkd-c,.mkd-e,.mkd-more,button.mkd-more){background:rgba(0,0,0,.04)!important;border-color:var(--line)!important;color:var(--fg)}
 html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(.up,.pos,[class*=up]){color:#15803d}html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(.dn,.neg,[class*=dn],[class*=down]){color:#b91c1c}
-html.mswap :is(.panel,#lcol,.act,.timeline,.mkd-l,.mkd-o,.mkd-a,.pjl,.pj,.pjs,.side-sec,.side-imp,.market-panel){transition:opacity .17s ease,transform .17s ease}
+html.mswap :is(.panel,#lcol,.act,.timeline,.mkd-l,.mkd-o,.mkd-a,.pjl,.pj,.pjs,.side-sec,.side-imp,.market-panel){transition:opacity .19s cubic-bezier(.4,0,.2,1),transform .19s cubic-bezier(.4,0,.2,1);will-change:opacity,transform}
 html.mswap-out :is(.panel,.mkd-o,.pj){opacity:0!important;transform:translateX(10px)}html.mswap-out :is(#lcol,.mkd-l,.pjl){opacity:0!important;transform:translateX(-10px)}html.mswap-out :is(.act,.timeline,.mkd-a,.pjs){opacity:0!important}
 html.mswap #sbox input::placeholder{transition:opacity .17s}html.mswap-out #sbox input::placeholder{opacity:0}
 .mkd-unu{display:flex;width:100%;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;background:none;border:0;border-top:1px solid #1f1f23;color:inherit;font:inherit;text-align:left;cursor:pointer}.mkd-unu small{display:block;color:#77777f;font-size:11.5px}.mkd-unu em{font-style:normal;font-weight:600;color:#a1a1aa}.mkd-unu em.hot{color:#ff7a1a}.mkd-unu:hover b{color:#ff7a1a}
@@ -2400,9 +2400,11 @@ let mvF = 'all';
 // mode switch: panels fade out, the globe turns a little in place, the new panels fade in (instant with reduced motion)
 function modeSwap(fn, spin = true) {
   const h = document.documentElement;
-  if (reduce || phone()) return fn();
-  h.classList.add('mswap', 'mswap-out');
-  setTimeout(() => { fn(); if (spin) flyTo(lon0 + 35, lat0, Zt, 750); requestAnimationFrame(() => h.classList.remove('mswap-out')); setTimeout(() => h.classList.remove('mswap'), 420); }, 170);
+  if (reduce) return fn();
+  const z = Zt, turn = () => { if (!spin) return; flyTo(lon0 + 24, lat0, z * .94, 420); setTimeout(() => flyTo(lon0 + 24, lat0, z, 520), 400); };
+  if (phone()) { fn(); turn(); return; }  // phone: the sheet slides as usual, the globe turns in place
+  h.classList.add('mswap', 'mswap-out'); turn();
+  setTimeout(() => { fn(); requestAnimationFrame(() => h.classList.remove('mswap-out')); setTimeout(() => h.classList.remove('mswap'), 420); }, 190);
 }
 $('gswitch').onclick = e => { const b=e.target.closest('button');if(!b||b.getAttribute('aria-pressed')==='true')return;const leavingProj=PROJ.on;
   modeSwap(()=>{if(b.dataset.m==='projects')return projSet(true);projSet(false,{mode:b.dataset.m});if(typeof marketSetMode==='function')marketSetMode(b.dataset.m);}, !leavingProj); };
@@ -2944,6 +2946,8 @@ function toggleNavSheet() {
 }
 $('dock').onclick = e => {
   const b = e.target.closest('button'); if (!b || !phone()) return;
+  const cur = PROJ.on ? 'projects' : phoneView === 'markets' ? 'markets' : 'news';
+  if (b.dataset.v !== cur && !e.mswapped) { const leaving = PROJ.on; return modeSwap(() => $('dock').onclick({ target: b, mswapped: true }), !leaving); }
   gmAutoSheet = false;
   if(b.dataset.v==='projects')return projSet(true);
   if(PROJ.on)projSet(false,{mode:b.dataset.v==='markets'?'markets':'news'});
