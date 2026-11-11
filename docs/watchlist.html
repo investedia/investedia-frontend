@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t==='system'?(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'):t}catch(e){}</script><style>html{background:#0a0a0b}html[data-theme=light]{background:#fff}</style>
-<link rel="stylesheet" href="assets/consent.css?v=9486a1c97d">
-<script src="assets/consent.js?v=9486a1c97d"></script>
+<link rel="stylesheet" href="assets/consent.css?v=4ca3fa87ac">
+<script src="assets/consent.js?v=4ca3fa87ac"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Investedia Watchlist</title>
-<meta name="description" content="The stocks, currencies and countries you follow, with today's moves.">
-<meta property="og:title" content="Investedia Watchlist">
-<meta property="og:description" content="The stocks, currencies and countries you follow, with today's moves.">
+<title>My watchlist · Investedia</title>
+<meta name="description" content="Articles about the countries and assets you follow.">
+<meta property="og:title" content="My watchlist · Investedia">
+<meta property="og:description" content="Articles about the countries and assets you follow.">
 <meta name="theme-color" content="#0A0A0B">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Investedia">
@@ -19,12 +19,12 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Investedia: invest with clarity, see the world move">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Investedia Watchlist">
-<meta name="twitter:description" content="The stocks, currencies and countries you follow, with today's moves.">
+<meta name="twitter:title" content="My watchlist · Investedia">
+<meta name="twitter:description" content="Articles about the countries and assets you follow.">
 <meta name="twitter:image" content="https://investedia.com/assets/og-default.png">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/app.css?v=9486a1c97d">
-<link rel="stylesheet" href="assets/skin.css?v=9486a1c97d">
+<link rel="stylesheet" href="assets/app.css?v=4ca3fa87ac">
+<link rel="stylesheet" href="assets/skin.css?v=4ca3fa87ac">
 <link rel="apple-touch-icon" href="assets/app/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -47,62 +47,29 @@
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <script src="assets/quotes.js"></script>
 <script src="assets/news.js"></script>
-<script src="assets/mock.js?v=9486a1c97d"></script>
-<link rel="stylesheet" href="assets/news-menu.css?v=9486a1c97d">
-<script src="assets/runtime-config.js?v=9486a1c97d"></script>
-<script src="assets/live-config.js?v=9486a1c97d"></script>
-<script src="assets/live-data.js?v=9486a1c97d" defer></script>
-<script src="assets/news-source.js?v=9486a1c97d"></script>
-<script src="assets/prefs.js?v=9486a1c97d"></script>
-<script src="assets/peek.js?v=9486a1c97d"></script>
-<script src="assets/sectors.js?v=9486a1c97d"></script>
-<script src="assets/news-menu.js?v=9486a1c97d"></script>
-<script src="assets/locale.js?v=9486a1c97d"></script>
-<script src="assets/ui.js?v=9486a1c97d"></script>
-<script src="assets/news-alerts.js?v=9486a1c97d" defer></script>
+<script src="assets/mock.js?v=4ca3fa87ac"></script>
+<link rel="stylesheet" href="assets/news-menu.css?v=4ca3fa87ac">
+<script src="assets/runtime-config.js?v=4ca3fa87ac"></script>
+<script src="assets/live-config.js?v=4ca3fa87ac"></script>
+<script src="assets/live-data.js?v=4ca3fa87ac" defer></script>
+<script src="assets/news-source.js?v=4ca3fa87ac"></script>
+<script src="assets/prefs.js?v=4ca3fa87ac"></script>
+<script src="assets/peek.js?v=4ca3fa87ac"></script>
+<script src="assets/sectors.js?v=4ca3fa87ac"></script>
+<script src="assets/news-menu.js?v=4ca3fa87ac"></script>
+<script src="assets/locale.js?v=4ca3fa87ac"></script>
+<script src="assets/ui.js?v=4ca3fa87ac"></script>
+<script src="assets/news-alerts.js?v=4ca3fa87ac" defer></script>
+<script src="assets/watchlist-feed.js?v=4ca3fa87ac"></script>
 <main class="wrap" id="main-content" tabindex="-1">
-<div class="page-head">
-  <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Watchlist</span></div>
-  <div class="sec-head" style="margin:0"><div><h1 style="font-size:clamp(26px,3vw,36px)">My watchlist</h1><p class="muted" style="margin:4px 0 0">Assets and whole countries you follow. Saved to your account.</p></div>
-  <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><a class="btn btn-ghost" href="globe.html">Add from world map</a><button class="btn btn-primary" type="button" data-search>+ Add asset</button></div></div>
+<link rel="stylesheet" href="assets/watchlist-feed.css">
+<section class="wf-head"><h1>My watchlist</h1><p id="wf-summary" aria-live="polite">Loading your followed articles…</p></section>
+<div class="wf-layout" id="wf-layout" hidden>
+  <aside class="wf-sidebar" aria-label="Followed countries and assets"><h2>Following</h2><div id="wf-filters" class="wf-filters" role="group" aria-label="Filter followed articles"></div></aside>
+  <section class="wf-feed" aria-label="Articles about followed items"><div id="wf-content" aria-live="polite" aria-busy="true"></div></section>
 </div>
-
-<section class="sec"><div class="card"><div class="stats-row" id="sum"></div></div></section>
-<section class="sec" id="c-sec"><div class="sec-head"><h2>Countries</h2></div><div class="wl-cgrid" id="countries"></div></section>
-<section class="sec"><div class="sec-head"><h2>Assets</h2></div><div class="card wl-list" id="assets"></div></section>
-<p class="dim" style="font-size:12.5px;margin-top:8px" id="asof"></p>
-<script>
-const { fmtP, fmtC, cls, logo } = UI, M = MOCK;
-const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
-const pct = v => `${v > 0 ? '+' : v < 0 ? '−' : ''}${Math.abs(v).toFixed(2)}%`;
-const gval = m => m.t === 'fx' ? m.p.toLocaleString('en-US', { minimumFractionDigits: m.p < 20 ? 4 : 2, maximumFractionDigits: m.p < 20 ? 4 : 2 }) : m.p.toLocaleString('en-US', { maximumFractionDigits: m.p < 1 ? 6 : 2, minimumFractionDigits: 2 }) + (m.u ? ' ' + m.u : '');
-const STAR = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/></svg>';
-let G = [], asof = null;
-fetch('assets/globe/markets.json', { cache: 'no-cache' }).then(r => r.json()).then(j => { G = j.assets || j; asof = j.asof; draw(); }).catch(draw);
-const gBy = s => G.find(m => m.s === s);
-function draw() {
-  const W = window.INVWATCH; if (!W || !W.user) return;
-  const items = W.all(), cs = items.filter(x => x.kind === 'country'), as = items.filter(x => x.kind === 'asset');
-  // one row per watched asset, with today's numbers from the site feed or the globe feed
-  const rows = as.map(x => { if (x.src === 'site') { const a = M.bySym[x.s]; return a && { x, ic: logo(a), n: a.n || a.s, sub: a.s, v: fmtP(a), d: a.d, href: 'asset.html?s=' + encodeURIComponent(a.s) }; }
-    const m = gBy(x.s) || x; return { x, ic: `<span class="logo logo-img wl-ic"><img src="assets/logos/${esc(x.lg || 'flags/' + x.cc + '.svg')}" alt=""></span>`, n: m.n, sub: m.k, v: m.p != null ? gval(m) : '—', d: m.d, href: m.site ? 'asset.html?s=' + encodeURIComponent(m.site) : 'globe.html?country=' + encodeURIComponent(m.k) }; }).filter(Boolean);
-  const csd = cs.map(c => { const xs = G.filter(m => m.k === c.k), head = xs.find(m => m.g === 'Index') || xs.find(m => m.g === 'Country ETF') || xs.find(m => m.t === 'fx') || xs[0]; return { c, xs, head, up: xs.filter(m => m.d > 0).length, dn: xs.filter(m => m.d < 0).length }; });
-  const moves = rows.filter(r => isFinite(r.d)).sort((a, b) => b.d - a.d), best = moves[0], worst = moves[moves.length - 1];
-  document.getElementById('sum').innerHTML = [['Assets', rows.length], ['Countries', cs.length], ['Up today', `<i style="font-style:normal" class="up">${moves.filter(r => r.d > 0).length}</i>`], ['Down today', `<i style="font-style:normal" class="down">${moves.filter(r => r.d < 0).length}</i>`], ['Best today', best ? `<i style="font-style:normal" class="${cls(best.d)}">${esc(best.n)} ${pct(best.d)}</i>` : '—'], ['Worst today', worst ? `<i style="font-style:normal" class="${cls(worst.d)}">${esc(worst.n)} ${pct(worst.d)}</i>` : '—']].map(([k, v]) => `<div class="stat"><span>${k}</span><b>${v}</b></div>`).join('');
-  document.getElementById('c-sec').hidden = !cs.length;
-  document.getElementById('countries').innerHTML = csd.map(({ c, xs, head, up, dn }) => `<a class="card wl-country" href="globe.html?country=${encodeURIComponent(c.k)}">
-      <div class="wl-ch"><span class="logo logo-img wl-ic"><img src="assets/logos/flags/${esc(c.cc)}.svg" alt=""></span><span><b>${esc(c.k)}</b><small>${esc(c.r || '')}</small></span><button class="wl-x" type="button" data-c="${esc(c.k)}" aria-label="Remove ${esc(c.k)} from your watchlist" title="Remove">${STAR}</button></div>
-      ${head ? `<div class="wl-head"><span>${esc(head.n)}</span><b class="num">${gval(head)}</b><i class="num ${cls(head.d)}">${pct(head.d)}</i></div>` : ''}
-      <div class="wl-ud"><span class="up">${up} up</span><span class="down">${dn} down</span><span class="dim">${xs.length} assets</span></div></a>`).join('');
-  document.getElementById('assets').innerHTML = rows.length ? rows.map(r => `<a class="wl-row" href="${r.href}">${r.ic}<span class="wl-n"><b>${esc(r.n)}</b><small>${esc(r.sub)}</small></span><span class="num wl-v">${r.v}</span><span class="num wl-d ${cls(r.d)}">${isFinite(r.d) ? pct(r.d) : ''}</span><button class="wl-x" type="button" data-a="${esc(r.x.src + ':' + r.x.s)}" aria-label="Remove ${esc(r.n)} from your watchlist" title="Remove">${STAR}</button></a>`).join('')
-    : '<div class="wl-empty"><b>Nothing here yet</b><p class="muted">Tap the star on any asset, or on a country on the world map, to follow it here.</p><a class="btn btn-primary btn-sm" href="globe.html">Open world map</a></div>';
-  document.getElementById('asof').textContent = asof ? 'World map prices updated ' + new Date(asof).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) + '. Not investment advice.' : 'Not investment advice.';
-}
-document.addEventListener('click', e => { const b = e.target.closest('.wl-x'); if (!b) return; e.preventDefault(); e.stopPropagation();
-  if (b.dataset.c) { const c = INVWATCH.all().find(x => x.kind === 'country' && x.k === b.dataset.c); c && INVWATCH.toggle(c); }
-  else { const a = INVWATCH.all().find(x => x.kind === 'asset' && (x.src || 'site') + ':' + x.s === b.dataset.a); a && INVWATCH.toggle(a); } });
-INVWATCH.on(draw); draw();
-</script>
+<section class="wf-empty" id="wf-empty" hidden><span class="wf-empty-mark" aria-hidden="true">＋</span><h2>Your feed starts with what you follow</h2><p>Follow countries and assets on the Globe to see their articles here</p><a class="btn btn-primary" href="assets/globe/news.html">Explore the Globe ↗</a></section>
+<p class="wf-footer">Not investment advice.</p>
 </main>
 </body>
 </html>
