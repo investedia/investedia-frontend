@@ -153,7 +153,7 @@ html.proj-mode :is(.panel,.act,.side-sec,.side-imp,.side-bar,#lcol,.timeline,#ca
 html.proj-mode .pjl{display:flex;flex-direction:column;position:fixed;left:16px;top:16px;bottom:16px;width:380px;z-index:5;border:1px solid #1f1f23;background:rgba(11,11,13,.96);border-radius:16px;padding:16px;font:13px/1.4 Inter,sans-serif;box-sizing:border-box}
 html.proj-mode .pjs{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;bottom:16px;left:calc(380px + 40px);right:calc(var(--pw) + 40px);z-index:4;border:1px solid #1f1f23;background:rgba(11,11,13,.96);border-radius:14px;font:13px Inter,sans-serif}
 html.proj-mode .pjs div{padding:10px 14px;border-right:1px solid #1f1f23}html.proj-mode .pjs div:last-child{border:0}.pjs b{display:block;font-size:18px;font-weight:600}.pjs small{color:#77777f;font-size:11px}
-html.proj-mode .top{display:none!important}
+
 .pjl-h b{display:block;font-size:19px}.pjl-h small{color:#8a8a92}.pjq{margin:12px 0 0;height:40px;border:1px solid #2a2a2f;border-radius:10px;background:#0e0e11;color:#eee;padding:0 12px;font:13px Inter,sans-serif}.pjl .pj-f{margin:8px 0 6px}.pjl .pj-f select{max-width:118px}
 .pjl-n{color:#8a8a92;font-size:12px;margin:2px 0 6px}.pjl-list{overflow:auto;flex:1;margin:0 -6px;padding:0 6px}
 .pjr{display:grid;grid-template-columns:72px 1fr 22px;gap:10px;padding:8px;border-radius:10px;border:1px solid transparent;cursor:pointer}.pjr:hover{background:rgba(255,255,255,.03)}.pjr.on{border-color:rgba(255,122,26,.6);background:rgba(255,122,26,.06)}.pjr img,.pji{width:72px;height:50px;border-radius:7px;object-fit:cover}.pji{display:grid;place-items:center;background:#16161a;color:#8a8a92;font-weight:600;font-size:12px}.pjr b{display:block;font-size:13px;line-height:1.25}.pjr small{color:#8a8a92;font-size:11.5px}
@@ -169,7 +169,7 @@ html.proj-mode .pj{padding:0!important;overflow:auto}.pjh{position:relative;heig
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
-<script src="../runtime-config.js"></script><script src="../live-config.js"></script><script src="../live-data.js"></script><script src="../news-source.js"></script><script src="../connections-source.js"></script><script src="../projects-data.js"></script><script src="../prefs.js"></script><script src="../sectors.js"></script><script src="../peek.js"></script>
+<script src="../runtime-config.js"></script><script src="../live-config.js"></script><script src="../live-data.js"></script><script src="../news-source.js"></script><script src="../connections-source.js"></script><script src="../projects-data.js"></script><script src="../projects-cluster.js"></script><script src="../prefs.js"></script><script src="../sectors.js"></script><script src="../peek.js"></script>
 <script>document.addEventListener("DOMContentLoaded",()=>window.InvConsent?.mount());</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Investedia Globe News (concept)</title>
@@ -517,7 +517,7 @@ h1 span{color:var(--fg-3)}
   /* Open sheet = a card floating above the dock (never under it); header is one slim row: Back, expand, close. */
   /* The open sheet is ONE full-height card moved with transform (compositor only) and cropped with clip-path, so dragging never re-lays-out the article list.
      --sheet-drop = how far it is pulled down from fully open. The page never decides a height: JS writes any pixel value between the minimum and maximum. */
-  html[data-panel] .panel:not([data-sheet=closed]){left:12px;right:12px;top:auto;bottom:calc(var(--dock-gap,90px) + env(safe-area-inset-bottom));height:calc(var(--sheet-max,92dvh) - var(--dock-gap,90px));border-radius:22px;border:1px solid rgba(255,255,255,.16);box-shadow:none;transform:translate3d(0,var(--sheet-drop,0px),0);clip-path:inset(0 0 var(--sheet-drop,0px) 0 round 22px);transition:transform .32s cubic-bezier(.2,.8,.2,1),clip-path .32s cubic-bezier(.2,.8,.2,1);will-change:transform,clip-path}
+  html[data-panel] .panel:not([data-sheet=closed]){left:12px;right:12px;top:auto;bottom:calc(var(--dock-gap,100px) + env(safe-area-inset-bottom));height:calc(var(--sheet-max,92dvh) - var(--dock-gap,100px));border-radius:22px;border:1px solid rgba(255,255,255,.16);box-shadow:none;transform:translate3d(0,var(--sheet-drop,0px),0);clip-path:inset(0 0 var(--sheet-drop,0px) 0 round 22px);transition:transform .32s cubic-bezier(.2,.8,.2,1),clip-path .32s cubic-bezier(.2,.8,.2,1);will-change:transform,clip-path}
   html[data-panel] .panel:not([data-sheet=closed]) .grab{height:18px;min-height:18px}
   html[data-panel] .panel:not([data-sheet=closed]) .grab::after{top:7px}
   html[data-panel] .panel:not([data-sheet=closed]) .grab{touch-action:none;position:relative;z-index:2}
@@ -526,7 +526,7 @@ h1 span{color:var(--fg-3)}
   html[data-panel] .panel:not([data-sheet=closed]) .sheet-actions{z-index:4}
   html[data-panel] .panel:not([data-sheet=closed]) .sheet-actions{top:0}
   html[data-panel] .panel:not([data-sheet=closed]) .sheet-actions button{min-width:44px;min-height:44px;width:44px;height:44px}
-  html[data-panel] .panel:not([data-sheet=closed]) .pbody{height:calc(var(--sheet-max,92dvh) - var(--dock-gap,90px) - 18px);padding-bottom:calc(24px + var(--sheet-pad,0px));transition:none}
+  html[data-panel] .panel:not([data-sheet=closed]) .pbody{height:calc(var(--sheet-max,92dvh) - var(--dock-gap,100px) - 18px);padding-bottom:calc(24px + var(--sheet-pad,0px));transition:none}
   html[data-panel] .panel:not([data-sheet=closed]) .pbody:has(.back){padding-top:44px}
   html[data-panel] .panel:not([data-sheet=closed]) .pbody .back{position:absolute;left:12px;top:0;margin:0;min-height:44px;z-index:3;color:#fff;font-size:15px;font-weight:600;background:none}
   .panel[data-sheet=closed] .pbody{cursor:pointer}
@@ -761,6 +761,14 @@ html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(h3,h4,b,strong,.mkd-sr,.mkd
 html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(span,small,.mkd-n,.mkd-ft,.mkd-cs,p){color:var(--fg-3)}
 html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(.mkd-kp>*,.mkd-c,.mkd-e,.mkd-more,button.mkd-more){background:rgba(0,0,0,.04)!important;border-color:var(--line)!important;color:var(--fg)}
 html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(.up,.pos,[class*=up]){color:#15803d}html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(.dn,.neg,[class*=dn],[class*=down]){color:#b91c1c}
+html.mswap :is(.panel,#lcol,.act,.timeline,.mkd-l,.mkd-o,.mkd-a,.pjl,.pj,.pjs,.side-sec,.side-imp,.market-panel){transition:opacity .2s ease-in,transform .2s ease-in;}html.mswap:not(.mswap-out) :is(.panel,#lcol,.act,.timeline,.mkd-l,.mkd-o,.mkd-a,.pjl,.pj,.pjs,.side-sec,.side-imp,.market-panel){transition:opacity .38s cubic-bezier(.2,.7,.2,1),transform .38s cubic-bezier(.2,.7,.2,1);will-change:opacity,transform}html.mswap :is(.panel,.mkd-o,.pj){transition-delay:60ms}html.mswap :is(.act,.timeline,.mkd-a,.pjs){transition-delay:120ms}
+html.mswap-out :is(.panel,.mkd-o,.pj){opacity:0!important;transform:translateX(8px)}html.mswap-out :is(#lcol,.mkd-l,.pjl){opacity:0!important;transform:translateX(-8px)}html.mswap-out :is(.act,.timeline,.mkd-a,.pjs){opacity:0!important;transform:translateY(8px)}
+html.mswap #sbox input::placeholder{transition:opacity .17s}html.mswap-out #sbox input::placeholder{opacity:0}
+.mkd-unu{display:flex;width:100%;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;background:none;border:0;border-top:1px solid #1f1f23;color:inherit;font:inherit;text-align:left;cursor:pointer}.mkd-unu small{display:block;color:#77777f;font-size:11.5px}.mkd-unu em{font-style:normal;font-weight:600;color:#a1a1aa}.mkd-unu em.hot{color:#ff7a1a}.mkd-unu:hover b{color:#ff7a1a}
+html[data-theme=light] .mkd-unu{border-color:var(--line)}
+@media(min-width:1180px){html:not(.embed) .gswitch{position:static!important;transform:none!important;left:auto!important;top:auto!important}html:not(.embed) .top .brand{width:max-content;white-space:nowrap;flex-wrap:nowrap}
+html:is(.mkd-on,.proj-mode) #sbox{padding-right:12px!important}html:is(.mkd-on,.proj-mode) #sbox input{flex:1!important;width:auto!important}html:is(.mkd-on,.proj-mode) #sbox kbd{display:none}}
+#dock button{flex:1 1 0}
 /* C — site light theme. All overrides are scoped; the dark design is unchanged. */
 html[data-theme=light]{--bg:#d9e5f4;--panel:rgba(255,255,255,.9);--card:#f5f8fc;
   --line:rgba(29,29,31,.13);--line-2:rgba(29,29,31,.24);
@@ -853,8 +861,8 @@ html[data-theme=light] .detail-header{background:#f4f7fb}
 html.proj-mode{--pj-left:clamp(270px,26vw,370px);--pj-right:clamp(310px,28vw,400px)}
 html.proj-mode #project-topbar{position:fixed;inset:0 0 auto;z-index:12;height:58px;display:flex;align-items:center;gap:30px;padding:0 24px;background:var(--bg);border-bottom:1px solid var(--line);font:14px Inter,system-ui,sans-serif}
 .pj-brand{font-size:23px;font-weight:650;letter-spacing:-.03em;color:var(--fg);text-decoration:none}#project-topbar nav{display:flex;gap:24px}#project-topbar nav a{color:var(--fg-2);text-decoration:none;min-height:44px;display:inline-flex;align-items:center}#project-topbar nav a:first-child{color:var(--fg);background:rgba(255,255,255,.06);padding:0 12px;border-radius:10px}#project-topbar>label{margin-left:auto;width:min(30vw,380px)}#project-topbar input{width:100%;height:40px;color:var(--fg);background:transparent;border:1px solid var(--line);border-radius:10px;padding:0 12px;font:13px Inter,sans-serif}
-html.proj-mode .gswitch{position:fixed!important;top:78px!important;left:50%!important;transform:translateX(-50%)!important;z-index:10!important;display:flex!important;min-height:46px;padding:4px;border-radius:13px;background:var(--panel);border:1px solid var(--line);gap:4px}
-html.proj-mode .gswitch button{min-width:86px;min-height:40px;padding:0 15px;font:500 14px Inter,sans-serif;white-space:nowrap}html.proj-mode .gswitch [data-m=projects][aria-pressed=true]{background:#ff7a1a!important;color:#111!important;border-color:#ff7a1a!important;box-shadow:none!important}.gs-pro span{margin-left:5px}
+
+.gs-pro span{margin-left:5px}
 html.proj-mode #project-mode-subtitle{display:block;position:fixed;top:133px;left:var(--pj-left);right:var(--pj-right);text-align:center;color:var(--fg-2);font:12px Inter,sans-serif;z-index:6}
 html.proj-mode .pjl{top:76px;bottom:16px;left:16px;width:var(--pj-left);padding:17px;background:var(--panel);border-radius:18px;border-color:var(--line);color:var(--fg);z-index:8}
 html.proj-mode .pj{top:76px;right:16px;bottom:16px;width:var(--pj-right);display:flex;flex-direction:column;overflow:hidden;background:var(--panel);color:var(--fg);border-color:var(--line);border-radius:18px;padding:0!important}
@@ -866,16 +874,23 @@ html.proj-mode .pjs>div{min-width:0;padding:14px 12px;border-color:var(--line)}.
 .pj-back,.pj-sheet-handle{display:none}html.proj-mode :is(.market-panel,.mkd-o,.mkd-s,.mkd-strip,.market-control,.market-source){display:none!important}html:not(.proj-mode) :is(#pjList,#pjStats,#projPanel){display:none!important}
 :root[data-theme=light] .pjt.completed{color:#15624d}:root[data-theme=light] .pjt.progress{color:#825400}
 @media(min-width:761px) and (max-width:1179px){html.proj-mode{--pj-left:260px;--pj-right:310px}html.proj-mode .pjl{left:10px;padding:12px}html.proj-mode .pj{right:10px}html.proj-mode .pjs{display:grid;left:286px;right:336px;grid-template-columns:repeat(2,1fr)}html.proj-mode .pjs b{font-size:16px}.pj-pick{grid-template-columns:54px minmax(0,1fr);gap:7px;padding-right:20px}.pj-pick>img,.pj-pick .pji{width:54px;height:54px}.pj-f{flex-wrap:wrap}.pj-f>label,.pj-f>button{flex:1 0 40%}html.proj-mode .gswitch{left:calc((100vw - 50px)/2)!important}.pjd{padding:14px}.pj-tabs{gap:8px}.pj-tabs button{font-size:11px}}
-@media(max-width:760px){html.proj-mode #project-topbar{height:56px;padding:0 16px;gap:12px}.pj-brand{font-size:20px}#project-topbar nav{display:none}#project-topbar>label{width:auto;flex:1}#project-topbar input{font-size:11px;height:36px}html.proj-mode .gswitch{display:none!important}html.proj-mode #project-mode-subtitle{left:0;right:0;top:63px;font-size:11px}html.proj-mode .pjl{display:flex;left:10px;right:10px;width:auto;top:auto;bottom:calc(85px + env(safe-area-inset-bottom));height:49dvh;max-height:62dvh;border-radius:22px;padding:10px 14px 14px;z-index:8}html.proj-mode .pj{display:none;top:auto;left:10px;right:10px;width:auto;bottom:calc(85px + env(safe-area-inset-bottom));height:72dvh;max-height:78dvh;border-radius:22px}html.proj-mode.proj-detail-open .pj{display:flex}html.proj-mode.proj-detail-open .pjl{display:none}html.proj-mode.proj-collapsed .pjl{height:88px;overflow:hidden}html.proj-mode.proj-collapsed .pjl> :not(.pj-sheet-handle):not(.pjl-h){display:none}html.proj-mode .pjs{display:none}.pj-sheet-handle{display:grid;place-items:center;width:100%;height:22px;min-height:22px;padding:0;touch-action:none}.pj-sheet-handle span{width:36px;height:4px;background:var(--fg-3);border-radius:4px}.pj-back{display:flex;align-items:center;min-height:44px;padding:8px 14px;flex:none;color:var(--fg-2);font:12px Inter,sans-serif}.pjl-h h2{font-size:18px}.pjl-h p{font-size:11px}.pj-f select,.pj-f>button{min-height:44px}.pj-pick{grid-template-columns:75px minmax(0,1fr);padding-right:35px;min-height:93px}.pj-pick>img,.pj-pick .pji{width:75px;height:66px}.pjw{min-width:40px;min-height:44px}.pjmore{min-height:44px}.pjh{height:150px;min-height:150px;border-radius:0}.pjd{padding:14px}.pjd h2{font-size:23px}.pj-tabs button{min-height:44px}.pjb{padding:10px 13px 12px}.pj-sources a,.pj-timeline a{min-height:32px}#dock{grid-template-columns:repeat(4,minmax(0,1fr))!important}#dock button{min-width:0;font-size:12px!important;padding-left:4px;padding-right:4px}#dock button[data-v=projects][aria-current=page]{background:#ff7a1a!important;color:#111!important}}
+@media(max-width:760px){html.proj-mode #project-topbar{height:56px;padding:0 16px;gap:12px}.pj-brand{font-size:20px}#project-topbar nav{display:none}#project-topbar>label{width:auto;flex:1}#project-topbar input{font-size:11px;height:36px}html.proj-mode .gswitch{display:none!important}html.proj-mode #project-mode-subtitle{left:0;right:0;top:63px;font-size:11px}html.proj-mode .pjl{display:flex;left:10px;right:10px;width:auto;top:auto;bottom:calc(85px + env(safe-area-inset-bottom));height:49dvh;max-height:62dvh;border-radius:22px;padding:10px 14px 14px;z-index:8}html.proj-mode .pj{display:none;top:auto;left:10px;right:10px;width:auto;bottom:calc(85px + env(safe-area-inset-bottom));height:72dvh;max-height:78dvh;border-radius:22px}html.proj-mode.proj-detail-open .pj{display:flex}html.proj-mode.proj-detail-open .pjl{display:none}html.proj-mode.proj-collapsed .pjl{height:88px;overflow:hidden}html.proj-mode.proj-collapsed .pjl> :not(.pj-sheet-handle):not(.pjl-h){display:none}html.proj-mode .pjs{display:none}.pj-sheet-handle{display:grid;place-items:center;width:100%;height:22px;min-height:22px;padding:0;touch-action:none}.pj-sheet-handle span{width:36px;height:4px;background:var(--fg-3);border-radius:4px}.pj-back{display:flex;align-items:center;min-height:44px;padding:8px 14px;flex:none;color:var(--fg-2);font:12px Inter,sans-serif}.pjl-h h2{font-size:18px}.pjl-h p{font-size:11px}.pj-f select,.pj-f>button{min-height:44px}.pj-pick{grid-template-columns:75px minmax(0,1fr);padding-right:35px;min-height:93px}.pj-pick>img,.pj-pick .pji{width:75px;height:66px}.pjw{min-width:40px;min-height:44px}.pjmore{min-height:44px}.pjh{height:150px;min-height:150px;border-radius:0}.pjd{padding:14px}.pjd h2{font-size:23px}.pj-tabs button{min-height:44px}.pjb{padding:10px 13px 12px}.pj-sources a,.pj-timeline a{min-height:32px}#dock{grid-template-columns:repeat(3,minmax(0,1fr))!important}#dock button{min-width:0;font-size:12px!important;padding-left:4px;padding-right:4px}}
 @media(prefers-reduced-motion:reduce){.pjr,.pj,.pjl{transition:none!important}}
 
-.proj-mode .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.proj-mode .gswitch{display:inline-flex;position:fixed;z-index:9}.proj-mode :is(.m-actions,.m-time,.tf-btn){display:none!important}
+.proj-mode .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.proj-mode :is(.m-actions,.m-time,.tf-btn){display:none!important}
 html.embed.proj-mode :is(#project-topbar,#project-mode-subtitle,#gswitch,#pjList,#projPanel,#pjStats,.dock){display:none!important}
 
 html.proj-mode :is(#nav-grab,.tb-btn){display:none!important}
 
-html.proj-mode .gswitch [data-m=projects][aria-pressed=true] span{color:#111;border-color:rgba(0,0,0,.5)}html.proj-mode input::placeholder{color:var(--fg-2)}.pj-brand .pj-i{color:transparent;background:linear-gradient(#ff7a1a .385em,var(--fg) .385em);-webkit-background-clip:text;background-clip:text}
+html.proj-mode input::placeholder{color:var(--fg-2)}.pj-brand .pj-i{color:transparent;background:linear-gradient(#ff7a1a .385em,var(--fg) .385em);-webkit-background-clip:text;background-clip:text}
 html.proj-mode .pj :is(.pj-description,.pj-note){color:var(--fg-2)}html.proj-mode .pj .pj-tabs button[aria-selected=true]{color:var(--fg)!important}
+
+@media(min-width:761px){html.proj-mode :is(#project-topbar,#project-mode-subtitle,.pj-search,#cats,#ddrow,#res){display:none!important}
+html.proj-mode .pjl{left:24px!important;width:330px!important;top:var(--pj-top,130px)!important}
+html.proj-mode .pjs{left:378px!important}}
+@media(min-width:761px){html.proj-mode .pj .pjb{padding:12px 0 4px;background:none}html.proj-mode .pjb button{background:transparent!important;color:var(--fg)!important;border:1px solid var(--line-2,#2a2a2f)!important}}
+@media(min-width:761px){html.proj-mode .pj-f{display:grid!important;grid-template-columns:1fr 1fr;gap:6px}html.proj-mode .pj-f>*{width:100%;max-width:none!important;min-width:0}html.proj-mode .pj-f select{max-width:none!important;width:100%}}
+@media(max-width:760px){html.proj-mode :is(#project-topbar,#project-mode-subtitle){display:none!important}html.proj-mode .top{display:flex!important}html.proj-mode .top :is(.m-actions,#sbox,#cats,#ddrow,.globe-privacy,.demo,.m-time){display:none!important}}
 
 </style>
 <script src="../locale.js"></script>
@@ -930,7 +945,7 @@ html.proj-mode .pj :is(.pj-description,.pj-note){color:var(--fg-2)}html.proj-mod
 </section>
 <div class="peek" id="peek" role="region" aria-label="Top articles" hidden></div>
 <button type="button" id="nav-grab" class="nav-grab" aria-label="Open News panel" aria-expanded="false" hidden></button>
-<nav class="dock" id="dock" aria-label="Views"><button type="button" data-v="globe" aria-current="page">Globe</button><button type="button" data-v="news">News</button><button type="button" data-v="markets">Markets</button></nav>
+<nav class="dock" id="dock" aria-label="Views"><button type="button" data-v="news" aria-current="page">News</button><button type="button" data-v="markets">Markets</button></nav>
 <div class="zoom glass"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button></div><button type="button" class="zloc glass" id="zloc" aria-label="Show my location" title="Show my location (stays on this device)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3"/></svg></button>
 <div class="hover glass" id="hover" aria-hidden="true"></div>
 <aside class="panel glass" id="panel" aria-label="News panel">
@@ -1711,6 +1726,8 @@ function size() {
     globeBox = { left: phone() ? 8 : document.documentElement.classList.contains('proj-mode') ? $('pjList').getBoundingClientRect().right + 16 : document.documentElement.classList.contains('mkd-on') ? 378 : (LC ? document.getElementById('lcol').getBoundingClientRect().right + 24 : 24), top: document.documentElement.classList.contains('proj-mode') ? 150 : header.bottom + 12,
       right: phone() ? W - 8 : document.documentElement.classList.contains('mkd-on') && document.querySelector('.mkd-o:not([hidden])') ? document.querySelector('.mkd-o').getBoundingClientRect().left - 24 : document.documentElement.classList.contains('proj-mode') && $('projPanel') ? $('projPanel').getBoundingClientRect().left - 24 : ((mp => mp && document.documentElement.classList.contains('market-mode') && !mp.hidden && mp.offsetWidth)(document.querySelector('.market-panel')) ? document.querySelector('.market-panel').getBoundingClientRect().left - 24 : panel.hidden || !panel.offsetWidth || panel.getBoundingClientRect().left <= 0 ? W - 24 : panel.getBoundingClientRect().left - 24),
       bottom: sheetOpen ? H - panel.offsetHeight - 12 : document.documentElement.classList.contains('proj-mode') && !phone() ? H - 110 : document.documentElement.classList.contains('mkd-on') ? H - 190 : LC ? H - (document.documentElement.classList.contains('act-on') ? 190 : 24) : (timeline.height ? timeline.top - 16 : H - (document.documentElement.classList.contains('market-mode') ? 72 : 90)) };
+    // PC: the globe keeps one position in News, Markets and Projects, so switching modes never moves it
+    if (!phone() && !EMBED && W >= 1180) { const pw = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--pw')) || 392, sb = $('sbox').getBoundingClientRect(); globeBox = { left: 378, top: Math.max(sb.bottom, 60) + 12, right: W - pw - 40, bottom: H - 190 }; }
     // template B (?panel=b): the articles sit in a strip along the bottom, so the globe uses the full width above it
     if (PANEL_TEMPLATE === 'b' && panel.dataset.view === 'top') { globeBox.right = W - (phone() ? 8 : 24); globeBox.bottom = Math.min(globeBox.bottom, (phone() ? $('tl').getBoundingClientRect().top : panel.getBoundingClientRect().top) - 16); }
     const aw = Math.max(1, globeBox.right - globeBox.left), ah = Math.max(1, globeBox.bottom - globeBox.top);
@@ -1941,6 +1958,7 @@ addEventListener('keydown', e => { if (e.key === 'Escape' && pinned) hideHover()
 addEventListener('wheel', () => { clearTimeout(cTimer); hideHover(); }, { passive: true });
 function pick(x, y, r) { let best = null, bd = r * r; for (const d of drawn) { const q = (d.x - x) ** 2 + (d.y - y) ** 2; if (q < bd) { bd = q; best = d; } } return best; }
 function hoverAt(x, y) {
+  if (typeof PROJ !== 'undefined' && PROJ.on) { $('hover').classList.remove('on'); hoverC = null; return; }  // Projects mode: no news or country cards on hover
   if (pinned) return;  // an article popup opened by a click stays until you click elsewhere or press Escape
   cv.style.cursor = !EMBED || onGlobe(x, y) ? 'grab' : 'default';  // full Globe page: hand everywhere; homepage: only over the globe
   const ex = !EMBED && (exPick(x, y) || upPick(x, y)); if (ex) { $('hover').classList.remove('on'); return; }
@@ -2447,7 +2465,8 @@ function projRender(){
  if(!p){detail.innerHTML='<p class="pj-empty">Select a project to see its sources.</p>';return;}
  const source=pjUrl(p),tabs=[['overview','Overview'],['milestones','Milestones'],['details','Details'],['sources','Sources']];
  let body=PROJ.tab==='overview'?`${p.description?`<p class="pj-description">${esc(p.description)}</p>`:''}${pjFacts(p)}<h3>Project timeline</h3>${pjMilestones(p)}`:PROJ.tab==='milestones'?`<h3>Dated milestones</h3>${pjMilestones(p)}`:PROJ.tab==='details'?`${pjFacts(p)}<dl class="pj-details"><dt>Map location</dt><dd>${p.lat.toFixed(4)}, ${p.lon.toFixed(4)}</dd>${p.wikidata_id?`<dt>Wikidata</dt><dd>${esc(p.wikidata_id)}</dd>`:''}</dl><p class="pj-note">Coordinates identify the project's reported location, not its boundary. Unverified cost, population and target figures are not shown.</p>`:`<h3>Sources &amp; credits</h3><ul class="pj-sources">${p.sources.map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)} ${pjArrow}</a>${s.checked_at?`<small>Source check: ${esc(s.checked_at)}</small>`:''}</li>`).join('')}${p.photo?`<li><a href="${esc(p.photo.source_url)}" target="_blank" rel="noopener">Photo: ${esc(p.photo.author)} ${pjArrow}</a><small>${esc(p.photo.licence)} · Wikimedia Commons</small></li>`:''}</ul><p class="pj-note">Wikidata structured data: CC0. Milestones retain their individual sources and original date precision. No sample figures are published.</p>`;
- detail.innerHTML=`<button type="button" class="pj-back" data-pj-back>‹ Back to projects</button>${p.photo?`<div class="pjh">${pjImage(p)}<a href="${esc(p.photo.source_url)}" target="_blank" rel="noopener">Image: ${esc(p.photo.author)} · ${esc(p.photo.licence)}</a></div>`:`<div class="pjh pjh-icon">${pjIcon(p)}<span>${esc(p.type)} · location from Wikidata</span></div>`}<div class="pjd"><h2>${esc(p.name)}</h2><div class="pj-detail-meta"><span>${esc(p.country)}</span><span class="pjt">${esc(p.type)}</span>${pjTag(p.stage)}</div><div class="pj-tabs" role="tablist" aria-label="Project details">${tabs.map(([key,label])=>`<button type="button" role="tab" id="pj-tab-${key}" aria-controls="pj-tab-body" data-pjtab="${key}" aria-selected="${key===PROJ.tab}" tabindex="${key===PROJ.tab?0:-1}">${label}</button>`).join('')}</div><div class="pj-detail-body" id="pj-tab-body" role="tabpanel" aria-labelledby="pj-tab-${PROJ.tab}">${body}</div><p class="pj-note">Product preview · not a working feature yet. Watchlist stays on this device. Not investment advice.</p></div><div class="pjb"><button type="button" data-pw="${esc(p.id)}" aria-pressed="${PW.has(p.id)}">${pjStar(PW.has(p.id))} ${PW.has(p.id)?'On watchlist':'Add to watchlist'}</button>${source?`<a class="pjgo" href="${esc(source)}" target="_blank" rel="noopener">Read more ${pjArrow}</a>`:''}</div>`;
+ detail.innerHTML=`<button type="button" class="pj-back" data-pj-back>‹ Back to projects</button>${p.photo?`<div class="pjh">${pjImage(p)}<a href="${esc(p.photo.source_url)}" target="_blank" rel="noopener">Image: ${esc(p.photo.author)} · ${esc(p.photo.licence)}</a></div>`:`<div class="pjh pjh-icon">${pjIcon(p)}<span>${esc(p.type)} · location from Wikidata</span></div>`}<div class="pjd"><h2>${esc(p.name)}</h2><div class="pj-detail-meta"><span>${esc(p.country)}</span><span class="pjt">${esc(p.type)}</span>${pjTag(p.stage)}</div><div class="pj-tabs" role="tablist" aria-label="Project details">${tabs.map(([key,label])=>`<button type="button" role="tab" id="pj-tab-${key}" aria-controls="pj-tab-body" data-pjtab="${key}" aria-selected="${key===PROJ.tab}" tabindex="${key===PROJ.tab?0:-1}">${label}</button>`).join('')}</div><div class="pj-detail-body" id="pj-tab-body" role="tabpanel" aria-labelledby="pj-tab-${PROJ.tab}">${body}</div><p class="pj-note">Product preview · not a working feature yet. Watchlist stays on this device. Not investment advice.</p></div><div class="pjb"><button type="button" data-pw="${esc(p.id)}" aria-pressed="${PW.has(p.id)}">${pjStar(PW.has(p.id))} ${PW.has(p.id)?'Following':'Follow'}</button>${source?`<a class="pjgo" href="${esc(source)}" target="_blank" rel="noopener">Sources ${pjArrow}</a>`:''}</div>`;
+ {const pb=detail.querySelector('.pjb'),pm=detail.querySelector('.pj-detail-meta');if(pb&&pm&&innerWidth>760)pm.after(pb);}
  bindProjectControls(detail);requestAnimationFrame(size);
 }
 function bindProjectControls(el){
@@ -2471,27 +2490,34 @@ projectTopbar();
 const projectSwitchHome=document.createComment('Globe switch home');$('gswitch').before(projectSwitchHome);
 function projSet(on,options={}){
  const was=PROJ.on;if(on&&!was){PROJ.previousPhone=phoneView;setSheet('closed');PROJ.savedCamera=[lon0,lat0,Zt];PROJ.phoneDetail=false;PROJ.collapsed=false;}
- if(on)$('project-topbar').after($('gswitch'));else projectSwitchHome.after($('gswitch'));
- PROJ.on=on;const html=document.documentElement;html.classList.toggle('proj-mode',on);$('projPanel').hidden=!on;$('project-topbar').hidden=!on;$('project-mode-subtitle').hidden=!on;
- if(on){if(MARKET.on)marketSetMode('news');phoneView='projects';hideHover();projRender();}
+ const wide=innerWidth>760;if(!wide){if(on)$('project-topbar').after($('gswitch'));else projectSwitchHome.after($('gswitch'));}
+ PROJ.on=on;const html=document.documentElement;html.classList.toggle('proj-mode',on);$('projPanel').hidden=!on;$('project-topbar').hidden=!on||wide;$('project-mode-subtitle').hidden=!on||wide;const qi=$('q');if(on){qi.placeholder='Search projects or places';qi.value=PROJ.q||'';$('res').hidden=true;}else if(was){qi.value='';qi.placeholder=MARKET.on?'Search countries, exchanges, indices & companies':'Search assets, countries & articles';}
+ if(on){if(MARKET.on)marketSetMode('news');phoneView='projects';hideHover();if(phone()&&!was){PROJ.collapsed=true;PROJ.phoneDetail=false;}projRender();}
  else if(was){html.classList.remove('proj-detail-open','proj-collapsed');phoneView=options.mode==='markets'?'markets':PROJ.previousPhone==='projects'?'globe':PROJ.previousPhone||'globe';if(PROJ.savedCamera)flyTo(...PROJ.savedCamera);}
  const u=new URL(location.href);if(on)u.searchParams.set('mode','projects');else if(was){if(options.mode==='markets')u.searchParams.set('mode','markets');else u.searchParams.delete('mode');}
  if(was!==on){if(options.history===false)history.replaceState(null,'',u);else history.pushState(null,'',u);}
  document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String(on?b.dataset.m==='projects':b.dataset.m===(options.mode==='markets'?'markets':MARKET.on?'markets':'news'))));
- $('peek').hidden=on||phoneView!=='globe';dockUpdate();requestAnimationFrame(size);
+ $('peek').hidden=on||phoneView!=='globe';projTop();dockUpdate();requestAnimationFrame(size);
 }
 addEventListener('popstate',()=>{const mode=new URL(location.href).searchParams.get('mode');projSet(mode==='projects',{history:false,mode});if(mode!=='projects')marketSetMode(mode);});
 addEventListener('resize',()=>{if(PROJ.on)projRender();});
 const projectDock=document.createElement('button');projectDock.type='button';projectDock.dataset.v='projects';projectDock.textContent='Projects';$('dock').append(projectDock);
 function drawProj(){
- PROJ.hits=[];const nodes=PROJ.vis||[],buckets=new Map(),singles=[];
- for(const p of nodes){const[x,y,z]=proj(p.lat*rad,p.lon*rad);if(z<=.04)continue;const node={p,x,y};if(p.featured||p.id===PROJ.sel||Zt>=2.2)singles.push(node);else{const k=Math.floor(x/32)+':'+Math.floor(y/32);if(!buckets.has(k))buckets.set(k,[]);buckets.get(k).push(node);}}
- for(const group of buckets.values())singles.push(...group);
- for(const {p,x,y} of singles){const selected=p.id===PROJ.sel,r=selected?5.5:p.featured?4:2.5;ctx.beginPath();ctx.arc(x,y,r*2.6,0,7);ctx.fillStyle=selected?'rgba(255,122,26,.25)':'rgba(255,122,26,.08)';ctx.fill();ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fillStyle='#ff7a1a';ctx.fill();PROJ.hits.push({x,y,id:p.id});
-  if(['kx','noor','line'].includes(p.id)||selected){const title=p.id==='kx'?"King's Cross":p.id==='noor'?'Noor Ouarzazate':p.name;ctx.font='600 11.5px Inter,sans-serif';const w=Math.min(230,Math.max(ctx.measureText(title).width,ctx.measureText(p.country).width)+22),h=43,l=Math.min(W-w-8,Math.max(8,x+12)),t=Math.min(H-100,Math.max(65,y-22));ctx.beginPath();ctx.roundRect(l,t,w,h,10);ctx.fillStyle=DAY?'rgba(255,255,255,.96)':'rgba(12,12,14,.96)';ctx.strokeStyle=selected?'#ff7a1a':DAY?'#d5d5d9':'#2a2a2f';ctx.fill();ctx.stroke();ctx.textAlign='left';ctx.textBaseline='alphabetic';ctx.fillStyle=DAY?'#1d1d1f':'#eee';ctx.fillText(title.length>30?title.slice(0,29)+'…':title,l+10,t+17);ctx.font='10px Inter,sans-serif';ctx.fillStyle=DAY?'#52525b':'#a1a1aa';ctx.fillText(p.country,l+10,t+33);PROJ.hits.push({x:l+w/2,y:t+h/2,id:p.id,rect:{l,t,w,h}});}}
+ PROJ.hits=[];
+ const visible=InvProjectsCluster.project(PROJ.vis||[],{lon:lon0,lat:lat0,cx,cy,radius:R,width:W,height:H});
+ // Owner choice (11 Nov 2026): every project is its own dot, no grouping.
+ const singles=visible.map(n=>({p:n.p,x:n.x,y:n.y}));
+ const co=[],boxes=[];for(const {p,x,y,group} of singles){const selected=p.id===PROJ.sel,r=selected?5.5:p.featured?4:2.5;ctx.beginPath();ctx.arc(x,y,r*2.6,0,7);ctx.fillStyle=selected?'rgba(255,122,26,.25)':'rgba(255,122,26,.08)';ctx.fill();ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fillStyle='#ff7a1a';ctx.fill();PROJ.hits.push({x,y,id:p.id,group});
+  if(!group&&(['kx','noor','line'].includes(p.id)||selected))co.push({p,x,y,selected});}
+ for(const {p,x,y,selected} of co){{const title=p.id==='kx'?"King's Cross":p.id==='noor'?'Noor Ouarzazate':p.name;ctx.font='600 11.5px Inter,sans-serif';let w=Math.min(230,Math.max(ctx.measureText(title).width,ctx.measureText(p.country).width)+22),h=43,l=Math.min((phone()?W:globeBox.right+20)-w-8,Math.max(8,x+12)),t=Math.min(H-100,Math.max(65,y-22));for(let k=0;k<6&&boxes.some(b=>l<b.l+b.w+4&&l+w+4>b.l&&t<b.t+b.h+4&&t+h+4>b.t);k++)t+=h+6;boxes.push({l,t,w,h});ctx.beginPath();ctx.roundRect(l,t,w,h,10);ctx.fillStyle=DAY?'rgba(255,255,255,.96)':'rgba(12,12,14,.96)';ctx.strokeStyle=selected?'#ff7a1a':DAY?'#d5d5d9':'#2a2a2f';ctx.fill();ctx.stroke();ctx.textAlign='left';ctx.textBaseline='alphabetic';ctx.fillStyle=DAY?'#1d1d1f':'#eee';ctx.fillText(title.length>30?title.slice(0,29)+'…':title,l+10,t+17);ctx.font='10px Inter,sans-serif';ctx.fillStyle=DAY?'#52525b':'#a1a1aa';ctx.fillText(p.country,l+10,t+33);PROJ.hits.push({x:l+w/2,y:t+h/2,id:p.id,rect:{l,t,w,h}});}}
  ctx.textAlign='left';ctx.textBaseline='alphabetic';
 }
 function projTap(x,y){const h=PROJ.hits.find(h=>h.rect&&x>=h.rect.l&&x<=h.rect.l+h.rect.w&&y>=h.rect.t&&y<=h.rect.t+h.rect.h)||[...PROJ.hits].sort((a,b)=>Math.hypot(a.x-x,a.y-y)-Math.hypot(b.x-x,b.y-y)).find(h=>Math.hypot(h.x-x,h.y-y)<16);if(!h)return;if(h.group){const n=h.group.reduce((a,b)=>Math.hypot(a.x-h.x,a.y-h.y)<Math.hypot(b.x-h.x,b.y-h.y)?a:b);flyTo(n.p.lon,n.p.lat,Math.min(ZMAX,Zt*1.7));}else projPick(h.id);}
+
+// shared top-left search drives the project list on PC
+$('q').addEventListener('input',e=>{if(!PROJ.on)return;e.stopImmediatePropagation();PROJ.q=e.target.value;PROJ.n=30;projRender();},true);
+function projTop(){if(PROJ.on)$('q').placeholder='Search projects or places';const b=$('sbox').getBoundingClientRect();document.documentElement.style.setProperty('--pj-top',(b.bottom+12)+'px');}
+addEventListener('resize',projTop);
 
 
 // Reading list + news filter presets (this browser only; not synced to an account)
@@ -2523,7 +2549,30 @@ document.addEventListener('click',async e=>{const a=e.target.closest('[data-psad
  else{const p=PRE[+a.dataset.ps];if(p){F.region=p.r;F.cat=p.c;F.country=p.country||'';F.from=p.from||'';F.to=p.to||'';press($('cats'),p.c);press($('regions'),p.r);await setWin(p.w);try{$('reg-label').textContent=(p.r==='global'?'All regions':regionDefinition(p.r)[1]);}catch{}render();}}
  try{localStorage.setItem('inv-news-presets',JSON.stringify(PRE))}catch{}presetUI();});
 let mvF = 'all';
-$('gswitch').onclick = e => { const b=e.target.closest('button');if(!b)return;if(b.dataset.m==='projects')return projSet(true);projSet(false,{mode:b.dataset.m});if(typeof marketSetMode==='function')marketSetMode(b.dataset.m); };
+// mode switch: panels fade out, the globe turns a little in place, the new panels fade in (instant with reduced motion)
+let modeSpin = null;  // one smooth 360° on a mode switch, added on top of the slow idle turn so it hands back seamlessly
+const spinEase = k => (1 - Math.cos(Math.PI * k)) / 2;  // sine ease: gentle start and end, low peak speed
+// Mode transition: the new mode is ready at once; the old globe picture (a snapshot of the last frame) dissolves
+// over the live globe while the globe drifts a little further on its axis, and the new panels slide in.
+function modeSwap(fn, spin = true) {
+  const h = document.documentElement;
+  if (reduce) return fn();
+  document.querySelectorAll('canvas.mswap-snap').forEach(x => x.remove()); clearTimeout(modeSwap.t);
+  const r = cv.getBoundingClientRect(), o = document.createElement('canvas');
+  o.className = 'mswap-snap'; o.width = cv.width; o.height = cv.height; o.getContext('2d').drawImage(cv, 0, 0);
+  const z = getComputedStyle(cv).zIndex;
+  o.style.cssText = `position:fixed;left:${r.left}px;top:${r.top}px;width:${r.width}px;height:${r.height}px;pointer-events:none;z-index:${z === 'auto' ? 0 : z};transform-origin:${cx}px ${cy}px;transition:opacity .6s cubic-bezier(.4,0,.2,1),transform .6s cubic-bezier(.4,0,.2,1);will-change:opacity,transform`;
+  cv.after(o);
+  h.classList.add('mswap-out'); fn();
+  if (spin) modeSpin = { t0: performance.now(), dur: 900, done: 0, deg: 22 };
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    o.style.opacity = '0'; o.style.transform = 'scale(.985)';
+    h.classList.add('mswap'); h.classList.remove('mswap-out');
+    setTimeout(() => o.remove(), 650); modeSwap.t = setTimeout(() => h.classList.remove('mswap'), 700);
+  }));
+}
+$('gswitch').onclick = e => { const b=e.target.closest('button');if(!b||b.getAttribute('aria-pressed')==='true')return;const leavingProj=PROJ.on;document.querySelectorAll('#gswitch button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
+  modeSwap(()=>{if(b.dataset.m==='projects')return projSet(true);projSet(false,{mode:b.dataset.m});if(typeof marketSetMode==='function')marketSetMode(b.dataset.m);}, !leavingProj); };
 function sideData() {
   const vis = stories.filter(st => InvNewsFilters.match(st,F)&&inRegion(st.location.region,F.region)&&inTime(st)&&(!F.mine||touchesWatch(st))&&(F.lens==='all'||st.lens.includes(F.lens))), seen = new Map();
   vis.forEach(st => impactsOf(st).forEach(i => { const a = assetForImpact(i); if (!a || typeof a.d !== 'number' || !isFinite(a.d) || Math.abs(a.d) > 25 || a.u === 'bp') return; const k = a.s; const e = seen.get(k) || { a, n: 0, cats: new Set() }; e.n++; e.cats.add(st.category); seen.set(k, e); }));
@@ -2846,6 +2895,7 @@ function drawStars(now) {
 let last = performance.now();
 function frame(t) {
   const dt = Math.min(50, t - last); last = t;
+  if (modeSpin) { const k = Math.min(1, (t - modeSpin.t0) / modeSpin.dur), inc = -(modeSpin.deg || 360) * spinEase(k) - modeSpin.done; modeSpin.done += inc; lon0 += inc; if (k >= 1) modeSpin = null; }
   if (fly) { spin = null; const k = Math.min(1, (t - fly.t0) / fly.dur), e = ease(k); lon0 = fly.from[0] + fly.dl * e; lat0 = fly.from[1] + (fly.la - fly.from[1]) * e; Zt = fly.from[2] + (fly.z - fly.from[2]) * e; if (k >= 1) fly = null; }
   else if (spin) { lon0 += spin.vx * dt; lat0 = Math.max(-70, Math.min(70, lat0 + spin.vy * dt)); const f = Math.exp(-dt / 380); spin.vx *= f; spin.vy *= f; if (Math.hypot(spin.vx, spin.vy) < .004) spin = null; }  // friction: glides to a stop in about a second
   else if (!drag && !pinch && !reduce && !sel && !selCountry && !hoverC && !hoverCountry && view.k === 'top' && F.region === 'global' && Zt < 1.05 && !zoomAnchor) lon0 -= dt * .0022;
@@ -3048,7 +3098,7 @@ function peekUpdate() {
 }
 $('peek').onclick = e => { if(performance.now()-peekDraggedAt<400)return; if($('peek').classList.contains('minimized')){$('peek').classList.remove('minimized');return;} const c = e.target.closest('[data-story]'), s = byId[c ? c.dataset.story : $('peek').dataset.story]; if (s) openStory(s); else if (!c) openFilters(); };
 function dockUpdate() {
-  for (const b of $('dock').querySelectorAll('button')) b.dataset.v === phoneView ? b.setAttribute('aria-current', 'page') : b.removeAttribute('aria-current');
+  for (const b of $('dock').querySelectorAll('button')) b.dataset.v === (phoneView === 'globe' ? 'news' : phoneView) ? b.setAttribute('aria-current', 'page') : b.removeAttribute('aria-current');
   const h = $('nav-grab'); h.hidden = EMBED || !phone() || phoneView === 'globe' || sheetState !== 'closed';
   h.setAttribute('aria-label', `${sheetState === 'closed' ? 'Open' : 'Close'} ${phoneView === 'markets' ? 'Markets' : 'News'} panel`);
   h.setAttribute('aria-expanded', String(sheetState !== 'closed'));
@@ -3062,6 +3112,8 @@ function toggleNavSheet() {
 }
 $('dock').onclick = e => {
   const b = e.target.closest('button'); if (!b || !phone()) return;
+  const cur = PROJ.on ? 'projects' : phoneView === 'markets' ? 'markets' : 'news';
+  if (b.dataset.v !== cur && !e.mswapped) { const leaving = PROJ.on; return modeSwap(() => $('dock').onclick({ target: b, mswapped: true }), !leaving); }
   gmAutoSheet = false;
   if(b.dataset.v==='projects')return projSet(true);
   if(PROJ.on)projSet(false,{mode:b.dataset.v==='markets'?'markets':'news'});
@@ -3071,7 +3123,8 @@ $('dock').onclick = e => {
   setSheet('closed');
   $('peek').hidden = phoneView !== 'globe'; dockUpdate();
   // News: one tap opens the article list straight away (no empty globe + lone handle)
-  if (phoneView === 'news' || phoneView === 'markets') toggleNavSheet();
+  // after a mode switch the globe stays in view (so the spin is visible); the panel waits as a slim handle to swipe up
+  if (!e.mswapped && (phoneView === 'news' || phoneView === 'markets')) toggleNavSheet();
 };
 let navDraggedAt = -1000;
 $('nav-grab').onclick = () => {if(performance.now()-navDraggedAt>400) toggleNavSheet();};
@@ -3272,14 +3325,14 @@ function mkdRender(){
  const th=(k,l)=>`<button type="button" data-fs="${k}" class="${sk===k?'on':''}">${l}${sk===k?' ↓':''}</button>`;
  mkO.innerHTML=`<h3>Markets overview</h3>${mkFavouritesHTML()}<p class="mkd-n" style="margin:0 0 10px">Pick a country on the globe for its detail.</p>
  <div class="mkd-kp"><div><b>${openN}/${S.length}</b><small>Exchanges open</small></div><div><b>${all.length}</b><small>Currencies (ECB)</small></div><div><b>${mArts.length}</b><small>Market articles ${F.win.toUpperCase()}</small></div><div><b>${next[0]?new Date(next[0].at).toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}):'—'}</b><small>Next release</small></div></div>
- <h4>Currencies vs USD <span>${d1?'ECB reference · '+fmtD(d1):'ECB'}</span></h4>${all.length?`<div class="mkd-ft mkd-fh">${th('c','Pair')}<span>Rate</span>${th('d1','1D')}${th('w1','1W')}${th('m1','1M')}<span></span></div>`+all.slice(0,MARKET.fxAll?all.length:8).map(x=>`<div class="mkd-ft"><b>${esc(x.c)}</b><span>${x.v.toLocaleString('en-US',{maximumFractionDigits:x.v>=100?2:4,minimumFractionDigits:x.v>=100?2:4})}</span>${pc(x.d1)}${pc(x.w1)}${pc(x.m1)}${x.s.length>2?mkdSpark(x.s,(x.m1||0)<0?'#f87171':'#34d399'):'<span></span>'}</div>`).join('')+`<button type="button" class="mkd-more" data-fxall>${MARKET.fxAll?'Show fewer':'Show all '+all.length}</button>`:'<p class="mkd-e">Reference rates not available.</p>'}
- <p class="mkd-n">Units of each currency per 1 USD; a rise means a weaker currency vs USD. Derived from ECB euro reference rates; not live or tradable prices.</p>
+ <h4>In the news more than usual <span>48h vs own 30-day average</span></h4>${mkUnusual()}
+ <p class="mkd-n">Articles about each country in the last 48 hours, compared with its usual 48 hours over the previous 4 weeks. Countries need at least 3 articles. From Investedia's article index.</p>
  <h4 style="margin-top:14px">By region <span>articles · best · worst vs USD, 1D</span></h4>${regRows}
  <h4 style="margin-top:14px">Next releases <span>official · US only</span></h4>${next.length?next.slice(0,3).map(e=>`<div class="mkd-mc" role="button" tabindex="0" data-rg="na" title="Show on the globe"><span>${esc(e.t)}</span><small>${when(e.at)}</small></div>`).join(''):'<p class="mkd-e">No upcoming releases in our calendar.</p>'}
  <p class="mkd-n" style="margin-top:10px">Sources: ECB · exchange-calendars · BLS/BEA/Fed via our calendar · Investedia articles. Not investment advice.</p>`;
  mkO.querySelectorAll('[data-rg]').forEach(el=>{const go=()=>{const r=REGIONS.find(x=>x[0]===el.dataset.rg);if(r)flyTo(r[2],r[3],r[4]);};el.onclick=go;el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}};});
  mkO.querySelectorAll('[data-fs]').forEach(b=>b.onclick=()=>{MARKET.fxSort=b.dataset.fs;mkdRender();});
- const fa=mkO.querySelector('[data-fxall]');if(fa)fa.onclick=()=>{MARKET.fxAll=!MARKET.fxAll;mkdRender();};
+ mkO.querySelectorAll('[data-unu]').forEach(b=>b.onclick=()=>marketSelect(b.dataset.unu));
  
  // activity strip
  const P=marketPanel.hidden?mkO.getBoundingClientRect():marketPanel.getBoundingClientRect(),L=mkL.getBoundingClientRect();mkA.style.left=(L.right+24)+'px';mkA.style.right=(innerWidth-P.left+24)+'px';
@@ -3316,6 +3369,15 @@ addEventListener('resize',()=>{if(MARKET.on)marketNotifyPanel();});
 if(window.InvGlobeNav)InvGlobeNav.market=value=>{if(!MARKET.on)return false;const split=value.indexOf(':');if(split<0)return false;marketSelect(value.slice(split+1),value.slice(0,split));return true;};
 
 marketPanel.addEventListener('click',e=>{const topic=e.target.closest('[data-country-topic]');if(topic){MARKET.newsTopic=topic.dataset.countryTopic;marketRender();marketPanel.querySelector(`[data-country-topic="${MARKET.newsTopic}"]`)?.focus({preventScroll:true});}});
+
+// "In the news more than usual": 48h count vs the country's own average 48h over the 4 weeks before
+function mkUnusual(){
+ const now=Date.now(),cut48=now-2*864e5,cut30=now-30*864e5,recent=new Map(),before=new Map();
+ for(const a of MARKET.articles||[]){const c=a.location?.country,t=Date.parse(a.published_at);if(!c||!(t>=cut30))continue;const m=t>=cut48?recent:before;m.set(c,(m.get(c)||0)+1);}
+ const rows=[...recent].filter(([,n])=>n>=3).map(([c,n])=>{const usual=(before.get(c)||0)/14;return{c,n,usual,r:n/Math.max(usual,.5)};}).sort((a,b)=>b.r-a.r).slice(0,6);
+ if(!rows.length)return `<p class="mkd-e">${MARKET.ready?'Not enough articles yet.':'Loading…'}</p>`;
+ return rows.map(x=>`<button type="button" class="mkd-unu" data-unu="${esc(x.c)}"><span><b>${esc(x.c)}</b><small>${x.n} articles · usual ${x.usual<1?x.usual.toFixed(1):Math.round(x.usual)}</small></span><em class="${x.r>=2?'hot':''}">${x.r>=10?Math.round(x.r):x.r.toFixed(1)}×</em></button>`).join('');
+}
 
 requestAnimationFrame(frame);
 </script>

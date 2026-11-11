@@ -1,0 +1,120 @@
+{
+  "browser": "headless Chromium, shared cloud runner; not physical-phone hardware",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "width": 1440,
+      "theme": "dark",
+      "existing_points": 637,
+      "synthetic": {
+        "points": 4000,
+        "markers": 44
+      },
+      "assertions": "B1 lazy/v1/cache, B2 cap4000, B6 attribution, no overflow or console errors"
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "existing_points": 637,
+      "synthetic": {
+        "points": 4000,
+        "markers": 44
+      },
+      "assertions": "B1 lazy/v1/cache, B2 cap4000, B6 attribution, no overflow or console errors"
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "existing_points": 637,
+      "synthetic": {
+        "points": 4000,
+        "markers": 33
+      },
+      "assertions": "B1 lazy/v1/cache, B2 cap4000, B6 attribution, no overflow or console errors"
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "existing_points": 637,
+      "synthetic": {
+        "points": 4000,
+        "markers": 33
+      },
+      "assertions": "B1 lazy/v1/cache, B2 cap4000, B6 attribution, no overflow or console errors"
+    },
+    {
+      "width": 1440,
+      "measurements": [
+        {
+          "baseline": true,
+          "points": 637,
+          "median_ms": 4,
+          "p95_ms": 6,
+          "frames": 100
+        },
+        {
+          "baseline": false,
+          "points": 4000,
+          "median_ms": 4.399999991059303,
+          "p95_ms": 6.199999988079071,
+          "frames": 100
+        },
+        {
+          "baseline": true,
+          "points": 637,
+          "median_ms": 4.100000008940697,
+          "p95_ms": 5.9000000059604645,
+          "frames": 100
+        },
+        {
+          "baseline": false,
+          "points": 4000,
+          "median_ms": 5.600000008940697,
+          "p95_ms": 7.4000000059604645,
+          "frames": 100
+        }
+      ],
+      "baseline_median_ms": 4.100000008940697,
+      "new_4000_median_ms": 5.600000008940697,
+      "regression_pct": 36.58536577387837,
+      "within_15_pct": false
+    },
+    {
+      "width": 390,
+      "measurements": [
+        {
+          "baseline": true,
+          "points": 637,
+          "median_ms": 3.800000011920929,
+          "p95_ms": 5.5,
+          "frames": 100
+        },
+        {
+          "baseline": false,
+          "points": 4000,
+          "median_ms": 3.7000000029802322,
+          "p95_ms": 5,
+          "frames": 100
+        },
+        {
+          "baseline": true,
+          "points": 637,
+          "median_ms": 3.6000000089406967,
+          "p95_ms": 5.899999991059303,
+          "frames": 100
+        },
+        {
+          "baseline": false,
+          "points": 4000,
+          "median_ms": 4.5,
+          "p95_ms": 5.700000002980232,
+          "frames": 100
+        }
+      ],
+      "baseline_median_ms": 3.800000011920929,
+      "new_4000_median_ms": 4.5,
+      "regression_pct": 18.421052260081854,
+      "within_15_pct": false
+    }
+  ]
+}
