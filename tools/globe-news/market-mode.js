@@ -139,13 +139,13 @@ function mkdRender(){
  const th=(k,l)=>`<button type="button" data-fs="${k}" class="${sk===k?'on':''}">${l}${sk===k?' ↓':''}</button>`;
  mkO.innerHTML=`<h3>Markets overview</h3>${mkFavouritesHTML()}<p class="mkd-n" style="margin:0 0 10px">Pick a country on the globe for its detail.</p>
  <div class="mkd-kp"><div><b>${openN}/${S.length}</b><small>Exchanges open</small></div><div><b>${all.length}</b><small>Currencies (ECB)</small></div><div><b>${mArts.length}</b><small>Market articles ${F.win.toUpperCase()}</small></div><div><b>${next[0]?new Date(next[0].at).toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}):'—'}</b><small>Next release</small></div></div>
- <h4>Currencies vs USD <span>${d1?'ECB reference · '+fmtD(d1):'ECB'}</span></h4>${all.length?`<div class="mkd-ft mkd-fh">${th('c','Pair')}<span>Rate</span>${th('d1','1D')}${th('w1','1W')}${th('m1','1M')}<span></span></div>`+all.slice(0,MARKET.fxAll?all.length:8).map(x=>`<div class="mkd-ft"><b>${esc(x.c)}</b><span>${x.v.toLocaleString('en-US',{maximumFractionDigits:x.v>=100?2:4,minimumFractionDigits:x.v>=100?2:4})}</span>${pc(x.d1)}${pc(x.w1)}${pc(x.m1)}${x.s.length>2?mkdSpark(x.s,(x.m1||0)<0?'#f87171':'#34d399'):'<span></span>'}</div>`).join('')+`<button type="button" class="mkd-more" data-fxall>${MARKET.fxAll?'Show fewer':'Show all '+all.length}</button>`:'<p class="mkd-e">Reference rates not available.</p>'}
- <p class="mkd-n">Units of each currency per 1 USD; a rise means a weaker currency vs USD. Derived from ECB euro reference rates; not live or tradable prices.</p>
+ <h4>In the news more than usual <span>48h vs own 30-day average</span></h4>${mkUnusual()}
+ <p class="mkd-n">Articles about each country in the last 48 hours, compared with its usual 48 hours over the previous 4 weeks. Countries need at least 3 articles. From Investedia's article index.</p>
  <h4 style="margin-top:14px">By region <span>articles · best · worst vs USD, 1D</span></h4>${regRows}
  <h4 style="margin-top:14px">Next releases <span>official · US only</span></h4>${next.length?next.slice(0,3).map(e=>`<div class="mkd-mc"><span>${esc(e.t)}</span><small>${when(e.at)}</small></div>`).join(''):'<p class="mkd-e">No upcoming releases in our calendar.</p>'}
  <p class="mkd-n" style="margin-top:10px">Sources: ECB · exchange-calendars · BLS/BEA/Fed via our calendar · Investedia articles. Not investment advice.</p>`;
  mkO.querySelectorAll('[data-fs]').forEach(b=>b.onclick=()=>{MARKET.fxSort=b.dataset.fs;mkdRender();});
- const fa=mkO.querySelector('[data-fxall]');if(fa)fa.onclick=()=>{MARKET.fxAll=!MARKET.fxAll;mkdRender();};
+ mkO.querySelectorAll('[data-unu]').forEach(b=>b.onclick=()=>marketSelect(b.dataset.unu));
  
  // activity strip
  const P=marketPanel.hidden?mkO.getBoundingClientRect():marketPanel.getBoundingClientRect(),L=mkL.getBoundingClientRect();mkA.style.left=(L.right+24)+'px';mkA.style.right=(innerWidth-P.left+24)+'px';
@@ -182,3 +182,12 @@ addEventListener('resize',()=>{if(MARKET.on)marketNotifyPanel();});
 if(window.InvGlobeNav)InvGlobeNav.market=value=>{if(!MARKET.on)return false;const split=value.indexOf(':');if(split<0)return false;marketSelect(value.slice(split+1),value.slice(0,split));return true;};
 
 marketPanel.addEventListener('click',e=>{const topic=e.target.closest('[data-country-topic]');if(topic){MARKET.newsTopic=topic.dataset.countryTopic;marketRender();marketPanel.querySelector(`[data-country-topic="${MARKET.newsTopic}"]`)?.focus({preventScroll:true});}});
+
+// "In the news more than usual": 48h count vs the country's own average 48h over the 4 weeks before
+function mkUnusual(){
+ const now=Date.now(),cut48=now-2*864e5,cut30=now-30*864e5,recent=new Map(),before=new Map();
+ for(const a of MARKET.articles||[]){const c=a.location?.country,t=Date.parse(a.published_at);if(!c||!(t>=cut30))continue;const m=t>=cut48?recent:before;m.set(c,(m.get(c)||0)+1);}
+ const rows=[...recent].filter(([,n])=>n>=3).map(([c,n])=>{const usual=(before.get(c)||0)/14;return{c,n,usual,r:n/Math.max(usual,.5)};}).sort((a,b)=>b.r-a.r).slice(0,6);
+ if(!rows.length)return `<p class="mkd-e">${MARKET.ready?'Not enough articles yet.':'Loading…'}</p>`;
+ return rows.map(x=>`<button type="button" class="mkd-unu" data-unu="${esc(x.c)}"><span><b>${esc(x.c)}</b><small>${x.n} articles · usual ${x.usual<1?x.usual.toFixed(1):Math.round(x.usual)}</small></span><em class="${x.r>=2?'hot':''}">${x.r>=10?Math.round(x.r):x.r.toFixed(1)}×</em></button>`).join('');
+}

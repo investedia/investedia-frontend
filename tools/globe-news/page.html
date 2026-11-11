@@ -153,7 +153,7 @@ html.proj-mode :is(.panel,.act,.side-sec,.side-imp,.side-bar,#lcol,.timeline,#ca
 html.proj-mode .pjl{display:flex;flex-direction:column;position:fixed;left:16px;top:16px;bottom:16px;width:380px;z-index:5;border:1px solid #1f1f23;background:rgba(11,11,13,.96);border-radius:16px;padding:16px;font:13px/1.4 Inter,sans-serif;box-sizing:border-box}
 html.proj-mode .pjs{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;bottom:16px;left:calc(380px + 40px);right:calc(var(--pw) + 40px);z-index:4;border:1px solid #1f1f23;background:rgba(11,11,13,.96);border-radius:14px;font:13px Inter,sans-serif}
 html.proj-mode .pjs div{padding:10px 14px;border-right:1px solid #1f1f23}html.proj-mode .pjs div:last-child{border:0}.pjs b{display:block;font-size:18px;font-weight:600}.pjs small{color:#77777f;font-size:11px}
-html.proj-mode .top{display:none!important}
+
 .pjl-h b{display:block;font-size:19px}.pjl-h small{color:#8a8a92}.pjq{margin:12px 0 0;height:40px;border:1px solid #2a2a2f;border-radius:10px;background:#0e0e11;color:#eee;padding:0 12px;font:13px Inter,sans-serif}.pjl .pj-f{margin:8px 0 6px}.pjl .pj-f select{max-width:118px}
 .pjl-n{color:#8a8a92;font-size:12px;margin:2px 0 6px}.pjl-list{overflow:auto;flex:1;margin:0 -6px;padding:0 6px}
 .pjr{display:grid;grid-template-columns:72px 1fr 22px;gap:10px;padding:8px;border-radius:10px;border:1px solid transparent;cursor:pointer}.pjr:hover{background:rgba(255,255,255,.03)}.pjr.on{border-color:rgba(255,122,26,.6);background:rgba(255,122,26,.06)}.pjr img,.pji{width:72px;height:50px;border-radius:7px;object-fit:cover}.pji{display:grid;place-items:center;background:#16161a;color:#8a8a92;font-weight:600;font-size:12px}.pjr b{display:block;font-size:13px;line-height:1.25}.pjr small{color:#8a8a92;font-size:11.5px}
@@ -517,7 +517,7 @@ h1 span{color:var(--fg-3)}
   /* Open sheet = a card floating above the dock (never under it); header is one slim row: Back, expand, close. */
   /* The open sheet is ONE full-height card moved with transform (compositor only) and cropped with clip-path, so dragging never re-lays-out the article list.
      --sheet-drop = how far it is pulled down from fully open. The page never decides a height: JS writes any pixel value between the minimum and maximum. */
-  html[data-panel] .panel:not([data-sheet=closed]){left:12px;right:12px;top:auto;bottom:calc(var(--dock-gap,90px) + env(safe-area-inset-bottom));height:calc(var(--sheet-max,92dvh) - var(--dock-gap,90px));border-radius:22px;border:1px solid rgba(255,255,255,.16);box-shadow:none;transform:translate3d(0,var(--sheet-drop,0px),0);clip-path:inset(0 0 var(--sheet-drop,0px) 0 round 22px);transition:transform .32s cubic-bezier(.2,.8,.2,1),clip-path .32s cubic-bezier(.2,.8,.2,1);will-change:transform,clip-path}
+  html[data-panel] .panel:not([data-sheet=closed]){left:12px;right:12px;top:auto;bottom:calc(var(--dock-gap,100px) + env(safe-area-inset-bottom));height:calc(var(--sheet-max,92dvh) - var(--dock-gap,100px));border-radius:22px;border:1px solid rgba(255,255,255,.16);box-shadow:none;transform:translate3d(0,var(--sheet-drop,0px),0);clip-path:inset(0 0 var(--sheet-drop,0px) 0 round 22px);transition:transform .32s cubic-bezier(.2,.8,.2,1),clip-path .32s cubic-bezier(.2,.8,.2,1);will-change:transform,clip-path}
   html[data-panel] .panel:not([data-sheet=closed]) .grab{height:18px;min-height:18px}
   html[data-panel] .panel:not([data-sheet=closed]) .grab::after{top:7px}
   html[data-panel] .panel:not([data-sheet=closed]) .grab{touch-action:none;position:relative;z-index:2}
@@ -526,7 +526,7 @@ h1 span{color:var(--fg-3)}
   html[data-panel] .panel:not([data-sheet=closed]) .sheet-actions{z-index:4}
   html[data-panel] .panel:not([data-sheet=closed]) .sheet-actions{top:0}
   html[data-panel] .panel:not([data-sheet=closed]) .sheet-actions button{min-width:44px;min-height:44px;width:44px;height:44px}
-  html[data-panel] .panel:not([data-sheet=closed]) .pbody{height:calc(var(--sheet-max,92dvh) - var(--dock-gap,90px) - 18px);padding-bottom:calc(24px + var(--sheet-pad,0px));transition:none}
+  html[data-panel] .panel:not([data-sheet=closed]) .pbody{height:calc(var(--sheet-max,92dvh) - var(--dock-gap,100px) - 18px);padding-bottom:calc(24px + var(--sheet-pad,0px));transition:none}
   html[data-panel] .panel:not([data-sheet=closed]) .pbody:has(.back){padding-top:44px}
   html[data-panel] .panel:not([data-sheet=closed]) .pbody .back{position:absolute;left:12px;top:0;margin:0;min-height:44px;z-index:3;color:#fff;font-size:15px;font-weight:600;background:none}
   .panel[data-sheet=closed] .pbody{cursor:pointer}
@@ -756,6 +756,19 @@ html[data-theme=light] .nb-search{background:rgba(0,0,0,.05)}html[data-theme=lig
  .dock{background:rgba(44,44,50,.75);backdrop-filter:blur(26px)}
 }
 @media(prefers-reduced-motion:reduce){.panel,.market-panel,.fsheet{transition:none!important}}
+html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a){background:var(--panel)!important;border-color:var(--line)!important;color:var(--fg);box-shadow:0 8px 30px rgba(36,58,100,.12)}
+html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(h3,h4,b,strong,.mkd-sr,.mkd-fx,.mkd-rg,th){color:var(--fg)!important}
+html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(span,small,.mkd-n,.mkd-ft,.mkd-cs,p){color:var(--fg-3)}
+html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(.mkd-kp>*,.mkd-c,.mkd-e,.mkd-more,button.mkd-more){background:rgba(0,0,0,.04)!important;border-color:var(--line)!important;color:var(--fg)}
+html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(.up,.pos,[class*=up]){color:#15803d}html[data-theme=light] :is(.mkd-l,.mkd-o,.mkd-a) :is(.dn,.neg,[class*=dn],[class*=down]){color:#b91c1c}
+html.mswap :is(.panel,#lcol,.act,.timeline,.mkd-l,.mkd-o,.mkd-a,.pjl,.pj,.pjs,.side-sec,.side-imp,.market-panel){transition:opacity .22s ease-out,transform .22s ease-out;will-change:opacity,transform}
+html.mswap-out :is(.panel,.mkd-o,.pj){opacity:0!important;transform:translateX(8px)}html.mswap-out :is(#lcol,.mkd-l,.pjl){opacity:0!important;transform:translateX(-8px)}html.mswap-out :is(.act,.timeline,.mkd-a,.pjs){opacity:0!important}
+html.mswap #sbox input::placeholder{transition:opacity .17s}html.mswap-out #sbox input::placeholder{opacity:0}
+.mkd-unu{display:flex;width:100%;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;background:none;border:0;border-top:1px solid #1f1f23;color:inherit;font:inherit;text-align:left;cursor:pointer}.mkd-unu small{display:block;color:#77777f;font-size:11.5px}.mkd-unu em{font-style:normal;font-weight:600;color:#a1a1aa}.mkd-unu em.hot{color:#ff7a1a}.mkd-unu:hover b{color:#ff7a1a}
+html[data-theme=light] .mkd-unu{border-color:var(--line)}
+@media(min-width:1180px){html:not(.embed) .gswitch{position:static!important;transform:none!important;left:auto!important;top:auto!important}html:not(.embed) .top .brand{width:max-content;white-space:nowrap;flex-wrap:nowrap}
+html:is(.mkd-on,.proj-mode) #sbox{padding-right:12px!important}html:is(.mkd-on,.proj-mode) #sbox input{flex:1!important;width:auto!important}html:is(.mkd-on,.proj-mode) #sbox kbd{display:none}}
+#dock button{flex:1 1 0}
 /* C — site light theme. All overrides are scoped; the dark design is unchanged. */
 html[data-theme=light]{--bg:#d9e5f4;--panel:rgba(255,255,255,.9);--card:#f5f8fc;
   --line:rgba(29,29,31,.13);--line-2:rgba(29,29,31,.24);
@@ -892,7 +905,7 @@ html[data-theme=light] .detail-header{background:#f4f7fb}
 </section>
 <div class="peek" id="peek" role="region" aria-label="Top articles" hidden></div>
 <button type="button" id="nav-grab" class="nav-grab" aria-label="Open News panel" aria-expanded="false" hidden></button>
-<nav class="dock" id="dock" aria-label="Views"><button type="button" data-v="globe" aria-current="page">Globe</button><button type="button" data-v="news">News</button><button type="button" data-v="markets">Markets</button></nav>
+<nav class="dock" id="dock" aria-label="Views"><button type="button" data-v="news" aria-current="page">News</button><button type="button" data-v="markets">Markets</button></nav>
 <div class="zoom glass"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button></div><button type="button" class="zloc glass" id="zloc" aria-label="Show my location" title="Show my location (stays on this device)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3"/></svg></button>
 <div class="hover glass" id="hover" aria-hidden="true"></div>
 <aside class="panel glass" id="panel" aria-label="News panel">
@@ -1673,6 +1686,8 @@ function size() {
     globeBox = { left: phone() ? 8 : document.documentElement.classList.contains('proj-mode') ? $('pjList').getBoundingClientRect().right + 16 : document.documentElement.classList.contains('mkd-on') ? 378 : (LC ? document.getElementById('lcol').getBoundingClientRect().right + 24 : 24), top: document.documentElement.classList.contains('proj-mode') ? 150 : header.bottom + 12,
       right: phone() ? W - 8 : document.documentElement.classList.contains('mkd-on') && document.querySelector('.mkd-o:not([hidden])') ? document.querySelector('.mkd-o').getBoundingClientRect().left - 24 : document.documentElement.classList.contains('proj-mode') && $('projPanel') ? $('projPanel').getBoundingClientRect().left - 24 : ((mp => mp && document.documentElement.classList.contains('market-mode') && !mp.hidden && mp.offsetWidth)(document.querySelector('.market-panel')) ? document.querySelector('.market-panel').getBoundingClientRect().left - 24 : panel.hidden || !panel.offsetWidth || panel.getBoundingClientRect().left <= 0 ? W - 24 : panel.getBoundingClientRect().left - 24),
       bottom: sheetOpen ? H - panel.offsetHeight - 12 : document.documentElement.classList.contains('proj-mode') && !phone() ? H - 110 : document.documentElement.classList.contains('mkd-on') ? H - 190 : LC ? H - (document.documentElement.classList.contains('act-on') ? 190 : 24) : (timeline.height ? timeline.top - 16 : H - (document.documentElement.classList.contains('market-mode') ? 72 : 90)) };
+    // PC: the globe keeps one position in News, Markets and Projects, so switching modes never moves it
+    if (!phone() && !EMBED && W >= 1180) { const pw = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--pw')) || 392, sb = $('sbox').getBoundingClientRect(); globeBox = { left: 378, top: Math.max(sb.bottom, 60) + 12, right: W - pw - 40, bottom: H - 190 }; }
     // template B (?panel=b): the articles sit in a strip along the bottom, so the globe uses the full width above it
     if (PANEL_TEMPLATE === 'b' && panel.dataset.view === 'top') { globeBox.right = W - (phone() ? 8 : 24); globeBox.bottom = Math.min(globeBox.bottom, (phone() ? $('tl').getBoundingClientRect().top : panel.getBoundingClientRect().top) - 16); }
     const aw = Math.max(1, globeBox.right - globeBox.left), ah = Math.max(1, globeBox.bottom - globeBox.top);
@@ -1903,6 +1918,7 @@ addEventListener('keydown', e => { if (e.key === 'Escape' && pinned) hideHover()
 addEventListener('wheel', () => { clearTimeout(cTimer); hideHover(); }, { passive: true });
 function pick(x, y, r) { let best = null, bd = r * r; for (const d of drawn) { const q = (d.x - x) ** 2 + (d.y - y) ** 2; if (q < bd) { bd = q; best = d; } } return best; }
 function hoverAt(x, y) {
+  if (typeof PROJ !== 'undefined' && PROJ.on) { $('hover').classList.remove('on'); hoverC = null; return; }  // Projects mode: no news or country cards on hover
   if (pinned) return;  // an article popup opened by a click stays until you click elsewhere or press Escape
   cv.style.cursor = !EMBED || onGlobe(x, y) ? 'grab' : 'default';  // full Globe page: hand everywhere; homepage: only over the globe
   const ex = !EMBED && (exPick(x, y) || upPick(x, y)); if (ex) { $('hover').classList.remove('on'); return; }
@@ -2381,7 +2397,21 @@ document.addEventListener('click',async e=>{const a=e.target.closest('[data-psad
  else{const p=PRE[+a.dataset.ps];if(p){F.region=p.r;F.cat=p.c;F.country=p.country||'';F.from=p.from||'';F.to=p.to||'';press($('cats'),p.c);press($('regions'),p.r);await setWin(p.w);try{$('reg-label').textContent=(p.r==='global'?'All regions':regionDefinition(p.r)[1]);}catch{}render();}}
  try{localStorage.setItem('inv-news-presets',JSON.stringify(PRE))}catch{}presetUI();});
 let mvF = 'all';
-$('gswitch').onclick = e => { const b=e.target.closest('button');if(!b)return;if(b.dataset.m==='projects')return projSet(true);projSet(false,{mode:b.dataset.m});if(typeof marketSetMode==='function')marketSetMode(b.dataset.m); };
+// mode switch: panels fade out, the globe turns a little in place, the new panels fade in (instant with reduced motion)
+let modeSpin = null;  // one smooth 360° on a mode switch, added on top of the slow idle turn so it hands back seamlessly
+const spinEase = k => (1 - Math.cos(Math.PI * k)) / 2;  // sine ease: gentle start and end, low peak speed
+function modeSwap(fn, spin = true) {
+  const h = document.documentElement;
+  if (reduce) return fn();
+  const go = () => { if (spin) modeSpin = { t0: performance.now(), dur: 1600, done: 0 }; };
+  if (phone()) { fn(); requestAnimationFrame(() => requestAnimationFrame(go)); return; }
+  // fade the panels out, swap the content while the globe is still slow (any layout work happens before the spin),
+  // then spin and fade the new panels in during the turn
+  h.classList.add('mswap', 'mswap-out');
+  setTimeout(() => { fn(); requestAnimationFrame(() => requestAnimationFrame(() => { go(); h.classList.remove('mswap-out'); setTimeout(() => h.classList.remove('mswap'), 400); })); }, 220);
+}
+$('gswitch').onclick = e => { const b=e.target.closest('button');if(!b||b.getAttribute('aria-pressed')==='true')return;const leavingProj=PROJ.on;
+  modeSwap(()=>{if(b.dataset.m==='projects')return projSet(true);projSet(false,{mode:b.dataset.m});if(typeof marketSetMode==='function')marketSetMode(b.dataset.m);}, !leavingProj); };
 function sideData() {
   const vis = stories.filter(st => InvNewsFilters.match(st,F)&&inRegion(st.location.region,F.region)&&inTime(st)&&(!F.mine||touchesWatch(st))&&(F.lens==='all'||st.lens.includes(F.lens))), seen = new Map();
   vis.forEach(st => impactsOf(st).forEach(i => { const a = assetForImpact(i); if (!a || typeof a.d !== 'number' || !isFinite(a.d) || Math.abs(a.d) > 25 || a.u === 'bp') return; const k = a.s; const e = seen.get(k) || { a, n: 0, cats: new Set() }; e.n++; e.cats.add(st.category); seen.set(k, e); }));
@@ -2704,6 +2734,7 @@ function drawStars(now) {
 let last = performance.now();
 function frame(t) {
   const dt = Math.min(50, t - last); last = t;
+  if (modeSpin) { const k = Math.min(1, (t - modeSpin.t0) / modeSpin.dur), inc = -360 * spinEase(k) - modeSpin.done; modeSpin.done += inc; lon0 += inc; if (k >= 1) modeSpin = null; }
   if (fly) { spin = null; const k = Math.min(1, (t - fly.t0) / fly.dur), e = ease(k); lon0 = fly.from[0] + fly.dl * e; lat0 = fly.from[1] + (fly.la - fly.from[1]) * e; Zt = fly.from[2] + (fly.z - fly.from[2]) * e; if (k >= 1) fly = null; }
   else if (spin) { lon0 += spin.vx * dt; lat0 = Math.max(-70, Math.min(70, lat0 + spin.vy * dt)); const f = Math.exp(-dt / 380); spin.vx *= f; spin.vy *= f; if (Math.hypot(spin.vx, spin.vy) < .004) spin = null; }  // friction: glides to a stop in about a second
   else if (!drag && !pinch && !reduce && !sel && !selCountry && !hoverC && !hoverCountry && view.k === 'top' && F.region === 'global' && Zt < 1.05 && !zoomAnchor) lon0 -= dt * .0022;
@@ -2906,7 +2937,7 @@ function peekUpdate() {
 }
 $('peek').onclick = e => { if(performance.now()-peekDraggedAt<400)return; if($('peek').classList.contains('minimized')){$('peek').classList.remove('minimized');return;} const c = e.target.closest('[data-story]'), s = byId[c ? c.dataset.story : $('peek').dataset.story]; if (s) openStory(s); else if (!c) openFilters(); };
 function dockUpdate() {
-  for (const b of $('dock').querySelectorAll('button')) b.dataset.v === phoneView ? b.setAttribute('aria-current', 'page') : b.removeAttribute('aria-current');
+  for (const b of $('dock').querySelectorAll('button')) b.dataset.v === (phoneView === 'globe' ? 'news' : phoneView) ? b.setAttribute('aria-current', 'page') : b.removeAttribute('aria-current');
   const h = $('nav-grab'); h.hidden = EMBED || !phone() || phoneView === 'globe' || sheetState !== 'closed';
   h.setAttribute('aria-label', `${sheetState === 'closed' ? 'Open' : 'Close'} ${phoneView === 'markets' ? 'Markets' : 'News'} panel`);
   h.setAttribute('aria-expanded', String(sheetState !== 'closed'));
@@ -2920,6 +2951,8 @@ function toggleNavSheet() {
 }
 $('dock').onclick = e => {
   const b = e.target.closest('button'); if (!b || !phone()) return;
+  const cur = PROJ.on ? 'projects' : phoneView === 'markets' ? 'markets' : 'news';
+  if (b.dataset.v !== cur && !e.mswapped) { const leaving = PROJ.on; return modeSwap(() => $('dock').onclick({ target: b, mswapped: true }), !leaving); }
   gmAutoSheet = false;
   if(b.dataset.v==='projects')return projSet(true);
   if(PROJ.on)projSet(false,{mode:b.dataset.v==='markets'?'markets':'news'});
