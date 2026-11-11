@@ -1,13 +1,26 @@
 // Shared news reads: real API articles merged with the last saved feed, without invented timestamps.
 (function(){
  'use strict';
- const valid=s=>s&&typeof s.id==='string'&&typeof s.headline==='string'&&s.location&&typeof s.location.country==='string'&&Number.isFinite(+s.location.lat)&&Math.abs(+s.location.lat)<=90&&Number.isFinite(+s.location.lon)&&Math.abs(+s.location.lon)<=180&&s.source&&typeof s.source.name==='string'&&Number.isFinite(Date.parse(s.published_at));
+ const valid=s=>s&&typeof s.id==='string'&&typeof s.headline==='string'&&s.location&&typeof s.location.country==='string'&&Number.isFinite(+s.location.lat)&&Math.abs(+s.location.lat)<=90&&Number.isFinite(+s.location.lon)&&Math.abs(+s.location.lon)<=180&&s.source&&typeof s.source.name==='string';
+ function datedStories(stories){
+  const dated=[];
+  if(!Array.isArray(stories))return dated;
+  for(const story of stories){
+   if(!valid(story))continue;
+   const time=Date.parse(story.published_at);
+   if(Number.isFinite(time))dated.push({story,time});
+  }
+  return dated;
+ }
  function merge(base,remote){
-  const old=!base?.demo&&Array.isArray(base?.stories)?base.stories.filter(valid):[],fresh=Number.isFinite(Date.parse(remote?.meta?.generated_at||remote?.meta?.fetched_at))&&Array.isArray(remote?.data?.stories)?remote.data.stories.filter(valid):[];
+  const t=remote?.meta?.generated_at||remote?.meta?.fetched_at;
+  const remoteTime=Date.parse(t),baseTime=Date.parse(base?.updated_at);
+  const old=datedStories(base?.demo?null:base?.stories),fresh=datedStories(Number.isFinite(remoteTime)?remote?.data?.stories:null);
   if(!old.length&&!fresh.length)throw Error('No valid articles available');
-  const t=remote?.meta?.generated_at||remote?.meta?.fetched_at,newer=Number.isFinite(Date.parse(t))&&(!Number.isFinite(Date.parse(base?.updated_at))||Date.parse(t)>=Date.parse(base.updated_at));
-  const byId=new Map(old.map(s=>[s.id,s]));for(const s of fresh)if(!byId.has(s.id)||newer)byId.set(s.id,s);
-  const dated=Array.from(byId.values(),story=>({story,time:Date.parse(story.published_at)}));
+  const newer=Number.isFinite(remoteTime)&&(!Number.isFinite(baseTime)||remoteTime>=baseTime);
+  const byId=new Map(old.map(entry=>[entry.story.id,entry]));
+  for(const entry of fresh)if(!byId.has(entry.story.id)||newer)byId.set(entry.story.id,entry);
+  const dated=[...byId.values()];
   dated.sort((a,b)=>b.time-a.time);
   return {...(base||{}),demo:false,updated_at:newer?t:base?.updated_at||t,stories:dated.map(entry=>entry.story),newsSource:fresh.length?'api-and-saved':'saved',newsState:fresh.length?remote.meta?.state:'saved'};
  }
