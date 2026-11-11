@@ -1,0 +1,21 @@
+{"title":"All articles · Investedia","desc":"Every Investedia article: search and filter thousands of financial news articles by category, date and region.","key":"news","scripts":["assets/articles-lib.js"]}
+<link rel="stylesheet" href="assets/articles-lib.css">
+<div class="al">
+  <aside class="al-side" id="al-side" aria-label="Filters">
+    <h1>All articles</h1>
+    <p class="al-sub" id="al-sub">Loading…</p>
+    <label class="al-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="al-q" type="search" placeholder="Search headlines, sources, countries" autocomplete="off" aria-label="Search articles"></label>
+    <h2>Category</h2><div class="al-opts" id="al-cat"></div>
+    <h2>Date</h2><div class="al-opts" id="al-date"></div>
+    <h2>Region</h2><div class="al-opts" id="al-reg"></div>
+    <button type="button" class="al-done" id="al-done">Show results</button>
+  </aside>
+  <main class="al-main">
+    <div class="al-phone"><h1>All articles</h1><p class="al-sub" id="al-sub2"></p><button type="button" class="al-fbtn" id="al-fbtn" aria-controls="al-side" aria-expanded="false">Filters</button><div class="al-chips" id="al-chips"></div></div>
+    <div id="al-lead"></div>
+    <div class="al-meta"><span id="al-count"></span><label>Sort <select id="al-sort" aria-label="Sort"><option value="new">Newest</option><option value="old">Oldest</option><option value="src">Most sources</option></select></label></div>
+    <div id="al-list" aria-live="polite"></div>
+    <nav class="al-pg" id="al-pg" aria-label="Pages"></nav>
+    <p class="al-note">Summaries are written with the help of AI from each source's own reporting; every article links to its source. Not investment advice.</p>
+  </main>
+</div>
