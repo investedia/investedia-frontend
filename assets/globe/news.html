@@ -2110,6 +2110,8 @@ function watchAdd(st) { const a = lensAsset(st) || (impactsOf(st).map(assetForIm
 // Verified head-office cities (assets/globe/company-hq.json, Wikidata). Empty until loaded; missing HQ keeps the exchange view.
 let HQ_BY = {};
 fetch('company-hq.json').then(r => r.ok ? r.json() : null).then(d => { if (d && d.companies) HQ_BY = d.companies; }).catch(() => {});
+// Opened from an asset page (?hq=SYM): fly to that company's verified headquarters once the table is loaded.
+setTimeout(() => { const hqSym = new URLSearchParams(location.search).get('hq'); const h = hqSym && HQ_BY[hqSym]; if (h) { flyTo(h.hq_lon, h.hq_lat, 3.4); toast(`${h.company_label || hqSym} · headquarters: ${h.hq_city}`); } }, 1500);
 function toast(t) { let el = $('nb-toast'); if (!el) { el = document.createElement('div'); el.id = 'nb-toast'; el.setAttribute('role', 'status'); document.body.append(el); } el.textContent = t; el.classList.add('on'); clearTimeout(el._t); el._t = setTimeout(() => el.classList.remove('on'), 2200); }
 let swp = null;
 pbody.addEventListener('touchstart', e => { const r = e.target.closest('.nd-row'); if (!r) return; const t = e.touches[0]; swp = { r, x: t.clientX, y: t.clientY, dx: 0, lock: null }; }, { passive: true });
@@ -2150,7 +2152,7 @@ pbody.addEventListener('change', e => { const t = e.target.closest('[data-topic]
 let newsCat = '', newsQ = '';
 pbody.addEventListener('click', e => {
   const mt = e.target.closest('[data-panel-tab="more"]'); if (mt) { e.stopPropagation(); const m = $('nb-more'); if (m) { m.remove(); return; } const r = mt.getBoundingClientRect(), d = document.createElement('div'); d.id = 'nb-more'; d.className = 'nb-more glass';
-    d.innerHTML = [['countries', 'Countries'], ['topics', 'Topics'], ['watch', 'Watchlist']].map(([k, l]) => `<button type="button" data-more="${k}" aria-pressed="${panelTab === k}">${l}</button>`).join(''); d.style.top = r.bottom + 6 + 'px'; d.style.right = (innerWidth - r.right) + 'px'; document.body.append(d);
+    d.innerHTML = [['topics', 'Topics'], ['watch', 'Watchlist']].map(([k, l]) => `<button type="button" data-more="${k}" aria-pressed="${panelTab === k}">${l}</button>`).join(''); d.style.top = r.bottom + 6 + 'px'; d.style.right = (innerWidth - r.right) + 'px'; document.body.append(d);
     d.onclick = ev => { const b = ev.target.closest('[data-more]'); if (b) { panelTab = b.dataset.more; d.remove(); render(); } }; setTimeout(() => addEventListener('click', () => d.remove(), { once: true }), 0); return; }
   const tp = e.target.closest('[data-nd-topic]'); if (tp) { newsCat = tp.dataset.ndTopic; panelTab = 'top'; render(); return; }
   if (e.target.closest('[data-nb-filters]')) { openFilters(); return; }
