@@ -2963,7 +2963,8 @@ $('dock').onclick = e => {
   setSheet('closed');
   $('peek').hidden = phoneView !== 'globe'; dockUpdate();
   // News: one tap opens the article list straight away (no empty globe + lone handle)
-  if (phoneView === 'news' || phoneView === 'markets') toggleNavSheet();
+  // after a mode switch the globe stays in view (so the spin is visible); the panel waits as a slim handle to swipe up
+  if (!e.mswapped && (phoneView === 'news' || phoneView === 'markets')) toggleNavSheet();
 };
 let navDraggedAt = -1000;
 $('nav-grab').onclick = () => {if(performance.now()-navDraggedAt>400) toggleNavSheet();};
