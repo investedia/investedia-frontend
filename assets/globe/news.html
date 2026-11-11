@@ -1294,8 +1294,8 @@ const trusted = a => !!a && !!(a.id || (IND[a.s] && IND[a.s].id));
 // Longer windows hold more connections, so the Globe page draws more lines (owner 2026-11-07: going back in time must add lines, never swap
 // them). The homepage (EMBED) keeps its fixed budget.
 const WIN_LINES = { now: 1, '1h': 1, '6h': 1, '24h': 1, '48h': 1.5, '7d': 2, '30d': 2.5 };
-const winLines = () => EMBED ? 1 : (WIN_LINES[F.win] || 1);
-const BUDGET = () => { const ph = innerWidth <= 760, f = winLines(); return EMBED ? { main: ph ? 12 : 16, ripple: ph ? 2 : 4 } : { main: Math.round((ph ? 14 : 22) * f), ripple: ph ? 5 : 10 }; };  // raised 2026-11-06 after a frame-time check (see design/GLOBE-COVERAGE-UPGRADE.md)
+const winLines = () => WIN_LINES[F.win] || 1;  // homepage (EMBED) follows the window too: 48h is the default
+const BUDGET = () => { const ph = innerWidth <= 760, f = winLines(); return EMBED ? { main: Math.round((ph ? 12 : 16) * f), ripple: ph ? 2 : 4 } : { main: Math.round((ph ? 14 : 22) * f), ripple: ph ? 5 : 10 }; };  // raised 2026-11-06 after a frame-time check (see design/GLOBE-COVERAGE-UPGRADE.md)
 const geoKey = p => Math.round(p.phi * 9) + ',' + Math.round(p.lam * 9);  // ~6° cells
 function endDot(pts, col, alpha) {  // a small dot where a line ends, so it visibly lands on a place even when no article marker is there
   const q = pts[pts.length - 1]; if (!q || !q[2] || (q[3] !== undefined && q[3] <= 0)) return;
@@ -1401,7 +1401,7 @@ function drawConnections(t, focus, country) {
   const iso = country && ISO[country.name], sel = !!(focus || iso || sym), fade = sel ? .15 : 1;
   const ph = k => reduce ? null : (t / 4200 + k * .17) % 1;
   const related = e => focus ? e.article === focus : sym ? touches_(e, sym) : iso ? e.article.location.country === country.name : false;
-  const mains = [], cap = cappedBy(EMBED ? 3 : Math.round(4 * winLines()));  // per-country cap grows with the window like the budget
+  const mains = [], cap = cappedBy(Math.round((EMBED ? 3 : 4) * winLines()));  // per-country cap grows with the window like the budget
   const ca=Math.cos(lat0*rad),sa=Math.sin(lat0*rad),cl=Math.cos(lon0*rad),sl=Math.sin(lon0*rad);
   const visibleVector=v=>{const d=v[0]*cl+v[1]*sl,z=sa*v[2]+ca*d;if(z<=.04)return false;const x=cx+R*(v[1]*cl-v[0]*sl),y=cy-R*(ca*v[2]-sa*d);return x>=globeBox.left&&x<=globeBox.right&&y>=globeBox.top&&y<=globeBox.bottom;};
   if (CONNON || sel) {
