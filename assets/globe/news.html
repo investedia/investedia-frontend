@@ -2107,6 +2107,9 @@ pbody.addEventListener('input', e => { if (e.target.id !== 'nb-q') return; newsQ
 function watchAdd(st) { const a = lensAsset(st) || (impactsOf(st).map(assetForImpact).find(Boolean)); let L; try { L = JSON.parse(localStorage.getItem('inv-watch') || '{}'); } catch { L = {}; } L.a = L.a || []; L.c = L.c || [];
   let label; if (a) { if (!L.a.some(x => String(x.s).toUpperCase() === a.s.toUpperCase())) L.a.unshift({ src: 'site', s: a.s, n: a.n }); label = a.n; } else { const c = st.location.country; if (!L.c.some(x => x.k === c)) L.c.unshift({ k: c }); label = nm(c); }
   try { localStorage.setItem('inv-watch', JSON.stringify(L)); } catch {} WATCH = watchSyms(); toast(`${label} added to your watchlist`); }
+// Verified head-office cities (assets/globe/company-hq.json, Wikidata). Empty until loaded; missing HQ keeps the exchange view.
+let HQ_BY = {};
+fetch('company-hq.json').then(r => r.ok ? r.json() : null).then(d => { if (d && d.companies) HQ_BY = d.companies; }).catch(() => {});
 function toast(t) { let el = $('nb-toast'); if (!el) { el = document.createElement('div'); el.id = 'nb-toast'; el.setAttribute('role', 'status'); document.body.append(el); } el.textContent = t; el.classList.add('on'); clearTimeout(el._t); el._t = setTimeout(() => el.classList.remove('on'), 2200); }
 let swp = null;
 pbody.addEventListener('touchstart', e => { const r = e.target.closest('.nd-row'); if (!r) return; const t = e.touches[0]; swp = { r, x: t.clientX, y: t.clientY, dx: 0, lock: null }; }, { passive: true });
@@ -2152,7 +2155,7 @@ pbody.addEventListener('click', e => {
   const tp = e.target.closest('[data-nd-topic]'); if (tp) { newsCat = tp.dataset.ndTopic; panelTab = 'top'; render(); return; }
   if (e.target.closest('[data-nb-filters]')) { openFilters(); return; }
   const nd = e.target.closest('[data-nd-cat]'); if (nd) { newsCat = nd.dataset.ndCat; render(); return; }
-  const asset=e.target.closest('[data-asset]');if(asset){if(!selectAsset(asset.dataset.asset))window.InvPeek?.open(asset.dataset.asset);return;}  // assets open their globe view
+  const asset=e.target.closest('[data-asset]');if(asset){const hq=HQ_BY[asset.dataset.asset];if(hq){flyTo(hq.hq_lon,hq.hq_lat,3.4);toast(`${hq.company_label||asset.dataset.asset} · headquarters: ${hq.hq_city}`);return;}if(!selectAsset(asset.dataset.asset))window.InvPeek?.open(asset.dataset.asset);return;}  // assets open their globe view; with a verified HQ city the globe flies there
   const b = e.target.closest('[data-story],[data-back],[data-country],[data-follow]'); if (!b) return; if (b.tagName !== 'LABEL') e.preventDefault();
   if (b.dataset.follow) return toggleFollow(b.dataset.follow);
   if (b.dataset.back != null) return back();
