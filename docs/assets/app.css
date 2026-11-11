@@ -1302,3 +1302,4 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .sa-ev small{display:block;color:var(--muted,#b5b5be);font-size:12px;margin-top:3px}.sa-ev li.unread b::before{content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:8px;vertical-align:middle}
 .sa-empty{padding:24px 0}
 .sa-list .link,.sa-head .link{background:none;border:0;color:var(--accent);font:inherit;font-size:13px;min-height:44px;padding:0 4px;cursor:pointer}
+.sa-limit-act a,.sa-empty .btn{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:22px;border:1px solid #39393f;color:inherit;text-decoration:none;font-weight:500;background:none;font:inherit;cursor:pointer}.sa-limit-act a.btn-pri,.sa-empty .btn-pri{background:var(--accent);border-color:var(--accent);color:#120800}
