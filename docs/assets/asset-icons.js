@@ -52,6 +52,9 @@
     if (CB[sym]) return cIcon(sym);
     if (c) return tile(G[c], 'color:#c8c8cf');
     const base = sym.replace(/-USD$/, '');
+    // indices and country ETFs: the country flag is the icon (no company logo exists); European funds get the EU flag
+    const fund = a.t === 'stocks' && (a.g === 'Index' || a.g === 'Country ETF' || /\b(ETF|Index Fund)\b/.test(n));
+    if (fund && a.cc && !LOGOS[base]) { const cc = String(a.cc).toLowerCase() === 'european_union' ? 'eu' : String(a.cc).toLowerCase(); return `<img class="ai-i ai-flag" src="${BASE}globe/flags/${cc}.svg" alt="" data-q="[]" data-f="${esc(initial(n))}" onerror="window.AssetIcons.next(this)">`; }
     const srcs = [];
     if (LOGOS[base]) srcs.push(BASE + 'globe/' + LOGOS[base]);
     if (window.InvConsent?.allows('images') && (a.t === 'crypto' || /-USD$/.test(sym))) srcs.push(`https://cdn.brandfetch.io/crypto/${encodeURIComponent(base)}/w/96/h/96/fallback/404?c=${BFID}`);
