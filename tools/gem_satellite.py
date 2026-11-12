@@ -88,7 +88,7 @@ def detail_check(threshold=8.0):
 def before_pass(threshold=None):
     """Owner request (12 Nov 2026): a 2020 <-> now comparison for plants being built.
     For Under construction / Pre-construction plants with a satellite view, find a clear Oct-Nov image on the
-    same tile (2020, else 2021, else 2022) and measure how much the ~6 km box around the plant changed.
+    same tile (Oct-Nov 2025, else Mar-Jun 2026) and measure how much the ~6 km box around the plant changed.
     Field 15 = [before_date, change_score]; the site shows the slider only when score >= doc.satellite.min_change."""
     from PIL import ImageChops, ImageStat
     p = ROOT / 'assets/globe/projects-energy.json'
@@ -98,8 +98,9 @@ def before_pass(threshold=None):
             return Image.open(io.BytesIO(resp.read())).convert('L')
     def work(r):
         s = r[14]; c, row = s[1], s[2]
-        for y in (2020, 2021, 2022):
-            _, d = search((c, row), date(y, 11, 30), 61)
+        # Owner (12 Nov 2026): compare with a recent image, about a year back: Oct-Nov 2025, else Mar-Jun 2026.
+        for end, days in ((date(2025, 11, 30), 61), (date(2026, 6, 30), 120)):
+            _, d = search((c, row), end, days)
             if d: break
         else: return r, None
         try: a, b = grab(d, c, row), grab(s[0], c, row)
