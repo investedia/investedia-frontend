@@ -1,0 +1,80 @@
+[
+  {
+    "width": 1440,
+    "check": "Skip link keyboard activation",
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "check": "Consent controls, visible focus and focus return",
+    "pass": false,
+    "error": "locator.click: Timeout 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-cookie-settings]').first()\u001b[22m\n"
+  },
+  {
+    "width": 1440,
+    "check": "Header and menu keyboard traversal",
+    "pass": false,
+    "error": "locator.focus: Timeout 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-dd=dd-tools]')\u001b[22m\n"
+  },
+  {
+    "width": 1440,
+    "check": "Search palette trap, Escape and return",
+    "pass": true
+  },
+  {
+    "width": 1440,
+    "check": "News filters keyboard activation",
+    "pass": false,
+    "error": "Expected values to be strictly equal:\n\n'false' !== 'true'\n"
+  },
+  {
+    "width": 1440,
+    "check": "Asset detail keyboard trigger, focus trap and return",
+    "pass": false,
+    "error": "locator.waitFor: Timeout 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.nf-rx[role=button]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "width": 1440,
+    "check": "Globe search, zoom and panel tabs",
+    "pass": false,
+    "error": "Expected values to be strictly equal:\n\n'false' !== 'true'\n"
+  },
+  {
+    "width": 390,
+    "check": "Skip link keyboard activation",
+    "pass": true
+  },
+  {
+    "width": 390,
+    "check": "Consent controls, visible focus and focus return",
+    "pass": false,
+    "error": "locator.click: Timeout 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-cookie-settings]').first()\u001b[22m\n"
+  },
+  {
+    "width": 390,
+    "check": "Header and menu keyboard traversal",
+    "pass": true
+  },
+  {
+    "width": 390,
+    "check": "Search palette trap, Escape and return",
+    "pass": true
+  },
+  {
+    "width": 390,
+    "check": "News filters keyboard activation",
+    "pass": false,
+    "error": "Expected values to be strictly equal:\n\n'false' !== 'true'\n"
+  },
+  {
+    "width": 390,
+    "check": "Asset detail keyboard trigger, focus trap and return",
+    "pass": false,
+    "error": "locator.waitFor: Timeout 8000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.nf-rx[role=button]').first() to be visible\u001b[22m\n"
+  },
+  {
+    "width": 390,
+    "check": "Globe search, zoom and panel tabs",
+    "pass": true
+  }
+]

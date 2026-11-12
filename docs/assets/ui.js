@@ -910,7 +910,7 @@
     csMenu.style.width = w + 'px'; csMenu.style.left = Math.max(8, Math.min(r.left, innerWidth - w - 8)) + 'px';
     csMenu.style.top = up ? 'auto' : r.bottom + 6 + 'px'; csMenu.style.bottom = up ? innerHeight - r.top + 6 + 'px' : 'auto';
     csMenu.style.transformOrigin = up ? 'bottom' : 'top';
-    csMenu.querySelector('.csel-list').style.maxHeight = Math.min(360, up ? above : below) + 'px';
+    csMenu.querySelector('.csel-list').style.maxHeight = Math.max(120, Math.min(360, (up ? above : below) - 16)) + 'px'; // 16 = menu padding + border + gap
   }
   function csOpen(sel, btn) {
     if (csCur && csCur.sel === sel) return csClose(true);
