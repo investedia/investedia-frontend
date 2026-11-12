@@ -207,3 +207,4 @@ if __name__ == "__main__":
     build(release=args.release, publish=args.publish_assets)
     import tools.site_stats as site_stats; site_stats.write()  # homepage numbers
     import tools.news_library_index as news_index; news_index.write()  # articles.html pages
+    import tools.country_briefs as briefs; briefs.write()  # briefing.html / briefings.html
