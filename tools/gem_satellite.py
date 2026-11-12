@@ -59,4 +59,29 @@ def main(days=75):
     print('done', doc['counts']['with_satellite'], 'of', len(doc['plants']))
 
 
-if __name__ == '__main__': main()
+
+
+def detail_check(threshold=8.0):
+    """Owner rule (12 Nov 2026): drop a satellite view when it shows too little (flat desert, sea, haze).
+    Measures brightness variation in a ~6 km box around the plant; below the threshold the plant shows no picture."""
+    from PIL import ImageStat
+    p = ROOT / 'assets/globe/projects-energy.json'
+    doc = json.loads(p.read_text()); U = doc['satellite']['url']
+    def score(r):
+        s = r[14]
+        try:
+            with urllib.request.urlopen(U.replace('{d}', s[0]).replace('{r}', str(s[2])).replace('{c}', str(s[1])), timeout=30) as resp: raw = resp.read()
+        except Exception: return r, None
+        im = Image.open(io.BytesIO(raw)).convert('L'); x = ((r[5] + 180) / DEG - s[1]) * 512; y = ((90 - r[4]) / DEG - s[2]) * 512
+        return r, ImageStat.Stat(im.crop((max(0, x - 96), max(0, y - 96), min(512, x + 96), min(512, y + 96)))).stddev[0]
+    with ThreadPoolExecutor(24) as ex:
+        for r, sd in ex.map(score, [r for r in doc['plants'] if r[14]]):
+            if sd is None or sd < threshold: r[14] = None
+    doc['satellite']['min_detail'] = threshold
+    doc['counts']['with_satellite'] = sum(1 for r in doc['plants'] if r[14])
+    p.write_text(json.dumps(doc, ensure_ascii=False, separators=(',', ':')) + '\n')
+    print('kept', doc['counts']['with_satellite'])
+
+
+if __name__ == '__main__':
+    detail_check() if sys.argv[1:2] == ['--detail'] else main()
