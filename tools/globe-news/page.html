@@ -253,6 +253,7 @@ h1 span{color:var(--fg-3)}
 .eco-yr span:nth-child(2){font-family:var(--sans)}
 .eco-src{margin:10px 0 0;font-size:11px;color:var(--fg-3)}
 .eco-src a{color:inherit}
+.gm-brief{display:block;margin:4px 0 12px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;color:var(--accent,#ff7a1a);font-weight:600;font-size:13px;text-decoration:none}.gm-brief:hover{border-color:var(--accent,#ff7a1a)}
 @media (max-width:760px){.eco-g{grid-template-columns:repeat(2,minmax(0,1fr))}.flag.big{width:38px;height:28px}}
 .fnote{margin:10px 0 0;font-size:12px;line-height:1.5;color:var(--fg-3)}
 .ch{display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
@@ -2212,6 +2213,7 @@ function gmMarketRow(asset, label = '') {
   if (!asset) return `<div class="gm-market-row" data-gm-unavailable="${esc(label)}"><span>${esc(label)}</span><span data-gm-price>${gmMissing}</span><span data-gm-day>${gmMissing}</span><span data-gm-week>${gmMissing}</span></div>`;
   return `<a class="gm-market-row" data-gm-market="${esc(asset.s)}" href="../../asset.html?s=${encodeURIComponent(asset.s)}"><span class="gm-name">${esc(asset.n)}${asset.g === 'Country ETF' ? '<small>ETF</small>' : ''}</span><b data-gm-price>${gmNumber(asset.p, asset.t === 'fx' ? 4 : 2)}${asset.t === 'fx' ? '' : ` <small>${esc(asset.cur || '')}</small>`}</b><span data-gm-day>${gmMove(asset.d)}</span><span data-gm-week>${gmMove(asset.w)}</span></a>`;
 }
+let BRIEFS = null; fetch('briefs/index.json').then(r => r.json()).then(d => { BRIEFS = Object.fromEntries(d.countries.map(c => [c.cc, c])); if (view.k === 'country') render(); }).catch(() => {});
 function gmCountryPanel(c) {
   loadGlobalMarkets();
   const code = ISO[c.name], region = COUNTRY_REGIONS[code], continent = regionDefinition(region)?.[1] || 'Global';
@@ -2220,7 +2222,8 @@ function gmCountryPanel(c) {
   const exchange = gmExchanges(code)[0]?.[1], companies = gmCompanies(code), news = gmCountryArticles(c.name).sort((a, b) => b.t - a.t);
   const benchmark = gmBenchmark(c.name), fx = gmCurrency(c.name), macro = ECON?.countries[code];
   const tabs = [['overview', 'Overview'], ['news', `News (${news.length})`], ['economy', 'Economy'], ['companies', `Companies (${companies.length})`], ['markets', 'Markets'], ...(countryTab==='abroad'?[['abroad','Also listed abroad']]:[])];
-  const tabHTML = `<div class="gm-tabs" role="tablist" aria-label="${esc(nm(c.name))} markets">${tabs.map(([key, label]) => `<button type="button" role="tab" data-gm-tab="${key}" id="gm-tab-${key}" aria-controls="gm-country-content" aria-selected="${countryTab === key}" tabindex="${countryTab === key ? 0 : -1}">${label}</button>`).join('')}</div>`;
+  const brief = BRIEFS && BRIEFS[(code || '').toLowerCase()] ? `<a class="gm-brief" href="../../briefing.html?c=${esc(code.toLowerCase())}">Weekly briefing · ${BRIEFS[code.toLowerCase()].n} articles last week →</a>` : '';
+  const tabHTML = brief + `<div class="gm-tabs" role="tablist" aria-label="${esc(nm(c.name))} markets">${tabs.map(([key, label]) => `<button type="button" role="tab" data-gm-tab="${key}" id="gm-tab-${key}" aria-controls="gm-country-content" aria-selected="${countryTab === key}" tabindex="${countryTab === key ? 0 : -1}">${label}</button>`).join('')}</div>`;
   let content;
   if (countryTab === 'abroad') content = gmAbroadPanel(gmAbroad(companies,code));
   else if (countryTab === 'news') content = `<h3 class="sec-h">Country news · ${F.win.toUpperCase()}</h3>${gmCountryNews(news)}`;
