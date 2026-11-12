@@ -121,5 +121,35 @@ def before_pass(threshold=None):
     print('done', sum(1 for r in doc['plants'] if r[15]))
 
 
+def change_pass():
+    """Rescore before/after pairs by new built structure, not colour: both crops must be fully covered and
+    cloud-free; score = rise in edge density (after autocontrast) around the plant. Seasons, haze and sea
+    barely change edges; new solar blocks, roads, dams and pads do. Field 15 becomes [before_date, score]."""
+    from PIL import ImageFilter, ImageOps, ImageStat
+    p = ROOT / 'assets/globe/projects-energy.json'
+    doc = json.loads(p.read_text()); U = doc['satellite']['url']
+    def crop(d, r, s):
+        with urllib.request.urlopen(U.replace('{d}', d).replace('{r}', str(s[2])).replace('{c}', str(s[1])), timeout=30) as resp:
+            im = Image.open(io.BytesIO(resp.read())).convert('RGBA')
+        x = ((r[5] + 180) / DEG - s[1]) * 512; y = ((90 - r[4]) / DEG - s[2]) * 512
+        return im.crop((int(x) - 96, int(y) - 96, int(x) + 96, int(y) + 96))
+    def ok(c):
+        px = list(c.getdata()); n = len(px)
+        if sum(1 for q in px if q[3] == 0 or max(q[:3]) < 8) > n * .01: return False      # outside image / empty
+        if sum(1 for q in px if min(q[:3]) > 215 and max(q[:3]) - min(q[:3]) < 22) > n * .02: return False  # cloud: near-white, colourless
+        g = c.convert('L'); return ImageStat.Stat(g).stddev[0] >= 6                         # not open sea / flat
+    def edges(c): return ImageStat.Stat(ImageOps.autocontrast(c.convert('L'), cutoff=1).filter(ImageFilter.FIND_EDGES).point(lambda v: 255 if v > 40 else 0)).mean[0] / 255
+    def work(r):
+        try: a, b = crop(r[15][0], r, r[14]), crop(r[14][0], r, r[14])
+        except Exception: return r, None
+        if not (ok(a) and ok(b)): return r, None
+        return r, [r[15][0], round((edges(b) - edges(a)) * 100, 2)]
+    todo = [r for r in doc['plants'] if r[15]]
+    with ThreadPoolExecutor(24) as ex:
+        for r, v in ex.map(work, todo): r[15] = v
+    p.write_text(json.dumps(doc, ensure_ascii=False, separators=(',', ':')) + '\n')
+    print('scored', sum(1 for r in doc['plants'] if r[15]), 'of', len(todo))
+
+
 if __name__ == '__main__':
-    {'--detail': detail_check, '--before': before_pass}.get(sys.argv[1] if len(sys.argv) > 1 else '', main)()
+    {'--detail': detail_check, '--before': before_pass, '--change': change_pass}.get(sys.argv[1] if len(sys.argv) > 1 else '', main)()
