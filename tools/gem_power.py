@@ -3,8 +3,9 @@
 Usage: python tools/gem_power.py "/path/Global.Integrated.Power.September.2026.V2.xlsx"
 The workbook itself stays private (GitHub release gem-2026-11 in the docs repo); only this derived
 file is published, with the CC BY 4.0 credit. Real rows only; nothing is estimated.
-Units are grouped into plants by GEM location ID. Cancelled and retired plants are left out, and so
-are plants under MIN_MW (keeps the Globe fast). Plants already on the Globe from Wikidata within
+Units are grouped into plants by GEM location ID. Only the investable pipeline is kept: announced,
+pre-construction and under construction. A plant is kept when it is at least BIG_MW, or at least MIN_MW
+and owned (fully or partly) by a company that is listed on Investedia (exact name match to markets.json). Plants already on the Globe from Wikidata within
 2 km and of the same energy kind are skipped so nothing is shown twice.
 """
 import hashlib, json, math, sys
@@ -14,12 +15,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SHA256 = '34749042643b15cac4423ae67864ad36c391013aa2d5acc65ae7492c5e33ee27'
 MIN_MW = 50
+BIG_MW = 300
+import re
+SUF = r'\b(inc|corp|corporation|co|company|ltd|limited|plc|sa|ag|se|nv|spa|asa|ab|oyj|group|holdings?|the|bhd|tbk|pjsc|jsc|ojsc)\b'
+norm = lambda t: re.sub(r'\s+', ' ', re.sub(SUF, ' ', re.sub(r'[^a-z0-9 ]', ' ', t.lower().replace('&', ' and ')))).strip()
 KIND = {'utility-scale solar': 'Solar', 'wind': 'Wind', 'hydropower': 'Hydropower', 'coal': 'Coal',
         'oil/gas': 'Oil & gas', 'nuclear': 'Nuclear', 'bioenergy': 'Bioenergy', 'geothermal': 'Geothermal'}
 WIKIDATA_KIND = {'Hydro energy': 'Hydropower', 'Wind energy': 'Wind', 'Solar energy': 'Solar', 'Nuclear energy': 'Nuclear'}
-STAGE = {'announced': 'Announced', 'pre-construction': 'Pre-construction', 'construction': 'Under construction',
-         'operating': 'Operating', 'shelved': 'Shelved', 'shelved - inferred 2 y': 'Shelved', 'mothballed': 'Mothballed'}
-STAGE_ORDER = ['Under construction', 'Pre-construction', 'Announced', 'Operating', 'Shelved', 'Mothballed']
+STAGE = {'announced': 'Announced', 'pre-construction': 'Pre-construction', 'construction': 'Under construction'}
+STAGE_ORDER = ['Under construction', 'Pre-construction', 'Announced']
 CREDIT = 'Global Energy Monitor, Global Integrated Power Tracker, September 2026 V2 (CC BY 4.0)'
 
 
@@ -57,20 +61,27 @@ def convert(path):
                 json.loads((ROOT / 'assets/globe/projects.json').read_text())['projects'] if WIKIDATA_KIND.get(x.get('t'))]
     grid = {}
     for la, lo, k in existing: grid.setdefault((round(la), round(lo)), []).append((la, lo, k))
+    listed = {}
+    for a in json.loads((ROOT / 'assets/globe/markets.json').read_text())['assets']:
+        if a.get('t') == 'stocks' and a.get('n') and len(norm(a['n'])) >= 4: listed.setdefault(norm(a['n']), (a['s'], a['n']))
     out, skipped = [], Counter()
     for p in plants.values():
-        if p['mw'] < MIN_MW: skipped['under_min_mw'] += 1; continue
+        owners = [o.strip() for o in str(p['own']).split(';') if o.strip()]
+        match = next(((listed[norm(re.sub(r'\[.*?\]', '', o))], (re.search(r'\[([\d.]+%)\]', o) or [None, ''])[1]) for o in owners if norm(re.sub(r'\[.*?\]', '', o)) in listed), None)
+        if p['mw'] < MIN_MW or (p['mw'] < BIG_MW and not match): skipped['small_and_no_listed_owner'] += 1; continue
         near = [e for a in (-1, 0, 1) for b in (-1, 0, 1) for e in grid.get((round(p['la']) + a, round(p['lo']) + b), [])]
         if any(e[2] == p['k'] and km((p['la'], p['lo']), e[:2]) <= 2 for e in near): skipped['already_on_globe'] += 1; continue
         stage = max(p['by_stage'], key=lambda s: (p['by_stage'][s], -STAGE_ORDER.index(s)))
-        future = [y for y in p['y'] if stage != 'Operating']
+        future = p['y']
         out.append([p['id'], p['n'], p['c'], iso.get(p['c'], ''), p['la'], p['lo'], p['k'], stage, round(p['mw']),
-                    (max(future) if future else min(p['y']) if p['y'] else None), str(p['own'])[:160], p['url'], p['u']])
+                    (max(future) if future else None), str(p['own'])[:160], p['url'], p['u'],
+                    [match[0][0], match[0][1], match[1]] if match else None, None])
     out.sort(key=lambda r: -r[8])
     doc = {'schema': 'investedia.energy.v1', 'credit': CREDIT, 'licence': 'CC BY 4.0',
            'source_url': 'https://globalenergymonitor.org/projects/global-integrated-power-tracker/',
-           'min_mw': MIN_MW, 'fields': ['id', 'name', 'country', 'cc', 'lat', 'lon', 'kind', 'stage', 'mw', 'year', 'owner', 'gem_wiki', 'units'],
-           'counts': {'plants': len(out), 'by_kind': Counter(r[6] for r in out), 'by_stage': Counter(r[7] for r in out), 'skipped': skipped},
+           'min_mw': MIN_MW, 'fields': ['id', 'name', 'country', 'cc', 'lat', 'lon', 'kind', 'stage', 'mw', 'year', 'owner', 'gem_wiki', 'units', 'listed_owner [ticker, name, stake]', 'satellite [date, tile_col, tile_row]'],
+           'big_mw': BIG_MW,
+           'counts': {'plants': len(out), 'with_listed_owner': sum(1 for r in out if r[13]), 'by_kind': Counter(r[6] for r in out), 'by_stage': Counter(r[7] for r in out), 'skipped': skipped},
            'plants': out}
     (ROOT / 'assets/globe/projects-energy.json').write_text(json.dumps(doc, ensure_ascii=False, separators=(',', ':')) + '\n')
     return doc['counts']

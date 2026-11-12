@@ -1,6 +1,6 @@
 // Investedia app: offline support and instant repeat visits.
 // Pages and market data: network first, saved copy when offline. Code, images, fonts: saved copy first, refreshed in the background.
-const VERSION = '398bb80b15', CACHE = 'inv-' + VERSION;
+const VERSION = 'a729adc8f1', CACHE = 'inv-' + VERSION;
 // Clean URLs: the host now redirects /page.html to /page (308). A redirected response must never be cached or served for a
 // navigation (Safari refuses it: "Response served by service worker has redirections"), so only final URLs are listed here.
 const CORE = ['/', '/dashboard', '/markets', '/watchlist', 'assets/app.css', 'assets/ui.js', 'assets/mock.js', 'assets/quotes.js', 'assets/profiles.js', 'assets/favicon.svg', 'assets/app/icon-192.png'];

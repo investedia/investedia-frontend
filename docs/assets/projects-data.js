@@ -28,13 +28,15 @@
  }
  // Energy: every power project sits under the sector "Energy" with a specific kind (solar, wind, ...).
  const WD_KIND={'Hydro energy':'Hydropower','Wind energy':'Wind','Solar energy':'Solar','Nuclear energy':'Nuclear'};
- function withSector(list){for(const p of list){const k=WD_KIND[p.type];p.sector=k?'Energy':p.type;if(k&&!p.energy)p.energy=k;}return list;}
+ // Owner rule (12 Nov 2026): energy shows only the investable pipeline, so older energy rows without a planned or construction stage are hidden.
+ function withSector(list){return list.filter(p=>{const k=WD_KIND[p.type];p.sector=k?'Energy':p.type;if(k&&!p.energy)p.energy=k;return !k||p.featured||/proposed|approved|construction|planned/i.test(p.stage||'');});}
  // GEM Global Integrated Power Tracker plants (CC BY 4.0), converted by tools/gem_power.py. Real rows only.
  function energy(doc){if(doc?.schema!=='investedia.energy.v1')return [];const out=[];
-  for(const r of doc.plants||[]){const [id,name,country,cc,lat,lon,kind,stage,mw,year,owner,wiki,units]=r;
+  for(const r of doc.plants||[]){const [id,name,country,cc,lat,lon,kind,stage,mw,year,owner,wiki,units,listed,sat]=r;
    const p={id,name,country,location:country,lat,lon,type:{Solar:'Solar energy',Wind:'Wind energy',Hydropower:'Hydro energy',Nuclear:'Nuclear energy',Coal:'Coal power','Oil & gas':'Oil & gas power',Bioenergy:'Bioenergy',Geothermal:'Geothermal energy'}[kind]||kind,sector:'Energy',energy:kind,stage,start_year:null,status_year:year||null,milestones:[],figures:[],
     sources:[{name:doc.credit,url:url(wiki)||doc.source_url,licence:doc.licence,checked_at:'2026-11-12'}],wiki:url(wiki),featured:false,verified:true,cc:cc||null,
-    capacity:Number.isFinite(mw)?{unit:'megawatt',value:mw}:null,cost:null,owners:owner?[owner]:[],aliases:[],units,gem:true};
+    capacity:Number.isFinite(mw)?{unit:'megawatt',value:mw}:null,cost:null,owners:owner?[owner]:[],aliases:[],units,gem:true,listed:listed?{ticker:listed[0],name:listed[1],stake:listed[2]||null}:null,
+    satellite:sat&&doc.satellite?{date:sat[0],url:doc.satellite.url.replace('{d}',sat[0]).replace('{r}',sat[2]).replace('{c}',sat[1]),x:((lon+180)/doc.satellite.tile_deg)-sat[1],y:((90-lat)/doc.satellite.tile_deg)-sat[2],credit:doc.satellite.credit}:null};
    if(valid(p))out.push(p);}
   return out;}
  let pending;
