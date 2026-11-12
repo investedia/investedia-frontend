@@ -83,5 +83,43 @@ def detail_check(threshold=8.0):
     print('kept', doc['counts']['with_satellite'])
 
 
+
+
+def before_pass(threshold=None):
+    """Owner request (12 Nov 2026): a 2020 <-> now comparison for plants being built.
+    For Under construction / Pre-construction plants with a satellite view, find a clear Oct-Nov image on the
+    same tile (2020, else 2021, else 2022) and measure how much the ~6 km box around the plant changed.
+    Field 15 = [before_date, change_score]; the site shows the slider only when score >= doc.satellite.min_change."""
+    from PIL import ImageChops, ImageStat
+    p = ROOT / 'assets/globe/projects-energy.json'
+    doc = json.loads(p.read_text()); U = doc['satellite']['url']
+    def grab(d, c, r):
+        with urllib.request.urlopen(U.replace('{d}', d).replace('{r}', str(r)).replace('{c}', str(c)), timeout=30) as resp:
+            return Image.open(io.BytesIO(resp.read())).convert('L')
+    def work(r):
+        s = r[14]; c, row = s[1], s[2]
+        for y in (2020, 2021, 2022):
+            _, d = search((c, row), date(y, 11, 30), 61)
+            if d: break
+        else: return r, None
+        try: a, b = grab(d, c, row), grab(s[0], c, row)
+        except Exception: return r, None
+        x = ((r[5] + 180) / DEG - c) * 512; yy = ((90 - r[4]) / DEG - row) * 512
+        box = (max(0, x - 96), max(0, yy - 96), min(512, x + 96), min(512, yy + 96))
+        diff = ImageStat.Stat(ImageChops.difference(a.crop(box), b.crop(box))).mean[0]
+        return r, [d, round(diff, 1)]
+    todo = [r for r in doc['plants'] if r[14] and r[7] in ('Under construction', 'Pre-construction')]
+    for r in doc['plants']:
+        while len(r) < 16: r.append(None)
+    print(len(todo), 'plants', flush=True)
+    with ThreadPoolExecutor(24) as ex:
+        for n, (r, v) in enumerate(ex.map(work, todo)):
+            r[15] = v
+            if n % 500 == 0: print(n, flush=True)
+    if threshold is not None: doc['satellite']['min_change'] = threshold
+    p.write_text(json.dumps(doc, ensure_ascii=False, separators=(',', ':')) + '\n')
+    print('done', sum(1 for r in doc['plants'] if r[15]))
+
+
 if __name__ == '__main__':
-    detail_check() if sys.argv[1:2] == ['--detail'] else main()
+    {'--detail': detail_check, '--before': before_pass}.get(sys.argv[1] if len(sys.argv) > 1 else '', main)()
