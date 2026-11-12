@@ -66,6 +66,7 @@ HEAD = """<!doctype html>
 <script src="assets/news-menu.js?v={ver}"></script>
 <script src="assets/locale.js?v={ver}"></script>
 <script src="assets/ui.js?v={ver}"></script>
+<script src="assets/push-alerts.js?v={ver}" defer></script>
 <script src="assets/news-alerts.js?v={ver}" defer></script>
 {extra}<main class="wrap" id="main-content" tabindex="-1">
 """
