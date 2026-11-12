@@ -243,6 +243,12 @@ const placeGlobe = () => { syncHomeMode();hnGlobe.src = 'assets/globe/news.html?
 addEventListener('resize',()=>{syncHomeMode();sendGlobeMode();});
 
 (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(() => requestAnimationFrame(placeGlobe));
+// Recover when the globe does not come up (slow load, failed frame, or a page restored from history): retry once after 8 s, and redraw on a restored page.
+let hnGlobeRetried = false;
+const hnGlobeWatch = () => { if (!hnGlobe.classList.contains('ready') && !hnGlobeRetried) { hnGlobeRetried = true; placeGlobe(); } };
+setTimeout(hnGlobeWatch, 8000);
+hnGlobe.addEventListener('error', () => setTimeout(hnGlobeWatch, 500));
+addEventListener('pageshow', e => { if (e.persisted) { hnGlobeRetried = false; placeGlobe(); } });
 // phone: the globe glides up a little faster than the page as you scroll, then the news follows
 // while the globe is pinched the page behind stays exactly where it is (the globe iframe reports the gesture)
 let holdY = null;
