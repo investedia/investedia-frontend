@@ -26,7 +26,19 @@
   }
   return [...byId.values()];
  }
+ // Energy: every power project sits under the sector "Energy" with a specific kind (solar, wind, ...).
+ const WD_KIND={'Hydro energy':'Hydropower','Wind energy':'Wind','Solar energy':'Solar','Nuclear energy':'Nuclear'};
+ function withSector(list){for(const p of list){const k=WD_KIND[p.type];p.sector=k?'Energy':p.type;if(k&&!p.energy)p.energy=k;}return list;}
+ // GEM Global Integrated Power Tracker plants (CC BY 4.0), converted by tools/gem_power.py. Real rows only.
+ function energy(doc){if(doc?.schema!=='investedia.energy.v1')return [];const out=[];
+  for(const r of doc.plants||[]){const [id,name,country,cc,lat,lon,kind,stage,mw,year,owner,wiki,units]=r;
+   const p={id,name,country,location:country,lat,lon,type:{Solar:'Solar energy',Wind:'Wind energy',Hydropower:'Hydro energy',Nuclear:'Nuclear energy',Coal:'Coal power','Oil & gas':'Oil & gas power',Bioenergy:'Bioenergy',Geothermal:'Geothermal energy'}[kind]||kind,sector:'Energy',energy:kind,stage,start_year:null,status_year:year||null,milestones:[],figures:[],
+    sources:[{name:doc.credit,url:url(wiki)||doc.source_url,licence:doc.licence,checked_at:'2026-11-12'}],wiki:url(wiki),featured:false,verified:true,cc:cc||null,
+    capacity:Number.isFinite(mw)?{unit:'megawatt',value:mw}:null,cost:null,owners:owner?[owner]:[],aliases:[],units,gem:true};
+   if(valid(p))out.push(p);}
+  return out;}
  let pending;
- async function load(){if(!pending)pending=Promise.all(['projects.json','projects-featured.json'].map(name=>fetch(new URL(name,base),{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Projects unavailable');return r.json();}))).then(([raw,featured])=>({projects:merge(raw,featured),curation:featured.curation_status,curation_target:featured.curation_target})).catch(e=>{pending=null;throw e;});return pending;}
- window.InvProjectsData={load,merge,valid,milestoneStatus};
+ async function load(){if(!pending)pending=Promise.all(['projects.json','projects-featured.json'].map(name=>fetch(new URL(name,base),{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Projects unavailable');return r.json();}))).then(async([raw,featured])=>{const gem=await fetch(new URL('projects-energy.json',base),{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null);
+  return {projects:[...withSector(merge(raw,featured)),...energy(gem)],curation:featured.curation_status,curation_target:featured.curation_target,energy_credit:gem?.credit||null};}).catch(e=>{pending=null;throw e;});return pending;}
+ window.InvProjectsData={load,merge,valid,milestoneStatus,energy,withSector};
 })();
