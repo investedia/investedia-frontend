@@ -149,21 +149,39 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
 /* Homepage starfield: stars sit behind the globe only (left part of the hero) */
 #hnStars{position:absolute;left:0;top:0;width:52%;height:100%;z-index:0;pointer-events:none}
 @media (max-width:900px){#hnStars{display:none}}
-/* Phone homepage, owner design 12 Nov 2026: text centred in the owner's order (title, search, popular searches, figures).
-   Only the layout of the text changes: globe, chips, ticker and buttons keep their original size and behaviour,
-   and the hero still fits one screen (the globe places itself in the free space below the text). */
+/* Phone homepage, owner reference 12 Nov 2026: centred hero (title, search, popular searches, figures), real globe below. */
 @media (max-width:600px){
-  .hn-hero .hn-copy .hn{display:flex;flex-direction:column;align-items:center;text-align:center}
+  section.hn-hero{display:flex!important;flex-direction:column!important;height:auto!important;min-height:0!important;padding-bottom:8px}
+  .hn-hero .hn-copy{order:1;position:relative!important;inset:auto!important;height:auto!important;z-index:2}
+  .hn-hero .hn-copy .hn{display:flex;flex-direction:column;align-items:center;text-align:center;padding:28px 20px 0!important}
   .hn-live{margin:0 auto}
-  .hn-kicker{text-align:center}
-  .hn-title{order:1;text-align:center}
+  .hn-kicker{margin:18px 0 0!important;letter-spacing:.14em!important}
+  .hn-title{order:1;margin:10px 0 0!important;font-size:clamp(32px,10vw,42px)!important;line-height:1.04!important;letter-spacing:-.035em!important;text-align:center;max-width:none!important}
   .hn-title b{display:block}
-  .hn-search{order:2;width:100%;position:relative;margin-top:-8px}
-  .hn-search::after{content:"Popular searches";position:absolute;left:0;right:0;top:calc(100% + 7px);text-align:center;font-size:12.5px;color:var(--fg-3);pointer-events:none}
-  #hnPop{order:3;align-self:stretch;margin-top:28px}
-  #hnPop .hn-pop-l{display:none}
-  .hn-facts{order:4;display:grid!important;grid-template-columns:repeat(3,1fr);width:100%;margin:4px 0 0!important}
+  .hn-search{order:2;margin:26px 0 0!important;width:100%!important;height:54px!important;border-radius:27px!important;background:#16161a!important;border:1px solid #26262c!important;justify-content:flex-start;text-align:left;white-space:nowrap;overflow:hidden}
+  .hn-search svg{flex:none}
+  .hn-search span,.hn-search>*:not(svg){white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+  /* Popular searches: label on its own line, all chips on one line (scrolls sideways only if a very narrow phone cannot fit them) */
+  #hnPop.hn-pop{order:3;display:grid!important;grid-auto-flow:column;grid-auto-columns:max-content;justify-content:safe center;gap:4px!important;margin:18px -12px 0!important;padding:0 8px 2px!important;width:calc(100% + 24px);max-width:none!important;overflow-x:auto;scroll-snap-type:none!important;-webkit-mask:none!important;mask:none!important}
+  #hnPop .hn-pop-l{grid-row:1;grid-column:1 / span 5;justify-self:stretch;contain:inline-size;text-align:center!important;display:block!important;position:static!important;width:auto!important;white-space:nowrap;height:auto!important;clip:auto!important;margin:0 0 8px!important;font-size:13px;color:var(--fg-2);text-align:center}
+  #hnPop.hn-pop a{grid-row:2;height:30px!important;padding:0 7px 0 3px!important;gap:4px!important;border-radius:15px!important;font-size:11.5px!important;letter-spacing:-.01em;white-space:nowrap;background:#141417!important;border:1px solid #26262c!important}
+  #hnPop.hn-pop a img,#hnPop.hn-pop a svg,#hnPop.hn-pop a>span:first-child{width:18px!important;height:18px!important;flex:none}
+  #hnPop.hn-pop a:nth-of-type(n+6){display:none!important}
+  .hn-facts{order:4;display:grid!important;grid-template-columns:repeat(3,1fr);width:100%;gap:0!important;margin:30px 0 0!important}
   .hn-facts>div{text-align:center}
+  .hn-facts b,.hn-facts strong{display:block;font-size:30px!important;font-weight:650!important;letter-spacing:-.03em;line-height:1.1}
+  .hn-facts span,.hn-facts small{font-size:14px!important;color:var(--fg-2)}
+  #hnGlobe{order:2;position:relative!important;inset:auto!important;width:100%!important;height:560px!important;margin:-150px 0 -40px;z-index:1}
+
+  .hn-ctl{order:3;position:relative!important;inset:auto!important;margin:4px 16px 0!important;width:auto!important;display:grid!important;gap:12px;justify-items:center}
+  .hn-ctl .hn-tick{position:static!important;width:100%!important}
+  .hn-ctl .hn-modes,.hn-ctl .hn-open{position:static!important}
+}
+@media (max-width:400px){
+  .hn-search{font-size:14px!important;padding-left:16px!important}
+  #hnPop.hn-pop{gap:3px!important;margin:18px -16px 0!important;padding:0 6px 2px!important;width:calc(100% + 32px)}
+  #hnPop.hn-pop a{padding:0 6px 0 3px!important;gap:3px!important;font-size:11px!important;height:28px!important}
+  #hnPop.hn-pop a img,#hnPop.hn-pop a svg,#hnPop.hn-pop a>span:first-child{width:16px!important;height:16px!important}
 }
 </style>
 <link rel="stylesheet" href="assets/home-news.css"><link rel="stylesheet" href="assets/since-news.css">
