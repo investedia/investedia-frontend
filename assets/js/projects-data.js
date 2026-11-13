@@ -62,9 +62,10 @@
    if(valid(p))out.push(p);}
   return out;}
  let pending;
- async function load(){if(!pending)pending=Promise.all(['projects.json','projects-featured.json'].map(name=>fetch(new URL(name,base),{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Projects unavailable');return r.json();}))).then(async([raw,featured])=>{const gem=await fetch(new URL('projects-energy.json',base),{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null);
+ async function load(){if(!pending)pending=Promise.resolve().then(async()=>{
   const inv=await fetch(new URL('projects-invest.json',base),{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null);
-  if(inv?.schema==='investedia.projects.invest.v1')return {projects:invest(inv),verified:true,curation:'Verified investment links only',curation_target:null,energy_credit:(inv.credit||[]).join(' · ')};
-  return {projects:[...withSector(merge(raw,featured)),...energy(gem)],curation:featured.curation_status,curation_target:featured.curation_target,energy_credit:gem?.credit||null};}).catch(e=>{pending=null;throw e;});return pending;}
+  // Owner decision 13 Nov 2026: only verified investment links are shown. Unverified Wikidata/GEM records are never a fallback.
+  if(inv?.schema!=='investedia.projects.invest.v1')throw Error('Verified projects unavailable');
+  return {projects:invest(inv),verified:true,curation:'Verified investment links only',curation_target:null,energy_credit:(inv.credit||[]).join(' · ')};}).catch(e=>{pending=null;throw e;});return pending;}
  window.InvProjectsData={load,merge,valid,milestoneStatus,energy,withSector,invest};
 })();
