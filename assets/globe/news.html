@@ -2491,7 +2491,7 @@ function pjInvest(p){const I=p.invest;
  const other=I.other_owners.length?`<p class="pj-note">${p.id.startsWith('eia:')?'Owner of record (EIA)':'Other owners (not listed or not covered)'}: ${I.other_owners.map(esc).join(', ')}</p>`:'';
  const cost=p.cost?`<div class="pj-cost"><small>Construction cost (company estimate)</small><b>${esc(p.cost.currency)} ${(p.cost.value/1e9>=1?(p.cost.value/1e9).toLocaleString('en-US',{maximumFractionDigits:2})+' billion':(p.cost.value/1e6).toLocaleString('en-US')+' million')}</b>${p.cost.quote?`<q>${esc(p.cost.quote)}</q>`:''}</div>`:'';
  const note=I.stage_note?`<p class="pj-note">${esc(I.stage_note)}</p>`:'';
- const loc=I.precision==='approximate'?'<p class="pj-note">Location is approximate (town level), so no satellite image is shown.</p>':'';
+ const loc=I.precision==='approximate'?'<p class="pj-note">Location is approximate (town level), so no satellite image is shown.</p>':I.precision==='site'?'<p class="pj-note">Site confirmed on satellite imagery; the coordinate is not from an official document.</p>':'';
  return `<h3>Investment exposure</h3>${rows}${other}${cost}${note}${loc}`;}
 function pjFacts(p){
  const figures=(p.figures||[]).filter(x=>x.source?.url);
