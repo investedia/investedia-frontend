@@ -2439,6 +2439,7 @@ addEventListener('resize',()=>renderAct());
 
 // Projects dashboard, built on Claude's supplied layout. Data lives in shared JSON.
 const PROJ_START=new URLSearchParams(location.search).get('mode')==='projects';
+const PROJ_ALL_LINES=new URLSearchParams(location.search).get('lines')!=='off';  // owner 13 Nov 2026: every verified link always drawn, lines only
 const PROJ={on:false,sel:'line',tab:'overview',list:[],vis:[],hits:[],f:{c:'',t:'',e:'',s:'',w:false},sort:'relevance',n:30,phoneDetail:false,collapsed:false};
 const PW=new Set((()=>{try{return JSON.parse(localStorage.getItem('inv-proj-watch')||'[]')}catch{return[]}})());
 const pjArrow='<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>';
@@ -2490,7 +2491,7 @@ function pjInvest(p){const I=p.invest;
  const other=I.other_owners.length?`<p class="pj-note">${p.id.startsWith('eia:')?'Owner of record (EIA)':'Other owners (not listed or not covered)'}: ${I.other_owners.map(esc).join(', ')}</p>`:'';
  const cost=p.cost?`<div class="pj-cost"><small>Construction cost (company estimate)</small><b>${esc(p.cost.currency)} ${(p.cost.value/1e9>=1?(p.cost.value/1e9).toLocaleString('en-US',{maximumFractionDigits:2})+' billion':(p.cost.value/1e6).toLocaleString('en-US')+' million')}</b>${p.cost.quote?`<q>${esc(p.cost.quote)}</q>`:''}</div>`:'';
  const note=I.stage_note?`<p class="pj-note">${esc(I.stage_note)}</p>`:'';
- const loc=I.precision==='approximate'?'<p class="pj-note">Location is approximate (town level), so no satellite image is shown.</p>':'';
+ const loc=I.precision==='approximate'?'<p class="pj-note">Location is approximate (town level), so no satellite image is shown.</p>':I.precision==='site'?'<p class="pj-note">Site confirmed on satellite imagery; the coordinate is not from an official document.</p>':'';
  return `<h3>Investment exposure</h3>${rows}${other}${cost}${note}${loc}`;}
 function pjFacts(p){
  const figures=(p.figures||[]).filter(x=>x.source?.url);
@@ -2561,6 +2562,10 @@ function drawProj(){
   if(!group&&(['kx','noor','line'].includes(p.id)||selected))co.push({p,x,y,selected});}
  for(const {p,x,y,selected} of co){{const title=p.id==='kx'?"King's Cross":p.id==='noor'?'Noor Ouarzazate':p.name;ctx.font='600 11.5px Inter,sans-serif';let w=Math.min(230,Math.max(ctx.measureText(title).width,ctx.measureText(p.country).width)+22),h=43,l=Math.min((phone()?W:globeBox.right+20)-w-8,Math.max(8,x+12)),t=Math.min(H-100,Math.max(65,y-22));for(let k=0;k<6&&boxes.some(b=>l<b.l+b.w+4&&l+w+4>b.l&&t<b.t+b.h+4&&t+h+4>b.t);k++)t+=h+6;boxes.push({l,t,w,h});ctx.beginPath();ctx.roundRect(l,t,w,h,10);ctx.fillStyle=DAY?'rgba(255,255,255,.96)':'rgba(12,12,14,.96)';ctx.strokeStyle=selected?'#ff7a1a':DAY?'#d5d5d9':'#2a2a2f';ctx.fill();ctx.stroke();ctx.textAlign='left';ctx.textBaseline='alphabetic';ctx.fillStyle=DAY?'#1d1d1f':'#eee';ctx.fillText(title.length>30?title.slice(0,29)+'…':title,l+10,t+17);ctx.font='10px Inter,sans-serif';ctx.fillStyle=DAY?'#52525b':'#a1a1aa';ctx.fillText(p.country,l+10,t+33);PROJ.hits.push({x:l+w/2,y:t+h/2,id:p.id,rect:{l,t,w,h}});}}
  const selP=PROJ.list?.find(x=>x.id===PROJ.sel);
+ // Preview (?lines=all): every verified company link drawn at once; the selected project's links stay brighter.
+ if(PROJ_ALL_LINES){for(const p of PROJ.vis||[]){if(!p.invest||p.id===PROJ.sel)continue;const a={phi:p.lat*rad,lam:p.lon*rad};
+  for(const e of p.invest.exposures){if(!e.hq)continue;const b={phi:e.hq.lat*rad,lam:e.hq.lon*rad};strokeArc(arcPts(a,b,40),'255,122,26',.42,1,false,null);}}
+}
  if(selP?.invest){const a={phi:selP.lat*rad,lam:selP.lon*rad};for(const e of selP.invest.exposures){if(!e.hq)continue;const b={phi:e.hq.lat*rad,lam:e.hq.lon*rad},pts=arcPts(a,b,48);if(!strokeArc(pts,'255,122,26',.9,1.6,true,null))continue;const q=proj(b.phi,b.lam);if(q[2]>0){ctx.beginPath();ctx.arc(q[0],q[1],3.5,0,7);ctx.fillStyle='#fff';ctx.fill();ctx.font='600 11px Inter,sans-serif';const t=e.ticker+' · HQ';const w=ctx.measureText(t).width+14;ctx.fillStyle='rgba(16,16,18,.9)';ctx.fillRect(q[0]+8,q[1]-10,w,20);ctx.fillStyle='#fff';ctx.textBaseline='middle';ctx.fillText(t,q[0]+15,q[1]);}}}
  ctx.textAlign='left';ctx.textBaseline='alphabetic';
 }
