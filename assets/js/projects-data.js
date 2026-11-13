@@ -57,6 +57,8 @@
     cost:r.cost&&Number.isFinite(r.cost.amount)?{value:r.cost.amount,currency:r.cost.currency,quote:r.cost.quote,source:url(r.cost.source)}:null,
     owners:[],aliases:[],invest:{exposures:ex,other_owners:(r.other_owners||[]).map(o=>o.name).filter(Boolean),stage_note:r.stage_note||null,precision:r.precision||null},
     listed:{ticker:ex[0].ticker,name:ex[0].name,stake:ex[0].stake!=null?ex[0].stake+'%':null}};
+   const im=r.images,img=f=>new URL('../img/projects/sat/'+encodeURIComponent(f),base).href;
+   if(r.precision==='exact'&&im?.now?.file)p.satellite={url:img(im.now.file),date:im.now.date,before:im.before?.file?{url:img(im.before.file),date:im.before.date}:null,x:.5,y:.5,s2:true,km:im.now.width_km||3,credit:im.now.credit};
    if(valid(p))out.push(p);}
   return out;}
  let pending;
