@@ -61,11 +61,29 @@
    if((r.precision==='exact'||r.precision==='site')&&im?.now?.file)p.satellite={url:img(im.now.file),date:im.now.date,before:im.before?.file?{url:img(im.before.file),date:im.before.date}:null,x:.5,y:.5,s2:true,km:im.now.width_km||3,credit:im.now.credit};
    if(valid(p))out.push(p);}
   return out;}
+ // Data Centers (owner design approval 13 Nov 2026): development phases from company filings, exported by the backend
+ // only after the record-level reuse gate passes (tools/datacentres/export_frontend.py). Roles never imply ownership.
+ function datacenters(doc){if(doc?.schema!=='investedia.projects.datacenters.v1')return [];const out=[];
+  for(const r of doc.projects||[]){const e=r.exposure||{};if(!e.ticker||!url(r.sources?.[0]?.url))continue;
+   const p={id:r.id,name:r.name,country:r.city?`${r.city}, ${r.cc||''}`.replace(/, $/,''):r.cc,location:r.city,lat:r.lat,lon:r.lon,type:'Data center',sector:'Data centers',stage:r.stage||null,
+    start_year:null,status_year:null,milestones:[],figures:[],sources:(r.sources||[]).filter(x=>url(x.url)),wiki:null,featured:false,verified:true,cc:r.cc||null,capacity:null,cost:null,owners:[],aliases:[],
+    invest:{dc:true,summary:r.summary||'',stage_label:r.stage_label||'',as_of:r.as_of||null,capacity:r.capacity||{},capex_usd_m:r.capex_usd_m??null,target_open:r.target_open||null,
+     precision:r.precision==='exact'?'exact':'approximate',location_label:r.location_label||'',location_credit:r.location_credit||'',location_source:url(r.location_source),
+     exposures:[{ticker:e.ticker,exchange:e.exchange||null,name:e.name,legal_name:null,sym:null,exchange_short:e.exchange||null,category:'F',category_label:'Company filing',direct:false,role:e.role||'Developer',ownership:e.ownership||'Not established',path:[],stake:null,stake_note:'Ownership not established',
+      evidence:(r.sources||[]).filter(x=>url(x.url)).slice(0,1).map(x=>({url:x.url,publisher:x.name,date:x.checked_at||null,proves:r.stage_label||'',quote:null}))}],other_owners:[],stage_note:null,location_note:null},
+    listed:{ticker:e.ticker,name:e.name,sym:null,stake:null}};
+   const im=r.images,img=f=>new URL('../img/projects/sat/'+encodeURIComponent(f),base).href;
+   if(r.precision==='exact'&&im?.now?.file)p.satellite={url:img(im.now.file),date:im.now.date,before:im.before?.file?{url:img(im.before.file),date:im.before.date}:null,x:.5,y:.5,s2:true,km:im.now.width_km||1.5,credit:im.now.credit};
+   if(valid(p))out.push(p);}
+  return out;}
  let pending;
  async function load(){if(!pending)pending=Promise.resolve().then(async()=>{
   const inv=await fetch(new URL('projects-invest.json',base),{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null);
   // Owner decision 13 Nov 2026: only verified investment links are shown. Unverified Wikidata/GEM records are never a fallback.
   if(inv?.schema!=='investedia.projects.invest.v1')throw Error('Verified projects unavailable');
   return {projects:invest(inv),verified:true,curation:'Verified investment links only',curation_target:null,energy_credit:(inv.credit||[]).join(' · ')};}).catch(e=>{pending=null;throw e;});return pending;}
- window.InvProjectsData={load,merge,valid,milestoneStatus,energy,withSector,invest};
+ // Optional sector file: loaded separately so Energy never waits on it or fails because of it.
+ let dcPending;
+ function loadDatacenters(){if(!dcPending)dcPending=fetch(new URL('projects-datacenters.json',base),{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(datacenters).catch(()=>{dcPending=null;return [];});return dcPending;}
+ window.InvProjectsData={load,merge,valid,milestoneStatus,energy,withSector,invest,datacenters,loadDatacenters};
 })();

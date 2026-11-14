@@ -20,15 +20,17 @@ HEAD = """<!doctype html>
 <meta name="theme-color" content="#0A0A0B">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Investedia">
-<meta property="og:url" content="https://investedia.com/{page}">
-<meta property="og:image" content="https://investedia.com/assets/og-default.png">
+<meta property="og:url" content="https://www.investedia.com/{page}">
+<link rel="canonical" href="https://www.investedia.com/{page}">
+<meta property="og:image" content="https://www.investedia.com/assets/og-default.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Investedia: invest with clarity, see the world move">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{desc}">
-<meta name="twitter:image" content="https://investedia.com/assets/og-default.png">
+<meta name="twitter:image" content="https://www.investedia.com/assets/og-default.png">
+<script type="application/ld+json">{{"@context":"https://schema.org","@graph":[{{"@type":"Organization","@id":"https://www.investedia.com/#org","name":"Investedia","url":"https://www.investedia.com/","logo":"https://www.investedia.com/assets/app/icon-512.png","sameAs":["https://www.linkedin.com/company/investedia/","https://x.com/investedia","https://www.youtube.com/@investedia","https://www.instagram.com/investedia/"]}},{{"@type":"WebSite","@id":"https://www.investedia.com/#site","name":"Investedia","alternateName":"Investedia.com","url":"https://www.investedia.com/","publisher":{{"@id":"https://www.investedia.com/#org"}}}}]}}</script>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/app.css?v={ver}">
 <link rel="stylesheet" href="assets/skin.css?v={ver}">
@@ -127,7 +129,7 @@ def build(release=False, publish=False):
             date = legal_check.html.escape(str(values['last_review_date']), quote=True)
             body = re.sub(r'<time datetime="2026-10-22">22 October 2026</time>', '<time datetime="'+date+'">'+date+'</time>', body)
         extra = "".join(f'<script src="{s}?v={ver}"></script>\n' for s in meta.get("scripts", []))
-        html = HEAD.format(title=meta["title"], desc=meta["desc"], key=meta["key"], extra=extra, ver=ver, page=("" if p.name == "index.html" else p.name)) + body.rstrip() + "\n" + TAIL
+        html = HEAD.format(title=meta["title"], desc=meta["desc"], key=meta["key"], extra=extra, ver=ver, page=("" if p.name == "index.html" else p.name[:-5])) + body.rstrip() + "\n" + TAIL
         if meta.get("redirect"):
             target = meta["redirect"]
             if not re.fullmatch(r"[a-z0-9-]+\.html", target) or target == p.name:
@@ -135,7 +137,7 @@ def build(release=False, publish=False):
             html = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
                     '<meta name="viewport" content="width=device-width,initial-scale=1">'
                     '<meta name="robots" content="noindex"><title>Page moved — Investedia</title>'
-                    f'<link rel="canonical" href="https://investedia.com/{target}">'
+                    f'<link rel="canonical" href="https://www.investedia.com/{target[:-5]}">'
                     f'<meta http-equiv="refresh" content="0;url={target}"></head><body><main>'
                     f'<p>This page has moved. <a href="{target}">Continue to {"Home" if target == "index.html" else "Markets"}</a>.</p>'
                     f'<script>location.replace({json.dumps(target)})</script></main></body></html>')
@@ -159,7 +161,7 @@ def write_companies():
     src = ROOT / "data" / "companies.json"
     if not src.exists() or not (ROOT / "company.html").exists(): return
     out = ROOT / "companies"; out.mkdir(exist_ok=True)
-    base = lambda h, url: h.replace("<head>", '<head>\n<base href="/">', 1).replace('<meta property="og:url" content="https://investedia.com/company.html">', f'<meta property="og:url" content="https://investedia.com/{url}">').replace("</title>", f'</title>\n<link rel="canonical" href="https://investedia.com/{url}">', 1)
+    base = lambda h, url: h.replace("<head>", '<head>\n<base href="/">', 1).replace('<meta property="og:url" content="https://www.investedia.com/company">', f'<meta property="og:url" content="https://www.investedia.com/{url}">').replace('<link rel="canonical" href="https://www.investedia.com/company">', f'<link rel="canonical" href="https://www.investedia.com/{url}">').replace('<link rel="canonical" href="https://www.investedia.com/companies">', f'<link rel="canonical" href="https://www.investedia.com/{url}">')
     (out / "index.html").write_text(base((ROOT / "companies.html").read_text(), "companies"))
     page, keep = (ROOT / "company.html").read_text(), {"index.html"}
     for c in json.loads(src.read_text())["companies"]:
