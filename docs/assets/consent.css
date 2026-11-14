@@ -6,3 +6,21 @@
 .consent-card :focus-visible{outline:3px solid #FF7A1A;outline-offset:3px}.consent-card summary{min-height:44px;display:flex;align-items:center}
 
 @media(pointer:coarse){.consent-card a{display:inline-flex;align-items:center;min-height:44px}}
+
+/* Projects page (13-14 Nov 2026, Phase 5C): the card sits under the top bar, compact, so it never covers the sector tabs,
+   project list, detail panel or stats. Both choices stay equal-sized and "What's included" stays one tap away. */
+html.proj-mode .consent-card{top:calc(64px + env(safe-area-inset-top));bottom:auto;left:50%;right:auto;transform:translateX(-50%);width:min(560px,calc(100vw - 24px));max-height:calc(100dvh - 180px);padding:14px 16px 12px;border-radius:16px}
+html.proj-mode .consent-card h2{font-size:15px;margin:0 0 4px}
+html.proj-mode .consent-card p{font-size:13px;line-height:1.45;margin:0 0 2px}
+html.proj-mode .consent-card .consent-summary{display:block}
+html.proj-mode .consent-card .consent-summary>a,html.proj-mode .consent-card summary{font-size:12.5px;min-height:36px}
+html.proj-mode .consent-card details{margin-top:0}
+html.proj-mode .consent-card .consent-hint{display:none}
+html.proj-mode .consent-card details[open]~.consent-hint{display:block}
+html.proj-mode .consent-actions{margin-top:8px;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+html.proj-mode .consent-actions button{min-height:44px;padding:8px 10px}
+@media(min-width:761px){html.proj-mode .consent-card{top:76px}}
+/* While the card is open, panels that would sit under it start just below it (phone list sheet, tablet side panels). */
+@media(max-width:760px){html.proj-mode:not(.proj-collapsed):has(#inv-consent-panel:not([hidden])) .pjl{top:calc(76px + var(--consent-h,0px))}}
+@media(min-width:761px) and (max-width:1179px){html.proj-mode:has(#inv-consent-panel:not([hidden])) :is(.pjl,.pj){top:calc(88px + var(--consent-h,0px))}}
+@media(max-width:760px){html.proj-mode .consent-card{padding:12px 14px 10px}html.proj-mode .consent-card h2{font-size:14px;margin-bottom:2px}html.proj-mode .consent-card p{font-size:12.5px;line-height:1.4}html.proj-mode .consent-card .consent-summary>a{display:inline-flex;min-height:36px;margin-right:14px}html.proj-mode .consent-card details:not([open]){display:inline-block;vertical-align:top}html.proj-mode .consent-card .consent-actions{margin-top:6px}}

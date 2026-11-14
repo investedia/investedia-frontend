@@ -50,6 +50,8 @@
       if (action === 'accept' || action === 'essential') save({preferences:action==='accept',images:action==='accept',analytics:action==='accept',live:action==='accept'});
     });
     panel.addEventListener('keydown', e => { if (e.key === 'Escape') { if (choice) { panel.hidden=true; returnFocus?.focus(); } else panel.querySelector('#consent-options').open=false; } });
+    // Exposes the open card's height (--consent-h) so pages can keep essential controls clear of it (Projects, 14 Nov 2026).
+    { const syncH = () => document.documentElement.style.setProperty('--consent-h', panel.hidden ? '0px' : panel.offsetHeight + 'px'); if ('ResizeObserver' in window) new ResizeObserver(syncH).observe(panel); new MutationObserver(syncH).observe(panel, { attributes: true, attributeFilter: ['hidden'] }); }
     if (!choice) show(false);
   }
   function show(settings = false) {

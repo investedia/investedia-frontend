@@ -92,15 +92,18 @@
    const ex=r.precision==='exact';
    const p={id:r.id,name:r.name,country:r.city?`${r.city}, ${r.cc||''}`.replace(/, $/,''):r.cc,location:r.city,lat:r.lat,lon:r.lon,type:r.subtype||'Property',sector:'Real estate',stage:r.stage||null,
     start_year:null,status_year:null,milestones:[],figures:[],sources:(r.sources||[]).filter(x=>url(x.url)),wiki:null,featured:false,verified:true,cc:r.cc||null,capacity:null,cost:null,owners:[],aliases:r.aliases||[],
-    invest:{re:true,stage_label:r.stage_label||'',as_of:r.as_of||null,address:r.address||null,figures:r.figures||[],release_status:r.release_status||'research',
+    invest:{re:true,preview:doc.preview===true||r.release_status==='preview_not_approved',hold:r.hold||null,stage_label:r.stage_label||'',as_of:r.as_of||null,address:r.address||null,figures:r.figures||[],release_status:r.release_status||'research',
      precision:ex?'exact':'approximate',point_type:r.point_type||null,location_label:r.location_label||'',location_credit:r.location_credit||'',location_source:url(r.location_source),
      exposures:[{ticker:e.ticker,exchange:e.exchange||null,name:e.name,legal_name:null,sym:null,exchange_short:e.exchange||null,category:'F',category_label:'Company filing',direct:false,role:e.role||'Portfolio holding',scope:e.scope||'',path:[],stake:e.stake??null,stake_note:e.stake!=null?'Company-stated share':'Share not stated',
       evidence:(r.sources||[]).filter(x=>url(x.url)).map(x=>({url:x.url,publisher:x.name,date:x.checked_at||null,proves:'',quote:null}))}],other_owners:[],stage_note:null,location_note:null},
     listed:{ticker:e.ticker,name:e.name,sym:null,stake:e.stake??null}};
-   if(r.photo?.file&&r.photo.source_url)p.photo={file:r.photo.file,source_url:r.photo.source_url,author:r.photo.author,licence:r.photo.licence,date:r.photo.date||null};
+   if(r.photo?.file&&r.photo.source_url)p.photo={file:r.photo.file,source_url:r.photo.source_url,author:r.photo.author,licence:r.photo.licence+(r.photo.year_label?' · '+r.photo.year_label:''),date:r.photo.date||null};
    if(valid(p))out.push(p);}
   return out;}
  let rePending;
- function loadRealestate(){if(!rePending)rePending=fetch(new URL('projects-realestate.json',base),{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(realestate).catch(()=>{rePending=null;return [];});return rePending;}
+ // Release control (owner, 14 Nov 2026): the site loads only the release file (owner-approved records). The research preview
+ // loads only with ?re=preview, and every record in it is labelled "Preview — not approved".
+ const rePreview=typeof location!=='undefined'&&/[?&]re=preview\b/.test(location.search||'');
+ function loadRealestate(){if(!rePending)rePending=fetch(new URL(rePreview?'projects-realestate-preview.json':'projects-realestate.json',base),{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(realestate).catch(()=>{rePending=null;return [];});return rePending;}
  window.InvProjectsData={load,merge,valid,milestoneStatus,energy,withSector,invest,datacenters,loadDatacenters,realestate,loadRealestate};
 })();
