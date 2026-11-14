@@ -160,7 +160,7 @@ function renderWin(w) {
     head.innerHTML = `${ico(m)}<span class="chip">${SECN[m.t]}${m.g ? ' · ' + esc(m.g) : ''}</span><b>${esc(m.n)}</b><small>${esc(m.k === 'Global' ? m.c : m.k + ' · ' + m.c)}</small>`;
     body.innerHTML = `${w.group ? `<button class="back" type="button" data-back>← ${esc(w.group.k)}</button>` : ''}${nt ? `<small style="display:block;margin:6px 4px 0;color:var(--fg-3)">${esc(nt)}</small>` : ''}<div class="px">${val(m)}</div>
       <div class="chg"><span style="color:var(--${dir(m) === 'u' ? 'up' : 'down'})">${chg(m)} today</span><span style="color:var(--fg-3)">${m.t === 'bonds' || !m.w ? '' : pct(m.w) + ' this week'}</span></div>${spark(m)}
-      <a class="cta" href="${m.site ? 'https://investedia.com/asset.html?s=' + encodeURIComponent(m.site) : 'https://investedia.com/markets.html'}" target="_blank" rel="noopener">Jump to chart →</a>`;
+      <a class="cta" href="${m.site ? 'https://www.investedia.com/asset.html?s=' + encodeURIComponent(m.site) : 'https://www.investedia.com/markets.html'}" target="_blank" rel="noopener">Jump to chart →</a>`;
   } else { const g = w.group;
     head.innerHTML = `<span class="ic ic-flag">${flagImg(g.items[0].cc)}</span><span class="chip">${esc(g.r)}</span><b>${esc(g.k)}</b><small>${g.items.length} ${g.items.length === 1 ? 'asset' : 'assets'}${sec === 'all' ? '' : ' · ' + SECN[sec]}</small>`;
     body.innerHTML = '<div class="clist">' + ['stocks', 'fx', 'cmd', 'crypto'].map(t => { const rank = m => m.g === 'Index' ? 2 : m.g === 'Country ETF' ? 1 : 0; const xs = g.items.filter(m => m.t === t).sort((a, b) => (rank(b) - rank(a)) || b.m - a.m || Math.abs(b.d) - Math.abs(a.d)); if (!xs.length) return '';

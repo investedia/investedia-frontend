@@ -20,15 +20,15 @@ HEAD = """<!doctype html>
 <meta name="theme-color" content="#0A0A0B">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Investedia">
-<meta property="og:url" content="https://investedia.com/{page}">
-<meta property="og:image" content="https://investedia.com/assets/og-default.png">
+<meta property="og:url" content="https://www.investedia.com/{page}">
+<meta property="og:image" content="https://www.investedia.com/assets/og-default.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Investedia: invest with clarity, see the world move">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{desc}">
-<meta name="twitter:image" content="https://investedia.com/assets/og-default.png">
+<meta name="twitter:image" content="https://www.investedia.com/assets/og-default.png">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/app.css?v={ver}">
 <link rel="stylesheet" href="assets/skin.css?v={ver}">
@@ -135,7 +135,7 @@ def build(release=False, publish=False):
             html = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
                     '<meta name="viewport" content="width=device-width,initial-scale=1">'
                     '<meta name="robots" content="noindex"><title>Page moved — Investedia</title>'
-                    f'<link rel="canonical" href="https://investedia.com/{target}">'
+                    f'<link rel="canonical" href="https://www.investedia.com/{target}">'
                     f'<meta http-equiv="refresh" content="0;url={target}"></head><body><main>'
                     f'<p>This page has moved. <a href="{target}">Continue to {"Home" if target == "index.html" else "Markets"}</a>.</p>'
                     f'<script>location.replace({json.dumps(target)})</script></main></body></html>')
@@ -159,7 +159,7 @@ def write_companies():
     src = ROOT / "data" / "companies.json"
     if not src.exists() or not (ROOT / "company.html").exists(): return
     out = ROOT / "companies"; out.mkdir(exist_ok=True)
-    base = lambda h, url: h.replace("<head>", '<head>\n<base href="/">', 1).replace('<meta property="og:url" content="https://investedia.com/company.html">', f'<meta property="og:url" content="https://investedia.com/{url}">').replace("</title>", f'</title>\n<link rel="canonical" href="https://investedia.com/{url}">', 1)
+    base = lambda h, url: h.replace("<head>", '<head>\n<base href="/">', 1).replace('<meta property="og:url" content="https://www.investedia.com/company.html">', f'<meta property="og:url" content="https://www.investedia.com/{url}">').replace("</title>", f'</title>\n<link rel="canonical" href="https://www.investedia.com/{url}">', 1)
     (out / "index.html").write_text(base((ROOT / "companies.html").read_text(), "companies"))
     page, keep = (ROOT / "company.html").read_text(), {"index.html"}
     for c in json.loads(src.read_text())["companies"]:
