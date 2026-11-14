@@ -1500,7 +1500,13 @@ function assetPanel(sym) {
     ${peers.length ? `<div class="sec-h">Same industry today</div><div class="list">${peers.map(([p, [, why]]) => `<button class="item" data-asset="${esc(p.s)}"><span></span><span><h4>${esc(p.n)} ${pctPill(p.d)}</h4><span class="meta">${esc(why)}</span></span></button>`).join('')}</div>` : ''}
     <p style="margin-top:18px"><a class="btn" href="../../asset.html?s=${encodeURIComponent(sym)}" style="color:var(--accent)">Open the full ${esc(a.s.replace(/-USD$/, ''))} page →</a></p>`;
 }
-function arcPick(x,y,r=10) { const pr=pillRects.find(q=>x>=q.x&&x<=q.x+q.w&&y>=q.y&&y<=q.y+q.h); if(pr) return pr.edge; return arcHits.find(h=>h.points.some(p=>p[2] && Math.hypot(p[0]-x,p[1]-y)<r)); }
+function arcPick(x,y,r=10) {
+  const pr=pillRects.find(q=>x>=q.x&&x<=q.x+q.w&&y>=q.y&&y<=q.y+q.h); if(pr) return pr.edge;
+  // nearest visible line, not the first one in the list; keep the current line while the pointer stays close (stops flicker between overlapping lines)
+  const dist=h=>{let m=Infinity;for(const p of h.points){if(!p[2])continue;const d=Math.hypot(p[0]-x,p[1]-y);if(d<m)m=d;}return m;};
+  if(arcHover){const cur=arcHits.find(h=>h===arcHover||(h.article&&arcHover.article&&h.article.id===arcHover.article.id&&h.asset===arcHover.asset));if(cur&&dist(cur)<r*1.8)return cur;}
+  let best=null,bd=r;for(const h of arcHits){const d=dist(h);if(d<bd){bd=d;best=h;}}return best;
+}
 function impactTargets(s) { return impactsOf(s).map(i => ({ impact: i, country: impactCountry(i) })).filter(x => x.country); }
 
 // Story chains: a → b → c through "links"
@@ -1965,7 +1971,7 @@ function hoverAt(x, y) {
   cv.style.cursor = !EMBED || onGlobe(x, y) ? 'grab' : 'default';  // full Globe page: hand everywhere; homepage: only over the globe
   const ex = !EMBED && (exPick(x, y) || upPick(x, y)); if (ex) { $('hover').classList.remove('on'); return; }
   const edge=arcPick(x,y); arcHover=edge || null;
-  if(edge){const hv=$('hover');hv.className='hover glass solo hv-b on';hv.innerHTML=hoverCardHTML(edge);edge.pill?placeHover(edge.pill.x+edge.pill.w+4,edge.pill.y+edge.pill.h/2):placeHover(x,y);return;}
+  if(edge){const hv=$('hover'),key=(edge.article&&edge.article.id)+'|'+(edge.asset&&edge.asset.s||'');if(hv.dataset.edge!==key||!hv.classList.contains('on')){hv.dataset.edge=key;hv.className='hover glass solo hv-b on';hv.innerHTML=hoverCardHTML(edge);}edge.pill?placeHover(edge.pill.x+edge.pill.w+4,edge.pill.y+edge.pill.h/2):placeHover(x,y);return;}  // rebuild the card only when the line changes
 
   const d = pick(x, y, 16);
   if (d) { hoverCountry = null; if (hoverC !== d.key) { hoverC = d.key; showHover(d); } placeHover(d.x, d.y); return; }
@@ -1988,8 +1994,8 @@ function showHover(d) {
     hv.innerHTML = `<div><div class="eyebrow">${d.list.length} articles · ${esc(d.list[0].location.place)}</div>${d.list.slice(0, 3).map(s => `<h3 style="font-size:13px;margin:8px 0 0">${esc(s.headline)}</h3>`).join('')}<div class="meta" style="margin-top:8px">Click to ${d.same ? 'see all' : 'zoom in'}${d.list[0].demo ? '<span class="dtag">DEMO</span>' : ''}</div></div>`;
   }
 }
-function placeHover(x, y) { const hv = $('hover'), w = hv.offsetWidth, h = hv.offsetHeight; let l = x + 16, t = y - h / 2; if (l + w > innerWidth - 12) l = x - w - 16; t = Math.max(12, Math.min(innerHeight - h - 12, t)); hv.style.left = l + 'px'; hv.style.top = t + 'px'; }
-function hideHover() { $('hover').classList.remove('pin'); pinned = null; delete $('hover').dataset.country; arcHover=null; clearTimeout(cTimer); hoverC = null; hoverCountry = null; $('hover').classList.remove('on');  }
+function placeHover(x, y) { const hv = $('hover'), w = hv.offsetWidth, h = hv.offsetHeight; let l = x + 16, t = y - h / 2; if (l + w > innerWidth - 12 || (EMBED && innerWidth > 900 && x - w - 16 > 12)) l = x - w - 16;  /* homepage (PC): the hero text sits to the right, so cards open to the left */ t = Math.max(12, Math.min(innerHeight - h - 12, t)); hv.style.left = l + 'px'; hv.style.top = t + 'px'; }
+function hideHover() { delete $('hover').dataset.edge; $('hover').classList.remove('pin'); pinned = null; delete $('hover').dataset.country; arcHover=null; clearTimeout(cTimer); hoverC = null; hoverCountry = null; $('hover').classList.remove('on');  }
 let tapEdge = null;
 function tap(x, y, touch) {
   if (PROJ.on) return projTap(x, y);
