@@ -1416,3 +1416,14 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .notif-pro{padding:1px 5px;border-radius:4px;font:800 9px/1.5 Inter,sans-serif;letter-spacing:.06em;color:#111;background:linear-gradient(135deg,#ffb36b,#ff7a1a)}
 .notif-dd .al-wrap{border-top:0}.notif-dd .al-title{display:none}
 .notif-dd .al-sw{width:38px!important;height:22px!important;min-width:0!important;min-height:0!important;padding:0!important;align-self:center}
+
+/* Alerts tab: minimal, flat (owner 14 Nov 2026) */
+.notif-dd .al-smartcard,.notif-dd .al-procard{background:var(--card,#141417)!important;border-color:var(--line)!important}
+.notif-dd .al-btn.pri{background:var(--accent,#ff7a1a)!important;color:#111!important;box-shadow:none!important}
+.notif-dd .al-btn.pro{background:transparent!important;color:var(--fg)!important;border:1px solid var(--line)!important}
+.notif-dd .al-meter i{background:var(--accent,#ff7a1a)!important}
+.notif-dd .al-type.on{background:var(--card,#141417)!important;box-shadow:none!important;border-color:var(--accent,#ff7a1a)!important}
+.notif-dd .al-ic{background:var(--bg-2)!important;color:var(--fg-2)!important}
+.notif-dd .al-ex-b svg,.notif-dd .al-type svg{color:var(--fg-2)!important}
+.notif-dd .al-step span{background:var(--bg-2)!important;color:var(--fg-2)!important}
+.notif-dd .al-sh{gap:0}
