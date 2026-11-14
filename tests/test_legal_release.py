@@ -22,5 +22,5 @@ class ReleaseGate(unittest.TestCase):
   for name,dest in json.loads((ROOT/'tests/fixtures/retired-urls.json').read_text()).items():
    text=(ROOT/f'{name}.html').read_text()
    self.assertIn('content="noindex"',text);self.assertIn(f'url={dest}',text)
-   self.assertIn('location.replace',text);self.assertNotIn(f'https://www.investedia.com/{name}.html',(ROOT/'sitemap.xml').read_text())
+   self.assertIn('location.replace',text);self.assertNotIn(f'https://www.investedia.com/{name}',(ROOT/'sitemap.xml').read_text())
 if __name__=='__main__':unittest.main()
