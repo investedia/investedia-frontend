@@ -1317,3 +1317,10 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
  .ftr2-cols{grid-template-columns:1fr 1fr;gap:22px 16px}.ftr2-col a{padding:6px 0;font-size:14px}
  .ftr2-bar{gap:10px 16px;padding:18px 0 28px}.ftr2-bar .ftr-legal{gap:8px 14px}.ftr2-note{margin-left:0;width:100%}
 }
+/* Footer v2 matches the approved option A: no card box, plain divider, compact language chip */
+.ftr.ftr2 .wrap{margin:0 auto;border:0;border-radius:0;background:transparent;padding:0 var(--gutter,24px);overflow:visible}
+.ftr.ftr2 .wrap::before{display:none}
+.ftr.ftr2{border-top:0;margin-top:56px}.ftr2-top{border-top:1px solid var(--line)}
+.ftr2 .ftr-lang .btn{min-height:34px;height:34px;padding:0 12px;font-size:13px;border-radius:8px}
+.ftr2 .ftr-top-btn{height:34px;width:34px;padding:0}
+@media(max-width:760px){.ftr.ftr2 .wrap{margin:0;padding:0 16px}}
