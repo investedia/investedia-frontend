@@ -1405,3 +1405,14 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .al-actions{display:grid;grid-template-columns:1fr auto;gap:8px}.al-err{margin:0;color:#ff6b6b;font-size:12px}
 .al-link{color:#ff7a1a;font-size:12px;text-decoration:none}
 @media (max-width:480px){.al-types{grid-template-columns:repeat(2,1fr)}}
+
+/* Notifications | Alerts tabs (14 Nov 2026) */
+.notif-dd .notif-head{gap:4px;padding:12px 14px 10px}
+.notif-tab{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 12px;border-radius:10px;font:600 14px Inter,sans-serif;color:var(--fg-2)}
+.notif-tab svg{width:13px;height:13px;color:#ff7a1a}
+.notif-tab:hover{color:var(--fg);background:var(--card)}
+.notif-tab[aria-selected=true]{color:var(--fg);background:var(--card);box-shadow:inset 0 0 0 1px var(--line)}
+.notif-tab .notif-count{margin-left:2px}
+.notif-pro{padding:1px 5px;border-radius:4px;font:800 9px/1.5 Inter,sans-serif;letter-spacing:.06em;color:#111;background:linear-gradient(135deg,#ffb36b,#ff7a1a)}
+.notif-dd .al-wrap{border-top:0}.notif-dd .al-title{display:none}
+.notif-dd .al-sw{width:38px!important;height:22px!important;min-width:0!important;min-height:0!important;padding:0!important;align-self:center}
