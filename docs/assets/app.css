@@ -1427,3 +1427,12 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .notif-dd .al-ex-b svg,.notif-dd .al-type svg{color:var(--fg-2)!important}
 .notif-dd .al-step span{background:var(--bg-2)!important;color:var(--fg-2)!important}
 .notif-dd .al-sh{gap:0}
+
+/* Alerts tab: owner mock-up 14 Nov 2026 */
+.notif-dd.show-alerts .notif-head{border-bottom:1px solid var(--line);margin:0 14px;padding:12px 0 10px}
+.al-head{padding:6px 4px 2px}.al-head b{font-size:20px;letter-spacing:-.01em}.al-head p{margin:4px 0 0;color:var(--fg-2);font-size:13px}
+.notif-dd .al-card b{font-size:14px;font-weight:600}
+.al-pro{display:inline-block;margin-left:6px;padding:0 6px;border:1px solid var(--line);border-radius:5px;font:600 10.5px/17px Inter,sans-serif;color:var(--fg-2);vertical-align:1px}
+.notif-dd .al-alert{grid-template-columns:1fr auto auto;background:transparent;border:1px solid var(--line)}
+.notif-dd .al-meter{height:5px}
+.notif-dd a.al-pro{text-decoration:none}.notif-dd a.al-pro:hover{color:var(--fg);border-color:var(--fg-2)}
