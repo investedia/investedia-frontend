@@ -33,7 +33,7 @@ class LegalPages(unittest.TestCase):
     def test_sitemap_and_security(self):
         tree=ET.parse(ROOT/'sitemap.xml')
         urls={n.text for n in tree.findall('.//{*}loc')}
-        for name in PAGES:self.assertIn('https://investedia.com/'+name+'.html',urls)
+        for name in PAGES:self.assertIn('https://www.investedia.com/'+name+'.html',urls)
         security=(ROOT/'.well-known/security.txt').read_text()
         self.assertEqual(security,(ROOT/'docs/.well-known/security.txt').read_text())
         self.assertIn('Contact: mailto:',security);self.assertIn('Policy:',security);self.assertIn('Expires:',security)
