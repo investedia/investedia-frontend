@@ -85,5 +85,22 @@
  // Optional sector file: loaded separately so Energy never waits on it or fails because of it.
  let dcPending;
  function loadDatacenters(){if(!dcPending)dcPending=fetch(new URL('projects-datacenters.json',base),{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(datacenters).catch(()=>{dcPending=null;return [];});return dcPending;}
- window.InvProjectsData={load,merge,valid,milestoneStatus,energy,withSector,invest,datacenters,loadDatacenters};
+ // Real Estate (Phase 5B, local preview): listed-REIT properties from company filings, exported by the backend
+ // (tools/realestate/export_frontend.py). "Portfolio holding" is never legal title; buying shares never gives title.
+ function realestate(doc){if(doc?.schema!=='investedia.projects.realestate.v1')return [];const out=[];
+  for(const r of doc.projects||[]){const e=r.exposure||{};if(!e.ticker||!url(r.sources?.[0]?.url))continue;
+   const ex=r.precision==='exact';
+   const p={id:r.id,name:r.name,country:r.city?`${r.city}, ${r.cc||''}`.replace(/, $/,''):r.cc,location:r.city,lat:r.lat,lon:r.lon,type:r.subtype||'Property',sector:'Real estate',stage:r.stage||null,
+    start_year:null,status_year:null,milestones:[],figures:[],sources:(r.sources||[]).filter(x=>url(x.url)),wiki:null,featured:false,verified:true,cc:r.cc||null,capacity:null,cost:null,owners:[],aliases:r.aliases||[],
+    invest:{re:true,stage_label:r.stage_label||'',as_of:r.as_of||null,address:r.address||null,figures:r.figures||[],release_status:r.release_status||'research',
+     precision:ex?'exact':'approximate',point_type:r.point_type||null,location_label:r.location_label||'',location_credit:r.location_credit||'',location_source:url(r.location_source),
+     exposures:[{ticker:e.ticker,exchange:e.exchange||null,name:e.name,legal_name:null,sym:null,exchange_short:e.exchange||null,category:'F',category_label:'Company filing',direct:false,role:e.role||'Portfolio holding',scope:e.scope||'',path:[],stake:e.stake??null,stake_note:e.stake!=null?'Company-stated share':'Share not stated',
+      evidence:(r.sources||[]).filter(x=>url(x.url)).map(x=>({url:x.url,publisher:x.name,date:x.checked_at||null,proves:'',quote:null}))}],other_owners:[],stage_note:null,location_note:null},
+    listed:{ticker:e.ticker,name:e.name,sym:null,stake:e.stake??null}};
+   if(r.photo?.file&&r.photo.source_url)p.photo={file:r.photo.file,source_url:r.photo.source_url,author:r.photo.author,licence:r.photo.licence,date:r.photo.date||null};
+   if(valid(p))out.push(p);}
+  return out;}
+ let rePending;
+ function loadRealestate(){if(!rePending)rePending=fetch(new URL('projects-realestate.json',base),{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(realestate).catch(()=>{rePending=null;return [];});return rePending;}
+ window.InvProjectsData={load,merge,valid,milestoneStatus,energy,withSector,invest,datacenters,loadDatacenters,realestate,loadRealestate};
 })();
