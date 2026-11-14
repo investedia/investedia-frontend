@@ -1358,3 +1358,4 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .notif-dd .notif-assets>span{padding:2px 7px!important;border:0!important;border-radius:6px!important;background:var(--card)!important;font-size:11px!important;line-height:1.4!important}
 .notif-dd .notif-assets i{font-style:normal;font-size:11px}.notif-dd .notif-assets i.up{color:#22c55e}.notif-dd .notif-assets i.down{color:#ef4444}
 :root[data-theme=light] .notif-dd .notif-filters button[aria-pressed=true]{background:#fff!important}
+.notif-dd .notif-group{background:var(--bg-2)}
