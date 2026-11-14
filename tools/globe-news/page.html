@@ -166,6 +166,9 @@ html.proj-mode .pj{padding:0!important;overflow:auto}.pjh{position:relative;heig
 @media(max-width:760px){html.proj-mode .pjl{display:none}html.proj-mode .pj{max-height:62vh}}
 /* Swipe-to-watchlist: the orange action is hidden until a row is actually swiped */
 .nd-act{opacity:0;pointer-events:none;transition:opacity .15s}.nd-row.sw .nd-act{opacity:1}
+.pj-sat{position:relative;overflow:hidden;padding:0!important;display:block!important;height:auto!important;aspect-ratio:16/10}.pj-sat img{width:100%;height:100%;object-fit:cover;display:block}.pj-ring{position:absolute;width:26px;height:26px;margin:-13px 0 0 -13px;border:2px solid #ff7a1a;border-radius:50%;box-shadow:0 0 0 2px rgba(0,0,0,.5)}.pj-sat a{position:absolute;left:0;right:0;bottom:0;padding:6px 10px;background:linear-gradient(transparent,rgba(0,0,0,.8));color:#ddd;font:11px Inter,sans-serif;text-decoration:none}.pj-listed{display:inline-flex;align-items:center;height:40px;padding:0 14px;border:1px solid rgba(255,122,26,.5);border-radius:10px;color:#ffb27a;font:600 13px Inter,sans-serif;text-decoration:none}
+.pj-ba{cursor:ew-resize;touch-action:pan-y;user-select:none}.pj-ba img{position:absolute;inset:0}.pj-ba img:first-child{position:relative}.pj-ba .pj-ba-a{clip-path:inset(0 0 0 var(--p))}.pj-ba-line{position:absolute;top:0;bottom:0;left:var(--p);width:2px;margin-left:-1px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.35)}.pj-ba-knob{position:absolute;top:50%;left:var(--p);width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;background:#fff;color:#111;display:grid;place-items:center;font:700 14px Inter,sans-serif;box-shadow:0 2px 10px rgba(0,0,0,.5)}.pj-ba-knob:focus-visible{outline:3px solid #ff7a1a}.pj-ba-tag{position:absolute;top:10px;padding:4px 9px;border-radius:20px;background:rgba(0,0,0,.65);color:#fff;font:600 12px Inter,sans-serif}.pj-ba-tag.l{left:10px}.pj-ba-tag.r{right:10px}.pj-imgtabs{position:absolute;left:10px;bottom:40px;display:flex;gap:6px}.pj-imgtabs button{min-height:32px;padding:0 12px;border-radius:20px;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.6);color:#eee;font:500 12px Inter,sans-serif;cursor:pointer}.pj-sat .pj-imgtabs button{background:rgba(0,0,0,.6)!important;color:#eee!important;border:1px solid rgba(255,255,255,.3)!important}.pj-sat .pj-imgtabs button[aria-selected=true]{background:#fff!important;color:#111!important;border-color:#fff!important}
+.pj-pro-lock{display:inline-flex;align-items:center;gap:4px;height:30px;padding:0 9px;border:1px dashed rgba(255,122,26,.5);border-radius:8px;color:#ff9a4a;font:600 12px Inter,sans-serif;text-decoration:none}
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
@@ -250,6 +253,7 @@ h1 span{color:var(--fg-3)}
 .eco-yr span:nth-child(2){font-family:var(--sans)}
 .eco-src{margin:10px 0 0;font-size:11px;color:var(--fg-3)}
 .eco-src a{color:inherit}
+.gm-brief{display:block;margin:4px 0 12px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;color:var(--accent,#ff7a1a);font-weight:600;font-size:13px;text-decoration:none}.gm-brief:hover{border-color:var(--accent,#ff7a1a)}
 @media (max-width:760px){.eco-g{grid-template-columns:repeat(2,minmax(0,1fr))}.flag.big{width:38px;height:28px}}
 .fnote{margin:10px 0 0;font-size:12px;line-height:1.5;color:var(--fg-3)}
 .ch{display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
@@ -2209,6 +2213,7 @@ function gmMarketRow(asset, label = '') {
   if (!asset) return `<div class="gm-market-row" data-gm-unavailable="${esc(label)}"><span>${esc(label)}</span><span data-gm-price>${gmMissing}</span><span data-gm-day>${gmMissing}</span><span data-gm-week>${gmMissing}</span></div>`;
   return `<a class="gm-market-row" data-gm-market="${esc(asset.s)}" href="../../asset.html?s=${encodeURIComponent(asset.s)}"><span class="gm-name">${esc(asset.n)}${asset.g === 'Country ETF' ? '<small>ETF</small>' : ''}</span><b data-gm-price>${gmNumber(asset.p, asset.t === 'fx' ? 4 : 2)}${asset.t === 'fx' ? '' : ` <small>${esc(asset.cur || '')}</small>`}</b><span data-gm-day>${gmMove(asset.d)}</span><span data-gm-week>${gmMove(asset.w)}</span></a>`;
 }
+let BRIEFS = null; fetch('briefs/index.json').then(r => r.json()).then(d => { BRIEFS = Object.fromEntries(d.countries.map(c => [c.cc, c])); if (view.k === 'country') render(); }).catch(() => {});
 function gmCountryPanel(c) {
   loadGlobalMarkets();
   const code = ISO[c.name], region = COUNTRY_REGIONS[code], continent = regionDefinition(region)?.[1] || 'Global';
@@ -2217,7 +2222,8 @@ function gmCountryPanel(c) {
   const exchange = gmExchanges(code)[0]?.[1], companies = gmCompanies(code), news = gmCountryArticles(c.name).sort((a, b) => b.t - a.t);
   const benchmark = gmBenchmark(c.name), fx = gmCurrency(c.name), macro = ECON?.countries[code];
   const tabs = [['overview', 'Overview'], ['news', `News (${news.length})`], ['economy', 'Economy'], ['companies', `Companies (${companies.length})`], ['markets', 'Markets'], ...(countryTab==='abroad'?[['abroad','Also listed abroad']]:[])];
-  const tabHTML = `<div class="gm-tabs" role="tablist" aria-label="${esc(nm(c.name))} markets">${tabs.map(([key, label]) => `<button type="button" role="tab" data-gm-tab="${key}" id="gm-tab-${key}" aria-controls="gm-country-content" aria-selected="${countryTab === key}" tabindex="${countryTab === key ? 0 : -1}">${label}</button>`).join('')}</div>`;
+  const brief = BRIEFS && BRIEFS[(code || '').toLowerCase()] ? `<a class="gm-brief" href="../../briefing.html?c=${esc(code.toLowerCase())}">Weekly briefing · ${BRIEFS[code.toLowerCase()].n} articles last week →</a>` : '';
+  const tabHTML = brief + `<div class="gm-tabs" role="tablist" aria-label="${esc(nm(c.name))} markets">${tabs.map(([key, label]) => `<button type="button" role="tab" data-gm-tab="${key}" id="gm-tab-${key}" aria-controls="gm-country-content" aria-selected="${countryTab === key}" tabindex="${countryTab === key ? 0 : -1}">${label}</button>`).join('')}</div>`;
   let content;
   if (countryTab === 'abroad') content = gmAbroadPanel(gmAbroad(companies,code));
   else if (countryTab === 'news') content = `<h3 class="sec-h">Country news · ${F.win.toUpperCase()}</h3>${gmCountryNews(news)}`;

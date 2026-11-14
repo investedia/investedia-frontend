@@ -1,0 +1,136 @@
+[
+ {
+  "width": 1440,
+  "id": "DD1 the Layers card is closed when the globe opens (desktop); both dropdown buttons are there",
+  "pass": false,
+  "error": "Expected values to be strictly equal: | false !== true"
+ },
+ {
+  "width": 1440,
+  "id": "DD2 the buttons and both menus are glass: translucent background with a blur behind",
+  "pass": false,
+  "error": "locator.click: Timeout 30000ms exceeded. | Call log: | \u001b[2m  - waiting for locator('#mine-btn')\u001b[22m"
+ },
+ {
+  "width": 1440,
+  "id": "DD3 the Region menu lists the regions with counts that add up to All regions and match the topic chip",
+  "pass": false,
+  "error": "Expected values to be strictly equal: | 'false' !== 'true'"
+ },
+ {
+  "width": 1440,
+  "id": "DD4 My assets lists the watchlist with logos, the real % move, binoculars, and how many stories name each",
+  "pass": false,
+  "error": "locator.click: Timeout 30000ms exceeded. | Call log: | \u001b[2m  - waiting for locator('#mine-btn')\u001b[22m"
+ },
+ {
+  "width": 1440,
+  "id": "DD5 My watchlist only shows just the stories that touch the watchlist; All news brings everything back",
+  "pass": false,
+  "error": "locator.click: Timeout 30000ms exceeded. | Call log: | \u001b[2m  - waiting for locator('#mine-btn')\u001b[22m"
+ },
+ {
+  "width": 1440,
+  "id": "DD6 a guest with no watchlist sees a plain explanation and a link, and cannot filter to nothing",
+  "pass": false,
+  "error": "locator.click: Timeout 30000ms exceeded. | Call log: | \u001b[2m  - waiting for locator('#mine-btn')\u001b[22m"
+ },
+ {
+  "width": 1440,
+  "id": "UP1 the Layers card has an Upcoming switch, off by default, with the number of releases in its description",
+  "pass": false,
+  "error": "Expected values to be strictly equal: | '1 on ▾' !== '1'"
+ },
+ {
+  "width": 1440,
+  "id": "UP2 switching Upcoming on: pins with countdown labels, an Upcoming tab with every release in the next 7 days, count 2",
+  "pass": false,
+  "error": "Expected values to be strictly equal: | '2 on ▾' !== '2'"
+ },
+ {
+  "width": 1440,
+  "id": "UP3 pin labels never overlap each other (phones show at most two) and every pin stays on the globe",
+  "pass": true
+ },
+ {
+  "width": 1440,
+  "id": "UP4 clicking a pin opens the Upcoming list; clicking a release turns the globe to its country",
+  "pass": false,
+  "error": "locator.click: Timeout 30000ms exceeded. | Call log: | \u001b[2m  - waiting for locator('.up-row[data-up=JP]').first()\u001b[22m"
+ },
+ {
+  "width": 1440,
+  "id": "UP5 switching Upcoming off removes the pins and the tab",
+  "pass": true
+ },
+ {
+  "width": 1440,
+  "id": "X1 no script errors and no horizontal overflow",
+  "pass": true
+ },
+ {
+  "width": 390,
+  "id": "DD1 the Layers card is closed when the globe opens (desktop); both dropdown buttons are there",
+  "pass": true
+ },
+ {
+  "width": 390,
+  "id": "DD2 the buttons and both menus are glass: translucent background with a blur behind",
+  "pass": true
+ },
+ {
+  "width": 390,
+  "id": "DD3 the Region menu lists the regions with counts that add up to All regions and match the topic chip",
+  "pass": true
+ },
+ {
+  "width": 390,
+  "id": "DD4 My assets lists the watchlist with logos, the real % move, binoculars, and how many stories name each",
+  "pass": false,
+  "error": "The input did not match the regular expression /^\\d+ stor(y|ies)$/. Input: | '0 articles'"
+ },
+ {
+  "width": 390,
+  "id": "DD5 My watchlist only shows just the stories that touch the watchlist; All news brings everything back",
+  "pass": false,
+  "error": "locator.click: Timeout 30000ms exceeded. | Call log: | \u001b[2m  - waiting for locator('#mine-menu [data-mine=\"1\"]')\u001b[22m"
+ },
+ {
+  "width": 390,
+  "id": "DD6 a guest with no watchlist sees a plain explanation and a link, and cannot filter to nothing",
+  "pass": true
+ },
+ {
+  "width": 390,
+  "id": "UP1 the Layers card has an Upcoming switch, off by default, with the number of releases in its description",
+  "pass": false,
+  "error": "Expected values to be strictly equal: | '1 on ▾' !== '1'"
+ },
+ {
+  "width": 390,
+  "id": "UP2 switching Upcoming on: pins with countdown labels, an Upcoming tab with every release in the next 7 days, count 2",
+  "pass": false,
+  "error": "Expected values to be strictly equal: | '2 on ▾' !== '2'"
+ },
+ {
+  "width": 390,
+  "id": "UP3 pin labels never overlap each other (phones show at most two) and every pin stays on the globe",
+  "pass": true
+ },
+ {
+  "width": 390,
+  "id": "UP4 clicking a pin opens the Upcoming list; clicking a release turns the globe to its country",
+  "pass": true
+ },
+ {
+  "width": 390,
+  "id": "UP5 switching Upcoming off removes the pins and the tab",
+  "pass": false,
+  "error": "locator.click: Timeout 30000ms exceeded. | Call log: | \u001b[2m  - waiting for locator('#m-filters')\u001b[22m"
+ },
+ {
+  "width": 390,
+  "id": "X1 no script errors and no horizontal overflow",
+  "pass": true
+ }
+]

@@ -26,7 +26,64 @@
   }
   return [...byId.values()];
  }
+ // Energy: every power project sits under the sector "Energy" with a specific kind (solar, wind, ...).
+ const WD_KIND={'Hydro energy':'Hydropower','Wind energy':'Wind','Solar energy':'Solar','Nuclear energy':'Nuclear'};
+ // Owner rule (12 Nov 2026): energy shows only the investable pipeline, so older energy rows without a planned or construction stage are hidden.
+ function withSector(list){return list.filter(p=>{const k=WD_KIND[p.type];p.sector=k?'Energy':p.type;if(k&&!p.energy)p.energy=k;return !k||p.featured||/proposed|approved|construction|planned/i.test(p.stage||'');});}
+ // GEM Global Integrated Power Tracker plants (CC BY 4.0), converted by tools/gem_power.py. Real rows only.
+ function energy(doc){if(doc?.schema!=='investedia.energy.v1')return [];const out=[];
+  for(const r of doc.plants||[]){const [id,name,country,cc,lat,lon,kind,stage,mw,year,owner,wiki,units,listed,sat,before]=r;
+   const p={id,name,country,location:country,lat,lon,type:{Solar:'Solar energy',Wind:'Wind energy',Hydropower:'Hydro energy',Nuclear:'Nuclear energy',Coal:'Coal power','Oil & gas':'Oil & gas power',Bioenergy:'Bioenergy',Geothermal:'Geothermal energy'}[kind]||kind,sector:'Energy',energy:kind,stage,start_year:null,status_year:year||null,milestones:[],figures:[],
+    sources:[{name:doc.credit,url:url(wiki)||doc.source_url,licence:doc.licence,checked_at:'2026-11-12'}],wiki:url(wiki),featured:false,verified:true,cc:cc||null,
+    capacity:Number.isFinite(mw)?{unit:'megawatt',value:mw}:null,cost:null,owners:owner?[owner]:[],aliases:[],units,gem:true,listed:listed?{ticker:listed[0],name:listed[1],stake:listed[2]||null}:null,
+    satellite:sat&&doc.satellite?{date:sat[0],url:doc.satellite.url.replace('{d}',sat[0]).replace('{r}',sat[2]).replace('{c}',sat[1]),before:before&&before[1]>=(doc.satellite.min_change??Infinity)?{date:before[0],url:doc.satellite.url.replace('{d}',before[0]).replace('{r}',sat[2]).replace('{c}',sat[1])}:null,x:((lon+180)/doc.satellite.tile_deg)-sat[1],y:((90-lat)/doc.satellite.tile_deg)-sat[2],credit:doc.satellite.credit}:null};
+   if(valid(p))out.push(p);}
+  return out;}
+ // Verified investment layer (owner decisions 12 Nov 2026): only projects whose link to a listed company is
+ // proven by a company publication (A) or by regulator and registry records (B). Built by the backend batch
+ // engine (tools/projects/invest). Stakes appear only when the source states them; otherwise the note says so.
+ const KIND_LABEL={Solar:'Solar energy',Wind:'Wind energy',Hydropower:'Hydro energy',Nuclear:'Nuclear energy',Coal:'Coal power','Oil & gas':'Gas power','Battery storage':'Battery storage',Bioenergy:'Bioenergy',Geothermal:'Geothermal energy'};
+ const CAT={A:'Company-confirmed',B:'Regulator-confirmed'};
+ function invest(doc){if(doc?.schema!=='investedia.projects.invest.v1')return [];const out=[];
+  for(const r of doc.projects||[]){
+   const ex=(r.exposures||[]).map(e=>{const v=e.verification||{};return {ticker:v.listing?.ticker||null,exchange:v.listing?.exchange||null,name:e.company?.name||v.identity?.legal_name||e.listed_name,legal_name:v.identity?.legal_name||null,sym:e.company?.symbol||null,exchange_short:e.company?.exchange_short||null,
+     category:v.category,category_label:CAT[v.category]||null,direct:v.exposure_type==='direct',path:e.path_names||[],stake:v.stake?.value??null,stake_note:v.stake?.note||null,
+     hq:e.hq&&Number.isFinite(e.hq.lat)&&Number.isFinite(e.hq.lon)?e.hq:null,
+     evidence:(v.link||[]).filter(l=>url(l.url)).map(l=>({url:l.url,publisher:l.publisher||'',date:l.document_date||l.edition||null,proves:l.proves||'',quote:l.quote||null}))};}).filter(e=>e.ticker&&e.evidence.length);
+   if(!ex.length)continue;
+   const p={id:r.id,name:r.name,country:r.country,location:r.country,lat:r.lat,lon:r.lon,type:KIND_LABEL[r.kind]||r.kind,sector:'Energy',energy:r.kind,stage:r.stage||null,
+    start_year:null,status_year:r.expected_year||null,milestones:[],figures:[],sources:ex.flatMap(e=>e.evidence).filter((x,i,a)=>a.findIndex(y=>y.url===x.url)===i).map(x=>({name:x.publisher,url:x.url,checked_at:x.date})),
+    wiki:null,featured:false,verified:true,cc:r.cc||null,capacity:Number.isFinite(r.mw)?{unit:'megawatt',value:r.mw}:null,
+    cost:r.cost&&Number.isFinite(r.cost.amount)?{value:r.cost.amount,currency:r.cost.currency,quote:r.cost.quote,source:url(r.cost.source)}:null,
+    owners:[],aliases:[],invest:{exposures:ex,other_owners:(r.other_owners||[]).map(o=>o.name).filter(Boolean),stage_note:r.stage_note||null,precision:r.precision||null,location_note:r.location_note||null},
+    listed:{ticker:ex[0].ticker,name:ex[0].name,sym:ex[0].sym,stake:ex[0].stake!=null?ex[0].stake+'%':null}};
+   const im=r.images,img=f=>new URL('../img/projects/sat/'+encodeURIComponent(f),base).href;
+   if((r.precision==='exact'||r.precision==='site')&&im?.now?.file)p.satellite={url:img(im.now.file),date:im.now.date,before:im.before?.file?{url:img(im.before.file),date:im.before.date}:null,x:.5,y:.5,s2:true,km:im.now.width_km||3,credit:im.now.credit};
+   if(valid(p))out.push(p);}
+  return out;}
+ // Data Centers (owner design approval 13 Nov 2026): development phases from company filings, exported by the backend
+ // only after the record-level reuse gate passes (tools/datacentres/export_frontend.py). Roles never imply ownership.
+ function datacenters(doc){if(doc?.schema!=='investedia.projects.datacenters.v1')return [];const out=[];
+  for(const r of doc.projects||[]){const e=r.exposure||{};if(!e.ticker||!url(r.sources?.[0]?.url))continue;
+   const p={id:r.id,name:r.name,country:r.city?`${r.city}, ${r.cc||''}`.replace(/, $/,''):r.cc,location:r.city,lat:r.lat,lon:r.lon,type:'Data center',sector:'Data centers',stage:r.stage||null,
+    start_year:null,status_year:null,milestones:[],figures:[],sources:(r.sources||[]).filter(x=>url(x.url)),wiki:null,featured:false,verified:true,cc:r.cc||null,capacity:null,cost:null,owners:[],aliases:[],
+    invest:{dc:true,summary:r.summary||'',stage_label:r.stage_label||'',as_of:r.as_of||null,capacity:r.capacity||{},capex_usd_m:r.capex_usd_m??null,target_open:r.target_open||null,
+     precision:r.precision==='exact'?'exact':'approximate',location_label:r.location_label||'',location_credit:r.location_credit||'',location_source:url(r.location_source),
+     exposures:[{ticker:e.ticker,exchange:e.exchange||null,name:e.name,legal_name:null,sym:null,exchange_short:e.exchange||null,category:'F',category_label:'Company filing',direct:false,role:e.role||'Developer',ownership:e.ownership||'Not established',path:[],stake:null,stake_note:'Ownership not established',
+      evidence:(r.sources||[]).filter(x=>url(x.url)).slice(0,1).map(x=>({url:x.url,publisher:x.name,date:x.checked_at||null,proves:r.stage_label||'',quote:null}))}],other_owners:[],stage_note:null,location_note:null},
+    listed:{ticker:e.ticker,name:e.name,sym:null,stake:null}};
+   const im=r.images,img=f=>new URL('../img/projects/sat/'+encodeURIComponent(f),base).href;
+   if(r.precision==='exact'&&im?.now?.file)p.satellite={url:img(im.now.file),date:im.now.date,before:im.before?.file?{url:img(im.before.file),date:im.before.date}:null,x:.5,y:.5,s2:true,km:im.now.width_km||1.5,credit:im.now.credit};
+   if(valid(p))out.push(p);}
+  return out;}
  let pending;
- async function load(){if(!pending)pending=Promise.all(['projects.json','projects-featured.json'].map(name=>fetch(new URL(name,base),{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Projects unavailable');return r.json();}))).then(([raw,featured])=>({projects:merge(raw,featured),curation:featured.curation_status,curation_target:featured.curation_target})).catch(e=>{pending=null;throw e;});return pending;}
- window.InvProjectsData={load,merge,valid,milestoneStatus};
+ async function load(){if(!pending)pending=Promise.resolve().then(async()=>{
+  const inv=await fetch(new URL('projects-invest.json',base),{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null);
+  // Owner decision 13 Nov 2026: only verified investment links are shown. Unverified Wikidata/GEM records are never a fallback.
+  if(inv?.schema!=='investedia.projects.invest.v1')throw Error('Verified projects unavailable');
+  return {projects:invest(inv),verified:true,curation:'Verified investment links only',curation_target:null,energy_credit:(inv.credit||[]).join(' · ')};}).catch(e=>{pending=null;throw e;});return pending;}
+ // Optional sector file: loaded separately so Energy never waits on it or fails because of it.
+ let dcPending;
+ function loadDatacenters(){if(!dcPending)dcPending=fetch(new URL('projects-datacenters.json',base),{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(datacenters).catch(()=>{dcPending=null;return [];});return dcPending;}
+ window.InvProjectsData={load,merge,valid,milestoneStatus,energy,withSector,invest,datacenters,loadDatacenters};
 })();

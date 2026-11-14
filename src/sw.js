@@ -36,3 +36,14 @@ self.addEventListener('fetch', e => {
   }
   // Optional third-party responses are never persisted in the offline cache.
 });
+// Push alerts (12 Nov 2026): show the notification the news service sent; tapping it opens the article.
+self.addEventListener('push', e => {
+  let d = {}; try { d = e.data ? e.data.json() : {}; } catch {}
+  const title = d.title || 'Investedia', opts = { body: d.body || '', tag: d.tag || 'inv-alert', icon: '/assets/app/icon-192.png', badge: '/assets/app/icon-192.png', data: { url: d.url || '/' } };
+  e.waitUntil(self.registration.showNotification(title, opts));
+});
+self.addEventListener('notificationclick', e => {
+  e.notification.close(); const url = new URL((e.notification.data && e.notification.data.url) || '/', self.location.origin).href;
+  e.waitUntil(self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then(cs => { for (const c of cs) if (c.url === url && 'focus' in c) return c.focus(); return self.clients.openWindow(url); }));
+});
+

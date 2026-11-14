@@ -1,6 +1,6 @@
 // Investedia app: offline support and instant repeat visits.
 // Pages and market data: network first, saved copy when offline. Code, images, fonts: saved copy first, refreshed in the background.
-const VERSION = '3e2a0eb8d8', CACHE = 'inv-' + VERSION;
+const VERSION = 'f056ae1383', CACHE = 'inv-' + VERSION;
 // Clean URLs: the host now redirects /page.html to /page (308). A redirected response must never be cached or served for a
 // navigation (Safari refuses it: "Response served by service worker has redirections"), so only final URLs are listed here.
 const CORE = ['/', '/dashboard', '/markets', '/watchlist', 'assets/app.css', 'assets/ui.js', 'assets/mock.js', 'assets/quotes.js', 'assets/profiles.js', 'assets/favicon.svg', 'assets/app/icon-192.png'];
@@ -36,3 +36,14 @@ self.addEventListener('fetch', e => {
   }
   // Optional third-party responses are never persisted in the offline cache.
 });
+// Push alerts (12 Nov 2026): show the notification the news service sent; tapping it opens the article.
+self.addEventListener('push', e => {
+  let d = {}; try { d = e.data ? e.data.json() : {}; } catch {}
+  const title = d.title || 'Investedia', opts = { body: d.body || '', tag: d.tag || 'inv-alert', icon: '/assets/app/icon-192.png', badge: '/assets/app/icon-192.png', data: { url: d.url || '/' } };
+  e.waitUntil(self.registration.showNotification(title, opts));
+});
+self.addEventListener('notificationclick', e => {
+  e.notification.close(); const url = new URL((e.notification.data && e.notification.data.url) || '/', self.location.origin).href;
+  e.waitUntil(self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then(cs => { for (const c of cs) if (c.url === url && 'focus' in c) return c.focus(); return self.clients.openWindow(url); }));
+});
+

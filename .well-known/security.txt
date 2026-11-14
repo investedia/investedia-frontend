@@ -1,6 +1,6 @@
 Contact: mailto:security@investedia.com
 Expires: 2027-10-22T00:00:00Z
 Preferred-Languages: en
-Canonical: https://investedia.com/.well-known/security.txt
-Policy: https://investedia.com/contact.html#security
+Canonical: https://www.investedia.com/.well-known/security.txt
+Policy: https://www.investedia.com/contact.html#security
 # [OWNER: verify security mailbox and reporting policy before publication]
