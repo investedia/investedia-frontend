@@ -17,6 +17,7 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
 @media (max-width:900px){.hn-open{min-width:44px;padding:0 14px;gap:6px}.hn-open .t{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}}
 .hn-hero::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,var(--bg) 0%,rgba(10,10,11,.85) 28%,transparent 55%),linear-gradient(0deg,var(--bg),transparent 22%)}
 .hn-copy{position:absolute;z-index:2;left:0;right:0;top:15%;pointer-events:none}
+.hn-hero.hn-hovering iframe{z-index:3}
 .hn-copy .hn>*{pointer-events:auto}
 .hn-copy .hn>.hn-title,.hn-copy .hn>.hn-lead{pointer-events:none}  /* full-width text boxes must not block the globe behind them */
 .hn-live{display:inline-flex;align-items:center;gap:8px;padding:5px 11px;border-radius:999px;border:1px solid rgba(255,122,26,.35);color:#FFB37A;font-size:12px;font-weight:550;background:rgba(255,122,26,.06)}
@@ -288,6 +289,8 @@ addEventListener('pageshow', e => { if (e.persisted) { hnGlobeRetried = false; p
 // while the globe is pinched the page behind stays exactly where it is (the globe iframe reports the gesture)
 let holdY = null;
 const holdScroll = () => { if (holdY != null && Math.abs(scrollY - holdY) > 0) scrollTo(0, holdY); };
+// While the globe shows a hover card, lift the globe above the hero text so the card is never hidden behind it.
+addEventListener('message', e => { if (e.origin === location.origin && e.source === hnGlobe.contentWindow && e.data && e.data.inv === 'globe-hover') document.querySelector('.hn-hero').classList.toggle('hn-hovering', !!e.data.on); });
 addEventListener('message', e => {
   if (e.origin !== location.origin || e.source !== hnGlobe.contentWindow || !e.data || e.data.inv !== 'globe-gesture') return;
   if (e.data.on) { holdY = scrollY; document.documentElement.style.overscrollBehavior = 'none'; addEventListener('scroll', holdScroll, { passive: true }); }

@@ -318,7 +318,7 @@ h1 span{color:var(--fg-3)}
 /* Hover preview */
 .hover{position:fixed;z-index:5;width:280px;padding:12px;border-radius:14px;pointer-events:none;display:grid;grid-template-columns:52px 1fr;gap:12px;align-items:start;box-shadow:0 18px 50px rgba(0,0,0,.5);opacity:0;transform:translateY(4px);transition:opacity .14s,transform .14s}
 .hover.on{opacity:1;transform:none}
-.hover.pin{pointer-events:auto;cursor:pointer}
+.hover.pin{pointer-events:auto;cursor:pointer}.embed .hover{background:rgba(14,14,17,.97)!important;-webkit-backdrop-filter:none;backdrop-filter:none}
 .hover.brief{width:340px;display:block;padding:16px}.brief-head{display:flex;align-items:center;gap:10px;padding-bottom:10px}.brief-head .flag{width:22px;height:16px;border-radius:2px;object-fit:cover}.brief-head h3{margin:0;font-size:16px}.brief-head span{margin-left:auto;font-size:12px;color:var(--fg-3)}
 .brief-line{padding:9px 0;border-top:1px solid var(--line);font-size:13px;line-height:1.35;font-weight:650}.brief-index{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:6px;padding-top:10px;font-size:12.5px;color:var(--fg-3)}.brief-next{margin-top:8px;font-size:12px;color:var(--fg-3)}.brief-next b{color:var(--fg);font-weight:650}
 .hover .art{width:52px;height:52px;border-radius:9px}
@@ -1542,11 +1542,14 @@ function assetPanel(sym) {
     ${peers.length ? `<div class="sec-h">Same industry today</div><div class="list">${peers.map(([p, [, why]]) => `<button class="item" data-asset="${esc(p.s)}"><span></span><span><h4>${esc(p.n)} ${pctPill(p.d)}</h4><span class="meta">${esc(why)}</span></span></button>`).join('')}</div>` : ''}
     <p style="margin-top:18px"><a class="btn" href="../../asset.html?s=${encodeURIComponent(sym)}" style="color:var(--accent)">Open the full ${esc(a.s.replace(/-USD$/, ''))} page →</a></p>`;
 }
+// Hover stability: a line stays chosen for a short dwell and the card survives brief gaps between lines (no on/off flicker).
+const ARC_GRACE=220, ARC_DWELL=320; let arcSince=0, arcSeen=0, arcHideT=null;
+const arcKey=h=>h?((h.article&&h.article.id)||'')+'|'+((h.asset&&(h.asset.s||h.asset.n))||''):'';
 function arcPick(x,y,r=10) {
   const pr=pillRects.find(q=>x>=q.x&&x<=q.x+q.w&&y>=q.y&&y<=q.y+q.h); if(pr) return pr.edge;
   // nearest visible line, not the first one in the list; keep the current line while the pointer stays close (stops flicker between overlapping lines)
   const dist=h=>{let m=Infinity;for(const p of h.points){if(!p[2])continue;const d=Math.hypot(p[0]-x,p[1]-y);if(d<m)m=d;}return m;};
-  if(arcHover){const cur=arcHits.find(h=>h===arcHover||(h.article&&arcHover.article&&h.article.id===arcHover.article.id&&h.asset===arcHover.asset));if(cur&&dist(cur)<r*1.8)return cur;}
+  if(arcHover){const cur=arcHits.find(h=>arcKey(h)===arcKey(arcHover));if(cur){const d=dist(cur);if(d<r*1.8||(d<r*3&&performance.now()-arcSince<ARC_DWELL))return cur;}}
   let best=null,bd=r;for(const h of arcHits){const d=dist(h);if(d<bd){bd=d;best=h;}}return best;
 }
 function impactTargets(s) { return impactsOf(s).map(i => ({ impact: i, country: impactCountry(i) })).filter(x => x.country); }
@@ -2013,7 +2016,10 @@ function hoverAt(x, y) {
   if (pinned) return;  // an article popup opened by a click stays until you click elsewhere or press Escape
   cv.style.cursor = !EMBED || onGlobe(x, y) ? 'grab' : 'default';  // full Globe page: hand everywhere; homepage: only over the globe
   const ex = !EMBED && (exPick(x, y) || upPick(x, y)); if (ex) { $('hover').classList.remove('on'); return; }
-  const edge=arcPick(x,y); arcHover=edge || null;
+  const edge=arcPick(x,y), now=performance.now();
+  if(edge){ if(!arcHover||arcKey(arcHover)!==arcKey(edge)) arcSince=now; arcSeen=now; clearTimeout(arcHideT); arcHover=edge; }
+  else if(arcHover && now-arcSeen<ARC_GRACE){ clearTimeout(arcHideT); arcHideT=setTimeout(()=>{ if(arcHover && performance.now()-arcSeen>=ARC_GRACE){ arcHover=null; const hv=$('hover'); delete hv.dataset.edge; hv.classList.remove('on'); } }, ARC_GRACE+20); return; }
+  else arcHover=null;
   if(edge){const hv=$('hover'),key=(edge.article&&edge.article.id)+'|'+(edge.asset&&edge.asset.s||'');if(hv.dataset.edge!==key||!hv.classList.contains('on')){hv.dataset.edge=key;hv.className='hover glass solo hv-b on';hv.innerHTML=hoverCardHTML(edge);}edge.pill?placeHover(edge.pill.x+edge.pill.w+4,edge.pill.y+edge.pill.h/2):placeHover(x,y);return;}  // rebuild the card only when the line changes
 
   const d = pick(x, y, 16);
@@ -2037,7 +2043,8 @@ function showHover(d) {
     hv.innerHTML = `<div><div class="eyebrow">${d.list.length} articles · ${esc(d.list[0].location.place)}</div>${d.list.slice(0, 3).map(s => `<h3 style="font-size:13px;margin:8px 0 0">${esc(s.headline)}</h3>`).join('')}<div class="meta" style="margin-top:8px">Click to ${d.same ? 'see all' : 'zoom in'}${d.list[0].demo ? '<span class="dtag">DEMO</span>' : ''}</div></div>`;
   }
 }
-function placeHover(x, y) { const hv = $('hover'), w = hv.offsetWidth, h = hv.offsetHeight; let l = x + 16, t = y - h / 2; if (l + w > innerWidth - 12 || (EMBED && innerWidth > 900 && x - w - 16 > 12)) l = x - w - 16;  /* homepage (PC): the hero text sits to the right, so cards open to the left */ t = Math.max(12, Math.min(innerHeight - h - 12, t)); hv.style.left = l + 'px'; hv.style.top = t + 'px'; }
+function placeHover(x, y) { const hv = $('hover'), w = hv.offsetWidth, h = hv.offsetHeight; let l = x + 16, t = y - h / 2; if (l + w > innerWidth - 12) l = x - w - 16; t = Math.max(12, Math.min(innerHeight - h - 12, t)); hv.style.left = l + 'px'; hv.style.top = t + 'px'; }
+if (EMBED) { let hoverOn = false; new MutationObserver(() => { const on = $('hover').classList.contains('on'); if (on !== hoverOn) { hoverOn = on; try { parent.postMessage({ inv: 'globe-hover', on }, location.origin); } catch {} } }).observe($('hover'), { attributes: true, attributeFilter: ['class'] }); }
 function hideHover() { delete $('hover').dataset.edge; $('hover').classList.remove('pin'); pinned = null; delete $('hover').dataset.country; arcHover=null; clearTimeout(cTimer); hoverC = null; hoverCountry = null; $('hover').classList.remove('on');  }
 let tapEdge = null;
 function tap(x, y, touch) {
