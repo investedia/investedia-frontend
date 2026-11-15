@@ -113,6 +113,7 @@ html.market-mode:not(.embed) .layers{bottom:68px!important}html.market-mode:not(
 @media(min-width:1180px){html.act-on .zoom{bottom:calc(var(--acth,150px) + 86px)!important}html.act-on .zloc{bottom:calc(var(--acth,150px) + 34px)!important}html.act-on .act.pf{height:auto;max-height:360px;overflow:auto}}
 /* Watchlist tab (free) */
 .wl-g{display:grid;grid-template-columns:250px 1fr;gap:10px}.wl-left{display:flex;flex-direction:column;gap:2px;max-height:220px;overflow:auto}.act-r .pf-b{padding:4px 10px;font-size:12px}.wl-h{display:flex;align-items:center;gap:8px;padding:6px 6px;border-radius:8px;background:none;border:0;color:#ececef;font:13px Inter,sans-serif;cursor:pointer;text-align:left;min-width:0}.wl-h:hover{background:#17171a}.wl-h.on{background:#20140b;color:#ffb27a}.wl-h .mu{margin-left:auto;color:#8a8a92;font-size:11.5px}.wl-h .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wl-lim{font-size:11.5px;color:#8a8a92;padding:2px 6px 8px}.wl-lim b{color:#ececef}.wl-lim .pf-tag{margin-left:4px}
 .wl-lg{width:22px;height:22px;border-radius:6px;object-fit:contain;background:#fff;flex:none}.wl-in{background:#26262a;color:#ececef;font:600 9.5px Inter,sans-serif;display:inline-flex;align-items:center;justify-content:center}
 .wl-cards{display:flex;gap:8px;overflow-x:auto;padding:2px 0 10px;scroll-snap-type:x mandatory}.wl-card{flex:0 0 78%;scroll-snap-align:start;text-align:left;border:1px solid #232327;border-radius:12px;padding:10px 12px;background:#0d0d10;color:#ececef;font:13px/1.35 Inter,sans-serif;display:flex;flex-direction:column;gap:6px}.wl-ch,.wl-cm{display:flex;gap:6px;align-items:center}.wl-ch .mu,.wl-cm .mu{color:#8a8a92;font-size:11.5px}.wl-ct{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .pf-e{display:flex;align-items:center;gap:14px}.pf-e b{font-size:15px;display:block}.pf-e small{color:#8a8a92;font-size:12px}.pf-e .pf-bs{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
@@ -2391,9 +2392,11 @@ function actLatest(){
 let wlWithProjects=false,WL_SEL='all',wlView='home',wlQ='',wlImp=null,PFPROJ=null;
 const wlRead=()=>{try{const L=JSON.parse(localStorage.getItem('inv-watch')||'{}');return {a:Array.isArray(L.a)?L.a:[],c:Array.isArray(L.c)?L.c:[]}}catch{return {a:[],c:[]}}};
 const wlWrite=L=>{try{localStorage.setItem('inv-watch',JSON.stringify(L))}catch{}WATCH=watchSyms();};
-const wlHold=()=>wlRead().a.filter(x=>x&&x.s).map(x=>({s:String(x.s).toUpperCase(),n:x.n||MKT.by?.[x.s]?.n||x.s}));
+const wlAll=()=>wlRead().a.filter(x=>x&&x.s).map(x=>({s:String(x.s).toUpperCase(),n:x.n||MKT.by?.[x.s]?.n||x.s}));
+const wlHold=()=>wlAll().slice(0,WL_FREE);
 const wlUniverse=()=>(MKT.all||[]).filter(a=>a&&a.s&&a.t!=='fx');
-function wlAdd(list){const L=wlRead();for(const a of list){if(!L.a.some(x=>String(x.s).toUpperCase()===a.s.toUpperCase()))L.a.unshift({src:'site',s:a.s,n:a.n||a.s});}wlWrite(L);}
+const WL_FREE=5; // owner 15 Nov 2026: Free shows 5 companies on the globe, Pro unlimited (Pro is not live yet, so everyone is on Free)
+function wlAdd(list){const L=wlRead();let skipped=0;for(const a of list){if(L.a.some(x=>String(x.s).toUpperCase()===a.s.toUpperCase()))continue;if(L.a.length>=WL_FREE){skipped++;continue;}L.a.unshift({src:'site',s:a.s,n:a.n||a.s});}wlWrite(L);if(skipped&&typeof toast==='function')toast(`Free shows ${WL_FREE} on the globe. ${skipped} not added. Pro: unlimited.`);}
 function wlDel(sym){const L=wlRead();L.a=L.a.filter(x=>String(x.s).toUpperCase()!==sym);wlWrite(L);}
 const wlWord=n=>String(n||'').toLowerCase().replace(/[^a-z0-9 ]/g,' ').split(/\s+/).find(w=>w.length>2&&!['the','inc','corp','co','ltd','plc','limited','company','holdings','group'].includes(w))||'';
 function wlItems(H){const S=new Map(H.map(h=>[h.s,h])),out=[];
@@ -2419,7 +2422,8 @@ function wlHTML(){
  const all=wlItems(H),cnt=new Map();for(const it of all)cnt.set(it.h.s,(cnt.get(it.h.s)||0)+1);
  if(WL_SEL!=='all'&&!H.some(h=>h.s===WL_SEL))WL_SEL='all';
  const sel=WL_SEL==='all'?null:H.find(h=>h.s===WL_SEL),list=(sel?all.filter(i=>i.h.s===sel.s):all).slice(0,6);
- const left=`<button type="button" class="wl-h${!sel?' on':''}" data-wlsel="all"><span class="wl-lg wl-in">All</span><span class="nm">All companies</span><span class="mu">${all.length}</span></button>`+H.map(h=>`<button type="button" class="wl-h${sel&&sel.s===h.s?' on':''}" data-wlsel="${esc(h.s)}">${wlLogo(h)}<span class="nm">${esc(h.n)}</span><span class="mu">${cnt.get(h.s)||0}</span></button>`).join('');
+ const tot=wlAll().length,limTxt=`<div class="wl-lim"><b>${Math.min(tot,WL_FREE)} of ${WL_FREE}</b> on the globe · Free${tot>WL_FREE?` · ${tot-WL_FREE} more in your watchlist`:''} <span class="pf-tag">PRO</span> unlimited</div>`;
+ const left=limTxt+`<button type="button" class="wl-h${!sel?' on':''}" data-wlsel="all"><span class="wl-lg wl-in">All</span><span class="nm">All companies</span><span class="mu">${all.length}</span></button>`+H.map(h=>`<button type="button" class="wl-h${sel&&sel.s===h.s?' on':''}" data-wlsel="${esc(h.s)}">${wlLogo(h)}<span class="nm">${esc(h.n)}</span><span class="mu">${cnt.get(h.s)||0}</span></button>`).join('');
  const feed=list.map(i=>`<div class="pf-r">${wlLogo(i.h)}<span class="mu" style="width:44px;flex:none">${esc(wlTime(i.t))}</span><span class="pf-tag">${i.k}</span>${i.st?`<button type="button" class="lk nm" style="color:#ececef;text-align:left" data-wlst="${esc(i.st.id)}">${esc(i.title)}</button>`:`<span class="nm">${esc(i.title)}</span>`}</div>`).join('')||`<div class="pf-r mu">No articles about ${sel?esc(sel.n):'your watchlist'} in this period.</div>`;
  return `<div class="wl-g"><div class="pf-box wl-left">${left}</div><div class="pf-box"><div class="pf-l">${sel?esc(sel.n):'All companies'} · articles</div>${feed}<div class="pf-ft">Changes here are saved to this device; when you are logged in they join your account on your next visit to the site. Not investment advice.</div></div></div>`;
 }
@@ -3111,6 +3115,7 @@ newsReady = window.InvNewsSource.load(NEWS_URL)
 }).catch(() => { pbody.innerHTML = '<div class="empty">News could not be loaded. Please refresh the page.</div>'; });
 setInterval(() => { if (view.k === 'top' && (panelTab === 'markets' || panelTab === 'upcoming') && F.lens === 'all') render(); }, 60000);
 /* MARKET_MODE */
+/* PANELS */
 requestAnimationFrame(frame);
 </script>
 </body>
