@@ -179,9 +179,19 @@
   ];
   const tools = TOOL_GROUPS.flatMap(g => g[1]);
   const PRO_CTA = false;
-  const morePages = ['education','lesson','screener','calendar','calc','calculator','compare','converter','realestate','real-estate','about','contact'];
+  const morePages = ['education','lesson','screener','calendar','calc','calculator','compare','converter','realestate','real-estate','about','contact','briefings','briefing','movers','projects','track-record','sources','watchlist'];
   const themeChoices = () => `<div class="account-theme" role="group" aria-label="Theme"><span>Theme</span>${['light','dark','system'].map(t=>`<button type="button" role="menuitemradio" data-theme-choice="${t}" aria-checked="false">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}</div>`;
-  const ddMore = `<div class="dd dd-more" id="dd-more" role="menu" aria-label="More pages"><section><h6>Learn</h6><a role="menuitem" href="education.html">Education</a></section>${TOOL_GROUPS.map(([h, items])=>`<section><h6>${h}</h6>${items.map(([,t,,u])=>`<a role="menuitem" href="${u}">${t}</a>`).join('')}</section>`).join('')}<section><h6>Company</h6><a role="menuitem" href="about.html">About</a><a role="menuitem" href="contact.html">Contact</a></section><section class="guest-only more-display"><h6>Display</h6><button type="button" role="menuitem" data-open-settings>Settings</button></section></div>`;
+  // More menu (owner 15 Nov 2026, option A): grouped by task, icon + one-line description per link.
+  const MORE_GROUPS = [
+    ['Follow', [['star', 'My watchlist', 'Companies and countries you follow', 'watchlist.html'], ['bell', 'Alerts', 'Email when your names are in the news', '#alerts']]],
+    ['Explore', [['globe', 'Country briefings', 'One page per country', 'briefings.html'], ['trend', 'Biggest movers', 'What moved, and the article behind it', 'movers.html'], ['pin', 'Projects', 'Energy and data-centre builds · Pro', 'projects.html']]],
+    ['Tools', [['screener', 'Stock Screener', 'Filter stocks by numbers', 'screener.html'], ['heat', 'Heatmaps', 'Sectors at a glance', 'stocks.html#heatmap'], ['indices', 'Compare', 'Up to four side by side', 'compare.html'], ['calendar', 'Calendar', 'Economic releases and earnings', 'calendar.html'], ['currencies', 'Currency Converter', 'Major world currencies', 'converter.html'], ['calc', 'Calculators', 'What if I had invested, compound interest, returns, dividends', 'calculator.html']]],
+    ['Learn & trust', [['book', 'Education', 'Guides and lessons', 'education.html'], ['check', 'Track record', 'How our past calls did', 'track-record.html'], ['news', 'Sources', 'Where every article comes from', 'sources.html'], ['sparkle', 'Get the app', 'Install on your phone', 'about.html#app']]],
+  ];
+  const moreLink = ([ic, t, d, u]) => u === '#alerts'
+    ? `<button type="button" role="menuitem" class="mm-it" data-open-alerts><span class="mm-ic">${icon(ic)}</span><span><b>${t}</b><small>${d}</small></span></button>`
+    : `<a role="menuitem" class="mm-it" href="${u}"><span class="mm-ic">${icon(ic)}</span><span><b>${t}</b><small>${d}</small></span></a>`;
+  const ddMore = `<div class="dd dd-more mm" id="dd-more" role="menu" aria-label="More pages">${MORE_GROUPS.map(([h, items]) => `<section><h6>${h}</h6>${items.map(moreLink).join('')}</section>`).join('')}<div class="mm-foot"><a role="menuitem" href="about.html">About</a><a role="menuitem" href="contact.html">Contact</a><a role="menuitem" href="pricing.html">Pricing</a><button type="button" role="menuitem" class="guest-only" data-open-settings>Settings</button></div></div>`;
   const nav = [
     ['globe', 'Globe', 'assets/globe/news.html'],
     ['news', 'News', 'news.html', `<div class="dd dd-news" id="dd-news">${InvNewsMenu.html('nn-desktop')}</div>`],
@@ -287,7 +297,7 @@
   tb?.addEventListener('click',()=>switchTheme(document.documentElement.dataset.theme==='light'?'dark':'light',tb));
   document.addEventListener('click',e=>{const b=e.target.closest('[data-dd="dd-more"]');if(!b)return;const m=document.getElementById('dd-more');if(!m)return;requestAnimationFrame(()=>{const r=b.getBoundingClientRect(),w=m.offsetWidth;m.style.left=Math.max(12,Math.min(r.left-16,innerWidth-w-12))+'px';});});
   setTheme(th); window.setInvTheme = setTheme; window.switchInvTheme = switchTheme;
-  document.addEventListener('click',e=>{const choice=e.target.closest('[data-theme-choice]');if(choice)switchTheme(choice.dataset.themeChoice,choice);const settings=e.target.closest('[data-open-settings]');if(settings){closeAll();hdr.querySelector('#acct-dd').classList.remove('open');hdr.querySelector('#hdr-avatar').setAttribute('aria-expanded','false');if(drawer.classList.contains('open'))closeDrawer();window.InvPrefs?.openSettings(settings.closest('.drawer')?mt:settings.closest('#acct-dd')?hdr.querySelector('#hdr-avatar'):settings.classList.contains('hdr-settings')?settings:hdr.querySelector('[data-dd=dd-more]'));}});
+  document.addEventListener('click',e=>{const al=e.target.closest('[data-open-alerts]');if(al){e.preventDefault();document.querySelectorAll('.dd.open').forEach(d=>d.classList.remove('open'));document.querySelector('.drawer.open')&&document.querySelector('.menu-toggle')?.click();setTimeout(()=>document.getElementById('notif-btn')?.click(),60);return;}const choice=e.target.closest('[data-theme-choice]');if(choice)switchTheme(choice.dataset.themeChoice,choice);const settings=e.target.closest('[data-open-settings]');if(settings){closeAll();hdr.querySelector('#acct-dd').classList.remove('open');hdr.querySelector('#hdr-avatar').setAttribute('aria-expanded','false');if(drawer.classList.contains('open'))closeDrawer();window.InvPrefs?.openSettings(settings.closest('.drawer')?mt:settings.closest('#acct-dd')?hdr.querySelector('#hdr-avatar'):settings.classList.contains('hdr-settings')?settings:hdr.querySelector('[data-dd=dd-more]'));}});
 
   const onScrollHdr = () => hdr.classList.toggle('scrolled', scrollY > 8); addEventListener('scroll', onScrollHdr, { passive: true }); onScrollHdr();
   document.addEventListener('DOMContentLoaded', () => { const m = document.querySelector('main'); if (m) { m.id = m.id || 'main'; if (!('onpagereveal' in window)) m.classList.add('enter'); } });
@@ -338,8 +348,7 @@
   const drawer = document.createElement('div');
   drawer.className = 'drawer';
   drawer.innerHTML = `${page === 'home' ? '' : `<a class="search-btn" href="assets/globe/news.html">${icon('search')}<span>Search assets, countries &amp; articles</span></a>`}
-    <a href="assets/globe/news.html">Globe</a><details class="nn-drawer-news"><summary>News ${icon('chev')}</summary>${InvNewsMenu.html('nn-mobile')}</details><a href="markets.html">Markets</a><a href="pricing.html">Pricing</a><a href="education.html">Learn</a>
-    <details><summary>Tools ${icon('chev')}</summary>${tools.map(([, t, , h]) => `<a href="${h}">${t}</a>`).join('')}</details><a href="about.html">About</a>
+    <a href="assets/globe/news.html">Globe</a><details class="nn-drawer-news"><summary>News ${icon('chev')}</summary>${InvNewsMenu.html('nn-mobile')}</details><a href="markets.html">Markets</a><a href="pricing.html">Pricing</a>${MORE_GROUPS.map(([h, items], i) => `<details class="mm-dr"${i ? '' : ' open'}><summary>${h} ${icon('chev')}</summary>${items.map(moreLink).join('')}</details>`).join('')}<a href="about.html">About</a>
     <button class="drawer-settings" type="button" data-open-settings>Settings</button>
     <div class="drawer-cur"><span>Currency</span><span class="dc-host"></span></div>
     <div class="drawer-acct guest-only"><p>Save your watchlist and alerts on every device.</p><button class="btn btn-primary" type="button" data-auth="up">Create free account</button><button class="btn btn-ghost" type="button" data-auth="in">Log in</button></div>

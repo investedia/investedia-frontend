@@ -1359,3 +1359,19 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .notif-dd .notif-assets i{font-style:normal;font-size:11px}.notif-dd .notif-assets i.up{color:#22c55e}.notif-dd .notif-assets i.down{color:#ef4444}
 :root[data-theme=light] .notif-dd .notif-filters button[aria-pressed=true]{background:#fff!important}
 .notif-dd .notif-group{background:var(--bg-2)}
+
+/* More menu, option A (owner 15 Nov 2026) */
+.dd-more.mm{width:min(1000px,calc(100vw - 24px))!important;left:max(12px,calc(50vw - 500px))!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;grid-template-rows:auto!important;gap:4px 18px!important;padding:20px 22px 14px!important}
+.dd-more.mm h6{margin:0 0 6px 10px}
+.dd-more.mm .mm-it{display:flex!important;align-items:flex-start;gap:11px;min-height:0;padding:8px 10px!important;border-radius:12px;color:var(--fg);font:14px/1.3 Inter,sans-serif!important;text-decoration:none;width:100%;text-align:left;background:none;border:0;cursor:pointer}
+.dd-more.mm .mm-it:hover{background:rgba(255,255,255,.05)}
+.mm-ic{width:32px;height:32px;border-radius:9px;background:rgba(255,255,255,.04);border:1px solid var(--line,#26262a);display:flex;align-items:center;justify-content:center;flex:none;color:#ff9d5c}.mm-ic svg{width:16px;height:16px}
+.mm-it b{display:block;font-weight:500}.mm-it small{display:block;color:var(--fg-3);font-size:12px;margin-top:2px}
+.mm-foot{grid-column:1/-1;display:flex;gap:22px;border-top:1px solid var(--line,#26262a);margin-top:8px;padding:12px 10px 2px}.dd-more.mm .mm-foot a{min-height:0;padding:0;font-size:13px;color:var(--fg-3)}
+.drawer .mm-dr .mm-it{display:flex;align-items:flex-start;gap:12px;padding:9px 0;background:none;border:0;color:var(--fg);font:15px/1.3 Inter,sans-serif;text-align:left;width:100%}
+.dd-more.mm>section{grid-row:1;min-width:0}
+.drawer .mm-dr a.mm-it,.drawer .mm-dr .mm-it{justify-content:flex-start!important;min-height:0!important;border:0!important}
+.drawer .mm-dr .mm-it small{color:var(--fg-3);font-size:13px}
+.dd-more.mm>section:nth-of-type(n){grid-row:1!important;margin-top:0!important}
+.dd-more.mm>section:nth-of-type(1){grid-column:1!important}.dd-more.mm>section:nth-of-type(2){grid-column:2!important}.dd-more.mm>section:nth-of-type(3){grid-column:3!important}.dd-more.mm>section:nth-of-type(4){grid-column:4!important}
+.dd-more.mm .mm-foot button{min-height:0!important;padding:0!important;font-size:13px!important;color:var(--fg-3);background:none;border:0;cursor:pointer}
