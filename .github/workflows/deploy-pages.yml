@@ -58,6 +58,11 @@ jobs:
           grep -q '"dataMode": "worker"' site/assets/runtime-config.js
           cat site/assets/runtime-config.js
 
+      - name: New offline-cache version on every deploy (browsers drop old code)
+        run: |
+          sed -i -E "s/const VERSION = '[^']*'/const VERSION = '${GITHUB_SHA::10}'/" site/sw.js
+          grep -q "const VERSION = '${GITHUB_SHA::10}'" site/sw.js
+
       - name: Upload to Cloudflare Pages
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
