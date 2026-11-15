@@ -16,7 +16,8 @@
  const STRIPS=[['act','#act','.act-h'],['mka','.mkd-a','.mkd-th']];
  const css=document.createElement('style');css.textContent=`
  .gp-hid{display:none!important}
- .gp-ctl{position:fixed;z-index:30;display:none;gap:4px;padding:2px;border-radius:9px;background:#0b0b0e}.gp-ctl.on{display:flex}
+ .gp-ctl{position:fixed;z-index:30;display:none;gap:4px}
+ @media(min-width:1180px){#sideSec>:first-child,#presets>:first-child,#sideImp>:first-child,.mkd-l>:first-child,.mkd-o>:first-child,#pjList>:first-child,#pjStats>:first-child{padding-right:64px!important;box-sizing:border-box}#panel h2{padding-right:96px!important}}.gp-ctl.on{display:flex}
  .gp-ctl button{width:24px;height:24px;border-radius:7px;border:1px solid #2c2c31;background:#141417;color:#aaa;font:600 13px Inter,sans-serif;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
  .gp-ctl button:hover{color:#fff;border-color:#45454c}.gp-ctl .gp-pin[aria-pressed=true]{color:#ff9d5c;border-color:#5a3214;background:#1d130b}
  .gp-ctl .gp-drag{cursor:grab;letter-spacing:-2px;color:#777}.gp-ctl .gp-drag[hidden]{display:none}
@@ -36,7 +37,7 @@
    dr.onpointerup=()=>{dr.onpointermove=null;save();};};}
  const find=id=>{const p=P.find(x=>x[0]===id);return p&&document.querySelector(p[4]);};
  const shown=el=>{if(!el)return false;const r=el.getBoundingClientRect();return r.width>0&&r.height>0&&getComputedStyle(el).visibility!=='hidden';};
- function place(){for(const [id] of P){const el=find(id),c=ctl[id];if(!big()||!el||L.min[id]||!shown(el)){c.classList.remove('on');continue;}const r=el.getBoundingClientRect();c.classList.add('on');c.style.top=Math.max(4,r.top-12)+'px';c.style.left=(r.right-c.offsetWidth-18)+'px';}
+ function place(){for(const [id] of P){const el=find(id),c=ctl[id];if(!big()||!el||L.min[id]||!shown(el)){c.classList.remove('on');continue;}const r=el.getBoundingClientRect();c.classList.add('on');c.style.top=(r.top+12)+'px';c.style.left=(r.right-c.offsetWidth-(id==='top'?54:12))+'px';}
   const lc=document.getElementById('lcol')?.getBoundingClientRect();dockL.style.left=((lc&&lc.width?lc.left:24))+'px';dockL.style.bottom='16px';dockR.style.right='24px';dockR.style.bottom='16px';}
  function sync(){const m=mode();
   for(const [id,label,side,md] of P){const el=find(id);if(!el)continue;const hid=!!L.min[id]&&big();el.classList.toggle('gp-hid',hid);el.style.translate=L.free[id]&&L.pos[id]&&big()?L.pos[id][0]+'px '+L.pos[id][1]+'px':'';
