@@ -1,0 +1,962 @@
+[
+  {
+    "page": "404.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "about.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "accessibility.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "admin.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "affiliate-disclosure.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "ai-disclosure.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "analysis-article.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "analysis.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "article.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "articles.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "asset.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "calculator.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "calendar.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "call.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "companies.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "company.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "compare.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "contact.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "converter.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "cookies.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "copyright.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "corrections.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "dashboard.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "disclaimer.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "editorial-policy.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "education.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "globe.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "implications.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "index.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "legal-notice.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "legal.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "lesson.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "markets.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "movers.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "news.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "pricing.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "privacy.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "profile.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "projects.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "screener.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "sources.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "stocks.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "story.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "studio.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "terms.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "track-record.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "watchlist.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "assets/globe/news.html",
+    "width": 1440,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "404.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "about.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "accessibility.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "admin.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "affiliate-disclosure.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "ai-disclosure.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "analysis-article.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "analysis.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "article.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "articles.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "asset.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "calculator.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "calendar.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "call.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "companies.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "company.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "compare.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "contact.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "converter.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "cookies.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "copyright.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "corrections.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "dashboard.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "disclaimer.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "editorial-policy.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "education.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "globe.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "implications.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "index.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "legal-notice.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "legal.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "lesson.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "markets.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "movers.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "news.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "pricing.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "privacy.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "profile.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "projects.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "screener.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "sources.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "stocks.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "story.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "studio.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "terms.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "track-record.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "watchlist.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  },
+  {
+    "page": "assets/globe/news.html",
+    "width": 390,
+    "violations": [],
+    "tapTargets": [],
+    "overflow": false,
+    "errors": [
+      "ENOENT: no such file or directory, open 'tests/vendor/axe-4.10.3.min.js'"
+    ]
+  }
+]
