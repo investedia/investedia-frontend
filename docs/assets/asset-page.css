@@ -169,3 +169,7 @@ html,body{overflow-x:clip}.ap{max-width:100%;overflow-x:clip}
 .pa-has-topwatch .pa-h{padding-right:0;padding-top:46px}
 .pa-h small{row-gap:6px}.pa-hn h1{overflow-wrap:anywhere}
 @media(max-width:600px){.pa-watch-top{width:40px!important;min-width:0!important;max-width:40px;padding:0!important;justify-content:center;flex:none}.pa-watch-top span{display:none}.pa-has-topwatch .pa-h{padding-top:54px}}
+/* Header line (15 Nov 2026): sector as plain text after the type, no pill, so nothing overlaps the name line */
+.pa-h small .pa-tag{border:0;padding:0;border-radius:0;font-size:inherit;color:var(--fg-3)}
+.pa-h small .pa-tag::before{content:'·';margin-right:8px}
+.pa-h h1{line-height:1.15;margin-bottom:6px}
