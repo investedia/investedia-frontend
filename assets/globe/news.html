@@ -3492,7 +3492,7 @@ function mkUnusual(){
 (()=>{
  const KEY='inv-globe-layout',big=()=>matchMedia('(min-width:1180px)').matches;
  let L;try{L=JSON.parse(localStorage.getItem(KEY)||'{}')}catch{L={}}
- L.min=L.min||{};L.free=L.free||{};L.pos=L.pos||{};L.crop=L.crop||{};
+ L.min=L.min||{};L.free=L.free||{};L.pos=L.pos||{};L.crop=L.crop||{};L.h=L.h||{};L.hl=L.hl||{};
  const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(L))}catch{}};
  const mode=()=>typeof PROJ!=='undefined'&&PROJ.on?'projects':typeof MARKET!=='undefined'&&MARKET.on?'markets':'news';
  // [id, label, side, mode, selector]
@@ -3510,8 +3510,17 @@ function mkUnusual(){
  .gp-dock{position:fixed;z-index:29;display:none;gap:8px;flex-wrap:wrap;max-width:420px}.gp-dock.on{display:flex}
  .gp-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(14,14,17,.95);border:1px solid #2a2a2f;border-radius:999px;padding:7px 12px;font:13px Inter,sans-serif;color:#ddd;cursor:pointer}
  .gp-chip i{width:7px;height:7px;border-radius:50%;background:#ff7a1a}.gp-chip:hover{border-color:#ff7a1a}
- .gp-grab{display:block;width:46px;height:14px;margin:-6px auto 2px;border:0;background:none;cursor:ns-resize;position:relative}.gp-grab:before{content:'';position:absolute;left:0;right:0;top:4px;height:5px;border-radius:3px;background:#3a3a40}.gp-grab:hover:before{background:#ff7a1a}
- .gp-crop{height:auto!important;max-height:none!important}.gp-crop>*:not(.act-h):not(.mkd-th):not(.gp-grab){display:none!important}
+
+ .gp-grab{display:block;width:60px;height:16px;margin:-8px auto 0;border:0;background:none;cursor:ns-resize;position:relative;touch-action:none}.gp-grab:before{content:'';position:absolute;left:7px;right:7px;top:5px;height:5px;border-radius:3px;background:#3a3a40;transition:background .15s}.gp-grab:hover:before{background:#6a6a72}.gp-drag-on .gp-grab:before{background:#d4d4d8}
+ .gp-drag-on{user-select:none}
+ [data-sz]{overflow:hidden!important;transition:height .12s ease-out}.gp-drag-on[data-sz]{transition:none}
+ [data-sz]:not([data-sz=full]):after{content:'';position:absolute;left:0;right:0;bottom:0;height:22px;background:linear-gradient(transparent,rgba(10,10,12,.97));pointer-events:none;border-radius:0 0 14px 14px}
+ [data-sz=compact] :is(.act-t,.mkd-c .t){-webkit-line-clamp:1!important;white-space:nowrap;text-overflow:ellipsis;display:block!important}
+ [data-sz=compact] :is(.act-f,.mkd-c .f){display:none!important}
+ [data-sz=row] :is(.act-k,.mkd-c){display:flex!important;gap:8px;align-items:center;padding:7px 10px!important}
+ [data-sz=row] :is(.act-m,.mkd-c .m){flex:none;max-width:45%}[data-sz=row] :is(.act-t,.mkd-c .t){margin:0!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block!important;-webkit-line-clamp:unset}
+ [data-sz=row] :is(.act-f,.mkd-c .f){display:none!important}
+ [data-sz=tabs]>*:not(.act-h):not(.mkd-th):not(.gp-grab){visibility:hidden}
  @media(max-width:1179px){.gp-ctl,.gp-dock{display:none!important}.gp-hid{display:revert!important}}`;
  document.head.append(css);
  const ctl={},dockL=document.createElement('div'),dockR=document.createElement('div');dockL.className='gp-dock';dockR.className='gp-dock';document.body.append(dockL,dockR);
@@ -3530,15 +3539,21 @@ function mkUnusual(){
    const c=ctl[id];c.querySelector('.gp-pin').setAttribute('aria-pressed',String(!L.free[id]));c.querySelector('.gp-drag').hidden=!L.free[id];}
   const chips=s=>P.filter(p=>p[2]===s&&p[3]===m&&L.min[p[0]]&&find(p[0])).map(([id,label])=>`<button type="button" class="gp-chip" data-gp="${id}"><i></i>${label} ＋</button>`).join('');
   dockL.innerHTML=chips('l');dockR.innerHTML=chips('r');dockL.classList.toggle('on',!!dockL.innerHTML&&big());dockR.classList.toggle('on',!!dockR.innerHTML&&big());
-  for(const [id,sel] of STRIPS){const el=document.querySelector(sel);if(el)el.classList.toggle('gp-crop',!!L.crop[id]);}
+  for(const [id,sel] of STRIPS){const el=document.querySelector(sel);if(el)size(id,el);}
   place();}
  document.addEventListener('click',e=>{const ch=e.target.closest('[data-gp]');if(ch){delete L.min[ch.dataset.gp];save();sync();}});
- // bottom strips: a handle on top; click or drag down to crop to the tab bar, drag up or click again to open
- const grab=()=>{for(const [id,sel,head] of STRIPS){const el=document.querySelector(sel);if(!el)continue;el.classList.toggle('gp-crop',!!L.crop[id]);if(el.querySelector(':scope>.gp-grab'))continue;const h=el.querySelector(head);if(!h)continue;
-  const g=document.createElement('button');g.type='button';g.className='gp-grab';g.title='Drag down to see the full globe';g.setAttribute('aria-label','Show or hide this panel');el.prepend(g);
-  let y0=null;g.onpointerdown=e=>{y0=e.clientY;g.setPointerCapture(e.pointerId);};
-  g.onpointerup=e=>{const dy=y0==null?0:e.clientY-y0;y0=null;L.crop[id]=Math.abs(dy)<6?!L.crop[id]:dy>0;if(!L.crop[id])delete L.crop[id];save();el.classList.toggle('gp-crop',!!L.crop[id]);
-   if(typeof renderAct==='function'&&id==='act')renderAct();if(typeof mkdRender==='function'&&id==='mka')mkdRender();document.documentElement.style.setProperty('--acth',el.offsetHeight+'px');};}};
+ // bottom strips (owner 15 Nov 2026): drag the handle to any height. Content adapts in four steps: full, compact, row, tabs only.
+ const MINH=58,MAXH=380,DEF=150,step=h=>h>=190?'full':h>=125?'compact':h>=80?'row':'tabs';
+ function size(id,el,h){if(!big()){el.style.removeProperty('height');el.removeAttribute('data-sz');return;}h=h??L.h[id];if(h==null){el.style.removeProperty('height');el.dataset.sz=step(el.offsetHeight||DEF);return;}
+  el.style.setProperty('height',h+'px','important');el.style.setProperty('max-height','none','important');el.dataset.sz=step(h);document.documentElement.style.setProperty('--acth',h+'px');}
+ const grab=()=>{for(const [id,sel,head] of STRIPS){const el=document.querySelector(sel);if(!el)continue;if(L.crop[id]){L.h[id]=MINH;delete L.crop[id];save();}
+  if(el.querySelector(':scope>.gp-grab')){if(L.h[id]!=null&&el.style.height!==L.h[id]+'px')size(id,el);continue;}if(!el.querySelector(head))continue;
+  const g=document.createElement('button');g.type='button';g.className='gp-grab';g.title='Drag to resize · double-click to restore';g.setAttribute('aria-label','Resize this panel');el.prepend(g);size(id,el);
+  let y0=null,h0=0;g.onpointerdown=e=>{e.preventDefault();y0=e.clientY;h0=el.offsetHeight;g.setPointerCapture(e.pointerId);el.classList.add('gp-drag-on');};
+  g.onpointermove=e=>{if(y0==null)return;const h=Math.round(Math.max(MINH,Math.min(MAXH,h0-(e.clientY-y0))));L.h[id]=h;size(id,el,h);};
+  g.onpointerup=()=>{if(y0==null)return;y0=null;el.classList.remove('gp-drag-on');if(L.h[id]>MINH)L.hl[id]=L.h[id];save();};
+  g.ondblclick=()=>{L.h[id]=L.h[id]<=MINH?(L.hl[id]||DEF):MINH;size(id,el);save();};
+  g.onkeydown=e=>{if(e.key!=='ArrowUp'&&e.key!=='ArrowDown')return;e.preventDefault();L.h[id]=Math.max(MINH,Math.min(MAXH,(L.h[id]||el.offsetHeight)+(e.key==='ArrowUp'?20:-20)));size(id,el);save();};}};
  new MutationObserver(()=>{grab();}).observe(document.body,{childList:true,subtree:true});
  addEventListener('resize',sync);setInterval(()=>{if(big())sync();},700);grab();sync();
 })();
