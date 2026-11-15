@@ -2,8 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.investedia.com/</loc><changefreq>hourly</changefreq></url>
   <url><loc>https://www.investedia.com/about</loc><changefreq>daily</changefreq></url>
-  <url><loc>https://www.investedia.com/track-record</loc><changefreq>daily</changefreq></url>
-  <url><loc>https://www.investedia.com/implications</loc><changefreq>hourly</changefreq></url>
   <url><loc>https://www.investedia.com/analysis-article</loc><changefreq>daily</changefreq></url>
   <url><loc>https://www.investedia.com/analysis</loc><changefreq>daily</changefreq></url>
   <url><loc>https://www.investedia.com/article</loc><changefreq>daily</changefreq></url>
