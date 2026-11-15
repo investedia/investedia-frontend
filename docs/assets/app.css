@@ -1377,7 +1377,7 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .dd-more.mm .mm-foot button{min-height:0!important;padding:0!important;font-size:13px!important;color:var(--fg-3);background:none;border:0;cursor:pointer}
 /* Sign-up box v2 (owner design 15 Nov 2026) */
 .auth .auth-box{position:relative;overflow:hidden;max-width:460px;width:calc(100% - 24px);padding:32px 32px 26px;border-radius:24px;background:#0f0f12;border:1px solid #26262b}
-.auth-art{position:absolute;top:0;right:0;width:62%;height:260px;background:url(img/auth-globe.jpg) right top/cover no-repeat;opacity:.85;-webkit-mask-image:linear-gradient(200deg,#000 35%,transparent 80%);mask-image:linear-gradient(200deg,#000 35%,transparent 80%);pointer-events:none}
+.auth-art{position:absolute;top:0;right:0;width:62%;height:260px;background:url(img/auth-globe.png) right top/cover no-repeat;opacity:.85;-webkit-mask-image:linear-gradient(200deg,#000 35%,transparent 80%);mask-image:linear-gradient(200deg,#000 35%,transparent 80%);pointer-events:none}
 .auth-box>*:not(.auth-art){position:relative}.auth-box .pop-x{position:absolute;z-index:2}
 .auth-head{text-align:left!important}.auth-brand .brand{pointer-events:none;font-size:20px}.auth-head h2{font-size:clamp(30px,6vw,40px)!important;line-height:1.08;letter-spacing:-.03em;margin:18px 0 10px!important;max-width:320px}.auth-head p{font-size:16px;max-width:300px;margin:0 0 22px}
 .auth-sso{display:grid;gap:10px}.auth-sso-b{width:100%;min-height:52px!important;border-radius:999px!important;border:1px solid #2c2c32!important;background:#131316!important;color:#fff!important;font:600 16px Inter,sans-serif!important;display:flex!important;justify-content:center;align-items:center;gap:12px}.auth-sso-b:hover{background:#1b1b1f!important}.auth-sso-b[hidden]{display:none!important}
@@ -1393,6 +1393,12 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .auth-step2 .input{height:50px;border-radius:999px;padding:0 20px}.auth-step2 .auth-pw .input{padding-right:70px}
 .auth-guest{display:block;margin:6px auto 0!important;text-align:center}
 /* Real globe art (rendered from our own Globe) */
-.auth-art{width:420px!important;height:416px!important;top:-70px!important;right:-150px!important;background:url(img/auth-globe.jpg) center/contain no-repeat!important;opacity:.95!important;-webkit-mask-image:radial-gradient(circle at 50% 50%,#000 58%,transparent 72%)!important;mask-image:radial-gradient(circle at 50% 50%,#000 58%,transparent 72%)!important}
+.auth-art{width:420px!important;height:416px!important;top:-70px!important;right:-150px!important;background:url(img/auth-globe.png) center/contain no-repeat!important;opacity:.95!important;-webkit-mask-image:radial-gradient(circle at 50% 50%,#000 58%,transparent 72%)!important;mask-image:radial-gradient(circle at 50% 50%,#000 58%,transparent 72%)!important}
 .auth-box::after{content:'';position:absolute;top:-70px;right:-150px;width:420px;height:416px;border-radius:50%;box-shadow:0 0 90px 10px rgba(255,122,26,.18);pointer-events:none}
 @media(max-width:480px){.auth-art{width:320px!important;height:316px!important;top:-60px!important;right:-130px!important}.auth-box::after{width:320px;height:316px;top:-60px;right:-130px}}
+
+/* Night-lights globe limb (NASA Black Marble, public domain), owner design 15 Nov 2026 */
+.auth-art{width:340px!important;height:264px!important;top:40px!important;right:-20px!important;background:url(img/auth-globe.png) right top/cover no-repeat!important;opacity:1!important;-webkit-mask-image:linear-gradient(to bottom,#000 70%,transparent)!important;mask-image:linear-gradient(to bottom,#000 70%,transparent)!important}
+.auth-box::after{display:none}
+@media(max-width:480px){.auth-art{width:230px!important;height:180px!important;top:70px!important;right:-10px!important}}
+.auth-art{top:0!important;right:-30px!important;width:320px!important;height:250px!important}.auth-head p{max-width:270px!important}@media(max-width:480px){.auth-art{top:20px!important;width:210px!important;height:165px!important}.auth-head p{max-width:230px!important}}
