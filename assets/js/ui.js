@@ -330,6 +330,8 @@
   hdr.querySelectorAll('[data-dd]').forEach(btn => {
     const dd = document.getElementById(btn.dataset.dd), li = btn.parentElement;
     const open = v => { if (v) closeAll(btn); btn.setAttribute('aria-expanded', v); dd.classList.toggle('open', v); };
+    // Owner (15 Nov 2026): double-clicking a menu with its own page (News) goes there, like its "All" link.
+    btn.addEventListener('dblclick',e=>{const home={news:'news.html'}[btn.dataset.dd.slice(3)];if(home){e.preventDefault();location.href=home;}});
     btn.addEventListener('keydown',e=>{if(e.key==='ArrowDown'){e.preventDefault();open(true);dd.querySelector('a,button')?.focus();}});
     let openedByHover = false;
     btn.addEventListener('click', e => { const keepOpen = openedByHover && e.detail > 0; openedByHover = false; open(keepOpen || btn.getAttribute('aria-expanded') !== 'true'); });
