@@ -1451,3 +1451,20 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .auth .auth-art-cf{display:none}
 .auth.is-code .auth-art-up{display:none}.auth.is-code .auth-art-cf{display:block}
 .auth.is-code .auth-art{background-image:url(img/auth-bg-2.jpg)!important}
+/* phone: lighter sign-up box (owner 16 Nov 2026) */
+@media(max-width:820px){
+.auth .auth-art{min-height:150px!important}
+.auth .auth-art h3{font-size:19px!important}
+.auth-main .auth-head h2,.auth h2.auth-cf-t{font-size:25px!important}
+.auth-main .auth-head p,.auth-cf-s{font-size:14px!important}
+.auth .auth-em,.auth .auth-em .input{min-height:46px!important;height:46px!important;font-size:15px!important}
+.auth .auth-go,.auth .auth-sso-b{min-height:46px!important;height:46px!important;padding-top:0!important;padding-bottom:0!important;font-size:15px!important}
+.auth .auth-sso{gap:8px!important}.auth .auth-sso-b+.auth-sso-b{margin-top:0!important}
+.auth .auth-or{margin:14px 0 10px!important}
+.auth-boxes{gap:8px}.auth-box1{font-size:21px}
+}
+/* no orange focus ring in the sign-up box (owner 16 Nov 2026) */
+.auth .auth-em:focus-within,.auth .auth-em .input:focus,.auth .input:focus,.auth .input:focus-visible{outline:none!important;box-shadow:none!important}
+.auth .auth-em:focus-within{border-color:rgba(255,255,255,.35)!important}
+.auth .auth-em .input:focus{border-color:rgba(255,255,255,.35)!important}
+.auth .auth-box1:focus{border-color:rgba(255,255,255,.45);box-shadow:none}
