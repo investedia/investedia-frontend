@@ -717,7 +717,8 @@
   au.className = 'palette auth'; au.hidden = true;
   au.innerHTML = `<div class="palette-box auth-box" role="dialog" aria-modal="true" aria-labelledby="au-t">
     <button class="icon-btn pop-x" type="button" aria-label="Close">${icon('x')}</button>
-    <div class="auth-art" aria-hidden="true"></div>
+    <div class="auth-art"><span class="auth-art-brand">${brand}</span><div><h3>See what's moving markets, and where.</h3><p>Global news on a live globe.</p></div></div>
+    <div class="auth-main">
     <div class="auth-head"><span class="auth-brand">${brand}</span><h2 id="au-t">Create your free account</h2><p class="muted" id="au-sub">Follow markets, save what matters and get the daily brief.</p></div>
     <div class="auth-sso"><button class="btn auth-sso-b auth-apple" type="button" data-prov="apple" hidden><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 5c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg><span>Continue with Apple</span></button>
     <button class="btn auth-sso-b auth-google" type="button" data-prov="google">${gIcon}<span>Continue with Google</span></button>
@@ -734,6 +735,7 @@
     <p class="auth-legal dim" data-only="up">By continuing you agree to our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.</p>
     <p class="auth-switch"><span data-only="up">Have an account? <button type="button" data-m="in">Log in</button></span><span data-only="in">New here? <button type="button" data-m="up">Create an account</button></span></p>
     <button class="auth-guest" type="button">Continue as guest</button>
+    </div>
   </div>`;
   let auMode = 'up';
   const auSet = m => { auMode = m; au.querySelectorAll('[data-only]').forEach(e => e.hidden = e.dataset.only !== m);
