@@ -1447,3 +1447,7 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .auth-cf-re button:disabled{color:var(--fg-3);text-decoration:none;cursor:default}
 .auth .auth-cf-go:disabled{background:rgba(255,255,255,.08);color:var(--fg-3);opacity:1;cursor:default}
 .auth-cf-alt{margin:16px 0 0}
+/* left panel: globe 1 + "See what moves markets" on step 1, globe 2 + "Global markets, in context" on the code step */
+.auth .auth-art-cf{display:none}
+.auth.is-code .auth-art-up{display:none}.auth.is-code .auth-art-cf{display:block}
+.auth.is-code .auth-art{background-image:url(img/auth-bg-2.jpg)!important}

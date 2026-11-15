@@ -717,7 +717,7 @@
   au.className = 'palette auth'; au.hidden = true;
   au.innerHTML = `<div class="palette-box auth-box" role="dialog" aria-modal="true" aria-labelledby="au-t">
     <button class="icon-btn pop-x" type="button" aria-label="Close">${icon('x')}</button>
-    <div class="auth-art"><span class="auth-art-brand">${brand}</span><div><h3>Global markets,<br>in context.</h3><p>News, data and projects<br>on a single platform.</p></div></div>
+    <div class="auth-art"><span class="auth-art-brand">${brand}</span><div class="auth-art-up"><h3>See what moves markets — and where.</h3><p>Global investment intelligence on a live globe.</p></div><div class="auth-art-cf"><h3>Global markets,<br>in context.</h3><p>News, data and projects<br>on a single platform.</p></div></div>
     <div class="auth-main">
     <div class="auth-head"><span class="auth-brand">${brand}</span><h2 id="au-t">Sign in or<br>create an account</h2><p class="muted" id="au-sub">Enter your email and we'll send you a verification code to get started.</p></div>
     <form class="auth-f" novalidate>
@@ -762,7 +762,7 @@
   // Email code: send a 6-digit code, the person pastes it here (owner 16 Nov 2026)
   let auEm = '', auWait = 0;
   const cfMsg = (t, ok) => { const e = au.querySelector('.auth-cf-msg'); e.hidden = !t; e.textContent = t; e.classList.toggle('up', !!ok); e.classList.toggle('down', !ok); };
-  const auCode = em => { auEm = em; auWait = Date.now() + 60000; const on = !!em; au.querySelector('.auth-cf').hidden = !on; ['.auth-sso', '.auth-or', '.auth-f', '.auth-head', '.auth-legal'].forEach(q => { const e = au.querySelector(q); if (e) e.hidden = on; });
+  const auCode = em => { auEm = em; auWait = Date.now() + 60000; const on = !!em; au.querySelector('.auth-cf').hidden = !on; au.classList.toggle('is-code', on); ['.auth-sso', '.auth-or', '.auth-f', '.auth-head', '.auth-legal'].forEach(q => { const e = au.querySelector(q); if (e) e.hidden = on; });
     clearInterval(auTick); if (!on) return; au.querySelector('.auth-cf-em').textContent = em; auBoxes.forEach(b => b.value = ''); auSync(); cfMsg(''); auTimer(); setTimeout(() => auBoxes[0].focus(), 30); };
   const auBoxes = [...au.querySelectorAll('.auth-box1')]; let auTick;
   const auSync = () => { const v = auBoxes.map(b => b.value).join(''); au.querySelector('[name=code]').value = v; au.querySelector('.auth-cf-go').disabled = v.length !== 6; auBoxes.forEach(b => b.classList.toggle('on', !!b.value)); return v; };
