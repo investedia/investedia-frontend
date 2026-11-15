@@ -164,3 +164,8 @@ html,body{overflow-x:clip}.ap{max-width:100%;overflow-x:clip}
 .pa{padding-top:6px}
 @media(max-width:760px){.pa-h{flex-wrap:wrap;padding-top:54px}.pa-h .ap-ic{width:44px;height:44px}.pa-hn{flex:1 1 0}.pa-h #ap-watch{width:100%;justify-content:center}.pa-sts>.pa-st{min-width:40%}}
 @media(max-width:760px){.pa-h{align-items:flex-start}.pa-h small .ap-co-slot{flex-basis:100%}}
+/* Pop-up header (15 Nov 2026): Watch in the top bar beside "Open full page"; name and tags never covered */
+.pa-watch-top{position:absolute;top:14px;z-index:3;height:40px;border-radius:999px!important;padding:0 14px!important}
+.pa-has-topwatch .pa-h{padding-right:0;padding-top:46px}
+.pa-h small{row-gap:6px}.pa-hn h1{overflow-wrap:anywhere}
+@media(max-width:600px){.pa-watch-top{width:40px!important;min-width:0!important;max-width:40px;padding:0!important;justify-content:center;flex:none}.pa-watch-top span{display:none}.pa-has-topwatch .pa-h{padding-top:54px}}
