@@ -737,6 +737,13 @@
     <button class="auth-guest" type="button">Continue as guest</button>
     </div>
   </div>`;
+  // Sign-up panel: a few real market moves floating over the globe (delayed data from markets.json)
+  const auTicks = () => { const art = au.querySelector('.auth-art'); if (!art || art.dataset.ticks) return; art.dataset.ticks = '1';
+    fetch('assets/globe/markets.json').then(r => r.json()).then(j => { const by = Object.fromEntries((j.assets || []).map(a => [a.s, a]));
+      const spots = [['^GSPC', 17, 45], ['^FTSE', 56, 55], ['^GDAXI', 74, 63], ['^IBEX', 40, 66]];
+      art.insertAdjacentHTML('beforeend', spots.map(([sym, x, y], i) => { const a = by[sym]; if (!a || !Number.isFinite(a.p) || !Number.isFinite(a.d)) return '';
+        const up = a.d >= 0; return `<span class="auth-tk ${up ? 'up' : 'dn'}" style="left:${x}%;top:${y}%;animation-delay:${i * -1.6}s"><b>${a.n}</b><span>${a.p.toLocaleString('en-US', { maximumFractionDigits: 2 })}</span><i>${up ? '▲' : '▼'} ${Math.abs(a.d).toFixed(2)}%</i></span>`; }).join('') + '<small class="auth-tk-note">Delayed prices</small>');
+    }).catch(() => {}); };
   let auMode = 'up';
   const auSet = m => { auMode = m; au.querySelectorAll('[data-only]').forEach(e => e.hidden = e.dataset.only !== m);
     au.querySelector('#au-t').textContent = m === 'up' ? 'Create your Investedia account' : 'Welcome back'; au.querySelector('#au-sub').textContent = m === 'up' ? 'Track markets, save key stories, and get the daily brief.' : 'Log in to see your watchlist and alerts.'; auStep(false);
@@ -744,7 +751,7 @@
   // Two steps: email first, then name/password (owner design 15 Nov 2026)
   const auStep = on => { au.querySelector('.auth-step2').hidden = !on; au.querySelector('.auth-go span').textContent = !on ? 'Continue with email' : auMode === 'up' ? 'Create free account' : 'Log in'; if (on) setTimeout(() => au.querySelector(auMode === 'up' ? '[name=name]' : '[name=pw]').focus(), 30); };
   const auMsg = (t, ok) => { const e = au.querySelector('.auth-msg'); e.hidden = !t; e.textContent = t; e.classList.toggle('up', !!ok); e.classList.toggle('down', !ok); };
-  const openAuth = (m = 'up') => { closePop(); auSet(m); if (au.hidden) modalOpen(au); au.hidden = false; store('inv-auth-seen', '1'); store('inv-pop', '1'); };
+  const openAuth = (m = 'up') => { closePop(); auTicks(); auSet(m); if (au.hidden) modalOpen(au); au.hidden = false; store('inv-auth-seen', '1'); store('inv-pop', '1'); };
   const closeAuth = () => { if (au.hidden) return; au.hidden = true; modalClose(au); };
   au.querySelector('.pop-x').onclick = au.querySelector('.auth-guest').onclick = () => { store('inv-guest', '1'); closeAuth(); };
   au.onclick = e => { if (e.target === au) closeAuth(); };
