@@ -10,6 +10,7 @@ HEAD = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <script>try{{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t==='system'?(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'):t}}catch(e){{}}</script><style>html{{background:#0a0a0b}}html[data-theme=light]{{background:#fff}}</style>
+<script src="assets/fetch-share.js?v={ver}"></script>
 <link rel="stylesheet" href="assets/consent.css?v={ver}">
 <script src="assets/consent.js?v={ver}"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">

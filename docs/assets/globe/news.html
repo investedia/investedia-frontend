@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" href="../economy-charts.css">
-<script src="../economy-charts.js"></script>
+<script src="../fetch-share.js"></script><script src="../economy-charts.js"></script>
 <script src="../news-filters.js"></script>
 <meta charset="utf-8"><script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}if(!/[?&]embed=1/.test(location.search))document.documentElement.classList.add('standalone')</script><style>
 @font-face{font-family:"Inter";src:url("/assets/fonts/inter-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
@@ -985,7 +985,7 @@ html.proj-mode .pjs{left:378px!important}}
 
 <script>if (/[?&]embed=1/.test(location.search)) document.documentElement.classList.add('embed');</script>
 <script src="../quotes.js"></script>
-<script src="../news-alerts.js" defer></script>
+<script src="../news-alerts.js" async></script>
 <script src="../asset-icons.js"></script><script src="../since-news.js"></script><script src="../share-link.js"></script>
 <script>
 // ===== Data =====
@@ -2995,7 +2995,7 @@ function drawStars(now) {
     ctx.beginPath(); ctx.arc(x, y, st.r, 0, 7); ctx.fill();
   }
 }
-let last = performance.now();
+let last = performance.now(), firstDrawn = false;
 function frame(t) {
   const dt = Math.min(50, t - last); last = t;
   if (modeSpin) { const k = Math.min(1, (t - modeSpin.t0) / modeSpin.dur), inc = -(modeSpin.deg || 360) * spinEase(k) - modeSpin.done; modeSpin.done += inc; lon0 += inc; if (k >= 1) modeSpin = null; }
@@ -3007,6 +3007,7 @@ function frame(t) {
   keepZoomAnchor(); if (Z === Zt) zoomAnchor = null;
   if (play) { const k = Math.min(1, (t - play.t0) / play.dur); play.cur = play.start + (T0 - play.start) * k; refresh(); if (k >= 1) { play = null; refresh(); } }
 
+  if (!firstDrawn) { firstDrawn = true; if (EMBED && parent !== window) requestAnimationFrame(() => parent.postMessage({ inv: 'globe-drawn' }, location.origin)); } // homepage shows the globe on its first frame, not after every photo has loaded
   ctx.clearRect(0, 0, W, H);
   ctx.save(); // no hard clip: when zoomed in, the map runs softly behind the controls (markers still stay inside the free area)
   drawSky();  // galaxy and stars: built once per size, then one copy per frame
