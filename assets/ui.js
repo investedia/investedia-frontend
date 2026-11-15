@@ -717,9 +717,9 @@
   au.className = 'palette auth'; au.hidden = true;
   au.innerHTML = `<div class="palette-box auth-box" role="dialog" aria-modal="true" aria-labelledby="au-t">
     <button class="icon-btn pop-x" type="button" aria-label="Close">${icon('x')}</button>
-    <div class="auth-art"><span class="auth-art-brand">${brand}</span><div><h3>See what's moving markets, and where.</h3><p>Global news on a live globe.</p></div></div>
+    <div class="auth-art"><span class="auth-art-brand">${brand}</span><div><h3>See what moves markets — and where.</h3><p>Global investment intelligence on a live globe.</p></div></div>
     <div class="auth-main">
-    <div class="auth-head"><span class="auth-brand">${brand}</span><h2 id="au-t">Create your free account</h2><p class="muted" id="au-sub">Follow markets, save what matters and get the daily brief.</p></div>
+    <div class="auth-head"><span class="auth-brand">${brand}</span><h2 id="au-t">Create your Investedia account</h2><p class="muted" id="au-sub">Track markets, save key stories, and get the daily brief.</p></div>
     <div class="auth-sso"><button class="btn auth-sso-b auth-apple" type="button" data-prov="apple" hidden><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 5c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg><span>Continue with Apple</span></button>
     <button class="btn auth-sso-b auth-google" type="button" data-prov="google">${gIcon}<span>Continue with Google</span></button>
     <button class="btn auth-sso-b auth-ms" type="button" data-prov="azure" hidden><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="#F25022" d="M2 2h9.5v9.5H2z"/><path fill="#7FBA00" d="M12.5 2H22v9.5h-9.5z"/><path fill="#00A4EF" d="M2 12.5h9.5V22H2z"/><path fill="#FFB900" d="M12.5 12.5H22V22h-9.5z"/></svg><span>Continue with Microsoft</span></button></div>
@@ -739,7 +739,7 @@
   </div>`;
   let auMode = 'up';
   const auSet = m => { auMode = m; au.querySelectorAll('[data-only]').forEach(e => e.hidden = e.dataset.only !== m);
-    au.querySelector('#au-t').textContent = m === 'up' ? 'Create your free account' : 'Welcome back'; au.querySelector('#au-sub').textContent = m === 'up' ? 'Follow markets, save what matters and get the daily brief.' : 'Log in to see your watchlist and alerts.'; auStep(false);
+    au.querySelector('#au-t').textContent = m === 'up' ? 'Create your Investedia account' : 'Welcome back'; au.querySelector('#au-sub').textContent = m === 'up' ? 'Track markets, save key stories, and get the daily brief.' : 'Log in to see your watchlist and alerts.'; auStep(false);
     au.querySelector('[name=pw]').autocomplete = m === 'up' ? 'new-password' : 'current-password'; auMsg(''); };
   // Two steps: email first, then name/password (owner design 15 Nov 2026)
   const auStep = on => { au.querySelector('.auth-step2').hidden = !on; au.querySelector('.auth-go span').textContent = !on ? 'Continue with email' : auMode === 'up' ? 'Create free account' : 'Log in'; if (on) setTimeout(() => au.querySelector(auMode === 'up' ? '[name=name]' : '[name=pw]').focus(), 30); };
