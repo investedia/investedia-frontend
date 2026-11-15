@@ -1427,3 +1427,23 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .auth .auth-code::placeholder{font-size:15px;letter-spacing:0;font-weight:400}
 .auth-cf-alt{margin:2px 0 0;text-align:center;font-size:13px;color:var(--fg-3)}
 .auth-cf-alt button{border:0;background:none;padding:2px;color:var(--fg-2);text-decoration:underline;text-underline-offset:3px;cursor:pointer;font-size:13px}
+/* auth v3: email-first + 6-box code (owner mock 16 Nov 2026) */
+.auth .auth-pwlink,.auth .auth-switch,.auth .auth-guest{display:none!important}
+.auth .auth-head[hidden],.auth .auth-legal[hidden]{display:none!important}
+.auth .auth-f{margin-top:4px}
+.auth .auth-or{margin:18px 0 12px}
+.auth .auth-sso{margin:0 0 16px}
+.auth .auth-legal{margin-top:6px;text-align:left}
+.auth-cf{gap:0}
+.auth h2.auth-cf-t{margin:8px 0 10px;font-size:30px;line-height:1.15;letter-spacing:-.02em;font-weight:700}
+.auth-cf-s{margin:0 0 26px;font-size:15px}
+.auth-cf-s b{display:block;margin-top:2px;font-weight:500}
+.auth-boxes{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin:0 0 22px}
+.auth-box1{width:100%;aspect-ratio:1/1.05;min-width:0;border:1px solid var(--line-2,#2a2a2f);border-radius:12px;background:rgba(255,255,255,.03);color:var(--fg);text-align:center;font:600 24px/1 Inter,system-ui,sans-serif;font-variant-numeric:tabular-nums;outline:none;caret-color:#FF7A1A;transition:border-color .15s,box-shadow .15s}
+.auth-box1:focus{border-color:#FF7A1A;box-shadow:0 0 0 3px rgba(255,122,26,.18)}
+.auth-box1.on{border-color:rgba(255,255,255,.28)}
+.auth-cf-re{margin:0 0 18px;text-align:center;font-size:13px;color:var(--fg-3)}
+.auth-cf-re button{border:0;background:none;padding:0;font-size:13px;color:var(--fg);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.auth-cf-re button:disabled{color:var(--fg-3);text-decoration:none;cursor:default}
+.auth .auth-cf-go:disabled{background:rgba(255,255,255,.08);color:var(--fg-3);opacity:1;cursor:default}
+.auth-cf-alt{margin:16px 0 0}
