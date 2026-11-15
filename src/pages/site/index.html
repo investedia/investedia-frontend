@@ -275,10 +275,14 @@ function sendGlobeMode(){const r=hnGlobe.getBoundingClientRect(),occlusions=[...
 hnGlobe.addEventListener('load',()=>{sendGlobeMode();requestAnimationFrame(()=>hnGlobe.classList.add('ready'));});
 const previousHomeNav=window.InvGlobeNav,marketsHomeNav={...previousHomeNav,market:value=>{if(homeGlobeMode!=='markets')return false;const split=value.indexOf(':');if(split<0)return false;hnGlobe.contentWindow?.postMessage({type:'investedia-mode',mode:'markets',country:value.slice(split+1),exchange:value.slice(0,split)},location.origin);return true;},country:name=>{if(homeGlobeMode!=='markets')return false;hnGlobe.contentWindow?.postMessage({type:'investedia-mode',mode:'markets',country:name},location.origin);return true;}};
 document.querySelector('.hn-modes').onclick=e=>{const b=e.target.closest('[data-globe-mode]');if(!b||b.dataset.globeMode===homeGlobeMode)return;const apply=()=>{homeGlobeMode=b.dataset.globeMode;syncHomeMode();sendGlobeMode();if(homeGlobeMode==='markets')showMarketHeadline();else if(window.hnShowNews)hnShowNews();};if(matchMedia('(prefers-reduced-motion: reduce)').matches||!hnGlobe.classList.contains('ready')){apply();return;}hnGlobe.classList.add('hn-swap');setTimeout(()=>{apply();requestAnimationFrame(()=>requestAnimationFrame(()=>hnGlobe.classList.remove('hn-swap')));},280);};
-const placeGlobe = () => { syncHomeMode();hnGlobe.src = 'assets/globe/news.html?embed=1&v=p4-markets-1&' + globeParams()+(homeGlobeMode==='markets'?'&mode=markets':''); };
+// Cloudflare serves news.html via a 308 redirect to /news; ask for /news directly there to skip that round trip.
+const GLOBE_PAGE = /(^|\.)investedia\.com$|\.pages\.dev$/.test(location.hostname) ? 'news' : 'news.html';
+const placeGlobe = () => { syncHomeMode();hnGlobe.src = 'assets/globe/' + GLOBE_PAGE + '?embed=1&v=p4-markets-1&' + globeParams()+(homeGlobeMode==='markets'?'&mode=markets':''); };
 addEventListener('resize',()=>{syncHomeMode();sendGlobeMode();});
 
-(document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(() => requestAnimationFrame(placeGlobe));
+// Start the globe right away (it used to wait for web fonts, which delayed it); re-measure the text it avoids once fonts arrive.
+placeGlobe();
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { if (hnGlobe.classList.contains('ready')) sendGlobeMode(); });
 // Recover when the globe does not come up (slow load, failed frame, or a page restored from history): retry once after 8 s, and redraw on a restored page.
 let hnGlobeRetried = false;
 const hnGlobeWatch = () => { if (!hnGlobe.classList.contains('ready') && !hnGlobeRetried) { hnGlobeRetried = true; placeGlobe(); } };
