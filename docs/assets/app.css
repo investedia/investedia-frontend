@@ -1392,3 +1392,7 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .auth-em{margin:0!important}.auth-em svg{top:26px!important;transform:translateY(-50%)!important}
 .auth-step2 .input{height:50px;border-radius:999px;padding:0 20px}.auth-step2 .auth-pw .input{padding-right:70px}
 .auth-guest{display:block;margin:6px auto 0!important;text-align:center}
+/* Real globe art (rendered from our own Globe) */
+.auth-art{width:420px!important;height:416px!important;top:-70px!important;right:-150px!important;background:url(img/auth-globe.jpg) center/contain no-repeat!important;opacity:.95!important;-webkit-mask-image:radial-gradient(circle at 50% 50%,#000 58%,transparent 72%)!important;mask-image:radial-gradient(circle at 50% 50%,#000 58%,transparent 72%)!important}
+.auth-box::after{content:'';position:absolute;top:-70px;right:-150px;width:420px;height:416px;border-radius:50%;box-shadow:0 0 90px 10px rgba(255,122,26,.18);pointer-events:none}
+@media(max-width:480px){.auth-art{width:320px!important;height:316px!important;top:-60px!important;right:-130px!important}.auth-box::after{width:320px;height:316px;top:-60px;right:-130px}}
