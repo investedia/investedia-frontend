@@ -111,7 +111,10 @@ html.market-mode:not(.embed) .layers{bottom:68px!important}html.market-mode:not(
 .act-m{font-size:11px;color:#8a8a92;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.act-m b{color:#ff9d5c;font-weight:500;margin-right:6px}.act-t{margin-top:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.act-f{margin-top:6px;font-size:11px;color:#77777f;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.act-f .u{color:#34d399}.act-f .d{color:#f87171}.act-f .hi{color:#ff9d5c}
 .act-e{grid-column:1/-1;border:1px dashed #2a2a2f;border-radius:11px;padding:16px;color:#9a9aa2;font-size:12.5px}
 @media(min-width:1180px){html.act-on .zoom{bottom:calc(var(--acth,150px) + 86px)!important}html.act-on .zloc{bottom:calc(var(--acth,150px) + 34px)!important}html.act-on .act.pf{height:auto;max-height:360px;overflow:auto}}
-/* My portfolio tab (free; saved on this device only) */
+/* Watchlist tab (free) */
+.wl-g{display:grid;grid-template-columns:250px 1fr;gap:10px}.wl-left{display:flex;flex-direction:column;gap:2px;max-height:220px;overflow:auto}.act-r .pf-b{padding:4px 10px;font-size:12px}.wl-h{display:flex;align-items:center;gap:8px;padding:6px 6px;border-radius:8px;background:none;border:0;color:#ececef;font:13px Inter,sans-serif;cursor:pointer;text-align:left;min-width:0}.wl-h:hover{background:#17171a}.wl-h.on{background:#20140b;color:#ffb27a}.wl-h .mu{margin-left:auto;color:#8a8a92;font-size:11.5px}.wl-h .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wl-lg{width:22px;height:22px;border-radius:6px;object-fit:contain;background:#fff;flex:none}.wl-in{background:#26262a;color:#ececef;font:600 9.5px Inter,sans-serif;display:inline-flex;align-items:center;justify-content:center}
+.wl-cards{display:flex;gap:8px;overflow-x:auto;padding:2px 0 10px;scroll-snap-type:x mandatory}.wl-card{flex:0 0 78%;scroll-snap-align:start;text-align:left;border:1px solid #232327;border-radius:12px;padding:10px 12px;background:#0d0d10;color:#ececef;font:13px/1.35 Inter,sans-serif;display:flex;flex-direction:column;gap:6px}.wl-ch,.wl-cm{display:flex;gap:6px;align-items:center}.wl-ch .mu,.wl-cm .mu{color:#8a8a92;font-size:11.5px}.wl-ct{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .pf-e{display:flex;align-items:center;gap:14px}.pf-e b{font-size:15px;display:block}.pf-e small{color:#8a8a92;font-size:12px}.pf-e .pf-bs{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
 .pf-b{border:1px solid #2e2e33;border-radius:9px;padding:7px 12px;color:#ececef;font:500 13px Inter,sans-serif;background:transparent;cursor:pointer;white-space:nowrap}.pf-b:hover{border-color:#ff7a1a}.pf-b.p{background:#ff7a1a;border-color:#ff7a1a;color:#111}.pf-b:disabled{opacity:.4;cursor:default}
 .pf-g{display:grid;grid-template-columns:1.3fr 1fr;gap:10px}.pf-box{border:1px solid #1d1d21;border-radius:11px;padding:10px 11px;background:#0d0d10;min-width:0}
@@ -1056,7 +1059,7 @@ Promise.all([fetch('markets.json').then(r => r.json()), fetch('news-prices.json'
   MKT.intra = i.s || {}; MKT.by = Object.fromEntries((m.assets || []).map(a => [a.s, a])); MKT.np = (np && np.assets) || {}; MKT.reg = {};
   const known = a => !/[.\d]/.test(a.s.replace(/[=^-]/g, '')) && a.t !== 'fx' && Math.abs(a.d) < 20 && (a.m || a.t === 'crypto' || a.t === 'cmd' || MKT.intra[a.s]);
   MKT.list = (m.assets || []).filter(known).sort((x, y) => Math.abs(y.d) - Math.abs(x.d)).slice(0, 12);
-  MKT.all = m.assets || [];
+  MKT.all = m.assets || []; MKT.asof = m.asof || '';
   updateNetwork(); renderSide(); if ((view.k === 'top' && (panelTab === 'movers' || F.region !== 'global')) || ['article', 'country'].includes(view.k)) render();
 }).catch(() => {});
 let CAL = [];
@@ -2327,6 +2330,7 @@ function variantPanel(list) {
     }
   }
   const rgName = regionDefinition(F.region)[1], nCty = new Set(list.map(x => x.location.country)).size, nMov = list.filter(x => x.market_moving).length;
+  if (phone() && panelTab === 'watch') { items = wlCards() + (items || ''); }
   const head = phone() && phoneView === 'markets' ? '' : phone() ? `<div class="nb-head"><h2>News</h2><button type="button" class="nb-pill" data-nb-filters>${F.win.toUpperCase()} · ${esc(rgName)} ▾</button></div><label class="nb-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="nb-q" type="search" placeholder="Search news, companies, countries" value="${esc(newsQ)}" aria-label="Search news"></label><div class="nb-stats"><div><b>${list.length}</b><span>${list.length === 1 ? 'article' : 'articles'}</span></div><div><b>${nCty}</b><span>${nCty === 1 ? 'country' : 'countries'}</span></div><div class="o"><b>${nMov}</b><span>moving markets</span></div></div>` : '<h2>Top articles</h2>';
   return `${head}<div class="panel-tabs" role="tablist" aria-label="News view"${phone() && phoneView === 'markets' ? ' hidden' : ''}>${tabs.map(([key,label]) => `<button role="tab" id="panel-tab-${key}" aria-selected="${key === panelTab || key === 'more' && ['countries', 'topics', 'watch'].includes(panelTab)}" aria-controls="panel-contents" tabindex="${key === panelTab ? 0 : -1}" data-panel-tab="${key}">${label}</button>`).join('')}</div><div class="compact-list" id="panel-contents" role="tabpanel" aria-labelledby="panel-tab-${panelTab}">${items || '<div class="empty">No articles match these filters.</div>'}</div>${count > 3 ? `<button class="panel-more" data-panel-more aria-expanded="${panelExpanded}">${panelExpanded ? 'Show less' : 'Show more'}</button>` : ''}${noteHTML()}`;
 }
@@ -2383,67 +2387,54 @@ function actLatest(){
  return [...groups.values()].map(g=>{g.list.sort((x,y)=>(y.importance||0)-(x.importance||0)||y.t-x.t);g.top=g.list[0];g.score=(g.top.market_moving?4:0)+(g.top.importance||0)+Math.min(3,g.src.size-1)+Math.max(0,2-(Date.now()-g.top.t)/864e5);return g;}).sort((a,b)=>b.score-a.score).slice(0,4);
 }
 
-// My portfolio (free). Saved in this browser only ('inv-portfolio'); no account sync yet.
-// Values use the last price in markets.json (not live) and its date is always shown.
-let PF=(()=>{try{const v=JSON.parse(localStorage.getItem('inv-portfolio')||'{}');return {h:Array.isArray(v.h)?v.h:[],cash:Array.isArray(v.cash)?v.cash:[]}}catch{return {h:[],cash:[]}}})();
-const pfSave=()=>{try{localStorage.setItem('inv-portfolio',JSON.stringify(PF))}catch{}};
-let pfView='home',pfQ='',pfPick=null,pfMode='q',pfImp=null,PFPROJ=null;
-const pfUniverse=()=>(MKT.all||[]).filter(a=>a&&a.s&&a.t!=='fx');
-const pfAsset=s=>MKT.by?.[s]||null;
-function pfFx(cur){if(!cur||cur==='USD')return 1;const a=MKT.by?.[cur+'USD=X'];if(a&&Number.isFinite(a.p))return a.p;const b=MKT.by?.['USD'+cur+'=X'];return b&&Number.isFinite(b.p)&&b.p?1/b.p:null;}
-function pfRows(){return PF.h.map(h=>{const a=pfAsset(h.s),p=a&&Number.isFinite(a.p)?a.p:null,cur=(a&&a.cur)||h.cur||'USD',fx=pfFx(cur);let val=null;if(h.q!=null&&p!=null)val=h.q*p;else if(h.v!=null)val=h.v;const usd=val!=null&&fx!=null?val*fx:null;return {...h,a,p,cur,val,usd,d:a&&Number.isFinite(a.d)?a.d:null};});}
-const pfMoney=(v,cur='USD')=>{try{return new Intl.NumberFormat(undefined,{style:'currency',currency:cur,maximumFractionDigits:v>=1000?0:2}).format(v)}catch{return v.toFixed(2)+' '+cur}};
-const pfWord=n=>String(n||'').toLowerCase().replace(/[^a-z0-9 ]/g,' ').split(/\s+/).find(w=>w.length>2&&!['the','inc','corp','co','ltd','plc','limited','company'].includes(w))||'';
-function pfLinkedNews(){const S=new Set(PF.h.map(h=>h.s.toUpperCase()));const out=[];for(const st of stories){const hit=impactsOf(st).map(assetForImpact).find(a=>a&&S.has(String(a.s).toUpperCase()));if(hit)out.push([st,hit]);}return out.sort((x,y)=>y[0].t-x[0].t);}
-function pfLinkedProjects(){if(!PFPROJ)return [];const out=[];for(const h of PF.h){const w=pfWord(h.n);for(const p of PFPROJ){const e=(p.exposures||[]).find(e=>e.company&&String(e.company.symbol||'').toUpperCase()===h.s.toUpperCase()&&w&&pfWord(e.company.name)===w);if(e)out.push([p,h]);}}return out;}
-function pfParse(text){const rows=[],lines=String(text||'').split(/\r?\n/).map(l=>l.trim()).filter(Boolean);let si=-1,qi=-1;if(lines.length>1){const hd=lines[0].split(/[;,\t]/).map(x=>x.trim().toLowerCase().replace(/"/g,''));si=hd.findIndex(x=>/^(symbol|ticker|code|instrument)/.test(x));qi=hd.findIndex(x=>/^(quantity|qty|shares|units|amount|aantal|nombre)/.test(x));}
- if(si>=0){for(const l of lines.slice(1)){const c=l.split(/[;,\t]/).map(x=>x.trim().replace(/"/g,''));rows.push({raw:c[si],q:qi>=0?parseFloat(String(c[qi]).replace(/\s/g,'').replace(',','.')):null});}}
- else for(const part of lines.join(',').split(/[,;]/)){const m=part.trim().match(/^([A-Za-z0-9.^=\-]{1,15})(?:\s+([\d.,]+))?$/);if(m)rows.push({raw:m[1],q:m[2]?parseFloat(m[2].replace(',','.')):null});else if(part.trim())rows.push({raw:part.trim(),q:null});}
- const U=pfUniverse(),by=Object.fromEntries(U.map(a=>[a.s.toUpperCase(),a]));
- return rows.filter(r=>r.raw).map(r=>{const k=r.raw.toUpperCase();const a=by[k]||by[k.replace(/\.[A-Z]{1,3}$/,'')]||U.find(a=>a.n&&a.n.toUpperCase()===k);return {...r,a};});}
-function pfAdd(a,q,v,bp){const i=PF.h.findIndex(h=>h.s===a.s);const h={s:a.s,n:a.n,cur:a.cur||'USD',q:q!=null&&isFinite(q)?q:null,v:v!=null&&isFinite(v)?v:null,bp:bp!=null&&isFinite(bp)?bp:null};if(i>=0)PF.h[i]=h;else PF.h.push(h);pfSave();}
-function pfHTML(){
- const asof=(()=>{const t=Date.parse(MKT.asof||'');return isFinite(t)?new Date(t).toLocaleString([], {day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}):'';})();
- const wl=[...watchSyms()].filter(s=>MKT.by?.[s]);
- if(pfView==='add'){
-  const q=pfQ.trim().toLowerCase(),R=q?pfUniverse().filter(a=>a.s.toLowerCase().startsWith(q)||String(a.n||'').toLowerCase().includes(q)).slice(0,5):[];
-  const res=R.map(a=>`<div class="pf-r"><span class="nm"><b>${esc(a.n||a.s)}</b> <span class="mu">${esc(a.s)}${a.k?' · '+esc(nm(a.k)):''}</span></span><span class="ri"><button type="button" class="lk" data-pfpick="${esc(a.s)}">${pfPick&&pfPick.s===a.s?'Selected':'Select'}</button></span></div>`).join('')||`<div class="pf-r mu">${q?'No match in our market list.':'Type a company name or ticker.'}</div>`;
-  const pk=pfPick?`<div class="pf-r"><b class="nm">${esc(pfPick.n||pfPick.s)}</b><span class="ri">${Number.isFinite(pfPick.p)?esc(pfMoney(pfPick.p,pfPick.cur||'USD')):'No price'}</span></div>`:'<div class="pf-r mu">Select a result on the left.</div>';
-  return `<div class="pf-g"><div class="pf-box"><div class="pf-l">Search</div><input class="pf-in" id="pf-q" placeholder="Company or ticker" value="${esc(pfQ)}" autocomplete="off">${res}</div>
-  <div class="pf-box"><div class="pf-l">Amount (optional)</div>${pk}<div style="display:flex;gap:8px;margin:8px 0"><span class="pf-seg"><button type="button" data-pfm="q" aria-pressed="${pfMode==='q'}">Shares</button><button type="button" data-pfm="v" aria-pressed="${pfMode==='v'}">Value</button></span><input class="pf-in" id="pf-amt" inputmode="decimal" placeholder="${pfMode==='q'?'Number of shares':'Amount in '+esc(pfPick?.cur||'USD')}"></div><input class="pf-in" id="pf-bp" inputmode="decimal" placeholder="Bought at, per share (optional)"><div style="display:flex;gap:8px;margin-top:8px"><button type="button" class="pf-b p" data-pfdo="add" ${pfPick?'':'disabled'}>Add to portfolio</button><button type="button" class="pf-b" data-pfgo="cash">Add cash instead</button><button type="button" class="pf-b" data-pfgo="home">Back</button></div></div></div>`;}
- if(pfView==='cash')return `<div class="pf-box" style="max-width:520px"><div class="pf-l">Cash (not invested)</div><div style="display:flex;gap:8px"><input class="pf-in" id="pf-ca" inputmode="decimal" placeholder="Amount"><select class="pf-in" id="pf-cc" style="width:110px">${['USD','EUR','GBP','CHF','JPY','CAD','AUD'].map(c=>`<option>${c}</option>`).join('')}</select><button type="button" class="pf-b p" data-pfdo="cash">Add</button><button type="button" class="pf-b" data-pfgo="home">Back</button></div></div>`;
- if(pfView==='imp'){
-  const list=pfImp?pfImp.map((r,i)=>`<div class="pf-r"><span class="nm">${esc(r.raw)}${r.q!=null?' · '+esc(r.q):''}</span><span class="ri ${r.a?'pf-ok':'pf-no'}">${r.a?esc(r.a.n||r.a.s)+' ✓':'Not found: skipped'}</span></div>`).join(''):'';
-  const ok=pfImp?pfImp.filter(r=>r.a).length:0;
-  return `<div class="pf-g"><div class="pf-box"><div class="pf-l">Broker export or list</div><textarea class="pf-ta" id="pf-ta" placeholder="Paste rows, e.g. AAPL 10, MSFT 5 — or a CSV with Symbol and Quantity columns"></textarea><div style="display:flex;gap:8px;margin-top:8px"><button type="button" class="pf-b" data-pfdo="check">Check matches</button><label class="pf-b">⇪ Choose CSV file<input type="file" id="pf-file" accept=".csv,.txt,text/csv" hidden></label><button type="button" class="pf-b" data-pfgo="home">Back</button></div></div>
-  <div class="pf-box"><div class="pf-l">${pfImp?`Check matches · ${ok} of ${pfImp.length} found`:'Matches appear here'}</div>${list||'<div class="pf-r mu">Nothing is guessed: rows we cannot match to a listed asset are skipped.</div>'}${ok?`<div style="margin-top:8px"><button type="button" class="pf-b p" data-pfdo="imp">Add ${ok} holding${ok>1?'s':''}</button></div>`:''}</div></div>`;}
- if(!PF.h.length&&!PF.cash.length)return `<div class="pf-e"><div><b>Put your portfolio on the globe</b><small>Free · see which news, markets and projects touch what you own. Saved on this device only.</small></div><span class="pf-bs"><button type="button" class="pf-b p" data-pfdo="wl" ${wl.length?'':'disabled'}>Use my watchlist (${wl.length})</button><button type="button" class="pf-b" data-pfgo="add">＋ Add a holding</button><button type="button" class="pf-b" data-pfgo="imp">⇪ Import CSV</button><button type="button" class="pf-b" data-pfgo="imp">⧉ Paste list</button></span></div>`;
- const R=pfRows();let tot=0,chg=0,miss=0;for(const r of R){if(r.usd==null){miss++;continue;}tot+=r.usd;if(r.d!=null)chg+=r.usd*r.d/(100+r.d);}
- for(const c of PF.cash){const fx=pfFx(c.cur);if(fx!=null)tot+=c.amt*fx;else miss++;}
- const base=tot-chg,pct=base?chg/base*100:0;
- const hold=R.map(r=>`<div class="pf-r"><span class="nm">${esc(r.n||r.s)}${r.q!=null?` <span class="mu">· ${esc(r.q)}</span>`:''}</span><span class="ri">${r.val==null?'<span class="mu">No price</span>':`<span class="mu">${esc(pfMoney(r.val,r.cur))}</span>`}${r.d!=null?pctPill(r.d):''}<button type="button" class="x" data-pfdel="${esc(r.s)}" aria-label="Remove ${esc(r.n||r.s)}">×</button></span></div>`).join('')+PF.cash.map((c,i)=>`<div class="pf-r"><span class="nm">Cash</span><span class="ri"><span class="mu">${esc(pfMoney(c.amt,c.cur))}</span><button type="button" class="x" data-pfcdel="${i}" aria-label="Remove cash">×</button></span></div>`).join('');
- const N=pfLinkedNews().slice(0,4),P=pfLinkedProjects().slice(0,3);
- const links=N.map(([st,a],i)=>`<div class="pf-r"><span class="pf-tag">NEWS</span><button type="button" class="lk nm" style="color:#ececef;text-align:left" data-pfst="${esc(st.id)}">${esc(st.headline)}</button><span class="ri mu">${esc(a.s)}</span></div>`).join('')+P.map(([p,h])=>`<div class="pf-r"><span class="pf-tag">PROJECTS</span><span class="nm">${esc(p.name||'Project')}</span><span class="ri mu">${esc(h.s)} · ${esc(p.country||'')}</span></div>`).join('');
- return `<div class="pf-tot"><b>${esc(pfMoney(tot))}</b>${chg?`<span>${pctPill(pct)}</span>`:''}<small>${R.length} holding${R.length===1?'':'s'}${asof?' · prices as of '+esc(asof)+', not live':''}${miss?' · '+miss+' without price left out':''}</small><span class="pf-bs"><button type="button" class="pf-b" data-pfgo="add">＋ Add</button><button type="button" class="pf-b" data-pfgo="imp">⇪ Import</button></span></div>
- <div class="pf-g"><div class="pf-box">${hold}</div><div class="pf-box"><div class="pf-l">On the globe now</div>${links||'<div class="pf-r mu">No articles or verified projects linked to your holdings in this period.</div>'}</div></div><div class="pf-ft">Saved on this device only. Not investment advice.</div>`;
+// Watchlist tab (free). Reads and writes the site watchlist ('inv-watch', same copy the account syncs on the next page load).
+// No prices or totals: only articles and verified projects linked to each watched company.
+let wlWithProjects=false,WL_SEL='all',wlView='home',wlQ='',wlImp=null,PFPROJ=null;
+const wlRead=()=>{try{const L=JSON.parse(localStorage.getItem('inv-watch')||'{}');return {a:Array.isArray(L.a)?L.a:[],c:Array.isArray(L.c)?L.c:[]}}catch{return {a:[],c:[]}}};
+const wlWrite=L=>{try{localStorage.setItem('inv-watch',JSON.stringify(L))}catch{}WATCH=watchSyms();};
+const wlHold=()=>wlRead().a.filter(x=>x&&x.s).map(x=>({s:String(x.s).toUpperCase(),n:x.n||MKT.by?.[x.s]?.n||x.s}));
+const wlUniverse=()=>(MKT.all||[]).filter(a=>a&&a.s&&a.t!=='fx');
+function wlAdd(list){const L=wlRead();for(const a of list){if(!L.a.some(x=>String(x.s).toUpperCase()===a.s.toUpperCase()))L.a.unshift({src:'site',s:a.s,n:a.n||a.s});}wlWrite(L);}
+function wlDel(sym){const L=wlRead();L.a=L.a.filter(x=>String(x.s).toUpperCase()!==sym);wlWrite(L);}
+const wlWord=n=>String(n||'').toLowerCase().replace(/[^a-z0-9 ]/g,' ').split(/\s+/).find(w=>w.length>2&&!['the','inc','corp','co','ltd','plc','limited','company','holdings','group'].includes(w))||'';
+function wlItems(H){const S=new Map(H.map(h=>[h.s,h])),out=[];
+ for(const st of stories){const hit=impactsOf(st).map(assetForImpact).find(x=>x&&S.has(String(x.s).toUpperCase()));if(hit)out.push({k:'ARTICLE',t:st.t,h:S.get(String(hit.s).toUpperCase()),title:st.headline,st});}
+ if(PFPROJ&&wlWithProjects)for(const h of H){const w=wlWord(h.n);if(!w)continue;for(const p of PFPROJ){const e=(p.exposures||[]).find(e=>e.company&&String(e.company.symbol||'').toUpperCase()===h.s&&wlWord(e.company.name)===w);if(e)out.push({k:'PROJECT',t:Date.parse(p.as_of||p.updated||'')||0,h,title:[p.name,p.capacity_mw?Math.round(p.capacity_mw)+' MW':'',p.stage].filter(Boolean).join(', '),sub:p.country||'',p});}}
+ return out.sort((x,y)=>y.t-x.t);}
+function wlLogo(h){const l=LOGOS[h.s];return l?`<img class="wl-lg" src="${esc(l)}" alt="" loading="lazy">`:`<span class="wl-lg wl-in">${esc(h.n.replace(/[^A-Za-z0-9]/g,'').slice(0,2).toUpperCase())}</span>`;}
+const wlTime=t=>{if(!t)return '';const d=new Date(t);return Math.abs(Date.now()-t)<864e5&&d.getDate()===new Date().getDate()?d.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}):d.toLocaleDateString([], {day:'numeric',month:'short'});};
+function wlParse(text){const rows=[],lines=String(text||'').split(/\r?\n/).map(l=>l.trim()).filter(Boolean);let si=-1;if(lines.length>1){const hd=lines[0].split(/[;,\t]/).map(x=>x.trim().toLowerCase().replace(/"/g,''));si=hd.findIndex(x=>/^(symbol|ticker|code|instrument)/.test(x));}
+ if(si>=0){for(const l of lines.slice(1)){const c=l.split(/[;,\t]/).map(x=>x.trim().replace(/"/g,''));if(c[si])rows.push(c[si]);}}
+ else for(const part of lines.join(',').split(/[,;]/)){const m=part.trim().match(/^([A-Za-z0-9.^=\-]{1,15})(?:\s+[\d.,]+)?$/);rows.push(m?m[1]:part.trim());}
+ const U=wlUniverse(),by=Object.fromEntries(U.map(a=>[a.s.toUpperCase(),a]));
+ return rows.filter(Boolean).map(raw=>{const k=raw.toUpperCase();return {raw,a:by[k]||by[k.replace(/\.[A-Z]{1,3}$/,'')]||U.find(a=>a.n&&a.n.toUpperCase()===k)||null};});}
+const wlBtns=`<button type="button" class="pf-b" data-wlgo="add">＋ Add</button><button type="button" class="pf-b" data-wlgo="imp">⇪ Import</button>`;
+function wlHTML(){
+ if(wlView==='add'){const q=wlQ.trim().toLowerCase(),have=new Set(wlHold().map(h=>h.s)),R=q?wlUniverse().filter(a=>a.s.toLowerCase().startsWith(q)||String(a.n||'').toLowerCase().includes(q)).slice(0,6):[];
+  return `<div class="pf-box" style="max-width:640px"><div class="pf-l">Add to watchlist</div><div style="display:flex;gap:8px"><input class="pf-in" id="wl-q" placeholder="Company or ticker" value="${esc(wlQ)}" autocomplete="off"><button type="button" class="pf-b" data-wlgo="home">Done</button></div>${R.map(a=>`<div class="pf-r"><span class="nm"><b>${esc(a.n||a.s)}</b> <span class="mu">${esc(a.s)}${a.k?' · '+esc(nm(a.k)):''}</span></span><span class="ri">${have.has(a.s.toUpperCase())?'<span class="mu">Added</span>':`<button type="button" class="lk" data-wladd="${esc(a.s)}">Add</button>`}</span></div>`).join('')||`<div class="pf-r mu">${q?'No match in our market list.':'Type a company name or ticker.'}</div>`}</div>`;}
+ if(wlView==='imp'){const ok=wlImp?wlImp.filter(r=>r.a).length:0;
+  return `<div class="pf-g"><div class="pf-box"><div class="pf-l">Broker export or list</div><textarea class="pf-ta" id="wl-ta" placeholder="Paste tickers, e.g. AAPL, MSFT, NVDA — or a CSV with a Symbol column"></textarea><div style="display:flex;gap:8px;margin-top:8px"><button type="button" class="pf-b" data-wldo="check">Check matches</button><label class="pf-b">⇪ Choose CSV file<input type="file" id="wl-file" accept=".csv,.txt,text/csv" hidden></label><button type="button" class="pf-b" data-wlgo="home">Back</button></div></div>
+  <div class="pf-box"><div class="pf-l">${wlImp?`Check matches · ${ok} of ${wlImp.length} found`:'Matches appear here'}</div>${wlImp?wlImp.map(r=>`<div class="pf-r"><span class="nm">${esc(r.raw)}</span><span class="ri ${r.a?'pf-ok':'pf-no'}">${r.a?esc(r.a.n||r.a.s)+' ✓':'Not found: skipped'}</span></div>`).join(''):'<div class="pf-r mu">Nothing is guessed: rows we cannot match to a listed company are skipped.</div>'}${ok?`<div style="margin-top:8px"><button type="button" class="pf-b p" data-wldo="imp">Add ${ok} to watchlist</button></div>`:''}</div></div>`;}
+ const H=wlHold();
+ if(!H.length)return `<div class="pf-e"><div><b>Your watchlist on the globe</b><small>Free · news about the companies and assets you follow.</small></div><span class="pf-bs"><button type="button" class="pf-b p" data-wlgo="add">＋ Add</button><button type="button" class="pf-b" data-wlgo="imp">⇪ Import CSV</button><button type="button" class="pf-b" data-wlgo="imp">⧉ Paste list</button></span></div>`;
+ const all=wlItems(H),cnt=new Map();for(const it of all)cnt.set(it.h.s,(cnt.get(it.h.s)||0)+1);
+ if(WL_SEL!=='all'&&!H.some(h=>h.s===WL_SEL))WL_SEL='all';
+ const sel=WL_SEL==='all'?null:H.find(h=>h.s===WL_SEL),list=(sel?all.filter(i=>i.h.s===sel.s):all).slice(0,6);
+ const left=`<button type="button" class="wl-h${!sel?' on':''}" data-wlsel="all"><span class="wl-lg wl-in">All</span><span class="nm">All companies</span><span class="mu">${all.length}</span></button>`+H.map(h=>`<button type="button" class="wl-h${sel&&sel.s===h.s?' on':''}" data-wlsel="${esc(h.s)}">${wlLogo(h)}<span class="nm">${esc(h.n)}</span><span class="mu">${cnt.get(h.s)||0}</span></button>`).join('');
+ const feed=list.map(i=>`<div class="pf-r">${wlLogo(i.h)}<span class="mu" style="width:44px;flex:none">${esc(wlTime(i.t))}</span><span class="pf-tag">${i.k}</span>${i.st?`<button type="button" class="lk nm" style="color:#ececef;text-align:left" data-wlst="${esc(i.st.id)}">${esc(i.title)}</button>`:`<span class="nm">${esc(i.title)}</span>`}</div>`).join('')||`<div class="pf-r mu">No articles about ${sel?esc(sel.n):'your watchlist'} in this period.</div>`;
+ return `<div class="wl-g"><div class="pf-box wl-left">${left}</div><div class="pf-box"><div class="pf-l">${sel?esc(sel.n):'All companies'} · articles</div>${feed}<div class="pf-ft">Changes here are saved to this device; when you are logged in they join your account on your next visit to the site. Not investment advice.</div></div></div>`;
 }
-function pfBind(el){
- const q=el.querySelector('#pf-q');if(q){q.oninput=()=>{pfQ=q.value;const pos=q.selectionStart;renderAct();const n=$('act').querySelector('#pf-q');n.focus();n.setSelectionRange(pos,pos);};}
- el.querySelectorAll('[data-pfgo]').forEach(b=>b.onclick=()=>{pfView=b.dataset.pfgo;if(pfView!=='imp')pfImp=null;renderAct();});
- el.querySelectorAll('[data-pfpick]').forEach(b=>b.onclick=()=>{pfPick=pfAsset(b.dataset.pfpick)||pfUniverse().find(a=>a.s===b.dataset.pfpick);renderAct();});
- el.querySelectorAll('[data-pfm]').forEach(b=>b.onclick=()=>{pfMode=b.dataset.pfm;renderAct();});
- el.querySelectorAll('[data-pfdel]').forEach(b=>b.onclick=()=>{PF.h=PF.h.filter(h=>h.s!==b.dataset.pfdel);pfSave();renderAct();});
- el.querySelectorAll('[data-pfcdel]').forEach(b=>b.onclick=()=>{PF.cash.splice(+b.dataset.pfcdel,1);pfSave();renderAct();});
- el.querySelectorAll('[data-pfst]').forEach(b=>b.onclick=()=>{const st=stories.find(x=>x.id===b.dataset.pfst);if(st)openStory(st);});
- const f=el.querySelector('#pf-file');if(f)f.onchange=()=>{const file=f.files[0];if(!file)return;file.text().then(t=>{pfImp=pfParse(t);renderAct();});};
- el.querySelectorAll('[data-pfdo]').forEach(b=>b.onclick=()=>{const k=b.dataset.pfdo,num=id=>{const v=parseFloat(String(el.querySelector(id)?.value||'').replace(',','.'));return isFinite(v)?v:null;};
-  if(k==='wl'){for(const s of watchSyms()){const a=MKT.by?.[s];if(a)pfAdd(a,null,null,null);}}
-  else if(k==='add'&&pfPick){const amt=num('#pf-amt');pfAdd(pfPick,pfMode==='q'?amt:null,pfMode==='v'?amt:null,num('#pf-bp'));pfPick=null;pfQ='';pfView='home';}
-  else if(k==='cash'){const amt=num('#pf-ca');if(amt!=null){PF.cash.push({amt,cur:el.querySelector('#pf-cc').value});pfSave();}pfView='home';}
-  else if(k==='check'){pfImp=pfParse(el.querySelector('#pf-ta').value);}
-  else if(k==='imp'&&pfImp){for(const r of pfImp)if(r.a)pfAdd(r.a,r.q,null,null);pfImp=null;pfView='home';}
-  renderAct();});
- if(!PFPROJ){PFPROJ=[];fetch('projects-invest.json').then(r=>r.json()).then(d=>{PFPROJ=d.projects||[];if(actTab==='pf')renderAct();}).catch(()=>{});}
+function wlCards(){const H=wlHold();if(!H.length)return '';const all=wlItems(H).slice(0,8);if(!all.length)return '';
+ return `<div class="wl-cards">${all.map(i=>`<button type="button" class="wl-card"${i.st?` data-wlst="${esc(i.st.id)}"`:''}><span class="wl-ch">${wlLogo(i.h)}<span class="mu">${esc(i.sub||i.h.n)}</span></span><span class="wl-cm"><span class="pf-tag">${i.k}</span><span class="mu">${esc(wlTime(i.t))}</span></span><span class="wl-ct">${esc(i.title)}</span></button>`).join('')}</div>`;}
+function wlLoadProj(cb){if(PFPROJ)return;PFPROJ=[];fetch('projects-invest.json').then(r=>r.json()).then(d=>{PFPROJ=d.projects||[];cb();}).catch(()=>{});}
+function wlBind(el){
+ const q=el.querySelector('#wl-q');if(q){q.oninput=()=>{wlQ=q.value;const pos=q.selectionStart;renderAct();const n=$('act').querySelector('#wl-q');if(n){n.focus();n.setSelectionRange(pos,pos);}};}
+ el.querySelectorAll('[data-wlgo]').forEach(b=>b.onclick=()=>{wlView=b.dataset.wlgo;wlImp=null;renderAct();if(wlView==='add')$('act').querySelector('#wl-q')?.focus();});
+ el.querySelectorAll('[data-wlsel]').forEach(b=>b.onclick=()=>{WL_SEL=b.dataset.wlsel;renderAct();});
+ el.querySelectorAll('[data-wladd]').forEach(b=>b.onclick=()=>{const a=wlUniverse().find(x=>x.s===b.dataset.wladd);if(a)wlAdd([a]);renderAct();});
+ el.querySelectorAll('[data-wlst]').forEach(b=>b.onclick=()=>{const st=stories.find(x=>x.id===b.dataset.wlst);if(st)openStory(st);});
+ const f=el.querySelector('#wl-file');if(f)f.onchange=()=>{const file=f.files[0];if(file)file.text().then(t=>{wlImp=wlParse(t);renderAct();});};
+ el.querySelectorAll('[data-wldo]').forEach(b=>b.onclick=()=>{if(b.dataset.wldo==='check')wlImp=wlParse(el.querySelector('#wl-ta').value);else if(wlImp){wlAdd(wlImp.filter(r=>r.a).map(r=>r.a));wlImp=null;wlView='home';}renderAct();});
 }
 function renderAct(){
  const el=$('act');if(!el)return;const on=document.documentElement.classList.contains('lcol-on')&&view.k==='top'&&!panel.hidden;
@@ -2451,7 +2442,7 @@ function renderAct(){
  const L=$('lcol')?.getBoundingClientRect(),P=panel.getBoundingClientRect();el.style.left=((L?.right||24)+24)+'px';el.style.right=(innerWidth-P.left+24)+'px';
  const tm=t=>{const d=new Date(t),hm=d.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});return Math.abs(Date.now()-d)<864e5&&d.getDate()===new Date().getDate()?hm:d.toLocaleDateString([], {day:'numeric',month:'short'})+' '+hm;},badge=$('badge')?.textContent||'';
  let cards='',right='';
- if(actTab==='pf'){cards='';}
+ if(actTab==='pf'){cards='';right=wlHold().length&&wlView==='home'?`<span class="pf-bs" style="display:flex;gap:6px">${wlBtns}</span>`:'';}
  else if(actTab==='la'){
   const G=actLatest();right=`<span><i></i>${esc(badge.replace(/^News /,'')||'Updated')}</span><a href="../../news.html">View all →</a>`;
   cards=G.length?G.map((g,i)=>{const s=g.top,a=impactsOf(s).map(assetForImpact).find(x=>x&&isFinite(x.d)&&Math.abs(x.d)<25&&x.u!=='bp');return `<button type="button" class="act-k" data-act="${i}"><div class="act-m"><b>${tm(s.t)}</b>${esc(nm(s.location.country))} · ${esc(CAT[s.category]||s.category)}</div><div class="act-t">${esc(s.headline)}</div><div class="act-f">${g.src.size} source${g.src.size>1?'s':''}${a?` · <span class="${a.d>0?'u':a.d<0?'d':''}">${esc((a.n||a.s).slice(0,18))} ${a.d>0?'+':a.d<0?'−':''}${Math.abs(a.d).toFixed(1)}%</span>`:''}</div></button>`}).join(''):'<div class="act-e">No articles for this region and time window. Try a wider timeframe or All regions.</div>';
@@ -2462,8 +2453,8 @@ function renderAct(){
   cards=ev.length?ev.map(e=>{const d=new Date(e.at);return `<a class="act-k" href="../../calendar.html"><div class="act-m"><b>${d.toLocaleDateString([], {weekday:'short'})} ${tm(d)}</b>${esc(e.country||e.c)}${e.src?' · '+esc(e.src):''}</div><div class="act-t">${esc(e.t)}</div><div class="act-f"><span class="hi">● High impact</span></div></a>`}).join(''):'<div class="act-e">No scheduled high-impact releases for this region in our calendar. Coverage is limited to major currencies for now.</div>';
  }
  el.classList.toggle('pf',actTab==='pf');
- el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Upcoming</button><button type="button" role="tab" aria-selected="${actTab==='pf'}" data-at="pf">My portfolio</button><span class="act-r">${right}</span></div>${actTab==='pf'?pfHTML():`<div class="act-c">${cards}</div>`}`;
- if(actTab==='pf')pfBind(el);
+ el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Upcoming</button><button type="button" role="tab" aria-selected="${actTab==='pf'}" data-at="pf">My watchlist</button><span class="act-r">${right}</span></div>${actTab==='pf'?wlHTML():`<div class="act-c">${cards}</div>`}`;
+ if(actTab==='pf')wlBind(el);
  document.documentElement.style.setProperty('--acth',el.offsetHeight+'px');
  el.querySelectorAll('[data-at]').forEach(b=>b.onclick=()=>{actTab=b.dataset.at;renderAct();});
  el.querySelectorAll('[data-act]').forEach(b=>b.onclick=()=>{const g=el._groups[+b.dataset.act];if(g)openStory(g.top);});

@@ -1,0 +1,52 @@
+[
+ {
+  "id": "P1 the top bar holds only the logo, a Search button and a Filters button; chips, region row, time bar and search box are not on the globe screen",
+  "pass": true
+ },
+ {
+  "id": "P2 every control on the globe screen is at least 44 px tall and wide",
+  "pass": true
+ },
+ {
+  "id": "P3 text on the globe screen is at least 14 px",
+  "pass": false,
+  "error": "[[\"pk-m\",13],[\"BUTTON\",12],[\"BUTTON\",12],[\"BUTTON\",12]]"
+ },
+ {
+  "id": "P4 the peek card shows the top story (importance, then newest) with its real asset move and opens the story",
+  "pass": false,
+  "error": "page.evaluate: TypeError: Cannot read properties of undefined (reading 'id')"
+ },
+ {
+  "id": "P5 Filters opens a dialog with Topic, Region and Time (44 px controls), focus moves in, Escape closes and returns focus",
+  "pass": true
+ },
+ {
+  "id": "P6 choosing Energy and Asia shows a badge of 2, the button states the real article count, and the peek card follows; Reset undoes it",
+  "pass": true
+ },
+ {
+  "id": "P7 the dock switches Globe, News and Markets and marks the current one",
+  "pass": false,
+  "error": "Expected values to be strictly equal:"
+ },
+ {
+  "id": "P8 news rows show time, source and the real % pill, same as the lens list",
+  "pass": false,
+  "error": "The expression evaluated to a falsy value:"
+ },
+ {
+  "id": "P9 the globe and its pins stay clear of the top bar, the peek card and the zoom buttons",
+  "pass": false,
+  "error": "{\"bottomOk\":false,\"topOk\":true,\"bad\":0,\"n\":0}"
+ },
+ {
+  "id": "P10 no horizontal overflow and no script errors on the phone",
+  "pass": true
+ },
+ {
+  "id": "D1 the desktop layout is unchanged: chips and regions on the globe screen, no dock, no peek card, no Filters button",
+  "pass": false,
+  "error": "Expected values to be strictly equal:"
+ }
+]
