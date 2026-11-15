@@ -1375,3 +1375,46 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .dd-more.mm>section:nth-of-type(n){grid-row:1!important;margin-top:0!important}
 .dd-more.mm>section:nth-of-type(1){grid-column:1!important}.dd-more.mm>section:nth-of-type(2){grid-column:2!important}.dd-more.mm>section:nth-of-type(3){grid-column:3!important}.dd-more.mm>section:nth-of-type(4){grid-column:4!important}
 .dd-more.mm .mm-foot button{min-height:0!important;padding:0!important;font-size:13px!important;color:var(--fg-3);background:none;border:0;cursor:pointer}
+/* Sign-up box v2 (owner design 15 Nov 2026) */
+.auth .auth-box{position:relative;overflow:hidden;max-width:460px;width:calc(100% - 24px);padding:32px 32px 26px;border-radius:24px;background:#0f0f12;border:1px solid #26262b}
+.auth-art{position:absolute;top:0;right:0;width:62%;height:260px;background:none right top/cover no-repeat;opacity:.85;-webkit-mask-image:linear-gradient(200deg,#000 35%,transparent 80%);mask-image:linear-gradient(200deg,#000 35%,transparent 80%);pointer-events:none}
+.auth-box>*:not(.auth-art){position:relative}.auth-box .pop-x{position:absolute;z-index:2}
+.auth-head{text-align:left!important}.auth-brand .brand{pointer-events:none;font-size:20px}.auth-head h2{font-size:clamp(30px,6vw,40px)!important;line-height:1.08;letter-spacing:-.03em;margin:18px 0 10px!important;max-width:320px}.auth-head p{font-size:16px;max-width:300px;margin:0 0 22px}
+.auth-sso{display:grid;gap:10px}.auth-sso-b{width:100%;min-height:52px!important;border-radius:999px!important;border:1px solid #2c2c32!important;background:#131316!important;color:#fff!important;font:600 16px Inter,sans-serif!important;display:flex!important;justify-content:center;align-items:center;gap:12px}.auth-sso-b:hover{background:#1b1b1f!important}.auth-sso-b[hidden]{display:none!important}
+.auth-or{margin:20px 0 16px!important}
+.auth-em{position:relative;display:block}.auth-em svg{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:#8a8a92;pointer-events:none}.auth-em .input{height:52px;border-radius:999px;padding-left:52px;font-size:15.5px}
+.auth .auth-go{width:100%;min-height:54px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:10px;font:600 17px Inter,sans-serif;position:relative;margin-top:12px}.auth .auth-go svg{position:absolute;right:22px}
+.auth-step2{display:grid;gap:10px;margin-top:10px}
+.auth-perks{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);margin:22px 0 4px;padding:0}.auth-perks li{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;font-size:13.5px;color:#d4d4d8;padding:0 6px}.auth-perks li+li{border-left:1px solid #26262b}.auth-perks svg{color:#d4d4d8}
+.auth-legal{text-align:center;margin-top:16px!important}.auth-switch{text-align:center}
+:root[data-theme=light] .auth .auth-box{background:#fff;border-color:#e4e4e7}:root[data-theme=light] .auth-sso-b{background:#fff!important;color:#111!important;border-color:#dcdce0!important}:root[data-theme=light] .auth-perks li{color:#3f3f46}:root[data-theme=light] .auth-perks svg{color:#3f3f46}:root[data-theme=light] .auth-art{opacity:.25}
+@media(max-width:480px){.auth .auth-box{padding:26px 20px 22px}.auth-art{width:70%;height:200px}.auth-perks li{font-size:12.5px}}
+.auth-em{margin:0!important}.auth-em svg{top:26px!important;transform:translateY(-50%)!important}
+.auth-step2 .input{height:50px;border-radius:999px;padding:0 20px}.auth-step2 .auth-pw .input{padding-right:70px}
+.auth-guest{display:block;margin:6px auto 0!important;text-align:center}
+/* Real globe art (rendered from our own Globe) */
+.auth-art{width:420px!important;height:416px!important;top:-70px!important;right:-150px!important;background:none center/contain no-repeat!important;opacity:.95!important;-webkit-mask-image:radial-gradient(circle at 50% 50%,#000 58%,transparent 72%)!important;mask-image:radial-gradient(circle at 50% 50%,#000 58%,transparent 72%)!important}
+.auth-box::after{content:'';position:absolute;top:-70px;right:-150px;width:420px;height:416px;border-radius:50%;box-shadow:0 0 90px 10px rgba(255,122,26,.18);pointer-events:none}
+@media(max-width:480px){.auth-art{width:320px!important;height:316px!important;top:-60px!important;right:-130px!important}.auth-box::after{width:320px;height:316px;top:-60px;right:-130px}}
+
+/* Night-lights globe limb (NASA Black Marble, public domain), owner design 15 Nov 2026 */
+.auth-art{width:340px!important;height:264px!important;top:40px!important;right:-20px!important;background:none right top/cover no-repeat!important;opacity:1!important;-webkit-mask-image:linear-gradient(to bottom,#000 70%,transparent)!important;mask-image:linear-gradient(to bottom,#000 70%,transparent)!important}
+.auth-box::after{display:none}
+@media(max-width:480px){.auth-art{width:230px!important;height:180px!important;top:70px!important;right:-10px!important}}
+.auth-art{top:0!important;right:-30px!important;width:320px!important;height:250px!important}.auth-head p{max-width:270px!important}@media(max-width:480px){.auth-art{top:20px!important;width:210px!important;height:165px!important}.auth-head p{max-width:230px!important}}
+/* Full-card scene (owner: no flat grey + pasted image) */
+.auth-art{display:none!important}
+.auth .auth-box{background:#0f0f12 url(img/auth-bg.jpg) right top/100% auto no-repeat!important}
+.auth-sso-b{background:rgba(19,19,22,.78)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.auth-head p{max-width:300px!important}
+:root[data-theme=light] .auth .auth-box{background:#0f0f12 url(img/auth-bg.jpg) right top/100% auto no-repeat!important;color:#fff}
+/* Design A (owner 15 Nov 2026): split card, night-Earth panel with soft connection lines */
+.auth .auth-box{display:grid!important;grid-template-columns:400px minmax(0,440px);max-width:880px!important;padding:0!important;background:#0f0f12!important;overflow:hidden}
+.auth-art{display:flex!important;position:relative!important;inset:auto!important;top:auto!important;right:auto!important;width:auto!important;height:auto!important;flex-direction:column;justify-content:space-between;padding:32px!important;background:#0a0a0c url(img/auth-bg.jpg) center/cover no-repeat!important;-webkit-mask-image:none!important;mask-image:none!important;opacity:1!important;pointer-events:auto!important;min-height:600px}
+.auth-art h3{font-size:28px;line-height:1.15;letter-spacing:-.02em;margin:0;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.6)}.auth-art p{color:#e4e4e7;margin:8px 0 0;text-shadow:0 2px 10px rgba(0,0,0,.6)}.auth-art-brand .brand{pointer-events:none}
+.auth-main{padding:36px 34px 26px;min-width:0}.auth-main .auth-head .auth-brand{display:none}.auth-main .auth-head h2{margin-top:0!important;font-size:34px!important}
+.auth-sso-b{background:#131316!important;backdrop-filter:none!important}
+@media(max-width:820px){.auth .auth-box{grid-template-columns:1fr;max-width:460px!important}.auth-art{min-height:190px;padding:22px!important;background-position:center 78%!important}.auth-art h3{font-size:21px}.auth-art p{display:none}.auth-main{padding:24px 20px 20px}.auth-main .auth-head h2{font-size:28px!important}}
+:root[data-theme=light] .auth .auth-box{background:#fff!important}:root[data-theme=light] .auth-main{color:#111}
+.auth-pwlink{display:block;margin:10px auto 0;padding:4px 0;border:0;background:none;color:var(--fg-2);font-size:13px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.auth-pwlink[hidden]{display:none}
