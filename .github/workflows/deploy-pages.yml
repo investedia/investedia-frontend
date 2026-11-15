@@ -1,6 +1,7 @@
 # Deploy the built site to Cloudflare Pages from GitHub Actions.
 # Replaces Cloudflare's own Git connection (broken, and over its 500 builds/month).
 # The repo stays private: only the public website files below are uploaded.
+# Public live settings (API address, Supabase URL and publishable key) are written below, as the old Cloudflare build did.
 # Needs repository secrets CLOUDFLARE_API_TOKEN (Account > Cloudflare Pages > Edit) and CLOUDFLARE_ACCOUNT_ID.
 name: Deploy to Cloudflare Pages
 
@@ -45,6 +46,17 @@ jobs:
           test "$files" -le 20000
           test "$big" -eq 0
           test -f site/index.html
+
+      - name: Write the public live settings (live news, prices, login)
+        env:
+          INV_API_BASE_URL: https://api.investedia.com
+          INV_SUPABASE_URL: https://lfjyoeusblhfpmgwbrhj.supabase.co
+          INV_SUPABASE_PUBLISHABLE_KEY: sb_publishable_kqozWiWcKHNqendoiWxsMA_ro7DfTQF
+          INV_ANALYTICS_ENABLED: 'false'
+        run: |
+          python3 -c "import sys; sys.path.insert(0, 'scripts'); from runtime_config import build_config, runtime_script; open('site/assets/runtime-config.js', 'wb').write(runtime_script(build_config()))"
+          grep -q '"dataMode": "worker"' site/assets/runtime-config.js
+          cat site/assets/runtime-config.js
 
       - name: Upload to Cloudflare Pages
         env:
