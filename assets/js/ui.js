@@ -717,25 +717,31 @@
   au.className = 'palette auth'; au.hidden = true;
   au.innerHTML = `<div class="palette-box auth-box" role="dialog" aria-modal="true" aria-labelledby="au-t">
     <button class="icon-btn pop-x" type="button" aria-label="Close">${icon('x')}</button>
-    <div class="auth-head"><span class="wm" translate="no" aria-label="Investedia">Invested<span class="i">i</span>a</span><h2 id="au-t">Create your account</h2><p class="muted" id="au-sub">Follow countries and companies, news alerts and the daily brief. Free.</p></div>
-    <button class="btn auth-google" type="button">${gIcon}<span>Continue with Google</span></button>
-    <div class="auth-or"><span>or with email</span></div>
+    <div class="auth-art" aria-hidden="true"></div>
+    <div class="auth-head"><span class="auth-brand">${brand}</span><h2 id="au-t">Create your free account</h2><p class="muted" id="au-sub">Follow markets, save what matters and get the daily brief.</p></div>
+    <div class="auth-sso"><button class="btn auth-sso-b auth-apple" type="button" data-prov="apple" hidden><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 5c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg><span>Continue with Apple</span></button>
+    <button class="btn auth-sso-b auth-google" type="button" data-prov="google">${gIcon}<span>Continue with Google</span></button>
+    <button class="btn auth-sso-b auth-ms" type="button" data-prov="azure" hidden><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="#F25022" d="M2 2h9.5v9.5H2z"/><path fill="#7FBA00" d="M12.5 2H22v9.5h-9.5z"/><path fill="#00A4EF" d="M2 12.5h9.5V22H2z"/><path fill="#FFB900" d="M12.5 12.5H22V22h-9.5z"/></svg><span>Continue with Microsoft</span></button></div>
+    <div class="auth-or"><span>Or continue with email</span></div>
     <form class="auth-f" novalidate>
-      <label class="auth-l" data-only="up"><span>Name</span><input class="input" name="name" autocomplete="name" placeholder="Your name"></label>
-      <label class="auth-l"><span>Email</span><input class="input" name="email" type="email" autocomplete="email" placeholder="you@email.com" required></label>
+      <label class="auth-l auth-em"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg><input class="input" name="email" type="email" autocomplete="email" placeholder="Enter your email" aria-label="Email" required></label>
+      <div class="auth-step2" hidden><label class="auth-l" data-only="up"><span>Name</span><input class="input" name="name" autocomplete="name" placeholder="Your name"></label>
       <label class="auth-l"><span>Password <a href="#" class="auth-forgot" data-only="in">Forgot?</a></span><span class="auth-pw"><input class="input" name="pw" type="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" required><button type="button" class="auth-eye" aria-label="Show password">Show</button></span></label>
-      <label class="auth-check" data-only="up"><input type="checkbox" name="news"><span>Send me the daily brief and market news. Unsubscribe anytime.</span></label>
+      <label class="auth-check" data-only="up"><input type="checkbox" name="news" checked><span>Send me the daily brief and market news. Unsubscribe anytime.</span></label></div>
       <p class="auth-msg" role="status" hidden></p>
-      <button class="btn btn-primary auth-go" type="submit">Create free account</button>
+      <button class="btn btn-primary auth-go" type="submit"><span>Continue with email</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
     </form>
+    <ul class="auth-perks" data-only="up"><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg>Follow companies</li><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg>News alerts</li><li><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></svg>Personalised briefing</li></ul>
     <p class="auth-legal dim" data-only="up">By continuing you agree to our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.</p>
     <p class="auth-switch"><span data-only="up">Have an account? <button type="button" data-m="in">Log in</button></span><span data-only="in">New here? <button type="button" data-m="up">Create an account</button></span></p>
     <button class="auth-guest" type="button">Continue as guest</button>
   </div>`;
   let auMode = 'up';
   const auSet = m => { auMode = m; au.querySelectorAll('[data-only]').forEach(e => e.hidden = e.dataset.only !== m);
-    au.querySelector('#au-t').textContent = m === 'up' ? 'Create your account' : 'Welcome back'; au.querySelector('#au-sub').textContent = m === 'up' ? 'Follow countries and companies, news alerts and the daily brief. Free.' : 'Log in to see your watchlist and alerts.'; au.querySelector('.auth-go').textContent = m === 'up' ? 'Create free account' : 'Log in';
+    au.querySelector('#au-t').textContent = m === 'up' ? 'Create your free account' : 'Welcome back'; au.querySelector('#au-sub').textContent = m === 'up' ? 'Follow markets, save what matters and get the daily brief.' : 'Log in to see your watchlist and alerts.'; auStep(false);
     au.querySelector('[name=pw]').autocomplete = m === 'up' ? 'new-password' : 'current-password'; auMsg(''); };
+  // Two steps: email first, then name/password (owner design 15 Nov 2026)
+  const auStep = on => { au.querySelector('.auth-step2').hidden = !on; au.querySelector('.auth-go span').textContent = !on ? 'Continue with email' : auMode === 'up' ? 'Create free account' : 'Log in'; if (on) setTimeout(() => au.querySelector(auMode === 'up' ? '[name=name]' : '[name=pw]').focus(), 30); };
   const auMsg = (t, ok) => { const e = au.querySelector('.auth-msg'); e.hidden = !t; e.textContent = t; e.classList.toggle('up', !!ok); e.classList.toggle('down', !ok); };
   const openAuth = (m = 'up') => { closePop(); auSet(m); if (au.hidden) modalOpen(au); au.hidden = false; store('inv-auth-seen', '1'); store('inv-pop', '1'); };
   const closeAuth = () => { if (au.hidden) return; au.hidden = true; modalClose(au); };
@@ -746,13 +752,14 @@
   au.querySelector('.auth-eye').onclick = e => { const i = au.querySelector('[name=pw]'), show = i.type === 'password'; i.type = show ? 'text' : 'password'; e.target.textContent = show ? 'Hide' : 'Show'; };
   const notYet = () => auMsg('Accounts are not connected in this local version. Continue as a guest.');
   let sbCfg; const sbSettings = () => sbCfg || (sbCfg = fetch(SB_URL + '/auth/v1/settings', { headers: { apikey: SB_KEY } }).then(r => r.json()).catch(() => ({})));
-  au.querySelector('.auth-google').onclick = async () => { if (!authOn) return notYet();
-    const st = await sbSettings(); if (!(st.external && st.external.google)) return auMsg('Google sign-in opens very soon. Use your email for now.'); store('inv-news-optin', au.querySelector('[name=news]').checked ? '1' : '0');
-    sbLoad().then(c => c.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: location.href.split('#')[0] } })).catch(() => auMsg('Could not reach Google. Try again.')); };
+  if (authOn) sbSettings().then(st => { const ex = st.external || {}; au.querySelector('.auth-apple').hidden = !ex.apple; au.querySelector('.auth-ms').hidden = !ex.azure; });
+  au.querySelectorAll('[data-prov]').forEach(b => b.onclick = async () => { if (!authOn) return notYet(); const prov = b.dataset.prov, label = b.textContent.replace('Continue with ', '');
+    const st = await sbSettings(); if (!(st.external && st.external[prov])) return auMsg(label + ' sign-in opens very soon. Use your email for now.'); store('inv-news-optin', au.querySelector('[name=news]').checked ? '1' : '0');
+    sbLoad().then(c => c.auth.signInWithOAuth({ provider: prov, options: { redirectTo: location.href.split('#')[0], ...(prov === 'azure' ? { scopes: 'email' } : {}) } })).catch(() => auMsg('Could not reach ' + label + '. Try again.')); });
   au.querySelector('.auth-forgot').onclick = e => { e.preventDefault(); const em = au.querySelector('[name=email]').value.trim(); if (!em) return auMsg('Enter your email first.'); if (!authOn) return notYet();
     sbLoad().then(c => c.auth.resetPasswordForEmail(em, { redirectTo: location.origin + '/profile.html' })).then(() => auMsg('Check your inbox for a reset link.', true)); };
   au.querySelector('.auth-f').onsubmit = async e => { e.preventDefault(); const f = e.target, em = f.email.value.trim(), pw = f.pw.value;
-    if (!/^\S+@\S+\.\S+$/.test(em)) return auMsg('Enter a valid email.'); if (pw.length < 8) return auMsg('Password needs at least 8 characters.');
+    if (!/^\S+@\S+\.\S+$/.test(em)) return auMsg('Enter a valid email.'); if (au.querySelector('.auth-step2').hidden) { auMsg(''); return auStep(true); } if (pw.length < 8) return auMsg('Password needs at least 8 characters.');
     if (!authOn) return notYet();
     const go = au.querySelector('.auth-go'); go.disabled = true;
     try { const c = await sbLoad();
