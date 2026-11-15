@@ -325,7 +325,9 @@ fetch('assets/globe/site-stats.json', { cache: 'no-cache' }).then(r => r.ok ? r.
 const globeFirst = new Promise(go => { addEventListener('message', e => { if (e.origin === location.origin && e.data?.inv === 'globe-drawn') go(); }); hnGlobe.addEventListener('load', go); setTimeout(go, 2500); addEventListener('scroll', go, { once: true, passive: true }); });
 globeFirst.then(loadNews).then(d => {
   hnLive.innerHTML = '<i></i>' + updatedText(d.updated);
-  showStats(d.stats);
+  // "news sources" comes only from site-stats.json: publications behind the articles visitors can open (owner, 15 Nov 2026).
+  // The live service's count (1,835) covers the robot's whole history, most of which is not on the site.
+  if (d.stats) { const { sources, ...rest } = d.stats; showStats(rest); }
   hnTop.innerHTML = d.top.slice(0, 5).map((s, i) => card(s, i === 0)).join('');
   // confirmedSection hidden (owner, 15 Nov 2026)
   hnCty.innerHTML = countries(d.stories);
