@@ -113,6 +113,7 @@ html.market-mode:not(.embed) .layers{bottom:68px!important}html.market-mode:not(
 @media(min-width:1180px){html.act-on .zoom{bottom:calc(var(--acth,150px) + 86px)!important}html.act-on .zloc{bottom:calc(var(--acth,150px) + 34px)!important}html.act-on .act.pf{height:auto;max-height:360px;overflow:auto}}
 /* Watchlist tab (free) */
 .wl-g{display:grid;grid-template-columns:250px 1fr;gap:10px}.wl-left{display:flex;flex-direction:column;gap:2px;max-height:220px;overflow:auto}.act-r .pf-b{padding:4px 10px;font-size:12px}.wl-h{display:flex;align-items:center;gap:8px;padding:6px 6px;border-radius:8px;background:none;border:0;color:#ececef;font:13px Inter,sans-serif;cursor:pointer;text-align:left;min-width:0}.wl-h:hover{background:#17171a}.wl-h.on{background:#20140b;color:#ffb27a}.wl-h .mu{margin-left:auto;color:#8a8a92;font-size:11.5px}.wl-h .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wl-lim{font-size:11.5px;color:#8a8a92;padding:2px 6px 8px}.wl-lim b{color:#ececef}.wl-lim .pf-tag{margin-left:4px}
 .wl-lg{width:22px;height:22px;border-radius:6px;object-fit:contain;background:#fff;flex:none}.wl-in{background:#26262a;color:#ececef;font:600 9.5px Inter,sans-serif;display:inline-flex;align-items:center;justify-content:center}
 .wl-cards{display:flex;gap:8px;overflow-x:auto;padding:2px 0 10px;scroll-snap-type:x mandatory}.wl-card{flex:0 0 78%;scroll-snap-align:start;text-align:left;border:1px solid #232327;border-radius:12px;padding:10px 12px;background:#0d0d10;color:#ececef;font:13px/1.35 Inter,sans-serif;display:flex;flex-direction:column;gap:6px}.wl-ch,.wl-cm{display:flex;gap:6px;align-items:center}.wl-ch .mu,.wl-cm .mu{color:#8a8a92;font-size:11.5px}.wl-ct{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .pf-e{display:flex;align-items:center;gap:14px}.pf-e b{font-size:15px;display:block}.pf-e small{color:#8a8a92;font-size:12px}.pf-e .pf-bs{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
@@ -319,7 +320,7 @@ h1 span{color:var(--fg-3)}
 /* Hover preview */
 .hover{position:fixed;z-index:5;width:280px;padding:12px;border-radius:14px;pointer-events:none;display:grid;grid-template-columns:52px 1fr;gap:12px;align-items:start;box-shadow:0 18px 50px rgba(0,0,0,.5);opacity:0;transform:translateY(4px);transition:opacity .14s,transform .14s}
 .hover.on{opacity:1;transform:none}
-.hover.pin{pointer-events:auto;cursor:pointer}.embed .hover{background:rgba(14,14,17,.97)!important;-webkit-backdrop-filter:none;backdrop-filter:none}
+.hover.pin{pointer-events:auto;cursor:pointer}
 .hover.brief{width:340px;display:block;padding:16px}.brief-head{display:flex;align-items:center;gap:10px;padding-bottom:10px}.brief-head .flag{width:22px;height:16px;border-radius:2px;object-fit:cover}.brief-head h3{margin:0;font-size:16px}.brief-head span{margin-left:auto;font-size:12px;color:var(--fg-3)}
 .brief-line{padding:9px 0;border-top:1px solid var(--line);font-size:13px;line-height:1.35;font-weight:650}.brief-index{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:6px;padding-top:10px;font-size:12.5px;color:var(--fg-3)}.brief-next{margin-top:8px;font-size:12px;color:var(--fg-3)}.brief-next b{color:var(--fg);font-weight:650}
 .hover .art{width:52px;height:52px;border-radius:9px}
@@ -1520,16 +1521,7 @@ function assetPanel(sym) {
     ${peers.length ? `<div class="sec-h">Same industry today</div><div class="list">${peers.map(([p, [, why]]) => `<button class="item" data-asset="${esc(p.s)}"><span></span><span><h4>${esc(p.n)} ${pctPill(p.d)}</h4><span class="meta">${esc(why)}</span></span></button>`).join('')}</div>` : ''}
     <p style="margin-top:18px"><a class="btn" href="../../asset.html?s=${encodeURIComponent(sym)}" style="color:var(--accent)">Open the full ${esc(a.s.replace(/-USD$/, ''))} page →</a></p>`;
 }
-// Hover stability: a line stays chosen for a short dwell and the card survives brief gaps between lines (no on/off flicker).
-const ARC_GRACE=220, ARC_DWELL=320; let arcSince=0, arcSeen=0, arcHideT=null;
-const arcKey=h=>h?((h.article&&h.article.id)||'')+'|'+((h.asset&&(h.asset.s||h.asset.n))||''):'';
-function arcPick(x,y,r=10) {
-  const pr=pillRects.find(q=>x>=q.x&&x<=q.x+q.w&&y>=q.y&&y<=q.y+q.h); if(pr) return pr.edge;
-  // nearest visible line, not the first one in the list; keep the current line while the pointer stays close (stops flicker between overlapping lines)
-  const dist=h=>{let m=Infinity;for(const p of h.points){if(!p[2])continue;const d=Math.hypot(p[0]-x,p[1]-y);if(d<m)m=d;}return m;};
-  if(arcHover){const cur=arcHits.find(h=>arcKey(h)===arcKey(arcHover));if(cur){const d=dist(cur);if(d<r*1.8||(d<r*3&&performance.now()-arcSince<ARC_DWELL))return cur;}}
-  let best=null,bd=r;for(const h of arcHits){const d=dist(h);if(d<bd){bd=d;best=h;}}return best;
-}
+function arcPick(x,y,r=10) { const pr=pillRects.find(q=>x>=q.x&&x<=q.x+q.w&&y>=q.y&&y<=q.y+q.h); if(pr) return pr.edge; return arcHits.find(h=>h.points.some(p=>p[2] && Math.hypot(p[0]-x,p[1]-y)<r)); }
 function impactTargets(s) { return impactsOf(s).map(i => ({ impact: i, country: impactCountry(i) })).filter(x => x.country); }
 
 // Story chains: a → b → c through "links"
@@ -1993,11 +1985,8 @@ function hoverAt(x, y) {
   if (pinned) return;  // an article popup opened by a click stays until you click elsewhere or press Escape
   cv.style.cursor = !EMBED || onGlobe(x, y) ? 'grab' : 'default';  // full Globe page: hand everywhere; homepage: only over the globe
   const ex = !EMBED && (exPick(x, y) || upPick(x, y)); if (ex) { $('hover').classList.remove('on'); return; }
-  const edge=arcPick(x,y), now=performance.now();
-  if(edge){ if(!arcHover||arcKey(arcHover)!==arcKey(edge)) arcSince=now; arcSeen=now; clearTimeout(arcHideT); arcHover=edge; }
-  else if(arcHover && now-arcSeen<ARC_GRACE){ clearTimeout(arcHideT); arcHideT=setTimeout(()=>{ if(arcHover && performance.now()-arcSeen>=ARC_GRACE){ arcHover=null; const hv=$('hover'); delete hv.dataset.edge; hv.classList.remove('on'); } }, ARC_GRACE+20); return; }
-  else arcHover=null;
-  if(edge){const hv=$('hover'),key=(edge.article&&edge.article.id)+'|'+(edge.asset&&edge.asset.s||'');if(hv.dataset.edge!==key||!hv.classList.contains('on')){hv.dataset.edge=key;hv.className='hover glass solo hv-b on';hv.innerHTML=hoverCardHTML(edge);}edge.pill?placeHover(edge.pill.x+edge.pill.w+4,edge.pill.y+edge.pill.h/2):placeHover(x,y);return;}  // rebuild the card only when the line changes
+  const edge=arcPick(x,y); arcHover=edge || null;
+  if(edge){const hv=$('hover');hv.className='hover glass solo hv-b on';hv.innerHTML=hoverCardHTML(edge);edge.pill?placeHover(edge.pill.x+edge.pill.w+4,edge.pill.y+edge.pill.h/2):placeHover(x,y);return;}
 
   const d = pick(x, y, 16);
   if (d) { hoverCountry = null; if (hoverC !== d.key) { hoverC = d.key; showHover(d); } placeHover(d.x, d.y); return; }
@@ -2021,8 +2010,7 @@ function showHover(d) {
   }
 }
 function placeHover(x, y) { const hv = $('hover'), w = hv.offsetWidth, h = hv.offsetHeight; let l = x + 16, t = y - h / 2; if (l + w > innerWidth - 12) l = x - w - 16; t = Math.max(12, Math.min(innerHeight - h - 12, t)); hv.style.left = l + 'px'; hv.style.top = t + 'px'; }
-if (EMBED) { let hoverOn = false; new MutationObserver(() => { const on = $('hover').classList.contains('on'); if (on !== hoverOn) { hoverOn = on; try { parent.postMessage({ inv: 'globe-hover', on }, location.origin); } catch {} } }).observe($('hover'), { attributes: true, attributeFilter: ['class'] }); }
-function hideHover() { delete $('hover').dataset.edge; $('hover').classList.remove('pin'); pinned = null; delete $('hover').dataset.country; arcHover=null; clearTimeout(cTimer); hoverC = null; hoverCountry = null; $('hover').classList.remove('on');  }
+function hideHover() { $('hover').classList.remove('pin'); pinned = null; delete $('hover').dataset.country; arcHover=null; clearTimeout(cTimer); hoverC = null; hoverCountry = null; $('hover').classList.remove('on');  }
 let tapEdge = null;
 function tap(x, y, touch) {
   if (PROJ.on) return projTap(x, y);
@@ -2444,9 +2432,11 @@ function actLatest(){
 let wlWithProjects=false,WL_SEL='all',wlView='home',wlQ='',wlImp=null,PFPROJ=null;
 const wlRead=()=>{try{const L=JSON.parse(localStorage.getItem('inv-watch')||'{}');return {a:Array.isArray(L.a)?L.a:[],c:Array.isArray(L.c)?L.c:[]}}catch{return {a:[],c:[]}}};
 const wlWrite=L=>{try{localStorage.setItem('inv-watch',JSON.stringify(L))}catch{}WATCH=watchSyms();};
-const wlHold=()=>wlRead().a.filter(x=>x&&x.s).map(x=>({s:String(x.s).toUpperCase(),n:x.n||MKT.by?.[x.s]?.n||x.s}));
+const wlAll=()=>wlRead().a.filter(x=>x&&x.s).map(x=>({s:String(x.s).toUpperCase(),n:x.n||MKT.by?.[x.s]?.n||x.s}));
+const wlHold=()=>wlAll().slice(0,WL_FREE);
 const wlUniverse=()=>(MKT.all||[]).filter(a=>a&&a.s&&a.t!=='fx');
-function wlAdd(list){const L=wlRead();for(const a of list){if(!L.a.some(x=>String(x.s).toUpperCase()===a.s.toUpperCase()))L.a.unshift({src:'site',s:a.s,n:a.n||a.s});}wlWrite(L);}
+const WL_FREE=5; // owner 15 Nov 2026: Free shows 5 companies on the globe, Pro unlimited (Pro is not live yet, so everyone is on Free)
+function wlAdd(list){const L=wlRead();let skipped=0;for(const a of list){if(L.a.some(x=>String(x.s).toUpperCase()===a.s.toUpperCase()))continue;if(L.a.length>=WL_FREE){skipped++;continue;}L.a.unshift({src:'site',s:a.s,n:a.n||a.s});}wlWrite(L);if(skipped&&typeof toast==='function')toast(`Free shows ${WL_FREE} on the globe. ${skipped} not added. Pro: unlimited.`);}
 function wlDel(sym){const L=wlRead();L.a=L.a.filter(x=>String(x.s).toUpperCase()!==sym);wlWrite(L);}
 const wlWord=n=>String(n||'').toLowerCase().replace(/[^a-z0-9 ]/g,' ').split(/\s+/).find(w=>w.length>2&&!['the','inc','corp','co','ltd','plc','limited','company','holdings','group'].includes(w))||'';
 function wlItems(H){const S=new Map(H.map(h=>[h.s,h])),out=[];
@@ -2472,7 +2462,8 @@ function wlHTML(){
  const all=wlItems(H),cnt=new Map();for(const it of all)cnt.set(it.h.s,(cnt.get(it.h.s)||0)+1);
  if(WL_SEL!=='all'&&!H.some(h=>h.s===WL_SEL))WL_SEL='all';
  const sel=WL_SEL==='all'?null:H.find(h=>h.s===WL_SEL),list=(sel?all.filter(i=>i.h.s===sel.s):all).slice(0,6);
- const left=`<button type="button" class="wl-h${!sel?' on':''}" data-wlsel="all"><span class="wl-lg wl-in">All</span><span class="nm">All companies</span><span class="mu">${all.length}</span></button>`+H.map(h=>`<button type="button" class="wl-h${sel&&sel.s===h.s?' on':''}" data-wlsel="${esc(h.s)}">${wlLogo(h)}<span class="nm">${esc(h.n)}</span><span class="mu">${cnt.get(h.s)||0}</span></button>`).join('');
+ const tot=wlAll().length,limTxt=`<div class="wl-lim"><b>${Math.min(tot,WL_FREE)} of ${WL_FREE}</b> on the globe · Free${tot>WL_FREE?` · ${tot-WL_FREE} more in your watchlist`:''} <span class="pf-tag">PRO</span> unlimited</div>`;
+ const left=limTxt+`<button type="button" class="wl-h${!sel?' on':''}" data-wlsel="all"><span class="wl-lg wl-in">All</span><span class="nm">All companies</span><span class="mu">${all.length}</span></button>`+H.map(h=>`<button type="button" class="wl-h${sel&&sel.s===h.s?' on':''}" data-wlsel="${esc(h.s)}">${wlLogo(h)}<span class="nm">${esc(h.n)}</span><span class="mu">${cnt.get(h.s)||0}</span></button>`).join('');
  const feed=list.map(i=>`<div class="pf-r">${wlLogo(i.h)}<span class="mu" style="width:44px;flex:none">${esc(wlTime(i.t))}</span><span class="pf-tag">${i.k}</span>${i.st?`<button type="button" class="lk nm" style="color:#ececef;text-align:left" data-wlst="${esc(i.st.id)}">${esc(i.title)}</button>`:`<span class="nm">${esc(i.title)}</span>`}</div>`).join('')||`<div class="pf-r mu">No articles about ${sel?esc(sel.n):'your watchlist'} in this period.</div>`;
  return `<div class="wl-g"><div class="pf-box wl-left">${left}</div><div class="pf-box"><div class="pf-l">${sel?esc(sel.n):'All companies'} · articles</div>${feed}<div class="pf-ft">Changes here are saved to this device; when you are logged in they join your account on your next visit to the site. Not investment advice.</div></div></div>`;
 }
@@ -3492,6 +3483,64 @@ function mkUnusual(){
  if(!rows.length)return `<p class="mkd-e">${MARKET.ready?'Not enough articles yet.':'Loading…'}</p>`;
  return rows.map(x=>`<button type="button" class="mkd-unu" data-unu="${esc(x.c)}"><span><b>${esc(x.c)}</b><small>${x.n} articles · usual ${x.usual<1?x.usual.toFixed(1):Math.round(x.usual)}</small></span><em class="${x.r>=2?'hot':''}">${x.r>=10?Math.round(x.r):x.r.toFixed(1)}×</em></button>`).join('');
 }
+
+// Customisable panels (owner 15 Nov 2026, design A). PC only (≥1180 px).
+// Every panel gets a pin and a minimise button. Unpinned panels can be dragged by their ⋮⋮ handle.
+// A minimised panel becomes a chip ("Layers ＋") near its side; the chip reopens it.
+// The bottom strips (News activity / Markets activity) get a handle: click or drag it down to crop the strip to its tab bar.
+// The layout is saved on this device only ('inv-globe-layout').
+(()=>{
+ const KEY='inv-globe-layout',big=()=>matchMedia('(min-width:1180px)').matches;
+ let L;try{L=JSON.parse(localStorage.getItem(KEY)||'{}')}catch{L={}}
+ L.min=L.min||{};L.free=L.free||{};L.pos=L.pos||{};L.crop=L.crop||{};
+ const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(L))}catch{}};
+ const mode=()=>typeof PROJ!=='undefined'&&PROJ.on?'projects':typeof MARKET!=='undefined'&&MARKET.on?'markets':'news';
+ // [id, label, side, mode, selector]
+ const P=[['sec','Sector overview','l','news','#sideSec'],['views','Saved views','l','news','#presets'],['top','Top articles','r','news','#panel'],['imp','Market impact','r','news','#sideImp'],
+  ['sess','Market sessions','l','markets','.mkd-l'],['mko','Markets overview','r','markets','.mkd-o'],
+  ['pjl','Project list','l','projects','#pjList'],['pjs','Project stats','r','projects','#pjStats']];
+ const STRIPS=[['act','#act','.act-h'],['mka','.mkd-a','.mkd-th']];
+ const css=document.createElement('style');css.textContent=`
+ .gp-hid{display:none!important}
+ .gp-ctl{position:fixed;z-index:30;display:none;gap:4px;padding:2px;border-radius:9px;background:#0b0b0e}.gp-ctl.on{display:flex}
+ .gp-ctl button{width:24px;height:24px;border-radius:7px;border:1px solid #2c2c31;background:#141417;color:#aaa;font:600 13px Inter,sans-serif;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+ .gp-ctl button:hover{color:#fff;border-color:#45454c}.gp-ctl .gp-pin[aria-pressed=true]{color:#ff9d5c;border-color:#5a3214;background:#1d130b}
+ .gp-ctl .gp-drag{cursor:grab;letter-spacing:-2px;color:#777}.gp-ctl .gp-drag[hidden]{display:none}
+ .gp-dock{position:fixed;z-index:29;display:none;gap:8px;flex-wrap:wrap;max-width:420px}.gp-dock.on{display:flex}
+ .gp-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(14,14,17,.95);border:1px solid #2a2a2f;border-radius:999px;padding:7px 12px;font:13px Inter,sans-serif;color:#ddd;cursor:pointer}
+ .gp-chip i{width:7px;height:7px;border-radius:50%;background:#ff7a1a}.gp-chip:hover{border-color:#ff7a1a}
+ .gp-grab{display:block;width:46px;height:14px;margin:-6px auto 2px;border:0;background:none;cursor:ns-resize;position:relative}.gp-grab:before{content:'';position:absolute;left:0;right:0;top:4px;height:5px;border-radius:3px;background:#3a3a40}.gp-grab:hover:before{background:#ff7a1a}
+ .gp-crop{height:auto!important;max-height:none!important}.gp-crop>*:not(.act-h):not(.mkd-th):not(.gp-grab){display:none!important}
+ @media(max-width:1179px){.gp-ctl,.gp-dock{display:none!important}.gp-hid{display:revert!important}}`;
+ document.head.append(css);
+ const ctl={},dockL=document.createElement('div'),dockR=document.createElement('div');dockL.className='gp-dock';dockR.className='gp-dock';document.body.append(dockL,dockR);
+ for(const [id,label] of P){const c=document.createElement('div');c.className='gp-ctl';c.innerHTML=`<button type="button" class="gp-drag" title="Drag to move" aria-label="Move ${label}">⋮⋮</button><button type="button" class="gp-pin" title="Pin" aria-label="Pin ${label}" aria-pressed="true"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4h6l-1 6 3 3H7l3-3z"/><path d="M12 16v5"/></svg></button><button type="button" class="gp-min" title="Minimise" aria-label="Minimise ${label}">−</button>`;document.body.append(c);ctl[id]=c;
+  c.querySelector('.gp-min').onclick=()=>{L.min[id]=1;save();sync();};
+  c.querySelector('.gp-pin').onclick=()=>{if(L.free[id]){delete L.free[id];delete L.pos[id];}else L.free[id]=1;save();sync();};
+  const dr=c.querySelector('.gp-drag');dr.onpointerdown=e=>{const el=find(id);if(!el)return;e.preventDefault();dr.setPointerCapture(e.pointerId);const p0=L.pos[id]||[0,0],x0=e.clientX,y0=e.clientY;
+   dr.onpointermove=ev=>{L.pos[id]=[p0[0]+ev.clientX-x0,p0[1]+ev.clientY-y0];el.style.translate=L.pos[id][0]+'px '+L.pos[id][1]+'px';place();};
+   dr.onpointerup=()=>{dr.onpointermove=null;save();};};}
+ const find=id=>{const p=P.find(x=>x[0]===id);return p&&document.querySelector(p[4]);};
+ const shown=el=>{if(!el)return false;const r=el.getBoundingClientRect();return r.width>0&&r.height>0&&getComputedStyle(el).visibility!=='hidden';};
+ function place(){for(const [id] of P){const el=find(id),c=ctl[id];if(!big()||!el||L.min[id]||!shown(el)){c.classList.remove('on');continue;}const r=el.getBoundingClientRect();c.classList.add('on');c.style.top=Math.max(4,r.top-12)+'px';c.style.left=(r.right-c.offsetWidth-18)+'px';}
+  const lc=document.getElementById('lcol')?.getBoundingClientRect();dockL.style.left=((lc&&lc.width?lc.left:24))+'px';dockL.style.bottom='16px';dockR.style.right='24px';dockR.style.bottom='16px';}
+ function sync(){const m=mode();
+  for(const [id,label,side,md] of P){const el=find(id);if(!el)continue;const hid=!!L.min[id]&&big();el.classList.toggle('gp-hid',hid);el.style.translate=L.free[id]&&L.pos[id]&&big()?L.pos[id][0]+'px '+L.pos[id][1]+'px':'';
+   const c=ctl[id];c.querySelector('.gp-pin').setAttribute('aria-pressed',String(!L.free[id]));c.querySelector('.gp-drag').hidden=!L.free[id];}
+  const chips=s=>P.filter(p=>p[2]===s&&p[3]===m&&L.min[p[0]]&&find(p[0])).map(([id,label])=>`<button type="button" class="gp-chip" data-gp="${id}"><i></i>${label} ＋</button>`).join('');
+  dockL.innerHTML=chips('l');dockR.innerHTML=chips('r');dockL.classList.toggle('on',!!dockL.innerHTML&&big());dockR.classList.toggle('on',!!dockR.innerHTML&&big());
+  for(const [id,sel] of STRIPS){const el=document.querySelector(sel);if(el)el.classList.toggle('gp-crop',!!L.crop[id]);}
+  place();}
+ document.addEventListener('click',e=>{const ch=e.target.closest('[data-gp]');if(ch){delete L.min[ch.dataset.gp];save();sync();}});
+ // bottom strips: a handle on top; click or drag down to crop to the tab bar, drag up or click again to open
+ const grab=()=>{for(const [id,sel,head] of STRIPS){const el=document.querySelector(sel);if(!el)continue;el.classList.toggle('gp-crop',!!L.crop[id]);if(el.querySelector(':scope>.gp-grab'))continue;const h=el.querySelector(head);if(!h)continue;
+  const g=document.createElement('button');g.type='button';g.className='gp-grab';g.title='Drag down to see the full globe';g.setAttribute('aria-label','Show or hide this panel');el.prepend(g);
+  let y0=null;g.onpointerdown=e=>{y0=e.clientY;g.setPointerCapture(e.pointerId);};
+  g.onpointerup=e=>{const dy=y0==null?0:e.clientY-y0;y0=null;L.crop[id]=Math.abs(dy)<6?!L.crop[id]:dy>0;if(!L.crop[id])delete L.crop[id];save();el.classList.toggle('gp-crop',!!L.crop[id]);
+   if(typeof renderAct==='function'&&id==='act')renderAct();if(typeof mkdRender==='function'&&id==='mka')mkdRender();document.documentElement.style.setProperty('--acth',el.offsetHeight+'px');};}};
+ new MutationObserver(()=>{grab();}).observe(document.body,{childList:true,subtree:true});
+ addEventListener('resize',sync);setInterval(()=>{if(big())sync();},700);grab();sync();
+})();
 
 requestAnimationFrame(frame);
 </script>
