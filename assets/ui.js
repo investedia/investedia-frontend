@@ -737,13 +737,22 @@
     <button class="auth-guest" type="button">Continue as guest</button>
     </div>
   </div>`;
-  // Sign-up panel: a few real market moves floating over the globe (delayed data from markets.json)
-  const auTicks = () => { const art = au.querySelector('.auth-art'); if (!art || art.dataset.ticks) return; art.dataset.ticks = '1';
+  // Sign-up panel: real market moves tied to the connection lines on the globe (delayed data from markets.json).
+  // Anchors are pixel points in assets/img/auth-bg.jpg (900x1300): a point on the New York to London arc, London and Frankfurt.
+  const AU_IMG = [900, 1300], AU_SPOTS = [['^GSPC', 207, 819, -10, -96], ['^FTSE', 584, 964, -118, -92], ['^GDAXI', 682, 989, -30, -150]];
+  const auTicks = () => { const art = au.querySelector('.auth-art'); if (!art) return;
+    const place = () => { const r = art.getBoundingClientRect(); if (!r.width) return; const k = Math.max(r.width / AU_IMG[0], r.height / AU_IMG[1]), ox = (r.width - AU_IMG[0] * k) / 2, oy = (r.height - AU_IMG[1] * k) / 2;
+      const svg = art.querySelector('.auth-tk-lines'); if (svg) svg.setAttribute('viewBox', `0 0 ${r.width} ${r.height}`);
+      art.querySelectorAll('.auth-tk').forEach(el => { const [x, y, dx, dy] = el.dataset.at.split(',').map(Number), ax = ox + x * k, ay = oy + y * k, cxp = ax + dx, cyp = ay + dy;
+        el.style.left = cxp + 'px'; el.style.top = cyp + 'px';
+        const ln = art.querySelector(`.auth-tk-ln[data-for="${el.dataset.s}"]`), dot = art.querySelector(`.auth-tk-dot[data-for="${el.dataset.s}"]`);
+        if (ln) { ln.setAttribute('x1', ax); ln.setAttribute('y1', ay); ln.setAttribute('x2', cxp); ln.setAttribute('y2', cyp + 18); } if (dot) { dot.setAttribute('cx', ax); dot.setAttribute('cy', ay); } }); };
+    if (art.dataset.ticks) return requestAnimationFrame(place); art.dataset.ticks = '1'; addEventListener('resize', place);
     fetch('assets/globe/markets.json').then(r => r.json()).then(j => { const by = Object.fromEntries((j.assets || []).map(a => [a.s, a]));
-      const spots = [['^GSPC', 17, 45], ['^FTSE', 56, 55], ['^GDAXI', 74, 63], ['^IBEX', 40, 66]];
-      art.insertAdjacentHTML('beforeend', spots.map(([sym, x, y], i) => { const a = by[sym]; if (!a || !Number.isFinite(a.p) || !Number.isFinite(a.d)) return '';
-        const up = a.d >= 0; return `<span class="auth-tk ${up ? 'up' : 'dn'}" style="left:${x}%;top:${y}%;animation-delay:${i * -1.6}s"><b>${a.n}</b><span>${a.p.toLocaleString('en-US', { maximumFractionDigits: 2 })}</span><i>${up ? '▲' : '▼'} ${Math.abs(a.d).toFixed(2)}%</i></span>`; }).join('') + '<small class="auth-tk-note">Delayed prices</small>');
-    }).catch(() => {}); };
+      const ok = AU_SPOTS.filter(([sym]) => by[sym] && Number.isFinite(by[sym].p) && Number.isFinite(by[sym].d));
+      art.insertAdjacentHTML('beforeend', `<svg class="auth-tk-lines" aria-hidden="true">${ok.map(([sym]) => `<line class="auth-tk-ln" data-for="${sym}"/><circle class="auth-tk-dot" data-for="${sym}" r="4"/>`).join('')}</svg>` +
+        ok.map(([sym, x, y, dx, dy], i) => { const a = by[sym], up = a.d >= 0; return `<span class="auth-tk ${up ? 'up' : 'dn'}" data-s="${sym}" data-at="${x},${y},${dx},${dy}" style="animation-delay:${i * -1.6}s"><b>${a.n}</b><span>${a.p.toLocaleString('en-US', { maximumFractionDigits: 2 })}</span><i>${up ? '▲' : '▼'} ${Math.abs(a.d).toFixed(2)}%</i></span>`; }).join('') + '<small class="auth-tk-note">Delayed prices</small>');
+      requestAnimationFrame(place); }).catch(() => {}); };
   let auMode = 'up';
   const auSet = m => { auMode = m; au.querySelectorAll('[data-only]').forEach(e => e.hidden = e.dataset.only !== m);
     au.querySelector('#au-t').textContent = m === 'up' ? 'Create your Investedia account' : 'Welcome back'; au.querySelector('#au-sub').textContent = m === 'up' ? 'Track markets, save key stories, and get the daily brief.' : 'Log in to see your watchlist and alerts.'; auStep(false);
