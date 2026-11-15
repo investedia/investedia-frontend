@@ -164,3 +164,4 @@ html,body{overflow-x:clip}.ap{max-width:100%;overflow-x:clip}
 .pa{padding-top:6px}
 @media(max-width:760px){.pa-h{flex-wrap:wrap;padding-top:54px}.pa-h .ap-ic{width:44px;height:44px}.pa-hn{flex:1 1 0}.pa-h #ap-watch{width:100%;justify-content:center}.pa-sts>.pa-st{min-width:40%}}
 @media(max-width:760px){.pa-h{align-items:flex-start}.pa-h small .ap-co-slot{flex-basis:100%}}
+.pa-12m{margin-top:16px;padding-top:14px;border-top:1px solid var(--line,#222)}.pa-12m small{display:block;color:var(--fg-3,#8a8a92);font-size:12px;margin-bottom:6px}.pa-12m svg{width:100%;height:90px;display:block}.pa-12m-ax{display:flex;justify-content:space-between;color:var(--fg-3,#8a8a92);font-size:11.5px;margin-top:4px}
