@@ -799,7 +799,7 @@
     if (authOn && returning) sbLoad().then(c => { c.auth.onAuthStateChange((_, s) => paintUser(s && s.user)); return c.auth.getSession(); }).then(r => paintUser(r.data.session && r.data.session.user)).catch(() => {});
     const ss = (k, v) => { try { return v === undefined ? sessionStorage.getItem(k) : sessionStorage.setItem(k, v); } catch { return '1'; } };
     if (standaloneAuthSkip()) return;
-    if (!store('inv-auth-seen') && !returning && !document.documentElement.classList.contains('embed')) setTimeout(() => { if (pop.hidden) openAuth('up'); }, 4000);
+    if (!store('inv-auth-seen') && !returning && page !== 'news' && !document.documentElement.classList.contains('embed')) setTimeout(() => { if (pop.hidden) openAuth('up'); }, 4000);
     // members who come back logged out: a quiet "Welcome back" once per visit
     else if (store('inv-had-account') && !ss('inv-wb')) setTimeout(() => { ss('inv-wb', '1'); if (pop.hidden && au.hidden && hdr.querySelector('#hdr-login') && !hdr.querySelector('#hdr-login').hidden) openAuth('in'); }, 2500);
   });
