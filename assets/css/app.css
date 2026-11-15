@@ -1418,3 +1418,12 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 :root[data-theme=light] .auth .auth-box{background:#fff!important}:root[data-theme=light] .auth-main{color:#111}
 .auth-pwlink{display:block;margin:10px auto 0;padding:4px 0;border:0;background:none;color:var(--fg-2);font-size:13px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 .auth-pwlink[hidden]{display:none}
+.auth-cf[hidden],.auth-or[hidden],.auth-sso[hidden],.auth-switch[hidden]{display:none!important}
+.auth-cf{display:flex;flex-direction:column;gap:12px;margin-top:6px}
+.auth-cf-t{margin:0;font-size:18px;font-weight:600;color:var(--fg)}
+.auth-cf-s{margin:0;font-size:14px;line-height:1.5}
+.auth-cf-s b{color:var(--fg);font-weight:600}
+.auth .auth-code{height:56px;border-radius:14px;text-align:center;font-size:26px;font-weight:600;letter-spacing:.35em;font-variant-numeric:tabular-nums}
+.auth .auth-code::placeholder{font-size:15px;letter-spacing:0;font-weight:400}
+.auth-cf-alt{margin:2px 0 0;text-align:center;font-size:13px;color:var(--fg-3)}
+.auth-cf-alt button{border:0;background:none;padding:2px;color:var(--fg-2);text-decoration:underline;text-underline-offset:3px;cursor:pointer;font-size:13px}

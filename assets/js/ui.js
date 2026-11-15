@@ -730,7 +730,14 @@
       <label class="auth-l"><span>Password <a href="#" class="auth-forgot" data-only="in">Forgot?</a></span><span class="auth-pw"><input class="input" name="pw" type="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" required><button type="button" class="auth-eye" aria-label="Show password">Show</button></span></label>
       <label class="auth-check" data-only="up"><input type="checkbox" name="news"><span>Send me the daily brief and market news. Unsubscribe anytime.</span></label></div>
       <p class="auth-msg" role="status" hidden></p>
-      <button class="btn btn-primary auth-go" type="submit"><span>Email me a sign-in link</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <button class="btn btn-primary auth-go" type="submit"><span>Email me a code</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </form>
+    <form class="auth-cf" novalidate hidden>
+      <p class="auth-cf-t">Check your email</p><p class="muted auth-cf-s">We sent a code to <b class="auth-cf-em"></b>. Copy it here to continue.</p>
+      <input class="input auth-code" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="8" placeholder="Enter code" aria-label="Verification code" required>
+      <p class="auth-msg auth-cf-msg" role="status" hidden></p>
+      <button class="btn btn-primary auth-go auth-cf-go" type="submit"><span>Verify and continue</span></button>
+      <p class="auth-cf-alt"><button type="button" class="auth-resend">Resend code</button> · <button type="button" class="auth-back">Use a different email</button></p>
     </form>
     <button class="auth-pwlink" type="button">Use a password instead</button>
     <p class="auth-legal dim" data-only="up">By continuing you agree to our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.</p>
@@ -740,10 +747,10 @@
   </div>`;
   let auMode = 'up';
   const auSet = m => { auMode = m; au.querySelectorAll('[data-only]').forEach(e => e.hidden = e.dataset.only !== m);
-    au.querySelector('#au-t').textContent = m === 'up' ? 'Create your Investedia account' : 'Welcome back'; au.querySelector('#au-sub').textContent = m === 'up' ? 'Track markets, save key stories, and get the daily brief.' : 'Log in to see your watchlist and alerts.'; auStep(false);
+    au.querySelector('#au-t').textContent = m === 'up' ? 'Create your Investedia account' : 'Welcome back'; au.querySelector('#au-sub').textContent = m === 'up' ? 'Track markets, save key stories, and get the daily brief.' : 'Log in to see your watchlist and alerts.'; auStep(false); if (typeof auCode === 'function' && auEm) auCode('');
     au.querySelector('[name=pw]').autocomplete = m === 'up' ? 'new-password' : 'current-password'; auMsg(''); };
   // Email sends a sign-in link straight away; password is optional (owner 15 Nov 2026)
-  const auStep = on => { au.querySelector('.auth-step2').hidden = !on; au.querySelector('.auth-pwlink').hidden = on; au.querySelector('.auth-go span').textContent = !on ? 'Email me a sign-in link' : auMode === 'up' ? 'Create free account' : 'Log in'; if (on) setTimeout(() => au.querySelector(auMode === 'up' ? '[name=name]' : '[name=pw]').focus(), 30); };
+  const auStep = on => { au.querySelector('.auth-step2').hidden = !on; au.querySelector('.auth-pwlink').hidden = on; au.querySelector('.auth-go span').textContent = !on ? 'Email me a code' : auMode === 'up' ? 'Create free account' : 'Log in'; if (on) setTimeout(() => au.querySelector(auMode === 'up' ? '[name=name]' : '[name=pw]').focus(), 30); };
   const auMsg = (t, ok) => { const e = au.querySelector('.auth-msg'); e.hidden = !t; e.textContent = t; e.classList.toggle('up', !!ok); e.classList.toggle('down', !ok); };
   const openAuth = (m = 'up') => { closePop(); auSet(m); if (au.hidden) modalOpen(au); au.hidden = false; store('inv-auth-seen', '1'); store('inv-pop', '1'); };
   const closeAuth = () => { if (au.hidden) return; au.hidden = true; modalClose(au); };
@@ -751,6 +758,21 @@
   au.onclick = e => { if (e.target === au) closeAuth(); };
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeAuth(); });
   au.querySelectorAll('.auth-switch button').forEach(b => b.onclick = () => auSet(b.dataset.m));
+  // Email code: send a 6-digit code, the person pastes it here (owner 16 Nov 2026)
+  let auEm = '', auWait = 0;
+  const cfMsg = (t, ok) => { const e = au.querySelector('.auth-cf-msg'); e.hidden = !t; e.textContent = t; e.classList.toggle('up', !!ok); e.classList.toggle('down', !ok); };
+  const auCode = em => { auEm = em; auWait = Date.now() + 60000; const on = !!em; au.querySelector('.auth-cf').hidden = !on; ['.auth-sso', '.auth-or', '.auth-f', '.auth-pwlink', '.auth-switch'].forEach(q => { const e = au.querySelector(q); if (e) e.hidden = on; });
+    if (!on) { au.querySelector('.auth-pwlink').hidden = !au.querySelector('.auth-step2').hidden; return; } au.querySelector('.auth-cf-em').textContent = em; const i = au.querySelector('[name=code]'); i.value = ''; cfMsg(''); setTimeout(() => i.focus(), 30); };
+  au.querySelector('.auth-back').onclick = () => auCode('');
+  au.querySelector('.auth-resend').onclick = async () => { const left = Math.ceil((auWait - Date.now()) / 1000); if (left > 0) return cfMsg('You can ask for a new code in ' + left + ' seconds.');
+    try { const c = await sbLoad(); const { error } = await c.auth.signInWithOtp({ email: auEm, options: { emailRedirectTo: location.href.split('#')[0] } }); if (error) throw error; auWait = Date.now() + 60000; cfMsg('New code sent. Check your inbox.', true); } catch (err) { cfMsg(err.message); } };
+  au.querySelector('[name=code]').oninput = e => { e.target.value = e.target.value.replace(/\D/g, '').slice(0, 8); };
+  au.querySelector('.auth-cf').onsubmit = async e => { e.preventDefault(); const tok = e.target.code.value.trim(); if (!/^\d{6,8}$/.test(tok)) return cfMsg('Enter the code from the email.');
+    const go = au.querySelector('.auth-cf-go'); go.disabled = true;
+    try { const c = await sbLoad(); const { data, error } = await c.auth.verifyOtp({ email: auEm, token: tok, type: 'email' }); if (error) throw error;
+      if (au.querySelector('[name=news]').checked && !(data.user.user_metadata || {}).newsletter) c.auth.updateUser({ data: { newsletter: true } });
+      track('code-verified'); auCode(''); closeAuth(); paintUser(data.user); }
+    catch (err) { cfMsg(/expired|invalid/i.test(err.message) ? 'That code is wrong or has expired. Check the email or resend.' : err.message); } finally { go.disabled = false; } };
   au.querySelector('.auth-pwlink').onclick = () => { auMsg(''); auStep(true); };
   au.querySelector('.auth-eye').onclick = e => { const i = au.querySelector('[name=pw]'), show = i.type === 'password'; i.type = show ? 'text' : 'password'; e.target.textContent = show ? 'Hide' : 'Show'; };
   const notYet = () => auMsg('Accounts are not connected in this local version. Continue as a guest.');
@@ -764,8 +786,8 @@
   au.querySelector('.auth-f').onsubmit = async e => { e.preventDefault(); const f = e.target, em = f.email.value.trim(), pw = f.pw.value;
     if (!/^\S+@\S+\.\S+$/.test(em)) return auMsg('Enter a valid email.'); if (au.querySelector('.auth-step2').hidden) { if (!authOn) return notYet(); const go = au.querySelector('.auth-go'); go.disabled = true;
       try { const c = await sbLoad(); const { error } = await c.auth.signInWithOtp({ email: em, options: { emailRedirectTo: location.href.split('#')[0], data: { newsletter: f.news.checked } } }); if (error) throw error;
-        track(auMode === 'up' ? 'signup-link' : 'login-link'); auMsg('Check your inbox. We sent a sign-in link to ' + em + '.', true); }
-      catch (err) { auMsg(/rate|seconds/i.test(err.message) ? 'A link was just sent. Wait a minute before asking again.' : err.message); } finally { go.disabled = false; } return; }
+        track(auMode === 'up' ? 'signup-code' : 'login-code'); auMsg(''); auCode(em); }
+      catch (err) { auMsg(/rate|seconds/i.test(err.message) ? 'A code was just sent. Wait a minute before asking again.' : err.message); } finally { go.disabled = false; } return; }
     if (pw.length < 8) return auMsg('Password needs at least 8 characters.');
     if (!authOn) return notYet();
     const go = au.querySelector('.auth-go'); go.disabled = true;
