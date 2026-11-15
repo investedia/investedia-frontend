@@ -730,8 +730,9 @@
       <label class="auth-l"><span>Password <a href="#" class="auth-forgot" data-only="in">Forgot?</a></span><span class="auth-pw"><input class="input" name="pw" type="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" required><button type="button" class="auth-eye" aria-label="Show password">Show</button></span></label>
       <label class="auth-check" data-only="up"><input type="checkbox" name="news"><span>Send me the daily brief and market news. Unsubscribe anytime.</span></label></div>
       <p class="auth-msg" role="status" hidden></p>
-      <button class="btn btn-primary auth-go" type="submit"><span>Continue with email</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <button class="btn btn-primary auth-go" type="submit"><span>Email me a sign-in link</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
     </form>
+    <button class="auth-pwlink" type="button">Use a password instead</button>
     <p class="auth-legal dim" data-only="up">By continuing you agree to our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.</p>
     <p class="auth-switch"><span data-only="up">Have an account? <button type="button" data-m="in">Log in</button></span><span data-only="in">New here? <button type="button" data-m="up">Create an account</button></span></p>
     <button class="auth-guest" type="button">Continue as guest</button>
@@ -741,8 +742,8 @@
   const auSet = m => { auMode = m; au.querySelectorAll('[data-only]').forEach(e => e.hidden = e.dataset.only !== m);
     au.querySelector('#au-t').textContent = m === 'up' ? 'Create your Investedia account' : 'Welcome back'; au.querySelector('#au-sub').textContent = m === 'up' ? 'Track markets, save key stories, and get the daily brief.' : 'Log in to see your watchlist and alerts.'; auStep(false);
     au.querySelector('[name=pw]').autocomplete = m === 'up' ? 'new-password' : 'current-password'; auMsg(''); };
-  // Two steps: email first, then name/password (owner design 15 Nov 2026)
-  const auStep = on => { au.querySelector('.auth-step2').hidden = !on; au.querySelector('.auth-go span').textContent = !on ? 'Continue with email' : auMode === 'up' ? 'Create free account' : 'Log in'; if (on) setTimeout(() => au.querySelector(auMode === 'up' ? '[name=name]' : '[name=pw]').focus(), 30); };
+  // Email sends a sign-in link straight away; password is optional (owner 15 Nov 2026)
+  const auStep = on => { au.querySelector('.auth-step2').hidden = !on; au.querySelector('.auth-pwlink').hidden = on; au.querySelector('.auth-go span').textContent = !on ? 'Email me a sign-in link' : auMode === 'up' ? 'Create free account' : 'Log in'; if (on) setTimeout(() => au.querySelector(auMode === 'up' ? '[name=name]' : '[name=pw]').focus(), 30); };
   const auMsg = (t, ok) => { const e = au.querySelector('.auth-msg'); e.hidden = !t; e.textContent = t; e.classList.toggle('up', !!ok); e.classList.toggle('down', !ok); };
   const openAuth = (m = 'up') => { closePop(); auSet(m); if (au.hidden) modalOpen(au); au.hidden = false; store('inv-auth-seen', '1'); store('inv-pop', '1'); };
   const closeAuth = () => { if (au.hidden) return; au.hidden = true; modalClose(au); };
@@ -750,6 +751,7 @@
   au.onclick = e => { if (e.target === au) closeAuth(); };
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeAuth(); });
   au.querySelectorAll('.auth-switch button').forEach(b => b.onclick = () => auSet(b.dataset.m));
+  au.querySelector('.auth-pwlink').onclick = () => { auMsg(''); auStep(true); };
   au.querySelector('.auth-eye').onclick = e => { const i = au.querySelector('[name=pw]'), show = i.type === 'password'; i.type = show ? 'text' : 'password'; e.target.textContent = show ? 'Hide' : 'Show'; };
   const notYet = () => auMsg('Accounts are not connected in this local version. Continue as a guest.');
   let sbCfg; const sbSettings = () => sbCfg || (sbCfg = fetch(SB_URL + '/auth/v1/settings', { headers: { apikey: SB_KEY } }).then(r => r.json()).catch(() => ({})));
@@ -760,7 +762,11 @@
   au.querySelector('.auth-forgot').onclick = e => { e.preventDefault(); const em = au.querySelector('[name=email]').value.trim(); if (!em) return auMsg('Enter your email first.'); if (!authOn) return notYet();
     sbLoad().then(c => c.auth.resetPasswordForEmail(em, { redirectTo: location.origin + '/profile.html' })).then(() => auMsg('Check your inbox for a reset link.', true)); };
   au.querySelector('.auth-f').onsubmit = async e => { e.preventDefault(); const f = e.target, em = f.email.value.trim(), pw = f.pw.value;
-    if (!/^\S+@\S+\.\S+$/.test(em)) return auMsg('Enter a valid email.'); if (au.querySelector('.auth-step2').hidden) { auMsg(''); return auStep(true); } if (pw.length < 8) return auMsg('Password needs at least 8 characters.');
+    if (!/^\S+@\S+\.\S+$/.test(em)) return auMsg('Enter a valid email.'); if (au.querySelector('.auth-step2').hidden) { if (!authOn) return notYet(); const go = au.querySelector('.auth-go'); go.disabled = true;
+      try { const c = await sbLoad(); const { error } = await c.auth.signInWithOtp({ email: em, options: { emailRedirectTo: location.href.split('#')[0], data: { newsletter: f.news.checked } } }); if (error) throw error;
+        track(auMode === 'up' ? 'signup-link' : 'login-link'); auMsg('Check your inbox. We sent a sign-in link to ' + em + '.', true); }
+      catch (err) { auMsg(/rate|seconds/i.test(err.message) ? 'A link was just sent. Wait a minute before asking again.' : err.message); } finally { go.disabled = false; } return; }
+    if (pw.length < 8) return auMsg('Password needs at least 8 characters.');
     if (!authOn) return notYet();
     const go = au.querySelector('.auth-go'); go.disabled = true;
     try { const c = await sbLoad();
