@@ -3,6 +3,7 @@
 // Voice: the browser's built-in speech for now (no account, no cost). An Azure voice can replace speak() later without UI changes.
 (()=>{
  const synth=window.speechSynthesis;if(!synth)return;
+ if(document.documentElement.classList.contains('embed')||/[?&]embed=1/.test(location.search)||window.top!==window.self)return; // full Globe page only, never the homepage frame
  const st=document.createElement('style');st.textContent=`
  .bf-btn{position:fixed;z-index:31;display:inline-flex;align-items:center;gap:10px;background:rgba(12,12,15,.95);border:1px solid #5a3214;border-radius:999px;padding:5px 14px 5px 5px;color:#ececef;font:600 13.5px Inter,sans-serif;cursor:pointer}
  .bf-btn small{font:500 12.5px Inter,sans-serif;color:#8a8a92}.bf-btn.play small{color:#ff9d5c}
