@@ -188,6 +188,16 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
   #hnPop.hn-pop a img,#hnPop.hn-pop a svg,#hnPop.hn-pop a>span:first-child{width:16px!important;height:16px!important}
 }
 </style>
+<style id="hn-ctl-fix">/* phone mode bar: one even row, segmented News/Markets + round open button (owner 16 Nov 2026) */
+@media(max-width:900px){
+.hn-ctl{grid-template-columns:1fr auto!important;gap:10px!important}
+.hn-ctl .hn-modes{grid-column:1!important;grid-row:2!important;display:flex!important;width:100%;justify-self:stretch;height:52px;box-sizing:border-box;padding:4px!important;border:1px solid rgba(255,255,255,.12)!important;border-radius:999px!important}
+.hn-ctl .hn-modes button{flex:1;justify-content:center;height:42px!important;font-size:14px!important}
+.hn-ctl .hn-open{grid-column:2!important;grid-row:2!important;width:52px!important;height:52px!important;border:0!important;border-radius:50%!important;background:#FF7A1A!important;backdrop-filter:none!important}
+.hn-ctl .hn-open svg{stroke:#111!important}
+:root[data-theme="light"] .hn-ctl .hn-modes{border-color:rgba(0,0,0,.1)!important}
+:root[data-theme="light"] .hn-ctl .hn-open{background:#FF7A1A!important}:root[data-theme="light"] .hn-ctl .hn-open svg{stroke:#111!important}
+}</style>
 <link rel="stylesheet" href="assets/home-news.css"><link rel="stylesheet" href="assets/since-news.css">
 <section class="hn-hero" aria-label="Live news globe">
   <iframe id="hnGlobe" title="Live news globe"></iframe>
