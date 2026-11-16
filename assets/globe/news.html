@@ -2103,7 +2103,7 @@ grab.addEventListener('pointerdown', e => {
 grab.addEventListener('pointermove', e => {
   const g = sheetGesture; if (!g || g.id !== e.pointerId) return;
   if (Math.abs(g.y0 - e.clientY) > 1) g.moved = true;
-  sheetWant = clampSheet(g.h0 + (g.y0 - e.clientY));
+  const raw = g.h0 + (g.y0 - e.clientY); sheetWant = raw < SHEET_MIN() ? Math.max(84, SHEET_MIN() - (SHEET_MIN() - raw) * .85) : Math.min(SHEET_MAX(), raw);  // follows the finger all the way down; closes on release
   if (!sheetRaf) sheetRaf = requestAnimationFrame(sheetApply);
 });
 function sheetEnd(e) {
@@ -2115,9 +2115,19 @@ function sheetEnd(e) {
   let h = sheetWant;
   // the magnet only pulls toward the edge the finger was moving to: dragging 10 px up from the minimum stays 10 px up
   if (h < g.h0 && h - SHEET_MIN() < MAGNET) h = SHEET_MIN(); else if (h > g.h0 && SHEET_MAX() - h < MAGNET) h = SHEET_MAX();
-  if (g.y0 < e.clientY - 70 && sheetWant <= SHEET_MIN() + MAGNET) setSheet('closed'); else placeSheet('open', h);
+  if (sheetWant < SHEET_MIN() - 40) setSheet('closed'); else placeSheet('open', clampSheet(h));
 }
 grab.addEventListener('pointerup', sheetEnd); grab.addEventListener('pointercancel', sheetEnd);
+// Owner 16 Nov 2026: the whole header strip of the sheet (title row) also drags it, so the sheet moves wherever the finger lands near the top.
+panel.addEventListener('pointerdown', e => {
+  if (!phone() || EMBED || e.button !== 0 || sheetState === 'closed' || e.target.closest('#grab,button,a,input,select,textarea,[role=tab],.panel-tabs,.nb-pill')) return;
+  const top = panel.getBoundingClientRect().top; if (e.clientY - top > 96) return;
+  sheetGesture = { id: e.pointerId, y0: e.clientY, h0: sheetVisible, moved: false }; sheetWant = sheetVisible; panel.classList.add('sheet-dragging');
+  try { panel.setPointerCapture(e.pointerId); } catch {}
+  const mv = ev => { const g = sheetGesture; if (!g || g.id !== ev.pointerId) return; if (Math.abs(g.y0 - ev.clientY) > 1) g.moved = true; const raw = g.h0 + (g.y0 - ev.clientY); sheetWant = raw < SHEET_MIN() ? Math.max(84, SHEET_MIN() - (SHEET_MIN() - raw) * .85) : Math.min(SHEET_MAX(), raw); if (!sheetRaf) sheetRaf = requestAnimationFrame(sheetApply); };
+  const up = ev => { panel.removeEventListener('pointermove', mv); panel.removeEventListener('pointerup', up); panel.removeEventListener('pointercancel', up); sheetEnd(ev); };
+  panel.addEventListener('pointermove', mv); panel.addEventListener('pointerup', up); panel.addEventListener('pointercancel', up);
+});
 // On-device check: open the globe page with ?debugsheet=1 and a small readout shows what the sheet receives (touch events, finger Y, height in px).
 if (new URLSearchParams(location.search).has('debugsheet')) {
   const d = Object.assign(document.createElement('div'), { id: 'dbgsheet' }); d.style.cssText = 'position:fixed;left:8px;top:96px;z-index:99999;font:11px/1.35 Inter,sans-serif;color:#9f9;background:rgba(0,0,0,.7);padding:6px 8px;border-radius:8px;pointer-events:none;white-space:pre'; document.body.appendChild(d);
@@ -2580,7 +2590,15 @@ function bindProjectControls(el){
  const more=el.querySelector('[data-pjmore]');if(more)more.onclick=()=>{const scroll=$('pjList').querySelector('.pjl-list').scrollTop;PROJ.n+=30;projRender();$('pjList').querySelector('.pjl-list').scrollTop=scroll;};
  el.querySelectorAll('[data-pjimg]').forEach(b=>b.onclick=e=>{e.stopPropagation();PROJ.img=b.dataset.pjimg;projRender();});pjBindSlider(el);
  const back=el.querySelector('[data-pj-back]');if(back)back.onclick=()=>{PROJ.phoneDetail=false;PROJ.collapsed=false;projRender();};
- const handle=el.querySelector('[data-pj-collapse]');if(handle){handle.onclick=()=>{PROJ.collapsed=!PROJ.collapsed;projRender();};let y;handle.onpointerdown=e=>{y=e.clientY;handle.setPointerCapture(e.pointerId);};handle.onpointerup=e=>{if(y!=null&&Math.abs(e.clientY-y)>40){PROJ.collapsed=e.clientY>y;projRender();}y=null;};}
+ const handle=el.querySelector('[data-pj-collapse]');if(handle){let g=null,raf=0,want=0,moved=false;
+  // Owner 16 Nov 2026: the Projects sheet follows the finger at any height (like News), no fixed steps.
+  const set=h=>{el.style.setProperty('height',h+'px','important');el.style.setProperty('max-height','none','important');};
+  handle.style.touchAction='none';
+  handle.onclick=()=>{if(moved){moved=false;return;}PROJ.collapsed=!PROJ.collapsed;PROJ.sheetH=null;el.style.removeProperty('height');projRender();};
+  handle.onpointerdown=e=>{if(!phone())return;g={y:e.clientY,h:el.getBoundingClientRect().height};moved=false;handle.setPointerCapture(e.pointerId);el.style.transition='none';if(PROJ.collapsed){PROJ.collapsed=false;document.documentElement.classList.remove('proj-collapsed');}};
+  handle.onpointermove=e=>{if(!g)return;if(Math.abs(e.clientY-g.y)>2)moved=true;want=Math.max(88,Math.min(innerHeight*.86,g.h+(g.y-e.clientY)));if(!raf)raf=requestAnimationFrame(()=>{raf=0;set(want);});};
+  handle.onpointerup=handle.onpointercancel=e=>{if(!g)return;g=null;el.style.transition='';if(!moved)return;if(want<130){PROJ.collapsed=true;PROJ.sheetH=null;el.style.removeProperty('height');projRender();}else{PROJ.sheetH=want;set(want);}};
+  if(phone()&&PROJ.sheetH&&!PROJ.collapsed)set(PROJ.sheetH);}
 }
 function projectTopbar(){
  const bar=$('project-topbar');bar.innerHTML='<a class="pj-brand" href="../../index.html" aria-label="Investedia home">Invested<span class="pj-i">i</span>a</a><nav aria-label="Site"><a href="news.html" data-proj-news>Globe</a><a href="../../news.html">News</a><a href="../../markets.html">Markets</a><a href="../../pricing.html">Pricing</a></nav><label><span class="sr-only">Search projects</span><input type="search" placeholder="Search projects, countries…" aria-label="Search projects and countries"></label>';
