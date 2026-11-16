@@ -4,6 +4,7 @@
 // The bottom strips (News activity / Markets activity) get a handle: click or drag it down to crop the strip to its tab bar.
 // The layout is saved on this device only ('inv-globe-layout').
 (()=>{
+ if(document.documentElement.classList.contains('embed')||/[?&]embed=1/.test(location.search)||window.top!==window.self)return; // full Globe page only
  const KEY='inv-globe-layout',big=()=>matchMedia('(min-width:1180px)').matches;
  let L;try{L=JSON.parse(localStorage.getItem(KEY)||'{}')}catch{L={}}
  L.min=L.min||{};L.free=L.free||{};L.pos=L.pos||{};L.crop=L.crop||{};L.h=L.h||{};L.hl=L.hl||{};
