@@ -1,0 +1,17 @@
+Here's your Briefing.
+
+@fly -98,38
+A big day for US stocks. / The S&P 500 jumped more than two percent, / and the Nasdaq nearly three. //
+
+Nvidia was the exception. / Its shares dropped / after the company opened an investigation into its CEO, Jensen Huang. / Rivals AMD and Broadcom rose. //
+
+@fly 139,36
+Japan went the other way: / the Nikkei fell almost six percent. //
+
+@fly 54,26
+Oil slid nearly six percent, / after the US signalled no immediate attacks on Iran. //
+
+@fly -98,38
+And inflation is still running hot, / keeping a Federal Reserve rate hike on the table. //
+
+That's your Briefing.

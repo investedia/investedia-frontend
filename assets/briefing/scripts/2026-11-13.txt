@@ -1,0 +1,14 @@
+Here's how the week closed.
+
+@fly -98,38
+US stocks fell on Friday. / The S&P 500 lost about three-quarters of a percent, / the Nasdaq one point three. / The Dow held almost flat. //
+
+@fly 8,49
+Europe was quiet. / The DAX was flat, / and London's FTSE edged up a third of a percent. //
+
+@fly 114,22
+Hong Kong was the weakest market, / down almost three percent. //
+
+Brent crude finished flat, / just under ninety-six dollars. //
+
+That's your Briefing for Friday.
