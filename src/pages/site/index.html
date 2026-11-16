@@ -188,15 +188,19 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
   #hnPop.hn-pop a img,#hnPop.hn-pop a svg,#hnPop.hn-pop a>span:first-child{width:16px!important;height:16px!important}
 }
 </style>
-<style id="hn-ctl-fix">/* phone mode bar: one even row, segmented News/Markets + round open button (owner 16 Nov 2026) */
+<style id="hn-ctl-fix">/* mode bar: News / Markets / Projects + open, one joined bar (owner 16 Nov 2026) */
+.hn-ctl .hn-modes .hn-proj{display:inline-flex;align-items:center;gap:7px;height:34px;padding:0 15px;border-radius:999px;color:#a1a1aa;font:600 13px Inter,sans-serif;text-decoration:none;white-space:nowrap}
+.hn-ctl .hn-modes .hn-proj:hover{color:#fff}
+.hn-ctl .hn-modes .hn-proj svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+:root[data-theme="light"] .hn-ctl .hn-modes .hn-proj{color:#55555e}
 @media(max-width:900px){
-.hn-ctl{grid-template-columns:1fr auto!important;gap:10px!important}
-.hn-ctl .hn-modes{grid-column:1!important;grid-row:2!important;display:flex!important;width:100%;justify-self:stretch;height:52px;box-sizing:border-box;padding:4px!important;border:1px solid rgba(255,255,255,.12)!important;border-radius:999px!important}
-.hn-ctl .hn-modes button{flex:1;justify-content:center;height:42px!important;font-size:14px!important}
-.hn-ctl .hn-open{grid-column:2!important;grid-row:2!important;width:52px!important;height:52px!important;border:0!important;border-radius:50%!important;background:#FF7A1A!important;backdrop-filter:none!important}
-.hn-ctl .hn-open svg{stroke:#111!important}
-:root[data-theme="light"] .hn-ctl .hn-modes{border-color:rgba(0,0,0,.1)!important}
-:root[data-theme="light"] .hn-ctl .hn-open{background:#FF7A1A!important}:root[data-theme="light"] .hn-ctl .hn-open svg{stroke:#111!important}
+.hn-ctl{grid-template-columns:1fr auto!important;gap:12px 0!important}
+.hn-ctl .hn-modes{grid-column:1!important;grid-row:2!important;display:flex!important;width:100%;justify-self:stretch;height:52px;box-sizing:border-box;padding:4px!important;border:1px solid rgba(255,255,255,.12)!important;border-right:0!important;border-radius:999px 0 0 999px!important}
+.hn-ctl .hn-modes button,.hn-ctl .hn-modes .hn-proj{flex:1;justify-content:center;height:42px!important;padding:0 8px!important;gap:6px!important;font-size:13.5px!important}
+.hn-ctl .hn-open{grid-column:2!important;grid-row:2!important;width:56px!important;height:52px!important;box-sizing:border-box;border:1px solid rgba(255,255,255,.12)!important;border-left:1px solid rgba(255,255,255,.1)!important;border-radius:0 999px 999px 0!important;background:rgba(17,17,20,.78)!important}
+.hn-ctl .hn-open svg{stroke:#fff!important}
+:root[data-theme="light"] .hn-ctl .hn-modes,:root[data-theme="light"] .hn-ctl .hn-open{border-color:rgba(0,0,0,.1)!important}
+:root[data-theme="light"] .hn-ctl .hn-open{background:rgba(255,255,255,.86)!important}:root[data-theme="light"] .hn-ctl .hn-open svg{stroke:#1d1d1f!important}
 }</style>
 <link rel="stylesheet" href="assets/home-news.css"><link rel="stylesheet" href="assets/since-news.css">
 <section class="hn-hero" aria-label="Live news globe">
@@ -210,7 +214,7 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
     <div class="hn-pop" id="hnPop" aria-label="Popular searches"><span class="hn-pop-l">Popular searches</span></div>
   </div></div>
   <div class="hn-ctl" role="group" aria-label="Globe controls">
-    <div class="hn-modes" role="group" aria-label="Globe mode"><button type="button" data-globe-mode="news" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2.5"/><path d="M8 9h8M8 12.5h8M8 16h5"/></svg><span>News</span></button><button type="button" data-globe-mode="markets" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4v16M12 7v12M18 3v14"/><rect x="4.5" y="8" width="3" height="7" rx=".6"/><rect x="10.5" y="10" width="3" height="5" rx=".6"/><rect x="16.5" y="6" width="3" height="7" rx=".6"/></svg><span>Markets</span></button></div>
+    <div class="hn-modes" role="group" aria-label="Globe mode"><button type="button" data-globe-mode="news" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2.5"/><path d="M8 9h8M8 12.5h8M8 16h5"/></svg><span>News</span></button><button type="button" data-globe-mode="markets" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4v16M12 7v12M18 3v14"/><rect x="4.5" y="8" width="3" height="7" rx=".6"/><rect x="10.5" y="10" width="3" height="5" rx=".6"/><rect x="16.5" y="6" width="3" height="7" rx=".6"/></svg><span>Markets</span></button><a class="hn-proj" href="projects.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V9l6-4 6 4v11M10 20v-5h4v5"/></svg><span>Projects</span></a></div>
     <div class="hn-tick"><div class="hn" id="hnTick"></div></div>
     <a class="hn-open" href="/assets/globe/news.html" aria-label="Open the globe"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg><span class="t">Open globe</span></a>
   </div>
