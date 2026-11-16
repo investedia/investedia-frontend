@@ -1,0 +1,162 @@
+{
+ "days": [
+  {
+   "date": "2026-11-16",
+   "audio": "2026-11-16.mp3",
+   "duration": 66.1,
+   "voice": "en-US-NovaTurboMultilingualNeural",
+   "chapters": [
+    {
+     "t": "Here's your Briefing.",
+     "s": 0.0,
+     "f": null
+    },
+    {
+     "t": "Wall Street ended last week on the back foot. On Friday, the S&P 500 slipped about three-quarters of a percent, and the Nasdaq lost one point three. Tech led the way down, with data-centre equipment makers hit hardest as the AI mood cooled.",
+     "s": 1.87,
+     "f": [
+      -98.0,
+      38.0
+     ]
+    },
+    {
+     "t": "Asia had a rough end to the week too. Hong Kong fell almost three percent. And this morning, Japan reported that its economy unexpectedly shrank in the third quarter.",
+     "s": 19.27,
+     "f": [
+      125.0,
+      30.0
+     ]
+    },
+    {
+     "t": "Oil is the story to watch. Over the weekend, Iran claimed a supertanker was sunk in the Strait of Hormuz, and Houthi forces moved closer to the Bab el-Mandeb. But this morning, prices are easing as flows through Hormuz recover.",
+     "s": 31.08,
+     "f": [
+      54.0,
+      26.0
+     ]
+    },
+    {
+     "t": "Gold slipped below three thousand nine hundred dollars, as the Federal Reserve sounds tougher on rates.",
+     "s": 48.31,
+     "f": null
+    },
+    {
+     "t": "Coming up this week: US retail sales on Tuesday, and Nvidia's earnings are getting close.",
+     "s": 55.56,
+     "f": [
+      -98.0,
+      38.0
+     ]
+    },
+    {
+     "t": "That's your Briefing. Have a good day.",
+     "s": 62.98,
+     "f": null
+    }
+   ]
+  },
+  {
+   "date": "2026-11-13",
+   "audio": "2026-11-13.mp3",
+   "duration": 33.3,
+   "voice": "en-US-NovaTurboMultilingualNeural",
+   "chapters": [
+    {
+     "t": "Here's how the week closed.",
+     "s": 0.0,
+     "f": null
+    },
+    {
+     "t": "US stocks fell on Friday. The S&P 500 lost about three-quarters of a percent, the Nasdaq one point three. The Dow held almost flat.",
+     "s": 2.14,
+     "f": [
+      -98.0,
+      38.0
+     ]
+    },
+    {
+     "t": "Europe was quiet. The DAX was flat, and London's FTSE edged up a third of a percent.",
+     "s": 13.42,
+     "f": [
+      8.0,
+      49.0
+     ]
+    },
+    {
+     "t": "Hong Kong was the weakest market, down almost three percent.",
+     "s": 20.78,
+     "f": [
+      114.0,
+      22.0
+     ]
+    },
+    {
+     "t": "Brent crude finished flat, just under ninety-six dollars.",
+     "s": 25.97,
+     "f": null
+    },
+    {
+     "t": "That's your Briefing for Friday.",
+     "s": 31.03,
+     "f": null
+    }
+   ]
+  },
+  {
+   "date": "2026-11-09",
+   "audio": "2026-11-09.mp3",
+   "duration": 42.2,
+   "voice": "en-US-NovaTurboMultilingualNeural",
+   "chapters": [
+    {
+     "t": "Here's your Briefing.",
+     "s": 0.0,
+     "f": null
+    },
+    {
+     "t": "A big day for US stocks. The S&P 500 jumped more than two percent, and the Nasdaq nearly three.",
+     "s": 1.87,
+     "f": [
+      -98.0,
+      38.0
+     ]
+    },
+    {
+     "t": "Nvidia was the exception. Its shares dropped after the company opened an investigation into its CEO, Jensen Huang. Rivals AMD and Broadcom rose.",
+     "s": 10.44,
+     "f": null
+    },
+    {
+     "t": "Japan went the other way: the Nikkei fell almost six percent.",
+     "s": 22.32,
+     "f": [
+      139.0,
+      36.0
+     ]
+    },
+    {
+     "t": "Oil slid nearly six percent, after the US signalled no immediate attacks on Iran.",
+     "s": 27.41,
+     "f": [
+      54.0,
+      26.0
+     ]
+    },
+    {
+     "t": "And inflation is still running hot, keeping a Federal Reserve rate hike on the table.",
+     "s": 34.01,
+     "f": [
+      -98.0,
+      38.0
+     ]
+    },
+    {
+     "t": "That's your Briefing.",
+     "s": 40.32,
+     "f": null
+    }
+   ]
+  }
+ ],
+ "latest": "2026-11-16"
+}
