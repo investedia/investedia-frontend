@@ -3483,7 +3483,7 @@ function drawMarketMode(){
 }
 marketControl.onclick=e=>{const b=e.target.closest('[data-mode]');if(b)marketSetMode(b.dataset.mode);};
 addEventListener('keydown',e=>{if(e.key==='Escape'&&MARKET.on)marketClose();});
-addEventListener('message',e=>{if(e.origin!==location.origin||e.source!==parent||e.data?.type!=='investedia-mode')return;if(Array.isArray(e.data.occlusions))MARKET.occlusions=e.data.occlusions.filter(a=>['x','y','w','h'].every(k=>Number.isFinite(a[k])));marketSetMode(e.data.mode);if(e.data.country)marketSelect(e.data.country,e.data.exchange);});
+addEventListener('message',e=>{if(e.origin!==location.origin||e.source!==parent||e.data?.type!=='investedia-mode')return;if(Array.isArray(e.data.occlusions))MARKET.occlusions=e.data.occlusions.filter(a=>['x','y','w','h'].every(k=>Number.isFinite(a[k])));if(e.data.mode==='projects'){if(!PROJ.on)projSet(true,{history:false,mode:'projects'});}else{if(PROJ.on)projSet(false,{history:false,mode:e.data.mode});marketSetMode(e.data.mode);}if(e.data.country)marketSelect(e.data.country,e.data.exchange);});
 marketSetMode(new URLSearchParams(location.search).get('mode'));
 if(phone()&&!EMBED&&MARKET.on){phoneView='markets';dockUpdate();}
 
