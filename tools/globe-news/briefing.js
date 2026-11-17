@@ -195,6 +195,8 @@
   <div class=bf-note>${REC?'Synthetic voice reading Investedia’s Briefing, written from our market data and articles.':'Read by your browser’s voice from Investedia’s market data and articles.'} Delayed prices. Not investment advice.</div>`:''}`;
   card.classList.toggle('m',mPhone());
   if(tr)card.querySelector('.bf-b.on')?.scrollIntoView({block:'nearest'});}
+ // keep the pills and article card just above the player whenever the player changes size (phone card, transcript open/close)
+ if(window.ResizeObserver)new ResizeObserver(()=>{if(T||stack.innerHTML)place();}).observe(card);
  function speak(i){
   if(REC){if(i>=CH.length){AU.pause();playing=false;store('inv-briefed',day);paintBtn();paintCard();return;}cur=i;playing=true;const go=()=>{AU.currentTime=CH[i].s||0;AU.play().catch(()=>{playing=false;paintBtn();paintCard();});};
    const nm=firstName();if(i===0&&nm&&!greeted&&API()){greeted=true;const tod=new Date().getHours()<12?'morning':new Date().getHours()<18?'afternoon':'evening';GR.src=`${API()}/v1/briefing/greeting?name=${encodeURIComponent(nm)}&tod=${tod}`;GR.onended=go;GR.onerror=go;GR.play().catch(go);}else go();
