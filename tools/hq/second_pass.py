@@ -98,7 +98,12 @@ def decide(company, rows, method):
     """Return (row, None) for one sure match, (None, review_reason) for review, (None, None) for no match."""
     cc = company['cc'].lower(); ok_cc = CC_ALIAS.get(cc, {cc})
     name_words = words(company['name']) | words(company.get('legal_name'))
-    rows = [r for r in rows if 'end' not in r and name_words & words(r['label']['value'])]
+    tickers = {v.casefold() for l in company['listings'] for v in variants(l['s'])}
+    initials = ''.join(w[0] for w in re.findall(r'[a-z0-9]+', (company.get('legal_name') or company['name']).casefold().translate(TRANSLIT)) if w not in STOP)
+    def same_name(r):  # shared word, or a short label that is the initials ("AMD") or the matched ticker ("ANZ")
+        label = re.sub(r'[^a-z0-9]', '', r['label']['value'].casefold())
+        return bool(name_words & words(r['label']['value'])) or (len(label) >= 2 and (label == initials or (r.get('ticker_match') and label in tickers)))
+    rows = [r for r in rows if 'end' not in r and same_name(r)]
     if method == 'wikidata-name': rows = [r for r in rows if 'listed' in r]
     items = {r['item']['value'] for r in rows}
     if len(items) != 1: return None, ('multiple Wikidata companies match' if len(items) > 1 else None)

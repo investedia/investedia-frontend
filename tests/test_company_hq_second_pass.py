@@ -45,4 +45,12 @@ class SecondPass(unittest.TestCase):
         got, why = P.decide(hk, [row(label='Maersk', cc='cn', coord='Point(121.47 31.23)')], 'x')
         self.assertIsNone(got); self.assertIn('outside Hong Kong', why)
 
+    def test_initials_label_matches(self):
+        amd = dict(CO, name='Advanced Micro Devices', legal_name='Advanced Micro Devices', cc='us', country='United States', listings=[{'s': 'AMD'}])
+        got, _ = P.decide(amd, [row(label='AMD', cc='us', coord='Point(-121.96 37.35)')], 'wikidata-ticker')
+        self.assertIsNotNone(got)
+
+    def test_unrelated_short_label_without_ticker_match_is_rejected(self):
+        self.assertEqual(P.decide(CO, [row(label='XYZ')], 'wikidata-name'), (None, None))
+
 if __name__ == '__main__': unittest.main()
