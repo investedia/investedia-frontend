@@ -19,7 +19,21 @@
  .bf-b{background:#141417;border:1px solid #232327;border-radius:16px 16px 16px 4px;padding:10px 12px;margin:8px 0;cursor:pointer}.bf-b.on{border-color:#5a3214;background:#1a120b;color:#fff}.bf-b.past{opacity:.55}
  .bf-ctl{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}.bf-ctl button{border:1px solid #232327;border-radius:999px;padding:5px 12px;font:13px Inter,sans-serif;color:#ddd;background:#141417;cursor:pointer}
  .bf-note{color:#77777f;font-size:11.5px;margin-top:10px}
- @media(max-width:760px){.bf-card{left:0!important;right:0;bottom:calc(var(--dock-h,78px) + 12px);top:auto!important;max-height:60vh;overflow:auto;z-index:60;width:auto;border-radius:22px 22px 0 0}.bf-btn{padding:4px;gap:0}.bf-btn b,.bf-btn small{display:none}}`;
+ /* Owner 17 Nov 2026: slim bottom player so the globe stays visible while it briefs */
+ .bf-card{left:50%!important;top:auto!important;transform:translateX(-50%);bottom:var(--bf-bottom,110px);width:min(620px,calc(100vw - 32px));padding:10px 12px 12px;border-radius:18px;background:rgba(12,12,15,.92);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+ .bf-card:not([hidden]){animation:bfin .28s cubic-bezier(.2,.8,.2,1)}@keyframes bfinm{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}@keyframes bfin{from{opacity:0;transform:translate(-50%,14px)}to{opacity:1;transform:translate(-50%,0)}}
+ .bf-row{display:flex;align-items:center;gap:10px}
+ .bf-ib,.bf-pp,.bf-tr{transition:background .15s,transform .15s}.bf-pp:active,.bf-ib:active{transform:scale(.92)}
+ .bf-row .bf-ic{width:30px;height:30px;flex:none}
+ .bf-cap{flex:1;min-width:0}.bf-cap small{display:block;color:#8a8a92;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
+ .bf-cap p{margin:0;color:#f4f4f5;font:500 14.5px/1.45 Inter,system-ui,sans-serif;letter-spacing:-.005em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+ .bf-ib{width:36px;height:36px;border-radius:50%;border:1px solid #2a2a2f;background:#141417;color:#d4d4d8;display:flex;align-items:center;justify-content:center;cursor:pointer;flex:none;font-size:13px}
+ .bf-ib:hover{background:#1f1f24;border-color:#3a3a40;color:#fff}.bf-card .bf-x.bf-ib{border-color:transparent;background:transparent;color:#8a8a92;font-size:0}.bf-row .bf-pp{width:42px;height:42px;margin-left:0;background:#ff7a1a;box-shadow:0 0 0 4px #ff7a1a22}.bf-row .bf-pp svg path,.bf-row .bf-pp svg rect{fill:#111}
+ .bf-bar{height:2px;background:#232327;border-radius:2px;margin-top:9px;overflow:hidden}.bf-bar i{display:block;height:100%;background:#ff7a1a;transition:width .4s}
+ .bf-tr{border:1px solid #2a2a2f;border-radius:999px;background:#141417;color:#d4d4d8;font:500 12.5px Inter,system-ui,sans-serif;padding:0 14px;height:36px;cursor:pointer;flex:none}.bf-tr.on{border-color:#5a3214;color:#ff9d5c}
+ .bf-card .bf-list{max-height:min(34vh,260px);margin-top:8px}.bf-card .bf-b{font-size:13.5px;padding:8px 10px;margin:6px 0}
+ .bf-card .bf-ctl{margin-top:6px}.bf-card .bf-note{font-size:11px;margin-top:6px}
+ @media(max-width:760px){.bf-card{left:8px!important;right:8px;transform:none;width:auto;bottom:calc(var(--dock-h,78px) + 10px);max-height:none;overflow:visible;z-index:60;border-radius:18px}.bf-card .bf-list{max-height:30vh}.bf-cap p{font-size:13.5px}.bf-row{flex-wrap:wrap;row-gap:6px}.bf-cap{flex:1 1 calc(100% - 44px)}.bf-row .bf-ib.prev{margin-left:auto}.bf-row .bf-x{margin-right:auto}.bf-card:not([hidden]){animation-name:bfinm}.bf-row .bf-pp{width:46px;height:46px}.bf-ib.prev,.bf-ib.next{width:30px}.bf-btn{padding:4px;gap:0}.bf-btn b,.bf-btn small{display:none}}`;
  document.head.append(st);
  const RING='<svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="9" fill="none" stroke="#ff7a1a" stroke-width="1.6"/></svg>';
  const DONE='<svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="9" fill="none" stroke="#8a8a92" stroke-width="1.6"/><path d="m8 12.2 2.6 2.6L16 9.4" fill="none" stroke="#ececef" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
@@ -63,14 +77,19 @@
   else{btn.className='bf-btn';btn.innerHTML=`<span class=bf-ic>${RING}</span><b>Briefing</b>`;}
   const b=document.querySelector('.brand')?.getBoundingClientRect(),phone=matchMedia('(max-width:760px)').matches;
   if(phone){const m=document.querySelector('.m-actions')?.getBoundingClientRect();btn.style.top=((m?.top||12))+'px';btn.style.left='';btn.style.right=((m?innerWidth-m.left:12)+8)+'px';}
-  else{btn.style.right='';btn.style.top=((b?.bottom||60)+10)+'px';btn.style.left=((document.getElementById('act')?.getBoundingClientRect().left)||(b?.right||400)+20)+'px';}
-  const r=btn.getBoundingClientRect();card.style.top=(r.bottom+10)+'px';card.style.left=r.left+'px';}
- function paintCard(){const h=CH[0]?.h||'Briefing';
-  card.innerHTML=`<div class=bf-h><span class=bf-ic>${done()&&!playing?DONE:RING}</span><div><small>Briefing${day?' · '+new Date(day).toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'}):''}${playing||cur?' · '+fmt(secs(REC?Math.round(AU.currentTime*14):CH.slice(0,cur).reduce((a,c)=>a+c.t.length,0)))+' / '+fmt(secs(total())):''}</small><b>${h}</b></div><button type=button class=bf-pp aria-label="${playing?'Pause':'Play'}">${playing?PAUSE:PLAY}</button><button type=button class=bf-x aria-label=Close>✕</button></div>
-  <div class=bf-list>${CH.map((c,i)=>`<div class="bf-b ${i===cur&&(playing||cur)?'on':i<cur?'past':''}" data-i="${i}">${c.t.replace(/&/g,'&amp;').replace(/</g,'&lt;')}</div>`).join('')}</div>
-  <div class=bf-ctl><button type=button data-bf=prev>⏮ Previous</button><button type=button data-bf=next>Next ⏭</button><button type=button data-bf=name>${store('inv-brief-name')==='off'?'Greet me by name':'Don’t use my name'}</button></div>
-  <div class=bf-note>${REC?'Synthetic voice reading Investedia’s Briefing, written from our market data and articles.':'Read by your browser’s voice from Investedia’s market data and articles.'} Delayed prices. Not investment advice.</div>`;
-  card.querySelector('.bf-b.on')?.scrollIntoView({block:'nearest'});}
+  else{const q=(document.getElementById('sbox')||document.getElementById('q'))?.getBoundingClientRect();btn.style.right='';btn.style.top=((q&&q.top>0?q.top:(b?.bottom||60)+10))+'px';btn.style.left=((q&&q.right>0?q.right:(b?.right||400))+24)+'px';}
+  card.style.top='';card.style.left='';if(!phone){const lb=[...document.querySelectorAll('button,a')].find(e=>/^Latest activity$/.test(e.textContent.trim()));const bar=lb&&lb.closest('div[class]')?.parentElement?.getBoundingClientRect();card.style.setProperty('--bf-bottom',((bar&&bar.top>innerHeight*.5?innerHeight-bar.top:96)+14)+'px');}}
+ let tr=false;
+ function paintCard(){const h=CH[0]?.h||'Briefing';const at=REC?Math.round(AU.currentTime*14):CH.slice(0,cur).reduce((a,c)=>a+c.t.length,0),tot=total()||1;
+  const esc=t=>String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;');const PP=playing?'<svg width="14" height="14" viewBox="0 0 24 24"><rect x="6" y="5" width="4" height="14" rx="1" fill="#111"/><rect x="14" y="5" width="4" height="14" rx="1" fill="#111"/></svg>':'<svg width="14" height="14" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z" fill="#111"/></svg>';
+  card.innerHTML=`<div class=bf-row><span class=bf-ic>${playing?'<i class=bf-eq><b></b><b></b><b></b></i>':done()?DONE:RING}</span><div class=bf-cap><small>Briefing${day?' · '+new Date(day).toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'}):''} · ${fmt(secs(at))} / ${fmt(secs(total()))}</small><p>${esc(CH[cur]?.t||h)}</p></div>
+  <button type=button class="bf-ib prev" data-bf=prev aria-label="Previous"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="5" y="5" width="2.2" height="14" rx="1"/><path d="M19 5.8v12.4a.8.8 0 0 1-1.2.7L9 12.7a.8.8 0 0 1 0-1.4l8.8-6.2a.8.8 0 0 1 1.2.7z"/></svg></button><button type=button class=bf-pp aria-label="${playing?'Pause':'Play'}">${PP}</button><button type=button class="bf-ib next" data-bf=next aria-label="Next"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="16.8" y="5" width="2.2" height="14" rx="1"/><path d="M5 5.8v12.4a.8.8 0 0 0 1.2.7L15 12.7a.8.8 0 0 0 0-1.4L6.2 5.1A.8.8 0 0 0 5 5.8z"/></svg></button>
+  <button type=button class="bf-tr${tr?' on':''}" data-bf=tr aria-expanded="${tr}">Transcript</button><button type=button class="bf-x bf-ib" aria-label="Close"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class=bf-bar><i style="width:${Math.min(100,Math.round(at/tot*100))}%"></i></div>
+  ${tr?`<div class=bf-list>${CH.map((c,i)=>`<div class="bf-b ${i===cur&&(playing||cur)?'on':i<cur?'past':''}" data-i="${i}">${esc(c.t)}</div>`).join('')}</div>
+  <div class=bf-ctl><button type=button data-bf=name>${store('inv-brief-name')==='off'?'Greet me by name':'Don’t use my name'}</button></div>
+  <div class=bf-note>${REC?'Synthetic voice reading Investedia’s Briefing, written from our market data and articles.':'Read by your browser’s voice from Investedia’s market data and articles.'} Delayed prices. Not investment advice.</div>`:''}`;
+  if(tr)card.querySelector('.bf-b.on')?.scrollIntoView({block:'nearest'});}
  function speak(i){
   if(REC){if(i>=CH.length){AU.pause();playing=false;store('inv-briefed',day);paintBtn();paintCard();return;}cur=i;playing=true;const go=()=>{AU.currentTime=CH[i].s||0;AU.play().catch(()=>{playing=false;paintBtn();paintCard();});};
    const nm=firstName();if(i===0&&nm&&!greeted&&API()){greeted=true;const tod=new Date().getHours()<12?'morning':new Date().getHours()<18?'afternoon':'evening';GR.src=`${API()}/v1/briefing/greeting?name=${encodeURIComponent(nm)}&tod=${tod}`;GR.onended=go;GR.onerror=go;GR.play().catch(go);}else go();
@@ -83,9 +102,10 @@
  btn.onclick=()=>{if(!CH.length)build();card.hidden=!card.hidden;if(!card.hidden){if(!playing)speak(done()?0:cur>=CH.length-1?0:cur);}paintCard();paintBtn();};
  card.addEventListener('click',e=>{const t=e.target;if(t.closest('.bf-x')){card.hidden=true;stop();return;}if(t.closest('.bf-pp')){playing?stop():speak(cur);return;}
   const b=t.closest('[data-i]');if(b){speak(+b.dataset.i);return;}const k=t.closest('[data-bf]')?.dataset.bf;
-  if(k==='prev')speak(Math.max(0,cur-1));if(k==='next')speak(cur+1);if(k==='name'){store('inv-brief-name',store('inv-brief-name')==='off'?'on':'off');build();paintCard();}});
+  if(k==='tr'){tr=!tr;paintCard();return;}if(k==='prev')speak(Math.max(0,cur-1));if(k==='next')speak(cur+1);if(k==='name'){store('inv-brief-name',store('inv-brief-name')==='off'?'on':'off');build();paintCard();}});
  addEventListener('keydown',e=>{if(e.key==='Escape'&&!card.hidden){card.hidden=true;stop();}});
  addEventListener('resize',paintBtn);
  const ready=setInterval(()=>{if(typeof MKT!=='undefined'&&MKT.all&&MKT.all.length&&typeof stories!=='undefined'){clearInterval(ready);build();paintBtn();}},500);
  setInterval(()=>{if(!playing&&CH.length)paintBtn();},5000);
+ setInterval(()=>{if(playing&&!card.hidden){const b=card.querySelector('.bf-bar i');if(b){const at=REC?Math.round(AU.currentTime*14):CH.slice(0,cur).reduce((x,c)=>x+c.t.length,0);b.style.width=Math.min(100,Math.round(at/(total()||1)*100))+'%';}}},1000);
 })();
