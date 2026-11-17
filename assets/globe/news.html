@@ -918,7 +918,7 @@ html.proj-mode .pjs{left:378px!important}}
 
 </style>
 <script src="../locale.js"></script>
-</head>
+<style id="pj-pics">/* owner 17 Nov 2026: project pictures visible while scrolling */.pj-pick>img,.pj-pick .pji{width:104px!important;height:84px!important;border-radius:12px!important;object-fit:cover;flex:none}.pj-pick{grid-template-columns:104px minmax(0,1fr)!important;gap:12px!important;align-items:start}.pj-satthumb{filter:brightness(1.12) contrast(1.08) saturate(1.1)}@media(max-width:760px){.pj-pick{grid-template-columns:92px minmax(0,1fr)!important}.pj-pick>img,.pj-pick .pji{width:92px!important;height:76px!important}}</style></head>
 <body>
 <a class="globe-skip" href="#pbody">Skip to article panel</a><canvas id="cv" aria-label="3D globe of financial and business news. Use the article list in the panel to browse by keyboard."></canvas>
 
@@ -2526,7 +2526,7 @@ const pjIcon=p=>`<svg class="pj-type-icon" viewBox="0 0 100 70" aria-hidden="tru
 const pjUrl=p=>p.sources?.find(x=>x.name==='Wikipedia')?.url||p.sources?.[0]?.url;
 const pjStage=p=>p.stage||'Not stated';
 const pjPhoto=p=>p.photo?.file?new URL(p.photo.file,new URL('assets/globe/',new URL('../../',location.href))).href:null;
-function pjImage(p){const file=pjPhoto(p);return file?`<img src="${esc(file)}" alt="${esc(p.name)}" loading="lazy">`: `<span class="pji" aria-hidden="true">${pjIcon(p)}</span>`;}
+function pjImage(p){const file=pjPhoto(p);if(file)return `<img src="${esc(file)}" alt="${esc(p.name)}" loading="lazy">`;const sat=p.satellite?.url;return sat?`<img class="pj-satthumb" src="${esc(sat)}" alt="Satellite view of ${esc(p.name)}" loading="lazy">`:`<span class="pji" aria-hidden="true">${pjIcon(p)}</span>`;}
 function pjTag(stage){return stage?`<span class="pjt ${/operational|open|completed/i.test(stage)?'completed':/construction|progress/i.test(stage)?'progress':'planned'}">${esc(stage)}</span>`:'';}
 // Owner choice (12 Nov 2026): "Energy" is free; the specific energy kind filter is Pro. Until Pro accounts exist only the owner device unlocks it.
 const pjPro=()=>{try{return localStorage.getItem('inv-owner')==='1';}catch{return false;}};
@@ -2550,9 +2550,11 @@ function projAll(){
  if(!PROJ.ready){PROJ.ready=InvProjectsData.load().then(data=>{PROJ.list=data.projects;PROJ.curation=data.curation;PROJ.error=false;if(PROJ.on)projRender();}).catch(()=>{PROJ.ready=null;PROJ.error=true;if(PROJ.on)projRender();});}
  return PROJ.list;
 }
+// owner 17 Nov 2026: projects with a good picture first (photo, then before/now satellite, then satellite)
+const pjPicRank=p=>p.photo?.file?3:p.satellite?.before?2:p.satellite?.url?1:0;
 function projFiltered(){
  const f=PROJ.f,q=(PROJ.q||'').trim().toLowerCase();let list=projAll().filter(p=>(!f.c||p.country===f.c)&&(!f.t||p.sector===f.t)&&(!f.e||p.energy===f.e)&&(!f.s||pjStage(p)===f.s)&&(!f.w||PW.has(p.id))&&(!q||[p.name,p.location,p.country,p.type,p.developer,...(p.owners||[])].some(x=>String(x||'').toLowerCase().includes(q))));
- return list.sort((a,b)=>PROJ.sort==='name'?a.name.localeCompare(b.name):PROJ.sort==='recent'?(Number(b.start_year)||0)-(Number(a.start_year)||0)||a.name.localeCompare(b.name):(Number(b.featured)-Number(a.featured))||(Number(!!b.listed)-Number(!!a.listed))||((b.capacity?.value||0)-(a.capacity?.value||0))||a.name.localeCompare(b.name));
+ return list.sort((a,b)=>PROJ.sort==='name'?a.name.localeCompare(b.name):PROJ.sort==='recent'?(Number(b.start_year)||0)-(Number(a.start_year)||0)||a.name.localeCompare(b.name):(pjPicRank(b)-pjPicRank(a))||(Number(b.featured)-Number(a.featured))||(Number(!!b.listed)-Number(!!a.listed))||((b.capacity?.value||0)-(a.capacity?.value||0))||a.name.localeCompare(b.name));
 }
 function projPick(id,fly=true){PROJ.sel=id;PROJ.img=null;PROJ.baPos=50;PROJ.tab='overview';PROJ.phoneDetail=phone();PROJ.collapsed=false;const p=PROJ.list.find(x=>x.id===id);if(fly&&p)flyTo(p.lon,p.lat,Math.max(1,Zt));projRender();}
 function pjMilestones(p){
