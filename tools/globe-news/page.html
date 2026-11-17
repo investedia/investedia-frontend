@@ -568,6 +568,7 @@ h1 span{color:var(--fg-3)}
 @media (prefers-reduced-motion:reduce){html[data-panel] .panel{transition:none}}
 .embed body,.embed{background:transparent}
 .embed .top,.embed .panel,.embed .timeline,.embed .legend,.embed .dock,.embed .peek,.embed .fsheet,.embed .fs-back,.embed .layers,.embed .ddrow{display:none!important}
+.embed :is(.brand,.wm,.m-actions,.gswitch,.globe-privacy){display:none!important} /* homepage frame: never show the Globe page header (it showed through behind Popular searches in Projects mode) */
 .embed .zoom{right:24px;bottom:96px;top:auto}
 .embed #cv{touch-action:pan-y}  /* the page scrolls from anywhere next to the globe; a finger that lands ON the globe is claimed in JS (touchstart below) so it spins first */
 
