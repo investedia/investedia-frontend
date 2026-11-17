@@ -1,6 +1,94 @@
 {
  "days": [
   {
+   "date": "2026-11-17",
+   "audio": "2026-11-17.mp3",
+   "duration": 74.5,
+   "voice": "en-US-NovaTurboMultilingualNeural",
+   "chapters": [
+    {
+     "t": "Here's your Briefing.",
+     "s": 0.0,
+     "f": null
+    },
+    {
+     "t": "The Gulf is the story this morning. US fighter jets struck a Revolutionary Guard missile site on Qeshm Island, in the Strait of Hormuz. Iran says it then launched drones at a US radar system in Bahrain, and a tanker crew is reported missing in the strait.",
+     "s": 1.87,
+     "f": [
+      56.0,
+      27.0
+     ],
+     "from": {
+      "lon": 55.9,
+      "lat": 26.96,
+      "label": "Qeshm Island"
+     },
+     "art": {
+      "h": "U.S. Warplanes Strike Iranian Missile Site on Qeshm Island",
+      "src": "Business Recorder",
+      "cat": "Geopolitics",
+      "img": "photos/oil-tanker-ship-6937800.jpg",
+      "sym": "",
+      "v": null
+     }
+    },
+    {
+     "t": "Oil prices are rising on the attacks, even as Iraq resumes pumping crude through its pipeline to Turkey.",
+     "s": 18.96,
+     "f": [
+      50.0,
+      30.0
+     ]
+    },
+    {
+     "t": "On Wall Street, stocks fell sharply ahead of Nvidia's quarterly results. Former chief executive Jensen Huang, who resigned last week, says he would return if the board asked. And China says it will take necessary measures after new US restrictions on chip exports.",
+     "s": 26.88,
+     "f": [
+      -98.0,
+      38.0
+     ],
+     "hq": "NVDA",
+     "art": {
+      "h": "Jensen Huang says he would be honored to return as Nvidia chief executive",
+      "src": "The Guardian",
+      "cat": "Companies",
+      "img": "photos/semiconductor-chip-2377718.jpg",
+      "sym": "",
+      "v": null
+     }
+    },
+    {
+     "t": "At the Fed, New York's John Williams says the economy doesn't need a sharp rate increase, though there's still work to do on inflation.",
+     "s": 45.79,
+     "f": [
+      -74.0,
+      40.7
+     ]
+    },
+    {
+     "t": "Gold and silver have slipped to their lowest in more than a year, weighed down by a strong dollar and higher bond yields.",
+     "s": 54.84,
+     "f": [
+      0.0,
+      51.5
+     ]
+    },
+    {
+     "t": "Coming up: US retail sales today, and next week, the second estimate of third-quarter GDP.",
+     "s": 63.29,
+     "f": [
+      -98.0,
+      38.0
+     ]
+    },
+    {
+     "t": "That's your Briefing. Have a good day.",
+     "s": 71.5,
+     "f": null
+    }
+   ]
+  },
+  {
    "date": "2026-11-16",
    "audio": "2026-11-16.mp3",
    "duration": 66.1,
@@ -203,5 +291,5 @@
    ]
   }
  ],
- "latest": "2026-11-16"
+ "latest": "2026-11-17"
 }
