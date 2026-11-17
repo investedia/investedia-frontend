@@ -2,7 +2,7 @@
  "schema": "investedia.company-hq.v1",
  "licence": "CC0 1.0 (Wikidata)",
  "checked_at": "2026-11-11",
- "matched": 385,
+ "matched": 404,
  "asked": 613,
  "companies": {
   "NVDA": {
@@ -4522,21 +4522,256 @@
    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
    "source_url": "https://www.wikidata.org/entity/Q4039216",
    "checked_at": "2026-11-17"
+  },
+  "RJHI": {
+   "hq_city": "Riyadh",
+   "hq_lat": 24.6877,
+   "hq_lon": 46.7219,
+   "lei": "558600BQZS4Y1DTU8589",
+   "company_label": "Al Rajhi Bank",
+   "country": "Saudi Arabia",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/558600BQZS4Y1DTU8589",
+   "checked_at": "2026-11-17"
+  },
+  "ATD.TO": {
+   "hq_city": "Laval",
+   "hq_lat": 45.5699,
+   "hq_lon": -73.692,
+   "lei": "549300OSW32RVX8CCZ87",
+   "company_label": "ALIMENTATION COUCHE-TARD INC.",
+   "country": "Canada",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300OSW32RVX8CCZ87",
+   "checked_at": "2026-11-17"
+  },
+  "ANZ.AX": {
+   "hq_city": "Docklands",
+   "hq_lat": -37.8149,
+   "hq_lon": 144.9505,
+   "lei": "9845005D9C6BAA10BK72",
+   "company_label": "ANZ GROUP HOLDINGS LIMITED",
+   "country": "Australia",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/9845005D9C6BAA10BK72",
+   "checked_at": "2026-11-17"
+  },
+  "CREDITC1.LM": {
+   "hq_city": "Lima",
+   "hq_lat": -12.0432,
+   "hq_lon": -77.0282,
+   "lei": "549300EQYQ8SCQZ4BY14",
+   "company_label": "BANCO DE CREDITO DEL PERU",
+   "country": "Peru",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300EQYQ8SCQZ4BY14",
+   "checked_at": "2026-11-17"
+  },
+  "BYDDY": {
+   "hq_city": "Shenzhen",
+   "hq_lat": 22.5455,
+   "hq_lon": 114.0683,
+   "lei": "5299005557VL7ULJ7A69",
+   "company_label": "比亚迪股份有限公司",
+   "country": "China",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/5299005557VL7ULJ7A69",
+   "checked_at": "2026-11-17"
+  },
+  "CEPU.BA": {
+   "hq_city": "Buenos Aires",
+   "hq_lat": -34.6131,
+   "hq_lon": -58.3772,
+   "lei": "2549005JLIWQ6B7VNR38",
+   "company_label": "CENTRAL PUERTO S A",
+   "country": "Argentina",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/2549005JLIWQ6B7VNR38",
+   "checked_at": "2026-11-17"
+  },
+  "CRWV": {
+   "hq_city": "Livingston",
+   "hq_lat": 40.7959,
+   "hq_lon": -74.3149,
+   "lei": "984500511DP2B6186053",
+   "company_label": "COREWEAVE, INC.",
+   "country": "United States",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/984500511DP2B6186053",
+   "checked_at": "2026-11-17"
+  },
+  "EDP.LS": {
+   "hq_city": "Lisbon",
+   "hq_lat": 38.7251,
+   "hq_lon": -9.1498,
+   "lei": "529900CLC3WDMGI9VH80",
+   "company_label": "EDP, S.A.",
+   "country": "Portugal",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/529900CLC3WDMGI9VH80",
+   "checked_at": "2026-11-17"
+  },
+  "COPEC.SN": {
+   "hq_city": "Santiago",
+   "hq_lat": -33.4569,
+   "hq_lon": -70.6483,
+   "lei": "549300Q3IDJYG6Z7PA50",
+   "company_label": "EMPRESAS COPEC S A",
+   "country": "Chile",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300Q3IDJYG6Z7PA50",
+   "checked_at": "2026-11-17"
+  },
+  "XOM": {
+   "hq_city": "Spring",
+   "hq_lat": 30.0799,
+   "hq_lon": -95.4172,
+   "lei": "J3WHBG0MTS7O8ZVMDC91",
+   "company_label": "EXXON MOBIL CORPORATION",
+   "country": "United States",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/J3WHBG0MTS7O8ZVMDC91",
+   "checked_at": "2026-11-17"
+  },
+  "CIB": {
+   "hq_city": "Medellín",
+   "hq_lat": 6.245,
+   "hq_lon": -75.5715,
+   "lei": "529900OSSJBGZREZ2C28",
+   "company_label": "GRUPO CIBEST S.A.",
+   "country": "Colombia",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/529900OSSJBGZREZ2C28",
+   "checked_at": "2026-11-17"
+  },
+  "GULF.BK": {
+   "hq_city": "Bangkok",
+   "hq_lat": 13.754,
+   "hq_lon": 100.5014,
+   "lei": "254900RO3BZTYPBQSX73",
+   "company_label": "บริษัท กัลฟ์ ดีเวลลอปเมนท์ จำกัด (มหาชน)",
+   "country": "Thailand",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900RO3BZTYPBQSX73",
+   "checked_at": "2026-11-17"
+  },
+  "7741.T": {
+   "hq_city": "Tokyo",
+   "hq_lat": 35.6895,
+   "hq_lon": 139.6917,
+   "lei": "353800X4VR3BHEUCJB42",
+   "company_label": "HOYA株式会社",
+   "country": "Japan",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/353800X4VR3BHEUCJB42",
+   "checked_at": "2026-11-17"
+  },
+  "ITX.MC": {
+   "hq_city": "Arteixo",
+   "hq_lat": 43.3048,
+   "hq_lon": -8.5075,
+   "lei": "549300TTCXZOGZM2EY83",
+   "company_label": "INDUSTRIA DE DISEÑO TEXTIL, S.A.",
+   "country": "Spain",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300TTCXZOGZM2EY83",
+   "checked_at": "2026-11-17"
+  },
+  "BN4.SI": {
+   "hq_city": "Singapore",
+   "hq_lat": 1.2897,
+   "hq_lon": 103.8501,
+   "lei": "254900SQ7IPDOY6IDW33",
+   "company_label": "KEPPEL LTD.",
+   "country": "Singapore",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900SQ7IPDOY6IDW33",
+   "checked_at": "2026-11-17"
+  },
+  "MOL.BD": {
+   "hq_city": "Budapest",
+   "hq_lat": 47.4984,
+   "hq_lon": 19.0404,
+   "lei": "213800R83KX5FQFGXS67",
+   "company_label": "MOL MAGYAR OLAJ- ÉS GÁZIPARI NYILVÁNOSAN MŰKÖDŐ RÉSZVÉNYTÁRSASÁG",
+   "country": "Hungary",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/213800R83KX5FQFGXS67",
+   "checked_at": "2026-11-17"
+  },
+  "ON": {
+   "hq_city": "Scottsdale",
+   "hq_lat": 33.5092,
+   "hq_lon": -111.899,
+   "lei": "ZV20P4CNJVT8V1ZGJ064",
+   "company_label": "ON SEMICONDUCTOR CORPORATION",
+   "country": "United States",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/ZV20P4CNJVT8V1ZGJ064",
+   "checked_at": "2026-11-17"
+  },
+  "QNBK": {
+   "hq_city": "Doha",
+   "hq_lat": 25.2855,
+   "hq_lon": 51.531,
+   "lei": "549300FFSRVBS0SQXY75",
+   "company_label": "QATAR NATIONAL BANK (Q.P.S.C.)",
+   "country": "Qatar",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300FFSRVBS0SQXY75",
+   "checked_at": "2026-11-17"
+  },
+  "WULF": {
+   "hq_city": "Easton",
+   "hq_lat": 40.6884,
+   "hq_lon": -75.2207,
+   "lei": "254900CVMW1SX2T78A64",
+   "company_label": "TERAWULF INC.",
+   "country": "United States",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900CVMW1SX2T78A64",
+   "checked_at": "2026-11-17"
   }
  },
  "not_matched": [
-  {
-   "s": "XOM",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "WULF",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "CRWV",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
   {
    "s": "CRM",
    "why": "multiple headquarters or conflicting coordinates"
@@ -4598,10 +4833,6 @@
    "why": "no ticker/name match with headquarters coordinates"
   },
   {
-   "s": "BYDDY",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
    "s": "TD",
    "why": "multiple headquarters or conflicting coordinates"
   },
@@ -4619,14 +4850,6 @@
   },
   {
    "s": "CPI",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "RJHI",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "QNBK",
    "why": "no ticker/name match with headquarters coordinates"
   },
   {
@@ -4691,10 +4914,6 @@
   },
   {
    "s": "LONN.SW",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "ITX.MC",
    "why": "no ticker/name match with headquarters coordinates"
   },
   {
@@ -4790,10 +5009,6 @@
    "why": "no ticker/name match with headquarters coordinates"
   },
   {
-   "s": "ANZ.AX",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
    "s": "BBAS3.SA",
    "why": "no ticker/name match with headquarters coordinates"
   },
@@ -4855,10 +5070,6 @@
   },
   {
    "s": "SQM-B.SN",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "EDP.LS",
    "why": "no ticker/name match with headquarters coordinates"
   },
   {
@@ -5042,10 +5253,6 @@
    "why": "no ticker/name match with headquarters coordinates"
   },
   {
-   "s": "MOL.BD",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
    "s": "RICHTER.BD",
    "why": "no ticker/name match with headquarters coordinates"
   },
@@ -5056,10 +5263,6 @@
   {
    "s": "4502.T",
    "why": "multiple headquarters or conflicting coordinates"
-  },
-  {
-   "s": "7741.T",
-   "why": "no ticker/name match with headquarters coordinates"
   },
   {
    "s": "6273.T",
@@ -5174,10 +5377,6 @@
    "why": "no ticker/name match with headquarters coordinates"
   },
   {
-   "s": "ATD.TO",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
    "s": "WCN.TO",
    "why": "no ticker/name match with headquarters coordinates"
   },
@@ -5207,10 +5406,6 @@
   },
   {
    "s": "S68.SI",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "BN4.SI",
    "why": "no ticker/name match with headquarters coordinates"
   },
   {
@@ -5254,10 +5449,6 @@
    "why": "no ticker/name match with headquarters coordinates"
   },
   {
-   "s": "GULF.BK",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
    "s": "VCB.VN",
    "why": "no ticker/name match with headquarters coordinates"
   },
@@ -5282,24 +5473,8 @@
    "why": "no ticker/name match with headquarters coordinates"
   },
   {
-   "s": "CEPU.BA",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
    "s": "CENCOSUD.SN",
    "why": "multiple headquarters or conflicting coordinates"
-  },
-  {
-   "s": "COPEC.SN",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "CREDITC1.LM",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "CIB",
-   "why": "no ticker/name match with headquarters coordinates"
   },
   {
    "s": "HRHO.CA",
@@ -5368,10 +5543,6 @@
   {
    "s": "LIN",
    "why": "multiple headquarters or conflicting coordinates"
-  },
-  {
-   "s": "ON",
-   "why": "no ticker/name match with headquarters coordinates"
   },
   {
    "s": "NU",
@@ -5987,6 +6158,90 @@
    "why": [
     "Source HQ label is a site/address; city name has not been resolved"
    ]
+  },
+  {
+   "s": "3711.TW",
+   "why": [
+    "GLEIF says Taipei; ASE reports its head office in Kaohsiung"
+   ]
+  },
+  {
+   "s": "AIA.NZ",
+   "why": [
+    "GLEIF registration is lapsed"
+   ]
+  },
+  {
+   "s": "BID.JO",
+   "why": [
+    "GLEIF city 'Sandton' not found in GeoNames"
+   ]
+  },
+  {
+   "s": "CPI",
+   "why": [
+    "GLEIF says Cape Town; Capitec reports its head office in Stellenbosch"
+   ]
+  },
+  {
+   "s": "CPALL.BK",
+   "why": [
+    "GLEIF registration is lapsed"
+   ]
+  },
+  {
+   "s": "FSR",
+   "why": [
+    "GLEIF city 'Sandton' not found in GeoNames"
+   ]
+  },
+  {
+   "s": "2317.TW",
+   "why": [
+    "GLEIF city '台湾省' not found in GeoNames"
+   ]
+  },
+  {
+   "s": "600276.SS",
+   "why": [
+    "GLEIF registration is lapsed"
+   ]
+  },
+  {
+   "s": "MELI",
+   "why": [
+    "GLEIF registration is lapsed"
+   ]
+  },
+  {
+   "s": "REL.L",
+   "why": [
+    "several GLEIF entities have exactly this name"
+   ]
+  },
+  {
+   "s": "SCB.BK",
+   "why": [
+    "GLEIF registration is lapsed"
+   ]
+  },
+  {
+   "s": "6273.T",
+   "why": [
+    "several GLEIF entities have exactly this name"
+   ]
+  },
+  {
+   "s": "TXAR.BA",
+   "why": [
+    "GLEIF registration is lapsed"
+   ]
+  },
+  {
+   "s": "WMT",
+   "why": [
+    "GLEIF headquarters is the registration address in WILMINGTON, not necessarily the operating HQ"
+   ]
   }
  ],
  "city_labels_resolved": [
@@ -6003,5 +6258,11 @@
   "checked_at": "2026-11-17",
   "method": "tools/hq/second_pass.py",
   "added": 61
+ },
+ "gleif_pass": {
+  "checked_at": "2026-11-17",
+  "method": "tools/hq/gleif_pass.py",
+  "added": 19,
+  "licence": "GLEIF data CC0; GeoNames CC BY 4.0 (attribution: GeoNames, geonames.org)"
  }
 }
