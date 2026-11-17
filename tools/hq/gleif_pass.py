@@ -164,7 +164,8 @@ def main(argv=None):
     for i, c in enumerate(todo, 1):
         isin_recs = by_isin(c)
         c['_isin_recs'] = isin_recs
-        cc, recs = (CC_ALIAS.get(c['cc'].lower(), c['cc'].upper()), []) if isin_recs is not None else candidates(c)
+        if not isin_recs: c['_isin_recs'] = None  # no LEI linked to the ISIN (common for Kenyan listings): fall back to the strict name search
+        cc, recs = (CC_ALIAS.get(c['cc'].lower(), c['cc'].upper()), []) if isin_recs else candidates(c)
         row, why = decide(c, cc, recs, idx)
         syms = [l['s'] for l in c['listings']]; sym = syms[0]
         doubt = next((DOUBT[s] for s in syms if s in DOUBT), None)

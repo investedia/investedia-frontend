@@ -89,7 +89,7 @@
     return `<div class="co-wrap"><div class="co-tools"><input class="co-s" type="search" placeholder="Search ${S.list.length} companies" value="${esc(S.q)}" data-co-q aria-label="Search companies">
       <button type="button" class="co-chip" aria-pressed="${S.news}" data-co-news>In the news</button>
       <select class="co-chip" data-co-country aria-label="Country"><option value="">All countries</option>${countries().map(([n, k]) => `<option value="${esc(n)}"${n === S.country ? ' selected' : ''}>${esc(n)} · ${k}</option>`).join('')}</select></div>
-      ${L.length ? `<div class="co-list">${L.slice(0, 120).map(c => `<button type="button" class="co-i" data-co="${esc(c.slug)}">${badgeHTML(c)}<span style="min-width:0"><b>${esc(c.name)}</b><small>${esc(c.hq.hq_city)} · ${esc(c.sym)}</small></span></button>`).join('')}</div>`
+      ${L.length ? `<div class="co-list">${L.slice(0, 120).map(c => `<button type="button" class="co-i" data-co="${esc(c.slug)}">${badgeHTML(c)}<span style="min-width:0"><b>${esc(c.name)}</b><small>${esc(c.hq.hq_city)} · ${esc(c.sym.replace(/^[A-Z]+:/, ''))}</small></span></button>`).join('')}</div>`
         : '<div class="co-empty">No company matches. Companies appear here once their head office is sourced.</div>'}
       ${!S.country && !S.q && !S.news ? '<p class="co-note">Pick a country or search to see companies on the globe.</p>' : L.length > MAXPINS ? `<p class="co-note">The globe shows the first ${MAXPINS}. Narrow the list to see the rest.</p>` : ''}</div>`;
   }

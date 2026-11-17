@@ -18,7 +18,7 @@ DIRECTORY = ROOT / 'data/companies.json'
 SECTOR = {'FINANCIAL SERVICES': 'Finance', 'CONSUMER GOODS': 'Consumer', 'CONSTRUCTION/REAL ESTATE': 'Real Estate', 'INDUSTRIAL GOODS': 'Industrials',
           'ICT': 'Technology', 'HEALTHCARE': 'Healthcare', 'OIL AND GAS': 'Energy', 'CONGLOMERATES': 'Industrials', 'AGRICULTURE': 'Consumer',
           'NATURAL RESOURCES': 'Materials', 'UTILITIES': 'Utilities'}
-FORMS = r'\b(PLC|LIMITED|LTD|NIGERIA PLC|INC|CO)\b\.?'
+FORMS = r'(?<![-\w])(PLC|LIMITED|LTD|NIGERIA PLC|INC|CO)\b(?!-)\.?'  # not inside a hyphenated word (Co-operative)
 
 
 def fetch():
@@ -39,8 +39,9 @@ def display(name):
     n = re.sub(FORMS, '', name, flags=re.I)
     n = re.sub(r'\s+', ' ', n).strip(' ,.-')
     # NGX names are in capitals: words of 3 letters or fewer stay as acronyms (MTN, ABC, UAC), longer ones get normal case
-    small = {'AND', 'OF', 'THE', 'FOR', 'IN'}  # joining words are not acronyms
-    return ' '.join(w.lower() if w in small and i else w if not w.isupper() or (len(w) <= 3 and w.isalpha() and w not in small) else w.capitalize() for i, w in enumerate(n.split())) or name
+    small = {'AND', 'OF', 'THE', 'FOR', 'IN', 'ET', 'LE', 'LA', 'LES', 'DE', 'DU', 'DES', 'POUR', 'AU', 'AUX', 'EN'}  # joining words (English, French) are not acronyms
+    while n.split() and n.split()[-1].upper() in small: n = n.rsplit(' ', 1)[0]  # a name cut off by the source ends on 'DU' / 'DE': drop it
+    return ' '.join(w.lower() if w.upper() in small and i else w if not w.isupper() or (len(w) <= 3 and w.isalpha() and w not in small) else w.capitalize() for i, w in enumerate(n.split())) or name
 
 
 def industry(raw):

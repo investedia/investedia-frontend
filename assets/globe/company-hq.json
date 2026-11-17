@@ -2,7 +2,7 @@
  "schema": "investedia.company-hq.v1",
  "licence": "CC0 1.0 (Wikidata)",
  "checked_at": "2026-11-11",
- "matched": 485,
+ "matched": 513,
  "asked": 613,
  "companies": {
   "NVDA": {
@@ -5822,6 +5822,370 @@
    "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
    "source_url": "https://search.gleif.org/#/record/029200268F8M5YI5I629",
    "checked_at": "2026-11-17"
+  },
+  "GSE:ACCESS": {
+   "hq_city": "Accra",
+   "hq_lat": 5.556,
+   "hq_lon": -0.1969,
+   "lei": "254900YETXNVD14PJP08",
+   "company_label": "Access Bank (Ghana) PLC",
+   "country": "Ghana",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900YETXNVD14PJP08",
+   "checked_at": "2026-11-17"
+  },
+  "GSE:EGH": {
+   "hq_city": "Accra",
+   "hq_lat": 5.556,
+   "hq_lon": -0.1969,
+   "lei": "254900ZQL1EV2DX00Q42",
+   "company_label": "Ecobank Ghana PLC",
+   "country": "Ghana",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900ZQL1EV2DX00Q42",
+   "checked_at": "2026-11-17"
+  },
+  "GSE:RBGH": {
+   "hq_city": "Accra",
+   "hq_lat": 5.556,
+   "hq_lon": -0.1969,
+   "lei": "89450033B75AR5JRZR07",
+   "company_label": "Republic Bank (Ghana) PLC",
+   "country": "Ghana",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/89450033B75AR5JRZR07",
+   "checked_at": "2026-11-17"
+  },
+  "GSE:SCB": {
+   "hq_city": "Accra",
+   "hq_lat": 5.556,
+   "hq_lon": -0.1969,
+   "lei": "549300WFGKTC3MGDCX95",
+   "company_label": "STANDARD CHARTERED BANK GHANA PLC",
+   "country": "Ghana",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300WFGKTC3MGDCX95",
+   "checked_at": "2026-11-17"
+  },
+  "GSE:SOGEGH": {
+   "hq_city": "Accra",
+   "hq_lat": 5.556,
+   "hq_lon": -0.1969,
+   "lei": "549300NPVBPYW8WKDV87",
+   "company_label": "SOCIETE GENERALE GHANA PLC",
+   "country": "Ghana",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300NPVBPYW8WKDV87",
+   "checked_at": "2026-11-17"
+  },
+  "GSE:UNIL": {
+   "hq_city": "Tema",
+   "hq_lat": 5.6698,
+   "hq_lon": -0.0166,
+   "lei": "549300SWZPWJ6VCGG628",
+   "company_label": "UNILEVER GHANA PLC",
+   "country": "Ghana",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300SWZPWJ6VCGG628",
+   "checked_at": "2026-11-17"
+  },
+  "GSE:FAB": {
+   "hq_city": "Accra",
+   "hq_lat": 5.556,
+   "hq_lon": -0.1969,
+   "lei": "8945008ZHT0895TH8536",
+   "company_label": "FIRST ATLANTIC BANK LIMITED",
+   "country": "Ghana",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2026-01-02; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/8945008ZHT0895TH8536",
+   "checked_at": "2026-11-17"
+  },
+  "BRVM:BOAN": {
+   "hq_city": "Niamey",
+   "hq_lat": 13.5137,
+   "hq_lon": 2.1098,
+   "lei": "2138002KSVYO8VKTEK05",
+   "company_label": "BANK OF AFRICA-NIGER",
+   "country": "Niger",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/2138002KSVYO8VKTEK05",
+   "checked_at": "2026-11-17"
+  },
+  "BRVM:BOAS": {
+   "hq_city": "Dakar",
+   "hq_lat": 14.6937,
+   "hq_lon": -17.4441,
+   "lei": "213800616HA2JM8RMK31",
+   "company_label": "BANK OF AFRICA SENEGAL",
+   "country": "Senegal",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/213800616HA2JM8RMK31",
+   "checked_at": "2026-11-17"
+  },
+  "NGX:ABBEYBANK": {
+   "hq_city": "Lagos",
+   "hq_lat": 6.4541,
+   "hq_lon": 3.3947,
+   "lei": "029200458H6K8XI7G528",
+   "company_label": "ABBEY BANK PLC",
+   "country": "Nigeria",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/029200458H6K8XI7G528",
+   "checked_at": "2026-11-17"
+  },
+  "NGX:AFRINSURE": {
+   "hq_city": "Lagos",
+   "hq_lat": 6.4541,
+   "hq_lon": 3.3947,
+   "lei": "0292002207B1QH1B8722",
+   "company_label": "AFRICAN ALLIANCE INSURANCE PLC",
+   "country": "Nigeria",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2025-09-08; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/0292002207B1QH1B8722",
+   "checked_at": "2026-11-17"
+  },
+  "NGX:AFRIPRUD": {
+   "hq_city": "Lagos",
+   "hq_lat": 6.4541,
+   "hq_lon": 3.3947,
+   "lei": "0292002223E9K7BD4J19",
+   "company_label": "AFRICA PRUDENTIAL PLC",
+   "country": "Nigeria",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2026-08-15; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/0292002223E9K7BD4J19",
+   "checked_at": "2026-11-17"
+  },
+  "NGX:CADBURY": {
+   "hq_city": "Ikeja",
+   "hq_lat": 6.5965,
+   "hq_lon": 3.342,
+   "lei": "0292005165B3LF1D5502",
+   "company_label": "CADBURY NIGERIA PLC",
+   "country": "Nigeria",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/0292005165B3LF1D5502",
+   "checked_at": "2026-11-17"
+  },
+  "NGX:CAP": {
+   "hq_city": "Lagos",
+   "hq_lat": 6.4541,
+   "hq_lon": 3.3947,
+   "lei": "029200595F3LF5D55F79",
+   "company_label": "CHEMICAL AND ALLIED PRODUCTS PLC",
+   "country": "Nigeria",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2026-07-05; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/029200595F3LF5D55F79",
+   "checked_at": "2026-11-17"
+  },
+  "NGX:CHAMPION": {
+   "hq_city": "Uyo",
+   "hq_lat": 5.0513,
+   "hq_lon": 7.9335,
+   "lei": "0292005948D5S9I3F931",
+   "company_label": "CHAMPION BREWERIES PLC",
+   "country": "Nigeria",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2025-10-24; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/0292005948D5S9I3F931",
+   "checked_at": "2026-11-17"
+  },
+  "NGX:CMFC": {
+   "hq_city": "Lagos",
+   "hq_lat": 6.4541,
+   "hq_lon": 3.3947,
+   "lei": "9269007C1F1B0E171882",
+   "company_label": "CRITICAL MINERALS FINANCING CORP PLC",
+   "country": "Nigeria",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/9269007C1F1B0E171882",
+   "checked_at": "2026-11-17"
+  },
+  "NGX:INFINITY": {
+   "hq_city": "Abuja",
+   "hq_lat": 9.0579,
+   "hq_lon": 7.4951,
+   "lei": "0292001957C2T2DH2C82",
+   "company_label": "INFINITY TRUST MORTGAGE BANK PLC",
+   "country": "Nigeria",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2025-09-08; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/0292001957C2T2DH2C82",
+   "checked_at": "2026-11-17"
+  },
+  "NGX:LIVINGTRUST": {
+   "hq_city": "Osogbo",
+   "hq_lat": 7.771,
+   "hq_lon": 4.557,
+   "lei": "029200481C7R9C72H814",
+   "company_label": "LIVINGTRUST MORTGAGE BANK PLC",
+   "country": "Nigeria",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2026-04-25; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/029200481C7R9C72H814",
+   "checked_at": "2026-11-17"
+  },
+  "NGX:NAHCO": {
+   "hq_city": "Lagos",
+   "hq_lat": 6.4541,
+   "hq_lon": 3.3947,
+   "lei": "029200546A9P3G0J7D77",
+   "company_label": "NIGERIAN AVIATION HANDLING COMPANY PLC",
+   "country": "Nigeria",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2026-06-04; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/029200546A9P3G0J7D77",
+   "checked_at": "2026-11-17"
+  },
+  "NGX:PREMPAINTS": {
+   "hq_city": "Ifo",
+   "hq_lat": 6.8149,
+   "hq_lon": 3.1952,
+   "lei": "0292007155J7T0F9H943",
+   "company_label": "PREMIER PAINTS PLC",
+   "country": "Nigeria",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/0292007155J7T0F9H943",
+   "checked_at": "2026-11-17"
+  },
+  "NGX:PRESCO": {
+   "hq_city": "Benin City",
+   "hq_lat": 6.3381,
+   "hq_lon": 5.6258,
+   "lei": "0292006198H4N0UI7E51",
+   "company_label": "PRESCO PLC",
+   "country": "Nigeria",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2026-04-29; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/0292006198H4N0UI7E51",
+   "checked_at": "2026-11-17"
+  },
+  "NGX:PZ": {
+   "hq_city": "Lagos",
+   "hq_lat": 6.4541,
+   "hq_lon": 3.3947,
+   "lei": "0292006783J5D9F3J594",
+   "company_label": "PZ CUSSONS NIGERIA PLC",
+   "country": "Nigeria",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/0292006783J5D9F3J594",
+   "checked_at": "2026-11-17"
+  },
+  "NGX:UCAP": {
+   "hq_city": "Lagos",
+   "hq_lat": 6.4541,
+   "hq_lon": 3.3947,
+   "lei": "54930016GF411BUBW537",
+   "company_label": "UNITED CAPITAL PLC",
+   "country": "Nigeria",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/54930016GF411BUBW537",
+   "checked_at": "2026-11-17"
+  },
+  "NGX:UNIVINSURE": {
+   "hq_city": "Lagos",
+   "hq_lat": 6.4541,
+   "hq_lon": 3.3947,
+   "lei": "029200415C4Q72E8HC32",
+   "company_label": "UNIVERSAL INSURANCE PLC",
+   "country": "Nigeria",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2025-09-18; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/029200415C4Q72E8HC32",
+   "checked_at": "2026-11-17"
+  },
+  "NSE:ABSA": {
+   "hq_city": "Nairobi",
+   "hq_lat": -1.2833,
+   "hq_lon": 36.8167,
+   "lei": "2138006PDDMTP3WDX242",
+   "company_label": "Absa Bank Kenya PLC",
+   "country": "Kenya",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/2138006PDDMTP3WDX242",
+   "checked_at": "2026-11-17"
+  },
+  "NSE:COOP": {
+   "hq_city": "Nairobi",
+   "hq_lat": -1.2833,
+   "hq_lon": 36.8167,
+   "lei": "254900MXIMX8BQIGRM72",
+   "company_label": "THE CO-OPERATIVE BANK OF KENYA LIMITED",
+   "country": "Kenya",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900MXIMX8BQIGRM72",
+   "checked_at": "2026-11-17"
+  },
+  "NSE:KQ": {
+   "hq_city": "Nairobi",
+   "hq_lat": -1.2833,
+   "hq_lon": 36.8167,
+   "lei": "549300218SBMRBAPQ664",
+   "company_label": "KENYA AIRWAYS PLC",
+   "country": "Kenya",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300218SBMRBAPQ664",
+   "checked_at": "2026-11-17"
+  },
+  "NSE:EABL": {
+   "hq_city": "Nairobi",
+   "hq_lat": -1.2833,
+   "hq_lon": 36.8167,
+   "lei": "984500BEE8483EAED424",
+   "company_label": "EAST AFRICAN BREWERIES PLC",
+   "country": "Kenya",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/984500BEE8483EAED424",
+   "checked_at": "2026-11-17"
   }
  },
  "not_matched": [
@@ -7313,6 +7677,48 @@
    "why": [
     "GLEIF city 'KETU' not found in GeoNames"
    ]
+  },
+  {
+   "s": "NGX:DAARCOMM",
+   "why": [
+    "GLEIF registration is lapsed, last updated 2021-07-13"
+   ]
+  },
+  {
+   "s": "NGX:MCNICHOLS",
+   "why": [
+    "GLEIF city 'AREPO' not found in GeoNames"
+   ]
+  },
+  {
+   "s": "NGX:TRANSCOHOT",
+   "why": [
+    "GLEIF city 'MAITAMA' not found in GeoNames"
+   ]
+  },
+  {
+   "s": "NSE:FMLY",
+   "why": [
+    "GLEIF registration is lapsed, last updated 2023-03-20"
+   ]
+  },
+  {
+   "s": "NSE:BAMB",
+   "why": [
+    "GLEIF headquarters is in FR, directory says Kenya"
+   ]
+  },
+  {
+   "s": "NSE:BAT",
+   "why": [
+    "GLEIF headquarters is in GB, directory says Kenya"
+   ]
+  },
+  {
+   "s": "NSE:SCOM",
+   "why": [
+    "GLEIF city 'Westlands' not found in GeoNames"
+   ]
   }
  ],
  "city_labels_resolved": [
@@ -7333,7 +7739,7 @@
  "gleif_pass": {
   "checked_at": "2026-11-17",
   "method": "tools/hq/gleif_pass.py",
-  "added": 81,
+  "added": 19,
   "licence": "GLEIF data CC0; GeoNames CC BY 4.0 (attribution: GeoNames, geonames.org)"
  }
 }
