@@ -38,7 +38,7 @@
  .bf-stack{position:fixed;z-index:59;display:flex;flex-direction:column;gap:8px;width:min(420px,calc(100vw - 24px));opacity:0;transform:translateY(8px);transition:opacity .35s ease,transform .35s ease;pointer-events:none}
  .bf-stack.on{opacity:1;transform:none;pointer-events:auto}
  .bf-mvs{display:flex;gap:6px;flex-wrap:wrap}.bf-pl{display:inline-flex;gap:8px;align-items:center;background:rgba(12,12,15,.94);border:1px solid #2e2e33;border-radius:999px;padding:5px 11px;font:500 12.5px Inter,sans-serif;color:#ececef}
- .bf-mv{font:600 12px 'Geist Mono',ui-monospace,monospace;color:#b5b5bd}.bf-mv.u{color:#34d399}.bf-mv.d{color:#f87171}
+ .bf-mv{font:600 12px Inter,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:#b5b5bd}.bf-mv.u{color:#34d399}.bf-mv.d{color:#f87171}
  .bf-art{display:flex;gap:10px;align-items:center;background:rgba(12,12,15,.96);border:1px solid #2a2a2f;border-radius:16px;padding:9px;text-decoration:none;color:#ececef}
  .bf-art img{width:76px;height:56px;border-radius:10px;object-fit:cover;flex:none}.bf-art span{min-width:0;display:flex;flex-direction:column;gap:2px}
  .bf-art small{font-size:10.5px;letter-spacing:.06em;color:#ffb27a}.bf-art b{font:600 13px/1.3 Inter,sans-serif;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.bf-art i{font-style:normal;font-size:12px;color:#b5b5bd}
@@ -54,7 +54,7 @@
   .bfm-s{position:relative;height:4px;border-radius:2px;background:rgba(255,255,255,.16);margin-top:18px;touch-action:none;cursor:pointer}.bfm-s::before{content:'';position:absolute;left:0;right:0;top:-12px;bottom:-12px}
   .bfm-s i{position:absolute;left:0;top:0;bottom:0;border-radius:2px;background:#fff}.bfm-s b{position:absolute;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:#fff;box-shadow:0 1px 6px #0008;transition:transform .15s}.bfm-s.drag b{transform:scale(1.3)}
   .bfm-s u{position:absolute;top:-3px;width:2px;height:10px;border-radius:1px;background:rgba(255,255,255,.35)}
-  .bfm-tm{display:flex;justify-content:space-between;font:500 11px 'Geist Mono',monospace;color:#8a8a93;margin-top:8px;font-variant-numeric:tabular-nums}
+  .bfm-tm{display:flex;justify-content:space-between;font:500 11.5px Inter,sans-serif;color:#8a8a93;margin-top:8px;font-variant-numeric:tabular-nums}
   .bfm-c{display:flex;align-items:center;justify-content:center;gap:26px;margin-top:8px}.bfm-c button{all:unset;cursor:pointer;color:#e4e4e7;display:grid;place-items:center;width:40px;height:40px;border-radius:50%}.bfm-c button:active{transform:scale(.9)}
   .bfm-c .bfm-p{width:58px;height:58px;background:#fff;color:#000}
   .bfm-ch{display:flex;gap:6px;margin-top:12px;overflow-x:auto;scrollbar-width:none}.bfm-ch::-webkit-scrollbar{display:none}.bfm-ch button{all:unset;cursor:pointer;flex:none;font:500 11.5px Inter,sans-serif;padding:5px 10px;border-radius:999px;background:rgba(255,255,255,.06);color:#a1a1aa}.bfm-ch button.on{background:rgba(255,122,26,.16);color:#ffb27a}
@@ -92,7 +92,9 @@
   try{if(hq&&typeof flyTo==='function')flyTo(hq.lon,Math.max(-60,Math.min(60,hq.lat)),Math.min(typeof ZMAX!=='undefined'?ZMAX:4,3.2),1500);else if(c.f&&typeof flyTo==='function')flyTo(c.f[0],Math.max(-60,Math.min(60,c.f[1])),c.f[2]||1.6,1300);}catch{}
   const to=c.to?locOf(c.to):null,from=c.from||null;
   T={c,t0:performance.now(),line:from&&to?{a:{phi:from.lat*rad,lam:from.lon*rad},b:{phi:to.lat*rad,lam:to.lon*rad},la:from.label,lb:to.label,v:(c.moves||[]).find(m=>m[1]===c.to)?.[2]}:null,hq:hq&&!to?{p:{phi:hq.lat*rad,lam:hq.lon*rad},label:hq.label,v:(c.moves||[]).find(m=>m[1]===c.hq)?.[2]}:null};
-  const mv=(c.moves||[]).filter(m=>m[1]!==c.to&&m[1]!==c.hq),art=c.art;
+  const mvAll=(c.moves||[]).filter(m=>m[1]!==c.to&&m[1]!==c.hq),art=c.art;
+  // owner 17 Nov: show each move on the globe at its market (index exchange city, company HQ); only moves without a place stay above the player
+  const seen={};T.pins=[];const mv=[];for(const m of mvAll){const L=locOf(m[1]);if(L){const k=L.lat.toFixed(1)+','+L.lon.toFixed(1),n=seen[k]=(seen[k]||0)+1;T.pins.push({p:{phi:L.lat*rad,lam:L.lon*rad},label:m[0],v:m[2],row:n-1});}else mv.push(m);}
   stack.innerHTML=(mv.length?`<div class=bf-mvs>${mv.map(([n,,v])=>`<span class=bf-pl><b>${n.replace(/</g,'&lt;')}</b>${pill(v)}</span>`).join('')}</div>`:'')+
    (art?`<a class=bf-art ${art.id?`data-st="${art.id}"`:''} href="${art.id?'#':''}">${art.img?`<img src="${art.img.startsWith('http')?art.img:'../globe/'+art.img}" alt="" loading="lazy">`:''}<span><small>${(art.cat||'').toUpperCase()}${art.src?' · '+art.src:''}</small><b>${art.h.replace(/</g,'&lt;')}</b>${art.sym&&Number.isFinite(art.v)?`<i>${art.sym} ${pill(art.v)}</i>`:''}</span></a>`:'');
   stack.classList.toggle('on',!!stack.innerHTML);place();
@@ -106,17 +108,19 @@
   const k=Math.min(1,(performance.now()-T.t0-500)/1400),e=k<0?0:1-Math.pow(1-k,3);
   // Pill label: each part measured in the font it is drawn in; flips to the left of the point when it would leave the screen.
   const label=(x,y,t,v)=>{const vt=Number.isFinite(v)?`${v>0?'↑':v<0?'↓':'↔'} ${Math.abs(v).toFixed(2)}%`:'';
-   tx.font='500 12.5px Inter,sans-serif';let tw=tx.measureText(t).width;tx.font="600 12px 'Geist Mono',monospace";const vw=vt?tx.measureText(vt).width:0;
+   tx.font='500 12.5px Inter,sans-serif';let tw=tx.measureText(t).width;tx.font='600 12.5px Inter,sans-serif';const vw=vt?tx.measureText(vt).width:0;
    const gap=vt?10:0,pad=12,maxW=innerWidth-24;if(tw+gap+vw+pad*2>maxW){tw=Math.max(40,maxW-gap-vw-pad*2);}
    const w=tw+gap+vw+pad*2;let L=x+10;if(L+w>innerWidth-12){if(x-10-w>=12)L=x-10-w;else{L=Math.max(12,Math.min(innerWidth-12-w,x-w/2));y-=30;}}  // neither side fits: above the point
    tx.fillStyle='rgba(12,12,15,.94)';tx.strokeStyle='#ff7a1a';tx.lineWidth=1;tx.beginPath();tx.roundRect(L,y-14,w,28,14);tx.fill();tx.stroke();
    tx.save();tx.beginPath();tx.rect(L+pad,y-14,tw,28);tx.clip();tx.font='500 12.5px Inter,sans-serif';tx.fillStyle='#ececef';tx.fillText(t,L+pad,y+4.5);tx.restore();
-   if(vt){tx.font="600 12px 'Geist Mono',monospace";tx.fillStyle=v>0?'#34d399':v<0?'#f87171':'#b5b5bd';tx.fillText(vt,L+pad+tw+gap,y+4.5);}};
+   if(vt){tx.font='600 12.5px Inter,sans-serif';tx.fillStyle=v>0?'#34d399':v<0?'#f87171':'#b5b5bd';tx.fillText(vt,L+pad+tw+gap,y+4.5);}};
   if(T.line&&typeof arcGeom==='function'&&typeof proj==='function'){const pts=arcGeom(T.line.a,T.line.b,64,.22),n=Math.max(1,Math.round(pts.length*e));
    tx.strokeStyle='#ff7a1a';tx.lineWidth=2.2;tx.shadowColor='#ff7a1a';tx.shadowBlur=10;tx.beginPath();let last=null;
    for(let i=0;i<n;i++){const [x,y,z]=proj(pts[i][0],pts[i][1],pts[i][2]);if(z<=0){last=null;continue;}last?tx.lineTo(x,y):tx.moveTo(x,y);last=[x,y];}tx.stroke();tx.shadowBlur=0;
    const A=proj(T.line.a.phi,T.line.a.lam);if(A[2]>0){tx.fillStyle='#ff7a1a';tx.beginPath();tx.arc(A[0],A[1],4.5,0,7);tx.fill();if(T.line.la)label(A[0],A[1],T.line.la);}
    if(last&&e>=1)label(last[0],last[1],T.line.lb,T.line.v);}
+  if(T.pins&&T.pins.length&&typeof proj==='function'){const used=[];T.pins.forEach((q,i)=>{const kk=Math.min(1,Math.max(0,(performance.now()-T.t0-900-i*350)/500));if(kk<=0)return;const [x,y,z]=proj(q.p.phi,q.p.lam);if(z<=0)return;
+   tx.globalAlpha=kk;if(!q.row){tx.fillStyle='#ff7a1a';tx.shadowColor='#ff7a1a';tx.shadowBlur=12;tx.beginPath();tx.arc(x,y,4.5,0,7);tx.fill();tx.shadowBlur=0;}let ly=y;while(used.some(u=>Math.abs(u[0]-x)<60&&Math.abs(u[1]-ly)<32))ly+=34;used.push([x,ly]);label(x,ly,q.label,q.v);tx.globalAlpha=1;});}
   if(T.hq&&typeof proj==='function'){const [x,y,z]=proj(T.hq.p.phi,T.hq.p.lam);if(z>0){tx.globalAlpha=Math.max(0,e);tx.fillStyle='#ff7a1a';tx.shadowColor='#ff7a1a';tx.shadowBlur=16;tx.beginPath();tx.arc(x,y,5.5,0,7);tx.fill();tx.shadowBlur=0;label(x,y,T.hq.label,T.hq.v);tx.globalAlpha=1;}}
   tRaf=requestAnimationFrame(draw);
  }
@@ -195,6 +199,8 @@
   <div class=bf-note>${REC?'Synthetic voice reading Investedia’s Briefing, written from our market data and articles.':'Read by your browser’s voice from Investedia’s market data and articles.'} Delayed prices. Not investment advice.</div>`:''}`;
   card.classList.toggle('m',mPhone());
   if(tr)card.querySelector('.bf-b.on')?.scrollIntoView({block:'nearest'});}
+ // keep the pills and article card just above the player whenever the player changes size (phone card, transcript open/close)
+ if(window.ResizeObserver)new ResizeObserver(()=>{if(T||stack.innerHTML)place();}).observe(card);
  function speak(i){
   if(REC){if(i>=CH.length){AU.pause();playing=false;store('inv-briefed',day);paintBtn();paintCard();return;}cur=i;playing=true;const go=()=>{AU.currentTime=CH[i].s||0;AU.play().catch(()=>{playing=false;paintBtn();paintCard();});};
    const nm=firstName();if(i===0&&nm&&!greeted&&API()){greeted=true;const tod=new Date().getHours()<12?'morning':new Date().getHours()<18?'afternoon':'evening';GR.src=`${API()}/v1/briefing/greeting?name=${encodeURIComponent(nm)}&tod=${tod}`;GR.onended=go;GR.onerror=go;GR.play().catch(go);}else go();
