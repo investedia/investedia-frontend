@@ -1436,3 +1436,4 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .notif-dd .al-alert{grid-template-columns:1fr auto auto;background:transparent;border:1px solid var(--line)}
 .notif-dd .al-meter{height:5px}
 .notif-dd a.al-pro{text-decoration:none}.notif-dd a.al-pro:hover{color:var(--fg);border-color:var(--fg-2)}
+.notif-dd a.al-pro{display:inline-block!important;min-height:0!important;min-width:0!important;height:auto!important;padding:0 6px!important;line-height:17px!important}
