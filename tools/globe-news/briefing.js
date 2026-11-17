@@ -90,7 +90,14 @@
   tRaf=0;if(!T)return;const dpr=Math.min(2,devicePixelRatio||1);if(tc.width!==innerWidth*dpr){tc.width=innerWidth*dpr;tc.height=innerHeight*dpr;}
   tx.setTransform(dpr,0,0,dpr,0,0);tx.clearRect(0,0,innerWidth,innerHeight);
   const k=Math.min(1,(performance.now()-T.t0-500)/1400),e=k<0?0:1-Math.pow(1-k,3);
-  const label=(x,y,t,v)=>{tx.font='500 12.5px Inter,sans-serif';const vt=Number.isFinite(v)?`  ${v>0?'↑':v<0?'↓':'↔'} ${Math.abs(v).toFixed(2)}%`:'';const w=tx.measureText(t).width+(vt?tx.measureText(vt).width+4:0)+20;tx.fillStyle='rgba(12,12,15,.94)';tx.strokeStyle='#ff7a1a';tx.lineWidth=1;tx.beginPath();tx.roundRect(x+10,y-14,w,28,14);tx.fill();tx.stroke();tx.fillStyle='#ececef';tx.fillText(t,x+20,y+4.5);if(vt){tx.font="600 12px 'Geist Mono',monospace";tx.fillStyle=v>0?'#34d399':v<0?'#f87171':'#b5b5bd';tx.fillText(vt,x+20+tx.measureText(t).width+4,y+4.5);}};
+  // Pill label: each part measured in the font it is drawn in; flips to the left of the point when it would leave the screen.
+  const label=(x,y,t,v)=>{const vt=Number.isFinite(v)?`${v>0?'↑':v<0?'↓':'↔'} ${Math.abs(v).toFixed(2)}%`:'';
+   tx.font='500 12.5px Inter,sans-serif';let tw=tx.measureText(t).width;tx.font="600 12px 'Geist Mono',monospace";const vw=vt?tx.measureText(vt).width:0;
+   const gap=vt?10:0,pad=12,maxW=innerWidth-24;if(tw+gap+vw+pad*2>maxW){tw=Math.max(40,maxW-gap-vw-pad*2);}
+   const w=tw+gap+vw+pad*2;let L=x+10;if(L+w>innerWidth-12){if(x-10-w>=12)L=x-10-w;else{L=Math.max(12,Math.min(innerWidth-12-w,x-w/2));y-=30;}}  // neither side fits: above the point
+   tx.fillStyle='rgba(12,12,15,.94)';tx.strokeStyle='#ff7a1a';tx.lineWidth=1;tx.beginPath();tx.roundRect(L,y-14,w,28,14);tx.fill();tx.stroke();
+   tx.save();tx.beginPath();tx.rect(L+pad,y-14,tw,28);tx.clip();tx.font='500 12.5px Inter,sans-serif';tx.fillStyle='#ececef';tx.fillText(t,L+pad,y+4.5);tx.restore();
+   if(vt){tx.font="600 12px 'Geist Mono',monospace";tx.fillStyle=v>0?'#34d399':v<0?'#f87171':'#b5b5bd';tx.fillText(vt,L+pad+tw+gap,y+4.5);}};
   if(T.line&&typeof arcGeom==='function'&&typeof proj==='function'){const pts=arcGeom(T.line.a,T.line.b,64,.22),n=Math.max(1,Math.round(pts.length*e));
    tx.strokeStyle='#ff7a1a';tx.lineWidth=2.2;tx.shadowColor='#ff7a1a';tx.shadowBlur=10;tx.beginPath();let last=null;
    for(let i=0;i<n;i++){const [x,y,z]=proj(pts[i][0],pts[i][1],pts[i][2]);if(z<=0){last=null;continue;}last?tx.lineTo(x,y):tx.moveTo(x,y);last=[x,y];}tx.stroke();tx.shadowBlur=0;
