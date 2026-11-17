@@ -323,7 +323,7 @@ addEventListener('message', e => {
   if (e.data.on) { holdY = scrollY; document.documentElement.style.overscrollBehavior = 'none'; addEventListener('scroll', holdScroll, { passive: true }); }
   else { setTimeout(() => { holdY = null; document.documentElement.style.overscrollBehavior = ''; removeEventListener('scroll', holdScroll); }, 180); }
 });
-const glide = () => { if (holdY != null) return; if (!isPhone()) { hnGlobe.style.transform = ''; return; } const y = Math.min(scrollY, 600); hnGlobe.style.transform = `translateY(${-y * .18}px) scale(${1 - y / 3000})`; hnGlobe.style.opacity = Math.max(.25, 1 - y / 700); };
+const glide = () => { if (holdY != null) return; if (!isPhone()) { hnGlobe.style.transform = ''; return; } const y = Math.min(scrollY, 900); hnGlobe.style.transform = `translateY(${-y * .14}px) scale(${1 - y / 4000})`; hnGlobe.style.opacity = Math.max(.5, 1 - y / 1600); /* owner 17 Nov 2026: slower, gentler fade */ };
 if (!matchMedia('(prefers-reduced-motion: reduce)').matches) addEventListener('scroll', () => requestAnimationFrame(glide), { passive: true });
 fitTitle(); addEventListener('resize', fitTitle); document.fonts && document.fonts.ready.then(fitTitle);
 // Live numbers under the name: counted from the same feed and project data the page already shows.
