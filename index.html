@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t==='system'?(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'):t}catch(e){}</script><style>html{background:#0a0a0b}html[data-theme=light]{background:#fff}</style>
-<script src="assets/fetch-share.js?v=0d427390b3"></script>
-<link rel="stylesheet" href="assets/consent.css?v=0d427390b3">
-<script src="assets/consent.js?v=0d427390b3"></script>
+<script src="assets/fetch-share.js?v=44f20bd3a0"></script>
+<link rel="stylesheet" href="assets/consent.css?v=44f20bd3a0">
+<script src="assets/consent.js?v=44f20bd3a0"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Investedia: Global Market News on a Live Globe</title>
 <meta name="description" content="Investedia is a global investment intelligence platform connecting financial news, market data and economic developments through an interactive world view.">
@@ -26,8 +26,8 @@
 <meta name="twitter:image" content="https://www.investedia.com/assets/og-default.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.investedia.com/#org","name":"Investedia","url":"https://www.investedia.com/","logo":"https://www.investedia.com/assets/app/icon-512.png","sameAs":["https://www.linkedin.com/company/investedia/","https://x.com/investedia","https://www.youtube.com/@investedia","https://www.instagram.com/investedia/"]},{"@type":"WebSite","@id":"https://www.investedia.com/#site","name":"Investedia","alternateName":"Investedia.com","url":"https://www.investedia.com/","publisher":{"@id":"https://www.investedia.com/#org"}}]}</script>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/app.css?v=0d427390b3">
-<link rel="stylesheet" href="assets/skin.css?v=0d427390b3">
+<link rel="stylesheet" href="assets/app.css?v=44f20bd3a0">
+<link rel="stylesheet" href="assets/skin.css?v=44f20bd3a0">
 <link rel="apple-touch-icon" href="assets/app/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -50,22 +50,22 @@
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <script src="assets/quotes.js"></script>
 <script src="assets/news.js"></script>
-<script src="assets/mock.js?v=0d427390b3"></script>
-<link rel="stylesheet" href="assets/news-menu.css?v=0d427390b3">
-<script src="assets/runtime-config.js?v=0d427390b3"></script>
-<script src="assets/live-config.js?v=0d427390b3"></script>
-<script src="assets/live-data.js?v=0d427390b3" defer></script>
-<script src="assets/news-source.js?v=0d427390b3"></script>
-<script src="assets/prefs.js?v=0d427390b3"></script>
-<script src="assets/peek.js?v=0d427390b3"></script>
-<script src="assets/sectors.js?v=0d427390b3"></script>
-<script src="assets/news-menu.js?v=0d427390b3"></script>
-<script src="assets/locale.js?v=0d427390b3"></script>
-<script src="assets/ui.js?v=0d427390b3"></script>
-<script src="assets/push-alerts.js?v=0d427390b3" defer></script>
-<script src="assets/news-alerts.js?v=0d427390b3" defer></script>
-<script src="assets/since-news.js?v=0d427390b3"></script>
-<script src="assets/home-news.js?v=0d427390b3"></script>
+<script src="assets/mock.js?v=44f20bd3a0"></script>
+<link rel="stylesheet" href="assets/news-menu.css?v=44f20bd3a0">
+<script src="assets/runtime-config.js?v=44f20bd3a0"></script>
+<script src="assets/live-config.js?v=44f20bd3a0"></script>
+<script src="assets/live-data.js?v=44f20bd3a0" defer></script>
+<script src="assets/news-source.js?v=44f20bd3a0"></script>
+<script src="assets/prefs.js?v=44f20bd3a0"></script>
+<script src="assets/peek.js?v=44f20bd3a0"></script>
+<script src="assets/sectors.js?v=44f20bd3a0"></script>
+<script src="assets/news-menu.js?v=44f20bd3a0"></script>
+<script src="assets/locale.js?v=44f20bd3a0"></script>
+<script src="assets/ui.js?v=44f20bd3a0"></script>
+<script src="assets/push-alerts.js?v=44f20bd3a0" defer></script>
+<script src="assets/news-alerts.js?v=44f20bd3a0" defer></script>
+<script src="assets/since-news.js?v=44f20bd3a0"></script>
+<script src="assets/home-news.js?v=44f20bd3a0"></script>
 <main class="wrap" id="main-content" tabindex="-1">
 <style>
 /* News-first homepage. The globe is the hero; everything below is live news. */
@@ -430,7 +430,7 @@ fetch('assets/calendar-live.json', { cache: 'no-cache' }).then(r => r.json()).th
   hnCalSrc.textContent = 'Times in your time zone. Events: ' + c.sources.events + ' (all published impact levels). Earnings: ' + c.sources.earnings + ' (largest companies).';
 }).catch(() => {});
 // Free resources strip (moving logos)
-const RES = [['Investor.gov', 'https://www.investor.gov', 'sans'], ['TradingView', 'https://www.tradingview.com', 'sans'], ['Morningstar', 'https://www.morningstar.com', 'serif'], ['Yahoo Finance', 'https://finance.yahoo.com', 'sans'], ['Khan Academy', 'https://www.khanacademy.org/economics-finance-domain', 'sans'], ['FRED', 'https://fred.stlouisfed.org', 'mono'], ['CoinMarketCap', 'https://coinmarketcap.com', 'sans'], ['Bogleheads', 'https://www.bogleheads.org', 'serif'], ['Reuters Markets', 'https://www.reuters.com/markets/', 'sans'], ['SEC EDGAR', 'https://www.sec.gov/edgar', 'mono'], ['Federal Reserve', 'https://www.federalreserve.gov', 'serif'], ['ECB', 'https://www.ecb.europa.eu', 'sans'], ['IMF', 'https://www.imf.org', 'sans'], ['World Bank', 'https://data.worldbank.org', 'sans'], ['Finviz', 'https://finviz.com', 'sans'], ['BIS', 'https://www.bis.org', 'serif']];
+const RES = [['Investor.gov', 'https://www.investor.gov', 'sans'], ['TradingView', 'https://www.tradingview.com', 'sans'], ['Morningstar', 'https://www.morningstar.com', 'serif'], ['Yahoo Finance', 'https://finance.yahoo.com', 'sans'], ['Khan Academy', 'https://www.khanacademy.org/economics-finance-domain', 'sans'], ['FRED', 'https://fred.stlouisfed.org', 'mono'], ['CoinMarketCap', 'https://coinmarketcap.com', 'sans'], ['Bogleheads', 'https://www.bogleheads.org', 'serif'], ['Reuters Markets', 'https://www.reuters.com/markets/', 'sans'], ['SEC EDGAR', 'https://www.sec.gov/edgar', 'mono'], ['Federal Reserve', 'https://www.federalreserve.gov', 'serif'], ['ECB', 'https://www.ecb.europa.eu', 'sans'], ['IMF', 'https://www.imf.org', 'sans'], ['World Bank', 'https://data.worldbank.org', 'sans'], ['Finviz', 'https://finviz.com', 'sans'], ['BIS', 'https://www.bis.org', 'serif'], ['OECD Data', 'https://www.oecd.org/en/data.html', 'sans'], ['Investopedia', 'https://www.investopedia.com', 'sans'], ['CFA Institute', 'https://www.cfainstitute.org', 'serif'], ['Our World in Data', 'https://ourworldindata.org', 'serif'], ['IEA', 'https://www.iea.org', 'sans'], ['Bank of England', 'https://www.bankofengland.co.uk', 'serif'], ['Reserve Bank of India', 'https://www.rbi.org.in', 'serif'], ['African Development Bank', 'https://www.afdb.org', 'sans'], ['Asian Development Bank', 'https://www.adb.org', 'sans'], ['Eurostat', 'https://ec.europa.eu/eurostat', 'mono']];
 const resItems = RES.map(([n, u, f]) => `<a class="res-item res-${f}" href="${u}" target="_blank" rel="noopener noreferrer">${n}</a>`).join('<span class="res-sep" aria-hidden="true"></span>');
 document.getElementById('res-track').innerHTML = resItems + '<span class="res-sep" aria-hidden="true"></span>' + resItems.replace(/<a /g, '<a tabindex="-1" aria-hidden="true" ');
 </script>
