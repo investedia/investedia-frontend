@@ -76,12 +76,12 @@ function bindProjectControls(el){
  const back=el.querySelector('[data-pj-back]');if(back)back.onclick=()=>{PROJ.phoneDetail=false;PROJ.collapsed=false;projRender();};
  const handle=el.querySelector('[data-pj-collapse]');if(handle){let g=null,raf=0,want=0,moved=false;
   // Owner 16 Nov 2026: the Projects sheet follows the finger at any height (like News), no fixed steps.
-  const set=h=>{el.style.setProperty('height',h+'px','important');el.style.setProperty('max-height','none','important');};
+  const set=h=>{el.style.setProperty('height',h+'px','important');el.style.setProperty('max-height','none','important');el.style.setProperty('overflow','hidden','important');};
   handle.style.touchAction='none';
   handle.onclick=()=>{if(moved){moved=false;return;}PROJ.collapsed=!PROJ.collapsed;PROJ.sheetH=null;el.style.removeProperty('height');projRender();};
   handle.onpointerdown=e=>{if(!phone())return;g={y:e.clientY,h:el.getBoundingClientRect().height};moved=false;handle.setPointerCapture(e.pointerId);el.style.transition='none';if(PROJ.collapsed){PROJ.collapsed=false;document.documentElement.classList.remove('proj-collapsed');}};
   handle.onpointermove=e=>{if(!g)return;if(Math.abs(e.clientY-g.y)>2)moved=true;want=Math.max(88,Math.min(innerHeight*.86,g.h+(g.y-e.clientY)));if(!raf)raf=requestAnimationFrame(()=>{raf=0;set(want);});};
-  handle.onpointerup=handle.onpointercancel=e=>{if(!g)return;g=null;el.style.transition='';if(!moved)return;if(want<130){PROJ.collapsed=true;PROJ.sheetH=null;el.style.removeProperty('height');projRender();}else{PROJ.sheetH=want;set(want);}};
+  handle.onpointerup=handle.onpointercancel=e=>{if(!g)return;g=null;el.style.transition='';if(!moved)return;PROJ.sheetH=want;set(want);};
   if(phone()&&PROJ.sheetH&&!PROJ.collapsed)set(PROJ.sheetH);}
 }
 function projectTopbar(){

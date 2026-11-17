@@ -1679,7 +1679,8 @@ let sheetState = 'closed', sheetVisible = 84, sheetGesture = null, phoneMapTop =
 // sheetState is only 'closed' or 'open'. Every resting height is wherever the user left it (sheetFrac keeps it through resizes).
 let sheetFrac = .30;
 const SHEET_MIN = () => H * .30, SHEET_MAX = () => H * .92;
-const clampSheet = h => Math.max(SHEET_MIN(), Math.min(SHEET_MAX(), h));
+const SHEET_FLOOR = () => (typeof BOTTOM_DOCK !== 'undefined' ? BOTTOM_DOCK : 90) + 128;  // lowest drag position: title row stays visible above the dock
+const clampSheet = h => Math.max(SHEET_FLOOR(), Math.min(SHEET_MAX(), h));
 function sheetHeight(state) { return state === 'closed' ? 84 : clampSheet(sheetFrac * H); }
 function paintSheet(h, rest) {  // rest = a resting position (also re-pads the article list so its last item can be scrolled into view)
   const drop = SHEET_MAX() - h + 'px';
@@ -2063,7 +2064,7 @@ grab.addEventListener('pointerdown', e => {
 grab.addEventListener('pointermove', e => {
   const g = sheetGesture; if (!g || g.id !== e.pointerId) return;
   if (Math.abs(g.y0 - e.clientY) > 1) g.moved = true;
-  const raw = g.h0 + (g.y0 - e.clientY); sheetWant = raw < SHEET_MIN() ? Math.max(84, SHEET_MIN() - (SHEET_MIN() - raw) * .85) : Math.min(SHEET_MAX(), raw);  // follows the finger all the way down; closes on release
+  const raw = g.h0 + (g.y0 - e.clientY); sheetWant = Math.max(SHEET_FLOOR(), Math.min(SHEET_MAX(), raw));  // follows the finger all the way down; closes on release
   if (!sheetRaf) sheetRaf = requestAnimationFrame(sheetApply);
 });
 function sheetEnd(e) {
@@ -2074,8 +2075,8 @@ function sheetEnd(e) {
   sheetDraggedAt = performance.now();
   let h = sheetWant;
   // the magnet only pulls toward the edge the finger was moving to: dragging 10 px up from the minimum stays 10 px up
-  if (h < g.h0 && h - SHEET_MIN() < MAGNET) h = SHEET_MIN(); else if (h > g.h0 && SHEET_MAX() - h < MAGNET) h = SHEET_MAX();
-  if (sheetWant < SHEET_MIN() - 40) setSheet('closed'); else placeSheet('open', clampSheet(h));
+  if (h < g.h0 && h - SHEET_FLOOR() < MAGNET) h = SHEET_FLOOR(); else if (h > g.h0 && SHEET_MAX() - h < MAGNET) h = SHEET_MAX();
+  placeSheet('open', Math.max(SHEET_FLOOR(), Math.min(SHEET_MAX(), h)));  // owner 16 Nov 2026: dragging never closes the sheet; it stops at the title row (× still closes)
 }
 grab.addEventListener('pointerup', sheetEnd); grab.addEventListener('pointercancel', sheetEnd);
 // Owner 16 Nov 2026: the whole header strip of the sheet (title row) also drags it, so the sheet moves wherever the finger lands near the top.
@@ -2084,7 +2085,7 @@ panel.addEventListener('pointerdown', e => {
   const top = panel.getBoundingClientRect().top; if (e.clientY - top > 96) return;
   sheetGesture = { id: e.pointerId, y0: e.clientY, h0: sheetVisible, moved: false }; sheetWant = sheetVisible; panel.classList.add('sheet-dragging');
   try { panel.setPointerCapture(e.pointerId); } catch {}
-  const mv = ev => { const g = sheetGesture; if (!g || g.id !== ev.pointerId) return; if (Math.abs(g.y0 - ev.clientY) > 1) g.moved = true; const raw = g.h0 + (g.y0 - ev.clientY); sheetWant = raw < SHEET_MIN() ? Math.max(84, SHEET_MIN() - (SHEET_MIN() - raw) * .85) : Math.min(SHEET_MAX(), raw); if (!sheetRaf) sheetRaf = requestAnimationFrame(sheetApply); };
+  const mv = ev => { const g = sheetGesture; if (!g || g.id !== ev.pointerId) return; if (Math.abs(g.y0 - ev.clientY) > 1) g.moved = true; const raw = g.h0 + (g.y0 - ev.clientY); sheetWant = Math.max(SHEET_FLOOR(), Math.min(SHEET_MAX(), raw)); if (!sheetRaf) sheetRaf = requestAnimationFrame(sheetApply); };
   const up = ev => { panel.removeEventListener('pointermove', mv); panel.removeEventListener('pointerup', up); panel.removeEventListener('pointercancel', up); sheetEnd(ev); };
   panel.addEventListener('pointermove', mv); panel.addEventListener('pointerup', up); panel.addEventListener('pointercancel', up);
 });
