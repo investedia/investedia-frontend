@@ -2549,9 +2549,11 @@ function projAll(){
  if(!PROJ.ready){PROJ.ready=InvProjectsData.load().then(data=>{PROJ.list=data.projects;PROJ.curation=data.curation;PROJ.error=false;if(PROJ.on)projRender();}).catch(()=>{PROJ.ready=null;PROJ.error=true;if(PROJ.on)projRender();});}
  return PROJ.list;
 }
+// owner 17 Nov 2026: projects with a good picture first (photo, then before/now satellite, then satellite)
+const pjPicRank=p=>p.photo?.file?3:p.satellite?.before?2:p.satellite?.url?1:0;
 function projFiltered(){
  const f=PROJ.f,q=(PROJ.q||'').trim().toLowerCase();let list=projAll().filter(p=>(!f.c||p.country===f.c)&&(!f.t||p.sector===f.t)&&(!f.e||p.energy===f.e)&&(!f.s||pjStage(p)===f.s)&&(!f.w||PW.has(p.id))&&(!q||[p.name,p.location,p.country,p.type,p.developer,...(p.owners||[])].some(x=>String(x||'').toLowerCase().includes(q))));
- return list.sort((a,b)=>PROJ.sort==='name'?a.name.localeCompare(b.name):PROJ.sort==='recent'?(Number(b.start_year)||0)-(Number(a.start_year)||0)||a.name.localeCompare(b.name):(Number(b.featured)-Number(a.featured))||(Number(!!b.listed)-Number(!!a.listed))||((b.capacity?.value||0)-(a.capacity?.value||0))||a.name.localeCompare(b.name));
+ return list.sort((a,b)=>PROJ.sort==='name'?a.name.localeCompare(b.name):PROJ.sort==='recent'?(Number(b.start_year)||0)-(Number(a.start_year)||0)||a.name.localeCompare(b.name):(pjPicRank(b)-pjPicRank(a))||(Number(b.featured)-Number(a.featured))||(Number(!!b.listed)-Number(!!a.listed))||((b.capacity?.value||0)-(a.capacity?.value||0))||a.name.localeCompare(b.name));
 }
 function projPick(id,fly=true){PROJ.sel=id;PROJ.img=null;PROJ.baPos=50;PROJ.tab='overview';PROJ.phoneDetail=phone();PROJ.collapsed=false;const p=PROJ.list.find(x=>x.id===id);if(fly&&p)flyTo(p.lon,p.lat,Math.max(1,Zt));projRender();}
 function pjMilestones(p){
