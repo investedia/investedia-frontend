@@ -10,7 +10,7 @@
  .bf-ic{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#1d130b;box-shadow:0 0 0 5px #ff7a1a1c,0 0 22px #ff7a1a44;flex:none}
  .bf-btn.done{border-color:#2a2a2f;color:#d4d4d8}.bf-btn.done .bf-ic{background:#18181b;box-shadow:none}
  .bf-card{position:fixed;z-index:32;width:min(500px,calc(100vw - 24px));background:rgba(12,12,15,.98);border:1px solid #3a2414;border-radius:22px;padding:16px 18px;box-shadow:0 30px 80px #000c;color:#ececef;font:14px/1.45 Inter,sans-serif}
- .bf-card[hidden]{display:none}
+ .bf-card[hidden],.bf-btn[hidden]{display:none!important}
  .bf-h{display:flex;align-items:center;gap:12px}.bf-h .bf-ic{width:50px;height:50px}.bf-h small{display:block;color:#8a8a92;font-size:11px;letter-spacing:.08em;text-transform:uppercase}.bf-h b{font-size:19px}
  .bf-pp{width:40px;height:40px;border-radius:50%;background:#fff;border:0;display:flex;align-items:center;justify-content:center;cursor:pointer;margin-left:auto;flex:none}
  .bf-eq{display:inline-flex;gap:2px;align-items:flex-end;height:12px}.bf-eq b{width:2px;background:#ff9d5c;border-radius:1px;animation:bfq .9s ease-in-out infinite}.bf-eq b:nth-child(2){animation-delay:.2s}.bf-eq b:nth-child(3){animation-delay:.4s}@keyframes bfq{0%,100%{height:3px}50%{height:12px}}
@@ -71,6 +71,8 @@
  const done=()=>store('inv-briefed')===day&&day;
  const btn=document.createElement('button');btn.type='button';btn.className='bf-btn';btn.setAttribute('aria-label','Briefing');document.body.append(btn);
  const card=document.createElement('div');card.className='bf-card';card.hidden=true;card.setAttribute('role','dialog');card.setAttribute('aria-label','Briefing');document.body.append(card);
+ // owner 17 Nov 2026: Briefing only in News and Markets, never in Projects
+ setInterval(()=>{const pj=typeof PROJ!=='undefined'&&PROJ.on;btn.hidden=pj;if(pj&&!card.hidden){card.hidden=true;stop();}},400);
  function paintBtn(){const el=REC?Math.round(AU.currentTime*14):CH.slice(0,cur).reduce((s,c)=>s+c.t.length,0);
   if(playing){btn.className='bf-btn play';btn.innerHTML=`<span class=bf-ic>${RING}</span><b>Briefing</b>${card.hidden?'<i class=bf-eq><b></b><b></b><b></b></i>':`<small>${fmt(secs(el))} / ${fmt(secs(total()))}</small>`}`;}
   else if(done()){btn.className='bf-btn done';btn.innerHTML=`<span class=bf-ic>${DONE}</span><b>Briefed</b><small>${day?new Date(day).toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'}):''}</small>`;}
