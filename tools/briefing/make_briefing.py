@@ -20,14 +20,40 @@ REGION = os.environ.get('AZURE_SPEECH_REGION', 'germanywestcentral')
 
 
 def chapters(text):
+    """Paragraphs = chapters. Lines starting with @ are cues for the globe tour, never spoken:
+    @fly lon,lat[,zoom]                      move the globe here
+    @from lon,lat Label                      where the event happened (start of the line)
+    @to SYMBOL                               the asset it moved (end of the line; companies end at their HQ)
+    @move Label | SYMBOL | percent           a move shown while this chapter plays (percent of that day)
+    @article Headline | Source | Category | image | SYMBOL | percent   the article card
+    @hq SYMBOL                               zoom into the company's headquarters
+    """
     out = []
     for para in [p.strip() for p in re.split(r'\n\s*\n', text) if p.strip()]:
-        fly = None
-        m = re.match(r'@fly\s+(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\n', para + '\n')
-        if m:
-            fly = [float(m.group(1)), float(m.group(2))]
-            para = para[m.end():].strip()
-        out.append({'text': ' '.join(para.split()), 'fly': fly})
+        c, words = {'fly': None, 'moves': []}, []
+        for line in para.splitlines():
+            line = line.strip()
+            if not line.startswith('@'):
+                words.append(line)
+                continue
+            key, _, val = line[1:].partition(' ')
+            val = val.strip()
+            if key == 'fly':
+                c['fly'] = [float(x) for x in val.split(',')]
+            elif key == 'from':
+                xy, _, label = val.partition(' ')
+                lon, lat = (float(x) for x in xy.split(','))
+                c['from'] = {'lon': lon, 'lat': lat, 'label': label.strip()}
+            elif key in ('to', 'hq'):
+                c[key] = val
+            elif key == 'move':
+                n, sym, v = [x.strip() for x in val.split('|')]
+                c['moves'].append([n, sym, float(v)])
+            elif key == 'article':
+                f = [x.strip() for x in val.split('|')] + [''] * 6
+                c['art'] = {'h': f[0], 'src': f[1], 'cat': f[2], 'img': f[3], 'sym': f[4], 'v': float(f[5]) if f[5] else None}
+        c['text'] = ' '.join(' '.join(words).split())
+        out.append(c)
     return out
 
 
@@ -52,9 +78,19 @@ def duration(path):
     return float(subprocess.check_output(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', str(path)]).strip())
 
 
-def main(day):
+def main(day, cues_only=False):
     src = OUT / 'scripts' / f'{day}.txt'
     ch = chapters(src.read_text(encoding='utf-8'))
+    if cues_only:  # same spoken text: keep the recorded audio and its timings, refresh the tour cues only
+        idx = json.loads((OUT / 'index.json').read_text())
+        old = next(d for d in idx['days'] if d['date'] == day)
+        assert len(old['chapters']) == len(ch), 'chapter count changed: record the audio again'
+        for o, c in zip(old['chapters'], ch):
+            s0 = o.get('s', 0); o.clear(); o.update(dict({'t': ' '.join(c['text'].replace('//', '').replace(' / ', ' ').replace('/', '').split()), 's': s0, 'f': c['fly']},
+                                     **{k: c[k] for k in ('from', 'to', 'hq', 'moves', 'art') if c.get(k)}))
+        (OUT / 'index.json').write_text(json.dumps(idx, ensure_ascii=False, indent=1) + '\n')
+        print(day, 'cues updated')
+        return
     with tempfile.TemporaryDirectory() as tmp:
         parts, start = [], 0.0
         for i, c in enumerate(ch):
@@ -69,7 +105,8 @@ def main(day):
     idx_path = OUT / 'index.json'
     idx = json.loads(idx_path.read_text()) if idx_path.exists() else {'days': []}
     entry = {'date': day, 'audio': f'{day}.mp3', 'duration': round(start, 1), 'voice': VOICE,
-             'chapters': [{'t': c['text'].replace('//', '').replace(' / ', ' ').replace('/', ''), 's': c['start'], 'f': c['fly']} for c in ch]}
+             'chapters': [dict({'t': c['text'].replace('//', '').replace(' / ', ' ').replace('/', ''), 's': c['start'], 'f': c['fly']},
+                               **{k: c[k] for k in ('from', 'to', 'hq', 'moves', 'art') if c.get(k)}) for c in ch]}
     for c in entry['chapters']:
         c['t'] = ' '.join(c['t'].split())
     idx['days'] = sorted([d for d in idx['days'] if d['date'] != day] + [entry], key=lambda d: d['date'], reverse=True)[:30]
@@ -79,5 +116,6 @@ def main(day):
 
 
 if __name__ == '__main__':
-    for d in sys.argv[1:]:
-        main(d)
+    args = [a for a in sys.argv[1:] if not a.startswith('--')]
+    for d in args:
+        main(d, cues_only='--cues-only' in sys.argv)

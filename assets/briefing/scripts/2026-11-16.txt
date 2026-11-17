@@ -1,17 +1,25 @@
 Here's your Briefing.
 
 @fly -98,38
+@move S&P 500 | ^GSPC | -0.77
+@move Nasdaq | ^IXIC | -1.30
 Wall Street ended last week on the back foot. / On Friday, the S&P 500 slipped about three-quarters of a percent, / and the Nasdaq lost one point three. / Tech led the way down, / with data-centre equipment makers hit hardest as the AI mood cooled. //
 
 @fly 125,30
+@move Hang Seng | ^HSI | -2.79
 Asia had a rough end to the week too. / Hong Kong fell almost three percent. / And this morning, / Japan reported that its economy unexpectedly shrank in the third quarter. //
 
 @fly 54,26
+@from 56.3,26.6 Strait of Hormuz
+@to BZ=F
+@move Brent crude | BZ=F | 0.06
 Oil is the story to watch. / Over the weekend, / Iran claimed a supertanker was sunk in the Strait of Hormuz, / and Houthi forces moved closer to the Bab el-Mandeb. / But this morning, / prices are easing / as flows through Hormuz recover. //
 
 Gold slipped below three thousand nine hundred dollars, / as the Federal Reserve sounds tougher on rates. //
 
-@fly -98,38
+@hq NVDA
+@move NVIDIA | NVDA | -3.13
+@article Data Center Equipment Suppliers Lose $4.2 Trillion on Fading AI Sentiment | | Markets | | NVDA | -3.13
 Coming up this week: / US retail sales on Tuesday, / and Nvidia's earnings are getting close. //
 
 That's your Briefing. / Have a good day.
