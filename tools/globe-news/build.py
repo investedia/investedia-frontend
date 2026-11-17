@@ -74,6 +74,8 @@ page = page.replace('/* NEWS_DETAILS_FILTERS */', open(os.path.join(G, 'news-fil
 page = page.replace('/* PROJECTS_MODE */', open(os.path.join(G, 'projects-mode.js'), encoding='utf-8').read())
 page = page.replace('/* PROJECTS_CSS */', open(os.path.join(G, 'projects.css'), encoding='utf-8').read())
 page = page.replace('/* MARKET_MODE */', open(os.path.join(G, 'market-mode.js'), encoding='utf-8').read())
+page = page.replace('/* PANELS */', open(os.path.join(G, 'panels.js'), encoding='utf-8').read())
+page = page.replace('/* BRIEFING */', open(os.path.join(G, 'briefing.js'), encoding='utf-8').read())
 page = page.replace('__MARKET_DAYS__', json.dumps(sorted(f[:-5] for f in os.listdir(os.path.join(SITE, 'assets/globe/events')) if f.endswith('.json'))))
 page = page.replace('__DOTS__', open(os.path.join('/'.join([SITE, 'tools/globe']), 'dots.json')).read()).replace('__COUNTRIES__', json.dumps(C, separators=(',', ':')))
 # logo index for the image cards: symbol -> path (site logos by Investedia symbol, company logos by exchange ticker)

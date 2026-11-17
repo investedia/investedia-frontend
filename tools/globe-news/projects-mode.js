@@ -74,7 +74,15 @@ function bindProjectControls(el){
  const more=el.querySelector('[data-pjmore]');if(more)more.onclick=()=>{const scroll=$('pjList').querySelector('.pjl-list').scrollTop;PROJ.n+=30;projRender();$('pjList').querySelector('.pjl-list').scrollTop=scroll;};
  el.querySelectorAll('[data-pjimg]').forEach(b=>b.onclick=e=>{e.stopPropagation();PROJ.img=b.dataset.pjimg;projRender();});pjBindSlider(el);
  const back=el.querySelector('[data-pj-back]');if(back)back.onclick=()=>{PROJ.phoneDetail=false;PROJ.collapsed=false;projRender();};
- const handle=el.querySelector('[data-pj-collapse]');if(handle){handle.onclick=()=>{PROJ.collapsed=!PROJ.collapsed;projRender();};let y;handle.onpointerdown=e=>{y=e.clientY;handle.setPointerCapture(e.pointerId);};handle.onpointerup=e=>{if(y!=null&&Math.abs(e.clientY-y)>40){PROJ.collapsed=e.clientY>y;projRender();}y=null;};}
+ const handle=el.querySelector('[data-pj-collapse]');if(handle){let g=null,raf=0,want=0,moved=false;
+  // Owner 16 Nov 2026: the Projects sheet follows the finger at any height (like News), no fixed steps.
+  const set=h=>{el.style.setProperty('height',h+'px','important');el.style.setProperty('max-height','none','important');el.style.setProperty('overflow','hidden','important');};
+  handle.style.touchAction='none';
+  handle.onclick=()=>{if(moved){moved=false;return;}PROJ.collapsed=!PROJ.collapsed;PROJ.sheetH=null;el.style.removeProperty('height');projRender();};
+  handle.onpointerdown=e=>{if(!phone())return;g={y:e.clientY,h:el.getBoundingClientRect().height};moved=false;handle.setPointerCapture(e.pointerId);el.style.transition='none';if(PROJ.collapsed){PROJ.collapsed=false;document.documentElement.classList.remove('proj-collapsed');}};
+  handle.onpointermove=e=>{if(!g)return;if(Math.abs(e.clientY-g.y)>2)moved=true;want=Math.max(88,Math.min(innerHeight*.86,g.h+(g.y-e.clientY)));if(!raf)raf=requestAnimationFrame(()=>{raf=0;set(want);});};
+  handle.onpointerup=handle.onpointercancel=e=>{if(!g)return;g=null;el.style.transition='';if(!moved)return;PROJ.sheetH=want;set(want);};
+  if(phone()&&PROJ.sheetH&&!PROJ.collapsed)set(PROJ.sheetH);}
 }
 function projectTopbar(){
  const bar=$('project-topbar');bar.innerHTML='<a class="pj-brand" href="../../index.html" aria-label="Investedia home">Invested<span class="pj-i">i</span>a</a><nav aria-label="Site"><a href="news.html" data-proj-news>Globe</a><a href="../../news.html">News</a><a href="../../markets.html">Markets</a><a href="../../pricing.html">Pricing</a></nav><label><span class="sr-only">Search projects</span><input type="search" placeholder="Search projects, countries…" aria-label="Search projects and countries"></label>';

@@ -1,0 +1,50 @@
+# Run the company HQ finder on GitHub's servers (owner, 17 Nov 2026).
+# Started by hand. Checks out the given branch, runs tools/hq/second_pass.py and commits the updated
+# assets/globe/company-hq.json back to that same branch. It never touches main and never deploys.
+name: Company HQ finder
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: Branch with tools/hq/second_pass.py; results are committed here
+        required: true
+        default: claude/inspiring-albattani-bz2d8q
+permissions:
+  contents: write
+concurrency:
+  group: company-hq
+  cancel-in-progress: false
+jobs:
+  find:
+    if: github.event.inputs.branch != 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.branch }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Tests
+        run: python -m unittest tests.test_company_hq_second_pass
+      - name: Find HQs (Wikidata, paced)
+        run: python tools/hq/second_pass.py | tee hq-run.log
+      - name: Summary
+        if: always()
+        run: |
+          tail -n 1 hq-run.log >> "$GITHUB_STEP_SUMMARY" || true
+          grep -E "REVIEW|not found" hq-run.log | head -n 400 > hq-review.txt || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hq-run
+          path: |
+            hq-run.log
+            hq-review.txt
+      - name: Commit results to the branch
+        run: |
+          git add assets/globe/company-hq.json
+          git diff --cached --quiet && { echo 'No changes.'; exit 0; }
+          git -c user.name='Investedia HQ finder' -c user.email='robot@investedia.com' commit -q -m "Company HQ second pass results (Wikidata, CC0)"
+          git push -q origin HEAD:${{ github.event.inputs.branch }}

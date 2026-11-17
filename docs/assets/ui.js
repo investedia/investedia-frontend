@@ -179,9 +179,19 @@
   ];
   const tools = TOOL_GROUPS.flatMap(g => g[1]);
   const PRO_CTA = false;
-  const morePages = ['education','lesson','screener','calendar','calc','calculator','compare','converter','realestate','real-estate','about','contact'];
+  const morePages = ['education','lesson','screener','calendar','calc','calculator','compare','converter','realestate','real-estate','about','contact','briefings','briefing','movers','projects','track-record','sources','watchlist'];
   const themeChoices = () => `<div class="account-theme" role="group" aria-label="Theme"><span>Theme</span>${['light','dark','system'].map(t=>`<button type="button" role="menuitemradio" data-theme-choice="${t}" aria-checked="false">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}</div>`;
-  const ddMore = `<div class="dd dd-more" id="dd-more" role="menu" aria-label="More pages"><section><h6>Learn</h6><a role="menuitem" href="education.html">Education</a></section>${TOOL_GROUPS.map(([h, items])=>`<section><h6>${h}</h6>${items.map(([,t,,u])=>`<a role="menuitem" href="${u}">${t}</a>`).join('')}</section>`).join('')}<section><h6>Company</h6><a role="menuitem" href="about.html">About</a><a role="menuitem" href="contact.html">Contact</a></section><section class="guest-only more-display"><h6>Display</h6><button type="button" role="menuitem" data-open-settings>Settings</button></section></div>`;
+  // More menu (owner 15 Nov 2026, option A): grouped by task, icon + one-line description per link.
+  const MORE_GROUPS = [
+    ['Follow', [['star', 'My watchlist', 'Companies and countries you follow', 'watchlist.html'], ['bell', 'Alerts', 'Email when your names are in the news', '#alerts']]],
+    ['Explore', [['globe', 'Country briefings', 'One page per country', 'briefings.html'], ['trend', 'Biggest movers', 'What moved, and the article behind it', 'movers.html'], ['pin', 'Projects', 'Energy and data-centre builds · Pro', 'projects.html']]],
+    ['Tools', [['screener', 'Stock Screener', 'Filter stocks by numbers', 'screener.html'], ['heat', 'Heatmaps', 'Sectors at a glance', 'stocks.html#heatmap'], ['indices', 'Compare', 'Up to four side by side', 'compare.html'], ['calendar', 'Calendar', 'Economic releases and earnings', 'calendar.html'], ['currencies', 'Currency Converter', 'Major world currencies', 'converter.html'], ['calc', 'Calculators', 'What if I had invested, compound interest, returns, dividends', 'calculator.html']]],
+    ['Learn & trust', [['book', 'Education', 'Guides and lessons', 'education.html'], ['news', 'Sources', 'Where every article comes from', 'sources.html'], ['sparkle', 'Get the app', 'Install on your phone', 'about.html#app']]],
+  ];
+  const moreLink = ([ic, t, d, u]) => u === '#alerts'
+    ? `<button type="button" role="menuitem" class="mm-it" data-open-alerts><span class="mm-ic">${icon(ic)}</span><span><b>${t}</b><small>${d}</small></span></button>`
+    : `<a role="menuitem" class="mm-it" href="${u}"><span class="mm-ic">${icon(ic)}</span><span><b>${t}</b><small>${d}</small></span></a>`;
+  const ddMore = `<div class="dd dd-more mm" id="dd-more" role="menu" aria-label="More pages">${MORE_GROUPS.map(([h, items]) => `<section><h6>${h}</h6>${items.map(moreLink).join('')}</section>`).join('')}<div class="mm-foot"><a role="menuitem" href="about.html">About</a><a role="menuitem" href="contact.html">Contact</a><a role="menuitem" href="pricing.html">Pricing</a><button type="button" role="menuitem" class="guest-only" data-open-settings>Settings</button></div></div>`;
   const nav = [
     ['globe', 'Globe', 'assets/globe/news.html'],
     ['news', 'News', 'news.html', `<div class="dd dd-news" id="dd-news">${InvNewsMenu.html('nn-desktop')}</div>`],
@@ -288,7 +298,7 @@
   tb?.addEventListener('click',()=>switchTheme(document.documentElement.dataset.theme==='light'?'dark':'light',tb));
   document.addEventListener('click',e=>{const b=e.target.closest('[data-dd="dd-more"]');if(!b)return;const m=document.getElementById('dd-more');if(!m)return;requestAnimationFrame(()=>{const r=b.getBoundingClientRect(),w=m.offsetWidth;m.style.left=Math.max(12,Math.min(r.left-16,innerWidth-w-12))+'px';});});
   setTheme(th); window.setInvTheme = setTheme; window.switchInvTheme = switchTheme;
-  document.addEventListener('click',e=>{const choice=e.target.closest('[data-theme-choice]');if(choice)switchTheme(choice.dataset.themeChoice,choice);const settings=e.target.closest('[data-open-settings]');if(settings){closeAll();hdr.querySelector('#acct-dd').classList.remove('open');hdr.querySelector('#hdr-avatar').setAttribute('aria-expanded','false');if(drawer.classList.contains('open'))closeDrawer();window.InvPrefs?.openSettings(settings.closest('.drawer')?mt:settings.closest('#acct-dd')?hdr.querySelector('#hdr-avatar'):settings.classList.contains('hdr-settings')?settings:hdr.querySelector('[data-dd=dd-more]'));}});
+  document.addEventListener('click',e=>{const al=e.target.closest('[data-open-alerts]');if(al){e.preventDefault();document.querySelectorAll('.dd.open').forEach(d=>d.classList.remove('open'));document.querySelector('.drawer.open')&&document.querySelector('.menu-toggle')?.click();setTimeout(()=>document.getElementById('notif-btn')?.click(),60);return;}const choice=e.target.closest('[data-theme-choice]');if(choice)switchTheme(choice.dataset.themeChoice,choice);const settings=e.target.closest('[data-open-settings]');if(settings){closeAll();hdr.querySelector('#acct-dd').classList.remove('open');hdr.querySelector('#hdr-avatar').setAttribute('aria-expanded','false');if(drawer.classList.contains('open'))closeDrawer();window.InvPrefs?.openSettings(settings.closest('.drawer')?mt:settings.closest('#acct-dd')?hdr.querySelector('#hdr-avatar'):settings.classList.contains('hdr-settings')?settings:hdr.querySelector('[data-dd=dd-more]'));}});
 
   const onScrollHdr = () => hdr.classList.toggle('scrolled', scrollY > 8); addEventListener('scroll', onScrollHdr, { passive: true }); onScrollHdr();
   document.addEventListener('DOMContentLoaded', () => { const m = document.querySelector('main'); if (m) { m.id = m.id || 'main'; if (!('onpagereveal' in window)) m.classList.add('enter'); } });
@@ -321,6 +331,8 @@
   hdr.querySelectorAll('[data-dd]').forEach(btn => {
     const dd = document.getElementById(btn.dataset.dd), li = btn.parentElement;
     const open = v => { if (v) closeAll(btn); btn.setAttribute('aria-expanded', v); dd.classList.toggle('open', v); };
+    // Owner (15 Nov 2026): double-clicking a menu with its own page (News) goes there, like its "All" link.
+    btn.addEventListener('dblclick',e=>{const home={news:'news.html'}[btn.dataset.dd.slice(3)];if(home){e.preventDefault();location.href=home;}});
     btn.addEventListener('keydown',e=>{if(e.key==='ArrowDown'){e.preventDefault();open(true);dd.querySelector('a,button')?.focus();}});
     let openedByHover = false;
     btn.addEventListener('click', e => { const keepOpen = openedByHover && e.detail > 0; openedByHover = false; open(keepOpen || btn.getAttribute('aria-expanded') !== 'true'); });
@@ -339,8 +351,7 @@
   const drawer = document.createElement('div');
   drawer.className = 'drawer';
   drawer.innerHTML = `${page === 'home' ? '' : `<a class="search-btn" href="assets/globe/news.html">${icon('search')}<span>Search assets, countries &amp; articles</span></a>`}
-    <a href="assets/globe/news.html">Globe</a><details class="nn-drawer-news"><summary>News ${icon('chev')}</summary>${InvNewsMenu.html('nn-mobile')}</details><a href="markets.html">Markets</a><a href="pricing.html">Pricing</a><a href="education.html">Learn</a>
-    <details><summary>Tools ${icon('chev')}</summary>${tools.map(([, t, , h]) => `<a href="${h}">${t}</a>`).join('')}</details><a href="about.html">About</a>
+    <a href="assets/globe/news.html">Globe</a><details class="nn-drawer-news"><summary>News ${icon('chev')}</summary>${InvNewsMenu.html('nn-mobile')}</details><a href="markets.html">Markets</a><a href="pricing.html">Pricing</a>${MORE_GROUPS.map(([h, items], i) => `<details class="mm-dr"${i ? '' : ' open'}><summary>${h} ${icon('chev')}</summary>${items.map(moreLink).join('')}</details>`).join('')}<a href="about.html">About</a>
     <button class="drawer-settings" type="button" data-open-settings>Settings</button>
     <div class="drawer-cur"><span>Currency</span><span class="dc-host"></span></div>
     <div class="drawer-acct guest-only"><p>Save your watchlist and alerts on every device.</p><button class="btn btn-primary" type="button" data-auth="up">Create free account</button><button class="btn btn-ghost" type="button" data-auth="in">Log in</button></div>
@@ -476,7 +487,7 @@
     <div class="ftr2-top"><div class="ftr2-brand"><div class="ftr-brand">${brand}</div><p class="ftr2-desc">Market-moving news from around the world, on a live globe. See where it happens, which assets react, and what's being built.</p>
       <form class="ftr2-nl" novalidate><label for="ftr2-em">The daily brief, free by email</label><div><input id="ftr2-em" type="email" placeholder="you@email.com" autocomplete="email"><button type="submit" class="btn btn-primary">Subscribe</button></div></form>
       <span class="ftr-socials"><a class="icon-btn" href="https://www.linkedin.com/company/investedia/" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.1 2.1 2.1 0 0 1 0 4.1zM7.1 20.5H3.6V9h3.5v11.5z"/></svg></a><a class="icon-btn" href="https://x.com/investedia" aria-label="X" title="X"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M18.2 2H21l-6.5 7.4L22 22h-6.1l-4.8-6.3L5.6 22H2.8l7-8L2 2h6.2l4.3 5.7L18.2 2zm-1.1 18h1.7L7 3.9H5.2L17.1 20z"/></svg></a><a class="icon-btn" href="https://www.youtube.com/@investedia" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1z"/></svg></a><a class="icon-btn" href="https://www.instagram.com/investedia/" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a><a class="icon-btn" href="mailto:contact@investedia.com" aria-label="Email contact@investedia.com" title="contact@investedia.com"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a></span></div>
-    <nav class="ftr2-cols" aria-label="Footer"><div class="ftr2-col"><h6>Product</h6><ul><li><a href="assets/globe/news.html">Globe</a></li><li><a href="news.html">News</a></li><li><a href="markets.html">Markets</a></li><li><a href="projects.html">Projects</a></li><li><a href="briefings.html">Country briefings</a></li><li><a href="pricing.html">Pricing</a></li></ul></div><div class="ftr2-col"><h6>Tools</h6><ul><li><a href="screener.html">Screener</a></li><li><a href="markets.html#heatmap">Heatmaps</a></li><li><a href="calendar.html">Calendar</a></li><li><a href="compare.html">Compare</a></li><li><a href="calculator.html">Calculators</a></li></ul></div><div class="ftr2-col"><h6>Learn</h6><ul><li><a href="education.html">Education</a></li><li><a href="track-record.html">Track record</a></li><li><a href="sources.html">Sources</a></li></ul></div><div class="ftr2-col"><h6>Company</h6><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="about.html#app">Get the app</a></li></ul></div></nav></div>
+    <nav class="ftr2-cols" aria-label="Footer"><div class="ftr2-col"><h6>Product</h6><ul><li><a href="assets/globe/news.html">Globe</a></li><li><a href="news.html">News</a></li><li><a href="markets.html">Markets</a></li><li><a href="projects.html">Projects</a></li><li><a href="briefings.html">Country briefings</a></li><li><a href="pricing.html">Pricing</a></li></ul></div><div class="ftr2-col"><h6>Tools</h6><ul><li><a href="screener.html">Screener</a></li><li><a href="markets.html#heatmap">Heatmaps</a></li><li><a href="calendar.html">Calendar</a></li><li><a href="compare.html">Compare</a></li><li><a href="calculator.html">Calculators</a></li></ul></div><div class="ftr2-col"><h6>Learn</h6><ul><li><a href="education.html">Education</a></li><li><a href="sources.html">Sources</a></li></ul></div><div class="ftr2-col"><h6>Company</h6><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="about.html#app">Get the app</a></li></ul></div></nav></div>
     <div class="ftr2-bar"><span>© 2026 Investedia</span><nav class="ftr-legal" aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a><a href="disclaimer.html">Disclaimer</a><a href="accessibility.html">Accessibility</a><a href="legal.html">All legal</a></nav><span class="ftr2-note">Not investment advice · <a href="sources.html">All sources</a></span><span class="ftr-lang"></span><button type="button" class="ftr-top-btn" aria-label="Back to top">↑</button></div>
   </div>`;
   // Daily brief: opens the real sign-up with the email filled in and "Send me the daily brief" ticked (logged-in members go to their profile).
@@ -615,7 +626,7 @@
   // News section tabs: News · Analysis · AI brief
   function newsNav(k) {
     const el = document.getElementById('news-nav'); if (!el) return;
-    el.innerHTML = [['news', 'Latest news', 'news.html'], ['analysis', 'Analysis', 'analysis.html'], ['impl', 'Market implications', 'implications.html'], ['track', 'Track record', 'track-record.html']].map(([key, t, h]) => `<a href="${h}" ${key === k ? 'aria-current="page"' : ''}>${key === 'ai' ? icon('sparkle') : ''}${t}</a>`).join('');
+    el.innerHTML = [['news', 'Latest news', 'news.html'], ['analysis', 'Analysis', 'analysis.html']].map(([key, t, h]) => `<a href="${h}" ${key === k ? 'aria-current="page"' : ''}>${key === 'ai' ? icon('sparkle') : ''}${t}</a>`).join('');
     const cur = el.querySelector('[aria-current]'); if (cur && el.scrollWidth > el.clientWidth) el.scrollLeft = Math.max(0, cur.offsetLeft - (el.clientWidth - cur.offsetWidth) / 2);
   }
   // Treemap-style heatmap from [asset, colSpan, rowSpan]
@@ -707,25 +718,41 @@
   au.className = 'palette auth'; au.hidden = true;
   au.innerHTML = `<div class="palette-box auth-box" role="dialog" aria-modal="true" aria-labelledby="au-t">
     <button class="icon-btn pop-x" type="button" aria-label="Close">${icon('x')}</button>
-    <div class="auth-head"><span class="wm" translate="no" aria-label="Investedia">Invested<span class="i">i</span>a</span><h2 id="au-t">Create your account</h2><p class="muted" id="au-sub">Follow countries and companies, news alerts and the daily brief. Free.</p></div>
-    <button class="btn auth-google" type="button">${gIcon}<span>Continue with Google</span></button>
-    <div class="auth-or"><span>or with email</span></div>
+    <div class="auth-art"><span class="auth-art-brand">${brand}</span><div class="auth-art-up"><h3>See what moves markets — and where.</h3><p>Global investment intelligence on a live globe.</p></div><div class="auth-art-cf"><h3>Global markets,<br>in context.</h3><p>News, data and projects<br>on a single platform.</p></div></div>
+    <div class="auth-main">
+    <div class="auth-head"><span class="auth-brand">${brand}</span><h2 id="au-t">Sign in or<br>create an account</h2><p class="muted" id="au-sub">Enter your email and we'll send you a verification code to get started.</p></div>
     <form class="auth-f" novalidate>
-      <label class="auth-l" data-only="up"><span>Name</span><input class="input" name="name" autocomplete="name" placeholder="Your name"></label>
-      <label class="auth-l"><span>Email</span><input class="input" name="email" type="email" autocomplete="email" placeholder="you@email.com" required></label>
+      <label class="auth-l auth-em"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg><input class="input" name="email" type="email" autocomplete="email" placeholder="Enter your email" aria-label="Email" required></label>
+      <div class="auth-step2" hidden><label class="auth-l" data-only="up"><span>Name</span><input class="input" name="name" autocomplete="name" placeholder="Your name"></label>
       <label class="auth-l"><span>Password <a href="#" class="auth-forgot" data-only="in">Forgot?</a></span><span class="auth-pw"><input class="input" name="pw" type="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" required><button type="button" class="auth-eye" aria-label="Show password">Show</button></span></label>
-      <label class="auth-check" data-only="up"><input type="checkbox" name="news"><span>Send me the daily brief and market news. Unsubscribe anytime.</span></label>
+      <label class="auth-check" data-only="up"><input type="checkbox" name="news"><span>Send me the daily brief and market news. Unsubscribe anytime.</span></label></div>
       <p class="auth-msg" role="status" hidden></p>
-      <button class="btn btn-primary auth-go" type="submit">Create free account</button>
+      <button class="btn btn-primary auth-go" type="submit"><span>Send verification code</span><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
     </form>
-    <p class="auth-legal dim" data-only="up">By continuing you agree to our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+    <div class="auth-or"><span>or continue with</span></div>
+    <div class="auth-sso"><button class="btn auth-sso-b auth-li" type="button" data-prov="linkedin_oidc" hidden><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M7.1 9.6h-2.6V19h2.6V9.6zM5.8 8.4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM19.5 13.7c0-2.6-1.4-4.3-3.6-4.3-1.2 0-2.1.6-2.5 1.3V9.6h-2.5V19h2.6v-4.9c0-1.3.6-2.2 1.7-2.2s1.6.8 1.6 2.2V19h2.7v-5.3z"/></svg><span>Continue with LinkedIn</span></button>
+    <button class="btn auth-sso-b auth-google" type="button" data-prov="google">${gIcon}<span>Continue with Google</span></button>
+    <button class="btn auth-sso-b auth-ms" type="button" data-prov="azure" hidden><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="#F25022" d="M2 2h9.5v9.5H2z"/><path fill="#7FBA00" d="M12.5 2H22v9.5h-9.5z"/><path fill="#00A4EF" d="M2 12.5h9.5V22H2z"/><path fill="#FFB900" d="M12.5 12.5H22V22h-9.5z"/></svg><span>Continue with Microsoft</span></button></div>
+    <form class="auth-cf" novalidate hidden>
+      <h2 class="auth-cf-t">Check your email</h2><p class="muted auth-cf-s">We've sent a 6-digit verification code to <b class="auth-cf-em"></b></p>
+      <input type="hidden" name="code"><div class="auth-boxes" role="group" aria-label="Verification code"><input class="auth-box1" inputmode="numeric" maxlength="1" aria-label="Digit 1" autocomplete="one-time-code"><input class="auth-box1" inputmode="numeric" maxlength="1" aria-label="Digit 2"><input class="auth-box1" inputmode="numeric" maxlength="1" aria-label="Digit 3"><input class="auth-box1" inputmode="numeric" maxlength="1" aria-label="Digit 4"><input class="auth-box1" inputmode="numeric" maxlength="1" aria-label="Digit 5"><input class="auth-box1" inputmode="numeric" maxlength="1" aria-label="Digit 6"></div>
+      <p class="auth-msg auth-cf-msg" role="status" hidden></p>
+      <p class="auth-cf-re">Didn't get a code? <button type="button" class="auth-resend"></button></p>
+      <button class="btn btn-primary auth-go auth-cf-go" type="submit" disabled><span>Verify and continue</span><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <p class="auth-cf-alt"><button type="button" class="auth-back">Use a different email</button></p>
+    </form>
+    <button class="auth-pwlink" type="button">Use a password instead</button>
+    <p class="auth-legal dim">By continuing you agree to our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.</p>
     <p class="auth-switch"><span data-only="up">Have an account? <button type="button" data-m="in">Log in</button></span><span data-only="in">New here? <button type="button" data-m="up">Create an account</button></span></p>
     <button class="auth-guest" type="button">Continue as guest</button>
+    </div>
   </div>`;
   let auMode = 'up';
   const auSet = m => { auMode = m; au.querySelectorAll('[data-only]').forEach(e => e.hidden = e.dataset.only !== m);
-    au.querySelector('#au-t').textContent = m === 'up' ? 'Create your account' : 'Welcome back'; au.querySelector('#au-sub').textContent = m === 'up' ? 'Follow countries and companies, news alerts and the daily brief. Free.' : 'Log in to see your watchlist and alerts.'; au.querySelector('.auth-go').textContent = m === 'up' ? 'Create free account' : 'Log in';
+     auStep(false); if (typeof auCode === 'function' && auEm) auCode('');
     au.querySelector('[name=pw]').autocomplete = m === 'up' ? 'new-password' : 'current-password'; auMsg(''); };
+  // Email sends a sign-in link straight away; password is optional (owner 15 Nov 2026)
+  const auStep = on => { au.querySelector('.auth-step2').hidden = !on; au.querySelector('.auth-pwlink').hidden = on; au.querySelector('.auth-go span').textContent = !on ? 'Send verification code' : auMode === 'up' ? 'Create free account' : 'Log in'; if (on) setTimeout(() => au.querySelector(auMode === 'up' ? '[name=name]' : '[name=pw]').focus(), 30); };
   const auMsg = (t, ok) => { const e = au.querySelector('.auth-msg'); e.hidden = !t; e.textContent = t; e.classList.toggle('up', !!ok); e.classList.toggle('down', !ok); };
   const openAuth = (m = 'up') => { closePop(); auSet(m); if (au.hidden) modalOpen(au); au.hidden = false; store('inv-auth-seen', '1'); store('inv-pop', '1'); };
   const closeAuth = () => { if (au.hidden) return; au.hidden = true; modalClose(au); };
@@ -733,16 +760,43 @@
   au.onclick = e => { if (e.target === au) closeAuth(); };
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeAuth(); });
   au.querySelectorAll('.auth-switch button').forEach(b => b.onclick = () => auSet(b.dataset.m));
+  // Email code: send a 6-digit code, the person pastes it here (owner 16 Nov 2026)
+  let auEm = '', auWait = 0;
+  const cfMsg = (t, ok) => { const e = au.querySelector('.auth-cf-msg'); e.hidden = !t; e.textContent = t; e.classList.toggle('up', !!ok); e.classList.toggle('down', !ok); };
+  const auCode = em => { auEm = em; auWait = Date.now() + 60000; const on = !!em; au.querySelector('.auth-cf').hidden = !on; au.classList.toggle('is-code', on); ['.auth-sso', '.auth-or', '.auth-f', '.auth-head', '.auth-legal'].forEach(q => { const e = au.querySelector(q); if (e) e.hidden = on; });
+    clearInterval(auTick); if (!on) return; au.querySelector('.auth-cf-em').textContent = em; auBoxes.forEach(b => b.value = ''); auSync(); cfMsg(''); auTimer(); setTimeout(() => auBoxes[0].focus(), 30); };
+  const auBoxes = [...au.querySelectorAll('.auth-box1')]; let auTick;
+  const auSync = () => { const v = auBoxes.map(b => b.value).join(''); au.querySelector('[name=code]').value = v; au.querySelector('.auth-cf-go').disabled = v.length !== 6; auBoxes.forEach(b => b.classList.toggle('on', !!b.value)); return v; };
+  const auTimer = () => { const r = au.querySelector('.auth-resend'); const t = () => { const left = Math.ceil((auWait - Date.now()) / 1000); r.disabled = left > 0; r.textContent = left > 0 ? 'Resend in ' + left + 's' : 'Resend code'; if (left <= 0) clearInterval(auTick); }; clearInterval(auTick); t(); auTick = setInterval(t, 1000); };
+  const auFill = (from, txt) => { const d = txt.replace(/\D/g, '').slice(0, 6 - from); [...d].forEach((c, k) => auBoxes[from + k].value = c); const v = auSync(); auBoxes[Math.min(from + d.length, 5)].focus(); if (v.length === 6) au.querySelector('.auth-cf').requestSubmit(); };
+  auBoxes.forEach((b, k) => { b.oninput = () => { const t = b.value; b.value = ''; auFill(k, t); };
+    b.onkeydown = e => { if (e.key === 'Backspace' && !b.value && k) { auBoxes[k - 1].value = ''; auBoxes[k - 1].focus(); auSync(); e.preventDefault(); } else if (e.key === 'ArrowLeft' && k) auBoxes[k - 1].focus(); else if (e.key === 'ArrowRight' && k < 5) auBoxes[k + 1].focus(); };
+    b.onpaste = e => { e.preventDefault(); auFill(k, (e.clipboardData || window.clipboardData).getData('text')); }; });
+  au.querySelector('.auth-back').onclick = () => auCode('');
+  au.querySelector('.auth-resend').onclick = async () => { if (Date.now() < auWait) return;
+    try { const c = await sbLoad(); const { error } = await c.auth.signInWithOtp({ email: auEm, options: { emailRedirectTo: location.href.split('#')[0] } }); if (error) throw error; auWait = Date.now() + 60000; auTimer(); cfMsg('New code sent. Check your inbox.', true); } catch (err) { cfMsg(err.message); } };
+    au.querySelector('.auth-cf').onsubmit = async e => { e.preventDefault(); const tok = e.target.code.value.trim(); if (!/^\d{6}$/.test(tok)) return cfMsg('Enter the code from the email.');
+    const go = au.querySelector('.auth-cf-go'); go.disabled = true;
+    try { const c = await sbLoad(); const { data, error } = await c.auth.verifyOtp({ email: auEm, token: tok, type: 'email' }); if (error) throw error;
+      if (au.querySelector('[name=news]').checked && !(data.user.user_metadata || {}).newsletter) c.auth.updateUser({ data: { newsletter: true } });
+      track('code-verified'); auCode(''); closeAuth(); paintUser(data.user); }
+    catch (err) { const bad = /expired|invalid/i.test(err.message); cfMsg(bad ? 'That code is wrong or has expired. Check the email or resend.' : err.message); if (bad) { auBoxes.forEach(b => b.value = ''); auSync(); auBoxes[0].focus(); } } finally { go.disabled = auSync().length !== 6; } };
+  au.querySelector('.auth-pwlink').onclick = () => { auMsg(''); auStep(true); };
   au.querySelector('.auth-eye').onclick = e => { const i = au.querySelector('[name=pw]'), show = i.type === 'password'; i.type = show ? 'text' : 'password'; e.target.textContent = show ? 'Hide' : 'Show'; };
   const notYet = () => auMsg('Accounts are not connected in this local version. Continue as a guest.');
   let sbCfg; const sbSettings = () => sbCfg || (sbCfg = fetch(SB_URL + '/auth/v1/settings', { headers: { apikey: SB_KEY } }).then(r => r.json()).catch(() => ({})));
-  au.querySelector('.auth-google').onclick = async () => { if (!authOn) return notYet();
-    const st = await sbSettings(); if (!(st.external && st.external.google)) return auMsg('Google sign-in opens very soon. Use your email for now.'); store('inv-news-optin', au.querySelector('[name=news]').checked ? '1' : '0');
-    sbLoad().then(c => c.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: location.href.split('#')[0] } })).catch(() => auMsg('Could not reach Google. Try again.')); };
+  if (authOn) sbSettings().then(st => { const ex = st.external || {}; au.querySelector('.auth-li').hidden = !ex.linkedin_oidc; au.querySelector('.auth-ms').hidden = !ex.azure; });
+  au.querySelectorAll('[data-prov]').forEach(b => b.onclick = async () => { if (!authOn) return notYet(); const prov = b.dataset.prov, label = b.textContent.replace('Continue with ', '');
+    const st = await sbSettings(); if (!(st.external && st.external[prov])) return auMsg(label + ' sign-in opens very soon. Use your email for now.'); store('inv-news-optin', au.querySelector('[name=news]').checked ? '1' : '0');
+    sbLoad().then(c => c.auth.signInWithOAuth({ provider: prov, options: { redirectTo: location.href.split('#')[0], ...(prov === 'azure' ? { scopes: 'email' } : {}) } })).catch(() => auMsg('Could not reach ' + label + '. Try again.')); });
   au.querySelector('.auth-forgot').onclick = e => { e.preventDefault(); const em = au.querySelector('[name=email]').value.trim(); if (!em) return auMsg('Enter your email first.'); if (!authOn) return notYet();
     sbLoad().then(c => c.auth.resetPasswordForEmail(em, { redirectTo: location.origin + '/profile.html' })).then(() => auMsg('Check your inbox for a reset link.', true)); };
   au.querySelector('.auth-f').onsubmit = async e => { e.preventDefault(); const f = e.target, em = f.email.value.trim(), pw = f.pw.value;
-    if (!/^\S+@\S+\.\S+$/.test(em)) return auMsg('Enter a valid email.'); if (pw.length < 8) return auMsg('Password needs at least 8 characters.');
+    if (!/^\S+@\S+\.\S+$/.test(em)) return auMsg('Enter a valid email.'); if (au.querySelector('.auth-step2').hidden) { if (!authOn) return notYet(); const go = au.querySelector('.auth-go'); go.disabled = true;
+      try { const c = await sbLoad(); const { error } = await c.auth.signInWithOtp({ email: em, options: { emailRedirectTo: location.href.split('#')[0], data: { newsletter: f.news.checked } } }); if (error) throw error;
+        track(auMode === 'up' ? 'signup-code' : 'login-code'); auMsg(''); auCode(em); }
+      catch (err) { auMsg(/rate|seconds/i.test(err.message) ? 'A code was just sent. Wait a minute before asking again.' : err.message); } finally { go.disabled = false; } return; }
+    if (pw.length < 8) return auMsg('Password needs at least 8 characters.');
     if (!authOn) return notYet();
     const go = au.querySelector('.auth-go'); go.disabled = true;
     try { const c = await sbLoad();
@@ -800,7 +854,7 @@
     if (authOn && returning) sbLoad().then(c => { c.auth.onAuthStateChange((_, s) => paintUser(s && s.user)); return c.auth.getSession(); }).then(r => paintUser(r.data.session && r.data.session.user)).catch(() => {});
     const ss = (k, v) => { try { return v === undefined ? sessionStorage.getItem(k) : sessionStorage.setItem(k, v); } catch { return '1'; } };
     if (standaloneAuthSkip()) return;
-    if (!store('inv-auth-seen') && !returning && !document.documentElement.classList.contains('embed')) setTimeout(() => { if (pop.hidden) openAuth('up'); }, 4000);
+    if (!store('inv-auth-seen') && !returning && page !== 'news' && !document.documentElement.classList.contains('embed')) setTimeout(() => { if (pop.hidden) openAuth('up'); }, 4000);
     // members who come back logged out: a quiet "Welcome back" once per visit
     else if (store('inv-had-account') && !ss('inv-wb')) setTimeout(() => { ss('inv-wb', '1'); if (pop.hidden && au.hidden && hdr.querySelector('#hdr-login') && !hdr.querySelector('#hdr-login').hidden) openAuth('in'); }, 2500);
   });
