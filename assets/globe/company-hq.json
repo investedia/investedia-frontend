@@ -2,7 +2,7 @@
  "schema": "investedia.company-hq.v1",
  "licence": "CC0 1.0 (Wikidata)",
  "checked_at": "2026-11-11",
- "matched": 396,
+ "matched": 385,
  "asked": 613,
  "companies": {
   "NVDA": {
@@ -3767,20 +3767,6 @@
    "source_url": "https://www.wikidata.org/entity/Q738421",
    "checked_at": "2026-11-17"
   },
-  "ATCO-A.ST": {
-   "hq_city": "Nacka",
-   "hq_lat": 59.31,
-   "hq_lon": 18.1639,
-   "qid": "Q757164",
-   "hq_qid": "Q13383459",
-   "company_label": "Atlas Copco",
-   "country": "Sweden",
-   "precision": "site",
-   "method": "wikidata-name",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q757164",
-   "checked_at": "2026-11-17"
-  },
   "BAESY": {
    "hq_city": "Farnborough",
    "hq_lat": 51.29,
@@ -3865,34 +3851,6 @@
    "source_url": "https://www.wikidata.org/entity/Q854867",
    "checked_at": "2026-11-17"
   },
-  "BA": {
-   "hq_city": "Chicago",
-   "hq_lat": 41.8819,
-   "hq_lon": -87.6278,
-   "qid": "Q66",
-   "hq_qid": "Q1297",
-   "company_label": "Boeing",
-   "country": "United States",
-   "precision": "city",
-   "method": "wikidata-ticker",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q66",
-   "checked_at": "2026-11-17"
-  },
-  "BBDC4.SA": {
-   "hq_city": "",
-   "hq_lat": -23.5328,
-   "hq_lon": -46.7919,
-   "qid": "Q806181",
-   "hq_qid": "Q4035",
-   "company_label": "Bradesco",
-   "country": "Brazil",
-   "precision": "city",
-   "method": "wikidata-ticker",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q806181",
-   "checked_at": "2026-11-17"
-  },
   "CABK.MC": {
    "hq_city": "Valencia",
    "hq_lat": 39.47,
@@ -3933,20 +3891,6 @@
    "method": "wikidata-ticker",
    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
    "source_url": "https://www.wikidata.org/entity/Q176587",
-   "checked_at": "2026-11-17"
-  },
-  "KOFUBL.MX": {
-   "hq_city": "Mexico",
-   "hq_lat": 23.0,
-   "hq_lon": -102.0,
-   "qid": "Q20714863",
-   "hq_qid": "Q96",
-   "company_label": "Coca-Cola FEMSA",
-   "country": "Mexico",
-   "precision": "city",
-   "method": "wikidata-name",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q20714863",
    "checked_at": "2026-11-17"
   },
   "COMI": {
@@ -4019,20 +3963,6 @@
    "source_url": "https://www.wikidata.org/entity/Q1157624",
    "checked_at": "2026-11-17"
   },
-  "DBS": {
-   "hq_city": "Singapore",
-   "hq_lat": 1.3,
-   "hq_lon": 103.8,
-   "qid": "Q705417",
-   "hq_qid": "Q334",
-   "company_label": "DBS Bank",
-   "country": "Singapore",
-   "precision": "city",
-   "method": "wikidata-name",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q705417",
-   "checked_at": "2026-11-17"
-  },
   "ELE.MC": {
    "hq_city": "Madrid",
    "hq_lat": 40.4169,
@@ -4059,48 +3989,6 @@
    "method": "wikidata-name",
    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
    "source_url": "https://www.wikidata.org/entity/Q918206",
-   "checked_at": "2026-11-17"
-  },
-  "ENPH": {
-   "hq_city": "Petaluma",
-   "hq_lat": 38.2458,
-   "hq_lon": -122.6314,
-   "qid": "Q17012234",
-   "hq_qid": "Q720087",
-   "company_label": "Enphase Energy",
-   "country": "United States",
-   "precision": "city",
-   "method": "wikidata-ticker",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q17012234",
-   "checked_at": "2026-11-17"
-  },
-  "FORTUM.HE": {
-   "hq_city": "Finago Tower",
-   "hq_lat": 60.1749,
-   "hq_lon": 24.8308,
-   "qid": "Q1439075",
-   "hq_qid": "Q3485890",
-   "company_label": "Fortum",
-   "country": "Finland",
-   "precision": "site",
-   "method": "wikidata-name",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q1439075",
-   "checked_at": "2026-11-17"
-  },
-  "0027.HK": {
-   "hq_city": "Hong Kong",
-   "hq_lat": 22.2783,
-   "hq_lon": 114.1586,
-   "qid": "Q4039216",
-   "hq_qid": "Q8646",
-   "company_label": "Galaxy Entertainment Group",
-   "country": "Hong Kong",
-   "precision": "city",
-   "method": "wikidata-ticker",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q4039216",
    "checked_at": "2026-11-17"
   },
   "GARAN.IS": {
@@ -4199,20 +4087,6 @@
    "method": "wikidata-ticker",
    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
    "source_url": "https://www.wikidata.org/entity/Q9584",
-   "checked_at": "2026-11-17"
-  },
-  "HSBA": {
-   "hq_city": "8 Canada Square",
-   "hq_lat": 51.5053,
-   "hq_lon": -0.0174,
-   "qid": "Q190464",
-   "hq_qid": "Q572887",
-   "company_label": "HSBC",
-   "country": "United Kingdom",
-   "precision": "site",
-   "method": "wikidata-ticker",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q190464",
    "checked_at": "2026-11-17"
   },
   "HYMTF": {
@@ -4339,20 +4213,6 @@
    "method": "wikidata-name",
    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
    "source_url": "https://www.wikidata.org/entity/Q6819305",
-   "checked_at": "2026-11-17"
-  },
-  "MUFG": {
-   "hq_city": "",
-   "hq_lat": 35.6787,
-   "hq_lon": 139.7642,
-   "qid": "Q1542175",
-   "hq_qid": "Q11357163",
-   "company_label": "Mitsubishi UFJ Financial Group",
-   "country": "Japan",
-   "precision": "site",
-   "method": "wikidata-name",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q1542175",
    "checked_at": "2026-11-17"
   },
   "MONET.PR": {
@@ -4495,20 +4355,6 @@
    "source_url": "https://www.wikidata.org/entity/Q40993",
    "checked_at": "2026-11-17"
   },
-  "PRU": {
-   "hq_city": "Prudential Headquarters",
-   "hq_lat": 40.7335,
-   "hq_lon": -74.1711,
-   "qid": "Q2114414",
-   "hq_qid": "Q7252985",
-   "company_label": "Prudential Financial",
-   "country": "United States",
-   "precision": "site",
-   "method": "wikidata-ticker",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q2114414",
-   "checked_at": "2026-11-17"
-  },
   "RELI": {
    "hq_city": "Mumbai",
    "hq_lat": 19.0758,
@@ -4521,20 +4367,6 @@
    "method": "wikidata-name",
    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
    "source_url": "https://www.wikidata.org/entity/Q908931",
-   "checked_at": "2026-11-17"
-  },
-  "RIVN": {
-   "hq_city": "Detroit",
-   "hq_lat": 42.3317,
-   "hq_lon": -83.0475,
-   "qid": "Q7338847",
-   "hq_qid": "Q12439",
-   "company_label": "Rivian Automotive",
-   "country": "United States",
-   "precision": "city",
-   "method": "wikidata-ticker",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q7338847",
    "checked_at": "2026-11-17"
   },
   "SABIC": {
@@ -4607,20 +4439,6 @@
    "source_url": "https://www.wikidata.org/entity/Q1030695",
    "checked_at": "2026-11-17"
   },
-  "SWED-A.ST": {
-   "hq_city": "Sundbyberg railway station",
-   "hq_lat": 59.3607,
-   "hq_lon": 17.9721,
-   "qid": "Q1145493",
-   "hq_qid": "Q31891014",
-   "company_label": "Swedbank",
-   "country": "Sweden",
-   "precision": "site",
-   "method": "wikidata-name",
-   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-   "source_url": "https://www.wikidata.org/entity/Q1145493",
-   "checked_at": "2026-11-17"
-  },
   "THLLY": {
    "hq_city": "Meudon",
    "hq_lat": 48.8075,
@@ -4675,6 +4493,34 @@
    "method": "wikidata-name",
    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
    "source_url": "https://www.wikidata.org/entity/Q1636958",
+   "checked_at": "2026-11-17"
+  },
+  "DBS": {
+   "hq_city": "Singapore",
+   "hq_lat": 1.3,
+   "hq_lon": 103.8,
+   "qid": "Q705417",
+   "hq_qid": "Q334",
+   "company_label": "DBS Bank",
+   "country": "Singapore",
+   "precision": "city",
+   "method": "wikidata-name",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q705417",
+   "checked_at": "2026-11-17"
+  },
+  "0027.HK": {
+   "hq_city": "Hong Kong",
+   "hq_lat": 22.2783,
+   "hq_lon": 114.1586,
+   "qid": "Q4039216",
+   "hq_qid": "Q8646",
+   "company_label": "Galaxy Entertainment Group",
+   "country": "Hong Kong",
+   "precision": "city",
+   "method": "wikidata-ticker",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4039216",
    "checked_at": "2026-11-17"
   }
  },
@@ -6105,6 +5951,42 @@
    "why": [
     "multiple Wikidata companies match"
    ]
+  },
+  {
+   "s": "ATCO-A.ST",
+   "why": [
+    "Source HQ label is a site/address; city name has not been resolved"
+   ]
+  },
+  {
+   "s": "BBDC4.SA",
+   "why": [
+    "Source HQ has no city name"
+   ]
+  },
+  {
+   "s": "KOFUBL.MX",
+   "why": [
+    "Source HQ is a country, not a city"
+   ]
+  },
+  {
+   "s": "FORTUM.HE",
+   "why": [
+    "Source HQ label is a site/address; city name has not been resolved"
+   ]
+  },
+  {
+   "s": "MUFG",
+   "why": [
+    "Source HQ has no city name"
+   ]
+  },
+  {
+   "s": "SWED-A.ST",
+   "why": [
+    "Source HQ label is a site/address; city name has not been resolved"
+   ]
   }
  ],
  "city_labels_resolved": [
@@ -6120,6 +6002,6 @@
  "second_pass": {
   "checked_at": "2026-11-17",
   "method": "tools/hq/second_pass.py",
-  "added": 72
+  "added": 61
  }
 }

@@ -53,4 +53,13 @@ class SecondPass(unittest.TestCase):
     def test_unrelated_short_label_without_ticker_match_is_rejected(self):
         self.assertEqual(P.decide(CO, [row(label='XYZ')], 'wikidata-name'), (None, None))
 
+    def test_quality_holds_back_sites_blanks_countries_and_known_stale(self):
+        ok = {'hq_city': 'Copenhagen', 'precision': 'city', 'country': 'Denmark'}
+        self.assertIsNone(P.quality('MAERSK-B.CO', ok))
+        self.assertIn('site', P.quality('X', dict(ok, precision='site')))
+        self.assertIn('no city', P.quality('X', dict(ok, hq_city='')))
+        self.assertIn('country', P.quality('X', dict(ok, hq_city='Mexico', country='Mexico')))
+        self.assertIn('Arlington', P.quality('BA', ok))
+        self.assertIsNone(P.quality('D05.SI', dict(ok, hq_city='Singapore', country='Singapore')))
+
 if __name__ == '__main__': unittest.main()

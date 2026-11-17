@@ -209,6 +209,23 @@ def search_all(companies):
     return found
 
 
+STALE = {'BA': 'Boeing moved its HQ to Arlington, Virginia in 2022; Wikidata may still say Chicago',
+         'RIVN': 'Rivian HQ location needs a current filing check (Wikidata may be out of date)'}
+COUNTRIES_AS_CITY = {'mexico'}
+CITY_STATES = {'singapore', 'hong kong', 'macau', 'monaco'}  # here the city and country names are the same  # a country name is not a city
+
+
+def quality(sym, row):
+    """Reasons to hold a found row back for review (same standard as build_company_hq.py)."""
+    city = (row.get('hq_city') or '').strip()
+    if sym in STALE: return STALE[sym]
+    if not city: return 'Source HQ has no city name'
+    if row.get('precision') == 'site': return 'Source HQ label is a site/address; city name has not been resolved'
+    if city.casefold() not in CITY_STATES and (city.casefold() in COUNTRIES_AS_CITY or city.casefold() == (row.get('country') or '').casefold()):
+        return 'Source HQ is a country, not a city'
+    return None
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(); ap.add_argument('--check', action='store_true'); ap.add_argument('--limit', type=int)
     a = ap.parse_args(argv)
@@ -231,6 +248,9 @@ def main(argv=None):
         results[c['slug']] = res
     for i, c in enumerate(todo, 1):
         row, why = results[c['slug']]; sym = c['listings'][0]['s']
+        held = row and next((q for l in c['listings'] for q in [quality(l['s'], row)] if q), None)
+        if held: row, why = None, held
+        if row and any(r['s'] in {l['s'] for l in c['listings']} for r in hq['review_required']): row, why = None, None  # already held for review
         if row:
             for l in c['listings']: added[l['s']] = row
         elif why: review.append({'s': sym, 'why': [why]})
