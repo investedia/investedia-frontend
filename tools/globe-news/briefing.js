@@ -142,6 +142,7 @@
  const done=()=>store('inv-briefed')===day&&day;
  const btn=document.createElement('button');btn.type='button';btn.className='bf-btn';btn.setAttribute('aria-label','Briefing');document.body.append(btn);
  const card=document.createElement('div');card.className='bf-card';card.hidden=true;card.setAttribute('role','dialog');card.setAttribute('aria-label','Briefing');document.body.append(card);
+ if('ResizeObserver' in window)new ResizeObserver(()=>{if(T)place();}).observe(card); // keep moves/article above the player as it changes size
  // owner 17 Nov 2026: Briefing only in News and Markets, never in Projects
  setInterval(()=>{const pj=typeof PROJ!=='undefined'&&PROJ.on;btn.hidden=pj;if(pj&&!card.hidden){card.hidden=true;stop();}},400);
  function paintBtn(){const el=REC?Math.round(AU.currentTime*14):CH.slice(0,cur).reduce((s,c)=>s+c.t.length,0);
@@ -196,7 +197,7 @@
   card.classList.toggle('m',mPhone());
   if(tr)card.querySelector('.bf-b.on')?.scrollIntoView({block:'nearest'});}
  function speak(i){
-  if(REC){if(i>=CH.length){AU.pause();playing=false;store('inv-briefed',day);paintBtn();paintCard();return;}cur=i;playing=true;const go=()=>{AU.currentTime=CH[i].s||0;AU.play().catch(()=>{playing=false;paintBtn();paintCard();});};
+  if(REC){if(i>=CH.length){AU.pause();playing=false;store('inv-briefed',day);paintBtn();paintCard();return;}cur=i;playing=true;const go=()=>{const seek=()=>{AU.currentTime=CH[i].s||0;AU.play().catch(()=>{playing=false;paintBtn();paintCard();});};if(AU.readyState>=1)seek();else{AU.addEventListener('loadedmetadata',seek,{once:true});AU.preload='auto';AU.load();}};// a seek before metadata loads is ignored by browsers
    const nm=firstName();if(i===0&&nm&&!greeted&&API()){greeted=true;const tod=new Date().getHours()<12?'morning':new Date().getHours()<18?'afternoon':'evening';GR.src=`${API()}/v1/briefing/greeting?name=${encodeURIComponent(nm)}&tod=${tod}`;GR.onended=go;GR.onerror=go;GR.play().catch(go);}else go();
    tour(CH[i]);paintBtn();paintCard();return;}
   synth.cancel();if(i>=CH.length){playing=false;store('inv-briefed',day);paintBtn();paintCard();return;}
