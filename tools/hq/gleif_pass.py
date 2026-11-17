@@ -27,6 +27,8 @@ FORMS = {'inc', 'incorporated', 'corp', 'corporation', 'co', 'company', 'ltd', '
          'sa/nv', 'qpsc', 'qsc', 'sgps', 'sab', 'saa', 'saic', 'llc', 'lp', 'gmbh', 'kgaa', 'as', 'a/s', 'nyrt', 'rt', 'jsc', 'pjsc', 'ojsc', 'saa', 'sac', 'srl', 'bv', 'acciones', 'class', 'shares'}
 TRANSLIT = str.maketrans({'æ': 'ae', 'ø': 'o', 'œ': 'oe', 'ß': 'ss', 'ð': 'd', 'þ': 'th', 'ł': 'l', 'đ': 'd', 'ı': 'i', '&': ' and '})
 CC_ALIAS = {'uk': 'GB'}
+# Districts that GeoNames (cities over 15,000 people) does not list on their own, mapped to the city they are part of.
+DISTRICTS = {'NG': {d: 'Lagos' for d in ('ikoyi', 'victoria island', 'ogba', 'apapa', 'marina', 'oregun', 'ilupeju', 'isolo', 'yaba', 'ebute metta', 'surulere', 'lagos island', 'iganmu', 'agidingbi', 'oshodi', 'maryland', 'gbagada', 'ilasamaja', 'amuwo odofin', 'ojota', 'anthony')}}
 # Hand check 17 Nov 2026: GLEIF's address disagrees with the company's own reporting; a person must decide.
 DOUBT = {'CPI': 'GLEIF says Cape Town; Capitec reports its head office in Stellenbosch',
          '3711.TW': 'GLEIF says Taipei; ASE reports its head office in Kaohsiung'}
@@ -93,6 +95,15 @@ def place(city_text, cc, idx):
     return best[1] if best else None
 
 
+def by_isin(c):
+    """Exact identity: the LEI linked to the listing's ISIN (GLEIF ISIN-LEI mapping). None if no listing has an ISIN."""
+    isins = [l['isin'] for l in c['listings'] if l.get('isin')]
+    if not isins: return None
+    recs = []
+    for i in isins: recs += get_json('https://api.gleif.org/api/v1/lei-records?' + urllib.parse.urlencode({'filter[isin]': i})).get('data', [])
+    return recs
+
+
 def candidates(c):
     cc = CC_ALIAS.get(c['cc'].lower(), c['cc'].upper())
     q = ' '.join(words(c.get('legal_name') or c['name'])) or c['name']
@@ -108,6 +119,10 @@ def names_of(rec):
 
 
 def decide(c, cc, recs, idx):
+    if c.get('_isin_recs') is not None:  # matched by ISIN: the identity is exact, no name matching needed
+        recs = c['_isin_recs']
+        if len({r['id'] for r in recs}) != 1: return None, ('several LEIs for this ISIN' if recs else None)
+        return located(c, cc, recs[0], idx, 'gleif-isin')
     want = set(words(c['name'])) or set(words(c.get('legal_name')))
     want2 = set(words(c.get('legal_name'))) or want
     pick = []  # the name must match exactly once legal-form words (Ltd, AB, Inc...) are ignored; ordinary companies only
@@ -116,17 +131,24 @@ def decide(c, cc, recs, idx):
         if e.get('category') not in (None, 'GENERAL'): continue  # no funds, branches or sole traders
         if any(set(words(n)) in (want, want2) for n in names_of(r)): pick.append(r)
     if len({r['id'] for r in pick}) != 1: return None, ('several GLEIF entities have exactly this name' if len(pick) > 1 else None)
-    r = pick[0]; a = r['attributes']; e = a['entity']; hq = e['headquartersAddress']
-    if a['registration']['status'] != 'ISSUED': return None, f"GLEIF registration is {a['registration']['status'].lower()}"
+    return located(c, cc, pick[0], idx, 'gleif')
+
+
+def located(c, cc, r, idx, method):
+    a = r['attributes']; e = a['entity']; hq = e['headquartersAddress']
+    status, updated = a['registration']['status'], (a['registration'].get('lastUpdateDate') or '')[:10]
+    recent = updated >= (datetime.date.today() - datetime.timedelta(days=3 * 365)).isoformat()
+    if status not in ('ISSUED', 'LAPSED') or (status == 'LAPSED' and not recent):  # lapsed = renewal fee unpaid; a recent address is still usable
+        return None, f"GLEIF registration is {status.lower()}" + (f', last updated {updated}' if updated else '')
     if hq['country'] != cc: return None, f"GLEIF headquarters is in {hq['country']}, directory says {c['country']}"
     if (hq.get('city') or '').strip().casefold() in AGENT_CITIES.get(cc, ()):
         return None, f"GLEIF headquarters is the registration address in {hq.get('city')}, not necessarily the operating HQ"
-    p = place(hq.get('city'), cc, idx)  # the city field only: a region or street line is not precise enough
+    p = place(DISTRICTS.get(cc, {}).get(fold(hq.get('city') or '').strip(), hq.get('city')), cc, idx)  # the city field only: a region or street line is not precise enough
     if not p: return None, f"GLEIF city '{hq.get('city')}' not found in GeoNames"
     lat, lon, pop, city = p
     return {'hq_city': city, 'hq_lat': round(lat, 4), 'hq_lon': round(lon, 4), 'lei': r['id'], 'company_label': e['legalName']['name'],
-            'country': c['country'], 'precision': 'city', 'method': 'gleif',
-            'source': 'GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)',
+            'country': c['country'], 'precision': 'city', 'method': method,
+            'source': 'GLEIF LEI record (CC0) headquarters address' + (f'; record lapsed, last updated {updated}' if status == 'LAPSED' else '') + '; city coordinates GeoNames (CC BY 4.0)',
             'source_url': f"https://search.gleif.org/#/record/{r['id']}", 'checked_at': TODAY}, None
 
 
@@ -140,7 +162,9 @@ def main(argv=None):
     idx = geonames()
     added, review, suggest, missing = {}, [], {}, []
     for i, c in enumerate(todo, 1):
-        cc, recs = candidates(c)
+        isin_recs = by_isin(c)
+        c['_isin_recs'] = isin_recs
+        cc, recs = (CC_ALIAS.get(c['cc'].lower(), c['cc'].upper()), []) if isin_recs is not None else candidates(c)
         row, why = decide(c, cc, recs, idx)
         syms = [l['s'] for l in c['listings']]; sym = syms[0]
         doubt = next((DOUBT[s] for s in syms if s in DOUBT), None)

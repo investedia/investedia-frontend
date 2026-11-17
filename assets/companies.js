@@ -3,7 +3,11 @@
 window.InvCompany = (() => {
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   let data = null, bySym = {};
-  const load = () => data ? Promise.resolve(data) : fetch('data/companies.json').then(r => r.json()).then(d => {
+  const load = () => data ? Promise.resolve(data) : Promise.all([fetch('data/companies.json').then(r => r.json()),
+    fetch('assets/globe/company-hq.json').then(r => r.ok ? r.json() : null).catch(() => null)]).then(([d, hq]) => {
+    // Head office: the sourced HQ file (Wikidata / GLEIF) fills companies whose directory entry has none.
+    const H = hq?.companies || {};
+    for (const c of d.companies) { if (!c.hq) { const h = c.listings.map(l => H[l.s]).find(Boolean); if (h) c.hq = h.hq_city + (c.country ? ', ' + c.country : ''); } }
     data = d; for (const c of d.companies) for (const l of c.listings) bySym[l.s.toUpperCase()] = c; return d; });
   const href = c => `companies/${c.slug}`;
   const flag = cc => cc ? `<img class="co-flag" src="assets/globe/flags/${esc(cc)}.svg" alt="" width="18" height="13" loading="lazy">` : '';

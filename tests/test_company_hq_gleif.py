@@ -2,9 +2,9 @@ import pathlib, sys, unittest
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1] / 'tools' / 'hq'))
 import gleif_pass as G
 
-def rec(lei, name, city='Lisbon', country='PT', status='ISSUED', category='GENERAL'):
+def rec(lei, name, city='Lisbon', country='PT', status='ISSUED', category='GENERAL', updated='2026-01-01'):
     a = {'city': city, 'country': country, 'addressLines': ['x']}
-    return {'id': lei, 'attributes': {'registration': {'status': status}, 'entity': {'legalName': {'name': name}, 'category': category,
+    return {'id': lei, 'attributes': {'registration': {'status': status, 'lastUpdateDate': updated}, 'entity': {'legalName': {'name': name}, 'category': category,
             'headquartersAddress': a, 'legalAddress': dict(a)}}}
 
 IDX = {'PT': {'lisbon': [(38.72, -9.14, 500000, 'Lisbon')]}, 'US': {'wilmington': [(39.7, -75.5, 70000, 'Wilmington')]},
@@ -29,8 +29,10 @@ class Gleif(unittest.TestCase):
 
     def test_funds_branches_and_lapsed_are_not_used(self):
         self.assertEqual(G.decide(EDP, 'PT', [rec('L1', 'EDP', category='FUND')], IDX), (None, None))
-        row, why = G.decide(EDP, 'PT', [rec('L1', 'EDP', status='LAPSED')], IDX)
-        self.assertIsNone(row); self.assertIn('lapsed', why)
+        row, why = G.decide(EDP, 'PT', [rec('L1', 'EDP', status='LAPSED', updated='2015-01-01')], IDX)
+        self.assertIsNone(row); self.assertIn('lapsed', why)  # an old lapsed record is not trusted
+        row, _ = G.decide(EDP, 'PT', [rec('L1', 'EDP', status='LAPSED')], IDX)
+        self.assertIn('lapsed, last updated 2026-01-01', row['source'])  # a recent one is used, and says so
 
     def test_registration_agent_city_goes_to_review(self):
         wmt = {'name': 'Walmart', 'legal_name': 'Walmart', 'cc': 'us', 'country': 'United States'}

@@ -2529,7 +2529,7 @@ function renderAct(){
  const L=$('lcol')?.getBoundingClientRect(),P=panel.getBoundingClientRect();el.style.left=((L?.right||24)+24)+'px';el.style.right=(innerWidth-P.left+24)+'px';
  const tm=t=>{const d=new Date(t),hm=d.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});return Math.abs(Date.now()-d)<864e5&&d.getDate()===new Date().getDate()?hm:d.toLocaleDateString([], {day:'numeric',month:'short'})+' '+hm;},badge=$('badge')?.textContent||'';
  let cards='',right='';
- if(actTab==='co'){cards=window.InvCompanies?InvCompanies.panelHTML():'';right='<span>Head offices sourced from Wikidata</span>';}
+ if(actTab==='co'){cards=window.InvCompanies?InvCompanies.panelHTML():'';right='<span>Head offices from Wikidata and GLEIF</span>';}
  else if(actTab==='pf'){cards='';right=wlHold().length&&wlView==='home'?`<span class="pf-bs" style="display:flex;gap:6px">${wlBtns}</span>`:'';}
  else if(actTab==='la'){
   const G=actLatest();right=`<span><i></i>${esc(badge.replace(/^News /,'')||'Updated')}</span><a href="../../news.html">View all →</a>`;

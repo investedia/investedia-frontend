@@ -42,8 +42,9 @@
     const H = hq?.companies || {}, B = badges || {}, seen = new Set();
     for (const c of dir?.companies || []) {
       const l = c.listings.find(x => H[x.s]); if (!l) continue;
-      const h = H[l.s]; if (seen.has(h.qid)) continue; seen.add(h.qid);  // one entry per company (duplicate directory rows share a Wikidata item)
-      S.list.push({ slug: c.slug, name: c.name, short: h.company_label || c.name, country: c.country, region: c.region, sym: l.s, ex: l.exchange,
+      const h = H[l.s], id = h.qid || h.lei || c.slug; if (seen.has(id)) continue; seen.add(id);  // one entry per company (duplicate directory rows share a Wikidata item or LEI)
+      // short name: Wikidata's label, or ours for GLEIF rows (their names are legal names in capitals)
+      S.list.push({ slug: c.slug, name: c.name, short: h.qid ? (h.company_label || c.name) : c.name, country: c.country, region: c.region, sym: l.s, ex: l.exchange, tracked: l.tracked !== false,
         syms: c.listings.map(x => x.s), hq: h, badge: B[c.slug] || null });
     }
     S.list.sort((a, b) => a.name.localeCompare(b.name));
@@ -80,9 +81,9 @@
     if (S.sel) {
       const c = S.sel;
       return `<div class="co-wrap"><button type="button" class="co-back" data-co-back>‹ ${S.country ? esc(S.country) + ' · ' : ''}${filtered().length} companies</button>
-        <div class="co-card">${badgeHTML(c)}<div><h3>${esc(c.name)}</h3><div class="co-kv"><div><small>Headquarters</small><b>${esc(c.hq.hq_city)}, ${esc(c.country)}</b></div><div><small>Listed on</small><b>${esc(c.ex || '')} · ${esc(c.sym)}</b></div><div><small>Region</small><b>${esc(c.region || '')}</b></div></div>
-        <p class="co-note">HQ source: <a href="${esc(c.hq.source_url)}" target="_blank" rel="noopener" style="color:inherit">Wikidata (CC0)</a>, checked ${esc(c.hq.checked_at)}.</p></div>
-        <div class="co-act"><a class="co-btn p" href="${esc(ROOT)}asset.html?s=${encodeURIComponent(c.sym)}" target="_top">Company page</a><a class="co-btn" href="${esc(ROOT)}news.html?q=${encodeURIComponent(c.short)}" target="_top">Articles about ${esc(c.short)}</a></div></div></div>`;
+        <div class="co-card">${badgeHTML(c)}<div><h3>${esc(c.name)}</h3><div class="co-kv"><div><small>Headquarters</small><b>${esc(c.hq.hq_city)}, ${esc(c.country)}</b></div><div><small>Listed on</small><b>${esc(c.ex || '')} · ${esc(c.sym.replace(/^[A-Z]+:/, ''))}</b></div><div><small>Region</small><b>${esc(c.region || '')}</b></div></div>
+        <p class="co-note">HQ source: <a href="${esc(c.hq.source_url)}" target="_blank" rel="noopener" style="color:inherit">${/gleif/.test(c.hq.method || '') ? 'GLEIF LEI register (CC0)' : 'Wikidata (CC0)'}</a>, checked ${esc(c.hq.checked_at)}.</p></div>
+        <div class="co-act"><a class="co-btn p" href="${esc(ROOT)}${c.tracked ? 'asset.html?s=' + encodeURIComponent(c.sym) : 'companies/' + encodeURIComponent(c.slug)}" target="_top">Company page</a><a class="co-btn" href="${esc(ROOT)}news.html?q=${encodeURIComponent(c.short)}" target="_top">Articles about ${esc(c.short)}</a></div></div></div>`;
     }
     const L = filtered();
     return `<div class="co-wrap"><div class="co-tools"><input class="co-s" type="search" placeholder="Search ${S.list.length} companies" value="${esc(S.q)}" data-co-q aria-label="Search companies">

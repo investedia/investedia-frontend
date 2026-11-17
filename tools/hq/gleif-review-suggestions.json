@@ -168,6 +168,19 @@
   "source_url": "https://search.gleif.org/#/record/J48DJYXDTLHM30UMYI18",
   "checked_at": "2026-11-17"
  },
+ "600276.SS": {
+  "hq_city": "Lianyungang",
+  "hq_lat": 34.5984,
+  "hq_lon": 119.2156,
+  "lei": "2549003BT1XS3SE3E448",
+  "company_label": "Jiangsu Hengrui Pharmaceuticals Co., Ltd.",
+  "country": "China",
+  "precision": "city",
+  "method": "gleif",
+  "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2026-05-13; city coordinates GeoNames (CC BY 4.0)",
+  "source_url": "https://search.gleif.org/#/record/2549003BT1XS3SE3E448",
+  "checked_at": "2026-11-17"
+ },
  "035720.KS": {
   "hq_city": "Jeju City",
   "hq_lat": 33.5097,
@@ -259,6 +272,19 @@
   "source_url": "https://search.gleif.org/#/record/5299007OWYZ6I1E46843",
   "checked_at": "2026-11-17"
  },
+ "601857.SS": {
+  "hq_city": "Beijing",
+  "hq_lat": 39.9075,
+  "hq_lon": 116.3972,
+  "lei": "529900RPY4YG47TRSV05",
+  "company_label": "PetroChina Company Limited",
+  "country": "China",
+  "precision": "city",
+  "method": "gleif",
+  "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2024-10-22; city coordinates GeoNames (CC BY 4.0)",
+  "source_url": "https://search.gleif.org/#/record/529900RPY4YG47TRSV05",
+  "checked_at": "2026-11-17"
+ },
  "PRU.L": {
   "hq_city": "London",
   "hq_lat": 51.5085,
@@ -337,6 +363,19 @@
   "source_url": "https://search.gleif.org/#/record/9884007ER46L6N7EI764",
   "checked_at": "2026-11-17"
  },
+ "SCB.BK": {
+  "hq_city": "Bangkok",
+  "hq_lat": 13.754,
+  "hq_lon": 100.5014,
+  "lei": "254900TG41KIWX7VDO42",
+  "company_label": "บริษัท เอสซีบี เอ็กซ์ จำกัด (มหาชน)",
+  "country": "Thailand",
+  "precision": "city",
+  "method": "gleif",
+  "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2024-09-16; city coordinates GeoNames (CC BY 4.0)",
+  "source_url": "https://search.gleif.org/#/record/254900TG41KIWX7VDO42",
+  "checked_at": "2026-11-17"
+ },
  "SU.PA": {
   "hq_city": "Paris",
   "hq_lat": 48.8534,
@@ -413,6 +452,19 @@
   "method": "gleif",
   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
   "source_url": "https://search.gleif.org/#/record/213800FSR9RNDUOTXO25",
+  "checked_at": "2026-11-17"
+ },
+ "TXAR.BA": {
+  "hq_city": "Buenos Aires",
+  "hq_lat": -34.6131,
+  "hq_lon": -58.3772,
+  "lei": "549300OPSKKEXLSWG702",
+  "company_label": "Ternium Argentina S.A.",
+  "country": "Argentina",
+  "precision": "city",
+  "method": "gleif",
+  "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2024-11-15; city coordinates GeoNames (CC BY 4.0)",
+  "source_url": "https://search.gleif.org/#/record/549300OPSKKEXLSWG702",
   "checked_at": "2026-11-17"
  },
  "UCB.BR": {
