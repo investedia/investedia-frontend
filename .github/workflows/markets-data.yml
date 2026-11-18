@@ -1,0 +1,31 @@
+# Refreshes assets/globe/markets.json every weekday after the US close and pushes the data file only.
+# Owner approved 18 Nov 2026. Source: Yahoo Finance for now (scripts/update_markets.py, one function to swap). No secrets.
+name: Markets data refresh (daily)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '43 21 * * 1-5'  # ~22:43 CET, after the US close
+permissions:
+  contents: write
+concurrency:
+  group: markets-data
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch prices (keeps the previous file if more than half fail)
+        run: python scripts/update_markets.py
+      - name: Commit the new prices (data files only)
+        run: |
+          if git diff --quiet -- assets/globe/markets.json docs/assets/globe/markets.json; then echo "No change"; exit 0; fi
+          if [ -n "$(git status --porcelain | grep -v 'assets/globe/markets.json')" ]; then echo "::error::Unexpected changes; refusing to commit"; exit 1; fi
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/globe/markets.json docs/assets/globe/markets.json
+          git commit -m "Data: markets $(jq -r .asof assets/globe/markets.json)"
+          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep 5; done; exit 1
