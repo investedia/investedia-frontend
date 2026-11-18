@@ -1,0 +1,394 @@
+{
+ "schema": "investedia.listed-companies/v1",
+ "exchange": "Nairobi Securities Exchange",
+ "source_url": "https://www.nse.co.ke/listed-companies/",
+ "checked_at": "2026-11-17",
+ "source_sha256": "e5181ffe4dfd4822322ef12f1ef2cc7e74d915dcd05dea2a95bd82585473d7e4",
+ "count": 64,
+ "listings": [
+  {
+   "symbol": "EGAD",
+   "name": "Eaagads Ltd",
+   "isin": "KE0000000208",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "KAPC",
+   "name": "Kapchorua Tea Co. Ltd",
+   "isin": "KE4000001760",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "KUKZ",
+   "name": "Kakuzi",
+   "isin": "KE0000000281",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "LIMT",
+   "name": "Limuru Tea Co. Ltd",
+   "isin": "KE0000000356",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "SASN",
+   "name": "Sasini Ltd",
+   "isin": "KE0000000430",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "WTK",
+   "name": "Williamson Tea Kenya Ltd",
+   "isin": "KE0000000505",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "CGEN",
+   "name": "Car and General (K) Ltd",
+   "isin": "KE0000000109",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "ABSA",
+   "name": "Absa Bank Kenya PLC",
+   "isin": "KE0000000067",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "SBIC",
+   "name": "Stanbic Holdings Plc.",
+   "isin": "KE0000000091",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "IMH",
+   "name": "I&M Holdings Ltd",
+   "isin": "KE0000000125",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "SCBK",
+   "name": "Standard Chartered Bank Ltd",
+   "isin": "KE0000000448",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "EQTY",
+   "name": "Equity Group Holdings",
+   "isin": "KE0000000554",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "COOP",
+   "name": "The Co-operative Bank of Kenya Ltd",
+   "isin": "KE1000001568",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "BKG",
+   "name": "BK Group PLC",
+   "isin": "KE5000008986",
+   "country_key": "RW"
+  },
+  {
+   "symbol": "SCBK",
+   "name": "Standard Chartered Bank Ltd",
+   "isin": "KE0000000448",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "EQTY",
+   "name": "Equity Group Holdings",
+   "isin": "KE0000000554",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "COOP",
+   "name": "The Co-operative Bank of Kenya Ltd",
+   "isin": "KE1000001568",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "FMLY",
+   "name": "Family Bank Limited",
+   "isin": "KE9930006987",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "HFCK",
+   "name": "HF Group Ltd",
+   "isin": "KE0000000240",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "KCB",
+   "name": "KCB Group Ltd",
+   "isin": "KE0000000315",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "NCBA",
+   "name": "NCBA Group PLC",
+   "isin": "KE0000000406",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "XPRS",
+   "name": "Express Ltd",
+   "isin": "KE0000000224",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "SMER",
+   "name": "Sameer Africa PLC",
+   "isin": "KE0000000232",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "KQ",
+   "name": "Kenya Airways Ltd",
+   "isin": "KE0000000307",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "NMG",
+   "name": "Nation Media Group",
+   "isin": "KE0000000380",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "SGL",
+   "name": "Standard Group Ltd",
+   "isin": "KE0000000455",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "TPSE",
+   "name": "TPS Eastern Africa (Serena) Ltd",
+   "isin": "KE0000000539",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "SCAN",
+   "name": "Scangroup Ltd",
+   "isin": "KE0000000562",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "UCHM",
+   "name": "Uchumi Supermarket Ltd",
+   "isin": "KE0000000489",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "LKL",
+   "name": "Longhorn Publishers Ltd",
+   "isin": "KE2000002275",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "DCON",
+   "name": "Deacons (East Africa) Plc",
+   "isin": "KE5000005438",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "NBV",
+   "name": "Nairobi Business Ventures Ltd",
+   "isin": "KE5000000090",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "QMRT",
+   "name": "QuickMart Plc",
+   "isin": "KE9940001986",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "ARM",
+   "name": "Athi River Mining",
+   "isin": "KE0000000034",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "BAMB",
+   "name": "Bamburi Cement PLC",
+   "isin": "KE0000000059",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "CRWN",
+   "name": "Crown Paints Kenya PLC.",
+   "isin": "KE0000000141",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "CABL",
+   "name": "E.A.Cables PLC",
+   "isin": "KE0000000174",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "PORT",
+   "name": "E.A.Portland Cement Ltd",
+   "isin": "KE0000000190",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "TOTL",
+   "name": "Total Kenya Ltd",
+   "isin": "KE0000000463",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "KEGN",
+   "name": "KenGen Ltd",
+   "isin": "KE0000000547",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "KPLC",
+   "name": "Kenya Power & Lighting Co Ltd",
+   "isin": "KE0000000349",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "UMME",
+   "name": "Umeme Ltd",
+   "isin": "KE2000005815",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "JUB",
+   "name": "Jubilee Holdings Ltd",
+   "isin": "KE0000000273",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "SLAM",
+   "name": "Sanlam Allianz Holdings (Kenya) PLC",
+   "isin": "KE0000000414",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "KNRE",
+   "name": "Kenya Re-Insurance Corporation Ltd",
+   "isin": "KE0000000604",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "BRIT",
+   "name": "Britam Holdings Ltd",
+   "isin": "KE2000002192",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "CIC",
+   "name": "CIC Insurance Group Ltd",
+   "isin": "KE2000002317",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "OCH",
+   "name": "Olympia Capital Holdings ltd",
+   "isin": "KE0000000166",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "CTUM",
+   "name": "Centum Investment Co Ltd",
+   "isin": "KE0000000265",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "TCL",
+   "name": "Trans-Century Ltd",
+   "isin": "KE2000002184",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "HAFR",
+   "name": "Home Afrika Ltd",
+   "isin": "KE2000007258",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "KURV",
+   "name": "Kurwitu Ventures",
+   "isin": "KE4000001216",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "NSE",
+   "name": "Nairobi Securities Exchange Ltd",
+   "isin": "KE3000009674",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "BOC",
+   "name": "B.O.C Kenya Ltd",
+   "isin": "KE0000000042",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "BAT",
+   "name": "British American Tobacco Kenya Ltd",
+   "isin": "KE0000000075",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "CARB",
+   "name": "Carbacid Investments Ltd",
+   "isin": "KE0000000117",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "EABL",
+   "name": "East African Breweries Ltd",
+   "isin": "KE0000000216",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "MSC",
+   "name": "Mumias Sugar Co. Ltd",
+   "isin": "KE0000000372",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "UNGA",
+   "name": "Unga Group Ltd",
+   "isin": "KE0000000497",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "EVRD",
+   "name": "Eveready East Africa Ltd",
+   "isin": "KE0000000588",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "AMAC",
+   "name": "AFRICA MEGA AGRICORP PLC 5.00",
+   "isin": "KE0000000331",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "FTGH",
+   "name": "Flame Tree Group Holdings Ltd",
+   "isin": "KE4000001323",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "SCOM",
+   "name": "Safaricom PLC",
+   "isin": "KE1000001402",
+   "country_key": "KE"
+  },
+  {
+   "symbol": "GLD",
+   "name": "New Gold Issuer (RP) Ltd",
+   "isin": "ZAE000060067",
+   "country_key": "ZA"
+  }
+ ]
+}

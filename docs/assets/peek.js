@@ -128,6 +128,9 @@
       if (items.length) out.push({ key: k, title: GROUPS[k][0], items, html: (i, c) => row(i, c), type: 'asset' }); }
     const sec = q ? (window.InvSectors ? InvSectors.list : []).filter(x => x.name.toLowerCase().includes(q)) : [];
     if (sec.length) out.push({ key: 'sectors', fk: 'stocks', title: 'Sectors', items: sec, html: x => lnk(ROOT + 'assets/globe/news.html?sector=' + encodeURIComponent(x.slug), InvSectors.icon(x.name), x.name, 'Sector · articles and sector fund move') });
+    // Companies tab on the globe: companies with a sourced head office open on the globe at their HQ.
+    const hqs = window.InvCompanies ? InvCompanies.searchHits(q) : [];
+    if (hqs.length) out.push({ key: 'companyhq', fk: 'stocks', title: 'Company HQs on the globe', items: hqs, html: c => lnk(ROOT + 'assets/globe/news.html?company=' + encodeURIComponent(c.sym), InvCompanies.badgeHTML(c), c.name, 'Head office · ' + c.hq.hq_city + ', ' + c.country, 'company:' + c.sym) });
     const articleCount = c => DATA.stories.filter(s => s.location?.country === c).length;
     const cs = DATA.countries.filter(c => !q || c.toLowerCase().includes(q)).sort((a,b) => articleCount(b) - articleCount(a));
     if (cs.length) out.push({ key: 'countries', title: 'Countries', items: cs, html: c => lnk(ROOT + 'assets/globe/news.html?country=' + encodeURIComponent(c) + (marketsSearch() ? '&mode=markets' : ''), DATA.iso[c] ? `<img src="${ROOT}assets/globe/flags/${DATA.iso[c].toLowerCase()}.svg" alt="">` : '', c, articleCount(c) + ' articles', 'country:' + c) });
