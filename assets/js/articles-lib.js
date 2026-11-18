@@ -14,7 +14,7 @@ function initArticles() {
   const href = (s, ch) => { const n = { ...s, ...ch }, u = new URLSearchParams(); if (n.page > 1) u.set('page', n.page); for (const k of ['cat', 'date', 'reg', 'q']) if (n[k]) u.set(k, n[k]); if (n.sort !== 'new') u.set('sort', n.sort); const q = u.toString(); return (location.pathname.split('/').pop() || 'news.html') + (q ? '?' + q : '') + (document.querySelector('.al-onnews') ? '#all' : ''); };
   const go = (ch, push = true) => { const url = href(state(), { page: 1, ...ch }); if (push) history.pushState(null, '', url); else history.replaceState(null, '', url); render(); };
   const get = f => fetch(BASE + f, { cache: 'no-cache' }).then(r => { if (!r.ok) throw Error(f); return r.json(); });
-  const day = t => new Date(t).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+  const day = t => new Date(t).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', ...(new Date(t).getFullYear() !== new Date().getFullYear() ? { year: 'numeric' } : {}) });
   const time = t => new Date(t).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
   const row = r => `<a class="al-row${img(r) ? '' : ' noimg'}" href="${link(r)}">${img(r) ? `<img src="${esc(img(r))}" alt="" loading="lazy" onerror="this.remove();this.parentNode&&this.parentNode.classList.add('noimg')">` : ''}<div><div class="al-ct">${esc(nice(r.c))} · ${time(r.t)}</div><h3>${esc(r.h)}</h3><div class="al-sr">${esc(r.s || '')}${r.n ? ' · ' + esc(r.n) : ''}${r.k > 1 ? ' · ' + r.k + ' sources' : ''}</div></div></a>`;
   function options(s) {
