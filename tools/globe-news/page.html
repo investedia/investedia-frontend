@@ -2462,16 +2462,18 @@ function renderAct(){
   const G=actLatest();right=`<span><i></i>${esc(badge.replace(/^News /,'')||'Updated')}</span><a href="../../news.html">View all →</a>`;
   cards=G.length?G.map((g,i)=>{const s=g.top,a=impactsOf(s).map(assetForImpact).find(x=>x&&isFinite(x.d)&&Math.abs(x.d)<25&&x.u!=='bp');return `<button type="button" class="act-k" data-act="${i}"><div class="act-m"><b>${tm(s.t)}</b>${esc(nm(s.location.country))} · ${esc(CAT[s.category]||s.category)}</div><div class="act-t">${esc(s.headline)}</div><div class="act-f">${g.src.size} source${g.src.size>1?'s':''}${a?` · <span class="${a.d>0?'u':a.d<0?'d':''}">${esc((a.n||a.s).slice(0,18))} ${a.d>0?'+':a.d<0?'−':''}${Math.abs(a.d).toFixed(1)}%</span>`:''}</div></button>`}).join(''):'<div class="act-e">No articles for this region and time window. Try a wider timeframe or All regions.</div>';
   el._groups=G;
+ }else if(actTab==='bf'){right='<span>Recorded voice · real data only</span>';cards=window.InvBriefing?InvBriefing.stripHTML():'';
  }else{
   const now=Date.now(),ev=CAL.filter(e=>Date.parse(e.at)>now&&(F.region==='global'||ACT_REG[e.c]===F.region||(F.region==='eu'&&e.c==='EUR'))).sort((a,b)=>Date.parse(a.at)-Date.parse(b.at)).slice(0,4);
   right=`<span>Your time zone · G10 currencies only</span><a href="../../calendar.html">Calendar →</a>`;
   cards=ev.length?ev.map(e=>{const d=new Date(e.at);return `<a class="act-k" href="../../calendar.html"><div class="act-m"><b>${d.toLocaleDateString([], {weekday:'short'})} ${tm(d)}</b>${esc(e.country||e.c)}${e.src?' · '+esc(e.src):''}</div><div class="act-t">${esc(e.t)}</div><div class="act-f"><span class="hi">● High impact</span></div></a>`}).join(''):'<div class="act-e">No scheduled high-impact releases for this region in our calendar. Coverage is limited to major currencies for now.</div>';
  }
  el.classList.toggle('pf',actTab==='pf');
- el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Upcoming</button><button type="button" role="tab" aria-selected="${actTab==='pf'}" data-at="pf">My watchlist</button><span class="act-r">${right}</span></div>${actTab==='pf'?wlHTML():`<div class="act-c">${cards}</div>`}`;
+ el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Upcoming</button><button type="button" role="tab" aria-selected="${actTab==='pf'}" data-at="pf">My watchlist</button>${window.InvBriefing?`<button type="button" role="tab" aria-selected="${actTab==='bf'}" data-at="bf">${InvBriefing.tabHTML()}</button>`:''}<span class="act-r">${right}</span></div>${actTab==='pf'?wlHTML():`<div class="act-c">${cards}</div>`}`;
  if(actTab==='pf')wlBind(el);
  document.documentElement.style.setProperty('--acth',el.offsetHeight+'px');
  el.querySelectorAll('[data-at]').forEach(b=>b.onclick=()=>{actTab=b.dataset.at;renderAct();});
+ if(window.InvBriefing){InvBriefing.bind(el);if(!el._bfsub)el._bfsub=InvBriefing.onChange(()=>{if(el.hidden)return;const t=el.querySelector('[data-at="bf"]');if(t)t.innerHTML=InvBriefing.tabHTML();if(actTab==='bf')InvBriefing.paint(el.querySelector('.act-c'));});}
  el.querySelectorAll('[data-act]').forEach(b=>b.onclick=()=>{const g=el._groups[+b.dataset.act];if(g)openStory(g.top);});
 }
 addEventListener('resize',()=>renderAct());
