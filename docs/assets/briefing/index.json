@@ -41,6 +41,13 @@
      "s": 13.58,
      "f": null,
      "hq": "NVDA",
+     "moves": [
+      [
+       "NVIDIA",
+       "NVDA",
+       -0.44
+      ]
+     ],
      "art": {
       "h": "Nvidia Q3 Revenue Soars 103% to $115.8B, Easing AI Demand Concerns",
       "src": "Investing.com",
@@ -62,6 +69,14 @@
       "lat": 26.96,
       "label": "Strait of Hormuz"
      },
+     "to": "BZ=F",
+     "moves": [
+      [
+       "Brent crude",
+       "BZ=F",
+       -3.02
+      ]
+     ],
      "art": {
       "h": "ADNOC Logistics Vessel Attacked in Strait of Hormuz",
       "src": "OilPrice.com",
@@ -85,6 +100,13 @@
      "f": [
       0.0,
       51.5
+     ],
+     "moves": [
+      [
+       "Gold",
+       "GC=F",
+       -2.42
+      ]
      ]
     },
     {
