@@ -164,7 +164,7 @@
   const b=document.querySelector('.brand')?.getBoundingClientRect(),phone=matchMedia('(max-width:760px)').matches;
   if(phone){const m=document.querySelector('.m-actions')?.getBoundingClientRect();btn.style.top=((m?.top||12))+'px';btn.style.left='';btn.style.right=((m?innerWidth-m.left:12)+8)+'px';}
   else{const q=(document.getElementById('sbox')||document.getElementById('q'))?.getBoundingClientRect();btn.style.right='';btn.style.top=((q&&q.top>0?q.top:(b?.bottom||60)+10))+'px';btn.style.left=((q&&q.right>0?q.right:(b?.right||400))+24)+'px';}
-  card.style.top='';card.style.left='';if(!phone){const lb=[...document.querySelectorAll('button,a')].find(e=>/^Latest activity$/.test(e.textContent.trim()));const bar=lb&&lb.closest('div[class]')?.parentElement?.getBoundingClientRect();card.style.setProperty('--bf-bottom',((bar&&bar.top>innerHeight*.5?innerHeight-bar.top:96)+14)+'px');}}
+  card.style.top='';card.style.left='';if(!phone){const lb=[...document.querySelectorAll('button,a')].find(e=>/^(Latest|Market) activity$/.test(e.textContent.trim())&&e.getClientRects().length);/* News or Markets strip, whichever is showing */const bar=lb&&lb.closest('div[class]')?.parentElement?.getBoundingClientRect();card.style.setProperty('--bf-bottom',((bar&&bar.top>innerHeight*.5?innerHeight-bar.top:96)+14)+'px');}}
  let tr=false;
  // ---- Player position and seeking (owner 17 Nov 2026): tap or drag the timeline to go back or forward; phone uses the player card (option C).
  const mPhone=()=>matchMedia('(max-width:760px)').matches;
@@ -243,6 +243,12 @@
    return `<div class="bfs"><div class="bfs-r"><span class="bfs-ic">${S.done&&!S.playing?DONE:RING}</span><div class="bfs-t"><small>${e(S.head)} · ${S.playing?'playing':S.done?'✓ Briefed':S.cur?'paused':'ready'}</small><p>${e(S.text)}</p></div>
     <button type="button" class="bfs-pp" data-bfs="${S.playing?'pause':'play'}" aria-label="${S.playing?'Pause':'Play'} Briefing">${S.playing?PAUSE:PLAY}</button><button type="button" class="bfs-tr" data-bfs="tr">Transcript</button></div>
     <div class="bfs-bar"><i style="width:${Math.round(S.progress*100)}%"></i></div><p class="bfs-n">Spoken summary of data on this page. Not investment advice.</p></div>`;},
+  // update in place so buttons are not replaced while someone is clicking them; rebuild only when the mode changes
+  paint(c){if(!c)return;const S=api.state(),mode=`${S.ready}|${S.playing}|${S.done}`,b=c.querySelector('.bfs');
+   if(!b||c.dataset.bfsMode!==mode){c.innerHTML=api.stripHTML();c.dataset.bfsMode=mode;return;}
+   if(c.dataset.bfsMode===undefined)c.dataset.bfsMode=mode;
+   const p=b.querySelector('.bfs-t p'),sm=b.querySelector('.bfs-t small'),bar=b.querySelector('.bfs-bar i');
+   if(p&&p.textContent!==S.text)p.textContent=S.text;const st=`${S.head} · ${S.playing?'playing':S.done?'✓ Briefed':S.cur?'paused':'ready'}`;if(sm&&sm.textContent!==st)sm.textContent=st;if(bar)bar.style.width=Math.round(S.progress*100)+'%';},
   bind(el){if(el._bfs)return;el._bfs=1;el.addEventListener('click',ev=>{const k=ev.target.closest('[data-bfs]')?.dataset.bfs;if(!k)return;ev.stopPropagation();k==='play'?api.play():k==='pause'?api.pause():api.transcript();});}
  };
  const RING14='<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#ff7a1a" stroke-width="2"/></svg>';

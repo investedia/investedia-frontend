@@ -2473,7 +2473,7 @@ function renderAct(){
  if(actTab==='pf')wlBind(el);
  document.documentElement.style.setProperty('--acth',el.offsetHeight+'px');
  el.querySelectorAll('[data-at]').forEach(b=>b.onclick=()=>{actTab=b.dataset.at;renderAct();});
- if(window.InvBriefing){InvBriefing.bind(el);if(!el._bfsub)el._bfsub=InvBriefing.onChange(()=>{if(el.hidden)return;const t=el.querySelector('[data-at="bf"]');if(t)t.innerHTML=InvBriefing.tabHTML();if(actTab==='bf'){const c=el.querySelector('.act-c');if(c)c.innerHTML=InvBriefing.stripHTML();}});}
+ if(window.InvBriefing){InvBriefing.bind(el);if(!el._bfsub)el._bfsub=InvBriefing.onChange(()=>{if(el.hidden)return;const t=el.querySelector('[data-at="bf"]');if(t)t.innerHTML=InvBriefing.tabHTML();if(actTab==='bf')InvBriefing.paint(el.querySelector('.act-c'));});}
  el.querySelectorAll('[data-act]').forEach(b=>b.onclick=()=>{const g=el._groups[+b.dataset.act];if(g)openStory(g.top);});
 }
 addEventListener('resize',()=>renderAct());

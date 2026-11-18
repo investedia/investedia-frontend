@@ -2513,7 +2513,7 @@ function renderAct(){
  if(actTab==='pf')wlBind(el);
  document.documentElement.style.setProperty('--acth',el.offsetHeight+'px');
  el.querySelectorAll('[data-at]').forEach(b=>b.onclick=()=>{actTab=b.dataset.at;renderAct();});
- if(window.InvBriefing){InvBriefing.bind(el);if(!el._bfsub)el._bfsub=InvBriefing.onChange(()=>{if(el.hidden)return;const t=el.querySelector('[data-at="bf"]');if(t)t.innerHTML=InvBriefing.tabHTML();if(actTab==='bf'){const c=el.querySelector('.act-c');if(c)c.innerHTML=InvBriefing.stripHTML();}});}
+ if(window.InvBriefing){InvBriefing.bind(el);if(!el._bfsub)el._bfsub=InvBriefing.onChange(()=>{if(el.hidden)return;const t=el.querySelector('[data-at="bf"]');if(t)t.innerHTML=InvBriefing.tabHTML();if(actTab==='bf')InvBriefing.paint(el.querySelector('.act-c'));});}
  el.querySelectorAll('[data-act]').forEach(b=>b.onclick=()=>{const g=el._groups[+b.dataset.act];if(g)openStory(g.top);});
 }
 addEventListener('resize',()=>renderAct());
@@ -3478,7 +3478,7 @@ function mkdRender(){
  }else if(mkTab==='bf'){cards=window.InvBriefing?InvBriefing.stripHTML():'<p class="mkd-e">Briefing is available on the full Globe page.</p>';
  }else cards=next.length?next.map(e=>`<a class="mkd-c" href="../../calendar.html"><div class="m"><b>${when(e.at)}</b> ${esc(e.country||'US')}</div><div class="t">${esc(e.t)}</div><div class="f">● High impact · ${esc(e.src||'official')}</div></a>`).join(''):'<p class="mkd-e">No scheduled releases in our calendar.</p>';
  mkA.innerHTML=`<div class="mkd-th"><button type="button" data-mt="act" aria-selected="${mkTab==='act'}">Market activity</button><button type="button" data-mt="up" aria-selected="${mkTab==='up'}">Upcoming</button><button type="button" data-mt="wl" aria-selected="${mkTab==='wl'}">My watchlist</button>${window.InvBriefing?`<button type="button" data-mt="bf" aria-selected="${mkTab==='bf'}">${InvBriefing.tabHTML()}</button>`:''}<em>${mkTab==='wl'?`<button type="button" class="mkd-addb" data-wl-open>${window.mkWlQ!=null?'Done':'＋ Add'}</button> Prices from our last market update, not live`:mkTab==='bf'?'Recorded voice · real data only':(d1?'ECB '+fmtD(d1)+' · ':'')+'sessions now'}</em></div><div class="mkd-cs${mkTab==='wl'?' wl':''}${mkTab==='bf'?' bf':''}">${cards}</div>`;
- if(window.InvBriefing){InvBriefing.bind(mkA);if(!mkA._bfsub)mkA._bfsub=InvBriefing.onChange(()=>{if(mkA.hidden)return;const t=mkA.querySelector('[data-mt="bf"]');if(t)t.innerHTML=InvBriefing.tabHTML();if(mkTab==='bf'){const c=mkA.querySelector('.mkd-cs');if(c)c.innerHTML=InvBriefing.stripHTML();}});}
+ if(window.InvBriefing){InvBriefing.bind(mkA);if(!mkA._bfsub)mkA._bfsub=InvBriefing.onChange(()=>{if(mkA.hidden)return;const t=mkA.querySelector('[data-mt="bf"]');if(t)t.innerHTML=InvBriefing.tabHTML();if(mkTab==='bf')InvBriefing.paint(mkA.querySelector('.mkd-cs'));});}
  mkA.querySelectorAll('[data-mt]').forEach(b=>b.onclick=()=>{mkTab=b.dataset.mt;mkdRender();});
  mkA.querySelectorAll('[data-wl-open]').forEach(b=>b.onclick=()=>{window.mkWlQ=window.mkWlQ!=null&&b.classList.contains('mkd-addb')?null:'';mkdRender();mkA.querySelector('#mk-wl-q')?.focus();});
  const wq=mkA.querySelector('#mk-wl-q');if(wq)wq.oninput=()=>{window.mkWlQ=wq.value;const pos=wq.selectionStart;mkdRender();const n=mkA.querySelector('#mk-wl-q');if(n){n.focus();n.setSelectionRange(pos,pos);}};
@@ -3756,7 +3756,7 @@ function mkUnusual(){
   const b=document.querySelector('.brand')?.getBoundingClientRect(),phone=matchMedia('(max-width:760px)').matches;
   if(phone){const m=document.querySelector('.m-actions')?.getBoundingClientRect();btn.style.top=((m?.top||12))+'px';btn.style.left='';btn.style.right=((m?innerWidth-m.left:12)+8)+'px';}
   else{const q=(document.getElementById('sbox')||document.getElementById('q'))?.getBoundingClientRect();btn.style.right='';btn.style.top=((q&&q.top>0?q.top:(b?.bottom||60)+10))+'px';btn.style.left=((q&&q.right>0?q.right:(b?.right||400))+24)+'px';}
-  card.style.top='';card.style.left='';if(!phone){const lb=[...document.querySelectorAll('button,a')].find(e=>/^Latest activity$/.test(e.textContent.trim()));const bar=lb&&lb.closest('div[class]')?.parentElement?.getBoundingClientRect();card.style.setProperty('--bf-bottom',((bar&&bar.top>innerHeight*.5?innerHeight-bar.top:96)+14)+'px');}}
+  card.style.top='';card.style.left='';if(!phone){const lb=[...document.querySelectorAll('button,a')].find(e=>/^(Latest|Market) activity$/.test(e.textContent.trim())&&e.getClientRects().length);/* News or Markets strip, whichever is showing */const bar=lb&&lb.closest('div[class]')?.parentElement?.getBoundingClientRect();card.style.setProperty('--bf-bottom',((bar&&bar.top>innerHeight*.5?innerHeight-bar.top:96)+14)+'px');}}
  let tr=false;
  // ---- Player position and seeking (owner 17 Nov 2026): tap or drag the timeline to go back or forward; phone uses the player card (option C).
  const mPhone=()=>matchMedia('(max-width:760px)').matches;
@@ -3835,6 +3835,12 @@ function mkUnusual(){
    return `<div class="bfs"><div class="bfs-r"><span class="bfs-ic">${S.done&&!S.playing?DONE:RING}</span><div class="bfs-t"><small>${e(S.head)} · ${S.playing?'playing':S.done?'✓ Briefed':S.cur?'paused':'ready'}</small><p>${e(S.text)}</p></div>
     <button type="button" class="bfs-pp" data-bfs="${S.playing?'pause':'play'}" aria-label="${S.playing?'Pause':'Play'} Briefing">${S.playing?PAUSE:PLAY}</button><button type="button" class="bfs-tr" data-bfs="tr">Transcript</button></div>
     <div class="bfs-bar"><i style="width:${Math.round(S.progress*100)}%"></i></div><p class="bfs-n">Spoken summary of data on this page. Not investment advice.</p></div>`;},
+  // update in place so buttons are not replaced while someone is clicking them; rebuild only when the mode changes
+  paint(c){if(!c)return;const S=api.state(),mode=`${S.ready}|${S.playing}|${S.done}`,b=c.querySelector('.bfs');
+   if(!b||c.dataset.bfsMode!==mode){c.innerHTML=api.stripHTML();c.dataset.bfsMode=mode;return;}
+   if(c.dataset.bfsMode===undefined)c.dataset.bfsMode=mode;
+   const p=b.querySelector('.bfs-t p'),sm=b.querySelector('.bfs-t small'),bar=b.querySelector('.bfs-bar i');
+   if(p&&p.textContent!==S.text)p.textContent=S.text;const st=`${S.head} · ${S.playing?'playing':S.done?'✓ Briefed':S.cur?'paused':'ready'}`;if(sm&&sm.textContent!==st)sm.textContent=st;if(bar)bar.style.width=Math.round(S.progress*100)+'%';},
   bind(el){if(el._bfs)return;el._bfs=1;el.addEventListener('click',ev=>{const k=ev.target.closest('[data-bfs]')?.dataset.bfs;if(!k)return;ev.stopPropagation();k==='play'?api.play():k==='pause'?api.pause():api.transcript();});}
  };
  const RING14='<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#ff7a1a" stroke-width="2"/></svg>';
