@@ -1100,6 +1100,16 @@ Promise.all([fetch('markets.json').then(r => r.json()), fetch('news-prices.json'
   MKT.all = m.assets || []; MKT.asof = m.asof || '';
   updateNetwork(); renderSide(); if ((view.k === 'top' && (panelTab === 'movers' || F.region !== 'global')) || ['article', 'country'].includes(view.k)) render();
 }).catch(() => {});
+// Newer prices from our API on top of the daily file (delayed, not live). Fails silently: the daily file stays.
+const mkLive = () => Promise.all([fetch(((window.INV_CONFIG && INV_CONFIG.apiBaseUrl) || 'https://api.investedia.com') + '/v1/prices?group=all').then(r => { if (!r.ok) throw 0; return r.json(); }), fetch('price-map.json').then(r => r.json()).catch(() => ({ map: {} }))]).then(([j, pm]) => {
+  if (!MKT.by || !j || !j.data) return; const map = pm.map || {}; let n = 0, t0 = 0;
+  for (const [site, v] of Object.entries(j.data)) {
+    const a = MKT.by[map[site]] || MKT.by[site]; if (!a || !Array.isArray(v) || !(v[0] > 0) || !isFinite(v[1])) continue;
+    a.p = v[0]; a.d = Math.round(v[1] * 100) / 100; if (Array.isArray(a.sp) && a.sp.length) a.sp[a.sp.length - 1] = v[0]; n++; t0 = Math.max(t0, v[2] || 0);
+  }
+  if (n) { MKT.asof = new Date(t0 || Date.now()).toISOString(); MKT.delayed = 1; updateNetwork(); renderSide(); if ((view.k === 'top' && (panelTab === 'movers' || F.region !== 'global')) || ['article', 'country'].includes(view.k)) render(); }
+}).catch(() => {});
+setTimeout(mkLive, 1500); setInterval(() => { if (!document.hidden) mkLive(); }, 180000);
 let CAL = [];
 fetch('https://api.investedia.com/v1/calendar').then(r => { if (!r.ok) throw 0; return r.json(); }).catch(() => fetch('../calendar-live.json').then(r => r.json())).then(d => { CAL = (d.events || []).filter(e => e && e.imp >= 3 && e.at); }).catch(() => {});
 const untilText = ms => { const m = Math.max(1, Math.round(ms / 60000)), d = Math.floor(m / 1440), h = Math.floor(m % 1440 / 60); return d ? `${d} d ${h} h` : h ? `${h} h ${m % 60} min` : `${m} min`; };
