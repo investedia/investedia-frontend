@@ -48,7 +48,7 @@ function initArticles() {
     const pages = Math.max(1, Math.ceil(res.total / meta.per_page)); let list = res.list, lead = '';
     if (s.page === 1 && !s.q && !document.querySelector('.al-onnews')) { const i = list.findIndex(img); if (i >= 0) { const r = list[i]; list = list.filter((_, k) => k !== i);
       lead = `<a class="al-lead" href="${link(r)}"><img src="${esc(img(r))}" alt=""><div><div class="al-ct">${esc(nice(r.c))} · ${day(r.t)} ${time(r.t)}</div><h2>${esc(r.h)}</h2><p id="al-lead-sum"></p><div class="al-sr">${esc(r.s || '')}${r.n ? ' · ' + esc(r.n) : ''}</div></div></a>`;
-      fetch('assets/globe/library/' + encodeURIComponent(r.id) + '.json').then(x => x.ok ? x.json() : null).then(d => { const p = $('al-lead-sum'); if (p && d?.summary) p.textContent = d.summary; }).catch(() => {}); } }
+      fetch('assets/globe/library/' + encodeURIComponent(r.id) + '.json').then(x => x.ok ? x.json() : fetch('assets/globe/library-days/' + String(r.t).slice(0, 10) + '.json').then(y => y.ok ? y.json() : {}).then(b => b[r.id] || null)).then(d => { const p = $('al-lead-sum'); if (p && d?.summary) p.textContent = d.summary; }).catch(() => {}); } }
     $('al-lead').innerHTML = lead;
     const from = res.total ? (s.page - 1) * meta.per_page + 1 : 0;
     $('al-count').textContent = res.total ? `Showing ${fmt(from)}–${fmt(Math.min(res.total, s.page * meta.per_page))} of ${fmt(res.total)}` : '';

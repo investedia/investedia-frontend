@@ -12,6 +12,7 @@
   loadNews().then(async d => {
     const all = d.stories; let s = all.find(x => x.id === id);
     if (!s && id && /^[\w-]+$/.test(id)) { try { const r = await fetch('assets/globe/library/' + encodeURIComponent(id) + '.json'); if (r.ok) { s = await r.json(); all.push(s); } } catch {} }
+    if (!s && id && /^[\w-]+$/.test(id)) { try { const day = (await (await fetch('assets/globe/library-days/ids.json')).json())[id]; if (day) { const b = await (await fetch('assets/globe/library-days/' + day + '.json')).json(); if (b[id]) { s = b[id]; all.push(s); } } } catch {} } // backfilled history, bundled by day
     if (!s) { root.innerHTML = '<div class="sp-none">We couldn’t find that article. <a href="news.html">Back to the news</a></div>'; return; }
     document.title = s.headline + ' · Investedia';
     const names = new Set([...(s.entities || []).map(e => e.name), ...(s.impacts || []).map(i => i.name)].filter(Boolean));
