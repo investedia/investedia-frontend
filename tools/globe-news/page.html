@@ -2356,12 +2356,13 @@ pbody.addEventListener('keydown', e => {
 function variantPanel(list) {
   if (PANEL_TEMPLATE === 'a') return `<h2>Top articles</h2><div class="meta">${Math.min(8, list.length)} of ${list.length} articles</div><div class="compact-list">${list.slice(0, 8).map(compactItem).join('')}</div>${list.length > 8 ? '<a class="panel-more" href="../../news.html">See all news →</a>' : ''}${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
   if (PANEL_TEMPLATE === 'b') return `<h2>Top articles</h2><div class="strip-list" aria-label="Top articles">${list.slice(0, phone() ? 3 : 12).map(compactItem).join('')}</div>${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
-  const tabs = phone() && phoneView !== 'markets' ? [['top', 'Top'], ['latest', 'Latest'], ['moving', 'Moving'], ['more', ['countries', 'topics', 'watch', 'saved'].includes(panelTab) ? ({ countries: 'Countries', topics: 'Topics', watch: 'Watchlist', saved: 'Saved' })[panelTab] + ' ▾' : 'More ▾']] : [['top', 'Top'], ...(!phone() ? [['movers', 'Movers']] : []), ['latest', 'Latest'], ['countries', 'Countries'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : []), ['saved', `Saved${RL.size ? ' ' + RL.size : ''}`]];
+  const tabs = phone() && phoneView !== 'markets' ? [['top', 'Top'], ['latest', 'Latest'], ['moving', 'Moving'], ['companies', 'Companies'], ['more', ['countries', 'topics', 'watch', 'saved'].includes(panelTab) ? ({ countries: 'Countries', topics: 'Topics', watch: 'Watchlist', saved: 'Saved' })[panelTab] + ' ▾' : 'More ▾']] : [['top', 'Top'], ...(!phone() ? [['movers', 'Movers']] : []), ['latest', 'Latest'], ['countries', 'Countries'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : []), ['saved', `Saved${RL.size ? ' ' + RL.size : ''}`]];
   let items, count;
   if (phone() && phoneView === 'markets') { items = marketsPhonePanel(); count = 0; }
   else if (panelTab === 'topics') { const cats = Object.entries(list.reduce((m, x) => (m[x.category] = (m[x.category] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]); count = 0;
     items = cats.map(([k, n]) => `<button class="nd-topic" data-nd-topic="${esc(k)}"><span>${esc(CAT[k] || k)}</span><b>${n}</b></button>`).join(''); }
   else if (panelTab === 'upcoming') { items = upcomingPanel(); count = 0; }
+  else if (panelTab === 'companies') { items = window.InvCompanies ? InvCompanies.panelHTML() : ''; count = 0; }
   else if (panelTab === 'markets') { items = marketsPanel(); count = 0; }
   else if (panelTab === 'movers') {
     const sp = (v, c) => { if (!v || v.length < 2) return ''; const lo = Math.min(...v), hi = Math.max(...v), r = hi - lo || 1; return `<svg viewBox="0 0 58 20" preserveAspectRatio="none"><path d="${v.map((y, i) => (i ? 'L' : 'M') + (i / (v.length - 1) * 58).toFixed(1) + ' ' + (18 - (y - lo) / r * 16).toFixed(1)).join('')}" fill="none" stroke="${c}" stroke-width="1.8" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>`; };
@@ -2503,7 +2504,8 @@ function renderAct(){
  const L=$('lcol')?.getBoundingClientRect(),P=panel.getBoundingClientRect();el.style.left=((L?.right||24)+24)+'px';el.style.right=(innerWidth-P.left+24)+'px';
  const tm=t=>{const d=new Date(t),hm=d.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});return Math.abs(Date.now()-d)<864e5&&d.getDate()===new Date().getDate()?hm:d.toLocaleDateString([], {day:'numeric',month:'short'})+' '+hm;},badge=$('badge')?.textContent||'';
  let cards='',right='';
- if(actTab==='pf'){cards='';right=wlHold().length&&wlView==='home'?`<span class="pf-bs" style="display:flex;gap:6px">${wlBtns}</span>`:'';}
+ if(actTab==='co'){cards=window.InvCompanies?InvCompanies.panelHTML():'';right='<span>Head offices from Wikidata and GLEIF</span>';}
+ else if(actTab==='pf'){cards='';right=wlHold().length&&wlView==='home'?`<span class="pf-bs" style="display:flex;gap:6px">${wlBtns}</span>`:'';}
  else if(actTab==='la'){
   const G=actLatest();right=`<span><i></i>${esc(badge.replace(/^News /,'')||'Updated')}</span><a href="../../news.html">View all →</a>`;
   cards=G.length?G.map((g,i)=>{const s=g.top,a=impactsOf(s).map(assetForImpact).find(x=>x&&isFinite(x.d)&&Math.abs(x.d)<25&&x.u!=='bp');return `<button type="button" class="act-k" data-act="${i}"><div class="act-m"><b>${tm(s.t)}</b>${esc(nm(s.location.country))} · ${esc(CAT[s.category]||s.category)}</div><div class="act-t">${esc(s.headline)}</div><div class="act-f">${g.src.size} source${g.src.size>1?'s':''}${a?` · <span class="${a.d>0?'u':a.d<0?'d':''}">${esc((a.n||a.s).slice(0,18))} ${a.d>0?'+':a.d<0?'−':''}${Math.abs(a.d).toFixed(1)}%</span>`:''}</div></button>`}).join(''):'<div class="act-e">No articles for this region and time window. Try a wider timeframe or All regions.</div>';
@@ -2514,7 +2516,7 @@ function renderAct(){
   cards=ev.length?ev.map(e=>{const d=new Date(e.at);return `<a class="act-k" href="../../calendar.html"><div class="act-m"><b>${d.toLocaleDateString([], {weekday:'short'})} ${tm(d)}</b>${esc(e.country||e.c)}${e.src?' · '+esc(e.src):''}</div><div class="act-t">${esc(e.t)}</div><div class="act-f"><span class="hi">● High impact</span></div></a>`}).join(''):'<div class="act-e">No scheduled high-impact releases for this region in our calendar. Coverage is limited to major currencies for now.</div>';
  }
  el.classList.toggle('pf',actTab==='pf');
- el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Upcoming</button><button type="button" role="tab" aria-selected="${actTab==='pf'}" data-at="pf">My watchlist</button><span class="act-r">${right}</span></div>${actTab==='pf'?wlHTML():`<div class="act-c">${cards}</div>`}`;
+ el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Upcoming</button><button type="button" role="tab" aria-selected="${actTab==='pf'}" data-at="pf">My watchlist</button><button type="button" role="tab" aria-selected="${actTab==='co'}" data-at="co">Companies</button><span class="act-r">${right}</span></div>${actTab==='pf'?wlHTML():`<div class="act-c${actTab==='co'?' co-c':''}">${cards}</div>`}`;
  if(actTab==='pf')wlBind(el);
  document.documentElement.style.setProperty('--acth',el.offsetHeight+'px');
  el.querySelectorAll('[data-at]').forEach(b=>b.onclick=()=>{actTab=b.dataset.at;renderAct();});
@@ -3005,6 +3007,7 @@ function frame(t) {
   if (!EMBED && MKTON) drawExchanges(t); else exHits = [];
   if (!EMBED && UPON) drawUpcoming(); else upHits = [];
   drawUserLoc(t);
+  if (window.InvCompanies) InvCompanies.draw(t);  // Companies tab: logo pins for the current list
   ctx.restore();
   requestAnimationFrame(frame);
 }
@@ -3204,5 +3207,6 @@ requestAnimationFrame(frame);
  addEventListener('keydown',ev=>{if(ev.key==='Escape'&&!ov.hidden)close()});
  setInterval(()=>document.documentElement.classList.toggle('proj-on',typeof PROJ!=='undefined'&&PROJ.on),400);
 })();</script>
+<script src="../globe-companies.js"></script>
 </body>
 </html>
