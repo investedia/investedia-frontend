@@ -879,6 +879,41 @@ html[data-theme=light] .detail-header{background:#f4f7fb}
 /* PROJECTS_CSS */
 </style>
 <script src="../locale.js"></script>
+<style id="pj-pics">/* owner 17 Nov 2026: project pictures visible while scrolling */.pj-pick>img,.pj-pick .pji{width:104px!important;height:84px!important;border-radius:12px!important;object-fit:cover;flex:none}.pj-pick{grid-template-columns:104px minmax(0,1fr)!important;gap:12px!important;align-items:start}.pj-satthumb{filter:brightness(1.12) contrast(1.08) saturate(1.1)}@media(max-width:760px){.pj-pick{grid-template-columns:92px minmax(0,1fr)!important}.pj-pick>img,.pj-pick .pji{width:92px!important;height:76px!important}}</style>
+<style id="pj-cards-b">/* owner 17 Nov 2026: card style B (big picture cards) */
+.pjr.pjb{position:relative;display:block;border:1px solid #232327;border-radius:16px;overflow:hidden;background:#141417;margin:0 0 12px;padding:0}
+.pjr.pjb.on{border-color:#ff7a1a;box-shadow:0 0 0 1px #ff7a1a55}
+.pjr.pjb .pj-pick{display:block!important;padding:0!important;min-height:0!important;width:100%}
+.pjb-fig{position:relative;display:block;height:150px;background:#18181c}
+.pjb-fig>img,.pjb-fig .pji{width:100%!important;height:150px!important;border-radius:0!important;object-fit:cover;display:block}
+.pjb-fig .pji{display:grid!important;place-items:center}.pjb-fig .pji svg{width:64px;height:64px}
+.pjb-stage{position:absolute;left:10px;top:10px}.pjb-stage .pjt{background:#0a0a0bd0;backdrop-filter:blur(6px)}
+.pjb-date{position:absolute;right:10px;bottom:8px;font-size:10.5px;color:#d4d4d8;background:#0a0a0bc0;padding:2px 7px;border-radius:6px}
+.pjb-body{display:block;padding:11px 48px 12px 14px;text-align:left}
+.pjb-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}.pjb-top b{font-size:15px;line-height:1.3}
+.pjb-tk{flex:none;font:600 11.5px ui-monospace,Menlo,monospace;color:#e4e4e7;background:#1c1c21;border:1px solid #2c2c32;border-radius:6px;padding:3px 7px}
+.pjb-body small{display:block;color:#8a8a92;font-size:12.5px;margin-top:3px}
+.pjr.pjb .pjw{position:absolute;right:8px;bottom:10px;top:auto}
+@media(max-width:760px){.pjb-fig,.pjb-fig>img,.pjb-fig .pji{height:140px!important}}
+</style>
+<style id="pj-phone">/* owner 17 Nov 2026: phone layout 1 (sheet with search + suggested projects) and full-screen search */
+.pjsg{display:none}
+@media(max-width:760px){.pjsg{display:block;margin:4px 0 12px}.pjsg>b{font-size:15px}.pjsg-row{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:8px;padding-bottom:4px;scrollbar-width:none}.pjsg-row::-webkit-scrollbar{display:none}
+.pjsg-c{flex:none;width:200px;scroll-snap-align:start;border:1px solid #232327;border-radius:14px;overflow:hidden;background:#141417;padding:0;text-align:left;color:#f4f4f5}
+.pjsg-c img{width:100%;height:104px;object-fit:cover;display:block;filter:brightness(1.08)}.pjsg-c span{display:block;padding:8px 10px}.pjsg-c b{font-size:13.5px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.pjsg-c small{color:#8a8a92;font-size:11.5px}
+.pjq-btn{position:fixed;top:12px;right:12px;z-index:40;width:44px;height:44px;border-radius:50%;border:1px solid #2a2a2f;background:rgba(17,17,20,.9);color:#f4f4f5;display:none;align-items:center;justify-content:center}
+html.proj-on .pjq-btn{display:flex}}
+.pjx{position:fixed;inset:0;z-index:90;background:#0a0a0b;overflow:auto;padding:12px 16px 40px;font-family:Inter,system-ui,sans-serif;color:#f4f4f5}.pjx[hidden]{display:none}
+.pjx-top{display:flex;gap:10px;align-items:center;position:sticky;top:0;background:#0a0a0b;padding:4px 0 10px}
+.pjx-top input{flex:1;height:46px;border:1px solid #2a2a2f;border-radius:14px;background:#141417;color:#f4f4f5;font:15px Inter,sans-serif;padding:0 14px;outline:none}
+.pjx-top button{background:none;border:0;color:#c8c8cf;font:15px Inter,sans-serif}
+.pjx h4{margin:16px 0 6px;color:#8a8a92;font-size:12px;letter-spacing:.08em;font-weight:500}
+.pjx-row{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid #1d1d21;width:100%;background:none;border-left:0;border-right:0;border-top:0;color:#f4f4f5;font:15px Inter,sans-serif;text-align:left}
+.pjx-row small{color:#8a8a92;font-size:12.5px}
+.pjx-it{display:grid;grid-template-columns:84px 1fr;gap:10px;padding:8px 0;border-bottom:1px solid #1d1d21;width:100%;background:none;border-left:0;border-right:0;border-top:0;color:#f4f4f5;text-align:left;font-family:inherit}
+.pjx-it img,.pjx-it .pji{width:84px;height:64px;object-fit:cover;border-radius:10px}.pjx-it b{font-size:14px}.pjx-it small{display:block;color:#8a8a92;font-size:12px;margin-top:2px}
+</style>
+<style id="embed-proj-chrome">html.embed #zin,html.embed #zout,html.embed .zoom{display:none!important}/* homepage embed in Projects mode: no globe-page header or search button over the homepage */html.embed.proj-mode .wm,html.embed .pjq-btn{display:none!important}</style>
 </head>
 <body>
 <a class="globe-skip" href="#pbody">Skip to article panel</a><canvas id="cv" aria-label="3D globe of financial and business news. Use the article list in the panel to browse by keyboard."></canvas>
@@ -3132,5 +3167,32 @@ setInterval(() => { if (view.k === 'top' && (panelTab === 'markets' || panelTab 
 /* BRIEFING */
 requestAnimationFrame(frame);
 </script>
+<script id="pj-search-js">/* owner 17 Nov 2026: phone full-screen project search (countries, projects with pictures, companies) */
+(()=>{if(document.documentElement.classList.contains('embed'))return;const ic='<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>';
+ const btn=document.createElement('button');btn.type='button';btn.className='pjq-btn';btn.setAttribute('aria-label','Search projects, countries or companies');btn.innerHTML=ic;document.body.append(btn);
+ const ov=document.createElement('div');ov.className='pjx';ov.hidden=true;ov.setAttribute('role','dialog');ov.setAttribute('aria-label','Search projects');
+ ov.innerHTML='<div class="pjx-top"><input type="search" placeholder="Search projects, countries or companies" aria-label="Search"><button type="button" data-x>Cancel</button></div><div class="pjx-res"></div>';document.body.append(ov);
+ const inp=ov.querySelector('input'),res=ov.querySelector('.pjx-res'),e=t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+ const pic=p=>p.photo?.file?pjPhoto(p):p.satellite?.url||'';
+ const item=p=>`<button type="button" class="pjx-it" data-id="${e(p.id)}">${pic(p)?`<img src="${e(pic(p))}" alt="" loading="lazy">`:`<span class="pji">${pjIcon(p)}</span>`}<span><b>${e(p.name)}</b><small>${e([p.country,p.type,p.stage].filter(Boolean).join(' · '))}</small>${p.listed?.ticker?`<small>${e(p.listed.ticker)} · ${e(p.listed.name||'')}</small>`:''}</span></button>`;
+ function draw(){const q=inp.value.trim().toLowerCase(),all=projAll();
+  const cs={};all.forEach(p=>{if(p.country)cs[p.country]=(cs[p.country]||0)+1});
+  const countries=Object.entries(cs).filter(([c])=>!q||c.toLowerCase().includes(q)).sort((a,b)=>b[1]-a[1]).slice(0,q?6:8);
+  const projs=all.filter(p=>!q||[p.name,p.location,p.country,p.type,p.listed?.ticker,p.listed?.name,...(p.owners||[])].some(x=>String(x||'').toLowerCase().includes(q)));
+  const sc=p=>{if(!q)return 0;const n=String(p.name||'').toLowerCase(),c=String(p.country||'').toLowerCase(),t=String(p.listed?.ticker||'').toLowerCase();return (n.startsWith(q)||new RegExp('\\b'+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).test(n))?4:(c.startsWith(q)||t.startsWith(q))?3:n.includes(q)?1:0};projs.sort((a,b)=>sc(b)-sc(a)||pjPicRank(b)-pjPicRank(a));
+  const co={};all.forEach(p=>{const t=p.listed?.ticker;if(t&&(!q||[t,p.listed.name].some(x=>String(x||'').toLowerCase().includes(q))))(co[t]=co[t]||{n:p.listed.name||t,c:0}).c++;});
+  const coms=Object.entries(co).sort((a,b)=>b[1].c-a[1].c).slice(0,6);
+  res.innerHTML=(countries.length?`<h4>COUNTRIES</h4>${countries.map(([c,n])=>`<button type="button" class="pjx-row" data-c="${e(c)}"><span>${e(c)}</span><small>${n} project${n>1?'s':''}</small></button>`).join('')}`:'')+
+   (projs.length?`<h4>${q?'PROJECTS':'SUGGESTED PROJECTS'}</h4>${projs.slice(0,q?20:8).map(item).join('')}`:'')+
+   (coms.length?`<h4>COMPANIES</h4>${coms.map(([t,v])=>`<button type="button" class="pjx-row" data-q="${e(t)}"><span>${e(v.n)} <small>${e(t)}</small></span><small>${v.c} project${v.c>1?'s':''}</small></button>`).join('')}`:'')+
+   (!countries.length&&!projs.length&&!coms.length?'<p style="color:#8a8a92;margin-top:20px">No projects, countries or companies match.</p>':'');}
+ const open=()=>{ov.hidden=false;inp.value=PROJ.q||'';draw();setTimeout(()=>inp.focus(),30)},close=()=>{ov.hidden=true};
+ btn.onclick=open;inp.oninput=draw;
+ ov.addEventListener('click',ev=>{const t=ev.target;if(t.closest('[data-x]'))return close();const it=t.closest('[data-id]');if(it){close();projPick(it.dataset.id);return;}
+  const c=t.closest('[data-c]');if(c){PROJ.f.c=c.dataset.c;PROJ.q='';close();projRender();const p=projFiltered()[0];if(p)projPick(p.id);return;}
+  const k=t.closest('[data-q]');if(k){PROJ.q=k.dataset.q;PROJ.f.c='';close();projRender();const p=projFiltered()[0];if(p)projPick(p.id);}});
+ addEventListener('keydown',ev=>{if(ev.key==='Escape'&&!ov.hidden)close()});
+ setInterval(()=>document.documentElement.classList.toggle('proj-on',typeof PROJ!=='undefined'&&PROJ.on),400);
+})();</script>
 </body>
 </html>
