@@ -2502,16 +2502,18 @@ function renderAct(){
   const G=actLatest();right=`<span><i></i>${esc(badge.replace(/^News /,'')||'Updated')}</span><a href="../../news.html">View all →</a>`;
   cards=G.length?G.map((g,i)=>{const s=g.top,a=impactsOf(s).map(assetForImpact).find(x=>x&&isFinite(x.d)&&Math.abs(x.d)<25&&x.u!=='bp');return `<button type="button" class="act-k" data-act="${i}"><div class="act-m"><b>${tm(s.t)}</b>${esc(nm(s.location.country))} · ${esc(CAT[s.category]||s.category)}</div><div class="act-t">${esc(s.headline)}</div><div class="act-f">${g.src.size} source${g.src.size>1?'s':''}${a?` · <span class="${a.d>0?'u':a.d<0?'d':''}">${esc((a.n||a.s).slice(0,18))} ${a.d>0?'+':a.d<0?'−':''}${Math.abs(a.d).toFixed(1)}%</span>`:''}</div></button>`}).join(''):'<div class="act-e">No articles for this region and time window. Try a wider timeframe or All regions.</div>';
   el._groups=G;
+ }else if(actTab==='bf'){right='<span>Recorded voice · real data only</span>';cards=window.InvBriefing?InvBriefing.stripHTML():'';
  }else{
   const now=Date.now(),ev=CAL.filter(e=>Date.parse(e.at)>now&&(F.region==='global'||ACT_REG[e.c]===F.region||(F.region==='eu'&&e.c==='EUR'))).sort((a,b)=>Date.parse(a.at)-Date.parse(b.at)).slice(0,4);
   right=`<span>Your time zone · G10 currencies only</span><a href="../../calendar.html">Calendar →</a>`;
   cards=ev.length?ev.map(e=>{const d=new Date(e.at);return `<a class="act-k" href="../../calendar.html"><div class="act-m"><b>${d.toLocaleDateString([], {weekday:'short'})} ${tm(d)}</b>${esc(e.country||e.c)}${e.src?' · '+esc(e.src):''}</div><div class="act-t">${esc(e.t)}</div><div class="act-f"><span class="hi">● High impact</span></div></a>`}).join(''):'<div class="act-e">No scheduled high-impact releases for this region in our calendar. Coverage is limited to major currencies for now.</div>';
  }
  el.classList.toggle('pf',actTab==='pf');
- el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Upcoming</button><button type="button" role="tab" aria-selected="${actTab==='pf'}" data-at="pf">My watchlist</button><span class="act-r">${right}</span></div>${actTab==='pf'?wlHTML():`<div class="act-c">${cards}</div>`}`;
+ el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Upcoming</button><button type="button" role="tab" aria-selected="${actTab==='pf'}" data-at="pf">My watchlist</button>${window.InvBriefing?`<button type="button" role="tab" aria-selected="${actTab==='bf'}" data-at="bf">${InvBriefing.tabHTML()}</button>`:''}<span class="act-r">${right}</span></div>${actTab==='pf'?wlHTML():`<div class="act-c">${cards}</div>`}`;
  if(actTab==='pf')wlBind(el);
  document.documentElement.style.setProperty('--acth',el.offsetHeight+'px');
  el.querySelectorAll('[data-at]').forEach(b=>b.onclick=()=>{actTab=b.dataset.at;renderAct();});
+ if(window.InvBriefing){InvBriefing.bind(el);if(!el._bfsub)el._bfsub=InvBriefing.onChange(()=>{if(el.hidden)return;const t=el.querySelector('[data-at="bf"]');if(t)t.innerHTML=InvBriefing.tabHTML();if(actTab==='bf'){const c=el.querySelector('.act-c');if(c)c.innerHTML=InvBriefing.stripHTML();}});}
  el.querySelectorAll('[data-act]').forEach(b=>b.onclick=()=>{const g=el._groups[+b.dataset.act];if(g)openStory(g.top);});
 }
 addEventListener('resize',()=>renderAct());
@@ -3473,8 +3475,10 @@ function mkdRender(){
   if(window.mkWlQ!=null){const q=mkWlQ.trim().toLowerCase(),R=q?wlUniverse().filter(a=>a.s.toLowerCase().startsWith(q)||String(a.n||'').toLowerCase().includes(q)).slice(0,7):[];
    cards=`<div class="mkd-c mkd-add"><input id="mk-wl-q" placeholder="Company, index, commodity or crypto" value="${esc(mkWlQ)}" autocomplete="off"><div class="f">${have.size>=WL_FREE?`Free shows ${WL_FREE} on the globe · <b>PRO</b> unlimited`:`${have.size} of ${WL_FREE} on the globe · Free`}</div></div>`+(R.length?R.map(a=>`<button type="button" class="mkd-c" data-wl-add="${esc(a.s)}"${have.has(a.s.toUpperCase())?' disabled':''}><div class="m"><b>${esc(a.s)}</b> ${esc(a.k?nm(a.k):'')}</div><div class="t">${esc(a.n||a.s)}</div><div class="f">${have.has(a.s.toUpperCase())?'In your watchlist':'＋ Add to watchlist'}</div></button>`).join(''):`<p class="mkd-e">${q?'No match in our market list.':'Type a name or ticker.'}</p>`);}
   else cards=H.length?H.map(h=>{const a=MKT.by?.[h.s];return `<div class="mkd-c"><div class="m"><b>${esc(h.s)}</b> ${esc(h.n)}<button type="button" class="mkd-x" data-wl-del="${esc(h.s)}" aria-label="Remove ${esc(h.n)}">×</button></div><div class="t" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:16px">${a&&Number.isFinite(a.p)?esc(money(a)):'No price'} ${a&&Number.isFinite(a.d)?pctPill(a.d):''}</div><div class="f">${a&&a.k?esc(nm(a.k))+' · ':''}${isFinite(asof)?'as of '+new Date(asof).toLocaleDateString([], {day:'numeric',month:'short'}):'last close'}</div></div>`;}).join(''):'<button type="button" class="mkd-c mkd-empty" data-wl-open><div class="t">＋ Add your first company or asset</div><div class="f">Prices from our last market update</div></button>';
+ }else if(mkTab==='bf'){cards=window.InvBriefing?InvBriefing.stripHTML():'<p class="mkd-e">Briefing is available on the full Globe page.</p>';
  }else cards=next.length?next.map(e=>`<a class="mkd-c" href="../../calendar.html"><div class="m"><b>${when(e.at)}</b> ${esc(e.country||'US')}</div><div class="t">${esc(e.t)}</div><div class="f">● High impact · ${esc(e.src||'official')}</div></a>`).join(''):'<p class="mkd-e">No scheduled releases in our calendar.</p>';
- mkA.innerHTML=`<div class="mkd-th"><button type="button" data-mt="act" aria-selected="${mkTab==='act'}">Market activity</button><button type="button" data-mt="up" aria-selected="${mkTab==='up'}">Upcoming</button><button type="button" data-mt="wl" aria-selected="${mkTab==='wl'}">My watchlist</button><em>${mkTab==='wl'?`<button type="button" class="mkd-addb" data-wl-open>${window.mkWlQ!=null?'Done':'＋ Add'}</button> Prices from our last market update, not live`:(d1?'ECB '+fmtD(d1)+' · ':'')+'sessions now'}</em></div><div class="mkd-cs${mkTab==='wl'?' wl':''}">${cards}</div>`;
+ mkA.innerHTML=`<div class="mkd-th"><button type="button" data-mt="act" aria-selected="${mkTab==='act'}">Market activity</button><button type="button" data-mt="up" aria-selected="${mkTab==='up'}">Upcoming</button><button type="button" data-mt="wl" aria-selected="${mkTab==='wl'}">My watchlist</button>${window.InvBriefing?`<button type="button" data-mt="bf" aria-selected="${mkTab==='bf'}">${InvBriefing.tabHTML()}</button>`:''}<em>${mkTab==='wl'?`<button type="button" class="mkd-addb" data-wl-open>${window.mkWlQ!=null?'Done':'＋ Add'}</button> Prices from our last market update, not live`:mkTab==='bf'?'Recorded voice · real data only':(d1?'ECB '+fmtD(d1)+' · ':'')+'sessions now'}</em></div><div class="mkd-cs${mkTab==='wl'?' wl':''}${mkTab==='bf'?' bf':''}">${cards}</div>`;
+ if(window.InvBriefing){InvBriefing.bind(mkA);if(!mkA._bfsub)mkA._bfsub=InvBriefing.onChange(()=>{if(mkA.hidden)return;const t=mkA.querySelector('[data-mt="bf"]');if(t)t.innerHTML=InvBriefing.tabHTML();if(mkTab==='bf'){const c=mkA.querySelector('.mkd-cs');if(c)c.innerHTML=InvBriefing.stripHTML();}});}
  mkA.querySelectorAll('[data-mt]').forEach(b=>b.onclick=()=>{mkTab=b.dataset.mt;mkdRender();});
  mkA.querySelectorAll('[data-wl-open]').forEach(b=>b.onclick=()=>{window.mkWlQ=window.mkWlQ!=null&&b.classList.contains('mkd-addb')?null:'';mkdRender();mkA.querySelector('#mk-wl-q')?.focus();});
  const wq=mkA.querySelector('#mk-wl-q');if(wq)wq.oninput=()=>{window.mkWlQ=wq.value;const pos=wq.selectionStart;mkdRender();const n=mkA.querySelector('#mk-wl-q');if(n){n.focus();n.setSelectionRange(pos,pos);}};
@@ -3622,6 +3626,18 @@ function mkUnusual(){
  .bf-card .bf-list{max-height:min(34vh,260px);margin-top:8px}.bf-card .bf-b{font-size:13.5px;padding:8px 10px;margin:6px 0}
  .bf-card .bf-ctl{margin-top:6px}.bf-card .bf-note{font-size:11px;margin-top:6px}
 
+ /* Briefing tab in the activity strips (owner 17 Nov 2026): ring logo, Briefing / playing / Briefed */
+ .bfs-tab{display:inline-flex;align-items:center;gap:6px}.bfs-tab svg{flex:none}.bfs-tab .bf-eq{height:10px}
+ .bfs{display:flex;flex-direction:column;gap:8px;padding:2px 2px 0}.bfs-r{display:flex;align-items:center;gap:12px}
+ .bfs-ic{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#1d130b;box-shadow:0 0 0 4px #ff7a1a14;flex:none}
+ .bfs-t{flex:1;min-width:0}.bfs-t small{display:block;color:#8a8a92;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
+ .bfs-t p{margin:0;color:#f4f4f5;font:500 14px/1.4 Inter,system-ui,sans-serif;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+ .bfs-pp{width:38px;height:38px;border-radius:50%;border:0;background:#ff7a1a;display:flex;align-items:center;justify-content:center;cursor:pointer;flex:none;box-shadow:0 0 0 4px #ff7a1a22}
+ .bfs-pp:focus-visible,.bfs-tr:focus-visible{outline:2px solid #ff9d55;outline-offset:2px}
+ .bfs-tr{border:1px solid #2a2a2f;border-radius:999px;background:#141417;color:#d4d4d8;font:500 12.5px Inter,system-ui,sans-serif;padding:0 14px;height:34px;cursor:pointer;flex:none}.bfs-tr:hover{border-color:#3a3a40;color:#fff}
+ .bfs-bar{height:2px;background:#232327;border-radius:2px;overflow:hidden}.bfs-bar i{display:block;height:100%;background:#ff7a1a;transition:width .4s}
+ .act-c:has(>.bfs),.mkd-cs.bf{display:block!important;overflow:visible}
+ .bfs-n,.bfs-e{margin:0;color:#77777f;font-size:11px}.bfs-e{font-size:12.5px;padding:8px 0}
  .bf-tc{position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:4}
  .bf-stack{position:fixed;z-index:59;display:flex;flex-direction:column;gap:8px;width:min(420px,calc(100vw - 24px));opacity:0;transform:translateY(8px);transition:opacity .35s ease,transform .35s ease;pointer-events:none}
  .bf-stack.on{opacity:1;transform:none;pointer-events:auto}
@@ -3804,6 +3820,29 @@ function mkUnusual(){
  const ready=setInterval(()=>{if(typeof MKT!=='undefined'&&MKT.all&&MKT.all.length&&typeof stories!=='undefined'){clearInterval(ready);build();paintBtn();}},500);
  setInterval(()=>{if(!playing&&CH.length)paintBtn();},5000);
  setInterval(()=>{if(playing&&!card.hidden){const b=card.querySelector('.bf-bar i');if(b){const at=REC?Math.round(AU.currentTime*14):CH.slice(0,cur).reduce((x,c)=>x+c.t.length,0);b.style.width=Math.min(100,Math.round(at/(total()||1)*100))+'%';}}},1000);
+ // Owner 17 Nov 2026: Briefing tab in the Markets and News activity strips (next to Upcoming and My watchlist).
+ // One player only: the strips render from this API and every control goes through the same speak/pause/resume as the card.
+ const subs=new Set();let lastS='';
+ const api={
+  state:()=>({ready:CH.length>0,playing,done:!!done(),cur,n:CH.length,text:CH[cur]?.t||CH[0]?.t||'',head:CH[0]?.h||'Briefing',progress:REC?(dur()?Math.min(1,AU.currentTime/dur()):0):(CH.length?cur/CH.length:0),recorded:!!REC}),
+  play(){if(!CH.length)build();card.hidden=false;if(!playing&&!resume())speak(done()?0:cur>=CH.length-1?0:cur);paintBtn();paintCard();},
+  pause(){if(playing)pauseOnly();},
+  transcript(){if(!CH.length)build();card.hidden=false;tr=true;paintCard();paintBtn();},
+  onChange(f){subs.add(f);return()=>subs.delete(f);},
+  tabHTML(){const S=api.state();return `<span class="bfs-tab">${S.done&&!S.playing?TICK14:RING14}${S.playing?'Briefing <i class="bf-eq"><b></b><b></b><b></b></i>':S.done?'Briefed':'Briefing'}</span>`;},
+  stripHTML(){const S=api.state(),e=t=>String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+   if(!S.ready)return '<div class="bfs"><p class="bfs-e">Briefing is preparing from today\'s market data…</p></div>';
+   return `<div class="bfs"><div class="bfs-r"><span class="bfs-ic">${S.done&&!S.playing?DONE:RING}</span><div class="bfs-t"><small>${e(S.head)} · ${S.playing?'playing':S.done?'✓ Briefed':S.cur?'paused':'ready'}</small><p>${e(S.text)}</p></div>
+    <button type="button" class="bfs-pp" data-bfs="${S.playing?'pause':'play'}" aria-label="${S.playing?'Pause':'Play'} Briefing">${S.playing?PAUSE:PLAY}</button><button type="button" class="bfs-tr" data-bfs="tr">Transcript</button></div>
+    <div class="bfs-bar"><i style="width:${Math.round(S.progress*100)}%"></i></div><p class="bfs-n">Spoken summary of data on this page. Not investment advice.</p></div>`;},
+  bind(el){if(el._bfs)return;el._bfs=1;el.addEventListener('click',ev=>{const k=ev.target.closest('[data-bfs]')?.dataset.bfs;if(!k)return;ev.stopPropagation();k==='play'?api.play():k==='pause'?api.pause():api.transcript();});}
+ };
+ const RING14='<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#ff7a1a" stroke-width="2"/></svg>';
+ const TICK14='<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#8a8a92" stroke-width="2"/><path d="m8 12.2 2.6 2.6L16 9.4" fill="none" stroke="#ececef" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+ setInterval(()=>{const s=JSON.stringify(api.state());if(s!==lastS){lastS=s;subs.forEach(f=>{try{f(api.state());}catch{}});}},400);
+ window.InvBriefing=api;
+ // the strips render before this file runs: draw them again so the Briefing tab appears
+ setTimeout(()=>{try{if(typeof mkdRender==='function'&&document.documentElement.classList.contains('mkd-on'))mkdRender();}catch{}try{if(typeof renderAct==='function')renderAct();}catch{}},0);
 })();
 
 requestAnimationFrame(frame);

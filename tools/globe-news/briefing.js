@@ -34,6 +34,18 @@
  .bf-card .bf-list{max-height:min(34vh,260px);margin-top:8px}.bf-card .bf-b{font-size:13.5px;padding:8px 10px;margin:6px 0}
  .bf-card .bf-ctl{margin-top:6px}.bf-card .bf-note{font-size:11px;margin-top:6px}
 
+ /* Briefing tab in the activity strips (owner 17 Nov 2026): ring logo, Briefing / playing / Briefed */
+ .bfs-tab{display:inline-flex;align-items:center;gap:6px}.bfs-tab svg{flex:none}.bfs-tab .bf-eq{height:10px}
+ .bfs{display:flex;flex-direction:column;gap:8px;padding:2px 2px 0}.bfs-r{display:flex;align-items:center;gap:12px}
+ .bfs-ic{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#1d130b;box-shadow:0 0 0 4px #ff7a1a14;flex:none}
+ .bfs-t{flex:1;min-width:0}.bfs-t small{display:block;color:#8a8a92;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
+ .bfs-t p{margin:0;color:#f4f4f5;font:500 14px/1.4 Inter,system-ui,sans-serif;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+ .bfs-pp{width:38px;height:38px;border-radius:50%;border:0;background:#ff7a1a;display:flex;align-items:center;justify-content:center;cursor:pointer;flex:none;box-shadow:0 0 0 4px #ff7a1a22}
+ .bfs-pp:focus-visible,.bfs-tr:focus-visible{outline:2px solid #ff9d55;outline-offset:2px}
+ .bfs-tr{border:1px solid #2a2a2f;border-radius:999px;background:#141417;color:#d4d4d8;font:500 12.5px Inter,system-ui,sans-serif;padding:0 14px;height:34px;cursor:pointer;flex:none}.bfs-tr:hover{border-color:#3a3a40;color:#fff}
+ .bfs-bar{height:2px;background:#232327;border-radius:2px;overflow:hidden}.bfs-bar i{display:block;height:100%;background:#ff7a1a;transition:width .4s}
+ .act-c:has(>.bfs),.mkd-cs.bf{display:block!important;overflow:visible}
+ .bfs-n,.bfs-e{margin:0;color:#77777f;font-size:11px}.bfs-e{font-size:12.5px;padding:8px 0}
  .bf-tc{position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:4}
  .bf-stack{position:fixed;z-index:59;display:flex;flex-direction:column;gap:8px;width:min(420px,calc(100vw - 24px));opacity:0;transform:translateY(8px);transition:opacity .35s ease,transform .35s ease;pointer-events:none}
  .bf-stack.on{opacity:1;transform:none;pointer-events:auto}
@@ -216,4 +228,27 @@
  const ready=setInterval(()=>{if(typeof MKT!=='undefined'&&MKT.all&&MKT.all.length&&typeof stories!=='undefined'){clearInterval(ready);build();paintBtn();}},500);
  setInterval(()=>{if(!playing&&CH.length)paintBtn();},5000);
  setInterval(()=>{if(playing&&!card.hidden){const b=card.querySelector('.bf-bar i');if(b){const at=REC?Math.round(AU.currentTime*14):CH.slice(0,cur).reduce((x,c)=>x+c.t.length,0);b.style.width=Math.min(100,Math.round(at/(total()||1)*100))+'%';}}},1000);
+ // Owner 17 Nov 2026: Briefing tab in the Markets and News activity strips (next to Upcoming and My watchlist).
+ // One player only: the strips render from this API and every control goes through the same speak/pause/resume as the card.
+ const subs=new Set();let lastS='';
+ const api={
+  state:()=>({ready:CH.length>0,playing,done:!!done(),cur,n:CH.length,text:CH[cur]?.t||CH[0]?.t||'',head:CH[0]?.h||'Briefing',progress:REC?(dur()?Math.min(1,AU.currentTime/dur()):0):(CH.length?cur/CH.length:0),recorded:!!REC}),
+  play(){if(!CH.length)build();card.hidden=false;if(!playing&&!resume())speak(done()?0:cur>=CH.length-1?0:cur);paintBtn();paintCard();},
+  pause(){if(playing)pauseOnly();},
+  transcript(){if(!CH.length)build();card.hidden=false;tr=true;paintCard();paintBtn();},
+  onChange(f){subs.add(f);return()=>subs.delete(f);},
+  tabHTML(){const S=api.state();return `<span class="bfs-tab">${S.done&&!S.playing?TICK14:RING14}${S.playing?'Briefing <i class="bf-eq"><b></b><b></b><b></b></i>':S.done?'Briefed':'Briefing'}</span>`;},
+  stripHTML(){const S=api.state(),e=t=>String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+   if(!S.ready)return '<div class="bfs"><p class="bfs-e">Briefing is preparing from today\'s market data…</p></div>';
+   return `<div class="bfs"><div class="bfs-r"><span class="bfs-ic">${S.done&&!S.playing?DONE:RING}</span><div class="bfs-t"><small>${e(S.head)} · ${S.playing?'playing':S.done?'✓ Briefed':S.cur?'paused':'ready'}</small><p>${e(S.text)}</p></div>
+    <button type="button" class="bfs-pp" data-bfs="${S.playing?'pause':'play'}" aria-label="${S.playing?'Pause':'Play'} Briefing">${S.playing?PAUSE:PLAY}</button><button type="button" class="bfs-tr" data-bfs="tr">Transcript</button></div>
+    <div class="bfs-bar"><i style="width:${Math.round(S.progress*100)}%"></i></div><p class="bfs-n">Spoken summary of data on this page. Not investment advice.</p></div>`;},
+  bind(el){if(el._bfs)return;el._bfs=1;el.addEventListener('click',ev=>{const k=ev.target.closest('[data-bfs]')?.dataset.bfs;if(!k)return;ev.stopPropagation();k==='play'?api.play():k==='pause'?api.pause():api.transcript();});}
+ };
+ const RING14='<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#ff7a1a" stroke-width="2"/></svg>';
+ const TICK14='<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#8a8a92" stroke-width="2"/><path d="m8 12.2 2.6 2.6L16 9.4" fill="none" stroke="#ececef" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+ setInterval(()=>{const s=JSON.stringify(api.state());if(s!==lastS){lastS=s;subs.forEach(f=>{try{f(api.state());}catch{}});}},400);
+ window.InvBriefing=api;
+ // the strips render before this file runs: draw them again so the Briefing tab appears
+ setTimeout(()=>{try{if(typeof mkdRender==='function'&&document.documentElement.classList.contains('mkd-on'))mkdRender();}catch{}try{if(typeof renderAct==='function')renderAct();}catch{}},0);
 })();
