@@ -153,12 +153,12 @@ def located(c, cc, r, idx, method):
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(); ap.add_argument('--check', action='store_true'); ap.add_argument('--limit', type=int)
+    ap = argparse.ArgumentParser(); ap.add_argument('--check', action='store_true'); ap.add_argument('--limit', type=int); ap.add_argument('--cc', nargs='*', help='only these directory country codes, e.g. ph bw')
     a = ap.parse_args(argv)
     hq = json.loads(HQ.read_text(encoding='utf-8')); C = hq['companies']
     held = {r['s'] for r in hq['review_required']}
     companies = json.loads(DIRECTORY.read_text(encoding='utf-8'))['companies']
-    todo = [c for c in companies if not any(l['s'] in C for l in c['listings'])][:a.limit]
+    todo = [c for c in companies if not any(l['s'] in C for l in c['listings']) and (not a.cc or c['cc'] in a.cc)][:a.limit]
     idx = geonames()
     added, review, suggest, missing = {}, [], {}, []
     for i, c in enumerate(todo, 1):

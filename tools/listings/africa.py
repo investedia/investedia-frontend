@@ -10,6 +10,8 @@ What each source gives:
   Ghana GSE   symbol, name. Cross-listings of companies based abroad are left out (CROSS_LISTED), as are funds and
               preference shares; the bond-issuer table on the same page is ignored.
   BRVM        symbol, name with the country at the end (8 WAEMU countries).
+  Botswana BSE  company, counter (symbol), sector, board and physical address. Only the Domestic Main Board is taken;
+              foreign boards (Anglo American, Investec, Lucara...) are companies based elsewhere. (Added 18 Nov 2026.)
 Companies already in the directory are never changed; new ones get an untracked listing and the exchange as source.
 """
 import argparse, datetime, hashlib, html, json, pathlib, re, sys, urllib.request
@@ -22,7 +24,7 @@ DIRECTORY = ROOT / 'data/companies.json'
 UA = 'Mozilla/5.0 (compatible; InvestediaBuild/1.0; site data build)'
 COUNTRY = {'KE': ('Kenya', 'ke'), 'RW': ('Rwanda', 'rw'), 'UG': ('Uganda', 'ug'), 'TZ': ('Tanzania', 'tz'), 'GH': ('Ghana', 'gh'),
            "COTE D'IVOIRE": ("Côte d'Ivoire", 'ci'), 'SENEGAL': ('Senegal', 'sn'), 'BURKINA FASO': ('Burkina Faso', 'bf'), 'BENIN': ('Benin', 'bj'),
-           'MALI': ('Mali', 'ml'), 'NIGER': ('Niger', 'ne'), 'TOGO': ('Togo', 'tg'), 'GUINEE-BISSAU': ('Guinea-Bissau', 'gw')}
+           'MALI': ('Mali', 'ml'), 'NIGER': ('Niger', 'ne'), 'TOGO': ('Togo', 'tg'), 'GUINEE-BISSAU': ('Guinea-Bissau', 'gw'), 'BW': ('Botswana', 'bw')}
 CROSS_LISTED = {'AGA': 'AngloGold Ashanti (HQ outside Ghana)', 'ASG': 'Asante Gold (Canada)', 'ETI': 'Ecobank Transnational (Togo)',
                 'TBL': 'Trust Bank (The Gambia)', 'TLW': 'Tullow Oil (United Kingdom)', 'ALLGH': 'Atlantic Lithium (Australia)',
                 'GLD': 'NewGold (a gold fund)', 'SCB-PREF': 'preference share of Standard Chartered Bank Ghana'}
@@ -32,6 +34,7 @@ SOURCES = {
     'nse-ke': {'exchange': 'Nairobi Securities Exchange', 'short': 'NSE', 'cur': 'KES', 'url': 'https://www.nse.co.ke/listed-companies/'},
     'gse-gh': {'exchange': 'Ghana Stock Exchange', 'short': 'GSE', 'cur': 'GHS', 'url': 'https://gse.com.gh/listed-companies/'},
     'brvm': {'exchange': 'BRVM (West African regional exchange)', 'short': 'BRVM', 'cur': 'XOF', 'url': 'https://www.brvm.org/en/cours-actions/0'},
+    'bse-bw': {'exchange': 'Botswana Stock Exchange', 'short': 'BSE-BW', 'cur': 'BWP', 'url': 'https://www.bse.co.bw/companies/'},
 }
 
 
@@ -76,11 +79,27 @@ def parse_brvm(t):
     return out
 
 
-PARSE = {'nse-ke': parse_ke, 'gse-gh': parse_gh, 'brvm': parse_brvm}
+BW_SECTOR = {'Banking': 'Finance', 'Financial Services': 'Finance', 'Property': 'Real Estate', 'ICT': 'Communication', 'Tourism': 'Consumer',
+             'Retail & Wholesale': 'Consumer', 'Agriculture': 'Consumer', 'Energy': 'Energy', 'Mining': 'Materials', 'Security Services': 'Industrials'}
 
 
-def fetch():
+def parse_bw(t):
+    txt = re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', '|', re.sub(r'<script.*?</script>|<style.*?</style>', '', t, flags=re.S))))
+    txt = re.sub(r'(\|\s*)+', '|', txt); txt = txt[txt.find('Listed Companies|') + 17:]
+    out = []
+    for m in re.finditer(r'([^|]+)\|COUNTER\|([^|]+)\|.*?PHYSICAL AND POSTAL ADDRESS\|([^|]+)\|.*?Sector\|([^|]+)\|Board\|([^|]+)\|', txt):
+        name, sym, addr, sector, board = (x.strip() for x in m.groups())
+        if board != 'Domestic Main Board': continue
+        out.append({'symbol': sym.replace(' ', '-'), 'name': name, 'sector': BW_SECTOR.get(sector), 'industry': sector, 'address': addr, 'country_key': 'BW'})
+    return out
+
+
+PARSE = {'nse-ke': parse_ke, 'gse-gh': parse_gh, 'brvm': parse_brvm, 'bse-bw': parse_bw}
+
+
+def fetch(only=None):
     for k, s in SOURCES.items():
+        if only and k not in only: continue
         raw = get(s['url']); rows = PARSE[k](raw.decode('utf-8', 'ignore'))
         out = ROOT / f'data/listed-companies/{k}.json'; out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(json.dumps({'schema': 'investedia.listed-companies/v1', 'exchange': s['exchange'], 'source_url': s['url'],
@@ -110,7 +129,7 @@ def add():
             listing = {'s': lid, 'name': r['name'], 'exchange': s['exchange'], 'cur': s['cur'], 'tracked': False}
             if r.get('isin'): listing['isin'] = r['isin']
             d['companies'].append({'slug': slug, 'name': name, 'legal_name': r['name'], 'country': country, 'cc': cc, 'region': 'Africa',
-                                   'sector': None, 'industry': None, 'public': True, 'hq': None, 'website': None, 'description': None, 'founded': None,
+                                   'sector': r.get('sector'), 'industry': r.get('industry'), 'public': True, 'hq': None, 'website': None, 'description': None, 'founded': None,
                                    'story': [], 'related': [], 'videos': [],
                                    'sources': [{'name': s['exchange'] + ' listed companies', 'url': src['source_url'], 'checked_at': src['checked_at']}],
                                    'logo': None, 'listings': [listing]})
@@ -122,5 +141,5 @@ def add():
 
 
 if __name__ == '__main__':
-    ap = argparse.ArgumentParser(); ap.add_argument('--fetch', action='store_true'); a = ap.parse_args()
-    fetch() if a.fetch else add()
+    ap = argparse.ArgumentParser(); ap.add_argument('--fetch', action='store_true'); ap.add_argument('--only', nargs='*'); a = ap.parse_args()
+    fetch(a.only) if a.fetch else add()

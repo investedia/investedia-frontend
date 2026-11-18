@@ -2,7 +2,7 @@
  "schema": "investedia.company-hq.v1",
  "licence": "CC0 1.0 (Wikidata)",
  "checked_at": "2026-11-11",
- "matched": 513,
+ "matched": 599,
  "asked": 613,
  "companies": {
   "NVDA": {
@@ -6186,55 +6186,1137 @@
    "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
    "source_url": "https://search.gleif.org/#/record/984500BEE8483EAED424",
    "checked_at": "2026-11-17"
+  },
+  "BSE-BW:ACCESS": {
+   "hq_city": "Gaborone",
+   "hq_lat": -24.6545,
+   "hq_lon": 25.9086,
+   "lei": "549300WF5C22WL5IE637",
+   "company_label": "Access Bank Botswana Limited",
+   "country": "Botswana",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2025-09-10; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300WF5C22WL5IE637",
+   "checked_at": "2026-11-18"
+  },
+  "BSE-BW:LETSHEGO": {
+   "hq_city": "Gaborone",
+   "hq_lat": -24.6545,
+   "hq_lon": 25.9086,
+   "lei": "549300DY56RZ55UDT429",
+   "company_label": "Letshego Holdings Limited",
+   "country": "Botswana",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2024-06-24; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300DY56RZ55UDT429",
+   "checked_at": "2026-11-18"
+  },
+  "BA": {
+   "hq_city": "Arlington",
+   "hq_lat": 38.8783,
+   "hq_lon": -77.1007,
+   "cik": "0000012927",
+   "company_label": "BOEING CO",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Arlington, VA; US Census 2024 Gazetteer place 5103000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0000012927.json",
+   "source_sha256": "cfcfc2a487778bb8e066dc4934a07b4976620d60093ecd7930d37d9985737e01",
+   "checked_at": "2026-11-18"
+  },
+  "CRM": {
+   "hq_city": "San Francisco",
+   "hq_lat": 37.7272,
+   "hq_lon": -123.0322,
+   "cik": "0001108524",
+   "company_label": "Salesforce, Inc.",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address San Francisco, CA; US Census 2024 Gazetteer place 0667000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0001108524.json",
+   "source_sha256": "92897c3ece78bcd7c42b1b94dcff01c701e8017118f491f83267b3baa4aac31b",
+   "checked_at": "2026-11-18"
+  },
+  "ASML": {
+   "hq_city": "Veldhoven",
+   "hq_lat": 51.42,
+   "hq_lon": 5.405,
+   "cik": "0000937966",
+   "company_label": "ASML HOLDING NV",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Dr Veldhoven, P7; Wikidata Q9875 (CC0) city coordinates",
+   "source_url": "https://data.sec.gov/submissions/CIK0000937966.json",
+   "source_sha256": "2048ecc83b9e53d318b8f2ba07036d19ded2d304d6471b82fd8317b951d9ba0a",
+   "checked_at": "2026-11-18"
+  },
+  "WMT": {
+   "hq_city": "Bentonville",
+   "hq_lat": 36.3527,
+   "hq_lon": -94.2312,
+   "cik": "0000104169",
+   "company_label": "Walmart Inc.",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Bentonville, AR; US Census 2024 Gazetteer place 0505320 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0000104169.json",
+   "source_sha256": "2b58bb8b2d468672e29a9b0765bfc36ec575e1669dee9a08eb4a1ac641e0bf76",
+   "checked_at": "2026-11-18"
+  },
+  "GS": {
+   "hq_city": "New York",
+   "hq_lat": 40.6627,
+   "hq_lon": -73.9387,
+   "cik": "0000886982",
+   "company_label": "GOLDMAN SACHS GROUP INC",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address New York, NY; US Census 2024 Gazetteer place 3651000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0000886982.json",
+   "source_sha256": "e4b576e2f843960ed2195880b4f93f28ada07ac5aa4fad46ec9088fa5ab1abee",
+   "checked_at": "2026-11-18"
+  },
+  "NVO": {
+   "hq_city": "Bagsværd",
+   "hq_lat": 55.76,
+   "hq_lon": 12.455,
+   "cik": "0000353278",
+   "company_label": "NOVO NORDISK A S",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Bagsvaerd Denmark, G7; Wikidata Q2509805 (CC0) city coordinates",
+   "source_url": "https://data.sec.gov/submissions/CIK0000353278.json",
+   "source_sha256": "9ac012e87066265c12ed9b8d27c6a5a39c262e5016d6fde8ae45e8b37e036195",
+   "checked_at": "2026-11-18"
+  },
+  "CVX": {
+   "hq_city": "Houston",
+   "hq_lat": 29.7857,
+   "hq_lon": -95.3888,
+   "cik": "0000093410",
+   "company_label": "CHEVRON CORP",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Houston, TX; US Census 2024 Gazetteer place 4835000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0000093410.json",
+   "source_sha256": "e8f57529241679b71d310888f499939ebf05f96fe600347fbe98cb2cb9370000",
+   "checked_at": "2026-11-18"
+  },
+  "ENPH": {
+   "hq_city": "Fremont",
+   "hq_lat": 37.4945,
+   "hq_lon": -121.9411,
+   "cik": "0001463101",
+   "company_label": "Enphase Energy, Inc.",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Fremont, CA; US Census 2024 Gazetteer place 0626000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0001463101.json",
+   "source_sha256": "0c08e7d91649597ffc4df45023e8fbe2d1ab0cbc9f4a9f38bc3cc090fa2de7a5",
+   "checked_at": "2026-11-18"
+  },
+  "RY": {
+   "hq_city": "Toronto",
+   "hq_lat": 43.6703,
+   "hq_lon": -79.3867,
+   "cik": "0001000275",
+   "company_label": "ROYAL BANK OF CANADA",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Toronto; Wikidata Q172 (CC0) city coordinates",
+   "source_url": "https://data.sec.gov/submissions/CIK0001000275.json",
+   "source_sha256": "d11443ccc38498a0cb964817a130b36fb0705ebb4ebe9b091953a24489662d12",
+   "checked_at": "2026-11-18"
+  },
+  "NU": {
+   "hq_city": "São Paulo",
+   "hq_lat": -23.5504,
+   "hq_lon": -46.6339,
+   "cik": "0001691493",
+   "company_label": "Nu Holdings Ltd.",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Sao Paulo, Sp, D5; Wikidata Q174 (CC0) city coordinates",
+   "source_url": "https://data.sec.gov/submissions/CIK0001691493.json",
+   "source_sha256": "903538f692c8a301f36cb15abc240e4b6f094c432ecc49ea92aa56d72f66047d",
+   "checked_at": "2026-11-18"
+  },
+  "AZN": {
+   "hq_city": "Cambridge",
+   "hq_lat": 52.2081,
+   "hq_lon": 0.1225,
+   "cik": "0000901832",
+   "company_label": "ASTRAZENECA PLC",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Cambridge; Wikidata Q350 (CC0) city coordinates",
+   "source_url": "https://data.sec.gov/submissions/CIK0000901832.json",
+   "source_sha256": "9a6cc548a77210d56321701573082e6bd1f7c3c1d6c9ba717a1528dfdaeddce3",
+   "checked_at": "2026-11-18"
+  },
+  "RACE": {
+   "hq_city": "Maranello",
+   "hq_lat": 44.5264,
+   "hq_lon": 10.8667,
+   "cik": "0001648416",
+   "company_label": "Ferrari N.V.",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Maranello, L6; Wikidata Q100060 (CC0) city coordinates",
+   "source_url": "https://data.sec.gov/submissions/CIK0001648416.json",
+   "source_sha256": "247c11a0d235e0942865c38717519c0cc55682ba7d1162f28104a7acd777a7b2",
+   "checked_at": "2026-11-18"
+  },
+  "MUFG": {
+   "hq_city": "Tokyo",
+   "hq_lat": 35.6894,
+   "hq_lon": 139.6917,
+   "cik": "0000067088",
+   "company_label": "MITSUBISHI UFJ FINANCIAL GROUP INC",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Tokyo, M0; Wikidata Q1490 (CC0) city coordinates",
+   "source_url": "https://data.sec.gov/submissions/CIK0000067088.json",
+   "source_sha256": "61c4a57decec7015f5ee29df709a43b0b4eecb0fc241c1adffa74ec909c907fb",
+   "checked_at": "2026-11-18"
+  },
+  "TD": {
+   "hq_city": "Toronto",
+   "hq_lat": 43.6703,
+   "hq_lon": -79.3867,
+   "cik": "0000947263",
+   "company_label": "TORONTO DOMINION BANK",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Toronto, Ontario, A6; Wikidata Q172 (CC0) city coordinates",
+   "source_url": "https://data.sec.gov/submissions/CIK0000947263.json",
+   "source_sha256": "41ecb1d88ae523eb0950c16ab95390220ed3f5681d0cdb5831f3ea83e3f11128",
+   "checked_at": "2026-11-18"
+  },
+  "TEVA": {
+   "hq_city": "Tel Aviv",
+   "hq_lat": 32.08,
+   "hq_lon": 34.78,
+   "cik": "0000818686",
+   "company_label": "TEVA PHARMACEUTICAL INDUSTRIES LTD",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Tel Aviv; Wikidata Q33935 (CC0) city coordinates",
+   "source_url": "https://data.sec.gov/submissions/CIK0000818686.json",
+   "source_sha256": "d9354d2d4842d87ac7758331da3c99a0cfd241c5d1ea5ce0806fab58ffdcfebb",
+   "checked_at": "2026-11-18"
+  },
+  "AEP": {
+   "hq_city": "Columbus",
+   "hq_lat": 39.9839,
+   "hq_lon": -82.9849,
+   "cik": "0000004904",
+   "company_label": "AMERICAN ELECTRIC POWER CO INC",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Columbus, OH; US Census 2024 Gazetteer place 3918000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0000004904.json",
+   "source_sha256": "7e91f70a1c8ad6c8a8058355a6f8ce06bd19da09fdfbaba3aac03fbf8ddc49b7",
+   "checked_at": "2026-11-18"
+  },
+  "CB": {
+   "hq_city": "Zürich",
+   "hq_lat": 47.3744,
+   "hq_lon": 8.5411,
+   "cik": "0000896159",
+   "company_label": "Chubb Ltd",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Zurich, V8; Wikidata Q72 (CC0) city coordinates",
+   "source_url": "https://data.sec.gov/submissions/CIK0000896159.json",
+   "source_sha256": "23ed793fafe7c5b117341b3784b43efeaf4347f09a25ae2705fa4464f94dbb53",
+   "checked_at": "2026-11-18"
+  },
+  "PRU": {
+   "hq_city": "Newark",
+   "hq_lat": 40.7242,
+   "hq_lon": -74.1726,
+   "cik": "0001137774",
+   "company_label": "PRUDENTIAL FINANCIAL INC",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Newark, NJ; US Census 2024 Gazetteer place 3451000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0001137774.json",
+   "source_sha256": "71c6e305cd9211db36315c1490ab632eefe03cee509652f3fb4a8921118ffc92",
+   "checked_at": "2026-11-18"
+  },
+  "TRV": {
+   "hq_city": "St. Paul",
+   "hq_lat": 44.9489,
+   "hq_lon": -93.1041,
+   "cik": "0000086312",
+   "company_label": "TRAVELERS COMPANIES, INC.",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Saint Paul, MN; US Census 2024 Gazetteer place 2758000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0000086312.json",
+   "source_sha256": "ce0d1baf034ccd9785e4127062bb4dae32fa34a66e3abd8ecc4da108945ac56e",
+   "checked_at": "2026-11-18"
+  },
+  "HIG": {
+   "hq_city": "Hartford",
+   "hq_lat": 41.7659,
+   "hq_lon": -72.6816,
+   "cik": "0000874766",
+   "company_label": "HARTFORD INSURANCE GROUP, INC.",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Hartford, CT; US Census 2024 Gazetteer place 0937000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0000874766.json",
+   "source_sha256": "1bd31a11309b21cfbc06e2d7831c5fb56f2aad02a6b13d4b77f50cd64ff16770",
+   "checked_at": "2026-11-18"
+  },
+  "RIVN": {
+   "hq_city": "Irvine",
+   "hq_lat": 33.6784,
+   "hq_lon": -117.7713,
+   "cik": "0001874178",
+   "company_label": "Rivian Automotive, Inc. / DE",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Irvine, CA; US Census 2024 Gazetteer place 0636770 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0001874178.json",
+   "source_sha256": "9a730ece2aceea1d4d88985eece17aaed52d463296e6a3d63d0a545a18af09aa",
+   "checked_at": "2026-11-18"
+  },
+  "MRK": {
+   "hq_city": "Rahway",
+   "hq_lat": 40.6072,
+   "hq_lon": -74.2805,
+   "cik": "0000310158",
+   "company_label": "Merck & Co., Inc.",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Rahway, NJ; US Census 2024 Gazetteer place 3461530 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0000310158.json",
+   "source_sha256": "2c82537c7581264ba60e75288210f84c54cb4061e4e318381fb031a04f78e39c",
+   "checked_at": "2026-11-18"
+  },
+  "LIN": {
+   "hq_city": "Woking",
+   "hq_lat": 51.3161,
+   "hq_lon": -0.5611,
+   "cik": "0001707925",
+   "company_label": "LINDE PLC",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Woking Surrey, X0; Wikidata Q646225 (CC0) city coordinates",
+   "source_url": "https://data.sec.gov/submissions/CIK0001707925.json",
+   "source_sha256": "64e58bab1a870ab6ae2cac9a5d1f3b801b4ad69292feeacdccdeaf0d324197b5",
+   "checked_at": "2026-11-18"
+  },
+  "AEE": {
+   "hq_city": "St. Louis",
+   "hq_lat": 38.6357,
+   "hq_lon": -90.2446,
+   "cik": "0001002910",
+   "company_label": "AMEREN CORP",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address St Louis, MO; US Census 2024 Gazetteer place 2965000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0001002910.json",
+   "source_sha256": "a6be20a8a31489197463d93a144a330c207b148191a29a93b6471adec58e2d57",
+   "checked_at": "2026-11-18"
+  },
+  "AES": {
+   "hq_city": "Arlington",
+   "hq_lat": 38.8783,
+   "hq_lon": -77.1007,
+   "cik": "0000874761",
+   "company_label": "AES CORP",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Arlington, VA; US Census 2024 Gazetteer place 5103000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0000874761.json",
+   "source_sha256": "3b926bafc71bf8f6d884f1a5c7bc7d5d37cf9befaf3a1f2f8c2ee9f983018a8c",
+   "checked_at": "2026-11-18"
+  },
+  "BKH": {
+   "hq_city": "Rapid City",
+   "hq_lat": 44.0711,
+   "hq_lon": -103.2179,
+   "cik": "0001130464",
+   "company_label": "Bright Horizon Energy Corp",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Rapid City, SD; US Census 2024 Gazetteer place 4652980 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0001130464.json",
+   "source_sha256": "a79326c185630fc20e9575fd560e379050f744c2bf3ee328e6cef2938d7ed239",
+   "checked_at": "2026-11-18"
+  },
+  "CMS": {
+   "hq_city": "Jackson",
+   "hq_lat": 42.2434,
+   "hq_lon": -84.4049,
+   "cik": "0000811156",
+   "company_label": "CMS ENERGY CORP",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Jackson, MI; US Census 2024 Gazetteer place 2641420 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0000811156.json",
+   "source_sha256": "ac39f83c2e90c350911b54c59226283aac248dae6111e7a3d54b67dd04e8b6f7",
+   "checked_at": "2026-11-18"
+  },
+  "DTE": {
+   "hq_city": "Detroit",
+   "hq_lat": 42.383,
+   "hq_lon": -83.1022,
+   "cik": "0000936340",
+   "company_label": "DTE ENERGY CO",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Detroit, MI; US Census 2024 Gazetteer place 2622000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0000936340.json",
+   "source_sha256": "53c390380fc3ee9181c11c27ed15ff5f6dd29df7aba1e2d21da237c10ccebbc8",
+   "checked_at": "2026-11-18"
+  },
+  "EIX": {
+   "hq_city": "Rosemead",
+   "hq_lat": 34.0689,
+   "hq_lon": -118.0827,
+   "cik": "0000827052",
+   "company_label": "EDISON INTERNATIONAL",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Rosemead, CA; US Census 2024 Gazetteer place 0662896 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0000827052.json",
+   "source_sha256": "4193a08b3a74b636453c626b0b39d4e5fc7fdc9762ebf76bf0d96758aabc291a",
+   "checked_at": "2026-11-18"
+  },
+  "ETR": {
+   "hq_city": "New Orleans",
+   "hq_lat": 30.0534,
+   "hq_lon": -89.9345,
+   "cik": "0000065984",
+   "company_label": "ENTERGY CORP /DE/",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address New Orleans, LA; US Census 2024 Gazetteer place 2255000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0000065984.json",
+   "source_sha256": "6ac66e70f526ca6317f6c400902328be34b7737cdde92f5d27e6139c4171dab1",
+   "checked_at": "2026-11-18"
+  },
+  "EVRG": {
+   "hq_city": "Kansas City",
+   "hq_lat": 39.1252,
+   "hq_lon": -94.5503,
+   "cik": "0001711269",
+   "company_label": "Evergy, Inc.",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Kansas City, MO; US Census 2024 Gazetteer place 2938000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0001711269.json",
+   "source_sha256": "9b7f7e5acb1e5077dffd9b1625c5901ec717e57cf90094d79eca8edc25e58d27",
+   "checked_at": "2026-11-18"
+  },
+  "LNT": {
+   "hq_city": "Madison",
+   "hq_lat": 43.0878,
+   "hq_lon": -89.4299,
+   "cik": "0000352541",
+   "company_label": "ALLIANT ENERGY CORP",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Madison, WI; US Census 2024 Gazetteer place 5548000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0000352541.json",
+   "source_sha256": "cff70c175565af88e6b7e352eb01fd0364cbe4d19134787795afe578ae0d95ed",
+   "checked_at": "2026-11-18"
+  },
+  "OGE": {
+   "hq_city": "Oklahoma City",
+   "hq_lat": 35.4671,
+   "hq_lon": -97.5137,
+   "cik": "0001021635",
+   "company_label": "OGE ENERGY CORP.",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Oklahoma City, OK; US Census 2024 Gazetteer place 4055000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0001021635.json",
+   "source_sha256": "a56fef8665260a85ac5464687e26843e3bbfac3797ebdffc0a3007c3fc68c1e1",
+   "checked_at": "2026-11-18"
+  },
+  "OTTR": {
+   "hq_city": "Fergus Falls",
+   "hq_lat": 46.285,
+   "hq_lon": -96.0761,
+   "cik": "0001466593",
+   "company_label": "Otter Tail Corp",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Fergus Falls, MN; US Census 2024 Gazetteer place 2720906 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0001466593.json",
+   "source_sha256": "9687395727ba2cad77fe9e7d75c2a4801ed18f2a9342b0b1407d4a2964dca0dd",
+   "checked_at": "2026-11-18"
+  },
+  "PNW": {
+   "hq_city": "Phoenix",
+   "hq_lat": 33.5722,
+   "hq_lon": -112.0901,
+   "cik": "0000764622",
+   "company_label": "PINNACLE WEST CAPITAL CORP",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Phoenix, AZ; US Census 2024 Gazetteer place 0455000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0000764622.json",
+   "source_sha256": "90e3d387cde954fb314f0d9fa533b88e919e6e8088f64ced97d3922e2dbe540c",
+   "checked_at": "2026-11-18"
+  },
+  "PPL": {
+   "hq_city": "Allentown",
+   "hq_lat": 40.5936,
+   "hq_lon": -75.4784,
+   "cik": "0000922224",
+   "company_label": "PPL Corp",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Allentown, PA; US Census 2024 Gazetteer place 4202000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0000922224.json",
+   "source_sha256": "209eac6602cd82d802fdde5beffe24b752ce83a61174270dc34a1280199e44a2",
+   "checked_at": "2026-11-18"
+  },
+  "VST": {
+   "hq_city": "Irving",
+   "hq_lat": 32.8577,
+   "hq_lon": -96.97,
+   "cik": "0001692819",
+   "company_label": "Vistra Corp.",
+   "precision": "city",
+   "method": "sec-business-address",
+   "source": "SEC EDGAR company filing profile: business address Irving, TX; US Census 2024 Gazetteer place 4837000 (public domain)",
+   "source_url": "https://data.sec.gov/submissions/CIK0001692819.json",
+   "source_sha256": "94df6345e61297cf31d2c281479d0fbfd7d445505ea5313ff7a58548f0e86c62",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:ACEN": {
+   "hq_city": "Makati City",
+   "hq_lat": 14.5503,
+   "hq_lon": 121.0327,
+   "lei": "549300LGUZQ61GQQXQ60",
+   "company_label": "ACEN CORPORATION",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300LGUZQ61GQQXQ60",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:AEV": {
+   "hq_city": "Makati City",
+   "hq_lat": 14.5503,
+   "hq_lon": 121.0327,
+   "lei": "254900MDNXYJKHXO0P61",
+   "company_label": "Aboitiz Equity Ventures Inc.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900MDNXYJKHXO0P61",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:ALI": {
+   "hq_city": "Makati City",
+   "hq_lat": 14.5503,
+   "hq_lon": 121.0327,
+   "lei": "254900EWT10TQ6DKTV34",
+   "company_label": "AYALA LAND, INC.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2025-12-06; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900EWT10TQ6DKTV34",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:AP": {
+   "hq_city": "Makati City",
+   "hq_lat": 14.5503,
+   "hq_lon": 121.0327,
+   "lei": "254900UHTKF4VBSFTL94",
+   "company_label": "ABOITIZ POWER CORPORATION",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900UHTKF4VBSFTL94",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:AUB": {
+   "hq_city": "Pasig City",
+   "hq_lat": 14.5869,
+   "hq_lon": 121.0614,
+   "lei": "54930025V41YSY0QJS74",
+   "company_label": "ASIA UNITED BANK CORP.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/54930025V41YSY0QJS74",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:BDO": {
+   "hq_city": "Makati City",
+   "hq_lat": 14.5503,
+   "hq_lon": 121.0327,
+   "lei": "3FGIIBS1PEI1FYQBGN97",
+   "company_label": "BDO UNIBANK, INC.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/3FGIIBS1PEI1FYQBGN97",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:BNCOM": {
+   "hq_city": "Mandaluyong City",
+   "hq_lat": 14.5832,
+   "hq_lon": 121.0409,
+   "lei": "549300DJX4SP2B5GJN45",
+   "company_label": "BANK OF COMMERCE",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300DJX4SP2B5GJN45",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:BPI": {
+   "hq_city": "Makati City",
+   "hq_lat": 14.5503,
+   "hq_lon": 121.0327,
+   "lei": "549300UW4UH6XT2X8C50",
+   "company_label": "BANK OF THE PHIL. ISLANDS",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300UW4UH6XT2X8C50",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:CBC": {
+   "hq_city": "Makati City",
+   "hq_lat": 14.5503,
+   "hq_lon": 121.0327,
+   "lei": "549300UF0WW28Z71DM64",
+   "company_label": "CHINA BANKING CORP.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300UF0WW28Z71DM64",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:CEB": {
+   "hq_city": "Pasay",
+   "hq_lat": 14.5375,
+   "hq_lon": 121.0014,
+   "lei": "5493005IKXICEEJZJ743",
+   "company_label": "CEBU AIR, INC.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/5493005IKXICEEJZJ743",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:CNPF": {
+   "hq_city": "Pasig City",
+   "hq_lat": 14.5869,
+   "hq_lon": 121.0614,
+   "lei": "254900NFV7QTJB821G52",
+   "company_label": "CENTURY PACIFIC FOOD, INC.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900NFV7QTJB821G52",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:CNVRG": {
+   "hq_city": "Angeles City",
+   "hq_lat": 15.15,
+   "hq_lon": 120.5833,
+   "lei": "254900CGJPNECN6ENN96",
+   "company_label": "Converge Information and Communications Technology Solutions, Inc.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900CGJPNECN6ENN96",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:CTS": {
+   "hq_city": "Pasig City",
+   "hq_lat": 14.5869,
+   "hq_lon": 121.0614,
+   "lei": "549300M0NN29T4F38J57",
+   "company_label": "CTS GLOBAL EQUITY GROUP, INC.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300M0NN29T4F38J57",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:DD": {
+   "hq_city": "Pasay",
+   "hq_lat": 14.5375,
+   "hq_lon": 121.0014,
+   "lei": "549300RYB1GASW5KV818",
+   "company_label": "DOUBLEDRAGON CORPORATION",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300RYB1GASW5KV818",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:EW": {
+   "hq_city": "Taguig",
+   "hq_lat": 14.5243,
+   "hq_lon": 121.0792,
+   "lei": "54930057S6HLIYF5LS94",
+   "company_label": "EAST WEST BANKING CORPORATION",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/54930057S6HLIYF5LS94",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:FB": {
+   "hq_city": "Pasig City",
+   "hq_lat": 14.5869,
+   "hq_lon": 121.0614,
+   "lei": "549300PTBJGLYH0SDJ04",
+   "company_label": "SAN MIGUEL FOOD AND BEVERAGE, INC.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2024-03-07; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300PTBJGLYH0SDJ04",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:FDC": {
+   "hq_city": "Taguig",
+   "hq_lat": 14.5243,
+   "hq_lon": 121.0792,
+   "lei": "254900IB7QXHR6MSPH66",
+   "company_label": "Filinvest Development Corporation",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2026-08-06; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900IB7QXHR6MSPH66",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:FGEN": {
+   "hq_city": "Pasig City",
+   "hq_lat": 14.5869,
+   "hq_lon": 121.0614,
+   "lei": "2549001NILAZ2IS02Y35",
+   "company_label": "FIRST GEN CORPORATION",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/2549001NILAZ2IS02Y35",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:GCASH": {
+   "hq_city": "Taguig",
+   "hq_lat": 14.5243,
+   "hq_lon": 121.0792,
+   "lei": "984500E997DA4SF42F78",
+   "company_label": "MYNT, INC.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/984500E997DA4SF42F78",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:GLO": {
+   "hq_city": "Taguig",
+   "hq_lat": 14.5243,
+   "hq_lon": 121.0792,
+   "lei": "254900GPWI1816YIM923",
+   "company_label": "Globe Telecom Inc.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900GPWI1816YIM923",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:GTCAP": {
+   "hq_city": "Makati City",
+   "hq_lat": 14.5503,
+   "hq_lon": 121.0327,
+   "lei": "254900P0ZPSRAHUO2131",
+   "company_label": "GT Capital Holdings, Inc.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900P0ZPSRAHUO2131",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:I": {
+   "hq_city": "Pasig City",
+   "hq_lat": 14.5869,
+   "hq_lon": 121.0614,
+   "lei": "254900QLMW32I9UC0U43",
+   "company_label": "I-Remit, Inc.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2025-04-19; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900QLMW32I9UC0U43",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:ICT": {
+   "hq_city": "Manila",
+   "hq_lat": 14.6042,
+   "hq_lon": 120.9822,
+   "lei": "254900FU1MWK0I0Q4J61",
+   "company_label": "International Container Terminal Services, Inc.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900FU1MWK0I0Q4J61",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:IMI": {
+   "hq_city": "Biñan",
+   "hq_lat": 14.3427,
+   "hq_lon": 121.0807,
+   "lei": "549300NZIGN6CQ6F9A46",
+   "company_label": "INTEGRATED MICRO-ELECTRONICS INC.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300NZIGN6CQ6F9A46",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:JFC": {
+   "hq_city": "Pasig City",
+   "hq_lat": 14.5869,
+   "hq_lon": 121.0614,
+   "lei": "2138009XN3KTAAKUPR35",
+   "company_label": "JOLLIBEE FOODS CORPORATION",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/2138009XN3KTAAKUPR35",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:MBT": {
+   "hq_city": "Makati City",
+   "hq_lat": 14.5503,
+   "hq_lon": 121.0327,
+   "lei": "549300SQYI82RVWFN715",
+   "company_label": "METROPOLITAN BANK & TRUST COMPANY",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300SQYI82RVWFN715",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:MEG": {
+   "hq_city": "Taguig",
+   "hq_lat": 14.5243,
+   "hq_lon": 121.0792,
+   "lei": "254900P57OOZ5AY5C521",
+   "company_label": "Megaworld Corporation",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900P57OOZ5AY5C521",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:MER": {
+   "hq_city": "Pasig City",
+   "hq_lat": 14.5869,
+   "hq_lon": 121.0614,
+   "lei": "254900RDFLCM12O8SK69",
+   "company_label": "Manila Electric Company",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2025-04-05; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900RDFLCM12O8SK69",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:MONDE": {
+   "hq_city": "Makati City",
+   "hq_lat": 14.5503,
+   "hq_lon": 121.0327,
+   "lei": "549300CUOTXJCLZ00K49",
+   "company_label": "MONDE NISSIN CORPORATION",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300CUOTXJCLZ00K49",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:MWC": {
+   "hq_city": "Quezon City",
+   "hq_lat": 14.6488,
+   "hq_lon": 121.0509,
+   "lei": "5493004SJIK0GOUIZM45",
+   "company_label": "MANILA WATER CO. INC.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/5493004SJIK0GOUIZM45",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:MYNLD": {
+   "hq_city": "Quezon City",
+   "hq_lat": 14.6488,
+   "hq_lon": 121.0509,
+   "lei": "2549005N7VTH3WDG1C74",
+   "company_label": "MAYNILAD WATER SERVICES, INC.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/2549005N7VTH3WDG1C74",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:NRCP": {
+   "hq_city": "Makati City",
+   "hq_lat": 14.5503,
+   "hq_lon": 121.0327,
+   "lei": "254900ZK8SFW86NAUX17",
+   "company_label": "NATIONAL REINSURANCE CORPORATION OF THE PHILIPPINES",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2026-10-02; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900ZK8SFW86NAUX17",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:PBC": {
+   "hq_city": "Makati City",
+   "hq_lat": 14.5503,
+   "hq_lon": 121.0327,
+   "lei": "549300W86N4HT5SZO450",
+   "company_label": "PHILIPPINE BANK OF COMMUNICATIONS",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300W86N4HT5SZO450",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:PCOR": {
+   "hq_city": "Mandaluyong City",
+   "hq_lat": 14.5832,
+   "hq_lon": 121.0409,
+   "lei": "549300R3PFXOFQSZ7G25",
+   "company_label": "PETRON CORPORATION",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300R3PFXOFQSZ7G25",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:PNB": {
+   "hq_city": "Pasay",
+   "hq_lat": 14.5375,
+   "hq_lon": 121.0014,
+   "lei": "549300AFS0UU6SDK2K95",
+   "company_label": "Philippine National Bank",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300AFS0UU6SDK2K95",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:PSB": {
+   "hq_city": "Makati City",
+   "hq_lat": 14.5503,
+   "hq_lon": 121.0327,
+   "lei": "5493008NB1ZIY4SKHN46",
+   "company_label": "PHILIPPINE SAVINGS BANK",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/5493008NB1ZIY4SKHN46",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:PTC": {
+   "hq_city": "Manila",
+   "hq_lat": 14.6042,
+   "hq_lon": 120.9822,
+   "lei": "549300B14PK448EZ1Q88",
+   "company_label": "PHILIPPINE TRUST COMPANY",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300B14PK448EZ1Q88",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:PX": {
+   "hq_city": "Mandaluyong City",
+   "hq_lat": 14.5832,
+   "hq_lon": 121.0409,
+   "lei": "2549003WBGIWUSNRZX59",
+   "company_label": "PHILEX MINING CORP.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/2549003WBGIWUSNRZX59",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:RCB": {
+   "hq_city": "Makati City",
+   "hq_lat": 14.5503,
+   "hq_lon": 121.0327,
+   "lei": "CIKZWI6KV077KV2E2J69",
+   "company_label": "Rizal Commercial Banking Corporation",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/CIKZWI6KV077KV2E2J69",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:SECB": {
+   "hq_city": "Makati City",
+   "hq_lat": 14.5503,
+   "hq_lon": 121.0327,
+   "lei": "549300JSVDZIR2CPTP95",
+   "company_label": "SECURITY BANK CORPORATION",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300JSVDZIR2CPTP95",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:SHLPH": {
+   "hq_city": "Taguig",
+   "hq_lat": 14.5243,
+   "hq_lon": 121.0792,
+   "lei": "54930056H8W5F37SB423",
+   "company_label": "SHELL PILIPINAS CORPORATION",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/54930056H8W5F37SB423",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:SM": {
+   "hq_city": "Pasay",
+   "hq_lat": 14.5375,
+   "hq_lon": 121.0014,
+   "lei": "254900YB8UATFP21AF80",
+   "company_label": "SM INVESTMENTS CORPORATION",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900YB8UATFP21AF80",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:SMC": {
+   "hq_city": "Mandaluyong City",
+   "hq_lat": 14.5832,
+   "hq_lon": 121.0409,
+   "lei": "549300AGC9NFF12PHN68",
+   "company_label": "SAN MIGUEL CORPORATION",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300AGC9NFF12PHN68",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:SMPH": {
+   "hq_city": "Pasay",
+   "hq_lat": 14.5375,
+   "hq_lon": 121.0014,
+   "lei": "254900SZK83MIAB8CU32",
+   "company_label": "SM PRIME HOLDINGS, INC.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900SZK83MIAB8CU32",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:TEL": {
+   "hq_city": "Makati City",
+   "hq_lat": 14.5503,
+   "hq_lon": 121.0327,
+   "lei": "254900ADE8GQHM5P2648",
+   "company_label": "PLDT Inc.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900ADE8GQHM5P2648",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:UBP": {
+   "hq_city": "Pasig City",
+   "hq_lat": 14.5869,
+   "hq_lon": 121.0614,
+   "lei": "549300J97JXR3URQK322",
+   "company_label": "UNION BANK OF THE PHILIPPINES",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/549300J97JXR3URQK322",
+   "checked_at": "2026-11-18"
+  },
+  "PSE:V": {
+   "hq_city": "Taguig",
+   "hq_lat": 14.5243,
+   "hq_lon": 121.0792,
+   "lei": "254900Q1MZZ1I7L4W103",
+   "company_label": "Vantage Equities, Inc.",
+   "country": "Philippines",
+   "precision": "city",
+   "method": "gleif",
+   "source": "GLEIF LEI record (CC0) headquarters address; record lapsed, last updated 2026-03-06; city coordinates GeoNames (CC BY 4.0)",
+   "source_url": "https://search.gleif.org/#/record/254900Q1MZZ1I7L4W103",
+   "checked_at": "2026-11-18"
   }
  },
  "not_matched": [
   {
-   "s": "CRM",
-   "why": "multiple headquarters or conflicting coordinates"
-  },
-  {
-   "s": "ASML",
-   "why": "multiple headquarters or conflicting coordinates"
-  },
-  {
    "s": "TSM",
    "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "WMT",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "GS",
-   "why": "multiple headquarters or conflicting coordinates"
   },
   {
    "s": "BNP",
    "why": "multiple company identities"
   },
   {
-   "s": "NVO",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "CVX",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "RY",
-   "why": "multiple headquarters or conflicting coordinates"
-  },
-  {
    "s": "MELI",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "AZN",
-   "why": "multiple headquarters or conflicting coordinates"
-  },
-  {
-   "s": "RACE",
    "why": "no ticker/name match with headquarters coordinates"
   },
   {
@@ -6248,10 +7330,6 @@
   {
    "s": "TCEHY",
    "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "TD",
-   "why": "multiple headquarters or conflicting coordinates"
   },
   {
    "s": "RIO",
@@ -6272,10 +7350,6 @@
   {
    "s": "ENBD",
    "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "TEVA",
-   "why": "multiple headquarters or conflicting coordinates"
   },
   {
    "s": "RIO.L",
@@ -6918,18 +7992,6 @@
    "why": "no ticker/name match with headquarters coordinates"
   },
   {
-   "s": "AEP",
-   "why": "multiple headquarters or conflicting coordinates"
-  },
-  {
-   "s": "TRV",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "HIG",
-   "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
    "s": "AXAHY",
    "why": "no ticker/name match with headquarters coordinates"
   },
@@ -6952,32 +8014,6 @@
   {
    "s": "SAFRY",
    "why": "no ticker/name match with headquarters coordinates"
-  },
-  {
-   "s": "MRK",
-   "why": "multiple company identities"
-  },
-  {
-   "s": "LIN",
-   "why": "multiple headquarters or conflicting coordinates"
-  },
-  {
-   "s": "NU",
-   "why": "review required: HQ source identifies a country/territory, not a city.",
-   "candidate": {
-    "hq_city": "Cayman Islands",
-    "hq_lat": 19.5,
-    "hq_lon": -80.5,
-    "qid": "Q107453017",
-    "hq_qid": "Q5785",
-    "company_label": "Nu Holdings Ltd.",
-    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-    "source_url": "https://www.wikidata.org/entity/Q107453017",
-    "checked_at": "2026-11-11",
-    "review_notes": [
-     "HQ source identifies a country/territory, not a city."
-    ]
-   }
   },
   {
    "s": "MQG",
@@ -7032,49 +8068,13 @@
      "Source HQ label is a site/address; city name has not been resolved."
     ]
    }
-  },
-  {
-   "s": "CB",
-   "why": "review required: Legacy Chubb Corp entity; current CB issuer identity requires review.",
-   "candidate": {
-    "hq_city": "Warren",
-    "hq_lat": 40.6346,
-    "hq_lon": -74.519,
-    "qid": "Q1089060",
-    "hq_qid": "Q367280",
-    "company_label": "Chubb Corp.",
-    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
-    "source_url": "https://www.wikidata.org/entity/Q1089060",
-    "checked_at": "2026-11-11",
-    "review_notes": [
-     "Legacy Chubb Corp entity; current CB issuer identity requires review."
-    ]
-   }
   }
  ],
  "review_required": [
   {
-   "s": "BA",
-   "why": [
-    "Potentially stale Boeing HQ location; independent current-source review required."
-   ]
-  },
-  {
    "s": "HSBA",
    "why": [
     "Source HQ label is a site/address; city name has not been resolved."
-   ]
-  },
-  {
-   "s": "ENPH",
-   "why": [
-    "Potentially stale Enphase HQ location; independent current-source review required."
-   ]
-  },
-  {
-   "s": "NU",
-   "why": [
-    "HQ source identifies a country/territory, not a city."
    ]
   },
   {
@@ -7096,25 +8096,6 @@
    ]
   },
   {
-   "s": "CB",
-   "why": [
-    "Legacy Chubb Corp entity; current CB issuer identity requires review."
-   ]
-  },
-  {
-   "s": "PRU",
-   "why": [
-    "Wikidata classifies the HQ site as a destroyed building; current office needs review.",
-    "Source HQ label is a site/address; city name has not been resolved."
-   ]
-  },
-  {
-   "s": "RIVN",
-   "why": [
-    "Potentially stale Rivian HQ location; independent current-source review required."
-   ]
-  },
-  {
    "s": "MAERSK-B.CO",
    "why": [
     "HQ is in an unknown country, directory says Denmark"
@@ -7133,25 +8114,7 @@
    ]
   },
   {
-   "s": "AEP",
-   "why": [
-    "Wikidata lists more than one current headquarters"
-   ]
-  },
-  {
    "s": "2020.HK",
-   "why": [
-    "Wikidata lists more than one current headquarters"
-   ]
-  },
-  {
-   "s": "ASML",
-   "why": [
-    "HQ is in an unknown country, directory says Netherlands"
-   ]
-  },
-  {
-   "s": "AZN",
    "why": [
     "Wikidata lists more than one current headquarters"
    ]
@@ -7235,12 +8198,6 @@
    ]
   },
   {
-   "s": "GS",
-   "why": [
-    "Wikidata lists more than one current headquarters"
-   ]
-  },
-  {
    "s": "GGAL.BA",
    "why": [
     "HQ is in an unknown country, directory says Argentina"
@@ -7289,12 +8246,6 @@
    ]
   },
   {
-   "s": "LIN",
-   "why": [
-    "Wikidata lists more than one current headquarters"
-   ]
-  },
-  {
    "s": "LONN.SW",
    "why": [
     "HQ is in an unknown country, directory says Switzerland"
@@ -7307,12 +8258,6 @@
    ]
   },
   {
-   "s": "MRK",
-   "why": [
-    "multiple Wikidata companies match"
-   ]
-  },
-  {
    "s": "MRK.DE",
    "why": [
     "Wikidata lists more than one current headquarters"
@@ -7322,12 +8267,6 @@
    "s": "4707.KL",
    "why": [
     "HQ is in an unknown country, directory says Malaysia"
-   ]
-  },
-  {
-   "s": "NVO",
-   "why": [
-    "HQ is in an unknown country, directory says Denmark"
    ]
   },
   {
@@ -7403,18 +8342,6 @@
    ]
   },
   {
-   "s": "RY",
-   "why": [
-    "Wikidata lists more than one current headquarters"
-   ]
-  },
-  {
-   "s": "CRM",
-   "why": [
-    "Wikidata lists more than one current headquarters"
-   ]
-  },
-  {
    "s": "SMSN",
    "why": [
     "Wikidata lists more than one current headquarters"
@@ -7478,18 +8405,6 @@
    "s": "TRN.MI",
    "why": [
     "HQ is in VA, directory says Italy"
-   ]
-  },
-  {
-   "s": "TEVA",
-   "why": [
-    "Wikidata lists more than one current headquarters"
-   ]
-  },
-  {
-   "s": "TD",
-   "why": [
-    "Wikidata lists more than one current headquarters"
    ]
   },
   {
@@ -7562,12 +8477,6 @@
    "s": "FORTUM.HE",
    "why": [
     "Source HQ label is a site/address; city name has not been resolved"
-   ]
-  },
-  {
-   "s": "MUFG",
-   "why": [
-    "Source HQ has no city name"
    ]
   },
   {
@@ -7655,12 +8564,6 @@
    ]
   },
   {
-   "s": "WMT",
-   "why": [
-    "GLEIF headquarters is the registration address in WILMINGTON, not necessarily the operating HQ"
-   ]
-  },
-  {
    "s": "NGX:AIRTELAFRI",
    "why": [
     "GLEIF headquarters is in GB, directory says Nigeria"
@@ -7719,6 +8622,48 @@
    "why": [
     "GLEIF city 'Westlands' not found in GeoNames"
    ]
+  },
+  {
+   "s": "BSE-BW:FNBB",
+   "why": [
+    "GLEIF registration is lapsed, last updated 2023-02-09"
+   ]
+  },
+  {
+   "s": "PSE:GSMI",
+   "why": [
+    "GLEIF registration is lapsed, last updated 2023-10-28"
+   ]
+  },
+  {
+   "s": "PSE:JGS",
+   "why": [
+    "GLEIF registration is lapsed, last updated 2020-11-29"
+   ]
+  },
+  {
+   "s": "PSE:MWIDE",
+   "why": [
+    "GLEIF registration is lapsed, last updated 2022-06-05"
+   ]
+  },
+  {
+   "s": "PSE:NIKL",
+   "why": [
+    "GLEIF registration is lapsed, last updated 2023-01-31"
+   ]
+  },
+  {
+   "s": "PSE:PNX",
+   "why": [
+    "GLEIF registration is lapsed, last updated 2023-03-03"
+   ]
+  },
+  {
+   "s": "PSE:RLC",
+   "why": [
+    "GLEIF registration is lapsed, last updated 2023-03-03"
+   ]
   }
  ],
  "city_labels_resolved": [
@@ -7737,9 +8682,14 @@
   "added": 61
  },
  "gleif_pass": {
-  "checked_at": "2026-11-17",
+  "checked_at": "2026-11-18",
   "method": "tools/hq/gleif_pass.py",
-  "added": 19,
+  "added": 47,
   "licence": "GLEIF data CC0; GeoNames CC BY 4.0 (attribution: GeoNames, geonames.org)"
+ },
+ "sec_pass": {
+  "checked_at": "2026-11-18",
+  "method": "tools/hq/sec_pass.py",
+  "added": 37
  }
 }
