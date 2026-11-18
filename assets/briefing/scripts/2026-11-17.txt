@@ -1,0 +1,25 @@
+Here's your Briefing.
+
+@fly 56,27
+@from 55.9,26.96 Qeshm Island
+@article U.S. Warplanes Strike Iranian Missile Site on Qeshm Island | Business Recorder | Geopolitics | photos/oil-tanker-ship-6937800.jpg | |
+The Gulf is the story this morning. / US fighter jets struck a Revolutionary Guard missile site on Qeshm Island, / in the Strait of Hormuz. / Iran says it then launched drones at a US radar system in Bahrain, / and a tanker crew is reported missing in the strait. //
+
+@fly 50,30
+Oil prices are rising on the attacks, / even as Iraq resumes pumping crude through its pipeline to Turkey. //
+
+@fly -98,38
+@hq NVDA
+@article Jensen Huang says he would be honored to return as Nvidia chief executive | The Guardian | Companies | photos/semiconductor-chip-2377718.jpg | |
+On Wall Street, / stocks fell sharply / ahead of Nvidia's quarterly results. / Former chief executive Jensen Huang, / who resigned last week, / says he would return if the board asked. / And China says it will take necessary measures / after new US restrictions on chip exports. //
+
+@fly -74,40.7
+At the Fed, / New York's John Williams says the economy doesn't need a sharp rate increase, / though there's still work to do on inflation. //
+
+@fly 0,51.5
+Gold and silver have slipped to their lowest in more than a year, / weighed down by a strong dollar / and higher bond yields. //
+
+@fly -98,38
+Coming up: / US retail sales today, / and next week, / the second estimate of third-quarter GDP. //
+
+That's your Briefing. / Have a good day.

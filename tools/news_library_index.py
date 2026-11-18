@@ -14,6 +14,31 @@ def row(d):
     if img.get('file'): r['i'] = img['file']
     return r
 
+def roll(days=10):
+    """Move single-article files older than `days` into one bundle per day (library-days/), so the site stays under
+    Cloudflare's 20,000-file limit. The robot only republishes its last few days, so rolled articles are not re-added."""
+    import datetime as dt
+    lib, cut, moved = ROOT / 'assets/globe/library', (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=days)).strftime('%Y-%m-%d'), {}
+    for f in lib.glob('*.json'):
+        try: d = json.loads(f.read_text(encoding='utf-8'))
+        except Exception: continue
+        t = str(d.get('published_at') or '')[:10]
+        if d.get('id') and len(t) == 10 and t < cut: moved.setdefault(t, {})[d['id']] = (f, d)
+    for base in ('assets/globe', 'docs/assets/globe'):
+        if not (ROOT / base).is_dir(): continue
+        out = ROOT / base / 'library-days'; out.mkdir(exist_ok=True)
+        idp = out / 'ids.json'; ids = json.loads(idp.read_text()) if idp.exists() else {}
+        for t, items in moved.items():
+            bp = out / f'{t}.json'; cur = json.loads(bp.read_text(encoding='utf-8')) if bp.exists() else {}
+            for i, (_, d) in items.items(): cur.setdefault(i, d); ids[i] = t
+            bp.write_text(json.dumps(cur, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+        idp.write_text(json.dumps(ids, separators=(',', ':')))
+    for items in moved.values():
+        for i, (f, _) in items.items():
+            for base in ('assets/globe', 'docs/assets/globe'):
+                (ROOT / base / 'library' / f'{i}.json').unlink(missing_ok=True)
+    return sum(len(v) for v in moved.values())
+
 def write():
     rows = []
     for f in (ROOT / 'assets/globe/library').glob('*.json'):
@@ -21,6 +46,14 @@ def write():
         except Exception: continue
         if d.get('demo') or not d.get('id') or not d.get('headline') or not d.get('published_at'): continue
         rows.append(row(d))
+    # backfilled articles bundled one file per day (owner 17 Nov 2026: keeps the site under Cloudflare's 20,000-file limit)
+    seen = {r['id'] for r in rows}
+    for f in sorted((ROOT / 'assets/globe/library-days').glob('????-??-??.json')):
+        try: day = json.loads(f.read_text(encoding='utf-8'))
+        except Exception: continue
+        for d in day.values():
+            if isinstance(d, dict) and d.get('id') and d.get('headline') and d.get('published_at') and d['id'] not in seen:
+                rows.append(row(d)); seen.add(d['id'])
     rows.sort(key=lambda r: (r['t'], r['id']), reverse=True)
     cats, regs = {}, {}
     for r in rows:
@@ -41,4 +74,7 @@ def write():
         for p in range(pages): dump(f'page-{p + 1}.json', rows[p * PER:(p + 1) * PER])
     return meta
 
-if __name__ == '__main__': m = write(); print(m['total'], 'articles,', m['pages'], 'pages')
+if __name__ == '__main__':
+    import sys
+    if '--roll' in sys.argv: print('rolled', roll(int(sys.argv[sys.argv.index('--roll') + 1])), 'articles into day files')
+    m = write(); print(m['total'], 'articles,', m['pages'], 'pages')
