@@ -1,0 +1,31 @@
+Here's your Briefing.
+
+@fly -98,38
+@move S&P 500 | ^GSPC | -1.03
+@move Nasdaq | ^IXIC | -0.74
+@move Dow | ^DJI | -1.65
+Wall Street fell again yesterday. / The S&P 500 lost about one percent, / the Dow one point six, / and the Nasdaq slipped to its lowest level since April. //
+
+@hq NVDA
+@move NVIDIA | NVDA | -0.44
+@article Nvidia Q3 Revenue Soars 103% to $115.8B, Easing AI Demand Concerns | Investing.com | Companies | photos/semiconductor-chip-4955429.jpg | |
+Then, / after the close, / Nvidia delivered. / Third-quarter revenue doubled / to one hundred and fifteen point eight billion dollars, / beating expectations. / But the company also suspended shipments of its AI chips to China, / and its chairman ruled out bringing back Jensen Huang as chief executive. //
+
+@fly 55,26
+@from 55.9,26.96 Strait of Hormuz
+@to BZ=F
+@move Brent crude | BZ=F | -3.02
+@article ADNOC Logistics Vessel Attacked in Strait of Hormuz | OilPrice.com | Geopolitics | photos/oil-tanker-ship-7416758.jpg | |
+In the Gulf, / tensions are still rising. / An ADNOC tanker was attacked in the Strait of Hormuz, / with one crew member missing, / and Bahrain says it intercepted new attacks from Iran overnight. / Oil, / meanwhile, / eased / as US crude stocks rose. //
+
+@fly 8,50
+Inflation is the other theme. / Euro area inflation climbed to four percent in October, / and UK inflation hit three point six, / both pointing to more rate hikes. / In the US, / the Fed's Alberto Musalem says several hikes are likely needed. //
+
+@fly 0,51.5
+@move Gold | GC=F | -2.42
+Gold slid again, / to its lowest in more than a year. //
+
+@fly -98,38
+Coming up: / next Wednesday, / the second estimate of US third-quarter GDP. //
+
+That's your Briefing. / Have a good day.

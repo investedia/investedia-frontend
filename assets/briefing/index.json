@@ -1,6 +1,130 @@
 {
  "days": [
   {
+   "date": "2026-11-18",
+   "audio": "2026-11-18.mp3",
+   "duration": 82.6,
+   "voice": "en-US-NovaTurboMultilingualNeural",
+   "chapters": [
+    {
+     "t": "Here's your Briefing.",
+     "s": 0.0,
+     "f": null
+    },
+    {
+     "t": "Wall Street fell again yesterday. The S&P 500 lost about one percent, the Dow one point six, and the Nasdaq slipped to its lowest level since April.",
+     "s": 1.87,
+     "f": [
+      -98.0,
+      38.0
+     ],
+     "moves": [
+      [
+       "S&P 500",
+       "^GSPC",
+       -1.03
+      ],
+      [
+       "Nasdaq",
+       "^IXIC",
+       -0.74
+      ],
+      [
+       "Dow",
+       "^DJI",
+       -1.65
+      ]
+     ]
+    },
+    {
+     "t": "Then, after the close, Nvidia delivered. Third-quarter revenue doubled to one hundred and fifteen point eight billion dollars, beating expectations. But the company also suspended shipments of its AI chips to China, and its chairman ruled out bringing back Jensen Huang as chief executive.",
+     "s": 13.58,
+     "f": null,
+     "hq": "NVDA",
+     "moves": [
+      [
+       "NVIDIA",
+       "NVDA",
+       -0.44
+      ]
+     ],
+     "art": {
+      "h": "Nvidia Q3 Revenue Soars 103% to $115.8B, Easing AI Demand Concerns",
+      "src": "Investing.com",
+      "cat": "Companies",
+      "img": "photos/semiconductor-chip-4955429.jpg",
+      "sym": "",
+      "v": null
+     }
+    },
+    {
+     "t": "In the Gulf, tensions are still rising. An ADNOC tanker was attacked in the Strait of Hormuz, with one crew member missing, and Bahrain says it intercepted new attacks from Iran overnight. Oil, meanwhile, eased as US crude stocks rose.",
+     "s": 33.53,
+     "f": [
+      55.0,
+      26.0
+     ],
+     "from": {
+      "lon": 55.9,
+      "lat": 26.96,
+      "label": "Strait of Hormuz"
+     },
+     "to": "BZ=F",
+     "moves": [
+      [
+       "Brent crude",
+       "BZ=F",
+       -3.02
+      ]
+     ],
+     "art": {
+      "h": "ADNOC Logistics Vessel Attacked in Strait of Hormuz",
+      "src": "OilPrice.com",
+      "cat": "Geopolitics",
+      "img": "photos/oil-tanker-ship-7416758.jpg",
+      "sym": "",
+      "v": null
+     }
+    },
+    {
+     "t": "Inflation is the other theme. Euro area inflation climbed to four percent in October, and UK inflation hit three point six, both pointing to more rate hikes. In the US, the Fed's Alberto Musalem says several hikes are likely needed.",
+     "s": 51.55,
+     "f": [
+      8.0,
+      50.0
+     ]
+    },
+    {
+     "t": "Gold slid again, to its lowest in more than a year.",
+     "s": 68.47,
+     "f": [
+      0.0,
+      51.5
+     ],
+     "moves": [
+      [
+       "Gold",
+       "GC=F",
+       -2.42
+      ]
+     ]
+    },
+    {
+     "t": "Coming up: next Wednesday, the second estimate of US third-quarter GDP.",
+     "s": 72.91,
+     "f": [
+      -98.0,
+      38.0
+     ]
+    },
+    {
+     "t": "That's your Briefing. Have a good day.",
+     "s": 79.51,
+     "f": null
+    }
+   ]
+  },
+  {
    "date": "2026-11-17",
    "audio": "2026-11-17.mp3",
    "duration": 74.5,
@@ -291,5 +415,5 @@
    ]
   }
  ],
- "latest": "2026-11-17"
+ "latest": "2026-11-18"
 }
