@@ -1,0 +1,161 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "NI",
+ "count": 8,
+ "companies": [
+  {
+   "qid": "Q5715556",
+   "name": "BAC Credomatic",
+   "cc": "ni",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "San José",
+   "hq": [
+    9.93274,
+    -84.07961
+   ],
+   "website": "https://www.baccredomatic.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/BAC_Credomatic",
+   "logo_file": "BAC Credomatic logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125808013",
+   "name": "Banpro Grupo Promerica",
+   "cc": "ni",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5322632",
+   "name": "ECAMI",
+   "cc": "ni",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "http://www.wikidata.org/.well-known/genid/dc7a80826ece7a3bae81df73980eacbe",
+   "enwiki": "https://en.wikipedia.org/wiki/ECAMI",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135457540",
+   "name": "Empresa Portuaria Nacional",
+   "cc": "ni",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "port management"
+   ],
+   "isin": [],
+   "hq_city": "Managua",
+   "hq": [
+    12.15468,
+    -86.27372
+   ],
+   "website": "https://www.epn.gob.ni",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6297353",
+   "name": "Joya de Nicaragua",
+   "cc": "ni",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Estelí",
+   "hq": [
+    13.09293,
+    -86.35616
+   ],
+   "website": "http://www.joyacigars.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Joya_de_Nicaragua",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16837556",
+   "name": "Production Bank",
+   "cc": "ni",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Managua",
+   "hq": [
+    12.15468,
+    -86.27372
+   ],
+   "website": "http://www.banprogrupopromerica.com.ni/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_de_la_Producci%C3%B3n",
+   "listed": false
+  },
+  {
+   "qid": "Q108117290",
+   "name": "Regional Coordination of Economic and Social Research",
+   "cc": "ni",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.cries.org/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3369617",
+   "name": "Tip-Top Restaurant",
+   "cc": "ni",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fast food"
+   ],
+   "isin": [],
+   "website": "http://www.restaurantestiptop.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Tip-Top_Restaurant",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

@@ -1,0 +1,154 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "BZ",
+ "count": 7,
+ "companies": [
+  {
+   "qid": "Q4882961",
+   "name": "Belize Bank",
+   "cc": "bz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Belize City",
+   "hq": [
+    17.49861,
+    -88.18861
+   ],
+   "website": "http://www.belizebank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Belize_Bank",
+   "logo_file": "The Belize Bank Limited.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4882970",
+   "name": "Belize Electricity Limited",
+   "cc": "bz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power distribution"
+   ],
+   "isin": [],
+   "hq_city": "Belize City",
+   "hq": [
+    17.49861,
+    -88.18861
+   ],
+   "website": "https://bel.com.bz",
+   "enwiki": "https://en.wikipedia.org/wiki/Belize_Electricity_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4882981",
+   "name": "Belize Telemedia",
+   "cc": "bz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Belize City",
+   "hq": [
+    17.49861,
+    -88.18861
+   ],
+   "website": "http://www.belizetelemedia.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/Belize_Telemedia",
+   "logo_file": "BTL LOGO.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65329621",
+   "name": "Belize Water Services Limited",
+   "cc": "bz",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q39057725",
+   "name": "Country Foods",
+   "cc": "bz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Spanish Lookout",
+   "hq": [
+    17.24567,
+    -89.00273
+   ],
+   "website": "https://www.countryfoods.bz",
+   "enwiki": "https://en.wikipedia.org/wiki/Country_Foods",
+   "logo_file": "Country Foods Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28225727",
+   "name": "Development Finance Corporation Belize",
+   "cc": "bz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Belize",
+   "hq": [
+    17.06667,
+    -88.7
+   ],
+   "website": "http://www.dfcbelize.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/Development_Finance_Corporation_Belize",
+   "listed": false
+  },
+  {
+   "qid": "Q7575495",
+   "name": "SMART",
+   "cc": "bz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "https://smart-bz.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Speednet",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

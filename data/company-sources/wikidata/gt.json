@@ -1,0 +1,270 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "GT",
+ "count": 13,
+ "companies": [
+  {
+   "qid": "Q5715556",
+   "name": "BAC Credomatic",
+   "cc": "gt",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "San José",
+   "hq": [
+    9.93274,
+    -84.07961
+   ],
+   "website": "https://www.baccredomatic.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/BAC_Credomatic",
+   "logo_file": "BAC Credomatic logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5718037",
+   "name": "Banco Agromercantil",
+   "cc": "gt",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q19288416",
+   "name": "Banco Industrial",
+   "cc": "gt",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Guatemala City",
+   "hq": [
+    14.64167,
+    -90.51333
+   ],
+   "website": "https://www.corporacionbi.com/",
+   "logo_file": "Logo Banco Industrial Guatemala.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5719130",
+   "name": "Banrural",
+   "cc": "gt",
+   "types": [
+    "Q22687",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Guatemala City",
+   "hq": [
+    14.64167,
+    -90.51333
+   ],
+   "website": "http://www.banrural.com.gt/",
+   "logo_file": "Nuevo Logo Banrural.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q466971",
+   "name": "Bembos",
+   "cc": "gt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fast food"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.bembos.com.pe",
+   "enwiki": "https://en.wikipedia.org/wiki/Bembos",
+   "logo_file": "Bembos logo15.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5127724",
+   "name": "Claro Guatemala",
+   "cc": "gt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Guatemala City",
+   "hq": [
+    14.64167,
+    -90.51333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Claro_Guatemala",
+   "listed": false
+  },
+  {
+   "qid": "Q83458531",
+   "name": "Ferrocarril de Los Altos",
+   "cc": "gt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5717949",
+   "name": "G&T Continental Bank",
+   "cc": "gt",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://www.gtc.com.gt",
+   "logo_file": "Banco GYT Continental.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20668322",
+   "name": "Jaguar Energy",
+   "cc": "gt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity generation"
+   ],
+   "isin": [],
+   "hq_city": "Masagua",
+   "hq": [
+    14.20837,
+    -90.84626
+   ],
+   "website": "http://jaguarenergy.com.gt",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6743243",
+   "name": "Malher",
+   "cc": "gt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food processing"
+   ],
+   "isin": [],
+   "hq_city": "Guatemala City",
+   "hq": [
+    14.64167,
+    -90.51333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Malher",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q942741",
+   "name": "Pollo Campero",
+   "cc": "gt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "gastronomy"
+   ],
+   "isin": [],
+   "website": "http://www.campero.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pollo_Campero",
+   "logo_file": "PolloCampero Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16624038",
+   "name": "Radio y Televisión de Guatemala",
+   "cc": "gt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Guatemala City",
+   "hq": [
+    14.64167,
+    -90.51333
+   ],
+   "website": "http://www.chapintv.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7801679",
+   "name": "Tigo Guatemala",
+   "cc": "gt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Luxembourg",
+   "hq": [
+    49.77,
+    6.13
+   ],
+   "website": "http://www.tigo.com.gt",
+   "enwiki": "https://en.wikipedia.org/wiki/Tigo_Guatemala",
+   "logo_file": "Tigo.JPG",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

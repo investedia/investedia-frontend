@@ -1,0 +1,445 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "CU",
+ "count": 26,
+ "companies": [
+  {
+   "qid": "Q5831772",
+   "name": "Agricultural Equipment and Implements Company \"Heroes of July 26\"",
+   "cc": "cu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q139374875",
+   "name": "Aguas de La Habana",
+   "cc": "cu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q65042550",
+   "name": "Artex S.A.",
+   "cc": "cu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.artexsa.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Artex_S.A.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1056400",
+   "name": "Bucanero Brewery S.A.",
+   "cc": "cu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Holguin",
+   "hq": [
+    20.88722,
+    -76.26306
+   ],
+   "website": "http://www.cerveceriabucanero.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5059992",
+   "name": "Center of Molecular Immunology",
+   "cc": "cu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Havana",
+   "hq": [
+    23.13667,
+    -82.35889
+   ],
+   "website": "http://www.cim.co.cu/index_en.php",
+   "enwiki": "https://en.wikipedia.org/wiki/Center_of_Molecular_Immunology",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113134286",
+   "name": "CIMEX",
+   "cc": "cu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/CIMEX",
+   "listed": false
+  },
+  {
+   "qid": "Q16188888",
+   "name": "Club Separatista Català Número 1",
+   "cc": "cu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Havana",
+   "hq": [
+    23.13667,
+    -82.35889
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5168667",
+   "name": "Coppelia",
+   "cc": "cu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Havana",
+   "hq": [
+    23.13667,
+    -82.35889
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Coppelia_(ice_cream_parlor)",
+   "logo_file": "Coppelia Logo.jpeg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5789322",
+   "name": "Correos de Cuba",
+   "cc": "cu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.correos.cu",
+   "enwiki": "https://en.wikipedia.org/wiki/Post_Office_of_Cuba",
+   "logo_file": "Logo-correos.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2712417",
+   "name": "Cuaba",
+   "cc": "cu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Cuaba",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1054317",
+   "name": "Cuban National Center for Sex Education",
+   "cc": "cu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Plaza de la Revolución",
+   "hq": [
+    23.12444,
+    -82.38611
+   ],
+   "website": "http://www.cenesexualidad.sld.cu/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Center_for_Sex_Education",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4575900",
+   "name": "Cubatabaco",
+   "cc": "cu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "tobacco industry"
+   ],
+   "isin": [],
+   "website": "http://www.cubatabaco.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cubatabaco",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3007579",
+   "name": "CUPET",
+   "cc": "cu",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Havana",
+   "hq": [
+    23.13667,
+    -82.35889
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Cuba_Petr%C3%B3leo_Union",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q490323",
+   "name": "ETECSA",
+   "cc": "cu",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Havana",
+   "hq": [
+    23.13667,
+    -82.35889
+   ],
+   "website": "https://www.etecsa.cu",
+   "enwiki": "https://en.wikipedia.org/wiki/ETECSA",
+   "logo_file": "Logotipo-etecsa-version-piramidal-.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1399983",
+   "name": "Federación Estudiantil Universitaria",
+   "cc": "cu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Havana",
+   "hq": [
+    23.13667,
+    -82.35889
+   ],
+   "website": "http://www.feu.sld.cu",
+   "logo_file": "Logo FEU New.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21235039",
+   "name": "Ferrocarriles de Cuba",
+   "cc": "cu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/National_Railway_Company_of_Cuba",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18424831",
+   "name": "Girón vehicles",
+   "cc": "cu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Havana",
+   "hq": [
+    23.13667,
+    -82.35889
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q959909",
+   "name": "Habaguanex Tourist Company",
+   "cc": "cu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Habaguanex_S.A.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96418536",
+   "name": "Hatuey",
+   "cc": "cu",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Florida",
+   "hq": [
+    28.13333,
+    -81.63167
+   ],
+   "website": "https://www.hatuey.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hatuey_(beer)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6030488",
+   "name": "Infomed",
+   "cc": "cu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.sld.cu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Infomed",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1130511",
+   "name": "La Gloria Cubana",
+   "cc": "cu",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/La_Gloria_Cubana_(cigar)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25039464",
+   "name": "Manatí Sugar Company",
+   "cc": "cu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of sugar"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Manat%C3%AD_Sugar_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q112960330",
+   "name": "Nico Lopez",
+   "cc": "cu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q30598144",
+   "name": "Sancho Panza",
+   "cc": "cu",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Sancho_Panza_(brand)",
+   "listed": false
+  },
+  {
+   "qid": "Q21071134",
+   "name": "Union de Industrias Militares",
+   "cc": "cu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Cuba",
+   "hq": [
+    22.0,
+    -79.5
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Union_de_Industrias_Militares",
+   "listed": false
+  },
+  {
+   "qid": "Q7918397",
+   "name": "Vegueros",
+   "cc": "cu",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "tobacco industry"
+   ],
+   "isin": [],
+   "website": "http://www.habanos.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Vegueros",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

@@ -99,6 +99,7 @@ def main(argv=None):
                 c['logo'] = path; c['logo_source'] = {'kind': kind, 'url': found[1]}
             got[kind] += 1
         print(f"{i}/{len(todo)} {c['name']}: {kind or 'no logo found'}", flush=True)
+        if not a.check and i % 100 == 0: DIRECTORY.write_text(json.dumps(d, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')  # keep progress if stopped
     if not a.check: DIRECTORY.write_text(json.dumps(d, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     print(json.dumps({'checked': len(todo), **got}))
 

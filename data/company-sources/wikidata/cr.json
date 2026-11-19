@@ -1,0 +1,355 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "CR",
+ "count": 18,
+ "companies": [
+  {
+   "qid": "Q5715556",
+   "name": "BAC Credomatic",
+   "cc": "cr",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "San José",
+   "hq": [
+    9.93274,
+    -84.07961
+   ],
+   "website": "https://www.baccredomatic.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/BAC_Credomatic",
+   "logo_file": "BAC Credomatic logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139850477",
+   "name": "Banco Davivienda Costa Rica",
+   "cc": "cr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "San José",
+   "hq": [
+    9.93274,
+    -84.07961
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Davivienda_Costa_Rica",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17749848",
+   "name": "Banco Popular",
+   "cc": "cr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.popularenlinea.fi.cr/bpop/",
+   "listed": false
+  },
+  {
+   "qid": "Q6951632",
+   "name": "Bank of Costa Rica",
+   "cc": "cr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "San José",
+   "hq": [
+    9.93274,
+    -84.07961
+   ],
+   "website": "http://www.bancobcr.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_de_Costa_Rica",
+   "logo_file": "Banco de Costa Rica.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q94114919",
+   "name": "Constructora Meco",
+   "cc": "cr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "construction industry"
+   ],
+   "isin": [],
+   "website": "https://constructorameco.com/",
+   "logo_file": "Logo Meco.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5338729",
+   "name": "Editorial Costa Rica",
+   "cc": "cr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.editorialcostarica.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Editorial_Costa_Rica",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21448117",
+   "name": "Editorial Universidad de Costa Rica",
+   "cc": "cr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.editorial.ucr.ac.cr",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5510497",
+   "name": "FC Moravia FCM",
+   "cc": "cr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/FC_Moravia_FCM",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5461456",
+   "name": "Florida Ice & Farm Co.",
+   "cc": "cr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Heredia",
+   "hq": [
+    9.99839,
+    -84.11712
+   ],
+   "website": "https://www.fifco.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Florida_Ice_and_Farm_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123036763",
+   "name": "Gallito",
+   "cc": "cr",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "chocolate",
+    "confectionery"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3431114",
+   "name": "Instituto Costarricense de Electricidad",
+   "cc": "cr",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "https://www.grupoice.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Instituto_Costarricense_de_Electricidad",
+   "logo_file": "Logo ice.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134112905",
+   "name": "Kölbi",
+   "cc": "cr",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.kolbi.cr",
+   "logo_file": "Letras Kölbi.png",
+   "listed": false
+  },
+  {
+   "qid": "Q6140527",
+   "name": "Liberty Costa Rica",
+   "cc": "cr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Escazú Canton",
+   "hq": [
+    9.91667,
+    -84.13333
+   ],
+   "website": "https://libertycr.com/",
+   "logo_file": "Liberty Costa Rica logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q36879490",
+   "name": "Rappi",
+   "cc": "cr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "https://www.rappi.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rappi",
+   "logo_file": "Rappi logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27931901",
+   "name": "Recasa",
+   "cc": "cr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3178903",
+   "name": "Repretel",
+   "cc": "cr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.repretel.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Repretel",
+   "logo_file": "Repretel logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q162852",
+   "name": "SurveyMonkey",
+   "cc": "cr",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq",
+     "ticker": "MNTV"
+    },
+    {
+     "exchange": "Nasdaq",
+     "ticker": "SVMK"
+    }
+   ],
+   "industries": [
+    "online survey service",
+    "software as a service"
+   ],
+   "isin": [
+    "US78489X1037"
+   ],
+   "hq_city": "San Mateo",
+   "hq": [
+    37.55417,
+    -122.31306
+   ],
+   "website": "https://tr.surveymonkey.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/SurveyMonkey",
+   "logo_file": "SurveyMonkey Logo svg.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q616022",
+   "name": "Teletica",
+   "cc": "cr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "San José",
+   "hq": [
+    9.93274,
+    -84.07961
+   ],
+   "website": "http://www.teletica.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Teletica",
+   "logo_file": "Teletica Logo.png",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

@@ -1,0 +1,267 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "SV",
+ "count": 13,
+ "companies": [
+  {
+   "qid": "Q5715556",
+   "name": "BAC Credomatic",
+   "cc": "sv",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "San José",
+   "hq": [
+    9.93274,
+    -84.07961
+   ],
+   "website": "https://www.baccredomatic.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/BAC_Credomatic",
+   "logo_file": "BAC Credomatic logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5717833",
+   "name": "Banco Agricola",
+   "cc": "sv",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.bancoagricola.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Agricola",
+   "logo_file": "Banco Agricola logo.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q20748141",
+   "name": "Banco Hipotecario de El Salvador",
+   "cc": "sv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "San Salvador",
+   "hq": [
+    13.6976,
+    -89.19116
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5127719",
+   "name": "Claro El Salvador",
+   "cc": "sv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "San Salvador",
+   "hq": [
+    13.6976,
+    -89.19116
+   ],
+   "website": "http://claro.com.sv/",
+   "enwiki": "https://en.wikipedia.org/wiki/Claro_El_Salvador",
+   "logo_file": "Claro.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130609105",
+   "name": "Grupo Cuscatlán",
+   "cc": "sv",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Cuscatl%C3%A1n",
+   "logo_file": "Banco Cuscatlán.png",
+   "listed": false
+  },
+  {
+   "qid": "Q5612244",
+   "name": "Grupo Poma",
+   "cc": "sv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Diversification"
+   ],
+   "isin": [],
+   "hq_city": "San Salvador",
+   "hq": [
+    13.6976,
+    -89.19116
+   ],
+   "website": "http://www.grupopoma.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Poma",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5475579",
+   "name": "Grupo Roble",
+   "cc": "sv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "San Salvador",
+   "hq": [
+    13.6976,
+    -89.19116
+   ],
+   "website": "http://www.gruporoble.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5779102",
+   "name": "Lempa River Executive Commission",
+   "cc": "sv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity generation"
+   ],
+   "isin": [],
+   "website": "https://www.cel.gob.sv",
+   "listed": false
+  },
+  {
+   "qid": "Q6025472",
+   "name": "Movistar El Salvador",
+   "cc": "sv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "San Salvador",
+   "hq": [
+    13.6976,
+    -89.19116
+   ],
+   "website": "https://www.movistar.com.sv/",
+   "logo_file": "Movistar isotype 2020.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106782018",
+   "name": "Salvador Railway Company",
+   "cc": "sv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Salvador_Railway_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q6144253",
+   "name": "The Coffee Cup",
+   "cc": "sv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7801678",
+   "name": "Tigo El Salvador",
+   "cc": "sv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Luxembourg",
+   "hq": [
+    49.77,
+    6.13
+   ],
+   "website": "http://www.tigo.com.sv",
+   "enwiki": "https://en.wikipedia.org/wiki/Tigo_El_Salvador",
+   "logo_file": "Tigo.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7884754",
+   "name": "Unicomer Group",
+   "cc": "sv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "San Salvador",
+   "hq": [
+    13.6976,
+    -89.19116
+   ],
+   "website": "http://www.grupounicomer.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Unicomer_Group",
+   "logo_file": "UnicomerGroup.gif",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

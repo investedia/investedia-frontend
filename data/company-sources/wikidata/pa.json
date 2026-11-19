@@ -1,0 +1,199 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "PA",
+ "count": 9,
+ "companies": [
+  {
+   "qid": "Q25104485",
+   "name": "Alemán, Cordero, Galindo & Lee",
+   "cc": "pa",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Panama City",
+   "hq": [
+    8.97111,
+    -79.53472
+   ],
+   "website": "https://www.alcogal.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Alem%C3%A1n,_Cordero,_Galindo_%26_Lee",
+   "logo_file": "Alemán, Cordero, Galindo & Lee (ALCOGAL) logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5715556",
+   "name": "BAC Credomatic",
+   "cc": "pa",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "San José",
+   "hq": [
+    9.93274,
+    -84.07961
+   ],
+   "website": "https://www.baccredomatic.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/BAC_Credomatic",
+   "logo_file": "BAC Credomatic logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139884169",
+   "name": "Banco Davivienda Panama",
+   "cc": "pa",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Panama City",
+   "hq": [
+    8.97111,
+    -79.53472
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Davivienda_Panama",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5489161",
+   "name": "Banesco Panama",
+   "cc": "pa",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Panama City",
+   "hq": [
+    8.97111,
+    -79.53472
+   ],
+   "website": "http://www.banesco.com.pa/",
+   "logo_file": "Banesco Nuevo Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q849404",
+   "name": "Copa Airlines",
+   "cc": "pa",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "CPA"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Panama City",
+   "hq": [
+    8.97111,
+    -79.53472
+   ],
+   "website": "https://www.copaair.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Copa_Airlines",
+   "logo_file": "Copa airlines logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q111095434",
+   "name": "Encuentra24",
+   "cc": "pa",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce",
+    "online marketplace"
+   ],
+   "isin": [],
+   "website": "https://encuentra24.com",
+   "logo_file": "Encuentra24.webp",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q62026483",
+   "name": "Etesa",
+   "cc": "pa",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity"
+   ],
+   "isin": [],
+   "website": "https://www.etesa.com.pa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27618271",
+   "name": "General Bank",
+   "cc": "pa",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Panama City",
+   "hq": [
+    8.97111,
+    -79.53472
+   ],
+   "website": "https://www.bgeneral.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107808342",
+   "name": "Sociedad Panameña de Productores Fonográficos",
+   "cc": "pa",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.producepanama.org/",
+   "listed": false
+  }
+ ]
+}
