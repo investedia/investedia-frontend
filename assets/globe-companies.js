@@ -28,6 +28,7 @@
   .co-act{display:flex;flex-direction:column;gap:8px}.co-btn{border-radius:99px;padding:9px 14px;font-size:13.5px;font-weight:600;text-align:center;border:1px solid rgba(255,255,255,.14);color:#fafafa;text-decoration:none;white-space:nowrap;background:none;font-family:inherit;cursor:pointer}
   .co-btn.p{background:#FF7A1A;color:#000;border-color:#FF7A1A}
   .co-back{color:#8e8e96;font-size:13px;margin:0 0 10px;background:none;border:0;font-family:inherit;cursor:pointer;padding:0}
+  .co-zt{position:fixed;z-index:60;pointer-events:none;background:rgba(14,14,17,.96);border:1px solid #2c2c31;border-radius:10px;padding:7px 10px;font:13px Inter,sans-serif;color:#ececef}.co-zt small{display:block;color:#8a8a92;font-size:11.5px;margin-top:2px}
   .co-note{color:#6e6e76;font-size:11.5px;margin-top:10px}.co-empty{color:#8e8e96;font-size:13.5px;padding:10px 2px}
   .act-c.co-c{display:block!important;grid-template-columns:none!important;max-height:none!important;overflow:auto!important;flex:1;min-height:0}
   #act:has(.co-c){height:min(380px,48vh)!important;display:flex!important;flex-direction:column}
@@ -93,7 +94,7 @@
       <select class="co-chip" data-co-country aria-label="Country"><option value="">All countries</option>${countries().map(([n, k]) => `<option value="${esc(n)}"${n === S.country ? ' selected' : ''}>${esc(n)} · ${k}</option>`).join('')}</select></div>
       ${L.length ? `<div class="co-list">${L.slice(0, 120).map(c => `<button type="button" class="co-i" data-co="${esc(c.slug)}">${badgeHTML(c)}<span style="min-width:0"><b>${esc(c.name)}</b><small>${esc(c.hq.hq_city)} · ${esc(c.sym.replace(/^[A-Z]+:/, ''))}</small></span></button>`).join('')}</div>`
         : '<div class="co-empty">No company matches. Companies appear here once their head office is sourced.</div>'}
-      <p class="co-note">${L.length} companies on the globe. Logos show where there is room; tap a logo or a dot to open the company.</p></div>`;
+      <p class="co-note">${L.length} companies. Zoomed out, deeper orange means more companies (compared with other countries); click a country to list them, or zoom in for logos.</p></div>`;
   }
   const isPhone = () => typeof phone === 'function' && phone();
   function floatCard() {  // phone: the sheet closes so the globe shows the pin; the company sits in a compact card above the dock
@@ -135,8 +136,9 @@
   const circ = (x, y, r, f) => { ctx.beginPath(); ctx.arc(x, y, r, 0, 7); ctx.fillStyle = f; ctx.fill(); };
   function draw() {
     if (!S.ready) return;
-    S.hits = []; if (!active()) return;
+    S.hits = []; S.zones = null; if (!active()) return;
     const narrowed = S.country || S.q.trim() || S.news;
+    if (!narrowed && !S.sel && typeof Z !== 'undefined' && Z < ZONE_Z) return zones();
     const all = filtered(), L = narrowed && all.length <= MAXPINS ? all : [];
     const list = S.sel ? [S.sel, ...L.filter(c => c !== S.sel)] : L;
     const placed = [], pos = [];
@@ -187,8 +189,37 @@
   function active() {
     return inMarkets() && typeof mkTab !== 'undefined' && mkTab === 'co';  // Markets globe only (owner, 19 Nov 2026)
   }
+  // ---- colour zones (owner 19 Nov 2026): zoomed out, each country is filled by how many companies are based there.
+  // The shade comes from the country's RANK among countries with companies (not the raw count), so the map always uses
+  // the full range: it reads as full today and stays balanced as the directory grows to thousands. Zoom in for logos.
+  const ZONE_Z = 2.4;
+  function zones() {
+    const G = {}; for (const c of S.list) (G[c.country] = G[c.country] || []).push(c);
+    const rows = Object.entries(G).filter(([n]) => typeof byName !== 'undefined' && byName[n]).sort((a, b) => a[1].length - b[1].length);
+    const rank = new Map(rows.map(([n], i) => [n, rows.length > 1 ? i / (rows.length - 1) : 1]));
+    S.zones = { G, rank };
+    ctx.save();
+    for (const [n] of rows) { const c = byName[n], k = rank.get(n);
+      ctx.fillStyle = `rgba(255,${Math.round(165 - 85 * k)},${Math.round(70 - 50 * k)},${(.22 + .6 * k).toFixed(2)})`; ctx.beginPath();
+      for (const ring of c.rings) { let on = false; for (const [lo, la] of ring) { const q = proj(la * rad, lo * rad); if (q[2] <= 0) { on = false; continue; } on ? ctx.lineTo(q[0], q[1]) : ctx.moveTo(q[0], q[1]); on = true; } ctx.closePath(); }
+      ctx.fill(); }
+    const B = []; ctx.font = '600 12px Inter,sans-serif'; ctx.textBaseline = 'middle';
+    for (const [n, L] of [...rows].reverse().slice(0, 16)) { const c = byName[n], q = proj(c.c[1] * rad, c.c[0] * rad); if (q[2] < .3 || B.some(b => Math.hypot(b[0] - q[0], b[1] - q[1]) < 74)) continue; B.push(q);
+      const t = nmC(n), s = String(L.length), w = ctx.measureText(t).width + ctx.measureText(s).width + 22;
+      ctx.fillStyle = 'rgba(12,12,14,.9)'; ctx.beginPath(); ctx.roundRect(q[0] - w / 2, q[1] - 10, w, 20, 10); ctx.fill(); ctx.strokeStyle = 'rgba(255,122,26,.35)'; ctx.lineWidth = 1; ctx.stroke();
+      ctx.fillStyle = '#ececef'; ctx.fillText(t, q[0] - w / 2 + 8, q[1] + 1); ctx.fillStyle = '#ff9d5c'; ctx.fillText(s, q[0] + w / 2 - 8 - ctx.measureText(s).width, q[1] + 1); }
+    ctx.restore(); ctx.textBaseline = 'alphabetic';
+  }
+  const nmC = n => (typeof nm === 'function' ? nm(n) : n);
+  function zoneAt(x, y) { if (!S.zones || typeof inv !== 'function' || typeof countryAt !== 'function') return null; const g = inv(x, y), c = g && countryAt(g[0], g[1]); return c && S.zones.G[c.name] ? c.name : null; }
+  let zt; addEventListener('mousemove', e => { const n = active() && e.target.tagName === 'CANVAS' ? zoneAt(e.clientX, e.clientY) : null; let t = document.querySelector('.co-zt');
+    if (!n) { t?.remove(); return; } if (!t) { t = document.createElement('div'); t.className = 'co-zt'; document.body.append(t); }
+    const L = S.zones.G[n], top = L.filter(c => c.tracked).concat(L.filter(c => !c.tracked)).slice(0, 3).map(c => esc(c.short)).join(', ');
+    t.innerHTML = `<b>${esc(nmC(n))}</b> · ${L.length} ${L.length === 1 ? 'company' : 'companies'}<small>${top}${L.length > 3 ? '…' : ''}</small><small>Click to see them</small>`; t.style.left = (e.clientX + 16) + 'px'; t.style.top = (e.clientY + 12) + 'px'; });
   function tap(x, y) {  // a click on a company pin or dot opens it; true if handled
-    if (!S.hits?.length || !active()) return false;
+    if (!active()) return false;
+    const z = zoneAt(x, y); if (z) { S.country = z; S.sel = null; document.querySelector('.co-zt')?.remove(); refresh(); fitTo(filtered()); return true; }  // zones: click a country to list its companies
+    if (!S.hits?.length) return false;
     const h = [...S.hits].sort((a, b) => Math.hypot(a.x - x, a.y - y) - Math.hypot(b.x - x, b.y - y))[0];
     if (!h || Math.hypot(h.x - x, h.y - y) > Math.max(h.r, 9)) return false;
     select(h.c); return true;

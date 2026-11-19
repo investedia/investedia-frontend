@@ -10,7 +10,8 @@ function win(e){const now=Date.now();const ds=(e.calendar?.dated_sessions||[]).m
 // ---- connection lines: the trading day handing over from one exchange to the next (follow the sun) ----
 const orig=window.drawMarketsOverlay;let HITS=[];
 
-window.drawMarketsOverlay=function(t){if(LAYER!=='fx')orig&&orig(t);if(typeof MARKET==='undefined'||!MARKET.on||!MARKET.exchanges)return;if(LAYER==='fx'){drawFx();return;}const L=E();if(L.length<2)return;const T=performance.now()/1000;HITS=[];ctx.save();
+window.drawMarketsOverlay=function(t){if(window.InvCompanies&&InvCompanies.active()){HITS=[];return;}  // Companies tab owns the globe
+if(LAYER!=='fx')orig&&orig(t);if(typeof MARKET==='undefined'||!MARKET.on||!MARKET.exchanges)return;if(LAYER==='fx'){drawFx();return;}const L=E();if(L.length<2)return;const T=performance.now()/1000;HITS=[];ctx.save();
  for(let i=0;i<L.length;i++){const a=L[i],b=L[(i+1)%L.length],wa=win(a),wb=win(b);
   const A=[a.coordinates.latitude*rad,a.coordinates.longitude*rad],B=[b.coordinates.latitude*rad,b.coordinates.longitude*rad];
   const v=([la,lo])=>[Math.cos(la)*Math.cos(lo),Math.cos(la)*Math.sin(lo),Math.sin(la)],va=v(A),vb=v(B);const pts=[];
@@ -55,10 +56,10 @@ function explain(h){if(h.k==='fx'){const f=h.f,n=CUR[f.c]||f.c,up=f.d>=0,dt=d=>n
  const a=h.a,b=h.b,sa=a.sessions?.[0],sb=b.sessions?.[0];
  return `<div class="k">Trading day · handover</div><h4>${esc(NAME[a.id]||a.short)} → ${esc(NAME[b.id]||b.short)}</h4><div class="g"><div><b>${hm(sa?.open)}–${hm(sa?.close)}</b><small>${esc(NAME[a.id]||a.short)} · ${h.wa.open?'open now':'closed'}</small></div><div><b>${hm(sb?.open)}–${hm(sb?.close)}</b><small>${esc(NAME[b.id]||b.short)} · ${h.wb.open?'open now':'closed'}</small></div></div>
   <p>Trading moves around the world with the sun: as one market winds down, the next one opens. Hours are local time, regular sessions.</p><div class="why">News that breaks while one market is closed usually shows up first in the next one to open.</div><div class="src">Regular hours · exchange-calendars · holidays not shown</div>`;}
-addEventListener('mousemove',e=>{if(typeof MARKET==='undefined'||!MARKET.on||!desk()||e.target.tagName!=='CANVAS'){if(HOV){HOV=null;card.hidden=true;}return;}
+addEventListener('mousemove',e=>{if(typeof MARKET==='undefined'||!MARKET.on||!desk()||e.target.tagName!=='CANVAS'||(window.InvCompanies&&InvCompanies.active())){if(HOV){HOV=null;card.hidden=true;}return;}
  let best=null,bd=10;for(const h of HITS)for(const q of h.pts){const d=Math.hypot(q[0]-e.clientX,q[1]-e.clientY);if(d<bd){bd=d;best=h;}}
  HOV=best;if(!best){card.hidden=true;return;}card.innerHTML=explain(best);card.hidden=false;const w=300,x=e.clientX+18+w>innerWidth?e.clientX-18-w:e.clientX+18;card.style.left=x+'px';card.style.top=Math.max(90,Math.min(innerHeight-card.offsetHeight-12,e.clientY-40))+'px';});
-setInterval(()=>{pills.style.display=typeof MARKET!=='undefined'&&MARKET.on?'flex':'none';},300);
+setInterval(()=>{pills.style.display=typeof MARKET!=='undefined'&&MARKET.on&&!(window.InvCompanies&&InvCompanies.active())?'flex':'none';},300);
 // ---- left: the trading day as a timeline (24 hours, your time) ----
 const css=document.createElement('style');css.textContent=`
 .pv-l{position:fixed;left:16px;top:112px;width:340px;z-index:5;background:rgba(10,10,12,.96);border:1px solid #1f1f23;border-radius:14px;padding:14px 16px;font:13px Inter,sans-serif;color:#ececef}
