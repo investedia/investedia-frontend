@@ -44,10 +44,10 @@
     .map(u => fetch(ROOT + u).then(r => r.ok ? r.json() : null).catch(() => null))).then(([dir, hq, badges]) => {
     const H = hq?.companies || {}, B = badges || {}, seen = new Set();
     for (const c of dir?.companies || []) {
-      const l = c.listings.find(x => H[x.s]); if (!l) continue;
+      const l = c.listings.find(x => H[x.s]) || (H['co:' + c.slug] && { s: 'co:' + c.slug, exchange: null, tracked: false, unlisted: true }); if (!l) continue;  // unlisted companies: HQ keyed co:<slug>
       const h = H[l.s], id = h.qid || h.lei || c.slug; if (seen.has(id)) continue; seen.add(id);  // one entry per company (duplicate directory rows share a Wikidata item or LEI)
       // short name: Wikidata's label, or ours for GLEIF rows (their names are legal names in capitals)
-      S.list.push({ slug: c.slug, name: c.name, short: h.qid ? (h.company_label || c.name) : c.name, country: c.country, region: c.region, sym: l.s, ex: l.exchange, tracked: l.tracked !== false,
+      S.list.push({ slug: c.slug, name: c.name, short: h.qid ? (h.company_label || c.name) : c.name, country: c.country, cc: c.cc, region: c.region, listed: !l.unlisted, sym: l.s, ex: l.exchange, tracked: l.tracked !== false,
         syms: c.listings.map(x => x.s), hq: h, badge: B[c.slug] || null });
     }
     S.list.sort((a, b) => a.name.localeCompare(b.name));
@@ -84,7 +84,7 @@
     if (S.sel) {
       const c = S.sel;
       return `<div class="co-wrap"><button type="button" class="co-back" data-co-back>‹ ${S.country ? esc(S.country) + ' · ' : ''}${filtered().length} companies</button>
-        <div class="co-card">${badgeHTML(c)}<div><h3>${esc(c.name)}</h3><div class="co-kv"><div><small>Headquarters</small><b>${esc(c.hq.hq_city)}, ${esc(c.country)}</b></div><div><small>Listed on</small><b>${esc(c.ex || '')} · ${esc(c.sym.replace(/^[A-Z]+:/, ''))}</b></div><div><small>Region</small><b>${esc(c.region || '')}</b></div></div>
+        <div class="co-card">${badgeHTML(c)}<div><h3>${esc(c.name)}</h3><div class="co-kv"><div><small>Headquarters</small><b>${esc(c.hq.hq_city)}, ${esc(c.country)}</b></div><div><small>${c.listed ? 'Listed on' : 'Stock exchange'}</small><b>${c.listed ? esc(c.ex || '') + ' · ' + esc(c.sym.replace(/^[A-Z]+:/, '').replace(/^[A-Z0-9]+:/, '')) : 'Not listed'}</b></div><div><small>Region</small><b>${esc(c.region || '')}</b></div></div>
         <p class="co-note">HQ source: <a href="${esc(c.hq.source_url)}" target="_blank" rel="noopener" style="color:inherit">${/gleif/.test(c.hq.method || '') ? 'GLEIF LEI register (CC0)' : 'Wikidata (CC0)'}</a>, checked ${esc(c.hq.checked_at)}.</p></div>
         <div class="co-act"><a class="co-btn p" href="${esc(ROOT)}${c.tracked ? 'asset.html?s=' + encodeURIComponent(c.sym) : 'companies/' + encodeURIComponent(c.slug)}" target="_top">Company page</a><a class="co-btn" href="${esc(ROOT)}news.html?q=${encodeURIComponent(c.short)}" target="_top">Articles about ${esc(c.short)}</a></div></div></div>`;
     }
@@ -92,7 +92,7 @@
     return `<div class="co-wrap"><div class="co-tools"><input class="co-s" type="search" placeholder="Search ${S.list.length} companies" value="${esc(S.q)}" data-co-q aria-label="Search companies">
       <button type="button" class="co-chip" aria-pressed="${S.news}" data-co-news>In the news</button>
       <select class="co-chip" data-co-country aria-label="Country"><option value="">All countries</option>${countries().map(([n, k]) => `<option value="${esc(n)}"${n === S.country ? ' selected' : ''}>${esc(n)} · ${k}</option>`).join('')}</select></div>
-      ${L.length ? `<div class="co-list">${L.slice(0, 120).map(c => `<button type="button" class="co-i" data-co="${esc(c.slug)}">${badgeHTML(c)}<span style="min-width:0"><b>${esc(c.name)}</b><small>${esc(c.hq.hq_city)} · ${esc(c.sym.replace(/^[A-Z]+:/, ''))}</small></span></button>`).join('')}</div>`
+      ${L.length ? `<div class="co-list">${L.slice(0, 120).map(c => `<button type="button" class="co-i" data-co="${esc(c.slug)}">${badgeHTML(c)}<span style="min-width:0"><b>${esc(c.name)}</b><small>${esc(c.hq.hq_city)} · ${c.listed ? esc(c.sym.replace(/^[A-Z]+:/, '').replace(/^[A-Z0-9]+:/, '')) : 'Not listed'}</small></span></button>`).join('')}</div>`
         : '<div class="co-empty">No company matches. Companies appear here once their head office is sourced.</div>'}
       <p class="co-note">${L.length} companies. Zoomed out, deeper orange means more companies (compared with other countries); click a country to list them, or zoom in for logos.</p></div>`;
   }
@@ -194,7 +194,8 @@
   // the full range: it reads as full today and stays balanced as the directory grows to thousands. Zoom in for logos.
   const ZONE_Z = 2.4;
   function zones() {
-    const G = {}; for (const c of S.list) (G[c.country] = G[c.country] || []).push(c);
+    if (!S.iso && typeof ISO !== 'undefined') { S.iso = {}; for (const [n, k] of Object.entries(ISO)) if (byName[n]) S.iso[k] = n; }  // globe country name by ISO code
+    const G = {}; for (const c of S.list) { const n = (S.iso && c.cc && S.iso[c.cc.toUpperCase()]) || c.country; (G[n] = G[n] || []).push(c); }
     const rows = Object.entries(G).filter(([n]) => typeof byName !== 'undefined' && byName[n]).sort((a, b) => a[1].length - b[1].length);
     const rank = new Map(rows.map(([n], i) => [n, rows.length > 1 ? i / (rows.length - 1) : 1]));
     S.zones = { G, rank };

@@ -7,7 +7,7 @@ window.InvCompany = (() => {
     fetch('assets/globe/company-hq.json').then(r => r.ok ? r.json() : null).catch(() => null)]).then(([d, hq]) => {
     // Head office: the sourced HQ file (Wikidata / GLEIF) fills companies whose directory entry has none.
     const H = hq?.companies || {};
-    for (const c of d.companies) { if (!c.hq) { const h = c.listings.map(l => H[l.s]).find(Boolean); if (h) c.hq = h.hq_city + (c.country ? ', ' + c.country : ''); } }
+    for (const c of d.companies) { if (!c.hq) { const h = c.listings.map(l => H[l.s]).find(Boolean) || H['co:' + c.slug]; if (h) c.hq = h.hq_city + (c.country ? ', ' + c.country : ''); } }
     data = d; for (const c of d.companies) for (const l of c.listings) bySym[l.s.toUpperCase()] = c; return d; });
   const href = c => `companies/${c.slug}`;
   const flag = cc => cc ? `<img class="co-flag" src="assets/globe/flags/${esc(cc)}.svg" alt="" width="18" height="13" loading="lazy">` : '';
@@ -88,7 +88,7 @@ const coStart = () => {
       <div class="co-hero">${logo(c)}<div><h1>${esc(c.name)}</h1><p class="co-sub">${C.flag(c.cc)} ${esc(c.country)}${c.sector ? ' · ' + esc(c.sector) : ''} · <span class="co-badge">${c.public ? 'Public company' : 'Private company'}</span></p></div>
       ${c.listings.find(l => l.tracked) ? `<a class="btn btn-primary co-cta" href="asset.html?s=${encodeURIComponent(c.listings.find(l => l.tracked).s)}">View ${esc(c.listings.find(l => l.tracked).s)} stock →</a>` : ''}</div></div>
       <div class="co-layout"><div class="co-main">
-      <section class="sec card co-pad"><div class="card-head"><h3>Overview</h3></div>${c.description ? `<p class="co-desc">${esc(c.description)}</p>` : empty('A company description has not been added yet.')}
+      <section class="sec card co-pad"><div class="card-head"><h3>Overview</h3></div>${c.description ? `<p class="co-desc">${esc(c.description)}</p>${c.ai ? '<p class="co-note">Written with AI (Claude) from the sourced facts on this page. It may contain mistakes; check the sources below.</p>' : ''}` : empty('A company description has not been added yet.')}
         <div class="co-facts">${fact('Legal name', c.legal_name)}${fact('Country', c.country)}${fact('Headquarters', c.hq)}${fact('Sector', c.sector)}${fact('Industry', c.industry)}${fact('Founded', c.founded)}${fact('Status', c.public ? 'Public, listed' : 'Private')}
         <div class="co-fact"><span>Website</span><b>${c.website ? `<a href="${esc(c.website)}" rel="noopener nofollow" target="_blank">${esc(c.website.replace(/^https?:\/\//, ''))}</a>` : '<em>Not yet available</em>'}</b></div></div></section>
       <section class="sec"><div class="sec-head"><div><h2>Latest news</h2><p>Investedia articles that name ${esc(c.name)}.</p></div></div>${arts.length ? `<div class="card co-list">${arts.map(s => `<a class="co-art" href="story.html?id=${encodeURIComponent(s.id)}"><b>${esc(s.headline)}</b><small>${esc(s.source?.name || '')} · ${ago(s.published_at)}</small></a>`).join('')}</div>` : empty(`No recent Investedia articles name ${esc(c.name)}.`)}</section>
@@ -97,7 +97,7 @@ const coStart = () => {
       <section class="sec"><div class="sec-head"><div><h2>Watch</h2><p>Official and legally embeddable videos about ${esc(c.name)}.</p></div></div>${c.videos.length ? '' : empty('No videos added yet.')}</section>
       ${c.sources.length ? `<p class="co-sources">Sources: ${c.sources.map(s => `<a href="${esc(s.url)}" rel="noopener nofollow" target="_blank">${esc(s.name)}</a>`).join(' · ')}</p>` : ''}
       </div><aside class="co-side">
-      <section class="card co-pad"><div class="card-head"><h3>Stocks of ${esc(c.name)}</h3></div><p class="co-note">A company can have several stocks. Each has its own price page.</p>${c.listings.map(asset).join('')}</section>
+      <section class="card co-pad"><div class="card-head"><h3>Stocks of ${esc(c.name)}</h3></div>${c.listings.length ? `<p class="co-note">A company can have several stocks. Each has its own price page.</p>${c.listings.map(asset).join('')}` : '<p class="co-note">Not listed on a stock exchange: this company\'s shares are not publicly traded (it may be state-owned or privately held).</p>'}</section>
       <section class="card co-pad"><div class="card-head"><h3>Related companies</h3></div>${related.length ? `<p class="co-note">Same sector: ${esc(c.sector)}</p><div class="co-row">${related.map(x => C.chip(x)).join('')}</div>` : empty('Not enough data to relate companies yet.')}</section>
       <section class="card co-pad"><div class="card-head"><h3>Learn</h3></div><p class="co-note">General lessons that apply to any listed company.</p>${lessons.map(([id, t, s]) => `<a class="co-art" href="lesson.html?c=${id}"><b>${t}</b><small>${s}</small></a>`).join('')}</section>
       </aside></div><p class="co-disc">Company facts are updated periodically, not live. Not investment advice.</p>`;

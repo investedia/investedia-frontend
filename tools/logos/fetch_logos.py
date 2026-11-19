@@ -83,7 +83,7 @@ def main(argv=None):
     todo = [c for c in d['companies'] if not (c.get('logo') and (ROOT / c['logo']).is_file()) and c['slug'] not in REJECT][:a.limit]
     OUT.mkdir(parents=True, exist_ok=True); got = {'wikidata': 0, 'website': 0}
     for i, c in enumerate(todo, 1):
-        qid = next((H[l['s']].get('qid') for l in c['listings'] if H.get(l['s'], {}).get('qid')), None)
+        qid = c.get('qid') or next((H[l['s']].get('qid') for l in c['listings'] if H.get(l['s'], {}).get('qid')), None)
         found, kind = None, None
         if qid:
             w = wikidata_logo(qid)

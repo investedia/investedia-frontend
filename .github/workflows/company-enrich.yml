@@ -1,0 +1,50 @@
+# Company sector, industry and short description with Claude Haiku 5.5 (owner, 19 Nov 2026).
+# Started by hand. Sends one overnight Message Batch (half price), waits for it, writes the results into
+# data/companies.json on the given branch. Never touches main, never deploys. Uses the ANTHROPIC_API_KEY secret.
+name: Company enrich (Haiku)
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: Branch to read and write data/companies.json
+        required: true
+        default: claude/companies-africa
+      limit:
+        description: How many companies (start with 50 to check cost and quality)
+        required: true
+        default: '50'
+permissions:
+  contents: write
+concurrency:
+  group: company-enrich
+  cancel-in-progress: false
+jobs:
+  enrich:
+    if: github.event.inputs.branch != 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 1440
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.branch }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q anthropic
+      - name: Submit batch
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python tools/companies/haiku_enrich.py submit --limit "${{ github.event.inputs.limit }}"
+      - name: Wait and collect
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python tools/companies/haiku_enrich.py collect | tee enrich.log
+      - name: Summary
+        if: always()
+        run: tail -n 1 enrich.log >> "$GITHUB_STEP_SUMMARY" || true
+      - name: Commit results to the branch
+        run: |
+          git add data/companies.json data/company-sources/haiku-batch.json
+          git diff --cached --quiet && { echo 'No changes.'; exit 0; }
+          git -c user.name='Investedia enrich bot' -c user.email='robot@investedia.com' commit -q -m "Company sector, industry and description (Claude Haiku 5.5 batch)"
+          git push -q origin HEAD:${{ github.event.inputs.branch }}
