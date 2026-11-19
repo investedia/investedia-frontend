@@ -1,0 +1,763 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "CI",
+ "count": 43,
+ "companies": [
+  {
+   "qid": "Q139563252",
+   "name": "AFG Holding",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/AFG_Bank",
+   "listed": false
+  },
+  {
+   "qid": "Q118518803",
+   "name": "Agence nationale de gestion des déchets",
+   "cc": "ci",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "waste management"
+   ],
+   "isin": [],
+   "hq_city": "Abidjan",
+   "hq": [
+    5.33639,
+    -4.02667
+   ],
+   "website": "https://anaged.net/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16525439",
+   "name": "Ageroute+",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "transport infrastructure"
+   ],
+   "isin": [],
+   "hq_city": "Abidjan",
+   "hq": [
+    5.33639,
+    -4.02667
+   ],
+   "website": "http://www.ageroute.ci/",
+   "logo_file": "Logo AGEROUTE.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q491031",
+   "name": "Bourse Regionale Des Valeurs Mobilieres",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Abidjan",
+   "hq": [
+    5.33639,
+    -4.02667
+   ],
+   "website": "https://www.brvm.org",
+   "enwiki": "https://en.wikipedia.org/wiki/BRVM",
+   "listed": false
+  },
+  {
+   "qid": "Q109017730",
+   "name": "Bureau national d'études techniques et de développement",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abidjan",
+   "hq": [
+    5.33639,
+    -4.02667
+   ],
+   "website": "https://www.bnetd.ci/fr",
+   "listed": false
+  },
+  {
+   "qid": "Q16536953",
+   "name": "Centre d'édition et de diffusion africaines",
+   "cc": "ci",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130325303",
+   "name": "Centre ivoirien antipollution",
+   "cc": "ci",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abidjan",
+   "hq": [
+    5.33639,
+    -4.02667
+   ],
+   "website": "https://ciapol.ci/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2989790",
+   "name": "Compagnie ivoirienne d'electricité",
+   "cc": "ci",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "website": "http://www.cie.ci",
+   "listed": false
+  },
+  {
+   "qid": "Q2990207",
+   "name": "Compagnie ivoirienne de développement du textile",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bouaké",
+   "hq": [
+    7.68333,
+    -5.03306
+   ],
+   "website": "https://www.cidt-ci.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q134369355",
+   "name": "Compagnie Ivoirienne de transports lagunaires",
+   "cc": "ci",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q131552236",
+   "name": "Côte d'Ivoire PME",
+   "cc": "ci",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abidjan",
+   "hq": [
+    5.33639,
+    -4.02667
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488360",
+   "name": "General Society Ivory Coast",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.societegenerale.ci",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113836046",
+   "name": "Gestoci",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3156338",
+   "name": "Ivoirienne de Transports Aériens",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Ivoirienne_de_Transports_A%C3%A9riens",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17061030",
+   "name": "Jumià",
+   "cc": "ci",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "JMIA"
+    }
+   ],
+   "industries": [
+    "online shop"
+   ],
+   "isin": [
+    "US48138M1053"
+   ],
+   "hq_city": "Ikeja",
+   "hq": [
+    6.58333,
+    3.33333
+   ],
+   "website": "https://group.jumia.com",
+   "lei": "391200JWCL5VCOSXNT56",
+   "enwiki": "https://en.wikipedia.org/wiki/Jumia",
+   "logo_file": "JumiaLogo (14).png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3199431",
+   "name": "Koz",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q81717770",
+   "name": "La Nouvelle Chaîne Ivoirienne",
+   "cc": "ci",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Abidjan",
+   "hq": [
+    5.33639,
+    -4.02667
+   ],
+   "website": "https://www.nci.ci/",
+   "enwiki": "https://en.wikipedia.org/wiki/NCI_(TV_channel)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6464557",
+   "name": "La Poste (Ivory Coast)",
+   "cc": "ci",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Plateau",
+   "hq": [
+    5.32549,
+    -4.02014
+   ],
+   "website": "http://www.laposte.ci",
+   "enwiki": "https://en.wikipedia.org/wiki/La_Poste_(Ivory_Coast)",
+   "listed": false
+  },
+  {
+   "qid": "Q3323637",
+   "name": "Moov Côte d'Ivoire",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "https://www.moov-africa.ci/",
+   "listed": false
+  },
+  {
+   "qid": "Q3273241",
+   "name": "MTN Côte d'Ivoire",
+   "cc": "ci",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Ivory Coast",
+   "hq": [
+    8.0,
+    -6.0
+   ],
+   "website": "https://www.mtn.ci/",
+   "logo_file": "MTN logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q117808484",
+   "name": "National Environment Agency of Côte d'Ivoire",
+   "cc": "ci",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abidjan",
+   "hq": [
+    5.33639,
+    -4.02667
+   ],
+   "website": "https://ande-ci-officiel.business.site/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2826681",
+   "name": "National Rural Development Support Agency",
+   "cc": "ci",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.anader.ci/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3338444",
+   "name": "Nestlé Côte d'Ivoire",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abidjan",
+   "hq": [
+    5.33639,
+    -4.02667
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q3345286",
+   "name": "Nouvelles éditions ivoiriennes",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3349661",
+   "name": "Office national des télécommunications",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3355034",
+   "name": "Orange Côte d'Ivoire",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abidjan",
+   "hq": [
+    5.33639,
+    -4.02667
+   ],
+   "website": "https://www.orange.ci/",
+   "logo_file": "Orange logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3361061",
+   "name": "Palais de la culture",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abidjan",
+   "hq": [
+    5.33639,
+    -4.02667
+   ],
+   "website": "http://www.palaisdelaculture.ci/en/index.php/",
+   "enwiki": "https://en.wikipedia.org/wiki/Culture_Palace_of_Abidjan",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3361548",
+   "name": "Palmci",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q131782431",
+   "name": "Porteo BTP",
+   "cc": "ci",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3407856",
+   "name": "Prosuma",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.groupeprosuma.com",
+   "logo_file": "Logo-prosuma.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1164057",
+   "name": "Radiodiffusion télévision ivoirienne",
+   "cc": "ci",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "public broadcasting",
+    "édition de chaînes généralistes"
+   ],
+   "isin": [],
+   "hq_city": "Abidjan",
+   "hq": [
+    5.33639,
+    -4.02667
+   ],
+   "website": "https://www.rti.ci/",
+   "enwiki": "https://en.wikipedia.org/wiki/Radiodiffusion_Television_Ivoirienne",
+   "logo_file": "Logo RTI 2021.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3472270",
+   "name": "Sania",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.sania.ci/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133830460",
+   "name": "Socida",
+   "cc": "ci",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "car dealership"
+   ],
+   "isin": [],
+   "hq_city": "Abidjan",
+   "hq": [
+    5.33639,
+    -4.02667
+   ],
+   "website": "https://www.socida-ci.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131861490",
+   "name": "Société de limonaderies et de boissons rafraîchissantes d'Afrique",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "drink"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133897507",
+   "name": "Société de Transport Lagunaire",
+   "cc": "ci",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abidjan",
+   "hq": [
+    5.33639,
+    -4.02667
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2297031",
+   "name": "Société ivoirienne de raffinage",
+   "cc": "ci",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abidjan",
+   "hq": [
+    5.33639,
+    -4.02667
+   ],
+   "website": "http://www.sir.ci",
+   "listed": false
+  },
+  {
+   "qid": "Q130789166",
+   "name": "Société ivoirienne de technologie tropicale",
+   "cc": "ci",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://i2t.ci/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133263052",
+   "name": "Société nationale d'édition de documents administratifs et d'identification ( Côte d'Ivoire)",
+   "cc": "ci",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public administration (supervision) of economic activities"
+   ],
+   "isin": [],
+   "hq_city": "Cocody",
+   "hq": [
+    5.35,
+    -3.96667
+   ],
+   "website": "https://snedai.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3459925",
+   "name": "SOTRA Tourism & Travel",
+   "cc": "ci",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Marcory Zone 4",
+   "hq": [
+    5.29066,
+    -3.98136
+   ],
+   "website": "http://www.sotra-tourisme.ci",
+   "listed": false
+  },
+  {
+   "qid": "Q106205540",
+   "name": "soutrali invest",
+   "cc": "ci",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abidjan",
+   "hq": [
+    5.33639,
+    -4.02667
+   ],
+   "logo_file": "Soutrali invest trading.png",
+   "listed": false
+  },
+  {
+   "qid": "Q122224046",
+   "name": "Teyliom",
+   "cc": "ci",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ivory Coast",
+   "hq": [
+    8.0,
+    -6.0
+   ],
+   "website": "https://teyliom.com/",
+   "logo_file": "Logo Teyliom-Group.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3549970",
+   "name": "Unilever Côte d'Ivoire",
+   "cc": "ci",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q112136713",
+   "name": "Universal Music Africa",
+   "cc": "ci",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "music industry"
+   ],
+   "isin": [],
+   "hq_city": "Ivory Coast",
+   "hq": [
+    8.0,
+    -6.0
+   ],
+   "website": "https://www.umgsa.africa/",
+   "enwiki": "https://en.wikipedia.org/wiki/Universal_Music_Africa",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}
