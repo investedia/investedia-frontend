@@ -9,7 +9,7 @@
  const css=document.createElement('style');css.textContent=`
  @media(min-width:1180px){
  html.dash{--pw:360px;--dtop:84px;--dg:12px;--dcard:rgba(12,12,15,.94);--dln:#222226}
- #dashbar{position:fixed;left:16px;right:16px;top:12px;height:60px;z-index:2;border-radius:18px;background:var(--dcard);border:1px solid var(--dln);backdrop-filter:blur(14px);pointer-events:none}
+ #dashbar{display:none;position:fixed;left:16px;right:16px;top:12px;height:60px;z-index:2;border-radius:18px;background:var(--dcard);border:1px solid var(--dln);backdrop-filter:blur(14px);pointer-events:none}
  html.dash .top{top:var(--dtop)!important;left:16px!important;right:auto!important;width:340px!important}
  html.dash .top::before{display:none}
  html.dash .brand{position:fixed;left:32px;top:24px;height:36px;z-index:6;align-items:center}
@@ -20,7 +20,7 @@
  html.dash .gswitch button{padding:7px 16px!important;font-size:13.5px!important}
  /* columns */
  html.dash :is(#panel,.mkd-o:not([hidden]),#projPanel){top:var(--dtop)!important;right:16px!important;width:var(--pw)!important}
- html.dash #panel{bottom:calc(16px + 224px + var(--dg))!important;height:auto!important;max-height:none!important}
+ html.dash #panel{bottom:calc(16px + var(--imph,224px) + var(--dg))!important;height:auto!important;max-height:none!important}
  html.dash:not(.side-on) #panel{bottom:16px!important}
  html.dash #sideImp{right:16px!important;width:var(--pw)!important}
  html.dash :is(.mkd-o:not([hidden]),#projPanel){bottom:16px!important}

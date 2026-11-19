@@ -15,7 +15,7 @@ html.standalone{background:#050506}html.standalone[data-theme=light]{background:
 @media(min-width:1180px){
  html.side-on .panel{bottom:252px!important;max-height:none}
  html.side-on .zoom{bottom:96px!important}html.side-on .zoom{bottom:150px!important}html.side-on .zloc{bottom:96px!important}
- html.side-on .side-imp{display:block;position:fixed;right:16px;bottom:16px;width:var(--pw);height:224px;border-radius:24px;z-index:4;padding:16px 18px;box-sizing:border-box}
+ html.side-on .side-imp{display:block;position:fixed;right:16px;bottom:16px;width:var(--pw);height:auto;border-radius:24px;z-index:4;padding:16px 18px;box-sizing:border-box}
  html.side-on .side-sec{display:block;position:fixed;left:24px;top:50%;transform:translateY(-50%);width:270px;border-radius:22px;z-index:3;padding:14px 16px}
  html.side-on .side-bar{display:flex;position:fixed;left:24px;right:calc(var(--pw) + 40px);bottom:16px;height:64px;border-radius:20px;z-index:3;align-items:center;gap:10px;padding:0 14px;box-sizing:border-box;overflow:hidden}
  html.side-on .timeline{bottom:96px}html.side-on .layers{bottom:96px!important}
@@ -1799,7 +1799,7 @@ function size() {
       right: phone() ? W - 8 : document.documentElement.classList.contains('mkd-on') && document.querySelector('.mkd-o:not([hidden])') ? document.querySelector('.mkd-o').getBoundingClientRect().left - 24 : document.documentElement.classList.contains('proj-mode') && $('projPanel') ? $('projPanel').getBoundingClientRect().left - 24 : ((mp => mp && document.documentElement.classList.contains('market-mode') && !mp.hidden && mp.offsetWidth)(document.querySelector('.market-panel')) ? document.querySelector('.market-panel').getBoundingClientRect().left - 24 : panel.hidden || !panel.offsetWidth || panel.getBoundingClientRect().left <= 0 ? W - 24 : panel.getBoundingClientRect().left - 24),
       bottom: sheetOpen ? H - panel.offsetHeight - 12 : document.documentElement.classList.contains('proj-mode') && !phone() ? H - 110 : document.documentElement.classList.contains('mkd-on') ? H - 190 : LC ? H - (document.documentElement.classList.contains('act-on') ? 190 : 24) : (timeline.height ? timeline.top - 16 : H - (document.documentElement.classList.contains('market-mode') ? 72 : 90)) };
     // PC: the globe keeps one position in News, Markets and Projects, so switching modes never moves it
-    if (!phone() && !EMBED && W >= 1180) { const pw = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--pw')) || 392, sb = $('sbox').getBoundingClientRect(); globeBox = { left: 378, top: Math.max(sb.bottom, 60) + 12, right: W - pw - 40, bottom: H - 190 }; }
+    if (!phone() && !EMBED && W >= 1180) { const pw = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--pw')) || 392, sb = $('sbox').getBoundingClientRect(); const m = Math.max(378, pw + 40), sh = parseFloat(getComputedStyle(document.documentElement).getPropertyValue(document.documentElement.classList.contains('act-on') || document.documentElement.classList.contains('mkd-on') ? '--acth' : '--none')) || 150; globeBox = { left: m, top: Math.max(sb.bottom, 60) + 12, right: W - m, bottom: H - sh - 32 }; }  // centred between equal margins; grows when the bottom strip is dragged shorter (owner, 19 Nov 2026)
     // template B (?panel=b): the articles sit in a strip along the bottom, so the globe uses the full width above it
     if (PANEL_TEMPLATE === 'b' && panel.dataset.view === 'top') { globeBox.right = W - (phone() ? 8 : 24); globeBox.bottom = Math.min(globeBox.bottom, (phone() ? $('tl').getBoundingClientRect().top : panel.getBoundingClientRect().top) - 16); }
     const aw = Math.max(1, globeBox.right - globeBox.left), ah = Math.max(1, globeBox.bottom - globeBox.top);
@@ -2400,7 +2400,7 @@ pbody.addEventListener('keydown', e => {
 function variantPanel(list) {
   if (PANEL_TEMPLATE === 'a') return `<h2>Top articles</h2><div class="meta">${Math.min(8, list.length)} of ${list.length} articles</div><div class="compact-list">${list.slice(0, 8).map(compactItem).join('')}</div>${list.length > 8 ? '<a class="panel-more" href="../../news.html">See all news →</a>' : ''}${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
   if (PANEL_TEMPLATE === 'b') return `<h2>Top articles</h2><div class="strip-list" aria-label="Top articles">${list.slice(0, phone() ? 3 : 12).map(compactItem).join('')}</div>${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
-  const tabs = phone() && phoneView !== 'markets' ? [['top', 'Top'], ['latest', 'Latest'], ['moving', 'Moving'], ['more', ['countries', 'topics', 'watch', 'saved'].includes(panelTab) ? ({ countries: 'Countries', topics: 'Topics', watch: 'Watchlist', saved: 'Saved' })[panelTab] + ' ▾' : 'More ▾']] : [['top', 'Top'], ...(!phone() ? [['movers', 'Movers']] : []), ['latest', 'Latest'], ['countries', 'Countries'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : []), ['saved', `Saved${RL.size ? ' ' + RL.size : ''}`]];
+  const tabs = phone() && phoneView !== 'markets' ? [['top', 'Top'], ['latest', 'Latest'], ['moving', 'Moving'], ['more', ['countries', 'topics', 'watch', 'saved'].includes(panelTab) ? ({ countries: 'Countries', topics: 'Topics', watch: 'Watchlist', saved: 'Saved' })[panelTab] + ' ▾' : 'More ▾']] : [['top', 'Top'], ['latest', 'Latest'], ['countries', 'Countries'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : []), ...(phone() ? [['saved', `Saved${RL.size ? ' ' + RL.size : ''}`]] : [])];  // PC: fewer tabs, Movers lives in Market impact (owner, 19 Nov 2026)
   let items, count;
   if (phone() && phoneView === 'markets') { items = marketsPhonePanel(); count = 0; }
   else if (panelTab === 'topics') { const cats = Object.entries(list.reduce((m, x) => (m[x.category] = (m[x.category] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]); count = 0;
@@ -2416,7 +2416,8 @@ function variantPanel(list) {
   } else if (panelTab === 'countries') {
     const countries = Object.entries(list.reduce((all, s) => { all[s.location.country] = (all[s.location.country] || 0) + 1; return all; }, {})).sort((a,b) => b[1]-a[1]);
     count = countries.length;
-    items = countries.slice(0, panelExpanded ? countries.length : 3).map(([name, n]) => `<button class="compact-country" data-country="${esc(name)}">${flag(name)}<span>${esc(nm(name))}</span><small>${n} ${n === 1 ? 'article' : 'articles'}</small></button>`).join('');
+    const top = countries[0]?.[1] || 1;  // owner 19 Nov 2026: 8 countries with a share bar, not 3 rows and empty space
+    items = countries.slice(0, panelExpanded ? countries.length : 8).map(([name, n]) => `<button class="compact-country" data-country="${esc(name)}" style="--sh:${Math.round(100 * n / top)}%">${flag(name)}<span>${esc(nm(name))}</span><small>${n}</small></button>`).join('');
   } else {
     const q = (newsQ || '').trim().toLowerCase(), qf = x => !q || [x.headline, x.source && x.source.name, nm(x.location.country), CAT[x.category]].some(v => String(v || '').toLowerCase().includes(q));
     const base0 = panelTab === 'saved' ? stories.filter(x => RL.has(x.id)).filter(qf) : (panelTab === 'moving' ? list.filter(x => x.market_moving) : panelTab === 'watch' ? (WATCH = watchSyms(), (() => { let C = new Set(); try { C = new Set((JSON.parse(localStorage.getItem('inv-watch') || '{}').c || []).map(x => x.k)); } catch {} return list.filter(x => touchesWatch(x) || C.has(x.location.country)); })()) : list).filter(qf);
@@ -3603,9 +3604,6 @@ function mkUnusual(){
  [data-sz]:not([data-sz=full]):after{content:'';position:absolute;left:0;right:0;bottom:0;height:22px;background:linear-gradient(transparent,rgba(10,10,12,.97));pointer-events:none;border-radius:0 0 14px 14px}
  [data-sz=compact] :is(.act-t,.mkd-c .t){-webkit-line-clamp:1!important;white-space:nowrap;text-overflow:ellipsis;display:block!important}
  [data-sz=compact] :is(.act-f,.mkd-c .f){display:none!important}
- [data-sz=row] :is(.act-k,.mkd-c){display:flex!important;gap:8px;align-items:center;padding:7px 10px!important}
- [data-sz=row] :is(.act-m,.mkd-c .m){flex:none;max-width:45%}[data-sz=row] :is(.act-t,.mkd-c .t){margin:0!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block!important;-webkit-line-clamp:unset}
- [data-sz=row] :is(.act-f,.mkd-c .f){display:none!important}
  [data-sz=tabs]>*:not(.act-h):not(.mkd-th):not(.gp-grab){visibility:hidden}
  @media(max-width:1179px){.gp-ctl,.gp-dock{display:none!important}.gp-hid{display:revert!important}}`;
  document.head.append(css);
@@ -3618,7 +3616,7 @@ function mkUnusual(){
    dr.onpointerup=()=>{dr.onpointermove=null;save();};};}
  const find=id=>{const p=P.find(x=>x[0]===id);return p&&document.querySelector(p[4]);};
  const shown=el=>{if(!el)return false;const r=el.getBoundingClientRect();return r.width>0&&r.height>0&&getComputedStyle(el).visibility!=='hidden';};
- function place(){for(const [id] of P){const el=find(id),c=ctl[id];if(!big()||!el||L.min[id]||!shown(el)){c.classList.remove('on');continue;}const r=el.getBoundingClientRect();c.classList.add('on');c.style.top=(r.top+12)+'px';c.style.left=(r.right-c.offsetWidth-(id==='top'?54:12))+'px';}
+ function place(){for(const [id] of P){const el=find(id),c=ctl[id];if(!big()||!el||L.min[id]||!shown(el)){c.classList.remove('on');continue;}const r=el.getBoundingClientRect();c.classList.add('on');const h2=id==='top'&&el.querySelector('h2'),hr=h2&&h2.getBoundingClientRect();c.style.top=(hr&&hr.height?hr.top+(hr.height-c.offsetHeight)/2:r.top+12)+'px';c.style.left=(r.right-c.offsetWidth-(id==='top'?48:12))+'px';}  // Top articles: controls centred on the title line
   const lc=document.getElementById('lcol')?.getBoundingClientRect();dockL.style.left=((lc&&lc.width?lc.left:24))+'px';dockL.style.bottom='16px';dockR.style.right='24px';dockR.style.bottom='16px';}
  function sync(){const m=mode();
   for(const [id,label,side,md] of P){const el=find(id);if(!el)continue;const hid=!!L.min[id]&&big();el.classList.toggle('gp-hid',hid);el.style.translate=L.free[id]&&L.pos[id]&&big()?L.pos[id][0]+'px '+L.pos[id][1]+'px':'';
@@ -3629,15 +3627,19 @@ function mkUnusual(){
   place();}
  document.addEventListener('click',e=>{const ch=e.target.closest('[data-gp]');if(ch){delete L.min[ch.dataset.gp];save();sync();}});
  // bottom strips (owner 15 Nov 2026): drag the handle to any height. Content adapts in four steps: full, compact, row, tabs only.
- const MINH=58,MAXH=380,DEF=150,step=h=>h>=190?'full':h>=125?'compact':h>=80?'row':'tabs';
- function size(id,el,h){if(!big()){el.style.removeProperty('height');el.removeAttribute('data-sz');return;}h=h??L.h[id];if(h==null){el.style.removeProperty('height');el.dataset.sz=step(el.offsetHeight||DEF);return;}
+ const MINH=58,MAXH=380,DEF=150,step=h=>h>=150?'full':h>=92?'compact':'tabs';  // owner 19 Nov 2026: three sizes only, each readable (no squeezed one-line row)
+ function size(id,el,h){if(!big()){el.style.removeProperty('height');el.removeAttribute('data-sz');return;}h=h??L.h[id];if(h==null){if(el.querySelector('.act-k,.mkd-c')){const f=snap(el,9999);el.style.setProperty('height',f+'px','important');el.dataset.sz='full';document.documentElement.style.setProperty('--acth',f+'px');}else{el.style.removeProperty('height');el.dataset.sz=step(el.offsetHeight||DEF);}return;}  // default: exactly as tall as its content
   el.style.setProperty('height',h+'px','important');el.style.setProperty('max-height','none','important');el.dataset.sz=step(h);document.documentElement.style.setProperty('--acth',h+'px');}
+ // owner 19 Nov 2026: on release the strip settles on the nearest size where its content fits exactly (no half-cut text or empty band)
+ function snap(el,h){const old=el.style.height,sz=el.dataset.sz,fit=s=>{el.dataset.sz=s;el.style.setProperty('height','auto','important');const v=Math.min(MAXH,Math.ceil(el.scrollHeight));return v;};
+  const T=[['tabs',MINH],['compact',fit('compact')],['full',fit('full')]];el.style.setProperty('height',old,'important');el.dataset.sz=sz;
+  return T.map(t=>t[1]).reduce((a,b)=>Math.abs(b-h)<Math.abs(a-h)?b:a);}
  const grab=()=>{for(const [id,sel,head] of STRIPS){const el=document.querySelector(sel);if(!el)continue;if(L.crop[id]){L.h[id]=MINH;delete L.crop[id];save();}
   if(el.querySelector(':scope>.gp-grab')){if(L.h[id]!=null&&el.style.height!==L.h[id]+'px')size(id,el);continue;}if(!el.querySelector(head))continue;
   const g=document.createElement('button');g.type='button';g.className='gp-grab';g.title='Drag to resize · double-click to restore';g.setAttribute('aria-label','Resize this panel');el.prepend(g);size(id,el);
   let y0=null,h0=0;g.onpointerdown=e=>{e.preventDefault();y0=e.clientY;h0=el.offsetHeight;g.setPointerCapture(e.pointerId);el.classList.add('gp-drag-on');};
   g.onpointermove=e=>{if(y0==null)return;const h=Math.round(Math.max(MINH,Math.min(MAXH,h0-(e.clientY-y0))));L.h[id]=h;size(id,el,h);};
-  g.onpointerup=()=>{if(y0==null)return;y0=null;el.classList.remove('gp-drag-on');if(L.h[id]>MINH)L.hl[id]=L.h[id];save();};
+  g.onpointerup=()=>{if(y0==null)return;y0=null;el.classList.remove('gp-drag-on');L.h[id]=snap(el,L.h[id]);size(id,el,L.h[id]);if(L.h[id]>MINH)L.hl[id]=L.h[id];save();};
   g.ondblclick=()=>{L.h[id]=L.h[id]<=MINH?(L.hl[id]||DEF):MINH;size(id,el);save();};
   g.onkeydown=e=>{if(e.key!=='ArrowUp'&&e.key!=='ArrowDown')return;e.preventDefault();L.h[id]=Math.max(MINH,Math.min(MAXH,(L.h[id]||el.offsetHeight)+(e.key==='ArrowUp'?20:-20)));size(id,el);save();};}};
  new MutationObserver(()=>{grab();}).observe(document.body,{childList:true,subtree:true});
@@ -3880,7 +3882,7 @@ function mkUnusual(){
  const css=document.createElement('style');css.textContent=`
  @media(min-width:1180px){
  html.dash{--pw:360px;--dtop:84px;--dg:12px;--dcard:rgba(12,12,15,.94);--dln:#222226}
- #dashbar{position:fixed;left:16px;right:16px;top:12px;height:60px;z-index:2;border-radius:18px;background:var(--dcard);border:1px solid var(--dln);backdrop-filter:blur(14px);pointer-events:none}
+ #dashbar{display:none;position:fixed;left:16px;right:16px;top:12px;height:60px;z-index:2;border-radius:18px;background:var(--dcard);border:1px solid var(--dln);backdrop-filter:blur(14px);pointer-events:none}
  html.dash .top{top:var(--dtop)!important;left:16px!important;right:auto!important;width:340px!important}
  html.dash .top::before{display:none}
  html.dash .brand{position:fixed;left:32px;top:24px;height:36px;z-index:6;align-items:center}
@@ -3891,7 +3893,7 @@ function mkUnusual(){
  html.dash .gswitch button{padding:7px 16px!important;font-size:13.5px!important}
  /* columns */
  html.dash :is(#panel,.mkd-o:not([hidden]),#projPanel){top:var(--dtop)!important;right:16px!important;width:var(--pw)!important}
- html.dash #panel{bottom:calc(16px + 224px + var(--dg))!important;height:auto!important;max-height:none!important}
+ html.dash #panel{bottom:calc(16px + var(--imph,224px) + var(--dg))!important;height:auto!important;max-height:none!important}
  html.dash:not(.side-on) #panel{bottom:16px!important}
  html.dash #sideImp{right:16px!important;width:var(--pw)!important}
  html.dash :is(.mkd-o:not([hidden]),#projPanel){bottom:16px!important}
@@ -3978,5 +3980,6 @@ requestAnimationFrame(frame);
 })();</script>
 <script src="../globe-companies.js"></script>
 <script src="../markets-layout.js"></script>
+<script src="../news-layout.js"></script>
 </body>
 </html>
