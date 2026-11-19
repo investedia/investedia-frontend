@@ -1,0 +1,43 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "KM",
+ "count": 2,
+ "companies": [
+  {
+   "qid": "Q113904766",
+   "name": "Comoro Gulf Holdings (CGH)",
+   "cc": "km",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Comoro_Gulf_Holdings",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15616914",
+   "name": "Société Coloniale de Bambao",
+   "cc": "km",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Anjouan",
+   "hq": [
+    -12.215,
+    44.425
+   ],
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

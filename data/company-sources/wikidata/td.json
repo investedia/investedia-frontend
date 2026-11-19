@@ -1,0 +1,86 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "TD",
+ "count": 4,
+ "companies": [
+  {
+   "qid": "Q189972",
+   "name": "Bank of Central African States",
+   "cc": "td",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "https://www.beac.int",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Central_African_States",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134451392",
+   "name": "Brasserie Du Tchad",
+   "cc": "td",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Moundou",
+   "hq": [
+    8.56667,
+    16.08333
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q3287042",
+   "name": "Manufacture des cigarettes du Tchad",
+   "cc": "td",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "N'Djamena",
+   "hq": [
+    12.11,
+    15.05
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7563960",
+   "name": "SotelTchad",
+   "cc": "td",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Chad",
+   "hq": [
+    15.46667,
+    19.4
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/SotelTchad",
+   "listed": false
+  }
+ ]
+}
