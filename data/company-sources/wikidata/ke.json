@@ -1,0 +1,1176 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "KE",
+ "count": 58,
+ "companies": [
+  {
+   "qid": "Q4853463",
+   "name": "Bamburi Cement",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "http://www.lafarge.co.ke",
+   "enwiki": "https://en.wikipedia.org/wiki/Bamburi_Cement",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124881321",
+   "name": "BasiGo",
+   "cc": "ke",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "https://www.basi-go.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/BasiGo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13122626",
+   "name": "Bidco",
+   "cc": "ke",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Thika",
+   "hq": [
+    -1.05,
+    37.08333
+   ],
+   "website": "http://www.bidcoafrica.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133844342",
+   "name": "BRCK",
+   "cc": "ke",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology",
+    "software development",
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "https://brck.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4966238",
+   "name": "Bridge International Academies",
+   "cc": "ke",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kenya",
+   "hq": [
+    0.1,
+    38.0
+   ],
+   "website": "http://www.bridgeinternationalacademies.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bridge_International_Academies",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17026844",
+   "name": "Britam Holdings Limited",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance industry"
+   ],
+   "isin": [],
+   "website": "https://www.britam.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Britam_Holdings",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19903187",
+   "name": "Brookside Dairy Limited",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy"
+   ],
+   "isin": [],
+   "hq_city": "Kenya",
+   "hq": [
+    0.1,
+    38.0
+   ],
+   "website": "http://www.brookside.co.ke/",
+   "enwiki": "https://en.wikipedia.org/wiki/Brookside_Dairy_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48811064",
+   "name": "CIB Kenya",
+   "cc": "ke",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/CIB_Kenya",
+   "listed": false
+  },
+  {
+   "qid": "Q5163264",
+   "name": "Consolidated Bank of Kenya",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "http://www.consolidated-bank.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Consolidated_Bank_of_Kenya",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5167875",
+   "name": "Cooperative Bank of Kenya",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "https://www.co-opbank.co.ke",
+   "enwiki": "https://en.wikipedia.org/wiki/Co-operative_Bank_of_Kenya",
+   "logo_file": "Coopbanklogo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28223313",
+   "name": "Cytonn Investments",
+   "cc": "ke",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "http://cytonn.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cytonn_Investments",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5241828",
+   "name": "Davis & Shirtliff",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.davisandshirtliff.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Davis_%26_Shirtliff",
+   "listed": false
+  },
+  {
+   "qid": "Q493271",
+   "name": "East African Breweries",
+   "cc": "ke",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "https://www.eabl.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/East_African_Breweries",
+   "logo_file": "East African Breweries EABL 2022 Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85758263",
+   "name": "East African Publishing House",
+   "cc": "ke",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/East_African_Publishing_House",
+   "listed": false
+  },
+  {
+   "qid": "Q5384664",
+   "name": "Equity Bank Kenya",
+   "cc": "ke",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Upper Hill",
+   "hq": [
+    -1.30139,
+    36.8175
+   ],
+   "website": "https://ke.equitybankgroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Equity_Bank_Kenya_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5416938",
+   "name": "Eveready East Africa",
+   "cc": "ke",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nairobi Stock Exchange",
+     "ticker": "EVRD"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "http://www.eveready.co.ke",
+   "enwiki": "https://en.wikipedia.org/wiki/Eveready_East_Africa",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5433052",
+   "name": "Family Bank",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "http://www.familybank.co.ke/",
+   "enwiki": "https://en.wikipedia.org/wiki/Family_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11859650",
+   "name": "FINNFUND",
+   "cc": "ke",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "funding",
+    "investment",
+    "investment funds and similar financial entities"
+   ],
+   "isin": [],
+   "hq_city": "Helsinki",
+   "hq": [
+    60.17083,
+    24.9375
+   ],
+   "website": "http://www.finnfund.fi",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18349870",
+   "name": "Home Afrika",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://homeafrika.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Home_Afrika",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5965490",
+   "name": "I&M Bank Limited",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "I&M Bank Tower",
+   "hq": [
+    -1.28472,
+    36.82
+   ],
+   "website": "http://www.imbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/I%26M_Bank_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18351104",
+   "name": "Imarisha Cooperative Savings & Credit Society Limited",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kericho",
+   "hq": [
+    -0.36917,
+    35.28389
+   ],
+   "website": "http://www.imarishasacco.co.ke/",
+   "enwiki": "https://en.wikipedia.org/wiki/Imarisha_Cooperative_Savings_and_Credit_Society_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16931420",
+   "name": "Industrial and Commercial Development Corporation",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.icdc.co.ke/",
+   "enwiki": "https://en.wikipedia.org/wiki/Industrial_and_Commercial_Development_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6959786",
+   "name": "Java House",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://javahouseafrica.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Java_House",
+   "listed": false
+  },
+  {
+   "qid": "Q6301873",
+   "name": "Jubilee Insurance",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "https://www.jubileeinsurance.com/ke/",
+   "enwiki": "https://en.wikipedia.org/wiki/Jubilee_Insurance_Company_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17061030",
+   "name": "Jumià",
+   "cc": "ke",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "JMIA"
+    }
+   ],
+   "industries": [
+    "online shop"
+   ],
+   "isin": [
+    "US48138M1053"
+   ],
+   "hq_city": "Ikeja",
+   "hq": [
+    6.58333,
+    3.33333
+   ],
+   "website": "https://group.jumia.com",
+   "lei": "391200JWCL5VCOSXNT56",
+   "enwiki": "https://en.wikipedia.org/wiki/Jumia",
+   "logo_file": "JumiaLogo (14).png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6392561",
+   "name": "Kenya Commercial Bank Group",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial economics"
+   ],
+   "isin": [],
+   "website": "https://www.kcbbankgroup.com",
+   "enwiki": "https://en.wikipedia.org/wiki/KCB_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1525124",
+   "name": "Kenya Electricity Generating Company",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [
+    "KE0000000547"
+   ],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "http://www.kengen.co.ke/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kenya_Electricity_Generating_Company",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q24236326",
+   "name": "Kenya Electricity Transmission Company",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity supply company"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "https://www.ketraco.co.ke/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kenya_Electricity_Transmission_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q6392571",
+   "name": "Kenya Fluorspar Company",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Kimwarer",
+   "hq": [
+    0.31667,
+    35.63333
+   ],
+   "website": "http://www.kenyafluorspar.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kenya_Fluorspar_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6392594",
+   "name": "Kenya Literature Bureau",
+   "cc": "ke",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://klb.co.ke/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kenya_Literature_Bureau",
+   "listed": false
+  },
+  {
+   "qid": "Q6392601",
+   "name": "Kenya Medical Research Institute",
+   "cc": "ke",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.kemri.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kenya_Medical_Research_Institute",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27628256",
+   "name": "Kenya Ordnance Factories Corporation",
+   "cc": "ke",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Eldoret",
+   "hq": [
+    0.51667,
+    35.28333
+   ],
+   "website": "http://www.kofc.co.ke",
+   "enwiki": "https://en.wikipedia.org/wiki/Kenya_Ordnance_Factories_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6392687",
+   "name": "Kenya Power and Lighting Company",
+   "cc": "ke",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "electrical industry"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "http://www.kplc.co.ke",
+   "enwiki": "https://en.wikipedia.org/wiki/Kenya_Power_and_Lighting_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1663639",
+   "name": "Kenya Railways Corporation",
+   "cc": "ke",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "https://krc.co.ke",
+   "enwiki": "https://en.wikipedia.org/wiki/Kenya_Railways_Corporation",
+   "logo_file": "Kenya Railways Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111169782",
+   "name": "Kenya Shipyards Limited",
+   "cc": "ke",
+   "types": [
+    "Q270791",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "shipbuilding"
+   ],
+   "isin": [],
+   "website": "https://kenyashipyards.co.ke/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kenya_Shipyards_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q20871982",
+   "name": "Kenya Tea Development Agency",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Kenya_Tea_Development_Agency",
+   "listed": false
+  },
+  {
+   "qid": "Q1478665",
+   "name": "Kenya Wildlife Service",
+   "cc": "ke",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "https://www.kws.go.ke/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kenya_Wildlife_Service",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19903371",
+   "name": "Kenya Wine Agencies Limited",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "http://www.kwal.co.ke/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kenya_Wine_Agencies_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12620566",
+   "name": "Korea Credit Bureau",
+   "cc": "ke",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q28223354",
+   "name": "Liberty Life Assurance Kenya Limited",
+   "cc": "ke",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "life insurance"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Liberty_Life_Assurance_Kenya_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17067785",
+   "name": "Longhorn Publishers",
+   "cc": "ke",
+   "types": [
+    "Q2085381",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "website": "http://www.longhornpublishers.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Longhorn_Kenya_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134374296",
+   "name": "M-Farm Kenya Limited",
+   "cc": "ke",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q19953806",
+   "name": "M-KOPA",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "http://www.m-kopa.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/M-Kopa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23680112",
+   "name": "Mondo Ride",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "transport"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Mondo_Ride",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6970049",
+   "name": "Nation Media Group",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "http://www.nationmedia.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Nation_Media_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6973411",
+   "name": "National Hospital Insurance Fund",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "http://www.nhif.or.ke/",
+   "enwiki": "https://en.wikipedia.org/wiki/Social_Health_Authority_(Kenya)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6974636",
+   "name": "National Oil Corporation of Kenya",
+   "cc": "ke",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/National_Oil_Corporation_of_Kenya",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18379605",
+   "name": "National Social Security Fund",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "social security"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "http://www.nssf.or.ke",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Social_Security_Fund_(Kenya)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11996144",
+   "name": "Powerhouse Company",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "architecture",
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Rotterdam",
+   "hq": [
+    51.92,
+    4.48
+   ],
+   "website": "http://powerhouse.no/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7398410",
+   "name": "Safaricom",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "https://www.safaricom.co.ke",
+   "enwiki": "https://en.wikipedia.org/wiki/Safaricom",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13124841",
+   "name": "Sasini",
+   "cc": "ke",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "coffee sector"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q55632833",
+   "name": "Selina Wamucii",
+   "cc": "ke",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "agriculture"
+   ],
+   "isin": [],
+   "website": "https://www.selinawamucii.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Selina_Wamucii",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6322748",
+   "name": "Sidian Bank",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "http://www.sidianbank.co.ke/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sidian_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28134152",
+   "name": "SportPesa",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "https://www.sportpesa.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/SportPesa",
+   "logo_file": "SportPesa in Racing Point RP19, Hungarian GP (cropped).jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7697349",
+   "name": "Telkom Kenya",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "http://www.telkom.co.ke/",
+   "enwiki": "https://en.wikipedia.org/wiki/Telkom_Kenya",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28223296",
+   "name": "United Bank for Africa",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "https://www.ubakenya.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/United_Bank_for_Africa_Kenya_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18377996",
+   "name": "Well Told Story",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "http://www.welltoldstory.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Well_Told_Story",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20715807",
+   "name": "Wilderness",
+   "cc": "ke",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "ecotourism",
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Gaborone",
+   "hq": [
+    -24.65694,
+    25.90861
+   ],
+   "website": "https://www.wildernessdestinations.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Wilderness_(company)",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

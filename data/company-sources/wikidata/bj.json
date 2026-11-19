@@ -1,0 +1,344 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "BJ",
+ "count": 18,
+ "companies": [
+  {
+   "qid": "Q123438247",
+   "name": "As World Tech",
+   "cc": "bj",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cotonou",
+   "hq": [
+    6.36667,
+    2.41667
+   ],
+   "website": "https://asworld.tech/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131672883",
+   "name": "IamYourClounon",
+   "cc": "bj",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q109314728",
+   "name": "Isocel telecom",
+   "cc": "bj",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "5th arrondissement of the Littoral Department",
+   "hq": [
+    6.37023,
+    2.42778
+   ],
+   "website": "https://isoceltelecom.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6464559",
+   "name": "La Poste du Bénin",
+   "cc": "bj",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cotonou",
+   "hq": [
+    6.36667,
+    2.41667
+   ],
+   "website": "http://www.laposte.bj",
+   "enwiki": "https://en.wikipedia.org/wiki/La_Poste_du_B%C3%A9nin",
+   "logo_file": "Logo - La Poste du Bénin.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139892041",
+   "name": "Maisons d'édition au Bénin",
+   "cc": "bj",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q139545911",
+   "name": "Nanawax",
+   "cc": "bj",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3349568",
+   "name": "Office de Radiodiffusion et Télévision du Bénin",
+   "cc": "bj",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cotonou",
+   "hq": [
+    6.36667,
+    2.41667
+   ],
+   "website": "https://srtb.bj/",
+   "enwiki": "https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_de_radio_et_de_t%C3%A9l%C3%A9vision_du_B%C3%A9nin",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q86684060",
+   "name": "Office national d’imprimerie et de presse",
+   "cc": "bj",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "conscription"
+   ],
+   "isin": [],
+   "hq_city": "Cotonou",
+   "hq": [
+    6.36667,
+    2.41667
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q140676813",
+   "name": "Orabank Bénin",
+   "cc": "bj",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Cotonou",
+   "hq": [
+    6.36667,
+    2.41667
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17638657",
+   "name": "Ruisseaux d'Afrique",
+   "cc": "bj",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.ruisseauxdafrique.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q122362987",
+   "name": "SImAU",
+   "cc": "bj",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "building",
+    "construction",
+    "real property"
+   ],
+   "isin": [],
+   "hq_city": "Cotonou",
+   "hq": [
+    6.36667,
+    2.41667
+   ],
+   "website": "https://www.simaubenin.com/",
+   "logo_file": "Logo de SImAU au Bénin.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108836834",
+   "name": "Societe Beninoise d’Energie Electrique",
+   "cc": "bj",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cotonou",
+   "hq": [
+    6.36667,
+    2.41667
+   ],
+   "website": "https://www.sbee.bj/",
+   "listed": false
+  },
+  {
+   "qid": "Q107972860",
+   "name": "Société béninoise de brasseries",
+   "cc": "bj",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://sobebra.bj/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118113383",
+   "name": "Société des infrastructures routières et de l’aménagement du territoire",
+   "cc": "bj",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "transport infrastructure"
+   ],
+   "isin": [],
+   "hq_city": "Cotonou",
+   "hq": [
+    6.36667,
+    2.41667
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118113421",
+   "name": "Société des patrimoines immobiliers de l'État",
+   "cc": "bj",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "heritage site"
+   ],
+   "isin": [],
+   "hq_city": "Cotonou",
+   "hq": [
+    6.36667,
+    2.41667
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q74694297",
+   "name": "Société Nationale des eaux du Bénin (SONEB)",
+   "cc": "bj",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "water supply"
+   ],
+   "isin": [],
+   "hq_city": "Cotonou",
+   "hq": [
+    6.36667,
+    2.41667
+   ],
+   "website": "https://www.soneb.bj/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q120334597",
+   "name": "Société nationale des hydrocarbures du Bénin",
+   "cc": "bj",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Cotonou",
+   "hq": [
+    6.36667,
+    2.41667
+   ],
+   "website": "https://www.snhbenin.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2929863",
+   "name": "Zando, Inc.",
+   "cc": "bj",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Cotonou",
+   "hq": [
+    6.36667,
+    2.41667
+   ],
+   "website": "http://www.benintelecoms.bj",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

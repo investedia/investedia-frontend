@@ -1,0 +1,304 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "BW",
+ "count": 13,
+ "companies": [
+  {
+   "qid": "Q4855923",
+   "name": "Bank Gaborone",
+   "cc": "bw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Gaborone",
+   "hq": [
+    -24.65694,
+    25.90861
+   ],
+   "website": "http://www.bankgaborone.co.bw",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Gaborone",
+   "logo_file": "Bank Gaborone logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q105816913",
+   "name": "Botswana Fibre Networks",
+   "cc": "bw",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "state-owned enterprise",
+    "telecommunications",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "https://www.bofinet.co.bw/",
+   "enwiki": "https://en.wikipedia.org/wiki/Botswana_Fibre_Networks",
+   "listed": false
+  },
+  {
+   "qid": "Q4948897",
+   "name": "Botswana Meat Commission",
+   "cc": "bw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lobatse",
+   "hq": [
+    -25.21667,
+    25.66667
+   ],
+   "website": "https://bmc.bw/",
+   "enwiki": "https://en.wikipedia.org/wiki/Botswana_Meat_Commission",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4948910",
+   "name": "Botswana Power Corporation",
+   "cc": "bw",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Botswana",
+   "hq": [
+    -22.2,
+    23.7
+   ],
+   "website": "https://www.bpc.bw",
+   "enwiki": "https://en.wikipedia.org/wiki/Botswana_Power_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2380000",
+   "name": "Botswana Stock Exchange",
+   "cc": "bw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Gaborone",
+   "hq": [
+    -24.65694,
+    25.90861
+   ],
+   "website": "https://www.bse.co.bw",
+   "enwiki": "https://en.wikipedia.org/wiki/Botswana_Stock_Exchange",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4948925",
+   "name": "Botswana Telecommunications Corporation",
+   "cc": "bw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Gaborone",
+   "hq": [
+    -24.65694,
+    25.90861
+   ],
+   "website": "http://www.btc.bw/",
+   "enwiki": "https://en.wikipedia.org/wiki/Botswana_Telecommunications_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q50040162",
+   "name": "Botswana Vaccine Institute",
+   "cc": "bw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Gaborone",
+   "hq": [
+    -24.65694,
+    25.90861
+   ],
+   "website": "https://www.bvi.co.bw/",
+   "enwiki": "https://en.wikipedia.org/wiki/Botswana_Vaccine_Institute",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4948874",
+   "name": "BotswanaPost",
+   "cc": "bw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Gaborone",
+   "hq": [
+    -24.65694,
+    25.90861
+   ],
+   "website": "https://www.botspost.co.bw",
+   "enwiki": "https://en.wikipedia.org/wiki/BotswanaPost",
+   "logo_file": "BotswanaPost logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18356125",
+   "name": "Mascom",
+   "cc": "bw",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile network operator",
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Gaborone",
+   "hq": [
+    -24.65694,
+    25.90861
+   ],
+   "website": "https://www.mascom.bw/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mascom",
+   "logo_file": "Mascom logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7190735",
+   "name": "Pick n Pay",
+   "cc": "bw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "ZAE000005443"
+   ],
+   "hq_city": "Kenilworth",
+   "hq": [
+    -33.99583,
+    18.475
+   ],
+   "website": "https://www.pnp.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pick_n_Pay",
+   "logo_file": "Pick n Pay logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q104866602",
+   "name": "Sefalana",
+   "cc": "bw",
+   "types": [
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Botswana Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Gaborone",
+   "hq": [
+    -24.65694,
+    25.90861
+   ],
+   "website": "https://sefalana.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Sefalana",
+   "listed": true
+  },
+  {
+   "qid": "Q4013942",
+   "name": "Virgin Active",
+   "cc": "bw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "health club"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "https://virginactive.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Virgin_Active",
+   "logo_file": "Virgin Active.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20715807",
+   "name": "Wilderness",
+   "cc": "bw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "ecotourism",
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Gaborone",
+   "hq": [
+    -24.65694,
+    25.90861
+   ],
+   "website": "https://www.wildernessdestinations.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Wilderness_(company)",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

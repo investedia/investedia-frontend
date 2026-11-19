@@ -1,0 +1,1867 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "DZ",
+ "count": 98,
+ "companies": [
+  {
+   "qid": "Q65063173",
+   "name": "ADA",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "http://www.ada.dz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28040035",
+   "name": "Agence algérienne pour le rayonnement culturel",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Villa Abd-el-Tif",
+   "hq": [
+    36.74504,
+    3.0733
+   ],
+   "website": "http://www.aarcalgerie.org/fr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97179998",
+   "name": "Agence nationale d’édition et de publicité",
+   "cc": "dz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "advertising industry",
+    "editor"
+   ],
+   "isin": [],
+   "website": "https://anep.dz/",
+   "logo_file": "Logo-anep.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55559961",
+   "name": "Agrana Fruit Algeria",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Akbou",
+   "hq": [
+    36.46667,
+    4.53333
+   ],
+   "website": "https://dz.agrana.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97366590",
+   "name": "Air Algérie Catering",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aircraft catering"
+   ],
+   "isin": [],
+   "website": "http://www.airalgeriecatering.dz/",
+   "logo_file": "Air Algérie Catering Logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q16002493",
+   "name": "Algeria Mobile Network",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "https://www.algerietelecom.dz",
+   "enwiki": "https://en.wikipedia.org/wiki/Algeria_Mobile_Network",
+   "listed": false
+  },
+  {
+   "qid": "Q24191338",
+   "name": "Algerian Tractors Company",
+   "cc": "dz",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "agriculture"
+   ],
+   "isin": [],
+   "hq_city": "Constantine",
+   "hq": [
+    36.365,
+    6.61472
+   ],
+   "website": "http://www.etrag.dz/?p=105",
+   "enwiki": "https://en.wikipedia.org/wiki/Algerian_Tractors_Company",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2836031",
+   "name": "Algérie Ferries",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "sea shipping"
+   ],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "https://www.algerieferries.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Alg%C3%A9rie_Ferries",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q112630909",
+   "name": "Algérie Télécom Group",
+   "cc": "dz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q94696188",
+   "name": "Alphyt",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "https://alphyt.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q90937441",
+   "name": "Amor Benamor Group",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Bouati Mahmoud",
+   "hq": [
+    36.59226,
+    7.3281
+   ],
+   "website": "https://www.amorbenamor.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28499139",
+   "name": "Anzar Éditions",
+   "cc": "dz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Biskra",
+   "hq": [
+    34.85,
+    5.73333
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19604332",
+   "name": "Arab Banking Corporation Algeria",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Arab_Banking_Corporation_Algeria",
+   "listed": false
+  },
+  {
+   "qid": "Q131705207",
+   "name": "AS Motors",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q2866716",
+   "name": "Asmidal",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Annaba",
+   "hq": [
+    36.9,
+    7.76667
+   ],
+   "website": "http://www.asmidal-dz.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Asmidal",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2883031",
+   "name": "BADR",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "https://badrbanque.dz",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_de_l%27Agriculture_et_du_D%C3%A9veloppement_Rural",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q86660761",
+   "name": "Banque extérieure d'Algérie",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Algeria",
+   "hq": [
+    28.0,
+    1.0
+   ],
+   "website": "https://www.bea.dz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_Ext%C3%A9rieure_d%27Alg%C3%A9rie",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2729363",
+   "name": "Barzakh Editions",
+   "cc": "dz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.editions-barzakh.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Barzakh_Editions",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2891577",
+   "name": "Batna",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Batna",
+   "hq": [
+    35.55,
+    6.16667
+   ],
+   "website": "http://www.cojub.com/gba/batna.htm",
+   "logo_file": "Eau batna.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q64410371",
+   "name": "BDL",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Staouéli",
+   "hq": [
+    36.75333,
+    2.88806
+   ],
+   "website": "https://www.bdl.dz",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_de_d%C3%A9veloppement_local",
+   "logo_file": "Logo BDL .png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q66773545",
+   "name": "Biopharm",
+   "cc": "dz",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "https://www.biopharmdz.com",
+   "logo_file": "Biopharm logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139494883",
+   "name": "BNP Paribas El Djazaïr",
+   "cc": "dz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.bnpparibas.dz/",
+   "enwiki": "https://en.wikipedia.org/wiki/BNP_Paribas_El_Djaza%C3%AFr",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137719140",
+   "name": "Brandt Algérie",
+   "cc": "dz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of electric domestic appliances"
+   ],
+   "isin": [],
+   "hq_city": "Dar El Beïda",
+   "hq": [
+    36.71417,
+    3.2125
+   ],
+   "website": "https://brandt.dz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q42343122",
+   "name": "Caisse nationale des assurances sociales",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.cnas.dz/?q=ar/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125496593",
+   "name": "Caprice",
+   "cc": "dz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Aïn Bénian",
+   "hq": [
+    36.35194,
+    2.38861
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136493871",
+   "name": "Casbah Films (Studio)",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Casbah_Films",
+   "listed": false
+  },
+  {
+   "qid": "Q12211258",
+   "name": "Casbah Éditions",
+   "cc": "dz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://casbah-editions.com/index.php?page=histoire",
+   "logo_file": "Casbah Editions Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130271656",
+   "name": "Cebon",
+   "cc": "dz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness"
+   ],
+   "isin": [],
+   "hq_city": "Fouka",
+   "hq": [
+    36.66667,
+    2.75
+   ],
+   "website": "https://cebon.dz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cebon",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q795474",
+   "name": "Cevital",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness",
+    "industry",
+    "logistics",
+    "mass-market retailing"
+   ],
+   "isin": [],
+   "hq_city": "Kouba",
+   "hq": [
+    36.73361,
+    3.08639
+   ],
+   "website": "http://www.cevital.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cevital",
+   "logo_file": "Cevital logo 2016.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24914628",
+   "name": "Cma Sampo",
+   "cc": "dz",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "agriculture"
+   ],
+   "isin": [],
+   "hq_city": "Sidi Bel Abbès",
+   "hq": [
+    35.2,
+    -0.63333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Cma_Sampo",
+   "logo_file": "Sampo Rosenlew Logo.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2931752",
+   "name": "CNEP-Bank",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "http://www.cnepbanque.dz",
+   "logo_file": "Logo CNEP banque DZ.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111982677",
+   "name": "Compagnie Centrale de Réassurance",
+   "cc": "dz",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16542889",
+   "name": "Compagnie des Phosphates de Constantine",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Mining of chemical and fertiliser minerals"
+   ],
+   "isin": [],
+   "hq_city": "Paris",
+   "hq": [
+    48.85667,
+    2.35222
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17625238",
+   "name": "Cosider",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "http://www.cosider-groupe.dz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q86675373",
+   "name": "Crédit foncier d'Algérie et de Tunisie",
+   "cc": "dz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial service activities, except insurance and pension funding"
+   ],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Cr%C3%A9dit_Foncier_d%27Alg%C3%A9rie_et_de_Tunisie",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111915722",
+   "name": "Dar Mim",
+   "cc": "dz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Koléa",
+   "hq": [
+    36.64056,
+    2.765
+   ],
+   "website": "https://www.mimedition.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Dar_Mim",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3011193",
+   "name": "DEK Computer Center",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sétif",
+   "hq": [
+    36.19,
+    5.41
+   ],
+   "website": "http://www.dekcc-dz.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q112701589",
+   "name": "EGSA Oran",
+   "cc": "dz",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/EGSA_Oran",
+   "listed": false
+  },
+  {
+   "qid": "Q109315002",
+   "name": "El Djazaïr Metro",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3049827",
+   "name": "El-Djazaïr",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "hotel"
+   ],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "http://www.chaineeldjazair.com/fr/",
+   "listed": false
+  },
+  {
+   "qid": "Q5357813",
+   "name": "Electricity and Gas Regulation Commission",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "http://www.creg.gov.dz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Electricity_and_Gas_Regulation_Commission",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109023553",
+   "name": "ENAFOR",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.enafor.dz",
+   "listed": false
+  },
+  {
+   "qid": "Q103843210",
+   "name": "ENAGEO",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.enageo.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3045979",
+   "name": "ENASEL",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Constantine",
+   "hq": [
+    36.365,
+    6.61472
+   ],
+   "website": "http://enasel.com/fr/",
+   "listed": false
+  },
+  {
+   "qid": "Q5379115",
+   "name": "ENMTP",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of machinery and equipment"
+   ],
+   "isin": [],
+   "hq_city": "Constantine",
+   "hq": [
+    36.365,
+    6.61472
+   ],
+   "website": "http://www.enmtp.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/ENMTP",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24914507",
+   "name": "Etrag",
+   "cc": "dz",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "agriculture"
+   ],
+   "isin": [],
+   "hq_city": "Constantine",
+   "hq": [
+    36.365,
+    6.61472
+   ],
+   "website": "http://www.etrag.dz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Etrag",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q24910807",
+   "name": "Europactor Algeria",
+   "cc": "dz",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Constantine",
+   "hq": [
+    36.365,
+    6.61472
+   ],
+   "website": "http://www.enmtp.com/europactor-algerie-3/",
+   "enwiki": "https://en.wikipedia.org/wiki/Europactor_Algeria",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3093124",
+   "name": "GCB",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "GCB headquarters",
+   "hq": [
+    36.75619,
+    3.47289
+   ],
+   "website": "http://www.gcb.dz",
+   "logo_file": "GCB Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3117869",
+   "name": "GICA",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "building material"
+   ],
+   "isin": [],
+   "hq_city": "Meftah",
+   "hq": [
+    36.61944,
+    3.22222
+   ],
+   "website": "https://gica.dz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3214383",
+   "name": "GlaxoSmithKline Algeria",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Boudouaou",
+   "hq": [
+    36.73132,
+    3.40478
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125634922",
+   "name": "Hamiani Group",
+   "cc": "dz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3148108",
+   "name": "Ifri Group",
+   "cc": "dz",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness",
+    "logistics",
+    "product packaging"
+   ],
+   "isin": [],
+   "hq_city": "Ouzellaguen",
+   "hq": [
+    36.54194,
+    4.61278
+   ],
+   "website": "http://www.ifri-dz.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1662114",
+   "name": "Industries Mécaniques Maghrébines",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automobile manufacturer"
+   ],
+   "isin": [],
+   "hq_city": "Kairouan",
+   "hq": [
+    35.68333,
+    10.1
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Industries_M%C3%A9caniques_Maghr%C3%A9bines",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22684334",
+   "name": "IRIS",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.iris.dz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17061030",
+   "name": "Jumià",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "JMIA"
+    }
+   ],
+   "industries": [
+    "online shop"
+   ],
+   "isin": [
+    "US48138M1053"
+   ],
+   "hq_city": "Ikeja",
+   "hq": [
+    6.58333,
+    3.33333
+   ],
+   "website": "https://group.jumia.com",
+   "lei": "391200JWCL5VCOSXNT56",
+   "enwiki": "https://en.wikipedia.org/wiki/Jumia",
+   "logo_file": "JumiaLogo (14).png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q20726069",
+   "name": "KouGC",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Hydra",
+   "hq": [
+    36.74722,
+    3.04028
+   ],
+   "website": "http://www.kougc.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132703956",
+   "name": "Koukou Éditions",
+   "cc": "dz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "book publishing"
+   ],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "https://www.koukou-editions.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3206671",
+   "name": "la bibliothèque verte",
+   "cc": "dz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.bverte.net/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3206547",
+   "name": "LaBelle Group",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "El Harrach",
+   "hq": [
+    36.72111,
+    3.1375
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q88097404",
+   "name": "Laboratoires Vénus",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ouled Yaïch",
+   "hq": [
+    36.49611,
+    2.86111
+   ],
+   "website": "https://laboratoiresvenus.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56260351",
+   "name": "Mediterranean Float Glass",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.mfg.dz/",
+   "logo_file": "Mediterranean Float Glass Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3335043",
+   "name": "Naftal",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "http://www.naftal.dz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Naftal",
+   "logo_file": "LogoNAFTAL.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2826659",
+   "name": "National Agency for studies and follow up the accomplishment of Railway Investments",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "railway"
+   ],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "http://www.anesrif.dz/",
+   "enwiki": "https://en.wikipedia.org/wiki/ANESRIF",
+   "logo_file": "ANESRIF, Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2883410",
+   "name": "National Bank of Algeria",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "http://www.bna.dz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_Nationale_d%27Alg%C3%A9rie",
+   "logo_file": "Bna-logo-full.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133809173",
+   "name": "National Mining Research and Exploitation Company",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mining industry of Algeria"
+   ],
+   "isin": [],
+   "hq_city": "Hydra",
+   "hq": [
+    36.74722,
+    3.04028
+   ],
+   "website": "https://sonarem.dz",
+   "logo_file": "Sonarem logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3337184",
+   "name": "Nautas Al Maghreb",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "water transport"
+   ],
+   "isin": [],
+   "hq_city": "Algeciras",
+   "hq": [
+    36.1275,
+    -5.45389
+   ],
+   "website": "https://nautas-almaghreb.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q20726259",
+   "name": "Nouvelle Biscuiterie de Cherchell",
+   "cc": "dz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118271033",
+   "name": "Numidia",
+   "cc": "dz",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Numidia_(olive_oil)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q67183569",
+   "name": "Numilog",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "http://www.numilog.dz",
+   "logo_file": "Numilog Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3337704",
+   "name": "Ooredoo Algérie",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "https://www.ooredoo.dz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ooredoo_Algeria",
+   "logo_file": "Ooredoo1.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131630100",
+   "name": "Oued Amizour Mine",
+   "cc": "dz",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7399953",
+   "name": "Saidal",
+   "cc": "dz",
+   "types": [
+    "Q270791",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "https://saidalgroup.dz",
+   "enwiki": "https://en.wikipedia.org/wiki/Saidal",
+   "logo_file": "Logo PNG SAIDAL.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130232491",
+   "name": "SAIEG",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16674585",
+   "name": "SAPTA Algeria",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "http://www.cosider-groupe.dz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125564047",
+   "name": "SATICOM",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q25395140",
+   "name": "Sider",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Annaba",
+   "hq": [
+    36.9,
+    7.76667
+   ],
+   "website": "http://www.sider.dz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q86682568",
+   "name": "SIM",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Aïn Romana",
+   "hq": [
+    36.40667,
+    2.69111
+   ],
+   "website": "http://groupesim.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2381695",
+   "name": "SNVI",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Rouiba",
+   "hq": [
+    36.73639,
+    3.28278
+   ],
+   "website": "http://snvigroupe.dz/",
+   "enwiki": "https://en.wikipedia.org/wiki/SNVI",
+   "logo_file": "SNVI Logo 8.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137661569",
+   "name": "Société d'exploitation des gares routières d'Algérie",
+   "cc": "dz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Hussein Dey",
+   "hq": [
+    36.74306,
+    3.09417
+   ],
+   "website": "https://www.sogral.dz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22688489",
+   "name": "Société d'exploitation des tramways",
+   "cc": "dz",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134625069",
+   "name": "Société générale Algérie",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q131624129",
+   "name": "Sofinance spa",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q24910880",
+   "name": "Somatel Liebherr",
+   "cc": "dz",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Constantine",
+   "hq": [
+    36.365,
+    6.61472
+   ],
+   "website": "http://www.enmtp.com/somatel-liebherr-2/",
+   "enwiki": "https://en.wikipedia.org/wiki/Somatel_Liebherr",
+   "logo_file": "Liebherr-Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1090717",
+   "name": "Sonatrach",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "extraction of crude petroleum and natural gas",
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "https://sonatrach.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sonatrach",
+   "logo_file": "Sonatrach.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3490327",
+   "name": "Sonelgaz",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity supply company",
+    "natural gas"
+   ],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "http://www.sonelgaz.dz",
+   "enwiki": "https://en.wikipedia.org/wiki/Sonelgaz",
+   "logo_file": "Sonlgaz.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q98309140",
+   "name": "Sorfert Algeria",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bethioua",
+   "hq": [
+    35.80471,
+    -0.25957
+   ],
+   "website": "https://www.sorfert.dz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3216420",
+   "name": "Soummam",
+   "cc": "dz",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy industry"
+   ],
+   "isin": [],
+   "hq_city": "Akbou",
+   "hq": [
+    36.46667,
+    4.53333
+   ],
+   "website": "http://www.soummam-dz.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98755978",
+   "name": "Tala",
+   "cc": "dz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q103906144",
+   "name": "Thaalibia Publishing",
+   "cc": "dz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Thaalibia_Publishing",
+   "listed": false
+  },
+  {
+   "qid": "Q16680504",
+   "name": "Toudja",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Béjaïa",
+   "hq": [
+    36.75111,
+    5.06417
+   ],
+   "website": "http://www.toudja.dz/",
+   "logo_file": "Logo toudja.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113841352",
+   "name": "TRANSTEV",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rouiba",
+   "hq": [
+    36.73639,
+    3.28278
+   ],
+   "website": "https://transtev.dz",
+   "listed": false
+  },
+  {
+   "qid": "Q138307416",
+   "name": "Turquie Santé",
+   "cc": "dz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Healthcare"
+   ],
+   "isin": [],
+   "hq_city": "Oran",
+   "hq": [
+    35.69694,
+    -0.63306
+   ],
+   "website": "https://www.turquiesante.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17640214",
+   "name": "Télédiffusion d'Algérie",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Bouzareah",
+   "hq": [
+    36.78988,
+    3.01772
+   ],
+   "website": "https://www.tda.dz",
+   "enwiki": "https://en.wikipedia.org/wiki/T%C3%A9l%C3%A9diffusion_d%27Alg%C3%A9rie",
+   "logo_file": "Télédiffusion d’Algérie - TDA.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3055259",
+   "name": "Urban and suburban transport company of Algiers",
+   "cc": "dz",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Algiers",
+   "hq": [
+    36.77639,
+    3.05861
+   ],
+   "website": "http://www.etusa.dz",
+   "enwiki": "https://en.wikipedia.org/wiki/Urban_and_suburban_transport_company_of_Algiers",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q126372424",
+   "name": "VMS Industrie",
+   "cc": "dz",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q117156470",
+   "name": "Yassir",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q54117046",
+   "name": "Établissement de construction et de réparation navale",
+   "cc": "dz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "shipbuilding"
+   ],
+   "isin": [],
+   "hq_city": "Oran",
+   "hq": [
+    35.69694,
+    -0.63306
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22928660",
+   "name": "دار المعرفة",
+   "cc": "dz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  }
+ ]
+}

@@ -1,0 +1,570 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "AO",
+ "count": 28,
+ "companies": [
+  {
+   "qid": "Q1284643",
+   "name": "Alfa-5",
+   "cc": "ao",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "security guard"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Alfa_5",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4763742",
+   "name": "Angola LNG",
+   "cc": "ao",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "website": "http://www.angolalng.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Angola_LNG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2849714",
+   "name": "Angola Telecom",
+   "cc": "ao",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Luanda",
+   "hq": [
+    -8.815,
+    13.23
+   ],
+   "website": "http://www.angolatelecom.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Angola_Telecom",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18480273",
+   "name": "AngoSat",
+   "cc": "ao",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "space industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q806172",
+   "name": "Banco Angolano de Investimentos",
+   "cc": "ao",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Luanda",
+   "hq": [
+    -8.815,
+    13.23
+   ],
+   "website": "http://www.bancobai.ao/",
+   "lei": "549300QU4YNWBS829190",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Angolano_de_Investimentos",
+   "logo_file": "BAI - .jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854120",
+   "name": "Banco de Comércio e Indústria",
+   "cc": "ao",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_de_Com%C3%A9rcio_e_Ind%C3%BAstria",
+   "listed": false
+  },
+  {
+   "qid": "Q72338377",
+   "name": "Banco Económico",
+   "cc": "ao",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Luanda",
+   "hq": [
+    -8.815,
+    13.23
+   ],
+   "website": "https://www.bancoeconomico.ao",
+   "lei": "549300TP70GP7J3FPI13",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Econ%C3%B3mico_(Angola)",
+   "logo_file": "BancoEconomicoAngola.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141776180",
+   "name": "Banco Yetu",
+   "cc": "ao",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "banking"
+   ],
+   "isin": [],
+   "hq_city": "Luanda",
+   "hq": [
+    -8.815,
+    13.23
+   ],
+   "website": "https://www.bancoyetu.ao/",
+   "lei": "254900GWSJRD83J6FF09",
+   "logo_file": "Banco Yetu logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9653076",
+   "name": "Belas Shopping",
+   "cc": "ao",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://belasshopping.co.ao/",
+   "enwiki": "https://en.wikipedia.org/wiki/Belas_Shopping",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5338767",
+   "name": "Edições Novembro",
+   "cc": "ao",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Luanda",
+   "hq": [
+    -8.815,
+    13.23
+   ],
+   "website": "http://edicoesnovembro.sapo.ao/",
+   "enwiki": "https://en.wikipedia.org/wiki/Edi%C3%A7%C3%B5es_Novembro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27843684",
+   "name": "EKA",
+   "cc": "ao",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110008064",
+   "name": "Empresa Nacional de Distribuição de Electricidade",
+   "cc": "ao",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power distribution",
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Luanda",
+   "hq": [
+    -8.815,
+    13.23
+   ],
+   "website": "http://www.ende.co.ao/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106836436",
+   "name": "Empresa Pública de Produção de Electricidade",
+   "cc": "ao",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Angola",
+   "hq": [
+    -12.35,
+    17.35
+   ],
+   "website": "https://www.prodel.co.ao/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11862794",
+   "name": "ENANA",
+   "cc": "ao",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Luanda",
+   "hq": [
+    -8.815,
+    13.23
+   ],
+   "website": "https://enna.co.ao/",
+   "enwiki": "https://en.wikipedia.org/wiki/Empresa_Nacional_de_Explora%C3%A7%C3%A3o_de_Aeroportos_e_Navega%C3%A7%C3%A3o_A%C3%A9rea",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1340457",
+   "name": "Endiama",
+   "cc": "ao",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Luanda",
+   "hq": [
+    -8.815,
+    13.23
+   ],
+   "website": "http://www.endiama.co.ao/",
+   "enwiki": "https://en.wikipedia.org/wiki/ENDIAMA",
+   "logo_file": "ENDIAMA E.P. logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5323726",
+   "name": "ENSA – Seguros de Angola",
+   "cc": "ao",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/ENSA_%E2%80%93_Seguros_de_Angola",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q38791351",
+   "name": "Grupo Lusófona",
+   "cc": "ao",
+   "types": [
+    "Q161726"
+   ],
+   "listings": [],
+   "industries": [
+    "education"
+   ],
+   "isin": [],
+   "hq_city": "Lisbon",
+   "hq": [
+    38.70804,
+    -9.13902
+   ],
+   "website": "http://www.grupolusofona.pt/",
+   "logo_file": "GrupoLusofona.gif",
+   "listed": false
+  },
+  {
+   "qid": "Q1673085",
+   "name": "Media Nova",
+   "cc": "ao",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://medianova.com.ua/",
+   "logo_file": "LogoMediaNova.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6926807",
+   "name": "Movicel",
+   "cc": "ao",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Luanda",
+   "hq": [
+    -8.815,
+    13.23
+   ],
+   "website": "http://www.movicel.co.ao/",
+   "enwiki": "https://en.wikipedia.org/wiki/Movicel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6934576",
+   "name": "Multicaixa",
+   "cc": "ao",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Luanda",
+   "hq": [
+    -8.815,
+    13.23
+   ],
+   "website": "https://multicaixa.ao/pt/",
+   "enwiki": "https://en.wikipedia.org/wiki/Multicaixa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124683876",
+   "name": "Pumangol",
+   "cc": "ao",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "energy"
+   ],
+   "isin": [],
+   "hq_city": "Luanda",
+   "hq": [
+    -8.815,
+    13.23
+   ],
+   "website": "https://www.pumangol.co.ao/pt",
+   "logo_file": "Pumangol.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133895597",
+   "name": "Rede Nacional de Transporte de Electricidade",
+   "cc": "ao",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "website": "http://www.rnt.co.ao/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854132",
+   "name": "Savings and Credit Bank",
+   "cc": "ao",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Luanda",
+   "hq": [
+    -8.815,
+    13.23
+   ],
+   "website": "http://www.bpc.ao/",
+   "lei": "254900SQWLFR0HNNRC82",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_de_Poupan%C3%A7a_e_Cr%C3%A9dito",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q10372824",
+   "name": "Sociedade de Desenvolvimento Mineiro",
+   "cc": "ao",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Luanda",
+   "hq": [
+    -8.815,
+    13.23
+   ],
+   "website": "http://www.sdm.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sociedade_de_Desenvolvimento_Mineiro_de_Angola",
+   "listed": false
+  },
+  {
+   "qid": "Q2297280",
+   "name": "SODIAM",
+   "cc": "ao",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining",
+    "trade"
+   ],
+   "isin": [],
+   "hq_city": "Luanda",
+   "hq": [
+    -8.815,
+    13.23
+   ],
+   "website": "http://www.sodiam.co.ao",
+   "enwiki": "https://en.wikipedia.org/wiki/SODIAM",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q677832",
+   "name": "Sonangol Group",
+   "cc": "ao",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Luanda",
+   "hq": [
+    -8.815,
+    13.23
+   ],
+   "website": "http://www.sonangol.co.ao/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sonangol_Group",
+   "logo_file": "Sonangol Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130323373",
+   "name": "Teleservice",
+   "cc": "ao",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Luanda",
+   "hq": [
+    -8.815,
+    13.23
+   ],
+   "website": "https://www.teleservice.co.ao/",
+   "enwiki": "https://en.wikipedia.org/wiki/Teleservice",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7893680",
+   "name": "Unitel",
+   "cc": "ao",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Luanda",
+   "hq": [
+    -8.815,
+    13.23
+   ],
+   "website": "http://www.unitel.ao",
+   "enwiki": "https://en.wikipedia.org/wiki/Unitel_(Angola)",
+   "logo_file": "Unitel Logo 2005.svg",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}
