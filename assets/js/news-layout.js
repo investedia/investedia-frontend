@@ -35,6 +35,9 @@
  .compact-country:before{content:'';position:absolute;left:0;top:0;bottom:0;width:var(--sh);background:linear-gradient(90deg,rgba(255,122,26,.16),rgba(255,122,26,.04));border-radius:10px;z-index:0}.compact-country>*{position:relative;z-index:1}
  .compact-country small{font:600 12.5px 'Geist Mono',ui-monospace,monospace!important;color:#ff9d5c!important}.compact-country:hover{background:rgba(255,255,255,.04)}
  html:has(#ddrow .dd-menu:not([hidden])) .gp-ctl,html:has(.tf-dd.open) .gp-ctl{display:none!important}
+ html.dash #sideSec{display:none!important}  /* Sector overview removed (owner, 19 Nov 2026) */
+ .im2s{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:4px}.im2{min-width:0}.im2 h6{white-space:nowrap;margin:0 0 6px;font:500 11.5px Inter,sans-serif;color:#8a8a92}.im2 h6 em{font-style:normal;font:600 14px 'Geist Mono',ui-monospace,monospace;margin-left:4px}
+ .im2 a{display:flex;justify-content:space-between;gap:8px;padding:3px 0;color:#ddd;font-size:12.5px;text-decoration:none}.im2 a span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}.im2 a b{font:500 12px 'Geist Mono',ui-monospace,monospace;flex:none}.im2 a:hover span{color:#fff}.im2 small{color:#6e6e76}
  #sideSec{display:grid!important;grid-template-columns:1fr 1fr;gap:8px;padding:14px!important}
  #sideSec .sd-h{grid-column:1/-1;margin-bottom:2px}
  #sideSec .gf-sector.expanded{grid-column:1/-1}

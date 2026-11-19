@@ -11,7 +11,7 @@
  const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(L))}catch{}};
  const mode=()=>typeof PROJ!=='undefined'&&PROJ.on?'projects':typeof MARKET!=='undefined'&&MARKET.on?'markets':'news';
  // [id, label, side, mode, selector]
- const P=[['sec','Sector overview','l','news','#sideSec'],['views','Saved views','l','news','#presets'],['top','Top articles','r','news','#panel'],['imp','Market impact','r','news','#sideImp'],
+ const P=[['views','Saved views','l','news','#presets'],['top','Top articles','r','news','#panel'],['imp','Market impact','r','news','#sideImp'],
   ['sess','Market sessions','l','markets','.mkd-l'],['mko','Markets overview','r','markets','.mkd-o'],
   ['pjl','Project list','l','projects','#pjList'],['pjs','Project stats','r','projects','#pjStats']];
  const STRIPS=[['act','#act','.act-h'],['mka','.mkd-a','.mkd-th']];
