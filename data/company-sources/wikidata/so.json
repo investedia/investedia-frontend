@@ -1,0 +1,441 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "SO",
+ "count": 22,
+ "companies": [
+  {
+   "qid": "Q134978317",
+   "name": "Arlaadi Media Network",
+   "cc": "so",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "news media"
+   ],
+   "isin": [],
+   "hq_city": "Mogadishu",
+   "hq": [
+    2.03917,
+    45.34194
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Arlaadi_Media_Network",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28220727",
+   "name": "Dara-Salaam Bank",
+   "cc": "so",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Hargeisa",
+   "hq": [
+    9.56556,
+    44.06056
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Dara-Salaam_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17059134",
+   "name": "First Somali Bank",
+   "cc": "so",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Hawala",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Mogadishu",
+   "hq": [
+    2.03917,
+    45.34194
+   ],
+   "website": "https://www.firstsomalibank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/First_Somali_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5580780",
+   "name": "Golis Telecom Somalia",
+   "cc": "so",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Bosaso",
+   "hq": [
+    11.28333,
+    49.18333
+   ],
+   "website": "http://www.golistelecom.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Golis_Telecom_Somalia",
+   "logo_file": "Golis Telecom Somalia.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18347946",
+   "name": "Hafun Fishing Company",
+   "cc": "so",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fishing"
+   ],
+   "isin": [],
+   "hq_city": "Bosaso",
+   "hq": [
+    11.28333,
+    49.18333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Hafun_Fishing_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5903865",
+   "name": "Hormuud Telecom",
+   "cc": "so",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Mogadishu",
+   "hq": [
+    2.03917,
+    45.34194
+   ],
+   "website": "https://www.hormuud.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hormuud_Telecom",
+   "logo_file": "Hormuud logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18351794",
+   "name": "International Bank of Somalia",
+   "cc": "so",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Mogadishu",
+   "hq": [
+    2.03917,
+    45.34194
+   ],
+   "website": "http://www.ibsbank.so",
+   "enwiki": "https://en.wikipedia.org/wiki/International_Bank_of_Somalia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1966854",
+   "name": "NationLink Telecom",
+   "cc": "so",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Dubai",
+   "hq": [
+    25.26972,
+    55.30944
+   ],
+   "website": "http://www.nationlinktelecom.com",
+   "enwiki": "https://en.wikipedia.org/wiki/NationLink_Telecom",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12288204",
+   "name": "Netco",
+   "cc": "so",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Bosaso",
+   "hq": [
+    11.28333,
+    49.18333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Netco_(Somalia)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18210928",
+   "name": "Salaam Somali Bank",
+   "cc": "so",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mogadishu",
+   "hq": [
+    2.03917,
+    45.34194
+   ],
+   "website": "https://www.salaambank.so",
+   "enwiki": "https://en.wikipedia.org/wiki/Salaam_Somali_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7559123",
+   "name": "Somafone",
+   "cc": "so",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Mogadishu",
+   "hq": [
+    2.03917,
+    45.34194
+   ],
+   "website": "http://www.somafone.com/index.htm",
+   "enwiki": "https://en.wikipedia.org/wiki/Somafone",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17070517",
+   "name": "Somali Chamber of Commerce and Industry",
+   "cc": "so",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mogadishu",
+   "hq": [
+    2.03917,
+    45.34194
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Somali_Chamber_of_Commerce_and_Industry",
+   "listed": false
+  },
+  {
+   "qid": "Q16919721",
+   "name": "Somali Energy Company",
+   "cc": "so",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mogadishu",
+   "hq": [
+    2.03917,
+    45.34194
+   ],
+   "website": "https://som-energy.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Somali_Energy_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7559148",
+   "name": "Somali Petroleum Company",
+   "cc": "so",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Mogadishu",
+   "hq": [
+    2.03917,
+    45.34194
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Somalia_Petroleum_Corporation",
+   "listed": false
+  },
+  {
+   "qid": "Q7559156",
+   "name": "Somali Telecom Group",
+   "cc": "so",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telephone company"
+   ],
+   "isin": [],
+   "hq_city": "Deira",
+   "hq": [
+    25.26667,
+    55.31667
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Somali_Telecom_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q86753435",
+   "name": "SomCable",
+   "cc": "so",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/SomCable",
+   "listed": false
+  },
+  {
+   "qid": "Q86753365",
+   "name": "Sompower",
+   "cc": "so",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Sompower",
+   "listed": false
+  },
+  {
+   "qid": "Q134127135",
+   "name": "State Bank of Puntland",
+   "cc": "so",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Garowe",
+   "hq": [
+    8.4,
+    48.48333
+   ],
+   "website": "https://statebank.pl.so/",
+   "enwiki": "https://en.wikipedia.org/wiki/State_Bank_of_Puntland",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3626533",
+   "name": "Telcom",
+   "cc": "so",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mogadishu",
+   "hq": [
+    2.03917,
+    45.34194
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Telcom_(Somalia)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7696843",
+   "name": "Telesom",
+   "cc": "so",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Hargeisa",
+   "hq": [
+    9.56556,
+    44.06056
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Telesom",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7833548",
+   "name": "Trans-National Industrial Electricity and Gas Company",
+   "cc": "so",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Trans-National_Industrial_Electricity_and_Gas_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q137400032",
+   "name": "البورصة الوطنية للأوراق المالية في الصومال (NSES)",
+   "cc": "so",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/National_Securities_Exchange_of_Somalia",
+   "listed": false
+  }
+ ]
+}

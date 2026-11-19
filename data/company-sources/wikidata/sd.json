@@ -1,0 +1,576 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "SD",
+ "count": 38,
+ "companies": [
+  {
+   "qid": "Q118875255",
+   "name": "Al Jazeera Sudanese Jordanian Bank",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Al_Jazeera_Sudanese_Jordanian_Bank",
+   "listed": false
+  },
+  {
+   "qid": "Q4704794",
+   "name": "Bank Balad",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Khartoum",
+   "hq": [
+    15.60308,
+    32.52654
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Balad_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85871827",
+   "name": "Blue Nile Mashreg Bank",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.bluemashreq.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q136956628",
+   "name": "Dar Elmoswarat Publishing",
+   "cc": "sd",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q85871831",
+   "name": "Elnilein Bank",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5421732",
+   "name": "Expresso Telecom",
+   "cc": "sd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Expresso Telecom"
+   ],
+   "isin": [],
+   "hq_city": "Dubai",
+   "hq": [
+    25.26972,
+    55.30944
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Expresso_Telecom",
+   "listed": false
+  },
+  {
+   "qid": "Q39086195",
+   "name": "Faisal Islamic Bank of Sudan",
+   "cc": "sd",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "website": "http://www.fibsudan.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Faisal_Islamic_Bank_of_Sudan",
+   "listed": false
+  },
+  {
+   "qid": "Q19707101",
+   "name": "Liberty International",
+   "cc": "sd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3314193",
+   "name": "Military Industry Corporation",
+   "cc": "sd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Khartoum",
+   "hq": [
+    15.60308,
+    32.52654
+   ],
+   "website": "http://www.mic.sd",
+   "enwiki": "https://en.wikipedia.org/wiki/Military_Industry_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6970916",
+   "name": "National Bank of Sudan",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://nbs.sd/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Bank_of_Sudan",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7370229",
+   "name": "Rotana Hotels",
+   "cc": "sd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abu Dhabi",
+   "hq": [
+    24.45111,
+    54.39694
+   ],
+   "website": "https://www.rotana.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rotana_Hotels",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q122904621",
+   "name": "Shield Protective Solutions",
+   "cc": "sd",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Khartoum",
+   "hq": [
+    15.60308,
+    32.52654
+   ],
+   "website": "https://shieldsps.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q17994189",
+   "name": "Sudan Railways Corporation",
+   "cc": "sd",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Atbarah",
+   "hq": [
+    17.71667,
+    33.98333
+   ],
+   "website": "https://www.sudanrailways.gov.sd/",
+   "listed": false
+  },
+  {
+   "qid": "Q16930371",
+   "name": "Sudani",
+   "cc": "sd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Khartoum",
+   "hq": [
+    15.60308,
+    32.52654
+   ],
+   "website": "http://www.sudani.sd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sudani",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q478823",
+   "name": "Sudapet",
+   "cc": "sd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Khartoum",
+   "hq": [
+    15.60308,
+    32.52654
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Sudapet",
+   "logo_file": "Sudapet logo.PNG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56300650",
+   "name": "SudaPost",
+   "cc": "sd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "express mail",
+    "mail",
+    "parcel"
+   ],
+   "isin": [],
+   "website": "http://sudapost.sd",
+   "enwiki": "https://en.wikipedia.org/wiki/SudaPost",
+   "listed": false
+  },
+  {
+   "qid": "Q2363022",
+   "name": "Sudatel",
+   "cc": "sd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Khartoum",
+   "hq": [
+    15.60308,
+    32.52654
+   ],
+   "website": "http://www.sudatel.sd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sudatel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7959261",
+   "name": "Wadi al Aqiq Company",
+   "cc": "sd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Wadi_al-Aqiq",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8064826",
+   "name": "Zain Sudan",
+   "cc": "sd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "http://www.sd.zain.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zain_Sudan",
+   "listed": false
+  },
+  {
+   "qid": "Q82026002",
+   "name": "أرياب للتعدين",
+   "cc": "sd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q85870357",
+   "name": "البنك الزراعي السوداني",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125495653",
+   "name": "البنك السوداني المصري",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q85870370",
+   "name": "البنك العربي السوداني",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q85870375",
+   "name": "البنك العقاري التجاري",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q85871781",
+   "name": "بنك آيفوري",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q63122100",
+   "name": "بنك أم درمان الوطني",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q77046919",
+   "name": "بنك الأسرة",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q85871793",
+   "name": "بنك البركة السوداني",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q85871801",
+   "name": "بنك الثروة الحيوانية",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q85871816",
+   "name": "بنك الساحل والصحراء السوداني",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q85871819",
+   "name": "بنك العمال الوطني",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q85871823",
+   "name": "بنك المال المتحد",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125495549",
+   "name": "بنك النيل",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q85871835",
+   "name": "بنك بيبلوس إفريقيا",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Khartoum",
+   "hq": [
+    15.60308,
+    32.52654
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85871845",
+   "name": "بنك تنمية الصادرات",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q85875312",
+   "name": "مصرف الإدخار والتنمية الاجتماعية",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12243300",
+   "name": "مصرف التنمية الصناعية",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q85875328",
+   "name": "مصرف المزارع التجاري",
+   "cc": "sd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  }
+ ]
+}

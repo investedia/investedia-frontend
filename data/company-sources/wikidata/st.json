@@ -1,0 +1,50 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "ST",
+ "count": 2,
+ "companies": [
+  {
+   "qid": "Q4854093",
+   "name": "Banco Internacional de São Tomé e Príncipe",
+   "cc": "st",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "São Tomé",
+   "hq": [
+    0.3375,
+    6.72833
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Internacional_de_S%C3%A3o_Tom%C3%A9_e_Pr%C3%ADncipe",
+   "logo_file": "Banco Internacional de São Tomé e Príncipe Logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97400248",
+   "name": "Empresa Nacional de Administração dos Portos",
+   "cc": "st",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "São Tomé",
+   "hq": [
+    0.3375,
+    6.72833
+   ],
+   "website": "http://www.enaport.st/",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

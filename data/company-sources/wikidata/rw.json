@@ -1,0 +1,410 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "RW",
+ "count": 20,
+ "companies": [
+  {
+   "qid": "Q28439856",
+   "name": "Akilah Institute",
+   "cc": "rw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kigali",
+   "hq": [
+    -1.9525,
+    30.115
+   ],
+   "website": "http://akilahinstitute.org",
+   "enwiki": "https://en.wikipedia.org/wiki/Akilah_Institute",
+   "logo_file": "Akilahlogo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q121090256",
+   "name": "Banks in Rwanda",
+   "cc": "rw",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4857070",
+   "name": "Banque Populaire du Rwanda",
+   "cc": "rw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kigali",
+   "hq": [
+    -1.9525,
+    30.115
+   ],
+   "website": "http://www.bpr.rw",
+   "enwiki": "https://en.wikipedia.org/wiki/BPR_Bank_Rwanda",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4857072",
+   "name": "Banque Populaire du Rwanda SA",
+   "cc": "rw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kigali",
+   "hq": [
+    -1.9525,
+    30.115
+   ],
+   "website": "http://www.bpr.rw",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_Populaire_du_Rwanda_SA",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4956057",
+   "name": "Bralirwa",
+   "cc": "rw",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "brewery"
+   ],
+   "isin": [
+    "RW000A1H63N6"
+   ],
+   "hq_city": "Kigali",
+   "hq": [
+    -1.9525,
+    30.115
+   ],
+   "website": "http://www.bralirwa.com/cms/index.php/home",
+   "enwiki": "https://en.wikipedia.org/wiki/Bralirwa_Brewery",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q55607650",
+   "name": "Cimerwa Cement Limited",
+   "cc": "rw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "list of building materials"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Cimerwa_Cement_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q5384665",
+   "name": "Equity Bank Rwanda",
+   "cc": "rw",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://rw.equitybankgroup.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Equity_Bank_Rwanda_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5449331",
+   "name": "Fina Bank",
+   "cc": "rw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kigali",
+   "hq": [
+    -1.9525,
+    30.115
+   ],
+   "website": "https://www.gtbank.co.rw/",
+   "enwiki": "https://en.wikipedia.org/wiki/Guaranty_Trust_Bank_(Rwanda)",
+   "logo_file": "GTBank Rwanda Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6959786",
+   "name": "Java House",
+   "cc": "rw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://javahouseafrica.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Java_House",
+   "listed": false
+  },
+  {
+   "qid": "Q17061030",
+   "name": "Jumià",
+   "cc": "rw",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "JMIA"
+    }
+   ],
+   "industries": [
+    "online shop"
+   ],
+   "isin": [
+    "US48138M1053"
+   ],
+   "hq_city": "Ikeja",
+   "hq": [
+    6.58333,
+    3.33333
+   ],
+   "website": "https://group.jumia.com",
+   "lei": "391200JWCL5VCOSXNT56",
+   "enwiki": "https://en.wikipedia.org/wiki/Jumia",
+   "logo_file": "JumiaLogo (14).png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q142120858",
+   "name": "Rwanda Airports Company",
+   "cc": "rw",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.rac.co.rw/",
+   "listed": false
+  },
+  {
+   "qid": "Q39060572",
+   "name": "Rwanda Development Board",
+   "cc": "rw",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kigali",
+   "hq": [
+    -1.9525,
+    30.115
+   ],
+   "website": "http://www.rdb.rw/home.html/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rwanda_Development_Board",
+   "logo_file": "RDB logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136840205",
+   "name": "Rwanda medical Supply",
+   "cc": "rw",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://rms.rw/",
+   "listed": false
+  },
+  {
+   "qid": "Q115136213",
+   "name": "Rwanda Mountain Tea LTD",
+   "cc": "rw",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kinyinya",
+   "hq": [
+    -1.91306,
+    30.08917
+   ],
+   "website": "https://rwandamountaintea.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rwanda_Mountain_Tea",
+   "listed": false
+  },
+  {
+   "qid": "Q7383727",
+   "name": "Rwanda Stock Exchange",
+   "cc": "rw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kigali",
+   "hq": [
+    -1.9525,
+    30.115
+   ],
+   "website": "https://www.rse.rw",
+   "enwiki": "https://en.wikipedia.org/wiki/Rwanda_Stock_Exchange",
+   "logo_file": "Rwanda Stock Exchange (RSE).jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7383759",
+   "name": "Rwandatel",
+   "cc": "rw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Kigali",
+   "hq": [
+    -1.9525,
+    30.115
+   ],
+   "website": "http://www.rwandatel.rw//",
+   "enwiki": "https://en.wikipedia.org/wiki/Rwandatel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7884544",
+   "name": "Unguka Bank",
+   "cc": "rw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Kigali",
+   "hq": [
+    -1.9525,
+    30.115
+   ],
+   "website": "http://www.bnr.rw/",
+   "enwiki": "https://en.wikipedia.org/wiki/Unguka_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20715807",
+   "name": "Wilderness",
+   "cc": "rw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "ecotourism",
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Gaborone",
+   "hq": [
+    -24.65694,
+    25.90861
+   ],
+   "website": "https://www.wildernessdestinations.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Wilderness_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8071761",
+   "name": "Zigama Credit and Savings Bank",
+   "cc": "rw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kigali",
+   "hq": [
+    -1.9525,
+    30.115
+   ],
+   "website": "http://www.zigamacss.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zigama_Credit_and_Savings_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q804236",
+   "name": "Éditions Bakame",
+   "cc": "rw",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Kigali",
+   "hq": [
+    -1.9525,
+    30.115
+   ],
+   "website": "http://bakame.rw/en/",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

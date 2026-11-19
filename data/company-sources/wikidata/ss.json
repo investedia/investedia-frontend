@@ -1,0 +1,63 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "SS",
+ "count": 3,
+ "companies": [
+  {
+   "qid": "Q5384666",
+   "name": "Equity Bank South Sudan",
+   "cc": "ss",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "website": "https://ss.equitybankgroup.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Equity_Bank_South_Sudan_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109170445",
+   "name": "MTN South Sudan",
+   "cc": "ss",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/MTN_South_Sudan",
+   "listed": false
+  },
+  {
+   "qid": "Q55633598",
+   "name": "South Sudan Broadcasting Corporation",
+   "cc": "ss",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Juba",
+   "hq": [
+    4.85389,
+    31.5825
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/South_Sudan_Broadcasting_Corporation",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

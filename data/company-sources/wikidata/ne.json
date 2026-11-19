@@ -1,0 +1,402 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "NE",
+ "count": 20,
+ "companies": [
+  {
+   "qid": "Q26720709",
+   "name": "Banque Islamique du Niger",
+   "cc": "ne",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Niamey",
+   "hq": [
+    13.515,
+    2.1175
+   ],
+   "website": "http://www.ta-holding.com/fr/intl/niger/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488555",
+   "name": "Coal Company of Niger",
+   "cc": "ne",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.sonichar1.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2387986",
+   "name": "Compagnie minière d'Akouta",
+   "cc": "ne",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "uranium mining"
+   ],
+   "isin": [],
+   "hq_city": "Niamey",
+   "hq": [
+    13.515,
+    2.1175
+   ],
+   "website": "http://niger.areva.com/FR/niger-242/cominak-la-plus-grande-mine-d-uranium-souterraine-au-monde.html",
+   "enwiki": "https://en.wikipedia.org/wiki/COMINAK",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2990230",
+   "name": "Compagnie Nationale de Transport des Produits Stratégiques",
+   "cc": "ne",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tahoua",
+   "hq": [
+    14.89028,
+    5.26417
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3149160",
+   "name": "Imouraren SA",
+   "cc": "ne",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Niamey",
+   "hq": [
+    13.515,
+    2.1175
+   ],
+   "website": "http://niger.areva.com/FR/niger-213/imouraren-la-plus-importante-mine-d-uranium-a-ciel-ouvert-d-afrique.html",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28499070",
+   "name": "Niger Telecoms",
+   "cc": "ne",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Niamey",
+   "hq": [
+    13.515,
+    2.1175
+   ],
+   "website": "https://www.nigertelecoms.ne/",
+   "enwiki": "https://en.wikipedia.org/wiki/Niger_Telecoms",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7079299",
+   "name": "Office of Radio and Television of Niger",
+   "cc": "ne",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Niamey",
+   "hq": [
+    13.515,
+    2.1175
+   ],
+   "website": "https://www.ortn.ne/",
+   "enwiki": "https://en.wikipedia.org/wiki/Office_of_Radio_and_Television_of_Niger",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2860863",
+   "name": "Orano Niger",
+   "cc": "ne",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Niamey",
+   "hq": [
+    13.515,
+    2.1175
+   ],
+   "website": "https://www.orano.group/fr/l-expertise-nucleaire/tour-des-implantations/mines-d-uranium/niger/sites-miniers",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488552",
+   "name": "Sociéte Nigérienne de Transports de Voyageurs",
+   "cc": "ne",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Niamey",
+   "hq": [
+    13.515,
+    2.1175
+   ],
+   "website": "http://www.sntv.biz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_Nig%C3%A9rienne_de_Transports_de_Voyageurs",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488008",
+   "name": "Société de raffinage de Zinder",
+   "cc": "ne",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Niamey",
+   "hq": [
+    13.515,
+    2.1175
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488158",
+   "name": "Société des Mines de l'Aïr",
+   "cc": "ne",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Niamey",
+   "hq": [
+    13.515,
+    2.1175
+   ],
+   "website": "http://niger.areva.com/FR/niger-251/la-mine-a-ciel-ouvert-de-somar-certifiee-iso-14001-et-ohsas-18001.html",
+   "enwiki": "https://en.wikipedia.org/wiki/SOMAIR",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2364874",
+   "name": "Société des mines du Liptako",
+   "cc": "ne",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Niamey",
+   "hq": [
+    13.515,
+    2.1175
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488159",
+   "name": "Société des Mines d’Azelik",
+   "cc": "ne",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "uranium mining"
+   ],
+   "isin": [],
+   "hq_city": "Niamey",
+   "hq": [
+    13.515,
+    2.1175
+   ],
+   "website": "http://www.somina.cn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488241",
+   "name": "Société du Patrimoine des Mines du Niger",
+   "cc": "ne",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Niamey",
+   "hq": [
+    13.515,
+    2.1175
+   ],
+   "website": "http://www.sopamin-sa.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488525",
+   "name": "Société nationale des charbons de l’Azawak",
+   "cc": "ne",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Niamey",
+   "hq": [
+    13.515,
+    2.1175
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488537",
+   "name": "Société Nationale des Transports Nigériens",
+   "cc": "ne",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Niamey",
+   "hq": [
+    13.515,
+    2.1175
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488551",
+   "name": "Société nigérienne d'électricité",
+   "cc": "ne",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Niamey",
+   "hq": [
+    13.515,
+    2.1175
+   ],
+   "website": "http://nigelec.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/NIGELEC",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488550",
+   "name": "Société nigérienne de banque",
+   "cc": "ne",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Niamey",
+   "hq": [
+    13.515,
+    2.1175
+   ],
+   "website": "http://www.sonibank.net/WD100AWP/WD100Awp.exe/CONNECT/sonibank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488553",
+   "name": "Société nigérienne du pétrole",
+   "cc": "ne",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Niamey",
+   "hq": [
+    13.515,
+    2.1175
+   ],
+   "website": "https://www.sonidep-niger.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/SONIDEP",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3562519",
+   "name": "Voix du Sahel",
+   "cc": "ne",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.ortn.ne/voix-sahel/",
+   "enwiki": "https://en.wikipedia.org/wiki/Voix_du_Sahel",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

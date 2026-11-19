@@ -1,0 +1,629 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "NA",
+ "count": 30,
+ "companies": [
+  {
+   "qid": "Q96373111",
+   "name": "Bank BIC Namibia Limited",
+   "cc": "na",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "https://www.bankbic.na/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_BIC_Namibia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q806649",
+   "name": "Bank Windhoek",
+   "cc": "na",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "http://www.bankwindhoek.com.na",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Windhoek",
+   "logo_file": "Bank Windhoek logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1185853",
+   "name": "Democratic Media Holdings",
+   "cc": "na",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "http://www.nmh.com.na/",
+   "enwiki": "https://en.wikipedia.org/wiki/Network_Media_Hub",
+   "logo_file": "Namibia Media Holdings (logo).jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1202007",
+   "name": "Deutsche Bank Afrika Building",
+   "cc": "na",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q57393118",
+   "name": "Frans Indongo Group",
+   "cc": "na",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "holding company"
+   ],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "https://www.indongogroup.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q92596091",
+   "name": "Government Institutions Pension Fund",
+   "cc": "na",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.gipf.com.na/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q142175512",
+   "name": "Hyphen Hydrogen Energy",
+   "cc": "na",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://hyphenafrica.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q6804230",
+   "name": "MeatCo Namibia",
+   "cc": "na",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food"
+   ],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "http://www.meatco.com.na",
+   "enwiki": "https://en.wikipedia.org/wiki/Meat_Corporation_of_Namibia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1709050",
+   "name": "MEATCO Namibia",
+   "cc": "na",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "meat industry"
+   ],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "http://www.meatco.com.na",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1709188",
+   "name": "MTC Namibia",
+   "cc": "na",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "http://www.mtc.com.na/",
+   "enwiki": "https://en.wikipedia.org/wiki/MTC_Namibia",
+   "logo_file": "Mtc Namibia Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q250558",
+   "name": "Namibia Airports Company",
+   "cc": "na",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "aviation"
+   ],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "http://www.airports.com.na/",
+   "enwiki": "https://en.wikipedia.org/wiki/Namibia_Airports_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6961745",
+   "name": "Namibia Directorate of Civil Aviation",
+   "cc": "na",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "http://www.ncaa.com.na/",
+   "enwiki": "https://en.wikipedia.org/wiki/Namibia_Civil_Aviation_Authority",
+   "listed": false
+  },
+  {
+   "qid": "Q1964275",
+   "name": "Namibia Post and Telecommunications Holdings",
+   "cc": "na",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1019981",
+   "name": "Namibia Securities Exchange",
+   "cc": "na",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "https://www.nsx.com.na",
+   "enwiki": "https://en.wikipedia.org/wiki/Namibia_Securities_Exchange",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1636661",
+   "name": "Namrights",
+   "cc": "na",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "http://www.nshr.org.na/",
+   "enwiki": "https://en.wikipedia.org/wiki/Namrights",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q117673",
+   "name": "NamWater",
+   "cc": "na",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "http://www.namwater.com.na",
+   "enwiki": "https://en.wikipedia.org/wiki/NamWater",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2016544",
+   "name": "Ohlthaver & List",
+   "cc": "na",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "https://www.ol.na/",
+   "lei": "894500D5M5IBRTXJM485",
+   "enwiki": "https://en.wikipedia.org/wiki/Ohlthaver_%26_List",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2016693",
+   "name": "Ohorongo Cement",
+   "cc": "na",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "http://www.ohorongo-cement.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ohorongo_Cement",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q516392",
+   "name": "One Africa Television",
+   "cc": "na",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "http://www.oneafrica.tv",
+   "enwiki": "https://en.wikipedia.org/wiki/One_Africa_Television",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111638053",
+   "name": "Paratus Group",
+   "cc": "na",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "https://paratus.africa/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7190735",
+   "name": "Pick n Pay",
+   "cc": "na",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "ZAE000005443"
+   ],
+   "hq_city": "Kenilworth",
+   "hq": [
+    -33.99583,
+    18.475
+   ],
+   "website": "https://www.pnp.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pick_n_Pay",
+   "logo_file": "Pick n Pay logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q54981693",
+   "name": "Swakopmund Bookshop",
+   "cc": "na",
+   "types": [
+    "Q2085381",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Swakopmund",
+   "hq": [
+    -22.66667,
+    14.53333
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114990",
+   "name": "Telecom Namibia",
+   "cc": "na",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "internet service provider",
+    "landline telephone",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "https://www.telecom.na/",
+   "enwiki": "https://en.wikipedia.org/wiki/Telecom_Namibia",
+   "logo_file": "Telecom Namibia Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1516118",
+   "name": "TN Mobile",
+   "cc": "na",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "http://www.leo.na",
+   "enwiki": "https://en.wikipedia.org/wiki/TN_Mobile",
+   "logo_file": "Tnmobile.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1780755",
+   "name": "TransNamib",
+   "cc": "na",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "https://www.transnamib.com.na",
+   "enwiki": "https://en.wikipedia.org/wiki/TransNamib",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1388465",
+   "name": "Trustco Bank Namibia",
+   "cc": "na",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Ongwediva",
+   "hq": [
+    -17.78333,
+    15.76667
+   ],
+   "website": "http://www.tgi.na",
+   "enwiki": "https://en.wikipedia.org/wiki/Trustco_Bank_Namibia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28404661",
+   "name": "University of Namibia Press",
+   "cc": "na",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.unam.edu.na/unam-press",
+   "enwiki": "https://en.wikipedia.org/wiki/University_of_Namibia_Press",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4013942",
+   "name": "Virgin Active",
+   "cc": "na",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "health club"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "https://www.virginactive.co.th/",
+   "enwiki": "https://en.wikipedia.org/wiki/Virgin_Active",
+   "logo_file": "Virgin Active.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20715807",
+   "name": "Wilderness",
+   "cc": "na",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "ecotourism",
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Gaborone",
+   "hq": [
+    -24.65694,
+    25.90861
+   ],
+   "website": "https://www.wildernessdestinations.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Wilderness_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8024219",
+   "name": "Windhoeker Maschinenfabrik",
+   "cc": "na",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "https://wmf.com.na",
+   "enwiki": "https://en.wikipedia.org/wiki/Windhoeker_Maschinenfabrik",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

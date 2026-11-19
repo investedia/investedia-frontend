@@ -1,0 +1,35 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "SL",
+ "count": 1,
+ "companies": [
+  {
+   "qid": "Q3490246",
+   "name": "Sonatel",
+   "cc": "sl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Dakar",
+   "hq": [
+    14.67256,
+    -17.432
+   ],
+   "website": "http://www.orange.sl",
+   "enwiki": "https://en.wikipedia.org/wiki/Sonatel",
+   "logo_file": "Sonatel logo.svg",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

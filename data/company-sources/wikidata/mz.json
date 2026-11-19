@@ -1,0 +1,273 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "MZ",
+ "count": 14,
+ "companies": [
+  {
+   "qid": "Q85739507",
+   "name": "Absa Bank Mozambique",
+   "cc": "mz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Absa_Bank_Mozambique",
+   "listed": false
+  },
+  {
+   "qid": "Q9586694",
+   "name": "Aeroportos de Moçambique",
+   "cc": "mz",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Maputo International Airport",
+   "hq": [
+    -25.92083,
+    32.5725
+   ],
+   "website": "https://www.aeroportos.co.mz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18477722",
+   "name": "Companhia do Boror",
+   "cc": "mz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "crop production"
+   ],
+   "isin": [],
+   "hq_city": "Lisbon",
+   "hq": [
+    38.70804,
+    -9.13902
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q10372647",
+   "name": "Editora Ndjira",
+   "cc": "mz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Maputo",
+   "hq": [
+    -25.96889,
+    32.57333
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5357771",
+   "name": "Electricidade de Moçambique",
+   "cc": "mz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power distribution",
+    "electric power transmission",
+    "electricity generation"
+   ],
+   "isin": [],
+   "website": "https://www.edm.co.mz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Electricidade_de_Mo%C3%A7ambique",
+   "listed": false
+  },
+  {
+   "qid": "Q117832662",
+   "name": "Empresa Moçambicana de Seguros",
+   "cc": "mz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance, reinsurance and pension funding, except compulsory social security"
+   ],
+   "isin": [],
+   "website": "https://www.emose.co.mz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96377968",
+   "name": "First Capital Bank Mozambique",
+   "cc": "mz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/First_Capital_Bank_Mozambique",
+   "listed": false
+  },
+  {
+   "qid": "Q48858609",
+   "name": "Hidroeléctrica da Cahora Bassa S.A.",
+   "cc": "mz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Songo",
+   "hq": [
+    -15.61421,
+    32.77092
+   ],
+   "website": "https://www.hcb.co.mz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118128130",
+   "name": "Imprensa Nacional de Moçambique",
+   "cc": "mz",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "printing industry"
+   ],
+   "isin": [],
+   "hq_city": "Maputo",
+   "hq": [
+    -25.96889,
+    32.57333
+   ],
+   "website": "https://www.inm.gov.mz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17061030",
+   "name": "Jumià",
+   "cc": "mz",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "JMIA"
+    }
+   ],
+   "industries": [
+    "online shop"
+   ],
+   "isin": [
+    "US48138M1053"
+   ],
+   "hq_city": "Ikeja",
+   "hq": [
+    6.58333,
+    3.33333
+   ],
+   "website": "https://group.jumia.com",
+   "lei": "391200JWCL5VCOSXNT56",
+   "enwiki": "https://en.wikipedia.org/wiki/Jumia",
+   "logo_file": "JumiaLogo (14).png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6858976",
+   "name": "Millennium bim",
+   "cc": "mz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Torre Millenium Bim",
+   "hq": [
+    -25.97128,
+    32.56922
+   ],
+   "website": "https://millenniumbim.co.mz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Millennium_bim",
+   "logo_file": "Millennium bim Logotipo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q177262",
+   "name": "Mozambique Ports and Railways",
+   "cc": "mz",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport",
+    "water transport"
+   ],
+   "isin": [],
+   "hq_city": "Maputo",
+   "hq": [
+    -25.96889,
+    32.57333
+   ],
+   "website": "https://www.cfm.co.mz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mozambique_Ports_and_Railways",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136340562",
+   "name": "Safira Mozambique Ceramic",
+   "cc": "mz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "ceramic"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139570244",
+   "name": "Société générale Mozambique",
+   "cc": "mz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  }
+ ]
+}
