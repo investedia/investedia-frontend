@@ -15,7 +15,7 @@ html.standalone{background:#050506}html.standalone[data-theme=light]{background:
 @media(min-width:1180px){
  html.side-on .panel{bottom:252px!important;max-height:none}
  html.side-on .zoom{bottom:96px!important}html.side-on .zoom{bottom:150px!important}html.side-on .zloc{bottom:96px!important}
- html.side-on .side-imp{display:block;position:fixed;right:16px;bottom:16px;width:var(--pw);height:224px;border-radius:24px;z-index:4;padding:16px 18px;box-sizing:border-box}
+ html.side-on .side-imp{display:block;position:fixed;right:16px;bottom:16px;width:var(--pw);height:auto;border-radius:24px;z-index:4;padding:16px 18px;box-sizing:border-box}
  html.side-on .side-sec{display:block;position:fixed;left:24px;top:50%;transform:translateY(-50%);width:270px;border-radius:22px;z-index:3;padding:14px 16px}
  html.side-on .side-bar{display:flex;position:fixed;left:24px;right:calc(var(--pw) + 40px);bottom:16px;height:64px;border-radius:20px;z-index:3;align-items:center;gap:10px;padding:0 14px;box-sizing:border-box;overflow:hidden}
  html.side-on .timeline{bottom:96px}html.side-on .layers{bottom:96px!important}
@@ -1759,7 +1759,7 @@ function size() {
       right: phone() ? W - 8 : document.documentElement.classList.contains('mkd-on') && document.querySelector('.mkd-o:not([hidden])') ? document.querySelector('.mkd-o').getBoundingClientRect().left - 24 : document.documentElement.classList.contains('proj-mode') && $('projPanel') ? $('projPanel').getBoundingClientRect().left - 24 : ((mp => mp && document.documentElement.classList.contains('market-mode') && !mp.hidden && mp.offsetWidth)(document.querySelector('.market-panel')) ? document.querySelector('.market-panel').getBoundingClientRect().left - 24 : panel.hidden || !panel.offsetWidth || panel.getBoundingClientRect().left <= 0 ? W - 24 : panel.getBoundingClientRect().left - 24),
       bottom: sheetOpen ? H - panel.offsetHeight - 12 : document.documentElement.classList.contains('proj-mode') && !phone() ? H - 110 : document.documentElement.classList.contains('mkd-on') ? H - 190 : LC ? H - (document.documentElement.classList.contains('act-on') ? 190 : 24) : (timeline.height ? timeline.top - 16 : H - (document.documentElement.classList.contains('market-mode') ? 72 : 90)) };
     // PC: the globe keeps one position in News, Markets and Projects, so switching modes never moves it
-    if (!phone() && !EMBED && W >= 1180) { const pw = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--pw')) || 392, sb = $('sbox').getBoundingClientRect(); globeBox = { left: 378, top: Math.max(sb.bottom, 60) + 12, right: W - pw - 40, bottom: H - 190 }; }
+    if (!phone() && !EMBED && W >= 1180) { const pw = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--pw')) || 392, sb = $('sbox').getBoundingClientRect(); const m = Math.max(378, pw + 40), sh = parseFloat(getComputedStyle(document.documentElement).getPropertyValue(document.documentElement.classList.contains('act-on') || document.documentElement.classList.contains('mkd-on') ? '--acth' : '--none')) || 150; globeBox = { left: m, top: Math.max(sb.bottom, 60) + 12, right: W - m, bottom: H - sh - 32 }; }  // centred between equal margins; grows when the bottom strip is dragged shorter (owner, 19 Nov 2026)
     // template B (?panel=b): the articles sit in a strip along the bottom, so the globe uses the full width above it
     if (PANEL_TEMPLATE === 'b' && panel.dataset.view === 'top') { globeBox.right = W - (phone() ? 8 : 24); globeBox.bottom = Math.min(globeBox.bottom, (phone() ? $('tl').getBoundingClientRect().top : panel.getBoundingClientRect().top) - 16); }
     const aw = Math.max(1, globeBox.right - globeBox.left), ah = Math.max(1, globeBox.bottom - globeBox.top);
@@ -2360,7 +2360,7 @@ pbody.addEventListener('keydown', e => {
 function variantPanel(list) {
   if (PANEL_TEMPLATE === 'a') return `<h2>Top articles</h2><div class="meta">${Math.min(8, list.length)} of ${list.length} articles</div><div class="compact-list">${list.slice(0, 8).map(compactItem).join('')}</div>${list.length > 8 ? '<a class="panel-more" href="../../news.html">See all news →</a>' : ''}${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
   if (PANEL_TEMPLATE === 'b') return `<h2>Top articles</h2><div class="strip-list" aria-label="Top articles">${list.slice(0, phone() ? 3 : 12).map(compactItem).join('')}</div>${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
-  const tabs = phone() && phoneView !== 'markets' ? [['top', 'Top'], ['latest', 'Latest'], ['moving', 'Moving'], ['more', ['countries', 'topics', 'watch', 'saved'].includes(panelTab) ? ({ countries: 'Countries', topics: 'Topics', watch: 'Watchlist', saved: 'Saved' })[panelTab] + ' ▾' : 'More ▾']] : [['top', 'Top'], ...(!phone() ? [['movers', 'Movers']] : []), ['latest', 'Latest'], ['countries', 'Countries'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : []), ['saved', `Saved${RL.size ? ' ' + RL.size : ''}`]];
+  const tabs = phone() && phoneView !== 'markets' ? [['top', 'Top'], ['latest', 'Latest'], ['moving', 'Moving'], ['more', ['countries', 'topics', 'watch', 'saved'].includes(panelTab) ? ({ countries: 'Countries', topics: 'Topics', watch: 'Watchlist', saved: 'Saved' })[panelTab] + ' ▾' : 'More ▾']] : [['top', 'Top'], ['latest', 'Latest'], ['countries', 'Countries'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : []), ...(phone() ? [['saved', `Saved${RL.size ? ' ' + RL.size : ''}`]] : [])];  // PC: fewer tabs, Movers lives in Market impact (owner, 19 Nov 2026)
   let items, count;
   if (phone() && phoneView === 'markets') { items = marketsPhonePanel(); count = 0; }
   else if (panelTab === 'topics') { const cats = Object.entries(list.reduce((m, x) => (m[x.category] = (m[x.category] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]); count = 0;
@@ -2376,7 +2376,8 @@ function variantPanel(list) {
   } else if (panelTab === 'countries') {
     const countries = Object.entries(list.reduce((all, s) => { all[s.location.country] = (all[s.location.country] || 0) + 1; return all; }, {})).sort((a,b) => b[1]-a[1]);
     count = countries.length;
-    items = countries.slice(0, panelExpanded ? countries.length : 3).map(([name, n]) => `<button class="compact-country" data-country="${esc(name)}">${flag(name)}<span>${esc(nm(name))}</span><small>${n} ${n === 1 ? 'article' : 'articles'}</small></button>`).join('');
+    const top = countries[0]?.[1] || 1;  // owner 19 Nov 2026: 8 countries with a share bar, not 3 rows and empty space
+    items = countries.slice(0, panelExpanded ? countries.length : 8).map(([name, n]) => `<button class="compact-country" data-country="${esc(name)}" style="--sh:${Math.round(100 * n / top)}%">${flag(name)}<span>${esc(nm(name))}</span><small>${n}</small></button>`).join('');
   } else {
     const q = (newsQ || '').trim().toLowerCase(), qf = x => !q || [x.headline, x.source && x.source.name, nm(x.location.country), CAT[x.category]].some(v => String(v || '').toLowerCase().includes(q));
     const base0 = panelTab === 'saved' ? stories.filter(x => RL.has(x.id)).filter(qf) : (panelTab === 'moving' ? list.filter(x => x.market_moving) : panelTab === 'watch' ? (WATCH = watchSyms(), (() => { let C = new Set(); try { C = new Set((JSON.parse(localStorage.getItem('inv-watch') || '{}').c || []).map(x => x.k)); } catch {} return list.filter(x => touchesWatch(x) || C.has(x.location.country)); })()) : list).filter(qf);
@@ -3214,5 +3215,6 @@ requestAnimationFrame(frame);
 })();</script>
 <script src="../globe-companies.js"></script>
 <script src="../markets-layout.js"></script>
+<script src="../news-layout.js"></script>
 </body>
 </html>
