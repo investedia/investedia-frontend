@@ -92,5 +92,7 @@ def add():
 
 
 if __name__ == '__main__':
+    sys.exit('Nigeria (NGX) was taken off the site on 19 Nov 2026: NGX terms forbid automated collection without written consent.')
+    
     ap = argparse.ArgumentParser(); ap.add_argument('--fetch', action='store_true'); a = ap.parse_args()
     fetch() if a.fetch else add()

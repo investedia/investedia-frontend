@@ -1,4 +1,6 @@
-"""Listed companies from official African exchange lists (owner, 17 Nov 2026): Kenya (NSE), Ghana (GSE), BRVM.
+"""NOTE 19 Nov 2026: only Kenya is used now; Ghana, BRVM and Nigeria were taken off the site (their terms forbid reuse).
+
+Listed companies from official African exchange lists (owner, 17 Nov 2026): Kenya (NSE), Ghana (GSE), BRVM.
 Nigeria (NGX) has its own tool, tools/listings/ngx.py; this one shares its directory logic.
 
   python3 tools/listings/africa.py --fetch   download each list to data/listed-companies/<exchange>.json (URL, date, SHA-256)
@@ -30,8 +32,7 @@ NSE_HOME = {'BKG': 'RW'}  # cross-listed in Nairobi with a Kenyan ISIN, based ab
 FUND = re.compile(r'\b(ETF|REIT|I-REIT|Fund|Feeder|Trust)\b', re.I)
 SOURCES = {
     'nse-ke': {'exchange': 'Nairobi Securities Exchange', 'short': 'NSE', 'cur': 'KES', 'url': 'https://www.nse.co.ke/listed-companies/'},
-    'gse-gh': {'exchange': 'Ghana Stock Exchange', 'short': 'GSE', 'cur': 'GHS', 'url': 'https://gse.com.gh/listed-companies/'},
-    'brvm': {'exchange': 'BRVM (West African regional exchange)', 'short': 'BRVM', 'cur': 'XOF', 'url': 'https://www.brvm.org/en/cours-actions/0'},
+    # Ghana (GSE) and BRVM removed 19 Nov 2026 (owner): their website terms forbid reusing the list without written consent.
 }
 
 
