@@ -85,7 +85,20 @@ def build():
         w = white_version(im, b)
         blob = opaque(w) / max(1, w.size[0] * w.size[1]) > .7
         im.save(OUT / f"{c['slug']}.png", optimize=True)
-        mode = 'color' if (b or blob) else 'white'
+        dark = b is not None and colorsys.rgb_to_hls(b[0] / 255, b[1] / 255, b[2] / 255)[1] < .45
+        P = [q for q in pixels(im) if q[3] > 160]
+        light_inside = sum(1 for r_, g_, b_, a_ in P if min(r_, g_, b_) > 215) / max(1, len(P))
+        dark = dark and light_inside < .06  # white letters or symbols inside (Allianz, Ford): keep the colour logo
+        # colour logo on the grey tile, unless it is a solid badge (Bayer, Mercedes); a dark brand colour would vanish
+        # on its own tinted tile (Allstate, Lockheed), so those show in white (owner check, 18 Nov 2026)
+        mode = 'color' if blob or (b and not dark) else 'white'
+        if mode == 'white' and dark:  # a dark one-colour logo: the whole logo in white (removing the brand colour would leave nothing)
+            w = im.copy(); px = w.load()
+            for y in range(w.size[1]):
+                for x in range(w.size[0]):
+                    r_, g_, b_, a_ = px[x, y]
+                    px[x, y] = (255, 255, 255, a_ if a_ > 40 else 0)
+            if opaque(w) / max(1, w.size[0] * w.size[1]) > .7: mode = 'color'  # a solid square or disc in white would hide the logo
         if mode == 'white': w.save(OUT / f"{c['slug']}-w.png", optimize=True)
         out[c['slug']] = {'c': '#%02x%02x%02x' % b if b else None, 'm': mode,
                           'f': f"assets/logos/badge/{c['slug']}{'-w' if mode == 'white' else ''}.png"}

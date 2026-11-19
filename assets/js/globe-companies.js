@@ -32,6 +32,8 @@
   .act-c.co-c{display:block!important;grid-template-columns:none!important;max-height:none!important;overflow:auto!important;flex:1;min-height:0}
   #act:has(.co-c){height:min(380px,48vh)!important;display:flex!important;flex-direction:column}
   #act:has(.co-card){height:auto!important}
+  .mkd-a.co-on{height:min(380px,46vh)!important;display:flex!important;flex-direction:column}.mkd-a.co-on .mkd-cs{display:block;overflow:auto;flex:1;min-height:0}.mkd-a:has(.co-card){height:auto!important}
+  .act-h,.mkd-th{flex-wrap:nowrap;min-width:0}.act-h button,.mkd-th button{white-space:nowrap;flex:none}.act-r,.mkd-th em{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.act-r>*{flex:none}
   .co-float{position:fixed;left:10px;right:10px;bottom:96px;z-index:60;background:rgba(14,14,16,.97);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:14px;box-shadow:0 18px 50px rgba(0,0,0,.55);backdrop-filter:blur(18px)}
   .co-float .co-card{grid-template-columns:auto 1fr}.co-float .co-card .co-b{width:46px;height:46px;border-radius:13px}.co-float h3{font-size:18px}.co-float .co-kv{gap:14px;margin-top:6px}.co-float .co-note{display:none}
   @media(max-width:760px){.co-card{grid-template-columns:auto 1fr}.co-act{grid-column:1/-1;flex-direction:row;flex-wrap:wrap}.co-list{grid-template-columns:1fr 1fr;max-height:none}}`;
@@ -91,7 +93,7 @@
       <select class="co-chip" data-co-country aria-label="Country"><option value="">All countries</option>${countries().map(([n, k]) => `<option value="${esc(n)}"${n === S.country ? ' selected' : ''}>${esc(n)} · ${k}</option>`).join('')}</select></div>
       ${L.length ? `<div class="co-list">${L.slice(0, 120).map(c => `<button type="button" class="co-i" data-co="${esc(c.slug)}">${badgeHTML(c)}<span style="min-width:0"><b>${esc(c.name)}</b><small>${esc(c.hq.hq_city)} · ${esc(c.sym.replace(/^[A-Z]+:/, ''))}</small></span></button>`).join('')}</div>`
         : '<div class="co-empty">No company matches. Companies appear here once their head office is sourced.</div>'}
-      ${!S.country && !S.q && !S.news ? '<p class="co-note">Pick a country or search to see companies on the globe.</p>' : L.length > MAXPINS ? `<p class="co-note">The globe shows the first ${MAXPINS}. Narrow the list to see the rest.</p>` : ''}</div>`;
+      <p class="co-note">${L.length} companies on the globe. Logos show where there is room; tap a logo or a dot to open the company.</p></div>`;
   }
   const isPhone = () => typeof phone === 'function' && phone();
   function floatCard() {  // phone: the sheet closes so the globe shows the pin; the company sits in a compact card above the dock
@@ -100,8 +102,10 @@
     if (!f) { f = document.createElement('div'); f.className = 'co-float'; f.setAttribute('role', 'dialog'); f.setAttribute('aria-label', 'Company'); document.body.append(f); }
     f.innerHTML = panelHTML().replace('data-co-back>‹', 'data-co-list>‹');
   }
+  const inMarkets = () => typeof MARKET !== 'undefined' && MARKET.on;
   function refresh() {
-    if (typeof renderAct === 'function') renderAct();
+    if (inMarkets() && typeof mkdRender === 'function') mkdRender();
+    else if (typeof renderAct === 'function') renderAct();
     if (typeof render === 'function' && isPhone()) render();
     floatCard();
   }
@@ -113,7 +117,7 @@
   function select(sym, open) {
     const c = typeof sym === 'string' ? find(sym) : sym; if (!c) return false;
     S.sel = c; S.open = true;
-    if (open) { try { actTab = 'co'; if (typeof phone === 'function' && phone()) panelTab = 'companies'; } catch {} }
+    if (open) { try { if (!inMarkets()) document.querySelector('#gswitch [data-m=markets]')?.click(); mkTab = 'co'; } catch {} }
     if (isPhone()) { try { setSheet('closed'); } catch {} }
     if (typeof flyTo === 'function') flyTo(c.hq.hq_lon, c.hq.hq_lat - (isPhone() ? 1.2 : 2.2), 5.5);
     refresh(); return true;
@@ -131,16 +135,31 @@
   const circ = (x, y, r, f) => { ctx.beginPath(); ctx.arc(x, y, r, 0, 7); ctx.fillStyle = f; ctx.fill(); };
   function draw() {
     if (!S.ready) return;
-    const active = (typeof actTab !== 'undefined' && actTab === 'co') || (typeof panelTab !== 'undefined' && panelTab === 'companies');
-    if (!active) return;
+    S.hits = []; if (!active()) return;
     const narrowed = S.country || S.q.trim() || S.news;
-    const L = narrowed ? filtered().slice(0, MAXPINS) : [];
+    const all = filtered(), L = narrowed && all.length <= MAXPINS ? all : [];
     const list = S.sel ? [S.sel, ...L.filter(c => c !== S.sel)] : L;
     const placed = [], pos = [];
+    if (!L.length || S.sel) {  // the whole list: every company is a dot, and a logo badge wherever one fits without covering another
+      const rest = all.filter(c => c !== S.sel).sort((a, b) => (b.tracked - a.tracked) || (!!b.badge - !!a.badge));
+      const dots = [], bad = [];
+      if (S.sel) { const q = proj(S.sel.hq.hq_lat * rad, S.sel.hq.hq_lon * rad); if (q[2] > 0) placed.push({ x: q[0], y: q[1], r: 60 }); }
+      for (const c of rest) {
+        const q = proj(c.hq.hq_lat * rad, c.hq.hq_lon * rad); if (q[2] <= 0) continue;
+        dots.push(q); S.hits.push({ c, x: q[0], y: q[1], r: 7 });
+        if (S.sel || placed.some(p => Math.hypot(p.x - q[0], p.y - q[1]) < p.r + 13 + 3)) continue;
+        placed.push({ x: q[0], y: q[1], r: 13 }); bad.push({ c, x: q[0], y: q[1], r: 13, ax: q[0], ay: q[1], fade: Math.min(1, q[2] * 3) });
+      }
+      ctx.save(); ctx.fillStyle = 'rgba(255,170,110,.85)';
+      for (const q of dots) { ctx.globalAlpha = Math.min(1, q[2] * 3); ctx.beginPath(); ctx.arc(q[0], q[1], 2.2, 0, 7); ctx.fill(); }
+      ctx.restore(); pos.push(...bad.reverse());
+      for (const p of bad) S.hits.push({ c: p.c, x: p.x, y: p.y, r: 15 });
+    }
     for (const c of list) {
       const q = proj(c.hq.hq_lat * rad, c.hq.hq_lon * rad); if (q[2] <= 0) continue;
       const sel = c === S.sel, r = sel ? 22 : 16; let x = q[0], y = q[1];
-      for (let k = 0; k < 24 && placed.some(p => Math.hypot(p.x - x, p.y - y) < p.r + r + 4); k++) { const a = -Math.PI / 2 + k * .9, d = r * 2.3 * (1 + Math.floor(k / 7) * .6); x = q[0] + Math.cos(a) * d; y = q[1] + Math.sin(a) * d; }
+      if (!sel) for (let k = 0; k < 24 && placed.some(p => Math.hypot(p.x - x, p.y - y) < p.r + r + 4); k++) { const a = -Math.PI / 2 + k * .9, d = r * 2.3 * (1 + Math.floor(k / 7) * .6); x = q[0] + Math.cos(a) * d; y = q[1] + Math.sin(a) * d; }
+      S.hits.push({ c, x, y, r: r + 2 });
       placed.push({ x, y, r }); if (sel) for (let d = 60; d <= 220; d += 35) placed.push({ x: x + (x > innerWidth - 260 ? -d : d), y, r: 22 });
       pos.push({ c, x, y, r, ax: q[0], ay: q[1], sel, fade: Math.min(1, q[2] * 3) });
     }
@@ -165,12 +184,22 @@
     ctx.restore();
   }
 
+  function active() {
+    return inMarkets() && typeof mkTab !== 'undefined' && mkTab === 'co';  // Markets globe only (owner, 19 Nov 2026)
+  }
+  function tap(x, y) {  // a click on a company pin or dot opens it; true if handled
+    if (!S.hits?.length || !active()) return false;
+    const h = [...S.hits].sort((a, b) => Math.hypot(a.x - x, a.y - y) - Math.hypot(b.x - x, b.y - y))[0];
+    if (!h || Math.hypot(h.x - x, h.y - y) > Math.max(h.r, 9)) return false;
+    select(h.c); return true;
+  }
+
   // ---- search: "Company HQs" section on the globe ----
   function searchHits(q) {
     q = (q || '').trim().toLowerCase(); if (!S.ready || q.length < 2) return [];
     return S.list.filter(c => (c.name + ' ' + c.short + ' ' + c.syms.join(' ')).toLowerCase().includes(q)).slice(0, 5);
   }
 
-  window.InvCompanies = { ready: load, panelHTML, draw, select, searchHits, badgeHTML, open: () => { S.open = true; }, state: S };
+  window.InvCompanies = { ready: load, panelHTML, draw, tap, active, select, searchHits, badgeHTML, open: () => { S.open = true; }, state: S };
   if (window.InvGlobeNav) window.InvGlobeNav.company = sym => select(sym, true);
 })();
