@@ -10,7 +10,7 @@ function win(e){const now=Date.now();const ds=(e.calendar?.dated_sessions||[]).m
 // ---- connection lines: the trading day handing over from one exchange to the next (follow the sun) ----
 const orig=window.drawMarketsOverlay;let HITS=[];
 
-window.drawMarketsOverlay=function(t){if(window.InvCompanies&&InvCompanies.active()){HITS=[];return;}  // Companies tab owns the globe
+window.drawMarketsOverlay=function(t){{const L2=typeof Z!=='undefined'&&Z>=FXZ?'fx':'day';if(L2!==LAYER){LAYER=L2;HOV=null;card.hidden=true;}hint.textContent=LAYER==='fx'?'Currencies vs US dollar':'Trading day · zoom in for currencies';}if(window.InvCompanies&&InvCompanies.active()){HITS=[];return;}  // Companies tab owns the globe
 if(LAYER!=='fx')orig&&orig(t);if(typeof MARKET==='undefined'||!MARKET.on||!MARKET.exchanges)return;if(LAYER==='fx'){drawFx();return;}const L=E();if(L.length<2)return;const T=performance.now()/1000;HITS=[];ctx.save();
  for(let i=0;i<L.length;i++){const a=L[i],b=L[(i+1)%L.length],wa=win(a),wb=win(b);
   const A=[a.coordinates.latitude*rad,a.coordinates.longitude*rad],B=[b.coordinates.latitude*rad,b.coordinates.longitude*rad];
@@ -29,8 +29,8 @@ if(LAYER!=='fx')orig&&orig(t);if(typeof MARKET==='undefined'||!MARKET.on||!MARKE
   ctx.fillStyle=w.open?'#3ddc97':'#55555c';ctx.beginPath();ctx.arc(q[0],q[1],w.open?5:3.5,0,7);ctx.fill();
   ctx.font='600 11px Inter,sans-serif';const nm_=NAME[e.id]||e.short,tw=ctx.measureText(nm_).width,bx={x:q[0]+8,y:q[1]-7,w:tw,h:14};if(boxes.some(o=>bx.x<o.x+o.w+4&&o.x<bx.x+bx.w+4&&bx.y<o.y+o.h&&o.y<bx.y+bx.h))continue;boxes.push(bx);ctx.fillStyle=w.open?'#eafff5':'#9a9aa3';ctx.fillText(nm_,q[0]+8,q[1]+4);}
  ctx.restore();};
-// ---- layers (owner 19 Nov 2026, option A): pills switch between Trading day and Currencies; hover a line for a short explainer ----
-let LAYER='day';try{LAYER=localStorage.getItem('inv-mk-layer')||'day'}catch{}
+// Owner 19 Nov 2026: no pills. Zoom decides: the whole globe shows the trading day moving round the world; zoom in (Z ≥ 1.7) for currencies.
+const FXZ=1.7;let LAYER='day';
 const CUR={USD:'US dollar',EUR:'euro',JPY:'Japanese yen',GBP:'British pound',CHF:'Swiss franc',CAD:'Canadian dollar',AUD:'Australian dollar',NZD:'New Zealand dollar',CNY:'Chinese yuan',HKD:'Hong Kong dollar',SGD:'Singapore dollar',INR:'Indian rupee',KRW:'South Korean won',IDR:'Indonesian rupiah',MYR:'Malaysian ringgit',THB:'Thai baht',PHP:'Philippine peso',ZAR:'South African rand',BRL:'Brazilian real',MXN:'Mexican peso',TRY:'Turkish lira',SEK:'Swedish krona',NOK:'Norwegian krone',DKK:'Danish krone',PLN:'Polish zloty',CZK:'Czech koruna',HUF:'Hungarian forint',ILS:'Israeli shekel',RON:'Romanian leu',ISK:'Icelandic krona',BGN:'Bulgarian lev'};
 // ECB gives dollars → units of each currency (USD/XXX). A currency is STRONGER when one dollar buys fewer units: move = old/new − 1.
 function fxMoves(){const H=MARKET.ecb?.usd_hist;if(!H)return[];const ds=Object.keys(H).sort(),d1=ds[ds.length-1],d0=ds[ds.length-2];if(!d0)return[];
@@ -46,9 +46,7 @@ function drawFx(){const ny=MARKET.exchanges.XNYS;if(!ny)return;HITS=[];const B=[
  const q=proj(B[0],B[1]);if(q[2]>0){ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(q[0],q[1],5,0,7);ctx.fill();ctx.font='600 11px Inter,sans-serif';ctx.fillText('US dollar',q[0]+8,q[1]+4);}
  ctx.restore();}
 let HOV=null;const card=document.createElement('div');card.className='pv-card';card.hidden=true;document.body.append(card);
-const pills=document.createElement('div');pills.className='pv-pills';pills.setAttribute('role','tablist');pills.setAttribute('aria-label','Lines on the globe');document.body.append(pills);
-function pillsRender(){pills.innerHTML=[['day','Trading day'],['fx','Currencies']].map(([k,l])=>`<button type="button" role="tab" data-ly="${k}" aria-selected="${LAYER===k}">${l}</button>`).join('');}
-pills.onclick=e=>{const b=e.target.closest('[data-ly]');if(!b)return;LAYER=b.dataset.ly;try{localStorage.setItem('inv-mk-layer',LAYER)}catch{}HOV=null;card.hidden=true;pillsRender();};pillsRender();
+const hint=document.createElement('div');hint.className='pv-hint';document.body.append(hint);
 const hm=s=>String(s||'').slice(0,5),pct=v=>(v>=0?'+':'−')+Math.abs(v).toFixed(2)+'%';
 function explain(h){if(h.k==='fx'){const f=h.f,n=CUR[f.c]||f.c,up=f.d>=0,dt=d=>new Date(d+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short'});
   return `<div class="k">Currency · against the US dollar</div><h4>${esc(n[0].toUpperCase()+n.slice(1))} ${up?'strengthened':'weakened'} ${Math.abs(f.d).toFixed(2)}%</h4><div class="g"><div><b>${f.v.toLocaleString('en-US',{maximumFractionDigits:f.v<10?4:2})}</b><small>${esc(f.c)} per 1 US dollar</small></div><div><b class="${up?'u':'d'}">${pct(f.d)}</b><small>${dt(f.d0)} → ${dt(f.d1)}</small></div></div>
@@ -59,7 +57,7 @@ function explain(h){if(h.k==='fx'){const f=h.f,n=CUR[f.c]||f.c,up=f.d>=0,dt=d=>n
 addEventListener('mousemove',e=>{if(typeof MARKET==='undefined'||!MARKET.on||!desk()||e.target.tagName!=='CANVAS'||(window.InvCompanies&&InvCompanies.active())){if(HOV){HOV=null;card.hidden=true;}return;}
  let best=null,bd=10;for(const h of HITS)for(const q of h.pts){const d=Math.hypot(q[0]-e.clientX,q[1]-e.clientY);if(d<bd){bd=d;best=h;}}
  HOV=best;if(!best){card.hidden=true;return;}card.innerHTML=explain(best);card.hidden=false;const w=300,x=e.clientX+18+w>innerWidth?e.clientX-18-w:e.clientX+18;card.style.left=x+'px';card.style.top=Math.max(90,Math.min(innerHeight-card.offsetHeight-12,e.clientY-40))+'px';});
-setInterval(()=>{pills.style.display=typeof MARKET!=='undefined'&&MARKET.on&&!(window.InvCompanies&&InvCompanies.active())?'flex':'none';},300);
+setInterval(()=>{hint.style.display=typeof MARKET!=='undefined'&&MARKET.on&&!(window.InvCompanies&&InvCompanies.active())?'block':'none';},300);
 // ---- left: the trading day as a timeline (24 hours, your time) ----
 const css=document.createElement('style');css.textContent=`
 .pv-l{position:fixed;left:16px;top:112px;width:340px;z-index:5;background:rgba(10,10,12,.96);border:1px solid #1f1f23;border-radius:14px;padding:14px 16px;font:13px Inter,sans-serif;color:#ececef}
@@ -76,7 +74,7 @@ const css=document.createElement('style');css.textContent=`
 .pv-n{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-top:1px solid #1a1a1e}.pv-n small{color:#77777f;white-space:nowrap}
 .pv-src{color:#5c5c64;font-size:11px;margin-top:10px}
 @media(min-width:761px){html.mkd-on .mkd-l,html.mkd-on .mkd-o{visibility:hidden}}html:not(.mkd-on) .pv-l,html:not(.mkd-on) .pv-o,html.mk-detail .pv-o{display:none}@media(max-width:760px){.pv-l,.pv-o{display:none}}
-.pv-pills{position:fixed;left:50%;top:104px;transform:translateX(-50%);z-index:8;display:none;gap:2px;background:rgba(12,12,15,.95);border:1px solid #232328;border-radius:99px;padding:3px}.pv-pills button{border:0;background:none;color:#9a9aa3;font:500 12.5px Inter,sans-serif;padding:6px 14px;border-radius:99px;cursor:pointer}.pv-pills button[aria-selected=true]{background:#1f1f24;color:#fff}
+.pv-hint{position:fixed;left:50%;top:106px;transform:translateX(-50%);z-index:8;display:none;color:#8a8a92;font:500 12px Inter,sans-serif;background:rgba(12,12,15,.8);border-radius:99px;padding:4px 12px;pointer-events:none;white-space:nowrap}.pv-pills{position:fixed;left:50%;top:104px;transform:translateX(-50%);z-index:8;display:none;gap:2px;background:rgba(12,12,15,.95);border:1px solid #232328;border-radius:99px;padding:3px}.pv-pills button{border:0;background:none;color:#9a9aa3;font:500 12.5px Inter,sans-serif;padding:6px 14px;border-radius:99px;cursor:pointer}.pv-pills button[aria-selected=true]{background:#1f1f24;color:#fff}
 .pv-card{position:fixed;z-index:60;width:300px;pointer-events:none;background:rgba(14,14,17,.97);border:1px solid #2c2c31;border-radius:14px;padding:12px 14px;font:13px/1.45 Inter,sans-serif;color:#ececef;box-shadow:0 18px 50px rgba(0,0,0,.6)}.pv-card[hidden]{display:none}.pv-card .k{font:600 10.5px Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#ff9d5c}.pv-card h4{margin:3px 0 6px;font-size:15px}.pv-card p{margin:0 0 8px;color:#c9c9cf}.pv-card .why{background:#16110c;border:1px solid #3a240f;border-radius:9px;padding:7px 9px;color:#ffd2ad;font-size:12.5px}.pv-card .src{color:#6e6e76;font-size:11px;margin-top:8px}.pv-card .g{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:6px 0 8px}.pv-card .g div{background:#111114;border-radius:8px;padding:6px 8px}.pv-card .g b{display:block;font-size:14px}.pv-card .g small{color:#77777f;font-size:11px}.pv-card .u{color:#3ddc97}.pv-card .d{color:#ff5d5d}.pv-bar{background:#17171b!important;background-image:none!important}.pv-bar .seg{background:#4a4a54!important}.pv-bar .seg.o{background:#3ddc97!important}`;document.head.append(css);
 function render(){if(typeof MARKET==='undefined'||!MARKET.exchanges||!desk())return;document.documentElement.classList.toggle('mk-detail',typeof marketPanel!=='undefined'&&!marketPanel.hidden);const now=new Date(),d0=new Date(now);d0.setHours(0,0,0,0);const day=d0.getTime(),pct=x=>Math.max(0,Math.min(100,(x-day)/864e3));
  const rows=E().map(e=>{const w=win(e);const segs=w.today.map(([a,b])=>`<span class="seg ${a<=Date.now()&&Date.now()<b?'o':''}" style="left:${pct(a)}%;width:${Math.max(.5,pct(b)-pct(a))}%"></span>`).join('');
