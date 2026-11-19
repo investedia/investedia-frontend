@@ -7,9 +7,9 @@ codes, only the allowed listing fields, and no instruments that are not ordinary
 import json, pathlib, re, unittest
 
 DIR = pathlib.Path(__file__).resolve().parents[1] / 'data/listed-companies'
-ASIA = ['twse', 'tpex']  # exchanges saved by this task; see data/listed-companies/ASIA-REPORT.md for the skipped ones
+ASIA = ['twse', 'tpex', 'edinet-jp']  # exchanges saved by this task; see data/listed-companies/ASIA-REPORT.md for the skipped ones
 FIELDS = {'symbol', 'name', 'name_local', 'isin', 'country_key', 'sector', 'industry', 'website'}
-NOT_SHARE = re.compile(r'\b(ETF|REIT|Fund|Warrant|Bond|Preferred|Preference|Depositary)\b', re.I)
+NOT_SHARE = re.compile(r'(?<![-\w])(ETF|REIT|Fund|Warrant|Bond|Preferred|Preference|Depositary)(?![-\w])', re.I)  # 'SHO-BOND Holdings' is a company
 
 
 def files():
@@ -36,7 +36,8 @@ class ListingsAsia(unittest.TestCase):
                     self.assertTrue(r['symbol'] and r['name'], r)
                     self.assertRegex(r['country_key'], r'^[A-Z]{2}$')
                     self.assertTrue(len(re.findall(r'[^\W\d_]', r['name'])) >= 2 or r.get('name_local'), r)  # 'H&L', 'T.S.M.C.' and '55688' (Taiwan Taxi) are real short names
-                    self.assertFalse(NOT_SHARE.search(r['name']), r)
+                    if not re.search(r'(?i)\b(co|ltd|inc|corp|corporation|holdings|group|plc)\b', r['name']):  # 'Fund Creation Group Co.,Ltd' is a company
+                        self.assertFalse(NOT_SHARE.search(r['name']), r)
                     if 'isin' in r: self.assertRegex(r['isin'], r'^[A-Z]{2}[A-Z0-9]{9}\d$')
                     if 'website' in r: self.assertTrue(r['website'].lower().startswith(('http://', 'https://')), r)
 

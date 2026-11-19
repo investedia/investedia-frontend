@@ -70,3 +70,11 @@ foreign companies' receipts); TPEx's emerging board is a separate dataset and wa
   website without a terms check either and should be checked before merging.
 - To add more exchanges, the path is permission: most terms above invite written requests (PSE, PSX, CSE, NEPSE, HKEX, JPX,
   KRX and Borsa Istanbul name a contact or process), or a licensed data feed.
+
+## Japan (added 19 Nov 2026)
+
+- Saved: 3,406 Japanese listed companies in `edinet-jp.json` (code, English name, Japanese name, industry).
+- Source: the government's EDINET code list (Financial Services Agency), not the stock exchange site (JPX terms forbid commercial collection).
+- Terms: EDINET content is under the Public Data License 1.0 — commercial reuse allowed with credit and an "edited" note.
+- Credit to show: 出典：EDINET閲覧（提出）サイト, PDL1.0; edited by Investedia (filtered to listed companies).
+- Left out: about 334 listed companies with no English name in the file, foreign companies, and J-REITs/funds.
