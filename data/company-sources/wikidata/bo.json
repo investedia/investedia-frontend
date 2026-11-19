@@ -1,0 +1,774 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "BO",
+ "count": 39,
+ "companies": [
+  {
+   "qid": "Q2826717",
+   "name": "Agencia Boliviana de Información",
+   "cc": "bo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "La Paz",
+   "hq": [
+    -16.49583,
+    -68.13333
+   ],
+   "website": "http://www.abi.bo/",
+   "enwiki": "https://en.wikipedia.org/wiki/Agencia_Boliviana_de_Informaci%C3%B3n",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4090805",
+   "name": "Agencia Boliviana Espacial",
+   "cc": "bo",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "La Paz",
+   "hq": [
+    -16.49583,
+    -68.13333
+   ],
+   "website": "https://www.abe.bo/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bolivian_Space_Agency",
+   "logo_file": "Agencia Boliviana Espacial logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21044225",
+   "name": "Banco BISA",
+   "cc": "bo",
+   "types": [
+    "Q22687",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "La Paz",
+   "hq": [
+    -16.49583,
+    -68.13333
+   ],
+   "website": "https://www.bisa.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_BISA",
+   "logo_file": "Logo Banco BISA.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16826675",
+   "name": "Banco de Crédito de Bolivia",
+   "cc": "bo",
+   "types": [
+    "Q22687",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "La Paz",
+   "hq": [
+    -16.49583,
+    -68.13333
+   ],
+   "website": "http://www.bcp.com.bo",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_de_Cr%C3%A9dito_de_Bolivia",
+   "logo_file": "Logobcp.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5718076",
+   "name": "Banco de Desarrollo Productivo",
+   "cc": "bo",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Banco de Desarrollo Productivo S.A.M.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q114713968",
+   "name": "Banco Fassil",
+   "cc": "bo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santa Cruz de la Sierra",
+   "hq": [
+    -17.78917,
+    -63.1975
+   ],
+   "website": "https://www.fassil.com.bo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q26250269",
+   "name": "Banco Mercantil Santa Cruz",
+   "cc": "bo",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "La Paz",
+   "hq": [
+    -16.49583,
+    -68.13333
+   ],
+   "website": "https://www.bmsc.com.bo",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Mercantil_Santa_Cruz",
+   "logo_file": "Banco Mercantil Santa Cruz Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130101006",
+   "name": "Banco Union",
+   "cc": "bo",
+   "types": [
+    "Q22687",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "La Paz",
+   "hq": [
+    -16.49583,
+    -68.13333
+   ],
+   "website": "https://www.bancounion.com.bo",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Uni%C3%B3n",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136207223",
+   "name": "BanComunidad",
+   "cc": "bo",
+   "types": [
+    "Q22687",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Cochabamba",
+   "hq": [
+    -17.39354,
+    -66.15701
+   ],
+   "website": "https://bco.com.bo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130590123",
+   "name": "BancoSol",
+   "cc": "bo",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://www.bancosol.com.bo/",
+   "logo_file": "Logo BancoSol.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107278631",
+   "name": "Bolivia Railway Company",
+   "cc": "bo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "passenger rail transport, interurban (NACE 49.1)",
+    "rail freight transport",
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Connecticut",
+   "hq": [
+    41.6,
+    -72.7
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q891372",
+   "name": "Boliviana de Aviación",
+   "cc": "bo",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cochabamba",
+   "hq": [
+    -17.39354,
+    -66.15701
+   ],
+   "website": "https://www.boa.bo",
+   "enwiki": "https://en.wikipedia.org/wiki/Boliviana_de_Aviaci%C3%B3n",
+   "logo_file": "Logotipo de BoA.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2909517",
+   "name": "Bolpress",
+   "cc": "bo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.bolpress.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bolpress",
+   "listed": false
+  },
+  {
+   "qid": "Q24949729",
+   "name": "Center for Research and Promotion of Farmers",
+   "cc": "bo",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.cipca.org.bo/",
+   "enwiki": "https://en.wikipedia.org/wiki/Peasant_Research_and_Promotion_Center",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2946943",
+   "name": "Cervecería Boliviana Nacional",
+   "cc": "bo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bolivia",
+   "hq": [
+    -17.05687,
+    -64.99123
+   ],
+   "website": "http://www.cbn.com.bo/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6409502",
+   "name": "Cerveza Cordillera",
+   "cc": "bo",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q81962395",
+   "name": "Cine Center",
+   "cc": "bo",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://cinecenter.com.bo/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118342687",
+   "name": "Compañía Huanchaca de Bolivia",
+   "cc": "bo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Mining of other non-ferrous metal ores"
+   ],
+   "isin": [],
+   "hq_city": "Valparaíso",
+   "hq": [
+    -33.04611,
+    -71.61972
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Compa%C3%B1%C3%ADa_Minera_Huanchaca",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1134645",
+   "name": "Corporación Minera de Bolivia",
+   "cc": "bo",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Q42819507",
+   "hq": [
+    -16.49929,
+    -68.13353
+   ],
+   "website": "http://comibol.gob.bo/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mining_Corporation_of_Bolivia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854087",
+   "name": "Economic Bank",
+   "cc": "bo",
+   "types": [
+    "Q22687",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Santa Cruz de la Sierra",
+   "hq": [
+    -17.78917,
+    -63.1975
+   ],
+   "website": "https://www.baneco.com.bo",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Econ%C3%B3mico",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2843057",
+   "name": "Empresa Nacional de Ferrocarriles del Estado",
+   "cc": "bo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3054977",
+   "name": "Entel Bolivia",
+   "cc": "bo",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "La Paz",
+   "hq": [
+    -16.49583,
+    -68.13333
+   ],
+   "website": "https://www.entel.bo/",
+   "enwiki": "https://en.wikipedia.org/wiki/Entel_(Bolivia)",
+   "logo_file": "Entel-2021.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q83895251",
+   "name": "Fabrica Boliviana de Munición",
+   "cc": "bo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "ammunition"
+   ],
+   "isin": [],
+   "hq_city": "Cotapachi",
+   "hq": [
+    -17.42222,
+    -66.28722
+   ],
+   "website": "https://fbm.gob.bo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111636365",
+   "name": "Geological Service of Bolivia",
+   "cc": "bo",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.sergeomin.gob.bo/index.php/identidad/",
+   "listed": false
+  },
+  {
+   "qid": "Q81968262",
+   "name": "Hipermaxi",
+   "cc": "bo",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santa Cruz de la Sierra",
+   "hq": [
+    -17.78917,
+    -63.1975
+   ],
+   "website": "https://hipermaxi.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Hipermaxi",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21044226",
+   "name": "National Bank of Bolivia",
+   "cc": "bo",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Sucre",
+   "hq": [
+    -19.0475,
+    -65.26
+   ],
+   "website": "https://www.bnb.com.bo",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Nacional_de_Bolivia",
+   "logo_file": "Bnb.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48781842",
+   "name": "Plural Editores",
+   "cc": "bo",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "La Paz",
+   "hq": [
+    -16.49583,
+    -68.13333
+   ],
+   "website": "http://www.plural.bo/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16670821",
+   "name": "Potosi, La Paz and Peruvian Mining Association",
+   "cc": "bo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q141149552",
+   "name": "Prodem Bank",
+   "cc": "bo",
+   "types": [
+    "Q22687",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "La Paz",
+   "hq": [
+    -16.49583,
+    -68.13333
+   ],
+   "website": "https://www.prodem.bo",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Prodem",
+   "logo_file": "Banco Prodem.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110454887",
+   "name": "Quantum Motors",
+   "cc": "bo",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cochabamba",
+   "hq": [
+    -17.39354,
+    -66.15701
+   ],
+   "website": "https://tuquantum.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Quantum_Motors",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5555501",
+   "name": "San Cristóbal mine",
+   "cc": "bo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Nor Lípez Province",
+   "hq": [
+    -20.91667,
+    -67.21667
+   ],
+   "website": "http://www.minerasancristobal.com/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/San_Crist%C3%B3bal_mine_(Bolivia)",
+   "logo_file": "Logotipo Azul Minera San Cristobal S.A.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132798272",
+   "name": "Siderúrgica del Mutún",
+   "cc": "bo",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q107807053",
+   "name": "Sociedad Boliviana de Autores y Compositores de Música",
+   "cc": "bo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.sobodaycom.org/",
+   "listed": false
+  },
+  {
+   "qid": "Q10952410",
+   "name": "Tigo Bolivia",
+   "cc": "bo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Santa Cruz de la Sierra",
+   "hq": [
+    -17.78917,
+    -63.1975
+   ],
+   "website": "http://www.tigo.com.bo",
+   "logo_file": "Logo Tigo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3131224",
+   "name": "Transporte Aéreo Militar",
+   "cc": "bo",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "La Paz",
+   "hq": [
+    -16.49583,
+    -68.13333
+   ],
+   "website": "http://www.tamep.bo",
+   "enwiki": "https://en.wikipedia.org/wiki/Transporte_A%C3%A9reo_Militar",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q56015581",
+   "name": "Viva (Bolivia)",
+   "cc": "bo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "La Paz",
+   "hq": [
+    -16.49583,
+    -68.13333
+   ],
+   "website": "http://www.viva.com.bo/",
+   "enwiki": "https://en.wikipedia.org/wiki/Viva_(Bolivia)",
+   "logo_file": "VIVA2020.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q57451059",
+   "name": "Yacimientos de Litio Bolivianos Corporación",
+   "cc": "bo",
+   "types": [
+    "Q270791",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "La Paz",
+   "hq": [
+    -16.49583,
+    -68.13333
+   ],
+   "website": "https://www.ylb.gob.bo/",
+   "logo_file": "Yacimientos de Litio Bolivianos Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1807091",
+   "name": "YPFB",
+   "cc": "bo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "La Paz",
+   "hq": [
+    -16.49583,
+    -68.13333
+   ],
+   "website": "http://www.ypfb.gob.bo",
+   "enwiki": "https://en.wikipedia.org/wiki/YPFB",
+   "logo_file": "YPFB Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6169416",
+   "name": "YPFB Transporte",
+   "cc": "bo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "listed": false
+  }
+ ]
+}

@@ -2,7 +2,7 @@
  "schema": "investedia.company-hq.v1",
  "licence": "CC0 1.0 (Wikidata)",
  "checked_at": "2026-11-11",
- "matched": 1683,
+ "matched": 1938,
  "asked": 613,
  "companies": {
   "NVDA": {
@@ -17885,6 +17885,2556 @@
    "company_label": "Zimbabwe Stock Exchange",
    "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
    "source_url": "https://www.wikidata.org/entity/Q4191917",
+   "checked_at": "2026-11-19"
+  },
+  "co:agencia-boliviana-de-informacion": {
+   "hq_city": "La Paz",
+   "hq_lat": -16.49583,
+   "hq_lon": -68.13333,
+   "qid": "Q2826717",
+   "company_label": "Agencia Boliviana de Información",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2826717",
+   "checked_at": "2026-11-19"
+  },
+  "co:agencia-boliviana-espacial": {
+   "hq_city": "La Paz",
+   "hq_lat": -16.49583,
+   "hq_lon": -68.13333,
+   "qid": "Q4090805",
+   "company_label": "Agencia Boliviana Espacial",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4090805",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-bisa": {
+   "hq_city": "La Paz",
+   "hq_lat": -16.49583,
+   "hq_lon": -68.13333,
+   "qid": "Q21044225",
+   "company_label": "Banco BISA",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q21044225",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-de-credito-de-bolivia": {
+   "hq_city": "La Paz",
+   "hq_lat": -16.49583,
+   "hq_lon": -68.13333,
+   "qid": "Q16826675",
+   "company_label": "Banco de Crédito de Bolivia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q16826675",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-fassil": {
+   "hq_city": "Santa Cruz de la Sierra",
+   "hq_lat": -17.78917,
+   "hq_lon": -63.1975,
+   "qid": "Q114713968",
+   "company_label": "Banco Fassil",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q114713968",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-mercantil-santa-cruz": {
+   "hq_city": "La Paz",
+   "hq_lat": -16.49583,
+   "hq_lon": -68.13333,
+   "qid": "Q26250269",
+   "company_label": "Banco Mercantil Santa Cruz",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q26250269",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-union": {
+   "hq_city": "La Paz",
+   "hq_lat": -16.49583,
+   "hq_lon": -68.13333,
+   "qid": "Q130101006",
+   "company_label": "Banco Union",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q130101006",
+   "checked_at": "2026-11-19"
+  },
+  "co:bancomunidad": {
+   "hq_city": "Cochabamba",
+   "hq_lat": -17.39354,
+   "hq_lon": -66.15701,
+   "qid": "Q136207223",
+   "company_label": "BanComunidad",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q136207223",
+   "checked_at": "2026-11-19"
+  },
+  "co:bolivia-railway-company": {
+   "hq_city": "Connecticut",
+   "hq_lat": 41.6,
+   "hq_lon": -72.7,
+   "qid": "Q107278631",
+   "company_label": "Bolivia Railway Company",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q107278631",
+   "checked_at": "2026-11-19"
+  },
+  "co:boliviana-de-aviacion": {
+   "hq_city": "Cochabamba",
+   "hq_lat": -17.39354,
+   "hq_lon": -66.15701,
+   "qid": "Q891372",
+   "company_label": "Boliviana de Aviación",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q891372",
+   "checked_at": "2026-11-19"
+  },
+  "co:cerveceria-boliviana-nacional": {
+   "hq_city": "Bolivia",
+   "hq_lat": -17.05687,
+   "hq_lon": -64.99123,
+   "qid": "Q2946943",
+   "company_label": "Cervecería Boliviana Nacional",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2946943",
+   "checked_at": "2026-11-19"
+  },
+  "co:compania-huanchaca-de-bolivia": {
+   "hq_city": "Valparaíso",
+   "hq_lat": -33.04611,
+   "hq_lon": -71.61972,
+   "qid": "Q118342687",
+   "company_label": "Compañía Huanchaca de Bolivia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q118342687",
+   "checked_at": "2026-11-19"
+  },
+  "co:corporacion-minera-de-bolivia": {
+   "hq_city": "Q42819507",
+   "hq_lat": -16.49929,
+   "hq_lon": -68.13353,
+   "qid": "Q1134645",
+   "company_label": "Corporación Minera de Bolivia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1134645",
+   "checked_at": "2026-11-19"
+  },
+  "co:economic-bank": {
+   "hq_city": "Santa Cruz de la Sierra",
+   "hq_lat": -17.78917,
+   "hq_lon": -63.1975,
+   "qid": "Q4854087",
+   "company_label": "Economic Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4854087",
+   "checked_at": "2026-11-19"
+  },
+  "co:entel-bolivia": {
+   "hq_city": "La Paz",
+   "hq_lat": -16.49583,
+   "hq_lon": -68.13333,
+   "qid": "Q3054977",
+   "company_label": "Entel Bolivia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3054977",
+   "checked_at": "2026-11-19"
+  },
+  "co:fabrica-boliviana-de-municion": {
+   "hq_city": "Cotapachi",
+   "hq_lat": -17.42222,
+   "hq_lon": -66.28722,
+   "qid": "Q83895251",
+   "company_label": "Fabrica Boliviana de Munición",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q83895251",
+   "checked_at": "2026-11-19"
+  },
+  "co:hipermaxi": {
+   "hq_city": "Santa Cruz de la Sierra",
+   "hq_lat": -17.78917,
+   "hq_lon": -63.1975,
+   "qid": "Q81968262",
+   "company_label": "Hipermaxi",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q81968262",
+   "checked_at": "2026-11-19"
+  },
+  "co:national-bank-of-bolivia": {
+   "hq_city": "Sucre",
+   "hq_lat": -19.0475,
+   "hq_lon": -65.26,
+   "qid": "Q21044226",
+   "company_label": "National Bank of Bolivia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q21044226",
+   "checked_at": "2026-11-19"
+  },
+  "co:plural-editores": {
+   "hq_city": "La Paz",
+   "hq_lat": -16.49583,
+   "hq_lon": -68.13333,
+   "qid": "Q48781842",
+   "company_label": "Plural Editores",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q48781842",
+   "checked_at": "2026-11-19"
+  },
+  "co:prodem-bank": {
+   "hq_city": "La Paz",
+   "hq_lat": -16.49583,
+   "hq_lon": -68.13333,
+   "qid": "Q141149552",
+   "company_label": "Prodem Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q141149552",
+   "checked_at": "2026-11-19"
+  },
+  "co:quantum-motors": {
+   "hq_city": "Cochabamba",
+   "hq_lat": -17.39354,
+   "hq_lon": -66.15701,
+   "qid": "Q110454887",
+   "company_label": "Quantum Motors",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q110454887",
+   "checked_at": "2026-11-19"
+  },
+  "co:san-cristobal-mine": {
+   "hq_city": "Nor Lípez Province",
+   "hq_lat": -20.91667,
+   "hq_lon": -67.21667,
+   "qid": "Q5555501",
+   "company_label": "San Cristóbal mine",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5555501",
+   "checked_at": "2026-11-19"
+  },
+  "co:tigo-bolivia": {
+   "hq_city": "Santa Cruz de la Sierra",
+   "hq_lat": -17.78917,
+   "hq_lon": -63.1975,
+   "qid": "Q10952410",
+   "company_label": "Tigo Bolivia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q10952410",
+   "checked_at": "2026-11-19"
+  },
+  "co:transporte-aereo-militar": {
+   "hq_city": "La Paz",
+   "hq_lat": -16.49583,
+   "hq_lon": -68.13333,
+   "qid": "Q3131224",
+   "company_label": "Transporte Aéreo Militar",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3131224",
+   "checked_at": "2026-11-19"
+  },
+  "co:viva-bolivia": {
+   "hq_city": "La Paz",
+   "hq_lat": -16.49583,
+   "hq_lon": -68.13333,
+   "qid": "Q56015581",
+   "company_label": "Viva (Bolivia)",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q56015581",
+   "checked_at": "2026-11-19"
+  },
+  "co:yacimientos-de-litio-bolivianos-corporacion": {
+   "hq_city": "La Paz",
+   "hq_lat": -16.49583,
+   "hq_lon": -68.13333,
+   "qid": "Q57451059",
+   "company_label": "Yacimientos de Litio Bolivianos Corporación",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q57451059",
+   "checked_at": "2026-11-19"
+  },
+  "co:ypfb": {
+   "hq_city": "La Paz",
+   "hq_lat": -16.49583,
+   "hq_lon": -68.13333,
+   "qid": "Q1807091",
+   "company_label": "YPFB",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1807091",
+   "checked_at": "2026-11-19"
+  },
+  "co:baha-mar": {
+   "hq_city": "Nassau",
+   "hq_lat": 25.07806,
+   "hq_lon": -77.33861,
+   "qid": "Q4842213",
+   "company_label": "Baha Mar",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4842213",
+   "checked_at": "2026-11-19"
+  },
+  "co:btc": {
+   "hq_city": "Nassau",
+   "hq_lat": 25.07806,
+   "hq_lon": -77.33861,
+   "qid": "Q4837035",
+   "company_label": "BTC",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4837035",
+   "checked_at": "2026-11-19"
+  },
+  "co:cable-bahamas": {
+   "hq_city": "Nassau",
+   "hq_lat": 25.07806,
+   "hq_lon": -77.33861,
+   "qid": "Q140345207",
+   "company_label": "Cable Bahamas",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q140345207",
+   "checked_at": "2026-11-19"
+  },
+  "co:fxpro": {
+   "hq_city": "London",
+   "hq_lat": 51.50722,
+   "hq_lon": -0.1275,
+   "qid": "Q5511172",
+   "company_label": "FxPro",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5511172",
+   "checked_at": "2026-11-19"
+  },
+  "co:resorts-world-bimini": {
+   "hq_city": "Bimini",
+   "hq_lat": 25.73333,
+   "hq_lon": -79.25,
+   "qid": "Q18158574",
+   "company_label": "Resorts World Bimini",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q18158574",
+   "checked_at": "2026-11-19"
+  },
+  "co:silversea-cruises": {
+   "hq_city": "Monaco",
+   "hq_lat": 43.73111,
+   "hq_lon": 7.42,
+   "qid": "Q2286599",
+   "company_label": "Silversea Cruises",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2286599",
+   "checked_at": "2026-11-19"
+  },
+  "co:belize-bank": {
+   "hq_city": "Belize City",
+   "hq_lat": 17.49861,
+   "hq_lon": -88.18861,
+   "qid": "Q4882961",
+   "company_label": "Belize Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4882961",
+   "checked_at": "2026-11-19"
+  },
+  "co:belize-electricity-limited": {
+   "hq_city": "Belize City",
+   "hq_lat": 17.49861,
+   "hq_lon": -88.18861,
+   "qid": "Q4882970",
+   "company_label": "Belize Electricity Limited",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4882970",
+   "checked_at": "2026-11-19"
+  },
+  "co:belize-telemedia": {
+   "hq_city": "Belize City",
+   "hq_lat": 17.49861,
+   "hq_lon": -88.18861,
+   "qid": "Q4882981",
+   "company_label": "Belize Telemedia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4882981",
+   "checked_at": "2026-11-19"
+  },
+  "co:country-foods": {
+   "hq_city": "Spanish Lookout",
+   "hq_lat": 17.24567,
+   "hq_lon": -89.00273,
+   "qid": "Q39057725",
+   "company_label": "Country Foods",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q39057725",
+   "checked_at": "2026-11-19"
+  },
+  "co:development-finance-corporation-belize": {
+   "hq_city": "Belize",
+   "hq_lat": 17.06667,
+   "hq_lon": -88.7,
+   "qid": "Q28225727",
+   "company_label": "Development Finance Corporation Belize",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q28225727",
+   "checked_at": "2026-11-19"
+  },
+  "co:aeroandina": {
+   "hq_city": "Cali",
+   "hq_lat": 3.44,
+   "hq_lon": -76.51972,
+   "qid": "Q4688086",
+   "company_label": "AeroAndina",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4688086",
+   "checked_at": "2026-11-19"
+  },
+  "co:agricultural-bank-of-colombia": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q20013358",
+   "company_label": "Agricultural Bank of Colombia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q20013358",
+   "checked_at": "2026-11-19"
+  },
+  "co:akt-motos": {
+   "hq_city": "Envigado",
+   "hq_lat": 6.17194,
+   "hq_lon": -75.58028,
+   "qid": "Q2835548",
+   "company_label": "AKT Motos",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2835548",
+   "checked_at": "2026-11-19"
+  },
+  "co:alcanos": {
+   "hq_city": "Neiva",
+   "hq_lat": 2.9275,
+   "hq_lon": -75.2875,
+   "qid": "Q114803474",
+   "company_label": "Alcanos",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q114803474",
+   "checked_at": "2026-11-19"
+  },
+  "co:alpina-productos-alimenticios": {
+   "hq_city": "Sopó",
+   "hq_lat": 4.90806,
+   "hq_lon": -73.94028,
+   "qid": "Q4735450",
+   "company_label": "Alpina Productos Alimenticios",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4735450",
+   "checked_at": "2026-11-19"
+  },
+  "co:alqueria-company": {
+   "hq_city": "Cajicá",
+   "hq_lat": 4.91667,
+   "hq_lon": -74.025,
+   "qid": "Q28530628",
+   "company_label": "Alquería (company)",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q28530628",
+   "checked_at": "2026-11-19"
+  },
+  "co:auteco": {
+   "hq_city": "Medellín",
+   "hq_lat": 6.25,
+   "hq_lon": -75.58333,
+   "qid": "Q4825847",
+   "company_label": "Auteco",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4825847",
+   "checked_at": "2026-11-19"
+  },
+  "co:av-villas-bank": {
+   "hq_city": "Caldas",
+   "hq_lat": 6.08861,
+   "hq_lon": -75.63611,
+   "qid": "Q4854068",
+   "company_label": "AV Villas Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4854068",
+   "checked_at": "2026-11-19"
+  },
+  "co:avantel": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q4827687",
+   "company_label": "Avantel",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4827687",
+   "checked_at": "2026-11-19"
+  },
+  "co:avianca-group": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q790788",
+   "company_label": "Avianca Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q790788",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-aleman-antioqueno": {
+   "hq_city": "Medellín",
+   "hq_lat": 6.2502,
+   "hq_lon": -75.56758,
+   "qid": "Q118288279",
+   "company_label": "Banco Alemán Antioqueño",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q118288279",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-de-occidente": {
+   "hq_city": "Cali",
+   "hq_lat": 3.44,
+   "hq_lon": -76.51972,
+   "qid": "Q4854127",
+   "company_label": "Banco de Occidente",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4854127",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-popular": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q16489453",
+   "company_label": "Banco Popular",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q16489453",
+   "checked_at": "2026-11-19"
+  },
+  "WD:NEWYORKSTOCK:CIB": {
+   "hq_city": "Medellín",
+   "hq_lat": 6.2502,
+   "hq_lon": -75.56758,
+   "qid": "Q806206",
+   "company_label": "Bancolombia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q806206",
+   "checked_at": "2026-11-19"
+  },
+  "co:bank-of-bogota": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q4854122",
+   "company_label": "Bank of Bogota",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4854122",
+   "checked_at": "2026-11-19"
+  },
+  "co:bavaria-brewery": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q2946947",
+   "company_label": "Bavaria Brewery",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2946947",
+   "checked_at": "2026-11-19"
+  },
+  "co:brotzeit": {
+   "hq_city": "Singapore",
+   "hq_lat": 1.3,
+   "hq_lon": 103.8,
+   "qid": "Q4975756",
+   "company_label": "Brotzeit",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4975756",
+   "checked_at": "2026-11-19"
+  },
+  "co:busscar-de-colombia": {
+   "hq_city": "Pereira",
+   "hq_lat": 4.81444,
+   "hq_lon": -75.69472,
+   "qid": "Q18417523",
+   "company_label": "Busscar de Colombia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q18417523",
+   "checked_at": "2026-11-19"
+  },
+  "co:cafam": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q5739039",
+   "company_label": "Cafam",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5739039",
+   "checked_at": "2026-11-19"
+  },
+  "co:canacol-energy": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q139588829",
+   "company_label": "Canacol Energy",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q139588829",
+   "checked_at": "2026-11-19"
+  },
+  "co:carulla": {
+   "hq_city": "Envigado",
+   "hq_lat": 6.17194,
+   "hq_lon": -75.58028,
+   "qid": "Q5047480",
+   "company_label": "Carulla",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5047480",
+   "checked_at": "2026-11-19"
+  },
+  "co:casa-luker": {
+   "hq_city": "Manizales",
+   "hq_lat": 5.0675,
+   "hq_lon": -75.51,
+   "qid": "Q137203873",
+   "company_label": "Casa Luker",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q137203873",
+   "checked_at": "2026-11-19"
+  },
+  "WD:SANTIAGOSTOC:CENCOSUD": {
+   "hq_city": "Santiago",
+   "hq_lat": -33.4375,
+   "hq_lon": -70.65,
+   "qid": "Q1053372",
+   "company_label": "Cencosud",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1053372",
+   "checked_at": "2026-11-19"
+  },
+  "co:centrales-electricas-de-narino": {
+   "hq_city": "Pasto",
+   "hq_lat": 1.21,
+   "hq_lon": -77.27472,
+   "qid": "Q114802463",
+   "company_label": "Centrales Eléctricas de Nariño",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q114802463",
+   "checked_at": "2026-11-19"
+  },
+  "WD:NASDAQ:AMOV": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q5127720",
+   "company_label": "Claro Colombia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5127720",
+   "checked_at": "2026-11-19"
+  },
+  "co:colombia-movil": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q5147883",
+   "company_label": "Colombia Móvil",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5147883",
+   "checked_at": "2026-11-19"
+  },
+  "co:copetran": {
+   "hq_city": "Bucaramanga",
+   "hq_lat": 7.11861,
+   "hq_lon": -73.11611,
+   "qid": "Q55976135",
+   "company_label": "Copetran",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q55976135",
+   "checked_at": "2026-11-19"
+  },
+  "WD:COLOMBIASTOC:CORFICOLCF": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q5170480",
+   "company_label": "Corficolombiana",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5170480",
+   "checked_at": "2026-11-19"
+  },
+  "co:corponor": {
+   "hq_city": "كوكوتا",
+   "hq_lat": 7.9075,
+   "hq_lon": -72.50472,
+   "qid": "Q20725091",
+   "company_label": "CORPONOR",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q20725091",
+   "checked_at": "2026-11-19"
+  },
+  "co:corporacion-de-la-industria-aeronautica-colombiana": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q5737120",
+   "company_label": "Corporación de la Industria Aeronáutica Colombiana",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5737120",
+   "checked_at": "2026-11-19"
+  },
+  "co:cotecmar": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q44698252",
+   "company_label": "COTECMAR",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q44698252",
+   "checked_at": "2026-11-19"
+  },
+  "co:crepes-waffles": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q5184238",
+   "company_label": "Crepes & Waffles",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5184238",
+   "checked_at": "2026-11-19"
+  },
+  "co:cvc": {
+   "hq_city": "Cali",
+   "hq_lat": 3.44,
+   "hq_lon": -76.51972,
+   "qid": "Q5788888",
+   "company_label": "CVC",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5788888",
+   "checked_at": "2026-11-19"
+  },
+  "co:camara-de-comercio-de-cucuta": {
+   "hq_city": "Q5636983",
+   "hq_lat": 7.88552,
+   "hq_lon": -72.50443,
+   "qid": "Q5202335",
+   "company_label": "Cámara de Comercio de Cúcuta",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5202335",
+   "checked_at": "2026-11-19"
+  },
+  "co:davivienda": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q5242054",
+   "company_label": "Davivienda",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5242054",
+   "checked_at": "2026-11-19"
+  },
+  "co:easy": {
+   "hq_city": "Santiago",
+   "hq_lat": -33.4375,
+   "hq_lon": -70.65,
+   "qid": "Q5331091",
+   "company_label": "Easy",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5331091",
+   "checked_at": "2026-11-19"
+  },
+  "co:edatel": {
+   "hq_city": "Medellín",
+   "hq_lat": 6.2502,
+   "hq_lon": -75.56758,
+   "qid": "Q5816111",
+   "company_label": "Edatel",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5816111",
+   "checked_at": "2026-11-19"
+  },
+  "co:el-tiempo-casa-editorial": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q1046350",
+   "company_label": "El Tiempo Casa Editorial",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1046350",
+   "checked_at": "2026-11-19"
+  },
+  "co:emcali": {
+   "hq_city": "Cali",
+   "hq_lat": 3.44,
+   "hq_lon": -76.51972,
+   "qid": "Q3053375",
+   "company_label": "Emcali",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3053375",
+   "checked_at": "2026-11-19"
+  },
+  "co:empresa-de-telecomunicaciones-de-bogota": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q5324448",
+   "company_label": "Empresa de Telecomunicaciones de Bogotá",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5324448",
+   "checked_at": "2026-11-19"
+  },
+  "co:empresas-publicas-de-medellin": {
+   "hq_city": "Medellín",
+   "hq_lat": 6.2502,
+   "hq_lon": -75.56758,
+   "qid": "Q3053381",
+   "company_label": "Empresas Públicas de Medellín",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3053381",
+   "checked_at": "2026-11-19"
+  },
+  "co:escobar-inc": {
+   "hq_city": "Guaynabo",
+   "hq_lat": 18.36667,
+   "hq_lon": -66.1,
+   "qid": "Q66777896",
+   "company_label": "Escobar Inc",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q66777896",
+   "checked_at": "2026-11-19"
+  },
+  "co:expreso-bolivariano": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q5853540",
+   "company_label": "Expreso Bolivariano",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5853540",
+   "checked_at": "2026-11-19"
+  },
+  "co:fm-discos-y-cintas": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q17478029",
+   "company_label": "FM Discos y Cintas",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q17478029",
+   "checked_at": "2026-11-19"
+  },
+  "co:fondo-nacional-del-ahorro": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q5863579",
+   "company_label": "Fondo Nacional del Ahorro",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5863579",
+   "checked_at": "2026-11-19"
+  },
+  "co:fss": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q5427153",
+   "company_label": "FSS",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5427153",
+   "checked_at": "2026-11-19"
+  },
+  "co:ginebra-san-miguel": {
+   "hq_city": "Valle del Cauca Department",
+   "hq_lat": 3.93333,
+   "hq_lon": -76.51667,
+   "qid": "Q3304805",
+   "company_label": "Ginebra San Miguel",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3304805",
+   "checked_at": "2026-11-19"
+  },
+  "co:gmv-innovating-solutions": {
+   "hq_city": "Tres Cantos",
+   "hq_lat": 40.60658,
+   "hq_lon": -3.70654,
+   "qid": "Q1550912",
+   "company_label": "GMV Innovating Solutions",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1550912",
+   "checked_at": "2026-11-19"
+  },
+  "WD:COLOMBIASTOC:NUTRESA": {
+   "hq_city": "Medellín",
+   "hq_lat": 6.2502,
+   "hq_lon": -75.56758,
+   "qid": "Q5612238",
+   "company_label": "Grupo Nutresa",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5612238",
+   "checked_at": "2026-11-19"
+  },
+  "WD:COLOMBIASTOC:EXITO": {
+   "hq_city": "Envigado",
+   "hq_lat": 6.17194,
+   "hq_lon": -75.58028,
+   "qid": "Q861947",
+   "company_label": "Grupo Éxito",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q861947",
+   "checked_at": "2026-11-19"
+  },
+  "co:haceb": {
+   "hq_city": "Copacabana",
+   "hq_lat": 6.34607,
+   "hq_lon": -75.50815,
+   "qid": "Q5628888",
+   "company_label": "Haceb",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5628888",
+   "checked_at": "2026-11-19"
+  },
+  "co:hacienda-napoles": {
+   "hq_city": "Antioquia",
+   "hq_lat": 6.68333,
+   "hq_lon": -75.56667,
+   "qid": "Q2788637",
+   "company_label": "Hacienda Nápoles",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2788637",
+   "checked_at": "2026-11-19"
+  },
+  "co:helm-bank": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q18636452",
+   "company_label": "Helm Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q18636452",
+   "checked_at": "2026-11-19"
+  },
+  "co:hv-multiplay": {
+   "hq_city": "Miami",
+   "hq_lat": 25.77417,
+   "hq_lon": -80.19361,
+   "qid": "Q20022252",
+   "company_label": "HV Multiplay",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q20022252",
+   "checked_at": "2026-11-19"
+  },
+  "co:indumil": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q3150575",
+   "company_label": "Indumil",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3150575",
+   "checked_at": "2026-11-19"
+  },
+  "co:inter-rapidisimo": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q131291014",
+   "company_label": "Inter Rapidisimo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q131291014",
+   "checked_at": "2026-11-19"
+  },
+  "co:isagen-energia-productiva": {
+   "hq_city": "Medellín",
+   "hq_lat": 6.2502,
+   "hq_lon": -75.56758,
+   "qid": "Q3146879",
+   "company_label": "ISAGEN Energía Productiva",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3146879",
+   "checked_at": "2026-11-19"
+  },
+  "co:isib-blindages": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q16301817",
+   "company_label": "ISIB blindages",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q16301817",
+   "checked_at": "2026-11-19"
+  },
+  "co:juan-valdez-cafe": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q6301102",
+   "company_label": "Juan Valdez Café",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q6301102",
+   "checked_at": "2026-11-19"
+  },
+  "co:merqueo": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q62931900",
+   "company_label": "Merqueo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q62931900",
+   "checked_at": "2026-11-19"
+  },
+  "co:metrolinea": {
+   "hq_city": "Bucaramanga",
+   "hq_lat": 7.11861,
+   "hq_lon": -73.11611,
+   "qid": "Q6824845",
+   "company_label": "Metrolinea",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q6824845",
+   "checked_at": "2026-11-19"
+  },
+  "co:monomeros-colombo-venezolanos": {
+   "hq_city": "Barranquilla",
+   "hq_lat": 10.98333,
+   "hq_lon": -74.80194,
+   "qid": "Q108557709",
+   "company_label": "Monómeros Colombo-Venezolanos",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q108557709",
+   "checked_at": "2026-11-19"
+  },
+  "co:movistar-colombia": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q6025449",
+   "company_label": "Movistar Colombia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q6025449",
+   "checked_at": "2026-11-19"
+  },
+  "co:national-report": {
+   "hq_city": "Colombia",
+   "hq_lat": 4.0,
+   "hq_lon": -73.25,
+   "qid": "Q3302354",
+   "company_label": "National-Report",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3302354",
+   "checked_at": "2026-11-19"
+  },
+  "co:odinsa": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q7077828",
+   "company_label": "Odinsa",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7077828",
+   "checked_at": "2026-11-19"
+  },
+  "co:orbis-group": {
+   "hq_city": "Medellín",
+   "hq_lat": 6.2502,
+   "hq_lon": -75.56758,
+   "qid": "Q17633379",
+   "company_label": "Orbis Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q17633379",
+   "checked_at": "2026-11-19"
+  },
+  "co:orbitel": {
+   "hq_city": "Medellín",
+   "hq_lat": 6.2502,
+   "hq_lon": -75.56758,
+   "qid": "Q15629142",
+   "company_label": "Orbitel",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q15629142",
+   "checked_at": "2026-11-19"
+  },
+  "co:organizacion-corona": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q7101928",
+   "company_label": "Organizacion Corona",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7101928",
+   "checked_at": "2026-11-19"
+  },
+  "co:ospina-coffee-company": {
+   "hq_city": "Charlotte",
+   "hq_lat": 35.22694,
+   "hq_lon": -80.84333,
+   "qid": "Q7107377",
+   "company_label": "Ospina Coffee Company",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7107377",
+   "checked_at": "2026-11-19"
+  },
+  "co:paz-del-rio-steel-mills": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q16487362",
+   "company_label": "Paz del Río Steel Mills",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q16487362",
+   "checked_at": "2026-11-19"
+  },
+  "co:pei": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q138303666",
+   "company_label": "Pei",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q138303666",
+   "checked_at": "2026-11-19"
+  },
+  "co:postobon": {
+   "hq_city": "Medellín",
+   "hq_lat": 6.2502,
+   "hq_lon": -75.56758,
+   "qid": "Q7234413",
+   "company_label": "Postobón",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7234413",
+   "checked_at": "2026-11-19"
+  },
+  "co:productos-ramo": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q7247860",
+   "company_label": "Productos Ramo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7247860",
+   "checked_at": "2026-11-19"
+  },
+  "co:promigas": {
+   "hq_city": "Barranquilla",
+   "hq_lat": 10.98333,
+   "hq_lon": -74.80194,
+   "qid": "Q131520029",
+   "company_label": "Promigas",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q131520029",
+   "checked_at": "2026-11-19"
+  },
+  "co:promusica-colombia": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q9555875",
+   "company_label": "Promúsica Colombia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q9555875",
+   "checked_at": "2026-11-19"
+  },
+  "co:rappi": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q36879490",
+   "company_label": "Rappi",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q36879490",
+   "checked_at": "2026-11-19"
+  },
+  "co:royal-films": {
+   "hq_city": "Barranquilla",
+   "hq_lat": 10.98333,
+   "hq_lon": -74.80194,
+   "qid": "Q48784712",
+   "company_label": "Royal Films",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q48784712",
+   "checked_at": "2026-11-19"
+  },
+  "co:saeta": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q7398320",
+   "company_label": "Saeta",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7398320",
+   "checked_at": "2026-11-19"
+  },
+  "co:sofasa": {
+   "hq_city": "Envigado",
+   "hq_lat": 6.17194,
+   "hq_lon": -75.58028,
+   "qid": "Q1164594",
+   "company_label": "Sofasa",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1164594",
+   "checked_at": "2026-11-19"
+  },
+  "co:sandwich-qbano": {
+   "hq_city": "Cali",
+   "hq_lat": 3.44,
+   "hq_lon": -76.51972,
+   "qid": "Q20022286",
+   "company_label": "Sándwich Qbano",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q20022286",
+   "checked_at": "2026-11-19"
+  },
+  "co:terpel": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q7703003",
+   "company_label": "Terpel",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7703003",
+   "checked_at": "2026-11-19"
+  },
+  "co:tiendas-ara": {
+   "hq_city": "Bogotá",
+   "hq_lat": 4.60971,
+   "hq_lon": -74.08175,
+   "qid": "Q63148677",
+   "company_label": "Tiendas Ara",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q63148677",
+   "checked_at": "2026-11-19"
+  },
+  "co:triple-a-s-a-e-s-p": {
+   "hq_city": "Barranquilla",
+   "hq_lat": 10.98333,
+   "hq_lon": -74.80194,
+   "qid": "Q25414842",
+   "company_label": "Triple A S.A. E.S.P.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q25414842",
+   "checked_at": "2026-11-19"
+  },
+  "co:tia-sa": {
+   "hq_city": "Guayaquil",
+   "hq_lat": -2.19,
+   "hq_lon": -79.8875,
+   "qid": "Q3546997",
+   "company_label": "Tía SA",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3546997",
+   "checked_at": "2026-11-19"
+  },
+  "co:university-of-valle-publishing-program": {
+   "hq_city": "Cali",
+   "hq_lat": 3.44,
+   "hq_lon": -76.51972,
+   "qid": "Q7896526",
+   "company_label": "University of Valle Publishing Program",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7896526",
+   "checked_at": "2026-11-19"
+  },
+  "co:velez": {
+   "hq_city": "Medellín",
+   "hq_lat": 6.2502,
+   "hq_lon": -75.56758,
+   "qid": "Q96246029",
+   "company_label": "Vélez",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q96246029",
+   "checked_at": "2026-11-19"
+  },
+  "co:bac-credomatic": {
+   "hq_city": "San José",
+   "hq_lat": 9.93274,
+   "hq_lon": -84.07961,
+   "qid": "Q5715556",
+   "company_label": "BAC Credomatic",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5715556",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-davivienda-costa-rica": {
+   "hq_city": "San José",
+   "hq_lat": 9.93274,
+   "hq_lon": -84.07961,
+   "qid": "Q139850477",
+   "company_label": "Banco Davivienda Costa Rica",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q139850477",
+   "checked_at": "2026-11-19"
+  },
+  "co:bank-of-costa-rica": {
+   "hq_city": "San José",
+   "hq_lat": 9.93274,
+   "hq_lon": -84.07961,
+   "qid": "Q6951632",
+   "company_label": "Bank of Costa Rica",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q6951632",
+   "checked_at": "2026-11-19"
+  },
+  "co:florida-ice-farm-co": {
+   "hq_city": "Heredia",
+   "hq_lat": 9.99839,
+   "hq_lon": -84.11712,
+   "qid": "Q5461456",
+   "company_label": "Florida Ice & Farm Co.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5461456",
+   "checked_at": "2026-11-19"
+  },
+  "co:liberty-costa-rica": {
+   "hq_city": "Escazú Canton",
+   "hq_lat": 9.91667,
+   "hq_lon": -84.13333,
+   "qid": "Q6140527",
+   "company_label": "Liberty Costa Rica",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q6140527",
+   "checked_at": "2026-11-19"
+  },
+  "WD:NASDAQ:MNTV": {
+   "hq_city": "San Mateo",
+   "hq_lat": 37.55417,
+   "hq_lon": -122.31306,
+   "qid": "Q162852",
+   "company_label": "SurveyMonkey",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q162852",
+   "checked_at": "2026-11-19"
+  },
+  "co:teletica": {
+   "hq_city": "San José",
+   "hq_lat": 9.93274,
+   "hq_lon": -84.07961,
+   "qid": "Q616022",
+   "company_label": "Teletica",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q616022",
+   "checked_at": "2026-11-19"
+  },
+  "co:bucanero-brewery-s-a": {
+   "hq_city": "Holguin",
+   "hq_lat": 20.88722,
+   "hq_lon": -76.26306,
+   "qid": "Q1056400",
+   "company_label": "Bucanero Brewery S.A.",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1056400",
+   "checked_at": "2026-11-19"
+  },
+  "co:center-of-molecular-immunology": {
+   "hq_city": "Havana",
+   "hq_lat": 23.13667,
+   "hq_lon": -82.35889,
+   "qid": "Q5059992",
+   "company_label": "Center of Molecular Immunology",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5059992",
+   "checked_at": "2026-11-19"
+  },
+  "co:club-separatista-catala-numero-1": {
+   "hq_city": "Havana",
+   "hq_lat": 23.13667,
+   "hq_lon": -82.35889,
+   "qid": "Q16188888",
+   "company_label": "Club Separatista Català Número 1",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q16188888",
+   "checked_at": "2026-11-19"
+  },
+  "co:coppelia": {
+   "hq_city": "Havana",
+   "hq_lat": 23.13667,
+   "hq_lon": -82.35889,
+   "qid": "Q5168667",
+   "company_label": "Coppelia",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5168667",
+   "checked_at": "2026-11-19"
+  },
+  "co:cuban-national-center-for-sex-education": {
+   "hq_city": "Plaza de la Revolución",
+   "hq_lat": 23.12444,
+   "hq_lon": -82.38611,
+   "qid": "Q1054317",
+   "company_label": "Cuban National Center for Sex Education",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1054317",
+   "checked_at": "2026-11-19"
+  },
+  "co:cupet": {
+   "hq_city": "Havana",
+   "hq_lat": 23.13667,
+   "hq_lon": -82.35889,
+   "qid": "Q3007579",
+   "company_label": "CUPET",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3007579",
+   "checked_at": "2026-11-19"
+  },
+  "co:etecsa": {
+   "hq_city": "Havana",
+   "hq_lat": 23.13667,
+   "hq_lon": -82.35889,
+   "qid": "Q490323",
+   "company_label": "ETECSA",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q490323",
+   "checked_at": "2026-11-19"
+  },
+  "co:federacion-estudiantil-universitaria": {
+   "hq_city": "Havana",
+   "hq_lat": 23.13667,
+   "hq_lon": -82.35889,
+   "qid": "Q1399983",
+   "company_label": "Federación Estudiantil Universitaria",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1399983",
+   "checked_at": "2026-11-19"
+  },
+  "co:giron-vehicles": {
+   "hq_city": "Havana",
+   "hq_lat": 23.13667,
+   "hq_lon": -82.35889,
+   "qid": "Q18424831",
+   "company_label": "Girón vehicles",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q18424831",
+   "checked_at": "2026-11-19"
+  },
+  "co:hatuey": {
+   "hq_city": "Florida",
+   "hq_lat": 28.13333,
+   "hq_lon": -81.63167,
+   "qid": "Q96418536",
+   "company_label": "Hatuey",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q96418536",
+   "checked_at": "2026-11-19"
+  },
+  "co:union-de-industrias-militares": {
+   "hq_city": "Cuba",
+   "hq_lat": 22.0,
+   "hq_lon": -79.5,
+   "qid": "Q21071134",
+   "company_label": "Union de Industrias Militares",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q21071134",
+   "checked_at": "2026-11-19"
+  },
+  "co:alegro-pcs": {
+   "hq_city": "Quito",
+   "hq_lat": -0.22,
+   "hq_lon": -78.5125,
+   "qid": "Q4714406",
+   "company_label": "Alegro PCS",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4714406",
+   "checked_at": "2026-11-19"
+  },
+  "co:aves-y-conservacion": {
+   "hq_city": "Quito",
+   "hq_lat": -0.22,
+   "hq_lon": -78.5125,
+   "qid": "Q790666",
+   "company_label": "Aves y Conservación",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q790666",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-del-pacifico": {
+   "hq_city": "Guayaquil",
+   "hq_lat": -2.19,
+   "hq_lon": -79.8875,
+   "qid": "Q806201",
+   "company_label": "Banco del Pacífico",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q806201",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-guayaquil": {
+   "hq_city": "Guayaquil",
+   "hq_lat": -2.19,
+   "hq_lon": -79.8875,
+   "qid": "Q5718094",
+   "company_label": "Banco Guayaquil",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5718094",
+   "checked_at": "2026-11-19"
+  },
+  "co:cerveceria-nacional": {
+   "hq_city": "Guayaquil",
+   "hq_lat": -2.19,
+   "hq_lon": -79.8875,
+   "qid": "Q5763582",
+   "company_label": "Cervecería Nacional",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5763582",
+   "checked_at": "2026-11-19"
+  },
+  "co:cnt-ep": {
+   "hq_city": "Quito",
+   "hq_lat": -0.22,
+   "hq_lon": -78.5125,
+   "qid": "Q5013202",
+   "company_label": "CNT EP",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5013202",
+   "checked_at": "2026-11-19"
+  },
+  "co:corporacion-electrica-del-ecuador": {
+   "hq_city": "Cuenca",
+   "hq_lat": -2.89741,
+   "hq_lon": -79.00448,
+   "qid": "Q5486529",
+   "company_label": "Corporación Eléctrica del Ecuador",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5486529",
+   "checked_at": "2026-11-19"
+  },
+  "co:corporacion-financiera-nacional": {
+   "hq_city": "Guayaquil",
+   "hq_lat": -2.19,
+   "hq_lon": -79.8875,
+   "qid": "Q5788915",
+   "company_label": "Corporación Financiera Nacional",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5788915",
+   "checked_at": "2026-11-19"
+  },
+  "co:direccion-de-la-industria-aeronautica-ecuador": {
+   "hq_city": "Quito",
+   "hq_lat": -0.22,
+   "hq_lon": -78.5125,
+   "qid": "Q5280213",
+   "company_label": "Dirección de la Industria Aeronáutica Ecuador",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5280213",
+   "checked_at": "2026-11-19"
+  },
+  "co:ecua-andino-hats": {
+   "hq_city": "Guayaquil",
+   "hq_lat": -2.19,
+   "hq_lon": -79.8875,
+   "qid": "Q16558944",
+   "company_label": "Ecua-Andino Hats",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q16558944",
+   "checked_at": "2026-11-19"
+  },
+  "co:ecuadors-national-service-of-intellectual-rights": {
+   "hq_city": "Quito",
+   "hq_lat": -0.22,
+   "hq_lon": -78.5125,
+   "qid": "Q5334378",
+   "company_label": "Ecuadors National Service of Intellectual Rights",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5334378",
+   "checked_at": "2026-11-19"
+  },
+  "co:ep-petroecuador": {
+   "hq_city": "Quito",
+   "hq_lat": -0.22,
+   "hq_lon": -78.5125,
+   "qid": "Q1812822",
+   "company_label": "EP Petroecuador",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1812822",
+   "checked_at": "2026-11-19"
+  },
+  "co:etapa": {
+   "hq_city": "Cuenca",
+   "hq_lat": -2.89741,
+   "hq_lon": -79.00448,
+   "qid": "Q5816282",
+   "company_label": "ETAPA",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5816282",
+   "checked_at": "2026-11-19"
+  },
+  "co:grupo-compas": {
+   "hq_city": "Barcelona",
+   "hq_lat": 41.3825,
+   "hq_lon": 2.17694,
+   "qid": "Q3813620",
+   "company_label": "Grupo Compás",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3813620",
+   "checked_at": "2026-11-19"
+  },
+  "co:international-bank-ec": {
+   "hq_city": "Quito",
+   "hq_lat": -0.22,
+   "hq_lon": -78.5125,
+   "qid": "Q806187",
+   "company_label": "International Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q806187",
+   "checked_at": "2026-11-19"
+  },
+  "co:libresa": {
+   "hq_city": "Quito",
+   "hq_lat": -0.22,
+   "hq_lon": -78.5125,
+   "qid": "Q53733959",
+   "company_label": "Libresa",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q53733959",
+   "checked_at": "2026-11-19"
+  },
+  "co:marathon-sports": {
+   "hq_city": "Quito",
+   "hq_lat": -0.22,
+   "hq_lon": -78.5125,
+   "qid": "Q3027516",
+   "company_label": "Marathon Sports",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3027516",
+   "checked_at": "2026-11-19"
+  },
+  "co:movistar-ecuador": {
+   "hq_city": "Quito",
+   "hq_lat": -0.22,
+   "hq_lon": -78.5125,
+   "qid": "Q5846785",
+   "company_label": "Movistar Ecuador",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5846785",
+   "checked_at": "2026-11-19"
+  },
+  "co:mr-books": {
+   "hq_city": "Quito",
+   "hq_lat": -0.22,
+   "hq_lon": -78.5125,
+   "qid": "Q124396156",
+   "company_label": "Mr. Books",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q124396156",
+   "checked_at": "2026-11-19"
+  },
+  "co:pichincha-bank": {
+   "hq_city": "Quito",
+   "hq_lat": -0.22,
+   "hq_lon": -78.5125,
+   "qid": "Q4854135",
+   "company_label": "Pichincha Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4854135",
+   "checked_at": "2026-11-19"
+  },
+  "co:produbanco": {
+   "hq_city": "Ecuador",
+   "hq_lat": -1.0,
+   "hq_lon": -78.0,
+   "qid": "Q7247678",
+   "company_label": "Produbanco",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7247678",
+   "checked_at": "2026-11-19"
+  },
+  "co:quiport": {
+   "hq_city": "Quito",
+   "hq_lat": -0.22,
+   "hq_lon": -78.5125,
+   "qid": "Q1413753",
+   "company_label": "Quiport",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1413753",
+   "checked_at": "2026-11-19"
+  },
+  "WD:SOPAULOSTOCK:SMFT3": {
+   "hq_city": "São Paulo",
+   "hq_lat": -23.55039,
+   "hq_lon": -46.63395,
+   "qid": "Q30930959",
+   "company_label": "Smart Fit",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q30930959",
+   "checked_at": "2026-11-19"
+  },
+  "co:the-isaias-group": {
+   "hq_city": "Guayaquil",
+   "hq_lat": -2.19,
+   "hq_lon": -79.8875,
+   "qid": "Q27908027",
+   "company_label": "The Isaias Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q27908027",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-industrial": {
+   "hq_city": "Guatemala City",
+   "hq_lat": 14.64167,
+   "hq_lon": -90.51333,
+   "qid": "Q19288416",
+   "company_label": "Banco Industrial",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q19288416",
+   "checked_at": "2026-11-19"
+  },
+  "co:banrural": {
+   "hq_city": "Guatemala City",
+   "hq_lat": 14.64167,
+   "hq_lon": -90.51333,
+   "qid": "Q5719130",
+   "company_label": "Banrural",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5719130",
+   "checked_at": "2026-11-19"
+  },
+  "co:bembos": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q466971",
+   "company_label": "Bembos",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q466971",
+   "checked_at": "2026-11-19"
+  },
+  "co:claro-guatemala": {
+   "hq_city": "Guatemala City",
+   "hq_lat": 14.64167,
+   "hq_lon": -90.51333,
+   "qid": "Q5127724",
+   "company_label": "Claro Guatemala",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5127724",
+   "checked_at": "2026-11-19"
+  },
+  "co:jaguar-energy": {
+   "hq_city": "Masagua",
+   "hq_lat": 14.20837,
+   "hq_lon": -90.84626,
+   "qid": "Q20668322",
+   "company_label": "Jaguar Energy",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q20668322",
+   "checked_at": "2026-11-19"
+  },
+  "co:malher": {
+   "hq_city": "Guatemala City",
+   "hq_lat": 14.64167,
+   "hq_lon": -90.51333,
+   "qid": "Q6743243",
+   "company_label": "Malher",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q6743243",
+   "checked_at": "2026-11-19"
+  },
+  "co:radio-y-television-de-guatemala": {
+   "hq_city": "Guatemala City",
+   "hq_lat": 14.64167,
+   "hq_lon": -90.51333,
+   "qid": "Q16624038",
+   "company_label": "Radio y Televisión de Guatemala",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q16624038",
+   "checked_at": "2026-11-19"
+  },
+  "co:tigo-guatemala": {
+   "hq_city": "Luxembourg",
+   "hq_lat": 49.77,
+   "hq_lon": 6.13,
+   "qid": "Q7801679",
+   "company_label": "Tigo Guatemala",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7801679",
+   "checked_at": "2026-11-19"
+  },
+  "co:couples-resorts": {
+   "hq_city": "Montego Bay",
+   "hq_lat": 18.46667,
+   "hq_lon": -77.91667,
+   "qid": "Q22092281",
+   "company_label": "Couples Resorts",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q22092281",
+   "checked_at": "2026-11-19"
+  },
+  "co:desnoes-geddes": {
+   "hq_city": "Kingston",
+   "hq_lat": 17.97139,
+   "hq_lon": -76.79306,
+   "qid": "Q3024535",
+   "company_label": "Desnoes & Geddes",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3024535",
+   "checked_at": "2026-11-19"
+  },
+  "co:gleaner-company": {
+   "hq_city": "Kingston",
+   "hq_lat": 17.97139,
+   "hq_lon": -76.79306,
+   "qid": "Q5567383",
+   "company_label": "Gleaner Company",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5567383",
+   "checked_at": "2026-11-19"
+  },
+  "co:jps": {
+   "hq_city": "Montreal",
+   "hq_lat": 45.50334,
+   "hq_lon": -73.58684,
+   "qid": "Q117247207",
+   "company_label": "JPS",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q117247207",
+   "checked_at": "2026-11-19"
+  },
+  "co:mycomeditations": {
+   "hq_city": "Treasure Beach",
+   "hq_lat": 17.876,
+   "hq_lon": -77.7572,
+   "qid": "Q133500393",
+   "company_label": "MycoMeditations",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q133500393",
+   "checked_at": "2026-11-19"
+  },
+  "co:sandals-resorts": {
+   "hq_city": "Montego Bay",
+   "hq_lat": 18.46667,
+   "hq_lon": -77.91667,
+   "qid": "Q7415968",
+   "company_label": "Sandals Resorts",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7415968",
+   "checked_at": "2026-11-19"
+  },
+  "co:empresa-portuaria-nacional": {
+   "hq_city": "Managua",
+   "hq_lat": 12.15468,
+   "hq_lon": -86.27372,
+   "qid": "Q135457540",
+   "company_label": "Empresa Portuaria Nacional",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q135457540",
+   "checked_at": "2026-11-19"
+  },
+  "co:joya-de-nicaragua": {
+   "hq_city": "Estelí",
+   "hq_lat": 13.09293,
+   "hq_lon": -86.35616,
+   "qid": "Q6297353",
+   "company_label": "Joya de Nicaragua",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q6297353",
+   "checked_at": "2026-11-19"
+  },
+  "co:production-bank": {
+   "hq_city": "Managua",
+   "hq_lat": 12.15468,
+   "hq_lon": -86.27372,
+   "qid": "Q16837556",
+   "company_label": "Production Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q16837556",
+   "checked_at": "2026-11-19"
+  },
+  "co:aleman-cordero-galindo-lee": {
+   "hq_city": "Panama City",
+   "hq_lat": 8.97111,
+   "hq_lon": -79.53472,
+   "qid": "Q25104485",
+   "company_label": "Alemán, Cordero, Galindo & Lee",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q25104485",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-davivienda-panama": {
+   "hq_city": "Panama City",
+   "hq_lat": 8.97111,
+   "hq_lon": -79.53472,
+   "qid": "Q139884169",
+   "company_label": "Banco Davivienda Panama",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q139884169",
+   "checked_at": "2026-11-19"
+  },
+  "co:banesco-panama": {
+   "hq_city": "Panama City",
+   "hq_lat": 8.97111,
+   "hq_lon": -79.53472,
+   "qid": "Q5489161",
+   "company_label": "Banesco Panama",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5489161",
+   "checked_at": "2026-11-19"
+  },
+  "WD:NEWYORKSTOCK:CPA": {
+   "hq_city": "Panama City",
+   "hq_lat": 8.97111,
+   "hq_lon": -79.53472,
+   "qid": "Q849404",
+   "company_label": "Copa Airlines",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q849404",
+   "checked_at": "2026-11-19"
+  },
+  "co:general-bank": {
+   "hq_city": "Panama City",
+   "hq_lat": 8.97111,
+   "hq_lon": -79.53472,
+   "qid": "Q27618271",
+   "company_label": "General Bank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q27618271",
+   "checked_at": "2026-11-19"
+  },
+  "co:aenza": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q5596984",
+   "company_label": "Aenza",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5596984",
+   "checked_at": "2026-11-19"
+  },
+  "co:agroindustrial-casa-grande": {
+   "hq_city": "La Libertad Department",
+   "hq_lat": -8.0,
+   "hq_lon": -78.5,
+   "qid": "Q4694245",
+   "company_label": "Agroindustrial Casa Grande",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4694245",
+   "checked_at": "2026-11-19"
+  },
+  "co:agroindustrial-pomalca": {
+   "hq_city": "Chiclayo",
+   "hq_lat": -6.77167,
+   "hq_lon": -79.83833,
+   "qid": "Q4694247",
+   "company_label": "Agroindustrial Pomalca",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4694247",
+   "checked_at": "2026-11-19"
+  },
+  "co:aje-group": {
+   "hq_city": "Ayacucho",
+   "hq_lat": -13.16306,
+   "hq_lon": -74.22444,
+   "qid": "Q4699710",
+   "company_label": "AJE Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4699710",
+   "checked_at": "2026-11-19"
+  },
+  "co:alicorp": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q4726358",
+   "company_label": "Alicorp",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4726358",
+   "checked_at": "2026-11-19"
+  },
+  "co:apuesta-total": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q141131000",
+   "company_label": "Apuesta Total",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q141131000",
+   "checked_at": "2026-11-19"
+  },
+  "co:arca-continental-lindley": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q5788924",
+   "company_label": "Arca Continental Lindley",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5788924",
+   "checked_at": "2026-11-19"
+  },
+  "co:auna": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q135908010",
+   "company_label": "Auna",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q135908010",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-central-hipotecario-del-peru": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q117240957",
+   "company_label": "Banco Central Hipotecario del Perú",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q117240957",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-de-la-nacion": {
+   "hq_city": "Torre Banco de la Nación",
+   "hq_lat": -12.0872,
+   "hq_lon": -77.0005,
+   "qid": "Q4856206",
+   "company_label": "Banco de la Nación",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4856206",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-del-peru-y-londres": {
+   "hq_city": "Edificio Luis Alberto Sánchez",
+   "hq_lat": -12.04795,
+   "hq_lon": -77.02868,
+   "qid": "Q113497510",
+   "company_label": "Banco del Perú y Londres",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q113497510",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-minero-del-peru": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q121932180",
+   "company_label": "Banco Minero del Perú",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q121932180",
+   "checked_at": "2026-11-19"
+  },
+  "co:bbva-peru": {
+   "hq_city": "Edificio Banco Continental",
+   "hq_lat": -12.0937,
+   "hq_lon": -77.02108,
+   "qid": "Q4835089",
+   "company_label": "BBVA Peru",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4835089",
+   "checked_at": "2026-11-19"
+  },
+  "WD:NEWYORKSTOCK:BVN": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q1001788",
+   "company_label": "Buenaventura",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1001788",
+   "checked_at": "2026-11-19"
+  },
+  "co:camposol": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q16490080",
+   "company_label": "Camposol",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q16490080",
+   "checked_at": "2026-11-19"
+  },
+  "co:casa-andina": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q5754066",
+   "company_label": "Casa Andina",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5754066",
+   "checked_at": "2026-11-19"
+  },
+  "WD:LIMASTOCKEXC:CPACASC1": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q5058678",
+   "company_label": "Cementos Pacasmayo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5058678",
+   "checked_at": "2026-11-19"
+  },
+  "WD:LIMASTOCKEXC:CVERDEC1": {
+   "hq_city": "Arequipa",
+   "hq_lat": -16.39889,
+   "hq_lon": -71.53694,
+   "qid": "Q5064993",
+   "company_label": "Cerro Verde",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5064993",
+   "checked_at": "2026-11-19"
+  },
+  "co:claro-peru": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q5551114",
+   "company_label": "Claro Perú",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5551114",
+   "checked_at": "2026-11-19"
+  },
+  "co:compania-peruana-de-vapores": {
+   "hq_city": "Callao",
+   "hq_lat": -12.05222,
+   "hq_lon": -77.13917,
+   "qid": "Q17625880",
+   "company_label": "Compañía Peruana de Vapores",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q17625880",
+   "checked_at": "2026-11-19"
+  },
+  "co:consorcio-rbc-matrix": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q23777888",
+   "company_label": "Consorcio RBC Matrix",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q23777888",
+   "checked_at": "2026-11-19"
+  },
+  "co:corporacion-aceros-arequipa": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q5788880",
+   "company_label": "Corporación Aceros Arequipa",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5788880",
+   "checked_at": "2026-11-19"
+  },
+  "co:corporacion-financiera-de-desarrollo": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q23777632",
+   "company_label": "Corporación Financiera de Desarrollo",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q23777632",
+   "checked_at": "2026-11-19"
+  },
+  "co:cpr-radios": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q21540311",
+   "company_label": "CPR Radios",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q21540311",
+   "checked_at": "2026-11-19"
+  },
+  "co:credit-bank-of-peru": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q4854124",
+   "company_label": "Credit Bank of Peru",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4854124",
+   "checked_at": "2026-11-19"
+  },
+  "co:d-onofrio": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q5203166",
+   "company_label": "D'Onofrio",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5203166",
+   "checked_at": "2026-11-19"
+  },
+  "co:don-jorge": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q5292852",
+   "company_label": "Don Jorge",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5292852",
+   "checked_at": "2026-11-19"
+  },
+  "co:edegel": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q5336733",
+   "company_label": "Edegel",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5336733",
+   "checked_at": "2026-11-19"
+  },
+  "co:el-comercio-group": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q23777640",
+   "company_label": "El Comercio Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q23777640",
+   "checked_at": "2026-11-19"
+  },
+  "co:electro-ucayali": {
+   "hq_city": "Pucallpa",
+   "hq_lat": -8.38333,
+   "hq_lon": -74.55,
+   "qid": "Q5829036",
+   "company_label": "Electro Ucayali",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5829036",
+   "checked_at": "2026-11-19"
+  },
+  "co:entel-peru": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q21041561",
+   "company_label": "Entel Perú",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q21041561",
+   "checked_at": "2026-11-19"
+  },
+  "co:fame": {
+   "hq_city": "Lurigancho-Chosica",
+   "hq_lat": -11.93679,
+   "hq_lon": -76.69644,
+   "qid": "Q12129150",
+   "company_label": "FAME",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q12129150",
+   "checked_at": "2026-11-19"
+  },
+  "co:grupo-atv": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q5886029",
+   "company_label": "Grupo ATV",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5886029",
+   "checked_at": "2026-11-19"
+  },
+  "co:grupo-breca": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q5886093",
+   "company_label": "Grupo Breca",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5886093",
+   "checked_at": "2026-11-19"
+  },
+  "co:grupo-rpp": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q2877910",
+   "company_label": "Grupo RPP",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2877910",
+   "checked_at": "2026-11-19"
+  },
+  "co:instituto-nacional-de-radio-y-television-del-peru": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q3152423",
+   "company_label": "Instituto Nacional de Radio y Televisión del Perú",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3152423",
+   "checked_at": "2026-11-19"
+  },
+  "co:integratel-peru": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q6025478",
+   "company_label": "Integratel Perú",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q6025478",
+   "checked_at": "2026-11-19"
+  },
+  "co:interbank": {
+   "hq_city": "Torre Interbank",
+   "hq_lat": -12.08945,
+   "hq_lon": -77.0227,
+   "qid": "Q2835558",
+   "company_label": "Interbank",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2835558",
+   "checked_at": "2026-11-19"
+  },
+  "co:intercorp": {
+   "hq_city": "Torre Interbank",
+   "hq_lat": -12.08945,
+   "hq_lon": -77.0227,
+   "qid": "Q23008916",
+   "company_label": "Intercorp",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q23008916",
+   "checked_at": "2026-11-19"
+  },
+  "co:mass": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q104814825",
+   "company_label": "Mass",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q104814825",
+   "checked_at": "2026-11-19"
+  },
+  "co:minsur": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q6869536",
+   "company_label": "Minsur",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q6869536",
+   "checked_at": "2026-11-19"
+  },
+  "co:modasa": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q3317767",
+   "company_label": "Modasa",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3317767",
+   "checked_at": "2026-11-19"
+  },
+  "co:movistar-tv-peru": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q6025470",
+   "company_label": "Movistar TV (Peru)",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q6025470",
+   "checked_at": "2026-11-19"
+  },
+  "co:national-coca-company": {
+   "hq_city": "Cusco",
+   "hq_lat": -13.51694,
+   "hq_lon": -71.97861,
+   "qid": "Q26260333",
+   "company_label": "National Coca Company",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q26260333",
+   "checked_at": "2026-11-19"
+  },
+  "co:nexa-resources": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q4812626",
+   "company_label": "Nexa Resources",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4812626",
+   "checked_at": "2026-11-19"
+  },
+  "co:pacifico-seguros-home": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q551405",
+   "company_label": "Pacifico Seguros Home",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q551405",
+   "checked_at": "2026-11-19"
+  },
+  "co:peruvian-corporation": {
+   "hq_city": "London",
+   "hq_lat": 51.50722,
+   "hq_lon": -0.1275,
+   "qid": "Q7171150",
+   "company_label": "Peruvian Corporation",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7171150",
+   "checked_at": "2026-11-19"
+  },
+  "co:petroperu": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q2506390",
+   "company_label": "Petroperú",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2506390",
+   "checked_at": "2026-11-19"
+  },
+  "co:real-plaza": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q17563241",
+   "company_label": "Real Plaza",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q17563241",
+   "checked_at": "2026-11-19"
+  },
+  "co:rimac-seguros": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q113503190",
+   "company_label": "Rímac Seguros",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q113503190",
+   "checked_at": "2026-11-19"
+  },
+  "co:seman-peru": {
+   "hq_city": "Santiago de Surco",
+   "hq_lat": -12.15,
+   "hq_lon": -77.01667,
+   "qid": "Q16779849",
+   "company_label": "SEMAN Peru",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q16779849",
+   "checked_at": "2026-11-19"
+  },
+  "co:servicio-de-agua-potable-y-alcantarillado": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q20024824",
+   "company_label": "Servicio de Agua Potable y Alcantarillado",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q20024824",
+   "checked_at": "2026-11-19"
+  },
+  "co:servicios-industriales-de-la-marina": {
+   "hq_city": "Callao",
+   "hq_lat": -12.05222,
+   "hq_lon": -77.13917,
+   "qid": "Q7390381",
+   "company_label": "Servicios Industriales de la Marina",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7390381",
+   "checked_at": "2026-11-19"
+  },
+  "co:siderperu": {
+   "hq_city": "Chimbote",
+   "hq_lat": -9.07454,
+   "hq_lon": -78.59357,
+   "qid": "Q7390294",
+   "company_label": "SIDERPERU",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7390294",
+   "checked_at": "2026-11-19"
+  },
+  "co:sony-music-peru": {
+   "hq_city": "Miraflores",
+   "hq_lat": -12.12091,
+   "hq_lon": -77.02893,
+   "qid": "Q126599431",
+   "company_label": "Sony Music Perú",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q126599431",
+   "checked_at": "2026-11-19"
+  },
+  "co:tambo": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q64516439",
+   "company_label": "Tambo+",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q64516439",
+   "checked_at": "2026-11-19"
+  },
+  "co:telefonica-moviles-peru": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q6140525",
+   "company_label": "Telefónica Móviles Perú",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q6140525",
+   "checked_at": "2026-11-19"
+  },
+  "co:topitop": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q21014424",
+   "company_label": "Topitop",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q21014424",
+   "checked_at": "2026-11-19"
+  },
+  "WD:MADRIDSTOCKE:XVOLB": {
+   "hq_city": "Lima",
+   "hq_lat": -12.06,
+   "hq_lon": -77.0375,
+   "qid": "Q6164614",
+   "company_label": "Volcan",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q6164614",
+   "checked_at": "2026-11-19"
+  },
+  "co:banco-hipotecario-de-el-salvador": {
+   "hq_city": "San Salvador",
+   "hq_lat": 13.6976,
+   "hq_lon": -89.19116,
+   "qid": "Q20748141",
+   "company_label": "Banco Hipotecario de El Salvador",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q20748141",
+   "checked_at": "2026-11-19"
+  },
+  "co:claro-el-salvador": {
+   "hq_city": "San Salvador",
+   "hq_lat": 13.6976,
+   "hq_lon": -89.19116,
+   "qid": "Q5127719",
+   "company_label": "Claro El Salvador",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5127719",
+   "checked_at": "2026-11-19"
+  },
+  "co:grupo-poma": {
+   "hq_city": "San Salvador",
+   "hq_lat": 13.6976,
+   "hq_lon": -89.19116,
+   "qid": "Q5612244",
+   "company_label": "Grupo Poma",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5612244",
+   "checked_at": "2026-11-19"
+  },
+  "co:grupo-roble": {
+   "hq_city": "San Salvador",
+   "hq_lat": 13.6976,
+   "hq_lon": -89.19116,
+   "qid": "Q5475579",
+   "company_label": "Grupo Roble",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5475579",
+   "checked_at": "2026-11-19"
+  },
+  "co:movistar-el-salvador": {
+   "hq_city": "San Salvador",
+   "hq_lat": 13.6976,
+   "hq_lon": -89.19116,
+   "qid": "Q6025472",
+   "company_label": "Movistar El Salvador",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q6025472",
+   "checked_at": "2026-11-19"
+  },
+  "co:salvador-railway-company": {
+   "hq_city": "London",
+   "hq_lat": 51.50722,
+   "hq_lon": -0.1275,
+   "qid": "Q106782018",
+   "company_label": "Salvador Railway Company",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q106782018",
+   "checked_at": "2026-11-19"
+  },
+  "co:tigo-el-salvador": {
+   "hq_city": "Luxembourg",
+   "hq_lat": 49.77,
+   "hq_lon": 6.13,
+   "qid": "Q7801678",
+   "company_label": "Tigo El Salvador",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7801678",
+   "checked_at": "2026-11-19"
+  },
+  "co:unicomer-group": {
+   "hq_city": "San Salvador",
+   "hq_lat": 13.6976,
+   "hq_lon": -89.19116,
+   "qid": "Q7884754",
+   "company_label": "Unicomer Group",
+   "source": "Wikidata (CC0) P159 headquarters location, P625 coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q7884754",
    "checked_at": "2026-11-19"
   }
  },
