@@ -1,0 +1,294 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "MU",
+ "count": 14,
+ "companies": [
+  {
+   "qid": "Q6733101",
+   "name": "Chili Mauritius",
+   "cc": "mu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Port Louis",
+   "hq": [
+    -20.16194,
+    57.49889
+   ],
+   "website": "http://www.chili.mu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mahanagar_Telephone_Mauritius_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3053417",
+   "name": "Emtel",
+   "cc": "mu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Ébène",
+   "hq": [
+    -20.24389,
+    57.49
+   ],
+   "website": "http://www.emtel.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Emtel",
+   "logo_file": "Emtel Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3154310",
+   "name": "Ireland Blyth Limited",
+   "cc": "mu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Port Louis",
+   "hq": [
+    -20.16194,
+    57.49889
+   ],
+   "website": "http://www.iblgroup.com",
+   "enwiki": "https://en.wikipedia.org/wiki/IBL_Ltd",
+   "logo_file": "IBL slogan.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136289968",
+   "name": "IUX Markets",
+   "cc": "mu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Ébène",
+   "hq": [
+    -20.24389,
+    57.49
+   ],
+   "website": "https://www.iux.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16932297",
+   "name": "Le Défi Media Group",
+   "cc": "mu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Port Louis",
+   "hq": [
+    -20.16194,
+    57.49889
+   ],
+   "website": "http://www.defimedia.info/",
+   "enwiki": "https://en.wikipedia.org/wiki/Le_D%C3%A9fi_Media_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q23058201",
+   "name": "Mauritius Bank",
+   "cc": "mu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/MauBank",
+   "logo_file": "MauBank Ltd.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3301668",
+   "name": "Mauritius Commercial Bank",
+   "cc": "mu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.mcb.mu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mauritius_Commercial_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2389598",
+   "name": "Mauritius Post",
+   "cc": "mu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Port Louis",
+   "hq": [
+    -20.16194,
+    57.49889
+   ],
+   "website": "http://www.mauritiuspost.mu",
+   "enwiki": "https://en.wikipedia.org/wiki/Mauritius_Post",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3301671",
+   "name": "Mauritius Telecom",
+   "cc": "mu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Port Louis",
+   "hq": [
+    -20.16194,
+    57.49889
+   ],
+   "website": "https://www.telecom.mu",
+   "enwiki": "https://en.wikipedia.org/wiki/Mauritius_Telecom",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2892773",
+   "name": "New Mauritius Hotels Ltd.",
+   "cc": "mu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "hospitality industry"
+   ],
+   "isin": [],
+   "hq_city": "Curepipe",
+   "hq": [
+    -20.31667,
+    57.51667
+   ],
+   "website": "http://www.beachcomber-hotels.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Beachcomber_Resorts_%26_Hotels",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3381370",
+   "name": "Phoenix Beverages",
+   "cc": "mu",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Stock Exchange Of Mauritius Ltd",
+     "ticker": "MBL"
+    }
+   ],
+   "industries": [
+    "alcohol industry"
+   ],
+   "isin": [],
+   "hq_city": "New York City",
+   "hq": [
+    40.71278,
+    -74.00611
+   ],
+   "lei": "549300X5CVD2GPQFGT84",
+   "enwiki": "https://en.wikipedia.org/wiki/Phoenix_Beverages",
+   "listed": true
+  },
+  {
+   "qid": "Q116150893",
+   "name": "Raphael Fishing Company",
+   "cc": "mu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.stbrandon.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Raphael_Fishing_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q3415056",
+   "name": "RascomStar",
+   "cc": "mu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://rascomstar.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q3439656",
+   "name": "Rogers Group",
+   "cc": "mu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mauritius Island",
+   "hq": [
+    -20.3,
+    57.58333
+   ],
+   "website": "http://www.rogers.mu",
+   "enwiki": "https://en.wikipedia.org/wiki/Rogers_Group",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}
