@@ -10,7 +10,7 @@ function win(e){const now=Date.now();const ds=(e.calendar?.dated_sessions||[]).m
 // ---- connection lines: the trading day handing over from one exchange to the next (follow the sun) ----
 const orig=window.drawMarketsOverlay;let HITS=[];
 
-window.drawMarketsOverlay=function(t){{const L2=typeof Z!=='undefined'&&Z>=FXZ?'fx':'day';if(L2!==LAYER){LAYER=L2;HOV=null;card.hidden=true;}hint.textContent=LAYER==='fx'?'Currencies vs US dollar':'Trading day · zoom in for currencies';}if(window.InvCompanies&&InvCompanies.active()){HITS=[];return;}  // Companies tab owns the globe
+window.drawMarketsOverlay=function(t){if(window.InvCompanies&&InvCompanies.active()){HITS=[];return;}  // Companies tab owns the globe
 if(LAYER!=='fx')orig&&orig(t);if(typeof MARKET==='undefined'||!MARKET.on||!MARKET.exchanges)return;if(LAYER==='fx'){drawFx();return;}const L=E();if(L.length<2)return;const T=performance.now()/1000;HITS=[];ctx.save();
  for(let i=0;i<L.length;i++){const a=L[i],b=L[(i+1)%L.length],wa=win(a),wb=win(b);
   const A=[a.coordinates.latitude*rad,a.coordinates.longitude*rad],B=[b.coordinates.latitude*rad,b.coordinates.longitude*rad];
@@ -29,8 +29,7 @@ if(LAYER!=='fx')orig&&orig(t);if(typeof MARKET==='undefined'||!MARKET.on||!MARKE
   ctx.fillStyle=w.open?'#3ddc97':'#55555c';ctx.beginPath();ctx.arc(q[0],q[1],w.open?5:3.5,0,7);ctx.fill();
   ctx.font='600 11px Inter,sans-serif';const nm_=NAME[e.id]||e.short,tw=ctx.measureText(nm_).width,bx={x:q[0]+8,y:q[1]-7,w:tw,h:14};if(boxes.some(o=>bx.x<o.x+o.w+4&&o.x<bx.x+bx.w+4&&bx.y<o.y+o.h&&o.y<bx.y+bx.h))continue;boxes.push(bx);ctx.fillStyle=w.open?'#eafff5':'#9a9aa3';ctx.fillText(nm_,q[0]+8,q[1]+4);}
  ctx.restore();};
-// Owner 19 Nov 2026: no pills. Zoom decides: the whole globe shows the trading day moving round the world; zoom in (Z ≥ 1.7) for currencies.
-const FXZ=1.7;let LAYER='day';
+let LAYER='day';  // currencies removed (owner, 19 Nov 2026): trading day only
 const CUR={USD:'US dollar',EUR:'euro',JPY:'Japanese yen',GBP:'British pound',CHF:'Swiss franc',CAD:'Canadian dollar',AUD:'Australian dollar',NZD:'New Zealand dollar',CNY:'Chinese yuan',HKD:'Hong Kong dollar',SGD:'Singapore dollar',INR:'Indian rupee',KRW:'South Korean won',IDR:'Indonesian rupiah',MYR:'Malaysian ringgit',THB:'Thai baht',PHP:'Philippine peso',ZAR:'South African rand',BRL:'Brazilian real',MXN:'Mexican peso',TRY:'Turkish lira',SEK:'Swedish krona',NOK:'Norwegian krone',DKK:'Danish krone',PLN:'Polish zloty',CZK:'Czech koruna',HUF:'Hungarian forint',ILS:'Israeli shekel',RON:'Romanian leu',ISK:'Icelandic krona',BGN:'Bulgarian lev'};
 // ECB gives dollars → units of each currency (USD/XXX). A currency is STRONGER when one dollar buys fewer units: move = old/new − 1.
 function fxMoves(){const H=MARKET.ecb?.usd_hist;if(!H)return[];const ds=Object.keys(H).sort(),d1=ds[ds.length-1],d0=ds[ds.length-2];if(!d0)return[];
@@ -46,7 +45,6 @@ function drawFx(){const ny=MARKET.exchanges.XNYS;if(!ny)return;HITS=[];const B=[
  const q=proj(B[0],B[1]);if(q[2]>0){ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(q[0],q[1],5,0,7);ctx.fill();ctx.font='600 11px Inter,sans-serif';ctx.fillText('US dollar',q[0]+8,q[1]+4);}
  ctx.restore();}
 let HOV=null;const card=document.createElement('div');card.className='pv-card';card.hidden=true;document.body.append(card);
-const hint=document.createElement('div');hint.className='pv-hint';document.body.append(hint);
 const hm=s=>String(s||'').slice(0,5),pct=v=>(v>=0?'+':'−')+Math.abs(v).toFixed(2)+'%';
 function explain(h){if(h.k==='fx'){const f=h.f,n=CUR[f.c]||f.c,up=f.d>=0,dt=d=>new Date(d+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short'});
   return `<div class="k">Currency · against the US dollar</div><h4>${esc(n[0].toUpperCase()+n.slice(1))} ${up?'strengthened':'weakened'} ${Math.abs(f.d).toFixed(2)}%</h4><div class="g"><div><b>${f.v.toLocaleString('en-US',{maximumFractionDigits:f.v<10?4:2})}</b><small>${esc(f.c)} per 1 US dollar</small></div><div><b class="${up?'u':'d'}">${pct(f.d)}</b><small>${dt(f.d0)} → ${dt(f.d1)}</small></div></div>
@@ -57,7 +55,7 @@ function explain(h){if(h.k==='fx'){const f=h.f,n=CUR[f.c]||f.c,up=f.d>=0,dt=d=>n
 addEventListener('mousemove',e=>{if(typeof MARKET==='undefined'||!MARKET.on||!desk()||e.target.tagName!=='CANVAS'||(window.InvCompanies&&InvCompanies.active())){if(HOV){HOV=null;card.hidden=true;}return;}
  let best=null,bd=10;for(const h of HITS)for(const q of h.pts){const d=Math.hypot(q[0]-e.clientX,q[1]-e.clientY);if(d<bd){bd=d;best=h;}}
  HOV=best;if(!best){card.hidden=true;return;}card.innerHTML=explain(best);card.hidden=false;const w=300,x=e.clientX+18+w>innerWidth?e.clientX-18-w:e.clientX+18;card.style.left=x+'px';card.style.top=Math.max(90,Math.min(innerHeight-card.offsetHeight-12,e.clientY-40))+'px';});
-setInterval(()=>{hint.style.display=typeof MARKET!=='undefined'&&MARKET.on&&!(window.InvCompanies&&InvCompanies.active())?'block':'none';},300);
+
 // ---- left: the trading day as a timeline (24 hours, your time) ----
 const css=document.createElement('style');css.textContent=`
 .pv-l{position:fixed;left:16px;top:112px;width:340px;z-index:5;background:rgba(10,10,12,.96);border:1px solid #1f1f23;border-radius:14px;padding:14px 16px;font:13px Inter,sans-serif;color:#ececef}
