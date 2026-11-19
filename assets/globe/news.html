@@ -3502,12 +3502,12 @@ function mkdRender(){
  mkL.querySelectorAll('[data-mic]').forEach(b=>b.onclick=()=>{const e=MARKET.exchanges[b.dataset.mic],n=Object.keys(ISO).find(k=>ISO[k]===e.country);if(n)marketSelect(n,b.dataset.mic);});
  // overview
  const H=MARKET.ecb?.usd_hist,days=H?Object.keys(H).sort():[],d1=days[days.length-1],d0=days[days.length-2];
- const fx=d0?Object.keys(H[d1]).filter(c=>H[d0][c]).map(c=>({c,v:H[d1][c],d:(H[d1][c]/H[d0][c]-1)*100,s:days.slice(-30).map(d=>H[d][c]).filter(Number.isFinite)})).sort((a,b)=>Math.abs(b.d)-Math.abs(a.d)).slice(0,6):[];
+ const fx=d0?Object.keys(H[d1]).filter(c=>H[d0][c]).map(c=>({c,v:H[d1][c],d:(H[d0][c]/H[d1][c]-1)*100,s:days.slice(-30).map(d=>H[d][c]).filter(Number.isFinite)})).sort((a,b)=>Math.abs(b.d)-Math.abs(a.d)).slice(0,6):[];
  const fmtD=d=>new Date(d+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short'});
  const cnt={};for(const st of stories)if(matchNoLens(st)&&['markets','companies','economy','commodities'].includes(st.category)){const c=st.location?.country;if(c)cnt[c]=(cnt[c]||0)+1;}
  const top=Object.entries(cnt).sort((a,b)=>b[1]-a[1]).slice(0,4),now=Date.now(),next=(typeof CAL!=='undefined'?CAL:[]).filter(e=>Date.parse(e.at)>now).sort((a,b)=>Date.parse(a.at)-Date.parse(b.at)).slice(0,4);
  const when=t=>{const d=new Date(t);return d.toLocaleDateString([], {weekday:'short'})+' '+d.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});};
- const chg=(c,n)=>{const ds=days.filter(d=>H[d][c]!=null);return ds.length>n?(H[ds[ds.length-1]][c]/H[ds[ds.length-1-n]][c]-1)*100:null;};
+ const chg=(c,n)=>{const ds=days.filter(d=>H[d][c]!=null);return ds.length>n?(H[ds[ds.length-1-n]][c]/H[ds[ds.length-1]][c]-1)*100:null;/* currency's own move vs USD: + = stronger (ECB gives USD/XXX) */};
  const all=d1?Object.keys(H[d1]).map(c=>({c,v:H[d1][c],d1:chg(c,1),w1:chg(c,5),m1:chg(c,Math.min(21,days.length-1)),s:days.slice(-30).map(d=>H[d][c]).filter(Number.isFinite)})).filter(x=>x.d1!=null):[];
  const sk=MARKET.fxSort||'d1';all.sort((a,b)=>sk==='c'?a.c.localeCompare(b.c):Math.abs(b[sk]??0)-Math.abs(a[sk]??0));
  const pc=x=>x==null?'<span class="mu">—</span>':`<span class="${x>0?'u':x<0?'d':''}">${x>0?'+':x<0?'−':''}${Math.abs(x).toFixed(2)}%</span>`;
