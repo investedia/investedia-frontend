@@ -189,6 +189,7 @@ html.proj-mode .pj{padding:0!important;overflow:auto}.pjh{position:relative;heig
 .pj-sat{position:relative;overflow:hidden;padding:0!important;display:block!important;height:auto!important;aspect-ratio:16/10}.pj-sat img{width:100%;height:100%;object-fit:cover;display:block}.pj-ring{position:absolute;width:26px;height:26px;margin:-13px 0 0 -13px;border:2px solid #ff7a1a;border-radius:50%;box-shadow:0 0 0 2px rgba(0,0,0,.5)}.pj-sat a{position:absolute;left:0;right:0;bottom:0;padding:6px 10px;background:linear-gradient(transparent,rgba(0,0,0,.8));color:#ddd;font:11px Inter,sans-serif;text-decoration:none}.pj-listed{display:inline-flex;align-items:center;height:40px;padding:0 14px;border:1px solid rgba(255,122,26,.5);border-radius:10px;color:#ffb27a;font:600 13px Inter,sans-serif;text-decoration:none}
 .pj-ba{cursor:ew-resize;touch-action:pan-y;user-select:none}.pj-ba img{position:absolute;inset:0}.pj-ba img:first-child{position:relative}.pj-ba .pj-ba-a{clip-path:inset(0 0 0 var(--p))}.pj-ba-line{position:absolute;top:0;bottom:0;left:var(--p);width:2px;margin-left:-1px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.35)}.pj-ba-knob{position:absolute;top:50%;left:var(--p);width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;background:#fff;color:#111;display:grid;place-items:center;font:700 14px Inter,sans-serif;box-shadow:0 2px 10px rgba(0,0,0,.5)}.pj-ba-knob:focus-visible{outline:3px solid #ff7a1a}.pj-ba-tag{position:absolute;top:10px;padding:4px 9px;border-radius:20px;background:rgba(0,0,0,.65);color:#fff;font:600 12px Inter,sans-serif}.pj-ba-tag.l{left:10px}.pj-ba-tag.r{right:10px}.pj-imgtabs{position:absolute;left:10px;bottom:40px;display:flex;gap:6px}.pj-imgtabs button{min-height:32px;padding:0 12px;border-radius:20px;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.6);color:#eee;font:500 12px Inter,sans-serif;cursor:pointer}.pj-sat .pj-imgtabs button{background:rgba(0,0,0,.6)!important;color:#eee!important;border:1px solid rgba(255,255,255,.3)!important}.pj-sat .pj-imgtabs button[aria-selected=true]{background:#fff!important;color:#111!important;border-color:#fff!important}
 .pj-pro-lock{display:inline-flex;align-items:center;gap:4px;height:30px;padding:0 9px;border:1px dashed rgba(255,122,26,.5);border-radius:8px;color:#ff9a4a;font:600 12px Inter,sans-serif;text-decoration:none}
+@media(max-width:760px){html.market-mode:not(.embed) .zoom,html.proj-mode:not(.embed) .zoom{bottom:auto!important}} /* phone: the zoom buttons are placed by top; a bottom too would stretch them (owner bug, 19 Nov 2026) */
 </style>
 <link rel="stylesheet" href="../consent.css"><link rel="stylesheet" href="../since-news.css">
 <script src="../consent.js"></script>
@@ -1804,7 +1805,7 @@ function size() {
     const aw = Math.max(1, globeBox.right - globeBox.left), ah = Math.max(1, globeBox.bottom - globeBox.top);
     cx = (globeBox.left + globeBox.right) / 2; cyT = globeBox.top + ah / 2;
     R0 = Math.min((phone() ? W : aw) * .47, ah * .47);
-    if (phone()) document.querySelector('.zoom').style.top = Math.max(globeBox.top, cyT - 36) + 'px';
+    if (phone()) zoomTop(Math.max(globeBox.top, cyT - 36) + 'px');
   }
   if (!cy) cy = cyT; R = R0 * Z;
 }
@@ -1999,12 +2000,14 @@ $('zloc').onclick = () => {
   }, () => { b.removeAttribute('aria-busy'); locationMessage('Location unavailable'); }, {enableHighAccuracy:true,timeout:10000,maximumAge:0});
 };
 // keep the location button 10 px under the zoom group, wherever the layout puts it
-window.placeLoc = () => { const z = document.querySelector('.zoom'), b = $('zloc'); if (!z || b.hidden) return; z.style.top = ''; let r = z.getBoundingClientRect(); const h = b.offsetWidth || 44;
+// Zoom +/- position: setting a top must also clear the bottom, or a mode's 'bottom: … !important' rule stretches the buttons into a tall bar (owner bug report, 19 Nov 2026)
+function zoomTop(v) { const z = document.querySelector('.zoom'); if (!z) return; if (v == null) { z.style.top = ''; z.style.removeProperty('bottom'); } else { z.style.top = v; z.style.setProperty('bottom', 'auto', 'important'); } }
+window.placeLoc = () => { const z = document.querySelector('.zoom'), b = $('zloc'); if (!z) return; zoomTop(null); if (b.hidden) return; let r = z.getBoundingClientRect(); const h = b.offsetWidth || 44;
   // phone: keep the button above the article cards; move the zoom group up when needed
-  const pk = $('peek'), lim = pk && !pk.hidden ? pk.getBoundingClientRect().top - 12 : innerHeight - 12;
-  if (r.bottom + 10 + h > lim) { z.style.top = (lim - h - 10 - r.height) + 'px'; z.style.bottom = 'auto'; r = z.getBoundingClientRect(); }
+  const pk = $('peek'), pr = pk && !pk.hidden ? pk.getBoundingClientRect() : null, lim = pr && pr.height ? pr.top - 12 : innerHeight - 12;  // a peek hidden by CSS has no box: ignore it
+  if (r.bottom + 10 + h > lim) { zoomTop((lim - h - 10 - r.height) + 'px'); r = z.getBoundingClientRect(); }
   b.style.top = (r.bottom + 10) + 'px'; b.style.bottom = 'auto'; b.style.left = r.left + (r.width - h) / 2 + 'px'; b.style.right = 'auto'; };
-addEventListener('resize', () => placeLoc()); setTimeout(() => placeLoc(), 0); setTimeout(() => placeLoc(), 800);
+addEventListener('resize', () => placeLoc()); setTimeout(() => placeLoc(), 0); setTimeout(() => placeLoc(), 800); new MutationObserver(() => setTimeout(() => placeLoc(), 50)).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });  // re-place the zoom buttons when the globe mode changes
 function drawUserLoc(t) { if (!userLoc) return; const q = proj(userLoc.la * rad, userLoc.lo * rad); if (q[2] <= 0) return;
   const st = 'b', k = ((t - userLoc.t0) % 2200) / 2200, x = q[0], y = q[1], fade = Math.min(1, q[2] * 3);
   ctx.save(); ctx.globalAlpha = fade;
@@ -2097,7 +2100,7 @@ function phoneMapArea() {
   const bottom = sheetState === 'closed' ? (pk.height ? pk.top : H - BOTTOM_DOCK - peekH - 20) - 10 : H - sheetVisible - 12;
   globeBox = { left: 8, top: phoneMapTop, right: W - 8, bottom };
   cyT = phoneMapTop + Math.max(0, bottom - phoneMapTop) / 2;
-  document.querySelector('.zoom').style.top = Math.max(phoneMapTop, bottom - 96) + 'px';
+  zoomTop(Math.max(phoneMapTop, bottom - 96) + 'px');
 }
 function placeSheet(st, h) {  // a resting position; CSS animates programmatic changes (opening, expand button), never a drag
   sheetState = st; sheetVisible = h; if (st !== 'closed') sheetFrac = h / H;
@@ -2141,7 +2144,7 @@ const sheetApply = () => {
   sheetRaf = 0; sheetVisible = sheetWant;
   paintSheet(sheetVisible, false);  // one custom property: transform + clip-path, compositor only
   globeBox.bottom = H - sheetVisible - 12; cyT = phoneMapTop + Math.max(0, globeBox.bottom - phoneMapTop) / 2;  // writes only, no layout reads
-  document.querySelector('.zoom').style.top = Math.max(phoneMapTop, globeBox.bottom - 96) + 'px';
+  zoomTop(Math.max(phoneMapTop, globeBox.bottom - 96) + 'px');
 };
 grab.addEventListener('pointerdown', e => {
   if (!phone() || EMBED || e.button !== 0) return;
@@ -2397,7 +2400,7 @@ pbody.addEventListener('keydown', e => {
 function variantPanel(list) {
   if (PANEL_TEMPLATE === 'a') return `<h2>Top articles</h2><div class="meta">${Math.min(8, list.length)} of ${list.length} articles</div><div class="compact-list">${list.slice(0, 8).map(compactItem).join('')}</div>${list.length > 8 ? '<a class="panel-more" href="../../news.html">See all news →</a>' : ''}${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
   if (PANEL_TEMPLATE === 'b') return `<h2>Top articles</h2><div class="strip-list" aria-label="Top articles">${list.slice(0, phone() ? 3 : 12).map(compactItem).join('')}</div>${list.length ? '' : '<div class="empty">No articles match these filters.</div>'}${noteHTML()}`;
-  const tabs = phone() && phoneView !== 'markets' ? [['top', 'Top'], ['latest', 'Latest'], ['moving', 'Moving'], ['companies', 'Companies'], ['more', ['countries', 'topics', 'watch', 'saved'].includes(panelTab) ? ({ countries: 'Countries', topics: 'Topics', watch: 'Watchlist', saved: 'Saved' })[panelTab] + ' ▾' : 'More ▾']] : [['top', 'Top'], ...(!phone() ? [['movers', 'Movers']] : []), ['latest', 'Latest'], ['countries', 'Countries'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : []), ['saved', `Saved${RL.size ? ' ' + RL.size : ''}`]];
+  const tabs = phone() && phoneView !== 'markets' ? [['top', 'Top'], ['latest', 'Latest'], ['moving', 'Moving'], ['more', ['countries', 'topics', 'watch', 'saved'].includes(panelTab) ? ({ countries: 'Countries', topics: 'Topics', watch: 'Watchlist', saved: 'Saved' })[panelTab] + ' ▾' : 'More ▾']] : [['top', 'Top'], ...(!phone() ? [['movers', 'Movers']] : []), ['latest', 'Latest'], ['countries', 'Countries'], ...(UPON ? [['upcoming', 'Upcoming']] : []), ...(MKTON ? [['markets', 'Markets']] : []), ['saved', `Saved${RL.size ? ' ' + RL.size : ''}`]];
   let items, count;
   if (phone() && phoneView === 'markets') { items = marketsPhonePanel(); count = 0; }
   else if (panelTab === 'topics') { const cats = Object.entries(list.reduce((m, x) => (m[x.category] = (m[x.category] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]); count = 0;
@@ -2557,7 +2560,7 @@ function renderAct(){
   cards=ev.length?ev.map(e=>{const d=new Date(e.at);return `<a class="act-k" href="../../calendar.html"><div class="act-m"><b>${d.toLocaleDateString([], {weekday:'short'})} ${tm(d)}</b>${esc(e.country||e.c)}${e.src?' · '+esc(e.src):''}</div><div class="act-t">${esc(e.t)}</div><div class="act-f"><span class="hi">● High impact</span></div></a>`}).join(''):'<div class="act-e">No scheduled high-impact releases for this region in our calendar. Coverage is limited to major currencies for now.</div>';
  }
  el.classList.toggle('pf',actTab==='pf');
- el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Upcoming</button><button type="button" role="tab" aria-selected="${actTab==='pf'}" data-at="pf">My watchlist</button><button type="button" role="tab" aria-selected="${actTab==='co'}" data-at="co">Companies</button><span class="act-r">${right}</span></div>${actTab==='pf'?wlHTML():`<div class="act-c${actTab==='co'?' co-c':''}">${cards}</div>`}`;
+ el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Upcoming</button><button type="button" role="tab" aria-selected="${actTab==='pf'}" data-at="pf">My watchlist</button><span class="act-r">${right}</span></div>${actTab==='pf'?wlHTML():`<div class="act-c${actTab==='co'?' co-c':''}">${cards}</div>`}`;
  if(actTab==='pf')wlBind(el);
  document.documentElement.style.setProperty('--acth',el.offsetHeight+'px');
  el.querySelectorAll('[data-at]').forEach(b=>b.onclick=()=>{actTab=b.dataset.at;renderAct();});
