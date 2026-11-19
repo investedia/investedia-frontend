@@ -117,7 +117,7 @@
   function select(sym, open) {
     const c = typeof sym === 'string' ? find(sym) : sym; if (!c) return false;
     S.sel = c; S.open = true;
-    if (open) { try { actTab = 'co'; if (typeof phone === 'function' && phone()) panelTab = 'companies'; } catch {} }
+    if (open) { try { if (!inMarkets()) document.querySelector('#gswitch [data-m=markets]')?.click(); mkTab = 'co'; } catch {} }
     if (isPhone()) { try { setSheet('closed'); } catch {} }
     if (typeof flyTo === 'function') flyTo(c.hq.hq_lon, c.hq.hq_lat - (isPhone() ? 1.2 : 2.2), 5.5);
     refresh(); return true;
@@ -185,8 +185,7 @@
   }
 
   function active() {
-    if (inMarkets()) return typeof mkTab !== 'undefined' && mkTab === 'co';
-    return (typeof actTab !== 'undefined' && actTab === 'co') || (typeof panelTab !== 'undefined' && panelTab === 'companies');
+    return inMarkets() && typeof mkTab !== 'undefined' && mkTab === 'co';  // Markets globe only (owner, 19 Nov 2026)
   }
   function tap(x, y) {  // a click on a company pin or dot opens it; true if handled
     if (!S.hits?.length || !active()) return false;
