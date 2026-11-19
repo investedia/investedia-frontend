@@ -1,0 +1,154 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "GW",
+ "count": 7,
+ "companies": [
+  {
+   "qid": "Q9645272",
+   "name": "Banco Nacional Ultramarino, Bolama",
+   "cc": "gw",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Banco Nacional Ultramarino building (Bolama)",
+   "hq": [
+    11.57727,
+    -15.47582
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5172830",
+   "name": "Correios da Guiné-Bissau",
+   "cc": "gw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Central post Bissau",
+   "hq": [
+    11.85961,
+    -15.58172
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Correios_da_Guin%C3%A9-Bissau",
+   "logo_file": "Correios da Guiné-Bissau logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5357772",
+   "name": "Eletricidade e Águas da Guiné-Bissau",
+   "cc": "gw",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electrical grid",
+    "water supply network"
+   ],
+   "isin": [],
+   "hq_city": "Bissau",
+   "hq": [
+    11.86,
+    -15.58333
+   ],
+   "website": "http://www.eagb-gb.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Electricidade_e_Aguas_da_Guine-Bissau",
+   "logo_file": "Eletricidade e Águas da Guiné-Bissau logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q38791351",
+   "name": "Grupo Lusófona",
+   "cc": "gw",
+   "types": [
+    "Q161726"
+   ],
+   "listings": [],
+   "industries": [
+    "education"
+   ],
+   "isin": [],
+   "hq_city": "Lisbon",
+   "hq": [
+    38.70804,
+    -9.13902
+   ],
+   "website": "http://www.grupolusofona.pt/",
+   "logo_file": "GrupoLusofona.gif",
+   "listed": false
+  },
+  {
+   "qid": "Q3120616",
+   "name": "Guinetel",
+   "cc": "gw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Bissau",
+   "hq": [
+    11.86,
+    -15.58333
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106545893",
+   "name": "Imprensa Nacional",
+   "cc": "gw",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3490246",
+   "name": "Sonatel",
+   "cc": "gw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Dakar",
+   "hq": [
+    14.67256,
+    -17.432
+   ],
+   "website": "http://www.orange.sl",
+   "enwiki": "https://en.wikipedia.org/wiki/Sonatel",
+   "logo_file": "Sonatel logo.svg",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

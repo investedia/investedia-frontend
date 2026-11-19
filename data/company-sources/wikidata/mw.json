@@ -1,0 +1,174 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "MW",
+ "count": 8,
+ "companies": [
+  {
+   "qid": "Q16159475",
+   "name": "Agricultural Development and Marketing Corporation",
+   "cc": "mw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Agricultural_Development_and_Marketing_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55075121",
+   "name": "Electricity Generation Company Malawi Limited",
+   "cc": "mw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity generation"
+   ],
+   "isin": [],
+   "website": "http://www.egenco.mw/",
+   "enwiki": "https://en.wikipedia.org/wiki/Electricity_Generation_Company_Malawi_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5357807",
+   "name": "Electricity Supply Commission of Malawi",
+   "cc": "mw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Blantyre",
+   "hq": [
+    -15.78611,
+    35.00583
+   ],
+   "website": "http://www.escom.mw/",
+   "enwiki": "https://en.wikipedia.org/wiki/Electricity_Supply_Corporation_of_Malawi",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6741468",
+   "name": "Malawi Posts Corporation",
+   "cc": "mw",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Blantyre",
+   "hq": [
+    -15.78611,
+    35.00583
+   ],
+   "website": "http://malawiposts.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Malawi_Posts_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1976933",
+   "name": "Malawi Stock Exchange",
+   "cc": "mw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Blantyre",
+   "hq": [
+    -15.78611,
+    35.00583
+   ],
+   "website": "https://www.mse.co.mw",
+   "enwiki": "https://en.wikipedia.org/wiki/Malawi_Stock_Exchange",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6960886",
+   "name": "Nali Sauce",
+   "cc": "mw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food processing"
+   ],
+   "isin": [],
+   "hq_city": "Limbe",
+   "hq": [
+    -15.78333,
+    35.0
+   ],
+   "website": "http://www.naligroup.mw",
+   "enwiki": "https://en.wikipedia.org/wiki/Nali_Sauce",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6970905",
+   "name": "National Bank of Malawi",
+   "cc": "mw",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Blantyre",
+   "hq": [
+    -15.78611,
+    35.00583
+   ],
+   "website": "https://www.natbank.co.mw/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Bank_of_Malawi",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7696304",
+   "name": "Telekom Networks Malawi",
+   "cc": "mw",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Blantyre",
+   "hq": [
+    -15.78611,
+    35.00583
+   ],
+   "website": "http://www.tnm.co.mw/",
+   "enwiki": "https://en.wikipedia.org/wiki/Telekom_Networks_Malawi",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

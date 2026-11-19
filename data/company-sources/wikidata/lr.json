@@ -1,0 +1,47 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "LR",
+ "count": 2,
+ "companies": [
+  {
+   "qid": "Q6048694",
+   "name": "International Bank",
+   "cc": "lr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/International_Bank",
+   "listed": false
+  },
+  {
+   "qid": "Q6671774",
+   "name": "Lonestar Cell",
+   "cc": "lr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Monrovia",
+   "hq": [
+    6.31056,
+    -10.80472
+   ],
+   "website": "http://www.lonestarcell.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Lonestar_Cell",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

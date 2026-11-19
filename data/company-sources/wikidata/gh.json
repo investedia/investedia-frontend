@@ -1,0 +1,1407 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "GH",
+ "count": 71,
+ "companies": [
+  {
+   "qid": "Q19599982",
+   "name": "ABii National",
+   "cc": "gh",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "Savings and Loans Company"
+   ],
+   "isin": [],
+   "website": "http://www.abiinational.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/ABii_National",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24915128",
+   "name": "Access Bank Ghana Limited",
+   "cc": "gh",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "https://www.ghana.accessbankplc.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Access_Bank_Ghana_Plc",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4689720",
+   "name": "African Champion Industries",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tema",
+   "hq": [
+    5.66667,
+    -0.01667
+   ],
+   "website": "http://www.africanchampionindustries.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/African_Champion_Industries",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4693885",
+   "name": "Agricultural Development Bank of Ghana",
+   "cc": "gh",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Greater Accra Region",
+   "hq": [
+    5.75,
+    0.0
+   ],
+   "website": "http://agricbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Agricultural_Development_Bank_of_Ghana",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97595974",
+   "name": "Akosombo Textile Limited",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Akosombo_Textile_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q4033842",
+   "name": "Aluworks",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aluminium"
+   ],
+   "isin": [],
+   "hq_city": "Tema",
+   "hq": [
+    5.66667,
+    -0.01667
+   ],
+   "website": "http://www.aluworks.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Aluworks",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4739179",
+   "name": "AmalBank",
+   "cc": "gh",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "http://www.amalbank.com.gh",
+   "enwiki": "https://en.wikipedia.org/wiki/AmalBank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q70936029",
+   "name": "AnimaxFYB Studio",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "animation studio"
+   ],
+   "isin": [],
+   "hq_city": "Ghana",
+   "hq": [
+    7.9465,
+    -1.0232
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/AnimaxFYB_Studios",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30594830",
+   "name": "ARB Apex Bank",
+   "cc": "gh",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/ARB_Apex_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30594731",
+   "name": "Atwima Rural Bank",
+   "cc": "gh",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kumasi",
+   "hq": [
+    6.7,
+    -1.625
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Atwima_Rural_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4034655",
+   "name": "Ayrton Drugs",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "https://www.ayrtondrug.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ayrton_Drugs",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4856014",
+   "name": "Bank of Africa",
+   "cc": "gh",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "http://www.boaghana.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Africa_Ghana",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4890225",
+   "name": "Benso Oil Palm Plantation",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "human food",
+    "oil palm plantation"
+   ],
+   "isin": [],
+   "hq_city": "Sekondi-Takoradi",
+   "hq": [
+    4.91667,
+    -1.76667
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Benso_Oil_Palm_Plantation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19600548",
+   "name": "Blu Telecommunications",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications company",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "http://www.blu.com.gh/",
+   "enwiki": "https://en.wikipedia.org/wiki/Blu_Telecommunications",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4035427",
+   "name": "British American Tobacco Ghana",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "consumer goods industry"
+   ],
+   "isin": [],
+   "hq_city": "Sekondi-Takoradi",
+   "hq": [
+    4.91667,
+    -1.76667
+   ],
+   "website": "http://www.bat.com",
+   "enwiki": "https://en.wikipedia.org/wiki/British_American_Tobacco_Ghana",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16733516",
+   "name": "Capital Bank",
+   "cc": "gh",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Capital_Bank_(Ghana)",
+   "logo_file": "Capital Bank logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5137088",
+   "name": "Clydestone Ghana",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology"
+   ],
+   "isin": [
+    "GH0000000573"
+   ],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "http://www.clydestone.com/home/",
+   "enwiki": "https://en.wikipedia.org/wiki/Clydestone_Ghana",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16733465",
+   "name": "Diamond Cement Ghana Limited",
+   "cc": "gh",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Diamond_Cement_Ghana_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q5333155",
+   "name": "Ecobank Ghana",
+   "cc": "gh",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "http://www.ecobank.com/countryinfo.aspx?cid=74047",
+   "enwiki": "https://en.wikipedia.org/wiki/Ecobank_Ghana",
+   "logo_file": "Ecobank Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19360832",
+   "name": "ECOM Agroindustrial",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Pully",
+   "hq": [
+    46.51667,
+    6.66667
+   ],
+   "website": "http://www.ecomtrading.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/ECOM_Agroindustrial",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16733491",
+   "name": "Electricity Company of Ghana",
+   "cc": "gh",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "https://ecg.com.gh/",
+   "enwiki": "https://en.wikipedia.org/wiki/Power_Distribution_Services_Ghana",
+   "listed": false
+  },
+  {
+   "qid": "Q5380322",
+   "name": "Enterprise Insurance",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Enterprise_Group_(Ghana)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137034406",
+   "name": "FactSpace West Africa",
+   "cc": "gh",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://ghanafact.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/FactSpace_West_Africa",
+   "listed": false
+  },
+  {
+   "qid": "Q5446778",
+   "name": "Fidelity Bank Ghana",
+   "cc": "gh",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "https://www.fidelitybank.com.gh/",
+   "enwiki": "https://en.wikipedia.org/wiki/Fidelity_Bank_Ghana",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30688785",
+   "name": "First Atlantic Bank",
+   "cc": "gh",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/First_Atlantic_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q122871829",
+   "name": "Garu BESSFA Rural Bank",
+   "cc": "gh",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Garu",
+   "hq": [
+    10.85,
+    -0.16667
+   ],
+   "website": "http://www.bessfarb.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1521346",
+   "name": "GCB Bank",
+   "cc": "gh",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "https://www.gcbbank.com.gh/",
+   "enwiki": "https://en.wikipedia.org/wiki/GCB_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3104763",
+   "name": "Ghana Broadcasting Corporation",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "https://www.gbcghanaonline.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Ghana_Broadcasting_Corporation",
+   "logo_file": "GBC Logo a2.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98276582",
+   "name": "Ghana Investment Fund for Electronic Communications",
+   "cc": "gh",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Ghana_Investment_Fund_for_Electronic_Communications",
+   "listed": false
+  },
+  {
+   "qid": "Q16733570",
+   "name": "Ghana Investment Promotion Centre",
+   "cc": "gh",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://gipc.gov.gh/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ghana_Investment_Promotion_Centre",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3104764",
+   "name": "Ghana National Petroleum Corporation",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Tema",
+   "hq": [
+    5.66667,
+    -0.01667
+   ],
+   "website": "http://www.gnpcghana.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ghana_National_Petroleum_Corporation",
+   "logo_file": "Ghana National Petroleum Corporation (GNPC) logo.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4351971",
+   "name": "Ghana Post",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "website": "https://ghanapost.com.gh/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ghana_Post",
+   "logo_file": "Ghana Post logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5555390",
+   "name": "Ghana Railway Corporation",
+   "cc": "gh",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Ghana_Railway_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q19978283",
+   "name": "Ghana Water Company Ltd.",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "water collection, treatment and supply"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "https://www.gwcl.com.gh/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ghana_Water_Limited",
+   "logo_file": "Ghana Water Company Logo B002a.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25227065",
+   "name": "GN Bank",
+   "cc": "gh",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "http://www.gnbankghana.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/GN_Bank",
+   "logo_file": "GN Bank logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5616580",
+   "name": "Guinness Ghana Breweries",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Kumasi",
+   "hq": [
+    6.7,
+    -1.625
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Guinness_Ghana_Breweries",
+   "logo_file": "New Guinness Ghana Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25111863",
+   "name": "Hopin Academy",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "technology"
+   ],
+   "isin": [],
+   "hq_city": "Tamale",
+   "hq": [
+    9.4075,
+    -0.85333
+   ],
+   "website": "http://www.hopinacademy.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hopin_Academy",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16219415",
+   "name": "Institute of African Studies University of Ghana",
+   "cc": "gh",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://ias.ug.edu.gh/",
+   "enwiki": "https://en.wikipedia.org/wiki/Institute_of_African_Studies",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19810540",
+   "name": "Intercity STC Coaches Ltd.",
+   "cc": "gh",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "passenger transport"
+   ],
+   "isin": [],
+   "website": "https://stc.gov.gh",
+   "enwiki": "https://en.wikipedia.org/wiki/Intercity_STC",
+   "listed": false
+  },
+  {
+   "qid": "Q17061030",
+   "name": "Jumià",
+   "cc": "gh",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "JMIA"
+    }
+   ],
+   "industries": [
+    "online shop"
+   ],
+   "isin": [
+    "US48138M1053"
+   ],
+   "hq_city": "Ikeja",
+   "hq": [
+    6.58333,
+    3.33333
+   ],
+   "website": "https://group.jumia.com",
+   "lei": "391200JWCL5VCOSXNT56",
+   "enwiki": "https://en.wikipedia.org/wiki/Jumia",
+   "logo_file": "JumiaLogo (14).png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q19978405",
+   "name": "Kantanka Automobile",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "https://kantankaautomobiles.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kantanka_Automobile",
+   "logo_file": "Kantanka vehicles logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q54092988",
+   "name": "Kasapreko",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Kasapreko",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132451216",
+   "name": "Kodu Technology",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Kodu_Technology",
+   "listed": false
+  },
+  {
+   "qid": "Q125888007",
+   "name": "Maison Yusif",
+   "cc": "gh",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "cosmetics industry"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "https://maisonyusif.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85784534",
+   "name": "McDan Group of Companies",
+   "cc": "gh",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "freight transport"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/McDan_Group_of_Companies",
+   "logo_file": "Mcdan logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q6812065",
+   "name": "Melcom",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Melcom",
+   "logo_file": "Melcom logo.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q60526118",
+   "name": "Menzgold Ghana Limited",
+   "cc": "gh",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://menzgold.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Menzgold_Ghana_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q6973844",
+   "name": "National Investment Bank",
+   "cc": "gh",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "http://www.nib-ghana.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Investment_Bank",
+   "logo_file": "National Investment Bank logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65073432",
+   "name": "Niche Cocoa Company Limited",
+   "cc": "gh",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Niche_Cocoa_Company_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q16733950",
+   "name": "Northern Electricity Distribution Company",
+   "cc": "gh",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.nedcogh.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Northern_Electricity_Distribution_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q104846914",
+   "name": "Pambros Salt Production Limited",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Salt Industry in Ghana"
+   ],
+   "isin": [],
+   "hq_city": "Weija",
+   "hq": [
+    5.56667,
+    -0.33333
+   ],
+   "website": "https://www.panbrossalt.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pambros_Salt",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7247681",
+   "name": "Produce Buying Company",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Achimota",
+   "hq": [
+    5.61667,
+    -0.23333
+   ],
+   "website": "http://www.pbcgh.com/index.php?option=com_content&view=frontpage&Itemid=1",
+   "enwiki": "https://en.wikipedia.org/wiki/Produce_Buying_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7252979",
+   "name": "Prudential Bank Limited",
+   "cc": "gh",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.prudentialbank.com.gh",
+   "enwiki": "https://en.wikipedia.org/wiki/Prudential_Bank_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4039966",
+   "name": "Republic Bank Ghana Limited",
+   "cc": "gh",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "https://www.republicghana.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Republic_Bank_Ghana_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7380570",
+   "name": "Rural banks in Ghana",
+   "cc": "gh",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Rural_banks_in_Ghana",
+   "listed": false
+  },
+  {
+   "qid": "Q16734072",
+   "name": "Savings and Loans Company",
+   "cc": "gh",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Savings_and_Loans_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q7390288",
+   "name": "SIC Insurance Company",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance industry"
+   ],
+   "isin": [],
+   "hq_city": "Osu",
+   "hq": [
+    5.55389,
+    -0.175
+   ],
+   "website": "http://www.sic-gh.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/SIC_Insurance_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7390038",
+   "name": "Societe Generale Ghana",
+   "cc": "gh",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://societegenerale.com.gh",
+   "enwiki": "https://en.wikipedia.org/wiki/Societe_Generale_Ghana",
+   "logo_file": "Société Générale.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7598195",
+   "name": "Standard Chartered Ghana",
+   "cc": "gh",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Standard_Chartered_Ghana",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124815584",
+   "name": "Telecel Ghana",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://telecel.com.gh",
+   "enwiki": "https://en.wikipedia.org/wiki/Telecel_Ghana",
+   "listed": false
+  },
+  {
+   "qid": "Q16734152",
+   "name": "Tema Shipyard",
+   "cc": "gh",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Tema_Shipyard",
+   "listed": false
+  },
+  {
+   "qid": "Q48800612",
+   "name": "The Royal Bank, Ghana",
+   "cc": "gh",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/The_Royal_Bank,_Ghana",
+   "listed": false
+  },
+  {
+   "qid": "Q7770571",
+   "name": "The Trust Bank",
+   "cc": "gh",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "http://www.trustbank.com.gh/",
+   "enwiki": "https://en.wikipedia.org/wiki/The_Trust_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55635854",
+   "name": "Tiger Eye P. I.",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Tiger_Eye_P._I.",
+   "listed": false
+  },
+  {
+   "qid": "Q16734183",
+   "name": "Total Petroleum Ghana",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "http://www.total-ghana.com/os/osghana.nsf/home?readform",
+   "enwiki": "https://en.wikipedia.org/wiki/Total_Petroleum_Ghana",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61883237",
+   "name": "Twellium Industrial Company",
+   "cc": "gh",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "website": "https://twellium.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Twellium_Industrial_Company",
+   "logo_file": "Twellium logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7884628",
+   "name": "uniBank",
+   "cc": "gh",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.unibankghana.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/UniBank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19604603",
+   "name": "Universal Merchant Bank",
+   "cc": "gh",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "https://www.myumbbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Universal_Merchant_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7876063",
+   "name": "UT Bank",
+   "cc": "gh",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "http://www.utbankghana.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/UT_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4352110",
+   "name": "Vodafone Ghana",
+   "cc": "gh",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "http://www.vodafone.com.gh/",
+   "enwiki": "https://en.wikipedia.org/wiki/Vodafone_Ghana",
+   "logo_file": "Vodafone Ghana Logo 003.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48792241",
+   "name": "Yen.com.gh",
+   "cc": "gh",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Larousse Encyclopedia online"
+   ],
+   "isin": [],
+   "hq_city": "Accra",
+   "hq": [
+    5.55602,
+    -0.1969
+   ],
+   "website": "https://yen.com.gh",
+   "enwiki": "https://en.wikipedia.org/wiki/Yen.com.gh",
+   "logo_file": "YEN-logo-1000x1000px.jpg",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

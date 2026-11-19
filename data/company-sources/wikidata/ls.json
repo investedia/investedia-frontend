@@ -1,0 +1,58 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "LS",
+ "count": 2,
+ "companies": [
+  {
+   "qid": "Q7695817",
+   "name": "Econet Telecom Lesotho",
+   "cc": "ls",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Maseru",
+   "hq": [
+    -29.31,
+    27.48
+   ],
+   "website": "http://www.etl.co.ls/",
+   "enwiki": "https://en.wikipedia.org/wiki/Econet_Telecom_Lesotho",
+   "listed": false
+  },
+  {
+   "qid": "Q7190735",
+   "name": "Pick n Pay",
+   "cc": "ls",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "ZAE000005443"
+   ],
+   "hq_city": "Kenilworth",
+   "hq": [
+    -33.99583,
+    18.475
+   ],
+   "website": "https://www.pnp.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pick_n_Pay",
+   "logo_file": "Pick n Pay logo.svg",
+   "founded": null,
+   "listed": true
+  }
+ ]
+}

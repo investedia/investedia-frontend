@@ -52,4 +52,5 @@ jobs:
           git add data/companies.json data/company-sources/haiku-batch.json
           git diff --cached --quiet && { echo 'No changes.'; exit 0; }
           git -c user.name='Investedia enrich bot' -c user.email='robot@investedia.com' commit -q -m "Company sector, industry and description (Claude Haiku 5.5 batch)"
-          git push -q origin HEAD:${{ github.event.inputs.branch || github.ref_name }}
+          B=${{ github.event.inputs.branch || github.ref_name }}
+          for i in 1 2 3 4; do git pull -q --rebase origin "$B" && git push -q origin HEAD:"$B" && exit 0; sleep 15; done; exit 1

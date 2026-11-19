@@ -108,6 +108,8 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser(); ap.add_argument('step', choices=['submit', 'collect']); ap.add_argument('--limit', default='')
     ap.add_argument('--only-missing', action='store_true'); a = ap.parse_args()
     if a.step == 'submit':
-        lim = a.limit or json.loads((ROOT / 'data/company-sources/haiku-request.json').read_text()).get('limit', 50)
-        submit(int(lim), a.only_missing)
+        req = json.loads((ROOT / 'data/company-sources/haiku-request.json').read_text())
+        if req.get('collect_batch'):  # re-collect an earlier batch (already paid for) instead of sending a new one
+            STATE.write_text(json.dumps({'batches': [req['collect_batch']], 'submitted': 'earlier'}, indent=1) + '\n'); print('re-collecting', req['collect_batch'])
+        else: submit(int(a.limit or req.get('limit', 50)), a.only_missing)
     else: collect()

@@ -1,0 +1,87 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "GM",
+ "count": 4,
+ "companies": [
+  {
+   "qid": "Q806596",
+   "name": "Banjul Breweries",
+   "cc": "gm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Serekunda",
+   "hq": [
+    13.445,
+    -16.675
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Banjul_Breweries",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140706411",
+   "name": "Gambia Public Transport Corporation",
+   "cc": "gm",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1492950",
+   "name": "Gambia Radio & Television Service",
+   "cc": "gm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Serekunda",
+   "hq": [
+    13.445,
+    -16.675
+   ],
+   "website": "http://www.grts.gm/",
+   "enwiki": "https://en.wikipedia.org/wiki/Gambia_Radio_%26_Television_Service",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2456662",
+   "name": "Trust Bank Limited",
+   "cc": "gm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Banjul",
+   "hq": [
+    13.45306,
+    -16.5775
+   ],
+   "website": "http://www.trustbank.gm/",
+   "enwiki": "https://en.wikipedia.org/wiki/Trust_Bank_Limited_(Gambia)",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

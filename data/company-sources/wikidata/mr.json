@@ -1,0 +1,100 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "MR",
+ "count": 4,
+ "companies": [
+  {
+   "qid": "Q138974189",
+   "name": "Mauritanian Hydrocarbons Company",
+   "cc": "mr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Nouakchott",
+   "hq": [
+    18.08581,
+    -15.9785
+   ],
+   "website": "https://www.smh.mr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3462806",
+   "name": "Mauritanian Post Company",
+   "cc": "mr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Mauritania",
+   "hq": [
+    21.0,
+    -11.0
+   ],
+   "website": "https://www.mauripost.mr",
+   "enwiki": "https://en.wikipedia.org/wiki/Mauritanian_Post_Company",
+   "logo_file": "Logo of Mauripost.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q940084",
+   "name": "Mauritel",
+   "cc": "mr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Nouakchott",
+   "hq": [
+    18.08581,
+    -15.9785
+   ],
+   "website": "http://www.mauritel.mr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mauritel",
+   "logo_file": "Moov Mauritel logo (French version).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488541",
+   "name": "Société Nationale Industrielle et Minière",
+   "cc": "mr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nouadhibou",
+   "hq": [
+    20.91475,
+    -17.05017
+   ],
+   "website": "https://snim.com/",
+   "logo_file": "Snim logo.svg",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

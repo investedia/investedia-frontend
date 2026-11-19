@@ -1,0 +1,153 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "ET",
+ "count": 8,
+ "companies": [
+  {
+   "qid": "Q30632297",
+   "name": "Development Bank of Ethiopia",
+   "cc": "et",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Development_Bank_of_Ethiopia",
+   "listed": false
+  },
+  {
+   "qid": "Q1276270",
+   "name": "EBC",
+   "cc": "et",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Addis Ababa",
+   "hq": [
+    9.03583,
+    38.7525
+   ],
+   "website": "http://www.ebc.et/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ethiopian_Broadcasting_Corporation",
+   "logo_file": "EBC experimental logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5403583",
+   "name": "ethio telecom",
+   "cc": "et",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Addis Ababa",
+   "hq": [
+    9.03583,
+    38.7525
+   ],
+   "website": "https://www.ethiotelecom.et/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ethio_Telecom",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55639670",
+   "name": "Ethiopian Electric Power",
+   "cc": "et",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity generation"
+   ],
+   "isin": [],
+   "website": "https://www.eepco.gov.et/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ethiopian_Electric_Power",
+   "logo_file": "Ethiopia Electric Power logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q257518",
+   "name": "Ethiopian News Agency",
+   "cc": "et",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.ena.et/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ethiopian_News_Agency",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114089239",
+   "name": "Haile Resorts",
+   "cc": "et",
+   "types": [
+    "Q1631129"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Haile_Resorts",
+   "listed": false
+  },
+  {
+   "qid": "Q113588309",
+   "name": "Kuriftu Resorts & Spa",
+   "cc": "et",
+   "types": [
+    "Q1631129"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Kuriftu_Resorts_%26_Spa",
+   "listed": false
+  },
+  {
+   "qid": "Q27628335",
+   "name": "Metals and Engineering Corporation",
+   "cc": "et",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Addis Ababa",
+   "hq": [
+    9.03583,
+    38.7525
+   ],
+   "website": "http://www.metec.gov.et",
+   "enwiki": "https://en.wikipedia.org/wiki/Metals_and_Engineering_Corporation",
+   "logo_file": "Metec Corporation.png",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

@@ -1,0 +1,237 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "ML",
+ "count": 13,
+ "companies": [
+  {
+   "qid": "Q18331930",
+   "name": "Grands moulins du Mali",
+   "cc": "ml",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137823429",
+   "name": "Groupe Kledu",
+   "cc": "ml",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3151825",
+   "name": "Institut africain des métiers de l'aérien",
+   "cc": "ml",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bamako-Sénou International Airport",
+   "hq": [
+    12.53778,
+    -7.94306
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2883022",
+   "name": "Mali Development Bank",
+   "cc": "ml",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Bamako",
+   "hq": [
+    12.64583,
+    -7.99222
+   ],
+   "website": "http://www.bdm-sa.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_de_D%C3%A9veloppement_du_Mali",
+   "listed": false
+  },
+  {
+   "qid": "Q6743829",
+   "name": "Moov Africa Malitel",
+   "cc": "ml",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "https://www.moov-africa.ml/",
+   "enwiki": "https://en.wikipedia.org/wiki/Malitel",
+   "listed": false
+  },
+  {
+   "qid": "Q30594734",
+   "name": "National Bank of Agricultural Development",
+   "cc": "ml",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Bamako",
+   "hq": [
+    12.64583,
+    -7.99222
+   ],
+   "website": "http://www.bnda-mali.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_Nationale_de_D%C3%A9veloppement_Agricole",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3355061",
+   "name": "Orange Mali",
+   "cc": "ml",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Bamako",
+   "hq": [
+    12.64583,
+    -7.99222
+   ],
+   "website": "http://www.orangemali.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ikatel",
+   "logo_file": "Orange logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488523",
+   "name": "Société nationale de tabac et allumettes du Mali",
+   "cc": "ml",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "tobacco industry"
+   ],
+   "isin": [],
+   "logo_file": "Logo des 60 ans de la SONATAM.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488214",
+   "name": "Sotelma",
+   "cc": "ml",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Bamako",
+   "hq": [
+    12.64583,
+    -7.99222
+   ],
+   "website": "http://www.sotelma.ml/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sotelma",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3538006",
+   "name": "Transrail",
+   "cc": "ml",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.transrailsa.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q2370156",
+   "name": "Éditions Jamana",
+   "cc": "ml",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.jamana.org/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3579386",
+   "name": "Éditions La Sahélienne",
+   "cc": "ml",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://editionslasahelienne.net/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3588962",
+   "name": "Énergie du Mali",
+   "cc": "ml",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.edmsa.ml/",
+   "listed": false
+  }
+ ]
+}

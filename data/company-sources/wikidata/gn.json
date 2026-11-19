@@ -1,0 +1,338 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "GN",
+ "count": 18,
+ "companies": [
+  {
+   "qid": "Q125468223",
+   "name": "banque islamique de Guinée",
+   "cc": "gn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q2989918",
+   "name": "Compagnie des bauxites de Guinée",
+   "cc": "gn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Conakry",
+   "hq": [
+    9.50917,
+    -13.71222
+   ],
+   "website": "https://www.cbg-guinee.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Compagnie_des_Bauxites_de_Guin%C3%A9e",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q86736182",
+   "name": "Compagnie des bauxites de Kindia",
+   "cc": "gn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Compagnie_des_bauxites_de_Kindia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141146049",
+   "name": "Compagnie du TransGuinéen",
+   "cc": "gn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://ctg.gn",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107351914",
+   "name": "Crédit Rural de Guinée",
+   "cc": "gn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Conakry",
+   "hq": [
+    9.50917,
+    -13.71222
+   ],
+   "website": "https://creditruralgn.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134838190",
+   "name": "Falibra Group",
+   "cc": "gn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "biometrics",
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Conakry",
+   "hq": [
+    9.50917,
+    -13.71222
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18414259",
+   "name": "Guinéenne de Large Bande",
+   "cc": "gn",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Conakry",
+   "hq": [
+    9.50917,
+    -13.71222
+   ],
+   "website": "http://www.guilab.com.gn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Guin%C3%A9enne_de_Large_Bande",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5641166",
+   "name": "Halco Mining",
+   "cc": "gn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aluminium industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Halco_Mining",
+   "listed": false
+  },
+  {
+   "qid": "Q107315181",
+   "name": "L'Harmattan Guinée",
+   "cc": "gn",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Conakry",
+   "hq": [
+    9.50917,
+    -13.71222
+   ],
+   "website": "https://guinee.harmattan.fr/",
+   "logo_file": "Logo L'Harmattan Guinée.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114055032",
+   "name": "Pharmacie centrale de Guinée",
+   "cc": "gn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dixinn",
+   "hq": [
+    9.5495,
+    -13.6713
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3487350",
+   "name": "Sobragui",
+   "cc": "gn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "hq_city": "Conakry",
+   "hq": [
+    9.50917,
+    -13.71222
+   ],
+   "website": "https://sobragui.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q98521615",
+   "name": "Société AngloGold Ashanti de Guinée",
+   "cc": "gn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Conakry",
+   "hq": [
+    9.50917,
+    -13.71222
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q86667780",
+   "name": "Société minière de Boké",
+   "cc": "gn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.smb-guinee.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_mini%C3%A8re_de_Bok%C3%A9",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3490246",
+   "name": "Sonatel",
+   "cc": "gn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Dakar",
+   "hq": [
+    14.67256,
+    -17.432
+   ],
+   "website": "http://www.orange.sl",
+   "enwiki": "https://en.wikipedia.org/wiki/Sonatel",
+   "logo_file": "Sonatel logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115859554",
+   "name": "Sonoco",
+   "cc": "gn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "finance",
+    "logistics",
+    "product distribution",
+    "real property",
+    "trade",
+    "transport"
+   ],
+   "isin": [],
+   "hq_city": "Conakry",
+   "hq": [
+    9.50917,
+    -13.71222
+   ],
+   "website": "http://www.sonoco-sa.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3459924",
+   "name": "SOTELGUI",
+   "cc": "gn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q62129151",
+   "name": "Tulip Industry",
+   "cc": "gn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Conakry",
+   "hq": [
+    9.50917,
+    -13.71222
+   ],
+   "website": "http://www.tulipindustry.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21055462",
+   "name": "Éditions Ganndal",
+   "cc": "gn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

@@ -1,0 +1,302 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "GA",
+ "count": 16,
+ "companies": [
+  {
+   "qid": "Q2828208",
+   "name": "Air Gabon International",
+   "cc": "ga",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q189972",
+   "name": "Bank of Central African States",
+   "cc": "ga",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "https://www.beac.int",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Central_African_States",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139539690",
+   "name": "Banque internationale pour le commerce et l'industrie du Gabon",
+   "cc": "ga",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q86662273",
+   "name": "Ceca-Gadis",
+   "cc": "ga",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "business activity",
+    "product distribution"
+   ],
+   "isin": [],
+   "hq_city": "Libreville",
+   "hq": [
+    0.40778,
+    9.44028
+   ],
+   "website": "https://cecagadis.com",
+   "listed": false
+  },
+  {
+   "qid": "Q86664428",
+   "name": "Gabon Oil Company",
+   "cc": "ga",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Libreville",
+   "hq": [
+    0.40778,
+    9.44028
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Gabon_Oil_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q3093528",
+   "name": "Gabon Telecom",
+   "cc": "ga",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Libreville",
+   "hq": [
+    0.40778,
+    9.44028
+   ],
+   "website": "http://www.gabontelecom.ga/",
+   "enwiki": "https://en.wikipedia.org/wiki/Gabon_Telecom",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140514566",
+   "name": "Maison d'éditions Doxa",
+   "cc": "ga",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Paris",
+   "hq": [
+    48.85667,
+    2.35222
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q3370417",
+   "name": "Paul",
+   "cc": "ga",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "restaurant"
+   ],
+   "isin": [],
+   "website": "http://www.paul-gabon.com/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Paul_(bakery)",
+   "logo_file": "Logo Paul.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65123358",
+   "name": "Setrag",
+   "cc": "ga",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://setrag.ga/",
+   "listed": false
+  },
+  {
+   "qid": "Q25378116",
+   "name": "Sobraga",
+   "cc": "ga",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry",
+    "product distribution"
+   ],
+   "isin": [],
+   "hq_city": "Owendo",
+   "hq": [
+    0.28333,
+    9.5
+   ],
+   "website": "https://sobraga.net",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488546",
+   "name": "Société Nationale Petrolière Gabonaise",
+   "cc": "ga",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_Nationale_Petroli%C3%A8re_Gabonaise",
+   "listed": false
+  },
+  {
+   "qid": "Q3459878",
+   "name": "Sogara",
+   "cc": "ga",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Port-Gentil",
+   "hq": [
+    -0.71667,
+    8.78333
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3550281",
+   "name": "Union gabonaise de banque",
+   "cc": "ga",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Libreville",
+   "hq": [
+    0.40778,
+    9.44028
+   ],
+   "website": "http://www.ugb-banque.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q117264600",
+   "name": "Éditions Amaya",
+   "cc": "ga",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Libreville",
+   "hq": [
+    0.40778,
+    9.44028
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106610327",
+   "name": "Éditions Ntsame",
+   "cc": "ga",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Libreville",
+   "hq": [
+    0.40778,
+    9.44028
+   ],
+   "website": "http://www.leseditionsntsame.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q140509964",
+   "name": "Éditions Odette Maganga",
+   "cc": "ga",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "African literature"
+   ],
+   "isin": [],
+   "hq_city": "Libreville",
+   "hq": [
+    0.40778,
+    9.44028
+   ],
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

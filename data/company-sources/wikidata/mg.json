@@ -1,0 +1,179 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "MG",
+ "count": 9,
+ "companies": [
+  {
+   "qid": "Q109312582",
+   "name": "Axian Telecom",
+   "cc": "mg",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry",
+    "financial sector",
+    "fintech",
+    "open innovation",
+    "real property",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Antananarivo",
+   "hq": [
+    -18.91,
+    47.525
+   ],
+   "website": "http://www.axian-group.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Axian_Telecom",
+   "logo_file": "Logo-Axian.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q69398053",
+   "name": "BNI Madagascar",
+   "cc": "mg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Antananarivo",
+   "hq": [
+    -18.91,
+    47.525
+   ],
+   "website": "https://www.bni.mg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125844460",
+   "name": "Cie Up the Rap",
+   "cc": "mg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Madagascar",
+   "hq": [
+    -20.0,
+    47.0
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18214679",
+   "name": "Entreprise de construction automobile malgache",
+   "cc": "mg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Antananarivo",
+   "hq": [
+    -18.91,
+    47.525
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q17092876",
+   "name": "Jirama",
+   "cc": "mg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity supply company",
+    "water collection, treatment and supply"
+   ],
+   "isin": [],
+   "hq_city": "Antananarivo",
+   "hq": [
+    -18.91,
+    47.525
+   ],
+   "website": "https://www.jirama.mg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Jirama",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16938734",
+   "name": "Madacom",
+   "cc": "mg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Antananarivo",
+   "hq": [
+    -18.91,
+    47.525
+   ],
+   "website": "http://www.madacom.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Madacom",
+   "listed": false
+  },
+  {
+   "qid": "Q7132299",
+   "name": "Paositra Malagasy",
+   "cc": "mg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "website": "https://paositramalagasy.mg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Paositra_Malagasy",
+   "listed": false
+  },
+  {
+   "qid": "Q126811668",
+   "name": "Radio Nasionaly Malagasy",
+   "cc": "mg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97366867",
+   "name": "Star",
+   "cc": "mg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  }
+ ]
+}
