@@ -32,7 +32,9 @@ Use ONLY the facts given. Do not add facts you were not given (no revenue, size,
 sector: exactly one of {SECTORS}, or null if the facts are not enough to be confident.
 industry: a short plain label of 1-3 words (e.g. "Banks", "Mobile networks", "Cement", "Oil and gas"), or null.
 description: one or two plain sentences, at most 40 words, saying what kind of business it is and where it is based, built only from the facts.
-Never give opinions, forecasts, ratings, praise or investment advice. If the facts say almost nothing, set description to null.
+Write the description as a plain statement for readers, like an encyclopedia line, e.g. "Absa is a banking group based in Johannesburg, South Africa, listed on the Johannesburg Stock Exchange."
+Never mention the input, facts, hints, sources, assumptions or what is unknown (no "provided", "based on the name", "not specified", "hint").
+Never give opinions, forecasts, ratings, praise or investment advice. If you cannot say what kind of business it is, set description to null.
 confidence: "high", "medium" or "low"."""
 
 SCHEMA = {'type': 'object', 'additionalProperties': False, 'required': ['sector', 'industry', 'description', 'confidence'],
@@ -40,6 +42,18 @@ SCHEMA = {'type': 'object', 'additionalProperties': False, 'required': ['sector'
                          'industry': {'anyOf': [{'type': 'string'}, {'type': 'null'}]},
                          'description': {'anyOf': [{'type': 'string'}, {'type': 'null'}]},
                          'confidence': {'type': 'string', 'enum': ['high', 'medium', 'low']}}}
+
+
+# Older directory sector names -> the 11 official ones (data/sector-taxonomy.json)
+OLD = {'Finance': 'Financials', 'Technology': 'Information technology', 'Healthcare': 'Health care', 'Communication': 'Communication services',
+       'Real Estate': 'Real estate', 'Consumer': None}  # 'Consumer' is split by Haiku into discretionary / staples
+BAD = ('provided', 'hint', 'based on the name', 'not specif', 'assum', 'the facts', 'input', 'unknown', 'does not say', 'no information')
+
+
+def normalise(d):
+    for c in d['companies']:
+        if c.get('sector') in OLD: c['sector'] = OLD[c['sector']]
+        if c.get('sector') and c['sector'] not in SECTORS: c['sector'] = None
 
 
 def facts(c):
@@ -50,14 +64,15 @@ def facts(c):
     f['stock_exchange'] = ex[0] if ex else ('not listed' if c.get('listed') is False else None)
     words = [w for w in [c.get('industry'), *(c.get('wikidata_industries') or [])] if w]
     if words: f['industry_words_from_source'] = words[:4]
-    if c.get('sector'): f['existing_sector_hint'] = c['sector']
+    if c.get('sector') and c['sector'] in SECTORS: f['sector_from_source'] = c['sector']
+    elif c.get('sector') == 'Consumer': f['broad_sector_from_source'] = 'Consumer (pick discretionary or staples)'
     if c.get('founded'): f['founded'] = c['founded']
     if c.get('website'): f['website_domain'] = urllib.parse.urlparse(c['website']).netloc
     return {k: v for k, v in f.items() if v}
 
 
 def todo(d, only_missing):
-    return [c for c in d['companies'] if not c.get('description') and (not only_missing or not c.get('ai'))]
+    return [c for c in d['companies'] if (not c.get('description') or c.get('redo')) and (not only_missing or not c.get('ai'))]
 
 
 def submit(limit, only_missing):
@@ -88,15 +103,16 @@ def collect():
             text = next((x.text for x in m.content if x.type == 'text'), None)
             try: out[r.custom_id] = (json.loads(text), bid)
             except Exception: pass
-    d = json.loads(DIRECTORY.read_text(encoding='utf-8')); n = 0; today = datetime.date.today().isoformat()
+    d = json.loads(DIRECTORY.read_text(encoding='utf-8')); normalise(d); n = 0; today = datetime.date.today().isoformat()
     for c in d['companies']:
         got = out.get(c['slug'][:64])
-        if not got or c.get('description'): continue
+        if not got or (c.get('description') and not c.get('ai')): continue  # never overwrite a description a person wrote
         v, bid = got
         if v['confidence'] == 'low': v['sector'] = None
-        if not c.get('sector') and v['sector'] in SECTORS: c['sector'] = v['sector']
+        if (not c.get('sector') or c['sector'] not in SECTORS) and v['sector'] in SECTORS: c['sector'] = v['sector']
         if not c.get('industry') and v['industry']: c['industry'] = v['industry'][:40]
-        if v['description'] and v['confidence'] != 'low': c['description'] = v['description'].strip()
+        desc = (v['description'] or '').strip()
+        if desc and v['confidence'] != 'low' and not any(b in desc.lower() for b in BAD): c['description'] = desc  # never publish text that talks about its own input
         c['ai'] = {'model': MODEL, 'batch': bid, 'date': today, 'confidence': v['confidence'], 'fields': ['sector', 'industry', 'description']}
         n += 1
     DIRECTORY.write_text(json.dumps(d, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
