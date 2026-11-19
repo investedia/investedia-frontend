@@ -9,9 +9,9 @@
   function show(n) {
     if (!pill) {
       var st = document.createElement('style');
-      st.textContent = '.inv-live{position:fixed;left:50%;top:76px;transform:translateX(-50%);z-index:90;display:flex;align-items:center;gap:9px;white-space:nowrap;max-width:calc(100vw - 24px);background:var(--accent,#ff7a1a);color:#111;font:600 14px Inter,system-ui,sans-serif;padding:9px 16px;border:0;border-radius:999px;box-shadow:0 8px 30px rgba(0,0,0,.45);cursor:pointer}.inv-live i{width:8px;height:8px;border-radius:50%;background:#111;flex:none;animation:invlp 1.6s ease-in-out infinite}@keyframes invlp{50%{opacity:.35}}@media(max-width:600px){.inv-live{top:auto;bottom:calc(96px + env(safe-area-inset-bottom));font-size:13px;padding:9px 15px}}@media(prefers-reduced-motion:reduce){.inv-live i{animation:none}}';
+      st.textContent = '.inv-live{position:fixed;left:50%;top:76px;transform:translateX(-50%);z-index:90;display:flex;align-items:center;gap:9px;white-space:nowrap;max-width:calc(100vw - 24px);background:var(--accent,#ff7a1a);color:#111;font:600 14px Inter,system-ui,sans-serif;padding:9px 16px;border:0;border-radius:999px;box-shadow:0 8px 30px rgba(0,0,0,.45);cursor:pointer}.inv-live i{width:8px;height:8px;border-radius:50%;background:#111;flex:none;animation:invlp 1.6s ease-in-out infinite}@keyframes invlp{50%{opacity:.35}}@media(max-width:600px){.inv-live{top:66px;left:16px;transform:none;font-size:12.5px;gap:7px;padding:7px 12px;box-shadow:0 4px 16px rgba(0,0,0,.4)}.inv-live i{width:6px;height:6px}.inv-live.pg{top:auto;bottom:calc(20px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.inv-live i{animation:none}}';
       document.head.appendChild(st);
-      pill = document.createElement('button'); pill.type = 'button'; pill.className = 'inv-live'; pill.setAttribute('aria-live', 'polite');
+      pill = document.createElement('button'); pill.type = 'button'; pill.className = 'inv-live' + (/\/globe\//.test(location.pathname) ? '' : ' pg'); pill.setAttribute('aria-live', 'polite');
       pill.onclick = function () { pill.textContent = 'Loading…'; scrollTo(0, 0); location.reload(); };
       document.body.appendChild(pill);
     }
