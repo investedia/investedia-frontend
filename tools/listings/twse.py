@@ -13,7 +13,7 @@ name is kept as `name_local`. The industry field is only a numeric code, so it i
 (codes starting 91: foreign companies' receipts) are left out. Country stays TW: the dataset's "foreign registration
 country" is where a company is incorporated (often the Cayman Islands), not where it is based.
 """
-import json, pathlib, sys
+import json, pathlib, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from listing_io import get, save
 
@@ -28,7 +28,7 @@ def main():
         if not code or code.startswith('91'): continue
         site = (r.get('網址') or '').strip()
         rows.append({'symbol': code, 'name': r.get('英文簡稱'), 'name_local': r.get('公司名稱'), 'country_key': 'TW',
-                     'website': site if site.lower().startswith('http') else None})
+                     'website': site if re.match(r'(?i)^https?://[^\s/]+\.[^\s]+$', site) else None})  # malformed addresses are dropped, not repaired
     save('twse', 'Taiwan Stock Exchange', URL, TERMS, raw, rows)
 
 

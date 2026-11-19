@@ -12,7 +12,7 @@ used as `name`, the Chinese full name as `name_local`. The industry field is a n
 starting 91 would be depositary receipts of foreign companies and are left out. Country stays TW (the "Registration"
 field is the place of incorporation, not where the company is based).
 """
-import json, pathlib, sys
+import json, pathlib, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from listing_io import get, save
 
@@ -27,7 +27,7 @@ def main():
         if not code or code.startswith('91'): continue
         site = (r.get('WebAddress') or '').strip(' 　')
         rows.append({'symbol': code, 'name': r.get('Symbol'), 'name_local': r.get('CompanyName'), 'country_key': 'TW',
-                     'website': site if site.lower().startswith('http') else None})
+                     'website': site if re.match(r'(?i)^https?://[^\s/]+\.[^\s]+$', site) else None})  # malformed addresses are dropped, not repaired
     save('tpex', 'Taipei Exchange (TPEx)', URL, TERMS, raw, rows)
 
 
