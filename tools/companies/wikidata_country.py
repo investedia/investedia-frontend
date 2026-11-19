@@ -51,7 +51,7 @@ def run(q, tries=4):
                 return json.load(r)['results']['bindings']
         except Exception as e:
             if i == tries - 1: raise
-            time.sleep(10 * (i + 1))
+            time.sleep(70 * (i + 1))  # the query service may allow only 1 request a minute
 
 
 def country(cc):
@@ -95,7 +95,7 @@ def main(argv=None):
     for cc in ccs:
         try: n, l = country(cc); tot += n; print(f'{cc}: {n} companies ({l} listed)', flush=True)
         except Exception as e: print(f'{cc}: failed ({e})', flush=True)
-        time.sleep(3)
+        time.sleep(65)  # stay under the 1 request a minute limit during Wikidata outages
     print('total', tot)
 
 
