@@ -13,1663 +13,758 @@
   {
    "Symbol": "ABBEYBANK",
    "CompanyName": "ABBEY BANK PLC",
-   "InternationSecIN": "NGABBEY00001",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Mortgage Carriers, Brokers an",
-   "Website": "www.abbeymortgagebankplc.com",
-   "DateOfIncorporation": "1991-08-26T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGABBEY00001"
   },
   {
    "Symbol": "ABCTRANS",
    "CompanyName": "ABC TRANSPORT PLC",
-   "InternationSecIN": "NGABCTRANS01",
-   "Sector": "SERVICES",
-   "SubSector": "Road Transportation",
-   "Website": "www.abctransport.com",
-   "DateOfIncorporation": "1993-04-05T00:00:00",
-   "DateListed": "2006-12-20T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGABCTRANS01"
   },
   {
    "Symbol": "ACADEMY",
    "CompanyName": "ACADEMY PRESS PLC.",
-   "InternationSecIN": "NGACADEMY008",
-   "Sector": "SERVICES",
-   "SubSector": "Printing/Publishing",
-   "Website": "www.academypress-plc.com",
-   "DateOfIncorporation": "1964-07-28T00:00:00",
-   "DateListed": "1965-06-15T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGACADEMY008"
   },
   {
    "Symbol": "ACCESSCORP",
    "CompanyName": "ACCESS HOLDINGS PLC",
-   "InternationSecIN": "NGACCESS0005",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Other Financial Institutions",
-   "Website": "theaccesscorporation.com",
-   "DateOfIncorporation": "2021-02-10T00:00:00",
-   "DateListed": "2022-03-28T00:00:00",
-   "MarketClassification": "Premium Board"
+   "InternationSecIN": "NGACCESS0005"
   },
   {
    "Symbol": "AFRINSURE",
    "CompanyName": "AFRICAN ALLIANCE INSURANCE PLC",
-   "InternationSecIN": "NGAFRINSURE4",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "www.africanallianceplc.com",
-   "DateOfIncorporation": "1960-05-06T00:00:00",
-   "DateListed": "2009-09-17T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGAFRINSURE4"
   },
   {
    "Symbol": "AFRIPRUD",
    "CompanyName": "AFRICA PRUDENTIAL PLC",
-   "InternationSecIN": "NGAFRIPRUD04",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Other Financial Institutions",
-   "Website": "www.africaprudential.com",
-   "DateOfIncorporation": "2006-03-23T00:00:00",
-   "DateListed": "2013-11-01T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGAFRIPRUD04"
   },
   {
    "Symbol": "AFROMEDIA",
    "CompanyName": "AFROMEDIA PLC",
-   "InternationSecIN": "NGAFROMEDIA7",
-   "Sector": "SERVICES",
-   "SubSector": "Advertising",
-   "Website": "www.afromediaplc.com",
-   "DateOfIncorporation": "1959-10-28T00:00:00",
-   "DateListed": "2009-05-18T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGAFROMEDIA7"
   },
   {
    "Symbol": "AIICO",
    "CompanyName": "AIICO INSURANCE PLC.",
-   "InternationSecIN": "NGAIICO00006",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "www.aiicoplc.com",
-   "DateOfIncorporation": "1970-07-14T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGAIICO00006"
   },
   {
    "Symbol": "AIRTELAFRI",
    "CompanyName": "AIRTEL AFRICA PLC",
-   "InternationSecIN": "GB00BKDRYJ47",
-   "Sector": "ICT",
-   "SubSector": "Telecommunications Services",
-   "Website": null,
-   "DateOfIncorporation": "2018-07-12T00:00:00",
-   "DateListed": "2019-07-09T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "GB00BKDRYJ47"
   },
   {
    "Symbol": "ALEX",
    "CompanyName": "ALUMINIUM EXTRUSION INDUSTRIES PLC",
-   "InternationSecIN": "NGALEX000003",
-   "Sector": "NATURAL RESOURCES",
-   "SubSector": "Metals",
-   "Website": "http://alexnigeria.com/",
-   "DateOfIncorporation": "1982-10-26T00:00:00",
-   "DateListed": "1987-12-29T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGALEX000003"
   },
   {
    "Symbol": "ARADEL",
    "CompanyName": "ARADEL HOLDINGS PLC",
-   "InternationSecIN": "NGARADEL0004",
-   "Sector": "OIL AND GAS",
-   "SubSector": "Integrated Oil and Gas Service",
-   "Website": "www.aradel.com",
-   "DateOfIncorporation": "1992-03-25T00:00:00",
-   "DateListed": "2024-10-14T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGARADEL0004"
   },
   {
    "Symbol": "AUSTINLAZ",
    "CompanyName": "AUSTIN LAZ & COMPANY PLC",
-   "InternationSecIN": "NGAUSTINLAZ9",
-   "Sector": "INDUSTRIAL GOODS",
-   "SubSector": "Electronic and Electrical Prod",
-   "Website": null,
-   "DateOfIncorporation": "1982-07-13T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGAUSTINLAZ9"
   },
   {
    "Symbol": "AVACAP",
    "CompanyName": "AVA CAPITAL PLC",
-   "InternationSecIN": "NGAVACAP0009",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Other Financial Institutions",
-   "Website": "www.avacapitalplcgroup.com",
-   "DateOfIncorporation": "2014-01-24T00:00:00",
-   "DateListed": "2026-07-31T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGAVACAP0009"
   },
   {
    "Symbol": "AVAIF",
    "CompanyName": "AVA INFRASTRUCTURE FUND",
-   "InternationSecIN": "NGAVAIF00001",
-   "Sector": "CONSTRUCTION/REAL ESTATE",
-   "SubSector": "Infrastructure/Heavy Construct",
-   "Website": "www.avacapitalgroup.com",
-   "DateOfIncorporation": "2014-08-18T00:00:00",
-   "DateListed": "2014-09-15T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGAVAIF00001"
   },
   {
    "Symbol": "BAPLC",
    "CompanyName": "BRICLINKS AFRICA PLC",
-   "InternationSecIN": "NGBAPLC00002",
-   "Sector": "ICT",
-   "SubSector": "Telecommunications Services",
-   "Website": "www.btel.com.ng",
-   "DateOfIncorporation": "2015-07-30T00:00:00",
-   "DateListed": "2021-02-05T00:00:00",
-   "MarketClassification": "Growth Board"
+   "InternationSecIN": "NGBAPLC00002"
   },
   {
    "Symbol": "BERGER",
    "CompanyName": "BERGER PAINTS PLC",
-   "InternationSecIN": "NGBERGER0000",
-   "Sector": "INDUSTRIAL GOODS",
-   "SubSector": "Building Materials",
-   "Website": "www.bergerpaintsnig.com",
-   "DateOfIncorporation": "1959-09-01T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGBERGER0000"
   },
   {
    "Symbol": "BETAGLAS",
    "CompanyName": "BETA GLASS PLC.",
-   "InternationSecIN": "NGBETAGLAS04",
-   "Sector": "INDUSTRIAL GOODS",
-   "SubSector": "Packaging/Containers",
-   "Website": "www.betaglass.com",
-   "DateOfIncorporation": "1974-06-02T00:00:00",
-   "DateListed": "1986-07-02T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGBETAGLAS04"
   },
   {
    "Symbol": "BUACEMENT",
    "CompanyName": "BUA CEMENT PLC",
-   "InternationSecIN": "NGBUACEMENT3",
-   "Sector": "INDUSTRIAL GOODS",
-   "SubSector": "Building Materials",
-   "Website": null,
-   "DateOfIncorporation": "2014-05-30T00:00:00",
-   "DateListed": "2020-01-09T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGBUACEMENT3"
   },
   {
    "Symbol": "BUAFOODS",
    "CompanyName": "BUA FOODS PLC",
-   "InternationSecIN": "NGBUAFOODS04",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Food Products",
-   "Website": "www.buafoodsplc.com",
-   "DateOfIncorporation": "2005-04-13T00:00:00",
-   "DateListed": "2022-01-05T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGBUAFOODS04"
   },
   {
    "Symbol": "CADBURY",
    "CompanyName": "CADBURY NIGERIA PLC.",
-   "InternationSecIN": "NGCADBURY001",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Food Products--Diversified",
-   "Website": "www.cadburynigeria.com",
-   "DateOfIncorporation": "1965-01-09T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGCADBURY001"
   },
   {
    "Symbol": "CAP",
    "CompanyName": "CHEMICAL AND ALLIED PRODUCTS PLC",
-   "InternationSecIN": "NGCAP0000009",
-   "Sector": "INDUSTRIAL GOODS",
-   "SubSector": "Building Materials",
-   "Website": "https://www.capplc.com/",
-   "DateOfIncorporation": "1965-09-21T00:00:00",
-   "DateListed": "1978-05-24T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGCAP0000009"
   },
   {
    "Symbol": "CAVERTON",
    "CompanyName": "CAVERTON OFFSHORE SUPPORT GROUP PLC",
-   "InternationSecIN": "NGCAVERTON07",
-   "Sector": "SERVICES",
-   "SubSector": "Support and Logistics",
-   "Website": "www.caverton-offshore.com",
-   "DateOfIncorporation": "2008-06-02T00:00:00",
-   "DateListed": "2014-02-06T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGCAVERTON07"
   },
   {
    "Symbol": "CHAMPION",
    "CompanyName": "CHAMPION BREWERIES PLC",
-   "InternationSecIN": "NGCHAMPION00",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Beverages--Brewers/Distillers",
-   "Website": "www. championbreweries.com",
-   "DateOfIncorporation": "1974-07-31T00:00:00",
-   "DateListed": "1983-09-01T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGCHAMPION00"
   },
   {
    "Symbol": "CHAMS",
    "CompanyName": "CHAMS HOLDING COMPANY PLC",
-   "InternationSecIN": "NGCHAMS00001",
-   "Sector": "ICT",
-   "SubSector": "Processing Systems",
-   "Website": "WWW.CHAMSPLC.COM",
-   "DateOfIncorporation": "1985-09-10T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGCHAMS00001"
   },
   {
    "Symbol": "CHELLARAM",
    "CompanyName": "CHELLARAMS PLC.",
-   "InternationSecIN": "NGCHELLARAM5",
-   "Sector": "CONGLOMERATES",
-   "SubSector": "Diversified Industries",
-   "Website": "www.chellaramsplc.com",
-   "DateOfIncorporation": "1947-08-13T00:00:00",
-   "DateListed": "1977-04-01T00:00:00",
-   "MarketClassification": "Growth Board"
+   "InternationSecIN": "NGCHELLARAM5"
   },
   {
    "Symbol": "CILEASING",
    "CompanyName": "C & I LEASING PLC.",
-   "InternationSecIN": "NGCILEASING2",
-   "Sector": "SERVICES",
-   "SubSector": "Support and Logistics",
-   "Website": "www.c-ileasing.com",
-   "DateOfIncorporation": "1990-12-28T00:00:00",
-   "DateListed": "1997-12-01T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGCILEASING2"
   },
   {
    "Symbol": "CMFC",
    "CompanyName": "CRITICAL MINERALS FINANCING CORP PLC",
-   "InternationSecIN": "NGDEAPCAP009",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Other Financial Institutions",
-   "Website": null,
-   "DateOfIncorporation": "2002-06-05T00:00:00",
-   "DateListed": "2007-12-17T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGDEAPCAP009"
   },
   {
    "Symbol": "CNIF",
    "CompanyName": "CORONATION INFRASTRUCTURE FUND",
-   "InternationSecIN": "NGCNIF000007",
-   "Sector": "CONSTRUCTION/REAL ESTATE",
-   "SubSector": "Infrastructure/Heavy Construct",
-   "Website": "www.coronation.com",
-   "DateOfIncorporation": "2025-04-09T00:00:00",
-   "DateListed": "2025-08-25T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGCNIF000007"
   },
   {
    "Symbol": "CONHALLPLC",
    "CompanyName": "CONSOLIDATED HALLMARK HOLDINGS PLC",
-   "InternationSecIN": "NGCONHALLPL3",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "  www.chiplc.com",
-   "DateOfIncorporation": "1991-08-02T00:00:00",
-   "DateListed": "2023-11-27T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGCONHALLPL3"
   },
   {
    "Symbol": "CONOIL",
    "CompanyName": "CONOIL PLC",
-   "InternationSecIN": "NGCONOIL0003",
-   "Sector": "OIL AND GAS",
-   "SubSector": "Petroleum and Petroleum Produc",
-   "Website": "www.conoilplc.com",
-   "DateOfIncorporation": "1970-06-30T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGCONOIL0003"
   },
   {
    "Symbol": "CORNERST",
    "CompanyName": "CORNERSTONE INSURANCE PLC",
-   "InternationSecIN": "NGCORNERST03",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "www.cornerstone.com.ng",
-   "DateOfIncorporation": "1991-07-26T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGCORNERST03"
   },
   {
    "Symbol": "CUSTODIAN",
    "CompanyName": "CUSTODIAN INVESTMENT PLC",
-   "InternationSecIN": "NGCUSTODYIN6",
-   "Sector": "CONGLOMERATES",
-   "SubSector": "Diversified Industries",
-   "Website": "www.custodianplc.com.ng",
-   "DateOfIncorporation": "1991-08-22T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGCUSTODYIN6"
   },
   {
    "Symbol": "CUTIX",
    "CompanyName": "CUTIX PLC.",
-   "InternationSecIN": "NGCUTIX00002",
-   "Sector": "INDUSTRIAL GOODS",
-   "SubSector": "Electronic and Electrical Prod",
-   "Website": "www.cutixplc.com.ng",
-   "DateOfIncorporation": "1982-11-04T00:00:00",
-   "DateListed": "1987-08-12T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGCUTIX00002"
   },
   {
    "Symbol": "CWG",
    "CompanyName": "CWG PLC",
-   "InternationSecIN": "NGCWG0000002",
-   "Sector": "ICT",
-   "SubSector": "IT Services",
-   "Website": "www.cwg-plc.com",
-   "DateOfIncorporation": "1991-09-26T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGCWG0000002"
   },
   {
    "Symbol": "DAARCOMM",
    "CompanyName": "DAAR COMMUNICATIONS PLC",
-   "InternationSecIN": "NGDAARCOMM01",
-   "Sector": "SERVICES",
-   "SubSector": "Media/Entertainment",
-   "Website": null,
-   "DateOfIncorporation": "1988-08-31T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGDAARCOMM01"
   },
   {
    "Symbol": "DANGCEM",
    "CompanyName": "DANGOTE CEMENT PLC",
-   "InternationSecIN": "NGDANGCEM008",
-   "Sector": "INDUSTRIAL GOODS",
-   "SubSector": "Building Materials",
-   "Website": "www.dangotecement.com",
-   "DateOfIncorporation": "1992-11-04T00:00:00",
-   "DateListed": "2010-10-26T00:00:00",
-   "MarketClassification": "Premium Board"
+   "InternationSecIN": "NGDANGCEM008"
   },
   {
    "Symbol": "DANGSUGAR",
    "CompanyName": "DANGOTE SUGAR REFINERY PLC",
-   "InternationSecIN": "NGDANSUGAR02",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Food Products",
-   "Website": null,
-   "DateOfIncorporation": "2005-01-04T00:00:00",
-   "DateListed": "2007-03-08T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGDANSUGAR02"
   },
   {
    "Symbol": "EKOCORP",
    "CompanyName": "EKOCORP PLC.",
-   "InternationSecIN": "NGECOCORP009",
-   "Sector": "HEALTHCARE",
-   "SubSector": "Healthcare Providers",
-   "Website": "www.ekohospitals.com",
-   "DateOfIncorporation": "1991-10-09T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGECOCORP009"
   },
   {
    "Symbol": "ELLAHLAKES",
    "CompanyName": "ELLAH LAKES PLC.",
-   "InternationSecIN": "NGELLAHLAKE8",
-   "Sector": "AGRICULTURE",
-   "SubSector": "Crop Production",
-   "Website": "www.ellahlakes.com",
-   "DateOfIncorporation": "1980-07-02T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGELLAHLAKE8"
   },
   {
    "Symbol": "ENAMELWA",
    "CompanyName": "NIGERIAN ENAMELWARE PLC.",
-   "InternationSecIN": "NGENAMELWA03",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Household Durables",
-   "Website": "wempco@wempco.com",
-   "DateOfIncorporation": "1960-05-21T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGENAMELWA03"
   },
   {
    "Symbol": "ETERNA",
    "CompanyName": "ETERNA PLC.",
-   "InternationSecIN": "NGETERNAOIL1",
-   "Sector": "OIL AND GAS",
-   "SubSector": "Petroleum and Petroleum Produc",
-   "Website": "www.eternaplc.com",
-   "DateOfIncorporation": "1989-01-13T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGETERNAOIL1"
   },
   {
    "Symbol": "ETI",
    "CompanyName": "ECOBANK TRANSNATIONAL INCORPORATED",
-   "InternationSecIN": "TG0000000132",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Banking",
-   "Website": "www.ecobank.com",
-   "DateOfIncorporation": "1985-10-03T00:00:00",
-   "DateListed": "2006-09-11T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "TG0000000132"
   },
   {
    "Symbol": "ETRANZACT",
    "CompanyName": "E-TRANZACT INTERNATIONAL PLC",
-   "InternationSecIN": "NGETRANZ0005",
-   "Sector": "ICT",
-   "SubSector": "Processing Systems",
-   "Website": "www.etranzact.com",
-   "DateOfIncorporation": "2003-05-07T00:00:00",
-   "DateListed": "2009-08-07T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGETRANZ0005"
   },
   {
    "Symbol": "EUNISELL",
    "CompanyName": "EUNISELL INTERLINKED PLC",
-   "InternationSecIN": "NGINTERLINK3",
-   "Sector": "SERVICES",
-   "SubSector": "Specialty",
-   "Website": "www.interlinkedplc.com",
-   "DateOfIncorporation": "1981-11-17T00:00:00",
-   "DateListed": "1993-11-13T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGINTERLINK3"
   },
   {
    "Symbol": "FCMB",
    "CompanyName": "FCMB GROUP PLC.",
-   "InternationSecIN": "NGFCMB000005",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Other Financial Institutions",
-   "Website": "www.fcmb.com",
-   "DateOfIncorporation": "2012-11-20T00:00:00",
-   "DateListed": "2013-06-21T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGFCMB000005"
   },
   {
    "Symbol": "FIDELITYBK",
    "CompanyName": "FIDELITY BANK PLC",
-   "InternationSecIN": "NGFIDELITYB5",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Banking",
-   "Website": "www.fidelitybank.ng",
-   "DateOfIncorporation": "1987-11-19T00:00:00",
-   "DateListed": "2005-05-17T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGFIDELITYB5"
   },
   {
    "Symbol": "FIDSON",
    "CompanyName": "FIDSON HEALTHCARE PLC",
-   "InternationSecIN": "NGFIDSON0006",
-   "Sector": "HEALTHCARE",
-   "SubSector": "Pharmaceuticals",
-   "Website": "www.fidson.com",
-   "DateOfIncorporation": "1995-03-13T00:00:00",
-   "DateListed": "2008-04-06T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGFIDSON0006"
   },
   {
    "Symbol": "FIRSTHOLDCO",
    "CompanyName": "FIRST HOLDCO PLC",
-   "InternationSecIN": "NGFBNH000009",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Other Financial Institutions",
-   "Website": "http://www.first-holdco.com",
-   "DateOfIncorporation": "2012-08-13T00:00:00",
-   "DateListed": "2012-11-26T00:00:00",
-   "MarketClassification": "Premium Board"
+   "InternationSecIN": "NGFBNH000009"
   },
   {
    "Symbol": "FTGINSURE",
    "CompanyName": "FORTIS GLOBAL INSURANCE PLC",
-   "InternationSecIN": "NGSTDINSURE7",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "www.fortisglobalinsurance.com",
-   "DateOfIncorporation": "1981-07-28T00:00:00",
-   "DateListed": "2003-12-19T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGSTDINSURE7"
   },
   {
    "Symbol": "FTNCOCOA",
    "CompanyName": "FTN COCOA PROCESSORS PLC",
-   "InternationSecIN": "NGFTNCOCOA02",
-   "Sector": "AGRICULTURE",
-   "SubSector": "Crop Production",
-   "Website": "www.ftncocoa.com.ng",
-   "DateOfIncorporation": "1991-08-26T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGFTNCOCOA02"
   },
   {
    "Symbol": "GEREGU",
    "CompanyName": "GEREGU POWER PLC",
-   "InternationSecIN": "NGGEREGU0000",
-   "Sector": "UTILITIES",
-   "SubSector": "Electric Power Generation",
-   "Website": "www.geregupowerplc.com",
-   "DateOfIncorporation": "2006-11-10T00:00:00",
-   "DateListed": "2022-10-05T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGGEREGU0000"
   },
   {
    "Symbol": "GOLDBREW",
    "CompanyName": "GOLDEN GUINEA BREWERIES PLC",
-   "InternationSecIN": "NGGOLDBREW01",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Beverages--Brewers/Distillers",
-   "Website": null,
-   "DateOfIncorporation": "1962-09-26T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGGOLDBREW01"
   },
   {
    "Symbol": "GTCO",
    "CompanyName": "GUARANTY TRUST HOLDING COMPANY PLC",
-   "InternationSecIN": "NGGTCO000002",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Banking",
-   "Website": "",
-   "DateOfIncorporation": "2020-07-24T00:00:00",
-   "DateListed": "2021-06-24T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGGTCO000002"
   },
   {
    "Symbol": "GUINEAINS",
    "CompanyName": "GUINEA INSURANCE PLC.",
-   "InternationSecIN": "NGGUINEAINS0",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": null,
-   "DateOfIncorporation": "1958-12-03T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGGUINEAINS0"
   },
   {
    "Symbol": "GUINNESS",
    "CompanyName": "GUINNESS NIGERIA PLC",
-   "InternationSecIN": "NGGUINNESS07",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Beverages--Brewers/Distillers",
-   "Website": "www.guinness-nigeria.com",
-   "DateOfIncorporation": "1950-04-29T00:00:00",
-   "DateListed": "1965-01-02T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGGUINNESS07"
   },
   {
    "Symbol": "HBMNG",
    "CompanyName": "HBM NIGERIA PLC",
-   "InternationSecIN": "NGWAPCO00002",
-   "Sector": "INDUSTRIAL GOODS",
-   "SubSector": "Building Materials",
-   "Website": "www.hbmngplc.com",
-   "DateOfIncorporation": "1959-02-24T00:00:00",
-   "DateListed": "1979-02-17T00:00:00",
-   "MarketClassification": "Premium Board"
+   "InternationSecIN": "NGWAPCO00002"
   },
   {
    "Symbol": "HBMNG",
    "CompanyName": "HBM NIGERIA PLC",
-   "InternationSecIN": "NGWAPCO00002",
-   "Sector": "INDUSTRIAL GOODS",
-   "SubSector": "Building Materials",
-   "Website": "www.lafarge.com.ng",
-   "DateOfIncorporation": "1959-02-24T00:00:00",
-   "DateListed": "1979-02-17T00:00:00",
-   "MarketClassification": "Premium Board"
+   "InternationSecIN": "NGWAPCO00002"
   },
   {
    "Symbol": "HMCALL",
    "CompanyName": "HALDANE MCCALL PLC",
-   "InternationSecIN": "NGHMCALL0004",
-   "Sector": "CONSTRUCTION/REAL ESTATE",
-   "SubSector": "Real Estate Development",
-   "Website": "www.hmkplc.com",
-   "DateOfIncorporation": "2012-03-26T00:00:00",
-   "DateListed": "2024-11-20T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGHMCALL0004"
   },
   {
    "Symbol": "HONYFLOUR",
    "CompanyName": "HONEYWELL FLOUR MILL PLC",
-   "InternationSecIN": "NGHONYFLOUR7",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Food Products",
-   "Website": "www.honeywellflour.com",
-   "DateOfIncorporation": "1985-07-09T00:00:00",
-   "DateListed": "2009-10-20T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGHONYFLOUR7"
   },
   {
    "Symbol": "IKEJAHOTEL",
    "CompanyName": "IKEJA HOTEL PLC",
-   "InternationSecIN": "NGIKEJAHOTL7",
-   "Sector": "SERVICES",
-   "SubSector": "Hotels/Lodging",
-   "Website": "www.ikejahotelplc.com",
-   "DateOfIncorporation": "1972-11-18T00:00:00",
-   "DateListed": "2007-09-06T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGIKEJAHOTL7"
   },
   {
    "Symbol": "IMG",
    "CompanyName": "INDUSTRIAL & MEDICAL GASES NIGERIA PLC",
-   "InternationSecIN": "NGBOCGAS0008",
-   "Sector": "NATURAL RESOURCES",
-   "SubSector": "Chemicals",
-   "Website": null,
-   "DateOfIncorporation": "1959-12-11T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGBOCGAS0008"
   },
   {
    "Symbol": "INFINITY",
    "CompanyName": "INFINITY TRUST MORTGAGE BANK PLC",
-   "InternationSecIN": "NGINFINITY01",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Mortgage Carriers, Brokers an",
-   "Website": "www.infinitytrustmortgagebank.com",
-   "DateOfIncorporation": "2002-11-28T00:00:00",
-   "DateListed": "2013-12-11T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGINFINITY01"
   },
   {
    "Symbol": "INTBREW",
    "CompanyName": "INTERNATIONAL BREWERIES PLC.",
-   "InternationSecIN": "NGINTBREW005",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Beverages--Brewers/Distillers",
-   "Website": "www.internationalbreweriesplc.com",
-   "DateOfIncorporation": "1971-12-22T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGINTBREW005"
   },
   {
    "Symbol": "INTENEGINS",
    "CompanyName": "INTERNATIONAL ENERGY INSURANCE PLC",
-   "InternationSecIN": "NGINTENEGIN5",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "www.ieiplcng.com",
-   "DateOfIncorporation": "1969-03-26T00:00:00",
-   "DateListed": "2007-07-13T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGINTENEGIN5"
   },
   {
    "Symbol": "JAIZBANK",
    "CompanyName": "JAIZ BANK PLC",
-   "InternationSecIN": "NGJAIZBANK05",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Banking",
-   "Website": "www.jaizbankplc.com",
-   "DateOfIncorporation": "2003-04-01T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "NON-INTEREST FINANCE BOARD"
+   "InternationSecIN": "NGJAIZBANK05"
   },
   {
    "Symbol": "JAPAULGOLD",
    "CompanyName": "JAPAUL GOLD & VENTURES PLC",
-   "InternationSecIN": "NGJAPAULOIL4",
-   "Sector": "OIL AND GAS",
-   "SubSector": "Energy Equipment and Services",
-   "Website": "www.japaulgroup.com",
-   "DateOfIncorporation": "1994-06-29T00:00:00",
-   "DateListed": "2005-08-10T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGJAPAULOIL4"
   },
   {
    "Symbol": "JBERGER",
    "CompanyName": "JULIUS BERGER NIGERIA PLC",
-   "InternationSecIN": "NGJBERGER009",
-   "Sector": "CONSTRUCTION/REAL ESTATE",
-   "SubSector": "Infrastructure/Heavy Construct",
-   "Website": "www.julius-berger.com",
-   "DateOfIncorporation": "1970-02-18T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGJBERGER009"
   },
   {
    "Symbol": "JOHNHOLT",
    "CompanyName": "JOHN HOLT PLC.",
-   "InternationSecIN": "NGJOHNHOLT05",
-   "Sector": "CONGLOMERATES",
-   "SubSector": "Diversified Industries",
-   "Website": "www.jhplc.com",
-   "DateOfIncorporation": "1961-08-28T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGJOHNHOLT05"
   },
   {
    "Symbol": "JULI",
    "CompanyName": "JULI PLC.",
-   "InternationSecIN": "NGJULI000003",
-   "Sector": "SERVICES",
-   "SubSector": "Food/Drug Retailers and Wholes",
-   "Website": "www.juliplc.ng",
-   "DateOfIncorporation": "1972-09-14T00:00:00",
-   "DateListed": "1986-07-11T00:00:00",
-   "MarketClassification": "Growth Board"
+   "InternationSecIN": "NGJULI000003"
   },
   {
    "Symbol": "LASACO",
    "CompanyName": "LASACO ASSURANCE PLC.",
-   "InternationSecIN": "NGLASACO0002",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "www.lasacoassurance.com",
-   "DateOfIncorporation": "1979-12-20T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGLASACO0002"
   },
   {
    "Symbol": "LEARNAFRCA",
    "CompanyName": "LEARN AFRICA PLC",
-   "InternationSecIN": "NGLONGMAN007",
-   "Sector": "SERVICES",
-   "SubSector": "Printing/Publishing",
-   "Website": "www.learnafricaplc.com",
-   "DateOfIncorporation": "1961-10-08T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGLONGMAN007"
   },
   {
    "Symbol": "LEGENDINT",
    "CompanyName": "LEGEND INTERNET PLC",
-   "InternationSecIN": "NGLEGENDINT0",
-   "Sector": "ICT",
-   "SubSector": "Telecommunications Services",
-   "Website": "http://www.legend.ng/",
-   "DateOfIncorporation": "2021-08-17T00:00:00",
-   "DateListed": "2025-04-24T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGLEGENDINT0"
   },
   {
    "Symbol": "LINKASSURE",
    "CompanyName": "LINKAGE ASSURANCE PLC",
-   "InternationSecIN": "NGLINKASSUR7",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "www.linkageassurance.com",
-   "DateOfIncorporation": "1991-03-26T00:00:00",
-   "DateListed": "2003-11-18T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGLINKASSUR7"
   },
   {
    "Symbol": "LINKASSURE",
    "CompanyName": "LINKAGE ASSURANCE PLC",
-   "InternationSecIN": "NGLINKASSUR7",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "www.linkageassurance.com",
-   "DateOfIncorporation": "1991-03-26T00:00:00",
-   "DateListed": "2003-11-18T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGLINKASSUR7"
   },
   {
    "Symbol": "LIVESTOCK",
    "CompanyName": "LIVESTOCK FEEDS PLC.",
-   "InternationSecIN": "NGLIVESTOCK5",
-   "Sector": "AGRICULTURE",
-   "SubSector": "Livestock/Animal Specialties",
-   "Website": "www.livestockfeedsplc.com",
-   "DateOfIncorporation": "1963-03-20T00:00:00",
-   "DateListed": "1978-04-01T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGLIVESTOCK5"
   },
   {
    "Symbol": "LIVINGTRUST",
    "CompanyName": "LIVINGTRUST MORTGAGE BANK PLC",
-   "InternationSecIN": "NGOMOMORBNK6",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Mortgage Carriers, Brokers an",
-   "Website": "www.livingtrustng.com",
-   "DateOfIncorporation": "1999-03-09T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Growth Board"
+   "InternationSecIN": "NGOMOMORBNK6"
   },
   {
    "Symbol": "MANSARD",
    "CompanyName": "AXAMANSARD INSURANCE PLC",
-   "InternationSecIN": "NGGTASSURE05",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "www.axamansard.com",
-   "DateOfIncorporation": "1989-06-23T00:00:00",
-   "DateListed": "2009-11-19T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGGTASSURE05"
   },
   {
    "Symbol": "MAYBAKER",
    "CompanyName": "MAY & BAKER NIGERIA PLC.",
-   "InternationSecIN": "NGMAYBAKER01",
-   "Sector": "HEALTHCARE",
-   "SubSector": "Pharmaceuticals",
-   "Website": "www.may-bakerng.com",
-   "DateOfIncorporation": "1944-04-09T00:00:00",
-   "DateListed": "1994-11-10T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGMAYBAKER01"
   },
   {
    "Symbol": "MBENEFIT",
    "CompanyName": "MUTUAL BENEFITS ASSURANCE PLC.",
-   "InternationSecIN": "NGMBENEFT000",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "www.mutualngcom",
-   "DateOfIncorporation": "1995-04-18T00:00:00",
-   "DateListed": "2002-05-28T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGMBENEFT000"
   },
   {
    "Symbol": "MCNICHOLS",
    "CompanyName": "MCNICHOLS CONSOLIDATED PLC",
-   "InternationSecIN": "NGMCNICHOLS7",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Food Products",
-   "Website": "www.mcnicholsplc.com",
-   "DateOfIncorporation": "2004-04-26T00:00:00",
-   "DateListed": "2009-12-18T00:00:00",
-   "MarketClassification": "Growth Board"
+   "InternationSecIN": "NGMCNICHOLS7"
   },
   {
    "Symbol": "MECURE",
    "CompanyName": "MECURE INDUSTRIES PLC",
-   "InternationSecIN": "NGMECURE0006",
-   "Sector": "HEALTHCARE",
-   "SubSector": "Pharmaceuticals",
-   "Website": "www.mecure.com",
-   "DateOfIncorporation": "2005-03-16T00:00:00",
-   "DateListed": "2023-11-07T00:00:00",
-   "MarketClassification": "Growth Board"
+   "InternationSecIN": "NGMECURE0006"
   },
   {
    "Symbol": "MEYER",
    "CompanyName": "MEYER PLC.",
-   "InternationSecIN": "NGMEYER00006",
-   "Sector": "INDUSTRIAL GOODS",
-   "SubSector": "Building Materials",
-   "Website": "www.meyerpaints.com",
-   "DateOfIncorporation": "1960-05-20T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGMEYER00006"
   },
   {
    "Symbol": "MOFIREIF",
    "CompanyName": "MOFI REAL ESTATE INVESTMENT FUND",
-   "InternationSecIN": "NGMOFIREIF00",
-   "Sector": "CONSTRUCTION/REAL ESTATE",
-   "SubSector": "Infrastructure/Heavy Construct",
-   "Website": "www.mofi.com.ng",
-   "DateOfIncorporation": "2024-10-24T00:00:00",
-   "DateListed": "2025-11-11T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGMOFIREIF00"
   },
   {
    "Symbol": "MORISON",
    "CompanyName": "MORISON INDUSTRIES PLC.",
-   "InternationSecIN": "NGMORISON000",
-   "Sector": "HEALTHCARE",
-   "SubSector": "Medical Supplies",
-   "Website": "www.morisonplc.ng",
-   "DateOfIncorporation": "1955-06-29T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGMORISON000"
   },
   {
    "Symbol": "MTNN",
    "CompanyName": "MTN NIGERIA COMMUNICATIONS PLC",
-   "InternationSecIN": "NGMTNN000002",
-   "Sector": "ICT",
-   "SubSector": "Telecommunications Services",
-   "Website": null,
-   "DateOfIncorporation": "2000-11-08T00:00:00",
-   "DateListed": "2019-05-16T00:00:00",
-   "MarketClassification": "Premium Board"
+   "InternationSecIN": "NGMTNN000002"
   },
   {
    "Symbol": "MULTITREX",
    "CompanyName": "MULTI-TREX INTEGRATED FOODS PLC",
-   "InternationSecIN": "NGMULTITREX0",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Food Products",
-   "Website": null,
-   "DateOfIncorporation": "1999-10-30T00:00:00",
-   "DateListed": "2010-11-01T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGMULTITREX0"
   },
   {
    "Symbol": "MULTIVERSE",
    "CompanyName": "MULTIVERSE MINING AND EXPLORATION PLC",
-   "InternationSecIN": "NGMULTIVERS6",
-   "Sector": "NATURAL RESOURCES",
-   "SubSector": "Mining Services",
-   "Website": "www.multiverseplc.com",
-   "DateOfIncorporation": "2002-06-20T00:00:00",
-   "DateListed": "2008-04-18T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGMULTIVERS6"
   },
   {
    "Symbol": "NAHCO",
    "CompanyName": "NIGERIAN AVIATION HANDLING COMPANY PLC",
-   "InternationSecIN": "NGNAHCO00008",
-   "Sector": "SERVICES",
-   "SubSector": "Transport-Related Services",
-   "Website": "www.nahcoaviance.com",
-   "DateOfIncorporation": "2005-04-08T00:00:00",
-   "DateListed": "2006-11-27T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGNAHCO00008"
   },
   {
    "Symbol": "NASCON",
    "CompanyName": "NASCON ALLIED INDUSTRIES PLC",
-   "InternationSecIN": "NGNASCON0005",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Food Products",
-   "Website": null,
-   "DateOfIncorporation": "1973-04-30T00:00:00",
-   "DateListed": "1992-10-20T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGNASCON0005"
   },
   {
    "Symbol": "NB",
    "CompanyName": "NIGERIAN BREWERIES PLC",
-   "InternationSecIN": "NGNB00000005",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Beverages--Brewers/Distillers",
-   "Website": "www.nbplc.com",
-   "DateOfIncorporation": "1946-11-16T00:00:00",
-   "DateListed": "1973-09-05T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGNB00000005"
   },
   {
    "Symbol": "NCR",
    "CompanyName": "NCR (NIGERIA) PLC.",
-   "InternationSecIN": "NGNCR0000008",
-   "Sector": "ICT",
-   "SubSector": "IT Services",
-   "Website": null,
-   "DateOfIncorporation": "1949-12-09T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGNCR0000008"
   },
   {
    "Symbol": "NCR",
    "CompanyName": "NCR (NIGERIA) PLC.",
-   "InternationSecIN": "NGNCR0000008",
-   "Sector": "ICT",
-   "SubSector": "IT Services",
-   "Website": "www.ncr.com",
-   "DateOfIncorporation": "1949-12-09T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGNCR0000008"
   },
   {
    "Symbol": "NEIMETH",
    "CompanyName": "NEIMETH INTERNATIONAL PHARMACEUTICALS PLC",
-   "InternationSecIN": "NGNEIMETH001",
-   "Sector": "HEALTHCARE",
-   "SubSector": "Pharmaceuticals",
-   "Website": "www.neimethplc.com.ng",
-   "DateOfIncorporation": "1957-08-13T00:00:00",
-   "DateListed": "1979-09-21T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGNEIMETH001"
   },
   {
    "Symbol": "NEIMETH",
    "CompanyName": "NEIMETH INTERNATIONAL PHARMACEUTICALS PLC",
-   "InternationSecIN": "NGNEIMETH001",
-   "Sector": "HEALTHCARE",
-   "SubSector": "Pharmaceuticals",
-   "Website": "www.neimethplc.com.ng",
-   "DateOfIncorporation": "1957-08-13T00:00:00",
-   "DateListed": "1979-09-21T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGNEIMETH001"
   },
   {
    "Symbol": "NEM",
    "CompanyName": "NEM INSURANCE PLC",
-   "InternationSecIN": "NGNEM0000005",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": null,
-   "DateOfIncorporation": "1970-04-02T00:00:00",
-   "DateListed": "1990-09-05T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGNEM0000005"
   },
   {
    "Symbol": "NESTLE",
    "CompanyName": "NESTLE NIGERIA PLC.",
-   "InternationSecIN": "NGNESTLE0006",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Food Products--Diversified",
-   "Website": "www.nestle-cwa.com/en/investors/nigeria",
-   "DateOfIncorporation": "1969-09-25T00:00:00",
-   "DateListed": "1979-04-20T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGNESTLE0006"
   },
   {
    "Symbol": "NGXGROUP",
    "CompanyName": "NIGERIAN EXCHANGE GROUP PLC",
-   "InternationSecIN": "NGNGXGROUP09",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Other Financial Institutions",
-   "Website": "www.ngxgroup.com",
-   "DateOfIncorporation": "1960-09-15T00:00:00",
-   "DateListed": "2021-10-15T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGNGXGROUP09"
   },
   {
    "Symbol": "NIDF",
    "CompanyName": "CHAPEL HILL DENHAM NIG. INFRAS DEBT FUND",
-   "InternationSecIN": "NGCHDNIDF005",
-   "Sector": "CONSTRUCTION/REAL ESTATE",
-   "SubSector": "Infrastructure/Heavy Construct",
-   "Website": "www.chapelhilldenham.com",
-   "DateOfIncorporation": "2017-02-07T00:00:00",
-   "DateListed": "2023-10-05T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGCHDNIDF005"
   },
   {
    "Symbol": "NNFM",
    "CompanyName": "NORTHERN NIGERIA FLOUR MILLS PLC",
-   "InternationSecIN": "NGNNFM000008",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Food Products",
-   "Website": null,
-   "DateOfIncorporation": "1971-10-29T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGNNFM000008"
   },
   {
    "Symbol": "NPFMCRFBK",
    "CompanyName": "NPF MICROFINANCE BANK PLC",
-   "InternationSecIN": "NGNPFMCRFBK0",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Micro-Finance Banks",
-   "Website": "www.npfmicrofinancebankplc.ng",
-   "DateOfIncorporation": "1993-05-19T00:00:00",
-   "DateListed": "2010-12-01T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGNPFMCRFBK0"
   },
   {
    "Symbol": "NREIT",
    "CompanyName": "NIGERIA REAL ESTATE INV. TRUST FUND",
-   "InternationSecIN": "NGCHDNREIT00",
-   "Sector": "CONSTRUCTION/REAL ESTATE",
-   "SubSector": "Real Estate Investment Trusts",
-   "Website": "www.chapelhilldenham.com",
-   "DateOfIncorporation": "2019-01-09T00:00:00",
-   "DateListed": "2025-12-31T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGCHDNREIT00"
   },
   {
    "Symbol": "NSLTECH",
    "CompanyName": "SECURE ELECTRONIC TECHNOLOGY PLC",
-   "InternationSecIN": "NGNSLTECH006",
-   "Sector": "SERVICES",
-   "SubSector": "Specialty",
-   "Website": "www.setplc.com",
-   "DateOfIncorporation": "2000-01-03T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGNSLTECH006"
   },
   {
    "Symbol": "OANDO",
    "CompanyName": "OANDO PLC",
-   "InternationSecIN": "NGOANDO00002",
-   "Sector": "OIL AND GAS",
-   "SubSector": "Integrated Oil and Gas Service",
-   "Website": "www.oandoplc.com",
-   "DateOfIncorporation": "1969-08-25T00:00:00",
-   "DateListed": "1992-02-24T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGOANDO00002"
   },
   {
    "Symbol": "OKOMUOIL",
    "CompanyName": "THE OKOMU OIL PALM COMPANY PLC",
-   "InternationSecIN": "NGOKOMUOIL00",
-   "Sector": "AGRICULTURE",
-   "SubSector": "Crop Production",
-   "Website": "www.okomunigeria.com",
-   "DateOfIncorporation": "1979-12-03T00:00:00",
-   "DateListed": "1997-09-09T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGOKOMUOIL00"
   },
   {
    "Symbol": "OMATEK",
    "CompanyName": "OMATEK VENTURES PLC",
-   "InternationSecIN": "NGOMATEX0001",
-   "Sector": "ICT",
-   "SubSector": "Computers and Peripherals",
-   "Website": "http//www.omatek.ng",
-   "DateOfIncorporation": "1998-07-06T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGOMATEX0001"
   },
   {
    "Symbol": "PHARMDEKO",
    "CompanyName": "PHARMA-DEKO PLC.",
-   "InternationSecIN": "NGPHARMDEKO7",
-   "Sector": "HEALTHCARE",
-   "SubSector": "Pharmaceuticals",
-   "Website": "www.pharmadekoplc.com",
-   "DateOfIncorporation": "1969-04-18T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGPHARMDEKO7"
   },
   {
    "Symbol": "PREMPAINTS",
    "CompanyName": "PREMIER PAINTS PLC.",
-   "InternationSecIN": "NGPREMPAINT2",
-   "Sector": "INDUSTRIAL GOODS",
-   "SubSector": "Building Materials",
-   "Website": "www.premierpaintsplc.com",
-   "DateOfIncorporation": "1982-08-24T00:00:00",
-   "DateListed": "1995-03-07T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGPREMPAINT2"
   },
   {
    "Symbol": "PRESCO",
    "CompanyName": "PRESCO PLC",
-   "InternationSecIN": "NGPRESCO0005",
-   "Sector": "AGRICULTURE",
-   "SubSector": "Crop Production",
-   "Website": "www.presco-plc.com",
-   "DateOfIncorporation": "1991-09-24T00:00:00",
-   "DateListed": "2002-10-10T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGPRESCO0005"
   },
   {
    "Symbol": "PRESTIGE",
    "CompanyName": "PRESTIGE ASSURANCE PLC",
-   "InternationSecIN": "NGPRESTIGE00",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "wwwprestigeassuranceplc.com",
-   "DateOfIncorporation": "1970-01-06T00:00:00",
-   "DateListed": "1990-12-03T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGPRESTIGE00"
   },
   {
    "Symbol": "PZ",
    "CompanyName": "PZ CUSSONS NIGERIA PLC.",
-   "InternationSecIN": "NGPZ00000005",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Personal/Household Products",
-   "Website": "https://www.pzcussons.com/nigeria/",
-   "DateOfIncorporation": "1948-04-12T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGPZ00000005"
   },
   {
    "Symbol": "REDSTAREX",
    "CompanyName": "RED STAR EXPRESS PLC",
-   "InternationSecIN": "NGREDSTAREX9",
-   "Sector": "SERVICES",
-   "SubSector": "Courier/Freight/Delivery",
-   "Website": "www.redstarplc.com",
-   "DateOfIncorporation": "1992-07-10T00:00:00",
-   "DateListed": "2007-11-14T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGREDSTAREX9"
   },
   {
    "Symbol": "REGALINS",
    "CompanyName": "REGENCY ALLIANCE INSURANCE PLC",
-   "InternationSecIN": "NGREGALINS04",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "www.regencyalliance.com",
-   "DateOfIncorporation": "1993-06-16T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGREGALINS04"
   },
   {
    "Symbol": "RONCHESS",
    "CompanyName": "RONCHESS GLOBAL RESOURCES PLC",
-   "InternationSecIN": "NGRONCHESS06",
-   "Sector": "CONSTRUCTION/REAL ESTATE",
-   "SubSector": "Building Construction",
-   "Website": "www.ronchess.com",
-   "DateOfIncorporation": "2008-09-05T00:00:00",
-   "DateListed": "2021-12-17T00:00:00",
-   "MarketClassification": "Growth Board"
+   "InternationSecIN": "NGRONCHESS06"
   },
   {
    "Symbol": "ROYALEX",
    "CompanyName": "ROYAL EXCHANGE PLC.",
-   "InternationSecIN": "NGROYALEX007",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Other Financial Institutions",
-   "Website": "www.royalexchangeplc.com",
-   "DateOfIncorporation": "1921-02-28T00:00:00",
-   "DateListed": "1990-12-03T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGROYALEX007"
   },
   {
    "Symbol": "RTBRISCOE",
    "CompanyName": "R. T. BRISCOE (NIGERIA) PLC",
-   "InternationSecIN": "NGRTBRISCOE9",
-   "Sector": "SERVICES",
-   "SubSector": "Automobile/Auto Part Retailers",
-   "Website": "www.rtbriscoe.com",
-   "DateOfIncorporation": "1957-03-09T00:00:00",
-   "DateListed": "1974-03-15T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGRTBRISCOE9"
   },
   {
    "Symbol": "SCOA",
    "CompanyName": "SCOA NIGERIA PLC",
-   "InternationSecIN": "NGSCOA000009",
-   "Sector": "CONGLOMERATES",
-   "SubSector": "Diversified Industries",
-   "Website": "www.scoaplc.com",
-   "DateOfIncorporation": "1969-06-24T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGSCOA000009"
   },
   {
    "Symbol": "SEPLAT",
    "CompanyName": "SEPLAT ENERGY PLC",
-   "InternationSecIN": "NGSEPLAT0008",
-   "Sector": "OIL AND GAS",
-   "SubSector": "Exploration and Production",
-   "Website": "www.seplatenergy.com",
-   "DateOfIncorporation": "2009-06-17T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Premium Board"
+   "InternationSecIN": "NGSEPLAT0008"
   },
   {
    "Symbol": "SFSREIT",
    "CompanyName": "SFS REAL ESTATE INVESTMENT TRUST",
-   "InternationSecIN": "NGSKYESHELT8",
-   "Sector": "CONSTRUCTION/REAL ESTATE",
-   "SubSector": "Real Estate Investment Trusts",
-   "Website": "sfsreit.com",
-   "DateOfIncorporation": null,
-   "DateListed": null,
-   "MarketClassification": "Real Estate Investment Trust & Close End Fund"
+   "InternationSecIN": "NGSKYESHELT8"
   },
   {
    "Symbol": "SFSREIT",
    "CompanyName": "SFS REAL ESTATE INVESTMENT TRUST",
-   "InternationSecIN": "NGSKYESHELT8",
-   "Sector": "CONSTRUCTION/REAL ESTATE",
-   "SubSector": "Real Estate Investment Trusts",
-   "Website": null,
-   "DateOfIncorporation": null,
-   "DateListed": "2008-02-26T00:00:00",
-   "MarketClassification": "Real Estate Investment Trust & Close End Fund"
+   "InternationSecIN": "NGSKYESHELT8"
   },
   {
    "Symbol": "SKYAVN",
    "CompanyName": "SKYWAY AVIATION HANDLING COMPANY PLC",
-   "InternationSecIN": "NGSKYAVN0003",
-   "Sector": "SERVICES",
-   "SubSector": "Transport-Related Services",
-   "Website": "www.sahcoplc.com",
-   "DateOfIncorporation": "2009-04-22T00:00:00",
-   "DateListed": "2019-04-26T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGSKYAVN0003"
   },
   {
    "Symbol": "SOVRENINS",
    "CompanyName": "SOVEREIGN TRUST INSURANCE PLC",
-   "InternationSecIN": "NGSOVRENINS5",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "www.stiplc.com",
-   "DateOfIncorporation": "1980-02-26T00:00:00",
-   "DateListed": "2006-11-29T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGSOVRENINS5"
   },
   {
    "Symbol": "STANBIC",
    "CompanyName": "STANBIC IBTC  HOLDINGS PLC",
-   "InternationSecIN": "NGSTANBIC003",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Other Financial Institutions",
-   "Website": "www.stanbicibtc.com",
-   "DateOfIncorporation": "2012-03-14T00:00:00",
-   "DateListed": "2012-11-23T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGSTANBIC003"
   },
   {
    "Symbol": "STERLINGNG",
    "CompanyName": "STERLING FINANCIAL HOLDINGS COMPANY PLC",
-   "InternationSecIN": "NGSTERLNHCO9",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Banking",
-   "Website": "www.sterling.ng",
-   "DateOfIncorporation": "2021-10-13T00:00:00",
-   "DateListed": "2023-04-06T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGSTERLNHCO9"
   },
   {
    "Symbol": "SUNUASSUR",
    "CompanyName": "SUNU ASSURANCES NIGERIA PLC.",
-   "InternationSecIN": "NGSUNUASSUR6",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "www.sunu-group.com",
-   "DateOfIncorporation": "1984-12-13T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGSUNUASSUR6"
   },
   {
    "Symbol": "TANTALIZER",
    "CompanyName": "TANTALIZERS PLC",
-   "InternationSecIN": "NGTANTALIZE1",
-   "Sector": "SERVICES",
-   "SubSector": "Hospitality",
-   "Website": null,
-   "DateOfIncorporation": "1997-05-04T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGTANTALIZE1"
   },
   {
    "Symbol": "THOMASWY",
    "CompanyName": "THOMAS WYATT NIGERIA PLC.",
-   "InternationSecIN": "NGTHOMASWY07",
-   "Sector": "NATURAL RESOURCES",
-   "SubSector": "Paper/Forest Products",
-   "Website": "www.thomaswyattng.com",
-   "DateOfIncorporation": "1948-03-18T00:00:00",
-   "DateListed": "1978-10-26T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGTHOMASWY07"
   },
   {
    "Symbol": "TIP",
    "CompanyName": "THE INITIATES PLC",
-   "InternationSecIN": "NGINITSPLC05",
-   "Sector": "SERVICES",
-   "SubSector": "Waste Management",
-   "Website": "www.initiatesgroup.com",
-   "DateOfIncorporation": "1995-03-03T00:00:00",
-   "DateListed": "2016-10-25T00:00:00",
-   "MarketClassification": "Growth Board"
+   "InternationSecIN": "NGINITSPLC05"
   },
   {
    "Symbol": "TOTAL",
    "CompanyName": "TOTALENERGIES MARKETING NIGERIA PLC",
-   "InternationSecIN": "NGTOTAL00001",
-   "Sector": "OIL AND GAS",
-   "SubSector": "Petroleum and Petroleum Produc",
-   "Website": "www.servicestotalenergies.ng",
-   "DateOfIncorporation": "1956-01-06T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGTOTAL00001"
   },
   {
    "Symbol": "TRANSCOHOT",
    "CompanyName": "TRANSCORP HOTELS PLC",
-   "InternationSecIN": "NGTRANSHOTL1",
-   "Sector": "SERVICES",
-   "SubSector": "Hotels/Lodging",
-   "Website": null,
-   "DateOfIncorporation": "1994-07-12T00:00:00",
-   "DateListed": "2015-01-15T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGTRANSHOTL1"
   },
   {
    "Symbol": "TRANSCORP",
    "CompanyName": "TRANSNATIONAL CORPORATION PLC",
-   "InternationSecIN": "NGTRANSCORP7",
-   "Sector": "CONGLOMERATES",
-   "SubSector": "Diversified Industries",
-   "Website": "www.transcorpnigeria.com",
-   "DateOfIncorporation": "2004-11-16T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGTRANSCORP7"
   },
   {
    "Symbol": "TRANSEXPR",
    "CompanyName": "TRANS-NATIONWIDE EXPRESS PLC.",
-   "InternationSecIN": "NGTRANSEXPR4",
-   "Sector": "SERVICES",
-   "SubSector": "Courier/Freight/Delivery",
-   "Website": "www.tranex-ng.com",
-   "DateOfIncorporation": "1984-03-28T00:00:00",
-   "DateListed": "1992-09-07T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGTRANSEXPR4"
   },
   {
    "Symbol": "TRANSPOWER",
    "CompanyName": "TRANSCORP POWER PLC",
-   "InternationSecIN": "NGTRANSPOWE3",
-   "Sector": "UTILITIES",
-   "SubSector": "Electric Power Generation",
-   "Website": "www.transcorppower.com",
-   "DateOfIncorporation": "2012-09-24T00:00:00",
-   "DateListed": "2024-03-04T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGTRANSPOWE3"
   },
   {
    "Symbol": "TRIPPLEG",
    "CompanyName": "TRIPPLE GEE AND COMPANY PLC.",
-   "InternationSecIN": "NGTRIPPLEG04",
-   "Sector": "INDUSTRIAL GOODS",
-   "SubSector": "Packaging/Containers",
-   "Website": "www.tripplegee.ng",
-   "DateOfIncorporation": "1980-04-14T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGTRIPPLEG04"
   },
   {
    "Symbol": "UACN",
    "CompanyName": "UAC OF NIGERIA PLC",
-   "InternationSecIN": "NGUACN000006",
-   "Sector": "CONGLOMERATES",
-   "SubSector": "Diversified Industries",
-   "Website": "www.uacnplc.com",
-   "DateOfIncorporation": "1931-04-22T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGUACN000006"
   },
   {
    "Symbol": "UBA",
    "CompanyName": "UNITED BANK FOR AFRICA PLC",
-   "InternationSecIN": "NGUBA0000001",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Banking",
-   "Website": "www.ubagroup.com",
-   "DateOfIncorporation": "1961-02-23T00:00:00",
-   "DateListed": "1970-03-31T00:00:00",
-   "MarketClassification": "Premium Board"
+   "InternationSecIN": "NGUBA0000001"
   },
   {
    "Symbol": "UCAP",
    "CompanyName": "UNITED CAPITAL PLC",
-   "InternationSecIN": "NGUCAP000004",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Other Financial Institutions",
-   "Website": "www.unitedcapitalplcgroup.com",
-   "DateOfIncorporation": "2002-03-14T00:00:00",
-   "DateListed": "2013-01-13T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGUCAP000004"
   },
   {
    "Symbol": "UHREIT",
    "CompanyName": "UH REAL ESTATE INVESTMENT TRUST",
-   "InternationSecIN": "NGUHOMREIT06",
-   "Sector": "CONSTRUCTION/REAL ESTATE",
-   "SubSector": "Real Estate Investment Trusts",
-   "Website": "www.uhreitng.com",
-   "DateOfIncorporation": "2009-02-03T00:00:00",
-   "DateListed": "2008-02-05T00:00:00",
-   "MarketClassification": "Real Estate Investment Trust & Close End Fund"
+   "InternationSecIN": "NGUHOMREIT06"
   },
   {
    "Symbol": "UNILEVER",
    "CompanyName": "UNILEVER NIGERIA PLC.",
-   "InternationSecIN": "NGUNILEVER07",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Personal/Household Products",
-   "Website": "www.unilevernigeria.com",
-   "DateOfIncorporation": "1923-11-04T00:00:00",
-   "DateListed": "1973-04-01T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGUNILEVER07"
   },
   {
    "Symbol": "UNIONDICON",
    "CompanyName": "UNION DICON SALT PLC.",
-   "InternationSecIN": "NGUNIONDICO1",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Food Products",
-   "Website": "www.uniondiconsaltplc.com",
-   "DateOfIncorporation": "1991-11-12T00:00:00",
-   "DateListed": "1993-09-23T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGUNIONDICO1"
   },
   {
    "Symbol": "UNITYBNK",
    "CompanyName": "UNITY BANK PLC",
-   "InternationSecIN": "NGUNITYBANK3",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Banking",
-   "Website": "www.unitybankng.com",
-   "DateOfIncorporation": "1987-04-27T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGUNITYBANK3"
   },
   {
    "Symbol": "UNIVINSURE",
    "CompanyName": "UNIVERSAL INSURANCE PLC",
-   "InternationSecIN": "NGUNIVINSUR9",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "www.universalinsuranceplc.com",
-   "DateOfIncorporation": "1961-03-01T00:00:00",
-   "DateListed": "2009-11-02T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGUNIVINSUR9"
   },
   {
    "Symbol": "UPDC",
    "CompanyName": "UPDC PLC",
-   "InternationSecIN": "NGUACPROP006",
-   "Sector": "CONSTRUCTION/REAL ESTATE",
-   "SubSector": "Real Estate Development",
-   "Website": "www.updcplc.com",
-   "DateOfIncorporation": "1997-10-06T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGUACPROP006"
   },
   {
    "Symbol": "UPDCREIT",
    "CompanyName": "UPDC REAL ESTATE INVESTMENT TRUST",
-   "InternationSecIN": "NGUPDCREIT01",
-   "Sector": "CONSTRUCTION/REAL ESTATE",
-   "SubSector": "Real Estate Investment Trusts",
-   "Website": null,
-   "DateOfIncorporation": "2013-03-27T00:00:00",
-   "DateListed": "2008-02-26T00:00:00",
-   "MarketClassification": "Real Estate Investment Trust & Close End Fund"
+   "InternationSecIN": "NGUPDCREIT01"
   },
   {
    "Symbol": "UPL",
    "CompanyName": "UNIVERSITY PRESS PLC.",
-   "InternationSecIN": "NGUPL0000008",
-   "Sector": "SERVICES",
-   "SubSector": "Printing/Publishing",
-   "Website": "www.universitypressplc.com",
-   "DateOfIncorporation": "1978-08-14T00:00:00",
-   "DateListed": "1978-08-14T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGUPL0000008"
   },
   {
    "Symbol": "VERITASKAP",
    "CompanyName": "VERITAS KAPITAL ASSURANCE PLC",
-   "InternationSecIN": "NGUNITYKAP04",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "www.veritaskapital.com",
-   "DateOfIncorporation": "1973-08-08T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGUNITYKAP04"
   },
   {
    "Symbol": "VFDGROUP",
    "CompanyName": "VFD GROUP PLC",
-   "InternationSecIN": "NGVFDGROUP04",
-   "Sector": "INVESTMENT",
-   "SubSector": "Diversified Industries",
-   "Website": "  www.vfdgroup.com",
-   "DateOfIncorporation": "2009-07-07T00:00:00",
-   "DateListed": "2023-10-06T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGVFDGROUP04"
   },
   {
    "Symbol": "VITAFOAM",
    "CompanyName": "VITAFOAM NIGERIA PLC",
-   "InternationSecIN": "NGVITAFOAM00",
-   "Sector": "CONSUMER GOODS",
-   "SubSector": "Household Durables",
-   "Website": "www.vitafoamng.com",
-   "DateOfIncorporation": "1962-04-08T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGVITAFOAM00"
   },
   {
    "Symbol": "WAPIC",
    "CompanyName": "CORONATION INSURANCE PLC",
-   "InternationSecIN": "NGWAPIC00004",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "\"Insurance Carriers, Brokers a",
-   "Website": "www.coronationinsurance.com.ng",
-   "DateOfIncorporation": "1958-03-14T00:00:00",
-   "DateListed": "1990-08-31T00:00:00",
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGWAPIC00004"
   },
   {
    "Symbol": "WEMABANK",
    "CompanyName": "WEMA BANK PLC.",
-   "InternationSecIN": "NGWEMABANK07",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Banking",
-   "Website": "www.wemabank.com",
-   "DateOfIncorporation": "1945-05-02T00:00:00",
-   "DateListed": null,
-   "MarketClassification": "Main Board"
+   "InternationSecIN": "NGWEMABANK07"
   },
   {
    "Symbol": "ZENITHBANK",
    "CompanyName": "ZENITH BANK PLC",
-   "InternationSecIN": "NGZENITHBNK9",
-   "Sector": "FINANCIAL SERVICES",
-   "SubSector": "Banking",
-   "Website": "www.zenithbank.com | SWIFT:ZEIBNGLA",
-   "DateOfIncorporation": "1990-05-30T00:00:00",
-   "DateListed": "2004-10-21T00:00:00",
-   "MarketClassification": "Premium Board"
+   "InternationSecIN": "NGZENITHBNK9"
   },
   {
    "Symbol": "ZICHIS",
    "CompanyName": "ZICHIS AGRO ALLIED INDUSTRIES PLC",
-   "InternationSecIN": "NGZICHIS0009",
-   "Sector": "AGRICULTURE",
-   "SubSector": "Crop Production",
-   "Website": "zichisagroallied.com.ng",
-   "DateOfIncorporation": "2012-04-17T00:00:00",
-   "DateListed": "2026-01-20T00:00:00",
-   "MarketClassification": "Growth Board"
+   "InternationSecIN": "NGZICHIS0009"
   }
- ]
+ ],
+ "note": "Facts only (name, symbol, ISIN). Sector, website and dates were removed (owner, 19 Nov 2026) because the NGX website terms restrict republishing."
 }

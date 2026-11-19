@@ -25,7 +25,7 @@ def fetch():
     req = urllib.request.Request(SRC, headers={'User-Agent': 'InvestediaBuild/1.0 (site data build; contact via site)', 'Accept': 'application/json'})
     raw = urllib.request.urlopen(req, timeout=60).read()
     rows = json.loads(raw)
-    keep = ['Symbol', 'CompanyName', 'InternationSecIN', 'Sector', 'SubSector', 'Website', 'DateOfIncorporation', 'DateListed', 'MarketClassification']
+    keep = ['Symbol', 'CompanyName', 'InternationSecIN']  # facts only (owner, 19 Nov 2026)
     listings = sorted(({k: r.get(k) for k in keep} for r in rows if r.get('Symbol') and r.get('CompanyName')), key=lambda r: r['Symbol'])
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({'schema': 'investedia.listed-companies/v1', 'exchange': 'Nigerian Exchange (NGX)', 'mic': 'XNSA', 'country': 'Nigeria', 'cc': 'ng',
@@ -76,14 +76,13 @@ def add():
         web = (r.get('Website') or '').strip()
         d['companies'].append({
             'slug': slug, 'name': name, 'legal_name': r['CompanyName'].strip(), 'country': 'Nigeria', 'cc': 'ng', 'region': 'Africa',
-            'sector': 'Communication' if 'telecom' in (r.get('SubSector') or '').lower() else SECTOR.get((r.get('Sector') or '').strip()), 'industry': industry(r.get('SubSector')),
-            'public': True, 'hq': None, 'website': (web if web.startswith('http') else f'https://{web}') if web and '.' in web else None,
-            'description': None, 'founded': int(inc) if inc.isdigit() and 1800 < int(inc) <= datetime.date.today().year else None,
+            # facts only (owner, 19 Nov 2026): the NGX website terms restrict republishing, so no sector, website or dates from NGX
+            'sector': None, 'industry': None, 'public': True, 'hq': None, 'website': None, 'description': None, 'founded': None, 'ngx_facts_only': True,
             'story': [], 'related': [], 'videos': [],
-            'sources': [{'name': 'Nigerian Exchange (NGX) company directory', 'url': src['page_url'], 'checked_at': src['checked_at']}],
+            'sources': [{'name': 'Company name, ticker and ISIN as published by the Nigerian Exchange (facts only)', 'url': src['page_url'], 'checked_at': src['checked_at']}],
             'logo': None,
             'listings': [{'s': f'NGX:{sym}', 'name': r['CompanyName'].strip(), 'exchange': 'Nigerian Exchange', 'cur': 'NGN', 'tracked': False,
-                          'isin': r.get('InternationSecIN'), 'board': r.get('MarketClassification')}],
+                          'isin': r.get('InternationSecIN')}],
         })
         added += 1
     d['count'] = len(d['companies'])
