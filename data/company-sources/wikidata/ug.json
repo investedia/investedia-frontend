@@ -1,0 +1,2629 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "UG",
+ "count": 138,
+ "companies": [
+  {
+   "qid": "Q4650127",
+   "name": "ABC Bank",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.abccapitalbank.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/ABC_Bank_(Uganda)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4859965",
+   "name": "Absa Bank Uganda Limited",
+   "cc": "ug",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.barclays.com/africa/uganda/",
+   "enwiki": "https://en.wikipedia.org/wiki/Absa_Bank_Uganda_Limited",
+   "logo_file": "ABSA Group Limited Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25999189",
+   "name": "Airtel Uganda",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.africa.airtel.com/uganda/",
+   "enwiki": "https://en.wikipedia.org/wiki/Airtel_Uganda",
+   "logo_file": "Airtel Africa logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18636286",
+   "name": "Akright Projects Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.akright.biz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Akright_Projects_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17510439",
+   "name": "Alam Group",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "investment"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.alam-group.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Alam_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28129219",
+   "name": "ALTX East Africa Exchange",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "https://www.altxafrica.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/ALTX_East_Africa_Exchange",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25226967",
+   "name": "Amuru Sugar Works Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Amuru District",
+   "hq": [
+    2.66667,
+    31.83333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Amuru_Sugar_Works_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q16825272",
+   "name": "Appfrica",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "business incubator"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://appfrica.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24908597",
+   "name": "Atiak Sugar Factory",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Atiak",
+   "hq": [
+    3.265,
+    32.125
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Atiak_Sugar_Factory",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4830765",
+   "name": "Aya Group",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "investment"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.ayagroupafrica.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aya_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q111941214",
+   "name": "Baba TV Uganda",
+   "cc": "ug",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Baba_TV_Uganda",
+   "listed": false
+  },
+  {
+   "qid": "Q4856016",
+   "name": "Bank of Africa",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.boauganda.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Africa_Uganda",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4856055",
+   "name": "Bank of Baroda Uganda Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.bankofbaroda.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Baroda_Uganda_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4856128",
+   "name": "Bank of India (Uganda)",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_India_(Uganda)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4836227",
+   "name": "BOSCO-Uganda",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Uganda",
+   "hq": [
+    1.28,
+    32.39
+   ],
+   "website": "http://boscouganda.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/BOSCO-Uganda",
+   "logo_file": "BOSCO-Uganda.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28401848",
+   "name": "Buganda Investments and Commercial Undertakings Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Buganda_Investments_and_Commercial_Undertakings_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106867463",
+   "name": "Bugiri Sugar Factory",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Bugiri_Sugar_Factory",
+   "listed": false
+  },
+  {
+   "qid": "Q17512678",
+   "name": "Bujagali Energy Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity generation"
+   ],
+   "isin": [],
+   "hq_city": "Njeru",
+   "hq": [
+    0.42861,
+    33.14861
+   ],
+   "website": "http://www.bujagali-energy.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bujagali_Energy_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5017765",
+   "name": "Cairo International Bank",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.cairointernationalbank.co.ug",
+   "enwiki": "https://en.wikipedia.org/wiki/Cairo_Bank_Uganda",
+   "logo_file": "Cairo Bank Uganda Logo (2020).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17514381",
+   "name": "Capital Shoppers",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Capital_Shoppers",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5059068",
+   "name": "Centenary Bank Uganda",
+   "cc": "ug",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Mapeera House",
+   "hq": [
+    0.3146,
+    32.578
+   ],
+   "website": "http://www.centenarybank.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Centenary_Bank",
+   "logo_file": "Centenary bank logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q112623181",
+   "name": "Centenary Group",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Centenary_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q5122454",
+   "name": "Citibank Uganda",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Nakasero",
+   "hq": [
+    0.3244,
+    32.5788
+   ],
+   "website": "http://www.citibank.com/eastafrica/homepage/Citibank_Uganda/inner.html",
+   "enwiki": "https://en.wikipedia.org/wiki/Citibank_Uganda",
+   "logo_file": "Citi logo March 2023.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q126087551",
+   "name": "COBAP Boxing Club",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "sports industry"
+   ],
+   "isin": [],
+   "hq_city": "Mengo",
+   "hq": [
+    0.34667,
+    32.6056
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/COBAP_Boxing_Club",
+   "listed": false
+  },
+  {
+   "qid": "Q5152465",
+   "name": "Commercial Bank of Africa",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Twed Towers",
+   "hq": [
+    0.32639,
+    32.5836
+   ],
+   "website": "http://cbagroup.com/uganda/",
+   "enwiki": "https://en.wikipedia.org/wiki/Commercial_Bank_of_Africa_(Uganda)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5181995",
+   "name": "Crane Bank",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.cranebanklimited.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Crane_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133278758",
+   "name": "Crested Capital",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Crested_Capital",
+   "listed": false
+  },
+  {
+   "qid": "Q18206342",
+   "name": "DAS Handling Limited",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "aviation"
+   ],
+   "isin": [],
+   "hq_city": "Entebbe",
+   "hq": [
+    0.05,
+    32.46
+   ],
+   "website": "http://www.dashandling.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/DAS_Handling_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134877628",
+   "name": "Dei BioPharma",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Dei_BioPharma",
+   "listed": false
+  },
+  {
+   "qid": "Q5204902",
+   "name": "DFCU Bank",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/DFCU_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5204904",
+   "name": "DFCU Group",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.dfcugroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/DFCU_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5270937",
+   "name": "Diamond Trust Bank (Uganda) Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.dtbu.dtbafrica.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Diamond_Trust_Bank_(Uganda)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110129517",
+   "name": "Dott Services",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Dott_Services",
+   "listed": false
+  },
+  {
+   "qid": "Q5327655",
+   "name": "East African Development Bank",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.eadb.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/East_African_Development_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5333154",
+   "name": "Ecobank Uganda",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.ecobank.com/countryinfo.aspx?cid=74087",
+   "enwiki": "https://en.wikipedia.org/wiki/Ecobank_Uganda",
+   "logo_file": "Ecobank Logo EN.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28402300",
+   "name": "EFC Uganda Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/EFC_Uganda_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18353667",
+   "name": "Entebbe Handling Services",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aviation"
+   ],
+   "isin": [],
+   "hq_city": "Entebbe International Airport",
+   "hq": [
+    0.04472,
+    32.44306
+   ],
+   "website": "http://www.enhas.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Menzies_Aviation_Uganda",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5384668",
+   "name": "Equity Bank Uganda",
+   "cc": "ug",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "https://ug.equitybankgroup.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Equity_Bank_Uganda_Limited",
+   "logo_file": "Equity Group Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18354418",
+   "name": "Exodus Savings and Credit Cooperative Society Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Exodus_Savings_and_Credit_Cooperative_Society_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5449333",
+   "name": "Fina Bank",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://www.gtbank.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Guaranty_Trust_Bank_(Uganda)",
+   "logo_file": "Gt Uganda Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7877595",
+   "name": "Finance Trust Bank",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.financetrust.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Finance_Trust_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5425825",
+   "name": "FINCA Uganda Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.finca.org/site/c.6fIGIXMFJnJ0H/b.6088543/k.C11B/Uganda.htm",
+   "enwiki": "https://en.wikipedia.org/wiki/FINCA_Uganda_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19903271",
+   "name": "Fountain Publishers",
+   "cc": "ug",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "https://www.fountainpublishers.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Fountain_Publishers",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85845970",
+   "name": "Fun Factory Uganda",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Fun_Factory_Uganda",
+   "listed": false
+  },
+  {
+   "qid": "Q5570701",
+   "name": "Global Trust Bank",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.bankglobaltrust.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Global_Trust_Bank_(Uganda)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24958518",
+   "name": "GM Sugar Uganda Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Njeru",
+   "hq": [
+    0.42861,
+    33.14861
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/GM_Sugar_Uganda_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15224125",
+   "name": "Hima Cement Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Hima",
+   "hq": [
+    0.28917,
+    30.17806
+   ],
+   "website": "http://www.lafarge.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hima_Cement_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24884427",
+   "name": "Hoima Sugar Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Hoima_Sugar_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25226881",
+   "name": "House of Dawda Group",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/House_of_Dawda_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5916124",
+   "name": "Housing Finance Bank",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.housingfinance.co.ug",
+   "enwiki": "https://en.wikipedia.org/wiki/Housing_Finance_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6006376",
+   "name": "Imperial Bank Uganda",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.eximbank-ug.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Exim_Bank_(Uganda)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6006634",
+   "name": "Imperial Hotels Group",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.imperialhotels.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Imperial_Hotels_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q6051972",
+   "name": "International Medical Group",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "health care"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.img.co.ug",
+   "enwiki": "https://en.wikipedia.org/wiki/International_Medical_Group_(Uganda)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6959786",
+   "name": "Java House",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://javahouseafrica.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Java_House",
+   "listed": false
+  },
+  {
+   "qid": "Q17061030",
+   "name": "Jumià",
+   "cc": "ug",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "JMIA"
+    }
+   ],
+   "industries": [
+    "online shop"
+   ],
+   "isin": [
+    "US48138M1053"
+   ],
+   "hq_city": "Ikeja",
+   "hq": [
+    6.58333,
+    3.33333
+   ],
+   "website": "https://group.jumia.com",
+   "lei": "391200JWCL5VCOSXNT56",
+   "enwiki": "https://en.wikipedia.org/wiki/Jumia",
+   "logo_file": "JumiaLogo (14).png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16991766",
+   "name": "K2 Telecom",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.k2telecom.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/K2_Telecom",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6349476",
+   "name": "Kakira Sugar Works",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "sugar"
+   ],
+   "isin": [],
+   "hq_city": "Kakira",
+   "hq": [
+    0.5,
+    33.28
+   ],
+   "website": "http://www.kakirasugar.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kakira_Sugar_Works",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24908258",
+   "name": "Kampala Cement Company Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "list of building materials"
+   ],
+   "isin": [],
+   "hq_city": "Namataba",
+   "hq": [
+    0.375,
+    32.84
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Kampala_Cement_Company_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24912168",
+   "name": "Kamtech Logistics Uganda Limited",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lira",
+   "hq": [
+    2.24889,
+    32.9
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Kamtech_Logistics_Uganda_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24915341",
+   "name": "Kamuli Sugar Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.kamulisugar.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kamuli_Sugar_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24915597",
+   "name": "Kenlon Industries Uganda Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.kenlonindustries.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kenlon_Industries_Uganda_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25226889",
+   "name": "Kiira Motors Corporation",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Ntinda",
+   "hq": [
+    0.3475,
+    32.63
+   ],
+   "website": "http://www.kiiramotors.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kiira_Motors_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6414460",
+   "name": "Kinyara Sugar Works Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.kinyara.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kinyara_Sugar_Works_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130724580",
+   "name": "Kwagalana Group",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://kwagalanagroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kwagalana_Group",
+   "logo_file": "Logo of Kwagalana Group.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6450651",
+   "name": "Kyagalanyi Coffee Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Kyagalanyi_Coffee_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q127433494",
+   "name": "Leaf Tobacco & Commodities",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Leaf_Tobacco_%26_Commodities_(U)",
+   "listed": false
+  },
+  {
+   "qid": "Q28402183",
+   "name": "Letshego Microfinance Uganda",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kololo",
+   "hq": [
+    0.3331,
+    32.593
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Letshego_Microfinance_Uganda",
+   "listed": false
+  },
+  {
+   "qid": "Q6727579",
+   "name": "Madhvani Group",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kakira",
+   "hq": [
+    0.5,
+    33.28
+   ],
+   "website": "http://www.madhvanifoundation.com/madhvani-group.html",
+   "enwiki": "https://en.wikipedia.org/wiki/Madhvani_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17108322",
+   "name": "Mercantile Credit Bank",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.mcb.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mercantile_Credit_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55394577",
+   "name": "Moroto Ateker Cement Company Limited",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "list of building materials"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Moroto_Ateker_Cement_Company_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17108338",
+   "name": "Moroto Cement Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "list of building materials"
+   ],
+   "isin": [],
+   "hq_city": "Moroto Town",
+   "hq": [
+    2.53,
+    34.67
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Moroto_Cement_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25103814",
+   "name": "Movit",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "personal care product"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Movit",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25040426",
+   "name": "MTN Uganda",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.mtn.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/MTN_Uganda",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6933682",
+   "name": "Mukwano Group",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agriculture"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "https://www.mukwano.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mukwano_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6970895",
+   "name": "National Bank of Commerce",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/National_Bank_of_Commerce_(Uganda)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18379455",
+   "name": "National Drug Authority",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.nda.or.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Drug_Authority",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17068858",
+   "name": "National Enterprise Corporation",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://nec.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Enterprise_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6973428",
+   "name": "National Housing and Construction Company",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "housing"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.nhcc.co.ug",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Housing_and_Construction_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30640185",
+   "name": "National Information Technology Authority-Uganda",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/National_Information_Technology_Authority-Uganda",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6973781",
+   "name": "National Insurance Corporation",
+   "cc": "ug",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.nic.co.ug",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Insurance_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6978490",
+   "name": "National Social Security Fund",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Social Security"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.nssfug.org",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Social_Security_Fund_(Uganda)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6979352",
+   "name": "National Water and Sewerage Corporation",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.nwsc.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Water_and_Sewerage_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55711376",
+   "name": "NBS TV",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://nbs.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/NBS_Television_(Uganda)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6953240",
+   "name": "NC Bank Uganda",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.nic-bank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/NCBA_Bank_Uganda",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15262105",
+   "name": "New Vision Group",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/New_Vision_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18162062",
+   "name": "Nile Breweries Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "brewing"
+   ],
+   "isin": [],
+   "hq_city": "Jinja",
+   "hq": [
+    0.4353,
+    33.20556
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Nile_Breweries_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q14956789",
+   "name": "Nsambya Hospital",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.nsambyahospital.or.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nsambya_Hospital",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25168632",
+   "name": "Nyanza Textile Industries Limited",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Njeru",
+   "hq": [
+    0.42861,
+    33.14861
+   ],
+   "website": "http://www.nytil.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nyanza_Textile_Industries_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7098598",
+   "name": "Opportunity Uganda Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "https://opportunitybank.co.ug/index.php",
+   "enwiki": "https://en.wikipedia.org/wiki/Opportunity_Bank_Uganda_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7102281",
+   "name": "Orient Bank",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.orient-bank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/I%26M_Bank_Uganda",
+   "logo_file": "Imbank-logo.webp",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106254017",
+   "name": "Pearl Dairies Honey Factory",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Pearl_Dairies_Honey_Factory",
+   "listed": false
+  },
+  {
+   "qid": "Q136483284",
+   "name": "Pebuu",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Pebuu",
+   "listed": false
+  },
+  {
+   "qid": "Q109801897",
+   "name": "Pela Commodities",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Pela_Commodities",
+   "listed": false
+  },
+  {
+   "qid": "Q7233761",
+   "name": "Posta Uganda",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "website": "http://www.ugapost.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Posta_Uganda",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7233607",
+   "name": "PostBank Uganda",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.postbank.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pearl_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7242787",
+   "name": "Pride Bank",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.pridemicrofinance.co.ug",
+   "enwiki": "https://en.wikipedia.org/wiki/Pride_Bank_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7268724",
+   "name": "Quality Chemical Industries Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Luzira",
+   "hq": [
+    0.3,
+    32.6561
+   ],
+   "website": "http://www.ciplaqcil.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Quality_Chemical_Industries_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17108382",
+   "name": "Quality Chemicals Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Katwe",
+   "hq": [
+    0.3,
+    32.57667
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Quality_Chemicals_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18389856",
+   "name": "Quality Supermarkets",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Quality_Supermarkets",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106818868",
+   "name": "ROKO Construction Company",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/ROKO_Construction_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q7366148",
+   "name": "Roofings Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "list of building materials"
+   ],
+   "isin": [],
+   "hq_city": "Lubowa",
+   "hq": [
+    0.2275,
+    32.555
+   ],
+   "website": "http://www.roofingsgroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Roofings_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7380213",
+   "name": "Ruparelia Group",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "investment"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.rupareliagroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ruparelia_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7418059",
+   "name": "Sango Bay Estates Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Sango_Bay_Estates_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111170060",
+   "name": "Sarrai Group",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Sarrai_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q28402637",
+   "name": "Savannah MOON",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "film",
+    "television"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Savannah_MOON",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17081556",
+   "name": "Smart Telecom",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://ug.smarteastafrica.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Smart_Telecom_(Uganda)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16950198",
+   "name": "SmileTelecom",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://smile.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Smile_Telecom",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7598001",
+   "name": "Stanbic Bank Uganda Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.stanbicbank.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Stanbic_Bank_Uganda",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7598202",
+   "name": "Standard Chartered Uganda",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.sc.com/ug",
+   "enwiki": "https://en.wikipedia.org/wiki/Standard_Chartered_Uganda",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7604065",
+   "name": "Statewide Insurance Company",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.swico.co.ug",
+   "enwiki": "https://en.wikipedia.org/wiki/Statewide_Insurance_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18386110",
+   "name": "Sugar & Allied Industries Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaliro District",
+   "hq": [
+    1.01667,
+    33.5
+   ],
+   "website": "http://www.sail.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sugar_%26_Allied_Industries_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7634782",
+   "name": "Sugar Corporation of Uganda Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lugazi",
+   "hq": [
+    0.38333,
+    32.92417
+   ],
+   "website": "http://www.mehtagroup.com/sugar.html",
+   "enwiki": "https://en.wikipedia.org/wiki/Sugar_Corporation_of_Uganda_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24895924",
+   "name": "Tilda Uganda",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Tilda_Uganda",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18636424",
+   "name": "Tirupati Development Uganda Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.tirupati-uganda.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tirupati_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55642404",
+   "name": "Top Finance Bank Uganda Limited",
+   "cc": "ug",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Salaam_Bank_Uganda",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7826692",
+   "name": "Tororo Cement Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "list of building materials"
+   ],
+   "isin": [],
+   "hq_city": "Tororo",
+   "hq": [
+    0.69278,
+    34.18083
+   ],
+   "website": "http://www.tororocement.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tororo_Cement_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137360157",
+   "name": "Tororo Steel Mill",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Tororo_Steel_Mill",
+   "listed": false
+  },
+  {
+   "qid": "Q7845759",
+   "name": "Tropical Bank",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "https://trobank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tropical_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25104823",
+   "name": "Ugachick Limited",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "poultry farming"
+   ],
+   "isin": [],
+   "website": "http://www.ugachick.co/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ugachick_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7864601",
+   "name": "UGAFODE Microfinance Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.ugafode.co.ug",
+   "enwiki": "https://en.wikipedia.org/wiki/UGAFODE_Microfinance_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7877588",
+   "name": "Uganda Clays Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Kajjansi",
+   "hq": [
+    0.215,
+    32.55
+   ],
+   "website": "http://www.ugandaclays.co.ug",
+   "enwiki": "https://en.wikipedia.org/wiki/Uganda_Clays_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28232201",
+   "name": "Uganda Electricity Distribution Company Limited",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power distribution"
+   ],
+   "isin": [],
+   "website": "http://www.uedcl.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Uganda_Electricity_Distribution_Company_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21178944",
+   "name": "Uganda Electricity Transmission Company Limited",
+   "cc": "ug",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.uetcl.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Uganda_Electricity_Transmission_Company_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17108413",
+   "name": "Uganda Investment Authority",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.ugandainvest.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Uganda_Investment_Authority",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q43082782",
+   "name": "Uganda Manufacturers' Association",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Uganda_Manufacturers%27_Association",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17108424",
+   "name": "Uganda National Oil Company",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Uganda_National_Oil_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48800968",
+   "name": "Uganda National Pipeline Company",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Uganda_National_Pipeline_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24957803",
+   "name": "Uganda Radio Network",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "news media"
+   ],
+   "isin": [],
+   "website": "http://ugandaradionetwork.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Uganda_Radio_Network",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q122699222",
+   "name": "Uganda Reinsurance Company",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Uganda_Reinsurance_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q492316",
+   "name": "Uganda Securities Exchange",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "https://www.use.or.ug",
+   "enwiki": "https://en.wikipedia.org/wiki/Uganda_Securities_Exchange",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16958718",
+   "name": "Uganda Telecom",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.utl.co.ug",
+   "enwiki": "https://en.wikipedia.org/wiki/Uganda_Telecommunications_Corporation_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7881483",
+   "name": "Umeme",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.umeme.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Umeme",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7887506",
+   "name": "United Bank for Africa",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kampala",
+   "hq": [
+    0.31361,
+    32.58111
+   ],
+   "website": "http://www.ubagroup.com/ubauganda/homepage/1",
+   "enwiki": "https://en.wikipedia.org/wiki/United_Bank_for_Africa_Uganda_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16966926",
+   "name": "Wazalendo Savings and Credit Cooperative Society",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Bombo",
+   "hq": [
+    0.57778,
+    32.545
+   ],
+   "website": "http://www.wazalendo.co.ug/",
+   "enwiki": "https://en.wikipedia.org/wiki/Wazalendo_Savings_and_Credit_Cooperative_Society",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16967180",
+   "name": "West Nile Rural Electrification Company",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Arua",
+   "hq": [
+    3.03,
+    30.91
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/West_Nile_Rural_Electrification_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18379037",
+   "name": "Westnile Distilling Company Limited",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Westnile_Distilling_Company_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q127273652",
+   "name": "Yako Bank Uganda Limited",
+   "cc": "ug",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Yako_Bank_Uganda_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q126088095",
+   "name": "Zebra Boxing Club",
+   "cc": "ug",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "sports industry"
+   ],
+   "isin": [],
+   "hq_city": "Bwaise",
+   "hq": [
+    0.35,
+    32.56111
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Zebra_Boxing_Club",
+   "listed": false
+  }
+ ]
+}

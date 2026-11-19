@@ -1,0 +1,606 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "TZ",
+ "count": 29,
+ "companies": [
+  {
+   "qid": "Q141425753",
+   "name": "Agricom Africa Limited",
+   "cc": "tz",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Agricom_Africa_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q5058479",
+   "name": "Airtel Tanzania",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Dar es Salaam",
+   "hq": [
+    -6.81611,
+    39.28028
+   ],
+   "website": "http://africa.airtel.com/wps/wcm/connect/africarevamp/Tanzania/",
+   "enwiki": "https://en.wikipedia.org/wiki/Airtel_Tanzania",
+   "logo_file": "Airtel Africa logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4832231",
+   "name": "Azania Bank",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Dar es Salaam",
+   "hq": [
+    -6.81611,
+    39.28028
+   ],
+   "website": "http://www.azaniabank.co.tz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Azania_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5013848",
+   "name": "CRDB Bank",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Dar es Salaam",
+   "hq": [
+    -6.81611,
+    39.28028
+   ],
+   "website": "https://www.crdbbank.co.tz/en",
+   "enwiki": "https://en.wikipedia.org/wiki/CRDB_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q490028",
+   "name": "Dar es Salaam Stock Exchange",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dar es Salaam",
+   "hq": [
+    -6.81611,
+    39.28028
+   ],
+   "website": "https://www.darstockexchange.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Dar_es_Salaam_Stock_Exchange",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25339999",
+   "name": "Diamond Trust Bank",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://diamondtrust.co.tz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Diamond_Trust_Bank_(Tanzania)_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5384667",
+   "name": "Equity Bank Tanzania",
+   "cc": "tz",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://tz.equitybankgroup.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Equity_Bank_Tanzania_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5453416",
+   "name": "First National Bank of Tanzania",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Dar es Salaam",
+   "hq": [
+    -6.81611,
+    39.28028
+   ],
+   "website": "https://www.fnbtanzania.co.tz/",
+   "enwiki": "https://en.wikipedia.org/wiki/First_National_Bank_of_Tanzania",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106957508",
+   "name": "Kibo Peak Palace Hotel",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "hotel"
+   ],
+   "isin": [],
+   "hq_city": "Morogoro Region",
+   "hq": [
+    -8.0,
+    37.0
+   ],
+   "website": "https://kibopeakpalacehotel.co.tz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6764219",
+   "name": "Marine Services Company Limited",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mwanza",
+   "hq": [
+    -2.51667,
+    32.9
+   ],
+   "website": "http://www.mscl.go.tz",
+   "enwiki": "https://en.wikipedia.org/wiki/Marine_Services_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6885522",
+   "name": "Mkuki na Nyota",
+   "cc": "tz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dar es Salaam",
+   "hq": [
+    -6.81611,
+    39.28028
+   ],
+   "website": "https://mkukinanyota.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mkuki_na_Nyota",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55074898",
+   "name": "Msufini Tanzania Limited",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Msufini_Tanzania_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6974322",
+   "name": "NMB Bank Plc",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Dar es Salaam",
+   "hq": [
+    -6.81611,
+    39.28028
+   ],
+   "website": "https://www.nmbbank.co.tz",
+   "enwiki": "https://en.wikipedia.org/wiki/NMB_Bank_Tanzania",
+   "logo_file": "Nmb logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23034974",
+   "name": "Smile Communications Tanzania",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Dar es Salaam",
+   "hq": [
+    -6.81611,
+    39.28028
+   ],
+   "website": "http://smile.co.tz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Smile_Communications_Tanzania",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25054185",
+   "name": "Swala Gas and Oil",
+   "cc": "tz",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Dar es Salaam Stock Exchange",
+     "ticker": "SWALA"
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "TZ1996101865"
+   ],
+   "hq_city": "Dar es Salaam",
+   "hq": [
+    -6.81611,
+    39.28028
+   ],
+   "website": "http://www.swala-energy.co.tz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Swala_Gas_and_Oil",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7682774",
+   "name": "Tanga Cement",
+   "cc": "tz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "cement"
+   ],
+   "isin": [],
+   "hq_city": "Tanga",
+   "hq": [
+    -5.06667,
+    39.1
+   ],
+   "website": "http://www.simbacement.co.tz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tanga_Cement",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25053161",
+   "name": "Tanzania Agricultural Development Bank",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "development bank"
+   ],
+   "isin": [],
+   "hq_city": "Dar es Salaam",
+   "hq": [
+    -6.81611,
+    39.28028
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Tanzania_Agricultural_Development_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13124985",
+   "name": "Tanzania Broadcasting Corporation",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "broadcasting",
+    "journalism",
+    "media industry"
+   ],
+   "isin": [],
+   "hq_city": "Dar es Salaam",
+   "hq": [
+    -6.81611,
+    39.28028
+   ],
+   "website": "https://tbc.go.tz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tanzania_Broadcasting_Corporation",
+   "logo_file": "TBC-Tanzania.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q4050564",
+   "name": "Tanzania Electric Supply Company Limited",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Dodoma",
+   "hq": [
+    -6.1835,
+    35.746
+   ],
+   "website": "https://www.tanesco.co.tz/",
+   "enwiki": "https://en.wikipedia.org/wiki/TANESCO",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7684130",
+   "name": "Tanzania Posts Corporation",
+   "cc": "tz",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "website": "http://www.posta.co.tz",
+   "enwiki": "https://en.wikipedia.org/wiki/Tanzania_Posts_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125123994",
+   "name": "Tanzania Publishing House",
+   "cc": "tz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Tanzania_Publishing_House",
+   "listed": false
+  },
+  {
+   "qid": "Q17097901",
+   "name": "Tanzania Telecommunications Company Limited",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Dar es Salaam",
+   "hq": [
+    -6.81611,
+    39.28028
+   ],
+   "website": "http://www.ttcl.co.tz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tanzania_Telecommunications_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7692423",
+   "name": "Techno Brain",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q6715977",
+   "name": "Tigo Tanzania",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Dar es Salaam",
+   "hq": [
+    -6.81611,
+    39.28028
+   ],
+   "website": "http://www.tigo.co.tz/",
+   "enwiki": "https://en.wikipedia.org/wiki/MIC_Tanzania_Limited",
+   "logo_file": "Logo Tigo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7939274",
+   "name": "Vodacom Tanzania",
+   "cc": "tz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Dar es Salaam",
+   "hq": [
+    -6.81611,
+    39.28028
+   ],
+   "website": "https://www.vodacom.co.tz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Vodacom_Tanzania",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106580836",
+   "name": "Vunjabei Group Limited",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Dar es Salaam",
+   "hq": [
+    -6.81611,
+    39.28028
+   ],
+   "website": "http://www.instagram.com/Vunjabei",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20715807",
+   "name": "Wilderness",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "ecotourism",
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Gaborone",
+   "hq": [
+    -24.65694,
+    25.90861
+   ],
+   "website": "https://www.wildernessdestinations.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Wilderness_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1630751",
+   "name": "Young Africans S.C.",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dar es Salaam",
+   "hq": [
+    -6.81611,
+    39.28028
+   ],
+   "website": "https://yangasc.co.tz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Young_Africans_S.C.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28404174",
+   "name": "Zanzibar Electricity Corporation",
+   "cc": "tz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Zanzibar_Electricity_Corporation",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

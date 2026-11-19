@@ -1,0 +1,2102 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "MA",
+ "count": 109,
+ "companies": [
+  {
+   "qid": "Q65131601",
+   "name": "AB Sport",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "sports equipment",
+    "sportswear"
+   ],
+   "isin": [],
+   "hq_city": "Tangier",
+   "hq": [
+    35.76949,
+    -5.80447
+   ],
+   "website": "https://www.absport.ma/",
+   "enwiki": "https://en.wikipedia.org/wiki/AB_Sport",
+   "logo_file": "ABsportMaroc.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115898215",
+   "name": "Academy of the Kingdom of Morocco",
+   "cc": "ma",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rabat",
+   "hq": [
+    34.02111,
+    -6.84139
+   ],
+   "website": "https://alacademia.org.ma",
+   "enwiki": "https://en.wikipedia.org/wiki/Academy_of_the_Kingdom_of_Morocco",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q43445487",
+   "name": "Africa Morocco Link",
+   "cc": "ma",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Morocco",
+   "hq": [
+    32.0,
+    -6.0
+   ],
+   "website": "https://aml.ma/",
+   "enwiki": "https://en.wikipedia.org/wiki/Africa_Morocco_Link",
+   "logo_file": "Africa morocco link logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56300032",
+   "name": "Afriquia",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.afriquia.ma",
+   "enwiki": "https://en.wikipedia.org/wiki/Afriquia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q117034662",
+   "name": "Afriquia Gaz",
+   "cc": "ma",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Trade of gas"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://afriquiagaz.com",
+   "listed": false
+  },
+  {
+   "qid": "Q2989840",
+   "name": "Aiguebelle (chocolate)",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "confectionery"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.aiguebelle.com/FR/Accueil.php",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124790747",
+   "name": "Akdital",
+   "cc": "ma",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://akdital.ma",
+   "listed": false
+  },
+  {
+   "qid": "Q2829178",
+   "name": "Akwa Group",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.akwagroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Akwa_Group",
+   "logo_file": "Akwa Group.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2829300",
+   "name": "Al Barid Bank",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.albaridbank.ma/ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Al_Barid_Bank",
+   "logo_file": "Al Barik Bank logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20725725",
+   "name": "Al Omrane",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.alomrane.gov.ma/ar",
+   "logo_file": "Logo Groupe Al Omrane.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q121083873",
+   "name": "Alliances Développement Immobilier",
+   "cc": "ma",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "business",
+    "real estate developer"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.alliances.co.ma",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q120966248",
+   "name": "Aradei Capital",
+   "cc": "ma",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "real estate industry"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.aradeicapital.com",
+   "listed": false
+  },
+  {
+   "qid": "Q2868678",
+   "name": "Aswak Assalam",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mass-market retailing"
+   ],
+   "isin": [],
+   "hq_city": "Mohammedia",
+   "hq": [
+    33.68333,
+    -7.38333
+   ],
+   "website": "http://www.aswakassalam.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q121078567",
+   "name": "AtlantaSanad",
+   "cc": "ma",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.atlantasanad.ma",
+   "listed": false
+  },
+  {
+   "qid": "Q2869430",
+   "name": "Atlas Hospitality",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.hotelsatlas.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Atlas_Hospitality",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q758052",
+   "name": "Attijariwafa Bank",
+   "cc": "ma",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.attijariwafabank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Attijariwafa_Bank",
+   "logo_file": "LogoNew.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133801060",
+   "name": "Aïcha",
+   "cc": "ma",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Meknes",
+   "hq": [
+    33.88333,
+    -5.55
+   ],
+   "website": "https://aicha.com",
+   "enwiki": "https://en.wikipedia.org/wiki/A%C3%AFcha_(brand)",
+   "logo_file": "Aicha--logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2300433",
+   "name": "Bank of Africa",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Africa",
+   "logo_file": "Bank of Africa Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2883441",
+   "name": "BCP Group",
+   "cc": "ma",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.groupebcp.com/fr",
+   "enwiki": "https://en.wikipedia.org/wiki/BCP_Group",
+   "logo_file": "Logo BCP.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133816271",
+   "name": "Biougnach",
+   "cc": "ma",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Biougnach",
+   "logo_file": "LOGO-BIOUGNACH.png",
+   "listed": false
+  },
+  {
+   "qid": "Q22683621",
+   "name": "Bricoma",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.bricoma.ma/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2940759",
+   "name": "Casa Transport",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://casatransport.ma/",
+   "logo_file": "Logo casa transport.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114771384",
+   "name": "Casabus",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "transport industry"
+   ],
+   "isin": [],
+   "website": "https://www.casabus.ma/",
+   "logo_file": "Casabus-logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q141450685",
+   "name": "Category:Société nationale de réalisation et de gestion des équipements sportifs",
+   "cc": "ma",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Sonarges-logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q141432055",
+   "name": "Category:Somagec",
+   "cc": "ma",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q2931198",
+   "name": "CDG Développement",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://cdgdev.ma/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2940784",
+   "name": "CFG Bank",
+   "cc": "ma",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.cfgbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/CFG_Bank",
+   "logo_file": "CFG Bank Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3006220",
+   "name": "CIH Bank",
+   "cc": "ma",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.cihbank.ma/ar",
+   "enwiki": "https://en.wikipedia.org/wiki/CIH_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19316310",
+   "name": "CLA Studios",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "film industry"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.cla-studios.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2989899",
+   "name": "Compagnie de Transports au Maroc",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "transport"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.ctm.ma",
+   "enwiki": "https://en.wikipedia.org/wiki/Compagnie_de_Transports_au_Maroc",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2990194",
+   "name": "Compagnie Générale Immobiliere",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rabat",
+   "hq": [
+    34.02111,
+    -6.84139
+   ],
+   "website": "https://www.cgi.ma/",
+   "enwiki": "https://en.wikipedia.org/wiki/Compagnie_G%C3%A9n%C3%A9rale_Immobiliere",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3006193",
+   "name": "Crédit Agricole du Maroc",
+   "cc": "ma",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rabat",
+   "hq": [
+    34.02111,
+    -6.84139
+   ],
+   "website": "https://www.creditagricole.ma/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cr%C3%A9dit_Agricole_du_Maroc",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3032148",
+   "name": "Distrisoft",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.distrisoft.ma/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137776684",
+   "name": "Disty Technologies",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "Casablanca Stock Exchange",
+     "ticker": "DYT"
+    }
+   ],
+   "industries": [
+    "product distribution"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Disty_Technologies",
+   "listed": true
+  },
+  {
+   "qid": "Q121124621",
+   "name": "Disway",
+   "cc": "ma",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.disway.com",
+   "listed": false
+  },
+  {
+   "qid": "Q3125155",
+   "name": "DXC Technology Maroc",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Salé",
+   "hq": [
+    34.05,
+    -6.81667
+   ],
+   "logo_file": "DXC Tech.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109311658",
+   "name": "Electroplanet",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.electroplanet.ma/",
+   "enwiki": "https://en.wikipedia.org/wiki/Electroplanet",
+   "logo_file": "Nouveau logo electroplanet.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3051156",
+   "name": "Eliteavia",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56299617",
+   "name": "Groupe Addoha",
+   "cc": "ma",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "real estate industry"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.groupeaddoha.com",
+   "listed": false
+  },
+  {
+   "qid": "Q113836177",
+   "name": "Groupe Label'Vie",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Iabel'vie.png",
+   "listed": false
+  },
+  {
+   "qid": "Q3117542",
+   "name": "Groupe Royal Air Maroc",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.royalairmaroc.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109038512",
+   "name": "Guichet",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://guichet.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q137770201",
+   "name": "Harmattan AI",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "defense"
+   ],
+   "isin": [],
+   "website": "https://www.harmattan.ai/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56240889",
+   "name": "Hmizate.ma",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Internet industry"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.hmizate.ma",
+   "enwiki": "https://en.wikipedia.org/wiki/Hmizate",
+   "logo_file": "Hmizate.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139619621",
+   "name": "Infomineo",
+   "cc": "ma",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://infomineo.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3150928",
+   "name": "Ingelec",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.ingelec.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135424708",
+   "name": "Innovx",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1388949",
+   "name": "Inwi",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://inwi.ma/ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Inwi",
+   "logo_file": "Logo inwi.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138820431",
+   "name": "JESA Group",
+   "cc": "ma",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "logo_file": "Logo-JESA Group.png",
+   "listed": false
+  },
+  {
+   "qid": "Q17061030",
+   "name": "Jumià",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "JMIA"
+    }
+   ],
+   "industries": [
+    "online shop"
+   ],
+   "isin": [
+    "US48138M1053"
+   ],
+   "hq_city": "Ikeja",
+   "hq": [
+    6.58333,
+    3.33333
+   ],
+   "website": "https://group.jumia.com",
+   "lei": "391200JWCL5VCOSXNT56",
+   "enwiki": "https://en.wikipedia.org/wiki/Jumia",
+   "logo_file": "JumiaLogo (14).png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q108638913",
+   "name": "Khbar Bladna (Publishing House)",
+   "cc": "ma",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tangier",
+   "hq": [
+    35.76949,
+    -5.80447
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3197636",
+   "name": "KITEA",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.kitea.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Kitea",
+   "logo_file": "Logo KITEA noir sans accroche MAJ-01 (2).jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141875967",
+   "name": "KLK Khayatey Living",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3199358",
+   "name": "Koutoubia (brand)",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Mohammedia",
+   "hq": [
+    33.68333,
+    -7.38333
+   ],
+   "website": "http://www.koutoubia.ma",
+   "enwiki": "https://en.wikipedia.org/wiki/Koutoubia_(brand)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136802063",
+   "name": "Laprophan",
+   "cc": "ma",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q3236658",
+   "name": "Lesieur Crystal",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.lesieur-cristal.ma",
+   "logo_file": "Lesieur Cristal logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19707101",
+   "name": "Liberty International",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3206228",
+   "name": "LYDEC",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://client.lydec.ma/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3272317",
+   "name": "M'dina Bus",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.mdinabus.ma",
+   "listed": false
+  },
+  {
+   "qid": "Q25381750",
+   "name": "M2M group",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.m2mgroup.com/",
+   "logo_file": "Logo-M2M-Group.gif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111210406",
+   "name": "Magriser",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2055692",
+   "name": "Marjane Group",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.marjane.ma/",
+   "enwiki": "https://en.wikipedia.org/wiki/Marjane_Group",
+   "logo_file": "Marjane-logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2823349",
+   "name": "Marjane Market",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mass-market retailing"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Marjane_Market",
+   "logo_file": "Logo marjane market.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2299942",
+   "name": "Maroc Telecom",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Internet industry",
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Rabat",
+   "hq": [
+    34.02111,
+    -6.84139
+   ],
+   "website": "https://www.iam.ma",
+   "enwiki": "https://en.wikipedia.org/wiki/Maroc_Telecom",
+   "logo_file": "Maroc Telecom logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3294973",
+   "name": "MarsaMaroc",
+   "cc": "ma",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.marsamaroc.co.ma/ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Marsa_Maroc",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3296092",
+   "name": "Marwa",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.marwa.co.ma/",
+   "logo_file": "Marwa y.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18384641",
+   "name": "Masen",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rabat",
+   "hq": [
+    34.02111,
+    -6.84139
+   ],
+   "website": "http://www.masen.ma",
+   "enwiki": "https://en.wikipedia.org/wiki/Moroccan_Agency_for_Sustainable_Energy",
+   "logo_file": "Logo masen maroc en.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131460412",
+   "name": "Med Paper",
+   "cc": "ma",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "pulp and paper industry"
+   ],
+   "isin": [
+    "MA0000012593"
+   ],
+   "hq_city": "Tangier",
+   "hq": [
+    35.76949,
+    -5.80447
+   ],
+   "website": "https://www.med-paper.ma",
+   "listed": true
+  },
+  {
+   "qid": "Q3317651",
+   "name": "Mobilia",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.mobilia.ma/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q120728859",
+   "name": "Mutandis",
+   "cc": "ma",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://mutandis.com",
+   "listed": false
+  },
+  {
+   "qid": "Q3072489",
+   "name": "O Capital Group",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.bmcebank.ma/front.aspx?SectionId=454",
+   "listed": false
+  },
+  {
+   "qid": "Q501605",
+   "name": "OCP Group",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.ocpgroup.ma/",
+   "enwiki": "https://en.wikipedia.org/wiki/OCP_Group",
+   "logo_file": "Ocp-group.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2300422",
+   "name": "Orange Morocco",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "internet service provider",
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.orange.ma/",
+   "enwiki": "https://en.wikipedia.org/wiki/Orange_Morocco",
+   "logo_file": "Orange logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56406421",
+   "name": "Oulmes Mineral Water",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q110028558",
+   "name": "Petrom",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://petrom.ma/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3445864",
+   "name": "RAM Cargo",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://cargo.royalairmaroc.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/RAM_Cargo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q42794743",
+   "name": "RMA",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.rmaassurance.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3117556",
+   "name": "Safari Group",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q3488352",
+   "name": "Saham Bank",
+   "cc": "ma",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.sahambank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Saham_Bank",
+   "logo_file": "Saham-bank-logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2931758",
+   "name": "Saham insurance",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://sanlampanafrica.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3470819",
+   "name": "Samir (Moroccan company)",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mohammadia",
+   "hq": [
+    35.58333,
+    0.06667
+   ],
+   "website": "http://www.samir.ma/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133816873",
+   "name": "Siera",
+   "cc": "ma",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Siera",
+   "logo_file": "Siera-logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q17639364",
+   "name": "Société autonome de transport d'Oujda",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Oujda",
+   "hq": [
+    34.68667,
+    -1.91139
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q3487779",
+   "name": "Société d'aménagement Zenata",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mohammedia",
+   "hq": [
+    33.68333,
+    -7.38333
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139635131",
+   "name": "Société de développement local",
+   "cc": "ma",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109044710",
+   "name": "Société de transport Casa-Rabat",
+   "cc": "ma",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q3488371",
+   "name": "Société générale des travaux du Maroc",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "http://www.sgtm-maroc.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1945306",
+   "name": "Société Nationale des Autoroutes du Maroc",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rabat",
+   "hq": [
+    34.02111,
+    -6.84139
+   ],
+   "website": "http://www.adm.co.ma",
+   "enwiki": "https://en.wikipedia.org/wiki/Autoroutes_du_Maroc",
+   "logo_file": "ADM-logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488540",
+   "name": "Société nationale du transport et de la logistique",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.sntl.ma/",
+   "logo_file": "Sntl-maroc.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139633323",
+   "name": "Société régionale multiservices",
+   "cc": "ma",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "drinking water",
+    "electricity"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139595523",
+   "name": "Sofac",
+   "cc": "ma",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.sofac.ma/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1852268",
+   "name": "Somaca",
+   "cc": "ma",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.renaultgroup.com/en/group/locations/casablanca-plant-somaca/",
+   "enwiki": "https://en.wikipedia.org/wiki/Somaca",
+   "logo_file": "SOMACA-Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16932103",
+   "name": "SOMED",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.somed.ma/",
+   "enwiki": "https://en.wikipedia.org/wiki/SOMED",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3490063",
+   "name": "Sonasid",
+   "cc": "ma",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.sonasid.ma",
+   "enwiki": "https://en.wikipedia.org/wiki/Sonasid",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6802685",
+   "name": "Sothema",
+   "cc": "ma",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry",
+    "pharmacy"
+   ],
+   "isin": [],
+   "hq_city": "Bouskoura",
+   "hq": [
+    33.44889,
+    -7.64861
+   ],
+   "website": "https://sothema.com/web/laboratoires-pharmaceutiques-sothema",
+   "listed": false
+  },
+  {
+   "qid": "Q21657020",
+   "name": "Taghazout Bay",
+   "cc": "ma",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rabat",
+   "hq": [
+    34.02111,
+    -6.84139
+   ],
+   "website": "http://www.taghazoutbay.ma/index.php/fr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Taghazout_Bay",
+   "logo_file": "Logo SAPST VA.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98183377",
+   "name": "Tarik Éditions",
+   "cc": "ma",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.tarikeditions.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20822028",
+   "name": "TGCC",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction industry"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://tgcc.ma/",
+   "logo_file": "Logo-TGCC.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3529171",
+   "name": "Tingair",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q120731583",
+   "name": "TotalEnergies Marketing Maroc",
+   "cc": "ma",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://totalenergies.ma",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3565044",
+   "name": "Wafa Assurance",
+   "cc": "ma",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://www.wafaassurance.ma/ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Wafa_Assurance",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12199351",
+   "name": "Wafabank",
+   "cc": "ma",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Wafabank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15798145",
+   "name": "Yomad",
+   "cc": "ma",
+   "types": [
+    "Q2085381",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.yomadeditions.net",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3579395",
+   "name": "Éditions Le Fennec",
+   "cc": "ma",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "book publishing"
+   ],
+   "isin": [],
+   "hq_city": "Casablanca",
+   "hq": [
+    33.59917,
+    -7.62
+   ],
+   "website": "https://lefennec.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q100258237",
+   "name": "الشرڭي",
+   "cc": "ma",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q20418460",
+   "name": "تانيت للنشر والدراسات",
+   "cc": "ma",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16121384",
+   "name": "دار النشر مرسم",
+   "cc": "ma",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16121392",
+   "name": "دار توبقال للنشر",
+   "cc": "ma",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16121379",
+   "name": "دار نشر المعرفة",
+   "cc": "ma",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rabat",
+   "hq": [
+    34.02111,
+    -6.84139
+   ],
+   "listed": false
+  }
+ ]
+}

@@ -1,0 +1,1596 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "TN",
+ "count": 82,
+ "companies": [
+  {
+   "qid": "Q2821740",
+   "name": "Abou Nawas",
+   "cc": "tn",
+   "types": [
+    "Q1631129"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.abounawas.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2842699",
+   "name": "Amen Bank",
+   "cc": "tn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.amenbank.com.tn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Amen_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q690739",
+   "name": "Arab International Bank of Tunisia",
+   "cc": "tn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.biat.com.tn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_Internationale_Arabe_de_Tunisie",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2859329",
+   "name": "Arab Tunisian Bank",
+   "cc": "tn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "https://www.atb.tn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Arab_Tunisian_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2870100",
+   "name": "Attijari Bank",
+   "cc": "tn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.attijaribank.com.tn/",
+   "logo_file": "Logo Attijari bank.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25455211",
+   "name": "Avionav",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aircraft construction"
+   ],
+   "isin": [],
+   "hq_city": "Borjine",
+   "hq": [
+    35.66333,
+    10.57667
+   ],
+   "website": "http://avionav.net/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q50348924",
+   "name": "Babour Express",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sfax",
+   "hq": [
+    34.74,
+    10.76
+   ],
+   "website": "http://babour.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2883020",
+   "name": "Banque de financement des petites et moyennes entreprises",
+   "cc": "tn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.bfpme.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q549445",
+   "name": "Banque de Tunisie",
+   "cc": "tn",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.bt.com.tn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_de_Tunisie",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4857075",
+   "name": "Banque de Tunisie et des Emirats",
+   "cc": "tn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.bte.com.tn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_de_Tunisie_et_des_Emirats",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12184646",
+   "name": "Banque franco-tunisienne",
+   "cc": "tn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q50126547",
+   "name": "Banque tuniso-libyenne",
+   "cc": "tn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.btl.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2882969",
+   "name": "Banque Zitouna",
+   "cc": "tn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Le Kram",
+   "hq": [
+    36.83333,
+    10.31667
+   ],
+   "website": "http://www.banquezitouna.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_Zitouna",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2891055",
+   "name": "Batam",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2883035",
+   "name": "BH Bank",
+   "cc": "tn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "https://bhbank.tn/",
+   "enwiki": "https://en.wikipedia.org/wiki/BH_Bank_(Tunisia)",
+   "logo_file": "BH BANK.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2874800",
+   "name": "BMCE Capital Asset Management",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "consulting company",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2883446",
+   "name": "BTK Bank",
+   "cc": "tn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.btknet.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109017913",
+   "name": "Carthage Power Company",
+   "cc": "tn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity generation"
+   ],
+   "isin": [],
+   "hq_city": "Radès",
+   "hq": [
+    36.76667,
+    10.28333
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q60846212",
+   "name": "Central Pharmacy of Tunisia",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.phct.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q584121",
+   "name": "Compagnie des phosphates de Gafsa",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Gafsa",
+   "hq": [
+    34.41667,
+    8.78333
+   ],
+   "website": "http://www.cpg.com.tn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Compagnie_des_phosphates_de_Gafsa",
+   "logo_file": "CPG logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2075429",
+   "name": "Compagnie Tunisienne de Navigation",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "freight transport"
+   ],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.ctn.com.tn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Compagnie_Tunisienne_de_Navigation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12211253",
+   "name": "Dar al-Gharb al-Islami",
+   "cc": "tn",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "دار الغرب الإسلامي.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3117384",
+   "name": "Delice Group",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3049998",
+   "name": "El Karama Holding",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Khereddine",
+   "hq": [
+    36.8305,
+    10.3163
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Princesse_El_Materi_Holdings",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3050106",
+   "name": "El Mouradi hotels",
+   "cc": "tn",
+   "types": [
+    "Q1631129"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.elmouradi.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q16125682",
+   "name": "Electrostar",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.electrostar.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q972902",
+   "name": "Evertek",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.evertek.com.tn/",
+   "enwiki": "https://en.wikipedia.org/wiki/EvertekTunisie",
+   "logo_file": "Logo Evertek.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3117314",
+   "name": "groupe Affès",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sfax",
+   "hq": [
+    34.74,
+    10.76
+   ],
+   "website": "http://www.cds.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3117611",
+   "name": "Groupe chimique tunisien",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.gct.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3117459",
+   "name": "groupe Karthago",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.karthago.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q3117479",
+   "name": "groupe Loukil",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.loukil.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3117489",
+   "name": "Groupe Mabrouk",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Groupe_Mabrouk",
+   "listed": false
+  },
+  {
+   "qid": "Q12208973",
+   "name": "Hannibal Lease",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Berges du Lac",
+   "hq": [
+    36.83498,
+    10.23886
+   ],
+   "website": "https://www.hannibalease.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25450093",
+   "name": "Industries chimiques du fluor",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.icf.ind.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17061030",
+   "name": "Jumià",
+   "cc": "tn",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "JMIA"
+    }
+   ],
+   "industries": [
+    "online shop"
+   ],
+   "isin": [
+    "US48138M1053"
+   ],
+   "hq_city": "Ikeja",
+   "hq": [
+    6.58333,
+    3.33333
+   ],
+   "website": "https://group.jumia.com",
+   "lei": "391200JWCL5VCOSXNT56",
+   "enwiki": "https://en.wikipedia.org/wiki/Jumia",
+   "logo_file": "JumiaLogo (14).png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3276573",
+   "name": "Magasin général",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mass-market retailing"
+   ],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "https://mg.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3290824",
+   "name": "Marhaba",
+   "cc": "tn",
+   "types": [
+    "Q1631129"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sousse",
+   "hq": [
+    35.83333,
+    10.63333
+   ],
+   "website": "http://www.marhabahotels.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16663638",
+   "name": "Masmoudi",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sfax",
+   "hq": [
+    34.74,
+    10.76
+   ],
+   "website": "http://www.masmoudi.tn/",
+   "logo_file": "Logo Patisserie Masmoudi.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110241088",
+   "name": "MedEspoir",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "health care"
+   ],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.medespoir.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/MedEspoir",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q630774",
+   "name": "Meublatex",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Hammam Sousse",
+   "hq": [
+    35.85889,
+    10.59389
+   ],
+   "website": "http://www.meublatex.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2719231",
+   "name": "Monoprix",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Mégrine",
+   "hq": [
+    36.7687,
+    10.23325
+   ],
+   "website": "http://www.snmvt.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Monoprix_(Tunisia)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2883413",
+   "name": "National Agricultural Bank",
+   "cc": "tn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.bna.com.tn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_Nationale_Agricole",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488504",
+   "name": "National Company of Water Exploitation and Distribution",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "https://www.sonede.com.tn/index.php?id=12&L=0",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488518",
+   "name": "National Oil Distribution Society",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.agil.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3349645",
+   "name": "National Sanitation Utility",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.onas.nat.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3455003",
+   "name": "National Tobacco and Matches Authority",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.rnta.tn/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Tobacco_and_Matches_Authority_(Tunisia)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97775025",
+   "name": "Office du commerce de Tunisie",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97189940",
+   "name": "Office national de l'huile",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.onh.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3400329",
+   "name": "Poulina",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ezzahra",
+   "hq": [
+    36.74389,
+    10.30833
+   ],
+   "website": "http://www.poulinagroupholding.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12184640",
+   "name": "QNB Tunisia",
+   "cc": "tn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.qnb.com.tn/",
+   "enwiki": "https://en.wikipedia.org/wiki/QNB_Tunisia",
+   "logo_file": "QNB Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20401422",
+   "name": "SIMPAR",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "real property"
+   ],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.simpar.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q86680713",
+   "name": "Société de recherches et d'exploitation des pétroles en Tunisie",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.serept.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22928948",
+   "name": "Société de transport des hydrocarbures par pipelines",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.sotrapil.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12218572",
+   "name": "Société des Ciments de Gabès",
+   "cc": "tn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "cement plant"
+   ],
+   "isin": [],
+   "hq_city": "Gabès",
+   "hq": [
+    33.88139,
+    10.09833
+   ],
+   "website": "https://cimentsdegabes.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28715087",
+   "name": "Société des foires internationales de Tunis",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Le Kram",
+   "hq": [
+    36.83333,
+    10.31667
+   ],
+   "website": "http://www.fkram.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16677296",
+   "name": "Société générale d'entreprises de matériel et de travaux",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.somatra-get.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488514",
+   "name": "Société nationale de cellulose et de papier alfa",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "pulp and paper industry"
+   ],
+   "isin": [],
+   "hq_city": "Kasserine",
+   "hq": [
+    35.16667,
+    8.83333
+   ],
+   "website": "http://www.sncpa.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110504289",
+   "name": "Société nationale immobilière de Tunisie",
+   "cc": "tn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.snit.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4119242",
+   "name": "Société Tunisienne de Banque",
+   "cc": "tn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.stb.com.tn",
+   "enwiki": "https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_Tunisienne_de_Banque",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q33296490",
+   "name": "Sotetel",
+   "cc": "tn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "telephony"
+   ],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.sotetel.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2816485",
+   "name": "Standard Sharing Software",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "https://www.3s.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3501227",
+   "name": "Stusid Bank",
+   "cc": "tn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://tsb.com.tn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tunisian_Saudi_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21606898",
+   "name": "tayara.tn",
+   "cc": "tn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "trade"
+   ],
+   "isin": [],
+   "website": "http://www.tayara.tn/",
+   "logo_file": "Tayara Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3517415",
+   "name": "Telnet",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Berges du Lac",
+   "hq": [
+    36.83498,
+    10.23886
+   ],
+   "website": "http://www.groupe-telnet.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3117580",
+   "name": "TTS Group",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.tts.com.tn/",
+   "logo_file": "Tts-logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16119861",
+   "name": "TunInvest",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.africinvest.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16681409",
+   "name": "Tunis International Bank",
+   "cc": "tn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.tib.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135396519",
+   "name": "Tunis Re",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "reinsurance"
+   ],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "https://www.tunisre.com.tn/",
+   "logo_file": "Logo-TUNIS-RE-FRA-1 (1).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2205893",
+   "name": "Tunisian Beverage Manufacturing Company",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness"
+   ],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Tunisian_Beverage_Manufacturing_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488699",
+   "name": "Tunisian Company of Electricity and Gas",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.steg.com.tn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tunisian_Company_of_Electricity_and_Gas",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3399820",
+   "name": "Tunisian Post",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.poste.tn/",
+   "enwiki": "https://en.wikipedia.org/wiki/La_Poste_Tunisienne",
+   "logo_file": "La Poste tunisienne 2011.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488701",
+   "name": "Tunisian Refining Industries Company",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.stir.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488700",
+   "name": "Tunisian Sugar Company",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of sugar"
+   ],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://sotusucre.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3542103",
+   "name": "Tunisie Leasing & Factoring",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "https://www.tlf.com.tn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3547541",
+   "name": "Ulysse Trading and Industrial Companies",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "https://utic.tn/",
+   "listed": false
+  },
+  {
+   "qid": "Q3550041",
+   "name": "Union bancaire pour le commerce et l'industrie",
+   "cc": "tn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.ubci.tn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Union_Bancaire_pour_le_Commerce_et_l%27Industrie",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12242278",
+   "name": "University Publishing Center",
+   "cc": "tn",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Manouba",
+   "hq": [
+    36.8,
+    10.1
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12231075",
+   "name": "Yadis Hôtels",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.yadis.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q3117601",
+   "name": "Zouari Group",
+   "cc": "tn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Sousse",
+   "hq": [
+    35.83333,
+    10.63333
+   ],
+   "website": "http://www.zouarigroup.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3579316",
+   "name": "Éditions Elyzad",
+   "cc": "tn",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "website": "http://www.elyzad.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/%C3%89ditions_Elyzad",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q54965465",
+   "name": "Éditions Walidoff",
+   "cc": "tn",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tunis",
+   "hq": [
+    36.80083,
+    10.18
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q42332125",
+   "name": "دار الإمام المازري",
+   "cc": "tn",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  }
+ ]
+}

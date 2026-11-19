@@ -1,0 +1,5200 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "ZA",
+ "count": 254,
+ "companies": [
+  {
+   "qid": "Q86659046",
+   "name": "Absa Bank",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Absa_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q58641733",
+   "name": "ABSA Group Limited",
+   "cc": "za",
+   "types": [
+    "Q22687",
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "ABG"
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [
+    "ZAE000255915"
+   ],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://www.absa.africa",
+   "lei": "2138006IPPRD4N6XLT30",
+   "enwiki": "https://en.wikipedia.org/wiki/Absa_Group",
+   "logo_file": "Absa Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4680951",
+   "name": "Adcock Ingram",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": null
+    },
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "AIP"
+    }
+   ],
+   "industries": [
+    "health care"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.adcock.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Adcock_Ingram",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4651263",
+   "name": "AECI Limted",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of explosives",
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.aeci.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/AECI",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4688472",
+   "name": "Aerosud",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Pretoria",
+   "hq": [
+    -25.74639,
+    28.18806
+   ],
+   "website": "http://www.aerosud.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/Aerosud",
+   "logo_file": "Aerosud New Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4689703",
+   "name": "African Bank Limited",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://www.africanbank.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/African_Bank_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4033498",
+   "name": "African Explosives",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.aelminingservices.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/African_Explosives",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q63871118",
+   "name": "African Minds",
+   "cc": "za",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "http://www.africanminds.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/African_Minds",
+   "listed": false
+  },
+  {
+   "qid": "Q4689878",
+   "name": "African Parks Network",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.africanparks.eu/",
+   "enwiki": "https://en.wikipedia.org/wiki/African_Parks",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110818916",
+   "name": "Afrigen Biologics and Vaccines",
+   "cc": "za",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "biotechnology"
+   ],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Afrigen",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124097591",
+   "name": "Agri-Expo",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "https://agriexpo.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Agri-Expo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4693834",
+   "name": "AgriSA",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.agrisa.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Agri_SA",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q112221248",
+   "name": "Albertyn-uitgewers",
+   "cc": "za",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18351032",
+   "name": "Alexander Forbes Group Holdings",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services",
+    "insurance"
+   ],
+   "isin": [],
+   "hq_city": "Sandton",
+   "hq": [
+    -26.107,
+    28.05167
+   ],
+   "website": "https://www.alexanderforbes.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/Alexander_Forbes_Group_Holdings",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q620432",
+   "name": "Anglo American Platinum",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "AMS"
+    },
+    {
+     "exchange": "OTC Markets Group",
+     "ticker": "AGPPF"
+    }
+   ],
+   "industries": [
+    "mining"
+   ],
+   "isin": [
+    "ZAE000013181"
+   ],
+   "website": "https://www.angloamericanplatinum.com/",
+   "lei": "529900RORCZ0E5S5FX81",
+   "enwiki": "https://en.wikipedia.org/wiki/Valterra_Platinum",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q541076",
+   "name": "AngloGold Ashanti",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Australian Securities Exchange",
+     "ticker": "AGG"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "AU"
+    }
+   ],
+   "industries": [
+    "mining"
+   ],
+   "isin": [
+    "GB00BRXH2664"
+   ],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.anglogoldashanti.com/",
+   "lei": "378900EF3BA9A5F42A59",
+   "enwiki": "https://en.wikipedia.org/wiki/AngloGold_Ashanti",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q55603984",
+   "name": "Anglovaal",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Anglovaal",
+   "listed": false
+  },
+  {
+   "qid": "Q2685228",
+   "name": "Armscor",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Pretoria",
+   "hq": [
+    -25.74639,
+    28.18806
+   ],
+   "website": "http://www.armscor.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Armscor_(South_Africa)",
+   "logo_file": "ARMSCOR.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4807838",
+   "name": "Aspen Pharmacare",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "health care industry",
+    "pharmaceutical industry"
+   ],
+   "isin": [
+    "ZAE000066692"
+   ],
+   "hq_city": "Durban",
+   "hq": [
+    -29.85833,
+    31.025
+   ],
+   "website": "http://www.aspenpharma.com/",
+   "lei": "635400ZYSN1IRD5QWQ94",
+   "enwiki": "https://en.wikipedia.org/wiki/Aspen_Pharmacare",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q756685",
+   "name": "Atlantis Diesel Engines",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Atlantis",
+   "hq": [
+    -33.56667,
+    18.48333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Atlantis_Diesel_Engines",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4826666",
+   "name": "Automobile Association of South Africa",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://aa.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Automobile_Association_of_South_Africa",
+   "logo_file": "The Automobile Association of South Africa logo tagline.gif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137162596",
+   "name": "Axi",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Sydney",
+   "hq": [
+    -33.86778,
+    151.21
+   ],
+   "website": "https://www.axi.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4834523",
+   "name": "BAE Systems Land Systems South Africa",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/BAE_Systems_Land_Systems_South_Africa",
+   "logo_file": "BAE Systems logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q4849253",
+   "name": "Bakers",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://www.bakers.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bakers_(bakery)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854032",
+   "name": "BancABC",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Gaborone",
+   "hq": [
+    -24.65694,
+    25.90861
+   ],
+   "website": "http://www.bancabc.com",
+   "enwiki": "https://en.wikipedia.org/wiki/BancABC",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85745292",
+   "name": "Bank Zero",
+   "cc": "za",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "digital banking"
+   ],
+   "isin": [],
+   "website": "http://www.bankzero.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Zero",
+   "listed": false
+  },
+  {
+   "qid": "Q4856507",
+   "name": "BankservAfrica",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.bankservafrica.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/PayInc",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4859971",
+   "name": "Barclays Bank Tanzania",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Dar es Salaam",
+   "hq": [
+    -6.81611,
+    39.28028
+   ],
+   "website": "http://www.barclays.com/africa/tanzania/",
+   "enwiki": "https://en.wikipedia.org/wiki/Absa_Bank_Tanzania",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4883155",
+   "name": "Bell Dewar",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Bell_Dewar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2894574",
+   "name": "Bell Equipment",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "ZAE000028304"
+   ],
+   "hq_city": "Richards Bay",
+   "hq": [
+    -28.78278,
+    32.0375
+   ],
+   "website": "http://www.bellequipment.com",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q785614",
+   "name": "Belton",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "car glass"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "http://www.belron.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Belron",
+   "logo_file": "Belron Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q857015",
+   "name": "Bidvest Group",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Australian Securities Exchange",
+     "ticker": null
+    },
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": null
+    },
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "holding company"
+   ],
+   "isin": [
+    "ZAE000117321"
+   ],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.bidvest.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bidvest_Group",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q24234009",
+   "name": "Bidvest Insurance",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance"
+   ],
+   "isin": [],
+   "hq_city": "uMhlanga",
+   "hq": [
+    -29.72528,
+    31.08583
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Bidvest_Insurance",
+   "logo_file": "Bidvest-insurance-logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q39057250",
+   "name": "Bidvest Protea Coin",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Bidvest_Protea_Coin",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4907023",
+   "name": "Bigshoes Foundation",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.bigshoes.org.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bigshoes_Foundation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116646503",
+   "name": "Bootlegger Coffee Company",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.bootlegger.coffee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bootlegger_Coffee_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q139874394",
+   "name": "BP Southern Africa",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "V&A Waterfront",
+   "hq": [
+    -33.90306,
+    18.42278
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/BP_Southern_Africa",
+   "listed": false
+  },
+  {
+   "qid": "Q124309633",
+   "name": "Briefly.co.za",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "digital media"
+   ],
+   "isin": [],
+   "website": "https://briefly.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Briefly.co.za",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133971381",
+   "name": "Builders Warehouse",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.builders.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/Builders_Warehouse",
+   "listed": false
+  },
+  {
+   "qid": "Q140398110",
+   "name": "Burger King South Africa",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Burger_King_South_Africa",
+   "listed": false
+  },
+  {
+   "qid": "Q5016228",
+   "name": "Cadac",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Cadac_(South_Africa)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5035822",
+   "name": "Capitec Bank",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [
+    "ZAE000035861"
+   ],
+   "hq_city": "Stellenbosch",
+   "hq": [
+    -33.93667,
+    18.86139
+   ],
+   "website": "https://www.capitecbank.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/Capitec_Bank",
+   "logo_file": "Capitec Bank logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2941453",
+   "name": "Castle Brewery",
+   "cc": "za",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Castle_Brewery",
+   "listed": false
+  },
+  {
+   "qid": "Q1051924",
+   "name": "Caxton and CTP Publishers and Printers",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://caxton.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Caxton_and_CTP_Publishers_and_Printers",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5058146",
+   "name": "Cell C",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Sandton",
+   "hq": [
+    -26.107,
+    28.05167
+   ],
+   "website": "http://www.cellc.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cell_C",
+   "logo_file": "Cell C New 2024 logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q2946616",
+   "name": "Ceres Fruit Juices",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness"
+   ],
+   "isin": [],
+   "hq_city": "Paarl",
+   "hq": [
+    -33.72417,
+    18.95583
+   ],
+   "website": "http://www.ceresjuices.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Ceres_Fruit_Juices",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5070774",
+   "name": "Chancellor House",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Chancellor_House_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5089126",
+   "name": "Checkers",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "https://www.checkers.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Checkers_(supermarket_chain)",
+   "listed": false
+  },
+  {
+   "qid": "Q4164819",
+   "name": "Chicken Licken",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fast food"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://chickenlicken.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Chicken_Licken_(restaurant)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5136688",
+   "name": "Cluster Publications",
+   "cc": "za",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Cluster_Publications",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18207768",
+   "name": "Combined Motor Holdings Limited",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://www.cmh.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Combined_Motor_Holdings",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5013373",
+   "name": "COMSEC",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/COMSEC_(South_Africa)",
+   "listed": false
+  },
+  {
+   "qid": "Q5158742",
+   "name": "Concor",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "civil engineering"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Concor",
+   "logo_file": "CONCOR LOGO.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5188535",
+   "name": "Crosse & Blackwell",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food and tobacco industry",
+    "manufacture of prepared meals and dishes"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "https://www.crosseandblackwell.co.uk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Crosse_%26_Blackwell",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q43662119",
+   "name": "Curro Independent Schools",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "ZAE000156253"
+   ],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "https://curro.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Curro_Holdings",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q21580706",
+   "name": "Cybatar",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector",
+    "technology industry"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://cybatar.vc",
+   "logo_file": "Cybatar.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17008542",
+   "name": "Datatec",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "London Stock Exchange - AIM MTF",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "information technology"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.datatec.com",
+   "lei": "213800AA36MIN5FWKV02",
+   "enwiki": "https://en.wikipedia.org/wiki/Datatec",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5204487",
+   "name": "DCD Group (Pty) Ltd",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vereeniging",
+   "hq": [
+    -26.67361,
+    27.93194
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/DCD_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q471891",
+   "name": "De Beers",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "raw material extraction",
+    "trade"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "https://www.debeersgroup.com",
+   "enwiki": "https://en.wikipedia.org/wiki/De_Beers",
+   "logo_file": "De Beers Group - Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1179931",
+   "name": "De Haan's Bus & Coach",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Parow",
+   "hq": [
+    54.35379,
+    13.07166
+   ],
+   "website": "http://www.dehaans.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/De_Haan%27s_Bus_%26_Coach",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65079407",
+   "name": "Debonairs Pizza",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.debonairspizza.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Debonairs_Pizza",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5251737",
+   "name": "Defy Appliances",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Durban",
+   "hq": [
+    -29.85833,
+    31.025
+   ],
+   "website": "http://www.defy.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/Defy_Appliances",
+   "logo_file": "Defy-logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5254640",
+   "name": "Delta G Scientific Company",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Delta_G_Scientific_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1187008",
+   "name": "Denel",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace engineering",
+    "information technology"
+   ],
+   "isin": [],
+   "hq_city": "Centurion",
+   "hq": [
+    -25.86028,
+    28.18944
+   ],
+   "website": "https://www.denel.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Denel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5256886",
+   "name": "Denel Aeronautics",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "website": "http://www.denelaviation.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Denel_Aeronautics",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3022429",
+   "name": "Denel Dynamics",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Centurion",
+   "hq": [
+    -25.86028,
+    28.18944
+   ],
+   "website": "http://www.deneldynamics.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Denel_Dynamics",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1201656",
+   "name": "Deukom",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "subscription television"
+   ],
+   "isin": [],
+   "hq_city": "Somerset West",
+   "hq": [
+    -34.09722,
+    18.86389
+   ],
+   "website": "http://www.deukom.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/Deukom",
+   "logo_file": "Logo Deukom.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1206693",
+   "name": "Development Bank of Southern Africa",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Midrand",
+   "hq": [
+    -26.0,
+    28.13333
+   ],
+   "website": "http://www.dbsa.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/Development_Bank_of_Southern_Africa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5270935",
+   "name": "Diamond Trading Company",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "http://www.dtc.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Diamond_Trading_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q136469268",
+   "name": "Discovery Bank",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Discovery_Bank",
+   "listed": false
+  },
+  {
+   "qid": "Q20981515",
+   "name": "Discovery Limited",
+   "cc": "za",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services",
+    "insurance"
+   ],
+   "isin": [
+    "ZAE000022331"
+   ],
+   "hq_city": "Sandton",
+   "hq": [
+    -26.107,
+    28.05167
+   ],
+   "website": "https://www.discovery.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Discovery_Limited",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q18636363",
+   "name": "Distell Group Limited",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Stellenbosch",
+   "hq": [
+    -33.93667,
+    18.86139
+   ],
+   "website": "http://www.distell.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Distell",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12063032",
+   "name": "DRDGOLD Limited",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "DRD"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "ZAE000058723"
+   ],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.drd.co.za/",
+   "lei": "529900Z0P3GRRN23MG34",
+   "enwiki": "https://en.wikipedia.org/wiki/Drdgold",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5313316",
+   "name": "Dulce Café",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "restaurant"
+   ],
+   "isin": [],
+   "hq_city": "Gqeberha",
+   "hq": [
+    -33.95806,
+    25.6
+   ],
+   "website": "http://www.dulce-cafe.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Dulce_Caf%C3%A9",
+   "logo_file": "Dulcelogo2.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5329218",
+   "name": "East Rand Gold Mine",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/East_Rand_Mine",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97276073",
+   "name": "Edgars",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://edgars.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Edgars_(department_store)",
+   "listed": false
+  },
+  {
+   "qid": "Q112607456",
+   "name": "El World Music",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.elworldmusic.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/EL_World_Music",
+   "listed": false
+  },
+  {
+   "qid": "Q3538127",
+   "name": "Entertainment Monitoring Africa",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "music industry"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://mediamonitoringafrica.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/Entertainment_Monitoring_Africa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1367885",
+   "name": "Eskom",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Sandton",
+   "hq": [
+    -26.107,
+    28.05167
+   ],
+   "website": "https://www.eskom.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/Eskom",
+   "logo_file": "Esc logo wit.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133820517",
+   "name": "Estoril Books",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bookselling"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://www.estorilbooks.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Estoril_Books",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5419679",
+   "name": "Exclusive Books",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bookselling"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://www.exclusivebooks.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Exclusive_Books",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q377026",
+   "name": "Executive Outcomes",
+   "cc": "za",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.executiveoutcomes.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Executive_Outcomes",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5422520",
+   "name": "Exxaro",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [
+    "ZAE000084992"
+   ],
+   "hq_city": "Pretoria",
+   "hq": [
+    -25.74639,
+    28.18806
+   ],
+   "website": "https://www.exxaro.com/",
+   "lei": "378900BC3D9BFF4E4A37",
+   "enwiki": "https://en.wikipedia.org/wiki/Exxaro",
+   "logo_file": "Exxarologo.jpg",
+   "listed": true
+  },
+  {
+   "qid": "Q22908304",
+   "name": "Eyewitness News (EWN)",
+   "cc": "za",
+   "types": [
+    "Q2085381",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "news"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://ewn.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Eyewitness_News_(South_Africa)",
+   "logo_file": "Eyewitness News - logo (2024).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24234031",
+   "name": "First Assurance Kenya Limited",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Nairobi",
+   "hq": [
+    -1.28639,
+    36.81722
+   ],
+   "website": "http://firstassurance.co.ke/",
+   "enwiki": "https://en.wikipedia.org/wiki/First_Assurance_Kenya_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3072956",
+   "name": "First National Bank",
+   "cc": "za",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "website": "https://www.fnb.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/First_National_Bank_(South_Africa)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5453738",
+   "name": "First Rand",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "FSR"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "ZAE000066304"
+   ],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.firstrand.co.za",
+   "lei": "529900XYOP8CUZU7R671",
+   "enwiki": "https://en.wikipedia.org/wiki/FirstRand",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q65071570",
+   "name": "Food Lover's Market",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "website": "https://foodloversmarket.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Food_Lover%27s_Market",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5490886",
+   "name": "Frankie's",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Balgowan",
+   "hq": [
+    -29.36667,
+    30.01667
+   ],
+   "website": "http://www.frankiessoftdrinks.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Frankie%27s",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116619555",
+   "name": "Galito's",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "restaurant industry"
+   ],
+   "isin": [],
+   "website": "https://www.galitos.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Galito%27s",
+   "listed": false
+  },
+  {
+   "qid": "Q55612415",
+   "name": "Gencor",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Gencor",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5559492",
+   "name": "Gidani",
+   "cc": "za",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "gambling"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Gidani",
+   "listed": false
+  },
+  {
+   "qid": "Q1534597",
+   "name": "Gold Fields",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "GFI"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "GFI"
+    }
+   ],
+   "industries": [
+    "gold mining"
+   ],
+   "isin": [
+    "ZAE000018123"
+   ],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.goldfields.co.za/",
+   "lei": "5299003KXIBJQYCBBD72",
+   "enwiki": "https://en.wikipedia.org/wiki/Gold_Fields",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5609463",
+   "name": "Grindrod Bank",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.grindrodbank.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grindrod_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5647664",
+   "name": "Handspring Puppet Company",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "http://www.handspringpuppet.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Handspring_Puppet_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1507228",
+   "name": "Harmony Gold",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "HMY"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "HMY"
+    }
+   ],
+   "industries": [
+    "gold mining"
+   ],
+   "isin": [
+    "US4132163001"
+   ],
+   "hq_city": "Randfontein",
+   "hq": [
+    -26.17972,
+    27.70417
+   ],
+   "website": "http://www.harmony.co.za/",
+   "lei": "378900986D05F0C29811",
+   "enwiki": "https://en.wikipedia.org/wiki/Harmony_Gold_(mining)",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1587236",
+   "name": "Hartlief Corporation Ltd",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "meatpacking industry"
+   ],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "https://www.hartlief.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hartlief",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13034940",
+   "name": "Historical Homes of South Africa Limited",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7300946",
+   "name": "Hollard",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance industry"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://www.hollard.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hollard_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25614984",
+   "name": "Human & Rousseau",
+   "cc": "za",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.humanrousseau.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130535683",
+   "name": "Hungry Lion",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "restaurant"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Hungry_Lion",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6000236",
+   "name": "Illovo Sugar",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agriculture"
+   ],
+   "isin": [],
+   "hq_city": "Durban",
+   "hq": [
+    -29.85833,
+    31.025
+   ],
+   "website": "http://www.illovosugar.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Illovo_Sugar",
+   "logo_file": "ILLOVO SUGAR AFRICA logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q620398",
+   "name": "Impala Platinum",
+   "cc": "za",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "OTC Markets Group",
+     "ticker": "IMPUY"
+    }
+   ],
+   "industries": [
+    "mining"
+   ],
+   "isin": [
+    "US4525533083",
+    "ZAE000083648"
+   ],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.implats.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Impala_Platinum",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6008534",
+   "name": "Imvume Management",
+   "cc": "za",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Imvume",
+   "listed": false
+  },
+  {
+   "qid": "Q6055678",
+   "name": "Internet Solutions",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://www.is.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Internet_Solutions",
+   "logo_file": "Internet Solutions Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18451163",
+   "name": "Inverdoorn",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "hotel",
+    "safari"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1671741",
+   "name": "Investec",
+   "cc": "za",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "INL"
+    },
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": "INVP"
+    }
+   ],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [
+    "GB0031773103"
+   ],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "https://www.investec.com",
+   "lei": "2138007Z3U5GWDN3MY22",
+   "enwiki": "https://en.wikipedia.org/wiki/Investec",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5975152",
+   "name": "ITWeb",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/ITWeb",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136289968",
+   "name": "IUX Markets",
+   "cc": "za",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Ébène",
+   "hq": [
+    -20.24389,
+    57.49
+   ],
+   "website": "https://www.iux.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17058911",
+   "name": "JCI Limited",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/JCI_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140940590",
+   "name": "Johannesburg Water",
+   "cc": "za",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q66384938",
+   "name": "Jonathan Ball Publishers",
+   "cc": "za",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.jonathanball.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Jonathan_Ball_(publishing_house)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18636676",
+   "name": "Jurgens Ci Caravans",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.jurgensci.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/Jurgens_Ci_Caravans",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1727629",
+   "name": "Kapula",
+   "cc": "za",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bredasdorp",
+   "hq": [
+    -34.53333,
+    20.04167
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16998286",
+   "name": "KFC in South Africa",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/KFC_South_Africa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134054376",
+   "name": "Kleuterzone",
+   "cc": "za",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q111812466",
+   "name": "Kopersbond wholesale company",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q6443683",
+   "name": "Kumba Iron Ore",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [
+    "ZAE000085346"
+   ],
+   "hq_city": "Centurion",
+   "hq": [
+    -25.86028,
+    28.18944
+   ],
+   "website": "https://www.angloamericankumba.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kumba_Iron_Ore",
+   "listed": true
+  },
+  {
+   "qid": "Q6484026",
+   "name": "Land and Agricultural Development Bank of South Africa",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Pretoria",
+   "hq": [
+    -25.74639,
+    28.18806
+   ],
+   "website": "http://www.landbank.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Land_and_Agricultural_Development_Bank_of_South_Africa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6483977",
+   "name": "Land Systems OMC",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Land_Systems_OMC",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20981674",
+   "name": "Leopard's Leap",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.leopardsleap.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/Leopard%27s_Leap",
+   "listed": false
+  },
+  {
+   "qid": "Q6541825",
+   "name": "Liberty Holdings Limited",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance"
+   ],
+   "isin": [],
+   "hq_city": "South Africa",
+   "hq": [
+    -29.0,
+    24.0
+   ],
+   "website": "https://www.libertyholdings.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/Liberty_Holdings_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6458587",
+   "name": "Library and Information Association of South Africa",
+   "cc": "za",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Pretoria",
+   "hq": [
+    -25.74639,
+    28.18806
+   ],
+   "website": "https://www.liasa.org.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Library_and_Information_Association_of_South_Africa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56276906",
+   "name": "Livestock Wealth",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Livestock_Wealth",
+   "listed": false
+  },
+  {
+   "qid": "Q28223219",
+   "name": "Magnet Theatre",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "City of Cape Town",
+   "hq": [
+    -34.0,
+    18.5
+   ],
+   "website": "http://magnettheatre.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Magnet_Theatre",
+   "listed": false
+  },
+  {
+   "qid": "Q6746662",
+   "name": "Management College of Southern Africa",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "education"
+   ],
+   "isin": [],
+   "hq_city": "Durban",
+   "hq": [
+    -29.85833,
+    31.025
+   ],
+   "website": "https://www.mancosa.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Management_College_of_Southern_Africa",
+   "logo_file": "MANCOSA .png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3297791",
+   "name": "Massmart",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Sandton",
+   "hq": [
+    -26.107,
+    28.05167
+   ],
+   "website": "https://www.massmart.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Massmart",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141503798",
+   "name": "Maziv",
+   "cc": "za",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Maziv",
+   "listed": false
+  },
+  {
+   "qid": "Q27923821",
+   "name": "McDonald's South Africa",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/McDonald%27s_South_Africa",
+   "listed": false
+  },
+  {
+   "qid": "Q1916123",
+   "name": "Mediclinic International",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "hospital"
+   ],
+   "isin": [
+    "GB00B8HX8Z88"
+   ],
+   "hq_city": "Stellenbosch",
+   "hq": [
+    -33.93667,
+    18.86139
+   ],
+   "website": "http://www.mediclinic.co.za",
+   "lei": "2138002S5BSBIZTD5I60",
+   "enwiki": "https://en.wikipedia.org/wiki/Mediclinic_Group",
+   "logo_file": "Mediclinicgrouplogo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6889469",
+   "name": "Modjaji Books",
+   "cc": "za",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Modjaji_Books",
+   "logo_file": "ModjajiBooksLogo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q19903465",
+   "name": "Momentum Metropolitan Holdings Limited",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "MMI"
+    }
+   ],
+   "industries": [
+    "financial services",
+    "insurance industry"
+   ],
+   "isin": [],
+   "hq_city": "Centurion",
+   "hq": [
+    -25.86028,
+    28.18944
+   ],
+   "website": "http://www.mmiholdings.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Momentum_Group_Limited",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1813361",
+   "name": "MTN Group",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "MTN"
+    },
+    {
+     "exchange": "OTC Markets Group",
+     "ticker": "MTNOF"
+    }
+   ],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [
+    "ZAE000042164"
+   ],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://www.mtn.com/",
+   "lei": "2549009JD6Q6XHZS5E05",
+   "enwiki": "https://en.wikipedia.org/wiki/MTN_Group",
+   "logo_file": "MTN 2022 logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q20981782",
+   "name": "Mulilo",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.mulilo.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Mulilo",
+   "listed": false
+  },
+  {
+   "qid": "Q3642635",
+   "name": "MultiChoice",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "broadcasting"
+   ],
+   "isin": [],
+   "hq_city": "Ferndale",
+   "hq": [
+    -26.08222,
+    27.9825
+   ],
+   "website": "https://www.multichoice.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/MultiChoice",
+   "listed": false
+  },
+  {
+   "qid": "Q6939094",
+   "name": "Murray & Roberts",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "MUR"
+    }
+   ],
+   "industries": [
+    "civil engineering",
+    "construction"
+   ],
+   "isin": [
+    "ZAE000073441"
+   ],
+   "hq_city": "Bedfordview",
+   "hq": [
+    -26.17944,
+    28.13611
+   ],
+   "website": "http://www.murrob.com",
+   "lei": "529900FTW4FNO02STM28",
+   "enwiki": "https://en.wikipedia.org/wiki/Murray_%26_Roberts",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6941180",
+   "name": "Musgrave",
+   "cc": "za",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ermelo",
+   "hq": [
+    -26.53333,
+    29.98333
+   ],
+   "website": "https://www.musgraverifles.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/Musgrave_(firearms)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1645745",
+   "name": "Mvelaphanda Group",
+   "cc": "za",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "ZAE000060737"
+   ],
+   "website": "http://www.mvelagroup.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mvelaphanda_Group",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6944643",
+   "name": "Mwana Africa",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "City of London",
+   "hq": [
+    51.51556,
+    -0.09306
+   ],
+   "website": "http://www.asaukplc.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Asa_Resources_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6944793",
+   "name": "MyBroadband",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://mybroadband.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/MyBroadband",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1572667",
+   "name": "Namib Mills",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Windhoek",
+   "hq": [
+    -22.57,
+    17.08361
+   ],
+   "website": "https://www.namibmills.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Namib_Mills",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3472954",
+   "name": "Nando's",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "fast food"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://www.nandos.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Nando%27s",
+   "logo_file": "Nando's wordmark.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q122308144",
+   "name": "Nasionale Opvoedkundige Uitgewery",
+   "cc": "za",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1965898",
+   "name": "Naspers",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "OTC Markets Group",
+     "ticker": "NPSNY"
+    }
+   ],
+   "industries": [
+    "e-commerce"
+   ],
+   "isin": [
+    "ZAE000015889"
+   ],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "https://www.naspers.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Naspers",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q55624803",
+   "name": "National Science and Technology Forum",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/National_Science_and_Technology_Forum",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q122929389",
+   "name": "National Transmission Company of South Africa",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Megawatt Park",
+   "hq": [
+    -26.0375,
+    28.08528
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/National_Transmission_Company_of_South_Africa",
+   "listed": false
+  },
+  {
+   "qid": "Q16932667",
+   "name": "NDTC",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Namibia_Diamond_Trading_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2751701",
+   "name": "Nedbank",
+   "cc": "za",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [
+    "ZAE000004875"
+   ],
+   "hq_city": "Sandton",
+   "hq": [
+    -26.107,
+    28.05167
+   ],
+   "website": "https://www.nedbank.co.zw/",
+   "lei": "3789009E42FA3CB31065",
+   "enwiki": "https://en.wikipedia.org/wiki/Nedbank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6994210",
+   "name": "Neotel",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Midrand",
+   "hq": [
+    -26.0,
+    28.13333
+   ],
+   "website": "http://www.neotel.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Neotel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7000633",
+   "name": "Netuar",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Netuar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7006590",
+   "name": "New Clicks Holdings Limited",
+   "cc": "za",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Clicks_(South_Africa)",
+   "listed": false
+  },
+  {
+   "qid": "Q96395828",
+   "name": "Ninety One plc",
+   "cc": "za",
+   "types": [
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "NY1"
+    },
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": "N91"
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [
+    "GB00BJHPLV88",
+    "ZAE000282356"
+   ],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "https://ninetyone.com",
+   "lei": "549300G0TJCT3K15ZG14",
+   "enwiki": "https://en.wikipedia.org/wiki/Ninety_One_Limited",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1998811",
+   "name": "North-West University",
+   "cc": "za",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "higher education"
+   ],
+   "isin": [],
+   "hq_city": "Potchefstroom",
+   "hq": [
+    -26.715,
+    27.10333
+   ],
+   "website": "https://www.nwu.ac.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/North-West_University",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60748016",
+   "name": "OK Bazaars",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail sale in non-specialised stores"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/OK_Bazaars",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7082892",
+   "name": "Ola South Africa",
+   "cc": "za",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "frozen dessert",
+    "ice cream"
+   ],
+   "isin": [],
+   "hq_city": "Durban",
+   "hq": [
+    -29.85833,
+    31.025
+   ],
+   "website": "https://www.ola.co.za/about-walls/ola-history.html",
+   "enwiki": "https://en.wikipedia.org/wiki/Ola_South_Africa",
+   "logo_file": "Ola logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q289704",
+   "name": "Old Mutual",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "OMU"
+    },
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": "OMU"
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [
+    "GB00B77J0862",
+    "ZAE000255360"
+   ],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "http://www.oldmutual.com/",
+   "lei": "213800MON84ZWWPQCN47",
+   "enwiki": "https://en.wikipedia.org/wiki/Old_Mutual",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q17081067",
+   "name": "OTEL Telecoms",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Boksburg",
+   "hq": [
+    -26.21667,
+    28.25
+   ],
+   "website": "http://www.otelafrica.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/OTEL_Telecoms",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16862213",
+   "name": "Oude Molen Brandy and Distillery",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Oude_Molen_Distillery",
+   "listed": false
+  },
+  {
+   "qid": "Q2023738",
+   "name": "Ouma Rusks",
+   "cc": "za",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "rusk"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Ouma_Rusks",
+   "listed": false
+  },
+  {
+   "qid": "Q24233990",
+   "name": "OUTsurance Holdings",
+   "cc": "za",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services",
+    "insurance"
+   ],
+   "isin": [
+    "ZAE000314084"
+   ],
+   "hq_city": "Centurion",
+   "hq": [
+    -25.86028,
+    28.18944
+   ],
+   "website": "http://www.outsurance.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/OUTsurance_Group",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q107072510",
+   "name": "Ozow",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fintech"
+   ],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "https://www.ozow.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ozow",
+   "listed": false
+  },
+  {
+   "qid": "Q3360745",
+   "name": "Palabora",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Limpopo",
+   "hq": [
+    -24.0,
+    29.5
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Palabora",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65051429",
+   "name": "Pam Golding Property Group",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.pamgolding.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pam_Golding_Properties",
+   "listed": false
+  },
+  {
+   "qid": "Q137048955",
+   "name": "Pan African Resources",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [
+    "GB0004300496"
+   ],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://www.panafricanresources.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pan_African_Resources",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q141423146",
+   "name": "PathCare",
+   "cc": "za",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "health care industry"
+   ],
+   "isin": [],
+   "website": "https://pathcare.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/PathCare",
+   "listed": false
+  },
+  {
+   "qid": "Q141302172",
+   "name": "Payfast",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fintech"
+   ],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "https://payfast.io",
+   "enwiki": "https://en.wikipedia.org/wiki/Payfast",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7166182",
+   "name": "PEP",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Parow",
+   "hq": [
+    -33.9,
+    18.6
+   ],
+   "website": "https://www.pep.co.ao/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pep_(South_Africa)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7166318",
+   "name": "Pepkor",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "ZAE000259479"
+   ],
+   "hq_city": "Parow",
+   "hq": [
+    -33.9,
+    18.6
+   ],
+   "website": "https://www.pepkor.co.za/",
+   "lei": "3789006D677C34F69875",
+   "enwiki": "https://en.wikipedia.org/wiki/Pepkor",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2070124",
+   "name": "Perana Performance Group",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Gqeberha",
+   "hq": [
+    -33.95806,
+    25.6
+   ],
+   "website": "http://www.perana.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/Perana_Performance_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3375691",
+   "name": "Perskor",
+   "cc": "za",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "journalism"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Perskor",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7190735",
+   "name": "Pick n Pay",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "ZAE000005443"
+   ],
+   "hq_city": "Kenilworth",
+   "hq": [
+    -33.99583,
+    18.475
+   ],
+   "website": "https://www.pnp.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pick_n_Pay",
+   "logo_file": "Pick n Pay logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7234084",
+   "name": "Postbank",
+   "cc": "za",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Postbank_(South_Africa)",
+   "listed": false
+  },
+  {
+   "qid": "Q7251234",
+   "name": "Protechnik",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Protechnik",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7257427",
+   "name": "Public Investment Corporation",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Pretoria",
+   "hq": [
+    -25.74639,
+    28.18806
+   ],
+   "website": "http://www.pic.gov.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Public_Investment_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7121107",
+   "name": "PUTCO",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sandton",
+   "hq": [
+    -26.107,
+    28.05167
+   ],
+   "website": "https://putco.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/PUTCO",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18636593",
+   "name": "Rand Merchant Insurance Holdings",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services",
+    "insurance"
+   ],
+   "isin": [],
+   "hq_city": "Sandton",
+   "hq": [
+    -26.107,
+    28.05167
+   ],
+   "website": "http://www.rminsurance.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rand_Merchant_Investment_Holdings",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19298933",
+   "name": "Rand Water",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Glenvista",
+   "hq": [
+    -26.28139,
+    28.04722
+   ],
+   "website": "http://www.randwater.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/Rand_Water",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7291754",
+   "name": "Randlord",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Randlord",
+   "listed": false
+  },
+  {
+   "qid": "Q48774090",
+   "name": "Ravan Press",
+   "cc": "za",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Ravan_Press",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22031816",
+   "name": "Real People Group",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rosebank",
+   "hq": [
+    -26.14528,
+    28.04056
+   ],
+   "website": "http://www.realpeoplegroup.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Evolution_Group_(South_Africa)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25661205",
+   "name": "Red espresso",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.redespresso.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Red_espresso",
+   "logo_file": "Red Espresso Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7309454",
+   "name": "Registry Africa",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Registry.Africa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2142945",
+   "name": "Remgro",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "holding company"
+   ],
+   "isin": [
+    "ZAE000026480"
+   ],
+   "hq_city": "Stellenbosch",
+   "hq": [
+    -33.93667,
+    18.86139
+   ],
+   "website": "https://www.remgro.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Remgro",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q22908349",
+   "name": "RMH Holdings",
+   "cc": "za",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Sandton",
+   "hq": [
+    -26.107,
+    28.05167
+   ],
+   "website": "http://www.rmbh.co.za/",
+   "lei": "529900RTFEWVDQQ0N866",
+   "enwiki": "https://en.wikipedia.org/wiki/RMB_Holdings",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q65079427",
+   "name": "Roman's Pizza",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://romanspizza.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Roman%27s_Pizza",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7366123",
+   "name": "Roodeplaat Research Laboratories",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Roodeplaat_Research_Laboratories",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7374853",
+   "name": "Royal Society of South Africa",
+   "cc": "za",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "higher education"
+   ],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "http://www.royalsocietysa.org.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Royal_Society_of_South_Africa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7416951",
+   "name": "Sandstone Estates",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agriculture"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Sandstone_Estates",
+   "listed": false
+  },
+  {
+   "qid": "Q18354941",
+   "name": "Santam",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "http://www.santam.co.za/about-us/who-we-are/the-company/",
+   "enwiki": "https://en.wikipedia.org/wiki/Santam",
+   "listed": false
+  },
+  {
+   "qid": "Q481472",
+   "name": "Sappi",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "SAP"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "SPP"
+    }
+   ],
+   "industries": [
+    "pulp and paper industry"
+   ],
+   "isin": [
+    "ZAE000006284"
+   ],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.sappi.com/",
+   "lei": "549300SSI7XQH8ESJG95",
+   "enwiki": "https://en.wikipedia.org/wiki/Sappi",
+   "logo_file": "SAP LOGOsmall.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q905998",
+   "name": "Sasol",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "SSL"
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "ZAE000006896"
+   ],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://www.sasol.com",
+   "lei": "378900F4544561A97588",
+   "enwiki": "https://en.wikipedia.org/wiki/Sasol",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q116646221",
+   "name": "Seattle Coffee Company",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.seattlecoffeecompany.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Seattle_Coffee_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q7451376",
+   "name": "Sentraal-Suid Koöperasie",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agriculture"
+   ],
+   "isin": [],
+   "hq_city": "Swellendam",
+   "hq": [
+    -34.02306,
+    20.44
+   ],
+   "website": "http://www.ssk.co.za/en/home.html",
+   "enwiki": "https://en.wikipedia.org/wiki/Sentraal-Suid_Ko%C3%B6perasie",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18357529",
+   "name": "Shanduka Group",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Shanduka_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7493937",
+   "name": "Sheltam",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Sheltam",
+   "listed": false
+  },
+  {
+   "qid": "Q1857639",
+   "name": "Shoprite",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "SHP"
+    }
+   ],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "ZAE000012084"
+   ],
+   "hq_city": "Brackenfell",
+   "hq": [
+    -33.86667,
+    18.68333
+   ],
+   "website": "https://www.shoprite.com.gh/",
+   "lei": "529900Q4O1EYP6NH5150",
+   "enwiki": "https://en.wikipedia.org/wiki/Shoprite_Holdings",
+   "logo_file": "Logo - Shoprite - SUPERMARCE.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q21485165",
+   "name": "Showmax",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "streaming media"
+   ],
+   "isin": [],
+   "website": "http://www.showmax.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Showmax",
+   "logo_file": "Showmax Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21639712",
+   "name": "Sibanye-Stillwater",
+   "cc": "za",
+   "types": [
+    "Q6881511",
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "SSW"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "SBSW"
+    }
+   ],
+   "industries": [
+    "gold mining",
+    "mining"
+   ],
+   "isin": [
+    "US82575P1075",
+    "ZAE000173951"
+   ],
+   "hq_city": "Međreč",
+   "hq": [
+    42.05639,
+    19.22528
+   ],
+   "website": "https://www.sibanyestillwater.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Sibanye-Stillwater",
+   "logo_file": "Sibanye-Stillwater.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7511429",
+   "name": "Sierra Leone Selection Trust",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Sierra_Leone_Selection_Trust",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28434542",
+   "name": "Simba",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Isando",
+   "hq": [
+    -26.144,
+    28.207
+   ],
+   "website": "http://www.simba.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Simba_(South_African_company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7517402",
+   "name": "Simba Chips",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Simba_Chips",
+   "listed": false
+  },
+  {
+   "qid": "Q7523668",
+   "name": "Singita Game Reserve",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Mpumalanga",
+   "hq": [
+    -26.0,
+    30.0
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Singita",
+   "listed": false
+  },
+  {
+   "qid": "Q17090797",
+   "name": "Snapplify",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "educational technology"
+   ],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "http://www.snapplify.com//",
+   "enwiki": "https://en.wikipedia.org/wiki/Snapplify",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133894936",
+   "name": "Soekor",
+   "cc": "za",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140404658",
+   "name": "South Africa Guide",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Pretoria",
+   "hq": [
+    -25.74639,
+    28.18806
+   ],
+   "website": "https://southafricaguide.co.za",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q122701134",
+   "name": "South African Association of Botanists",
+   "cc": "za",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Stellenbosch",
+   "hq": [
+    -33.93667,
+    18.86139
+   ],
+   "website": "https://sabotanyblog.wordpress.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7565435",
+   "name": "South African Breweries",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fast-moving consumer goods"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.sab.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/South_African_Breweries",
+   "logo_file": "SAB Logo Full colour RGB White(2).jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1419926",
+   "name": "South African Broadcasting Corporation",
+   "cc": "za",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://www.sabc.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/SABC",
+   "logo_file": "South African Broadcasting Corporation logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7565767",
+   "name": "South African Petroleum Industry Association",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.sapia.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/Fuels_Industry_Association_of_South_Africa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7565776",
+   "name": "South African Port Operations",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Durban",
+   "hq": [
+    -29.85833,
+    31.025
+   ],
+   "website": "http://www.transnetportterminals.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/Transnet_Port_Terminals",
+   "listed": false
+  },
+  {
+   "qid": "Q7565777",
+   "name": "South African Post Office",
+   "cc": "za",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Pretoria",
+   "hq": [
+    -25.74639,
+    28.18806
+   ],
+   "website": "https://www.postoffice.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/South_African_Post_Office",
+   "listed": false
+  },
+  {
+   "qid": "Q7570526",
+   "name": "Southern Sun Hotel Group",
+   "cc": "za",
+   "types": [
+    "Q1631129",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "hotel"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://www.southernsun.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Southern_Sun_Hotels",
+   "logo_file": "Southern Sun Hotel Group Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136643952",
+   "name": "Spar",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "KwaZulu-Natal",
+   "hq": [
+    -29.0,
+    31.0
+   ],
+   "website": "https://www.spar.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Spar_(South_Africa)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108208243",
+   "name": "Spot Money",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "https://spotmoney.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Spot_Money",
+   "logo_file": "Spot-pill-logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q7581546",
+   "name": "Spur Corporation",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "restaurant"
+   ],
+   "isin": [],
+   "hq_city": "Century City",
+   "hq": [
+    -33.89167,
+    18.50833
+   ],
+   "website": "https://www.spur.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Spur_Corporation",
+   "logo_file": "Spur Corporation.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1576610",
+   "name": "Standard Bank",
+   "cc": "za",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "SBK"
+    }
+   ],
+   "industries": [
+    "bank",
+    "financial services",
+    "insurance",
+    "other credit granting"
+   ],
+   "isin": [
+    "ZAE000109815"
+   ],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "http://standardbank.co.za",
+   "lei": "2549003PEZXUT7MDBU41",
+   "enwiki": "https://en.wikipedia.org/wiki/Standard_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q24234084",
+   "name": "Standard Chartered South Africa",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Sandton",
+   "hq": [
+    -26.107,
+    28.05167
+   ],
+   "website": "https://www.sc.com/za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Standard_Chartered_South_Africa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7824387",
+   "name": "StarSat",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "television"
+   ],
+   "isin": [],
+   "hq_city": "Woodmead",
+   "hq": [
+    -26.046,
+    28.066
+   ],
+   "website": "https://starsat.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/StarSat",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3056765",
+   "name": "Steers",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "restaurant"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://steers.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Steers_(restaurant)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30595178",
+   "name": "Surtees Rail Group",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.surtees.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Surtees_Rail_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q141434899",
+   "name": "Sygnia",
+   "cc": "za",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Sygnia",
+   "listed": false
+  },
+  {
+   "qid": "Q54460012",
+   "name": "Takealot.com",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce"
+   ],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "https://www.takealot.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Takealot_Group",
+   "logo_file": "Takealot logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1818970",
+   "name": "Telkom",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "TKG"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [
+    "ZAE000044897"
+   ],
+   "hq_city": "Pretoria",
+   "hq": [
+    -25.74639,
+    28.18806
+   ],
+   "website": "https://www.telkom.co.za",
+   "lei": "529900GES0BUVJEDKF90",
+   "enwiki": "https://en.wikipedia.org/wiki/Telkom_(South_Africa)",
+   "logo_file": "TelkomSA.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7697350",
+   "name": "Telkom Media",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Telkom_Media",
+   "listed": false
+  },
+  {
+   "qid": "Q4645275",
+   "name": "Telkom Mobile",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Centurion",
+   "hq": [
+    -25.86028,
+    28.18944
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Telkom_Mobile",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55138076",
+   "name": "The Beerhouse",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.beerhouse.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/The_Beerhouse",
+   "listed": false
+  },
+  {
+   "qid": "Q16969363",
+   "name": "The Little Marionette Company",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/The_Little_Marionette_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q4829573",
+   "name": "Tiso Blackstar Group",
+   "cc": "za",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "TMG"
+    }
+   ],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://arena.africa/",
+   "enwiki": "https://en.wikipedia.org/wiki/Arena_Holdings",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q26794437",
+   "name": "TR-Tec",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Durban",
+   "hq": [
+    -29.85833,
+    31.025
+   ],
+   "website": "https://backdraftracing.co.za/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18192486",
+   "name": "Trans Hex",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "diamond industry"
+   ],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "https://www.transhex.co.za/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q820804",
+   "name": "Transnet",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Carlton Centre",
+   "hq": [
+    -26.20556,
+    28.04667
+   ],
+   "website": "http://www.transnet.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Transnet",
+   "logo_file": "South Africa Transnet.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2449525",
+   "name": "Transnet Freight Rail",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.transnetfreightrail.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/Transnet_Freight_Rail",
+   "logo_file": "Transnet Freight Rail logo.gif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7841727",
+   "name": "Triggerfish Animation Studios",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "http://www.triggerfishstudios.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Triggerfish_Animation_Studios",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7848369",
+   "name": "Truvelo Armoury",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "website": "http://www.truvelo.co.za/armoury/index.php",
+   "enwiki": "https://en.wikipedia.org/wiki/Truvelo_Armoury",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24233998",
+   "name": "Truworths",
+   "cc": "za",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "https://www.truworths.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Truworths",
+   "listed": true
+  },
+  {
+   "qid": "Q19903743",
+   "name": "Tsogo Sun",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "http://www.tsogosun.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Tsogo_Sun",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7885459",
+   "name": "Union Carriage & Wagon",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail vehicle manufacturer"
+   ],
+   "isin": [],
+   "hq_city": "Nigel",
+   "hq": [
+    -26.42028,
+    28.46833
+   ],
+   "website": "http://www.ucw.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Union_Carriage_%26_Wagon",
+   "logo_file": "SAR Class 6E1 Series 7 E1862 BP.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2496192",
+   "name": "University of Zululand",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "education"
+   ],
+   "isin": [],
+   "website": "https://www.unizulu.ac.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/University_of_Zululand",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q51130051",
+   "name": "URI Purposely Built Vehicles",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://uri-sa.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/URI_Purposely_Built_Vehicles",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7913619",
+   "name": "Van Riebeeck Society",
+   "cc": "za",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.vanriebeecksociety.co.za/home.htm",
+   "enwiki": "https://en.wikipedia.org/wiki/Historical_Publications_Southern_Africa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111670994",
+   "name": "Veka",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "clothing industry"
+   ],
+   "isin": [],
+   "hq_city": "Newcastle",
+   "hq": [
+    -27.74639,
+    29.93278
+   ],
+   "website": "https://allwear.co.za/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q121753166",
+   "name": "Veldskoen Shoes",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Veldskoen_Shoes",
+   "listed": false
+  },
+  {
+   "qid": "Q7927650",
+   "name": "Vida e Caffè",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://vidaecaffe.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Vida_e_Caff%C3%A8",
+   "listed": false
+  },
+  {
+   "qid": "Q4013942",
+   "name": "Virgin Active",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "health club"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "https://www.virginactive.co.uk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Virgin_Active",
+   "logo_file": "Virgin Active.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7933968",
+   "name": "Virgin Mobile South Africa",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "South Africa",
+   "hq": [
+    -29.0,
+    24.0
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Virgin_Mobile_South_Africa",
+   "logo_file": "Virgin Mobile.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1856518",
+   "name": "Vodacom",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "VOD"
+    }
+   ],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [
+    "US92858D2009",
+    "ZAE000132577"
+   ],
+   "hq_city": "Midrand",
+   "hq": [
+    -26.0,
+    28.13333
+   ],
+   "website": "https://www.vodacom.com/",
+   "lei": "37890012A8DC24B8D663",
+   "enwiki": "https://en.wikipedia.org/wiki/Vodacom",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2532314",
+   "name": "Volkswagen of South Africa",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Uitenhage",
+   "hq": [
+    -33.75,
+    25.4
+   ],
+   "website": "https://www.vw.co.za/en.html",
+   "enwiki": "https://en.wikipedia.org/wiki/Volkswagen_of_South_Africa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135910440",
+   "name": "WeBuyCars",
+   "cc": "za",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive services industry"
+   ],
+   "isin": [],
+   "hq_city": "Centurion",
+   "hq": [
+    -25.86028,
+    28.18944
+   ],
+   "website": "https://www.webuycars.co.za",
+   "enwiki": "https://en.wikipedia.org/wiki/WeBuyCars",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7983306",
+   "name": "Werksmans",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.werksmans.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Werksmans",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20715807",
+   "name": "Wilderness",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "ecotourism",
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Gaborone",
+   "hq": [
+    -24.65694,
+    25.90861
+   ],
+   "website": "https://www.wildernessdestinations.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Wilderness_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2811992",
+   "name": "Wimpy",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "restaurant"
+   ],
+   "isin": [],
+   "hq_city": "Johannesburg",
+   "hq": [
+    -26.20436,
+    28.04164
+   ],
+   "website": "https://wimpy.uk.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Wimpy_(restaurant)",
+   "logo_file": "Logo of Wimpy.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8033997",
+   "name": "Woolworths",
+   "cc": "za",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Johannesburg Stock Exchange",
+     "ticker": "WHL"
+    }
+   ],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "ZAE000063863"
+   ],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "https://www.woolworths.co.za/",
+   "lei": "37890095421E07184E97",
+   "enwiki": "https://en.wikipedia.org/wiki/Woolworths_(South_Africa)",
+   "logo_file": "Woolworths South Africa.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q8045630",
+   "name": "Xyzoo Animation",
+   "cc": "za",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Xyzoo_Animation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28003649",
+   "name": "Zoological Society of Southern Africa",
+   "cc": "za",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cape Town",
+   "hq": [
+    -33.92528,
+    18.42389
+   ],
+   "website": "http://www.zssa.co.za",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

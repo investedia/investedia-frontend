@@ -1,0 +1,76 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "SC",
+ "count": 3,
+ "companies": [
+  {
+   "qid": "Q19892740",
+   "name": "Huobi",
+   "cc": "sc",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Beijing",
+   "hq": [
+    39.90403,
+    116.40753
+   ],
+   "website": "https://www.htx.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/HTX_(cryptocurrency_exchange)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55627184",
+   "name": "OKX",
+   "cc": "sc",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "cryptocurrency exchange",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Hong Kong",
+   "hq": [
+    22.27833,
+    114.15861
+   ],
+   "website": "https://www.okx.com/cn",
+   "enwiki": "https://en.wikipedia.org/wiki/OKX",
+   "logo_file": "OKX Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7458938",
+   "name": "Seychelles Broadcasting Corporation",
+   "cc": "sc",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "television network"
+   ],
+   "isin": [],
+   "website": "http://www.sbc.sc/",
+   "enwiki": "https://en.wikipedia.org/wiki/Seychelles_Broadcasting_Corporation",
+   "logo_file": "Logo of Seychelles Broadcasting Corporation.jpg",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

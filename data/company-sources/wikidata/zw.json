@@ -1,0 +1,448 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "ZW",
+ "count": 21,
+ "companies": [
+  {
+   "qid": "Q4693887",
+   "name": "Agricultural Development Bank of Zimbabwe",
+   "cc": "zw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Harare",
+   "hq": [
+    -17.82917,
+    31.05222
+   ],
+   "website": "https://www.agribank.co.zw/",
+   "enwiki": "https://en.wikipedia.org/wiki/Agricultural_Development_Bank_of_Zimbabwe",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5424553",
+   "name": "FBC Bank",
+   "cc": "zw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Harare",
+   "hq": [
+    -17.82917,
+    31.05222
+   ],
+   "website": "http://www.fbc.co.zw/bank/index.cfm",
+   "enwiki": "https://en.wikipedia.org/wiki/FBC_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19904160",
+   "name": "Fidelity Printers and Refiners",
+   "cc": "zw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Harare",
+   "hq": [
+    -17.82917,
+    31.05222
+   ],
+   "website": "http://www.fpr.co.zw",
+   "enwiki": "https://en.wikipedia.org/wiki/Fidelity_Printers_and_Refiners",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56284208",
+   "name": "GTel Zimbabwe",
+   "cc": "zw",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://gtel.co.zw",
+   "enwiki": "https://en.wikipedia.org/wiki/GTel_Zimbabwe",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6810072",
+   "name": "Meikles",
+   "cc": "zw",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zimbabwe Stock Exchange",
+     "ticker": "MEIK"
+    }
+   ],
+   "industries": [
+    "hospitality industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Meikles_Limited",
+   "listed": true
+  },
+  {
+   "qid": "Q55624676",
+   "name": "Nash Paints",
+   "cc": "zw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://nashpaints.co.zw/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nash_Paints",
+   "listed": false
+  },
+  {
+   "qid": "Q16968949",
+   "name": "Net*One",
+   "cc": "zw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Harare",
+   "hq": [
+    -17.82917,
+    31.05222
+   ],
+   "website": "http://www.netone.co.zw/",
+   "enwiki": "https://en.wikipedia.org/wiki/Net*One",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17107908",
+   "name": "NMB Bank Limited",
+   "cc": "zw",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.nmbz.co.zw/",
+   "lei": "254900J5HFOUC3SLM620",
+   "enwiki": "https://en.wikipedia.org/wiki/NMB_Bank_Limited",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q24235941",
+   "name": "People's Own Savings Bank",
+   "cc": "zw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Harare",
+   "hq": [
+    -17.82917,
+    31.05222
+   ],
+   "website": "http://www.posb.co.zw/",
+   "enwiki": "https://en.wikipedia.org/wiki/People%27s_Own_Savings_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7190735",
+   "name": "Pick n Pay",
+   "cc": "zw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "ZAE000005443"
+   ],
+   "hq_city": "Kenilworth",
+   "hq": [
+    -33.99583,
+    18.475
+   ],
+   "website": "https://www.pnp.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pick_n_Pay",
+   "logo_file": "Pick n Pay logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q106768371",
+   "name": "Rhodesia Railways",
+   "cc": "zw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7848105",
+   "name": "Trust Banking Corporation",
+   "cc": "zw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Harare",
+   "hq": [
+    -17.82917,
+    31.05222
+   ],
+   "website": "http://www.trust.co.zw/",
+   "enwiki": "https://en.wikipedia.org/wiki/Trust_Banking_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q581954",
+   "name": "University of Zimbabwe",
+   "cc": "zw",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "higher education"
+   ],
+   "isin": [],
+   "hq_city": "Harare",
+   "hq": [
+    -17.82917,
+    31.05222
+   ],
+   "website": "http://www.uz.ac.zw/",
+   "enwiki": "https://en.wikipedia.org/wiki/University_of_Zimbabwe",
+   "logo_file": "University of Zimbabwe LOGO.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20715807",
+   "name": "Wilderness",
+   "cc": "zw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "ecotourism",
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Gaborone",
+   "hq": [
+    -24.65694,
+    25.90861
+   ],
+   "website": "https://www.wildernessdestinations.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Wilderness_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8062968",
+   "name": "ZB Bank Limited",
+   "cc": "zw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Harare",
+   "hq": [
+    -17.82917,
+    31.05222
+   ],
+   "website": "http://www.zb.co.zw/ZB-Group-Flagship/menu-id-65.html",
+   "enwiki": "https://en.wikipedia.org/wiki/ZB_Bank_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23012355",
+   "name": "Zimbabwe Defence Industries",
+   "cc": "zw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Harare",
+   "hq": [
+    -17.82917,
+    31.05222
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Zimbabwe_Defence_Industries",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8071980",
+   "name": "Zimbabwe Electricity Supply Authority",
+   "cc": "zw",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Zimbabwe",
+   "hq": [
+    -19.0,
+    30.0
+   ],
+   "website": "http://www.zesa.co.zw",
+   "enwiki": "https://en.wikipedia.org/wiki/Zimbabwe_Electricity_Supply_Authority",
+   "listed": false
+  },
+  {
+   "qid": "Q4191917",
+   "name": "Zimbabwe Stock Exchange",
+   "cc": "zw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Harare",
+   "hq": [
+    -17.82917,
+    31.05222
+   ],
+   "website": "https://www.zse.co.zw",
+   "enwiki": "https://en.wikipedia.org/wiki/Zimbabwe_Stock_Exchange",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11705475",
+   "name": "Zimbabwe United Passenger Company",
+   "cc": "zw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "website": "http://www.zupco.co.zw/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zimbabwe_United_Passenger_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55075007",
+   "name": "Zimbabwe Women Microfinance Bank",
+   "cc": "zw",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Zimbabwe_Women_Microfinance_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8071948",
+   "name": "ZimPost",
+   "cc": "zw",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "website": "http://www.zimpost.co.zw/",
+   "enwiki": "https://en.wikipedia.org/wiki/ZimPost",
+   "listed": false
+  }
+ ]
+}

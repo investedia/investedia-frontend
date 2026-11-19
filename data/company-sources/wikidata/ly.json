@@ -1,0 +1,382 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "LY",
+ "count": 19,
+ "companies": [
+  {
+   "qid": "Q12192578",
+   "name": "Al-Madar Al-Jadeed",
+   "cc": "ly",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "website": "https://www.almadar.ly/",
+   "logo_file": "Almadar Aljadid Logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q2306787",
+   "name": "Arabian Gulf Oil Company",
+   "cc": "ly",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Benghazi",
+   "hq": [
+    32.11667,
+    20.06667
+   ],
+   "website": "http://www.agoco.com.ly",
+   "enwiki": "https://en.wikipedia.org/wiki/Arabian_Gulf_Oil_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97279470",
+   "name": "Assaray Trade and Investment Bank",
+   "cc": "ly",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20407780",
+   "name": "Dar Alfergiani",
+   "cc": "ly",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://fergianibooks.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4146606",
+   "name": "General Posts and Telecommunications Company",
+   "cc": "ly",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Tripoli",
+   "hq": [
+    32.8875,
+    13.1875
+   ],
+   "website": "http://www.gptc.ly/eng",
+   "enwiki": "https://en.wikipedia.org/wiki/General_Posts_and_Telecommunications_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q80010",
+   "name": "Libyan Foreign Bank",
+   "cc": "ly",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Tripoli",
+   "hq": [
+    32.8875,
+    13.1875
+   ],
+   "website": "http://www.lfbank.ly/",
+   "enwiki": "https://en.wikipedia.org/wiki/Libyan_Foreign_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q973454",
+   "name": "Libyan Investment Authority",
+   "cc": "ly",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "sovereign wealth fund"
+   ],
+   "isin": [],
+   "hq_city": "Tripoli",
+   "hq": [
+    32.8875,
+    13.1875
+   ],
+   "website": "https://lia.ly/",
+   "enwiki": "https://en.wikipedia.org/wiki/Libyan_Investment_Authority",
+   "logo_file": "Libyaninvestmentauthority-300x123-logo.gif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6542881",
+   "name": "Libyan Iron and Steel Company",
+   "cc": "ly",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Misrata",
+   "hq": [
+    32.37778,
+    15.09014
+   ],
+   "website": "http://www.libyansteel.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Libyan_Iron_and_Steel_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24707852",
+   "name": "Libyan Post Telecommunications & Information Technology Company",
+   "cc": "ly",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Malta",
+   "hq": [
+    35.9,
+    14.4
+   ],
+   "website": "https://lptic.ly/",
+   "enwiki": "https://en.wikipedia.org/wiki/Libyan_Post,_Telecommunications_and_Information_Technology_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6542917",
+   "name": "Libyan Stock Market",
+   "cc": "ly",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tripoli",
+   "hq": [
+    32.8875,
+    13.1875
+   ],
+   "website": "https://capetalinvest.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Libyan_Stock_Market",
+   "logo_file": "LSM.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1117462",
+   "name": "Libyana",
+   "cc": "ly",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tripoli",
+   "hq": [
+    32.8875,
+    13.1875
+   ],
+   "website": "https://www.libyana.ly/",
+   "enwiki": "https://en.wikipedia.org/wiki/Libyana",
+   "logo_file": "Libyana mobile phone logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1967537",
+   "name": "National Oil Corporation",
+   "cc": "ly",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "natural resource",
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Tripoli",
+   "hq": [
+    32.8875,
+    13.1875
+   ],
+   "website": "http://en.noclibya.com.ly/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Oil_Corporation",
+   "logo_file": "LNOC logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12193239",
+   "name": "NCB",
+   "cc": "ly",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.ncb.ly/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133862449",
+   "name": "Qabas",
+   "cc": "ly",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "management consultancy activities"
+   ],
+   "isin": [],
+   "hq_city": "Tripoli",
+   "hq": [
+    32.8875,
+    13.1875
+   ],
+   "website": "https://qbs.ly/",
+   "enwiki": "https://en.wikipedia.org/wiki/Qabas",
+   "logo_file": "Logo of Qabas (1).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7530652",
+   "name": "Sirte Oil Company",
+   "cc": "ly",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Brega",
+   "hq": [
+    30.40611,
+    19.57389
+   ],
+   "website": "http://www.sirteoil.com.ly/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sirte_Oil_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108763948",
+   "name": "Tatweer Research",
+   "cc": "ly",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Benghazi",
+   "hq": [
+    32.11667,
+    20.06667
+   ],
+   "website": "https://tatweerresearch.org",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7881682",
+   "name": "Umma Bank",
+   "cc": "ly",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Tripoli",
+   "hq": [
+    32.8875,
+    13.1875
+   ],
+   "website": "https://Jbank.ly",
+   "enwiki": "https://en.wikipedia.org/wiki/Umma_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12184643",
+   "name": "البنك العربي الإسباني",
+   "cc": "ly",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12243302",
+   "name": "مصرف المتوسط",
+   "cc": "ly",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  }
+ ]
+}

@@ -1,0 +1,3492 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "NG",
+ "count": 177,
+ "companies": [
+  {
+   "qid": "Q85738233",
+   "name": "32 FM 94.9",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/32_FM_94.9",
+   "listed": false
+  },
+  {
+   "qid": "Q4670555",
+   "name": "Abuja Stock Exchange",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abuja",
+   "hq": [
+    9.05556,
+    7.49139
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Abuja_Stock_Exchange",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4672418",
+   "name": "Access Bank",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "https://www.accessbankplc.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Access_Bank_plc",
+   "logo_file": "Accessbank1.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108532027",
+   "name": "Adaba FM",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Akure",
+   "hq": [
+    7.25,
+    5.195
+   ],
+   "website": "http://adaba889.fm/",
+   "enwiki": "https://en.wikipedia.org/wiki/Adaba_FM",
+   "listed": false
+  },
+  {
+   "qid": "Q4689460",
+   "name": "Afribank",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "real estate development"
+   ],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "http://www.ixp.net.ng/",
+   "enwiki": "https://en.wikipedia.org/wiki/Afribank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108392016",
+   "name": "African Food Network",
+   "cc": "ng",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Abuja",
+   "hq": [
+    9.05556,
+    7.49139
+   ],
+   "website": "https://afrifoodnetwork.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/African_Food_Network",
+   "logo_file": "Afri Food Network.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109524243",
+   "name": "Agidigbo Fm 88.7, Ibadan",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ibadan",
+   "hq": [
+    7.3775,
+    3.90583
+   ],
+   "website": "https://agidigbo887fm.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Agidigbo_88.7_FM",
+   "listed": false
+  },
+  {
+   "qid": "Q136400135",
+   "name": "AIICO Insurance",
+   "cc": "ng",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance"
+   ],
+   "isin": [],
+   "website": "https://www.aiicoplc.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/AIICO_Insurance",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25245509",
+   "name": "Aiteo",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://www.aiteogroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aiteo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28402045",
+   "name": "Ajaokuta Steel Mill",
+   "cc": "ng",
+   "types": [
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ajaokuta",
+   "hq": [
+    7.52351,
+    6.5813
+   ],
+   "website": "http://www.ajaokutasteel.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Ajaokuta_Steel_Mill",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109975541",
+   "name": "Albarka Radio",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bauchi State",
+   "hq": [
+    10.30667,
+    9.8125
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Albarka_Radio",
+   "listed": false
+  },
+  {
+   "qid": "Q107482186",
+   "name": "Aristokrat Records",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Aristokrat_Records",
+   "listed": false
+  },
+  {
+   "qid": "Q109538185",
+   "name": "Aso Radio 93.5 fm",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rivers State",
+   "hq": [
+    4.75,
+    6.83333
+   ],
+   "website": "http://www.landmarkhotels.com.ng/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aso_Radio",
+   "listed": false
+  },
+  {
+   "qid": "Q132353956",
+   "name": "Auldon Toys",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4830081",
+   "name": "Awka South",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Awka_South",
+   "listed": false
+  },
+  {
+   "qid": "Q109535721",
+   "name": "Babban Gona",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "agriculture"
+   ],
+   "isin": [],
+   "hq_city": "Nigeria",
+   "hq": [
+    9.0,
+    8.0
+   ],
+   "website": "https://babbangona.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Babban_Gona",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4868801",
+   "name": "Bates Cosse",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Media"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q112121687",
+   "name": "Bauchi Radio Corporation",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.radiobauchi.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bauchi_Radio_Corporation",
+   "listed": false
+  },
+  {
+   "qid": "Q131806831",
+   "name": "Benue Links",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Benue_Links",
+   "listed": false
+  },
+  {
+   "qid": "Q21485092",
+   "name": "Bet9ja",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "gambling"
+   ],
+   "isin": [],
+   "website": "http://mybet9ja.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Bet9ja",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134562285",
+   "name": "Bioclinix Medical Diagnostics Centre",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "health care"
+   ],
+   "isin": [],
+   "hq_city": "Badagry",
+   "hq": [
+    6.41502,
+    2.88132
+   ],
+   "website": "https://www.bioclinix.com.ng/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96372931",
+   "name": "BUA Cement",
+   "cc": "ng",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "business"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://buagroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/BUA_Cement",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116859666",
+   "name": "BUA Foods",
+   "cc": "ng",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/BUA_Foods",
+   "logo_file": "Logo BUA Foods.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111950499",
+   "name": "Bundle Africa",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.bundle.africa/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bundle_Africa",
+   "logo_file": "Bundle logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q60751390",
+   "name": "Cadbury Nigeria Plc",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Cadbury_Nigeria_Plc",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60742434",
+   "name": "Cappa & D'Alberto PLC",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "https://www.capdal.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cappa_%26_D%27Alberto_PLC",
+   "listed": false
+  },
+  {
+   "qid": "Q24950190",
+   "name": "Cassava Republic Press",
+   "cc": "ng",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abuja",
+   "hq": [
+    9.05556,
+    7.49139
+   ],
+   "website": "https://cassavarepublic.biz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cassava_Republic_Press",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5066894",
+   "name": "Chagoury group",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "http://www.chagourygroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Chagoury_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55607249",
+   "name": "Chevron Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum"
+   ],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "https://www.chevron.com/worldwide/nigeria",
+   "enwiki": "https://en.wikipedia.org/wiki/Chevron_Nigeria",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23020249",
+   "name": "Chi Limited",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://www.houseofchi.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Chi_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109524256",
+   "name": "City FM",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.city1051fm.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/City_FM_(Lagos)",
+   "listed": false
+  },
+  {
+   "qid": "Q28197218",
+   "name": "Cokodeal",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce"
+   ],
+   "isin": [],
+   "website": "http://www.cokodeal.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111134700",
+   "name": "ColdHubs",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.coldhubs.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/ColdHubs",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28408262",
+   "name": "Comic Republic",
+   "cc": "ng",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://thecomicrepublic.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Comic_Republic",
+   "listed": false
+  },
+  {
+   "qid": "Q55608311",
+   "name": "Conoil",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "http://www.conoilproducing.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Conoil",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55608458",
+   "name": "Costain West Africa",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Costain_West_Africa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108532028",
+   "name": "Crest FM",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://cresthillsmedia.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Crest_FM",
+   "listed": false
+  },
+  {
+   "qid": "Q5216192",
+   "name": "Dangote Cement",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "cement industry"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://www.dangcem.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Dangote_Cement",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3013553",
+   "name": "Dangote Group",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "cement industry",
+    "conglomerate"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://www.dangote.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Dangote_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19277734",
+   "name": "Defence Industries Corporation of Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Kaduna",
+   "hq": [
+    10.5105,
+    7.4165
+   ],
+   "website": "https://dicon.gov.ng",
+   "enwiki": "https://en.wikipedia.org/wiki/Defence_Industries_Corporation_of_Nigeria",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137010574",
+   "name": "Demfati",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://demfati.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Demfati",
+   "listed": false
+  },
+  {
+   "qid": "Q25083444",
+   "name": "Department of Petroleum Resources",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Federal Capital Territory",
+   "hq": [
+    8.83333,
+    7.16667
+   ],
+   "website": "https://dpr.gov.ng/index/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nigerian_Upstream_Petroleum_Regulatory_Commission",
+   "listed": false
+  },
+  {
+   "qid": "Q105846589",
+   "name": "Diamond FM",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ilorin",
+   "hq": [
+    8.5,
+    4.55
+   ],
+   "website": "https://diamondfm.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/Diamond_FM_(Ilorin)",
+   "logo_file": "Diamond FM Ilorin.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55609582",
+   "name": "Dignified Mobile Toilets",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nigeria",
+   "hq": [
+    9.0,
+    8.0
+   ],
+   "website": "http://www.dmttoilets.com/aboutus.htm",
+   "enwiki": "https://en.wikipedia.org/wiki/Dignified_Mobile_Toilets",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124448938",
+   "name": "Dream Empire Music",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q109039812",
+   "name": "Ebonylife TV",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "outline of entertainment"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Ebonylife_TV",
+   "listed": false
+  },
+  {
+   "qid": "Q5333156",
+   "name": "Ecobank Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://ecobank.com/ng/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ecobank_Nigeria",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23777901",
+   "name": "Eko Hotels and Suites",
+   "cc": "ng",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.ekohotels.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Eko_Hotels_and_Suites",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5384650",
+   "name": "Equitorial Trust Bank",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.equitorialtrustbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Equitorial_Trust_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25044541",
+   "name": "Eunisell Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Eunisell",
+   "listed": false
+  },
+  {
+   "qid": "Q107427040",
+   "name": "ExxonMobil Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "https://corporate.exxonmobil.com/Locations/Nigeria",
+   "enwiki": "https://en.wikipedia.org/wiki/ExxonMobil_Nigeria",
+   "logo_file": "Exxon Mobil Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5440005",
+   "name": "Federal Airports Authority of Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "transport"
+   ],
+   "isin": [],
+   "hq_city": "Ikeja",
+   "hq": [
+    6.58333,
+    3.33333
+   ],
+   "website": "https://faan.gov.ng/",
+   "enwiki": "https://en.wikipedia.org/wiki/Federal_Airports_Authority_of_Nigeria",
+   "logo_file": "FAAN Logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q119084500",
+   "name": "Federal Character",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Federal_Character",
+   "listed": false
+  },
+  {
+   "qid": "Q55611534",
+   "name": "Federal Mortgage Bank of Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abuja",
+   "hq": [
+    9.05556,
+    7.49139
+   ],
+   "website": "https://www.fmbn.gov.ng/Home/index.html",
+   "enwiki": "https://en.wikipedia.org/wiki/Federal_Mortgage_Bank_of_Nigeria",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5440356",
+   "name": "Federal Radio Corporation of Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.radionigeria.gov.ng",
+   "enwiki": "https://en.wikipedia.org/wiki/Federal_Radio_Corporation_of_Nigeria",
+   "listed": false
+  },
+  {
+   "qid": "Q5446777",
+   "name": "Fidelity Bank Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "https://fidelitybank.ng",
+   "enwiki": "https://en.wikipedia.org/wiki/Fidelity_Bank_Nigeria",
+   "logo_file": "Fidelity-bank-nigeria.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5449304",
+   "name": "FinBank",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://finbank.com.ng/",
+   "enwiki": "https://en.wikipedia.org/wiki/FinBank_Nigeria",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5452342",
+   "name": "First Bank of Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://www.firstbanknigeria.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/First_Bank_of_Nigeria",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q39045808",
+   "name": "Flour Mills of Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "NGFLOURMILL0"
+   ],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "https://fmnplc.com/",
+   "lei": "0292002087D4NH3E6743",
+   "enwiki": "https://en.wikipedia.org/wiki/Flour_Mills_of_Nigeria",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q106253762",
+   "name": "Flutterwave",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "fintech"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Flutterwave",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17090046",
+   "name": "FMA Architects",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "http://fmaarchitects.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/FMA_Architects",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108314849",
+   "name": "FoodCo",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Ibadan",
+   "hq": [
+    7.3775,
+    3.90583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17076216",
+   "name": "Forte Oil PLC",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Victoria Island",
+   "hq": [
+    6.43111,
+    3.41583
+   ],
+   "website": "http://www.forteoilplc.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Ardova_Plc",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28407799",
+   "name": "Gamsole",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://gamsole.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Gamsole",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5570033",
+   "name": "Globacom",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://www.gloworld.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Glo_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18151876",
+   "name": "Grafton Entertainment",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "entertainment"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "http://graftonentertainment.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grafton_Entertainment",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q579747",
+   "name": "Guaranty Trust Holding Company",
+   "cc": "ng",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "finance"
+   ],
+   "isin": [
+    "NGGUARANTY06",
+    "US40124Q2084"
+   ],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://www.gtbank.com/",
+   "lei": "0292001868F6N5VI5G15",
+   "enwiki": "https://en.wikipedia.org/wiki/GTCO_Group",
+   "logo_file": "GTCO logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5616584",
+   "name": "Guinness Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Guiness"
+   ],
+   "isin": [
+    "NGGUINNESS07"
+   ],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://www.guinness-nigeria.com",
+   "lei": "0292002192H7C7H2H732",
+   "enwiki": "https://en.wikipedia.org/wiki/Guinness_Nigeria",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5750321",
+   "name": "HiTV",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "entertainment",
+    "satellite television"
+   ],
+   "isin": [],
+   "hq_city": "Ebute Metta",
+   "hq": [
+    6.4817,
+    3.3769
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/HiTV",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28194789",
+   "name": "Ikeja Electric",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity"
+   ],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "https://www.ikejaelectric.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ikeja_Electric",
+   "listed": false
+  },
+  {
+   "qid": "Q122496708",
+   "name": "Independent Television/Radio",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q128304128",
+   "name": "Indigenius AI",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "AI industry",
+    "software industry"
+   ],
+   "isin": [],
+   "website": "https://indigenius.ai/",
+   "enwiki": "https://en.wikipedia.org/wiki/Indigenius_AI",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16994973",
+   "name": "Intafact Beverages Limited",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Onitsha",
+   "hq": [
+    6.13296,
+    6.79238
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Intafact_Beverages_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65121788",
+   "name": "Intels Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.intelservices.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Intels_Nigeria",
+   "listed": false
+  },
+  {
+   "qid": "Q1288487",
+   "name": "Intercontinental Bank",
+   "cc": "ng",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Victoria Island",
+   "hq": [
+    6.43111,
+    3.41583
+   ],
+   "website": "http://www.intercontinentalbankplc.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Intercontinental_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16994999",
+   "name": "International Breweries Plc",
+   "cc": "ng",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nigerian Exchange Group",
+     "ticker": "INTBREW"
+    }
+   ],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Ilesa",
+   "hq": [
+    7.63333,
+    4.75
+   ],
+   "website": "https://www.international-breweries.com/",
+   "lei": "029200840G5MA6F60G17",
+   "enwiki": "https://en.wikipedia.org/wiki/International_Breweries_plc",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q19903351",
+   "name": "Interswitch",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fintech"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://www.interswitchgroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Interswitch",
+   "logo_file": "Interswitch logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124504897",
+   "name": "Itana",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Itana",
+   "listed": false
+  },
+  {
+   "qid": "Q6124318",
+   "name": "Jaiz Bank",
+   "cc": "ng",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Abuja",
+   "hq": [
+    9.05556,
+    7.49139
+   ],
+   "website": "http://jaizbankplc.com/personal-banking.aspx",
+   "enwiki": "https://en.wikipedia.org/wiki/Jaiz_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q39059538",
+   "name": "jiji.ng",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://www.jiji.ng/",
+   "enwiki": "https://en.wikipedia.org/wiki/Jiji_Africa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65040683",
+   "name": "Jobberman",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Internet"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://www.jobberman.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Jobberman",
+   "logo_file": "Jobberman Nigeria Logo.webp",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6239709",
+   "name": "John Holt plc",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://www.jhplc.com",
+   "enwiki": "https://en.wikipedia.org/wiki/John_Holt_plc",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110130634",
+   "name": "Jones Worldwide",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "music industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Jones_Worldwide",
+   "listed": false
+  },
+  {
+   "qid": "Q6309678",
+   "name": "Julius Berger Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "Nigerian Exchange Group",
+     "ticker": "JBERGER"
+    }
+   ],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Abuja",
+   "hq": [
+    9.05556,
+    7.49139
+   ],
+   "website": "http://www.julius-berger.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Julius_Berger_(company)",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q17061030",
+   "name": "Jumià",
+   "cc": "ng",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "JMIA"
+    }
+   ],
+   "industries": [
+    "online shop"
+   ],
+   "isin": [
+    "US48138M1053"
+   ],
+   "hq_city": "Ikeja",
+   "hq": [
+    6.61857,
+    3.34259
+   ],
+   "website": "https://group.jumia.com",
+   "lei": "391200JWCL5VCOSXNT56",
+   "enwiki": "https://en.wikipedia.org/wiki/Jumia",
+   "logo_file": "JumiaLogo (14).png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6344671",
+   "name": "Kachifo Limited",
+   "cc": "ng",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://www.kachifo.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Kachifo_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6349322",
+   "name": "Kakawa Discount House Limited",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://www.kakawa.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/FBNQuest_Merchant_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6398444",
+   "name": "Keystone Bank Limited",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Victoria Island",
+   "hq": [
+    6.43111,
+    3.41583
+   ],
+   "website": "http://www.keystonebankng.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Keystone_Bank_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17063480",
+   "name": "konga.com",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce",
+    "retail"
+   ],
+   "isin": [],
+   "website": "http://www.konga.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Konga.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24963782",
+   "name": "LADOL",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Apapa",
+   "hq": [
+    6.44889,
+    3.35889
+   ],
+   "website": "http://www.ladol.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/LADOL",
+   "logo_file": "Ladol Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60749837",
+   "name": "Lafarge Africa",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ikeja",
+   "hq": [
+    6.6018,
+    3.3515
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Lafarge_Africa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111104568",
+   "name": "Lagos state Primary healthcare board",
+   "cc": "ng",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "health care"
+   ],
+   "isin": [],
+   "hq_city": "Yaba",
+   "hq": [
+    6.5097,
+    3.3863
+   ],
+   "website": "https://lsphcb.lg.gov.ng/",
+   "enwiki": "https://en.wikipedia.org/wiki/Lagos_State_Primary_Healthcare_Board",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28404620",
+   "name": "Leadway",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://www.leadway.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Leadway",
+   "listed": false
+  },
+  {
+   "qid": "Q22080463",
+   "name": "Legit.ng",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "news"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://es.legit.ng/",
+   "enwiki": "https://en.wikipedia.org/wiki/Legit.ng",
+   "logo_file": "Legit-logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85776232",
+   "name": "Lekoil",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "hydrocarbon exploration"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://lekoil.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Lekoil",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19707101",
+   "name": "Liberty International",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q131143922",
+   "name": "MAD Solutions",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/MAD_Solutions",
+   "listed": false
+  },
+  {
+   "qid": "Q6736772",
+   "name": "Mainstreet Bank Limited",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://www.mainstreetbanklimited.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mainstreet_Bank_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97627850",
+   "name": "Masobe Books",
+   "cc": "ng",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.masobebooks.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Masobe_Books",
+   "listed": false
+  },
+  {
+   "qid": "Q131340489",
+   "name": "Masters Energy Oil and Gas Ltd.",
+   "cc": "ng",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "website": "https://www.mastersenergyltd.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Masters_Energy_Oil_and_Gas_Ltd.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65041658",
+   "name": "Mikano International Limited",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "https://www.mikano-intl.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mikano_International_Limited",
+   "logo_file": "Mikano Logo transparent.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6886730",
+   "name": "Mobil Producing Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Mobil_Producing_Nigeria",
+   "listed": false
+  },
+  {
+   "qid": "Q116873326",
+   "name": "Moniepoint Inc",
+   "cc": "ng",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "fintech"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://moniepoint.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Moniepoint_Inc.",
+   "logo_file": "Moniepointlogo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56274919",
+   "name": "MRS Oil Nigeria Plc",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fossil fuel"
+   ],
+   "isin": [
+    "NGCHEVRON008"
+   ],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://www.mrsoilnigplc.net/",
+   "lei": "029200573E4MD4E63E74",
+   "enwiki": "https://en.wikipedia.org/wiki/MRS_Oil_Nigeria_Plc",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6959743",
+   "name": "Nairaland",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ogun State",
+   "hq": [
+    7.12,
+    3.3725
+   ],
+   "website": "http://www.nairaland.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Nairaland",
+   "logo_file": "Nairaland Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q42955229",
+   "name": "Narrative Landscape Press",
+   "cc": "ng",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://www.narrativelandscape.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Narrative_Landscape_Press",
+   "logo_file": "Narrative landscape press.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q105698053",
+   "name": "Ndani TV",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Ndani_TV",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60744751",
+   "name": "Nestle Nigeria Plc",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food processing"
+   ],
+   "isin": [
+    "NGNESTLE0006"
+   ],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "lei": "0292002173F4KD5E5347",
+   "enwiki": "https://en.wikipedia.org/wiki/Nestle_Nigeria",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2218925",
+   "name": "Nigaz",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Abuja",
+   "hq": [
+    9.05556,
+    7.49139
+   ],
+   "website": "https://www.nnpcgroup.com/GasAndPower/Pages/NiGaz.aspx",
+   "enwiki": "https://en.wikipedia.org/wiki/Nigaz",
+   "listed": false
+  },
+  {
+   "qid": "Q112317037",
+   "name": "Niger Delta River Basin Development Authority",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Port Harcourt",
+   "hq": [
+    4.76547,
+    7.01632
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Niger_Delta_River_Basin_Development_Authority",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116735935",
+   "name": "Nigeria Aviation Handling Company",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Nigerian_Aviation_Handling_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q7032809",
+   "name": "Nigeria LNG",
+   "cc": "ng",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "liquefied natural gas"
+   ],
+   "isin": [],
+   "hq_city": "Rivers State",
+   "hq": [
+    4.75,
+    6.83333
+   ],
+   "website": "http://www.nlng.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Nigeria_LNG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11108502",
+   "name": "Nigerian Breweries",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://www.nbplc.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Nigerian_Breweries",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17109209",
+   "name": "Nigerian Bulk Electricity PLC",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity"
+   ],
+   "isin": [],
+   "hq_city": "Federal Capital Territory",
+   "hq": [
+    8.83333,
+    7.16667
+   ],
+   "website": "https://nbet.com.ng/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nigerian_Bulk_Electricity_PLC",
+   "listed": false
+  },
+  {
+   "qid": "Q7032879",
+   "name": "Nigerian Coal Corporation",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining of coal"
+   ],
+   "isin": [],
+   "hq_city": "Enugu State",
+   "hq": [
+    6.5,
+    7.5
+   ],
+   "website": "https://bpe.gov.ng/nigerian-coal-corporation/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nigerian_Coal_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19604475",
+   "name": "Nigerian Export-Import Bank",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abuja",
+   "hq": [
+    9.05556,
+    7.49139
+   ],
+   "website": "http://www.neximbank.com.ng",
+   "enwiki": "https://en.wikipedia.org/wiki/Nigerian_Export-Import_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1671299",
+   "name": "Nigerian National Petroleum Corporation",
+   "cc": "ng",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Abuja",
+   "hq": [
+    9.05556,
+    7.49139
+   ],
+   "website": "http://www.nnpcgroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/NNPC",
+   "logo_file": "Nigerian National Petroleum Company logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4045343",
+   "name": "Nigerian Postal Service",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Abuja",
+   "hq": [
+    9.05556,
+    7.49139
+   ],
+   "website": "http://www.nipost.gov.ng",
+   "enwiki": "https://en.wikipedia.org/wiki/Nigerian_Postal_Service",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7033013",
+   "name": "Nigerian Security Printing and Minting Company Limited",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Nigerian_Security_Printing_and_Minting_Company_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q6954392",
+   "name": "Nigerian Telecommunications",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Abuja",
+   "hq": [
+    9.05556,
+    7.49139
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/NITEL_(Nigerian_company)",
+   "listed": false
+  },
+  {
+   "qid": "Q3341382",
+   "name": "Nigerian Television Authority",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "broadcast network",
+    "television broadcasting"
+   ],
+   "isin": [],
+   "hq_city": "Federal Capital Territory",
+   "hq": [
+    8.83333,
+    7.16667
+   ],
+   "website": "https://nta.ng/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nigerian_Television_Authority",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56064231",
+   "name": "Nigerite",
+   "cc": "ng",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "https://www.nigeritelimited.com/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nigerite",
+   "listed": false
+  },
+  {
+   "qid": "Q105675168",
+   "name": "Northern Nigerian Publishing Company Limited",
+   "cc": "ng",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zaria",
+   "hq": [
+    11.06667,
+    7.7
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Northern_Nigerian_Publishing_Company_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131414455",
+   "name": "NPF Microfinance Bank",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "banking",
+    "microfinance industry"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/NPF_Microfinance_Bank",
+   "listed": false
+  },
+  {
+   "qid": "Q7074355",
+   "name": "Oando",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://www.oandoplc.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Oando",
+   "logo_file": "Oando Logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7076201",
+   "name": "Oceanic Bank",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Abuja",
+   "hq": [
+    9.05556,
+    7.49139
+   ],
+   "website": "http://www.oceanicbanknigeria.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Oceanic_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97174939",
+   "name": "Odu’a Investment Company",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Odu%27a_Investment_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q123561328",
+   "name": "Okomu Oil",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Okomu Forest Reserve",
+   "hq": [
+    6.41667,
+    5.46667
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Okomu_Oil",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q128033530",
+   "name": "OPay",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.opaybank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Opay",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q46996026",
+   "name": "Parrésia Publishers",
+   "cc": "ng",
+   "types": [
+    "Q2085381",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://www.parresia.com.ng/",
+   "enwiki": "https://en.wikipedia.org/wiki/Parr%C3%A9sia_Publishers",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109701550",
+   "name": "Parthian Partners Limited",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108335326",
+   "name": "Paystack",
+   "cc": "ng",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services",
+    "mobile payment industry"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Paystack",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55629702",
+   "name": "Petrolex",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "http://www.petrolex.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Petrolex",
+   "logo_file": "Petrolex-logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25052453",
+   "name": "Port Harcourt Electricity Distribution Company",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "utility"
+   ],
+   "isin": [],
+   "hq_city": "Old GRA, Port Harcourt",
+   "hq": [
+    4.78139,
+    7.01167
+   ],
+   "website": "http://www.phed.com.ng/",
+   "enwiki": "https://en.wikipedia.org/wiki/Port_Harcourt_Electricity_Distribution_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q18343754",
+   "name": "Port Harcourt Refining Company",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Port Harcourt",
+   "hq": [
+    4.76547,
+    7.01632
+   ],
+   "website": "https://nnpcgroup.com/Pages/Home.aspx",
+   "enwiki": "https://en.wikipedia.org/wiki/Port_Harcourt_Refining_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q120289647",
+   "name": "Premium Trust Bank",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Premium_Trust_Bank",
+   "listed": false
+  },
+  {
+   "qid": "Q50842610",
+   "name": "Publiseer",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electronic publishing"
+   ],
+   "isin": [],
+   "website": "https://www.publiseer.com",
+   "logo_file": "Publiseer Official Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56275335",
+   "name": "PZ Cussons Nigeria Plc",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/PZ_Cussons_Nigeria_Plc",
+   "listed": false
+  },
+  {
+   "qid": "Q123050338",
+   "name": "Remita",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "contactless payment"
+   ],
+   "isin": [],
+   "website": "https://remita.com/lander?oref=https%3A%2F%2Fen.wikipedia.org%2F",
+   "enwiki": "https://en.wikipedia.org/wiki/Remita",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7277315",
+   "name": "ROCAD Construction Limited",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction industry"
+   ],
+   "isin": [],
+   "hq_city": "Federal Capital Territory",
+   "hq": [
+    8.83333,
+    7.16667
+   ],
+   "website": "https://www.rocad.com/",
+   "logo_file": "Rocad Construction Company Logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19903621",
+   "name": "Ruff 'n' Tumble",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://www.ruffntumblekids.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ruff_%27n%27_Tumble_(clothing)",
+   "logo_file": "RNT-Logo2.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7402487",
+   "name": "Saipem Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "multinational corporation"
+   ],
+   "isin": [],
+   "hq_city": "Port Harcourt",
+   "hq": [
+    4.76547,
+    7.01632
+   ],
+   "website": "https://www.saipem.com/en",
+   "enwiki": "https://en.wikipedia.org/wiki/Saipem_Nigeria",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118904020",
+   "name": "Salubata",
+   "cc": "ng",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.salubataofficial.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Salubata",
+   "logo_file": "SALUBATA Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17109314",
+   "name": "Seplat Petroleum Development Company",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "https://seplatpetroleum.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Seplat_Petroleum_Development_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60747393",
+   "name": "Seven-Up Bottling Company",
+   "cc": "ng",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Seven-Up_Bottling_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q7493681",
+   "name": "Shell Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Federal Capital Territory",
+   "hq": [
+    8.83333,
+    7.16667
+   ],
+   "website": "https://www.shell.com.ng/",
+   "enwiki": "https://en.wikipedia.org/wiki/Shell_Nigeria",
+   "logo_file": "Shell wordmark 2019.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7537673",
+   "name": "Skye Bank",
+   "cc": "ng",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "https://www.polarisbanklimited.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Polaris_Bank_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17109323",
+   "name": "Soul Muzik",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "entertainment"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Soul_Muzik",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7566071",
+   "name": "South Atlantic Petroleum",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Port Harcourt",
+   "hq": [
+    4.76547,
+    7.01632
+   ],
+   "website": "https://www.sapetro.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/South_Atlantic_Petroleum",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18636309",
+   "name": "Stanbic IBTC Holdings",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://www.stanbicibtc.com/",
+   "lei": "029200388A7S7Z5I0H57",
+   "enwiki": "https://en.wikipedia.org/wiki/Stanbic_IBTC_Holdings",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7611369",
+   "name": "Sterling Bank",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://www.sterlingbankng.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Sterling_Bank_(Nigeria)",
+   "logo_file": "Sterling Bank Logo Straight.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55394506",
+   "name": "SunTrust Bank Nigeria Limited",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "https://suntrustng.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/SunTrust_Bank_Nigeria_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30593738",
+   "name": "SystemSpecs",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://www.systemspecs.com.ng",
+   "enwiki": "https://en.wikipedia.org/wiki/SystemSpecs",
+   "logo_file": "SystemSpecs Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97516275",
+   "name": "Taj Bank",
+   "cc": "ng",
+   "types": [
+    "Q22687",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/TAJBank",
+   "listed": false
+  },
+  {
+   "qid": "Q17109355",
+   "name": "Taleveras",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction",
+    "energy production",
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Federal Capital Territory",
+   "hq": [
+    8.83333,
+    7.16667
+   ],
+   "website": "http://www.taleverasgroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Taleveras",
+   "logo_file": "Taleveras.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7687722",
+   "name": "Tastee Fried Chicken",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "restaurant",
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q122761366",
+   "name": "Tingo Group",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "agriculture",
+    "fintech"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Tingo_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110915472",
+   "name": "Titan Trust Bank Ltd",
+   "cc": "ng",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Victoria Island",
+   "hq": [
+    6.43111,
+    3.41583
+   ],
+   "website": "https://titantrustbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Titan_Trust_Bank",
+   "listed": false
+  },
+  {
+   "qid": "Q65091305",
+   "name": "Tour Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Tour_Nigeria",
+   "logo_file": "Tour Nigeria Logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q7834708",
+   "name": "Transnational Corporation of Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://www.transcorpnigeria.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Transnational_Corporation_of_Nigeria",
+   "logo_file": "Transcorp Group.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25047484",
+   "name": "Ughelli Power Plant",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Ughelli",
+   "hq": [
+    5.5,
+    5.98333
+   ],
+   "website": "http://www.ughellipower.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Transcorp_Power_Plc",
+   "listed": false
+  },
+  {
+   "qid": "Q7885401",
+   "name": "Union Bank of Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "http://www.unionbankng.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Union_Bank_of_Nigeria",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7887319",
+   "name": "United Africa Company of Nigeria",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "https://www.uacnplc.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/United_Africa_Company_of_Nigeria",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q513457",
+   "name": "United Bank for Africa",
+   "cc": "ng",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://www.ubagroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/United_Bank_for_Africa",
+   "logo_file": "Unitedbank1.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7893758",
+   "name": "Unity Bank",
+   "cc": "ng",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Abuja",
+   "hq": [
+    9.05556,
+    7.49139
+   ],
+   "website": "http://www.unitybankng.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Unity_Bank_plc",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23198441",
+   "name": "University Press plc",
+   "cc": "ng",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Ibadan",
+   "hq": [
+    7.3775,
+    3.90583
+   ],
+   "website": "https://universitypressplc.com/2021/11/05/university-press-plc-presents-staff-with-long-service-awards/",
+   "enwiki": "https://en.wikipedia.org/wiki/University_Press_plc",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55636439",
+   "name": "UTC Nigeria Plc",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/UTC_Nigeria_Plc",
+   "listed": false
+  },
+  {
+   "qid": "Q7906691",
+   "name": "VConnect",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "digital marketing"
+   ],
+   "isin": [],
+   "hq_city": "Surulere",
+   "hq": [
+    6.4926,
+    3.349
+   ],
+   "website": "http://www.vconnect.com/",
+   "logo_file": "VConnect new Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q39050644",
+   "name": "Verve International",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://www.myverveworld.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Verve_International",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55637177",
+   "name": "Vitafoam Nigeria Plc",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Vitafoam_Nigeria_Plc",
+   "listed": false
+  },
+  {
+   "qid": "Q7939128",
+   "name": "Vmobile",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Vmobile",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131824504",
+   "name": "Warri Refining and Petrochemicals Company",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Warri_Refining_and_Petrochemicals_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q113540754",
+   "name": "Wecyclers",
+   "cc": "ng",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "waste management"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Wecyclers",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16734253",
+   "name": "Wema Bank",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://www.wemabank.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Wema_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97261663",
+   "name": "Wema Bank",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Lagos State",
+   "hq": [
+    6.58333,
+    3.75
+   ],
+   "website": "https://wemabank.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48809169",
+   "name": "Zartech Farms",
+   "cc": "ng",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ibadan",
+   "hq": [
+    7.3775,
+    3.90583
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Zartech_Farms",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5978240",
+   "name": "Zenith Bank",
+   "cc": "ng",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [
+    "US98935J1025"
+   ],
+   "hq_city": "Lagos",
+   "hq": [
+    6.45611,
+    3.39361
+   ],
+   "website": "https://www.zenithbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zenith_Bank",
+   "founded": null,
+   "listed": true
+  }
+ ]
+}

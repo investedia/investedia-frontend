@@ -1,0 +1,301 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "ZM",
+ "count": 14,
+ "companies": [
+  {
+   "qid": "Q114660",
+   "name": "British American Tobacco (Zambia)",
+   "cc": "zm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lusaka",
+   "hq": [
+    -15.41667,
+    28.28333
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q5055188",
+   "name": "Cavmont Bank",
+   "cc": "zm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.cavmont.com.zm/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cavmont_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1416145",
+   "name": "Finance Bank Zambia",
+   "cc": "zm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lusaka",
+   "hq": [
+    -15.41667,
+    28.28333
+   ],
+   "website": "http://www.financebank.co.zm/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5449538",
+   "name": "Finance Bank Zambia Limited",
+   "cc": "zm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.financebank.co.zm/",
+   "enwiki": "https://en.wikipedia.org/wiki/Atlas_Mara_Bank_Zambia_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113641831",
+   "name": "Lunsemfwa Hydro Power Company",
+   "cc": "zm",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "website": "https://www.lunsemfwahydro.com.zm/",
+   "enwiki": "https://en.wikipedia.org/wiki/Lunsemfwa_Hydro_Power_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1877680",
+   "name": "Lusaka Stock Exchange",
+   "cc": "zm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lusaka",
+   "hq": [
+    -15.41667,
+    28.28333
+   ],
+   "website": "https://www.luse.co.zm",
+   "enwiki": "https://en.wikipedia.org/wiki/Lusaka_Securities_Exchange",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1966975",
+   "name": "National Breweries",
+   "cc": "zm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "ZM0000000086"
+   ],
+   "hq_city": "Kitwe",
+   "hq": [
+    -12.82083,
+    28.21194
+   ],
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1338630",
+   "name": "Standard Chartered Zambia",
+   "cc": "zm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Lusaka",
+   "hq": [
+    -15.41667,
+    28.28333
+   ],
+   "website": "https://www.sc.com/zm/",
+   "enwiki": "https://en.wikipedia.org/wiki/Standard_Chartered_Zambia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16679012",
+   "name": "Tanganyika Concessions Limited",
+   "cc": "zm",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "financial service activities, except insurance and pension funding",
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Tanganyika_Concessions_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20715807",
+   "name": "Wilderness",
+   "cc": "zm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "ecotourism",
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Gaborone",
+   "hq": [
+    -24.65694,
+    25.90861
+   ],
+   "website": "https://www.wildernessdestinations.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Wilderness_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q145510",
+   "name": "Zambia National Commercial Bank",
+   "cc": "zm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Lusaka",
+   "hq": [
+    -15.41667,
+    28.28333
+   ],
+   "website": "https://www.zanaco.co.zm/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zambia_National_Commercial_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8065703",
+   "name": "Zambian News Agency",
+   "cc": "zm",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "news media"
+   ],
+   "isin": [],
+   "hq_city": "Lusaka",
+   "hq": [
+    -15.41667,
+    28.28333
+   ],
+   "website": "http://www.zanis.org.zm/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zambia_News_Agency",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8065957",
+   "name": "Zamtel",
+   "cc": "zm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Lusaka",
+   "hq": [
+    -15.41667,
+    28.28333
+   ],
+   "website": "http://www.zamtel.zm/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zamtel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8063035",
+   "name": "ZESCO",
+   "cc": "zm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Lusaka",
+   "hq": [
+    -15.41667,
+    28.28333
+   ],
+   "website": "https://www.zesco.co.zm/",
+   "enwiki": "https://en.wikipedia.org/wiki/ZESCO",
+   "logo_file": "ZESCO Logo.jpg",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

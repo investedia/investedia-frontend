@@ -1,0 +1,547 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "SN",
+ "count": 27,
+ "companies": [
+  {
+   "qid": "Q56754455",
+   "name": "Air Senegal",
+   "cc": "sn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dakar",
+   "hq": [
+    14.67256,
+    -17.432
+   ],
+   "website": "https://flyairsenegal.com/en/home/",
+   "enwiki": "https://en.wikipedia.org/wiki/Air_Senegal",
+   "logo_file": "Air Senegal Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25389934",
+   "name": "Amalion",
+   "cc": "sn",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "book publishing"
+   ],
+   "isin": [],
+   "hq_city": "Dakar",
+   "hq": [
+    14.67256,
+    -17.432
+   ],
+   "website": "http://www.amalion.net",
+   "enwiki": "https://en.wikipedia.org/wiki/Amalion",
+   "listed": false
+  },
+  {
+   "qid": "Q532104",
+   "name": "Bank of West Africa",
+   "cc": "sn",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Dakar",
+   "hq": [
+    14.67256,
+    -17.432
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_de_l%27Afrique_occidentale",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137799643",
+   "name": "Compagnie sénégalaise de transport transatlantique",
+   "cc": "sn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "sea shipping"
+   ],
+   "isin": [],
+   "hq_city": "Dakar",
+   "hq": [
+    14.67256,
+    -17.432
+   ],
+   "website": "https://csttao.group/",
+   "logo_file": "Logo de la Compagnie Sénégalaise de Transport Transatlantique.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2990259",
+   "name": "Compagnie sénégalaise des phosphates de Taïba",
+   "cc": "sn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q37873776",
+   "name": "Dakar Dem Dikk",
+   "cc": "sn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dakar",
+   "hq": [
+    14.67256,
+    -17.432
+   ],
+   "website": "https://demdikk.sn",
+   "enwiki": "https://en.wikipedia.org/wiki/Dakar_Dem_Dikk",
+   "listed": false
+  },
+  {
+   "qid": "Q113321258",
+   "name": "Fonds de promotion de l’industrie cinématographique et audiovisuelle",
+   "cc": "sn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "film industry"
+   ],
+   "isin": [],
+   "hq_city": "Senegal",
+   "hq": [
+    14.36667,
+    -14.28333
+   ],
+   "website": "https://www.fopica.sn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111209118",
+   "name": "Free Sénégal",
+   "cc": "sn",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Dakar",
+   "hq": [
+    14.67256,
+    -17.432
+   ],
+   "website": "https://www.free.sn/",
+   "logo_file": "Free logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132800622",
+   "name": "Grande Côte Operations",
+   "cc": "sn",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "website": "https://gco.eramet.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grande_C%C3%B4te_Operations",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3117416",
+   "name": "Groupe Futurs Médias",
+   "cc": "sn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3150625",
+   "name": "ICS",
+   "cc": "sn",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry",
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Pikine",
+   "hq": [
+    14.744,
+    -17.40206
+   ],
+   "website": "https://www.ics.sn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17061030",
+   "name": "Jumià",
+   "cc": "sn",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "JMIA"
+    }
+   ],
+   "industries": [
+    "online shop"
+   ],
+   "isin": [
+    "US48138M1053"
+   ],
+   "hq_city": "Ikeja",
+   "hq": [
+    6.58333,
+    3.33333
+   ],
+   "website": "https://group.jumia.com",
+   "lei": "391200JWCL5VCOSXNT56",
+   "enwiki": "https://en.wikipedia.org/wiki/Jumia",
+   "logo_file": "JumiaLogo (14).png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16885698",
+   "name": "La Poste Sénégal",
+   "cc": "sn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Dakar",
+   "hq": [
+    14.67256,
+    -17.432
+   ],
+   "website": "http://www.laposte.sn/",
+   "enwiki": "https://en.wikipedia.org/wiki/La_Poste_(Senegal)",
+   "listed": false
+  },
+  {
+   "qid": "Q2883405",
+   "name": "Malian Solidarity Bank",
+   "cc": "sn",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bamako",
+   "hq": [
+    12.64583,
+    -7.99222
+   ],
+   "website": "http://www.bms-sa.ml/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_Malienne_de_Solidarit%C3%A9",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3287060",
+   "name": "manufacture des tabacs de l'Ouest Africain",
+   "cc": "sn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Hann Bel-Air",
+   "hq": [
+    14.72458,
+    -17.43003
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3345285",
+   "name": "Nouvelles éditions africaines du Sénégal",
+   "cc": "sn",
+   "types": [
+    "Q2085381",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q113322019",
+   "name": "Petrosen",
+   "cc": "sn",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy"
+   ],
+   "isin": [],
+   "hq_city": "Dakar",
+   "hq": [
+    14.67256,
+    -17.432
+   ],
+   "website": "https://www.petrosen.sn",
+   "logo_file": "Petrosen.logo noir.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131654447",
+   "name": "SEGEA SA",
+   "cc": "sn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "transport infrastructure"
+   ],
+   "isin": [],
+   "hq_city": "Dakar",
+   "hq": [
+    14.67256,
+    -17.432
+   ],
+   "website": "https://autoroutesdusenegal.sn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q95945526",
+   "name": "Senbus factory",
+   "cc": "sn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141596918",
+   "name": "SNAD",
+   "cc": "sn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dakar",
+   "hq": [
+    14.67256,
+    -17.432
+   ],
+   "website": "https://snaddistribution.com",
+   "listed": false
+  },
+  {
+   "qid": "Q3488526",
+   "name": "Société nationale des conserveries du Sénégal",
+   "cc": "sn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dakar",
+   "hq": [
+    14.67256,
+    -17.432
+   ],
+   "website": "http://www.sncds.sn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488736",
+   "name": "Sococim Industries",
+   "cc": "sn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "industry"
+   ],
+   "isin": [],
+   "hq_city": "Rufisque",
+   "hq": [
+    14.71403,
+    -17.27231
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3490246",
+   "name": "Sonatel",
+   "cc": "sn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Dakar",
+   "hq": [
+    14.67256,
+    -17.432
+   ],
+   "website": "http://www.orange.sn",
+   "enwiki": "https://en.wikipedia.org/wiki/Sonatel",
+   "logo_file": "Sonatel logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3510999",
+   "name": "Sénégalaise des eaux",
+   "cc": "sn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dakar",
+   "hq": [
+    14.67256,
+    -17.432
+   ],
+   "website": "http://www.Sde.sn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3565334",
+   "name": "Walf",
+   "cc": "sn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "news media"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140180219",
+   "name": "Wave Mobile Money",
+   "cc": "sn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Delaware",
+   "hq": [
+    39.0,
+    -75.5
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109400499",
+   "name": "Éditions Jimsaan",
+   "cc": "sn",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dakar",
+   "hq": [
+    14.67256,
+    -17.432
+   ],
+   "website": "https://www.editionsjimsaan.com/",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

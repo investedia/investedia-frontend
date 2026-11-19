@@ -1,0 +1,398 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "TG",
+ "count": 19,
+ "companies": [
+  {
+   "qid": "Q140011735",
+   "name": "Brasserie BB Lomé",
+   "cc": "tg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness"
+   ],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "website": "https://www.bblome.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137774385",
+   "name": "Cabinet YILIM",
+   "cc": "tg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q125189769",
+   "name": "Cimenterie de la CINAT à kimpese",
+   "cc": "tg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "other mining and quarrying"
+   ],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139882549",
+   "name": "Cyber Defense Africa",
+   "cc": "tg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "computer security"
+   ],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "website": "https://www.cda.tg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q930225",
+   "name": "Ecobank",
+   "cc": "tg",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "website": "https://www.ecobank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ecobank_Group",
+   "logo_file": "Ecobank Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123862245",
+   "name": "Editions Awoudy",
+   "cc": "tg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "website": "https://editionsawoudy.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124305617",
+   "name": "Editions Continents",
+   "cc": "tg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "website": "https://editionscontinents.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q119065283",
+   "name": "International Business Bank Togo",
+   "cc": "tg",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "website": "https://www.ibbank.tg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136763627",
+   "name": "KIFEMA Capital",
+   "cc": "tg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q119064306",
+   "name": "Orabank Togo",
+   "cc": "tg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "website": "https://www.orabank.net/fr/filiale/togo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140672722",
+   "name": "Oragroup",
+   "cc": "tg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "Bourse Regionale Des Valeurs Mobilieres",
+     "ticker": "69415031"
+    }
+   ],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "website": "https://www.orabank.net/fr",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3488061",
+   "name": "post of Togo",
+   "cc": "tg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "website": "https://www.laposte.tg/",
+   "enwiki": "https://en.wikipedia.org/wiki/La_Poste_du_Togo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138137136",
+   "name": "Société générale des moulins du Togo",
+   "cc": "tg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "milling industry"
+   ],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q119061612",
+   "name": "Société Inter-Africaine de Banque",
+   "cc": "tg",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2297045",
+   "name": "Société nouvelle des phosphates du Togo",
+   "cc": "tg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.snptogo.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488690",
+   "name": "Société togolaise du coton",
+   "cc": "tg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agriculture"
+   ],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q119060519",
+   "name": "Union Togolaise de Banque",
+   "cc": "tg",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "website": "https://www.utb.tg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140735900",
+   "name": "Éditions Azur",
+   "cc": "tg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "website": "https://editionsazur.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20948480",
+   "name": "Éditions Graines de Pensées",
+   "cc": "tg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Lomé",
+   "hq": [
+    6.13,
+    1.21583
+   ],
+   "founded": null,
+   "listed": false
+  }
+ ]
+}
