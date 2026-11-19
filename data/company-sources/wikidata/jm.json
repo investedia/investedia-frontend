@@ -1,0 +1,245 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "JM",
+ "count": 13,
+ "companies": [
+  {
+   "qid": "Q4734764",
+   "name": "Alpart",
+   "cc": "jm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aluminium industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Alpart",
+   "listed": false
+  },
+  {
+   "qid": "Q621567",
+   "name": "Appleton Estate",
+   "cc": "jm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.appletonrum.it/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24236116",
+   "name": "Caricel",
+   "cc": "jm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "http://caricel.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Caricel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22092281",
+   "name": "Couples Resorts",
+   "cc": "jm",
+   "types": [
+    "Q1631129",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "hotel industry"
+   ],
+   "isin": [],
+   "hq_city": "Montego Bay",
+   "hq": [
+    18.46667,
+    -77.91667
+   ],
+   "website": "https://couples.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Couples_Resorts",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3024535",
+   "name": "Desnoes & Geddes",
+   "cc": "jm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kingston",
+   "hq": [
+    17.97139,
+    -76.79306
+   ],
+   "website": "http://www.redstripebeer.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Desnoes_%26_Geddes",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q10500095",
+   "name": "Fundadores",
+   "cc": "jm",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5567383",
+   "name": "Gleaner Company",
+   "cc": "jm",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kingston",
+   "hq": [
+    17.97139,
+    -76.79306
+   ],
+   "website": "http://jamaica-gleaner.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Gleaner_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5590947",
+   "name": "Grace",
+   "cc": "jm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Grace_(food_company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138827507",
+   "name": "Hampden Estate",
+   "cc": "jm",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://hampdenestaterum.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hampden_Estate",
+   "listed": false
+  },
+  {
+   "qid": "Q117247207",
+   "name": "JPS",
+   "cc": "jm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power generation, transmission and distribution"
+   ],
+   "isin": [],
+   "hq_city": "Montreal",
+   "hq": [
+    45.50334,
+    -73.58684
+   ],
+   "website": "https://www.jpsco.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Jamaica_Public_Service",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133500393",
+   "name": "MycoMeditations",
+   "cc": "jm",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "health care"
+   ],
+   "isin": [],
+   "hq_city": "Treasure Beach",
+   "hq": [
+    17.876,
+    -77.7572
+   ],
+   "website": "https://www.mycomeditations.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/MycoMeditations",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7178943",
+   "name": "Petroleum Corporation of Jamaica",
+   "cc": "jm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Petroleum_Corporation_of_Jamaica",
+   "listed": false
+  },
+  {
+   "qid": "Q7415968",
+   "name": "Sandals Resorts",
+   "cc": "jm",
+   "types": [
+    "Q1631129"
+   ],
+   "listings": [],
+   "industries": [
+    "hotel"
+   ],
+   "isin": [],
+   "hq_city": "Montego Bay",
+   "hq": [
+    18.46667,
+    -77.91667
+   ],
+   "website": "http://www.sandals.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sandals_Resorts",
+   "logo_file": "Sandals Resorts logo.svg",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

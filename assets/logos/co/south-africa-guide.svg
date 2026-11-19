@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="64" fill="#FBF8F3"/>
+
+  <g
+    transform="translate(126 86)"
+    stroke-width="42"
+    stroke-linecap="round"
+    fill="none">
+
+    <!-- South African-inspired stripes -->
+    <path d="M60 0 L60 340" stroke="#E03C31"/>
+    <path d="M115 0 L115 340" stroke="#d4d4d4"/>
+    <path d="M170 0 L170 340" stroke="#007A4D"/>
+    <path d="M225 0 L225 340" stroke="#FFB81C"/>
+    <path d="M280 0 L280 340" stroke="#000000"/>
+    <path d="M335 0 L335 340" stroke="#002395"/>
+  </g>
+</svg>

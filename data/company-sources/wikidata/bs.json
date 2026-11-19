@@ -1,0 +1,177 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "BS",
+ "count": 8,
+ "companies": [
+  {
+   "qid": "Q96371765",
+   "name": "Aliv",
+   "cc": "bs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.bealiv.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aliv",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4842213",
+   "name": "Baha Mar",
+   "cc": "bs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "resort"
+   ],
+   "isin": [],
+   "hq_city": "Nassau",
+   "hq": [
+    25.07806,
+    -77.33861
+   ],
+   "website": "http://www.bahamar.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Baha_Mar",
+   "listed": false
+  },
+  {
+   "qid": "Q4837035",
+   "name": "BTC",
+   "cc": "bs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Nassau",
+   "hq": [
+    25.07806,
+    -77.33861
+   ],
+   "website": "http://www.btcbahamas.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/BTC_(The_Bahamas)",
+   "listed": false
+  },
+  {
+   "qid": "Q140345207",
+   "name": "Cable Bahamas",
+   "cc": "bs",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "broadband Internet access",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Nassau",
+   "hq": [
+    25.07806,
+    -77.33861
+   ],
+   "website": "https://cablebahamas.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cable_Bahamas",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1049367",
+   "name": "Castle Bank & Trust",
+   "cc": "bs",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Castle_Bank_%26_Trust_(Bahamas)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5511172",
+   "name": "FxPro",
+   "cc": "bs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "https://www.fxpro.com",
+   "enwiki": "https://en.wikipedia.org/wiki/FxPro",
+   "logo_file": "FxPro General Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18158574",
+   "name": "Resorts World Bimini",
+   "cc": "bs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Bimini",
+   "hq": [
+    25.73333,
+    -79.25
+   ],
+   "website": "http://rwbimini.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Resorts_World_Bimini",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2286599",
+   "name": "Silversea Cruises",
+   "cc": "bs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "transport"
+   ],
+   "isin": [],
+   "hq_city": "Monaco",
+   "hq": [
+    43.73111,
+    7.42
+   ],
+   "website": "http://www.silversea.com/",
+   "lei": "5493000SU80NQC387X39",
+   "enwiki": "https://en.wikipedia.org/wiki/Silversea_Cruises",
+   "logo_file": "Silversea.png",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

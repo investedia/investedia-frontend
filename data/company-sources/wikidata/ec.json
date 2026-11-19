@@ -1,0 +1,653 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "EC",
+ "count": 32,
+ "companies": [
+  {
+   "qid": "Q2822134",
+   "name": "Abya Yala",
+   "cc": "ec",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://abyayala.org.ec/",
+   "enwiki": "https://en.wikipedia.org/wiki/Editorial_Abya_Yala",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132800372",
+   "name": "Acería del Ecuador",
+   "cc": "ec",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Adelca ecuador.png",
+   "listed": false
+  },
+  {
+   "qid": "Q4714406",
+   "name": "Alegro PCS",
+   "cc": "ec",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Quito",
+   "hq": [
+    -0.22,
+    -78.5125
+   ],
+   "website": "http://www.cnt.gob.ec",
+   "enwiki": "https://en.wikipedia.org/wiki/Alegro_PCS",
+   "listed": false
+  },
+  {
+   "qid": "Q790666",
+   "name": "Aves y Conservación",
+   "cc": "ec",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Quito",
+   "hq": [
+    -0.22,
+    -78.5125
+   ],
+   "website": "http://avesconservacion.org/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q806201",
+   "name": "Banco del Pacífico",
+   "cc": "ec",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Guayaquil",
+   "hq": [
+    -2.19,
+    -79.8875
+   ],
+   "website": "https://www.bancodelpacifico.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5718094",
+   "name": "Banco Guayaquil",
+   "cc": "ec",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Guayaquil",
+   "hq": [
+    -2.19,
+    -79.8875
+   ],
+   "website": "https://www.bancoguayaquil.com/",
+   "logo_file": "Banco Guayaquil (2020).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60970291",
+   "name": "Cablevisión",
+   "cc": "ec",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5763582",
+   "name": "Cervecería Nacional",
+   "cc": "ec",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Guayaquil",
+   "hq": [
+    -2.19,
+    -79.8875
+   ],
+   "website": "http://www.cervecerianacional.ec",
+   "logo_file": "Cervecería Nacional.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5013202",
+   "name": "CNT EP",
+   "cc": "ec",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Movistar Team"
+   ],
+   "isin": [],
+   "hq_city": "Quito",
+   "hq": [
+    -0.22,
+    -78.5125
+   ],
+   "website": "http://www.cnt.gob.ec/",
+   "enwiki": "https://en.wikipedia.org/wiki/CNT_EP",
+   "logo_file": "CNT Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5486529",
+   "name": "Corporación Eléctrica del Ecuador",
+   "cc": "ec",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power transmission",
+    "electricity generation"
+   ],
+   "isin": [],
+   "hq_city": "Cuenca",
+   "hq": [
+    -2.89741,
+    -79.00448
+   ],
+   "website": "https://www.celec.gob.ec/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5788915",
+   "name": "Corporación Financiera Nacional",
+   "cc": "ec",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial institution"
+   ],
+   "isin": [],
+   "hq_city": "Guayaquil",
+   "hq": [
+    -2.19,
+    -79.8875
+   ],
+   "website": "https://www.cfn.fin.ec/",
+   "logo_file": "CFN.png",
+   "listed": false
+  },
+  {
+   "qid": "Q5280213",
+   "name": "Dirección de la Industria Aeronáutica Ecuador",
+   "cc": "ec",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aircraft industry"
+   ],
+   "isin": [],
+   "hq_city": "Quito",
+   "hq": [
+    -0.22,
+    -78.5125
+   ],
+   "website": "https://diaf.gob.ec",
+   "enwiki": "https://en.wikipedia.org/wiki/Direcci%C3%B3n_de_la_Industria_Aeron%C3%A1utica_Ecuador",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16558944",
+   "name": "Ecua-Andino Hats",
+   "cc": "ec",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fashion"
+   ],
+   "isin": [],
+   "hq_city": "Guayaquil",
+   "hq": [
+    -2.19,
+    -79.8875
+   ],
+   "website": "http://www.ecua-andino.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ecua-Andino_Hats",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5334378",
+   "name": "Ecuadors National Service of Intellectual Rights",
+   "cc": "ec",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "research and development"
+   ],
+   "isin": [],
+   "hq_city": "Quito",
+   "hq": [
+    -0.22,
+    -78.5125
+   ],
+   "website": "https://www.derechosintelectuales.gob.ec/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ecuadorian_Institute_of_Intellectual_Property",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1812822",
+   "name": "EP Petroecuador",
+   "cc": "ec",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "downstream",
+    "petroleum industry",
+    "upstream"
+   ],
+   "isin": [],
+   "hq_city": "Quito",
+   "hq": [
+    -0.22,
+    -78.5125
+   ],
+   "website": "http://www.eppetroecuador.ec",
+   "enwiki": "https://en.wikipedia.org/wiki/Petroecuador",
+   "logo_file": "Petroecuador.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5816282",
+   "name": "ETAPA",
+   "cc": "ec",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "sanitation",
+    "telecommunications",
+    "water supply"
+   ],
+   "isin": [],
+   "hq_city": "Cuenca",
+   "hq": [
+    -2.89741,
+    -79.00448
+   ],
+   "website": "http://www.etapa.net.ec",
+   "enwiki": "https://en.wikipedia.org/wiki/ETAPA",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5402439",
+   "name": "Etapatelecom",
+   "cc": "ec",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Etapatelecom",
+   "listed": false
+  },
+  {
+   "qid": "Q3813620",
+   "name": "Grupo Compás",
+   "cc": "ec",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petrochemical product"
+   ],
+   "isin": [],
+   "hq_city": "Barcelona",
+   "hq": [
+    41.3825,
+    2.17694
+   ],
+   "website": "http://www.valvula.es/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Comp%C3%A1s",
+   "logo_file": "Grupo Compas logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q806187",
+   "name": "International Bank",
+   "cc": "ec",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Quito",
+   "hq": [
+    -0.22,
+    -78.5125
+   ],
+   "website": "https://www.bancointernacional.com.ec",
+   "logo_file": "Banco Internacional.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q53733959",
+   "name": "Libresa",
+   "cc": "ec",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Quito",
+   "hq": [
+    -0.22,
+    -78.5125
+   ],
+   "website": "http://www.libresa.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q3027516",
+   "name": "Marathon Sports",
+   "cc": "ec",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Quito",
+   "hq": [
+    -0.22,
+    -78.5125
+   ],
+   "website": "https://www.marathon.store",
+   "enwiki": "https://en.wikipedia.org/wiki/Marathon_Sports",
+   "logo_file": "Marathon blue logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5846785",
+   "name": "Movistar Ecuador",
+   "cc": "ec",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Quito",
+   "hq": [
+    -0.22,
+    -78.5125
+   ],
+   "website": "https://www.movistar.com.ec/",
+   "logo_file": "Movistar isotype 2020.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124396156",
+   "name": "Mr. Books",
+   "cc": "ec",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "bookselling"
+   ],
+   "isin": [],
+   "hq_city": "Quito",
+   "hq": [
+    -0.22,
+    -78.5125
+   ],
+   "website": "https://www.mrbooks.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854135",
+   "name": "Pichincha Bank",
+   "cc": "ec",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Quito",
+   "hq": [
+    -0.22,
+    -78.5125
+   ],
+   "website": "http://www.pichincha.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Pichincha",
+   "logo_file": "Banco Pichincha logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21044292",
+   "name": "Pinturas Superior",
+   "cc": "ec",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Pinturas_Superior_(Ecuador)",
+   "listed": false
+  },
+  {
+   "qid": "Q7247678",
+   "name": "Produbanco",
+   "cc": "ec",
+   "types": [
+    "Q22687",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Ecuador",
+   "hq": [
+    -1.0,
+    -78.0
+   ],
+   "website": "http://www.produbanco.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Produbanco",
+   "logo_file": "Produbanco Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1413753",
+   "name": "Quiport",
+   "cc": "ec",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Quito",
+   "hq": [
+    -0.22,
+    -78.5125
+   ],
+   "website": "https://www.quiport.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q36879490",
+   "name": "Rappi",
+   "cc": "ec",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "https://www.rappi.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rappi",
+   "logo_file": "Rappi logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30930959",
+   "name": "Smart Fit",
+   "cc": "ec",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "São Paulo Stock Exchange",
+     "ticker": "SMFT3"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "São Paulo",
+   "hq": [
+    -23.55039,
+    -46.63395
+   ],
+   "website": "https://www.smartfit.com.br/",
+   "logo_file": "Smart Fit logo.svg",
+   "listed": true
+  },
+  {
+   "qid": "Q27908027",
+   "name": "The Isaias Group",
+   "cc": "ec",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Guayaquil",
+   "hq": [
+    -2.19,
+    -79.8875
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/The_Isaias_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q43401463",
+   "name": "To'ak Chocolate",
+   "cc": "ec",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://toakchocolate.com",
+   "enwiki": "https://en.wikipedia.org/wiki/To%27ak_Chocolate",
+   "listed": false
+  },
+  {
+   "qid": "Q6156124",
+   "name": "Unidad de Negocio Hidropaute",
+   "cc": "ec",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.celec.gob.ec/hidropaute/",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

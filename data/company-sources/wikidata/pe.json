@@ -1,0 +1,1860 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "PE",
+ "count": 94,
+ "companies": [
+  {
+   "qid": "Q5596984",
+   "name": "Aenza",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "https://www.aenza.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aenza",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4694245",
+   "name": "Agroindustrial Casa Grande",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness"
+   ],
+   "isin": [],
+   "hq_city": "La Libertad Department",
+   "hq": [
+    -8.0,
+    -78.5
+   ],
+   "website": "http://www.coazucar.com/esp/casagrande_nosotros.html",
+   "enwiki": "https://en.wikipedia.org/wiki/Agroindustrial_Casa_Grande",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4694247",
+   "name": "Agroindustrial Pomalca",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness"
+   ],
+   "isin": [],
+   "hq_city": "Chiclayo",
+   "hq": [
+    -6.77167,
+    -79.83833
+   ],
+   "website": "http://www.pomalca.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Empresa_Agroindustrial_Pomalca",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4699710",
+   "name": "AJE Group",
+   "cc": "pe",
+   "types": [
+    "Q161726",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "hq_city": "Ayacucho",
+   "hq": [
+    -13.16306,
+    -74.22444
+   ],
+   "website": "https://www.ajegroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ajegroup",
+   "logo_file": "Logo-AJE-2020.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4726358",
+   "name": "Alicorp",
+   "cc": "pe",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.alicorp.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Alicorp",
+   "logo_file": "Alicorp.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141131000",
+   "name": "Apuesta Total",
+   "cc": "pe",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "https://www.apuestatotal.com/",
+   "logo_file": "Apuesta total logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5788924",
+   "name": "Arca Continental Lindley",
+   "cc": "pe",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.lindley.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Corporaci%C3%B3n_Lindley_S.A.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135908010",
+   "name": "Auna",
+   "cc": "pe",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "health care industry"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "https://auna.org",
+   "enwiki": "https://en.wikipedia.org/wiki/Auna",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131923349",
+   "name": "Ban Bif",
+   "cc": "pe",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q117240957",
+   "name": "Banco Central Hipotecario del Perú",
+   "cc": "pe",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4856206",
+   "name": "Banco de la Nación",
+   "cc": "pe",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Torre Banco de la Nación",
+   "hq": [
+    -12.0872,
+    -77.0005
+   ],
+   "website": "https://www.bn.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_the_Nation_(Peru)",
+   "logo_file": "Logobn.gif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113497510",
+   "name": "Banco del Perú y Londres",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Edificio Luis Alberto Sánchez",
+   "hq": [
+    -12.04795,
+    -77.02868
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_del_Per%C3%BA_y_Londres",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q121932180",
+   "name": "Banco Minero del Perú",
+   "cc": "pe",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5718065",
+   "name": "Bancom",
+   "cc": "pe",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "finance",
+    "insurance"
+   ],
+   "isin": [],
+   "website": "https://www.bancom.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_de_Comercio",
+   "logo_file": "Bancom (Banco de Comercio) Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111904264",
+   "name": "Barclay & Crousse Architecture",
+   "cc": "pe",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.barclaycrousse.com/?msclkid=a0219588cea111ecbf22a2016c451b90",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4835089",
+   "name": "BBVA Peru",
+   "cc": "pe",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Lima Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "bank",
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Edificio Banco Continental",
+   "hq": [
+    -12.0937,
+    -77.02108
+   ],
+   "website": "https://prestamos.bbva.pe/prestamos-personales",
+   "enwiki": "https://en.wikipedia.org/wiki/BBVA_Per%C3%BA",
+   "logo_file": "BBVA 2019.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q466971",
+   "name": "Bembos",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fast food"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.bembos.com.pe",
+   "enwiki": "https://en.wikipedia.org/wiki/Bembos",
+   "logo_file": "Bembos logo15.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1001788",
+   "name": "Buenaventura",
+   "cc": "pe",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "BVN"
+    }
+   ],
+   "industries": [
+    "mining"
+   ],
+   "isin": [
+    "US2044481040"
+   ],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.buenaventura.com/",
+   "lei": "529900WQB1ZU9KB6EL71",
+   "enwiki": "https://en.wikipedia.org/wiki/Compa%C3%B1%C3%ADa_de_Minas_Buenaventura",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16490080",
+   "name": "Camposol",
+   "cc": "pe",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.camposol.com.pe/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5754066",
+   "name": "Casa Andina",
+   "cc": "pe",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "hotel"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.casa-andina.com",
+   "logo_file": "CA LOGOVERSIONB.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5058678",
+   "name": "Cementos Pacasmayo",
+   "cc": "pe",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Lima Stock Exchange",
+     "ticker": "CPACASC1"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "CPAC"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "US15126Q2084"
+   ],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "https://www.cementospacasmayo.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cementos_Pacasmayo",
+   "logo_file": "Cementos Pacasmayo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1053372",
+   "name": "Cencosud",
+   "cc": "pe",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": null
+    },
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "CENCOSUD"
+    }
+   ],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "CL0000000100"
+   ],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.cencosud.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cencosud",
+   "logo_file": "Cencosud-2014.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2895093",
+   "name": "Cencosud Peru",
+   "cc": "pe",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.cencosud.com/",
+   "logo_file": "Cencosud-2014.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5064993",
+   "name": "Cerro Verde",
+   "cc": "pe",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Lima Stock Exchange",
+     "ticker": "CVERDEC1"
+    }
+   ],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Arequipa",
+   "hq": [
+    -16.39889,
+    -71.53694
+   ],
+   "website": "http://www.fcx.com/operations/Peru_Arequipa.htm",
+   "lei": "5493002F857O2TX7EU13",
+   "enwiki": "https://en.wikipedia.org/wiki/Cerro_Verde",
+   "logo_file": "Sociedad Minera Cerro Verde.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5551114",
+   "name": "Claro Perú",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.claro.com.pe",
+   "logo_file": "Claro.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132722451",
+   "name": "Compañía Minera Poderosa",
+   "cc": "pe",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Poderosa",
+   "listed": false
+  },
+  {
+   "qid": "Q17625880",
+   "name": "Compañía Peruana de Vapores",
+   "cc": "pe",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "water transport"
+   ],
+   "isin": [],
+   "hq_city": "Callao",
+   "hq": [
+    -12.05222,
+    -77.13917
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5158944",
+   "name": "Concordia",
+   "cc": "pe",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Concordia_(drink)",
+   "listed": false
+  },
+  {
+   "qid": "Q23777888",
+   "name": "Consorcio RBC Matrix",
+   "cc": "pe",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5788880",
+   "name": "Corporación Aceros Arequipa",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.acerosarequipa.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23777632",
+   "name": "Corporación Financiera de Desarrollo",
+   "cc": "pe",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.cofide.com.pe/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21540313",
+   "name": "Corporación Universal",
+   "cc": "pe",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "website": "http://corporacionuniversal.pe/",
+   "logo_file": "Corporación Universal logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21540311",
+   "name": "CPR Radios",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://crpweb.pe",
+   "logo_file": "CRP Radios logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q126559",
+   "name": "Credicorp",
+   "cc": "pe",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "bap"
+    }
+   ],
+   "industries": [
+    "insurance"
+   ],
+   "isin": [
+    "BMG2519Y1084"
+   ],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.credicorpnet.com",
+   "lei": "529900UYAEYQCQ2BKB17",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4854124",
+   "name": "Credit Bank of Peru",
+   "cc": "pe",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "https://www.viabcp.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_de_Cr%C3%A9dito_del_Per%C3%BA",
+   "logo_file": "Logobcp.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5203166",
+   "name": "D'Onofrio",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.nestle.com.pe",
+   "enwiki": "https://en.wikipedia.org/wiki/D%27Onofrio_(brand)",
+   "logo_file": "D'Onofrio logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5292852",
+   "name": "Don Jorge",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.donjorge.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Don_Jorge",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5336733",
+   "name": "Edegel",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "utility"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.edegel.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Enel_Generaci%C3%B3n_Per%C3%BA",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23777640",
+   "name": "El Comercio Group",
+   "cc": "pe",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://grupoelcomercio.com.pe",
+   "enwiki": "https://en.wikipedia.org/wiki/El_Comercio_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132798380",
+   "name": "Electro Dunas",
+   "cc": "pe",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q132776420",
+   "name": "Electro Sur",
+   "cc": "pe",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q132794865",
+   "name": "Electro SurEste",
+   "cc": "pe",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5829036",
+   "name": "Electro Ucayali",
+   "cc": "pe",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Pucallpa",
+   "hq": [
+    -8.38333,
+    -74.55
+   ],
+   "website": "http://www.electroucayali.com.pe/",
+   "logo_file": "Logo de Electro Ucayali.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132776279",
+   "name": "Electroperú",
+   "cc": "pe",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q106878590",
+   "name": "Empresa Petrolera Fiscal",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20014781",
+   "name": "ENAPU",
+   "cc": "pe",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.enapu.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/ENAPU",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132716650",
+   "name": "Engie Perú",
+   "cc": "pe",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q21041561",
+   "name": "Entel Perú",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.entel.pe",
+   "logo_file": "EntelChile Logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q12129150",
+   "name": "FAME",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Lurigancho-Chosica",
+   "hq": [
+    -11.93679,
+    -76.69644
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5886029",
+   "name": "Grupo ATV",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "https://www.atv.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_ATV",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5886093",
+   "name": "Grupo Breca",
+   "cc": "pe",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "industry"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Breca",
+   "listed": false
+  },
+  {
+   "qid": "Q132373070",
+   "name": "Grupo Minero Alpayana",
+   "cc": "pe",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q2877910",
+   "name": "Grupo RPP",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.gruporpp.com.pe",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_RPP",
+   "logo_file": "Grupo RPP logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q593369",
+   "name": "Inca Kola",
+   "cc": "pe",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.coca-cola.com/pe/es/brands/inca-kola",
+   "enwiki": "https://en.wikipedia.org/wiki/Inca_Kola",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3152423",
+   "name": "Instituto Nacional de Radio y Televisión del Perú",
+   "cc": "pe",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "https://www.irtp.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Institute_of_Radio_and_Television_of_Peru",
+   "logo_file": "Logo del IRTP.svg 2.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6025478",
+   "name": "Integratel Perú",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.telefonica.com.pe",
+   "logo_file": "Movistar isotype 2020.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2835558",
+   "name": "Interbank",
+   "cc": "pe",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Torre Interbank",
+   "hq": [
+    -12.08945,
+    -77.0227
+   ],
+   "website": "https://interbank.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Interbank",
+   "logo_file": "Interbank logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23008916",
+   "name": "Intercorp",
+   "cc": "pe",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "finance",
+    "trade"
+   ],
+   "isin": [],
+   "hq_city": "Torre Interbank",
+   "hq": [
+    -12.08945,
+    -77.0227
+   ],
+   "website": "http://www.intercorp.com.pe",
+   "enwiki": "https://en.wikipedia.org/wiki/Intercorp",
+   "logo_file": "Intercorp logo.svg",
+   "listed": true
+  },
+  {
+   "qid": "Q134577707",
+   "name": "KFC in Peru",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "restaurant"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6426956",
+   "name": "Kola Inglesa",
+   "cc": "pe",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Fanta_Kola_Inglesa",
+   "listed": false
+  },
+  {
+   "qid": "Q5411441",
+   "name": "Market San Jorge",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q104814825",
+   "name": "Mass",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "https://www.tiendasmass.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mass_(supermarket)",
+   "logo_file": "Tiendas Mass logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138658597",
+   "name": "Minpeco",
+   "cc": "pe",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Minpeco",
+   "listed": false
+  },
+  {
+   "qid": "Q6869536",
+   "name": "Minsur",
+   "cc": "pe",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.minsur.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Minsur",
+   "logo_file": "Minsur.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3317767",
+   "name": "Modasa",
+   "cc": "pe",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "https://modasa.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Modasa_(bus_manufacturer)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6025470",
+   "name": "Movistar TV (Peru)",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "cable television",
+    "satellite television",
+    "subscription television",
+    "video on demand"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.movistar.com.pe",
+   "logo_file": "Movistar TV logo 2018.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q26260333",
+   "name": "National Coca Company",
+   "cc": "pe",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cusco",
+   "hq": [
+    -13.51694,
+    -71.97861
+   ],
+   "website": "http://www.enaco.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Coca_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4812626",
+   "name": "Nexa Resources",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.atacocha.com.pe",
+   "enwiki": "https://en.wikipedia.org/wiki/Compa%C3%B1%C3%ADa_Minera_Atacocha",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q551405",
+   "name": "Pacifico Seguros Home",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance"
+   ],
+   "isin": [
+    "PEP669001005"
+   ],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "https://www.pacifico.com.pe",
+   "enwiki": "https://en.wikipedia.org/wiki/Pacifico_Seguros",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q111475491",
+   "name": "Peisa",
+   "cc": "pe",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://peisa.com.pe/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q91040909",
+   "name": "Pension Fund Administrators of Peru",
+   "cc": "pe",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7171139",
+   "name": "Peruvian Amazon Company",
+   "cc": "pe",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "rubber"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Peruvian_Amazon_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q7171150",
+   "name": "Peruvian Corporation",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Mining of chemical and fertiliser minerals",
+    "mining industry",
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Peruvian_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2506390",
+   "name": "Petroperú",
+   "cc": "pe",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.petroperu.com.pe",
+   "enwiki": "https://en.wikipedia.org/wiki/Petroper%C3%BA",
+   "logo_file": "Logo actual de Petroperú.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98767299",
+   "name": "Polmer",
+   "cc": "pe",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "website": "http://www.polmer.com.pe",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q62332638",
+   "name": "Primax",
+   "cc": "pe",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.primax.com.pe/",
+   "listed": false
+  },
+  {
+   "qid": "Q26739407",
+   "name": "RadioCorp",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.radiocorp.com.pe",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17563241",
+   "name": "Real Plaza",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "shopping mall"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "https://www.realplaza.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q127850664",
+   "name": "Real Sport",
+   "cc": "pe",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://realsportperu.com/",
+   "logo_file": "Real sports brand of Peru.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113503190",
+   "name": "Rímac Seguros",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "https://www.rimac.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132825756",
+   "name": "Scotiabank",
+   "cc": "pe",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16779849",
+   "name": "SEMAN Peru",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aircraft industry"
+   ],
+   "isin": [],
+   "hq_city": "Santiago de Surco",
+   "hq": [
+    -12.15,
+    -77.01667
+   ],
+   "website": "https://www.seman.com.pe",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19521863",
+   "name": "Serpost",
+   "cc": "pe",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Avenida Tomás Valle",
+   "website": "http://www.serpost.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Serpost",
+   "listed": false
+  },
+  {
+   "qid": "Q20024824",
+   "name": "Servicio de Agua Potable y Alcantarillado",
+   "cc": "pe",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.sedapal.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/SEDAPAL",
+   "logo_file": "Sedapall.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q7390381",
+   "name": "Servicios Industriales de la Marina",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "metal industry"
+   ],
+   "isin": [],
+   "hq_city": "Callao",
+   "hq": [
+    -12.05222,
+    -77.13917
+   ],
+   "website": "http://www.sima.com.pe",
+   "enwiki": "https://en.wikipedia.org/wiki/Servicios_Industriales_de_la_Marina",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7390294",
+   "name": "SIDERPERU",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chimbote",
+   "hq": [
+    -9.07454,
+    -78.59357
+   ],
+   "website": "https://www.siderperu.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/SIDERPERU",
+   "logo_file": "SIDERPERU 2.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q126599431",
+   "name": "Sony Music Perú",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Miraflores",
+   "hq": [
+    -12.12091,
+    -77.02893
+   ],
+   "website": "https://www.sonymusic.com.pe/",
+   "listed": false
+  },
+  {
+   "qid": "Q7579200",
+   "name": "Sporade",
+   "cc": "pe",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Sporade",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q64516439",
+   "name": "Tambo+",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "https://www.tambo.pe/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6140525",
+   "name": "Telefónica Móviles Perú",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q48989442",
+   "name": "The Smallest Books in the World",
+   "cc": "pe",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/The_Smallest_Books_in_the_World",
+   "listed": false
+  },
+  {
+   "qid": "Q21014424",
+   "name": "Topitop",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "https://www.topitop.pe",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6164614",
+   "name": "Volcan",
+   "cc": "pe",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Madrid Stock Exchange",
+     "ticker": "XVOLB"
+    }
+   ],
+   "industries": [
+    "mining"
+   ],
+   "isin": [
+    "PEP648014202"
+   ],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.volcan.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Volcan_(mining_company)",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q8026169",
+   "name": "Winter's",
+   "cc": "pe",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.chocolates.com.pe",
+   "enwiki": "https://en.wikipedia.org/wiki/Winter%27s",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

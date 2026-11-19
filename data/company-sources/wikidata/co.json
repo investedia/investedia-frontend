@@ -1,0 +1,2726 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "CO",
+ "count": 143,
+ "companies": [
+  {
+   "qid": "Q4688086",
+   "name": "AeroAndina",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Cali",
+   "hq": [
+    3.44,
+    -76.51972
+   ],
+   "website": "http://www.aeroandina.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/AeroAndina",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20013358",
+   "name": "Agricultural Bank of Colombia",
+   "cc": "co",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "https://www.bancoagrario.gov.co",
+   "logo_file": "Banco Agrario de Colombia logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138842581",
+   "name": "Agrícola Himalaya",
+   "cc": "co",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q2835548",
+   "name": "AKT Motos",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Envigado",
+   "hq": [
+    6.17194,
+    -75.58028
+   ],
+   "website": "http://www.aktmotos.com/573223536114",
+   "enwiki": "https://en.wikipedia.org/wiki/AKT_motos",
+   "logo_file": "AKT logo.PNG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114803474",
+   "name": "Alcanos",
+   "cc": "co",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Neiva",
+   "hq": [
+    2.9275,
+    -75.2875
+   ],
+   "website": "https://alcanosesp.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4735450",
+   "name": "Alpina Productos Alimenticios",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food processing"
+   ],
+   "isin": [],
+   "hq_city": "Sopó",
+   "hq": [
+    4.90806,
+    -73.94028
+   ],
+   "website": "http://www.alpina.com.co/",
+   "enwiki": "https://en.wikipedia.org/wiki/Alpina_Productos_Alimenticios",
+   "logo_file": "Alpina S.A. logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28530628",
+   "name": "Alquería (company)",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cajicá",
+   "hq": [
+    4.91667,
+    -74.025
+   ],
+   "website": "http://www.alqueria.com.co/",
+   "enwiki": "https://en.wikipedia.org/wiki/Alquer%C3%ADa_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4819929",
+   "name": "Audiovisuales",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Audiovisuales",
+   "listed": false
+  },
+  {
+   "qid": "Q4825847",
+   "name": "Auteco",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Medellín",
+   "hq": [
+    6.25,
+    -75.58333
+   ],
+   "website": "http://www.auteco.com.co",
+   "enwiki": "https://en.wikipedia.org/wiki/Auteco",
+   "logo_file": "Auteco logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854068",
+   "name": "AV Villas Bank",
+   "cc": "co",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Caldas",
+   "hq": [
+    6.08861,
+    -75.63611
+   ],
+   "website": "https://www.avvillas.com.co/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_AV_Villas",
+   "logo_file": "Banco AV Villas logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4827687",
+   "name": "Avantel",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "https://www.movilpt.co/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q790788",
+   "name": "Avianca Group",
+   "cc": "co",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "air transport"
+   ],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "https://ir.avianca.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Avianca_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136332991",
+   "name": "Banacol S.A.S.",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q118288279",
+   "name": "Banco Alemán Antioqueño",
+   "cc": "co",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Medellín",
+   "hq": [
+    6.2502,
+    -75.56758
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q102104657",
+   "name": "Banco Central Hipotecario",
+   "cc": "co",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4854127",
+   "name": "Banco de Occidente",
+   "cc": "co",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [
+    "COB23PA00067"
+   ],
+   "hq_city": "Cali",
+   "hq": [
+    3.44,
+    -76.51972
+   ],
+   "website": "https://www.bancodeoccidente.com.co/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_de_Occidente_Credencial",
+   "logo_file": "Banco de Occidente logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16489453",
+   "name": "Banco Popular",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "https://www.bancopopular.com.co",
+   "logo_file": "Banco Popular (Colombia) 2015 logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q806206",
+   "name": "Bancolombia",
+   "cc": "co",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "CIB"
+    }
+   ],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [
+    "US05968L1026"
+   ],
+   "hq_city": "Medellín",
+   "hq": [
+    6.2502,
+    -75.56758
+   ],
+   "website": "https://www.bancolombia.com/",
+   "lei": "54930052NWJRPNMP1W58",
+   "enwiki": "https://en.wikipedia.org/wiki/Bancolombia",
+   "logo_file": "Bancolombia S.A. logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6171916",
+   "name": "Bancoomeva",
+   "cc": "co",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.bancoomeva.com.co/",
+   "listed": false
+  },
+  {
+   "qid": "Q4854176",
+   "name": "Bancóldex",
+   "cc": "co",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.bancoldex.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banc%C3%B3ldex",
+   "logo_file": "Bancoldex Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854122",
+   "name": "Bank of Bogota",
+   "cc": "co",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [
+    "COB01CB00036"
+   ],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.bancodebogota.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_de_Bogot%C3%A1",
+   "logo_file": "Banco de Bogotá logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q109423814",
+   "name": "banks in Colombia",
+   "cc": "co",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q2946947",
+   "name": "Bavaria Brewery",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "brewery"
+   ],
+   "isin": [
+    "COP1621C1034"
+   ],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.bavaria.co",
+   "enwiki": "https://en.wikipedia.org/wiki/Bavaria_Brewery_(Colombia)",
+   "logo_file": "Bavaria logo 2026.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4975756",
+   "name": "Brotzeit",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food service"
+   ],
+   "isin": [],
+   "hq_city": "Singapore",
+   "hq": [
+    1.3,
+    103.8
+   ],
+   "website": "http://www.brotzeit.co",
+   "enwiki": "https://en.wikipedia.org/wiki/Brotzeit_(restaurant)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18417523",
+   "name": "Busscar de Colombia",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Pereira",
+   "hq": [
+    4.81444,
+    -75.69472
+   ],
+   "website": "http://www.busscar.com.co",
+   "enwiki": "https://en.wikipedia.org/wiki/Busscar_de_Colombia",
+   "logo_file": "BUSSCAR logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5739039",
+   "name": "Cafam",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.cafam.com.co/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5717869",
+   "name": "Caja Social Bank",
+   "cc": "co",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [
+    "COB32CB00031"
+   ],
+   "website": "http://www.bancocajasocial.com/",
+   "logo_file": "Banco Caja Social logo.svg",
+   "listed": true
+  },
+  {
+   "qid": "Q139588829",
+   "name": "Canacol Energy",
+   "cc": "co",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "CA1348083025"
+   ],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "https://canacolenergy.com/",
+   "listed": true
+  },
+  {
+   "qid": "Q5047480",
+   "name": "Carulla",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "supermarket"
+   ],
+   "isin": [],
+   "hq_city": "Envigado",
+   "hq": [
+    6.17194,
+    -75.58028
+   ],
+   "website": "https://www.carulla.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Carulla",
+   "logo_file": "Carulla logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137203873",
+   "name": "Casa Luker",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Manizales",
+   "hq": [
+    5.0675,
+    -75.51
+   ],
+   "website": "https://www.casaluker.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113303365",
+   "name": "Celsia",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.celsia.com",
+   "listed": false
+  },
+  {
+   "qid": "Q5760292",
+   "name": "Celumóvil",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1053372",
+   "name": "Cencosud",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": null
+    },
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "CENCOSUD"
+    }
+   ],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "CL0000000100"
+   ],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.cencosud.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cencosud",
+   "logo_file": "Cencosud-2014.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q114802463",
+   "name": "Centrales Eléctricas de Nariño",
+   "cc": "co",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Pasto",
+   "hq": [
+    1.21,
+    -77.27472
+   ],
+   "website": "https://www.cedenar.com.co/",
+   "logo_file": "CEDENAR.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131936200",
+   "name": "Challenger",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5127720",
+   "name": "Claro Colombia",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq",
+     "ticker": "AMOV"
+    }
+   ],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.claro.com.co/",
+   "enwiki": "https://en.wikipedia.org/wiki/Claro_Colombia",
+   "logo_file": "Logo de Claro.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q85753266",
+   "name": "Cola & Pola",
+   "cc": "co",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Cola_%26_Pola",
+   "listed": false
+  },
+  {
+   "qid": "Q136764778",
+   "name": "ColGas",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5147883",
+   "name": "Colombia Móvil",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.tigo.com.co/",
+   "enwiki": "https://en.wikipedia.org/wiki/Colombia_M%C3%B3vil",
+   "logo_file": "Logo Tigo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2822273",
+   "name": "Colombian Academy of History",
+   "cc": "co",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "higher education"
+   ],
+   "isin": [],
+   "website": "http://www.academiahistoria.org.co/",
+   "listed": false
+  },
+  {
+   "qid": "Q20014134",
+   "name": "Colombina",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.colombina.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Colombina_(candy_brand)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55976135",
+   "name": "Copetran",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucaramanga",
+   "hq": [
+    7.11861,
+    -73.11611
+   ],
+   "website": "https://www.copetran.com.co/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5170480",
+   "name": "Corficolombiana",
+   "cc": "co",
+   "types": [
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombia Stock Exchange",
+     "ticker": "CORFICOLCF"
+    },
+    {
+     "exchange": "Colombia Stock Exchange",
+     "ticker": "PFCORFICOL"
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.corficolombiana.com.co/",
+   "enwiki": "https://en.wikipedia.org/wiki/Corficolombiana",
+   "logo_file": "Corfi.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q20725091",
+   "name": "CORPONOR",
+   "cc": "co",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "natural environment"
+   ],
+   "isin": [],
+   "hq_city": "كوكوتا",
+   "hq": [
+    7.9075,
+    -72.50472
+   ],
+   "website": "https://corponor.gov.co/web/",
+   "logo_file": "Corponor logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5737120",
+   "name": "Corporación de la Industria Aeronáutica Colombiana",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.ciac.gov.co",
+   "enwiki": "https://en.wikipedia.org/wiki/CIAC_(company)",
+   "logo_file": "Corporación de la Industria Aeronáutica Colombiana.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q44698252",
+   "name": "COTECMAR",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry",
+    "shipbuilding"
+   ],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.cotecmar.com/en",
+   "enwiki": "https://en.wikipedia.org/wiki/COTECMAR",
+   "logo_file": "Logotipo cotecmar.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98760668",
+   "name": "Crem Helado",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Crem_Helado",
+   "listed": false
+  },
+  {
+   "qid": "Q5184238",
+   "name": "Crepes & Waffles",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "gastronomy"
+   ],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "https://crepesywaffles.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Crepes_%26_Waffles",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5788888",
+   "name": "CVC",
+   "cc": "co",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cali",
+   "hq": [
+    3.44,
+    -76.51972
+   ],
+   "website": "http://www.cvc.gov.co/",
+   "listed": false
+  },
+  {
+   "qid": "Q5202335",
+   "name": "Cámara de Comercio de Cúcuta",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "trade register"
+   ],
+   "isin": [],
+   "hq_city": "Q5636983",
+   "hq": [
+    7.88552,
+    -72.50443
+   ],
+   "website": "https://www.cccucuta.org.co/",
+   "enwiki": "https://en.wikipedia.org/wiki/C%C3%A1mara_de_Comercio_de_C%C3%BAcuta",
+   "logo_file": "Cámara de comercio de Cúcuta.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5860740",
+   "name": "Cúcuta Railways",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5227718",
+   "name": "Datos y Mensajes",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Datos_y_Mensajes",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5242054",
+   "name": "Davivienda",
+   "cc": "co",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "finance",
+    "financial sector"
+   ],
+   "isin": [
+    "COB51PA00076"
+   ],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.davivienda.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Davivienda",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q30505320",
+   "name": "Dentix",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.dentix.co",
+   "logo_file": "Dentix.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5204917",
+   "name": "DFL Televisión",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/DFL_Televisi%C3%B3n",
+   "listed": false
+  },
+  {
+   "qid": "Q5331091",
+   "name": "Easy",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.easy.com.ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Easy_(store)",
+   "logo_file": "Easy-Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1282130",
+   "name": "Ecopetrol",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "EC"
+    },
+    {
+     "exchange": "Toronto Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "US2791581091"
+   ],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.ecopetrol.com.co/",
+   "lei": "254900IDGKCJICKBPA66",
+   "enwiki": "https://en.wikipedia.org/wiki/Ecopetrol",
+   "logo_file": "Ecopetrol wordmark.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5816111",
+   "name": "Edatel",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Medellín",
+   "hq": [
+    6.2502,
+    -75.56758
+   ],
+   "website": "http://www.edatel.com.co/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1046350",
+   "name": "El Tiempo Casa Editorial",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/El_Tiempo_Casa_Editorial",
+   "logo_file": "El Tiempo Casa Editorial.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3053375",
+   "name": "Emcali",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cali",
+   "hq": [
+    3.44,
+    -76.51972
+   ],
+   "website": "http://www.emcali.com.co",
+   "enwiki": "https://en.wikipedia.org/wiki/Emcali",
+   "logo_file": "EMCALI Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131972323",
+   "name": "Empresa de Energía de Pereira",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5324448",
+   "name": "Empresa de Telecomunicaciones de Bogotá",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.etb.com.co",
+   "enwiki": "https://en.wikipedia.org/wiki/ETB_(company)",
+   "logo_file": "ETB Bogotá logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3053381",
+   "name": "Empresas Públicas de Medellín",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Medellín",
+   "hq": [
+    6.2502,
+    -75.56758
+   ],
+   "website": "http://www.epm.com.co",
+   "enwiki": "https://en.wikipedia.org/wiki/Empresas_P%C3%BAblicas_de_Medell%C3%ADn",
+   "logo_file": "Logo EPM.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5549795",
+   "name": "Equidad Seguros",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.laequidadseguros.coop",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q66777896",
+   "name": "Escobar Inc",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [],
+   "hq_city": "Guaynabo",
+   "hq": [
+    18.36667,
+    -66.1
+   ],
+   "website": "https://www.escobarinc.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Escobar_Inc",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5853540",
+   "name": "Expreso Bolivariano",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "https://www.bolivariano.com.co/",
+   "logo_file": "Logo Bolivariano.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132192945",
+   "name": "Expreso Brasilia",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q131990956",
+   "name": "Famisanar",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q124002114",
+   "name": "Faro del Catatumbo",
+   "cc": "co",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q136702090",
+   "name": "Fluid Attacks",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://fluidattacks.com/es/",
+   "enwiki": "https://en.wikipedia.org/wiki/Fluid_Attacks",
+   "logo_file": "Fluid-Attacks-2026.png",
+   "listed": false
+  },
+  {
+   "qid": "Q17478029",
+   "name": "FM Discos y Cintas",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "phonographic industry"
+   ],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5863579",
+   "name": "Fondo Nacional del Ahorro",
+   "cc": "co",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.fna.gov.co",
+   "logo_file": "Fondo Nacional de Ahorro logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5427153",
+   "name": "FSS",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.fss.com.co",
+   "enwiki": "https://en.wikipedia.org/wiki/FSS_(brand)",
+   "logo_file": "FSS Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3304805",
+   "name": "Ginebra San Miguel",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Valle del Cauca Department",
+   "hq": [
+    3.93333,
+    -76.51667
+   ],
+   "website": "http://www.ginebrasanmiguel.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ginebra_San_Miguel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1550912",
+   "name": "GMV Innovating Solutions",
+   "cc": "co",
+   "types": [
+    "Q161726",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry",
+    "automotive industry",
+    "computer security",
+    "information and communications technology",
+    "intelligent transportation system",
+    "space industry"
+   ],
+   "isin": [],
+   "hq_city": "Tres Cantos",
+   "hq": [
+    40.60658,
+    -3.70654
+   ],
+   "website": "http://www.gmv.com",
+   "enwiki": "https://en.wikipedia.org/wiki/GMV_(company)",
+   "logo_file": "GMV RGBrojo&negro.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133273408",
+   "name": "Grupo a",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q26207810",
+   "name": "Grupo Bolívar",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.grupobolivar.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5612210",
+   "name": "Grupo Empresarial Antioqueño",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Empresarial_Antioque%C3%B1o",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109425108",
+   "name": "Grupo ISA",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.isa.co",
+   "enwiki": "https://en.wikipedia.org/wiki/Interconexi%C3%B3n_El%C3%A9ctrica",
+   "listed": false
+  },
+  {
+   "qid": "Q5612238",
+   "name": "Grupo Nutresa",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombia Stock Exchange",
+     "ticker": "NUTRESA"
+    }
+   ],
+   "industries": [
+    "food processing"
+   ],
+   "isin": [],
+   "hq_city": "Medellín",
+   "hq": [
+    6.2502,
+    -75.56758
+   ],
+   "website": "http://www.gruponutresa.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Nutresa",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q96313350",
+   "name": "Grupo Publicaciones Semana",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q112322835",
+   "name": "Grupo R5",
+   "cc": "co",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance"
+   ],
+   "isin": [],
+   "website": "https://www.grupor5.com/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q861947",
+   "name": "Grupo Éxito",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombia Stock Exchange",
+     "ticker": "EXITO"
+    }
+   ],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "COG31PA00010"
+   ],
+   "hq_city": "Envigado",
+   "hq": [
+    6.17194,
+    -75.58028
+   ],
+   "website": "https://www.grupoexito.com.co/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_%C3%89xito",
+   "logo_file": "Grupo Exito logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5628888",
+   "name": "Haceb",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Copacabana",
+   "hq": [
+    6.34607,
+    -75.50815
+   ],
+   "website": "http://www.haceb.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Haceb",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2788637",
+   "name": "Hacienda Nápoles",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Antioquia",
+   "hq": [
+    6.68333,
+    -75.56667
+   ],
+   "website": "https://haciendanapoles.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hacienda_N%C3%A1poles",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5701426",
+   "name": "Helados La Fresita",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Helados_La_Fresita",
+   "listed": false
+  },
+  {
+   "qid": "Q18636452",
+   "name": "Helm Bank",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.grupohelm.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Helm_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20022252",
+   "name": "HV Multiplay",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Miami",
+   "hq": [
+    25.77417,
+    -80.19361
+   ],
+   "website": "https://www.hvmultiplay.co/",
+   "logo_file": "Hv Multiplay logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132129042",
+   "name": "Incauca",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3150575",
+   "name": "Indumil",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "https://www.indumil.gov.co/",
+   "enwiki": "https://en.wikipedia.org/wiki/INDUMIL",
+   "logo_file": "Indumil logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131291014",
+   "name": "Inter Rapidisimo",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "https://interrapidisimo.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3146879",
+   "name": "ISAGEN Energía Productiva",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Medellín",
+   "hq": [
+    6.2502,
+    -75.56758
+   ],
+   "website": "https://www.isagen.com.co",
+   "logo_file": "Isagen logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q16301817",
+   "name": "ISIB blindages",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.isbi.us/quienes.htm",
+   "logo_file": "Isbi logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16580392",
+   "name": "JGB",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/JGB_(company)",
+   "listed": false
+  },
+  {
+   "qid": "Q6277732",
+   "name": "Jorge Barón Televisión",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://jorgebarontelevision.com.co/",
+   "enwiki": "https://en.wikipedia.org/wiki/Jorge_Bar%C3%B3n_Televisi%C3%B3n",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6301102",
+   "name": "Juan Valdez Café",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.juanvaldezcafe.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Juan_Valdez_Caf%C3%A9",
+   "logo_file": "Logo JVC.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16586417",
+   "name": "Kaxon",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5669625",
+   "name": "La 14 (magasin)",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.la14.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Almacenes_La_14",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108491765",
+   "name": "Lulo Bank",
+   "cc": "co",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q62931900",
+   "name": "Merqueo",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "https://merqueo.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6824845",
+   "name": "Metrolinea",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucaramanga",
+   "hq": [
+    7.11861,
+    -73.11611
+   ],
+   "website": "http://www.metrolinea.gov.co/",
+   "enwiki": "https://en.wikipedia.org/wiki/Metrol%C3%ADnea",
+   "logo_file": "Metrolínea logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q108557709",
+   "name": "Monómeros Colombo-Venezolanos",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Barranquilla",
+   "hq": [
+    10.98333,
+    -74.80194
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q105415408",
+   "name": "Moove It",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://moove-it.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Moove_It",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6025449",
+   "name": "Movistar Colombia",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.movistar.co/",
+   "logo_file": "Movistar isotype 2020.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3302354",
+   "name": "National-Report",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "music industry"
+   ],
+   "isin": [],
+   "hq_city": "Colombia",
+   "hq": [
+    4.0,
+    -73.25
+   ],
+   "website": "https://national-report.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/National-Report",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7077828",
+   "name": "Odinsa",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "infrastructure"
+   ],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.odinsa.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Odinsa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17633379",
+   "name": "Orbis Group",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Medellín",
+   "hq": [
+    6.2502,
+    -75.56758
+   ],
+   "website": "http://www.grupo-orbis.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15629142",
+   "name": "Orbitel",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Medellín",
+   "hq": [
+    6.2502,
+    -75.56758
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Orbitel_(Colombian_company)",
+   "logo_file": "Logo Orbitel azul.gif",
+   "listed": false
+  },
+  {
+   "qid": "Q7101928",
+   "name": "Organizacion Corona",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.corona.co/",
+   "enwiki": "https://en.wikipedia.org/wiki/Organizacion_Corona",
+   "logo_file": "Corona (Colombia) logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7107377",
+   "name": "Ospina Coffee Company",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Charlotte",
+   "hq": [
+    35.22694,
+    -80.84333
+   ],
+   "website": "http://www.ospinacoffee.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ospina_Coffee_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16487362",
+   "name": "Paz del Río Steel Mills",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [
+    "COD12PA00017"
+   ],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.pazdelrio.com.co/",
+   "enwiki": "https://en.wikipedia.org/wiki/Acerias_Paz_del_Rio",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q138303666",
+   "name": "Pei",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "real estate investment trust"
+   ],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "logo_file": "Pei Colombia.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7234413",
+   "name": "Postobón",
+   "cc": "co",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "soft drink"
+   ],
+   "isin": [],
+   "hq_city": "Medellín",
+   "hq": [
+    6.2502,
+    -75.56758
+   ],
+   "website": "http://www.postobon.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Postob%C3%B3n",
+   "logo_file": "Postobón S. A. logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131872442",
+   "name": "Previsora Seguros",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q956731",
+   "name": "Producciones PUNCH",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Producciones_PUNCH",
+   "listed": false
+  },
+  {
+   "qid": "Q132158504",
+   "name": "Productos Familia",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7247860",
+   "name": "Productos Ramo",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food processing"
+   ],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.ramo.com.co",
+   "enwiki": "https://en.wikipedia.org/wiki/Productos_Ramo",
+   "logo_file": "Productos Ramo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131520029",
+   "name": "Promigas",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "natural gas"
+   ],
+   "isin": [],
+   "hq_city": "Barranquilla",
+   "hq": [
+    10.98333,
+    -74.80194
+   ],
+   "website": "https://www.promigas.com/",
+   "logo_file": "PROMIGAS.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9555875",
+   "name": "Promúsica Colombia",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.promusica.com.co",
+   "enwiki": "https://en.wikipedia.org/wiki/Prom%C3%BAsica_Colombia",
+   "listed": false
+  },
+  {
+   "qid": "Q36879490",
+   "name": "Rappi",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "https://www.rappi.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rappi",
+   "logo_file": "Rappi logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132151192",
+   "name": "Riopaila",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q48784712",
+   "name": "Royal Films",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Barranquilla",
+   "hq": [
+    10.98333,
+    -74.80194
+   ],
+   "website": "https://cinemasroyalfilms.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Royal_Films",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7398320",
+   "name": "Saeta",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.saetasport.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Saeta_(brand)",
+   "logo_file": "Saeta Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131987798",
+   "name": "Salud Total",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1164594",
+   "name": "Sofasa",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Envigado",
+   "hq": [
+    6.17194,
+    -75.58028
+   ],
+   "website": "http://www.renault.com.co",
+   "enwiki": "https://en.wikipedia.org/wiki/Sofasa",
+   "logo_file": "Renault 2021.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132135055",
+   "name": "Sura EPS",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q20022286",
+   "name": "Sándwich Qbano",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cali",
+   "hq": [
+    3.44,
+    -76.51972
+   ],
+   "website": "https://sandwichqbano.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132305374",
+   "name": "Tecnoglass",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "KYG872641009"
+   ],
+   "website": "https://www.tecnoglass.com/",
+   "listed": true
+  },
+  {
+   "qid": "Q116762332",
+   "name": "Tecnoquímicas",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Tecnoqu%C3%ADmicas",
+   "listed": false
+  },
+  {
+   "qid": "Q7703003",
+   "name": "Terpel",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "http://www.terpel.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Terpel",
+   "logo_file": "Logo terpel.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q590340",
+   "name": "TeVecine",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/TeVecine",
+   "listed": false
+  },
+  {
+   "qid": "Q132897051",
+   "name": "TGI",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q63148677",
+   "name": "Tiendas Ara",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "https://aratiendas.com/",
+   "logo_file": "Solo letras ara.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q5476988",
+   "name": "TIS Productions",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/TIS_Productions",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q10376700",
+   "name": "TIVIT",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Logotipo da TIVIT.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q133196760",
+   "name": "Totto",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Totto Colombia.png",
+   "listed": false
+  },
+  {
+   "qid": "Q25414842",
+   "name": "Triple A S.A. E.S.P.",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Barranquilla",
+   "hq": [
+    10.98333,
+    -74.80194
+   ],
+   "website": "https://www.aaa.com.co",
+   "listed": false
+  },
+  {
+   "qid": "Q3546997",
+   "name": "Tía SA",
+   "cc": "co",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Guayaquil",
+   "hq": [
+    -2.19,
+    -79.8875
+   ],
+   "website": "https://www.tia.com.ec/",
+   "enwiki": "https://en.wikipedia.org/wiki/T%C3%ADa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7896526",
+   "name": "University of Valle Publishing Program",
+   "cc": "co",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cali",
+   "hq": [
+    3.44,
+    -76.51972
+   ],
+   "website": "http://programaeditorial.univalle.edu.co/",
+   "enwiki": "https://en.wikipedia.org/wiki/University_of_Valle_Publishing_Program",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131872772",
+   "name": "Vanti",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q96246029",
+   "name": "Vélez",
+   "cc": "co",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Medellín",
+   "hq": [
+    6.2502,
+    -75.56758
+   ],
+   "website": "https://www.nappa.com.co/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q39081408",
+   "name": "W Studios",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/W_Studios",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106463667",
+   "name": "Éxito",
+   "cc": "co",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "website": "https://www.exito.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Almacenes_%C3%89xito",
+   "logo_file": "Almacenes exito logo.svg",
+   "listed": false
+  }
+ ]
+}
