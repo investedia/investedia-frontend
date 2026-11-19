@@ -105,6 +105,9 @@ def collect():
 
 
 if __name__ == '__main__':
-    ap = argparse.ArgumentParser(); ap.add_argument('step', choices=['submit', 'collect']); ap.add_argument('--limit', type=int, default=50)
+    ap = argparse.ArgumentParser(); ap.add_argument('step', choices=['submit', 'collect']); ap.add_argument('--limit', default='')
     ap.add_argument('--only-missing', action='store_true'); a = ap.parse_args()
-    submit(a.limit, a.only_missing) if a.step == 'submit' else collect()
+    if a.step == 'submit':
+        lim = a.limit or json.loads((ROOT / 'data/company-sources/haiku-request.json').read_text()).get('limit', 50)
+        submit(int(lim), a.only_missing)
+    else: collect()

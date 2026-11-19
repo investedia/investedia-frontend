@@ -3,6 +3,11 @@
 # data/companies.json on the given branch. Never touches main, never deploys. Uses the ANTHROPIC_API_KEY secret.
 name: Company enrich (Haiku)
 on:
+  # A commit that changes data/company-sources/haiku-request.json on a claude/companies-* branch starts a run
+  # (the file holds the limit), so a work branch can run it before this workflow is on main.
+  push:
+    branches: ['claude/companies-*']
+    paths: ['data/company-sources/haiku-request.json']
   workflow_dispatch:
     inputs:
       branch:
@@ -20,13 +25,13 @@ concurrency:
   cancel-in-progress: false
 jobs:
   enrich:
-    if: github.event.inputs.branch != 'main'
+    if: github.ref_name != 'main' && github.event.inputs.branch != 'main'
     runs-on: ubuntu-latest
     timeout-minutes: 1440
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.inputs.branch }}
+          ref: ${{ github.event.inputs.branch || github.ref_name }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -34,7 +39,7 @@ jobs:
       - name: Submit batch
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python tools/companies/haiku_enrich.py submit --limit "${{ github.event.inputs.limit }}"
+        run: python tools/companies/haiku_enrich.py submit --limit "${{ github.event.inputs.limit || '' }}"
       - name: Wait and collect
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -47,4 +52,4 @@ jobs:
           git add data/companies.json data/company-sources/haiku-batch.json
           git diff --cached --quiet && { echo 'No changes.'; exit 0; }
           git -c user.name='Investedia enrich bot' -c user.email='robot@investedia.com' commit -q -m "Company sector, industry and description (Claude Haiku 5.5 batch)"
-          git push -q origin HEAD:${{ github.event.inputs.branch }}
+          git push -q origin HEAD:${{ github.event.inputs.branch || github.ref_name }}
