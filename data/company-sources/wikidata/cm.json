@@ -1,0 +1,880 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "CM",
+ "count": 44,
+ "companies": [
+  {
+   "qid": "Q97179530",
+   "name": "African Forestry and Agriculture Society of Cameroon",
+   "cc": "cm",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4690128",
+   "name": "Afriland First Bank",
+   "cc": "cm",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "http://www.afrilandfirstbank.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Afriland_First_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134571376",
+   "name": "Afrédit",
+   "cc": "cm",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "https://afredit.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q126139775",
+   "name": "Agence de l'Electrification Rurale",
+   "cc": "cm",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "http://www.aer.cm/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q189972",
+   "name": "Bank of Central African States",
+   "cc": "cm",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "https://www.beac.int",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Central_African_States",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q122830262",
+   "name": "Banque camerounaise des petites et moyennes entreprises",
+   "cc": "cm",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "bank",
+    "finance",
+    "small and medium enterprises"
+   ],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "http://www.bc-pme.cm/",
+   "listed": false
+  },
+  {
+   "qid": "Q30765018",
+   "name": "BICEC",
+   "cc": "cm",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.bicec.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q2924071",
+   "name": "Boissons du Cameroun",
+   "cc": "cm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "hq_city": "Douala",
+   "hq": [
+    4.05,
+    9.7
+   ],
+   "website": "https://www.boissonsducameroun.com/fr",
+   "enwiki": "https://en.wikipedia.org/wiki/Boissons_du_Cameroun",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2934785",
+   "name": "Cameroon Development Corporation",
+   "cc": "cm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bota Land",
+   "hq": [
+    4.0197,
+    9.1956
+   ],
+   "website": "https://www.cdc-cameroon.com/index.html",
+   "enwiki": "https://en.wikipedia.org/wiki/Cameroon_Development_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q737477",
+   "name": "Cameroon radio television",
+   "cc": "cm",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "terrestrial television"
+   ],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "https://www.crtv.cm/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cameroon_Radio_Television",
+   "logo_file": "LOGO CRTV.tif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2935672",
+   "name": "Camtel",
+   "cc": "cm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "http://www.camtel.cm/",
+   "enwiki": "https://en.wikipedia.org/wiki/Camtel",
+   "logo_file": "Logos-Camtel-03-blue-2.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134727383",
+   "name": "CCA Bank (Crédit Communautaire d'Afrique)",
+   "cc": "cm",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Douala",
+   "hq": [
+    4.05,
+    9.7
+   ],
+   "website": "https://cca-bank.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Cr%C3%A9dit_Communautaire_d%27Afrique_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25387209",
+   "name": "Cimencam of Cameroon",
+   "cc": "cm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Douala",
+   "hq": [
+    4.05,
+    9.7
+   ],
+   "website": "http://www.cimencam.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131400214",
+   "name": "Editions Akoma Mba",
+   "cc": "cm",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://editionsakomamba.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115861406",
+   "name": "Editions Ifrikiya",
+   "cc": "cm",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "http://editions-ifrikiya.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140503102",
+   "name": "Editions Ndzé",
+   "cc": "cm",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109023559",
+   "name": "Enéo Cameroon",
+   "cc": "cm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Douala",
+   "hq": [
+    4.05,
+    9.7
+   ],
+   "website": "https://www.eneocameroon.cm",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3062276",
+   "name": "Express Union",
+   "cc": "cm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "https://www.expressunion.net",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125732283",
+   "name": "Hévécam",
+   "cc": "cm",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q17061030",
+   "name": "Jumià",
+   "cc": "cm",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "JMIA"
+    }
+   ],
+   "industries": [
+    "online shop"
+   ],
+   "isin": [
+    "US48138M1053"
+   ],
+   "hq_city": "Ikeja",
+   "hq": [
+    6.61857,
+    3.34259
+   ],
+   "website": "https://group.jumia.com",
+   "lei": "391200JWCL5VCOSXNT56",
+   "enwiki": "https://en.wikipedia.org/wiki/Jumia",
+   "logo_file": "JumiaLogo (14).png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q137524200",
+   "name": "LaKelle",
+   "cc": "cm",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "clothing industry",
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Douala",
+   "hq": [
+    4.05,
+    9.7
+   ],
+   "website": "https://lakelle.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28404980",
+   "name": "Madlyn Cazalis",
+   "cc": "cm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "cosmetics industry"
+   ],
+   "isin": [],
+   "hq_city": "Cameroon",
+   "hq": [
+    5.13333,
+    12.65
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56302205",
+   "name": "Maïserie du Cameroun",
+   "cc": "cm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Douala",
+   "hq": [
+    4.05,
+    9.7
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3273242",
+   "name": "MTN Cameroon",
+   "cc": "cm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Cameroon",
+   "hq": [
+    5.13333,
+    12.65
+   ],
+   "website": "http://www.mtncameroon.net",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108587159",
+   "name": "Naja International Group",
+   "cc": "cm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cameroon",
+   "hq": [
+    5.13333,
+    12.65
+   ],
+   "website": "https://naja-production.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3075880",
+   "name": "National Employment Fund",
+   "cc": "cm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.fnecm.org",
+   "listed": false
+  },
+  {
+   "qid": "Q28498925",
+   "name": "Nexttel",
+   "cc": "cm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "http://nexttel.cm",
+   "logo_file": "Viettel Logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q117191961",
+   "name": "Niki Heat",
+   "cc": "cm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "clothing industry",
+    "creation",
+    "entertainment",
+    "make-up",
+    "modelling"
+   ],
+   "isin": [],
+   "hq_city": "Douala",
+   "hq": [
+    4.05,
+    9.7
+   ],
+   "website": "https://www.nikiheat.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123363123",
+   "name": "Novia Industries",
+   "cc": "cm",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness"
+   ],
+   "isin": [],
+   "hq_city": "Douala-Bonabéri industrial zone",
+   "hq": [
+    4.06729,
+    9.68207
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25380110",
+   "name": "Orange Cameroon",
+   "cc": "cm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Douala",
+   "hq": [
+    4.05,
+    9.7
+   ],
+   "website": "http://www.orange.cm",
+   "logo_file": "Orange logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3359753",
+   "name": "PMUC",
+   "cc": "cm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "horse race",
+    "lottery",
+    "sports betting"
+   ],
+   "isin": [],
+   "hq_city": "Douala",
+   "hq": [
+    4.05,
+    9.7
+   ],
+   "website": "http://www.pmuc.cm",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109315228",
+   "name": "Prometal",
+   "cc": "cm",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Douala",
+   "hq": [
+    4.05,
+    9.7
+   ],
+   "website": "https://prometal-cm.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115861356",
+   "name": "Proximité",
+   "cc": "cm",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "http://editionsproximite.cm/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q91407856",
+   "name": "Socatur",
+   "cc": "cm",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Cameroon",
+   "hq": [
+    5.13333,
+    12.65
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116254196",
+   "name": "Société Camerounaise de dépôts Pétroliers",
+   "cc": "cm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Douala",
+   "hq": [
+    4.05,
+    9.7
+   ],
+   "website": "http://www.scdp.cm/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141496984",
+   "name": "Société Immobilière du Cameroun",
+   "cc": "cm",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488533",
+   "name": "Société Nationale des Hydrocarbures",
+   "cc": "cm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "http://www.snh.cm/",
+   "enwiki": "https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_Nationale_des_Hydrocarbures",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141572294",
+   "name": "SOCOOPROMAN Coop-Ca",
+   "cc": "cm",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness",
+    "agriculture"
+   ],
+   "isin": [],
+   "hq_city": "Ngoulemakong",
+   "hq": [
+    3.08333,
+    11.4333
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3488768",
+   "name": "Sodecoton",
+   "cc": "cm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Garoua",
+   "hq": [
+    9.3,
+    13.4
+   ],
+   "website": "https://sodecoton.cm/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97293352",
+   "name": "Sosucam",
+   "cc": "cm",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "SOSUCAM-Logo-2024.png",
+   "listed": false
+  },
+  {
+   "qid": "Q7566489",
+   "name": "South Cameroon Company",
+   "cc": "cm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "international trade"
+   ],
+   "isin": [],
+   "hq_city": "Berlin",
+   "hq": [
+    52.51667,
+    13.38333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/South_Cameroon_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106390371",
+   "name": "The Cameroon Press and Publishing Company",
+   "cc": "cm",
+   "types": [
+    "Q2085381",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "printed press",
+    "printing",
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "https://sopecam.cm/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124958876",
+   "name": "Tradex",
+   "cc": "cm",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "website": "https://tradexsa.co/index.php/en/about-tradex/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48780935",
+   "name": "Vodafone Cameroon",
+   "cc": "cm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "http://www.vodafone.cm/",
+   "enwiki": "https://en.wikipedia.org/wiki/Vodafone_(Cameroon)",
+   "logo_file": "Vodafone logo 2017.svg",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

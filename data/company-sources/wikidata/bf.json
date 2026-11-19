@@ -1,0 +1,235 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "BF",
+ "count": 12,
+ "companies": [
+  {
+   "qid": "Q136408277",
+   "name": "Abissia Productions",
+   "cc": "bf",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "film production"
+   ],
+   "isin": [],
+   "hq_city": "Ouagadougou",
+   "hq": [
+    12.36861,
+    -1.5275
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141205511",
+   "name": "Entreprise Bonkoungou Mahamadou et Fils",
+   "cc": "bf",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ouagadougou",
+   "hq": [
+    12.36861,
+    -1.5275
+   ],
+   "website": "https://ebomaf.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141952721",
+   "name": "Nouvelle société sucrière de la Comoé",
+   "cc": "bf",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Banfora",
+   "hq": [
+    10.63083,
+    -4.75889
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2405619",
+   "name": "Onatel",
+   "cc": "bf",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Ouagadougou",
+   "hq": [
+    12.36861,
+    -1.5275
+   ],
+   "website": "http://www.onatel.bf/",
+   "logo_file": "Logo ONATEL.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15867459",
+   "name": "ONEA",
+   "cc": "bf",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ouagadougou",
+   "hq": [
+    12.36861,
+    -1.5275
+   ],
+   "website": "https://oneabf.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141610855",
+   "name": "Raffinerie nationale d'or du Burkina Faso",
+   "cc": "bf",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "metallurgy",
+    "raffinage"
+   ],
+   "isin": [],
+   "hq_city": "Ouagadougou",
+   "hq": [
+    12.36861,
+    -1.5275
+   ],
+   "website": "https://www.raffinor-bf.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136263313",
+   "name": "Simplon Burkina Faso",
+   "cc": "bf",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ouagadougou",
+   "hq": [
+    12.36861,
+    -1.5275
+   ],
+   "website": "https://simplon.bf/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134930906",
+   "name": "Société de Participation Minière du Burkina",
+   "cc": "bf",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Ouagadougou",
+   "hq": [
+    12.36861,
+    -1.5275
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q139570235",
+   "name": "Société générale Burkina Faso",
+   "cc": "bf",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115575309",
+   "name": "telecel",
+   "cc": "bf",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.telecelfaso.bf/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7829491",
+   "name": "Tovio",
+   "cc": "bf",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "sports equipment",
+    "sportswear"
+   ],
+   "isin": [],
+   "hq_city": "Ouagadougou",
+   "hq": [
+    12.36861,
+    -1.5275
+   ],
+   "website": "http://www.toviosport.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Tovio",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131447826",
+   "name": "Vista Bank",
+   "cc": "bf",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Vista_Bank_Group",
+   "logo_file": "Vista Bank 2026.png",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

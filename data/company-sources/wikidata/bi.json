@@ -1,0 +1,529 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "BI",
+ "count": 35,
+ "companies": [
+  {
+   "qid": "Q130471980",
+   "name": "African Mining Burundi",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/African_Mining_Burundi",
+   "listed": false
+  },
+  {
+   "qid": "Q130442037",
+   "name": "Africell Burundi",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Africell_Burundi",
+   "listed": false
+  },
+  {
+   "qid": "Q130377054",
+   "name": "Bancobu",
+   "cc": "bi",
+   "types": [
+    "Q22687",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Bujumbura",
+   "hq": [
+    -3.3825,
+    29.36111
+   ],
+   "website": "https://www.bancobu.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_Commerciale_du_Burundi",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130711689",
+   "name": "Banque Belgo-Africaine du Burundi",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_Belgo-Africaine_du_Burundi",
+   "listed": false
+  },
+  {
+   "qid": "Q130660115",
+   "name": "Banque de Crédit de Bujumbura",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_de_Cr%C3%A9dit_de_Bujumbura",
+   "listed": false
+  },
+  {
+   "qid": "Q131176999",
+   "name": "Banque de Gestion et de Financement",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_de_Gestion_et_de_Financement",
+   "listed": false
+  },
+  {
+   "qid": "Q18110736",
+   "name": "Brarudi",
+   "cc": "bi",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bujumbura",
+   "hq": [
+    -3.3825,
+    29.36111
+   ],
+   "website": "http://web.brarudi.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/Brarudi_Brewery",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130426026",
+   "name": "Burundi Backbone System",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Burundi_Backbone_System",
+   "listed": false
+  },
+  {
+   "qid": "Q130417256",
+   "name": "Burundi Cement Company",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Burundi_Cement_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q130457605",
+   "name": "Burundi Musongati Mining",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Burundi_Musongati_Mining",
+   "listed": false
+  },
+  {
+   "qid": "Q5000990",
+   "name": "Burundi National Radio and Television",
+   "cc": "bi",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bujumbura",
+   "hq": [
+    -3.3825,
+    29.36111
+   ],
+   "website": "http://www.rtnb.bi",
+   "enwiki": "https://en.wikipedia.org/wiki/Burundi_National_Radio_and_Television",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130548307",
+   "name": "Burundi Petrol Company",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bujumbura",
+   "hq": [
+    -3.3825,
+    29.36111
+   ],
+   "website": "https://www.sopebuburundi.com/login",
+   "enwiki": "https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_P%C3%A9troliere_du_Burundi",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130660304",
+   "name": "Burundi Tea Office",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Burundi_Tea_Office",
+   "listed": false
+  },
+  {
+   "qid": "Q127417063",
+   "name": "Burundi Tobacco Company",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Burundi_Tobacco_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q130442046",
+   "name": "CBINET",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/CBINET",
+   "listed": false
+  },
+  {
+   "qid": "Q124289396",
+   "name": "CRDB Bank Burundi",
+   "cc": "bi",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/CRDB_Bank_Burundi",
+   "listed": false
+  },
+  {
+   "qid": "Q130442051",
+   "name": "Econet Wireless Burundi",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Econet_Wireless_Burundi",
+   "listed": false
+  },
+  {
+   "qid": "Q130542464",
+   "name": "Global Port Services Burundi",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Global_Port_Services_Burundi",
+   "listed": false
+  },
+  {
+   "qid": "Q6045522",
+   "name": "Interbank Burundi",
+   "cc": "bi",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Bujumbura",
+   "hq": [
+    -3.3825,
+    29.36111
+   ],
+   "website": "http://www.interbankbdi.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Interbank_Burundi",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130349070",
+   "name": "Interpetrol Burundi",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Interpetrol_Burundi",
+   "listed": false
+  },
+  {
+   "qid": "Q6392555",
+   "name": "Kenya Commercial Bank",
+   "cc": "bi",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bujumbura",
+   "hq": [
+    -3.3825,
+    29.36111
+   ],
+   "website": "http://www.kcbbankgroup.com/br/",
+   "enwiki": "https://en.wikipedia.org/wiki/KCB_Bank_Burundi_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130442088",
+   "name": "Lacell SU Burundi",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Lacell_SU_Burundi",
+   "listed": false
+  },
+  {
+   "qid": "Q130520316",
+   "name": "Loterie Nationale du Burundi",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Loterie_Nationale_du_Burundi",
+   "listed": false
+  },
+  {
+   "qid": "Q130417198",
+   "name": "LOVINCO",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/LOVINCO",
+   "listed": false
+  },
+  {
+   "qid": "Q113648966",
+   "name": "Lumitel Burundi",
+   "cc": "bi",
+   "types": [
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bujumbura",
+   "hq": [
+    -3.3825,
+    29.36111
+   ],
+   "website": "https://www.lumitel.bi/",
+   "enwiki": "https://en.wikipedia.org/wiki/Lumitel",
+   "logo_file": "LUMITEL LOGO-01.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q130601822",
+   "name": "Meridien Bank Burundi",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Meridien_Bank_Burundi",
+   "listed": false
+  },
+  {
+   "qid": "Q130755555",
+   "name": "National Pharmaceutical Office",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/National_Pharmaceutical_Office",
+   "listed": false
+  },
+  {
+   "qid": "Q130484961",
+   "name": "Office National de la Tourbe",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Office_National_de_la_Tourbe",
+   "listed": false
+  },
+  {
+   "qid": "Q130425939",
+   "name": "Onatel Burundi",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Onatel_Burundi",
+   "listed": false
+  },
+  {
+   "qid": "Q130530023",
+   "name": "OTRACO Burundi",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/OTRACO_Burundi",
+   "listed": false
+  },
+  {
+   "qid": "Q130467070",
+   "name": "Rainbow Mining Burundi",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Rainbow_Mining_Burundi",
+   "listed": false
+  },
+  {
+   "qid": "Q129820330",
+   "name": "REGIDESO Burundi",
+   "cc": "bi",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/REGIDESO_Burundi",
+   "listed": false
+  },
+  {
+   "qid": "Q7386093",
+   "name": "Régie Nationale des Postes",
+   "cc": "bi",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Bujumbura",
+   "hq": [
+    -3.3825,
+    29.36111
+   ],
+   "website": "http://www.poste.bi/",
+   "enwiki": "https://en.wikipedia.org/wiki/R%C3%A9gie_Nationale_des_Postes",
+   "listed": false
+  },
+  {
+   "qid": "Q130755634",
+   "name": "Transport Board of Burundi",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Transport_Board_of_Burundi",
+   "listed": false
+  },
+  {
+   "qid": "Q130425985",
+   "name": "U-COM Burundi",
+   "cc": "bi",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/U-COM_Burundi",
+   "listed": false
+  }
+ ]
+}

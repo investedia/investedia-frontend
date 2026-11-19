@@ -1,0 +1,180 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "CV",
+ "count": 8,
+ "companies": [
+  {
+   "qid": "Q16488933",
+   "name": "Aeroportos e Segurança Aérea",
+   "cc": "cv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Espargos",
+   "hq": [
+    16.75458,
+    -22.94528
+   ],
+   "website": "http://www.asa.cv/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aeroportos_e_Seguran%C3%A7a_A%C3%A9rea",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854079",
+   "name": "Banco Cabo-Verdiano de Negócios",
+   "cc": "cv",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cape Verde",
+   "hq": [
+    15.3,
+    -23.7
+   ],
+   "website": "http://www.bcncv.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Caboverdiano_de_Neg%C3%B3cios",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854091",
+   "name": "Banco Inter-Atlântico",
+   "cc": "cv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    15.07778,
+    -23.62472
+   ],
+   "website": "https://www.bi.cv/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Interatl%C3%A2ntico",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2381261",
+   "name": "Cape Verde Stock Exchange",
+   "cc": "cv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cape Verde",
+   "hq": [
+    15.3,
+    -23.7
+   ],
+   "website": "https://www.bvc.cv",
+   "enwiki": "https://en.wikipedia.org/wiki/Bolsa_de_Valores_de_Cabo_Verde",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5172831",
+   "name": "Correios de Cabo Verde",
+   "cc": "cv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Praia",
+   "hq": [
+    14.91772,
+    -23.50916
+   ],
+   "website": "http://www.correios.cv",
+   "enwiki": "https://en.wikipedia.org/wiki/Correios_de_Cabo_Verde",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135442707",
+   "name": "CVORM",
+   "cc": "cv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "plastics industry",
+    "recycling industry"
+   ],
+   "isin": [],
+   "hq_city": "Ribeirão Chiqueiro",
+   "hq": [
+    15.0055,
+    -23.5241
+   ],
+   "website": "https://cvorm.com/",
+   "logo_file": "Logótipo da CVORM – Industry, SA.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5323682",
+   "name": "ENAPOR",
+   "cc": "cv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "port"
+   ],
+   "isin": [],
+   "hq_city": "Mindelo",
+   "hq": [
+    16.89135,
+    -24.98798
+   ],
+   "website": "http://www.enapor.cv/",
+   "enwiki": "https://en.wikipedia.org/wiki/ENAPOR",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q38791351",
+   "name": "Grupo Lusófona",
+   "cc": "cv",
+   "types": [
+    "Q161726"
+   ],
+   "listings": [],
+   "industries": [
+    "education"
+   ],
+   "isin": [],
+   "hq_city": "Lisbon",
+   "hq": [
+    38.70804,
+    -9.13902
+   ],
+   "website": "http://www.grupolusofona.pt/",
+   "logo_file": "GrupoLusofona.gif",
+   "listed": false
+  }
+ ]
+}
