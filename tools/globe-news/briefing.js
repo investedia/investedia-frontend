@@ -11,6 +11,8 @@
  .bf-btn.done{border-color:#2a2a2f;color:#d4d4d8}.bf-btn.done .bf-ic{background:#18181b;box-shadow:none}
  .bf-card{position:fixed;z-index:32;width:min(500px,calc(100vw - 24px));background:rgba(12,12,15,.98);border:1px solid #3a2414;border-radius:22px;padding:16px 18px;box-shadow:0 30px 80px #000c;color:#ececef;font:14px/1.45 Inter,sans-serif}
  .bf-card[hidden],.bf-btn[hidden]{display:none!important}
+ :root[data-theme=light] .bf-btn{background:rgba(255,255,255,.95);color:#111;border-color:#f3c7a4}:root[data-theme=light] .bf-btn .bf-ic{background:#fff3ea;box-shadow:0 0 0 5px #ff7a1a14}:root[data-theme=light] .bf-btn small{color:#6b6b74}
+ :root[data-theme=light] .bf-card{background:rgba(255,255,255,.96);color:#111;border-color:#f3c7a4}:root[data-theme=light] .bf-cap p{color:#111}:root[data-theme=light] .bf-ib,:root[data-theme=light] .bf-tr{background:#f4f4f5;border-color:#e4e4e7;color:#333}:root[data-theme=light] .bf-b{background:#f7f7f8;border-color:#e4e4e7;color:#222}:root[data-theme=light] .bf-bar{background:#e4e4e7}
  .bf-h{display:flex;align-items:center;gap:12px}.bf-h .bf-ic{width:50px;height:50px}.bf-h small{display:block;color:#8a8a92;font-size:11px;letter-spacing:.08em;text-transform:uppercase}.bf-h b{font-size:19px}
  .bf-pp{width:40px;height:40px;border-radius:50%;background:#fff;border:0;display:flex;align-items:center;justify-content:center;cursor:pointer;margin-left:auto;flex:none}
  .bf-eq{display:inline-flex;gap:2px;align-items:flex-end;height:12px}.bf-eq b{width:2px;background:#ff9d5c;border-radius:1px;animation:bfq .9s ease-in-out infinite}.bf-eq b:nth-child(2){animation-delay:.2s}.bf-eq b:nth-child(3){animation-delay:.4s}@keyframes bfq{0%,100%{height:3px}50%{height:12px}}
