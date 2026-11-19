@@ -1,0 +1,149 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "SZ",
+ "count": 7,
+ "companies": [
+  {
+   "qid": "Q56294552",
+   "name": "Eswatini Electricity Company",
+   "cc": "sz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Mbabane",
+   "hq": [
+    -26.31667,
+    31.13333
+   ],
+   "website": "https://www.eec.co.sz/",
+   "logo_file": "Eswatini-Electricty-Company-Logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q7654123",
+   "name": "Eswatini Environment Authority",
+   "cc": "sz",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Eswatini_Environment_Authority",
+   "listed": false
+  },
+  {
+   "qid": "Q7654131",
+   "name": "Eswatini National Trust Commission",
+   "cc": "sz",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.sntc.org.sz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Eswatini_National_Trust_Commission",
+   "listed": false
+  },
+  {
+   "qid": "Q7190735",
+   "name": "Pick n Pay",
+   "cc": "sz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "ZAE000005443"
+   ],
+   "hq_city": "Kenilworth",
+   "hq": [
+    -33.99583,
+    18.475
+   ],
+   "website": "https://www.pnp.co.za/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pick_n_Pay",
+   "logo_file": "Pick n Pay logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q64029222",
+   "name": "Royal Science and Technology Park",
+   "cc": "sz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Manzini",
+   "hq": [
+    -26.48333,
+    31.36667
+   ],
+   "website": "https://rstp.org.sz",
+   "logo_file": "RSTP logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7654133",
+   "name": "Swaziland Posts and Telecommunications",
+   "cc": "sz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Mbabane",
+   "hq": [
+    -26.31667,
+    31.13333
+   ],
+   "website": "http://www.sptc.co.sz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Eswatini_Posts_and_Telecommunications_Corporation",
+   "logo_file": "Logo Eswatini Post.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4409921",
+   "name": "Swaziland Stock Exchange",
+   "cc": "sz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Mbabane",
+   "hq": [
+    -26.31667,
+    31.13333
+   ],
+   "website": "https://www.ssx.org.sz",
+   "enwiki": "https://en.wikipedia.org/wiki/Eswatini_Stock_Exchange",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

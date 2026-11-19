@@ -1,0 +1,33 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "DJ",
+ "count": 1,
+ "companies": [
+  {
+   "qid": "Q5285307",
+   "name": "Djibouti Telecom",
+   "cc": "dj",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Djibouti",
+   "hq": [
+    11.595,
+    43.14806
+   ],
+   "website": "https://www.djiboutitelecom.dj/",
+   "enwiki": "https://en.wikipedia.org/wiki/Djibouti_Telecom",
+   "logo_file": "Djibouti Telecom Logo.png",
+   "listed": false
+  }
+ ]
+}

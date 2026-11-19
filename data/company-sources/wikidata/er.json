@@ -1,0 +1,126 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "ER",
+ "count": 6,
+ "companies": [
+  {
+   "qid": "Q865838",
+   "name": "Asmara Brewery",
+   "cc": "er",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Asmara",
+   "hq": [
+    15.33333,
+    38.91667
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Asmara_Brewery",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5389605",
+   "name": "EriTel",
+   "cc": "er",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Asmara",
+   "hq": [
+    15.33333,
+    38.91667
+   ],
+   "website": "http://www.tse.com.er",
+   "enwiki": "https://en.wikipedia.org/wiki/Eritrean_Telecommunications_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5389599",
+   "name": "Eritrean Investment and Development Bank",
+   "cc": "er",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Eritrean_Investment_and_Development_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q663493",
+   "name": "Golden Star Brewery",
+   "cc": "er",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Asmara",
+   "hq": [
+    15.33333,
+    38.91667
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5916147",
+   "name": "Housing and Commerce Bank",
+   "cc": "er",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Asmara",
+   "hq": [
+    15.33333,
+    38.91667
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Housing_and_Commerce_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7396485",
+   "name": "Sabur Printing Press",
+   "cc": "er",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Asmara",
+   "hq": [
+    15.33333,
+    38.91667
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Sabur_Printing_Press",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

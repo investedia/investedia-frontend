@@ -1,0 +1,89 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "GQ",
+ "count": 4,
+ "companies": [
+  {
+   "qid": "Q189972",
+   "name": "Bank of Central African States",
+   "cc": "gq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "https://www.beac.int",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Central_African_States",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5323070",
+   "name": "EG LNG",
+   "cc": "gq",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "liquefied natural gas"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/EG_LNG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3093186",
+   "name": "GEPetrol",
+   "cc": "gq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Malabo",
+   "hq": [
+    3.75206,
+    8.7737
+   ],
+   "website": "http://www.equatorialoil.com/pages/GEPetrol%20page.htm",
+   "enwiki": "https://en.wikipedia.org/wiki/GEPetrol",
+   "listed": false
+  },
+  {
+   "qid": "Q7446235",
+   "name": "Segesa",
+   "cc": "gq",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Malabo",
+   "hq": [
+    3.75206,
+    8.7737
+   ],
+   "website": "http://www.segesa.gq",
+   "enwiki": "https://en.wikipedia.org/wiki/Segesa",
+   "logo_file": "SEGESA logo.png",
+   "founded": null,
+   "listed": true
+  }
+ ]
+}

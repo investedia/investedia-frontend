@@ -1,0 +1,4772 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "EG",
+ "count": 259,
+ "companies": [
+  {
+   "qid": "Q130726987",
+   "name": "Abu Dhabi Islamic Bank",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "EGS60111C019"
+   ],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.adib.eg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q20384108",
+   "name": "Abu Zaabal Engineering Industries",
+   "cc": "eg",
+   "types": [
+    "Q270791",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Qalyubia Governorate",
+   "hq": [
+    30.41,
+    31.21
+   ],
+   "website": "https://fact100.momp.gov.eg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Abu_Zaabal_Engineering_Industries",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124117054",
+   "name": "Abu Zaabal Specialized Chemicals",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Abu_Zaabal_Specialized_Chemicals",
+   "listed": false
+  },
+  {
+   "qid": "Q68168383",
+   "name": "Abu Zaabal Specialized Industries",
+   "cc": "eg",
+   "types": [
+    "Q270791",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Qalyubia Governorate",
+   "hq": [
+    30.41,
+    31.21
+   ],
+   "website": "https://fact300.momp.gov.eg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Abu_Zaabal_Specialized_Industries",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4671041",
+   "name": "ACDIMA",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical research"
+   ],
+   "isin": [],
+   "website": "http://www.acdima-egypt.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110488675",
+   "name": "ACUD",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "construction industry"
+   ],
+   "isin": [],
+   "hq_city": "The New Capital",
+   "hq": [
+    30.03369,
+    31.75506
+   ],
+   "website": "http://www.acud.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q54874868",
+   "name": "Agricultural Bank Of Egypt",
+   "cc": "eg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Giza",
+   "hq": [
+    29.987,
+    31.2118
+   ],
+   "website": "https://abe.com.eg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Agricultural_Bank_of_Egypt",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q68171436",
+   "name": "Al Ahram Beverages Company",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://alahrambeverages.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6849079",
+   "name": "Al Ahram Publishing",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q3546991",
+   "name": "Al Kahera Wal Nas",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Giza",
+   "hq": [
+    29.987,
+    31.2118
+   ],
+   "website": "http://www.alkaherawalnas.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q64744349",
+   "name": "Al Karma Publishers",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q115103082",
+   "name": "Al-Maasara Engineering Industries",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Al-Maasara_Engineering_Industries",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q120472434",
+   "name": "Al-Matbʻah al-Ḥusaynīyah al-Miṣrīyaha",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q109298360",
+   "name": "Al-Rawaq",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q130323198",
+   "name": "Alexandria Container and Cargo Handling Company",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "EGS42111C012"
+   ],
+   "hq_city": "Alexandria",
+   "hq": [
+    31.1975,
+    29.8925
+   ],
+   "website": "https://alexcont.com",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q59050067",
+   "name": "Alexandria Electricity Distribution Company",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Alexandria",
+   "hq": [
+    31.1975,
+    29.8925
+   ],
+   "website": "https://alex.ahram.org.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130356967",
+   "name": "Alexandria Mineral Oils Company",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petrochemistry"
+   ],
+   "isin": [
+    "EGS380P1C010"
+   ],
+   "hq_city": "Alexandria",
+   "hq": [
+    31.1975,
+    29.8925
+   ],
+   "website": "https://amoceg.com",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4721002",
+   "name": "Alexandria Water Company",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Alexandria",
+   "hq": [
+    31.1975,
+    29.8925
+   ],
+   "website": "https://alexwater.com.eg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Alexandria_Water_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4856020",
+   "name": "Alexbank",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.alexbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Alexbank",
+   "logo_file": "Alex Bank Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q117349450",
+   "name": "Alkanzy Publishing",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q100258724",
+   "name": "Alrabie Publications",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4745309",
+   "name": "American University in Cairo Press",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "education"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.aucpress.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/American_University_in_Cairo_Press",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12193291",
+   "name": "Amiri Press",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Giza",
+   "hq": [
+    29.987,
+    31.2118
+   ],
+   "website": "http://www.alamiria.com/Sec/Home",
+   "enwiki": "https://en.wikipedia.org/wiki/Bulaq_Press",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113290059",
+   "name": "Andalusia group",
+   "cc": "eg",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "health care"
+   ],
+   "isin": [],
+   "hq_city": "Jeddah",
+   "hq": [
+    21.52917,
+    39.16111
+   ],
+   "website": "http://www.andalusia-alshalalat.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136325",
+   "name": "Anglo-Egyptian Bank",
+   "cc": "eg",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Anglo-Egyptian_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12184644",
+   "name": "Arab African International Bank",
+   "cc": "eg",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://aaib.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Arab_African_Internat%C4%B1onal_Bank",
+   "logo_file": "البنك العربى الافريقى الدولى.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q623639",
+   "name": "Arab American Vehicles",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.aav.com.eg/",
+   "logo_file": "Arab American Vehicles logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139777830",
+   "name": "Arab Bank Egypt",
+   "cc": "eg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Arab_Bank_Egypt",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4783151",
+   "name": "Arab British Helicopter Company",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Helwan",
+   "hq": [
+    29.8493,
+    31.3327
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Arab_British_Helicopter_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q4783172",
+   "name": "Arab Contractors",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.arabcont.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Arab_Contractors",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4783223",
+   "name": "Arab Organization for Industrialization",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.aoi.org.eg",
+   "enwiki": "https://en.wikipedia.org/wiki/Arab_Organization_for_Industrialization",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115102373",
+   "name": "Armoured production and repair factory",
+   "cc": "eg",
+   "types": [
+    "Q270791",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Qalyubia Governorate",
+   "hq": [
+    30.41,
+    31.21
+   ],
+   "website": "https://fact200.momp.gov.eg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Armoured_Production_and_Repair_Factory",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109298362",
+   "name": "Aseer Alktob for Translation, Publication and Distribution",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.aseeralkotb.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q16245812",
+   "name": "Asfour crystal",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "glass production"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://asfourcrystal.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97358762",
+   "name": "B.TECH",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://btech.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/B.TECH_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59050333",
+   "name": "Bank NXT",
+   "cc": "eg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.banknxteg.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4857077",
+   "name": "Banque du Caire",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.bdc.com.eg",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_du_Caire",
+   "logo_file": "Banque du caire Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2060638",
+   "name": "Banque Misr",
+   "cc": "eg",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.banquemisr.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_Misr",
+   "logo_file": "Banque Misr.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139243249",
+   "name": "Banque Nationale Société Générale",
+   "cc": "eg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/National_Soci%C3%A9t%C3%A9_G%C3%A9n%C3%A9rale_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130367701",
+   "name": "Beltone Holding",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "EGS691G1C015"
+   ],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.beltoneholding.com",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12218696",
+   "name": "Cairo Airport Company",
+   "cc": "eg",
+   "types": [
+    "Q270791",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.cairo-airport.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q727769",
+   "name": "Cairo Aviation",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.cairoaviation.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cairo_Aviation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5017755",
+   "name": "Cairo Electric Railways and Heliopolis Oases Company",
+   "cc": "eg",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Heliopolis",
+   "hq": [
+    30.13333,
+    31.3
+   ],
+   "website": "http://www.heliopoliscompany.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Cairo_Electric_Railways_and_Heliopolis_Oases_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59050018",
+   "name": "Cairo Electricity Production Company",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity generation"
+   ],
+   "isin": [],
+   "website": "http://www.cairoepc.com",
+   "listed": false
+  },
+  {
+   "qid": "Q59050046",
+   "name": "Canal Electricity Distribution Company",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power distribution"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q2962510",
+   "name": "Chemins de fer électriques du Caire et des oasis d'Héliopolis",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q130909645",
+   "name": "Cleopatra Hospital Company",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "EGS729J1C018"
+   ],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.cleopatrahospitals.com",
+   "listed": true
+  },
+  {
+   "qid": "Q5152506",
+   "name": "Commercial International Bank",
+   "cc": "eg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [
+    {
+     "exchange": "Egyptian Exchange",
+     "ticker": "COMI.CA"
+    }
+   ],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.cibeg.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Commercial_International_Bank",
+   "logo_file": "Cib Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12236500",
+   "name": "Cook Door",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fast food"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.cookdoor.com.eg",
+   "enwiki": "https://en.wikipedia.org/wiki/Cook_Door",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5169532",
+   "name": "Coralia",
+   "cc": "eg",
+   "types": [
+    "Q1631129"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q106240741",
+   "name": "Credit Agricole - Egypt Bank (S.A.E.)",
+   "cc": "eg",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "banking services"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.ca-egypt.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cr%C3%A9dit_Agricole_Egypt",
+   "logo_file": "Crédit Agricole 2020 logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q30082933",
+   "name": "Dar Al Salam",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.daralsalam.com/",
+   "logo_file": "LOGOdar.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12211219",
+   "name": "Dar Al Tahrir Publishing House",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q10968545",
+   "name": "Dar al-Hilal",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://darelhilal.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q10970763",
+   "name": "Dar Almaref",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://daralmaref.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12211279",
+   "name": "Dar Alnahda Alarabia",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q112958258",
+   "name": "Dar Altanweer",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://daraltanweer.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3015967",
+   "name": "Dar El Shorouk",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "book publishing"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.shorouk.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Dar_El_Shorouk",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q42332138",
+   "name": "Dar Ibn Affan for Publishing and Distribution",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q25454022",
+   "name": "Dar Rosaelyoussef",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124570693",
+   "name": "Dar Roueya for Publishing and Distribution",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q30314197",
+   "name": "Dār Akhbār al-Yawm",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6767437",
+   "name": "Dār al-Fikr al-Islāmī",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12211260",
+   "name": "Dār Al-Kitāb Al-Aʿrabī",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q16121402",
+   "name": "Dār Dawwin lil-Nashr wa-al-Tawzīʻ",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q23048674",
+   "name": "Dār lil-Nashr wa-al-Tawzīʻ",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q130391149",
+   "name": "E-finance For Digital and Financial Investments",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "EGS743O1C013"
+   ],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://efinanceinvestment.com",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q59050027",
+   "name": "East Delta Electricity Production Company",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity generation"
+   ],
+   "isin": [],
+   "website": "http://www.edepco.com.eg/home.htm",
+   "listed": false
+  },
+  {
+   "qid": "Q97163711",
+   "name": "East Mediterranean Gas Forum",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.eastmedgasforum.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/East_Mediterranean_Gas_Forum",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28714723",
+   "name": "EBank",
+   "cc": "eg",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://ebank.com.eg",
+   "enwiki": "https://en.wikipedia.org/wiki/Export_Development_Bank",
+   "listed": false
+  },
+  {
+   "qid": "Q106301298",
+   "name": "Edita Food Industries S.A.E.",
+   "cc": "eg",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "industrie alimentaire"
+   ],
+   "isin": [],
+   "hq_city": "6th of October City",
+   "hq": [
+    29.93611,
+    30.92694
+   ],
+   "website": "https://edita.com.eg",
+   "lei": "2138009F7ZFOJY44V768",
+   "listed": true
+  },
+  {
+   "qid": "Q1299174",
+   "name": "EFG Holding",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "investment"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.efghldg.com",
+   "enwiki": "https://en.wikipedia.org/wiki/EFG_Holding",
+   "logo_file": "EFGH1.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q112894922",
+   "name": "EG Bus",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://eg-bus.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108489358",
+   "name": "Egypt Foods Group",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.egyptfoodsgroup.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2583152",
+   "name": "Egypt Post",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Smart Village Egypt",
+   "hq": [
+    30.07667,
+    31.01889
+   ],
+   "website": "https://egyptpost.gov.eg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Egypt_Post",
+   "logo_file": "EGYPT POST.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12188927",
+   "name": "Egyptian Airports Company",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.eac-airports.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q54874871",
+   "name": "Egyptian Electricity Holding Company",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.eehc.gov.eg/CMSeehc/",
+   "enwiki": "https://en.wikipedia.org/wiki/Egyptian_Electricity_Holding_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59049983",
+   "name": "Egyptian Electricity Transmission Company",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.eetc.net.eg/",
+   "listed": false
+  },
+  {
+   "qid": "Q112659918",
+   "name": "Egyptian General for Tourism and Hotels",
+   "cc": "eg",
+   "types": [
+    "Q270791",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://egoth.com.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1299177",
+   "name": "Egyptian General Petroleum Corporation",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Egyptian_General_Petroleum_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12188926",
+   "name": "Egyptian Holding Company for Airports and Air Navigation",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.ehcaan.com/Arabic/arab_index.aspx",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q127593564",
+   "name": "Egyptian International Pharmaceuticals",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmacy"
+   ],
+   "isin": [],
+   "hq_city": "10th of Ramadan City",
+   "hq": [
+    30.30222,
+    31.74556
+   ],
+   "website": "https://www.eipico.com.eg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12193248",
+   "name": "Egyptian Liquefied Natural Gas",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.egyptianlng.com",
+   "listed": false
+  },
+  {
+   "qid": "Q2778411",
+   "name": "Egyptian National Library and Archives",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.darelkotob.gov.eg/ar-eg/Pages/Home.aspx",
+   "enwiki": "https://en.wikipedia.org/wiki/Egyptian_National_Library_and_Archives",
+   "logo_file": "National Library Egypt.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q253927",
+   "name": "Egyptian National Railways",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.enr.gov.eg/Ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Egyptian_National_Railways",
+   "logo_file": "ENR logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20391128",
+   "name": "Egyptian Ship Repair & Building Company",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "shipbuilding"
+   ],
+   "isin": [],
+   "hq_city": "Alexandria",
+   "hq": [
+    31.1975,
+    29.8925
+   ],
+   "website": "http://esrbc.net",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12218363",
+   "name": "Egyptian Television Network",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "public broadcasting"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Egyptian_Television_Network",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5348458",
+   "name": "Egyptian Union of Liberal Youth",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "education"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://euly.org",
+   "enwiki": "https://en.wikipedia.org/wiki/Egyptian_Union_of_Liberal_Youth",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106044327",
+   "name": "Egyptian-Lebanese Publishing House",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.almasriah.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Egyptian-Lebanese_Publishing_House",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60574225",
+   "name": "El Sobky Film Productions",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "film production"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q59050097",
+   "name": "El-Beheira Electricity Distribution Company",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power distribution"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q130611824",
+   "name": "Emaar Misr for Development",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "real estate industry"
+   ],
+   "isin": [
+    "EGS673Y1C015"
+   ],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.emaarmisr.com",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q18388989",
+   "name": "ESpace for software development",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "software development"
+   ],
+   "isin": [],
+   "hq_city": "Alexandria",
+   "hq": [
+    31.1975,
+    29.8925
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139695270",
+   "name": "FABMISR",
+   "cc": "eg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Fabmisr",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6745525",
+   "name": "Faisal Islamic Bank of Egypt",
+   "cc": "eg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.faisalbank.com.eg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Faisal_Islamic_Bank_of_Egypt",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3073379",
+   "name": "Flash Group",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q20419533",
+   "name": "Food Industries Holdings",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://hcfi-egy.com/ar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12194740",
+   "name": "General Egyptian Book Organization",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12189947",
+   "name": "General petroleum company",
+   "cc": "eg",
+   "types": [
+    "Q270791",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.gpc.com.eg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16471828",
+   "name": "Group-IB",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "computer security",
+    "cybersecurity",
+    "digital security"
+   ],
+   "isin": [],
+   "hq_city": "Singapore",
+   "hq": [
+    1.3,
+    103.8
+   ],
+   "website": "https://www.group-ib.com/ru/",
+   "enwiki": "https://en.wikipedia.org/wiki/Group-IB",
+   "logo_file": "Group-IB logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20416522",
+   "name": "Hannaux Benzion",
+   "cc": "eg",
+   "types": [
+    "Q270791",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20425801",
+   "name": "Heliopolis Chemical Industries",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://fact81.momp.gov.eg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Heliopolis_Chemical_Industries",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130270878",
+   "name": "Heliopolis Company for Housing and Development",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "real estate industry"
+   ],
+   "isin": [
+    "EGS65591C017"
+   ],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.hhd.com.eg",
+   "listed": true
+  },
+  {
+   "qid": "Q20419516",
+   "name": "Holding for Tourism, Hotels and Trade",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12188914",
+   "name": "Holiding Company for Water and Waste Water",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.hcww.com.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12199339",
+   "name": "Housing and Development Bank",
+   "cc": "eg",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.hdb-egy.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Housing_and_Development_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59049993",
+   "name": "Hydro Power  Electricity Production Company",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity generation"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q127502188",
+   "name": "Ibnsina Pharma",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Obour City",
+   "hq": [
+    30.205,
+    31.4575
+   ],
+   "website": "http://www.ibnsina-pharma.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16253659",
+   "name": "Ibrachy & Dermarkar",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "law"
+   ],
+   "isin": [],
+   "hq_city": "Dokki",
+   "hq": [
+    30.03806,
+    31.21111
+   ],
+   "website": "https://id.com.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60572560",
+   "name": "IEOC",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12244326",
+   "name": "Institute of Arab Manuscripts",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.malecso.org",
+   "enwiki": "https://en.wikipedia.org/wiki/Institute_of_Arabic_Manuscripts",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15229827",
+   "name": "Juhayna Food Industries",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "6th of October City",
+   "hq": [
+    29.93611,
+    30.92694
+   ],
+   "website": "https://www.juhayna.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Juhayna_Food_Industries",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17061030",
+   "name": "Jumià",
+   "cc": "eg",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "JMIA"
+    }
+   ],
+   "industries": [
+    "online shop"
+   ],
+   "isin": [
+    "US48138M1053"
+   ],
+   "hq_city": "Ikeja",
+   "hq": [
+    6.58333,
+    3.33333
+   ],
+   "website": "https://group.jumia.com",
+   "lei": "391200JWCL5VCOSXNT56",
+   "enwiki": "https://en.wikipedia.org/wiki/Jumia",
+   "logo_file": "JumiaLogo (14).png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q100258454",
+   "name": "Kotopia Publishing House",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q665020",
+   "name": "Kyriazi freres",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "tobacco industry"
+   ],
+   "isin": [],
+   "hq_city": "Hamburg",
+   "hq": [
+    53.55,
+    10.0
+   ],
+   "website": "https://kiriazi.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kyriazi_Freres",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6866942",
+   "name": "Madboli Library",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q129003775",
+   "name": "Madinet Masr For Housing and Development",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "real estate industry"
+   ],
+   "isin": [
+    "EGS65571C019"
+   ],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://madinetmasr.com",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q121133743",
+   "name": "Maestro Pizza",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fast food"
+   ],
+   "isin": [],
+   "website": "https://maestropizza.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Maestro_Pizza",
+   "logo_file": "Maestro Pizza logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6866788",
+   "name": "Maktabat Al-Osra",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q11198865",
+   "name": "Maktabet Masr",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "book publishing"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q420774",
+   "name": "Manufacturing Commercial Vehicles",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Obour City",
+   "hq": [
+    30.205,
+    31.4575
+   ],
+   "website": "http://www.mcv-eg.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Manufacturing_Commercial_Vehicles",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20423225",
+   "name": "Masreya Media",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Giza",
+   "hq": [
+    29.987,
+    31.2118
+   ],
+   "website": "https://www.masreyamedia.tv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56377056",
+   "name": "Maṭbaʻat Muṣṭafá al-Bābī al-Ḥalabī",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12194029",
+   "name": "Medical Union Pharmaceuticals",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "cosmetics industry",
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q85784760",
+   "name": "Meeza",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [
+    {
+     "exchange": "Egyptian Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://meeza-eg.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Meeza",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6767489",
+   "name": "Merit Publishing",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.darmerit.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59050165",
+   "name": "Metallurgical Industries Holding",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://ar.mih.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16127197",
+   "name": "Middle Delta Electricity Production Company",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity generation"
+   ],
+   "isin": [],
+   "website": "http://www.mdepc.gov.eg/",
+   "listed": false
+  },
+  {
+   "qid": "Q59050127",
+   "name": "Middle Egypt Electricity Distribution Company",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power distribution"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q118946117",
+   "name": "Midelec",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo Governorate",
+   "hq": [
+    30.023,
+    31.551
+   ],
+   "website": "http://www.midelec-eg.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20423274",
+   "name": "MIDTAP",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo Governorate",
+   "hq": [
+    30.023,
+    31.551
+   ],
+   "website": "http://www.midtap.com.eg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20419500",
+   "name": "Misr Insurance Holding Company",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance industry"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.misrholding.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q10982617",
+   "name": "Misr Petroleum",
+   "cc": "eg",
+   "types": [
+    "Q270791",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.misrpetroleum.com.eg/MisrPetroleumArabic/index.html",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2310890",
+   "name": "Misr Spinning and Weaving Company",
+   "cc": "eg",
+   "types": [
+    "Q270791",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "El Mahalla El Kubra",
+   "hq": [
+    30.96667,
+    31.16667
+   ],
+   "website": "http://www.misrmehalla.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Misr_Spinning_and_Weaving_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16126466",
+   "name": "Misr Travel",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://misrtravelco.net/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3317535",
+   "name": "Mo'men Group",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fast food"
+   ],
+   "isin": [],
+   "hq_city": "Alexandria",
+   "hq": [
+    31.1975,
+    29.8925
+   ],
+   "website": "http://www.momen.co/",
+   "logo_file": "Momen New Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6888553",
+   "name": "Modern Arab Association",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Modern_Arab_Association",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12211310",
+   "name": "Nahdet Misr",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Giza",
+   "hq": [
+    29.987,
+    31.2118
+   ],
+   "website": "https://www.nahdetmisrbookstore.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59050475",
+   "name": "Nasser Social Bank",
+   "cc": "eg",
+   "types": [
+    "Q22687",
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "banking"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://nsb.gov.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4119563",
+   "name": "National Bank of Egypt",
+   "cc": "eg",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.nbe.com.eg/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Bank_of_Egypt",
+   "logo_file": "National Bank of Egypt.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107563394",
+   "name": "National Center For Translation",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q59050483",
+   "name": "National Investment Bank",
+   "cc": "eg",
+   "types": [
+    "Q22687",
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "investment banking"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.nib.gov.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q119811263",
+   "name": "National Navigation Company",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://nnc.com.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20391176",
+   "name": "National Nile Company for River Transportation",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "water transport"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.nationalniletrans.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125495463",
+   "name": "Nerhadou International",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1992164",
+   "name": "Nilesat",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [
+    {
+     "exchange": "Egyptian Exchange",
+     "ticker": "EGSA"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "EGS48022C015"
+   ],
+   "hq_city": "6th of October City",
+   "hq": [
+    29.93611,
+    30.92694
+   ],
+   "website": "https://nilesat.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nilesat",
+   "logo_file": "Nilesat.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q59050057",
+   "name": "North Cairo Electricity Distribution Company",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power distribution"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q59050107",
+   "name": "North Delta Electricity Distribution Company",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power distribution"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q107305608",
+   "name": "Nubar Printing House",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q100788275",
+   "name": "Nuclear Power Plants Authority",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity generation"
+   ],
+   "isin": [],
+   "website": "https://nppa.gov.eg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nuclear_Power_Plants_Authority_(Egypt)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115299627",
+   "name": "October Dry port",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.odpeg.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7089088",
+   "name": "Olympic Group",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "home appliance industry"
+   ],
+   "isin": [],
+   "hq_city": "Nasr City",
+   "hq": [
+    30.05194,
+    31.35694
+   ],
+   "website": "https://www.olympic-electric.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6818793",
+   "name": "Omar Effendi",
+   "cc": "eg",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://omareffendi.com.eg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Omar_Effendi",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131444879",
+   "name": "OneXGen Technology",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "artificial intelligence"
+   ],
+   "isin": [],
+   "hq_city": "Jakarta",
+   "hq": [
+    -6.17528,
+    106.82694
+   ],
+   "website": "https://onexgen.com",
+   "logo_file": "OneXGen Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q128033530",
+   "name": "OPay",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.opaybank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Opay",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6458758",
+   "name": "Orange DSL",
+   "cc": "eg",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "Internet industry"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://dsl.orange.eg",
+   "logo_file": "Orange logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1370287",
+   "name": "Orascom Construction Industries",
+   "cc": "eg",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [
+    "NL0010558797"
+   ],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://orascom.com/",
+   "lei": "549300NCMRGIBJYUOE57",
+   "enwiki": "https://en.wikipedia.org/wiki/Orascom_Construction",
+   "logo_file": "Logo of OCI Global.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q163321",
+   "name": "Orascom Construction Limited",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.orascom.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Orascom_Construction_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q12194339",
+   "name": "Oriental Weavers",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://orientalweavers.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123378895",
+   "name": "Palm Hills Developments",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "real estate industry"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.palmhillsdevelopments.com",
+   "logo_file": "Logo Palm Hills Developments.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q3377645",
+   "name": "Petrosport (Egypt)",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://petrosport.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q115114354",
+   "name": "Qaha Chemical Industries",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Qalyubia Governorate",
+   "hq": [
+    30.41,
+    31.21
+   ],
+   "website": "https://fact270.momp.gov.eg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Qaha_Chemical_Industries",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12184634",
+   "name": "QNB Egypt",
+   "cc": "eg",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.qnb.com.eg/",
+   "enwiki": "https://en.wikipedia.org/wiki/QNB_Egypt",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12218668",
+   "name": "Raya",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [
+    {
+     "exchange": "Egyptian Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "information technology industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Giza",
+   "hq": [
+    29.987,
+    31.2118
+   ],
+   "website": "https://rayacorp.com/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12213826",
+   "name": "Rotana Cinema",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dubai",
+   "hq": [
+    25.26972,
+    55.30944
+   ],
+   "website": "https://rotana.net/ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Rotana_Cinema",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7370229",
+   "name": "Rotana Hotels",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abu Dhabi",
+   "hq": [
+    24.45111,
+    54.39694
+   ],
+   "website": "https://www.rotana.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rotana_Hotels",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7835887",
+   "name": "salama tours",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "6th of October City",
+   "hq": [
+    29.93611,
+    30.92694
+   ],
+   "website": "http://www.travcogroup.com/index.php",
+   "enwiki": "https://en.wikipedia.org/wiki/Travco_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48803421",
+   "name": "SICO Technology",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://sico.com.eg/",
+   "enwiki": "https://en.wikipedia.org/wiki/SICO_Technology",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131177388",
+   "name": "Sidi Kerir Petrochemicals",
+   "cc": "eg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "EGS380S1C017"
+   ],
+   "hq_city": "Alexandria",
+   "hq": [
+    31.1975,
+    29.8925
+   ],
+   "website": "https://www.sidpec.com",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q17145923",
+   "name": "Sidnawy and products selling",
+   "cc": "eg",
+   "types": [
+    "Q270791",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://sidnawy-almasnoat.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113290116",
+   "name": "Silicon Waha",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Smart Village Egypt",
+   "hq": [
+    30.07667,
+    31.01889
+   ],
+   "website": "https://siliconwaha.com/indexa.html",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q735415",
+   "name": "Skytrax",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aircraft industry"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "https://skytraxratings.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Skytrax",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59050464",
+   "name": "Societe Arabe Internationale de Banque",
+   "cc": "eg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.saib.com.eg/ar/personal",
+   "enwiki": "https://en.wikipedia.org/wiki/Saib_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q43553143",
+   "name": "Society of Coptic Archaeology",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://sacopte.org/history/",
+   "listed": false
+  },
+  {
+   "qid": "Q60575283",
+   "name": "Société Anonyme de Wadi Kom-Ombo",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "crop and animal production, hunting and related service activities"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q112309492",
+   "name": "Société Générale des Sucreries et de la Raffinerie d'Égypte",
+   "cc": "eg",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of sugar"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59050076",
+   "name": "South Cairo Electricity Distribution Company",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power distribution"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q59050086",
+   "name": "South Delta Electricity Distribution Company",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power distribution"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q63105055",
+   "name": "Spiro Spathis",
+   "cc": "eg",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.spirospathis.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Spiro_Spathis",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28714724",
+   "name": "Suez Canal Bank",
+   "cc": "eg",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Ismailia",
+   "hq": [
+    30.58333,
+    32.26667
+   ],
+   "website": "https://scbank.com.eg/Ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Suez_Canal_Bank",
+   "logo_file": "SCBank Logo EN.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7643697",
+   "name": "Superjet Lines",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.superjet.com.eg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Superjet_Lines",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q73312516",
+   "name": "Swvl",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq",
+     "ticker": "SWVL"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dubai",
+   "hq": [
+    25.26972,
+    55.30944
+   ],
+   "website": "http://swvl.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Swvl",
+   "logo_file": "Swvl Logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7685774",
+   "name": "Tarek Nour Communications",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "marketing"
+   ],
+   "isin": [],
+   "hq_city": "Giza",
+   "hq": [
+    29.987,
+    31.2118
+   ],
+   "website": "https://www.tareknour.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tarek_Nour_Communications",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12188928",
+   "name": "TE Data",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Internet industry"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/TE_Data",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17077749",
+   "name": "The Egyptian Starch, Yeast and Detergents Co.",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Alexandria Governorate",
+   "hq": [
+    31.2,
+    29.91667
+   ],
+   "website": "http://www.egysyd.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12193242",
+   "name": "The United Bank",
+   "cc": "eg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.theubeg.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59050116",
+   "name": "Upper Egypt Electricity Distribution Company",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power distribution"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q59050008",
+   "name": "Upper Egypt Electricity Production Company",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity generation"
+   ],
+   "isin": [],
+   "website": "http://www.ueepc.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q68171103",
+   "name": "West & Middle Delta",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Alexandria",
+   "hq": [
+    31.1975,
+    29.8925
+   ],
+   "website": "https://west-bus.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59050037",
+   "name": "West Delta Electricity Production Company",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity generation"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q68168347",
+   "name": "أبو قير للصناعات الهندسية",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Alexandria",
+   "hq": [
+    31.1975,
+    29.8925
+   ],
+   "website": "https://fact10.momp.gov.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12180616",
+   "name": "أموك",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://amoceg.com",
+   "listed": false
+  },
+  {
+   "qid": "Q115125254",
+   "name": "الإنتاج الحربي للمشروعات والاستشارات الهندسية والتوريدات العامة",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://mpproject.momp.gov.eg/Ar/Default.aspx",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20403295",
+   "name": "الحديد والصلب المصرية",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://hadisolb.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q42341403",
+   "name": "الدار القومية للطباعة والنشر",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q115534826",
+   "name": "الشركة القابضة للري والصرف",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115494215",
+   "name": "الشركة المصرية القابضة للصوامع والتخزين",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.ehcss.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114957451",
+   "name": "الشركة الوطنية المصرية للتطوير والتنمية الصناعية",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo Governorate",
+   "hq": [
+    30.023,
+    31.551
+   ],
+   "website": "http://www.encid.com.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60914173",
+   "name": "الشركة الوطنية لخدمات الاتصالات",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.ncts.com.eg/ncts/index-ar.php",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q64744710",
+   "name": "الشركة الوطنية للغاز",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "natural gas"
+   ],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.natgas.com.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25450970",
+   "name": "القابضة للأدوية والكيماويات والمستلزمات الطبية",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.holdipharma.com.eg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25450972",
+   "name": "القابضة للصناعات الكيماوية",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.cihc-eg.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q68167327",
+   "name": "القابضة للقطن والغزل والنسيج والملابس",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59050170",
+   "name": "القابضة للنقل البحري والبري",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.hcmlt.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q64744284",
+   "name": "القابضة لمشروعات الطرق والكباري والنقل البري",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://holdroads.com/AR/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q112895134",
+   "name": "القاهرة للعبارات والنقل البحري",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Safaga",
+   "hq": [
+    26.75167,
+    33.93444
+   ],
+   "website": "http://www.kcfmt.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20397742",
+   "name": "المصرية للتعدين وإدارة واستغلال المحاجر والملاحات",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.mining-eg.com/ar-eg/Pages/default.aspx",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60573444",
+   "name": "المصرية للرمال السوداء",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.nspo.com.eg/nspo/ebsc/ar/index.html",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20394394",
+   "name": "المعادي للصناعات الهندسية",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60573479",
+   "name": "الوطنية المصرية لاستكشاف وتنمية البترول",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.nspo.com.eg/nspo/ar/petrol/index.html",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20391210",
+   "name": "الوطنية لإنشاء وتنمية الطرق",
+   "cc": "eg",
+   "types": [
+    "Q270791",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20392790",
+   "name": "الوطنية لبيع وتوزيع المنتجات البترولية",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12188931",
+   "name": "الوطنية لخدمات الملاحة الجوية",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.nansceg.net/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60914791",
+   "name": "الوطنية للأسمنت ببني سويف",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.nccegypt.com/nccegypt.com/ar/index.html",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60573443",
+   "name": "الوطنية للإنتاج الحيواني",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.nspo.com.eg/nspo/ar/animal.html",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q68167416",
+   "name": "الوطنية للبطاريات",
+   "cc": "eg",
+   "types": [
+    "Q270791",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q68167411",
+   "name": "الوطنية للزراعات المحمية",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.nspo.com.eg/nspo/ar/plant.html",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60573482",
+   "name": "الوطنية للمعارض والمؤتمرات الدولية",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://nc-iec.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104739649",
+   "name": "ببلومانيا للنشر والتوزيع",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12196006",
+   "name": "بتروجاس",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.petrogas.com.eg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59050431",
+   "name": "بنك التنمية الصناعية المصري",
+   "cc": "eg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.idb.com.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12199357",
+   "name": "بنها للصناعات الإلكترونية",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Qalyubia Governorate",
+   "hq": [
+    30.41,
+    31.21
+   ],
+   "website": "https://fact144.momp.gov.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11033793",
+   "name": "تليمصر",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q113549849",
+   "name": "جسور النصر للتصدير والاستيراد",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://gosoor.com.eg/?lang=ar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20382787",
+   "name": "حلوان للآلات والمعدات",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://fact999.momp.gov.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20382797",
+   "name": "حلوان للأجهزة المعدنية",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://fact360.momp.gov.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20382807",
+   "name": "حلوان للصناعات غير الحديدية",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://fact63.momp.gov.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20382822",
+   "name": "حلوان للمسبوكات",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://fact9.momp.gov.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20382831",
+   "name": "حلوان لمحركات الديزل",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://fact909.momp.gov.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136522860",
+   "name": "دار إشراقة للنشر",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q20406264",
+   "name": "دار الدفاع للصحافة والنشر",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q25450077",
+   "name": "دار المختار الإسلامي",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12211303",
+   "name": "دار ليلى",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q20410403",
+   "name": "دار مير للنشر",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125496130",
+   "name": "دار يافي للنشر والتوزيع",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q114823534",
+   "name": "سايلو مصر للصناعات الغذائية",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.silo-foods.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12217420",
+   "name": "سوكو",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Mohandesin",
+   "hq": [
+    30.0531,
+    31.2017
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q20398646",
+   "name": "شبرا للصناعات الهندسية",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://fact27.momp.gov.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59050314",
+   "name": "شركة السكر والصناعات التكاملية المصرية",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.siicegypt.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111812527",
+   "name": "شركة الصرف الصحي بالإسكندرية",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Alexandria",
+   "hq": [
+    31.1975,
+    29.8925
+   ],
+   "website": "https://asdcoeg.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114587977",
+   "name": "شركة المحاريث والهندسة",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://almaharees.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113882824",
+   "name": "شركة النصر لصناعة الكوك",
+   "cc": "eg",
+   "types": [
+    "Q270791",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114418383",
+   "name": "شركة النصر للتعدين",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Edfu",
+   "hq": [
+    24.97806,
+    32.87889
+   ],
+   "website": "http://www.elnasrmining.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123053767",
+   "name": "شركة صوت الفن",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q68171366",
+   "name": "شركة مياه الشرب بالقاهرة الكبرى",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "http://www.gcwc.com.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60573481",
+   "name": "شلاتين للثروة المعدنية",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://smrc.com.eg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12221909",
+   "name": "طه شبرا",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q113525482",
+   "name": "عصير الكتب للنشر والتوزيع",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30080755",
+   "name": "فاكسيرا",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Giza",
+   "hq": [
+    29.987,
+    31.2118
+   ],
+   "website": "http://www.vacsera.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20397724",
+   "name": "قطاع الأمن الغذائي.",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q60574286",
+   "name": "قها وإدفينا للصناعات الغذائية المتطورة",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q68168332",
+   "name": "كوفرتينا",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q60321026",
+   "name": "مدينة دمياط للاثاث",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Damietta Governorate",
+   "hq": [
+    31.4,
+    31.72
+   ],
+   "website": "http://damiettafc.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114416139",
+   "name": "مصانع الدلتا للصلب",
+   "cc": "eg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://ar.mih.eg/myservice/delta-steel-mill-company/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123169538",
+   "name": "مصر حلوان للغزل والنسيج",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Helwan",
+   "hq": [
+    29.8493,
+    31.3327
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q55391142",
+   "name": "مطبعة كردستان العلمية",
+   "cc": "eg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12199358",
+   "name": "ميد بنك",
+   "cc": "eg",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q25451706",
+   "name": "هولسيم مصر",
+   "cc": "eg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "cement"
+   ],
+   "isin": [],
+   "hq_city": "New Cairo",
+   "hq": [
+    30.03,
+    31.47
+   ],
+   "website": "https://www.holcim.com.eg/en",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q63121553",
+   "name": "ِAmoun Pharmaceutical",
+   "cc": "eg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "listed": false
+  }
+ ]
+}
