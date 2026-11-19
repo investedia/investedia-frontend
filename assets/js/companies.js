@@ -72,7 +72,7 @@ const coStart = () => {
   }
 
   function page(d, m, all) {
-    const c = d.companies.find(x => x.slug === slug);
+    const c = d.companies.find(x => x.slug === slug) || d.companies.find(x => (x.aliases || []).includes(slug));  // merged duplicates keep their old link
     if (!c) { root.innerHTML = `<div class="page-head"><h1>Company not found</h1><p class="lede"><a href="companies">Browse all companies</a></p></div>`; return; }
     document.title = `${c.name}: company profile · Investedia`;
     const px = Object.fromEntries((m?.assets || []).map(a => [a.s, a])), syms = new Set(c.listings.map(l => l.s.toUpperCase()));
