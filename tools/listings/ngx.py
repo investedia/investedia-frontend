@@ -3,9 +3,9 @@
   python3 tools/listings/ngx.py --fetch   download the official list to data/listed-companies/ngx.json (source URL, date, SHA-256)
   python3 tools/listings/ngx.py           add NGX companies that are not yet in data/companies.json
 
-Companies already in the directory are never changed. New ones get one listing on NGX with "tracked": false (we do
-not track their price yet), and only facts the exchange publishes: legal name, ISIN, sector and sub-sector, website,
-date of incorporation (as "founded" year), market board. Every new company lists the NGX page as its source.
+Companies already in the directory are never changed. New ones get one listing on NGX with "tracked": false and
+facts only: company name, ticker and ISIN (owner, 19 Nov 2026: the NGX website terms restrict republishing, so no
+sector, website, dates or board). Every new company lists the NGX page as its source.
 """
 import argparse, datetime, hashlib, json, pathlib, re, sys, unicodedata, urllib.request
 
