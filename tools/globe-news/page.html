@@ -2022,6 +2022,7 @@ function hideHover() { $('hover').classList.remove('pin'); pinned = null; delete
 let tapEdge = null;
 function tap(x, y, touch) {
   if (PROJ.on) return projTap(x, y);
+  if (window.InvCompanies && InvCompanies.tap(x, y)) return;  // Companies tab: a click on a company pin
   if (MARKET.on) return marketTap(x,y);
   if (pinned) hideHover(); else if (touch) hideHover();
   const up = !EMBED && upPick(x, y); if (up) { hist = []; view = { k: 'top' }; sel = null; selCountry = null; panelTab = 'upcoming'; render(); if (phone()) setSheet('full'); return; }
@@ -2928,7 +2929,7 @@ function frame(t) {
   ctx.restore();
 
   if (PROJ.on) { drawProj(); ctx.restore(); requestAnimationFrame(frame); return; }
-  if (MARKET.on) { drawMarketMode(); drawMarketsOverlay(t); ctx.restore(); requestAnimationFrame(frame); return; }
+  if (MARKET.on) { if (!(window.InvCompanies && InvCompanies.active())) drawMarketMode(); if (!(window.InvCompanies && InvCompanies.active())) drawMarketsOverlay(t); if (window.InvCompanies) InvCompanies.draw(t); ctx.restore(); requestAnimationFrame(frame); return; }
 
   // connections (only for the article you're looking at)
   const focus = impactFocus;
