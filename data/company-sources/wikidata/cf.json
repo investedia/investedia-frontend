@@ -1,0 +1,94 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "CF",
+ "count": 4,
+ "companies": [
+  {
+   "qid": "Q189972",
+   "name": "Bank of Central African States",
+   "cc": "cf",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "https://www.beac.int",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Central_African_States",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25383122",
+   "name": "Moov Centrafrique",
+   "cc": "cf",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Central African Republic",
+   "hq": [
+    6.7,
+    20.9
+   ],
+   "website": "http://www.moov-rca.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17636121",
+   "name": "Orange Centrafrique",
+   "cc": "cf",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Bangui",
+   "hq": [
+    4.37325,
+    18.56283
+   ],
+   "website": "http://www.orangerca.com/",
+   "logo_file": "Orange logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25383055",
+   "name": "Telecel Centrafrique",
+   "cc": "cf",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Bangui",
+   "hq": [
+    4.37325,
+    18.56283
+   ],
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

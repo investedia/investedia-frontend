@@ -1,0 +1,857 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "CD",
+ "count": 42,
+ "companies": [
+  {
+   "qid": "Q112115551",
+   "name": "Achour Group",
+   "cc": "cd",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "wholesale"
+   ],
+   "isin": [],
+   "hq_city": "Ngaliema",
+   "hq": [
+    -4.34889,
+    15.25278
+   ],
+   "website": "https://www.achourgroupe.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25999132",
+   "name": "Airtel DRC",
+   "cc": "cd",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "https://www.airtel.cd",
+   "logo_file": "Airtel Africa logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106413558",
+   "name": "Anti-Corruption Research Center",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "https://anticorruption-center.org",
+   "logo_file": "CERC LOGO.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107359743",
+   "name": "Banque du Congo Belge",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "central banking",
+    "financial service activities, except insurance and pension funding"
+   ],
+   "isin": [],
+   "hq_city": "Brussels",
+   "hq": [
+    50.84667,
+    4.35167
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_du_Congo_Belge",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2923625",
+   "name": "Bralima Brewery",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "http://www.bralima.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bralima",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2882990",
+   "name": "Commercial Bank of Congo",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial service activities, except insurance and pension funding"
+   ],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "http://www.bcdc.cd",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_commerciale_du_Congo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106311310",
+   "name": "Compagnie Industrielle et de Transports au Stanley Pool",
+   "cc": "cd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "water transport"
+   ],
+   "isin": [],
+   "hq_city": "Brussels",
+   "hq": [
+    50.84667,
+    4.35167
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Compagnie_Industrielle_et_de_Transports_au_Stanley_Pool",
+   "listed": false
+  },
+  {
+   "qid": "Q2933304",
+   "name": "Congo General Savings Bank",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Democratic Republic of the Congo",
+   "hq": [
+    -2.88,
+    23.65611
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q392470",
+   "name": "Congolese press agency",
+   "cc": "cd",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "https://acp.cd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Agence_Congolaise_de_Presse",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21178738",
+   "name": "Equity Bank Congo",
+   "cc": "cd",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "https://www.equitybank.cd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Equity_BCDC",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27961618",
+   "name": "Fly CAA",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q391647",
+   "name": "Gécamines",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Lubumbashi",
+   "hq": [
+    -11.66417,
+    27.48278
+   ],
+   "website": "http://gecamines.cd/",
+   "enwiki": "https://en.wikipedia.org/wiki/G%C3%A9camines",
+   "logo_file": "Gcm.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136689929",
+   "name": "Holding Cabinet G10",
+   "cc": "cd",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "externalization"
+   ],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "https://www.holdingcabinetg10.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132146504",
+   "name": "Institut financière pour les œuvres de Développement",
+   "cc": "cd",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services",
+    "wire transfer"
+   ],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "https://www.ifodsa.cd/",
+   "listed": true
+  },
+  {
+   "qid": "Q2924067",
+   "name": "Katanga breweries",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry",
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Brussels",
+   "hq": [
+    50.84667,
+    4.35167
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113838854",
+   "name": "Keka Aerospace",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry",
+    "space industry"
+   ],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "logo_file": "Kekaaerospace.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2828209",
+   "name": "Kivu Air",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Goma",
+   "hq": [
+    -1.6641,
+    29.22286
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Kivu_Air",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113302745",
+   "name": "Les Nouvelles Éditions DenyLegrand",
+   "cc": "cd",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131827105",
+   "name": "Les éditions NGE",
+   "cc": "cd",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Goma",
+   "hq": [
+    -1.6641,
+    29.22286
+   ],
+   "website": "https://leseditionsnge.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110565645",
+   "name": "Madi Pictures",
+   "cc": "cd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Goma",
+   "hq": [
+    -1.6641,
+    29.22286
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21116150",
+   "name": "Maniema Mining Corporation",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining industry"
+   ],
+   "isin": [],
+   "hq_city": "Lubumbashi",
+   "hq": [
+    -11.66417,
+    27.48278
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q115742937",
+   "name": "National Export Promotion Agency",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1481581",
+   "name": "National Railway Company of the Congo",
+   "cc": "cd",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Lubumbashi",
+   "hq": [
+    -11.66417,
+    27.48278
+   ],
+   "website": "https://www.snccsa.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_nationale_des_chemins_de_fer_du_Congo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132531176",
+   "name": "Office des voiries et drainage",
+   "cc": "cd",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "drainage",
+    "thoroughfare"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1577006",
+   "name": "Office national des transports",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "https://sctp-sa-rdc.online/",
+   "enwiki": "https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_commerciale_des_transports_et_des_ports",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3349575",
+   "name": "Office of Marine Cargo Management",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://ogefremsite.org/",
+   "listed": false
+  },
+  {
+   "qid": "Q2992995",
+   "name": "Orange DRC",
+   "cc": "cd",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "https://www.orange.cd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Orange_RDC",
+   "logo_file": "Orange logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141629393",
+   "name": "Plantations et huileries du Congo",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness",
+    "agriculture"
+   ],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "https://phc-congo.com",
+   "logo_file": "Feronia PHC Logo.pdf",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3370248",
+   "name": "Rawbank",
+   "cc": "cd",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "http://www.rawbank.cd",
+   "enwiki": "https://en.wikipedia.org/wiki/Rawbank",
+   "logo_file": "Rawbank DRC logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7370229",
+   "name": "Rotana Hotels",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abu Dhabi",
+   "hq": [
+    24.45111,
+    54.39694
+   ],
+   "website": "https://www.rotana.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rotana_Hotels",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3487938",
+   "name": "Society of Industrial and Mining Development of Zaire",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q375656",
+   "name": "Societé Minière de Bakwanga",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_Mini%C3%A8re_de_Bakwanga",
+   "listed": false
+  },
+  {
+   "qid": "Q3488127",
+   "name": "Société des chemins de fer vicinaux du Congo",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Brussels",
+   "hq": [
+    50.84667,
+    4.35167
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_des_Chemins_de_Fer_Vicinaux_du_Congo",
+   "listed": false
+  },
+  {
+   "qid": "Q21036275",
+   "name": "Société des Mines d’Or de Kilo-Moto",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Brussels",
+   "hq": [
+    50.84667,
+    4.35167
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q132146639",
+   "name": "Société financière de Développement",
+   "cc": "cd",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services",
+    "wire transfer"
+   ],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "https://www.ifodsa.cd/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3488513",
+   "name": "Société nationale d'électricité",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "http://www.snel.cd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_Nationale_d%27%C3%89lectricit%C3%A9",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132151248",
+   "name": "Sofibanque",
+   "cc": "cd",
+   "types": [
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services",
+    "wire transfer"
+   ],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "https://sofibanque.com/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q132151560",
+   "name": "Soficom Transfert",
+   "cc": "cd",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services",
+    "wire transfer"
+   ],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "https://www.groupesoficom.com/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q132145179",
+   "name": "Solidaire Banque",
+   "cc": "cd",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services",
+    "wire transfer"
+   ],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "https://www.solidairebanque.com/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1362123",
+   "name": "Supercell",
+   "cc": "cd",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Goma",
+   "hq": [
+    -1.6641,
+    29.22286
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Supercell_(mobile_network)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1890153",
+   "name": "Trust Merchant Bank",
+   "cc": "cd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Lubumbashi",
+   "hq": [
+    -11.66417,
+    27.48278
+   ],
+   "website": "http://www.trustmerchantbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Trust_Merchant_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111468859",
+   "name": "Working Ladies",
+   "cc": "cd",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kinshasa",
+   "hq": [
+    -4.32194,
+    15.31194
+   ],
+   "website": "https://workingladiescabs.com",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

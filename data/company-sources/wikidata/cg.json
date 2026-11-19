@@ -1,0 +1,168 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "CG",
+ "count": 8,
+ "companies": [
+  {
+   "qid": "Q189972",
+   "name": "Bank of Central African States",
+   "cc": "cg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yaoundé",
+   "hq": [
+    3.85778,
+    11.51806
+   ],
+   "website": "https://www.beac.int",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Central_African_States",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135486535",
+   "name": "Grands Moulins du Kouilou",
+   "cc": "cg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness"
+   ],
+   "isin": [],
+   "hq_city": "Pointe-Noire",
+   "hq": [
+    -4.7975,
+    11.85028
+   ],
+   "website": "https://supermarketgroupe.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3315610",
+   "name": "Minoterie du Congo",
+   "cc": "cg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q140590257",
+   "name": "MTN Congo",
+   "cc": "cg",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Brazzaville",
+   "hq": [
+    -4.26944,
+    15.27111
+   ],
+   "website": "https://www.mtn.cg/",
+   "logo_file": "MTN logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138748922",
+   "name": "SARIS-Congo",
+   "cc": "cg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nkayi",
+   "hq": [
+    -4.18417,
+    13.28833
+   ],
+   "website": "http://www.sariscongo.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131333033",
+   "name": "Tamaris",
+   "cc": "cg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Paris",
+   "hq": [
+    48.85667,
+    2.35222
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Tamaris_(record_label)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16739794",
+   "name": "Warid Congo",
+   "cc": "cg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Brazzaville",
+   "hq": [
+    -4.26944,
+    15.27111
+   ],
+   "website": "http://www.waridtel.cg",
+   "enwiki": "https://en.wikipedia.org/wiki/Warid_Congo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60848362",
+   "name": "Énergie électrique du Congo",
+   "cc": "cg",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power distribution",
+    "electric power transmission",
+    "electricity generation",
+    "trade of electricity"
+   ],
+   "isin": [],
+   "website": "https://e2c.cg",
+   "listed": false
+  }
+ ]
+}
