@@ -1,0 +1,355 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "HN",
+ "count": 19,
+ "companies": [
+  {
+   "qid": "Q133567464",
+   "name": "ANFHORA",
+   "cc": "hn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://anfhora.org/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5715556",
+   "name": "BAC Credomatic",
+   "cc": "hn",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "San José",
+   "hq": [
+    9.93274,
+    -84.07961
+   ],
+   "website": "https://www.baccredomatic.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/BAC_Credomatic",
+   "logo_file": "BAC Credomatic logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5715576",
+   "name": "BANADESA",
+   "cc": "hn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tegucigalpa",
+   "hq": [
+    14.10578,
+    -87.20471
+   ],
+   "website": "https://banadesa.hn/",
+   "enwiki": "https://en.wikipedia.org/wiki/BANADESA",
+   "logo_file": "Logo Banadesa.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q118287927",
+   "name": "Banco Atlantida",
+   "cc": "hn",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "La Ceiba",
+   "hq": [
+    15.78334,
+    -86.79178
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21095873",
+   "name": "Banco Continental (Honduras)",
+   "cc": "hn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www2.bancon.hn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Continental_(Honduras)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139884107",
+   "name": "Banco Davivienda Honduras",
+   "cc": "hn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Tegucigalpa",
+   "hq": [
+    14.10578,
+    -87.20471
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Davivienda_Honduras",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141539961",
+   "name": "Banco Ficensa",
+   "cc": "hn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tegucigalpa",
+   "hq": [
+    14.10578,
+    -87.20471
+   ],
+   "website": "https://www.ficensa.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59837276",
+   "name": "Editorial Universitaria",
+   "cc": "hn",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5374441",
+   "name": "Empresa Nacional de Energía Eléctrica",
+   "cc": "hn",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tegucigalpa",
+   "hq": [
+    14.10578,
+    -87.20471
+   ],
+   "website": "https://www.enee.hn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Empresa_Nacional_de_Energ%C3%ADa_El%C3%A9ctrica",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5831724",
+   "name": "Empresa Nacional Portuaria",
+   "cc": "hn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Empresa_Nacional_Portuaria_(Honduras)",
+   "listed": false
+  },
+  {
+   "qid": "Q5886178",
+   "name": "Ficohsa",
+   "cc": "hn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tegucigalpa",
+   "hq": [
+    14.10578,
+    -87.20471
+   ],
+   "website": "https://www.ficohsa.com/",
+   "logo_file": "Ficohsa logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q97353854",
+   "name": "Gasolineras Uno",
+   "cc": "hn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Gasolineras_Uno",
+   "listed": false
+  },
+  {
+   "qid": "Q21096967",
+   "name": "Grupo Continental (Honduras)",
+   "cc": "hn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Continental_(Honduras)",
+   "listed": false
+  },
+  {
+   "qid": "Q3393381",
+   "name": "Hondutel",
+   "cc": "hn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tegucigalpa",
+   "hq": [
+    14.10578,
+    -87.20471
+   ],
+   "website": "http://www.hondutel.hn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hondutel",
+   "logo_file": "Logo-hondutel.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q10303065",
+   "name": "InterAirports",
+   "cc": "hn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/InterAirports",
+   "listed": false
+  },
+  {
+   "qid": "Q3372916",
+   "name": "JBN-TV",
+   "cc": "hn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.jbntv.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/JBN-TV",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q39052944",
+   "name": "Lacthosa",
+   "cc": "hn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food service"
+   ],
+   "isin": [],
+   "hq_city": "Honduras",
+   "hq": [
+    14.63333,
+    -86.81667
+   ],
+   "website": "http://lacthosa.com/?lang=en",
+   "enwiki": "https://en.wikipedia.org/wiki/Lacthosa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q43569797",
+   "name": "Lufussa",
+   "cc": "hn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity supply company"
+   ],
+   "isin": [],
+   "hq_city": "Honduras",
+   "hq": [
+    14.63333,
+    -86.81667
+   ],
+   "website": "http://lufussa.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Lufussa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4353650",
+   "name": "Rosario Mining Company",
+   "cc": "hn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "New York City",
+   "hq": [
+    40.71278,
+    -74.00611
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Rosario_Mining_Company",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

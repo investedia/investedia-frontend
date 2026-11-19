@@ -1,0 +1,273 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "HT",
+ "count": 13,
+ "companies": [
+  {
+   "qid": "Q105620930",
+   "name": "Balistrad",
+   "cc": "ht",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "journalism",
+    "media industry"
+   ],
+   "isin": [],
+   "hq_city": "Port-au-Prince",
+   "hq": [
+    18.54694,
+    -72.34028
+   ],
+   "website": "https://balistrad.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Balistrad",
+   "logo_file": "Balistrad-1-3-500x500.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2883379",
+   "name": "Bank of the Republic of Haiti",
+   "cc": "ht",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Port-au-Prince",
+   "hq": [
+    18.54694,
+    -72.34028
+   ],
+   "website": "https://www.brh.ht/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_the_Republic_of_Haiti",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2882927",
+   "name": "Banque nationale de crédit",
+   "cc": "ht",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial service activities, except insurance and pension funding"
+   ],
+   "isin": [],
+   "hq_city": "Port-au-Prince",
+   "hq": [
+    18.54694,
+    -72.34028
+   ],
+   "website": "http://www.bnconline.com",
+   "listed": false
+  },
+  {
+   "qid": "Q2924024",
+   "name": "Brasserie Nationale d'Haiti",
+   "cc": "ht",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "brewing"
+   ],
+   "isin": [],
+   "hq_city": "Port-au-Prince",
+   "hq": [
+    18.54694,
+    -72.34028
+   ],
+   "website": "http://www.branahaiti.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Brasserie_Nationale_d%27Ha%C3%AFti",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2986006",
+   "name": "Comme il faut",
+   "cc": "ht",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "tobacco industry"
+   ],
+   "isin": [],
+   "hq_city": "Port-au-Prince",
+   "hq": [
+    18.54694,
+    -72.34028
+   ],
+   "website": "http://commeilfaut.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Compagnie_des_Tabacs_Comme_Il_Faut,_S.A.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134985056",
+   "name": "Faces of Haiti",
+   "cc": "ht",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "news media"
+   ],
+   "isin": [],
+   "hq_city": "Florida",
+   "hq": [
+    28.13333,
+    -81.63167
+   ],
+   "website": "http://facesofhaiti.online",
+   "logo_file": "Faces of Haiti.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5465044",
+   "name": "Fonkoze",
+   "cc": "ht",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Port-au-Prince",
+   "hq": [
+    18.54694,
+    -72.34028
+   ],
+   "website": "http://www.fonkoze.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/Fonkoze",
+   "listed": false
+  },
+  {
+   "qid": "Q2377913",
+   "name": "Haitel",
+   "cc": "ht",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Haiti",
+   "hq": [
+    19.0,
+    -72.8
+   ],
+   "website": "http://haitelonline.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Haitel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q120925623",
+   "name": "Legs Édition",
+   "cc": "ht",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://legsedition.net/public/",
+   "listed": false
+  },
+  {
+   "qid": "Q99904323",
+   "name": "Les Éditions Floraison",
+   "cc": "ht",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Port-au-Prince",
+   "hq": [
+    18.54694,
+    -72.34028
+   ],
+   "logo_file": "Logo Floraison.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3549932",
+   "name": "Unibank",
+   "cc": "ht",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Pétion-Ville",
+   "hq": [
+    18.50983,
+    -72.28555
+   ],
+   "website": "http://www.unibankhaiti.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Unibank_(Haiti)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q99903623",
+   "name": "Éditions Fardin",
+   "cc": "ht",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97367383",
+   "name": "Éditions Pulùcia",
+   "cc": "ht",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Jacmel",
+   "hq": [
+    18.23417,
+    -72.53472
+   ],
+   "website": "https://www.editionspulucia.org",
+   "logo_file": "Logo Pulucia.jpg",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

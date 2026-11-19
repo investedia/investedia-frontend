@@ -1,0 +1,387 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "DO",
+ "count": 19,
+ "companies": [
+  {
+   "qid": "Q7841281",
+   "name": "Altice Dominicana",
+   "cc": "do",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Santo Domingo",
+   "hq": [
+    18.4625,
+    -69.93611
+   ],
+   "website": "http://www.altice.com.do",
+   "enwiki": "https://en.wikipedia.org/wiki/Altice_Dominicana",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q121743571",
+   "name": "Banco Popular Dominicano",
+   "cc": "do",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.popularenlinea.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Popular_Dominicano",
+   "listed": false
+  },
+  {
+   "qid": "Q124790528",
+   "name": "Banco Qik",
+   "cc": "do",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5719051",
+   "name": "Banesco Multiple Bank",
+   "cc": "do",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.banesco.com.do/",
+   "logo_file": "Banesco Nuevo Logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q4940041",
+   "name": "Bolsa y Mercados de Valores de la República Dominicana",
+   "cc": "do",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santo Domingo",
+   "hq": [
+    18.4625,
+    -69.93611
+   ],
+   "website": "https://www.bolsard.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Bolsa_de_Valores_de_la_Rep%C3%BAblica_Dominicana",
+   "logo_file": "LOGOBVRD.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61996690",
+   "name": "Central Romana",
+   "cc": "do",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "agriculture",
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "La Romana",
+   "hq": [
+    18.43,
+    -68.97
+   ],
+   "website": "http://centralromana.com.do/",
+   "enwiki": "https://en.wikipedia.org/wiki/Central_Romana_Corporation",
+   "logo_file": "Central Romana Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5065318",
+   "name": "Cervecería Nacional Dominicana",
+   "cc": "do",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santo Domingo",
+   "hq": [
+    18.4625,
+    -69.93611
+   ],
+   "website": "http://www.cnd.com.do/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cervecer%C3%ADa_Nacional_Dominicana",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5127729",
+   "name": "Claro República Dominicana",
+   "cc": "do",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Santo Domingo",
+   "hq": [
+    18.4625,
+    -69.93611
+   ],
+   "website": "http://www.claro.com.do",
+   "enwiki": "https://en.wikipedia.org/wiki/Claro_Dominican_Republic",
+   "logo_file": "Logo de Claro.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3683598",
+   "name": "Color Visión",
+   "cc": "do",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago de los Caballeros",
+   "hq": [
+    19.45,
+    -70.7
+   ],
+   "website": "http://colorvision.com.do/",
+   "enwiki": "https://en.wikipedia.org/wiki/Color_Visi%C3%B3n",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20014247",
+   "name": "Corporación Dominicana de Empresas Eléctricas Estatales",
+   "cc": "do",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santo Domingo",
+   "hq": [
+    18.4625,
+    -69.93611
+   ],
+   "website": "http://www.cdeee.gob.do/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5172372",
+   "name": "Corporación Estatal de Radio y Televisión",
+   "cc": "do",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Santo Domingo",
+   "hq": [
+    18.4625,
+    -69.93611
+   ],
+   "website": "http://canal4rd.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Corporaci%C3%B3n_Estatal_de_Radio_y_Televisi%C3%B3n",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27910083",
+   "name": "Ediciones Cielonaranja",
+   "cc": "do",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.cielonaranja.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15993838",
+   "name": "EGE Haina",
+   "cc": "do",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.egehaina.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130267128",
+   "name": "Grupo Puntacana",
+   "cc": "do",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "education",
+    "hospitality industry",
+    "infrastructure",
+    "journalism",
+    "logistics",
+    "real estate company",
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Punta Cana",
+   "hq": [
+    18.55861,
+    -68.36944
+   ],
+   "website": "https://www.grupopuntacana.com.do",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107395809",
+   "name": "Lifestyle Holidays Vacation Club",
+   "cc": "do",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Luperon pto pta",
+   "hq": [
+    19.79583,
+    -70.69444
+   ],
+   "website": "https://lifestyleholidaysvc.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q86667061",
+   "name": "Sociedad Dominicana de Productores Fonográficos",
+   "cc": "do",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santo Domingo",
+   "hq": [
+    18.4625,
+    -69.93611
+   ],
+   "website": "http://sodinpro.org/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3063351",
+   "name": "Tele Antillas",
+   "cc": "do",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santo Domingo",
+   "hq": [
+    18.4625,
+    -69.93611
+   ],
+   "website": "http://www.tele-antillas.tv/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tele_Antillas",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7842089",
+   "name": "Viva (Dominican Republic)",
+   "cc": "do",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Santo Domingo",
+   "hq": [
+    18.4625,
+    -69.93611
+   ],
+   "website": "http://www.viva.com.do",
+   "enwiki": "https://en.wikipedia.org/wiki/Viva_(network_operator)",
+   "logo_file": "Logo Viva.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7950772",
+   "name": "WIND Telecom",
+   "cc": "do",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Santo Domingo",
+   "hq": [
+    18.4625,
+    -69.93611
+   ],
+   "website": "http://www.wind.com.do/",
+   "enwiki": "https://en.wikipedia.org/wiki/Wind_Telecom_(Dominican_Republic)",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}
