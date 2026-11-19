@@ -1,0 +1,44 @@
+# Notable companies per country from Wikidata (CC0) (owner, 19 Nov 2026). Runs on GitHub because the Wikidata
+# query service is in an outage (1 request a minute) and the download is too slow for a work session.
+# A commit that changes data/company-sources/wikidata-request.json on a claude/companies-* branch starts it.
+# Saves each country file and pushes every few countries, so nothing is lost if it stops. Never touches main.
+name: Company download (Wikidata)
+on:
+  push:
+    branches: ['claude/companies-*']
+    paths: ['data/company-sources/wikidata-request.json']
+permissions:
+  contents: write
+concurrency:
+  group: company-wikidata
+  cancel-in-progress: false
+jobs:
+  download:
+    if: github.ref_name != 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download, pushing as it goes
+        run: |
+          B=${{ github.ref_name }}
+          save() {
+            git add data/company-sources/wikidata
+            git diff --cached --quiet && return 0
+            git -c user.name='Investedia data bot' -c user.email='robot@investedia.com' commit -q -m "Wikidata company facts: $1 (CC0)"
+            for i in 1 2 3 4; do git pull -q --rebase origin "$B" && git push -q origin HEAD:"$B" && return 0; sleep 15; done
+          }
+          for pass in 1 2 3; do
+            L=$(python3 -c "import json,pathlib;r=json.load(open('data/company-sources/wikidata-request.json'));d=pathlib.Path('data/company-sources/wikidata');print(' '.join(c for c in r['countries'] if not (d/(c.lower()+'.json')).exists()))")
+            [ -z "$L" ] && break
+            n=0
+            for cc in $L; do
+              python3 -u tools/companies/wikidata_country.py "$cc" || true
+              n=$((n+1)); [ $((n % 5)) -eq 0 ] && save "batch (pass $pass)"
+            done
+            save "pass $pass"
+          done
+          python3 -c "import json,pathlib;r=json.load(open('data/company-sources/wikidata-request.json'));d=pathlib.Path('data/company-sources/wikidata');m=[c for c in r['countries'] if not (d/(c.lower()+'.json')).exists()];print('still missing:',m or 'none')" | tee -a "$GITHUB_STEP_SUMMARY"
