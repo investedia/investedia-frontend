@@ -15,7 +15,7 @@
   const wantTier = big >= 8192 && !phone ? 8 : 4;  // phones: 4K (about 1.3 MB); desktops: 4K first, then 8K (about 4.4 MB)
   const VS = 'attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}';
   const FS = `precision highp float;
-uniform sampler2D dayT,nightT,dDay,dRel,dNight;uniform vec2 res;uniform vec3 g;uniform vec2 rot;uniform vec3 sun;uniform float dpr;
+uniform sampler2D dayT,nightT,dDay,dRel,dNight,dImp;uniform vec2 res;uniform vec3 g;uniform vec2 rot;uniform vec3 sun;uniform float dpr;
 uniform vec4 dbb;uniform float dk;   // Phase 1 regional detail: bounding box (lon0,lat0,lon1,lat1 in radians) and fade-in
 const float PI=3.14159265;
 void main(){
@@ -41,8 +41,9 @@ void main(){
   float sh=rel-.5, mtn=smoothstep(.03,.2,abs(sh));
   vec3 relk=vec3(1.)+vec3(1.25,1.18,1.08)*max(sh,0.)*1.6*mtn+vec3(1.0,1.04,1.12)*min(sh,0.)*1.75*mtn;
   base*=mix(vec3(1.),max(relk,vec3(.18)),inD*(1.-sea));
-  float urb=inD>0.?smoothstep(.22,.6,texture2D(dNight,duv).r):0.;             // built-up areas (where NASA sees lights at night)
-  base=mix(base,vec3(.30,.285,.26),urb*inD*.55*(1.-sea));                     // by day: cities read as lighter, slightly warm grey patches
+  // built-up areas (owner 21 Nov 2026): NASA/Landsat man-made impervious surface, 30 m (light blue = sparse ... dark blue = dense)
+  vec4 im=inD>0.?texture2D(dImp,duv):vec4(0.); float dens=im.a*clamp(1.15-im.r*1.35,.22,1.);   // rural 0 · suburban ~.3 · urban core ~1
+  base=mix(base,(vec3(.2,.192,.178)+vec3(.26,.24,.205)*dens*dens)*(.85+.3*lum/max(.1,lum+.05)),smoothstep(.0,.1,dens)*inD*(1.-sea));  // stronger: city cores clearly lighter than suburbs, suburbs than countryside; Landsat texture kept inside  // denser = lighter warm grey; roads and urban fabric appear
   base=mix(base,vec3(.012,.013,.017),sea);                                   // oceans almost black
   float cp=cos(phi), sdot=sin(phi)*sun.z+cp*cos(lam-sun.x)*sun.y;          // cos(angle to the sun)
   float dayk=smoothstep(-.07,.16,sdot);
@@ -62,7 +63,7 @@ void main(){
   const buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
   const ap = gl.getAttribLocation(pr, 'p'); gl.enableVertexAttribArray(ap); gl.vertexAttribPointer(ap, 2, gl.FLOAT, false, 0, 0);
   const U = n => gl.getUniformLocation(pr, n), u = { res: U('res'), g: U('g'), rot: U('rot'), sun: U('sun'), dpr: U('dpr'), dbb: U('dbb'), dk: U('dk') };
-  gl.uniform1i(U('dayT'), 0); gl.uniform1i(U('nightT'), 1); gl.uniform1i(U('dDay'), 2); gl.uniform1i(U('dRel'), 3); gl.uniform1i(U('dNight'), 4);
+  gl.uniform1i(U('dayT'), 0); gl.uniform1i(U('nightT'), 1); gl.uniform1i(U('dDay'), 2); gl.uniform1i(U('dRel'), 3); gl.uniform1i(U('dNight'), 4); gl.uniform1i(U('dImp'), 5);
   const aniso = gl.getExtension('EXT_texture_filter_anisotropic') || gl.getExtension('WEBKIT_EXT_texture_filter_anisotropic');
   const tex = [gl.createTexture(), gl.createTexture()], have = [0, 0];
   const upload = (i, img, tier) => {
@@ -80,17 +81,20 @@ void main(){
   // Phase 1 regional detail (owner 21 Nov 2026). Regional and metro level only: the request never asks for finer than 500 m per pixel
   // (the night-light source resolution), so close zoom stays soft and honest instead of blocky. Source: NASA GIBS (public domain).
   const GIBS = 'https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&STYLES=&CRS=EPSG:4326&FORMAT=image/jpeg';
-  const LAYERS = ['BlueMarble_NextGeneration', 'ASTER_GDEM_Greyscale_Shaded_Relief', 'VIIRS_Black_Marble'];
-  const dtex = [gl.createTexture(), gl.createTexture(), gl.createTexture()];
+  const dtex = [gl.createTexture(), gl.createTexture(), gl.createTexture(), gl.createTexture()];
   const D = E.detail = { bb: null, deg: 999, pending: null, fade: 0, want: 0, timer: 0, key: '' };
   const setTex = (i, img) => { gl.activeTexture(gl.TEXTURE2 + i); gl.bindTexture(gl.TEXTURE_2D, dtex[i]); gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
-    gl.texImage2D(gl.TEXTURE_2D, 0, i ? gl.LUMINANCE : gl.RGB, i ? gl.LUMINANCE : gl.RGB, gl.UNSIGNED_BYTE, img);
+    const f = i === 3 ? gl.RGBA : i ? gl.LUMINANCE : gl.RGB; gl.texImage2D(gl.TEXTURE_2D, 0, f, f, gl.UNSIGNED_BYTE, img);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE); };
   const request = bb => {
     const key = bb.map(v => v.toFixed(2)).join(','); if (key === D.key) return; D.key = key;
-    const w = Math.min(phone ? 1536 : 2048, Math.max(256, Math.round((bb[2] - bb[0]) / .0045))), h = Math.min(phone ? 1536 : 2048, Math.max(256, Math.round((bb[3] - bb[1]) / .0045)));
-    const urls = LAYERS.map(l => `${GIBS}&LAYERS=${l}&BBOX=${bb[1]},${bb[0]},${bb[3]},${bb[2]}&WIDTH=${w}&HEIGHT=${h}`);
+    // day detail: Landsat 30 m when regional (Blue Marble 500 m when wider); night lights stay at their 500 m source resolution
+    const span = bb[2] - bb[0], cap = phone ? 1536 : 2048, sz = res => [Math.min(cap, Math.max(256, Math.round(span / res))), Math.min(cap, Math.max(256, Math.round((bb[3] - bb[1]) / res)))];
+    const [dw, dh] = sz(.0006), [nw, nh] = sz(.0045), B = `BBOX=${bb[1]},${bb[0]},${bb[3]},${bb[2]}`;
+    const urls = [`${GIBS}&LAYERS=${span < 25 ? 'Landsat_WELD_CorrectedReflectance_TrueColor_Global_Annual' : 'BlueMarble_NextGeneration'}&${B}&WIDTH=${dw}&HEIGHT=${dh}`,
+      `${GIBS}&LAYERS=ASTER_GDEM_Greyscale_Shaded_Relief&${B}&WIDTH=${dw}&HEIGHT=${dh}`, `${GIBS}&LAYERS=VIIRS_Black_Marble&${B}&WIDTH=${nw}&HEIGHT=${nh}`,
+      `${GIBS.replace('image/jpeg', 'image/png')}&TRANSPARENT=true&LAYERS=Landsat_Global_Man-made_Impervious_Surface&${B}&WIDTH=${dw}&HEIGHT=${dh}`];
     const imgs = urls.map(u => new Promise((ok, no) => { const im = new Image(); im.crossOrigin = 'anonymous'; im.decoding = 'async'; im.onload = () => ok(im); im.onerror = no; im.src = u; }));
     D.pending = key;
     Promise.all(imgs).then(list => { if (D.pending !== key) return; list.forEach((im, i) => setTex(i, im)); D.bb = bb; D.deg = bb[2] - bb[0]; D.fade = 0; }).catch(() => { if (D.pending === key) D.key = ''; });
@@ -134,7 +138,7 @@ void main(){
     plan(W, H, R, lon0, lat0); const D2 = E.detail; if (D2.bb) D2.fade = Math.min(1, D2.fade + .06);
     const k = D2.bb ? D2.want * D2.fade : 0, r = Math.PI / 180, b = D2.bb || [0, 0, 1, 1];
     gl.uniform1f(u.dk, k); gl.uniform4f(u.dbb, b[0] * r, b[1] * r, b[2] * r, b[3] * r);
-    for (let i = 0; i < 3; i++) { gl.activeTexture(gl.TEXTURE2 + i); gl.bindTexture(gl.TEXTURE_2D, dtex[i]); }
+    for (let i = 0; i < 4; i++) { gl.activeTexture(gl.TEXTURE2 + i); gl.bindTexture(gl.TEXTURE_2D, dtex[i]); }
     gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, tex[0]); gl.activeTexture(gl.TEXTURE1); gl.bindTexture(gl.TEXTURE_2D, tex[1]);
     gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
     try { ctx.drawImage(cv, 0, 0, W, H); } catch (e) { return false; } labels(ctx, W, H, cx, cy, R, lon0, lat0); E.ms = E.ms * .9 + (performance.now() - t0) * .1; return true;
