@@ -49,11 +49,23 @@
       S.list.push({ slug: c.slug, name: c.name, short: h.qid ? (h.company_label || c.name) : c.name, country: c.country, region: c.region, sym: l.s, ex: l.exchange, tracked: l.tracked !== false,
         syms: c.listings.map(x => x.s), hq: h, badge: B[c.slug] || null });
     }
-    S.list.sort((a, b) => a.name.localeCompare(b.name));
+    // owner 20 Nov 2026: more companies per country from Wikidata (CC0); logos are Wikimedia Commons files
+    return fetch(ROOT + 'assets/globe/companies-wd.json').then(r => r.ok ? r.json() : null).catch(() => null).then(wd => {
+      const qs = new Set(S.list.map(c => c.hq.qid).filter(Boolean)), nm = new Set(S.list.map(c => c.name.toLowerCase()));
+      const okImg = !window.InvConsent || window.InvConsent.allows?.('images') !== false;
+      for (const w of wd?.companies || []) {
+        if (qs.has(w.q) || nm.has(String(w.n).toLowerCase())) continue;
+        S.list.push({ slug: 'wd-' + w.q, name: w.n, short: w.n, country: w.c || '', region: w.r || '', sym: '', ex: '', tracked: false, syms: [], wd: true,
+          sector: w.s || w.i || '', desc: w.d || '', web: w.w || '', listed: !!w.l,
+          hq: { hq_city: w.city || '', hq_lat: w.la, hq_lon: w.lo, qid: w.q, source_url: 'https://www.wikidata.org/wiki/' + w.q, checked_at: '2026-11-20' },
+          badge: null, logo: okImg && w.lg ? 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(w.lg) + '?width=96' : null });
+      }
+    }).then(() => {
+    S.list.sort((a, b) => (b.tracked - a.tracked) || (!!(b.badge || b.logo) - !!(a.badge || a.logo)) || a.name.localeCompare(b.name));
     S.ready = true;
     const want = new URLSearchParams(location.search).get('company');
     if (want) select(want, true); else refresh();
-  });
+  }); });
 
   // ---- data helpers ----
   const inNews = () => { const set = new Set(); for (const s of (typeof stories !== 'undefined' ? stories : [])) for (const e of s.entities || []) if (e.ticker) set.add(String(e.ticker).toUpperCase()); return set; };
@@ -69,11 +81,11 @@
   const tint = c => c.badge?.c || '#9a9aa3';
   function badgeHTML(c) {
     const t = tint(c), bg = `background:linear-gradient(160deg,${t}38,${t}12),#1e1e22;box-shadow:inset 0 0 0 1.5px ${t}99`;
-    return `<span class="co-b" style="${bg}">${c.badge ? `<img src="${esc(ROOT + c.badge.f)}" alt="" loading="lazy">` : esc(c.short[0] || '?')}</span>`;
+    return `<span class="co-b" style="${bg}">${c.logo ? `<img src="${esc(c.logo)}" alt="" loading="lazy" style="background:#fff;border-radius:6px;padding:2px">` : c.badge ? `<img src="${esc(ROOT + c.badge.f)}" alt="" loading="lazy">` : esc(c.short[0] || '?')}</span>`;
   }
   function img(c) {
-    if (!c.badge) return null;
-    let i = S.img[c.slug]; if (!i) { i = S.img[c.slug] = new Image(); i.src = ROOT + c.badge.f; }
+    if (!c.badge && !c.logo) return null;
+    let i = S.img[c.slug]; if (!i) { i = S.img[c.slug] = new Image(); i.src = c.logo || ROOT + c.badge.f; }
     return i.complete && i.naturalWidth ? i : null;
   }
 
@@ -83,15 +95,15 @@
     if (S.sel) {
       const c = S.sel;
       return `<div class="co-wrap"><button type="button" class="co-back" data-co-back>‹ ${S.country ? esc(S.country) + ' · ' : ''}${filtered().length} companies</button>
-        <div class="co-card">${badgeHTML(c)}<div><h3>${esc(c.name)}</h3><div class="co-kv"><div><small>Headquarters</small><b>${esc(c.hq.hq_city)}, ${esc(c.country)}</b></div><div><small>Listed on</small><b>${esc(c.ex || '')} · ${esc(c.sym.replace(/^[A-Z]+:/, ''))}</b></div><div><small>Region</small><b>${esc(c.region || '')}</b></div></div>
-        <p class="co-note">HQ source: <a href="${esc(c.hq.source_url)}" target="_blank" rel="noopener" style="color:inherit">${/gleif/.test(c.hq.method || '') ? 'GLEIF LEI register (CC0)' : 'Wikidata (CC0)'}</a>, checked ${esc(c.hq.checked_at)}.</p></div>
-        <div class="co-act"><a class="co-btn p" href="${esc(ROOT)}${c.tracked ? 'asset.html?s=' + encodeURIComponent(c.sym) : 'companies/' + encodeURIComponent(c.slug)}" target="_top">Company page</a><a class="co-btn" href="${esc(ROOT)}news.html?q=${encodeURIComponent(c.short)}" target="_top">Articles about ${esc(c.short)}</a></div></div></div>`;
+        <div class="co-card">${badgeHTML(c)}<div><h3>${esc(c.name)}</h3><div class="co-kv"><div><small>Headquarters</small><b>${esc(c.hq.hq_city)}, ${esc(c.country)}</b></div>${c.wd ? `<div><small>Sector</small><b>${esc(c.sector || '—')}</b></div>` : `<div><small>Listed on</small><b>${esc(c.ex || '')} · ${esc(c.sym.replace(/^[A-Z]+:/, ''))}</b></div>`}<div><small>Region</small><b>${esc(c.region || '')}</b></div></div>
+        ${c.wd && c.desc ? `<p class="co-d" style="margin:8px 0 0;color:#c8c8cf;font-size:13.5px">${esc(c.desc.charAt(0).toUpperCase() + c.desc.slice(1))}.</p>` : ''}<p class="co-note">${c.wd ? 'Facts' : 'HQ source'}: <a href="${esc(c.hq.source_url)}" target="_blank" rel="noopener" style="color:inherit">${/gleif/.test(c.hq.method || '') ? 'GLEIF LEI register (CC0)' : 'Wikidata (CC0)'}</a>, checked ${esc(c.hq.checked_at)}.</p></div>
+        <div class="co-act">${c.wd ? (c.web ? `<a class="co-btn p" href="${esc(c.web)}" target="_blank" rel="noopener">Company website</a>` : '') : `<a class="co-btn p" href="${esc(ROOT)}${c.tracked ? 'asset.html?s=' + encodeURIComponent(c.sym) : 'companies/' + encodeURIComponent(c.slug)}" target="_top">Company page</a>`}<a class="co-btn" href="${esc(ROOT)}news.html?q=${encodeURIComponent(c.short)}" target="_top">Articles about ${esc(c.short)}</a></div></div></div>`;
     }
     const L = filtered();
     return `<div class="co-wrap"><div class="co-tools"><input class="co-s" type="search" placeholder="Search ${S.list.length} companies" value="${esc(S.q)}" data-co-q aria-label="Search companies">
       <button type="button" class="co-chip" aria-pressed="${S.news}" data-co-news>In the news</button>
       <select class="co-chip" data-co-country aria-label="Country"><option value="">All countries</option>${countries().map(([n, k]) => `<option value="${esc(n)}"${n === S.country ? ' selected' : ''}>${esc(n)} · ${k}</option>`).join('')}</select></div>
-      ${L.length ? `<div class="co-list">${L.slice(0, 120).map(c => `<button type="button" class="co-i" data-co="${esc(c.slug)}">${badgeHTML(c)}<span style="min-width:0"><b>${esc(c.name)}</b><small>${esc(c.hq.hq_city)} · ${esc(c.sym.replace(/^[A-Z]+:/, ''))}</small></span></button>`).join('')}</div>`
+      ${L.length ? `<div class="co-list">${L.slice(0, 120).map(c => `<button type="button" class="co-i" data-co="${esc(c.slug)}">${badgeHTML(c)}<span style="min-width:0"><b>${esc(c.name)}</b><small>${esc(c.hq.hq_city)} · ${esc(c.wd ? (c.sector || c.country) : c.sym.replace(/^[A-Z]+:/, ''))}</small></span></button>`).join('')}</div>`
         : '<div class="co-empty">No company matches. Companies appear here once their head office is sourced.</div>'}
       <p class="co-note">${L.length} companies on the globe. Logos show where there is room; tap a logo or a dot to open the company.</p></div>`;
   }
@@ -141,13 +153,13 @@
     const list = S.sel ? [S.sel, ...L.filter(c => c !== S.sel)] : L;
     const placed = [], pos = [];
     if (!L.length || S.sel) {  // the whole list: every company is a dot, and a logo badge wherever one fits without covering another
-      const rest = all.filter(c => c !== S.sel).sort((a, b) => (b.tracked - a.tracked) || (!!b.badge - !!a.badge));
+      const rest = all.filter(c => c !== S.sel).sort((a, b) => (b.tracked - a.tracked) || (!!(b.badge || b.logo) - !!(a.badge || a.logo)));
       const dots = [], bad = [];
       if (S.sel) { const q = proj(S.sel.hq.hq_lat * rad, S.sel.hq.hq_lon * rad); if (q[2] > 0) placed.push({ x: q[0], y: q[1], r: 60 }); }
       for (const c of rest) {
         const q = proj(c.hq.hq_lat * rad, c.hq.hq_lon * rad); if (q[2] <= 0) continue;
         dots.push(q); S.hits.push({ c, x: q[0], y: q[1], r: 7 });
-        if (S.sel || placed.some(p => Math.hypot(p.x - q[0], p.y - q[1]) < p.r + 13 + 3)) continue;
+        if (S.sel || !(c.badge || c.logo) || placed.some(p => Math.hypot(p.x - q[0], p.y - q[1]) < p.r + 13 + 3)) continue;  // only real logos become badges; the rest stay dots
         placed.push({ x: q[0], y: q[1], r: 13 }); bad.push({ c, x: q[0], y: q[1], r: 13, ax: q[0], ay: q[1], fade: Math.min(1, q[2] * 3) });
       }
       ctx.save(); ctx.fillStyle = 'rgba(255,170,110,.85)';
@@ -172,7 +184,7 @@
       circ(x, y, r, '#1e1e22'); circ(x, y, r, t + '38'); ctx.strokeStyle = t + 'aa'; ctx.lineWidth = 1.6; ctx.beginPath(); ctx.arc(x, y, r - .8, 0, 7); ctx.stroke();
       const im = img(c);
       if (im) { const s = Math.min(r * 1.25 / im.width, r * 1.25 / im.height); ctx.drawImage(im, x - im.width * s / 2, y - im.height * s / 2, im.width * s, im.height * s); }
-      else { ctx.fillStyle = '#fafafa'; ctx.font = `700 ${Math.round(r * .8)}px Inter,sans-serif`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(c.short[0] || '?', x, y + 1); ctx.textAlign = 'start'; ctx.textBaseline = 'alphabetic'; }
+      else if (!c.logo) { ctx.fillStyle = '#fafafa'; ctx.font = `700 ${Math.round(r * .8)}px Inter,sans-serif`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(c.short[0] || '?', x, y + 1); ctx.textAlign = 'start'; ctx.textBaseline = 'alphabetic'; }
       if (sel) {
         const txt = c.short + ' · HQ ' + c.hq.hq_city; ctx.font = '600 14px Inter,sans-serif'; const w = ctx.measureText(txt).width + 22, left = x + r + 12 + w > innerWidth - 8;
         let bx = left ? x - r - 12 - w : x + r + 12, by = y - 16;
