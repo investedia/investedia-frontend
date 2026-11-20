@@ -1648,7 +1648,8 @@ function drawDayNight(map) {
   ctx.strokeStyle = 'rgba(0,0,4,.09)'; for (const w of [R / 9, R / 16, R / 32]) { ctx.lineWidth = w; ctx.stroke(n.path); } ctx.restore();
   if (!NIGHT_LIGHTS) return; const LT = Z < 1.8 ? NIGHT_LIGHTS.coarse : NIGHT_LIGHTS.full;
   // fine points in 4 brightness steps; the brightest steps are toned down most, so dense regions (Japan, China, Europe) stay calm
-  const ds = Math.max(1.3, Math.min(2.6, R / 190)), BK = [[], [], [], []], AL = [.2, .32, .48, .7], skip0 = false;  // owner 20 Nov 2026: brighter, more, connected (points slightly overlap)
+  const ds = Math.max(1.3, Math.min(2.6, R / 190)), BK = [[], [], [], []], AL = [.2, .32, .48, .7], skip0 = false;
+  const LC = ['255,170,70', '255,184,85', '255,200,110', '255,218,150'];  // owner 20 Nov 2026: yellow-orange like real street lights (faint = deeper amber, bright cores = warm yellow)  // owner 20 Nov 2026: brighter, more, connected (points slightly overlap)
   const c0 = Math.cos(lat0 * rad), s0 = Math.sin(lat0 * rad), cl = Math.cos(lon0 * rad), sl = Math.sin(lon0 * rad), V = LT.v, K = LT.k;
   for (let i = 0; i < LT.n; i++) {
     const k = K[i]; if (skip0 && k === 0) continue;  // faintest step is invisible at full-globe size: skip it (frame rate)
@@ -1656,7 +1657,7 @@ function drawDayNight(map) {
     const cd = ux * cl + uy * sl, z = s0 * uz + c0 * cd; if (z <= .02) continue;  // same projection as proj(), without trig
     BK[k].push(cx + R * (uy * cl - ux * sl), cy - R * (c0 * uz - s0 * cd));
   }
-  for (let k = 0; k < 4; k++) { const q = BK[k]; if (!q.length) continue; ctx.fillStyle = `rgba(255,240,215,${AL[k]})`; ctx.beginPath(); for (let j = 0; j < q.length; j += 2) ctx.rect(q[j] - ds / 2, q[j + 1] - ds / 2, ds, ds); ctx.fill(); }
+  for (let k = 0; k < 4; k++) { const q = BK[k]; if (!q.length) continue; ctx.fillStyle = `rgba(${LC[k]},${AL[k]})`; ctx.beginPath(); for (let j = 0; j < q.length; j += 2) ctx.rect(q[j] - ds / 2, q[j + 1] - ds / 2, ds, ds); ctx.fill(); }
 }
 let exHits = [], upHits = [], upLabels = [];
 function drawUpcoming() {
