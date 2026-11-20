@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+      }
+
+      .st1 {
+        fill: #e4221b;
+      }
+
+      .st1, .st2, .st3 {
+        fill-rule: evenodd;
+      }
+
+      .st2 {
+        fill: #31378c;
+      }
+
+      .st3 {
+        fill: #ffed00;
+      }
+    </style>
+  </defs>
+  <rect class="st0" width="100.1" height="100.1"/>
+  <g>
+    <polygon class="st3" points="54.63 10.1 81.35 10.1 73.83 36.74 47.19 36.74 54.63 10.1"/>
+    <polygon class="st2" points="20.47 36.74 47.19 36.74 39.67 63.38 13.03 63.38 20.47 36.74"/>
+    <polygon class="st1" points="39.67 63.38 66.31 63.38 58.87 90.1 32.15 90.1 39.67 63.38"/>
+  </g>
+</svg>
