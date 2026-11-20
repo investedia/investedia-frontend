@@ -1649,11 +1649,12 @@ function drawDayNight(map) {
   ctx.strokeStyle = 'rgba(0,0,4,.09)'; for (const w of [R / 9, R / 16, R / 32]) { ctx.lineWidth = w; ctx.stroke(n.path); } ctx.restore();
   if (!NIGHT_LIGHTS) return; const LT = Z < 1.8 ? NIGHT_LIGHTS.coarse : NIGHT_LIGHTS.full;
   // fine points in 4 brightness steps; the brightest steps are toned down most, so dense regions (Japan, China, Europe) stay calm
-  const ds = Math.max(1.3, Math.min(2.6, R / 190)), BK = [[], [], [], []], AL = [.2, .32, .48, .7], skip0 = false;
+  // owner 20 Nov 2026 refine: ~45% dimmer, fewer points; zoomed out only bright city cores, detail appears as you zoom in; a little calmer on phones
+  const ds = Math.max(.9, Math.min(2.2, R / 240)), BK = [[], [], [], []], mob = W < 760 ? .85 : 1, AL = [.11, .17, .26, .38].map(a => a * mob), kMin = Z < 1.4 ? 2 : Z < 2.2 ? 1 : 0;
   const LC = ['255,170,70', '255,184,85', '255,200,110', '255,218,150'];  // owner 20 Nov 2026: yellow-orange like real street lights (faint = deeper amber, bright cores = warm yellow)  // owner 20 Nov 2026: brighter, more, connected (points slightly overlap)
   const c0 = Math.cos(lat0 * rad), s0 = Math.sin(lat0 * rad), cl = Math.cos(lon0 * rad), sl = Math.sin(lon0 * rad), V = LT.v, K = LT.k;
   for (let i = 0; i < LT.n; i++) {
-    const k = K[i]; if (skip0 && k === 0) continue;  // faintest step is invisible at full-globe size: skip it (frame rate)
+    const k = K[i]; if (k < kMin) continue;  // zoomed out: skip the faint steps (see kMin)
     const ux = V[i * 3], uy = V[i * 3 + 1], uz = V[i * 3 + 2]; if (ux * sx + uy * sy + uz * sz > .05) continue;  // day side: no lights
     const cd = ux * cl + uy * sl, z = s0 * uz + c0 * cd; if (z <= .02) continue;  // same projection as proj(), without trig
     BK[k].push(cx + R * (uy * cl - ux * sl), cy - R * (c0 * uz - s0 * cd));
@@ -1663,7 +1664,7 @@ function drawDayNight(map) {
   const f = 1 / 2, LW = Math.ceil(W * f), LH = Math.ceil(H * f);
   if (!LIGHT_LAYER) LIGHT_LAYER = document.createElement('canvas');
   if (LIGHT_LAYER.width !== LW || LIGHT_LAYER.height !== LH) { LIGHT_LAYER.width = LW; LIGHT_LAYER.height = LH; }
-  const lc = LIGHT_LAYER.getContext('2d'); lc.clearRect(0, 0, LW, LH); const psz = Math.max(.8, ds * f);
+  const lc = LIGHT_LAYER.getContext('2d'); lc.clearRect(0, 0, LW, LH); const psz = Math.max(.7, ds * f * .9);
   for (let k = 0; k < 4; k++) { const q = BK[k]; if (!q.length) continue; lc.fillStyle = `rgba(${LC[k]},${(AL[k] * .85).toFixed(3)})`; lc.beginPath(); for (let j = 0; j < q.length; j += 2) lc.rect(q[j] * f - psz / 2, q[j + 1] * f - psz / 2, psz, psz); lc.fill(); }
   ctx.save(); ctx.globalCompositeOperation = 'lighter'; ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high'; ctx.drawImage(LIGHT_LAYER, 0, 0, LW / f, LH / f); ctx.restore();
 }

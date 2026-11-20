@@ -709,7 +709,8 @@ a.card:hover,a.panel:hover{box-shadow:none}
 .ticker-track,.res-track{will-change:transform}
 .dd,.drawer,.palette-box{will-change:opacity,transform}
 /* Header blur is expensive while scrolling on touch screens: use a solid bar there */
-@media (hover:none),(max-width:900px){.hdr{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(10,10,11,.98)}:root[data-theme="light"] .hdr{background:rgba(255,255,255,.98)}}
+/* phones: no blur behind the header, so it must be fully opaque or the hero heading shows through when scrolling (owner 20 Nov 2026) */
+@media (hover:none),(max-width:900px){.hdr,.hdr.scrolled{backdrop-filter:none;-webkit-backdrop-filter:none;background:#0a0a0b}:root[data-theme="light"] .hdr,:root[data-theme="light"] .hdr.scrolled{background:#fff}}
 /* Skip rendering work for sections until they're near the screen */
 main>.sec:nth-of-type(n+3){content-visibility:auto;contain-intrinsic-size:auto 640px}
 @media (prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none}.btn:active,.chip:active,.tab:active{transform:none}}
