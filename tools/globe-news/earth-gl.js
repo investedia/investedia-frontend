@@ -175,6 +175,21 @@ void main(){
     }
     ctx.restore();
   };
+  // city glow (owner 21 Nov 2026, option C): a soft warm glow at every city over 300,000 people on the night side (Natural Earth population),
+  // so regions where the satellite sees only faint light (Central Africa, Siberia, Canada, inland China) still show their real cities.
+  const GLOW = (() => { const c = document.createElement('canvas'); c.width = c.height = 64; const g = c.getContext('2d'), gr = g.createRadialGradient(32, 32, 0, 32, 32, 32);
+    gr.addColorStop(0, 'rgba(255,214,160,1)'); gr.addColorStop(.35, 'rgba(255,160,70,.45)'); gr.addColorStop(1, 'rgba(255,140,40,0)'); g.fillStyle = gr; g.fillRect(0, 0, 64, 64); return c; })();
+  const cityGlow = (ctx, cx, cy, R, lon0, lat0, sp) => {
+    if (!CITIES) return; const r = Math.PI / 180, c0 = Math.cos(lat0 * r), s0 = Math.sin(lat0 * r), sx = Math.cos(sp.la) * Math.cos(sp.lo), sy = Math.cos(sp.la) * Math.sin(sp.lo), sz = Math.sin(sp.la), b = Math.max(.8, Math.min(2.2, R / 260));
+    ctx.save(); ctx.globalCompositeOperation = 'lighter';
+    for (const [, la, lo, pop] of CITIES) {
+      if (pop < 3e5) continue; const ph = la * r, l2 = lo * r, cp = Math.cos(ph), nf = -(cp * Math.cos(l2) * sx + cp * Math.sin(l2) * sy + Math.sin(ph) * sz); if (nf < .02) continue;
+      const d = l2 - lon0 * r, z = s0 * Math.sin(ph) + c0 * cp * Math.cos(d); if (z < .05) continue;
+      const x = cx + R * cp * Math.sin(d), y = cy - R * (c0 * Math.sin(ph) - s0 * cp * Math.cos(d)), rr = b * (1.2 + Math.log10(pop / 3e5) * 1.3) * 2.4;
+      ctx.globalAlpha = Math.min(1, nf * 4) * Math.min(1, z * 3) * .35; ctx.drawImage(GLOW, x - rr, y - rr, rr * 2, rr * 2);
+    }
+    ctx.restore();
+  };
   E.draw = (ctx, W, H, cx, cy, R, lon0, lat0, sp) => {
     if (!E.ready || !(W > 0) || !(H > 0) || !(R > 0)) return false;  // page not measured yet: use the 2D globe this frame
     const t0 = performance.now(), dpr = E.dpr = Math.min(3, devicePixelRatio || 1);
@@ -188,6 +203,6 @@ void main(){
     for (let i = 0; i < 4; i++) { gl.activeTexture(gl.TEXTURE2 + i); gl.bindTexture(gl.TEXTURE_2D, dtex[i]); }
     gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, tex[0]); gl.activeTexture(gl.TEXTURE1); gl.bindTexture(gl.TEXTURE_2D, tex[1]);
     gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
-    try { ctx.drawImage(cv, 0, 0, W, H); } catch (e) { return false; } labels(ctx, W, H, cx, cy, R, lon0, lat0); E.ms = E.ms * .9 + (performance.now() - t0) * .1; return true;
+    try { ctx.drawImage(cv, 0, 0, W, H); } catch (e) { return false; } cityGlow(ctx, cx, cy, R, lon0, lat0, sp); labels(ctx, W, H, cx, cy, R, lon0, lat0); E.ms = E.ms * .9 + (performance.now() - t0) * .1; return true;
   };
 })();
