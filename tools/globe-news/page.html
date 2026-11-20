@@ -1648,7 +1648,7 @@ function drawDayNight(map) {
   ctx.strokeStyle = 'rgba(0,0,4,.09)'; for (const w of [R / 9, R / 16, R / 32]) { ctx.lineWidth = w; ctx.stroke(n.path); } ctx.restore();
   if (!NIGHT_LIGHTS) return; const LT = Z < 1.8 ? NIGHT_LIGHTS.coarse : NIGHT_LIGHTS.full;
   // fine points in 4 brightness steps; the brightest steps are toned down most, so dense regions (Japan, China, Europe) stay calm
-  const ds = Math.max(.8, Math.min(1.6, R / 300)), BK = [[], [], [], []], AL = [.1, .16, .24, .34], skip0 = Z < 1.15;
+  const ds = Math.max(1.3, Math.min(2.6, R / 190)), BK = [[], [], [], []], AL = [.2, .32, .48, .7], skip0 = false;  // owner 20 Nov 2026: brighter, more, connected (points slightly overlap)
   const c0 = Math.cos(lat0 * rad), s0 = Math.sin(lat0 * rad), cl = Math.cos(lon0 * rad), sl = Math.sin(lon0 * rad), V = LT.v, K = LT.k;
   for (let i = 0; i < LT.n; i++) {
     const k = K[i]; if (skip0 && k === 0) continue;  // faintest step is invisible at full-globe size: skip it (frame rate)
