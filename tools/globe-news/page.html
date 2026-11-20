@@ -2814,7 +2814,7 @@ function countryShape(c, fill, stroke, lw = 1) {
   ctx.beginPath(); for (const rr of c.rr) ringPath(rr, false); ctx.strokeStyle = stroke; ctx.lineWidth = lw; ctx.stroke();
 }
 // globe look: neutral grey sphere, brighter than before, with a strong orange outline
-const GB0 = { s0: '#26262c', s1: '#101014', atm: .14, atmRGB: '255,122,26', dot: 1.35, rgb: '161,161,170', land: .015, line: .04, grid: .5, rim: .9, rimRGB: '180,136,109', rimW: 1.8, glow: '255,122,26,.42', blur: 16 };  // default: graphite rim with orange glow
+const GB0 = { s0: '#26262c', s1: '#101014', atm: .14, atmRGB: '255,122,26', dot: .6, rgb: '161,161,170', land: .045, line: .06, grid: .5, rim: .9, rimRGB: '180,136,109', rimW: 1.8, glow: '255,122,26,.42', blur: 16 };  // default: graphite rim with orange glow
 // ?gb=A|B|C previews outline options (temporary, for choosing a look)
 const GB = Object.assign({}, GB0, ({
   A: { rim: .9, rimRGB: '232,232,238', rimW: 1.6, glow: '255,255,255,.28', blur: 10, atm: .10, atmRGB: '215,215,225' },
@@ -2913,7 +2913,7 @@ function frame(t) {
     for (let la = -60; la <= 60; la += 30) { let pen = false; for (let lo = -180; lo <= 180; lo += 4) { const [x, y, z] = proj(la * rad, lo * rad); if (z <= 0) { pen = false; continue; } pen ? ctx.lineTo(x, y) : ctx.moveTo(x, y); pen = true; } }
     ctx.strokeStyle = `rgba(255,255,255,${(.045 * GB.grid * (1 - (Z - 1) / 1.6)).toFixed(3)})`; ctx.lineWidth = .6; ctx.stroke(); }
   // land: dots fade out as you zoom in, country shapes take over
-  const da = Math.max(0, 1.25 - Z * .25), ds = Math.max(1.1, Math.min(2.2, R / 230));
+  const da = Math.max(0, 1.25 - Z * .25), ds = Math.max(.8, Math.min(1.4, R / 330));  // owner 20 Nov 2026: finer, fainter dots over solid land ('middle')
   if (da > .02) {  // dots are batched by brightness: 12 fills per frame instead of one fill per dot (the main per-frame cost on PC)
     const B = 12, buckets = Array.from({ length: B }, () => []);
     for (const [phi, lam] of pts) { const [x, y, z] = proj(phi, lam); if (z <= 0) continue; const a = Math.min(1, (.08 + z * .42) * da * GB.dot); buckets[Math.min(B - 1, Math.floor(a * B))].push(x - ds / 2, y - ds / 2); }
