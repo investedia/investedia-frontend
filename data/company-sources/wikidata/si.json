@@ -1,0 +1,2182 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "SI",
+ "count": 107,
+ "companies": [
+  {
+   "qid": "Q2280597",
+   "name": "A1 Slovenija",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "http://a1.si",
+   "enwiki": "https://en.wikipedia.org/wiki/A1_Slovenija",
+   "logo_file": "A1 red logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65149717",
+   "name": "AD Plastik",
+   "cc": "si",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "ADPL"
+    }
+   ],
+   "industries": [
+    "automotive industry",
+    "fabrication d'autres équipements automobiles"
+   ],
+   "isin": [
+    "HRADPLRA0006"
+   ],
+   "hq_city": "Solin",
+   "hq": [
+    43.53167,
+    16.49472
+   ],
+   "website": "https://www.adplastik.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/AD_Plastik",
+   "listed": true
+  },
+  {
+   "qid": "Q367325",
+   "name": "Adria Mobil",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Novo Mesto",
+   "hq": [
+    45.79806,
+    15.16278
+   ],
+   "website": "http://adria-mobil.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Adria_Mobil",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q556406",
+   "name": "Akrapovič",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Municipality of Ivančna Gorica",
+   "hq": [
+    45.93848,
+    14.80397
+   ],
+   "website": "http://www.akrapovic.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Akrapovi%C4%8D",
+   "logo_file": "YAMAHA SuperFour - AKRAPOVIC.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21858414",
+   "name": "Albastar Ltd",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Begunje na Gorenjskem",
+   "hq": [
+    46.37637,
+    14.20121
+   ],
+   "website": "http://www.gliders-albastar.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Albastar_Ltd",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q100165524",
+   "name": "Alpina",
+   "cc": "si",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Logo alpina red.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4735446",
+   "name": "Alpina Žiri",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "footwear industry"
+   ],
+   "isin": [],
+   "hq_city": "Žiri",
+   "hq": [
+    46.04602,
+    14.10828
+   ],
+   "website": "http://www.alpina.si/",
+   "enwiki": "https://en.wikipedia.org/wiki/Alpina_%C5%BDiri",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4742078",
+   "name": "Amebis",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kamnik",
+   "hq": [
+    46.22498,
+    14.60966
+   ],
+   "website": "http://www.amebis.si/",
+   "enwiki": "https://en.wikipedia.org/wiki/Amebis",
+   "listed": false
+  },
+  {
+   "qid": "Q12806468",
+   "name": "Annales University Press",
+   "cc": "si",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.zrs-kp.si/index.php/research-2/zalozba/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q794939",
+   "name": "B&B Hotels",
+   "cc": "si",
+   "types": [
+    "Q1631129",
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "hotel"
+   ],
+   "isin": [],
+   "website": "https://www.hotel-bb.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/B%26B_Hotels",
+   "logo_file": "B&B Hotels Logo (New).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12785447",
+   "name": "Banka Intesa Sanpaolo",
+   "cc": "si",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Koper",
+   "hq": [
+    45.54754,
+    13.73066
+   ],
+   "website": "https://www.intesasanpaolobank.si/",
+   "listed": false
+  },
+  {
+   "qid": "Q4836687",
+   "name": "BTC City",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.btc.si/index.php",
+   "enwiki": "https://en.wikipedia.org/wiki/BTC_City",
+   "listed": false
+  },
+  {
+   "qid": "Q137532272",
+   "name": "C-Astral",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aircraft industry"
+   ],
+   "isin": [],
+   "hq_city": "Ajdovščina",
+   "hq": [
+    45.88836,
+    13.90524
+   ],
+   "website": "https://www.c-astral.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12786680",
+   "name": "Cankarjeva založba",
+   "cc": "si",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q14906534",
+   "name": "Cimos",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Koper",
+   "hq": [
+    45.54754,
+    13.73066
+   ],
+   "website": "http://www.cimos.eu",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25496003",
+   "name": "Cosylab",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://www.cosylab.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5178342",
+   "name": "Court of Audit of the Republic of Slovenia",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "http://www.rs-rs.si",
+   "enwiki": "https://en.wikipedia.org/wiki/Court_of_Audit_of_Slovenia",
+   "logo_file": "Watching over public money.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q111481938",
+   "name": "Delavska hranilnica",
+   "cc": "si",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://www.delavska-hranilnica.si/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q93437034",
+   "name": "Dewesoft",
+   "cc": "si",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "electronics"
+   ],
+   "isin": [],
+   "hq_city": "Trbovlje",
+   "hq": [
+    46.15,
+    15.05
+   ],
+   "website": "https://dewesoft.com",
+   "logo_file": "DS logo horizontal V2 dark SVG.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16974018",
+   "name": "Domel",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Železniki",
+   "hq": [
+    46.21923,
+    14.15528
+   ],
+   "website": "http://www.domel.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Domel_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20523891",
+   "name": "Dravske elektrarne Maribor",
+   "cc": "si",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Maribor",
+   "hq": [
+    46.55,
+    15.63333
+   ],
+   "website": "https://www.dem.si/",
+   "listed": false
+  },
+  {
+   "qid": "Q3111569",
+   "name": "Dream Publisher",
+   "cc": "si",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://www.sanje.si/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q49814832",
+   "name": "Društvo Apokalipsa",
+   "cc": "si",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://www.apokalipsa.si/",
+   "logo_file": "!KUD A LOGOTIP.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28225005",
+   "name": "EKWB",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "computer industry",
+    "electronics industry"
+   ],
+   "isin": [],
+   "hq_city": "Komenda",
+   "hq": [
+    46.20728,
+    14.53904
+   ],
+   "website": "https://www.ekwb.com",
+   "enwiki": "https://en.wikipedia.org/wiki/EKWB",
+   "logo_file": "EKWB logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1634723",
+   "name": "Elan",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "sports equipment"
+   ],
+   "isin": [],
+   "hq_city": "Begunje na Gorenjskem",
+   "hq": [
+    46.37637,
+    14.20121
+   ],
+   "website": "https://www.elan.si/en",
+   "enwiki": "https://en.wikipedia.org/wiki/Elan_(company)",
+   "logo_file": "Elan Logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12788287",
+   "name": "Elektro Gospodarstvo Maribor",
+   "cc": "si",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q30294660",
+   "name": "Elektro Ljubljana (Slovenia)",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://www.gremonaelektriko.si/",
+   "listed": false
+  },
+  {
+   "qid": "Q5358777",
+   "name": "Elektro-Slovenija",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://www.eles.si/",
+   "enwiki": "https://en.wikipedia.org/wiki/Elektro-Slovenija",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55610844",
+   "name": "Emrax",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Kamnik",
+   "hq": [
+    46.22498,
+    14.60966
+   ],
+   "website": "http://emrax.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Emrax",
+   "logo_file": "EMRAX.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q26720354",
+   "name": "Energetika Maribor",
+   "cc": "si",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Maribor",
+   "hq": [
+    46.55,
+    15.63333
+   ],
+   "website": "http://www.energetika-mb.si/",
+   "listed": true
+  },
+  {
+   "qid": "Q19933475",
+   "name": "ETI Elektroelement",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Izlake",
+   "hq": [
+    46.15255,
+    14.89397
+   ],
+   "website": "http://www.eti.si/",
+   "lei": "315700RU28PG6AU1PJ85",
+   "listed": false
+  },
+  {
+   "qid": "Q29510505",
+   "name": "Eurosender",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "freight transport"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "https://eurosender.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Eurosender",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3127176",
+   "name": "Franck d.d.",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.franck.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Franck_(company)",
+   "logo_file": "Mali logo Franck.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20521509",
+   "name": "GEN Energija",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "power engineering"
+   ],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://gen-energija.si/",
+   "enwiki": "https://en.wikipedia.org/wiki/GEN_Energija",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5535580",
+   "name": "Geoplin",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Geoplin",
+   "listed": false
+  },
+  {
+   "qid": "Q19936343",
+   "name": "Goodyear Dunlop Sava Tires",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Kranj",
+   "hq": [
+    46.23887,
+    14.35561
+   ],
+   "website": "http://www.sava-tires.com/sava/de/",
+   "enwiki": "https://en.wikipedia.org/wiki/Goodyear_Dunlop_Sava_Tires",
+   "logo_file": "Sava Reifen logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q848521",
+   "name": "Gorenje",
+   "cc": "si",
+   "types": [
+    "Q431289",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "consumer electronics industry",
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Velenje",
+   "hq": [
+    46.36667,
+    15.11667
+   ],
+   "website": "https://gorenje.com",
+   "lei": "5493001KRYD613GTA170",
+   "enwiki": "https://en.wikipedia.org/wiki/Gorenje",
+   "logo_file": "Gorenje Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124632214",
+   "name": "Gorenjska Banka",
+   "cc": "si",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Gorenjska_Banka",
+   "listed": false
+  },
+  {
+   "qid": "Q12790834",
+   "name": "Helios TBLUS",
+   "cc": "si",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Domžale",
+   "hq": [
+    46.13333,
+    14.6
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q876679",
+   "name": "Hermagoras Society",
+   "cc": "si",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://mohorjeva.at",
+   "enwiki": "https://en.wikipedia.org/wiki/Hermagoras_Society",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19981932",
+   "name": "Hidria",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Spodnja Idrija",
+   "hq": [
+    46.03139,
+    14.02556
+   ],
+   "website": "http://si.hidria.com//",
+   "listed": false
+  },
+  {
+   "qid": "Q5879754",
+   "name": "Holding Slovenske elektrarne",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "http://www.hse.si/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Holding_Slovenske_elektrarne",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30299305",
+   "name": "Impol",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aluminium industry"
+   ],
+   "isin": [],
+   "hq_city": "Slovenska Bistrica",
+   "hq": [
+    46.39414,
+    15.57073
+   ],
+   "website": "http://www.impol.com/",
+   "logo_file": "Impol priloznostni logo SLO BLU.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12791375",
+   "name": "Intera",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "software development",
+    "software industry",
+    "technology industry"
+   ],
+   "isin": [],
+   "hq_city": "Ptuj",
+   "hq": [
+    46.41861,
+    15.87139
+   ],
+   "website": "https://www.intrix.si/o-nas",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q387968",
+   "name": "Iskra",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://www.iskra.eu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Iskra_(company)",
+   "logo_file": "Iskra-logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6081386",
+   "name": "Iskra Delta",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Iskra_Delta",
+   "listed": false
+  },
+  {
+   "qid": "Q107572760",
+   "name": "Katapult",
+   "cc": "si",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Trbovlje",
+   "hq": [
+    46.15,
+    15.05
+   ],
+   "website": "https://katapult.si/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12793205",
+   "name": "KD Group",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "lei": "549300BYRMGEH57IQL04",
+   "listed": false
+  },
+  {
+   "qid": "Q90263360",
+   "name": "Kea",
+   "cc": "si",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Šentjur",
+   "hq": [
+    46.22248,
+    15.39731
+   ],
+   "website": "https://kea.si/",
+   "listed": false
+  },
+  {
+   "qid": "Q12793597",
+   "name": "Kema Puconci",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Puconci",
+   "hq": [
+    46.70383,
+    16.15724
+   ],
+   "website": "http://www.kema.si/",
+   "listed": false
+  },
+  {
+   "qid": "Q86004185",
+   "name": "Koofr",
+   "cc": "si",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://koofr.eu/",
+   "listed": false
+  },
+  {
+   "qid": "Q30290329",
+   "name": "Kopitarna Sevnica",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sevnica",
+   "hq": [
+    46.00917,
+    15.30389
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q20057700",
+   "name": "Krainische Industrie Gesellschaft",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of other products of first processing of steel",
+    "metal industry"
+   ],
+   "isin": [],
+   "hq_city": "Jesenice",
+   "hq": [
+    46.43657,
+    14.06017
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q143017",
+   "name": "Krka",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "SI0031102120"
+   ],
+   "hq_city": "Novo Mesto",
+   "hq": [
+    45.79806,
+    15.16278
+   ],
+   "website": "http://www.krka.biz/",
+   "lei": "549300H9RLRTRTLRUZ73",
+   "enwiki": "https://en.wikipedia.org/wiki/Krka_(company)",
+   "logo_file": "KRKA Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q474478",
+   "name": "Krško Nuclear Power Plant",
+   "cc": "si",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "power engineering"
+   ],
+   "isin": [],
+   "hq_city": "Vrbina",
+   "hq": [
+    45.94361,
+    15.50722
+   ],
+   "website": "https://nek.si/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kr%C5%A1ko_Nuclear_Power_Plant",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22906321",
+   "name": "Lek",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmacy"
+   ],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://www.lek.si",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138348509",
+   "name": "Lesnina XXXL",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q130717731",
+   "name": "Marles",
+   "cc": "si",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "wood industry"
+   ],
+   "isin": [],
+   "hq_city": "Maribor",
+   "hq": [
+    46.55,
+    15.63333
+   ],
+   "website": "https://www.marles.com/",
+   "logo_file": "Marles Logotip.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q33262095",
+   "name": "Melamin",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kočevje",
+   "hq": [
+    45.64296,
+    14.85938
+   ],
+   "website": "http://www.melamin.si/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q738412",
+   "name": "Mercator",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://www.mercator.si/",
+   "lei": "549300X47J0FW574JN34",
+   "enwiki": "https://en.wikipedia.org/wiki/Mercator_(retail)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12755161",
+   "name": "Merkur",
+   "cc": "si",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Naklo",
+   "hq": [
+    46.27491,
+    14.31762
+   ],
+   "website": "https://www.merkur.si",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18351051",
+   "name": "MESI",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "http://www.mesimedical.com/home",
+   "enwiki": "https://en.wikipedia.org/wiki/MESI_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13567011",
+   "name": "Mladinska knjiga",
+   "cc": "si",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.mladinska.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3859745",
+   "name": "Mobitel",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "http://www.mobitel.si",
+   "enwiki": "https://en.wikipedia.org/wiki/Mobitel_(Slovenia)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20522231",
+   "name": "MOL Slovenija",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://mol.si",
+   "listed": false
+  },
+  {
+   "qid": "Q5142728",
+   "name": "Motorway Company in the Republic of Slovenia",
+   "cc": "si",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Celje",
+   "hq": [
+    46.22909,
+    15.26413
+   ],
+   "website": "http://www.dars.si/",
+   "enwiki": "https://en.wikipedia.org/wiki/Motorway_Company_in_the_Republic_of_Slovenia",
+   "logo_file": "LOGO RGB DARS.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1958759",
+   "name": "Müller",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Vienna",
+   "hq": [
+    48.20833,
+    16.3725
+   ],
+   "website": "https://www.mueller.hr/",
+   "lei": "529900VVXGAWG6MCDO69",
+   "enwiki": "https://en.wikipedia.org/wiki/M%C3%BCller_(store)",
+   "logo_file": "Logo Drogerie Mueller.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1481509",
+   "name": "NLB Group",
+   "cc": "si",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://www.nlb.si",
+   "lei": "5493001BABFV7P27OW30",
+   "enwiki": "https://en.wikipedia.org/wiki/NLB_Group",
+   "logo_file": "Nova Ljubljanska banka logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7064372",
+   "name": "Nova revija",
+   "cc": "si",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Nova_revija_(publishing_company)",
+   "listed": false
+  },
+  {
+   "qid": "Q7075616",
+   "name": "Obzorja",
+   "cc": "si",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.zalozba-obzorja.si/",
+   "enwiki": "https://en.wikipedia.org/wiki/Obzorja",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25495752",
+   "name": "Pelicon Brewery",
+   "cc": "si",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "hq_city": "Ajdovščina",
+   "hq": [
+    45.88836,
+    13.90524
+   ],
+   "website": "https://www.pelicon.beer/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12798543",
+   "name": "Perfo",
+   "cc": "si",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "film industry"
+   ],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "http://www.perfo.si",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q174824",
+   "name": "Petrol Group",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://www.petrol.eu/sl",
+   "lei": "549300CAAOUTT4QDOZ16",
+   "enwiki": "https://en.wikipedia.org/wiki/Petrol_Group",
+   "logo_file": "Petrol Group logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1547378",
+   "name": "Pipistrel",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Ajdovščina Municipality",
+   "hq": [
+    45.88579,
+    13.91282
+   ],
+   "website": "http://www.pipistrel.si/intro",
+   "enwiki": "https://en.wikipedia.org/wiki/Pipistrel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q91732429",
+   "name": "Pirnar",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://www.pirnar.si/",
+   "logo_file": "Logo pirnar1.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q95448407",
+   "name": "Ponting",
+   "cc": "si",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "structural engineering"
+   ],
+   "isin": [],
+   "hq_city": "Maribor",
+   "hq": [
+    46.55,
+    15.63333
+   ],
+   "website": "https://www.ponting.si/",
+   "logo_file": "Logo Ponting Bridges.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q478048",
+   "name": "Port of Koper",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "service sector"
+   ],
+   "isin": [],
+   "website": "http://www.luka-kp.si/",
+   "lei": "549300H1GO5N7BK34P37",
+   "enwiki": "https://en.wikipedia.org/wiki/Port_of_Koper",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6522631",
+   "name": "Pošta Slovenije",
+   "cc": "si",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Maribor",
+   "hq": [
+    46.55,
+    15.63333
+   ],
+   "website": "http://www.posta.si/home",
+   "enwiki": "https://en.wikipedia.org/wiki/Post_of_Slovenia",
+   "logo_file": "Pošta Slovenije logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7246757",
+   "name": "Pro Plus",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://pro-plus.si/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pro_Plus_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15090956",
+   "name": "Revoz",
+   "cc": "si",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Novo Mesto",
+   "hq": [
+    45.79806,
+    15.16278
+   ],
+   "website": "http://www.revoz.si",
+   "enwiki": "https://en.wikipedia.org/wiki/Revoz",
+   "logo_file": "Logo Revoz.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30299348",
+   "name": "Sadar + Vuga",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "http://www.sadarvuga.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sadar_%2B_Vuga",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23718520",
+   "name": "Semenarna Ljubljana",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "http://www.semenarna.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3459643",
+   "name": "SIP Strojna Industrija",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "agricultural machinery industry"
+   ],
+   "isin": [],
+   "hq_city": "Šempeter pri Gorici",
+   "hq": [
+    45.92833,
+    13.63778
+   ],
+   "website": "https://www.sip.si/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28771840",
+   "name": "SKB Banka D.D. Ljubljana",
+   "cc": "si",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://www.skb.si",
+   "listed": false
+  },
+  {
+   "qid": "Q27920853",
+   "name": "Slatnar",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "sports equipment"
+   ],
+   "isin": [],
+   "hq_city": "Cerklje na Gorenjskem",
+   "hq": [
+    46.2488,
+    14.48552
+   ],
+   "website": "http://www.slatnar.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19936974",
+   "name": "Slovenian Sovereign Holding",
+   "cc": "si",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7541890",
+   "name": "Slovenska matica",
+   "cc": "si",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.slovenska-matica.si/",
+   "enwiki": "https://en.wikipedia.org/wiki/Slovene_Society",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q766616",
+   "name": "Slovenske železnice",
+   "cc": "si",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport",
+    "railway"
+   ],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://potniski.sz.si",
+   "enwiki": "https://en.wikipedia.org/wiki/Slovenian_Railways",
+   "logo_file": "Slovenske železnice logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q52595626",
+   "name": "Soške elektrarne Nova Gorica",
+   "cc": "si",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q2629661",
+   "name": "Statistical Office of the Republic of Slovenia",
+   "cc": "si",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "http://www.stat.si/",
+   "enwiki": "https://en.wikipedia.org/wiki/Statistical_Office_of_the_Republic_of_Slovenia",
+   "logo_file": "Slovenski znak SURS.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3656962",
+   "name": "Studio Moderna",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Zagorje ob Savi",
+   "hq": [
+    46.13417,
+    14.99417
+   ],
+   "website": "https://www.studio-moderna.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Studio_Moderna",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20744353",
+   "name": "Swatycomet",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Maribor",
+   "hq": [
+    46.55,
+    15.63333
+   ],
+   "website": "http://www.swatycomet.si/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7667755",
+   "name": "T-2",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "internet service provider",
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Maribor",
+   "hq": [
+    46.55,
+    15.63333
+   ],
+   "website": "http://te2.si",
+   "enwiki": "https://en.wikipedia.org/wiki/T-2_(Internet_service_provider)",
+   "logo_file": "Murska Sobota (26) (5355063340) (cropped).jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7680372",
+   "name": "Talum",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aluminium industry"
+   ],
+   "isin": [],
+   "hq_city": "Kidričevo",
+   "hq": [
+    46.40374,
+    15.79423
+   ],
+   "website": "http://www.talum.si/",
+   "enwiki": "https://en.wikipedia.org/wiki/Talum",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q954900",
+   "name": "TAM-Europe",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Maribor",
+   "hq": [
+    46.55,
+    15.63333
+   ],
+   "website": "https://www.tam-motors.eu",
+   "enwiki": "https://en.wikipedia.org/wiki/TAM-Europe",
+   "logo_file": "TAM logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1335433",
+   "name": "Telekom Slovenije",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [
+    "SI0031104290"
+   ],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://www.telekom.si/",
+   "lei": "5493003GE7UJGPQAMN79",
+   "enwiki": "https://en.wikipedia.org/wiki/Telekom_Slovenije",
+   "logo_file": "Telekom Slovenije Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7857322",
+   "name": "Telemach Slovenia",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "https://telemach.si/",
+   "enwiki": "https://en.wikipedia.org/wiki/Telemach_(Slovenia)",
+   "logo_file": "Telemach logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q12804409",
+   "name": "Triglav",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance industry"
+   ],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "lei": "549300KGI78MKHO38N42",
+   "listed": false
+  },
+  {
+   "qid": "Q12804423",
+   "name": "Trimo",
+   "cc": "si",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.trimo.si/",
+   "listed": false
+  },
+  {
+   "qid": "Q107183357",
+   "name": "Tuš holding d.o.o",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Celje",
+   "hq": [
+    46.22909,
+    15.26413
+   ],
+   "website": "https://www.tus.si/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28223837",
+   "name": "UniCredit Bank Slovenia",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/UniCredit_Bank_Slovenia",
+   "listed": false
+  },
+  {
+   "qid": "Q4052392",
+   "name": "Unior",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Zreče",
+   "hq": [
+    46.38222,
+    15.37917
+   ],
+   "website": "http://www.unior.com/",
+   "lei": "315700XWRPNT7WD8TK89",
+   "enwiki": "https://en.wikipedia.org/wiki/Unior",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30292510",
+   "name": "Vipap Videm Krško",
+   "cc": "si",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Krško",
+   "hq": [
+    45.95896,
+    15.49216
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Vipap_Videm_Kr%C5%A1ko",
+   "listed": false
+  },
+  {
+   "qid": "Q18907470",
+   "name": "XLAB d.o.o",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "http://www.xlab.si/?lang=en",
+   "enwiki": "https://en.wikipedia.org/wiki/XLAB_d.o.o",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12806471",
+   "name": "Založba Goga",
+   "cc": "si",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Novo Mesto",
+   "hq": [
+    45.79806,
+    15.16278
+   ],
+   "website": "http://www.goga.si/",
+   "listed": false
+  },
+  {
+   "qid": "Q166873",
+   "name": "Zavarovalnica Triglav",
+   "cc": "si",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance company"
+   ],
+   "isin": [
+    "SI0021111651"
+   ],
+   "hq_city": "Ljubljana",
+   "hq": [
+    46.05139,
+    14.50611
+   ],
+   "website": "http://www.triglav.si",
+   "lei": "549300KGI78MKHO38N42",
+   "enwiki": "https://en.wikipedia.org/wiki/Zavarovalnica_Triglav",
+   "logo_file": "Zavarovalnica Triglav Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q19736656",
+   "name": "Zlatarna Celje",
+   "cc": "si",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Celje",
+   "hq": [
+    46.22909,
+    15.26413
+   ],
+   "website": "https://zlatarnacelje.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zlatarna_Celje",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

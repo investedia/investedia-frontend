@@ -1,0 +1,677 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "BA",
+ "count": 33,
+ "companies": [
+  {
+   "qid": "Q2880983",
+   "name": "Balkan Investment Bank Banja Luka",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Banja Luka",
+   "hq": [
+    44.7725,
+    17.1925
+   ],
+   "website": "http://www.bib.ba",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4835618",
+   "name": "BH Telecom",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Sarajevo",
+   "hq": [
+    43.85639,
+    18.41306
+   ],
+   "website": "http://www.bhtelecom.ba",
+   "enwiki": "https://en.wikipedia.org/wiki/BH_Telecom",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4907112",
+   "name": "Bihaćka Pivovara",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Bihać",
+   "hq": [
+    44.81472,
+    15.86917
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Biha%C4%87ka_pivovara",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16842066",
+   "name": "Bingo supermarket",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Tuzla",
+   "hq": [
+    44.53911,
+    18.67519
+   ],
+   "website": "https://www.bingotuzla.ba",
+   "enwiki": "https://en.wikipedia.org/wiki/Bingo_(supermarket)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4947316",
+   "name": "Bosnalijek",
+   "cc": "ba",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "BABSNLR00005"
+   ],
+   "hq_city": "Sarajevo",
+   "hq": [
+    43.85639,
+    18.41306
+   ],
+   "website": "http://www.bosnalijek.ba/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bosnalijek",
+   "logo_file": "Bosnalijek logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3048615",
+   "name": "Elektroprivreda Bosne i Hercegovine",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Sarajevo",
+   "hq": [
+    43.85639,
+    18.41306
+   ],
+   "website": "http://www.elektroprivreda.ba",
+   "enwiki": "https://en.wikipedia.org/wiki/Elektroprivreda_Bosne_i_Hercegovine",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20527419",
+   "name": "Elektroprivreda HZ HB",
+   "cc": "ba",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mostar",
+   "hq": [
+    43.34361,
+    17.8075
+   ],
+   "website": "http://www.ephzhb.ba/",
+   "enwiki": "https://en.wikipedia.org/wiki/Elektroprivreda_HZ_HB",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3050658",
+   "name": "Elektroprivreda Republike Srpske",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Trebinje",
+   "hq": [
+    42.70934,
+    18.34871
+   ],
+   "website": "https://ers.ba/",
+   "enwiki": "https://en.wikipedia.org/wiki/Elektroprivreda_Republike_Srpske",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1341530",
+   "name": "Energoinvest",
+   "cc": "ba",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "engineering"
+   ],
+   "isin": [
+    "BA000A0D8SE4"
+   ],
+   "hq_city": "Sarajevo",
+   "hq": [
+    43.85639,
+    18.41306
+   ],
+   "website": "http://www.energoinvest.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Energoinvest",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q120433",
+   "name": "Energopetrol",
+   "cc": "ba",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "BAENPSR00000"
+   ],
+   "hq_city": "Sarajevo",
+   "hq": [
+    43.85639,
+    18.41306
+   ],
+   "website": "https://ina.ba",
+   "enwiki": "https://en.wikipedia.org/wiki/Energopetrol",
+   "listed": true
+  },
+  {
+   "qid": "Q25821063",
+   "name": "Fabrika cementa Lukavac",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lukavac",
+   "hq": [
+    44.53333,
+    18.53333
+   ],
+   "website": "http://www.fclukavac.ba/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59577526",
+   "name": "Federal News Agency",
+   "cc": "ba",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "news media"
+   ],
+   "isin": [],
+   "website": "https://www.fena.ba",
+   "enwiki": "https://en.wikipedia.org/wiki/FENA",
+   "listed": false
+  },
+  {
+   "qid": "Q110485931",
+   "name": "FIS",
+   "cc": "ba",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vitez",
+   "hq": [
+    44.1585,
+    17.7885
+   ],
+   "website": "https://fis.ba/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3127176",
+   "name": "Franck d.d.",
+   "cc": "ba",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.franck.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Franck_(company)",
+   "logo_file": "Mali logo Franck.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3125195",
+   "name": "HT ERONET",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Mostar",
+   "hq": [
+    43.34361,
+    17.8075
+   ],
+   "website": "http://www.hteronet.ba/",
+   "enwiki": "https://en.wikipedia.org/wiki/HT_Eronet",
+   "listed": false
+  },
+  {
+   "qid": "Q3125210",
+   "name": "HT Mostar",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Mostar",
+   "hq": [
+    43.34361,
+    17.8075
+   ],
+   "website": "http://www.ht.ba/",
+   "enwiki": "https://en.wikipedia.org/wiki/HT_Mostar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25555188",
+   "name": "Igman Konjic",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "ammunition"
+   ],
+   "isin": [],
+   "hq_city": "Konjic",
+   "hq": [
+    43.65139,
+    17.96083
+   ],
+   "website": "http://www.igman.co.ba/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30086366",
+   "name": "ITAcademy",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zemun",
+   "hq": [
+    44.85,
+    20.4
+   ],
+   "website": "https://www.it-akademija.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q13085168",
+   "name": "Kim Tec",
+   "cc": "ba",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "wholesale"
+   ],
+   "isin": [],
+   "hq_city": "Vitez Municipality",
+   "hq": [
+    44.12167,
+    17.76778
+   ],
+   "website": "https://www.kimtec.ba/",
+   "listed": false
+  },
+  {
+   "qid": "Q113366946",
+   "name": "MonetizeAd",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "advertising industry",
+    "information technology industry",
+    "marketing",
+    "monetization"
+   ],
+   "isin": [],
+   "hq_city": "Sarajevo",
+   "hq": [
+    43.85639,
+    18.41306
+   ],
+   "website": "https://monetizead.com",
+   "listed": false
+  },
+  {
+   "qid": "Q3345341",
+   "name": "Nova Banka",
+   "cc": "ba",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Banja Luka",
+   "hq": [
+    44.7725,
+    17.1925
+   ],
+   "website": "http://www.novabanka.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Nova_Banka_(Republika_Srpska)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17204251",
+   "name": "Pretis Vogošća",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "defence industry"
+   ],
+   "isin": [],
+   "hq_city": "Vogošća",
+   "hq": [
+    43.9,
+    18.35
+   ],
+   "website": "https://www.pretis.ba",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60752735",
+   "name": "RA-TV",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/RA-TV",
+   "listed": false
+  },
+  {
+   "qid": "Q126325755",
+   "name": "Raiffeisen Bank",
+   "cc": "ba",
+   "types": [
+    "Q22687",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Raiffeisen_Bank_BiH",
+   "logo_file": "Raiffeisen Bank 2023 logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q7353355",
+   "name": "Robot Komerc",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Sarajevo",
+   "hq": [
+    43.85639,
+    18.41306
+   ],
+   "website": "http://www.robot.ba",
+   "enwiki": "https://en.wikipedia.org/wiki/Robot_(supermarket)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4993905",
+   "name": "Sarajevo Tobacco Factory",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sarajevo",
+   "hq": [
+    43.85639,
+    18.41306
+   ],
+   "website": "http://www.fds.ba/eng/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sarajevo_Tobacco_Factory",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6471508",
+   "name": "Sarajevska Pivara",
+   "cc": "ba",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "brewery"
+   ],
+   "isin": [],
+   "hq_city": "Sarajevo",
+   "hq": [
+    43.85639,
+    18.41306
+   ],
+   "website": "https://sarajevska-pivara.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sarajevska_pivara",
+   "logo_file": "Sarajevo brewery 1.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9264993",
+   "name": "Technical Overhaul Bratunac",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "defence industry"
+   ],
+   "isin": [],
+   "hq_city": "Bratunac",
+   "hq": [
+    44.18389,
+    19.33083
+   ],
+   "website": "https://trb.ba",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1264258",
+   "name": "Telekom Srpske",
+   "cc": "ba",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Banja Luka",
+   "hq": [
+    44.7725,
+    17.1925
+   ],
+   "website": "http://www.mtel.ba/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7696320",
+   "name": "Telemach Bosnia and Herzegovina",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Sarajevo",
+   "hq": [
+    43.85639,
+    18.41306
+   ],
+   "website": "http://www.telemach.ba",
+   "enwiki": "https://en.wikipedia.org/wiki/Telemach_(Bosnia_and_Herzegovina)",
+   "logo_file": "Telemach logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1780876",
+   "name": "Ugljevik Mine and Thermal Power Plant",
+   "cc": "ba",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12751736",
+   "name": "Zenica integrated iron and steel works",
+   "cc": "ba",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3593848",
+   "name": "Čistoća Banja Luka",
+   "cc": "ba",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  }
+ ]
+}

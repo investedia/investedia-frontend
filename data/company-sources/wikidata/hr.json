@@ -1,0 +1,2743 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "HR",
+ "count": 128,
+ "companies": [
+  {
+   "qid": "Q2297404",
+   "name": "3. Maj",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "building of ships and boats"
+   ],
+   "isin": [],
+   "hq_city": "Rijeka",
+   "hq": [
+    45.33333,
+    14.43333
+   ],
+   "website": "http://www.3maj.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/3._Maj",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4636365",
+   "name": "3LHD",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.3lhd.com",
+   "enwiki": "https://en.wikipedia.org/wiki/3LHD",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q926555",
+   "name": "A1 Hrvatska",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://a1.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/A1_Hrvatska",
+   "logo_file": "A1 red logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65149717",
+   "name": "AD Plastik",
+   "cc": "hr",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "ADPL"
+    }
+   ],
+   "industries": [
+    "automotive industry",
+    "fabrication d'autres équipements automobiles"
+   ],
+   "isin": [
+    "HRADPLRA0006"
+   ],
+   "hq_city": "Solin",
+   "hq": [
+    43.53167,
+    16.49472
+   ],
+   "website": "https://www.adplastik.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/AD_Plastik",
+   "listed": true
+  },
+  {
+   "qid": "Q4685619",
+   "name": "Adriatic Croatia International Club",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "nautical tourism"
+   ],
+   "isin": [],
+   "hq_city": "Opatija",
+   "hq": [
+    45.33472,
+    14.30694
+   ],
+   "website": "http://www.aci-club.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Adriatic_Croatia_International_Club",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59662667",
+   "name": "AGM",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://agm.hr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q397347",
+   "name": "Agrokor",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.agrokor.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Agrokor",
+   "logo_file": "Agrokor Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q641519",
+   "name": "Arena Zagreb",
+   "cc": "hr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Arena_Zagreb",
+   "logo_file": "Arena zagreb logo.PNG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2869396",
+   "name": "Atlantic Grupa",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "ATGR"
+    }
+   ],
+   "industries": [
+    "fast-moving consumer goods"
+   ],
+   "isin": [
+    "HRATGRRA0003"
+   ],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.atlanticgrupa.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Atlantic_Grupa",
+   "logo_file": "Atlantic logo PNG.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4826187",
+   "name": "Autocesta Rijeka – Zagreb",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.arz.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Autocesta_Rijeka_%E2%80%93_Zagreb",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15936344",
+   "name": "Autotrans",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Cres",
+   "hq": [
+    44.96028,
+    14.40806
+   ],
+   "website": "https://www.autotrans.hr/hr-hr/home",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12627396",
+   "name": "Autotrolej",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rijeka",
+   "hq": [
+    45.33333,
+    14.43333
+   ],
+   "website": "https://www.autotrolej.hr",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3507194",
+   "name": "Badel 1862",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.badel1862.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Badel_1862",
+   "logo_file": "Badel 1862 Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25382167",
+   "name": "BANKA KOVANICA d.d.",
+   "cc": "hr",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Varaždin",
+   "hq": [
+    46.30806,
+    16.33778
+   ],
+   "website": "https://www.kovanica.hr/",
+   "lei": "315700Q1DHHS9RDVHY29",
+   "logo_file": "Banka Kovanica logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18227895",
+   "name": "Belje",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Darda",
+   "hq": [
+    45.62608,
+    18.69251
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q894110",
+   "name": "Borovo",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "footwear industry"
+   ],
+   "isin": [],
+   "hq_city": "Vukovar",
+   "hq": [
+    45.35,
+    19.00333
+   ],
+   "website": "https://www.borovo.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Borovo_(company)",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q924701",
+   "name": "Brodosplit",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "shipbuilding"
+   ],
+   "isin": [],
+   "hq_city": "Split",
+   "hq": [
+    43.51,
+    16.44
+   ],
+   "website": "http://www.brodosplit.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Brodosplit",
+   "logo_file": "Brodosplit Logo.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107424384",
+   "name": "Bugatti Rimac",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Sveta Nedelja",
+   "hq": [
+    45.8,
+    15.78333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Bugatti_Rimac",
+   "logo_file": "Rimac Automobili logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q546751",
+   "name": "CARNet",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.carnet.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/CARNET",
+   "logo_file": "CARNet.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1099075",
+   "name": "Cedevita",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.cedevita.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cedevita",
+   "logo_file": "Cedevita.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5013916",
+   "name": "CRMP",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.crmp.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/CRMP",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25495576",
+   "name": "Croatia banka",
+   "cc": "hr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.croatiabanka.hr/",
+   "listed": false
+  },
+  {
+   "qid": "Q604923",
+   "name": "Croatia Records",
+   "cc": "hr",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "CROR"
+    }
+   ],
+   "industries": [
+    "music industry"
+   ],
+   "isin": [],
+   "hq_city": "Gornja Dubrava",
+   "hq": [
+    45.84111,
+    16.05564
+   ],
+   "website": "https://crorec.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/Croatia_Records",
+   "logo_file": "Croatia Records Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5187126",
+   "name": "Croatian Heritage Foundation",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.matis.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Croatian_Heritage_Foundation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12643106",
+   "name": "Croatian National Shrine of Our Lady of Marija Bistrica",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.svetiste-mbb.hr/jezik/es",
+   "listed": false
+  },
+  {
+   "qid": "Q3040168",
+   "name": "Croatian News Agency",
+   "cc": "hr",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "news media"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.hina.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Croatian_News_Agency",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5923981",
+   "name": "Croatian Postal Bank",
+   "cc": "hr",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "HPB"
+    }
+   ],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [
+    "HRHPB0RA0002"
+   ],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.hpb.hr/en/about-us/110",
+   "enwiki": "https://en.wikipedia.org/wiki/Hrvatska_po%C5%A1tanska_banka",
+   "logo_file": "Hpb-logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5187151",
+   "name": "Croatian Register of Shipping",
+   "cc": "hr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.crs.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Croatian_Register_of_Shipping",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3717321",
+   "name": "EDIT",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rijeka",
+   "hq": [
+    45.33333,
+    14.43333
+   ],
+   "website": "http://www.edit.hr",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3056518",
+   "name": "Ericsson Nikola Tesla",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "ERNT"
+    }
+   ],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [
+    "HRERNTRA0000"
+   ],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.ericsson.com/hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Ericsson_Nikola_Tesla",
+   "logo_file": "Ericsson (2018).svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q129262179",
+   "name": "Erste & Steiermärkische Bank",
+   "cc": "hr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rijeka",
+   "hq": [
+    45.33333,
+    14.43333
+   ],
+   "website": "https://www.erstebank.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Erste_Bank_Croatia",
+   "logo_file": "Erste Logo 2023.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q489717",
+   "name": "Europapress Holding",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.eph.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hanza_Media",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15362618",
+   "name": "Festival dalmatinskih klapa Omiš",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://fdk.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Festival_dalmatinskih_klapa_Omi%C5%A1",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21178708",
+   "name": "Fibra",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.fibra.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Fibra",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16249625",
+   "name": "Final Fight Championship",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.finalfight.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Final_Fight_Championship",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12640560",
+   "name": "First Croatian Savings Bank",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/First_Croatian_Savings_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135398712",
+   "name": "Fly Air41 Airways",
+   "cc": "hr",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://flyair41.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Fly_Air41_Airways",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3127176",
+   "name": "Franck d.d.",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.franck.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Franck_(company)",
+   "logo_file": "Mali logo Franck.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3127324",
+   "name": "Gavrilović d.o.o.",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.gavrilovic.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Gavrilovi%C4%87_(company)",
+   "listed": false
+  },
+  {
+   "qid": "Q16116691",
+   "name": "Geofizika",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "GFZK"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.geofizika.com/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12631305",
+   "name": "GRO Vladimir Gortan",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5643690",
+   "name": "Haludovo Palace Hotel",
+   "cc": "hr",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "HHLD-R-A"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.hoteli-haludovo.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Haludovo_Palace_Hotel",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q13636760",
+   "name": "Hrvatska elektroprivreda",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.hep.hr/en",
+   "lei": "54930046RT4B6IZJAL08",
+   "enwiki": "https://en.wikipedia.org/wiki/Hrvatska_elektroprivreda",
+   "listed": false
+  },
+  {
+   "qid": "Q25500050",
+   "name": "Hrvatska sveučilišna naklada",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.hsn.hr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1632546",
+   "name": "Hrvatske autoceste",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "road construction",
+    "road maintenance"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.hac.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hrvatske_autoceste",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16845306",
+   "name": "Hrvatske ceste",
+   "cc": "hr",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.hrvatske-ceste.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hrvatske_ceste",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q470696",
+   "name": "Hrvatski Telekom",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "HT"
+    }
+   ],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [
+    "HRHT00RA0005"
+   ],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.hrvatskitelekom.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hrvatski_Telekom",
+   "logo_file": "Deutsche Telekom 2022.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q60766076",
+   "name": "Hygienic Association of Hvar",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Hygienic_Association_of_Hvar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124357723",
+   "name": "HŽ Cargo",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail freight transport"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.hzcargo.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/H%C5%BD_Cargo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1662137",
+   "name": "INA",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "INA"
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "HRINA0RA0007"
+   ],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.ina.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/INA_d.d.",
+   "logo_file": "Ina logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q111671463",
+   "name": "Infinum",
+   "cc": "hr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "software development"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://infinum.com/",
+   "logo_file": "Infinum logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q3151746",
+   "name": "Institut IGH",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "civil engineering"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.igh.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Institut_IGH",
+   "logo_file": "IGH Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q26794431",
+   "name": "Jadrankamen",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "stonemason"
+   ],
+   "isin": [
+    "HRJDKMRA0001"
+   ],
+   "hq_city": "Pučišća",
+   "hq": [
+    43.3475,
+    16.73
+   ],
+   "website": "http://www.jadrankamen.hr/",
+   "logo_file": "Logo-jadrankamen.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3513585",
+   "name": "Jadranski naftovod",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.janaf.hr/index.php?option=home&lang=en",
+   "enwiki": "https://en.wikipedia.org/wiki/Jadranski_naftovod",
+   "logo_file": "JANAF Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q652564",
+   "name": "Jadrolinija",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "freight transport"
+   ],
+   "isin": [],
+   "hq_city": "Rijeka",
+   "hq": [
+    45.33333,
+    14.43333
+   ],
+   "website": "http://www.jadrolinija.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Jadrolinija",
+   "logo_file": "Brodarska zastava Jadrolinije (Petar Hektorovic).JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20526178",
+   "name": "Jadroplov",
+   "cc": "hr",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "JDPL"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "HRJDPLRA0007"
+   ],
+   "hq_city": "Split",
+   "hq": [
+    43.51,
+    16.44
+   ],
+   "listed": true
+  },
+  {
+   "qid": "Q866463",
+   "name": "Jamnica",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "JMNC-R-A"
+    }
+   ],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Pisarovina",
+   "hq": [
+    45.58722,
+    15.85833
+   ],
+   "website": "https://jamnica.company/",
+   "lei": "74780000F06H8UWC7I70",
+   "enwiki": "https://en.wikipedia.org/wiki/Jamnica_(company)",
+   "logo_file": "Jamnica Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q30602786",
+   "name": "Jana",
+   "cc": "hr",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Jana_(brand)",
+   "listed": false
+  },
+  {
+   "qid": "Q2189631",
+   "name": "Karlovačka pivovara",
+   "cc": "hr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Karlovac",
+   "hq": [
+    45.49306,
+    15.55583
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Karlova%C4%8Dka_pivovara",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25383439",
+   "name": "KentBank",
+   "cc": "hr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.kentbank.hr/",
+   "logo_file": "Kent Bank logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q518563",
+   "name": "Konzum",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "KNZM"
+    }
+   ],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "HRKNZMRA0009"
+   ],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.konzum.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Konzum",
+   "logo_file": "Konzum Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q65297414",
+   "name": "Končar – Električna vozila",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1509011",
+   "name": "KONČAR – Elektroindustrija d.d.",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "KOEI"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "HRKOEIRA0009"
+   ],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.koncar.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/KON%C4%8CAR_Group",
+   "logo_file": "Logo Končar Group.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q15091157",
+   "name": "Končar – Engineering Ltd. for production and services",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.koncar-ket.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kon%C4%8Dar_%E2%80%93_Engineering",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12634995",
+   "name": "Kršćanska sadašnjost",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.ks.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Kr%C5%A1%C4%87anska_sada%C5%A1njost",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q122583130",
+   "name": "Links",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Sveta Nedelja",
+   "hq": [
+    45.8,
+    15.78333
+   ],
+   "website": "https://www.links.hr/hr/",
+   "logo_file": "Links-logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4684768",
+   "name": "LNG Hrvatska",
+   "cc": "hr",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://lng.hr/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/LNG_Hrvatska",
+   "listed": false
+  },
+  {
+   "qid": "Q6701627",
+   "name": "Luka Rijeka",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "LKRI-A-A"
+    }
+   ],
+   "industries": [
+    "transport industry"
+   ],
+   "isin": [],
+   "hq_city": "Rijeka",
+   "hq": [
+    45.33333,
+    14.43333
+   ],
+   "website": "http://www.lukarijeka.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Luka_Rijeka",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12636187",
+   "name": "Maraska",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zadar",
+   "hq": [
+    44.11417,
+    15.2275
+   ],
+   "website": "https://maraska.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Maraska",
+   "listed": false
+  },
+  {
+   "qid": "Q1289247",
+   "name": "Matica hrvatska",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.matica.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Matica_hrvatska",
+   "logo_file": "Matica hrvatska logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2867869",
+   "name": "Mosaic Books Ltd.",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.mozaik-knjiga.hr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1958759",
+   "name": "Müller",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Vienna",
+   "hq": [
+    48.20833,
+    16.3725
+   ],
+   "website": "https://www.mueller.at/",
+   "lei": "529900VVXGAWG6MCDO69",
+   "enwiki": "https://en.wikipedia.org/wiki/M%C3%BCller_(store)",
+   "logo_file": "Logo Drogerie Mueller.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12637953",
+   "name": "National shrine of St. Josip",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.svetijosip.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Shrine_of_Saint_Joseph_(Karlovac)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6966095",
+   "name": "NTL",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://ntl.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Narodni_trgova%C4%8Dki_lanac",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7077292",
+   "name": "Odašiljači i veze",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.oiv.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Oda%C5%A1ilja%C4%8Di_i_veze",
+   "logo_file": "OIV LOGO HR RGB-horizontalni.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118151894",
+   "name": "Orqa",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electronics industry"
+   ],
+   "isin": [],
+   "hq_city": "Osijek",
+   "hq": [
+    45.56028,
+    18.67028
+   ],
+   "website": "https://orqafpv.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Orqa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31198593",
+   "name": "OTP banka",
+   "cc": "hr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Split",
+   "hq": [
+    43.51,
+    16.44
+   ],
+   "website": "https://www.otpbanka.hr",
+   "logo_file": "Otp bank Logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q16116526",
+   "name": "PEL Varaždin",
+   "cc": "hr",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology"
+   ],
+   "isin": [],
+   "hq_city": "Varaždin",
+   "hq": [
+    46.30806,
+    16.33778
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q7204982",
+   "name": "Plinacro",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.plinacro.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Plinacro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q904388",
+   "name": "Pliva",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://pliva.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Pliva",
+   "logo_file": "Pliva logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q58040098",
+   "name": "Plodine",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Rijeka",
+   "hq": [
+    45.33333,
+    14.43333
+   ],
+   "website": "http://www.plodine.hr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7205180",
+   "name": "Plovput",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Split",
+   "hq": [
+    43.51,
+    16.44
+   ],
+   "website": "http://www.plovput.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Plovput_(Croatia)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1664911",
+   "name": "Podravka",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "PODR"
+    }
+   ],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [
+    "HRPODRRA0004"
+   ],
+   "hq_city": "Koprivnica",
+   "hq": [
+    46.15,
+    16.81667
+   ],
+   "website": "https://www.podravka.hr",
+   "lei": "549300TMC6BYESPQ7W85",
+   "enwiki": "https://en.wikipedia.org/wiki/Podravka",
+   "logo_file": "Podravka logo 2024.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7243627",
+   "name": "Primorska banka",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Rijeka",
+   "hq": [
+    45.33333,
+    14.43333
+   ],
+   "website": "http://www.primorska.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Primorska_banka",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7246343",
+   "name": "Privredna banka Zagreb",
+   "cc": "hr",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "PBZ"
+    }
+   ],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.pbz.hr/",
+   "lei": "549300ZHFZ4CSK7VS460",
+   "enwiki": "https://en.wikipedia.org/wiki/Privredna_Banka_Zagreb",
+   "logo_file": "PBZ banka logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q25497896",
+   "name": "Promet Split",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.promet-split.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Promet_Split",
+   "logo_file": "Promet Split-d.o.o.-public transport Split.png",
+   "listed": false
+  },
+  {
+   "qid": "Q1262315",
+   "name": "Pula Film Festival",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.pulafilmfestival.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pula_Film_Festival",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97288770",
+   "name": "Razvitak",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Metković",
+   "hq": [
+    43.05,
+    17.65
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Razvitak",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65124070",
+   "name": "Ribola",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://ribola.hr/",
+   "listed": false
+  },
+  {
+   "qid": "Q7334368",
+   "name": "Rimac Automobili",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Sveta Nedelja",
+   "hq": [
+    45.8,
+    15.78333
+   ],
+   "website": "https://www.rimac-automobili.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Rimac_Automobili",
+   "logo_file": "Rimac Automobili logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113550391",
+   "name": "Rimac Group",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Sveta Nedelja",
+   "hq": [
+    45.8,
+    15.78333
+   ],
+   "website": "https://www.rimac-group.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12640859",
+   "name": "RIZ",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electronics industry"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/RIZ_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16671987",
+   "name": "RTL Hrvatska",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.rtl.hr/",
+   "logo_file": "RTL Hrvatska.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113623487",
+   "name": "Salesiana",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.salesiana.hr",
+   "listed": false
+  },
+  {
+   "qid": "Q12641763",
+   "name": "Saponia",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "SAPN"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "HRSAPNRA0007"
+   ],
+   "hq_city": "Osijek",
+   "hq": [
+    45.56028,
+    18.67028
+   ],
+   "website": "http://www.saponia.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Saponia",
+   "listed": true
+  },
+  {
+   "qid": "Q12640416",
+   "name": "Shelter Roses of St. Francis",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Trsat",
+   "hq": [
+    45.33076,
+    14.46054
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q20310507",
+   "name": "Sljeme",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q65156084",
+   "name": "Studenac Market",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Omiš",
+   "hq": [
+    43.44583,
+    16.68833
+   ],
+   "website": "https://www.studenac.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Studenac_Market",
+   "logo_file": "Studenac Market Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7694865",
+   "name": "Tehnika",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "civil engineering"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.tehnika.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Tehnika",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q65124343",
+   "name": "Telemach Croatia",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://telemach.hr",
+   "logo_file": "Telemach logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97290011",
+   "name": "Teovizija",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.teovizija.hr",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12643627",
+   "name": "Tisak",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "TISK"
+    }
+   ],
+   "industries": [
+    "news media"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.tisak.hr",
+   "lei": "74780000205HZTYFG629",
+   "logo_file": "Tisak Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12643718",
+   "name": "Tommy",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Split",
+   "hq": [
+    43.51,
+    16.44
+   ],
+   "website": "https://www.tommy.hr",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15113745",
+   "name": "Tomo Vinković",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bjelovar",
+   "hq": [
+    45.89889,
+    16.84222
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Tomo_Vinkovi%C4%87",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q117468541",
+   "name": "Top lista",
+   "cc": "hr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "music industry"
+   ],
+   "isin": [],
+   "website": "https://www.top-lista.hr/www/",
+   "enwiki": "https://en.wikipedia.org/wiki/Top_lista",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16116771",
+   "name": "TRS Zagreb",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3443031",
+   "name": "TŽV Gredelj",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://tzv-gredelj.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/T%C5%BDV_Gredelj",
+   "logo_file": "Tzv gredelj logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13365060",
+   "name": "U ime obitelji",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://uimeobitelji.net",
+   "listed": false
+  },
+  {
+   "qid": "Q20526419",
+   "name": "Udruga Obnova",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Šibenik",
+   "hq": [
+    43.73389,
+    15.89556
+   ],
+   "website": "https://obnova.com.hr/",
+   "listed": false
+  },
+  {
+   "qid": "Q115167293",
+   "name": "Valamar Riviera d.d.",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "RIVP"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "HRRIVPRA0000"
+   ],
+   "hq_city": "Poreč",
+   "hq": [
+    45.22717,
+    13.59522
+   ],
+   "lei": "529900DUWS1DGNEK4C68",
+   "listed": true
+  },
+  {
+   "qid": "Q97290027",
+   "name": "Verbum (Split)",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Split",
+   "hq": [
+    43.51,
+    16.44
+   ],
+   "website": "https://verbum.hr",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7929739",
+   "name": "Viktor Lenac Shipyard",
+   "cc": "hr",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "VLEN"
+    }
+   ],
+   "industries": [
+    "shipbuilding"
+   ],
+   "isin": [
+    "HRVLENRB0001"
+   ],
+   "hq_city": "Rijeka",
+   "hq": [
+    45.33333,
+    14.43333
+   ],
+   "website": "http://www.lenac.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Viktor_Lenac_Shipyard",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12644871",
+   "name": "Vodatel",
+   "cc": "hr",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q134100283",
+   "name": "Vodoopskrba i odvodnja",
+   "cc": "hr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Folnegovićevo naselje",
+   "website": "https://www.vio.hr/",
+   "listed": false
+  },
+  {
+   "qid": "Q113381618",
+   "name": "WhiteBIT",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://whitebit.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/WhiteBIT_(company)",
+   "logo_file": "WhiteBIT official logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118238392",
+   "name": "YASSA",
+   "cc": "hr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Varaždin",
+   "hq": [
+    46.30806,
+    16.33778
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/YASSA",
+   "listed": false
+  },
+  {
+   "qid": "Q134100186",
+   "name": "Zagreb Markets",
+   "cc": "hr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.trznice-zg.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zagreb_Markets",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140388",
+   "name": "Zagreb Stock Exchange",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://zse.hr/en",
+   "lei": "7478000050A040C0D041",
+   "enwiki": "https://en.wikipedia.org/wiki/Zagreb_Stock_Exchange",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140381",
+   "name": "Zagrebačka banka",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "ZABA"
+    }
+   ],
+   "industries": [
+    "bank"
+   ],
+   "isin": [
+    "HRZABARA0009"
+   ],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.zaba.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Zagreba%C4%8Dka_Banka",
+   "logo_file": "Zagrebačka-banka-Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q97235374",
+   "name": "Zagrebačke ceste",
+   "cc": "hr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Donje Svetice",
+   "hq": [
+    45.80695,
+    16.01171
+   ],
+   "website": "https://www.zgceste.hr/",
+   "listed": false
+  },
+  {
+   "qid": "Q125749296",
+   "name": "Zagrebparking",
+   "cc": "hr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.zagrebparking.hr",
+   "logo_file": "Zagrebparking Logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q97222641",
+   "name": "Znanje",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://znanje.hr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q112653254",
+   "name": "Zrakoplovno-tehnički centar",
+   "cc": "hr",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Velika Gorica",
+   "hq": [
+    45.7,
+    16.06667
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4506865",
+   "name": "Čakavski sabor",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://cakavskisabor.hr",
+   "listed": false
+  },
+  {
+   "qid": "Q65123462",
+   "name": "Čistoća Zagreb",
+   "cc": "hr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "waste management"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://www.cistoca.hr/",
+   "listed": false
+  },
+  {
+   "qid": "Q12960746",
+   "name": "Čvor",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bjelovar",
+   "hq": [
+    45.89889,
+    16.84222
+   ],
+   "website": "http://www.cvor.hr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q342143",
+   "name": "Đuro Đaković",
+   "cc": "hr",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "DDJH"
+    }
+   ],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [
+    "HRDDJHRA0007"
+   ],
+   "hq_city": "Slavonski Brod",
+   "hq": [
+    45.15528,
+    18.01444
+   ],
+   "website": "https://duro-dakovic.com/",
+   "lei": "7478000070H8IW3J9L75",
+   "enwiki": "https://en.wikipedia.org/wiki/%C4%90uro_%C4%90akovi%C4%87_(company)",
+   "logo_file": "Đuro-Đaković-Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3512513",
+   "name": "Školska knjiga",
+   "cc": "hr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "https://shop.skolskaknjiga.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/%C5%A0kolska_knjiga",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

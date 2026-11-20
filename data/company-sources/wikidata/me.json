@@ -1,0 +1,362 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "ME",
+ "count": 16,
+ "companies": [
+  {
+   "qid": "Q62562792",
+   "name": "BENU",
+   "cc": "me",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmacy"
+   ],
+   "isin": [],
+   "website": "https://www.benu.eu",
+   "logo_file": "BENU Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4985192",
+   "name": "Budvanska Rivijera",
+   "cc": "me",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "hospitality industry"
+   ],
+   "isin": [],
+   "website": "http://www.hgbudvanskarivijera.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Budvanska_Rivijera",
+   "listed": false
+  },
+  {
+   "qid": "Q869855",
+   "name": "Crnogorska komercijalna banka",
+   "cc": "me",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.ckb.me/",
+   "enwiki": "https://en.wikipedia.org/wiki/CKB_Banka",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5187004",
+   "name": "Crnogorski Elektroprenosni Sistem",
+   "cc": "me",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Podgorica",
+   "hq": [
+    42.44139,
+    19.26278
+   ],
+   "website": "http://www.tso-epcg.com/nono/eindex.php",
+   "enwiki": "https://en.wikipedia.org/wiki/Crnogorski_Elektroprenosni_Sistem",
+   "listed": false
+  },
+  {
+   "qid": "Q1140641",
+   "name": "Crnogorski Telekom",
+   "cc": "me",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Montenegro Stock Exchange",
+     "ticker": "TECG"
+    }
+   ],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [
+    "METECGRA0PG7"
+   ],
+   "hq_city": "Podgorica",
+   "hq": [
+    42.44139,
+    19.26278
+   ],
+   "website": "https://www.telekom.me/",
+   "enwiki": "https://en.wikipedia.org/wiki/Crnogorski_Telekom",
+   "logo_file": "Telekom Logo 2013.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1327509",
+   "name": "Elektroprivreda Crne Gore",
+   "cc": "me",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Montenegro Stock Exchange",
+     "ticker": "EPCG"
+    }
+   ],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [
+    "MEEPCGRA1NK6"
+   ],
+   "hq_city": "Nikšić",
+   "hq": [
+    42.7731,
+    18.94446
+   ],
+   "website": "http://www.epcg.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Elektroprivreda_Crne_Gore",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3127176",
+   "name": "Franck d.d.",
+   "cc": "me",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.franck.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Franck_(company)",
+   "logo_file": "Mali logo Franck.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124907628",
+   "name": "Monteput",
+   "cc": "me",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Podgorica",
+   "hq": [
+    42.44139,
+    19.26278
+   ],
+   "website": "https://monteput.me/",
+   "logo_file": "Logo Monteput.png",
+   "listed": false
+  },
+  {
+   "qid": "Q3444591",
+   "name": "Mtel",
+   "cc": "me",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Podgorica",
+   "hq": [
+    42.44139,
+    19.26278
+   ],
+   "website": "https://mtel.me/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mtel_(Montenegro)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125959351",
+   "name": "Narodna knjiga",
+   "cc": "me",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Podgorica",
+   "hq": [
+    42.44139,
+    19.26278
+   ],
+   "website": "https://narodna-knjiga.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6428302",
+   "name": "NLB Banka Podgorica",
+   "cc": "me",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Budva",
+   "hq": [
+    42.28472,
+    18.84528
+   ],
+   "website": "https://www.nlb.me/",
+   "enwiki": "https://en.wikipedia.org/wiki/NLB_Banka_Podgorica",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4845433",
+   "name": "One Montenegro",
+   "cc": "me",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Podgorica",
+   "hq": [
+    42.44139,
+    19.26278
+   ],
+   "website": "https://1.me/",
+   "enwiki": "https://en.wikipedia.org/wiki/One_Montenegro",
+   "logo_file": "One (4iG) logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7201630",
+   "name": "Plantaže",
+   "cc": "me",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Podgorica",
+   "hq": [
+    42.44139,
+    19.26278
+   ],
+   "website": "https://www.plantaze.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Planta%C5%BEe",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7231081",
+   "name": "Port of Bar",
+   "cc": "me",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Montenegro Stock Exchange",
+     "ticker": "LUBA"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.lukabar.me",
+   "enwiki": "https://en.wikipedia.org/wiki/Port_of_Bar",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1320833",
+   "name": "Pošta Crne Gore",
+   "cc": "me",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics",
+    "mail",
+    "transport in Montenegro"
+   ],
+   "isin": [],
+   "hq_city": "Podgorica",
+   "hq": [
+    42.44139,
+    19.26278
+   ],
+   "website": "https://www.postacg.me",
+   "enwiki": "https://en.wikipedia.org/wiki/Po%C5%A1ta_Crne_Gore",
+   "logo_file": "Posta Crne Gore Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3511098",
+   "name": "Prva banka Crne Gore",
+   "cc": "me",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Podgorica",
+   "hq": [
+    42.44139,
+    19.26278
+   ],
+   "website": "http://www.prvabankacg.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Prva_Banka_Crne_Gore",
+   "listed": false
+  }
+ ]
+}
