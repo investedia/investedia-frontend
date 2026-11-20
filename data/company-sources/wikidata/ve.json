@@ -1,0 +1,2011 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "VE",
+ "count": 100,
+ "companies": [
+  {
+   "qid": "Q4650741",
+   "name": "ACO, C.A.",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/ACO,_C.A.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4688249",
+   "name": "Aeroexpresos Ejecutivos, C.A.",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "transport"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.aeroexpresos.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aeroexpresos_Ejecutivos,_C.A.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4691984",
+   "name": "Agencia Carabobeña de Noticias",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "news media"
+   ],
+   "isin": [],
+   "hq_city": "Valencia",
+   "hq": [
+    10.16667,
+    -68.0
+   ],
+   "website": "https://acn.com.ve",
+   "enwiki": "https://en.wikipedia.org/wiki/Agencia_Carabobe%C3%B1a_de_Noticias",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q392525",
+   "name": "Agencia Venezolana de Noticias",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.avn.info.ve",
+   "enwiki": "https://en.wikipedia.org/wiki/Agencia_Venezolana_de_Noticias",
+   "logo_file": "AVN Venezuela logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5717839",
+   "name": "Agricultural Bank of Venezuela",
+   "cc": "ve",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Altamira",
+   "hq": [
+    10.49557,
+    -66.8489
+   ],
+   "website": "http://www.bav.com.ve/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4694265",
+   "name": "Agropatria",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Agropatria",
+   "listed": false
+  },
+  {
+   "qid": "Q131995468",
+   "name": "Albanisa",
+   "cc": "ve",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Albanisa",
+   "listed": false
+  },
+  {
+   "qid": "Q4712948",
+   "name": "Alcasa",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aluminium industry"
+   ],
+   "isin": [],
+   "hq_city": "Ciudad Guayana",
+   "hq": [
+    8.32238,
+    -62.68966
+   ],
+   "website": "http://www.alcasa.com.ve",
+   "enwiki": "https://en.wikipedia.org/wiki/Alcasa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4726657",
+   "name": "Alimentos La Giralda",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Alimentos_La_Giralda",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4726660",
+   "name": "Alimentos Polar",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.empresas-polar.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Alimentos_Polar",
+   "logo_file": "Logo wordmark Alimentos Polar.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5672480",
+   "name": "Americatel",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q126048447",
+   "name": "Bancamiga",
+   "cc": "ve",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "https://bancamiga.com",
+   "logo_file": "Bancamiga.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5717827",
+   "name": "Bancaribe",
+   "cc": "ve",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.bancaribe.com.ve/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bancaribe",
+   "logo_file": "Bancaribe-logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5717875",
+   "name": "Banco Caroni",
+   "cc": "ve",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Ciudad Guayana",
+   "hq": [
+    8.32238,
+    -62.68966
+   ],
+   "website": "http://www.bancocaroni.com.ve/",
+   "logo_file": "Banco-Caroní-logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5718196",
+   "name": "Banco del Tesoro",
+   "cc": "ve",
+   "types": [
+    "Q22687",
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "https://www.bt.com.ve/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5728123",
+   "name": "Banco Digital de los Trabajadores",
+   "cc": "ve",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "https://www.bdt.com.ve/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Digital_de_los_Trabajadores",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5681607",
+   "name": "Banco Exterior",
+   "cc": "ve",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.bancoexterior.com/",
+   "logo_file": "Banco-Exterior-VE-logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5465007",
+   "name": "Banco Fondo Comun",
+   "cc": "ve",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "website": "https://www.bfc.com.ve",
+   "enwiki": "https://en.wikipedia.org/wiki/Fondo_Com%C3%BAn",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854094",
+   "name": "Banco Industrial de Venezuela",
+   "cc": "ve",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "https://bivonline.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Industrial_de_Venezuela",
+   "listed": false
+  },
+  {
+   "qid": "Q4854108",
+   "name": "Banco Occidental de Descuento",
+   "cc": "ve",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Maracaibo",
+   "hq": [
+    10.63333,
+    -71.63333
+   ],
+   "website": "http://www.bncenlinea.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Occidental_de_Descuento",
+   "logo_file": "Bodlogotipo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5718006",
+   "name": "Banco Plaza",
+   "cc": "ve",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.bancoplaza.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5718031",
+   "name": "Banco Sofitasa",
+   "cc": "ve",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "San Cristóbal",
+   "hq": [
+    7.76817,
+    -72.23224
+   ],
+   "website": "http://www.sofitasa.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Sofitasa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854115",
+   "name": "Banco Venezolano de Crédito",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "https://www.venezolano.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Venezolano_de_Cr%C3%A9dito",
+   "logo_file": "Venezolano Credito.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5718203",
+   "name": "Bancoro",
+   "cc": "ve",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.bancoro.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q16826678",
+   "name": "BANDES",
+   "cc": "ve",
+   "types": [
+    "Q22687",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/BANDES",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854841",
+   "name": "Banesco",
+   "cc": "ve",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Ciudad Banesco",
+   "hq": [
+    10.4899,
+    -66.8793
+   ],
+   "website": "http://www.banesco.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Banesco",
+   "logo_file": "Banesco Nuevo Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5719054",
+   "name": "Banesco Seguros",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q30281004",
+   "name": "BANFANB",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.banfanb.com.ve",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21007004",
+   "name": "Banplus",
+   "cc": "ve",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.banplus.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4835087",
+   "name": "BBVA Provincial",
+   "cc": "ve",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.provincial.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/BBVA_Provincial",
+   "logo_file": "BBVA Provincial logo 2025.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q517093",
+   "name": "BDV | Banco de Venezuela",
+   "cc": "ve",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.bancodevenezuela.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_de_Venezuela",
+   "logo_file": "Banco de Venezuela logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4903476",
+   "name": "Biblioteca Ayacucho",
+   "cc": "ve",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Biblioteca_Ayacucho",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4928412",
+   "name": "Bloque De Armas",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.bloquedearmas.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bloque_De_Armas",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4936465",
+   "name": "Bodegas Pomar, C.A.",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Barquisimeto",
+   "hq": [
+    10.06778,
+    -69.34669
+   ],
+   "website": "http://www.bodegaspomar.com.ve",
+   "enwiki": "https://en.wikipedia.org/wiki/Bodegas_Pomar,_C.A.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4940313",
+   "name": "Bolívar Films",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Bol%C3%ADvar_Films",
+   "logo_file": "Bolivarfilmslogo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5736796",
+   "name": "CADAFE",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Logo CADAFE (Venezuela).png",
+   "listed": false
+  },
+  {
+   "qid": "Q4302263",
+   "name": "CANTV",
+   "cc": "ve",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.cantv.com.ve/",
+   "enwiki": "https://en.wikipedia.org/wiki/CANTV",
+   "logo_file": "CANTV logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q891563",
+   "name": "Caracas Stock Exchange",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "https://www.bolsadecaracas.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Caracas_Stock_Exchange",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1052455",
+   "name": "Cecosesola",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Barquisimeto",
+   "hq": [
+    10.06778,
+    -69.34669
+   ],
+   "website": "https://cecosesola.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/CECOSESOLA",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2894459",
+   "name": "Central Madeirense",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "https://tucentralonline.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Central_Madeirense",
+   "logo_file": "Logo centralmadirense.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5062868",
+   "name": "Centro Sambil",
+   "cc": "ve",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Municipio Chacao",
+   "hq": [
+    10.50806,
+    -66.85167
+   ],
+   "website": "http://www.tusambil.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Centro_Sambil",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q861622",
+   "name": "Cervecería Polar",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.empresas-polar.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cervecer%C3%ADa_Polar",
+   "logo_file": "Old logo Cervecería Polar (1945) Venezuela.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16958331",
+   "name": "Churromania",
+   "cc": "ve",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Puerto La Cruz",
+   "hq": [
+    10.21667,
+    -64.61667
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Churromania",
+   "logo_file": "Churromanialogoven.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2990302",
+   "name": "Compañía Anónima Venezolana de Industrias Militares",
+   "cc": "ve",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.cavim.com.ve",
+   "enwiki": "https://en.wikipedia.org/wiki/CAVIM",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5159960",
+   "name": "Conferry",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "water transport"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Conferry",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5170527",
+   "name": "Corimon",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.corimon.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Corimon",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5788860",
+   "name": "Corp Banca",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.corpbanca.com.ve/",
+   "logo_file": "Corp Group Tower.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q5172366",
+   "name": "CORPOELEC",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Venezuela",
+   "hq": [
+    8.0,
+    -67.0
+   ],
+   "website": "https://www.corpoelec.gob.ve/",
+   "enwiki": "https://en.wikipedia.org/wiki/Corpoelec",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5172375",
+   "name": "Corporación Venezolana de Guayana",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ciudad Guayana",
+   "hq": [
+    8.32238,
+    -62.68966
+   ],
+   "website": "http://www.cvg.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Corporaci%C3%B3n_Venezolana_de_Guayana",
+   "logo_file": "Logo Corporación Venezolana de Guayana (CVG).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5172562",
+   "name": "Corpozulia",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zulia",
+   "hq": [
+    9.83333,
+    -72.25
+   ],
+   "website": "http://www.corpozulia.gob.ve",
+   "enwiki": "https://en.wikipedia.org/wiki/Corpozulia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5276240",
+   "name": "Digitel",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.digitel.com.ve/",
+   "enwiki": "https://en.wikipedia.org/wiki/Digitel_(Venezuela)",
+   "logo_file": "Digitel (2014).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5291403",
+   "name": "Domínguez & Cía",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.domcia.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Dom%C3%ADnguez_%26_C%C3%ADa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5338004",
+   "name": "Ediciones Ekare",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "https://www.ekare.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ediciones_Ekare",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5352511",
+   "name": "El sitio",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.elsitio.com",
+   "enwiki": "https://en.wikipedia.org/wiki/El_Sitio_(website)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4302161",
+   "name": "Electricidad de Caracas",
+   "cc": "ve",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.laedc.com.ve",
+   "enwiki": "https://en.wikipedia.org/wiki/Electricidad_de_Caracas",
+   "logo_file": "Electricidad de Caracas.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5374447",
+   "name": "Empresas 1BC",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "broadcasting"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Empresas_1BC",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2393414",
+   "name": "Empresas Polar",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "https://empresaspolar.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Empresas_Polar",
+   "logo_file": "Logo wordmark Empresas Polar.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5380905",
+   "name": "Envases Venezolanos",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "product packaging industry"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "https://www.envasesvenezolanos.com.ve/",
+   "enwiki": "https://en.wikipedia.org/wiki/Envases_Venezolanos",
+   "logo_file": "Logo Envases Venezolanos S.A.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5856074",
+   "name": "Farmacia SAAS",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Maracaibo",
+   "hq": [
+    10.63333,
+    -71.63333
+   ],
+   "website": "https://www.farmaciasaas.com/",
+   "logo_file": "Farmacia SAAS logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20015002",
+   "name": "Farmahorro",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.farmahorro.com.ve/",
+   "logo_file": "Farmahorro logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5856092",
+   "name": "Farmatodo",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "https://farmatodo.com.mx/",
+   "logo_file": "Farmatodo logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5445563",
+   "name": "FertiNitro",
+   "cc": "ve",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "fertilizer"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/FertiNitro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5657568",
+   "name": "Flour P.A.N.",
+   "cc": "ve",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://es.allofpan.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Harina_P.A.N.",
+   "logo_file": "Isologotipo de Harina PAN.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5426706",
+   "name": "FM Center",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "radio"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.fmcenter.com.ve",
+   "enwiki": "https://en.wikipedia.org/wiki/FM_Center",
+   "logo_file": "FM Center logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5600120",
+   "name": "Great Venezuela Railway",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Bezirk Mitte",
+   "hq": [
+    52.51667,
+    13.36667
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Great_Venezuela_Railway",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3326326",
+   "name": "Grupo Cisneros",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media",
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "https://www.cisneros.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Cisneros",
+   "logo_file": "LogoCisneros.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5627966",
+   "name": "H.L. Boulton",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.hlboulton.com.ve",
+   "enwiki": "https://en.wikipedia.org/wiki/H.L._Boulton",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106910046",
+   "name": "Industria Venezolana de Aluminio",
+   "cc": "ve",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "aluminium industry"
+   ],
+   "isin": [],
+   "hq_city": "Ciudad Guayana",
+   "hq": [
+    8.32238,
+    -62.68966
+   ],
+   "website": "http://www.venalum.gob.ve",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3892913",
+   "name": "Industrias Pampero, C.A.",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Industrias_Pampero",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19599444",
+   "name": "Inter",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "cable television company"
+   ],
+   "isin": [],
+   "hq_city": "Barquisimeto",
+   "hq": [
+    10.06778,
+    -69.34669
+   ],
+   "website": "https://inter.com.ve",
+   "enwiki": "https://en.wikipedia.org/wiki/Inter_(Venezuelan_broadcaster)",
+   "logo_file": "LOGO INTER 470x198 px.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6449085",
+   "name": "Intevep",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q11133427",
+   "name": "Lago Petroleum Corporation",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Lago_Petroleum_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6714312",
+   "name": "MANPA",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "papermaking"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.manpa.com.ve/",
+   "enwiki": "https://en.wikipedia.org/wiki/MANPA",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137583215",
+   "name": "Mene Grande Oil Company",
+   "cc": "ve",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Mene_Grande_Oil_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854101",
+   "name": "Mercantil Bank",
+   "cc": "ve",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Mercantil Tower",
+   "hq": [
+    10.50536,
+    -66.89967
+   ],
+   "website": "https://www.mercantilbanco.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mercantil_Banco",
+   "logo_file": "Banco Mercantil.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6073631",
+   "name": "Mito Juan",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q6904972",
+   "name": "Monte Ávila Editores",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.monteavila.gob.ve",
+   "enwiki": "https://en.wikipedia.org/wiki/Monte_%C3%81vila_Editores",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108557709",
+   "name": "Monómeros Colombo-Venezolanos",
+   "cc": "ve",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Barranquilla",
+   "hq": [
+    10.98333,
+    -74.80194
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11693811",
+   "name": "Movilnet",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.movilnet.com.ve/sitio/",
+   "logo_file": "Movilnet-logo 0.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48781284",
+   "name": "Movistar",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "website": "http://www.movistar.com.ve",
+   "logo_file": "Movistar isotype 2020.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q718194",
+   "name": "PDVSA",
+   "cc": "ve",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.pdvsa.com",
+   "lei": "549300YWR8TN1OFD4P06",
+   "enwiki": "https://en.wikipedia.org/wiki/PDVSA",
+   "logo_file": "PDV S.A. logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6073672",
+   "name": "Pequiven",
+   "cc": "ve",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3290511",
+   "name": "Record Report",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "music industry"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.recordreport.com.ve/",
+   "enwiki": "https://en.wikipedia.org/wiki/Record_Report",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5480483",
+   "name": "Ron Santa Teresa",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Santa_Teresa_(rum)",
+   "listed": false
+  },
+  {
+   "qid": "Q5871166",
+   "name": "Rómulo Gallegos Center for Latin American Studies",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Altamira",
+   "hq": [
+    10.49557,
+    -66.8489
+   ],
+   "website": "http://www.celarg.org.ve/",
+   "enwiki": "https://en.wikipedia.org/wiki/R%C3%B3mulo_Gallegos_Center_for_Latin_American_Studies",
+   "logo_file": "CELARG.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27510595",
+   "name": "Servibus de Venezuela",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Táchira",
+   "hq": [
+    7.83333,
+    -72.08333
+   ],
+   "website": "http://servibus.co/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3483363",
+   "name": "SIDOR",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Ciudad Guayana",
+   "hq": [
+    8.32238,
+    -62.68966
+   ],
+   "website": "http://www.sidor.com",
+   "enwiki": "https://en.wikipedia.org/wiki/SIDOR",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98509397",
+   "name": "Simpletv",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "https://www.simple.com.ve/",
+   "logo_file": "SIMPLETV cp rgb.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7532458",
+   "name": "Sivensa",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.sivensa.com.ve/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sivensa",
+   "logo_file": "SIVENSA.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7598719",
+   "name": "Stanford Bank Venezuela",
+   "cc": "ve",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Stanford_Bank_Venezuela",
+   "listed": false
+  },
+  {
+   "qid": "Q7643963",
+   "name": "Supermercado La Franco Italiana",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "commerce"
+   ],
+   "isin": [],
+   "hq_city": "Maracaibo",
+   "hq": [
+    10.63333,
+    -71.63333
+   ],
+   "website": "http://www.decandido.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Supermercado_De_Candido",
+   "logo_file": "Logo de La Franco Italiana, Punto Fijo.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7529899",
+   "name": "Síragon",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "computer hardware industry"
+   ],
+   "isin": [],
+   "hq_city": "Valencia",
+   "hq": [
+    10.16667,
+    -68.0
+   ],
+   "website": "http://www.siragon.com",
+   "enwiki": "https://en.wikipedia.org/wiki/S%C3%ADragon",
+   "logo_file": "Siragon.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7775588",
+   "name": "The Women's Development Bank",
+   "cc": "ve",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Caracas",
+   "hq": [
+    10.50611,
+    -66.91444
+   ],
+   "website": "http://www.banmujer.gob.ve",
+   "enwiki": "https://en.wikipedia.org/wiki/Women%27s_Development_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q29389430",
+   "name": "Turpial Airlines",
+   "cc": "ve",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Valencia",
+   "hq": [
+    10.16667,
+    -68.0
+   ],
+   "website": "https://www.turpialairlines.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Turpial_Airlines",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140089782",
+   "name": "Tío Rico",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://helados.com.ve/",
+   "logo_file": "Tío Rico.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q44885674",
+   "name": "UCOCAR",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "shipbuilding"
+   ],
+   "isin": [],
+   "hq_city": "Municipio Puerto Cabello",
+   "hq": [
+    10.4641,
+    -68.0276
+   ],
+   "website": "http://www.ucocar.gob.ve",
+   "enwiki": "https://en.wikipedia.org/wiki/UCOCAR",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6164918",
+   "name": "Venezolana de Telecomunicaciones",
+   "cc": "ve",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Punto Fijo",
+   "hq": [
+    11.71667,
+    -70.18333
+   ],
+   "website": "http://www.vtelca.gob.ve",
+   "logo_file": "Vtelca Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106914835",
+   "name": "Venezuela Central Railway Company",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6160320",
+   "name": "Venezuelan Oil Concessions",
+   "cc": "ve",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "extraction of crude petroleum and natural gas"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q7907085",
+   "name": "VIT, C.A.",
+   "cc": "ve",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "computer hardware industry"
+   ],
+   "isin": [],
+   "hq_city": "Punto Fijo",
+   "hq": [
+    11.71667,
+    -70.18333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/VIT,_C.A.",
+   "logo_file": "Logo-vit.svg",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

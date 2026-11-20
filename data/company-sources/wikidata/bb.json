@@ -1,0 +1,89 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "BB",
+ "count": 5,
+ "companies": [
+  {
+   "qid": "Q4858614",
+   "name": "Barbados Postal Service",
+   "cc": "bb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "list of postal entities"
+   ],
+   "isin": [],
+   "website": "https://www.bps.gov.bb",
+   "enwiki": "https://en.wikipedia.org/wiki/Barbados_Postal_Service",
+   "listed": false
+  },
+  {
+   "qid": "Q5037191",
+   "name": "CarIFS",
+   "cc": "bb",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://www.carifs.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/CarIFS",
+   "listed": false
+  },
+  {
+   "qid": "Q5089525",
+   "name": "Chefette",
+   "cc": "bb",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "fast food restaurant"
+   ],
+   "isin": [],
+   "website": "http://www.Chefette.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Chefette",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108138623",
+   "name": "Copyright Society of Composers, Authors and Publishers Incorporated",
+   "cc": "bb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://coscap.org/",
+   "listed": false
+  },
+  {
+   "qid": "Q48811356",
+   "name": "Ozone Wireless",
+   "cc": "bb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Ozone_Wireless",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

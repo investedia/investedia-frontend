@@ -1,0 +1,212 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "PY",
+ "count": 11,
+ "companies": [
+  {
+   "qid": "Q16837545",
+   "name": "Banco Amambay",
+   "cc": "py",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Asunción",
+   "hq": [
+    -25.28,
+    -57.63444
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Basa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138174589",
+   "name": "Banco Atlas",
+   "cc": "py",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Asunción",
+   "hq": [
+    -25.28,
+    -57.63444
+   ],
+   "website": "https://www.familiar.com.py/",
+   "logo_file": "Banco Atlas.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130572376",
+   "name": "Banco Continental",
+   "cc": "py",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Asunción",
+   "hq": [
+    -25.28,
+    -57.63444
+   ],
+   "logo_file": "BANCO continental.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q28517299",
+   "name": "Banco GNB Paraguay",
+   "cc": "py",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.bancognb.com.py",
+   "listed": false
+  },
+  {
+   "qid": "Q4854097",
+   "name": "Banco Itaú Paraguay S.A.",
+   "cc": "py",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Asunción",
+   "hq": [
+    -25.28,
+    -57.63444
+   ],
+   "website": "http://www.itau.com.py",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Ita%C3%BA_Paraguay",
+   "logo_file": "Banco Itaú logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132735741",
+   "name": "Kyrios Sport",
+   "cc": "py",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q106766448",
+   "name": "Paraguay Central Railway",
+   "cc": "py",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q107808357",
+   "name": "Sociedad de Gestión de Productores Fonográficos del Paraguay",
+   "cc": "py",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Asunción",
+   "hq": [
+    -25.28,
+    -57.63444
+   ],
+   "website": "https://www.sgp.com.py/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sociedad_de_Gesti%C3%B3n_de_Productores_Fonogr%C3%A1ficos_del_Paraguay",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130729576",
+   "name": "Sudameris",
+   "cc": "py",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Sudameris Logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q18924027",
+   "name": "Tigo",
+   "cc": "py",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "http://www.tigo.com.py",
+   "logo_file": "Logo Tigo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6164860",
+   "name": "Vox Paraguay",
+   "cc": "py",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Asunción",
+   "hq": [
+    -25.28,
+    -57.63444
+   ],
+   "website": "http://www.vox.com.py/",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

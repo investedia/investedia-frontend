@@ -1,0 +1,1098 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-19",
+ "country": "UY",
+ "count": 59,
+ "companies": [
+  {
+   "qid": "Q16488129",
+   "name": "Abitab",
+   "cc": "uy",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Q984427",
+   "hq": [
+    -34.89299,
+    -56.18958
+   ],
+   "website": "http://www.abitab.com.uy",
+   "logo_file": "Socios-logo-abitab.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18221127",
+   "name": "Administración Municipal de Transporte",
+   "cc": "uy",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5172888",
+   "name": "Administración Nacional de Correos",
+   "cc": "uy",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "website": "https://www.correo.com.uy/home",
+   "enwiki": "https://en.wikipedia.org/wiki/Correo_Uruguayo",
+   "logo_file": "Logo correo uruguayo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1665583",
+   "name": "Administración Nacional de Usinas y Trasmisiones Eléctricas",
+   "cc": "uy",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power generation, transmission and distribution"
+   ],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "website": "http://www.ute.com.uy/",
+   "enwiki": "https://en.wikipedia.org/wiki/UTE",
+   "logo_file": "UTE logo 2022.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118486828",
+   "name": "Agua Salus",
+   "cc": "uy",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107440344",
+   "name": "Alcoholes del Uruguay",
+   "cc": "uy",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness"
+   ],
+   "isin": [],
+   "hq_city": "Capurro",
+   "hq": [
+    -34.875,
+    -56.20556
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2824522",
+   "name": "ANCAP",
+   "cc": "uy",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "website": "https://www.ancap.com.uy/",
+   "enwiki": "https://en.wikipedia.org/wiki/ANCAP_(Uruguay)",
+   "logo_file": "Logo ancap.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q295780",
+   "name": "ANTEL",
+   "cc": "uy",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "website": "https://www.antel.com.uy/",
+   "enwiki": "https://en.wikipedia.org/wiki/ANTEL",
+   "logo_file": "Antel.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q121590709",
+   "name": "Asociación Española de Socorros Mutuos",
+   "cc": "uy",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Asociaci%C3%B3n_Espa%C3%B1ola",
+   "logo_file": "Asociación Española.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5718132",
+   "name": "Banco de Seguros del Estado",
+   "cc": "uy",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance"
+   ],
+   "isin": [],
+   "hq_city": "Centro",
+   "hq": [
+    -34.90361,
+    -56.18833
+   ],
+   "website": "https://www.bse.com.uy",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_de_Seguros_del_Estado",
+   "logo_file": "BSE logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q126943955",
+   "name": "Banco Itaú Uruguay",
+   "cc": "uy",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Itaú Unibanco logo 2023.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5718029",
+   "name": "Banco Santander (Uruguay)",
+   "cc": "uy",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://www.santander.com.uy",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Santander_Uruguay",
+   "logo_file": "Banco Santander Logotipo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111721298",
+   "name": "Banque Heritage del Uruguay",
+   "cc": "uy",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Banque Heritage Logo Blue.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4857091",
+   "name": "Banred",
+   "cc": "uy",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automated teller machine"
+   ],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Banred",
+   "listed": false
+  },
+  {
+   "qid": "Q67003759",
+   "name": "BBVA Uruguay",
+   "cc": "uy",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial economics"
+   ],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "website": "https://www.bbva.com.uy",
+   "enwiki": "https://en.wikipedia.org/wiki/BBVA_Uruguay",
+   "logo_file": "BBVA 2019.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118489466",
+   "name": "Bracafé",
+   "cc": "uy",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q117100755",
+   "name": "Cerveza Norteña",
+   "cc": "uy",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Cerveza_Norte%C3%B1a",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q117272413",
+   "name": "Cerveza Zillertal",
+   "cc": "uy",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Cerveza_Zillertal",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60582594",
+   "name": "Civiles Iletrados",
+   "cc": "uy",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://civilesiletrados.blogspot.com/",
+   "logo_file": "Logo civiles 01.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4694452",
+   "name": "Compañía Salus",
+   "cc": "uy",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "hq_city": "Minas",
+   "hq": [
+    -34.37743,
+    -55.23821
+   ],
+   "website": "http://www.salus.com.uy/",
+   "logo_file": "Agua Salus.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2840875",
+   "name": "Cooperativa Nacional de Productores de Leche",
+   "cc": "uy",
+   "types": [
+    "Q161726"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy industry"
+   ],
+   "isin": [],
+   "hq_city": "Cordón",
+   "hq": [
+    -34.9,
+    -56.17858
+   ],
+   "website": "http://www.conaprole.com.uy",
+   "logo_file": "Logo de Conaprole.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60601538",
+   "name": "Criatura Editora",
+   "cc": "uy",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "website": "http://criatura.com.uy/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5190326",
+   "name": "Cruz del Sur pipeline",
+   "cc": "uy",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Cruz_del_Sur_pipeline",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107284209",
+   "name": "dLocal",
+   "cc": "uy",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "fintech"
+   ],
+   "isin": [
+    "KYG290181018"
+   ],
+   "website": "https://www.dlocal.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/DLocal",
+   "listed": true
+  },
+  {
+   "qid": "Q47369287",
+   "name": "Dragón Comics",
+   "cc": "uy",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.dragoncomics.com.uy",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5797243",
+   "name": "DTrace",
+   "cc": "uy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5817938",
+   "name": "Ediciones de la Banda Oriental",
+   "cc": "uy",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.bandaoriental.com.uy/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60224323",
+   "name": "Ediciones Trilce",
+   "cc": "uy",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "website": "http://www.trilce.com.uy",
+   "logo_file": "Ediciones Trilce.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5818630",
+   "name": "Editorial Fin de Siglo",
+   "cc": "uy",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "website": "http://www.findesiglo.com.uy/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118489697",
+   "name": "El Chaná",
+   "cc": "uy",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cordón",
+   "hq": [
+    -34.9,
+    -56.17858
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48795718",
+   "name": "Espinillar",
+   "cc": "uy",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5738312",
+   "name": "Flow",
+   "cc": "uy",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "website": "https://flowtv.uy/",
+   "logo_file": "Flow logo 2021.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136749682",
+   "name": "Frog",
+   "cc": "uy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "supermarket"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25052443",
+   "name": "Full Play Group",
+   "cc": "uy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.fullplaygroup.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Full_Play_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118485348",
+   "name": "Fábricas Nacionales de Cerveza",
+   "cc": "uy",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry",
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "website": "http://www.fnc.com.uy/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124952041",
+   "name": "HSBC_Bank Uruguay",
+   "cc": "uy",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "World Trade Center Montevideo",
+   "hq": [
+    -34.90472,
+    -56.13639
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/HSBC_Bank_Uruguay",
+   "logo_file": "Hsbc-logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q16255508",
+   "name": "Kambras",
+   "cc": "uy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Kambras",
+   "listed": false
+  },
+  {
+   "qid": "Q17622822",
+   "name": "Montes del Plata",
+   "cc": "uy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pulp and paper industry"
+   ],
+   "isin": [],
+   "hq_city": "Conchillas",
+   "hq": [
+    -34.16444,
+    -58.03278
+   ],
+   "website": "https://www.montesdelplata.com.uy/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q105415408",
+   "name": "Moove It",
+   "cc": "uy",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://moove-it.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Moove_It",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9051292",
+   "name": "Número",
+   "cc": "uy",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7075333",
+   "name": "Obras Sanitarias del Estado",
+   "cc": "uy",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "sanitation",
+    "water supply"
+   ],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "website": "http://www.ose.com.uy/",
+   "enwiki": "https://en.wikipedia.org/wiki/Obras_Sanitarias_del_Estado",
+   "logo_file": "Logo OSE.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5573519",
+   "name": "Paso de los Toros",
+   "cc": "uy",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Paso_de_los_Toros_(drink)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q121433298",
+   "name": "Portren",
+   "cc": "uy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics",
+    "rail industry"
+   ],
+   "isin": [],
+   "website": "https://www.dbcc-transport.com.uy/",
+   "listed": false
+  },
+  {
+   "qid": "Q16624623",
+   "name": "Redpagos",
+   "cc": "uy",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://www.redpagos.com.uy/",
+   "logo_file": "Redpagos logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q120799669",
+   "name": "Saceem",
+   "cc": "uy",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "construction industry"
+   ],
+   "isin": [],
+   "hq_city": "Ciudad Vieja",
+   "hq": [
+    -34.90667,
+    -56.20833
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118517451",
+   "name": "Saint Café",
+   "cc": "uy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "coffee industry"
+   ],
+   "isin": [],
+   "hq_city": "Casavalle",
+   "hq": [
+    -34.82944,
+    -56.16917
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137779624",
+   "name": "Sanatorio Americano (Uruguay)",
+   "cc": "uy",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Parque Batlle",
+   "hq": [
+    -34.89556,
+    -56.15
+   ],
+   "website": "https://www.americano.com.uy/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6046854",
+   "name": "Scotiabank (Uruguay)",
+   "cc": "uy",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "website": "https://www.scotiabank.com.uy",
+   "logo_file": "Scotiabank logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q68149468",
+   "name": "Servicios Lógisticos Ferroviarios S.A.",
+   "cc": "uy",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics",
+    "rail industry"
+   ],
+   "isin": [],
+   "hq_city": "Peñarol",
+   "hq": [
+    -34.82519,
+    -56.19917
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q124833626",
+   "name": "Sevel Uruguay",
+   "cc": "uy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "website": "https://www.sevel.com.uy/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sevel_Uruguay",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24879292",
+   "name": "Sociedad Anónima Molinos Arroceros Nacionales",
+   "cc": "uy",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Bella Vista",
+   "hq": [
+    -34.87466,
+    -56.19952
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q751807",
+   "name": "State Railways Administration of Uruguay",
+   "cc": "uy",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "rail industry"
+   ],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "website": "https://www.afe.com.uy/",
+   "enwiki": "https://en.wikipedia.org/wiki/State_Railways_Administration_of_Uruguay",
+   "logo_file": "Afe logo15.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16637455",
+   "name": "Ta-Ta S. A",
+   "cc": "uy",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "trade"
+   ],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "website": "http://www.Tata.com.uy",
+   "logo_file": "Ta-Ta Supermercados.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21515178",
+   "name": "TCc",
+   "cc": "uy",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "cable television",
+    "subscription television"
+   ],
+   "isin": [],
+   "website": "http://tcc.com.uy",
+   "enwiki": "https://en.wikipedia.org/wiki/TCC_(Uruguay)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5695688",
+   "name": "Uruguay Credit Bank",
+   "cc": "uy",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ciudad Vieja",
+   "hq": [
+    -34.90667,
+    -56.20833
+   ],
+   "logo_file": "Images-1.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7901417",
+   "name": "Uruguay Northern Railway",
+   "cc": "uy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail industry"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Uruguay_Northern_Railway",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131229345",
+   "name": "UShop",
+   "cc": "uy",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce"
+   ],
+   "isin": [],
+   "hq_city": "Young",
+   "hq": [
+    -32.70091,
+    -57.63228
+   ],
+   "website": "https://xushop.co",
+   "logo_file": "Logo UShop.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6159751",
+   "name": "Vascolet",
+   "cc": "uy",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60691266",
+   "name": "Ático Ediciones",
+   "cc": "uy",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "website": "http://www.chasque.net/melba",
+   "logo_file": "Atico Ediciones.png",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}
