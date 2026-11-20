@@ -1,0 +1,5101 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "BY",
+ "count": 251,
+ "companies": [
+  {
+   "qid": "Q76009796",
+   "name": "140 repair plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Barysaw",
+   "hq": [
+    54.22429,
+    28.51198
+   ],
+   "website": "https://140zavod.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18404482",
+   "name": "558 aircraft repair plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aircraft industry"
+   ],
+   "isin": [],
+   "hq_city": "Brest region",
+   "hq": [
+    52.3825,
+    25.19985
+   ],
+   "website": "http://www.558arp.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1888809",
+   "name": "A1 Belarus",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "information and communications technology",
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.A1.by/",
+   "enwiki": "https://en.wikipedia.org/wiki/A1_Belarus",
+   "logo_file": "A1 red logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q67762620",
+   "name": "AAT «Puchavicki dosledna-ekspierymientalny zavod»",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Marjina Horka",
+   "hq": [
+    53.51667,
+    28.14167
+   ],
+   "website": "https://poez.by/",
+   "logo_file": "ААТ «Пухавіцкі доследна-эксперыментальны завод», лагатып.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108776145",
+   "name": "Adukacyja i vychavannie",
+   "cc": "by",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://aiv.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q66486003",
+   "name": "Agat-Control Systems",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electronics industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://agat.by/bel/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3919652",
+   "name": "Alfa-Bank",
+   "cc": "by",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.alfabank.by",
+   "lei": "253400CHFC0XZ6QMP406",
+   "logo_file": "Alfa-Bank.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2446477",
+   "name": "Alivaria",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://alivaria.by/",
+   "enwiki": "https://en.wikipedia.org/wiki/Alivaria_Brewery",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4736960",
+   "name": "Altoros",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Sunnyvale",
+   "hq": [
+    37.36889,
+    -122.03694
+   ],
+   "website": "http://www.altoros.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Altoros",
+   "logo_file": "Altoros logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4063730",
+   "name": "Alutech",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.alutech-group.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4064405",
+   "name": "Amkodor vehicles",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.amkodor.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q105946752",
+   "name": "Analytical Center EsooM OOO \"Mediafact-Eco\"",
+   "cc": "by",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q131438406",
+   "name": "Ashmiany Cheese Works",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy industry"
+   ],
+   "isin": [],
+   "hq_city": "Ašmiany",
+   "hq": [
+    54.425,
+    25.9375
+   ],
+   "website": "https://syr-ray.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4295217",
+   "name": "Atlant",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://atlant.by",
+   "enwiki": "https://en.wikipedia.org/wiki/Atlant_(appliance_company)",
+   "logo_file": "Logo ATLANT.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4072117",
+   "name": "Atlant-M",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.atlant-m.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116269579",
+   "name": "Avgust-bel",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.avgust.com/science/avgust-bel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4448593",
+   "name": "Babrujsk brewery",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Babruysk",
+   "hq": [
+    53.15,
+    29.23333
+   ],
+   "website": "http://bobrov.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134719263",
+   "name": "Babruysk Vegetable Oil Factory",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Babruysk",
+   "hq": [
+    53.15,
+    29.23333
+   ],
+   "website": "https://bzrm.by/by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56310024",
+   "name": "Babruyskagramash",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Babruysk",
+   "hq": [
+    53.15,
+    29.23333
+   ],
+   "website": "https://bobruiskagromach.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12080035",
+   "name": "Babulina krynka",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry",
+    "operation of dairies and cheesemaking"
+   ],
+   "isin": [],
+   "hq_city": "Belarus",
+   "hq": [
+    53.52833,
+    28.04667
+   ],
+   "website": "http://babushkina.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13028634",
+   "name": "Bank Dabrabyt",
+   "cc": "by",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://bankdabrabyt.by/",
+   "lei": "253400W29T5225G8X631",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114878231",
+   "name": "Bankawski pracesinhavy centar",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "service sector"
+   ],
+   "isin": [],
+   "website": "https://npc.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55191050",
+   "name": "Barysaw Aggregates Plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Barysaw",
+   "hq": [
+    54.22429,
+    28.51198
+   ],
+   "website": "http://bza.by/",
+   "listed": false
+  },
+  {
+   "qid": "Q134692929",
+   "name": "Barysaw Bakery Plant",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Barysaw",
+   "hq": [
+    54.22429,
+    28.51198
+   ],
+   "website": "https://uladar.by/be/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48955848",
+   "name": "Barysaw medical drugs factory",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Barysaw",
+   "hq": [
+    54.22429,
+    28.51198
+   ],
+   "website": "https://borimed.com",
+   "logo_file": "Borimed.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1991373",
+   "name": "Belagroprombank",
+   "cc": "by",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.belapb.by/",
+   "lei": "253400MAWMM2E7FLBA26",
+   "enwiki": "https://en.wikipedia.org/wiki/Belagroprombank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3917601",
+   "name": "BelaPAN",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "news agency"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://web.archive.org/web/20200822010955/https://belapan.by/",
+   "enwiki": "https://en.wikipedia.org/wiki/BelaPAN",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q14916966",
+   "name": "Belarus",
+   "cc": "by",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://izdatelstvo.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1997334",
+   "name": "Belarusbank",
+   "cc": "by",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://belarusbank.by/",
+   "lei": "253400KGSSLCSJL4CX41",
+   "enwiki": "https://en.wikipedia.org/wiki/Belarusbank",
+   "logo_file": "Belarusbank logo (be).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2621941",
+   "name": "Belarusfilm",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "film production"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.belarusfilm.by/",
+   "enwiki": "https://en.wikipedia.org/wiki/Belarusfilm",
+   "logo_file": "Logo of Belarusfilm.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13028760",
+   "name": "Belarusian Bank for Small Business",
+   "cc": "by",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://by.bbsb.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q63124809",
+   "name": "Belarusian cement plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "construction materials industry"
+   ],
+   "isin": [],
+   "hq_city": "Kastsyukovichy",
+   "hq": [
+    53.35139,
+    32.05861
+   ],
+   "website": "https://belcement.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109378727",
+   "name": "Belarusian Cloud Technologies",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://by.becloud.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13028766",
+   "name": "Belarusian Industrial Bank",
+   "cc": "by",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115089650",
+   "name": "Belarusian National Biotechnology Corporation",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Uborki",
+   "hq": [
+    53.6175,
+    28.00694
+   ],
+   "website": "https://bnbc.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139553806",
+   "name": "Belarusian Organization for Radioactive Waste Management",
+   "cc": "by",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "waste management"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://belrao.by",
+   "enwiki": "https://en.wikipedia.org/wiki/Belarusian_Radioactive_Waste_Management_Organization",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q76987",
+   "name": "Belarusian Railway",
+   "cc": "by",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.rw.by/",
+   "enwiki": "https://en.wikipedia.org/wiki/Belarusian_Railway",
+   "logo_file": "Belarus-RW-Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134928550",
+   "name": "Belarusian River Shipping",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "transport industry"
+   ],
+   "isin": [],
+   "hq_city": "Mazyr",
+   "hq": [
+    52.05,
+    29.23333
+   ],
+   "website": "https://parohodstvo.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3918712",
+   "name": "Belarusian Steel Works",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Zhlobin",
+   "hq": [
+    52.9,
+    30.03333
+   ],
+   "website": "https://www.belsteel.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Belarusian_Steel_Works",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4082719",
+   "name": "Belarusian Universal Commodity Exchange",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.butb.by/engl",
+   "enwiki": "https://en.wikipedia.org/wiki/Belarusian_Universal_Commodity_Exchange",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q815266",
+   "name": "Belaruskali",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Belarus Currency And Stock Exchange",
+     "ticker": "T3021"
+    }
+   ],
+   "industries": [
+    "chemical industry",
+    "mining industry"
+   ],
+   "isin": [],
+   "hq_city": "Salihorsk",
+   "hq": [
+    52.78416,
+    27.5425
+   ],
+   "website": "https://belaruskali.by/",
+   "enwiki": "https://en.wikipedia.org/wiki/Belaruskali",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3920002",
+   "name": "Belaruski Narodny Bank",
+   "cc": "by",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.bnb.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4081506",
+   "name": "Belavtodor",
+   "cc": "by",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Kaĺvaryjskaja Street",
+   "hq": [
+    53.90697,
+    27.52382
+   ],
+   "website": "https://belavtodor.by",
+   "enwiki": "https://en.wikipedia.org/wiki/Belavtodor",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q815069",
+   "name": "BelAZ",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Zhodzina",
+   "hq": [
+    54.09444,
+    28.32139
+   ],
+   "website": "https://belaz.by",
+   "enwiki": "https://en.wikipedia.org/wiki/BelAZ",
+   "logo_file": "BELAZ logo 2023.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56650771",
+   "name": "Belcard",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Hrodna",
+   "hq": [
+    53.66667,
+    23.81667
+   ],
+   "website": "http://www.belcard-grodno.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4081738",
+   "name": "Beldziarzhkharchpram",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.bgp.by",
+   "logo_file": "Белгоспищепром.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3920439",
+   "name": "Belenergo",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.belenergo.by",
+   "enwiki": "https://en.wikipedia.org/wiki/Belenergo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3919670",
+   "name": "Belgazprombank",
+   "cc": "by",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://belgazprombank.by/",
+   "lei": "549300V70RZ0HZW2DL27",
+   "enwiki": "https://en.wikipedia.org/wiki/Belgazprombank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17324842",
+   "name": "BelGee",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Barysaw",
+   "hq": [
+    54.22429,
+    28.51198
+   ],
+   "website": "http://belgee.by/",
+   "enwiki": "https://en.wikipedia.org/wiki/BelGee",
+   "logo_file": "Белджи.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q57547215",
+   "name": "Belgips",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Hatava",
+   "hq": [
+    53.78465,
+    27.64291
+   ],
+   "website": "http://www.belgips.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4081470",
+   "name": "BelHard",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology",
+    "mass media",
+    "software outsourcing industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.belhard.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4081963",
+   "name": "BelInfo.Net",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://adsl.by/",
+   "logo_file": "Belinfonet.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3918656",
+   "name": "Belkart",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "service sector"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://belkart.by",
+   "enwiki": "https://en.wikipedia.org/wiki/Belkart",
+   "logo_file": "Logotip-belkart.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131426654",
+   "name": "BelKava",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Ašmiany",
+   "hq": [
+    54.425,
+    25.9375
+   ],
+   "website": "http://belcofe.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q815665",
+   "name": "Belkommunmash",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://holdingbkm.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Belkommunmash",
+   "logo_file": "Белкоммунмаш логотип (cropped).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13028810",
+   "name": "Bellegprom",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "light industry"
+   ],
+   "isin": [],
+   "website": "http://www.bellegprom.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4082117",
+   "name": "Belmedpreparaty, RUE",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmacy"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://belmedpreparaty.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Belmedpreparaty,_RUE",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3917821",
+   "name": "Belneftekhim",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://belneftekhim.by/",
+   "enwiki": "https://en.wikipedia.org/wiki/Belneftekhim",
+   "logo_file": "2025 Белнафтахім эмблема.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4081473",
+   "name": "BelOMA",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "instrumentation engineering"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://belomo.by/by/",
+   "enwiki": "https://en.wikipedia.org/wiki/BelOMO",
+   "logo_file": "BELOMO logo 2023.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4082693",
+   "name": "Belorusneft",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Gomel",
+   "hq": [
+    52.44167,
+    30.98333
+   ],
+   "website": "https://www.belorusneft.by/",
+   "enwiki": "https://en.wikipedia.org/wiki/Belorusneft",
+   "logo_file": "Логотип Белоруснефть.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115873822",
+   "name": "Belpalivagaz",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering",
+    "mining",
+    "pipeline transport"
+   ],
+   "isin": [],
+   "website": "http://topgas.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2662336",
+   "name": "Belposhta",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics",
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://belpost.by/by",
+   "enwiki": "https://en.wikipedia.org/wiki/Belposhta",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123900944",
+   "name": "Belryba",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q443129",
+   "name": "Belshina",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Babruysk",
+   "hq": [
+    53.15,
+    29.23333
+   ],
+   "website": "https://www.belshina.by/",
+   "enwiki": "https://en.wikipedia.org/wiki/Belshina",
+   "logo_file": "Belshina logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4082979",
+   "name": "Beltelecom",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Central Telegraph building in Minsk",
+   "hq": [
+    53.90225,
+    27.55952
+   ],
+   "website": "http://www.beltelecom.by/en",
+   "enwiki": "https://en.wikipedia.org/wiki/Beltelecom",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3919664",
+   "name": "Belvnesheconombank",
+   "cc": "by",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.belveb.by",
+   "lei": "25340038P8SYW80B9W34",
+   "logo_file": "BelVEB-logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130788466",
+   "name": "Belvodgas",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "construction",
+    "fish farming"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://belvodhoz.by/be",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4081686",
+   "name": "Belwest",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "footwear industry",
+    "light industry"
+   ],
+   "isin": [],
+   "hq_city": "Vitebsk",
+   "hq": [
+    55.18333,
+    30.16667
+   ],
+   "website": "http://belwest.com",
+   "logo_file": "Белвест.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106612814",
+   "name": "Berezovsky KSI",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Biaroza District",
+   "hq": [
+    52.53278,
+    24.9775
+   ],
+   "website": "http://berezaksi.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48954781",
+   "name": "Bez Buslou Arts",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106612813",
+   "name": "Biaroza Meat Canning Plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Biaroza",
+   "hq": [
+    52.53333,
+    24.9825
+   ],
+   "website": "http://meat.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97007597",
+   "name": "Biełłakt",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vawkavysk",
+   "hq": [
+    53.16667,
+    24.46667
+   ],
+   "website": "http://www.bellakt.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6466040",
+   "name": "Bobruisk tractor parts and units plant",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Babruysk",
+   "hq": [
+    53.15,
+    29.23333
+   ],
+   "website": "https://bztda.by",
+   "logo_file": "Logo2272.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4093979",
+   "name": "Borisov plant of automotive and tractor electrical equipment",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Barysaw",
+   "hq": [
+    54.22429,
+    28.51198
+   ],
+   "website": "http://www.oaobate.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4096354",
+   "name": "Brest Electric Lamp Plant",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Belarus",
+   "hq": [
+    53.52833,
+    28.04667
+   ],
+   "website": "http://brestlamp.by/",
+   "logo_file": "Брестский электроламповый завод.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28665712",
+   "name": "Brest Electromechanical Plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q57525706",
+   "name": "Brestmash",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Brest",
+   "hq": [
+    52.08472,
+    23.65694
+   ],
+   "website": "http://bmz.by",
+   "logo_file": "Лагатып Брэстмаша.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48942126",
+   "name": "Brestski Chulochny Kombinat",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Brest",
+   "hq": [
+    52.08472,
+    23.65694
+   ],
+   "website": "http://bchk.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6469233",
+   "name": "Brestskoye Pivo",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.brestbeer.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3919666",
+   "name": "BSB Bank",
+   "cc": "by",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.bsb.by",
+   "lei": "253400W559GLXW7E4W37",
+   "logo_file": "БСББанк.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18147389",
+   "name": "Chyrvonaya Zorka",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fish farming"
+   ],
+   "isin": [],
+   "hq_city": "Čyrvonaja Zorka",
+   "hq": [
+    52.17528,
+    27.89528
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q57016794",
+   "name": "Computer Research Institute",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://niievm.by/by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13030724",
+   "name": "Delta Bank",
+   "cc": "by",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.deltabank.by",
+   "lei": "529900GADU0X057WB774",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97312362",
+   "name": "Dobronom",
+   "cc": "by",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.dobronom.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65130596",
+   "name": "Dobrush porcelain factory",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dobrush",
+   "hq": [
+    52.41667,
+    31.31667
+   ],
+   "website": "https://dfz.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135298837",
+   "name": "Domachay",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Mahilyow",
+   "hq": [
+    53.90894,
+    30.34296
+   ],
+   "website": "https://domochay.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4530906",
+   "name": "Elektromodul",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry",
+    "electronics"
+   ],
+   "isin": [],
+   "hq_city": "Maladzyechna",
+   "hq": [
+    54.31361,
+    26.85167
+   ],
+   "website": "http://www.elmodul.by",
+   "logo_file": "Eloctromodul logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97007464",
+   "name": "Eliektraruhavik",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mahilyow",
+   "hq": [
+    53.90894,
+    30.34296
+   ],
+   "website": "https://www.mez.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9637011",
+   "name": "Eurobank",
+   "cc": "by",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.eurobank.by/",
+   "listed": false
+  },
+  {
+   "qid": "Q97007630",
+   "name": "Evistar",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://evistor.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108489016",
+   "name": "Evroopt",
+   "cc": "by",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://evroopt.by/",
+   "lei": "254900ATRLIV9Y4QJ498",
+   "logo_file": "Logo euroopt.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q89503624",
+   "name": "Four quarters",
+   "cc": "by",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.4-4.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2371950",
+   "name": "Gazprom Transgaz Belarus",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.gtb.by",
+   "enwiki": "https://en.wikipedia.org/wiki/Gazprom_Transgaz_Belarus",
+   "logo_file": "Белтрансгаз.gif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13032120",
+   "name": "GBD-Bank",
+   "cc": "by",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.rrb.by/",
+   "lei": "253400LL9EMESVGBB783",
+   "logo_file": "Ava rrb белый на красном.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q93354993",
+   "name": "Gomel Fat Factory",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "industry",
+    "oil and fat industry"
+   ],
+   "isin": [],
+   "hq_city": "Gomel",
+   "hq": [
+    52.44167,
+    30.98333
+   ],
+   "website": "http://www.gjk.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56245448",
+   "name": "Gomel Maltal and Normal Molders Plant",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Gomel",
+   "hq": [
+    52.44167,
+    30.98333
+   ],
+   "website": "http://gomelzlin.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97007669",
+   "name": "Gomel Plant of Measuring Devices",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4142918",
+   "name": "Gomel Railwagon Factory",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail vehicle manufacturer"
+   ],
+   "isin": [],
+   "hq_city": "Gomel",
+   "hq": [
+    52.44167,
+    30.98333
+   ],
+   "website": "https://vsz.gomel.by/be/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97007651",
+   "name": "Gomel Starter Motor Plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://gzpd.by/",
+   "listed": false
+  },
+  {
+   "qid": "Q4142931",
+   "name": "Gomelski himitšeski zavod",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Gomel",
+   "hq": [
+    52.44167,
+    30.98333
+   ],
+   "website": "http://belfert.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4142936",
+   "name": "Gomelsteklo",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Gomel",
+   "hq": [
+    52.44167,
+    30.98333
+   ],
+   "website": "http://www.gomelglass.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q64605280",
+   "name": "Gomeltransneft Druzhba",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.transoil.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123739842",
+   "name": "Gomelzheldortrans",
+   "cc": "by",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "website": "https://teprw.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4143028",
+   "name": "Gomselmash",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "agricultural engineering"
+   ],
+   "isin": [],
+   "hq_city": "Šasejnaja Street",
+   "hq": [
+    52.44389,
+    30.98328
+   ],
+   "website": "https://bel.gomselmash.by",
+   "enwiki": "https://en.wikipedia.org/wiki/GomSelMash",
+   "logo_file": "Loggomselmash.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13030342",
+   "name": "Gorodeyskiy sugar factory",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.gsr.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4150056",
+   "name": "Grodno Azot",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Hrodna",
+   "hq": [
+    53.66667,
+    23.81667
+   ],
+   "website": "http://www.azot.by",
+   "enwiki": "https://en.wikipedia.org/wiki/Grodno_Azot",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13423481",
+   "name": "Grodno tobacco factory",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://tabak.by",
+   "enwiki": "https://en.wikipedia.org/wiki/Grodno_tobacco_factory",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4039762",
+   "name": "Gurtam",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Belarus",
+   "hq": [
+    53.52833,
+    28.04667
+   ],
+   "website": "http://www.gurtam.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Gurtam",
+   "logo_file": "Gurtam-vector-logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16713440",
+   "name": "Harvest",
+   "cc": "by",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.harvest.minsk.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13030452",
+   "name": "Hlybokaye dairy-canning factory",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy industry"
+   ],
+   "isin": [],
+   "hq_city": "Hlybokaye",
+   "hq": [
+    55.13889,
+    27.68583
+   ],
+   "website": "https://glmkk.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4150726",
+   "name": "HMS Group",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Moscow",
+   "hq": [
+    55.75056,
+    37.6175
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/HMS_Group",
+   "logo_file": "HMS Group Logo.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q131180743",
+   "name": "Homyel Meat Processing Plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "meatpacking industry"
+   ],
+   "isin": [],
+   "hq_city": "Gomel",
+   "hq": [
+    52.44167,
+    30.98333
+   ],
+   "website": "https://mkgomel.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4144140",
+   "name": "Horizont",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://horizont-group.com/",
+   "logo_file": "Logo horizont.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56706814",
+   "name": "Hrodna Meat Processing Complex",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "meatpacking industry"
+   ],
+   "isin": [],
+   "hq_city": "Hrodna",
+   "hq": [
+    53.66667,
+    23.81667
+   ],
+   "website": "https://grodnomk.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61744233",
+   "name": "Hrodnaenerha",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy in Belarus",
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Hrodna",
+   "hq": [
+    53.66667,
+    23.81667
+   ],
+   "website": "http://www.energo.grodno.by/",
+   "logo_file": "Grodnoenrgo logo 2020 vertical.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108507365",
+   "name": "Institute of System Researches in Agroindustrial Complex of of the National Academy of Sciences of Belarus",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "research",
+    "research and development"
+   ],
+   "isin": [],
+   "website": "https://refor.by/be",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13028092",
+   "name": "Integral",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "electronics"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.integral.by/",
+   "logo_file": "Интеграл (Минский завод полупроводниковых приборов) 1989-2020е.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q93376621",
+   "name": "ISsoft",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://issoft.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22497966",
+   "name": "Januskevic",
+   "cc": "by",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Warsaw",
+   "hq": [
+    52.23,
+    21.01111
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4295220",
+   "name": "Kamvol",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "light industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://kamvol.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18175387",
+   "name": "KB INDELA",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.indelauav.com",
+   "logo_file": "Logo-indela.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4219487",
+   "name": "Keramin",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://keramin.com",
+   "logo_file": "Keramin logo.gif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135398898",
+   "name": "Klimavichy Bread-Baking Complex",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Klimavičy",
+   "hq": [
+    53.60944,
+    31.96
+   ],
+   "website": "https://klimkhp.by/?lang=be",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4229854",
+   "name": "Kommunarka (confectionery plant)",
+   "cc": "by",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.kommunarka.by",
+   "enwiki": "https://en.wikipedia.org/wiki/Kommunarka_(confectionery_plant)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106883216",
+   "name": "KOMPO",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy industry",
+    "meatpacking industry"
+   ],
+   "isin": [],
+   "hq_city": "Brest",
+   "hq": [
+    52.08472,
+    23.65694
+   ],
+   "website": "https://kompo.by/",
+   "logo_file": "Kompo logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q33061375",
+   "name": "Krasnaselskbudmateryjaly cement plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Krasnasyelski",
+   "hq": [
+    53.26194,
+    24.42361
+   ],
+   "website": "http://www.cementby.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4241064",
+   "name": "Krinitsa",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.krinitsa.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19832219",
+   "name": "Kryčaŭ cement plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Krychaw",
+   "hq": [
+    53.71944,
+    31.71389
+   ],
+   "website": "http://www.kcsh.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107426605",
+   "name": "Kupalinka",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "light industry"
+   ],
+   "isin": [],
+   "website": "http://kupalinka.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61742054",
+   "name": "Kuzlitmash",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Pinsk",
+   "hq": [
+    52.11528,
+    26.10306
+   ],
+   "website": "http://kuzlitmash.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96031390",
+   "name": "Lakokraska",
+   "cc": "by",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lida",
+   "hq": [
+    53.89556,
+    25.29583
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q135418010",
+   "name": "Libretsik",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://sosedi.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97007476",
+   "name": "Lida Shoe Factory",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lida",
+   "hq": [
+    53.89556,
+    25.29583
+   ],
+   "website": "http://lidashoes.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3919214",
+   "name": "Lidskaje piva",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lida",
+   "hq": [
+    53.89556,
+    25.29583
+   ],
+   "website": "http://lidskoe.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4042981",
+   "name": "Link-Assistant.Com",
+   "cc": "by",
+   "types": [
+    "Q431289",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "marketing",
+    "search engine optimization",
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.link-assistant.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60041331",
+   "name": "Lohvinau",
+   "cc": "by",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://lohvinau.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1878000",
+   "name": "Luch",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "instrumentation engineering"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.luch.by",
+   "enwiki": "https://en.wikipedia.org/wiki/Luch_(watchmaker)",
+   "logo_file": "Luch Loga.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13031358",
+   "name": "MaAZ",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Mahilyow",
+   "hq": [
+    53.90894,
+    30.34296
+   ],
+   "website": "http://www.moaz.ru",
+   "enwiki": "https://en.wikipedia.org/wiki/MoAZ",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110569024",
+   "name": "Mahateks",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "light industry"
+   ],
+   "isin": [],
+   "website": "https://mogotex.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61982745",
+   "name": "Mahiliow Metallurgical Works",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Mahilyow",
+   "hq": [
+    53.90894,
+    30.34296
+   ],
+   "website": "https://mmz.by/by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97007452",
+   "name": "Mahiliowtransmash",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4299229",
+   "name": "Mahilioŭ chemical fibers plant",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Mahilyow",
+   "hq": [
+    53.90894,
+    30.34296
+   ],
+   "website": "http://www.khimvolokno.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135646113",
+   "name": "Mahilyow Ice Cream Factory",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy industry"
+   ],
+   "isin": [],
+   "hq_city": "Mahilyow",
+   "hq": [
+    53.90894,
+    30.34296
+   ],
+   "website": "https://leva.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135494709",
+   "name": "Mahilyow Railwagon Factory",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "rail vehicle manufacturer"
+   ],
+   "isin": [],
+   "hq_city": "Mahilyow",
+   "hq": [
+    53.90894,
+    30.34296
+   ],
+   "website": "https://mogwagon.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135755423",
+   "name": "Mahilyowenerga",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "power engineering"
+   ],
+   "isin": [],
+   "hq_city": "Mahilyow",
+   "hq": [
+    53.90894,
+    30.34296
+   ],
+   "website": "https://www.mogilev.energo.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56706900",
+   "name": "Malochny Svet",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Belarus Currency And Stock Exchange",
+     "ticker": "МолочныйМир А1"
+    }
+   ],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Hrodna",
+   "hq": [
+    53.66667,
+    23.81667
+   ],
+   "website": "https://milk.by",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q116284276",
+   "name": "MapData",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.mapbox.by/",
+   "enwiki": "https://en.wikipedia.org/wiki/MapData",
+   "listed": false
+  },
+  {
+   "qid": "Q25381083",
+   "name": "Mark Formelle",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "clothing industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://markformelle.by/",
+   "logo_file": "Mf picture.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q4281995",
+   "name": "Marko",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "footwear industry",
+    "light industry"
+   ],
+   "isin": [],
+   "hq_city": "Vitebsk",
+   "hq": [
+    55.18333,
+    30.16667
+   ],
+   "website": "https://www.marko.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13031440",
+   "name": "Mastatskaya Litaratura",
+   "cc": "by",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.mastlit.by/",
+   "logo_file": "Logo mastlit.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21652054",
+   "name": "Maz-Man",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://maz-man.by/",
+   "enwiki": "https://en.wikipedia.org/wiki/Maz-Man",
+   "listed": false
+  },
+  {
+   "qid": "Q87189243",
+   "name": "Mazyr salt factory",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "industry"
+   ],
+   "isin": [],
+   "website": "https://mozyrsalt.by/by/",
+   "listed": false
+  },
+  {
+   "qid": "Q58699395",
+   "name": "Mašcharčprad",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Marjina Horka",
+   "hq": [
+    53.51667,
+    28.14167
+   ],
+   "website": "http://www.oaompp.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q100744454",
+   "name": "Mediacube",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://mediacube.network/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mediacube",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3575265",
+   "name": "Milavitsa",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "logo_file": "Logo Milavitsa.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q57324521",
+   "name": "Mineral Wax Plant in Svislač (Puchavičy rajon)",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Svislač",
+   "hq": [
+    53.64222,
+    27.91861
+   ],
+   "website": "http://www.belwax.by/",
+   "logo_file": "Завод горнага воску, лагатып.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1251215",
+   "name": "Minsk Automobile Plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.maz.by",
+   "enwiki": "https://en.wikipedia.org/wiki/Minsk_Automobile_Plant",
+   "logo_file": "Minsky automoblie plant.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16676612",
+   "name": "Minsk bearing plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.mpz.com.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21394888",
+   "name": "Minsk civil aviation plant No. 407",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://avia407.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q93437193",
+   "name": "Minsk Dairy Plant No. 1",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.belmilk.by/by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27971638",
+   "name": "Minsk Electrotechnical Plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.metz.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q26712804",
+   "name": "Minsk Gear Works",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.mgw.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q121792788",
+   "name": "Minsk Leather Production Association",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "light industry"
+   ],
+   "isin": [],
+   "hq_city": "Hatava",
+   "hq": [
+    53.78465,
+    27.64291
+   ],
+   "website": "https://www.mpko.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97006709",
+   "name": "Minsk margarine plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://margarin.by/by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4295224",
+   "name": "Minsk Motor Plant",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://mmz-motor.by/blr/",
+   "logo_file": "2020 Менскі маторны завод эмблема.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17093927",
+   "name": "Minsk motorcycle-bicycle factory",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "logo_file": "Motovelo logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135183184",
+   "name": "Minsk Soft Drinks Factory",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://mzbn.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65129124",
+   "name": "Minsk Sparkling Wines Factory",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q592110",
+   "name": "Minsk Tractor Works",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "agricultural machinery industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://belarus-tractor.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Minsk_Tractor_Works",
+   "logo_file": "Logo-Belarus.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3919678",
+   "name": "Minsktrans",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://minsktrans.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q53439514",
+   "name": "Modum",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "cosmetics industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.modum.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4299196",
+   "name": "Mogilevliftmash",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Mahilyow",
+   "hq": [
+    53.90894,
+    30.34296
+   ],
+   "website": "http://liftmach.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16677323",
+   "name": "Mozyr Machine-Building Plant",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "website": "http://www.mozyrmash.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13031624",
+   "name": "MTBank",
+   "cc": "by",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.mtbank.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3920355",
+   "name": "MTS Belarus",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Belarus",
+   "hq": [
+    53.52833,
+    28.04667
+   ],
+   "website": "https://www.mts.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56683369",
+   "name": "Muzeĭ suchasnaha vyi︠a︡ŭlenchaha mastatstva",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://ncsm.by/",
+   "logo_file": "НЦСМ.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q824408",
+   "name": "MZKT",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.mzkt.by/",
+   "enwiki": "https://en.wikipedia.org/wiki/MZKT",
+   "logo_file": "Volat logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2459960",
+   "name": "Mаzyr Oil Refinery",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petrochemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Mićki",
+   "hq": [
+    51.92528,
+    29.33889
+   ],
+   "website": "https://mnpz.by/by/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mozyr_Oil_Refinery",
+   "logo_file": "ЛЯГАТЫП МаНПЗ.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3919275",
+   "name": "Naftan oil refinery",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petrochemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Navapolack",
+   "hq": [
+    55.53333,
+    28.66667
+   ],
+   "website": "https://www.naftan.by/be",
+   "enwiki": "https://en.wikipedia.org/wiki/Naftan_Oil_Refinery",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97006827",
+   "name": "Narovlya hydraulic equipment plant",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Naroŭlia",
+   "hq": [
+    51.8,
+    29.5
+   ],
+   "website": "http://nzga.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1778984",
+   "name": "National State Television and Radio Company of the Republic of Belarus",
+   "cc": "by",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.news.by/",
+   "enwiki": "https://en.wikipedia.org/wiki/Belteleradio",
+   "logo_file": "Beltelelogo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1967898",
+   "name": "Neman",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Lida",
+   "hq": [
+    53.89556,
+    25.29583
+   ],
+   "website": "http://www.neman-lida.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Neman_(bus_manufacturer)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13028600",
+   "name": "Neo Bank Asia",
+   "cc": "by",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://neobank.by",
+   "lei": "2534002LM3JWKX94A106",
+   "logo_file": "Neo Bank logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4317575",
+   "name": "Nerush",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baranavichy",
+   "hq": [
+    53.1325,
+    26.01778
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3831656",
+   "name": "North European Bank",
+   "cc": "by",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.nebbank.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4045832",
+   "name": "onliner.by",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "journalism",
+    "web portal"
+   ],
+   "isin": [],
+   "website": "http://onliner.by/",
+   "enwiki": "https://en.wikipedia.org/wiki/Onliner.by",
+   "logo_file": "Logo-onliner-by.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13028546",
+   "name": "Orsha Linen Mill",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "light industry"
+   ],
+   "isin": [],
+   "hq_city": "Vorsha",
+   "hq": [
+    54.50917,
+    30.42583
+   ],
+   "website": "http://www.linenmill.by/",
+   "logo_file": "Pole Kvetak logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22497863",
+   "name": "Orsha Meat Canning Plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "meatpacking industry"
+   ],
+   "isin": [],
+   "hq_city": "Vorsha",
+   "hq": [
+    54.50917,
+    30.42583
+   ],
+   "website": "https://omkk.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13028549",
+   "name": "Orsha Tools Plant",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Vorsha",
+   "hq": [
+    54.50917,
+    30.42583
+   ],
+   "website": "http://www.orshiz.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135485893",
+   "name": "OrshaSyrZavod",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy industry"
+   ],
+   "isin": [],
+   "hq_city": "Vorsha",
+   "hq": [
+    54.50917,
+    30.42583
+   ],
+   "website": "https://orsha-cheese.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21004522",
+   "name": "Paliessie",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "light industry"
+   ],
+   "isin": [],
+   "hq_city": "Pinsk",
+   "hq": [
+    52.11528,
+    26.10306
+   ],
+   "website": "http://www.polesie.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4369979",
+   "name": "Palimir",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Navapolack",
+   "hq": [
+    55.53333,
+    28.66667
+   ],
+   "website": "https://www.polymir.by/be/",
+   "logo_file": "Logo polymir.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13031909",
+   "name": "Paritetbank",
+   "cc": "by",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.paritetbank.by/",
+   "lei": "2534009ARDTY9AMF4752",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65246940",
+   "name": "Peleng",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "optics industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://be.peleng.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13031989",
+   "name": "Polackaje liada",
+   "cc": "by",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96741283",
+   "name": "Polesieelektromash",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Luninyets",
+   "hq": [
+    52.24861,
+    26.80361
+   ],
+   "website": "https://rotor.brest.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97007707",
+   "name": "Polespechat",
+   "cc": "by",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.polespechat.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3919658",
+   "name": "Priorbank",
+   "cc": "by",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.priorbank.by/",
+   "lei": "529900MHN9MPSBV5ST85",
+   "enwiki": "https://en.wikipedia.org/wiki/Priorbank",
+   "logo_file": "Priorbank logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13133925",
+   "name": "Pruzhany Dairy Integrated Plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://prjmilk.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61742027",
+   "name": "Red Food",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Babruysk",
+   "hq": [
+    53.15,
+    29.23333
+   ],
+   "website": "https://www.zefir.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13033027",
+   "name": "Reshenie Bank",
+   "cc": "by",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://rbank.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q57391804",
+   "name": "Rudziensk",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rudziensk",
+   "hq": [
+    53.59526,
+    27.8645
+   ],
+   "website": "http://rudensk.com/",
+   "logo_file": "ААТ«Рудзенск», лагатып.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4407845",
+   "name": "Santa Bremor",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Brest",
+   "hq": [
+    52.08472,
+    23.65694
+   ],
+   "website": "http://www.santa-bremor.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2074915",
+   "name": "Sber Bank (Belarus)",
+   "cc": "by",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://sber-bank.by",
+   "logo_file": "Logo Sberbank.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116861257",
+   "name": "Servolux",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "agriculture"
+   ],
+   "isin": [],
+   "hq_city": "Mahilyow",
+   "hq": [
+    53.90894,
+    30.34296
+   ],
+   "website": "https://servolux.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q67864718",
+   "name": "ShifCustom",
+   "cc": "by",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.shifcustom.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106612823",
+   "name": "Slavianka",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Belarus Currency And Stock Exchange",
+     "ticker": "T1881"
+    }
+   ],
+   "industries": [
+    "light industry"
+   ],
+   "isin": [],
+   "hq_city": "Babruysk",
+   "hq": [
+    53.15,
+    29.23333
+   ],
+   "website": "http://slavianka.by/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4423892",
+   "name": "Slodych",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Belarus",
+   "hq": [
+    53.52833,
+    28.04667
+   ],
+   "website": "https://www.slodych.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13032662",
+   "name": "Sluck Sugar refinery",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of sugar"
+   ],
+   "isin": [],
+   "hq_city": "Slutsk",
+   "hq": [
+    53.0275,
+    27.55278
+   ],
+   "website": "http://www.sugar.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27987987",
+   "name": "Slutsk Cheese-Making Plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Slutsk",
+   "hq": [
+    53.0275,
+    27.55278
+   ],
+   "website": "https://complimilk.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q129254502",
+   "name": "Slutsk Meat Processing Plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "meatpacking industry"
+   ],
+   "isin": [],
+   "hq_city": "Slutsk",
+   "hq": [
+    53.0275,
+    27.55278
+   ],
+   "website": "https://sluckmeat.by/by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4425165",
+   "name": "Smorgon assembly plant",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Smarhon",
+   "hq": [
+    54.48361,
+    26.4
+   ],
+   "website": "http://smorgon-tractor.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23197270",
+   "name": "Sontsa",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "cosmetics industry"
+   ],
+   "isin": [],
+   "hq_city": "Asipovichy",
+   "hq": [
+    53.3,
+    28.63333
+   ],
+   "website": "http://www.sontsa.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3917396",
+   "name": "Spartak",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "confectionery"
+   ],
+   "isin": [],
+   "hq_city": "Gomel",
+   "hq": [
+    52.44167,
+    30.98333
+   ],
+   "website": "http://www.spartak.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13134338",
+   "name": "StatusBank",
+   "cc": "by",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://stbank.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4442622",
+   "name": "Stimulsoft",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vitebsk",
+   "hq": [
+    55.18333,
+    30.16667
+   ],
+   "website": "http://www.stimulsoft.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Stimulsoft_Reports",
+   "logo_file": "Stimulsoft logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4444224",
+   "name": "Strommašyna",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Mahilyow",
+   "hq": [
+    53.90894,
+    30.34296
+   ],
+   "website": "http://strommashina.mogilev.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q47207536",
+   "name": "Svietlahorsk pulp and cardboard mill",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.sckk.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98915415",
+   "name": "Svietlahorskchimvalakno",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Svyetlahorsk",
+   "hq": [
+    52.63333,
+    29.73333
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q65124308",
+   "name": "Svitanak",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "clothing industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://svitanak.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17306585",
+   "name": "symbal.by",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://symbal.by/",
+   "enwiki": "https://en.wikipedia.org/wiki/Symbal.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q62561575",
+   "name": "Synesis Group",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "IT outsourcing industry",
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://synesis-group.com/",
+   "logo_file": "Synesis Group.tif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4421032",
+   "name": "System Technologies",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.st.by/",
+   "logo_file": "SysTech logo H ru RGB.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97007521",
+   "name": "TAiM",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Babruysk",
+   "hq": [
+    53.15,
+    29.23333
+   ],
+   "website": "https://taim.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13033069",
+   "name": "Technobank",
+   "cc": "by",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://tb.by/",
+   "lei": "2549008761PL6SQJ1G04",
+   "enwiki": "https://en.wikipedia.org/wiki/Technobank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6487423",
+   "name": "The State Committee on Property of the Republic of Belarus",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.gki.gov.by",
+   "logo_file": "Kamitet pa maemasci Belarusi.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106781475",
+   "name": "Tolochin Tinned Food Factory",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Aziercy",
+   "hq": [
+    54.42361,
+    29.76806
+   ],
+   "website": "https://tolochinkz.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q127457917",
+   "name": "Trade & Production Department under the Ministry of Defense",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food service",
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://voenservice.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13028633",
+   "name": "Trade Capital Bank",
+   "cc": "by",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.tcbank.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4461944",
+   "name": "Transistor",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://transistor.by",
+   "logo_file": "Транзистор (Минск) эмблема 1967-1999.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20051229",
+   "name": "Triple",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "agriculture",
+    "chemical industry",
+    "food industry",
+    "freight transport",
+    "house-building",
+    "tourism",
+    "trade"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.triple.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21394911",
+   "name": "Tsentrolit",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "website": "http://www.glz-centrolit.by/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tsentrolit",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13033070",
+   "name": "Tèhnalogìâ",
+   "cc": "by",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.tn.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15852096",
+   "name": "Unison",
+   "cc": "by",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "website": "http://www.unison.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4052667",
+   "name": "Viaden Media",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "entertainment"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://www.viaden.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Viaden_Media",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97007620",
+   "name": "Viciebsk carpets, JSC",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://vitcarpet.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7935279",
+   "name": "VirusBlokAda",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/VirusBlokAda",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97007637",
+   "name": "Vitebsk plant of tractor spare parts",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Vitebsk",
+   "hq": [
+    55.18333,
+    30.16667
+   ],
+   "website": "http://www.vztzch.by/ru",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97007641",
+   "name": "Vitebskdrev",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://vitebskdrev.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q50475468",
+   "name": "Vitex",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "consumer goods industry"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "http://vitex.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25386678",
+   "name": "Vitsyebskenerga",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vitebsk",
+   "hq": [
+    55.18333,
+    30.16667
+   ],
+   "website": "http://www.vitebsk.energo.by",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2586554",
+   "name": "Vityas",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "consumer electronics industry",
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Vitebsk",
+   "hq": [
+    55.18333,
+    30.16667
+   ],
+   "website": "https://www.vityas.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13030201",
+   "name": "Vizas",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vitebsk",
+   "hq": [
+    55.18333,
+    30.16667
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q112406961",
+   "name": "Vkusno i Tochka",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food service",
+    "quick service restaurant sector"
+   ],
+   "isin": [],
+   "hq_city": "Moscow",
+   "hq": [
+    55.75056,
+    37.6175
+   ],
+   "website": "https://qsrsystem.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Vkusno_i_Tochka",
+   "logo_file": "Vkusno I Tochka symbol.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6703916",
+   "name": "VTB Bank (Belarus)",
+   "cc": "by",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.vtb.by/",
+   "logo_file": "VTB Logo 2018.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13030783",
+   "name": "Yelnya Reserve",
+   "cc": "by",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "ecotourism"
+   ],
+   "isin": [],
+   "hq_city": "Miory",
+   "hq": [
+    55.61861,
+    27.62194
+   ],
+   "website": "https://yelnyareserve.tilda.ws/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q105487658",
+   "name": "Zabudova",
+   "cc": "by",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "building material",
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Chysts",
+   "hq": [
+    54.26833,
+    27.10889
+   ],
+   "website": "https://zabudova.by/by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108916081",
+   "name": "Zenit-BelOMO",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://zenit-belomo.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13033367",
+   "name": "Zepter Bank",
+   "cc": "by",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Minsk",
+   "hq": [
+    53.90225,
+    27.56184
+   ],
+   "website": "https://www.zepterbank.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13030749",
+   "name": "Zhabinka Sugar Plant",
+   "cc": "by",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Zhabinka",
+   "hq": [
+    52.19417,
+    24.02
+   ],
+   "website": "http://sahar.by/by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13029391",
+   "name": "Zvjazda",
+   "cc": "by",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://zviazda.by/be",
+   "logo_file": "Звязда.png",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

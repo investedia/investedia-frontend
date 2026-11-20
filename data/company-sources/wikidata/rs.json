@@ -1,0 +1,2773 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "RS",
+ "count": 130,
+ "companies": [
+  {
+   "qid": "Q826186",
+   "name": "A1 Srbija",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://a1.rs/privatni",
+   "enwiki": "https://en.wikipedia.org/wiki/A1_Srbija",
+   "logo_file": "A1 red logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65149717",
+   "name": "AD Plastik",
+   "cc": "rs",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "ADPL"
+    }
+   ],
+   "industries": [
+    "automotive industry",
+    "fabrication d'autres équipements automobiles"
+   ],
+   "isin": [
+    "HRADPLRA0006"
+   ],
+   "hq_city": "Solin",
+   "hq": [
+    43.53167,
+    16.49472
+   ],
+   "website": "https://www.adplastik.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/AD_Plastik",
+   "listed": true
+  },
+  {
+   "qid": "Q293650",
+   "name": "AikBank",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.aikbank.rs.",
+   "enwiki": "https://en.wikipedia.org/wiki/AikBank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2832040",
+   "name": "Albus Novi Sad",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Novi Sad",
+   "hq": [
+    45.26444,
+    19.83167
+   ],
+   "website": "http://www.albus.rs",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3187905",
+   "name": "Alta banka",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://altabanka.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Alta_banka",
+   "logo_file": "Алта банка а.д. Београд.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q618044",
+   "name": "Apatinska Brewery",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Apatin",
+   "hq": [
+    45.66667,
+    18.98333
+   ],
+   "website": "https://apatinskapivara.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Apatin_Brewery",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133829308",
+   "name": "Atelier Mitrović",
+   "cc": "rs",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sremska Mitrovica",
+   "hq": [
+    44.96645,
+    19.61011
+   ],
+   "website": "https://ateliermitrovic.rs/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q366601",
+   "name": "B92",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://b92.net",
+   "enwiki": "https://en.wikipedia.org/wiki/B92",
+   "logo_file": "Logo of B92 (2020-present).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2881787",
+   "name": "Bambi a.d.",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://bambi.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bambi_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2882046",
+   "name": "Banca Intesa Beograd",
+   "cc": "rs",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Belgrade Stock Exchange",
+     "ticker": "DBBG"
+    }
+   ],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.bancaintesa.rs/",
+   "lei": "5493001XF6EC2NJXK304",
+   "enwiki": "https://en.wikipedia.org/wiki/Banca_Intesa_(Serbia)",
+   "logo_file": "Banca Intesa Beograd logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q137504786",
+   "name": "Banini",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kikinda",
+   "hq": [
+    45.82444,
+    20.45917
+   ],
+   "website": "https://banini.rs",
+   "listed": false
+  },
+  {
+   "qid": "Q127955",
+   "name": "Belgrade Nikola Tesla Airport",
+   "cc": "rs",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Belgrade Stock Exchange",
+     "ticker": "AERO"
+    }
+   ],
+   "industries": [
+    "air transport"
+   ],
+   "isin": [],
+   "website": "https://www.beg.aero",
+   "enwiki": "https://en.wikipedia.org/wiki/Belgrade_Nikola_Tesla_Airport",
+   "logo_file": "Logo of Belgrade Nikola Tesla Airport.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q62562792",
+   "name": "BENU",
+   "cc": "rs",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmacy"
+   ],
+   "isin": [],
+   "website": "https://www.benu.eu",
+   "logo_file": "BENU Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5042888",
+   "name": "Carlsberg Srbija",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "hq_city": "Bačka Palanka",
+   "hq": [
+    45.25056,
+    19.38861
+   ],
+   "website": "https://carlsbergsrbija.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Carlsberg_Srbija",
+   "logo_file": "Carlsberg Srbija.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5124437",
+   "name": "Civil Aviation Directorate",
+   "cc": "rs",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Civil_Aviation_Directorate_of_the_Republic_of_Serbia",
+   "listed": true
+  },
+  {
+   "qid": "Q25468907",
+   "name": "Clio",
+   "cc": "rs",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q55608013",
+   "name": "ComTrade Group",
+   "cc": "rs",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology"
+   ],
+   "isin": [],
+   "website": "https://www.comtradegroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/ComTrade_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5254607",
+   "name": "Delta DMD",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.deltadmd.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Delta_DMD",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2539570",
+   "name": "Delta Holding",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "holding company"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "http://deltaholding.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Delta_Holding",
+   "logo_file": "Delta Holding.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97192674",
+   "name": "Dexy Co",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.dexy.co.rs",
+   "logo_file": "Dexy co novi logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q47537748",
+   "name": "Dijamant",
+   "cc": "rs",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Zrenjanin",
+   "hq": [
+    45.37778,
+    20.38611
+   ],
+   "website": "http://www.dijamant.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Dijamant",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115091348",
+   "name": "DIS",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "website": "https://www.dis.rs/",
+   "listed": false
+  },
+  {
+   "qid": "Q141937241",
+   "name": "Discom",
+   "cc": "rs",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://discom.bigcartel.com",
+   "listed": false
+  },
+  {
+   "qid": "Q3041201",
+   "name": "Dunav osiguranje",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.dunav.com/",
+   "lei": "74780000LDWKSZXHAH16",
+   "enwiki": "https://en.wikipedia.org/wiki/Dunav_osiguranje",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1274968",
+   "name": "EI Niš",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "electronics"
+   ],
+   "isin": [],
+   "hq_city": "Niš",
+   "hq": [
+    43.31917,
+    21.89611
+   ],
+   "website": "http://www.eicorp.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ei_Ni%C5%A1",
+   "logo_file": "Ei logotip.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18250047",
+   "name": "Elektromreža Srbije",
+   "cc": "rs",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "http://ems.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Elektromre%C5%BEa_Srbije",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1327532",
+   "name": "Elektroprivreda Srbije",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.eps.rs",
+   "lei": "485100D6O75BH8V9F768",
+   "enwiki": "https://en.wikipedia.org/wiki/Elektroprivreda_Srbije",
+   "logo_file": "Logo of Elektroprivreda Srbije.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19604384",
+   "name": "Elixir Group",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness"
+   ],
+   "isin": [],
+   "hq_city": "Šabac",
+   "hq": [
+    44.75583,
+    19.69389
+   ],
+   "website": "http://www.elixirgroup.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Elixir_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q743264",
+   "name": "Erste Bank Novi Sad",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Novi Sad",
+   "hq": [
+    45.26444,
+    19.83167
+   ],
+   "website": "http://www.erstebank.rs",
+   "lei": "529900MF2S6O7SB8OJ26",
+   "enwiki": "https://en.wikipedia.org/wiki/Erste_Bank_(Serbia)",
+   "logo_file": "Logo Erste Bank 2023.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5411684",
+   "name": "Eurobank a.d.",
+   "cc": "rs",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.eurobank-direktna.rs",
+   "lei": "549300HUR1IZS4PY5912",
+   "enwiki": "https://en.wikipedia.org/wiki/Eurobank%E2%80%93Direktna",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1386505",
+   "name": "Fabrika automobila Priboj",
+   "cc": "rs",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry",
+    "military vehicle industry"
+   ],
+   "isin": [],
+   "hq_city": "Priboj",
+   "hq": [
+    43.58163,
+    19.52734
+   ],
+   "website": "http://www.fap.co.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Fabrika_automobila_Priboj",
+   "logo_file": "Fabrika Automobila Priboj, FAMOS, Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5861474",
+   "name": "FCA Srbija",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Kragujevac",
+   "hq": [
+    44.01011,
+    20.91722
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Fiat_Serbia",
+   "logo_file": "FCA Srbija logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85989413",
+   "name": "FireFly Productions",
+   "cc": "rs",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "film production"
+   ],
+   "isin": [],
+   "website": "http://www.firefly.rs",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4038791",
+   "name": "Fix Price",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Astana International Exchange",
+     "ticker": "FIXP.Y"
+    },
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": "FIXP"
+    },
+    {
+     "exchange": "Moscow Exchange",
+     "ticker": "FIXP"
+    }
+   ],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Kazakhstan",
+   "hq": [
+    48.0,
+    68.0
+   ],
+   "website": "https://fix-price.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Fix_Price",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3127176",
+   "name": "Franck d.d.",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.franck.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Franck_(company)",
+   "logo_file": "Mali logo Franck.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q47649286",
+   "name": "Generali Osiguranje",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "http://www.generali.rs",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3112900",
+   "name": "Goša FOM",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing",
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Smederevska Palanka",
+   "hq": [
+    44.3655,
+    20.95867
+   ],
+   "website": "http://www.gosafom.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Go%C5%A1a_FOM",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8227578",
+   "name": "GSP Belgrade",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "transport industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://gsp.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/GSP_Belgrade",
+   "logo_file": "GSP Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5613898",
+   "name": "Guarana",
+   "cc": "rs",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://knjaz.rs/portfolio/guarana/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q14766989",
+   "name": "Hesteel Serbia",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Smederevo",
+   "hq": [
+    44.66333,
+    20.92889
+   ],
+   "website": "http://www.hesteelserbia.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Hesteel_Serbia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12757246",
+   "name": "HIP Petrohemija",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petrochemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Pančevo",
+   "hq": [
+    44.87389,
+    20.65194
+   ],
+   "website": "http://www.hip-petrohemija.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/HIP-Petrohemija",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3149447",
+   "name": "Impol Seval",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "non-ferrous metal"
+   ],
+   "isin": [],
+   "hq_city": "Sevojno",
+   "hq": [
+    43.845,
+    19.8986
+   ],
+   "website": "http://impol.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Impol_Seval",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12752300",
+   "name": "Industrija mesa Matijević",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Novi Sad",
+   "hq": [
+    45.26444,
+    19.83167
+   ],
+   "website": "https://matijevic.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Industrija_mesa_Matijevi%C4%87",
+   "logo_file": "Industrija mesa Matijević.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60855013",
+   "name": "Industrija precizne mehanike IPM",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61362539",
+   "name": "Invej",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "wholesale"
+   ],
+   "isin": [],
+   "website": "http://www.invej.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Invej",
+   "listed": false
+  },
+  {
+   "qid": "Q30086366",
+   "name": "ITAcademy",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zemun",
+   "hq": [
+    44.85,
+    20.4
+   ],
+   "website": "https://www.it-akademija.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q6164460",
+   "name": "Jat Tehnika",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry",
+    "aircraft maintenance"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "http://www.jat-tehnika.aero/",
+   "enwiki": "https://en.wikipedia.org/wiki/Jat_Tehnika",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1686634",
+   "name": "Jelen pivo",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.jelenpivo.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Jelen_(beer)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6120922",
+   "name": "JGSP Novi Sad",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Novi Sad",
+   "hq": [
+    45.26444,
+    19.83167
+   ],
+   "website": "http://www.gspns.co.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/JGSP_Novi_Sad",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18325428",
+   "name": "Jugoexport",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "clothing industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Jugoexport",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3198020",
+   "name": "Knjaz Miloš AD",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "hq_city": "Aranđelovac",
+   "hq": [
+    44.30417,
+    20.55611
+   ],
+   "website": "http://www.knjaz.co.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Knjaz_Milo%C5%A1",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28225041",
+   "name": "Krušik Valjevo",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Valjevo",
+   "hq": [
+    44.27075,
+    19.88663
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Kru%C5%A1ik_(company)",
+   "listed": false
+  },
+  {
+   "qid": "Q12754418",
+   "name": "Laguna",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "book publishing",
+    "book retail industry",
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.laguna.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Laguna_(publisher)",
+   "logo_file": "Laguna logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3459975",
+   "name": "Lasta Beograd",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "transport"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "http://www.lasta.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Lasta_Beograd",
+   "logo_file": "Logo lasta begrad.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48975194",
+   "name": "Leoni Wiring Systems Southeast",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Prokuplje",
+   "hq": [
+    43.23389,
+    21.58611
+   ],
+   "website": "https://www.leoni-serbia.com/sr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Leoni_Wiring_Systems_Southeast",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q47434134",
+   "name": "Marbo Product",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "http://pepsicostart.marbo.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Marbo_Product",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6795490",
+   "name": "Maxi",
+   "cc": "rs",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.maxi.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Delhaize_Serbia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65195344",
+   "name": "Megdan fighting",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mixed martial arts"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25245411",
+   "name": "Mercator Serbia",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Novi Sad",
+   "hq": [
+    45.26444,
+    19.83167
+   ],
+   "website": "http://www.mercator.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Mercator_Serbia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q47462419",
+   "name": "Metalac",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Gornji Milanovac",
+   "hq": [
+    44.02115,
+    20.45595
+   ],
+   "website": "https://www.metalac.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Metalac_a.d.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3307248",
+   "name": "Metalac FAD - Gornji Milanovac",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Gornji Milanovac",
+   "hq": [
+    44.02115,
+    20.45595
+   ],
+   "website": "http://www.metalac.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28402825",
+   "name": "MK Fintel Wind",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity supply company"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/MK_Fintel_Wind",
+   "listed": false
+  },
+  {
+   "qid": "Q47403036",
+   "name": "MK Group",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "holding company"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "http://www.mkgroup.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/MK_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65064541",
+   "name": "Moj Kiosk",
+   "cc": "rs",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "website": "https://www.mojkioskgroup.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Moj_Kiosk",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q50359958",
+   "name": "MPC Holding",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "holding company"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "http://www.mpcholding.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/MPC_Holding",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3176362",
+   "name": "MPP Jedinstvo",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Sevojno",
+   "hq": [
+    43.845,
+    19.8986
+   ],
+   "website": "http://www.mppjedinstvo.co.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/MPP_Jedinstvo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3444602",
+   "name": "mts",
+   "cc": "rs",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://mts.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mobile_Telephony_of_Serbia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q89355548",
+   "name": "MTS banka",
+   "cc": "rs",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://mtsbanka.rs/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125959351",
+   "name": "Narodna knjiga",
+   "cc": "rs",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://narodna-knjiga.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25461521",
+   "name": "National Library \"Stefan Prvovenčani\" Kraljevo",
+   "cc": "rs",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.kv-biblio.org.rs/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141674370",
+   "name": "Nelt Group",
+   "cc": "rs",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://nelt.com",
+   "logo_file": "Nelt Group logo color.png",
+   "listed": false
+  },
+  {
+   "qid": "Q1279721",
+   "name": "NIS",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Belgrade Stock Exchange",
+     "ticker": "NIIS"
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "RSNISHE79420"
+   ],
+   "hq_city": "Novi Sad",
+   "hq": [
+    45.26444,
+    19.83167
+   ],
+   "website": "https://www.nis.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Naftna_Industrija_Srbije",
+   "logo_file": "NIS Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1536320",
+   "name": "NLB banka",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [
+    "RSKOBBE33594"
+   ],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.nlbkb.rs/",
+   "lei": "549300WZI2AGR4NZU538",
+   "enwiki": "https://en.wikipedia.org/wiki/NLB_Bank_(Serbia)",
+   "logo_file": "NLB banka.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3334459",
+   "name": "NLB banka Beograd",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "http://www.nlb.rs",
+   "lei": "485100004FEO5ULFDP03",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12756344",
+   "name": "Nolit",
+   "cc": "rs",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7552914",
+   "name": "OTP banka Srbija",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.otpbanka.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_G%C3%A9n%C3%A9rale_Srbija",
+   "logo_file": "OTP Bank logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7073102",
+   "name": "OTP banka Srbije",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Novi Sad",
+   "hq": [
+    45.26444,
+    19.83167
+   ],
+   "website": "https://www.otpbanka.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/OTP_Bank_(Serbia)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25464139",
+   "name": "Pančevo City Library",
+   "cc": "rs",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.biblioteka-pancevo.org.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pan%C4%8Devo_City_Library",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141805345",
+   "name": "PEU Resavica",
+   "cc": "rs",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/PEU_Resavica",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q366630",
+   "name": "Pink (Serbia)",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "media industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://pink.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pink_(Serbia)",
+   "logo_file": "Pink TV logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7196030",
+   "name": "Pink International Company",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "http://www.rtvpink.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pink_International_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q47403172",
+   "name": "PKB Corporation",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "http://www.pkb.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/PKB_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q769311",
+   "name": "Pošta Srbije",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.posta.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Po%C5%A1ta_Srbije",
+   "logo_file": "Posta logo (2021-).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2882644",
+   "name": "Poštanska štedionica",
+   "cc": "rs",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.posted.co.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Banka_Po%C5%A1tanska_%C5%A1tedionica",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140282163",
+   "name": "Pravoslavna reč",
+   "cc": "rs",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://pravoslavnarec.com",
+   "listed": false
+  },
+  {
+   "qid": "Q3407068",
+   "name": "Progres Beograd",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "trade"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "http://www.progres.rs",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12757924",
+   "name": "Prosveta",
+   "cc": "rs",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.prosveta.rs/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7253214",
+   "name": "Prva Petoletka",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Trstenik",
+   "hq": [
+    43.61861,
+    20.99722
+   ],
+   "website": "https://petoletka.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/PPT-Petoletka",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3408684",
+   "name": "Prvi Partizan",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "ammunition"
+   ],
+   "isin": [],
+   "hq_city": "Užice",
+   "hq": [
+    43.85,
+    19.85
+   ],
+   "website": "https://www.prvipartizan.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Prvi_Partizan",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30642228",
+   "name": "PS Fashion",
+   "cc": "rs",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Čačak",
+   "hq": [
+    43.89139,
+    20.34972
+   ],
+   "website": "https://www.psfashion.com",
+   "enwiki": "https://en.wikipedia.org/wiki/P.S._Fashion",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13437654",
+   "name": "Putevi Srbije",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "roadworks"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://putevi-srbije.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Putevi_Srbije",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q47519860",
+   "name": "Putevi Užice",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "roadworks"
+   ],
+   "isin": [],
+   "hq_city": "Užice",
+   "hq": [
+    43.85,
+    19.85
+   ],
+   "website": "http://www.puteviuzice.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Putevi_U%C5%BEice",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12640899",
+   "name": "Radio Industrija Nikola Tesla",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electronics industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7283807",
+   "name": "Raiffeisen banka",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.raiffeisenbank.rs",
+   "lei": "5299009JBOOJN1CD4M89",
+   "enwiki": "https://en.wikipedia.org/wiki/Raiffeisen_Bank_(Serbia)",
+   "logo_file": "Raiffeisen Bank 2023 logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31181139",
+   "name": "Ringier Axel Springer Srbija",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3415728",
+   "name": "RTB Bor",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "non-ferrous metallurgy"
+   ],
+   "isin": [],
+   "hq_city": "Bor",
+   "hq": [
+    44.13028,
+    22.10361
+   ],
+   "website": "http://www.rtb.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Serbia_Zijin_Bor_Copper",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56326396",
+   "name": "Rumaguma",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ruma",
+   "hq": [
+    45.00306,
+    19.82889
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7452767",
+   "name": "SBB",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://sbb.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Serbia_Broadband",
+   "logo_file": "Serbia Broadband Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16961619",
+   "name": "Securitas Services d.o.o.",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.securitas.co.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Securitas_Services_d.o.o.",
+   "logo_file": "Securitas AB logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7452770",
+   "name": "Serbia and Montenegro Air Traffic Services Agency",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "http://www.smatsa.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Serbia_and_Montenegro_Air_Traffic_Services_Agency",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q83878",
+   "name": "Serbian Railways",
+   "cc": "rs",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.zeleznicesrbije.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Serbian_Railways",
+   "logo_file": "Železnice srbije logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3484793",
+   "name": "SIMPO",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Vranje",
+   "hq": [
+    42.55417,
+    21.89722
+   ],
+   "website": "https://simpo.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/SIMPO",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19903651",
+   "name": "Sloboda Čačak",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Čačak",
+   "hq": [
+    43.89139,
+    20.34972
+   ],
+   "website": "http://www.sloboda.co.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Sloboda_(defense_company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110045562",
+   "name": "Službeni glasnik",
+   "cc": "rs",
+   "types": [
+    "Q2085381",
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.slglasnik.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7545988",
+   "name": "Smoki",
+   "cc": "rs",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://smoki.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Smoki",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1638054",
+   "name": "Srbijagas",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "gas industry"
+   ],
+   "isin": [],
+   "hq_city": "Novi Sad",
+   "hq": [
+    45.26444,
+    19.83167
+   ],
+   "website": "http://www.srbijagas.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Srbijagas",
+   "logo_file": "Srbijagas-sr.lat.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48970026",
+   "name": "Srbijašume",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "wood industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Srbija%C5%A1ume",
+   "listed": true
+  },
+  {
+   "qid": "Q16085853",
+   "name": "Srpska književna zadruga",
+   "cc": "rs",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Serbian_Literary_Guild",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12747032",
+   "name": "Sunoko",
+   "cc": "rs",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Novi Sad",
+   "hq": [
+    45.26444,
+    19.83167
+   ],
+   "website": "http://sunoko.headmade.rs/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7659039",
+   "name": "Swisslion Takovo",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://swisslion-takovo.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Swisslion_Group",
+   "logo_file": "Swisslion Takovo logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3515736",
+   "name": "Tarkett d.o.o.",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Bačka Palanka",
+   "hq": [
+    45.25056,
+    19.38861
+   ],
+   "website": "http://www.tarkett.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Tarkett_d.o.o.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17098657",
+   "name": "Technical Testing Center",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "http://www.toc.vs.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Technical_Testing_Center",
+   "logo_file": "TOC logo.tif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1278722",
+   "name": "Telekom Srbija",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://telekomsrbija.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Telekom_Srbija",
+   "logo_file": "2020 Телеком Србија лого.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17492684",
+   "name": "TPP Kostolac",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/TPP_Kostolac",
+   "listed": false
+  },
+  {
+   "qid": "Q2450698",
+   "name": "Trayal Corporation",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Kruševac",
+   "hq": [
+    43.58333,
+    21.32667
+   ],
+   "website": "https://trayal.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Trayal",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7884636",
+   "name": "UniCredit Bank Serbia",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.unicreditbank.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/UniCredit_Bank_(Serbia)",
+   "logo_file": "UniCredit Bank - LOGO.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12747294",
+   "name": "Univerexport",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Novi Sad",
+   "hq": [
+    45.26444,
+    19.83167
+   ],
+   "website": "https://www.univerexport.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Univerexport",
+   "logo_file": "Univerexport logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2301266",
+   "name": "Utva Aviation Industry",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Pančevo",
+   "hq": [
+    44.87389,
+    20.65194
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Utva_Aviation_Industry",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16682260",
+   "name": "Valjaonica bakra Sevojno",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "non-ferrous metal"
+   ],
+   "isin": [],
+   "hq_city": "Sevojno",
+   "hq": [
+    43.845,
+    19.8986
+   ],
+   "website": "http://www.coppersev.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Valjaonica_bakra_Sevojno",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110048012",
+   "name": "Vlatacom Institute",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.vlatacominstitute.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q39022656",
+   "name": "Yettel Bank",
+   "cc": "rs",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.yettelbank.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Yettel_Bank",
+   "logo_file": "Yettelbank.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1780171",
+   "name": "Yettel Serbia",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.yettel.rs",
+   "enwiki": "https://en.wikipedia.org/wiki/Yettel_Serbia",
+   "logo_file": "Yettellimelogo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4053498",
+   "name": "Yugoimport SDPR",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "http://www.yugoimport.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Yugoimport%E2%80%93SDPR",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12747875",
+   "name": "Yuhor",
+   "cc": "rs",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "meat industry"
+   ],
+   "isin": [],
+   "website": "https://yuhorducan.rs/",
+   "listed": false
+  },
+  {
+   "qid": "Q49995936",
+   "name": "Yura Corporation d.o.o.",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Rača",
+   "hq": [
+    44.23333,
+    20.98333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Yura_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q148220",
+   "name": "Zastava Arms",
+   "cc": "rs",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Kragujevac",
+   "hq": [
+    44.01011,
+    20.91722
+   ],
+   "website": "http://www.zastava-arms.co.rs/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zastava_Arms",
+   "logo_file": "Zastava Arms text only logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q47488022",
+   "name": "Zastava TERVO",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Kragujevac",
+   "hq": [
+    44.01011,
+    20.91722
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Zastava_TERVO",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2749474",
+   "name": "Zastava Trucks",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Kragujevac",
+   "hq": [
+    44.01011,
+    20.91722
+   ],
+   "website": "http://www.zastava-kamioni.co.yu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zastava_Trucks",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65195924",
+   "name": "Zilion film",
+   "cc": "rs",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q391661",
+   "name": "Šinvoz Zrenjanin",
+   "cc": "rs",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of machinery and equipment"
+   ],
+   "isin": [],
+   "hq_city": "Zrenjanin",
+   "hq": [
+    45.37778,
+    20.38611
+   ],
+   "listed": false
+  }
+ ]
+}

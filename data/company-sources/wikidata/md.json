@@ -1,0 +1,819 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "MD",
+ "count": 40,
+ "companies": [
+  {
+   "qid": "Q4795496",
+   "name": "Aroma",
+   "cc": "md",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Aroma_(winery)",
+   "listed": false
+  },
+  {
+   "qid": "Q697966",
+   "name": "Aroma SA",
+   "cc": "md",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "stimulant foodstuff"
+   ],
+   "isin": [],
+   "website": "http://www.aroma.md/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12721480",
+   "name": "Banca de Economii",
+   "cc": "md",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "http://www.bem.md",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19703259",
+   "name": "Barza Albă",
+   "cc": "md",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bălți",
+   "hq": [
+    47.76167,
+    27.92889
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12740257",
+   "name": "Bucuria (company)",
+   "cc": "md",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "https://bucuria.md/rom",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12727350",
+   "name": "Cartier",
+   "cc": "md",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "https://cartier.md/",
+   "logo_file": "Editura Cartier logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133567255",
+   "name": "Chișinău Stock Exchange",
+   "cc": "md",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q61085001",
+   "name": "Château Purcari",
+   "cc": "md",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18537495",
+   "name": "Editura ARC",
+   "cc": "md",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4037942",
+   "name": "Efes Vitanta Moldova Brewery",
+   "cc": "md",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "https://berechisinau.md/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q121289921",
+   "name": "Eximbank",
+   "cc": "md",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5441705",
+   "name": "Felicia",
+   "cc": "md",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "http://www.felicia.md",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4038722",
+   "name": "Fidesco Group",
+   "cc": "md",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "http://www.fidesco.md/",
+   "enwiki": "https://en.wikipedia.org/wiki/Fidesco_Group",
+   "logo_file": "Fidesco Group.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27048331",
+   "name": "Franzeluța",
+   "cc": "md",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "http://franzeluta.info/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4202030",
+   "name": "Interdnestrcom",
+   "cc": "md",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tiraspol",
+   "hq": [
+    46.85,
+    29.63333
+   ],
+   "website": "http://www.idknet.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Interdnestrcom",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24035749",
+   "name": "JLC",
+   "cc": "md",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "http://www.jlc.md/ro/about.php",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61085990",
+   "name": "Linella",
+   "cc": "md",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "https://linella.md/ro",
+   "logo_file": "Linella Alaturi Zi de Zi.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1971178",
+   "name": "Moldcell",
+   "cc": "md",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "http://www.moldcell.md",
+   "enwiki": "https://en.wikipedia.org/wiki/Moldcell",
+   "logo_file": "Moldcell.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20429436",
+   "name": "Moldelectrica",
+   "cc": "md",
+   "types": [
+    "Q270791",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "https://moldelectrica.md",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20429441",
+   "name": "Moldindconbank",
+   "cc": "md",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://micb.md/",
+   "logo_file": "Logo Moldindconbank.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4044440",
+   "name": "Moldova Agroindbank",
+   "cc": "md",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Moldova Stock Exchange",
+     "ticker": "AGIB"
+    }
+   ],
+   "industries": [
+    "service sector"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "https://www.maib.md/",
+   "enwiki": "https://en.wikipedia.org/wiki/Maib",
+   "logo_file": "Maib ID new artwork colour.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q21886122",
+   "name": "Moldova Steel Works",
+   "cc": "md",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Rybnitsa",
+   "hq": [
+    47.76639,
+    29.00056
+   ],
+   "website": "https://www.aommz.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Moldova_Steel_Works",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20429475",
+   "name": "Moldovagaz",
+   "cc": "md",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "http://www.moldovagaz.md",
+   "enwiki": "https://en.wikipedia.org/wiki/Moldovagaz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6895867",
+   "name": "Moldpres",
+   "cc": "md",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "news agency"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "http://www.moldpres.md/",
+   "enwiki": "https://en.wikipedia.org/wiki/Moldpres",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4044445",
+   "name": "Moldtelecom",
+   "cc": "md",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "https://www.moldtelecom.md/",
+   "enwiki": "https://en.wikipedia.org/wiki/Moldtelecom",
+   "logo_file": "Moldtelecom logo April 2021.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q571831",
+   "name": "OmniScriptum Publishing Group",
+   "cc": "md",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "https://lap-publishing.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/OmniScriptum",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2377961",
+   "name": "Orange Moldova",
+   "cc": "md",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "http://orange.md/",
+   "logo_file": "Orange logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4044416",
+   "name": "OTP Bank",
+   "cc": "md",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "https://www.mobiasbanca.md/",
+   "enwiki": "https://en.wikipedia.org/wiki/OTP_Bank_(Moldova)",
+   "logo_file": "OTP Bank logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2085731",
+   "name": "Poșta Moldovei",
+   "cc": "md",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "https://posta.md/ro",
+   "enwiki": "https://en.wikipedia.org/wiki/Po%C8%99ta_Moldovei",
+   "logo_file": "Logo - Poșta Moldovei.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27048329",
+   "name": "Prut Internațional",
+   "cc": "md",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://edituraprut.md/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7260900",
+   "name": "Purcari",
+   "cc": "md",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "winemaking"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "http://www.bostavan.md",
+   "enwiki": "https://en.wikipedia.org/wiki/Purcari_(winery)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4047858",
+   "name": "Ritlabs",
+   "cc": "md",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "LOGO RITLABS.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q378941",
+   "name": "Sheriff",
+   "cc": "md",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry",
+    "light industry"
+   ],
+   "isin": [],
+   "hq_city": "Tiraspol",
+   "hq": [
+    46.85,
+    29.63333
+   ],
+   "website": "http://sheriff.md",
+   "enwiki": "https://en.wikipedia.org/wiki/Sheriff_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4050035",
+   "name": "StarNet",
+   "cc": "md",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "internet service provider"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "http://starnet.md/",
+   "enwiki": "https://en.wikipedia.org/wiki/StarNet",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4050361",
+   "name": "SunCommunications",
+   "cc": "md",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "http://www.suncommunications.md/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q612637",
+   "name": "TeleRadio-Moldova",
+   "cc": "md",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "http://www.trm.md",
+   "enwiki": "https://en.wikipedia.org/wiki/Teleradio-Moldova",
+   "logo_file": "TeleRadio-Moldova logo (2025).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20432218",
+   "name": "Tirex Petrol",
+   "cc": "md",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.tirexpetrol.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23828037",
+   "name": "UniBank",
+   "cc": "md",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "http://unibank.md/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4052410",
+   "name": "Unité",
+   "cc": "md",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "http://www.unite.md/",
+   "enwiki": "https://en.wikipedia.org/wiki/Unit%C3%A9",
+   "logo_file": "Moldtelecom logo April 2021.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4052675",
+   "name": "Victoriabank",
+   "cc": "md",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Chișinău",
+   "hq": [
+    47.02278,
+    28.83528
+   ],
+   "website": "https://www.victoriabank.md",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

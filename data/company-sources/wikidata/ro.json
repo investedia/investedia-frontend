@@ -1,0 +1,10931 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "RO",
+ "count": 646,
+ "companies": [
+  {
+   "qid": "Q12719748",
+   "name": "2 x 1 Holding Cape Midia",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q115684369",
+   "name": "5 to go",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "café"
+   ],
+   "isin": [],
+   "hq_city": "Bragadiru",
+   "hq": [
+    44.36944,
+    25.97528
+   ],
+   "website": "https://fivetogo.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/5_to_go",
+   "logo_file": "5 to go logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18537204",
+   "name": "A&A Medical",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18537205",
+   "name": "A&D Pharma",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20257815",
+   "name": "Abrom",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Bârlad",
+   "hq": [
+    46.21667,
+    27.66667
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12719775",
+   "name": "ACI Cluj",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12719943",
+   "name": "Acvatot",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q65149717",
+   "name": "AD Plastik",
+   "cc": "ro",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "ADPL"
+    }
+   ],
+   "industries": [
+    "automotive industry",
+    "fabrication d'autres équipements automobiles"
+   ],
+   "isin": [
+    "HRADPLRA0006"
+   ],
+   "hq_city": "Solin",
+   "hq": [
+    43.53167,
+    16.49472
+   ],
+   "website": "https://www.adplastik.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/AD_Plastik",
+   "listed": true
+  },
+  {
+   "qid": "Q18537253",
+   "name": "Adeplast",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "lei": "315700OCXSRT1H4G8Q66",
+   "listed": false
+  },
+  {
+   "qid": "Q4682411",
+   "name": "Adevărul Holding",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Adev%C4%83rul_Holding",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18537260",
+   "name": "ADM Farm",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18537262",
+   "name": "Administrația Canalelor Navigabile",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Timișoara",
+   "hq": [
+    45.75972,
+    21.23
+   ],
+   "website": "https://acn.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12719977",
+   "name": "Administrația Fluvială a Dunării de Jos",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Galați",
+   "hq": [
+    45.43361,
+    28.05528
+   ],
+   "website": "https://www.afdj.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12719979",
+   "name": "Administrația Porturilor Dunării Maritime",
+   "cc": "ro",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Galați",
+   "hq": [
+    45.43361,
+    28.05528
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18537282",
+   "name": "Aedificia Carpați",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q767808",
+   "name": "Aerostar",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Bacău",
+   "hq": [
+    46.58333,
+    26.91667
+   ],
+   "website": "http://www.aerostar.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aerostar_(Romanian_company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4651652",
+   "name": "AGERPRES",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "news agency"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.agerpres.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/Agerpres",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12720118",
+   "name": "Agras",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12720125",
+   "name": "Agricola Internațional Bacău",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Bacău",
+   "hq": [
+    46.58333,
+    26.91667
+   ],
+   "website": "https://agricola.ro/companie",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12720171",
+   "name": "Albalact",
+   "cc": "ro",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Bucharest Stock Exchange",
+     "ticker": "ALBZ"
+    }
+   ],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "website": "https://www.albalact.ro/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12720188",
+   "name": "Albrau Prod",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "brewery"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://albrau.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18537354",
+   "name": "Alfa Software",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q55482135",
+   "name": "Allview",
+   "cc": "ro",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Brașov",
+   "hq": [
+    45.65222,
+    25.61056
+   ],
+   "website": "https://www.allview.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Allview",
+   "logo_file": "Logo Allview.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12720482",
+   "name": "Almera",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12720485",
+   "name": "Alor",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4735732",
+   "name": "Alro Slatina",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aluminium industry"
+   ],
+   "isin": [],
+   "hq_city": "Slatina",
+   "hq": [
+    44.42972,
+    24.36417
+   ],
+   "website": "http://www.alro.ro",
+   "lei": "5493008G6W6SORM2JG98",
+   "enwiki": "https://en.wikipedia.org/wiki/Alro_Slatina",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2840436",
+   "name": "Altex",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Voluntari",
+   "hq": [
+    44.4925,
+    26.19139
+   ],
+   "website": "http://www.altex.ro",
+   "logo_file": "Altex logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12720501",
+   "name": "Altur",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "Bucharest Stock Exchange",
+     "ticker": "ALT"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Slatina",
+   "hq": [
+    44.42972,
+    24.36417
+   ],
+   "website": "https://altursa.ro/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12720502",
+   "name": "Alum",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tulcea",
+   "hq": [
+    45.1775,
+    28.80361
+   ],
+   "website": "http://www.alum.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q12720510",
+   "name": "Amarad",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q23828044",
+   "name": "Amco",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12720531",
+   "name": "Amfiteatru",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12720545",
+   "name": "Amonil",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Slobozia",
+   "hq": [
+    44.56389,
+    27.36611
+   ],
+   "website": "http://www.amonil.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q12720568",
+   "name": "Ana Hotels",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 1",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://shop.anahotels.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18537378",
+   "name": "Ana Imep",
+   "cc": "ro",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12720581",
+   "name": "Ana și Cornel",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mizil",
+   "hq": [
+    45.0,
+    26.44056
+   ],
+   "website": "http://www.anacornel.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12720621",
+   "name": "Anchor Group",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "real estate development",
+    "real estate management"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.anchorgrup.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4763964",
+   "name": "Angst",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Romania",
+   "hq": [
+    46.0,
+    25.0
+   ],
+   "website": "https://www.angst.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Angst_(supermarket)",
+   "listed": false
+  },
+  {
+   "qid": "Q4764729",
+   "name": "Animafilm",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 3",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://www.studioulanimafilm.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Animafilm",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q127785313",
+   "name": "Annabella",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mass-market retailing"
+   ],
+   "isin": [],
+   "hq_city": "Suraia",
+   "hq": [
+    45.68333,
+    27.38333
+   ],
+   "website": "https://www.annabella.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q574884",
+   "name": "Antibiotice Iași",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [
+    {
+     "exchange": "Bucharest Stock Exchange",
+     "ticker": "ATB"
+    }
+   ],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [
+    "ROATBIACNOR9"
+   ],
+   "hq_city": "Iași",
+   "hq": [
+    47.16222,
+    27.58889
+   ],
+   "website": "https://www.antibiotice.ro/",
+   "lei": "315700P5G4O1L6GLMS02",
+   "enwiki": "https://en.wikipedia.org/wiki/Antibiotice_Ia%C8%99i",
+   "logo_file": "Antibiotice logo.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12720897",
+   "name": "Antrepriza Romana Constructii - Montaj",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.arcom.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18537468",
+   "name": "Apa Nova București",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "water collection, treatment and supply"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.apanovabucuresti.ro/",
+   "logo_file": "Logo APA NOVA.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18537469",
+   "name": "Apaca",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12719782",
+   "name": "APDF Giurgiu",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.apdf.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q12720845",
+   "name": "Apolodor",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18537485",
+   "name": "Aprozar",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4782310",
+   "name": "Apulum",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "porcelain"
+   ],
+   "isin": [],
+   "hq_city": "Alba Iulia",
+   "hq": [
+    46.07639,
+    23.57278
+   ],
+   "website": "http://www.apulum.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Apulum_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12720865",
+   "name": "Arabesque",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Galați",
+   "hq": [
+    45.43361,
+    28.05528
+   ],
+   "website": "https://arabesque.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Arabesque_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4783643",
+   "name": "Arad–Szeged pipeline",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Arad%E2%80%93Szeged_pipeline",
+   "listed": false
+  },
+  {
+   "qid": "Q296455",
+   "name": "ARBOmedia",
+   "cc": "ro",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "DE0005489306"
+   ],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.arbomedia.ro",
+   "logo_file": "Arbo logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4687001",
+   "name": "ArcelorMittal Galați",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Gala%C8%9Bi_steel_works",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5942501",
+   "name": "ArcelorMittal Hunedoara",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Hunedoara",
+   "hq": [
+    45.76972,
+    22.92028
+   ],
+   "website": "http://arcelormittalhunedoara.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hunedoara_steel_works",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12720893",
+   "name": "ArcelorMittal Tubular Products Roman",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Roman",
+   "hq": [
+    43.14679,
+    23.92628
+   ],
+   "website": "http://www.roman.arcelormittal.com",
+   "listed": false
+  },
+  {
+   "qid": "Q4787546",
+   "name": "Arctic",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Găești",
+   "hq": [
+    44.72083,
+    25.31472
+   ],
+   "website": "http://www.arctic.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Arctic_S.A.",
+   "logo_file": "Logo Arctic.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21097321",
+   "name": "Argecom",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12720928",
+   "name": "Argos Cernavodă",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12719784",
+   "name": "ARL Cluj",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12720982",
+   "name": "Armax Gaz",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.armaxgaz.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q12721008",
+   "name": "Arsenal Reșița",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Reșița",
+   "hq": [
+    45.3,
+    21.89028
+   ],
+   "website": "https://www.arsenal.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18548607",
+   "name": "Artrom Steel Tubes",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Steel Pipe and Tubes"
+   ],
+   "isin": [],
+   "hq_city": "Slatina",
+   "hq": [
+    44.42972,
+    24.36417
+   ],
+   "website": "https://www.artrom.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12721063",
+   "name": "Asesoft",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ploiești",
+   "hq": [
+    44.94111,
+    26.0225
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12721061",
+   "name": "Ashroich Romania",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12721065",
+   "name": "Asiban",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12721071",
+   "name": "Asil",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12721066",
+   "name": "Asirom",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 2",
+   "hq": [
+    44.44861,
+    26.12778
+   ],
+   "website": "https://www.asirom.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12721089",
+   "name": "Asociația Magistraților din România",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18537560",
+   "name": "Astalrom",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4811152",
+   "name": "Astra Bus",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Arad",
+   "hq": [
+    46.16667,
+    21.31667
+   ],
+   "website": "https://astrabus.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Astra_Bus",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6052656",
+   "name": "Astra Rail Industries",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of railway locomotives and rolling stock (NACE 30.2)"
+   ],
+   "isin": [],
+   "hq_city": "Arad",
+   "hq": [
+    46.16667,
+    21.31667
+   ],
+   "website": "https://www.greenbrier-europe.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Astra_Rail_Industries",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12721121",
+   "name": "Astra Română",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12721125",
+   "name": "Astra Vagoane Călători",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://astra-passengers.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12721169",
+   "name": "Atlas Corporation",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12721166",
+   "name": "Atlas Galați",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12721190",
+   "name": "Augsburg",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q23828042",
+   "name": "Automatica Bucharest",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18543713",
+   "name": "Automecanica Moreni",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Moreni",
+   "hq": [
+    44.98028,
+    25.64444
+   ],
+   "website": "http://www.uamoreni.ro/index.html",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2324155",
+   "name": "Avioane Craiova",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Craiova",
+   "hq": [
+    44.33333,
+    23.81667
+   ],
+   "website": "https://www.acv.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Avioane_Craiova",
+   "logo_file": "Avioane Craiova Logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4832827",
+   "name": "Azomureș",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Târgu Mureș",
+   "hq": [
+    46.54972,
+    24.55972
+   ],
+   "website": "http://www.azomures.com/",
+   "lei": "549300M4RER2TTS4VQ59",
+   "enwiki": "https://en.wikipedia.org/wiki/Azomure%C8%99",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12721456",
+   "name": "Balneoclimaterica",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16164129",
+   "name": "Bamboo Club",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "nightclub"
+   ],
+   "isin": [],
+   "website": "http://bambooclub.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bamboo_Club",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q806161",
+   "name": "Banca Transilvania",
+   "cc": "ro",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Bucharest Stock Exchange",
+     "ticker": "TLV"
+    }
+   ],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [
+    "ROTLVAACNOR1"
+   ],
+   "hq_city": "Cluj-Napoca",
+   "hq": [
+    46.76891,
+    23.59066
+   ],
+   "website": "https://www.bancatransilvania.ro/",
+   "lei": "549300RG3H390KEL8896",
+   "enwiki": "https://en.wikipedia.org/wiki/Banca_Transilvania",
+   "logo_file": "Banca Transilvania Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12721581",
+   "name": "Baumeister",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ploiești",
+   "hq": [
+    44.94111,
+    26.0225
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12721585",
+   "name": "Baxi Romania",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.baxi.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q12721391",
+   "name": "BCR Asigurări",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18537785",
+   "name": "Belladonna",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12721686",
+   "name": "Betty Ice",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Suceava",
+   "hq": [
+    47.65139,
+    26.25556
+   ],
+   "website": "http://www.bettyice.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4907014",
+   "name": "Bigotti",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.bigotti.eu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bigotti",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21097341",
+   "name": "Bihore",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Oradea",
+   "hq": [
+    47.07222,
+    21.92111
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20432384",
+   "name": "Biroul de Turism pentru Tineret",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 1",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://btt.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12721754",
+   "name": "Biroul de Turism și Tranzacții",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q854605",
+   "name": "Bitdefender",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "computer security"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://bitdefender.com.tr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bitdefender",
+   "logo_file": "BitdefenderLogoBlue.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12722827",
+   "name": "Bog'Art",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q23826332",
+   "name": "BOROMIR IND",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Râmnicu Vâlcea",
+   "hq": [
+    45.10472,
+    24.37556
+   ],
+   "lei": "315700AMQHFO9X75BW47",
+   "listed": false
+  },
+  {
+   "qid": "Q12722891",
+   "name": "Boromir Prod",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "ROSPCUACNOR2"
+   ],
+   "hq_city": "Buzău",
+   "hq": [
+    45.15167,
+    26.81667
+   ],
+   "lei": "315700HWSMUI04RUUT57",
+   "listed": true
+  },
+  {
+   "qid": "Q12722956",
+   "name": "Brifcor",
+   "cc": "ro",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12724458",
+   "name": "Bucharest Airports",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://bucharestairports.ro/",
+   "logo_file": "Bucharest Airport Logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q12723006",
+   "name": "Bucharest West",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q131465522",
+   "name": "Bucharest-Ilfov Public Transport Intercommunity Development Association",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://tpbi.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/TPBI",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12723016",
+   "name": "București Turism",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12723141",
+   "name": "Băneasa București",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12723263",
+   "name": "Cafea Fortuna",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "coffee production"
+   ],
+   "isin": [],
+   "hq_city": "Ilfov County",
+   "hq": [
+    44.61,
+    26.12
+   ],
+   "website": "https://www.cafeafortuna.ro/",
+   "logo_file": "Logo Cafea Fortuna.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12723408",
+   "name": "Capital Partners",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12723431",
+   "name": "Carbochim",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Cluj-Napoca",
+   "hq": [
+    46.76891,
+    23.59066
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12723437",
+   "name": "Carfil",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Brașov",
+   "hq": [
+    45.65222,
+    25.61056
+   ],
+   "website": "https://www.carfil.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12723442",
+   "name": "Cargus",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "delivery",
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.cargus.ro",
+   "logo_file": "CG LOGO OGB RGB (1).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12723456",
+   "name": "Carmistin",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18538595",
+   "name": "CarmOlimp",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12723462",
+   "name": "Carniprod",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12723483",
+   "name": "CAROM",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petrochemical industry",
+    "rubber industry"
+   ],
+   "isin": [],
+   "hq_city": "Onești",
+   "hq": [
+    46.25,
+    26.76667
+   ],
+   "website": "http://www.carom.ro/",
+   "logo_file": "Logo CAROM Onesti.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12723487",
+   "name": "Carpatica Asigurări",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q108169266",
+   "name": "Carrefour Romania",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://carrefour.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24035728",
+   "name": "Catena",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.catena.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134528810",
+   "name": "CAUROM",
+   "cc": "ro",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12723742",
+   "name": "Cefin Trucks",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.cefintrucks.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18538831",
+   "name": "CEL.ro",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.cel.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q12723745",
+   "name": "Celco Constanța",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12723781",
+   "name": "Centrala Hidroelectrică Râul Alb",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18538866",
+   "name": "Certasig",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.certasig.ro/ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18538868",
+   "name": "Certinvest",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12723182",
+   "name": "CET Arad",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q856252",
+   "name": "CFR Călători",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "passenger transport"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.cfrcalatori.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/CFR_C%C4%83l%C4%83tori",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12721148",
+   "name": "CFR Grivița Workshops",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail industry"
+   ],
+   "isin": [],
+   "website": "https://grivita.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q18538910",
+   "name": "CFR IRLU",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13630969",
+   "name": "CFR Marfă",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "rail freight transport"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.cfrmarfa.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/CFR_Marf%C4%83",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20432993",
+   "name": "CH Beck library",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12723998",
+   "name": "Chimopar",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "chemistry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12723995",
+   "name": "Chimpex",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12724048",
+   "name": "Ciac",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q21095912",
+   "name": "City Insurance",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://cityinsurance.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q57975090",
+   "name": "Clever Group",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "media industry"
+   ],
+   "isin": [],
+   "hq_city": "Cluj-Napoca",
+   "hq": [
+    46.76891,
+    23.59066
+   ],
+   "website": "https://clever-media.ro/",
+   "logo_file": "Clever Group.webp",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18549658",
+   "name": "Cluj University Press",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cluj-Napoca",
+   "hq": [
+    46.76891,
+    23.59066
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Cluj_University_Press",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12730359",
+   "name": "CNIN",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.cnin.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q18539093",
+   "name": "Coifer",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12723204",
+   "name": "COMCM",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12724412",
+   "name": "Cominco",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12724461",
+   "name": "Comnord",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12724455",
+   "name": "Compa",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sibiu",
+   "hq": [
+    45.8,
+    24.15
+   ],
+   "website": "http://www.compa.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q12724464",
+   "name": "Compania Națională a Uraniului",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.cnu.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118791749",
+   "name": "Compania Națională de Căi Ferate CFR",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://cfr.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Compania_Na%C8%9Bional%C4%83_de_C%C4%83i_Ferate_CFR",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18539158",
+   "name": "Complexul Energetic Oltenia",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Târgu Jiu",
+   "hq": [
+    45.03417,
+    23.27472
+   ],
+   "website": "https://www.ceoltenia.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12724492",
+   "name": "Comtram",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12725342",
+   "name": "CON-A",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Șelimbăr",
+   "hq": [
+    45.76667,
+    24.2
+   ],
+   "website": "https://cona.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12725360",
+   "name": "Conarg",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12725362",
+   "name": "Conbac",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18539195",
+   "name": "Concefa",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12725364",
+   "name": "Concivia",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12725373",
+   "name": "Condmag",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12725380",
+   "name": "Conest",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12725386",
+   "name": "Confind",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Câmpina",
+   "hq": [
+    45.12806,
+    25.73833
+   ],
+   "website": "http://www.confind.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q18539212",
+   "name": "Conpet",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ploiești",
+   "hq": [
+    44.94111,
+    26.0225
+   ],
+   "website": "https://www.conpet.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18537265",
+   "name": "Constantza Port (Romania)",
+   "cc": "ro",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Constanța",
+   "hq": [
+    44.17672,
+    28.65076
+   ],
+   "website": "https://www.portofconstantza.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4680167",
+   "name": "Constanța Shipyard",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "shipbuilding"
+   ],
+   "isin": [],
+   "hq_city": "Constanța",
+   "hq": [
+    44.17672,
+    28.65076
+   ],
+   "website": "http://www.snc.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/Constan%C8%9Ba_Shipyard",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5163912",
+   "name": "Constanța South Container Terminal",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "transport"
+   ],
+   "isin": [],
+   "hq_city": "Port of Constanța",
+   "hq": [
+    44.1733,
+    28.6383
+   ],
+   "website": "http://www.csct.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/Constan%C8%9Ba_South_Container_Terminal",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12725632",
+   "name": "Construcții Bihor",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12725633",
+   "name": "Construcții Feroviare Galați",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18539257",
+   "name": "Construcții Hidrotehnice Iași",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18539258",
+   "name": "Construcții Sibiu",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5165291",
+   "name": "Continental Hotels",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "hotel"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.continentalhotels.ro/Hotels/",
+   "enwiki": "https://en.wikipedia.org/wiki/Continental_Hotels",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18539265",
+   "name": "Conversmin",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 1",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://conversmin.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12724245",
+   "name": "CoPrint",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buftea",
+   "hq": [
+    44.57,
+    25.95
+   ],
+   "website": "https://www.coprint.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q5169301",
+   "name": "Copșa Mică works",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "zinc industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Cop%C8%99a_Mic%C4%83_works",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12729587",
+   "name": "Corint Publishing House",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12725846",
+   "name": "Cotnari",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12725891",
+   "name": "Creditcoop Bank",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.creditcoop.ro/",
+   "lei": "3157006K4C7PJT790450",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12725897",
+   "name": "Crescendo",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12725915",
+   "name": "Cris-Tim",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pulp and paper industry"
+   ],
+   "isin": [],
+   "hq_city": "Filipeștii de Pădure",
+   "hq": [
+    45.0,
+    25.75
+   ],
+   "website": "https://cristim.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12727634",
+   "name": "Crédit Agricole Romania",
+   "cc": "ro",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.emporiki.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3928165",
+   "name": "CT Bus",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Constanța",
+   "hq": [
+    44.17672,
+    28.65076
+   ],
+   "website": "https://www.ctbus.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12742921",
+   "name": "Cugir Arms Factory",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "defence industry",
+    "manufacture of fabricated metal products, except machinery and equipment"
+   ],
+   "isin": [],
+   "hq_city": "Cugir",
+   "hq": [
+    45.84361,
+    23.36361
+   ],
+   "website": "https://umcugir.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cugir_Arms_Factory",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5194585",
+   "name": "CupruMin",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "mining industry"
+   ],
+   "isin": [],
+   "hq_city": "Abrud",
+   "hq": [
+    46.27389,
+    23.05
+   ],
+   "website": "https://cuprumin.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/CupruMin",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15804138",
+   "name": "CyberGhost VPN",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.cyberghostvpn.com",
+   "logo_file": "CyberGhostVPN Logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q12726202",
+   "name": "Cărturești",
+   "cc": "ro",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bookselling"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://carturesti.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27460",
+   "name": "Dacia",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Mioveni",
+   "hq": [
+    44.95528,
+    24.93556
+   ],
+   "website": "https://www.renaultgroup.com/en/our-brands/dacia",
+   "enwiki": "https://en.wikipedia.org/wiki/Automobile_Dacia",
+   "logo_file": "Dacia 2021 logo green.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85975742",
+   "name": "Daewoo Automobile Romania S.A.",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q117322827",
+   "name": "Dan Air",
+   "cc": "ro",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://danair.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Dan_Air_(Romania)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5249762",
+   "name": "Dedeman",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Bacău",
+   "hq": [
+    46.58333,
+    26.91667
+   ],
+   "website": "https://www.dedeman.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Dedeman",
+   "logo_file": "Dedeman wordmark.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12726515",
+   "name": "Delaco",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5321642",
+   "name": "Delgaz Grid",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Târgu Mureș",
+   "hq": [
+    46.54972,
+    24.55972
+   ],
+   "website": "https://delgaz.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/E.ON_Gaz_Romania",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18539643",
+   "name": "Delta ACM 93",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.deltaacm.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18539644",
+   "name": "Delta Nav",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18539646",
+   "name": "Demark Construct",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12726577",
+   "name": "Depozitarul Central",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Depozitarul_Central",
+   "listed": false
+  },
+  {
+   "qid": "Q224710",
+   "name": "Digi",
+   "cc": "ro",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "media industry",
+    "telecommunications industry"
+   ],
+   "isin": [
+    "NL0012294474"
+   ],
+   "hq_city": "Sector 5",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://www.digi-communications.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Digi_Communications",
+   "logo_file": "Digi 2024 Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q130863679",
+   "name": "Digi TV",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12726677",
+   "name": "Digital Cable Systems",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12726686",
+   "name": "Dimar",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18539718",
+   "name": "Dioma International Exim",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5357675",
+   "name": "Distribuție Energie Electrică România",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Cluj-Napoca",
+   "hq": [
+    46.76891,
+    23.59066
+   ],
+   "website": "https://www.distributie-energie.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Electrica_Transylvania_North",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12726834",
+   "name": "Diverta",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bookselling"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.dol.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18539755",
+   "name": "Dobrogea Grup",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12726919",
+   "name": "Dona",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.farmaciiledona.ro",
+   "logo_file": "Farmacia Dona logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12726923",
+   "name": "Donau Chem",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Turnu Măgurele",
+   "hq": [
+    43.75167,
+    24.87083
+   ],
+   "website": "http://www.donauchem.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q96376778",
+   "name": "Dynamite Fighting Show",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://dynamitefighting.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Dynamite_Fighting_Show",
+   "listed": false
+  },
+  {
+   "qid": "Q12727266",
+   "name": "ECOIND",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.incdecoind.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q12727335",
+   "name": "Ecopack",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12727349",
+   "name": "Edipresse AS România",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q576647",
+   "name": "Editura Albatros",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12727353",
+   "name": "Editura All",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12727351",
+   "name": "Editura Cartea Românească",
+   "cc": "ro",
+   "types": [
+    "Q2085381",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Cartea_Rom%C3%A2neasc%C4%83",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12727361",
+   "name": "Editura Casa Radio",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q5338752",
+   "name": "Editura Curtea Veche",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Editura_Curtea_Veche",
+   "listed": false
+  },
+  {
+   "qid": "Q5338753",
+   "name": "Editura Dacia",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cluj-Napoca",
+   "hq": [
+    46.76891,
+    23.59066
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Editura_Dacia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18549145",
+   "name": "Editura de Vest",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q961010",
+   "name": "Editura Eminescu",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25459078",
+   "name": "Editura Hamangiu",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18540738",
+   "name": "Editura Historia",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5338754",
+   "name": "Editura Ion Creangă",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Editura_Ion_Creang%C4%83",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5338755",
+   "name": "Editura Militară",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Editura_Militar%C4%83",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5338757",
+   "name": "Editura Minerva",
+   "cc": "ro",
+   "types": [
+    "Q2085381",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.edituraminerva.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Editura_Minerva",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24035740",
+   "name": "Editura Paralela 45",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1097914",
+   "name": "Editura pentru Literatură",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12727381",
+   "name": "Editura pentru Literatură Universală",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12727384",
+   "name": "Editura Politehnica",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Timișoara",
+   "hq": [
+    45.75972,
+    21.23
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q18547302",
+   "name": "Editura RAO",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18548494",
+   "name": "Editura Tehnică",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12727375",
+   "name": "Editura Univers",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28230352",
+   "name": "Editura Universul",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Editura_Universul",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12727380",
+   "name": "Editura UNU",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q118292072",
+   "name": "Editura Vremea",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://edituravremea.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q12727407",
+   "name": "Edy Group",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Edy Group logo.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q5350932",
+   "name": "El Car",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.igero.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/El_Car",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25463101",
+   "name": "Elastimpex",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rubber industry"
+   ],
+   "isin": [],
+   "hq_city": "Târgu Jiu",
+   "hq": [
+    45.03417,
+    23.27472
+   ],
+   "website": "https://www.elastimpex.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24035703",
+   "name": "ELBA",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12727465",
+   "name": "Elcen",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.elcen.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19705545",
+   "name": "Electric Plus",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bacău",
+   "hq": [
+    46.58333,
+    26.91667
+   ],
+   "lei": "315700XIK2ZALY6NCR72",
+   "listed": false
+  },
+  {
+   "qid": "Q5357674",
+   "name": "Electrica",
+   "cc": "ro",
+   "types": [
+    "Q270791",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [
+    "ROELECACNOR5",
+    "US83367Y1082",
+    "US83367Y2072",
+    "US83367Y4052"
+   ],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.electrica.ro",
+   "lei": "213800P4SUNUM5AUDX61",
+   "enwiki": "https://en.wikipedia.org/wiki/Electrica",
+   "logo_file": "Electrica logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12727463",
+   "name": "Electrica Serv",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://electricaserveolian.com",
+   "listed": false
+  },
+  {
+   "qid": "Q12730497",
+   "name": "Electrical Design and Research Institute",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucureșci",
+   "hq": [
+    46.12815,
+    22.90317
+   ],
+   "website": "http://www.icpe.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q12727461",
+   "name": "Electrocarbon",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Snagov",
+   "hq": [
+    44.7075,
+    26.17287
+   ],
+   "website": "http://www.electrocarbon.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q12727470",
+   "name": "ELECTROCERAMICA",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Turdaș",
+   "hq": [
+    45.85285,
+    23.12353
+   ],
+   "lei": "315700QNDSVEY1SFRG89",
+   "listed": false
+  },
+  {
+   "qid": "Q12727472",
+   "name": "Electrogrup",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12727468",
+   "name": "Electromagnetica",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electronics industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.electromagnetica.ro/",
+   "lei": "254900MYW7D8IGEFRG38",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12727473",
+   "name": "Electromecanica",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ploiești",
+   "hq": [
+    44.94111,
+    26.0225
+   ],
+   "website": "https://www.elmecph.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18539952",
+   "name": "Electromontaj Carpați",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18539953",
+   "name": "Electromureș",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q110935832",
+   "name": "Electronica București",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "consumer electronics industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "logo_file": "I.I.S. Electronica Bucureşti logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18539956",
+   "name": "Electroprecizia",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q722248",
+   "name": "Electroputere VFU Pașcani",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail industry"
+   ],
+   "isin": [],
+   "hq_city": "Pașcani",
+   "hq": [
+    47.25194,
+    26.72306
+   ],
+   "website": "http://www.electroputerevfu.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Electroputere_VFU",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12727476",
+   "name": "Elefant.ro",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.elefant.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12727534",
+   "name": "ElkoTech",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12727542",
+   "name": "Elsid",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Snagov",
+   "hq": [
+    44.7075,
+    26.17287
+   ],
+   "website": "http://www.elsid.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q23827008",
+   "name": "eMAG",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce",
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.emag.ro",
+   "lei": "315700V12MDD9PTKU295",
+   "logo_file": "Logo eMAG (2019).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137992509",
+   "name": "Enel Romania",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18539993",
+   "name": "Energoconstrucția",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18539995",
+   "name": "Energomontaj",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12727657",
+   "name": "Energy Holding",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.energyromania.com",
+   "listed": false
+  },
+  {
+   "qid": "Q5513089",
+   "name": "Engie Romania",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.engie.ro/",
+   "lei": "549300LZFUL1DYCKAK83",
+   "logo_file": "Engie logo (2026).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12727712",
+   "name": "Erbașu",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.erbasu.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q12727280",
+   "name": "ETA2U Computer",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Timișoara",
+   "hq": [
+    45.75972,
+    21.23
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12727860",
+   "name": "Euro Construct Trading 98",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12727862",
+   "name": "Euroavipo",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18540044",
+   "name": "Eurobusiness Parc Oradea",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12727891",
+   "name": "Euroexpo",
+   "cc": "ro",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12727892",
+   "name": "Euroins România",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.euroins.ro/index.html",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12727887",
+   "name": "Eurolines România",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12727899",
+   "name": "European Drinks",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12727911",
+   "name": "Europolis Park Bucharest",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12727909",
+   "name": "Eurosport DHS",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bicycle industry"
+   ],
+   "isin": [],
+   "hq_city": "Deva",
+   "hq": [
+    45.87194,
+    22.91167
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12727905",
+   "name": "Eurotest",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 3",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://www.eurotest.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18549544",
+   "name": "EXIMTUR",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cluj-Napoca",
+   "hq": [
+    46.76891,
+    23.59066
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12727961",
+   "name": "Expotek",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12728035",
+   "name": "Fabrica de Bere, Luther",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12728038",
+   "name": "Fabrica de conserve Râureni",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Râureni",
+   "hq": [
+    45.05545,
+    24.33125
+   ],
+   "website": "https://www.raureni.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12728031",
+   "name": "Fabrica de cărămizi din Ciurea",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ciurea",
+   "hq": [
+    47.06667,
+    27.58333
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q18540069",
+   "name": "Fabrica de Pulberi Făgăraș",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1639220",
+   "name": "Fabrica de pălării din Iosefin",
+   "cc": "ro",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Timișoara",
+   "hq": [
+    45.75972,
+    21.23
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Paltim_Hat_Factory",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18544006",
+   "name": "Fabrica de Țigarete din Sfântu-Gheorghe",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12728092",
+   "name": "Falcon Electronics",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.falcon.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12727984",
+   "name": "FAN Courier",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.fancourier.ro",
+   "lei": "315700I7LIR1ZNDDT070",
+   "logo_file": "Fan Courier logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12728135",
+   "name": "Fares",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://fares.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12728140",
+   "name": "Farmec",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Cluj-Napoca",
+   "hq": [
+    46.76891,
+    23.59066
+   ],
+   "website": "https://www.farmec.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Farmec",
+   "logo_file": "Farmec logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18540101",
+   "name": "Farmexpert",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q653182",
+   "name": "FAUR",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of motor vehicles, trailers and semi-trailers",
+    "manufacture of railway locomotives and rolling stock (NACE 30.2)",
+    "metal industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.faur.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/FAUR",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12728016",
+   "name": "FEPER",
+   "cc": "ro",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12728269",
+   "name": "Fildas Trading",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12728303",
+   "name": "Fimaro",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12728304",
+   "name": "Final Distribution",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12728328",
+   "name": "Flamingo International",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.flamingo.info/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5457354",
+   "name": "Flanco",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.flanco.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/Flanco",
+   "logo_file": "Flanco logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18540195",
+   "name": "Floreasca Business Park",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q118899940",
+   "name": "Fly Lili",
+   "cc": "ro",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://flylili.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Fly_Lili",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12728024",
+   "name": "FNGCIMM",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 1",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://www.fngcimm.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4820838",
+   "name": "Focus Sat",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.focussat.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Focus_Sat",
+   "logo_file": "Focus Sat Logo 2019.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12728478",
+   "name": "Fondul de garantare a depozitelor bancare",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://fgdb.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3075946",
+   "name": "Fondul Proprietatea",
+   "cc": "ro",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "investment management"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.fondulproprietatea.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/Fondul_Proprietatea",
+   "logo_file": "Fondul Proprietatea 2020 logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12728477",
+   "name": "Fondul Român Post Privatizare",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.postprivatizare.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q12728481",
+   "name": "Foraj Sonde Craiova",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Craiova",
+   "hq": [
+    44.33333,
+    23.81667
+   ],
+   "website": "http://www.craiovadrilling.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q13479631",
+   "name": "Ford Romania",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Craiova",
+   "hq": [
+    44.33333,
+    23.81667
+   ],
+   "website": "https://www.ford.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ford_Romania",
+   "logo_file": "Ford logo flat.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12728612",
+   "name": "Frigotehnica",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5511868",
+   "name": "G'market",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.gmarket.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/G%27market",
+   "listed": false
+  },
+  {
+   "qid": "Q5518170",
+   "name": "Galați Power Station",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Galați",
+   "hq": [
+    45.43361,
+    28.05528
+   ],
+   "lei": "315700RY7327DZRJT449",
+   "enwiki": "https://en.wikipedia.org/wiki/Gala%C8%9Bi_Power_Station",
+   "listed": false
+  },
+  {
+   "qid": "Q5529411",
+   "name": "GeCAD Software",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.gecad.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/GeCAD_Software",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12728878",
+   "name": "Gelsor",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12728883",
+   "name": "Gemenii Network",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.gemenii.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q5565312",
+   "name": "Giurgiu–Ruse pipeline",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Giurgiu%E2%80%93Ruse_pipeline",
+   "listed": false
+  },
+  {
+   "qid": "Q1550912",
+   "name": "GMV Innovating Solutions",
+   "cc": "ro",
+   "types": [
+    "Q161726",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry",
+    "automotive industry",
+    "computer security",
+    "information and communications technology",
+    "intelligent transportation system",
+    "space industry"
+   ],
+   "isin": [],
+   "hq_city": "Tres Cantos",
+   "hq": [
+    40.60658,
+    -3.70654
+   ],
+   "website": "http://www.gmv.com",
+   "enwiki": "https://en.wikipedia.org/wiki/GMV_(company)",
+   "logo_file": "GMV RGBrojo&negro.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85975293",
+   "name": "GoodMills România",
+   "cc": "ro",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "flour-based food"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12729432",
+   "name": "Google România",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.google.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12729478",
+   "name": "Grampet",
+   "cc": "ro",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 1",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://www.grampet.ro/ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18540589",
+   "name": "Griro",
+   "cc": "ro",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://griro.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12729573",
+   "name": "Grivița SA",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "metal industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18540614",
+   "name": "Grup 4 Instalații",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12729588",
+   "name": "Grup Servicii Petroliere",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fossil fuel"
+   ],
+   "isin": [],
+   "hq_city": "Constanța",
+   "hq": [
+    44.17672,
+    28.65076
+   ],
+   "website": "http://www.gspoffshore.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grup_Servicii_Petroliere",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12729590",
+   "name": "Grupul Humanitas",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://humanitas.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q20968807",
+   "name": "Guban",
+   "cc": "ro",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Timișoara",
+   "hq": [
+    45.75972,
+    21.23
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12729830",
+   "name": "Halewood România",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ploiești",
+   "hq": [
+    44.94111,
+    26.0225
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12729845",
+   "name": "Han Group",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12729908",
+   "name": "Heidi Chocolate",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of cocoa, chocolate and sugar confectionery"
+   ],
+   "isin": [],
+   "hq_city": "Pantelimon",
+   "hq": [
+    44.45278,
+    26.20361
+   ],
+   "website": "http://heidi-chocolate.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123912148",
+   "name": "HelloJets",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.hellojets.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/HelloJets",
+   "listed": false
+  },
+  {
+   "qid": "Q12729923",
+   "name": "Help Net",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.helpnet.ro",
+   "logo_file": "Help Net logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18540733",
+   "name": "Herghelia Mangalia",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mangalia",
+   "hq": [
+    43.81715,
+    28.58275
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12729972",
+   "name": "Hidroconstrucția",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.hidroconstructia.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hidroconstruc%C8%9Bia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5752917",
+   "name": "Hidroelectrica",
+   "cc": "ro",
+   "types": [
+    "Q270791",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.hidroelectrica.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/Hidroelectrica",
+   "logo_file": "Sigla pentru un nou inceput.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12729976",
+   "name": "Hidromecanica",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Brașov",
+   "hq": [
+    45.65222,
+    25.61056
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12730024",
+   "name": "Hofigal",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q680566",
+   "name": "Humanitas",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://humanitas.ro/humanitas",
+   "enwiki": "https://en.wikipedia.org/wiki/Humanitas_(publishing_house)",
+   "logo_file": "Sigla Editura Humanitas.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5967868",
+   "name": "I.O.R.",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "optical imaging",
+    "sight"
+   ],
+   "isin": [],
+   "hq_city": "Sector 3",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://www.ior.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/I.O.R.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12730224",
+   "name": "Iașitex",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Iași",
+   "hq": [
+    47.16222,
+    27.58889
+   ],
+   "website": "http://www.iasitex.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12730169",
+   "name": "ICE Felix Bucharest",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/ICE_Felix",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12730170",
+   "name": "ICIM Arad",
+   "cc": "ro",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Arad",
+   "hq": [
+    46.16667,
+    21.31667
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18540873",
+   "name": "ICME ECAB",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18540874",
+   "name": "ICMRS",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Galați",
+   "hq": [
+    45.43361,
+    28.05528
+   ],
+   "lei": "315700Q1D9XC5NW5ZN47",
+   "listed": false
+  },
+  {
+   "qid": "Q12730172",
+   "name": "ICSIM",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "lei": "315700RYLI6U1W6CSF06",
+   "listed": false
+  },
+  {
+   "qid": "Q12730350",
+   "name": "Impact SA",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "Bucharest Stock Exchange",
+     "ticker": "IMP"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.impactsa.ro/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12730356",
+   "name": "Imprimeria BNR",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12730360",
+   "name": "Imprimeriile Coresi",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.cni-coresi.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q18540923",
+   "name": "IMUAB",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q292773",
+   "name": "Industria Aeronautică Română",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aircraft industry"
+   ],
+   "isin": [],
+   "hq_city": "Ghimbav",
+   "hq": [
+    45.66278,
+    25.50611
+   ],
+   "website": "https://www.iar.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Industria_Aeronautic%C4%83_Rom%C3%A2n%C4%83",
+   "logo_file": "Sigla Întreprinderea Aeronautică Română.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3799262",
+   "name": "Intact Media Group",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "media industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Intact_Media_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12730548",
+   "name": "Intrarom",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "information and communications technology"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.intrarom.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5973036",
+   "name": "IPIP SA",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "engineering"
+   ],
+   "isin": [],
+   "hq_city": "Ploiești",
+   "hq": [
+    44.94111,
+    26.0225
+   ],
+   "website": "http://www.ipip.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/IPIP_SA",
+   "logo_file": "IPIP logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12730187",
+   "name": "IPRS",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "semiconductor industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "logo_file": "I.P.R.S. Baneasa, Romania - logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18541076",
+   "name": "IPTANA",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18541077",
+   "name": "IQads",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.iqads.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q12731056",
+   "name": "Iridex",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "waste management"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://iridex.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12731085",
+   "name": "IRUM",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Reghin",
+   "hq": [
+    46.77583,
+    24.70833
+   ],
+   "website": "https://www.irum.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18541117",
+   "name": "IUS Brașov",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12731243",
+   "name": "Izometal Confort",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3183127",
+   "name": "Jolidon",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail",
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Cluj-Napoca",
+   "hq": [
+    46.76891,
+    23.59066
+   ],
+   "website": "http://www.jolidon.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Jolidon",
+   "logo_file": "Jolidon Logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111193669",
+   "name": "Kandia",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98928488",
+   "name": "Kape Technologies",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.kape.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kape_Technologies",
+   "listed": false
+  },
+  {
+   "qid": "Q6327818",
+   "name": "KDF Energy",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.kdfenergy.com",
+   "listed": false
+  },
+  {
+   "qid": "Q285186",
+   "name": "Kriterion Press",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://kriterion.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18544132",
+   "name": "La Doi Pași",
+   "cc": "ro",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.la-doi-pasi.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6462406",
+   "name": "La Fantana",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "drink",
+    "drinking water",
+    "food and beverage service activities",
+    "water cooler",
+    "water filter",
+    "water quality"
+   ],
+   "isin": [],
+   "hq_city": "Belgrade",
+   "hq": [
+    44.81778,
+    20.45694
+   ],
+   "website": "https://www.lafantana.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/La_Fantana",
+   "logo_file": "Lafantana.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12731789",
+   "name": "La Fourmi",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "website": "http://www.lafourmi.com.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q12731836",
+   "name": "Lactag",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q941063",
+   "name": "Lamit Company",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.lamit.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Lamit_Company",
+   "logo_file": "Lamit-logo.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q12732101",
+   "name": "Leonardo",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Oradea",
+   "hq": [
+    47.07222,
+    21.92111
+   ],
+   "website": "https://www.leonardo.com.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12732139",
+   "name": "Liberis Publications România",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q19707101",
+   "name": "Liberty International",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q6542431",
+   "name": "Libra Internet Bank",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Bucharest Stock Exchange",
+     "ticker": "LIBRA30E"
+    }
+   ],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.librabank.ro/",
+   "lei": "315700WKDD4ZSRL7HW38",
+   "enwiki": "https://en.wikipedia.org/wiki/Libra_Internet_Bank",
+   "logo_file": "Libra Bank.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12732325",
+   "name": "Lipoplast",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Timișoara",
+   "hq": [
+    45.75972,
+    21.23
+   ],
+   "website": "https://lipoplast.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85974758",
+   "name": "Litera Publishing House",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.litera.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12734553",
+   "name": "Lufin Construct",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1435010",
+   "name": "Luxoft",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "LXFT"
+    }
+   ],
+   "industries": [
+    "software development"
+   ],
+   "isin": [
+    "VGG572791041"
+   ],
+   "hq_city": "Switzerland",
+   "hq": [
+    46.79856,
+    8.23197
+   ],
+   "website": "https://www.luxoft.com/",
+   "lei": "529900U7YWQAAT1QBP44",
+   "enwiki": "https://en.wikipedia.org/wiki/Luxoft",
+   "logo_file": "LUXOFT DXC logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12734617",
+   "name": "LUXTEN LIGHTING COMPANY",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.luxten.com",
+   "lei": "3157001755FUO0ACZS24",
+   "listed": false
+  },
+  {
+   "qid": "Q12734678",
+   "name": "Macromex",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q14684242",
+   "name": "Magister Software",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.magister.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q12734884",
+   "name": "Mari Vila",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q97192783",
+   "name": "MatHaus",
+   "cc": "ro",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://mathaus.ro/",
+   "logo_file": "Mathaus transparent.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12734649",
+   "name": "MB Distribution",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12735214",
+   "name": "Mecanica Ceahlău",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Piatra Neamț",
+   "hq": [
+    46.9275,
+    26.37083
+   ],
+   "website": "http://www.mecanicaceahlau.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12735206",
+   "name": "Mecanpetrol",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q15731505",
+   "name": "Media Pro",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q15731506",
+   "name": "Media Sat",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.mediasat.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q12735243",
+   "name": "Mediafax Group",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.m.ro/",
+   "logo_file": "Mediafax Group Logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12735244",
+   "name": "MediaPro Entertainment",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12735252",
+   "name": "Mediplus",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12735223",
+   "name": "MedLife",
+   "cc": "ro",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "health care industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.medlife.ro/",
+   "logo_file": "MedLife logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12735261",
+   "name": "Mefin",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sinaia",
+   "hq": [
+    45.35,
+    25.55139
+   ],
+   "website": "http://www.mefin.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6808085",
+   "name": "Mega Image",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.mega-image.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mega_Image",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12735264",
+   "name": "Megapress Holding",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q102287525",
+   "name": "Merlins Beverages",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Piatra Neamț",
+   "hq": [
+    46.9275,
+    26.37083
+   ],
+   "website": "https://merlinsbeverages.com/",
+   "lei": "315700X5C1NGOES9F637",
+   "listed": false
+  },
+  {
+   "qid": "Q21097348",
+   "name": "Metabet",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18541807",
+   "name": "Metalexportimport",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12735334",
+   "name": "Metalicplas",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12730499",
+   "name": "Metallurgical Research Institute",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.icem.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12735349",
+   "name": "Metrom",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Brașov",
+   "hq": [
+    45.65222,
+    25.61056
+   ],
+   "website": "https://metrom.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1091725",
+   "name": "Metrorex",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "passenger transport"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.metrorex.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/Metrorex",
+   "logo_file": "Metrorex logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q382546",
+   "name": "Mihail Kogălniceanu International Airport",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mihail Kogălniceanu",
+   "hq": [
+    44.35776,
+    28.49254
+   ],
+   "website": "http://www.mk-airport.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mihail_Kog%C4%83lniceanu_International_Airport",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12735637",
+   "name": "Minvest",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Deva",
+   "hq": [
+    45.87194,
+    22.91167
+   ],
+   "website": "https://minvestdeva.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18537484",
+   "name": "Mira Consulting Plus",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 1",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12735645",
+   "name": "Mira Telecom",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Otopeni",
+   "hq": [
+    44.55,
+    26.07
+   ],
+   "website": "http://www.miratelecom.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q3047092",
+   "name": "Monitorul Oficial",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 1",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://www.monitoruloficial.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/Monitorul_Oficial",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12736058",
+   "name": "Musette",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing",
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://musette.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12736388",
+   "name": "Napoca Construcții",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3335899",
+   "name": "Napolact",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cluj-Napoca",
+   "hq": [
+    46.76891,
+    23.59066
+   ],
+   "website": "https://www.napolact.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/Napolact",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6971731",
+   "name": "National Company of Lignite Oltenia",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Târgu Jiu",
+   "hq": [
+    45.03417,
+    23.27472
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/National_Company_of_Lignite_Oltenia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6972984",
+   "name": "National Hard Coal Company",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "coal"
+   ],
+   "isin": [],
+   "hq_city": "Petroșani",
+   "hq": [
+    45.41222,
+    23.37333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/National_Hard_Coal_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18539150",
+   "name": "National Investment Company",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "investment"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.cni.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18540953",
+   "name": "National Research and Development Institute on Occupational Safety",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.inpm.ro/en/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12736436",
+   "name": "Navrom",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.navrom.ro/index.php/ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q967162",
+   "name": "Nemira Publishing House",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://nemira.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q18544326",
+   "name": "Neogen",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12736511",
+   "name": "Neptun Câmpina",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Câmpina",
+   "hq": [
+    45.12806,
+    25.73833
+   ],
+   "website": "https://www.neptun-gears.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12736841",
+   "name": "Nivea Brașov",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12736359",
+   "name": "NNDKP",
+   "cc": "ro",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "legal advice"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.nndkp.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12736879",
+   "name": "Nord Conforest",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7068211",
+   "name": "Nuclearelectrica",
+   "cc": "ro",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.nuclearelectrica.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/Nuclearelectrica",
+   "logo_file": "Nuclearelectrica logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18544442",
+   "name": "Nuclearmontaj",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12737032",
+   "name": "Ocean Fish",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Afumați",
+   "hq": [
+    44.525,
+    26.25222
+   ],
+   "website": "https://www.oceanfish.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12737044",
+   "name": "Octagon Contracting & Engineering",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12737111",
+   "name": "Oil Terminal",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Constanța",
+   "hq": [
+    44.17672,
+    28.65076
+   ],
+   "website": "https://oil-terminal.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q907571",
+   "name": "Oltchim S.A.",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Râmnicu Vâlcea",
+   "hq": [
+    45.10472,
+    24.37556
+   ],
+   "website": "http://www.oltchim.ro/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Oltchim_S.A.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12744193",
+   "name": "Oltenita Shipyard",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Oltenița",
+   "hq": [
+    44.08639,
+    26.63639
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12737166",
+   "name": "Omniasig",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 1",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://www.omniasig.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12737165",
+   "name": "Omnilogic",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1755034",
+   "name": "OMV Petrom",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Bucharest Stock Exchange",
+     "ticker": "SNP"
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "ROSNPPACNOR9"
+   ],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.omvpetrom.com",
+   "lei": "549300UKYDM6L8HEPU79",
+   "enwiki": "https://en.wikipedia.org/wiki/Petrom",
+   "logo_file": "OMV Petrom.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7092130",
+   "name": "Oncos",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Oncos",
+   "listed": false
+  },
+  {
+   "qid": "Q97940864",
+   "name": "One United Properties",
+   "cc": "ro",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "real estate industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.one.ro/",
+   "logo_file": "One United Properties logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12737177",
+   "name": "Onix Hotel",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18544560",
+   "name": "ONT Carpați",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12737187",
+   "name": "Opera Plaza",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12737209",
+   "name": "Optiblu",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.optiblu.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12737205",
+   "name": "Opticris",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Cluj-Napoca",
+   "hq": [
+    46.76891,
+    23.59066
+   ],
+   "website": "https://www.opticris.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12737210",
+   "name": "Optiplaza",
+   "cc": "ro",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Brașov",
+   "hq": [
+    45.65222,
+    25.61056
+   ],
+   "website": "https://www.optiplaza.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7099318",
+   "name": "Oradea Power Station",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Oradea_Power_Station",
+   "listed": false
+  },
+  {
+   "qid": "Q3355067",
+   "name": "Orange Romania",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "broadband Internet access",
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://tvgo.orange.ro/",
+   "lei": "213800BYA5EWO5QPU132",
+   "enwiki": "https://en.wikipedia.org/wiki/Orange_Romania",
+   "logo_file": "Orange logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18544598",
+   "name": "Ordinea",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7105952",
+   "name": "Oscar Downstream",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://oscars.ro/",
+   "lei": "259400S0YUVPP8IJBD73",
+   "enwiki": "https://en.wikipedia.org/wiki/Oscar_Downstream",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96397019",
+   "name": "OSS Fighters",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Constanța",
+   "hq": [
+    44.17672,
+    28.65076
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12737292",
+   "name": "Ostrovit",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12737302",
+   "name": "Otter",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Chiajna",
+   "hq": [
+    44.45565,
+    25.97456
+   ],
+   "website": "https://www.otter.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18545086",
+   "name": "PA&CO International",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12737354",
+   "name": "PAB Romania",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12737453",
+   "name": "Pambac Bacău",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.pambac.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q19708135",
+   "name": "PANDORA PROD",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Focșani",
+   "hq": [
+    45.69972,
+    27.17972
+   ],
+   "lei": "315700JZFRLO3B1X8B02",
+   "listed": false
+  },
+  {
+   "qid": "Q12737469",
+   "name": "Panfoods",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18545185",
+   "name": "Paralela 45",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "tourism industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.paralela45.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18545190",
+   "name": "Parc Hotels",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18538590",
+   "name": "Parcul industrial Carfil",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12737527",
+   "name": "Parcul Industrial Feldioara-Hălchiu",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18544191",
+   "name": "Parcul industrial Metrom",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12737524",
+   "name": "Parcul Industrial Moreni",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12737530",
+   "name": "Parcul Industrial Ploiești",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18549358",
+   "name": "Parcul industrial Zărnești",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12737532",
+   "name": "Parcul Industrial Șura Mică",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61081685",
+   "name": "PECO",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "logo_file": "PECO logo (18 rays version).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18545298",
+   "name": "Perla Majestic",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12737852",
+   "name": "Petroconst",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12737858",
+   "name": "Petrom City",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7179010",
+   "name": "Petromidia Refinery",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Năvodari",
+   "hq": [
+    44.32083,
+    28.6125
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Petromidia_Refinery",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12737861",
+   "name": "Petromin",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7179121",
+   "name": "Petrotel Lukoil Refinery",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ploiești",
+   "hq": [
+    44.94111,
+    26.0225
+   ],
+   "website": "https://petrotel.lukoil.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Petrotel_Lukoil_Refinery",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18537087",
+   "name": "pharmaceutical industry in Romania",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Pharmaceutical_industry_in_Romania",
+   "listed": false
+  },
+  {
+   "qid": "Q12738087",
+   "name": "Pintilie Broker de Asigurare",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.pint.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21468701",
+   "name": "Pionierul",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12738099",
+   "name": "Pipelife",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.pipelife.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q18545445",
+   "name": "Pirochim Victoria",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Victoria",
+   "hq": [
+    45.64656,
+    24.70585
+   ],
+   "website": "https://pirochim.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30589374",
+   "name": "Pix4D SA",
+   "cc": "ro",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "geospatial industry"
+   ],
+   "isin": [],
+   "hq_city": "Prilly",
+   "hq": [
+    46.53698,
+    6.60456
+   ],
+   "website": "https://www.pix4d.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pix4D",
+   "logo_file": "Pix4D Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12738136",
+   "name": "Plafar",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 2",
+   "hq": [
+    44.44861,
+    26.12778
+   ],
+   "website": "https://www.plafar.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12738208",
+   "name": "Ploiești West Park",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q20430479",
+   "name": "Pluxee România",
+   "cc": "ro",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.pluxee.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12738292",
+   "name": "Policolor",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12738294",
+   "name": "Poliflex",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7209795",
+   "name": "Polirom",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Iași",
+   "hq": [
+    47.16222,
+    27.58889
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Polirom",
+   "logo_file": "Editura Polirom.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28230308",
+   "name": "Popp & Asociații",
+   "cc": "ro",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "civil engineering"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Popp_%26_Asocia%C8%9Bii",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12738366",
+   "name": "Porsche România",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12737367",
+   "name": "POSTelecom",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q283175",
+   "name": "Poșta Română",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.posta-romana.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Po%C8%99ta_Rom%C3%A2n%C4%83",
+   "logo_file": "Posta Romana 2025.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85979542",
+   "name": "PPC Romania",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.ppcenergy.ro/",
+   "logo_file": "PPC logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18547092",
+   "name": "Pro Hotels",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q108169270",
+   "name": "Profi Rom Food",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12738615",
+   "name": "Proiect București",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7257277",
+   "name": "PubliMedia International",
+   "cc": "ro",
+   "types": [
+    "Q2085381",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.publimedia.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/PubliMedia_International",
+   "listed": false
+  },
+  {
+   "qid": "Q12738887",
+   "name": "Quasar",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q21095913",
+   "name": "Quickmobile",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baia Mare",
+   "hq": [
+    47.65667,
+    23.57194
+   ],
+   "website": "https://www.quickmobile.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12738900",
+   "name": "RADEF",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 1",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://www.romaniafilm.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12738956",
+   "name": "Radioactiv Mineral",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://radioactivmineral.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q18547273",
+   "name": "Radisson Blu Bucharest",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12738901",
+   "name": "RAFO Onești",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "oil refinery"
+   ],
+   "isin": [],
+   "hq_city": "Onești",
+   "hq": [
+    46.25,
+    26.76667
+   ],
+   "website": "http://www.rafo.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/RAFO_One%C8%99ti",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12739032",
+   "name": "Railport Arad",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.railportarad.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q25399056",
+   "name": "RAT Craiova",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Craiova",
+   "hq": [
+    44.33333,
+    23.81667
+   ],
+   "website": "https://www.rat-craiova.ro/",
+   "logo_file": "Rat craiova logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7258031",
+   "name": "RATBV",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.ratbv.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/RATBV",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104867963",
+   "name": "Real Xtreme Fighting",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Brașov",
+   "hq": [
+    45.65222,
+    25.61056
+   ],
+   "website": "https://rxf.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Real_Xtreme_Fighting",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18549687",
+   "name": "Regina Maria",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "health care industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.reginamaria.ro/",
+   "logo_file": "Regina Maria logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18547380",
+   "name": "RELOC S.A.",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail industry"
+   ],
+   "isin": [],
+   "hq_city": "Craiova",
+   "hq": [
+    44.33333,
+    23.81667
+   ],
+   "website": "https://relocsa.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12727460",
+   "name": "Retele Electrice Romania",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity distribution"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.reteleelectrice.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12739418",
+   "name": "Rimini Plaza",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q387165",
+   "name": "Romaero",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Băneasa",
+   "hq": [
+    44.49245,
+    26.07912
+   ],
+   "website": "https://www.romaero.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Romaero",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12739511",
+   "name": "Romair Consulting",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1260840",
+   "name": "Roman",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Brașov",
+   "hq": [
+    45.65222,
+    25.61056
+   ],
+   "website": "http://www.roman.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Roman_(vehicle_manufacturer)",
+   "logo_file": "Roman logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24035765",
+   "name": "Romanian Academy's Publishing House",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.ear.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q12719807",
+   "name": "Romanian Bank for Credit and Investment",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.brci.ro/",
+   "lei": "315700BEHT3NJAG8RX82",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12723070",
+   "name": "Romanian Commodities Exchange",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.brm.ro/",
+   "lei": "2594004XQ58NIEX1Y444",
+   "listed": false
+  },
+  {
+   "qid": "Q1163508",
+   "name": "Romanian National Opera",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "creative industries"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://operanb.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/Romanian_National_Opera,_Bucharest",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18544563",
+   "name": "Romanian Power Market",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 3",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://www.opcom.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q12724468",
+   "name": "Romania’s National Road Infrastructure Administration Company (CNAIR)",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.cnadnr.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12739531",
+   "name": "ROMARM",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://romarm.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/ROMARM",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18547497",
+   "name": "Romarta",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18547504",
+   "name": "Romcarton",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18547511",
+   "name": "Romfelt Manufacturing",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q2757144",
+   "name": "Romgaz",
+   "cc": "ro",
+   "types": [
+    "Q270791",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "gas industry"
+   ],
+   "isin": [],
+   "hq_city": "Mediaș",
+   "hq": [
+    46.16389,
+    24.35083
+   ],
+   "website": "https://www.romgaz.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Romgaz",
+   "logo_file": "Romgaz logotype.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12739544",
+   "name": "Romlux",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Târgoviște",
+   "hq": [
+    44.92444,
+    25.45722
+   ],
+   "website": "https://www.romluxlighting.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q1788862",
+   "name": "Rompetrol",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "ROPESAACNOR0"
+   ],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.rompetrol.com/",
+   "lei": "315700IJHIKWXQJHZ552",
+   "enwiki": "https://en.wikipedia.org/wiki/Rompetrol",
+   "logo_file": "Logo-Rompetrol KMG colored approved.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12739552",
+   "name": "Rompetrol Rafinare",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Năvodari",
+   "hq": [
+    44.32083,
+    28.6125
+   ],
+   "website": "http://www.rompetrol-rafinare.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q18547517",
+   "name": "Romradiatoare",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.romradiatoare.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7363326",
+   "name": "Romsilva",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.rosilva.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/Romsilva",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7363328",
+   "name": "Romstal",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "product distribution"
+   ],
+   "isin": [],
+   "hq_city": "Sector 4",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://www.romstal.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Romstal",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7363331",
+   "name": "Romstrade",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.romstrade.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/Romstrade",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12739560",
+   "name": "Romtehnica",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 6",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://www.romtehnica.com.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18547534",
+   "name": "Românofir S. A.",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tălmaciu",
+   "hq": [
+    45.66667,
+    24.26111
+   ],
+   "website": "https://romanofir.ro/",
+   "logo_file": "Logo ROMÂNOFIR.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12739586",
+   "name": "Ropharma",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q19708822",
+   "name": "RoStar",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12739607",
+   "name": "Rotary Construcții",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7371723",
+   "name": "Rovinari Power Station",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Rovinari_Power_Station",
+   "listed": false
+  },
+  {
+   "qid": "Q18547584",
+   "name": "Rulmenți Bârlad",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q142126217",
+   "name": "Ruris",
+   "cc": "ro",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Craiova",
+   "hq": [
+    44.33333,
+    23.81667
+   ],
+   "website": "https://www.ruris.ro/",
+   "lei": "5493003VFOVO9J6PBK11",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12740305",
+   "name": "Sahia Film",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "cinematography"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://studioulsahia.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12740352",
+   "name": "Salrom",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://salrom.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3470215",
+   "name": "Salsi",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sinaia",
+   "hq": [
+    45.35,
+    25.55139
+   ],
+   "website": "http://angst.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12740466",
+   "name": "SCANDIC DISTILLERIES",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of beverages"
+   ],
+   "isin": [],
+   "hq_city": "Păntășești",
+   "hq": [
+    46.6174,
+    22.40462
+   ],
+   "website": "https://scandicdistilleries.ro/",
+   "lei": "315700YEZ6YYVGNXCB76",
+   "listed": false
+  },
+  {
+   "qid": "Q12740541",
+   "name": "Scotler",
+   "cc": "ro",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28224941",
+   "name": "Scrisul Românesc",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Scrisul_Rom%C3%A2nesc",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18547802",
+   "name": "Secpral Pro Instalații",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cluj-Napoca",
+   "hq": [
+    46.76891,
+    23.59066
+   ],
+   "website": "http://www.spishop.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q7447317",
+   "name": "Sekonda",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "United Kingdom",
+   "hq": [
+    54.6,
+    -2.0
+   ],
+   "website": "http://www.sekonda.co.uk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sekonda",
+   "logo_file": "Sekonda Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q473918",
+   "name": "Selgros",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "supermarket",
+    "wholesale"
+   ],
+   "isin": [],
+   "hq_city": "Germany",
+   "hq": [
+    51.0,
+    10.0
+   ],
+   "website": "https://www.selgros.de",
+   "enwiki": "https://en.wikipedia.org/wiki/Selgros",
+   "logo_file": "Logo selgros 2024.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12740620",
+   "name": "Sema Parc",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12740701",
+   "name": "Serviciile Comerciale Române",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cluj-Napoca",
+   "hq": [
+    46.76891,
+    23.59066
+   ],
+   "website": "http://www.scrgrup.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97195286",
+   "name": "Serviciul de Transport Voluntari",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Voluntari",
+   "hq": [
+    44.4925,
+    26.19139
+   ],
+   "website": "https://www.stvsa.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18547866",
+   "name": "SIF1 Banat-Crișana",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 2",
+   "hq": [
+    44.44861,
+    26.12778
+   ],
+   "website": "https://www.lion-capital.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12740827",
+   "name": "Silcotub",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zalău",
+   "hq": [
+    47.19111,
+    23.05722
+   ],
+   "website": "http://www.tenaris.com/Romania/ro/default.aspx",
+   "listed": false
+  },
+  {
+   "qid": "Q12740831",
+   "name": "Silvania Zalău",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Zalău",
+   "hq": [
+    47.19111,
+    23.05722
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18547891",
+   "name": "Simba Invest",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12740875",
+   "name": "Simex",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12740912",
+   "name": "Sind România",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7525115",
+   "name": "Sinteza",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Sinteza",
+   "listed": false
+  },
+  {
+   "qid": "Q12740265",
+   "name": "SIRD",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7390526",
+   "name": "SIVECO Romania",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.siveco.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/SIVECO_Romania",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12740981",
+   "name": "Skin Media",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18547978",
+   "name": "SMA Bonțida",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12741017",
+   "name": "Snack Attack",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12741025",
+   "name": "Socec & Co.",
+   "cc": "ro",
+   "types": [
+    "Q2085381",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "logo_file": "Curente și tendințe în filozofia românească (1946) - illustration - page 1.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12741038",
+   "name": "Societatea de Construcții în Transporturi București",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q2280353",
+   "name": "Societatea de Transport București",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.stb.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/Societatea_de_Transport_Bucure%C8%99ti",
+   "logo_file": "Logo STB Bucuresti.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1289648",
+   "name": "Societatea Feroviară de Turism",
+   "cc": "ro",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://turismferoviar.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q12741031",
+   "name": "SOCIETATEA NATIONALA DE RADIOCOMUNICATII",
+   "cc": "ro",
+   "types": [
+    "Q270791",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 4",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://radiocom.ro/",
+   "lei": "315700JM5EWY75FKI216",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18547994",
+   "name": "Societatea Națională a Apelor Minerale",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 6",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://www.snam.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q18547995",
+   "name": "Societatea Națională de Îmbunătățiri Funciare",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12741045",
+   "name": "Socomet",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12741046",
+   "name": "Socot",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12741057",
+   "name": "Softronic",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "rail industry"
+   ],
+   "isin": [],
+   "hq_city": "Craiova",
+   "hq": [
+    44.33333,
+    23.81667
+   ],
+   "website": "https://www.softronic.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12740271",
+   "name": "SOFTVISION",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cluj-Napoca",
+   "hq": [
+    46.76891,
+    23.59066
+   ],
+   "website": "http://www.softvision.ro/",
+   "lei": "315700AZ2A0E9DPM8M30",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q745812",
+   "name": "Softwin",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.softwin.ro",
+   "enwiki": "https://en.wikipedia.org/wiki/Softwin",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12741072",
+   "name": "Solventul",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12741073",
+   "name": "Sometra",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Copșa Mică",
+   "hq": [
+    46.1125,
+    24.23056
+   ],
+   "website": "http://www.sometra.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12741079",
+   "name": "Sommering Install",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18548033",
+   "name": "Sortilemn",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Gherla",
+   "hq": [
+    47.02,
+    23.9
+   ],
+   "website": "http://www.sortilemn.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q12741173",
+   "name": "Spicul",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12741223",
+   "name": "Spring Time",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18548070",
+   "name": "Staff Collection",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q25466489",
+   "name": "Stanleybet",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "sports betting"
+   ],
+   "isin": [],
+   "website": "https://www.stanleybet.ro/",
+   "logo_file": "Stanleybet logo international.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108169267",
+   "name": "Star Assembly",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12741285",
+   "name": "Star Storage",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://star-storage.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12738898",
+   "name": "State Protocol Heritage Administration",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 1",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://www.apps.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12741395",
+   "name": "Steaua Română",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of refined petroleum products"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.steauaromana.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Steaua_Rom%C3%A2n%C4%83",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12741484",
+   "name": "Stizo",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12741495",
+   "name": "Straco",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12741654",
+   "name": "Subaru Motors Trading",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.subarumotors.ro",
+   "logo_file": "Subaru logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12741729",
+   "name": "Sunquest",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61082636",
+   "name": "Superbet",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "gambling industry"
+   ],
+   "isin": [],
+   "hq_city": "Erembodegem",
+   "hq": [
+    50.9194,
+    4.0508
+   ],
+   "website": "https://superbet.ro/",
+   "logo_file": "Superbet Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12741837",
+   "name": "Săptămâna Financiară",
+   "cc": "ro",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.sfin.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18549763",
+   "name": "TBRCM",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 2",
+   "hq": [
+    44.44861,
+    26.12778
+   ],
+   "website": "https://tratamentbalnear.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12741961",
+   "name": "Teamnet",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.teamnet.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12742004",
+   "name": "Tehnologica Radion",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://tehnologica.ro/site/index.php?SMext=SMDownloads",
+   "listed": false
+  },
+  {
+   "qid": "Q19709462",
+   "name": "Tehnostrade",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q115773344",
+   "name": "Teilor",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Pitești",
+   "hq": [
+    44.86667,
+    24.88333
+   ],
+   "website": "https://www.teilor.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12742016",
+   "name": "Tel Drum",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4809644",
+   "name": "Telekom TV",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.dolce.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Telekom_TV",
+   "logo_file": "Deutsche Telekom 2022.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12742018",
+   "name": "Teletrans",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sector 3",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q846168",
+   "name": "Televiziunea Română",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.tvr.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/TVR_(TV_network)",
+   "logo_file": "TVR logo 2022.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12742025",
+   "name": "Televoice",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18549775",
+   "name": "Teora",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12742127",
+   "name": "TeraPlast",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "Bucharest Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "manufacturing industry"
+   ],
+   "isin": [],
+   "hq_city": "Sărățel",
+   "hq": [
+    47.0524,
+    24.41167
+   ],
+   "website": "https://www.teraplast.ro/",
+   "logo_file": "TeraPlast Logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12742132",
+   "name": "Termica Suceava",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q130485359",
+   "name": "Termoenergetica Bucharest",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry",
+    "public utility"
+   ],
+   "isin": [],
+   "hq_city": "Sector 4",
+   "hq": [
+    44.43528,
+    26.10278
+   ],
+   "website": "https://www.cmteb.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61086319",
+   "name": "Termon Onești",
+   "cc": "ro",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Onești",
+   "hq": [
+    46.25,
+    26.76667
+   ],
+   "website": "http://termon.ro",
+   "logo_file": "Termon Onesti logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12734464",
+   "name": "The Romanian Lottery",
+   "cc": "ro",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "gambling industry"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.loto.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12741865",
+   "name": "THR Marea Neagră",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q24035718",
+   "name": "Tip Top",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7809764",
+   "name": "Titan Machinery",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq",
+     "ticker": "TITN"
+    }
+   ],
+   "industries": [
+    "agricultural technology",
+    "construction machinery industry"
+   ],
+   "isin": [
+    "US88830R1014"
+   ],
+   "hq_city": "West Fargo",
+   "hq": [
+    46.87167,
+    -96.895
+   ],
+   "website": "https://oconnorscaseih.com.au",
+   "lei": "549300835ZM8G0BT5C94",
+   "enwiki": "https://en.wikipedia.org/wiki/Titan_Machinery",
+   "logo_file": "Titan-Machinery-Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12741874",
+   "name": "TMUCB",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1417736",
+   "name": "Traian Vuia International Airport",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ghiroda",
+   "hq": [
+    45.79112,
+    21.3227
+   ],
+   "website": "https://aerotim.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Timi%C8%99oara_Traian_Vuia_International_Airport",
+   "listed": false
+  },
+  {
+   "qid": "Q12742481",
+   "name": "Transavia",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "meatpacking industry"
+   ],
+   "isin": [],
+   "hq_city": "Sântimbru",
+   "hq": [
+    46.12176,
+    23.66566
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q750324",
+   "name": "Transelectrica",
+   "cc": "ro",
+   "types": [
+    "Q270791",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Bucharest Stock Exchange",
+     "ticker": "TEL"
+    }
+   ],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [
+    "ROTSELACNOR9"
+   ],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.transelectrica.ro",
+   "lei": "254900OLXCOUQC90M036",
+   "enwiki": "https://en.wikipedia.org/wiki/Transelectrica",
+   "logo_file": "Transelectrica.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q734282",
+   "name": "Transgaz",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "gas industry"
+   ],
+   "isin": [
+    "ROTGNTACNOR8"
+   ],
+   "hq_city": "Mediaș",
+   "hq": [
+    46.16389,
+    24.35083
+   ],
+   "website": "http://www.transgaz.ro/",
+   "lei": "254900R11L2IUTHIZ779",
+   "enwiki": "https://en.wikipedia.org/wiki/Transgaz",
+   "logo_file": "Transgaz wordmark.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q18548672",
+   "name": "Transilvania Construcții",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Cluj-Napoca",
+   "hq": [
+    46.76891,
+    23.59066
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18548673",
+   "name": "Transilvania Development",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3928166",
+   "name": "Transport Călători Express Ploiești",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ploiești",
+   "hq": [
+    44.94111,
+    26.0225
+   ],
+   "website": "https://www.ratph.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Transport_C%C4%83l%C4%83tori_Express_Ploie%C8%99ti",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7835384",
+   "name": "Transurban S.A.",
+   "cc": "ro",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "transport"
+   ],
+   "isin": [],
+   "hq_city": "Satu Mare",
+   "hq": [
+    47.79,
+    22.89
+   ],
+   "website": "http://www.transurbansatumare.ro/index.php",
+   "enwiki": "https://en.wikipedia.org/wiki/Transurban_S.A.",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q18548682",
+   "name": "Tratament Balnear Buziaș",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q137392646",
+   "name": "Trei Brutari",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food processing"
+   ],
+   "isin": [],
+   "hq_city": "Târgoviște",
+   "hq": [
+    44.92444,
+    25.45722
+   ],
+   "website": "https://www.treibrutari.ro/ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18548690",
+   "name": "Tremag",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q134530700",
+   "name": "Trinaco",
+   "cc": "ro",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Chernivtsi",
+   "hq": [
+    48.29083,
+    25.93444
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12742580",
+   "name": "Trotter Prim",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18548734",
+   "name": "Tunele Brașov",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12742665",
+   "name": "Tungal Metrou",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12742666",
+   "name": "Turabo Cafe",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12742679",
+   "name": "Turism Arieșul",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12742716",
+   "name": "Tușnad",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18548848",
+   "name": "Ultrapro",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12742761",
+   "name": "UMB Grup",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction industry"
+   ],
+   "isin": [],
+   "hq_city": "Bacău",
+   "hq": [
+    46.58333,
+    26.91667
+   ],
+   "website": "http://www.umbgrup.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/UMB_Grup",
+   "listed": false
+  },
+  {
+   "qid": "Q12742834",
+   "name": "Unicarm",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Satu Mare",
+   "hq": [
+    47.79,
+    22.89
+   ],
+   "website": "https://unicarm.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12742832",
+   "name": "Unicom Holding",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.unicom-group.ro/",
+   "listed": false
+  },
+  {
+   "qid": "Q18548888",
+   "name": "Unita Turism",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18548890",
+   "name": "United Romanian Breweries Bereprod",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "brewery"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://tuborg.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18538621",
+   "name": "University Press",
+   "cc": "ro",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12742887",
+   "name": "Urban",
+   "cc": "ro",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.urbansa.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12742889",
+   "name": "Urbis Armături Sanitare",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12742891",
+   "name": "Urgent Curier",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "website": "https://urgent-curier.ro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4990",
+   "name": "Ursus Breweries",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Cluj-Napoca",
+   "hq": [
+    46.76891,
+    23.59066
+   ],
+   "website": "http://ursus.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ursus_Breweries",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12742930",
+   "name": "Uzina de Produse Speciale Dragomirești",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12742917",
+   "name": "Uzina Mecanică București",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12742924",
+   "name": "Uzina Mecanică Drăgășani",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Drăgășani",
+   "hq": [
+    44.66111,
+    24.26389
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12742923",
+   "name": "Uzina Mecanică Mija",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12742914",
+   "name": "Uzina Mecanică Plopeni",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Plopeni",
+   "hq": [
+    45.04583,
+    25.9536
+   ],
+   "website": "https://ump.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12742925",
+   "name": "Uzina Mecanică Sadu",
+   "cc": "ro",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12742919",
+   "name": "Uzina Mecanică Tohan",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12742936",
+   "name": "Uztel",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ploiești",
+   "hq": [
+    44.94111,
+    26.0225
+   ],
+   "website": "https://www.uztel.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5983528",
+   "name": "Vasile Alecsandri National Theatre Iași",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.teatrulnationaliasi.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ia%C8%99i_National_Theatre",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12743286",
+   "name": "Vega Holding",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125635756",
+   "name": "Vega Refinery",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ploiești",
+   "hq": [
+    44.94111,
+    26.0225
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Vega_Refinery",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12743347",
+   "name": "Viarom Construct",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18549830",
+   "name": "Victoria București",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12743419",
+   "name": "Victoria Florești",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Florești",
+   "hq": [
+    45.03333,
+    25.8
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12743495",
+   "name": "Vinia",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7280624",
+   "name": "Virgin Radio România",
+   "cc": "ro",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://virginradio.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Virgin_Radio_Romania",
+   "logo_file": "VirginRadio.png",
+   "listed": false
+  },
+  {
+   "qid": "Q12743562",
+   "name": "Viromet",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.viromet.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q4052746",
+   "name": "Visual Fan",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Brașov",
+   "hq": [
+    45.65222,
+    25.61056
+   ],
+   "website": "https://www.allview.ro/",
+   "logo_file": "Logo visual fan.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12743590",
+   "name": "Vitrometan",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "glass production"
+   ],
+   "isin": [],
+   "hq_city": "Mediaș",
+   "hq": [
+    46.16389,
+    24.35083
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12743688",
+   "name": "Vola.ro",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12743713",
+   "name": "Vrancart",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.vrancart.ro/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12743824",
+   "name": "WBS Romania",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12743866",
+   "name": "West City Hotel",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12743885",
+   "name": "Wiee România",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "http://www.wiee.ro",
+   "listed": false
+  },
+  {
+   "qid": "Q12743956",
+   "name": "Yuksek International Fruct",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q8066476",
+   "name": "Zapp Mobile",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Zapp_Mobile",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18549385",
+   "name": "Zirom Titanium",
+   "cc": "ro",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "metallurgy"
+   ],
+   "isin": [],
+   "hq_city": "Giurgiu",
+   "hq": [
+    43.9,
+    25.96667
+   ],
+   "website": "https://zirom-titanium.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12744076",
+   "name": "Zona Liberă Curtici-Arad",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12744195",
+   "name": "Șantierul naval Năvodari",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12744190",
+   "name": "Șantierul Naval Orșova",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12744194",
+   "name": "Șantierul Naval Sulina",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4686097",
+   "name": "Țiriac Holdings",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/%C8%9Airiac_Holdings",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18549485",
+   "name": "ȚiriacAuto",
+   "cc": "ro",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bucharest",
+   "hq": [
+    44.41336,
+    26.09778
+   ],
+   "website": "https://www.tiriacauto.ro/",
+   "listed": false
+  }
+ ]
+}
