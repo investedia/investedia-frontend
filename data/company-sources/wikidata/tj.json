@@ -1,0 +1,253 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "TJ",
+ "count": 12,
+ "companies": [
+  {
+   "qid": "Q16962241",
+   "name": "Asia-Plus",
+   "cc": "tj",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "news media"
+   ],
+   "isin": [],
+   "hq_city": "Dushanbe",
+   "hq": [
+    38.57306,
+    68.78639
+   ],
+   "website": "https://asiaplus.news",
+   "enwiki": "https://en.wikipedia.org/wiki/Asia-Plus",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4077346",
+   "name": "Bank Eskhata",
+   "cc": "tj",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Tajikistan",
+   "hq": [
+    38.58333,
+    71.36667
+   ],
+   "website": "http://www.eskhata.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Eskhata",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13202239",
+   "name": "Barqi Tojik",
+   "cc": "tj",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dushanbe",
+   "hq": [
+    38.57306,
+    68.78639
+   ],
+   "website": "http://www.barqitojik.tj",
+   "enwiki": "https://en.wikipedia.org/wiki/Barqi_Tojik",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110620465",
+   "name": "iamdifferent",
+   "cc": "tj",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rudaki Avenue",
+   "hq": [
+    38.59256,
+    68.78683
+   ],
+   "website": "https://iamdifferent.store/",
+   "logo_file": "Iamdifferentwithoutbackgroud.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27881575",
+   "name": "Irfon",
+   "cc": "tj",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dushanbe",
+   "hq": [
+    38.57306,
+    68.78639
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31456155",
+   "name": "Main scientific editorial office of the Tajik National Encyclopedia",
+   "cc": "tj",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dushanbe",
+   "hq": [
+    38.57306,
+    68.78639
+   ],
+   "website": "http://www.donishnoma.tj",
+   "logo_file": "Лого ЭМТ.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125825506",
+   "name": "O Mobile",
+   "cc": "tj",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Dushanbe",
+   "hq": [
+    38.57306,
+    68.78639
+   ],
+   "website": "https://omobile.tj/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65301862",
+   "name": "R-graph",
+   "cc": "tj",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q105303665",
+   "name": "Rudaki Institute of Language and Literature",
+   "cc": "tj",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dushanbe",
+   "hq": [
+    38.57306,
+    68.78639
+   ],
+   "website": "https://izar.tj/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rudaki_Institute_of_Language_and_Literature",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1978608",
+   "name": "Tajik Aluminium Company",
+   "cc": "tj",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aluminium industry"
+   ],
+   "isin": [],
+   "hq_city": "Tursunzoda",
+   "hq": [
+    38.51083,
+    68.23028
+   ],
+   "website": "http://talco.com.tj/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tajik_Aluminium_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135949383",
+   "name": "Tajikistan Metallurgic Plant",
+   "cc": "tj",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of structural metal products",
+    "metallurgy"
+   ],
+   "isin": [],
+   "hq_city": "Guliston",
+   "hq": [
+    40.26472,
+    69.78944
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4050760",
+   "name": "Tcell",
+   "cc": "tj",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Dushanbe",
+   "hq": [
+    38.57306,
+    68.78639
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Tcell",
+   "listed": false
+  }
+ ]
+}

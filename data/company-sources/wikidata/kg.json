@@ -1,0 +1,186 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "KG",
+ "count": 10,
+ "companies": [
+  {
+   "qid": "Q4059033",
+   "name": "Aitysh Film",
+   "cc": "kg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bishkek",
+   "hq": [
+    42.86667,
+    74.56667
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Aitysh_Film",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4075821",
+   "name": "Bakai Bank",
+   "cc": "kg",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.bakai.kg/",
+   "logo_file": "Bakai Bank logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4087505",
+   "name": "Bitel",
+   "cc": "kg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q124439373",
+   "name": "Center of National Language and Encyclopedia",
+   "cc": "kg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bishkek",
+   "hq": [
+    42.86667,
+    74.56667
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5377246",
+   "name": "Enesay",
+   "cc": "kg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Enesay",
+   "logo_file": "Enesay logo.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q122146165",
+   "name": "Interglass LLC",
+   "cc": "kg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tokmok",
+   "hq": [
+    42.839,
+    75.291
+   ],
+   "website": "https://interglass.kg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q121843034",
+   "name": "Kaindy-Kant sugar factory",
+   "cc": "kg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kant",
+   "hq": [
+    42.88333,
+    74.85
+   ],
+   "website": "https://kaindykant.kg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4250906",
+   "name": "Kyrgyz Post",
+   "cc": "kg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bishkek",
+   "hq": [
+    42.86667,
+    74.56667
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25579369",
+   "name": "Kyrgyzaltyn",
+   "cc": "kg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining industry"
+   ],
+   "isin": [],
+   "hq_city": "Bishkek",
+   "hq": [
+    42.86667,
+    74.56667
+   ],
+   "website": "https://kyrgyzaltyn.kg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7501522",
+   "name": "Shoro",
+   "cc": "kg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "website": "https://www.shoro.kg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Shoro_(company)",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

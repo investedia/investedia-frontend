@@ -1,0 +1,237 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "TM",
+ "count": 12,
+ "companies": [
+  {
+   "qid": "Q4246731",
+   "name": "Alem Cultural and Entertainment Center",
+   "cc": "tm",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Alem_Cultural_and_Entertainment_Center",
+   "listed": false
+  },
+  {
+   "qid": "Q4063036",
+   "name": "Altyn Asyr",
+   "cc": "tm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Ashgabat",
+   "hq": [
+    37.95,
+    58.38333
+   ],
+   "website": "https://www.tmcell.tm/",
+   "enwiki": "https://en.wikipedia.org/wiki/Altyn_Asyr_(mobile_operator)",
+   "logo_file": "Altyn-asyr.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137398950",
+   "name": "Ashgabat Stock Exchange",
+   "cc": "tm",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ashgabat",
+   "hq": [
+    37.95,
+    58.38333
+   ],
+   "website": "https://agb.com.tm/en/",
+   "listed": false
+  },
+  {
+   "qid": "Q4466118",
+   "name": "Bank for Foreign Economic Relations",
+   "cc": "tm",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.tfeb.gov.tm/",
+   "listed": false
+  },
+  {
+   "qid": "Q16641442",
+   "name": "Dayhanbank",
+   "cc": "tm",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4495095",
+   "name": "Halkbank",
+   "cc": "tm",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Ashgabat",
+   "hq": [
+    37.95,
+    58.38333
+   ],
+   "website": "http://www.halkbank.gov.tm/",
+   "enwiki": "https://en.wikipedia.org/wiki/Halkbank_(Turkmenistan)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q857826",
+   "name": "MTS Turkmenistan",
+   "cc": "tm",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Ashgabat",
+   "hq": [
+    37.95,
+    58.38333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/MTS_Turkmenistan",
+   "logo_file": "MTS-2010.gif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4416077",
+   "name": "Senagat Bank",
+   "cc": "tm",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.senagatbank.gov.tm",
+   "listed": false
+  },
+  {
+   "qid": "Q4466135",
+   "name": "Turkmenpochta",
+   "cc": "tm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Ashgabat",
+   "hq": [
+    37.95,
+    58.38333
+   ],
+   "website": "http://www.turkmenpost.gov.tm/",
+   "enwiki": "https://en.wikipedia.org/wiki/Turkmenpochta",
+   "logo_file": "Turkmenistan Post Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3542321",
+   "name": "Türkmengaz",
+   "cc": "tm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Ashgabat",
+   "hq": [
+    37.95,
+    58.38333
+   ],
+   "website": "http://www.oilgas.gov.tm/_gkgasl.html",
+   "enwiki": "https://en.wikipedia.org/wiki/T%C3%BCrkmengaz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6692367",
+   "name": "Türkmennebit",
+   "cc": "tm",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Ashgabat",
+   "hq": [
+    37.95,
+    58.38333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/T%C3%BCrkmennebit",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130434950",
+   "name": "Ylym",
+   "cc": "tm",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ashgabat",
+   "hq": [
+    37.95,
+    58.38333
+   ],
+   "website": "https://science.gov.tm/organizations/ylym-nesiryaty",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

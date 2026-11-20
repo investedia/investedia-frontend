@@ -1,0 +1,686 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "MN",
+ "count": 38,
+ "companies": [
+  {
+   "qid": "Q31796167",
+   "name": "Admon",
+   "cc": "mn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Адмон Лого.png",
+   "listed": false
+  },
+  {
+   "qid": "Q4033047",
+   "name": "APU Company",
+   "cc": "mn",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Ulaanbaatar",
+   "hq": [
+    47.92136,
+    106.90551
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/APU_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4835385",
+   "name": "BDSec",
+   "cc": "mn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ulaanbaatar",
+   "hq": [
+    47.92136,
+    106.90551
+   ],
+   "website": "http://www.bdsec.mn",
+   "enwiki": "https://en.wikipedia.org/wiki/BDSec",
+   "listed": false
+  },
+  {
+   "qid": "Q20202075",
+   "name": "Cyber-Andromeda",
+   "cc": "mn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.andromeda.mn",
+   "listed": false
+  },
+  {
+   "qid": "Q1152863",
+   "name": "DDishTV LLC",
+   "cc": "mn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "satellite television"
+   ],
+   "isin": [],
+   "hq_city": "Ulaanbaatar",
+   "hq": [
+    47.92136,
+    106.90551
+   ],
+   "website": "http://www.ddishtv.mn/",
+   "enwiki": "https://en.wikipedia.org/wiki/DDishTV",
+   "listed": false
+  },
+  {
+   "qid": "Q124434673",
+   "name": "Development Bank of Mongolia",
+   "cc": "mn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sükhbaatar",
+   "hq": [
+    48.079,
+    106.95686
+   ],
+   "website": "https://www.dbm.mn/en",
+   "enwiki": "https://en.wikipedia.org/wiki/Development_Bank_of_Mongolia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136455288",
+   "name": "Erdenes Mongol Group",
+   "cc": "mn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "industry",
+    "mining industry"
+   ],
+   "isin": [],
+   "hq_city": "Ulaanbaatar",
+   "hq": [
+    47.92136,
+    106.90551
+   ],
+   "logo_file": "ЭМ лого Eng PNG.png",
+   "listed": false
+  },
+  {
+   "qid": "Q113632769",
+   "name": "Erdenes Tavantolgoi JSC",
+   "cc": "mn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ulaanbaatar",
+   "hq": [
+    47.92136,
+    106.90551
+   ],
+   "website": "https://ett.mn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Erdenes_Tavantolgoi",
+   "logo_file": "ETT logo mon(1).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139710265",
+   "name": "Erdenet Carpet",
+   "cc": "mn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Erdenet",
+   "hq": [
+    49.02778,
+    104.04444
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q48806449",
+   "name": "Erel Group",
+   "cc": "mn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://erel.mn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Erel_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q5511908",
+   "name": "G-Mobile",
+   "cc": "mn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Ulaanbaatar",
+   "hq": [
+    47.92136,
+    106.90551
+   ],
+   "website": "https://gmobile.mn/",
+   "enwiki": "https://en.wikipedia.org/wiki/G-Mobile",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138521408",
+   "name": "Gashuun Sukhait Highway",
+   "cc": "mn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "highway"
+   ],
+   "isin": [],
+   "website": "https://www.gsr.mn/",
+   "logo_file": "XN-5QWU88I-B7DD9RG-V4NLVKF-J9-removebg-preview.png",
+   "listed": false
+  },
+  {
+   "qid": "Q102291864",
+   "name": "General Authority for Archives of Mongolia",
+   "cc": "mn",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.archives.gov.mn/",
+   "enwiki": "https://en.wikipedia.org/wiki/General_Authority_for_Archives_of_Mongolia",
+   "listed": false
+  },
+  {
+   "qid": "Q28163488",
+   "name": "Gobi Cashmere",
+   "cc": "mn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ulaanbaatar",
+   "hq": [
+    47.92136,
+    106.90551
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Gobi_Cashmere",
+   "logo_file": "Gobi Cashmere.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5580917",
+   "name": "Golomt Bank",
+   "cc": "mn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ulaanbaatar",
+   "hq": [
+    47.92136,
+    106.90551
+   ],
+   "website": "https://www.golomtbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Golomt_Bank",
+   "logo_file": "Mon logo new.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65406506",
+   "name": "ITZone",
+   "cc": "mn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Itzone logo blue background.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q31795613",
+   "name": "Jurmak",
+   "cc": "mn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ulaanbaatar",
+   "hq": [
+    47.92136,
+    106.90551
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25632240",
+   "name": "Khan Bank",
+   "cc": "mn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ulaanbaatar",
+   "hq": [
+    47.92136,
+    106.90551
+   ],
+   "website": "https://www.khanbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Khan_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17052375",
+   "name": "Monet Investment Bank",
+   "cc": "mn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Monet_Investment_Bank",
+   "logo_file": "Monet logo draw.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q4301626",
+   "name": "Mongol Post",
+   "cc": "mn",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Ulaanbaatar",
+   "hq": [
+    47.92136,
+    106.90551
+   ],
+   "website": "https://www.mongolpost.mn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mongol_Post",
+   "listed": false
+  },
+  {
+   "qid": "Q134269057",
+   "name": "Mongolian Agricultural Commodity Exchange",
+   "cc": "mn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q15835510",
+   "name": "Mongolian Railway",
+   "cc": "mn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.mtz.mn/",
+   "listed": false
+  },
+  {
+   "qid": "Q21663353",
+   "name": "Mongolkino",
+   "cc": "mn",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "cinematography"
+   ],
+   "isin": [],
+   "hq_city": "Songino Khairkhan",
+   "hq": [
+    48.12455,
+    106.64108
+   ],
+   "website": "https://mongol-kino.mn/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25632476",
+   "name": "Monkor Cargo",
+   "cc": "mn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "freight transport"
+   ],
+   "isin": [],
+   "hq_city": "Ulaanbaatar",
+   "hq": [
+    47.92136,
+    106.90551
+   ],
+   "website": "http://www.monkor.mn/",
+   "listed": false
+  },
+  {
+   "qid": "Q28478113",
+   "name": "Monsudar",
+   "cc": "mn",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ulaanbaatar",
+   "hq": [
+    47.92136,
+    106.90551
+   ],
+   "website": "https://www.monsudar.mn/",
+   "logo_file": "Monsudar logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65406758",
+   "name": "MOST Fintech",
+   "cc": "mn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "MOST Fintech landscape default.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31795477",
+   "name": "National Investment Bank of Mongolia",
+   "cc": "mn",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q15650025",
+   "name": "Newcom Group",
+   "cc": "mn",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://newcom.mn/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Newcom_Group",
+   "logo_file": "Newcom Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31797108",
+   "name": "Numan-Altai",
+   "cc": "mn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136125602",
+   "name": "Petrovis",
+   "cc": "mn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Looogooo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q20612336",
+   "name": "Shivee-Ovoo",
+   "cc": "mn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Shiveegovi",
+   "hq": [
+    46.10694,
+    108.61778
+   ],
+   "logo_file": "Шивээ Овоо.png",
+   "listed": false
+  },
+  {
+   "qid": "Q7538054",
+   "name": "Skytel",
+   "cc": "mn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Ulaanbaatar",
+   "hq": [
+    47.92136,
+    106.90551
+   ],
+   "website": "http://www.skytel.mn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Skytel_(Mongolia)",
+   "logo_file": "SKYtel Group.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q136675217",
+   "name": "SUU JSC",
+   "cc": "mn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy industry"
+   ],
+   "isin": [],
+   "hq_city": "Songino Khairkhan",
+   "hq": [
+    48.12455,
+    106.64108
+   ],
+   "website": "https://www.suu.mn/en/",
+   "logo_file": "Logo-suu-for-web (1).png",
+   "listed": false
+  },
+  {
+   "qid": "Q6899579",
+   "name": "Telecom Mongolia",
+   "cc": "mn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.telecommongolia.mn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Telecom_Mongolia",
+   "listed": false
+  },
+  {
+   "qid": "Q7864493",
+   "name": "UFC Group",
+   "cc": "mn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/UFC_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124518180",
+   "name": "Ulaanbaatar Electricity Distribution Network",
+   "cc": "mn",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power distribution"
+   ],
+   "isin": [],
+   "hq_city": "Ulaanbaatar",
+   "hq": [
+    47.92136,
+    106.90551
+   ],
+   "website": "https://tog.mn/en/index.html",
+   "enwiki": "https://en.wikipedia.org/wiki/Ulaanbaatar_Electricity_Distribution_Network",
+   "listed": false
+  },
+  {
+   "qid": "Q7893681",
+   "name": "Unitel Mongolia",
+   "cc": "mn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Ulaanbaatar",
+   "hq": [
+    47.92136,
+    106.90551
+   ],
+   "website": "http://www.unitel.mn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Unitel_(Mongolia)",
+   "logo_file": "Unitel Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8042815",
+   "name": "XacBank",
+   "cc": "mn",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Ulaanbaatar",
+   "hq": [
+    47.92136,
+    106.90551
+   ],
+   "website": "https://www.xacbank.mn",
+   "enwiki": "https://en.wikipedia.org/wiki/XacBank",
+   "logo_file": "XacBank logo.png",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

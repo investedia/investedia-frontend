@@ -1,0 +1,270 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "AF",
+ "count": 13,
+ "companies": [
+  {
+   "qid": "Q1140984",
+   "name": "Academy of Sciences of Afghanistan",
+   "cc": "af",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://asa.gov.af/",
+   "enwiki": "https://en.wikipedia.org/wiki/Academy_of_Sciences_of_Afghanistan",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q383046",
+   "name": "Afghan Wireless",
+   "cc": "af",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Kabul",
+   "hq": [
+    34.53278,
+    69.16583
+   ],
+   "website": "https://afghan-wireless.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Afghan_Wireless",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16824355",
+   "name": "Afghanistan Group of Newspapers",
+   "cc": "af",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Afghanistan_Group_of_Newspapers",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4689147",
+   "name": "Afghanistan International Bank",
+   "cc": "af",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kabul",
+   "hq": [
+    34.53278,
+    69.16583
+   ],
+   "website": "http://www.aib.af/",
+   "enwiki": "https://en.wikipedia.org/wiki/Afghanistan_International_Bank",
+   "logo_file": "Logo AIB with wordmark.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q655121",
+   "name": "Ariana Television Network",
+   "cc": "af",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kabul",
+   "hq": [
+    34.53278,
+    69.16583
+   ],
+   "website": "http://www.arianatelevision.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Ariana_Television_Network",
+   "logo_file": "Ariana television logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17013425",
+   "name": "Aschiana",
+   "cc": "af",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kabul",
+   "hq": [
+    34.53278,
+    69.16583
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Aschiana",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4655259",
+   "name": "AZ Corporation",
+   "cc": "af",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/AZ_Corporation",
+   "listed": false
+  },
+  {
+   "qid": "Q4856250",
+   "name": "Bank-e-Millie Afghan",
+   "cc": "af",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kabul",
+   "hq": [
+    34.53278,
+    69.16583
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Bank-e-Millie_Afghan",
+   "logo_file": "BMA Official Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131384706",
+   "name": "Bayat Power",
+   "cc": "af",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Kabul",
+   "hq": [
+    34.53278,
+    69.16583
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Bayat_Power",
+   "logo_file": "Bayat Power Logo - Rectangle White.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5425823",
+   "name": "FINCA Afghanistan",
+   "cc": "af",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kabul",
+   "hq": [
+    34.53278,
+    69.16583
+   ],
+   "website": "http://www.FINCA.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/FINCA_Afghanistan",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1941629",
+   "name": "MOBY Group",
+   "cc": "af",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media",
+    "television"
+   ],
+   "isin": [],
+   "hq_city": "Kabul",
+   "hq": [
+    34.53278,
+    69.16583
+   ],
+   "website": "http://www.mobygroup.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Moby_Media_Group",
+   "logo_file": "Moby Group.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q196137",
+   "name": "New Kabul Bank",
+   "cc": "af",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kabul",
+   "hq": [
+    34.53278,
+    69.16583
+   ],
+   "website": "http://newkabulbank.af/",
+   "enwiki": "https://en.wikipedia.org/wiki/New_Kabul_Bank",
+   "logo_file": "KabulBankLogo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1127519",
+   "name": "Roshan",
+   "cc": "af",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Kabul",
+   "hq": [
+    34.53278,
+    69.16583
+   ],
+   "website": "http://www.roshan.af",
+   "enwiki": "https://en.wikipedia.org/wiki/Roshan_(telecommunications)",
+   "logo_file": "Roshan mobile.svg",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}
