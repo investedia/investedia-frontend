@@ -26,10 +26,16 @@ jobs:
         run: |
           B=${{ github.ref_name }}
           save() {
-            git add data/company-sources/wikidata
-            git diff --cached --quiet && return 0
-            git -c user.name='Investedia data bot' -c user.email='robot@investedia.com' commit -q -m "Wikidata company facts: $1 (CC0)"
-            for i in 1 2 3 4; do git pull -q --rebase origin "$B" && git push -q origin HEAD:"$B" && return 0; sleep 15; done
+            # copy the country files aside, move onto the latest branch, put them back: never a stuck rebase
+            T=$(mktemp -d); cp data/company-sources/wikidata/*.json "$T"/
+            for i in 1 2 3 4 5; do
+              git rebase --abort 2>/dev/null || true
+              git fetch -q origin "$B" && git reset -q --hard "origin/$B" && cp -n "$T"/*.json data/company-sources/wikidata/ || true
+              git add data/company-sources/wikidata
+              git diff --cached --quiet && return 0
+              git -c user.name='Investedia data bot' -c user.email='robot@investedia.com' commit -q -m "Wikidata company facts: $1 (CC0)"
+              git push -q origin HEAD:"$B" && return 0; sleep 20
+            done
           }
           for pass in 1 2 3; do
             L=$(python3 -c "import json,pathlib;r=json.load(open('data/company-sources/wikidata-request.json'));d=pathlib.Path('data/company-sources/wikidata');print(' '.join(c for c in r['countries'] if not (d/(c.lower()+'.json')).exists()))")
