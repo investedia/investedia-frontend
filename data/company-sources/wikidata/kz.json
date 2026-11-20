@@ -1,0 +1,1645 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "KZ",
+ "count": 77,
+ "companies": [
+  {
+   "qid": "Q4698516",
+   "name": "Aircraft Repair Plant No 405",
+   "cc": "kz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Aircraft_Repair_Plant_No_405",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12528596",
+   "name": "Alsi",
+   "cc": "kz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16532177",
+   "name": "Altel",
+   "cc": "kz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "http://www.altel.kz/",
+   "logo_file": "Altel logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12529661",
+   "name": "Araltuz",
+   "cc": "kz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Aral",
+   "hq": [
+    46.8,
+    61.66667
+   ],
+   "website": "http://www.araltuz.kz/",
+   "logo_file": "Araltuz Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q42800905",
+   "name": "Astana Banki",
+   "cc": "kz",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.bankastana.kz/ru",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q746562",
+   "name": "Astana Motors",
+   "cc": "kz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry",
+    "car dealership"
+   ],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "http://astana-motors.kz",
+   "logo_file": "Astana Motors Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q80438",
+   "name": "ATFBank",
+   "cc": "kz",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "http://www.atfbank.kz/",
+   "logo_file": "ATFBank Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4072318",
+   "name": "Atyrau oil refinery",
+   "cc": "kz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Atyrau",
+   "hq": [
+    47.11667,
+    51.88333
+   ],
+   "website": "http://www.anpz.kz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21843640",
+   "name": "Bank RBK",
+   "cc": "kz",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://bankrbk.kz/ru",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4153367",
+   "name": "Bereke Bank",
+   "cc": "kz",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "https://berekebank.kz",
+   "enwiki": "https://en.wikipedia.org/wiki/Bereke_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16674089",
+   "name": "BN-350",
+   "cc": "kz",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "district heating",
+    "energy industry",
+    "water supply"
+   ],
+   "isin": [],
+   "hq_city": "Aktau",
+   "hq": [
+    43.6525,
+    51.1575
+   ],
+   "website": "http://www.maek.kz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q890399",
+   "name": "Bogatyr Access Komir",
+   "cc": "kz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Mineral industry of Kazakhstan",
+    "coal industry",
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Ekibastuz",
+   "hq": [
+    51.72978,
+    75.32658
+   ],
+   "website": "http://www.bogatyr.kz",
+   "enwiki": "https://en.wikipedia.org/wiki/Bogatyr_Coal",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q797060",
+   "name": "BTA Bank",
+   "cc": "kz",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Kazakhstan Stock Exchange",
+     "ticker": "BTAS"
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "https://www.bta.kz/",
+   "enwiki": "https://en.wikipedia.org/wiki/BTA_Bank",
+   "logo_file": "BTA Bank.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1960826",
+   "name": "Caspian Pipeline Consortium",
+   "cc": "kz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Moscow",
+   "hq": [
+    55.75056,
+    37.6175
+   ],
+   "website": "http://www.cpc.ru",
+   "enwiki": "https://en.wikipedia.org/wiki/Caspian_Pipeline_Consortium",
+   "logo_file": "Логотип КТК.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q806624",
+   "name": "CenterCredit",
+   "cc": "kz",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "KZ0007786572"
+   ],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "http://www.centercredit.kz/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4077350",
+   "name": "Development Bank of Kazakhstan",
+   "cc": "kz",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.kdb.kz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Development_Bank_of_Kazakhstan",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16433522",
+   "name": "Embamunaygas",
+   "cc": "kz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Atyrau",
+   "hq": [
+    47.11667,
+    51.88333
+   ],
+   "website": "https://emba.kz/",
+   "logo_file": "Embamunaigas logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q143852",
+   "name": "Eurasian Bank",
+   "cc": "kz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "https://eubank.kz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Eurasian_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1374297",
+   "name": "Eurasian Natural Resources Corporation",
+   "cc": "kz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Kazakhstan Stock Exchange",
+     "ticker": null
+    },
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "metal industry"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "http://www.enrc.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Eurasian_Natural_Resources_Corporation",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1336498",
+   "name": "ForteBank",
+   "cc": "kz",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Astana",
+   "hq": [
+    51.13333,
+    71.43333
+   ],
+   "website": "http://forte.kz",
+   "enwiki": "https://en.wikipedia.org/wiki/ForteBank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138667393",
+   "name": "Globbing",
+   "cc": "kz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://am.globbing.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12572483",
+   "name": "Gylym",
+   "cc": "kz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1046186",
+   "name": "Halyk Bank of Kazakhstan",
+   "cc": "kz",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Astana International Exchange",
+     "ticker": "HSBK"
+    },
+    {
+     "exchange": "Kazakhstan Stock Exchange",
+     "ticker": "HSBK"
+    },
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": "HSBK"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "KZ000A0LE0S4"
+   ],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "http://www.halykbank.kz",
+   "enwiki": "https://en.wikipedia.org/wiki/Halyk_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q115575403",
+   "name": "Home Credit Bank Kazakhstan",
+   "cc": "kz",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Kazakhstan Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "https://home.kz/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4201716",
+   "name": "Institute of Seismology",
+   "cc": "kz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "http://www.seismology.kz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16650837",
+   "name": "Jazushy",
+   "cc": "kz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18466441",
+   "name": "JSC KazSat",
+   "cc": "kz",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4041951",
+   "name": "KaR-Tel",
+   "cc": "kz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Astana",
+   "hq": [
+    51.13333,
+    71.43333
+   ],
+   "website": "https://beeline.kz/ru",
+   "logo_file": "K-mobile.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q143833",
+   "name": "Kaspi Bank",
+   "cc": "kz",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "https://kaspi.kz/",
+   "logo_file": "Kaspi-icon.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106219885",
+   "name": "Kaspi.kz Joint Stock Company",
+   "cc": "kz",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Astana International Exchange",
+     "ticker": "KSPI"
+    },
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": "KSPI"
+    },
+    {
+     "exchange": "Nasdaq",
+     "ticker": "KSPI"
+    }
+   ],
+   "industries": [
+    "fintech"
+   ],
+   "isin": [
+    "US48581R2058"
+   ],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "https://kaspi.kz",
+   "enwiki": "https://en.wikipedia.org/wiki/Kaspi.kz",
+   "logo_file": "Kaspi-icon.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12254837",
+   "name": "Kazakh Encyclopedias",
+   "cc": "kz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "http://kazenc.kz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q649715",
+   "name": "Kazakhmys",
+   "cc": "kz",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Hong Kong Stock Exchange",
+     "ticker": "0847"
+    },
+    {
+     "exchange": "Kazakhstan Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "metal industry",
+    "mining industry"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "http://www.mykazakhmys.kz",
+   "enwiki": "https://en.wikipedia.org/wiki/Kazakhmys",
+   "logo_file": "Kazakhmys logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q27628221",
+   "name": "Kazakhstan Engineering",
+   "cc": "kz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Astana",
+   "hq": [
+    51.13333,
+    71.43333
+   ],
+   "website": "http://www.ke.kz",
+   "enwiki": "https://en.wikipedia.org/wiki/Kazakhstan_Engineering",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21663237",
+   "name": "Kazakhstan Mint",
+   "cc": "kz",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://kazmint.kz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kazakhstan_Mint",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1734773",
+   "name": "Kazakhstan Stock Exchange",
+   "cc": "kz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "KZ1C00001213"
+   ],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "https://kase.kz",
+   "enwiki": "https://en.wikipedia.org/wiki/Kazakhstan_Stock_Exchange",
+   "logo_file": "Kazakhstan Stock Exchange (KASE).svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1069105",
+   "name": "Kazakhstan Temir Zholy",
+   "cc": "kz",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [
+    {
+     "exchange": "Kazakhstan Stock Exchange",
+     "ticker": "TMJL"
+    }
+   ],
+   "industries": [
+    "transport"
+   ],
+   "isin": [],
+   "hq_city": "Astana",
+   "hq": [
+    51.13333,
+    71.43333
+   ],
+   "website": "http://www.railways.kz/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kazakhstan_Temir_Joly",
+   "logo_file": "Logo Kazakh railway.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1590386",
+   "name": "Kazatomprom",
+   "cc": "kz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Astana International Exchange",
+     "ticker": "KAP"
+    },
+    {
+     "exchange": "Kazakhstan Stock Exchange",
+     "ticker": "KZAP"
+    },
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": "KAP"
+    }
+   ],
+   "industries": [
+    "mining"
+   ],
+   "isin": [
+    "XS0510820011"
+   ],
+   "hq_city": "Astana",
+   "hq": [
+    51.13333,
+    71.43333
+   ],
+   "website": "https://www.kazatomprom.kz",
+   "enwiki": "https://en.wikipedia.org/wiki/Kazatomprom",
+   "logo_file": "Kazatomprom logo new.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12573636",
+   "name": "KazHydroMet",
+   "cc": "kz",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Astana",
+   "hq": [
+    51.13333,
+    71.43333
+   ],
+   "website": "https://www.kazhydromet.kz/",
+   "listed": false
+  },
+  {
+   "qid": "Q1417227",
+   "name": "KazMunayGas",
+   "cc": "kz",
+   "types": [
+    "Q270791",
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Astana International Exchange",
+     "ticker": "KMG"
+    },
+    {
+     "exchange": "Kazakhstan Stock Exchange",
+     "ticker": "KMGZ"
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "KZ1C49280015"
+   ],
+   "hq_city": "Astana",
+   "hq": [
+    51.13333,
+    71.43333
+   ],
+   "website": "http://www.kmg.kz",
+   "lei": "2138001H1M69RFJCSH88",
+   "enwiki": "https://en.wikipedia.org/wiki/KazMunayGas",
+   "logo_file": "KazMunayGas logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q13421587",
+   "name": "Kaznetmedia",
+   "cc": "kz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Astana",
+   "hq": [
+    51.13333,
+    71.43333
+   ],
+   "website": "http://www.kaznetmedia.kz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12573666",
+   "name": "Kazphosphate",
+   "cc": "kz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "http://www.kazphosphate.kz/eng/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q746263",
+   "name": "Kazpost",
+   "cc": "kz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "https://qazpost.kz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kazpost",
+   "logo_file": "QazPost logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1737468",
+   "name": "KazTransOil",
+   "cc": "kz",
+   "types": [
+    "Q270791",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Kazakhstan Stock Exchange",
+     "ticker": "KZTO"
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "KZ1C29950017"
+   ],
+   "hq_city": "Astana",
+   "hq": [
+    51.13333,
+    71.43333
+   ],
+   "website": "http://www.kaztransoil.kz/",
+   "enwiki": "https://en.wikipedia.org/wiki/KazTransOil",
+   "logo_file": "KazTransOil.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1737636",
+   "name": "Kcell",
+   "cc": "kz",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [
+    "KZ1C59150017"
+   ],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "http://www.kcell.kz",
+   "enwiki": "https://en.wikipedia.org/wiki/Kcell",
+   "logo_file": "Kcell wordmark.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1045983",
+   "name": "KEGOC",
+   "cc": "kz",
+   "types": [
+    "Q270791",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Astana International Exchange",
+     "ticker": "KEGC"
+    },
+    {
+     "exchange": "Kazakhstan Stock Exchange",
+     "ticker": "KEGC"
+    }
+   ],
+   "industries": [
+    "power engineering"
+   ],
+   "isin": [],
+   "hq_city": "Astana",
+   "hq": [
+    51.13333,
+    71.43333
+   ],
+   "website": "http://www.kegoc.kz/",
+   "enwiki": "https://en.wikipedia.org/wiki/KEGOC",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12548587",
+   "name": "Kezbi",
+   "cc": "kz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1384852",
+   "name": "KSP Steel",
+   "cc": "kz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "http://kspsteel.kz",
+   "logo_file": "KSP Steel Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16536991",
+   "name": "Library Association of the Republic of Kazakhstan",
+   "cc": "kz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30892721",
+   "name": "Lokomotiv Kurastyru Zauyty",
+   "cc": "kz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Astana",
+   "hq": [
+    51.13333,
+    71.43333
+   ],
+   "website": "http://aolkz.kz",
+   "enwiki": "https://en.wikipedia.org/wiki/Lokomotiv_Kurastyru_Zauyty",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18608194",
+   "name": "MEGA",
+   "cc": "kz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://almaty.megacenter.kz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4289246",
+   "name": "Mektep",
+   "cc": "kz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://mektep.kz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1919649",
+   "name": "Meloman",
+   "cc": "kz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "product distribution",
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "https://www.meloman.kz/",
+   "logo_file": "Meloman Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12555771",
+   "name": "NBK",
+   "cc": "kz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98046055",
+   "name": "NUR.KZ",
+   "cc": "kz",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology",
+    "news"
+   ],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "https://kaz.nur.kz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1638772",
+   "name": "Nurbank",
+   "cc": "kz",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "http://www.nurbank.kz/",
+   "logo_file": "Nurbank logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12556895",
+   "name": "OKIOK",
+   "cc": "kz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q122942158",
+   "name": "Olzha Argo",
+   "cc": "kz",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16683019",
+   "name": "Omega",
+   "cc": "kz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "instrumentation engineering"
+   ],
+   "isin": [],
+   "hq_city": "Oral",
+   "hq": [
+    51.2225,
+    51.3725
+   ],
+   "website": "http://www.aopzomega.kz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12579631",
+   "name": "Oner",
+   "cc": "kz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12579413",
+   "name": "OzenMunaiGaz",
+   "cc": "kz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zhanaozen",
+   "hq": [
+    43.33889,
+    52.85556
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q986554",
+   "name": "PetroKazakhstan",
+   "cc": "kz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Calgary",
+   "hq": [
+    51.0475,
+    -114.0625
+   ],
+   "website": "https://www.petrokazakhstan.kz/",
+   "enwiki": "https://en.wikipedia.org/wiki/PetroKazakhstan",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12573117",
+   "name": "QazaqGas",
+   "cc": "kz",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2129065",
+   "name": "Rakhat",
+   "cc": "kz",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [
+    "KZ1C06320010"
+   ],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "https://www.rakhat.kz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Lotte_Rakhat",
+   "logo_file": "Lotte Rakhat JSC logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4407014",
+   "name": "Samruk-Kazyna",
+   "cc": "kz",
+   "types": [
+    "Q270791",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Promyshlennaya",
+    "transportation"
+   ],
+   "isin": [],
+   "hq_city": "Astana",
+   "hq": [
+    51.13333,
+    71.43333
+   ],
+   "website": "https://www.sk.kz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Samruk-Kazyna",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7461454",
+   "name": "Shahar Media Group",
+   "cc": "kz",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Shahar_Media_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q141129572",
+   "name": "Shin-Line",
+   "cc": "kz",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "butter",
+    "dairy product",
+    "frozen food",
+    "ice cream"
+   ],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "https://www.shin-line.com/en/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4524085",
+   "name": "Shinkhan Bank Kazakhstan",
+   "cc": "kz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q110635099",
+   "name": "Sister's Aroma",
+   "cc": "kz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "cosmetics industry"
+   ],
+   "isin": [],
+   "hq_city": "Kyiv",
+   "hq": [
+    50.45,
+    30.52361
+   ],
+   "website": "https://sistersaroma.com/",
+   "logo_file": "Sisters logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4427410",
+   "name": "Sokolov-Sarbai Mining Production Association",
+   "cc": "kz",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Kazakhstan Stock Exchange",
+     "ticker": "SSGP"
+    }
+   ],
+   "industries": [
+    "International Standard Industrial Classification",
+    "metallurgy",
+    "mining industry"
+   ],
+   "isin": [],
+   "hq_city": "Rudny",
+   "hq": [
+    52.96667,
+    63.11667
+   ],
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1326972",
+   "name": "Temirtau Electrometallurgical Plant",
+   "cc": "kz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry",
+    "metal industry",
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Temirtau",
+   "hq": [
+    50.05494,
+    72.96464
+   ],
+   "website": "http://www.temk.kz/en/",
+   "logo_file": "TEMK Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2448764",
+   "name": "Trans-Eurasia Logistics",
+   "cc": "kz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.crexpress.cn/",
+   "enwiki": "https://en.wikipedia.org/wiki/Trans-Eurasia_Logistics",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16533334",
+   "name": "Usine de ferroalliages d'Aktobe",
+   "cc": "kz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Aktobe",
+   "hq": [
+    50.28361,
+    57.22972
+   ],
+   "website": "https://erg.kz/ru/content/deyatel-nost/predpriyatiya-v-sostave-erg#section-3",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12537450",
+   "name": "VEC",
+   "cc": "kz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "construction industry"
+   ],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "https://www.vek.kz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113381618",
+   "name": "WhiteBIT",
+   "cc": "kz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://whitebit.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/WhiteBIT_(company)",
+   "logo_file": "WhiteBIT official logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4185641",
+   "name": "Zamanbank",
+   "cc": "kz",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.zamanbank.kz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zamanbank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12544756",
+   "name": "Zheti Zhargy Publishing",
+   "cc": "kz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing industry"
+   ],
+   "isin": [],
+   "hq_city": "Almaty",
+   "hq": [
+    43.24,
+    76.915
+   ],
+   "website": "https://zhetizhargy.kz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4491698",
+   "name": "Фонд Проблемных Активов Казахстан",
+   "cc": "kz",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  }
+ ]
+}

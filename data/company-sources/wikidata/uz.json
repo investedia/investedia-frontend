@@ -1,0 +1,1607 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "UZ",
+ "count": 75,
+ "companies": [
+  {
+   "qid": "Q18746447",
+   "name": "Agrobank",
+   "cc": "uz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "AGBA"
+    }
+   ],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [
+    "UZ7001560000"
+   ],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "https://agrobank.uz/",
+   "lei": "254900JPMU0LFCP18673",
+   "logo_file": "Agrobank Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q125501908",
+   "name": "AKFA Group",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/AKFA_Group",
+   "logo_file": "Akfa group.png",
+   "listed": false
+  },
+  {
+   "qid": "Q4062746",
+   "name": "Almalyk mining and metallurgical complex",
+   "cc": "uz",
+   "types": [
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "AGMK"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "UZ7000550002"
+   ],
+   "hq_city": "Olmaliq",
+   "hq": [
+    40.85,
+    69.6
+   ],
+   "website": "https://agmk.uz/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4062812",
+   "name": "Aloqabank",
+   "cc": "uz",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "ALKB"
+    }
+   ],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [
+    "UZ7044760005"
+   ],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "http://www.aloqabank.uz",
+   "lei": "254900B2WJGJ0SR7JC84",
+   "enwiki": "https://en.wikipedia.org/wiki/Aloqabank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q23681103",
+   "name": "Artel",
+   "cc": "uz",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "electronics"
+   ],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "https://artelelectronics.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Artel_Electronics",
+   "logo_file": "Shilda Artel.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12817010",
+   "name": "Asaka bank",
+   "cc": "uz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "UZ7038660005"
+   ],
+   "hq_city": "Asaka",
+   "hq": [
+    40.63333,
+    72.23333
+   ],
+   "listed": true
+  },
+  {
+   "qid": "Q4071328",
+   "name": "Asloyna",
+   "cc": "uz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "http://www.asloyna.uz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12817009",
+   "name": "Aviabank",
+   "cc": "uz",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "KPBA"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "UZ7047440001"
+   ],
+   "listed": true
+  },
+  {
+   "qid": "Q125487397",
+   "name": "AVO Bank",
+   "cc": "uz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "UZ7056470014"
+   ],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "listed": true
+  },
+  {
+   "qid": "Q139915113",
+   "name": "Basalt Uzbekistan",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Forish District",
+   "hq": [
+    40.66667,
+    67.25
+   ],
+   "website": "https://basalt-engineering.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25528690",
+   "name": "Business Development Bank",
+   "cc": "uz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "BRBN"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "UZ7018790004"
+   ],
+   "listed": true
+  },
+  {
+   "qid": "Q104829814",
+   "name": "Coca-Cola Bottlers Uzbekistan",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Coca-Cola_Bottlers_Uzbekistan",
+   "listed": false
+  },
+  {
+   "qid": "Q125172803",
+   "name": "Daryo",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "news"
+   ],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "https://daryo.uz/",
+   "logo_file": "Daryo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125487629",
+   "name": "Davr Bank",
+   "cc": "uz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "UZ7050240009"
+   ],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "lei": "254900KEDRMUYT46HS37",
+   "listed": true
+  },
+  {
+   "qid": "Q25529972",
+   "name": "Fan",
+   "cc": "uz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25523537",
+   "name": "Farg'onaazot",
+   "cc": "uz",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "FRAZ"
+    }
+   ],
+   "industries": [
+    "Agricultural Chemicals"
+   ],
+   "isin": [
+    "UZ7054350002"
+   ],
+   "hq_city": "Fergana",
+   "hq": [
+    40.38639,
+    71.78639
+   ],
+   "website": "https://azot.uz",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q25523545",
+   "name": "Fergana Oil Refinery Plant",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q112960431",
+   "name": "Foton",
+   "cc": "uz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "electronics industry",
+    "semiconductor industry"
+   ],
+   "isin": [],
+   "hq_city": "Yunusabad District",
+   "hq": [
+    41.35194,
+    69.29889
+   ],
+   "website": "https://oaofoton.uz/",
+   "logo_file": "Фотон Ташкент, историческая (первая) эмблема.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25514414",
+   "name": "Garant bank",
+   "cc": "uz",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "GRBK"
+    }
+   ],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [
+    "UZ7037610001"
+   ],
+   "listed": true
+  },
+  {
+   "qid": "Q25531156",
+   "name": "Gazeta.uz",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "http://www.gazeta.uz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138667393",
+   "name": "Globbing",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://am.globbing.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16471828",
+   "name": "Group-IB",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "computer security",
+    "cybersecurity",
+    "digital security"
+   ],
+   "isin": [],
+   "hq_city": "Singapore",
+   "hq": [
+    1.3,
+    103.8
+   ],
+   "website": "https://www.group-ib.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Group-IB",
+   "logo_file": "Group-IB logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25532028",
+   "name": "Gʻafur Gʻulom Printing and Publishing House",
+   "cc": "uz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "http://www.gglit.uz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12166841",
+   "name": "Hamkorbank",
+   "cc": "uz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "HMKB"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "UZ7011340005"
+   ],
+   "hq_city": "Andijan",
+   "hq": [
+    40.78333,
+    72.35056
+   ],
+   "website": "http://www.hamkorbank.uz/",
+   "lei": "253400QLNK164AFJ2E30",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q25534044",
+   "name": "Ipak Yuli bank",
+   "cc": "uz",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "IPKY"
+    }
+   ],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [
+    "UZ7039920002"
+   ],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "https://ipakyulibank.uz/",
+   "lei": "254900DUB01DA37PQR38",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q113536762",
+   "name": "Ipoteka bank",
+   "cc": "uz",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "IPTB"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "UZ7054570005"
+   ],
+   "lei": "213800UWVX5JSNXJS434",
+   "logo_file": "Ipoteka-bank Logotipi.jpg",
+   "listed": true
+  },
+  {
+   "qid": "Q133264780",
+   "name": "IT Park Uzbekistan",
+   "cc": "uz",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/IT_Park_Uzbekistan",
+   "logo_file": "IT PARK UZBEKISTAN logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q110120894",
+   "name": "Korzinka",
+   "cc": "uz",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "https://korzinka.uz",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q105438574",
+   "name": "Kremlingames",
+   "cc": "uz",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "video game industry"
+   ],
+   "isin": [],
+   "website": "http://en.kremlingames.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12825586",
+   "name": "kun.uz",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.kun.uz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125224612",
+   "name": "Kvarts",
+   "cc": "uz",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "KVTS"
+    }
+   ],
+   "industries": [
+    "glass production"
+   ],
+   "isin": [
+    "UZ7025770007"
+   ],
+   "hq_city": "Quvasoy",
+   "hq": [
+    40.29722,
+    71.98028
+   ],
+   "website": "https://kvarts.uz/",
+   "logo_file": "Kvts logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q104829551",
+   "name": "Makro (Uzbekistan)",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://makromarket.uz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Makro_(Uzbekistan)",
+   "listed": false
+  },
+  {
+   "qid": "Q125490024",
+   "name": "Mikrokreditbank",
+   "cc": "uz",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "MCBA"
+    }
+   ],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [
+    "UZ7015230004"
+   ],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "lei": "894500UUAOXCC20MT056",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q117454768",
+   "name": "Murad Buildings",
+   "cc": "uz",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "real estate development"
+   ],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "https://www.mbc.uz",
+   "enwiki": "https://en.wikipedia.org/wiki/Murad_Buildings",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q139476943",
+   "name": "Namangan Metallurgic Plant",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Namangan Region",
+   "hq": [
+    41.0,
+    71.16667
+   ],
+   "website": "https://nmzsteel.uz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12828247",
+   "name": "Namanganmash",
+   "cc": "uz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Namangan",
+   "hq": [
+    40.99528,
+    71.6725
+   ],
+   "website": "https://www.namanganmash.uz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4314979",
+   "name": "National Bank of Uzbekistan",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "http://www.nbu.uz/",
+   "lei": "253400TZJ7T1YULTGN68",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Bank_of_Uzbekistan",
+   "logo_file": "NBU new logo (gold).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4310815",
+   "name": "National Television and Radio Company of Uzbekistan",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "https://mtrk.uz/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Television_and_Radio_Company_of_Uzbekistan",
+   "logo_file": "MTRK logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4311411",
+   "name": "Navoi Mining and Metallurgy Combinat",
+   "cc": "uz",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "mining",
+    "mining industry"
+   ],
+   "isin": [
+    "UZ7057810010"
+   ],
+   "hq_city": "Navoiy",
+   "hq": [
+    40.08333,
+    65.38333
+   ],
+   "website": "http://www.ngmk.uz/en/",
+   "lei": "213800YLNAGERZ4C3M60",
+   "enwiki": "https://en.wikipedia.org/wiki/Navoi_Mining_and_Metallurgical_Company",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4438460",
+   "name": "O'zelektroapparat-Electroshield",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "UZ7025840008"
+   ],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/O%27zelectroapparat-Electroshield",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q15248192",
+   "name": "Ohangaronsement",
+   "cc": "uz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "OHSM"
+    }
+   ],
+   "industries": [
+    "construction materials industry"
+   ],
+   "isin": [
+    "UZ7021980006"
+   ],
+   "hq_city": "Okhangaron",
+   "hq": [
+    40.90639,
+    69.63833
+   ],
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q26421311",
+   "name": "Oʻqituvchi",
+   "cc": "uz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65284105",
+   "name": "Paynet",
+   "cc": "uz",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.paynet.uz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q26917437",
+   "name": "Publishing and Printing Creative House \"Uzbekistan\"",
+   "cc": "uz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "http://www.iptd-uzbekistan.uz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27650423",
+   "name": "Qaraqalpaqstan",
+   "cc": "uz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nukus",
+   "hq": [
+    42.46472,
+    59.60222
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25528477",
+   "name": "Quvasoycement",
+   "cc": "uz",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "KSCM"
+    }
+   ],
+   "industries": [
+    "construction materials industry"
+   ],
+   "isin": [
+    "UZ7022100000"
+   ],
+   "hq_city": "Quvasoy (town)",
+   "listed": true
+  },
+  {
+   "qid": "Q25525664",
+   "name": "Sharq",
+   "cc": "uz",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7487127",
+   "name": "Sharq Telekom",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4393626",
+   "name": "Tashkent Stock Exchange",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "https://www.uzse.uz",
+   "enwiki": "https://en.wikipedia.org/wiki/Tashkent_Stock_Exchange",
+   "logo_file": "Logo of RSE \"Toshkent\".png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113882590",
+   "name": "TBC Bank (Uzbekistan)",
+   "cc": "uz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "UZ7056850017"
+   ],
+   "website": "https://tbcbank.uz/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q121536384",
+   "name": "Tenge Bank",
+   "cc": "uz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [
+    "UZ7056730011"
+   ],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "lei": "213800OQBGR93O2MAS20",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q25522342",
+   "name": "Trastbank",
+   "cc": "uz",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "TRSB"
+    }
+   ],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [
+    "UZ7033480003"
+   ],
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q25522819",
+   "name": "Turonbank",
+   "cc": "uz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "TNBN"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "UZ7035530003"
+   ],
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4052116",
+   "name": "Ucell",
+   "cc": "uz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "cellular network"
+   ],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "http://www.ucell.uz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ucell",
+   "logo_file": "Ucell logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18635302",
+   "name": "UMS",
+   "cc": "uz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "http://ums.uz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Universal_Mobile_Systems",
+   "logo_file": "Mobiuz.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4052403",
+   "name": "Unitel",
+   "cc": "uz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "https://beeline.uz/ru",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125490182",
+   "name": "Universal bank",
+   "cc": "uz",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "UNVB"
+    }
+   ],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [
+    "UZ7046910004"
+   ],
+   "hq_city": "Qoʻqon",
+   "hq": [
+    40.52861,
+    70.9425
+   ],
+   "website": "https://universalbank.uz/",
+   "lei": "894500KZ2LY6SC72PG69",
+   "listed": true
+  },
+  {
+   "qid": "Q2096434",
+   "name": "UzAuto Motors",
+   "cc": "uz",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "UZMT"
+    }
+   ],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [
+    "UZ7003040001"
+   ],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "https://uzautomotors.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/UzAuto_Motors",
+   "logo_file": "Uzauto-motors-logo.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q25527813",
+   "name": "Uzbek Commodity Exchange",
+   "cc": "uz",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "URTS"
+    }
+   ],
+   "industries": [
+    "commodities exchange"
+   ],
+   "isin": [
+    "UZ7043200003"
+   ],
+   "website": "https://uzex.uz/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q125490175",
+   "name": "Uzbek Industrial and Construction Bank",
+   "cc": "uz",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "SQBN"
+    }
+   ],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [
+    "UZ7037560008"
+   ],
+   "website": "https://www.sqb.uz/",
+   "enwiki": "https://en.wikipedia.org/wiki/Uzbek_Industrial_and_Construction_Bank",
+   "listed": true
+  },
+  {
+   "qid": "Q4469715",
+   "name": "Uzbekenergo",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "UZ7046960009"
+   ],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "http://www.uzbekenergo.uz",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q135947317",
+   "name": "Uzbekistan Airways Technics",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "https://uzairwaystech.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q4306455",
+   "name": "Uzbekistan GTL",
+   "cc": "uz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Qashqadaryo Region",
+   "hq": [
+    38.83333,
+    66.08333
+   ],
+   "website": "http://www.oltinyolgtl.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Uzbekistan_GTL",
+   "logo_file": "Logo UzGTL.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1804128",
+   "name": "Uzbekneftegaz",
+   "cc": "uz",
+   "types": [
+    "Q270791",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "UZNG"
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "UZ7036270005"
+   ],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "http://www.ung.uz",
+   "lei": "213800LUZJZFLJD4MJ51",
+   "enwiki": "https://en.wikipedia.org/wiki/Uzbekneftegaz",
+   "logo_file": "Neftegaz11.JPG",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q30894724",
+   "name": "UZCARD",
+   "cc": "uz",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://www.uzcard.uz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16531678",
+   "name": "UzDigital TV",
+   "cc": "uz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "http://uzdtv.uz",
+   "enwiki": "https://en.wikipedia.org/wiki/Uzdigital_TV",
+   "logo_file": "UzdigitalTV.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q105227651",
+   "name": "UzPost",
+   "cc": "uz",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "UPOS"
+    }
+   ],
+   "industries": [
+    "postal sector"
+   ],
+   "isin": [
+    "UZ7005280001"
+   ],
+   "website": "https://uz.post/",
+   "enwiki": "https://en.wikipedia.org/wiki/UzPost",
+   "logo_file": "UZPOST logo.jpg",
+   "listed": true
+  },
+  {
+   "qid": "Q13538756",
+   "name": "Uztelecom",
+   "cc": "uz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "UZTL"
+    }
+   ],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [
+    "UZ7047110000"
+   ],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "http://uztelecom.uz",
+   "enwiki": "https://en.wikipedia.org/wiki/Uztelecom",
+   "logo_file": "Uztelecom-primary-logotype-RGB.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q21659197",
+   "name": "Uztransgaz",
+   "cc": "uz",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "UTGA"
+    }
+   ],
+   "industries": [
+    "gas transport"
+   ],
+   "isin": [
+    "UZ7043380003"
+   ],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "http://www.uztransgaz.uz",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q113415420",
+   "name": "Uzum Bank",
+   "cc": "uz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "UZ7057210013"
+   ],
+   "listed": true
+  },
+  {
+   "qid": "Q25524065",
+   "name": "Xalq bank",
+   "cc": "uz",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tashkent Stock Exchange",
+     "ticker": "XKBK"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "UZ7055620007"
+   ],
+   "website": "http://www.xb.uz",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q125490191",
+   "name": "Yevroosiyo banki",
+   "cc": "uz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "UZ7058080019"
+   ],
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12832386",
+   "name": "Yoyma",
+   "cc": "uz",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tashkent",
+   "hq": [
+    41.31111,
+    69.27972
+   ],
+   "website": "http://yoyma.uz/",
+   "listed": false
+  },
+  {
+   "qid": "Q8069638",
+   "name": "Zeromax",
+   "cc": "uz",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Zeromax",
+   "listed": false
+  },
+  {
+   "qid": "Q113882809",
+   "name": "Ziraat Bank Uzbekistan",
+   "cc": "uz",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "UZ7010130001"
+   ],
+   "website": "https://www.ziraatbank.uz/",
+   "logo_file": "TC ZiraatBank.svg",
+   "founded": null,
+   "listed": true
+  }
+ ]
+}

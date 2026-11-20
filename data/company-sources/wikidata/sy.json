@@ -1,0 +1,471 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "SY",
+ "count": 21,
+ "companies": [
+  {
+   "qid": "Q2859320",
+   "name": "Arab Bank Syria",
+   "cc": "sy",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.arabbank-syria.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Arab_Bank_Syria",
+   "listed": false
+  },
+  {
+   "qid": "Q12199347",
+   "name": "Bank Al-Sharq",
+   "cc": "sy",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "Damascus Securities Exchange",
+     "ticker": "SHRQ"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "SY0021100225"
+   ],
+   "hq_city": "Damascus",
+   "hq": [
+    33.513,
+    36.292
+   ],
+   "website": "https://www.bankalsharq.com/sharq-ar/home",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4856183",
+   "name": "Bank of Syria and Overseas",
+   "cc": "sy",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [
+    {
+     "exchange": "Damascus Securities Exchange",
+     "ticker": "BSO"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "SY0021100043"
+   ],
+   "hq_city": "Dubai",
+   "hq": [
+    25.26972,
+    55.30944
+   ],
+   "website": "http://www.bso.com.sy/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Syria_and_Overseas",
+   "logo_file": "Bank Syria and Over seas logo.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4857059",
+   "name": "Banque Bemo Saudi Fransi",
+   "cc": "sy",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [
+    {
+     "exchange": "Damascus Securities Exchange",
+     "ticker": "BBSF"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "SY0021100035"
+   ],
+   "hq_city": "Damascus",
+   "hq": [
+    33.513,
+    36.292
+   ],
+   "website": "http://www.bbsfbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_Bemo_Saudi_Fransi",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5069250",
+   "name": "Cham Palaces and Hotels",
+   "cc": "sy",
+   "types": [
+    "Q1631129"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.champalacesandhotels.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cham_Palaces_and_Hotels",
+   "listed": false
+  },
+  {
+   "qid": "Q5152474",
+   "name": "Commercial Bank of Syria",
+   "cc": "sy",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Damascus",
+   "hq": [
+    33.513,
+    36.292
+   ],
+   "website": "http://www.cbs-bank.sy/",
+   "enwiki": "https://en.wikipedia.org/wiki/Commercial_Bank_of_Syria",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q42341472",
+   "name": "Dar Ibn Katheer for printing and publishing",
+   "cc": "sy",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Damascus",
+   "hq": [
+    33.513,
+    36.292
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q54887888",
+   "name": "Dar Neynwy for Studies, Publishing and Distribution",
+   "cc": "sy",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Damascus",
+   "hq": [
+    33.513,
+    36.292
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q42341499",
+   "name": "Dār al-Fikr",
+   "cc": "sy",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Damascus",
+   "hq": [
+    33.51306,
+    36.29194
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12211260",
+   "name": "Dār Al-Kitāb Al-Aʿrabī",
+   "cc": "sy",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q20408892",
+   "name": "Dār al-Nawādir",
+   "cc": "sy",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Damascus",
+   "hq": [
+    33.513,
+    36.292
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q43032906",
+   "name": "MIDTRANS SHIPPING AND SERVICES",
+   "cc": "sy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "freight transport industry"
+   ],
+   "isin": [],
+   "hq_city": "Dubai",
+   "hq": [
+    25.26972,
+    55.30944
+   ],
+   "website": "https://www.mid-trans.com/",
+   "logo_file": "MIDTRANS Shipping and Services logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6718487",
+   "name": "MTN Syria",
+   "cc": "sy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "Damascus Securities Exchange",
+     "ticker": "MTN"
+    }
+   ],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [
+    "SY0031100330"
+   ],
+   "hq_city": "Damascus",
+   "hq": [
+    33.513,
+    36.292
+   ],
+   "website": "http://mtn.com.sy",
+   "enwiki": "https://en.wikipedia.org/wiki/MTN_Syria",
+   "logo_file": "MTN Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q29513896",
+   "name": "Muʼassasat al-Risālah",
+   "cc": "sy",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "http://www.resalah.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20391782",
+   "name": "Syria Gulf Bank",
+   "cc": "sy",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "Damascus Securities Exchange",
+     "ticker": "SGB"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "SY0021100175"
+   ],
+   "hq_city": "Damascus",
+   "hq": [
+    33.513,
+    36.292
+   ],
+   "website": "http://www.sgbsy.com/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2376438",
+   "name": "Syrian Petroleum Company",
+   "cc": "sy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Damascus",
+   "hq": [
+    33.513,
+    36.292
+   ],
+   "website": "https://spc.sy/",
+   "enwiki": "https://en.wikipedia.org/wiki/Syrian_Petroleum_Company",
+   "logo_file": "Syrian Petroleum Company logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104151611",
+   "name": "Syrian Post",
+   "cc": "sy",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics",
+    "mail",
+    "postal sector"
+   ],
+   "isin": [],
+   "hq_city": "Damascus",
+   "hq": [
+    33.513,
+    36.292
+   ],
+   "website": "http://www.syrianpost.gov.sy/",
+   "enwiki": "https://en.wikipedia.org/wiki/Syrian_Post",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7663248",
+   "name": "Syrian Telecom",
+   "cc": "sy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Damascus",
+   "hq": [
+    33.513,
+    36.292
+   ],
+   "website": "http://www.syriantelecom.com.sy",
+   "enwiki": "https://en.wikipedia.org/wiki/Syrian_Telecom",
+   "logo_file": "Logo text SYRIAN TELECOM.png",
+   "listed": false
+  },
+  {
+   "qid": "Q1584130",
+   "name": "Syriatel",
+   "cc": "sy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "Damascus Securities Exchange",
+     "ticker": "SYTEL"
+    }
+   ],
+   "industries": [
+    "cellular network",
+    "mobile phone industry"
+   ],
+   "isin": [
+    "SY0031100322"
+   ],
+   "hq_city": "Ashrafiyat Sahnaya",
+   "hq": [
+    33.434,
+    36.245
+   ],
+   "website": "http://syriatel.sy",
+   "enwiki": "https://en.wikipedia.org/wiki/Syriatel",
+   "logo_file": "Logo wordmark Syriatel.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q111903317",
+   "name": "United Group for Publishing Advertising and Marketing",
+   "cc": "sy",
+   "types": [
+    "Q4830453",
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Damascus Securities Exchange",
+     "ticker": "UG"
+    }
+   ],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [
+    "SY0031100058"
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/United_Group_for_Publishing_Advertising_and_Marketing",
+   "listed": true
+  },
+  {
+   "qid": "Q12211278",
+   "name": "دار النهضة",
+   "cc": "sy",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Damascus",
+   "hq": [
+    33.513,
+    36.292
+   ],
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

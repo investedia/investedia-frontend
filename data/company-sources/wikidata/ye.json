@@ -1,0 +1,211 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "YE",
+ "count": 11,
+ "companies": [
+  {
+   "qid": "Q102225773",
+   "name": "SabaFon",
+   "cc": "ye",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Aden",
+   "hq": [
+    12.8,
+    45.03333
+   ],
+   "website": "https://www.sabafon.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Sabafon",
+   "logo_file": "Sabafon2001.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16125198",
+   "name": "Tadhamon Bank",
+   "cc": "ye",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Sanaa",
+   "hq": [
+    15.35,
+    44.2
+   ],
+   "website": "http://tadhamonbank.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Tadhamon_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21368967",
+   "name": "Y-Telecom",
+   "cc": "ye",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "http://www.y-gsm.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12184639",
+   "name": "Yemen Commercial Bank",
+   "cc": "ye",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://ycb.bank/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6898454",
+   "name": "Yemen Mobile company",
+   "cc": "ye",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Yemen",
+   "hq": [
+    15.5,
+    48.0
+   ],
+   "website": "https://www.yemenmobile.com.ye/",
+   "enwiki": "https://en.wikipedia.org/wiki/Yemen_Mobile",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q129262102",
+   "name": "Yemeni Omani United",
+   "cc": "ye",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile network operator"
+   ],
+   "isin": [],
+   "hq_city": "Sanaa",
+   "hq": [
+    15.35,
+    44.2
+   ],
+   "website": "https://www.you.com.ye/",
+   "enwiki": "https://en.wikipedia.org/wiki/Yemeni_Omani_United",
+   "logo_file": "Yemeni Omani United logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q662091",
+   "name": "Yemenia",
+   "cc": "ye",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sanaa",
+   "hq": [
+    15.35,
+    44.2
+   ],
+   "website": "http://yemenia.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Yemenia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q79467840",
+   "name": "البنك الوطني للتجارة والاستثمار",
+   "cc": "ye",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sanaa",
+   "hq": [
+    15.35,
+    44.2
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30081634",
+   "name": "بنك الأمل للتمويل الأصغر",
+   "cc": "ye",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q109259496",
+   "name": "دار نشر عناوين",
+   "cc": "ye",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16123215",
+   "name": "شركة جبل الصلب اليمنية المحدودة",
+   "cc": "ye",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  }
+ ]
+}

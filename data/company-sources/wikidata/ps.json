@@ -1,0 +1,428 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "PS",
+ "count": 23,
+ "companies": [
+  {
+   "qid": "Q4702315",
+   "name": "Al-Bustan resort",
+   "cc": "ps",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Al-Bustan_resort",
+   "listed": false
+  },
+  {
+   "qid": "Q139778115",
+   "name": "Arab Bank Palestine",
+   "cc": "ps",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Ramallah",
+   "hq": [
+    31.89694,
+    35.20167
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Arab_Bank_Palestine",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q754552",
+   "name": "Ateret Cohanim",
+   "cc": "ps",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Israel",
+   "hq": [
+    31.0,
+    35.0
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Ateret_Cohanim",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12199354",
+   "name": "Bank Filasṭīn",
+   "cc": "ps",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ramallah",
+   "hq": [
+    31.89694,
+    35.20167
+   ],
+   "website": "https://www.bankofpalestine.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Palestine",
+   "logo_file": "Logo de Bank of Palestine.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125554871",
+   "name": "Birzeit Pharmaceutical Company",
+   "cc": "ps",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Beitunia",
+   "hq": [
+    31.88896,
+    35.16753
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12211256",
+   "name": "Dār al-Fatá al-ʻArabī",
+   "cc": "ps",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108674981",
+   "name": "Franciscan Fathers Press",
+   "cc": "ps",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Jerusalem",
+   "hq": [
+    31.77668,
+    35.23416
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134515275",
+   "name": "Jerusalem Pharmaceuticals",
+   "cc": "ps",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Al-Bireh",
+   "hq": [
+    31.90514,
+    35.21496
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134515293",
+   "name": "Megapharm Pharmaceuticals",
+   "cc": "ps",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Beit Hanoun",
+   "hq": [
+    31.53861,
+    34.53722
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12194908",
+   "name": "Ooredoo Palestine",
+   "cc": "ps",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Al-Bireh",
+   "hq": [
+    31.90514,
+    35.21496
+   ],
+   "website": "https://www.ooredoo.ps/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ooredoo_Palestine",
+   "logo_file": "Ooredoo logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97613845",
+   "name": "Palestine Investment Bank",
+   "cc": "ps",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Al-Bireh",
+   "hq": [
+    31.90514,
+    35.21496
+   ],
+   "website": "https://pibbank.com/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16118607",
+   "name": "Palestine Islamic Bank",
+   "cc": "ps",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ramallah",
+   "hq": [
+    31.89694,
+    35.20167
+   ],
+   "website": "http://islamicbank.ps",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131589210",
+   "name": "PalPay",
+   "cc": "ps",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.palpay.ps/",
+   "listed": false
+  },
+  {
+   "qid": "Q1290377",
+   "name": "Public Committee Against Torture in Israel",
+   "cc": "ps",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://stoptorture.org.il/",
+   "enwiki": "https://en.wikipedia.org/wiki/Public_Committee_Against_Torture_in_Israel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q127601784",
+   "name": "Samir Mansour Library",
+   "cc": "ps",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://samirmansour.ps/",
+   "enwiki": "https://en.wikipedia.org/wiki/Samir_Mansour_Library",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7524897",
+   "name": "Sinokrot",
+   "cc": "ps",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beitunia",
+   "hq": [
+    31.88896,
+    35.16753
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Sinokrot",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97578491",
+   "name": "The National Bank TNB",
+   "cc": "ps",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ramallah",
+   "hq": [
+    31.89694,
+    35.20167
+   ],
+   "website": "https://www.tnb.ps/",
+   "enwiki": "https://en.wikipedia.org/wiki/The_National_Bank_(Palestine)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124620531",
+   "name": "Tibaq publishing house",
+   "cc": "ps",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Al-Bireh",
+   "hq": [
+    31.90514,
+    35.21496
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98056249",
+   "name": "البنك الإسلامي العربي",
+   "cc": "ps",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Al-Bireh",
+   "hq": [
+    31.90514,
+    35.21496
+   ],
+   "website": "https://aib.ps/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12184647",
+   "name": "البنك الوطني الإسلامي",
+   "cc": "ps",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12199348",
+   "name": "بنك القدس",
+   "cc": "ps",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q134607570",
+   "name": "مؤسسة فلسطين الخير",
+   "cc": "ps",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ramallah",
+   "hq": [
+    31.89694,
+    35.20167
+   ],
+   "website": "https://www.palkhair.ps/",
+   "listed": false
+  },
+  {
+   "qid": "Q96465077",
+   "name": "مصرف الصفا",
+   "cc": "ps",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ramallah",
+   "hq": [
+    31.89694,
+    35.20167
+   ],
+   "website": "https://www.safabank.ps/",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}
