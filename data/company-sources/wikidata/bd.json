@@ -1,0 +1,1933 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "BD",
+ "count": 105,
+ "companies": [
+  {
+   "qid": "Q16057817",
+   "name": "A K Khan & Company",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chittagong",
+   "hq": [
+    22.335,
+    91.8325
+   ],
+   "website": "http://www.akkhan.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/A_K_Khan_%26_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4662619",
+   "name": "Aarong",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "https://www.aarong.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aarong",
+   "logo_file": "Aarong.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16058025",
+   "name": "Accord on Fire and Building Safety in Bangladesh",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Amsterdam",
+   "hq": [
+    52.36667,
+    4.88333
+   ],
+   "website": "http://bangladeshaccord.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/Accord_on_Fire_and_Building_Safety_in_Bangladesh",
+   "listed": false
+  },
+  {
+   "qid": "Q4691164",
+   "name": "Agamee Prakashani",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "http://www.agameeprakashani-bd.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Agamee_Prakashani",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30608719",
+   "name": "Agora",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "website": "http://agorasuperstores.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Agora_Super_Stores",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4700954",
+   "name": "Akij",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "http://www.akij.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/Akij_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85740768",
+   "name": "Alim Industries Limited",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agriculture"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Alim_Industries_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q113318374",
+   "name": "Alliance Holdings Limited",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Alliance_Holdings_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q60686522",
+   "name": "Ashuganj Power Station Company Limited",
+   "cc": "bd",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "https://apscl.gov.bd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ashuganj_Power_Station_Company_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q79376230",
+   "name": "Baatighar",
+   "cc": "bd",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chittagong Press Club",
+   "hq": [
+    20.34667,
+    91.83389
+   ],
+   "website": "https://baatighar.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q3350196",
+   "name": "Bangla Academy",
+   "cc": "bd",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Burdwan House",
+   "hq": [
+    23.72944,
+    90.39722
+   ],
+   "website": "http://banglaacademy.gov.bd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bangla_Academy",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28223564",
+   "name": "Bangladesh Cable Shilpa Limited",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://bcsl.gov.bd/bangla/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bangladesh_Cable_Shilpa_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4855279",
+   "name": "Bangladesh Cement Manufacturers Association",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q116165581",
+   "name": "Bangladesh Data Center Company Limited",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://bdccl.gov.bd/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96373078",
+   "name": "Bangladesh Forms and Publication Office",
+   "cc": "bd",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Bangladesh_Forms_and_Publication_Office",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85745255",
+   "name": "Bangladesh Gas Fields Company Limited",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Bangladesh_Gas_Fields_Company_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q4855359",
+   "name": "Bangladesh Ordnance Factories",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Gazipur",
+   "hq": [
+    23.98889,
+    90.375
+   ],
+   "website": "http://www.bof.gov.bd",
+   "enwiki": "https://en.wikipedia.org/wiki/Bangladesh_Ordnance_Factories",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96373087",
+   "name": "Bangladesh Petroleum Exploration and Production Company Limited",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.bapex.com.bd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bangladesh_Petroleum_Exploration_and_Production_Company_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q100144434",
+   "name": "Bangladesh Physical Society",
+   "cc": "bd",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://bdphso.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bangladesh_Physical_Society",
+   "listed": false
+  },
+  {
+   "qid": "Q4855375",
+   "name": "Bangladesh Sangbad Sangstha",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "news agency"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "http://www.bssnews.net",
+   "enwiki": "https://en.wikipedia.org/wiki/Bangladesh_Sangbad_Sangstha",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48733125",
+   "name": "Bangladesh Satellite Company Limited",
+   "cc": "bd",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Gazipur",
+   "hq": [
+    23.98889,
+    90.375
+   ],
+   "website": "http://www.bcscl.com.bd",
+   "enwiki": "https://en.wikipedia.org/wiki/Bangladesh_Satellite_Company_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110829666",
+   "name": "Bangladesh Security Printing Press",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Bangladesh_Security_Printing_Press",
+   "listed": false
+  },
+  {
+   "qid": "Q128799705",
+   "name": "Bangladesh Services Limited",
+   "cc": "bd",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://bsl.gov.bd/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4836685",
+   "name": "Bangladesh Telecommunications Company Limited",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "website": "http://www.btcl.gov.bd",
+   "enwiki": "https://en.wikipedia.org/wiki/Bangladesh_Telecommunications_Company_Limited",
+   "logo_file": "Bangladesh Telecommunications Company Limited Emblem.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4855393",
+   "name": "Bangladesh Youth Leadership Center",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "https://bylc.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bangladesh_Youth_Leadership_Center",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4855508",
+   "name": "Banglalink",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Gulshan Thana",
+   "hq": [
+    23.7917,
+    90.4167
+   ],
+   "website": "https://www.banglalink.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banglalink",
+   "logo_file": "Banglalink Logo 2025.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4834825",
+   "name": "BBC Janala",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "broadcasting"
+   ],
+   "isin": [],
+   "website": "http://www.bbcjanala.com",
+   "enwiki": "https://en.wikipedia.org/wiki/BBC_Janala",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104636786",
+   "name": "bdjobs.com",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://bdjobs.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Bdjobs",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28739963",
+   "name": "Bengal Foundation",
+   "cc": "bd",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Khilkhet Thana",
+   "hq": [
+    23.82806,
+    90.41972
+   ],
+   "website": "http://www.bengalfoundation.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bengal_Foundation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16346003",
+   "name": "bKash",
+   "cc": "bd",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "http://www.bkash.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/BKash",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125884737",
+   "name": "Blue Dream Group",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "https://www.bluedreamgroup.com",
+   "listed": false
+  },
+  {
+   "qid": "Q124784504",
+   "name": "BRB Cable Industries Limited",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q17183844",
+   "name": "British American Tobacco Bangladesh Company Limited",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "http://www.batbangladesh.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/British_American_Tobacco_Bangladesh",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85749816",
+   "name": "CBL Munchee Bangladesh",
+   "cc": "bd",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/CBL_Munchee_Bangladesh",
+   "listed": false
+  },
+  {
+   "qid": "Q133895814",
+   "name": "Central Locomotive Factory",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Central_Locomotive_Factory",
+   "listed": false
+  },
+  {
+   "qid": "Q89580731",
+   "name": "Chhatak Gas Field",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Chhatak_Gas_Field",
+   "listed": false
+  },
+  {
+   "qid": "Q4699035",
+   "name": "Cirkle (telecommunication)",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "https://cirkle.digital/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cirkle_(telecommunications)",
+   "logo_file": "Cirkle logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96375168",
+   "name": "Coal Power Generation Company Bangladesh Limited",
+   "cc": "bd",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Coal_Power_Generation_Company_Bangladesh_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q5183730",
+   "name": "Credit Rating Information and Services Limited",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Credit_Rating_Information_and_Services_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q123914040",
+   "name": "Dandy Dyeing Limited",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Dandy_Dyeing_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q130235637",
+   "name": "Dhaka Comics",
+   "cc": "bd",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "https://www.dhakacomics.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Dhaka_Comics",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q105676237",
+   "name": "Dhaka Mass Transit Company Limited",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "http://www.dmtcl.gov.bd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Dhaka_Mass_Transit_Company_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q14533113",
+   "name": "Eastern Bank (Bangladesh)",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "https://www.ebl.com.bd",
+   "enwiki": "https://en.wikipedia.org/wiki/Eastern_Bank_(Bangladesh)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96376912",
+   "name": "Eastern Cables Limited",
+   "cc": "bd",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chittagong",
+   "hq": [
+    22.335,
+    91.8325
+   ],
+   "website": "https://easterncables.gov.bd",
+   "enwiki": "https://en.wikipedia.org/wiki/Eastern_Cables_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q30603693",
+   "name": "Ecstasy",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bangladesh",
+   "hq": [
+    24.01667,
+    89.86667
+   ],
+   "website": "https://ecstasybd.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ecstasy_(clothing)",
+   "logo_file": "Ecstasy logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106589420",
+   "name": "Evaly",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce",
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "https://evaly.com.bd/",
+   "logo_file": "Evaly logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16251852",
+   "name": "Gas Transmission Company Limited",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "http://www.gtcl.org.bd",
+   "enwiki": "https://en.wikipedia.org/wiki/Gas_Transmission_Company_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123125112",
+   "name": "Ghorasal Polash Urea Fertilizer Public Limited Company",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Ghorasal_Polash_Urea_Fertilizer_Public_Limited_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q68764655",
+   "name": "GPH Ispat Limited",
+   "cc": "bd",
+   "types": [
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Dhaka Stock Exchange",
+     "ticker": "GPHISPAT"
+    }
+   ],
+   "industries": [
+    "steel"
+   ],
+   "isin": [],
+   "website": "http://www.gphispat.com.bd",
+   "enwiki": "https://en.wikipedia.org/wiki/GPH_Ispat",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q188567",
+   "name": "Grameen Bank",
+   "cc": "bd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial service activities, except insurance and pension funding",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "https://grameenbank.org.bd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grameen_Bank",
+   "logo_file": "Grameen Bank Seal.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5593625",
+   "name": "Grameen Telecom",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Grameen_Telecom",
+   "listed": false
+  },
+  {
+   "qid": "Q1784973",
+   "name": "Grameenphone",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [
+    "BD0001GP0004"
+   ],
+   "hq_city": "Baridhara",
+   "hq": [
+    23.8029,
+    90.4201
+   ],
+   "website": "http://grameenphone.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Grameenphone",
+   "logo_file": "Grameenphone Logo GP Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q104882072",
+   "name": "Hatil",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing",
+    "retail chain"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "https://hatil.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hatil",
+   "logo_file": "Logo of Hatil.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17065333",
+   "name": "Ibn Sina Trust",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhanmondi Thana",
+   "hq": [
+    23.73833,
+    90.385
+   ],
+   "website": "http://www.ibnsinatrust.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Ibn_Sina_Trust",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30135184",
+   "name": "ICB Islamic Bank",
+   "cc": "bd",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "https://icbislamic-bd.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/ICB_Islamic_Bank",
+   "logo_file": "ICB Islamic Bank Logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q29025080",
+   "name": "IDLC Finance PLC",
+   "cc": "bd",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://idlc.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/IDLC_Finance_PLC",
+   "logo_file": "Logo of IDLC Finance PLC.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q17065443",
+   "name": "Incepta Pharmaceuticals",
+   "cc": "bd",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "http://www.inceptapharma.com/index.php",
+   "enwiki": "https://en.wikipedia.org/wiki/Incepta_Pharmaceuticals",
+   "logo_file": "Incepta 780647819.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17056515",
+   "name": "Infolink",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "https://infolink.com.bd",
+   "enwiki": "https://en.wikipedia.org/wiki/Infolink",
+   "logo_file": "InfoLink Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18385199",
+   "name": "Investment Corporation of Bangladesh",
+   "cc": "bd",
+   "types": [
+    "Q270791",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Chittagong Stock Exchange Ltd.",
+     "ticker": null
+    },
+    {
+     "exchange": "Dhaka Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "merchant bank"
+   ],
+   "isin": [
+    "BD0151ICB005"
+   ],
+   "hq_city": "Motijheel",
+   "hq": [
+    23.73333,
+    90.41833
+   ],
+   "website": "https://www.icb.gov.bd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Investment_Corporation_of_Bangladesh",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q97180513",
+   "name": "Jamuna Fertilizer Company Limited",
+   "cc": "bd",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "https://jfcl.gov.bd",
+   "enwiki": "https://en.wikipedia.org/wiki/Jamuna_Fertilizer_Company_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97353901",
+   "name": "Karnaphuli Fertilizer Company Limited",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Karnaphuli_Fertilizer_Company_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q6372828",
+   "name": "Karnaphuli Paper Mills",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pulp and paper industry"
+   ],
+   "isin": [],
+   "hq_city": "Chittagong",
+   "hq": [
+    22.335,
+    91.8325
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Karnaphuli_Paper_Mills",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6381088",
+   "name": "Kazi Farms Group",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.kazifarms.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Kazi_Farms_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125302330",
+   "name": "Kiam Metal Industries Limited",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q60760871",
+   "name": "Link3 Technologies Ltd",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "https://link3.net",
+   "enwiki": "https://en.wikipedia.org/wiki/Link3",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116142035",
+   "name": "LP Gas Limited",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q6712865",
+   "name": "M. M. Ispahani Limited",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [],
+   "hq_city": "Chittagong",
+   "hq": [
+    22.335,
+    91.8325
+   ],
+   "website": "http://www.ispahanibd.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/M._M._Ispahani_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6809076",
+   "name": "Meghna Group",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "http://www.meghnagroup.com.bd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Meghna_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28225521",
+   "name": "Milk Vita",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "http://milkvita.portal.gov.bd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Milk_Vita",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110866573",
+   "name": "Mimi Chocolate",
+   "cc": "bd",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "confectionery"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Mimi_Chocolate",
+   "logo_file": "Mimi Chocolate Logo (Black Background).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96872977",
+   "name": "Mowla Brothers",
+   "cc": "bd",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://mowlabrothers.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q125262379",
+   "name": "MRS Industries Limited",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q30135196",
+   "name": "Palli Sanchay Bank",
+   "cc": "bd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Palli_Sanchay_Bank",
+   "listed": false
+  },
+  {
+   "qid": "Q65077892",
+   "name": "Piickme",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Piickme",
+   "listed": false
+  },
+  {
+   "qid": "Q24911375",
+   "name": "Ping Pong Entertainment",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "film production"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Ping_Pong_Entertainment",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16743607",
+   "name": "PRAN-RFL Group",
+   "cc": "bd",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness",
+    "consumer goods industry",
+    "plastics industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/PRAN-RFL_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7243237",
+   "name": "Prime Bank Limited",
+   "cc": "bd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "http://www.primebank.com.bd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Prime_Bank_(Bangladesh)",
+   "logo_file": "Logo of Prime Bank.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q64343663",
+   "name": "Prothoma",
+   "cc": "bd",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "http://www.prothoma.net/",
+   "listed": false
+  },
+  {
+   "qid": "Q7283450",
+   "name": "Rahimafrooz",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chittagong",
+   "hq": [
+    22.335,
+    91.8325
+   ],
+   "website": "http://www.rahimafrooz.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Rahimafrooz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7292918",
+   "name": "Rangs Group",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "http://www.rangsgroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rangs_Group",
+   "logo_file": "Logo of Rangs Group.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20051647",
+   "name": "REVE Systems",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Singapore",
+   "hq": [
+    1.3,
+    103.8
+   ],
+   "website": "http://www.revesoft.com",
+   "logo_file": "Logo of Reve Systems.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7352176",
+   "name": "Robi Axiata",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "http://www.robi.com.bd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Robi_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7409135",
+   "name": "Samdani Art Foundation",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://samdani.com.bd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Samdani_Art_Foundation",
+   "logo_file": "Samdani Art Foundation logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137184022",
+   "name": "Sammilito Islami Bank",
+   "cc": "bd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Sammilito_Islami_Bank",
+   "listed": false
+  },
+  {
+   "qid": "Q7388899",
+   "name": "SAtel",
+   "cc": "bd",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/SAtel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115805767",
+   "name": "Shanta Holdings Limited",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Shanta_Holdings_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q7493938",
+   "name": "Sheltech",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "real estate development"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Sheltech",
+   "logo_file": "Sheltech-logo.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q119648104",
+   "name": "Shohoj Limited",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q115664015",
+   "name": "Shwapno",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "website": "https://www.shwapno.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Shwapno",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q64348052",
+   "name": "Shyamoli Paribahan",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "https://shyamolitickets.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7582046",
+   "name": "Square Pharmaceuticals",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Mohakhali Bus Terminal",
+   "hq": [
+    23.77295,
+    90.40136
+   ],
+   "website": "http://www.squarepharma.com.bd/",
+   "enwiki": "https://en.wikipedia.org/wiki/Square_Pharmaceuticals",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106432559",
+   "name": "STS Group",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/STS_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q7637805",
+   "name": "Summit Group",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "http://www.summitgroupbd.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Summit_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q125856217",
+   "name": "Tasty Treat",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Tasty_Treat",
+   "listed": false
+  },
+  {
+   "qid": "Q8119721",
+   "name": "Teletalk",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "http://www.teletalk.com.bd",
+   "enwiki": "https://en.wikipedia.org/wiki/Teletalk",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23808113",
+   "name": "The City Bank",
+   "cc": "bd",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/City_Bank_(Bangladesh)",
+   "listed": false
+  },
+  {
+   "qid": "Q31727918",
+   "name": "The Ibne Sina Pharmaceutical Industry Limited",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "website": "http://www.ibnsinapharma.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22680075",
+   "name": "The Security Printing Corporation (Bangladesh) Ltd.",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "security printing"
+   ],
+   "isin": [],
+   "hq_city": "Gazipur",
+   "hq": [
+    23.98889,
+    90.375
+   ],
+   "website": "http://www.spcbl.org.bd/",
+   "enwiki": "https://en.wikipedia.org/wiki/The_Security_Printing_Corporation_(Bangladesh)_Ltd.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18394359",
+   "name": "Tiger Media Limited",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "entertainment"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Tiger_Media",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106390775",
+   "name": "United Group",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/United_Group_(Bangladesh)",
+   "listed": false
+  },
+  {
+   "qid": "Q109587049",
+   "name": "Upay",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "https://www.upaybd.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Upay",
+   "logo_file": "Upay logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7966718",
+   "name": "Walton",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "website": "http://www.waltonbd.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Walton_Motors",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7966717",
+   "name": "Walton",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Walton_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22909696",
+   "name": "Walton Micro-Tech Corporation Ltd.",
+   "cc": "bd",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [],
+   "hq_city": "Kaliakair Upazila",
+   "hq": [
+    24.075,
+    90.2167
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Walton_Micro-Tech_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17024066",
+   "name": "Warid Bangladesh",
+   "cc": "bd",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Dhaka",
+   "hq": [
+    23.72889,
+    90.39444
+   ],
+   "website": "http://waridtel.com.bd",
+   "enwiki": "https://en.wikipedia.org/wiki/Warid_Bangladesh",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

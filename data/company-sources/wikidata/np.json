@@ -1,0 +1,1082 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "NP",
+ "count": 45,
+ "companies": [
+  {
+   "qid": "Q4693991",
+   "name": "Agriculture Development Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "ADBL"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "website": "http://www.adbl.gov.np",
+   "enwiki": "https://en.wikipedia.org/wiki/Agriculture_Development_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q19681845",
+   "name": "Bank of Asia Nepal Limited",
+   "cc": "np",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "BOAN"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "listed": true
+  },
+  {
+   "qid": "Q65395738",
+   "name": "Citizen Investment Trust",
+   "cc": "np",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "CIT"
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://nlk.org.np/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q13186934",
+   "name": "Citizens Bank International",
+   "cc": "np",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "CZBIL"
+    }
+   ],
+   "industries": [
+    "commercial banking industry",
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.ctznbank.com/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q24914891",
+   "name": "Civil Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.civilbank.com.np",
+   "enwiki": "https://en.wikipedia.org/wiki/Civil_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13179888",
+   "name": "Corporate Development Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "CORBL"
+    }
+   ],
+   "industries": [
+    "development banking industry"
+   ],
+   "isin": [],
+   "listed": true
+  },
+  {
+   "qid": "Q16973613",
+   "name": "Deurali-Janta Pharmaceuticals",
+   "cc": "np",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.deuralijanta.com/home/index.php#",
+   "enwiki": "https://en.wikipedia.org/wiki/Deurali-Janta_Pharmaceuticals",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5324409",
+   "name": "eSewa",
+   "cc": "np",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "https://esewa.com.np/",
+   "listed": false
+  },
+  {
+   "qid": "Q19670967",
+   "name": "Everest Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "EBL"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "hq_city": "Lazimpat",
+   "hq": [
+    27.715,
+    85.31
+   ],
+   "website": "https://www.everestbankltd.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Everest_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q19671890",
+   "name": "Garima Bikas Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "GBBL"
+    }
+   ],
+   "industries": [
+    "development banking industry"
+   ],
+   "isin": [],
+   "listed": true
+  },
+  {
+   "qid": "Q13180801",
+   "name": "Global IME Bank",
+   "cc": "np",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "GBIME"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.globalimebank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Global_IME_Bank_Limited",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q13180729",
+   "name": "Gorkhapatra Sansthan",
+   "cc": "np",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "https://www.gorkhapatra.org.np/",
+   "enwiki": "https://en.wikipedia.org/wiki/Gorkhapatra_Sansthan",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q13180788",
+   "name": "Grand Bank Nepal Limited",
+   "cc": "np",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "GRAND"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "listed": true
+  },
+  {
+   "qid": "Q10972363",
+   "name": "Himalayan Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "HBL"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.himalayanbank.com/",
+   "lei": "213800JT1H4W9XL5LT32",
+   "enwiki": "https://en.wikipedia.org/wiki/Himalayan_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q124344737",
+   "name": "IME Pay",
+   "cc": "np",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "https://www.imepay.com.np/",
+   "listed": false
+  },
+  {
+   "qid": "Q19678327",
+   "name": "Jyoti Development Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "JBBL"
+    }
+   ],
+   "industries": [
+    "development banking industry"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://jbbl.com.np",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q30635875",
+   "name": "Kathmandu Living Labs",
+   "cc": "np",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.kathmandulivinglabs.org",
+   "enwiki": "https://en.wikipedia.org/wiki/Kathmandu_Living_Labs",
+   "listed": false
+  },
+  {
+   "qid": "Q6443607",
+   "name": "Kumari Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "KBL"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "https://www.kumaribank.com/",
+   "lei": "254900LT6XJDNQSUIS05",
+   "enwiki": "https://en.wikipedia.org/wiki/Kumari_Bank",
+   "logo_file": "Kumari bank logo.gif",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q13185689",
+   "name": "Laxmi Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "LBL"
+    }
+   ],
+   "industries": [
+    "bank",
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "website": "http://www.laxmibank.com/",
+   "lei": "254900NAZH4DXOL12Y19",
+   "enwiki": "https://en.wikipedia.org/wiki/Laxmi_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q19683514",
+   "name": "Lumbini Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "LUBL"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "listed": true
+  },
+  {
+   "qid": "Q19682467",
+   "name": "Machhapuchhre Bank",
+   "cc": "np",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "MBL"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.machbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Machhapuchchhre_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3634140",
+   "name": "Madan Puraskar Pustakalaya",
+   "cc": "np",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://madanpuraskar.org/pustakalaya",
+   "enwiki": "https://en.wikipedia.org/wiki/Madan_Puraskar_Pustakalaya",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19682668",
+   "name": "Mega Bank Nepal Limited",
+   "cc": "np",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "MEGA"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.megabanknepal.com",
+   "lei": "2549001A6GHO2T9RCO30",
+   "enwiki": "https://en.wikipedia.org/wiki/Mega_Bank_Nepal",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6956890",
+   "name": "Nabil Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "NABIL"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.nabilbank.com/",
+   "lei": "254900860GPB3ZDW1548",
+   "enwiki": "https://en.wikipedia.org/wiki/Nabil_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6994325",
+   "name": "Nepal Bangladesh Bank",
+   "cc": "np",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "NBB"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.nbbl.com.np/index.php",
+   "enwiki": "https://en.wikipedia.org/wiki/Nepal_Bangladesh_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6994329",
+   "name": "Nepal Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "NBL"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.nepalbank.com.np",
+   "lei": "254900C6L8RLKUF1AG24",
+   "enwiki": "https://en.wikipedia.org/wiki/Nepal_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q19679772",
+   "name": "Nepal Credit And Commercial Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "NCCB"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "website": "http://www.nccbank.com.np/",
+   "listed": true
+  },
+  {
+   "qid": "Q13182744",
+   "name": "Nepal Investment Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "NIB"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "hq_city": "Durbar Marg",
+   "hq": [
+    27.71,
+    85.3175
+   ],
+   "website": "http://www.nibl.com.np/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nepal_Investment_Mega_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q13182740",
+   "name": "Nepal SBI Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "SBI"
+    }
+   ],
+   "industries": [
+    "commercial banking industry",
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.nepalsbi.com.np",
+   "enwiki": "https://en.wikipedia.org/wiki/Nepal_SBI_Bank",
+   "logo_file": "Nepal SBI Bank Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3338265",
+   "name": "Nepal Telecom",
+   "cc": "np",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.ntc.net.np",
+   "enwiki": "https://en.wikipedia.org/wiki/Nepal_Telecom",
+   "listed": false
+  },
+  {
+   "qid": "Q20707049",
+   "name": "NIC Asia Bank",
+   "cc": "np",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "NICA"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/NIC_ASIA_Bank",
+   "logo_file": "NIC Asia Bank Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q17107908",
+   "name": "NMB Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.nmbz.co.zw/",
+   "lei": "254900J5HFOUC3SLM620",
+   "enwiki": "https://en.wikipedia.org/wiki/NMB_Bank_Limited",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q13179664",
+   "name": "NMB Bank Nepal",
+   "cc": "np",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "NMB"
+    }
+   ],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.nmb.com.np/",
+   "enwiki": "https://en.wikipedia.org/wiki/NMB_Bank_Nepal",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q25110235",
+   "name": "Prabhu Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "PRVU"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "hq_city": "Babarmahal Revisited",
+   "website": "http://www.prabhubank.com/",
+   "lei": "2549005NFP04P9CJUJ84",
+   "enwiki": "https://en.wikipedia.org/wiki/Prabhu_Bank",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "listed": true
+  },
+  {
+   "qid": "Q13183554",
+   "name": "Prime Commercial Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.primebank.com.np",
+   "enwiki": "https://en.wikipedia.org/wiki/Prime_Commercial_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7295296",
+   "name": "Rastriya Banijya Bank",
+   "cc": "np",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Singha Durbar",
+   "hq": [
+    27.69827,
+    85.32525
+   ],
+   "website": "http://www.rbb.com.np/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rastriya_Banijya_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18393547",
+   "name": "Rastriya Samachar Samiti",
+   "cc": "np",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.rss.com.np",
+   "enwiki": "https://en.wikipedia.org/wiki/Rastriya_Samachar_Samiti",
+   "listed": false
+  },
+  {
+   "qid": "Q13186809",
+   "name": "Sajha Publications",
+   "cc": "np",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.sajha.org.np/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sajha_Publications",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17017035",
+   "name": "Salt Trading Corporation",
+   "cc": "np",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "STC"
+    }
+   ],
+   "industries": [
+    "trade"
+   ],
+   "isin": [],
+   "website": "http://www.stcnepal.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Salt_Trading_Corporation",
+   "listed": true
+  },
+  {
+   "qid": "Q13186831",
+   "name": "Sanima Bank",
+   "cc": "np",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "SANIMA"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.sanimabank.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Sanima_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q19713130",
+   "name": "Siddhartha Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "SBL"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "website": "http://www.siddharthabank.com",
+   "lei": "254900QBRJZY4ZF5KT45",
+   "enwiki": "https://en.wikipedia.org/wiki/Siddhartha_Bank",
+   "listed": true
+  },
+  {
+   "qid": "Q7598199",
+   "name": "Standard Chartered Bank Nepal",
+   "cc": "np",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "SCB"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "https://www.sc.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Standard_Chartered_Bank_Nepal",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q25110229",
+   "name": "Sunrise Bank Limited",
+   "cc": "np",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "SRBL"
+    }
+   ],
+   "industries": [
+    "commercial banking industry"
+   ],
+   "isin": [],
+   "hq_city": "Kathmandu",
+   "hq": [
+    27.71,
+    85.32
+   ],
+   "website": "http://www.sunrisebank.com.np",
+   "lei": "254900WSSAQS6RU4SE89",
+   "enwiki": "https://en.wikipedia.org/wiki/Laxmi_Sunrise_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q19678425",
+   "name": "Tourism Development Bank",
+   "cc": "np",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "TDBL"
+    }
+   ],
+   "industries": [
+    "development banking industry"
+   ],
+   "isin": [],
+   "website": "http://www.tdbl.com.np/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tourism_Development_Bank",
+   "listed": true
+  },
+  {
+   "qid": "Q7885210",
+   "name": "Unilever Nepal",
+   "cc": "np",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nepal Stock Exchange",
+     "ticker": "UNL"
+    }
+   ],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Unilever_Nepal",
+   "listed": true
+  }
+ ]
+}

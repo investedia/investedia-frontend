@@ -1,0 +1,2528 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "PK",
+ "count": 126,
+ "companies": [
+  {
+   "qid": "Q17069799",
+   "name": "A&B Productions",
+   "cc": "pk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/A%26B_Productions",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4647749",
+   "name": "A. F. Ferguson & Co.",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "professional service"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/A._F._Ferguson_%26_Co.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4680153",
+   "name": "Adamjee Group",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://adamjees.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/Adamjee_Group",
+   "logo_file": "Adamjee Group logo (2024).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21178801",
+   "name": "Advance telecom",
+   "cc": "pk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://advancetelecom.com.pk/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q126890993",
+   "name": "Alif Holdings",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "real estate development"
+   ],
+   "isin": [],
+   "website": "https://alif-holdings.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4732553",
+   "name": "Allied Bank Limited",
+   "cc": "pk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Pakistan Stock Exchange",
+     "ticker": "ABL"
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Lahore",
+   "hq": [
+    31.54972,
+    74.34361
+   ],
+   "website": "https://www.abl.com",
+   "lei": "529900X6XIDYH83WGV81",
+   "enwiki": "https://en.wikipedia.org/wiki/Allied_Bank_Limited",
+   "logo_file": "Allied Bank Limited logo (2022).png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4807137",
+   "name": "Askari Bank",
+   "cc": "pk",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Rawalpindi",
+   "hq": [
+    33.6007,
+    73.0679
+   ],
+   "website": "http://www.akbl.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Askari_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11702583",
+   "name": "Atlas Group",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://www.atlas.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Atlas_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19647863",
+   "name": "Axact",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "https://www.axact.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Axact",
+   "logo_file": "Axact logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4852447",
+   "name": "Balochi Academy",
+   "cc": "pk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Balochi_Academy",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4855895",
+   "name": "Bank Alfalah",
+   "cc": "pk",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.bankalfalah.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Alfalah",
+   "logo_file": "Bank alfalah logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4856138",
+   "name": "Bank of Khyber",
+   "cc": "pk",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Peshawar",
+   "hq": [
+    34.01444,
+    71.5675
+   ],
+   "website": "http://www.bok.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Khyber",
+   "logo_file": "Bank of Khyber logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4856175",
+   "name": "Bank of Punjab",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Lahore",
+   "hq": [
+    31.54972,
+    74.34361
+   ],
+   "website": "http://www.bop.com.pk",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Punjab",
+   "logo_file": "Bank of Punjab logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118793325",
+   "name": "Brahui Academy",
+   "cc": "pk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Quetta",
+   "hq": [
+    30.19583,
+    67.01722
+   ],
+   "website": "https://brahuiacademy.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q19903647",
+   "name": "Byco Petroleum",
+   "cc": "pk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Pakistan Stock Exchange",
+     "ticker": "BYCO"
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://www.byco.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cnergyico",
+   "listed": true
+  },
+  {
+   "qid": "Q5008949",
+   "name": "CA Sports",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "sports industry",
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Sialkot",
+   "hq": [
+    32.5,
+    74.53333
+   ],
+   "website": "https://www.ca-sports.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/CA_Sports",
+   "logo_file": "Ca sports brand logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2402245",
+   "name": "Dawn Media Group",
+   "cc": "pk",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "broadcasting",
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://www.pakistanheraldlimited.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Dawn_Media_Group",
+   "logo_file": "Dawn Newspaper logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48729799",
+   "name": "DG Khan Cement",
+   "cc": "pk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "K0052401012"
+   ],
+   "hq_city": "Lahore",
+   "hq": [
+    31.54972,
+    74.34361
+   ],
+   "website": "https://dgcement.com",
+   "enwiki": "https://en.wikipedia.org/wiki/DG_Cement",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q65089529",
+   "name": "Easypaisa",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "https://easypaisa.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Easypaisa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q117551366",
+   "name": "Ejad Labs",
+   "cc": "pk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "event management company"
+   ],
+   "isin": [],
+   "hq_city": "Islamabad",
+   "hq": [
+    33.69889,
+    73.03694
+   ],
+   "website": "https://www.ejadlabs.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5431100",
+   "name": "Faisalabad Electric Supply Company",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Faisalabad_Electric_Supply_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q5438082",
+   "name": "Fauji Fertilizer Company Limited",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rawalpindi",
+   "hq": [
+    33.6007,
+    73.0679
+   ],
+   "website": "http://www.ffc.com.pk",
+   "enwiki": "https://en.wikipedia.org/wiki/Fauji_Fertilizer_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85760637",
+   "name": "Fauji Foods",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lahore",
+   "hq": [
+    31.54972,
+    74.34361
+   ],
+   "website": "http://www.faujifoods.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Fauji_Foods",
+   "listed": false
+  },
+  {
+   "qid": "Q5445221",
+   "name": "Ferozsons",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lahore",
+   "hq": [
+    31.54972,
+    74.34361
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Ferozsons",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5453332",
+   "name": "First Micro Finance Bank",
+   "cc": "pk",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/HBL_Microfinance_Bank",
+   "logo_file": "HBL Microfinance Bank logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q5454088",
+   "name": "First Women Bank",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "website": "https://fwbl.com.pk",
+   "enwiki": "https://en.wikipedia.org/wiki/First_Women_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17004510",
+   "name": "Forward Sports",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sialkot",
+   "hq": [
+    32.5,
+    74.53333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Forward_Sports",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21244949",
+   "name": "FrieslandCampina Engro Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Pakistan Stock Exchange",
+     "ticker": "FCEPL"
+    }
+   ],
+   "industries": [
+    "dairy industry"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "https://frieslandcampina.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/FrieslandCampina_Engro_Pakistan",
+   "listed": true
+  },
+  {
+   "qid": "Q5519235",
+   "name": "Gallup Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.gallup.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Gallup_Pakistan",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1521406",
+   "name": "Ghandhara Nissan",
+   "cc": "pk",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [
+    "PK0059701018"
+   ],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://www.ghandharanissan.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ghandhara_Automobiles_Limited",
+   "logo_file": "GAL Logo.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q17021674",
+   "name": "Ghani Group of Companies",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [],
+   "hq_city": "Lahore",
+   "hq": [
+    31.54972,
+    74.34361
+   ],
+   "website": "http://www.ghanigroup.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ghani_Group",
+   "logo_file": "Ghani Group.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5617128",
+   "name": "Gul Ahmed Group",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://www.gulahmed.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Gul_Ahmed",
+   "logo_file": "Gul Ahmed Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22935770",
+   "name": "Gwadar Development Authority",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Gwadar_Development_Authority",
+   "listed": false
+  },
+  {
+   "qid": "Q5636789",
+   "name": "Habib Metropolitan Bank",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://www.habibmetro.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/HabibMetro",
+   "logo_file": "HabibMetro logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q39045420",
+   "name": "Haier Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "consumer electronics industry"
+   ],
+   "isin": [],
+   "website": "http://www.haier.com/pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Haier_Pakistan",
+   "listed": false
+  },
+  {
+   "qid": "Q1566843",
+   "name": "HBL Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [
+    "PK0085101019"
+   ],
+   "hq_city": "Habib Bank Plaza",
+   "hq": [
+    24.8499,
+    67.0055
+   ],
+   "website": "http://www.hbl.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Habib_Bank_Limited",
+   "logo_file": "Logo of Habib Bank.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3129142",
+   "name": "Heavy Industries Taxila",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Taxila",
+   "hq": [
+    33.74583,
+    72.7875
+   ],
+   "website": "http://www.hit.gov.pk",
+   "enwiki": "https://en.wikipedia.org/wiki/Heavy_Industries_Taxila",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5926705",
+   "name": "Hub Power Company",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity generation"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Hub_Power_Company",
+   "logo_file": "Hub Power Company logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5969609",
+   "name": "ICI Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://www.ici.com.pk",
+   "enwiki": "https://en.wikipedia.org/wiki/Lucky_Core_Industries",
+   "logo_file": "Lucky Core Industries logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85769600",
+   "name": "Interloop Limited",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Faisalabad",
+   "hq": [
+    31.418,
+    73.079
+   ],
+   "website": "http://interloop-pk.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Interloop_Limited",
+   "listed": false
+  },
+  {
+   "qid": "Q28223503",
+   "name": "Islamabad Electric Supply Company",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "website": "https://www.iesco.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Islamabad_Electric_Supply_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30590827",
+   "name": "Jazz",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "http://www.jazz.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Jazz_(mobile_network_operator)",
+   "listed": false
+  },
+  {
+   "qid": "Q65090336",
+   "name": "JazzCash",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile payment"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/JazzCash",
+   "listed": false
+  },
+  {
+   "qid": "Q6297739",
+   "name": "Joyland",
+   "cc": "pk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Joyland_(company)",
+   "listed": false
+  },
+  {
+   "qid": "Q6108996",
+   "name": "JS Group",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Jahangir_Siddiqui_%26_Co.",
+   "logo_file": "JS Group - New logo 2011 - Copy.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6367782",
+   "name": "Karachi Shipyard",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "shipbuilding"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://www.karachishipyard.com.pk",
+   "enwiki": "https://en.wikipedia.org/wiki/Karachi_Shipyard_%26_Engineering_Works",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6433725",
+   "name": "Kot Addu Power Company",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.kapco.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kot_Addu_Power",
+   "logo_file": "KAPCO Pakistan logo (2023).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15983598",
+   "name": "Lal Pir Power",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Muzaffargarh District",
+   "hq": [
+    30.03739,
+    71.05876
+   ],
+   "website": "http://www.lalpir.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Lalpir_Power",
+   "listed": false
+  },
+  {
+   "qid": "Q1441532",
+   "name": "Lucky Cement",
+   "cc": "pk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Karachi Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "US5495202039"
+   ],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://www.lucky-cement.com/",
+   "lei": "213800HCLGMIPPAF9976",
+   "enwiki": "https://en.wikipedia.org/wiki/Lucky_Cement",
+   "logo_file": "Lucky Cement logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6760925",
+   "name": "Mari Petroleum Company Limited",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Islamabad",
+   "hq": [
+    33.69889,
+    73.03694
+   ],
+   "website": "http://www.mpcl.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mari_Energies",
+   "logo_file": "Mari Energies logo (2025).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48729561",
+   "name": "Maria B",
+   "cc": "pk",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Maria_B",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30589263",
+   "name": "Martin Dow",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Martin_Dow",
+   "listed": false
+  },
+  {
+   "qid": "Q15982510",
+   "name": "MCB Bank Limited",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Lahore",
+   "hq": [
+    31.54972,
+    74.34361
+   ],
+   "website": "https://www.mcb.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/MCB_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96392396",
+   "name": "McDonald's Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "restaurant"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/McDonald%27s_Pakistan",
+   "listed": false
+  },
+  {
+   "qid": "Q6858555",
+   "name": "Millat Tractors",
+   "cc": "pk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Lahore",
+   "hq": [
+    31.54972,
+    74.34361
+   ],
+   "website": "https://www.millat.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Millat_Tractors",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6883917",
+   "name": "Mixed Martial Arts Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lahore",
+   "hq": [
+    31.54972,
+    74.34361
+   ],
+   "website": "http://www.pak-mma.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Mixed_Martial_Arts_Pakistan",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3317678",
+   "name": "Mobilink",
+   "cc": "pk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Islamabad",
+   "hq": [
+    33.69889,
+    73.03694
+   ],
+   "website": "http://mobilink.com.pk",
+   "enwiki": "https://en.wikipedia.org/wiki/Mobilink",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15982472",
+   "name": "Murree Brewery",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rawalpindi",
+   "hq": [
+    33.6007,
+    73.0679
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Murree_Brewery",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2883425",
+   "name": "National Bank of Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "https://www.nbp.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Bank_of_Pakistan",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17011990",
+   "name": "National Development Complex",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Fateh Jang",
+   "hq": [
+    33.56889,
+    72.63778
+   ],
+   "website": "http://www.senatedefencecommittee.com.pk/production-detail.php?pageid=news-detail&pid=MTM=",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Defence_Complex",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6972455",
+   "name": "National Engineering Services Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lahore",
+   "hq": [
+    31.54972,
+    74.34361
+   ],
+   "website": "http://www.nespak.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Engineering_Services_Pakistan",
+   "logo_file": "NESPAK LOGO.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85787890",
+   "name": "National Fertilizer Corporation",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lahore",
+   "hq": [
+    31.54972,
+    74.34361
+   ],
+   "website": "https://www.nfc.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Fertilizer_Corporation",
+   "listed": false
+  },
+  {
+   "qid": "Q6974206",
+   "name": "National Logistics Cell",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Rawalpindi",
+   "hq": [
+    33.6007,
+    73.0679
+   ],
+   "website": "http://www.nlc.com.pk",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Logistics_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17068901",
+   "name": "National Telecommunication Corporation",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.ntc.net.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Telecommunication_Corporation_(Pakistan)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85788285",
+   "name": "Nestlé Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Nestl%C3%A9_Pakistan",
+   "listed": false
+  },
+  {
+   "qid": "Q7039874",
+   "name": "Nirala Sweets",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "baker"
+   ],
+   "isin": [],
+   "hq_city": "Lahore",
+   "hq": [
+    31.54972,
+    74.34361
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Nirala_Sweets",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7058123",
+   "name": "Northern Areas Transport Corporation",
+   "cc": "pk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "website": "https://www.natco.gov.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Northern_Areas_Transport_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q128033530",
+   "name": "OPay",
+   "cc": "pk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cairo",
+   "hq": [
+    30.04444,
+    31.23583
+   ],
+   "website": "https://www.opaybank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Opay",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4321804",
+   "name": "Pakistan Academy of Letters",
+   "cc": "pk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Islamabad",
+   "hq": [
+    33.69889,
+    73.03694
+   ],
+   "website": "http://pal.gov.pk/home/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pakistan_Academy_of_Letters",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4119630",
+   "name": "Pakistan Aeronautical Complex",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kamra",
+   "hq": [
+    33.85694,
+    72.395
+   ],
+   "website": "http://www.pac.org.pk",
+   "enwiki": "https://en.wikipedia.org/wiki/Pakistan_Aeronautical_Complex",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7125534",
+   "name": "Pakistan Board of Investment",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Islamabad",
+   "hq": [
+    33.69889,
+    73.03694
+   ],
+   "website": "http://www.boi.gov.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Board_of_Investment_(Pakistan)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7125546",
+   "name": "Pakistan Chemistry Society",
+   "cc": "pk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Chemical_Society_of_Pakistan",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56063005",
+   "name": "Pakistan Electric Power Company",
+   "cc": "pk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Pakistan_Electric_Power_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q60786182",
+   "name": "Pakistan Engineering Company",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Pakistan_Engineering_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7125580",
+   "name": "Pakistan Gems and Jewellery Development Company",
+   "cc": "pk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Pakistan_Gems_and_Jewellery_Development_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85791828",
+   "name": "Pakistan International Container Terminal",
+   "cc": "pk",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Pakistan Stock Exchange",
+     "ticker": "PICT"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "https://www.pict.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pakistan_International_Container_Terminal",
+   "listed": true
+  },
+  {
+   "qid": "Q28169437",
+   "name": "Pakistan Locomotive Factory",
+   "cc": "pk",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "locomotive"
+   ],
+   "isin": [],
+   "hq_city": "Risalpur",
+   "hq": [
+    34.0049,
+    71.9989
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Pakistan_Locomotive_Factory",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7125628",
+   "name": "Pakistan Mercantile Exchange",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "service"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "https://www.pmex.com.pk",
+   "enwiki": "https://en.wikipedia.org/wiki/Pakistan_Mercantile_Exchange",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7125629",
+   "name": "Pakistan National Shipping Corporation",
+   "cc": "pk",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industry"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "https://www.pnsc.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pakistan_National_Shipping_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15982527",
+   "name": "Pakistan Oilfields",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Rawalpindi",
+   "hq": [
+    33.6007,
+    73.0679
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Pakistan_Oilfields_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q732663",
+   "name": "Pakistan Petroleum",
+   "cc": "pk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "PK0081801018"
+   ],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://www.ppl.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pakistan_Petroleum",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7125673",
+   "name": "Pakistan Pharmacists Association",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Islamabad",
+   "hq": [
+    33.69889,
+    73.03694
+   ],
+   "website": "http://www.ppapak.org.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pakistan_Pharmacists_Association",
+   "listed": false
+  },
+  {
+   "qid": "Q61119510",
+   "name": "Pakistan Punjabi Adbi Board",
+   "cc": "pk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lahore",
+   "hq": [
+    31.54972,
+    74.34361
+   ],
+   "website": "https://punjabiadbiboard.org/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65042695",
+   "name": "Pakistan Security Printing Corporation",
+   "cc": "pk",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "https://pspc.gov.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pakistan_Security_Printing_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2741455",
+   "name": "Pakistan State Oil",
+   "cc": "pk",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "https://psopk.com/ur/home",
+   "enwiki": "https://en.wikipedia.org/wiki/Pakistan_State_Oil",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16821433",
+   "name": "Pakistan Steel Mills",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Pakistan_Steel_Mills",
+   "logo_file": "Pakistan Steel Mills.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7125728",
+   "name": "Pakistan Tobacco Company",
+   "cc": "pk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Karachi Stock Exchange",
+     "ticker": "PAKT"
+    }
+   ],
+   "industries": [
+    "tobacco industry"
+   ],
+   "isin": [],
+   "hq_city": "Islamabad",
+   "hq": [
+    33.69889,
+    73.03694
+   ],
+   "website": "http://www.ptc.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pakistan_Tobacco_Company",
+   "logo_file": "Pakistan Tobacco Company logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q64853074",
+   "name": "Pakistan Tourism Portal",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "business travel",
+    "tourism",
+    "tourism industry"
+   ],
+   "isin": [],
+   "website": "http://paktourismportal.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28173605",
+   "name": "Pakistan Western Railway",
+   "cc": "pk",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lahore",
+   "hq": [
+    31.54972,
+    74.34361
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Pakistan_Western_Railway",
+   "listed": false
+  },
+  {
+   "qid": "Q85793097",
+   "name": "Philip Morris Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "tobacco industry"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Philip_Morris_Pakistan",
+   "listed": false
+  },
+  {
+   "qid": "Q85794632",
+   "name": "Procter & Gamble Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fast-moving consumer goods"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Procter_%26_Gamble_Pakistan",
+   "listed": false
+  },
+  {
+   "qid": "Q7125719",
+   "name": "PTCL",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Islamabad",
+   "hq": [
+    33.69889,
+    73.03694
+   ],
+   "website": "http://www.ptcl.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/PTCL",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7290402",
+   "name": "Ramzan Sugar Mills",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.sharifgroup.com.pk/index.html",
+   "enwiki": "https://en.wikipedia.org/wiki/Ramzan_Sugar_Mills",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7387349",
+   "name": "S. Abdul Khaliq Sweets",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://sakhaliq.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/S._Abdul_Khaliq_Sweets",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114798587",
+   "name": "S. Mohkam-ud-Din and Sons Bakers",
+   "cc": "pk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "bakery"
+   ],
+   "isin": [],
+   "hq_city": "Anarkali Bazaar",
+   "hq": [
+    31.56667,
+    74.31611
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/S._Mohkam-ud-Din_and_Sons_Bakers",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q43928945",
+   "name": "Sana Safinaz",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Sana_Safinaz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7417685",
+   "name": "Sang-e-Meel Publications",
+   "cc": "pk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Sang-e-Meel_Publications",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7455902",
+   "name": "Servis Industries Limited",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Gulberg",
+   "hq": [
+    31.51054,
+    74.34079
+   ],
+   "website": "http://www.servisgroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Service_Industries_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q86008049",
+   "name": "Sha Posh",
+   "cc": "pk",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "tailoring"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7462554",
+   "name": "Shakarganj Mills",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Jhang",
+   "hq": [
+    31.26806,
+    72.31806
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Shakarganj",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7487819",
+   "name": "Shan Food Industries",
+   "cc": "pk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "website": "https://www.shanfoods.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Shan_Foods",
+   "logo_file": "Shan-Logo-PNG.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7510914",
+   "name": "Siemens Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "list of engineering universities in Pakistan"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Siemens_Pakistan",
+   "logo_file": "Siemens AG logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7512343",
+   "name": "Sigma Motors",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Islamabad",
+   "hq": [
+    33.69889,
+    73.03694
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Sigma_Motors",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7522145",
+   "name": "Sindh Bank",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://www.sindhbankltd.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sindh_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7522152",
+   "name": "Sindh Industrial and Trading Estate",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/SITE_Industrial_Area_Karachi",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85801260",
+   "name": "Sindh Tourism Development Corporation",
+   "cc": "pk",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "tourism industry"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "https://stdc.gos.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sindh_Tourism_Development_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28223618",
+   "name": "Sind–Pishin State Railway",
+   "cc": "pk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Kotri",
+   "hq": [
+    25.366,
+    68.31216
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Sind%E2%80%93Pishin_State_Railway",
+   "listed": false
+  },
+  {
+   "qid": "Q28223620",
+   "name": "Sind–Sagar Railway",
+   "cc": "pk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Kotri",
+   "hq": [
+    25.366,
+    68.31216
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Sind%E2%80%93Sagar_Railway",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7574503",
+   "name": "Special Communications Organization",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Rawalpindi",
+   "hq": [
+    33.6007,
+    73.0679
+   ],
+   "website": "http://www.sco.gov.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Special_Communications_Organization",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24228212",
+   "name": "Star Duniya",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lahore",
+   "hq": [
+    31.54972,
+    74.34361
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7635291",
+   "name": "Sui Southern Gas Company",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://www.ssgc.com.pk",
+   "enwiki": "https://en.wikipedia.org/wiki/Sui_Southern_Gas_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7637775",
+   "name": "Summit Bank",
+   "cc": "pk",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://www.summitbank.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Makramah",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7669775",
+   "name": "TCS Courier",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://www.tcscourier.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/TCS_(logistics_company)",
+   "logo_file": "TCS Pakistan logo (2024).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3445676",
+   "name": "Telenor Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Islamabad",
+   "hq": [
+    33.69889,
+    73.03694
+   ],
+   "website": "https://www.telenor.com.pk",
+   "enwiki": "https://en.wikipedia.org/wiki/Telenor_Pakistan",
+   "logo_file": "Telenor Logo (symbol and wordmark).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q142195314",
+   "name": "The Searle Company Limited",
+   "cc": "pk",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "PK0061701014"
+   ],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "https://searlecompany.com/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q119327233",
+   "name": "Times of Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Jhelum",
+   "hq": [
+    32.93313,
+    73.72637
+   ],
+   "website": "https://www.timesofpakistan.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48734313",
+   "name": "Treet Corporation",
+   "cc": "pk",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Pakistan Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "razor blade industry",
+    "razor industry"
+   ],
+   "isin": [],
+   "website": "https://treetcorp.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Treet_Corporation",
+   "listed": true
+  },
+  {
+   "qid": "Q85804786",
+   "name": "TRG Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/TRG_Pakistan",
+   "listed": false
+  },
+  {
+   "qid": "Q7877541",
+   "name": "Ufone",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Islamabad",
+   "hq": [
+    33.69889,
+    73.03694
+   ],
+   "website": "http://ufone.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Ufone",
+   "logo_file": "Ufone logo (2023).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7885211",
+   "name": "Unilever Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fast-moving consumer goods"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://www.unilever.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Unilever_Pakistan",
+   "logo_file": "Unilever text logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7902833",
+   "name": "Utility Stores Corporation",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Islamabad",
+   "hq": [
+    33.69889,
+    73.03694
+   ],
+   "website": "http://www.usc.com.pk",
+   "enwiki": "https://en.wikipedia.org/wiki/Utility_Stores_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q26985962",
+   "name": "Walled City of Lahore Authority",
+   "cc": "pk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lahore",
+   "hq": [
+    31.54972,
+    74.34361
+   ],
+   "website": "http://walledcitylahore.gop.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Punjab_Walled_Cities_and_Heritage_Areas_Authority",
+   "logo_file": "Logo of the Walled City of Lahore Authority.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8035292",
+   "name": "WorldCall",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Lahore",
+   "hq": [
+    31.54972,
+    74.34361
+   ],
+   "website": "http://www.worldcall.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/WorldCall",
+   "logo_file": "WorldCall 1.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30591849",
+   "name": "Yamaha Motor Pakistan",
+   "cc": "pk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Karachi",
+   "hq": [
+    24.86,
+    67.01
+   ],
+   "website": "http://www.yamaha-motor.com.pk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Yamaha_Motor_Pakistan",
+   "logo_file": "Yamaha Motor 2025.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111036019",
+   "name": "Youth Publishers",
+   "cc": "pk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q6760070",
+   "name": "ZONG",
+   "cc": "pk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Islamabad",
+   "hq": [
+    33.69889,
+    73.03694
+   ],
+   "website": "http://www.zong.com.pk",
+   "enwiki": "https://en.wikipedia.org/wiki/Zong_(mobile_network)",
+   "logo_file": "Zong Logo.png",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

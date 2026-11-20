@@ -1,0 +1,2287 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "LK",
+ "count": 105,
+ "companies": [
+  {
+   "qid": "Q4901317",
+   "name": "Airtel Sri Lanka",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.airtel.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Airtel_Sri_Lanka",
+   "listed": false
+  },
+  {
+   "qid": "Q4699321",
+   "name": "Aitken Spence",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "leisure industry"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.aitkenspence.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Aitken_Spence",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28451421",
+   "name": "Amana Bank",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Amana_Bank_(Sri_Lanka)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107133181",
+   "name": "Amaya Resorts & Spas",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "CONN"
+    }
+   ],
+   "industries": [
+    "hospitality industry"
+   ],
+   "isin": [
+    "LK0281N00002"
+   ],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.amayaresorts.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Amaya_Resorts_%26_Spas",
+   "listed": true
+  },
+  {
+   "qid": "Q19903163",
+   "name": "Asia Pacific Brewery Lanka",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mawathagama",
+   "hq": [
+    7.2515,
+    80.1911
+   ],
+   "website": "http://www.heinekenasiapacific.com/in-apac/asia-pacific-footprint/sri-lanka",
+   "enwiki": "https://en.wikipedia.org/wiki/DCSL_Breweries_Lanka",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131309819",
+   "name": "Atlas Axillia",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Atlas_Axillia",
+   "listed": false
+  },
+  {
+   "qid": "Q2882652",
+   "name": "Bank of Ceylon",
+   "cc": "lk",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.boc.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Ceylon",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q105952804",
+   "name": "C T Holdings",
+   "cc": "lk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/C_T_Holdings",
+   "listed": false
+  },
+  {
+   "qid": "Q28402807",
+   "name": "Cargills Bank",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.cargillsbank.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Cargills_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5039260",
+   "name": "Cargills Ceylon PLC",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "CARG.N0000"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.cargillsceylon.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Cargills_(Ceylon)",
+   "logo_file": "Cargills-Logo.png",
+   "listed": true
+  },
+  {
+   "qid": "Q106609982",
+   "name": "Carson Cumberbatch",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "CARS"
+    }
+   ],
+   "industries": [
+    "agribusiness",
+    "hospitality industry"
+   ],
+   "isin": [
+    "LK0022N00000"
+   ],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Carson_Cumberbatch",
+   "listed": true
+  },
+  {
+   "qid": "Q109229178",
+   "name": "Central Finance Company",
+   "cc": "lk",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "CFIN.N0000"
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [
+    "LK0023N00008"
+   ],
+   "hq_city": "Kandy",
+   "hq": [
+    7.29306,
+    80.635
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Central_Finance_Company",
+   "listed": true
+  },
+  {
+   "qid": "Q5065775",
+   "name": "Ceylinco Consolidated",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Ceylinco_Consolidated",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q101583475",
+   "name": "Ceylinco Insurance",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance company"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.ceylinco-insurance.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ceylinco_Insurance",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18922742",
+   "name": "Ceylon Biscuits Limited",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.muncheelk.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ceylon_Biscuits_Limited",
+   "logo_file": "Dsf.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q10481277",
+   "name": "Ceylon Cold Stores",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.elephanthouse.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ceylon_Cold_Stores",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5065789",
+   "name": "Ceylon Electricity Board",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.ceb.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ceylon_Electricity_Board",
+   "listed": false
+  },
+  {
+   "qid": "Q5065795",
+   "name": "Ceylon Petroleum Corporation",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://ceypetco.gov.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ceylon_Petroleum_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28402715",
+   "name": "Ceylon Steel Corporation",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "steelmaking"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.ceylonsteel.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ceylon_Steel_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16858778",
+   "name": "Ceylon Tobacco Company",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "CTC.N0000"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.ceylontobaccocompany.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Ceylon_Tobacco_Company",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q107040677",
+   "name": "Chevron Lubricants Lanka",
+   "cc": "lk",
+   "types": [
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "LLUB.N0000"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "LK0290N00003"
+   ],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://chevron.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Chevron_Lubricants_Lanka",
+   "logo_file": "Chevron Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q110639978",
+   "name": "CIC Holdings",
+   "cc": "lk",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "CIC.N0000"
+    }
+   ],
+   "industries": [
+    "agriculture",
+    "health care industry",
+    "industrial manufacturing",
+    "livestock",
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.cic.lk",
+   "enwiki": "https://en.wikipedia.org/wiki/CIC_Holdings",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q106311318",
+   "name": "Cinnamon Hotels & Resorts",
+   "cc": "lk",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Cinnamon_Hotels_%26_Resorts",
+   "listed": false
+  },
+  {
+   "qid": "Q85752555",
+   "name": "Citizens Development Business Finance",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Citizens_Development_Business_Finance",
+   "listed": false
+  },
+  {
+   "qid": "Q5152468",
+   "name": "Commercial Bank of Ceylon",
+   "cc": "lk",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "COMB.N0000"
+    }
+   ],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.combank.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Commercial_Bank_of_Ceylon",
+   "logo_file": "Commercial Bank logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5204898",
+   "name": "DFCC Bank",
+   "cc": "lk",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "DFCC.N0000"
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.dfcc.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/DFCC_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5270580",
+   "name": "Dialog",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "DIAL.N0000"
+    }
+   ],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.dialog.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Dialog_Axiata",
+   "logo_file": "Dialog Axiata logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q109302185",
+   "name": "Dipped Products",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "DIPD.N0000"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "LK0057N00006"
+   ],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.dplgroup.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Dipped_Products",
+   "listed": true
+  },
+  {
+   "qid": "Q5282953",
+   "name": "Distilleries Company of Sri Lanka",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "DIST.N0000"
+    }
+   ],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.dcslgroup.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/Distilleries_Company_of_Sri_Lanka",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q108149754",
+   "name": "Dream Keyboard",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://dreamkeyboard.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Dream_Keyboard",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96376748",
+   "name": "Durable Car Company",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Durable_Car_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q105163249",
+   "name": "EAP Films",
+   "cc": "lk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/EAP_Films",
+   "listed": false
+  },
+  {
+   "qid": "Q5353338",
+   "name": "Elakiri",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.elakiri.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Elakiri",
+   "logo_file": "Elakiri.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q5324429",
+   "name": "ES Group",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "consumer electronics industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/ESys_Technologies",
+   "listed": false
+  },
+  {
+   "qid": "Q97403273",
+   "name": "ETI Finance",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/ETI_Finance",
+   "listed": false
+  },
+  {
+   "qid": "Q5337762",
+   "name": "Etisalat Sri Lanka",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.etisalat.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Etisalat_(Sri_Lanka)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5421505",
+   "name": "Expolanka Holdings",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "EXPO.N0000"
+    }
+   ],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.expolanka.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Expolanka_Holdings",
+   "listed": true
+  },
+  {
+   "qid": "Q5527240",
+   "name": "Gateway Group",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.gatewayworldwide.com/home.asp",
+   "enwiki": "https://en.wikipedia.org/wiki/Gateway_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17511351",
+   "name": "George Steuart Group",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.georgesteuart.lk",
+   "enwiki": "https://en.wikipedia.org/wiki/George_Steuart_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3532080",
+   "name": "Hatton National Bank",
+   "cc": "lk",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "HNB.N0000"
+    }
+   ],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.hnb.lk",
+   "enwiki": "https://en.wikipedia.org/wiki/Hatton_National_Bank",
+   "logo_file": "HNB New Logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16983562",
+   "name": "Hayleys",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "HAYL.N0000"
+    }
+   ],
+   "industries": [
+    "agriculture"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Hayleys",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5711093",
+   "name": "Hemas Holdings",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "HHL.N0000"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.hemas.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hemas_Holdings",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q108502733",
+   "name": "Hilton Colombo",
+   "cc": "lk",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Hilton_Colombo",
+   "listed": false
+  },
+  {
+   "qid": "Q17068107",
+   "name": "HSBC Sri Lanka",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.hsbc.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/HSBC_Sri_Lanka",
+   "logo_file": "HSBC.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5335562",
+   "name": "Hutch Sri Lanka",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.hutch.lk",
+   "enwiki": "https://en.wikipedia.org/wiki/Hutch_(Sri_Lanka)",
+   "logo_file": "Hutch Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6017297",
+   "name": "Independent Television Network",
+   "cc": "lk",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "television"
+   ],
+   "isin": [],
+   "hq_city": "Battaramulla",
+   "hq": [
+    6.90167,
+    79.91917
+   ],
+   "website": "http://www.itn.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Independent_Television_Network",
+   "logo_file": "ITN Television Logo of Sri lanka.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3566069",
+   "name": "Information and Communication Technology Agency",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "ICT"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.icta.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Information_and_Communication_Technology_Agency_of_Sri_Lanka",
+   "logo_file": "ICTA LOGO.gif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56064093",
+   "name": "JAT Holdings",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.jatholdings.com",
+   "enwiki": "https://en.wikipedia.org/wiki/JAT_Holdings",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19885437",
+   "name": "Jetwing Hotels",
+   "cc": "lk",
+   "types": [
+    "Q1631129",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.jetwinghotels.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Jetwing_Hotels",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115812987",
+   "name": "Jetwing Symphony",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "JETS.N0000"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.jetwingsymphony.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Jetwing_Symphony",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6242628",
+   "name": "John Keells Computer Services",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.jkcsworld.com",
+   "enwiki": "https://en.wikipedia.org/wiki/John_Keells_IT",
+   "listed": false
+  },
+  {
+   "qid": "Q6242630",
+   "name": "John Keells Holdings",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "JKH.N0000"
+    },
+    {
+     "exchange": "Luxembourg Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "conglomerate",
+    "financial services",
+    "food industry",
+    "information technology industry",
+    "innovation",
+    "leisure industry",
+    "plantation",
+    "real property",
+    "retail",
+    "transport"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.keells.com",
+   "enwiki": "https://en.wikipedia.org/wiki/John_Keells_Holdings",
+   "logo_file": "John Keells Holdings Logo.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6383435",
+   "name": "Kegalu Vidyalaya",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "government"
+   ],
+   "isin": [],
+   "hq_city": "Kegalle Town A",
+   "hq": [
+    7.25361,
+    80.34444
+   ],
+   "website": "http://www.kegaluvidyalaya.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kegalu_Vidyalaya",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q112472220",
+   "name": "KleenPark Auto Detailing",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "auto detailing"
+   ],
+   "isin": [],
+   "hq_city": "Dehiwala",
+   "hq": [
+    6.86667,
+    79.88333
+   ],
+   "website": "https://www.kleenpark.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16969287",
+   "name": "Lanka Bell",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.lankabell.lk",
+   "enwiki": "https://en.wikipedia.org/wiki/Lanka_Bell",
+   "logo_file": "Lanka Bell logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q6487172",
+   "name": "Lankacom",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.lankacom.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/Lankacom",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109571008",
+   "name": "LB Finance",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.lbfinance.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/LB_Finance",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18354260",
+   "name": "Lion Brewery",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Biyagama",
+   "hq": [
+    6.93333,
+    79.98333
+   ],
+   "website": "http://www.lionbeer.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Lion_Brewery_(Sri_Lanka)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116769385",
+   "name": "LOLC Finance",
+   "cc": "lk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "LOFC.N0000"
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Rajagiriya",
+   "hq": [
+    6.91917,
+    79.895
+   ],
+   "website": "https://www.lolcfinance.com",
+   "enwiki": "https://en.wikipedia.org/wiki/LOLC_Finance",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q105561452",
+   "name": "LOLC Holdings",
+   "cc": "lk",
+   "types": [
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "LOLC.N0000"
+    }
+   ],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [
+    "LK0113N00007"
+   ],
+   "hq_city": "Rajagiriya",
+   "hq": [
+    6.91917,
+    79.895
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/LOLC_Holdings",
+   "listed": true
+  },
+  {
+   "qid": "Q6743380",
+   "name": "Maliban Biscuit Manufactories Limited",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fast-moving consumer goods",
+    "food processing"
+   ],
+   "isin": [],
+   "hq_city": "Ratmalana",
+   "hq": [
+    6.82194,
+    79.88611
+   ],
+   "website": "http://www.malibanbiscuit.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Maliban",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6714540",
+   "name": "MAS Holdings",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "clothing industry"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.masholdings.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/MAS_Holdings",
+   "listed": false
+  },
+  {
+   "qid": "Q6714699",
+   "name": "MBC Networks",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "radio"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/MBC_Networks",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6813707",
+   "name": "Melstacorp",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.melstacorp.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Melstacorp",
+   "listed": true
+  },
+  {
+   "qid": "Q17071458",
+   "name": "MillenniumIT",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/MillenniumIT_ESP",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6887354",
+   "name": "Mobitel",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.mobitel.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mobitel_(Sri_Lanka)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6718667",
+   "name": "MTV Channel",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "television"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/MTV_Channel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6935157",
+   "name": "Multivision",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Multivision_(Sri_Lanka)",
+   "listed": false
+  },
+  {
+   "qid": "Q39054196",
+   "name": "Mysore cafe",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Mysore_cafe",
+   "listed": false
+  },
+  {
+   "qid": "Q12500189",
+   "name": "National Savings Bank",
+   "cc": "lk",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.nsb.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Savings_Bank_(Sri_Lanka)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6979869",
+   "name": "Nations Trust Bank",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "NTB.N0000"
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Nations_Trust_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q106670859",
+   "name": "Nestlé Lanka",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "NEST.N0000"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Nestl%C3%A9_Lanka",
+   "listed": true
+  },
+  {
+   "qid": "Q7072422",
+   "name": "ODEL",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "ODEL.N0000"
+    }
+   ],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.odel.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Odel",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7129618",
+   "name": "Pan Asia Banking Corporation PLC",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Pan_Asia_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7161814",
+   "name": "Pelwatte Sugar Industries PLC",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "SUGA.N0000"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buttala",
+   "hq": [
+    6.7601,
+    81.24729
+   ],
+   "website": "http://www.pelwattesugar.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Pelwatte_Sugar_Industries",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7165469",
+   "name": "People's Bank",
+   "cc": "lk",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/People%27s_Bank_(Sri_Lanka)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104856306",
+   "name": "Rakna Arakshaka Lanka",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "private security company"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Rakna_Arakshaka_Lanka",
+   "listed": false
+  },
+  {
+   "qid": "Q17073724",
+   "name": "Richard Pieris & Company PLC",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "RICH.N0000"
+    }
+   ],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.arpico.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Richard_Pieris_%26_Company",
+   "listed": true
+  },
+  {
+   "qid": "Q7410095",
+   "name": "Sampath Bank",
+   "cc": "lk",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "SAMP.N0000"
+    }
+   ],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [
+    "LK0090N00007"
+   ],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.sampath.lk",
+   "enwiki": "https://en.wikipedia.org/wiki/Sampath_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q60765183",
+   "name": "Sanasa Development Bank",
+   "cc": "lk",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "website": "http://www.sdb.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/SDB_bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3532083",
+   "name": "Seylan Bank",
+   "cc": "lk",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.seylan.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Seylan_Bank",
+   "logo_file": "Seylan Transparent.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107995143",
+   "name": "Singer",
+   "cc": "lk",
+   "types": [
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "SINS.N0000"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "LK0156N00006"
+   ],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.singersl.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Singer_(Sri_Lanka)",
+   "listed": true
+  },
+  {
+   "qid": "Q7585968",
+   "name": "SLTMobitel",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "SLTL.N0000"
+    }
+   ],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.slt.lk",
+   "enwiki": "https://en.wikipedia.org/wiki/SLTMobitel",
+   "logo_file": "SLTMobitel Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q20987489",
+   "name": "SMAK",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/SMAK_(brand)",
+   "logo_file": "SMAK Logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28403106",
+   "name": "Softlogic Holdings",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "information and communications technology",
+    "retail"
+   ],
+   "isin": [],
+   "website": "http://www.softlogic.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Softlogic_Holdings",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97516271",
+   "name": "South Asia Gateway Terminals",
+   "cc": "lk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "container terminal"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/South_Asia_Gateway_Terminals",
+   "listed": false
+  },
+  {
+   "qid": "Q3274071",
+   "name": "Sri Lanka Broadcasting Corporation",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.slbc.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sri_Lanka_Broadcasting_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7585925",
+   "name": "Sri Lanka Insurance",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.srilankainsurance.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sri_Lanka_Insurance",
+   "logo_file": "Sri Lanka Insurance new logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7585943",
+   "name": "Sri Lanka Ports Authority",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Sri_Lanka_Ports_Authority",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7585945",
+   "name": "Sri Lanka Railways",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://www.railway.gov.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sri_Lanka_Railways",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106920262",
+   "name": "St. Anthony's Group",
+   "cc": "lk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/St._Anthony%27s_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q112623400",
+   "name": "Sunshine Holdings PLC",
+   "cc": "lk",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "SUN.N0000"
+    }
+   ],
+   "industries": [
+    "agribusiness",
+    "fast-moving consumer goods",
+    "health care"
+   ],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://www.sunshineholdings.lk",
+   "enwiki": "https://en.wikipedia.org/wiki/Sunshine_Holdings",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q79847",
+   "name": "SupremeSAT",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/SupremeSAT",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16900460",
+   "name": "Sustainable Energy Authority",
+   "cc": "lk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bandaranaike Memorial International Conference Hall",
+   "hq": [
+    6.90167,
+    79.87278
+   ],
+   "website": "http://www.energy.gov.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sri_Lanka_Sustainable_Energy_Authority",
+   "listed": false
+  },
+  {
+   "qid": "Q106238420",
+   "name": "Teejay Lanka",
+   "cc": "lk",
+   "types": [
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "TJL"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "LK0394N00003"
+   ],
+   "hq_city": "Avissawella",
+   "hq": [
+    6.95306,
+    80.21833
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Teejay_Lanka",
+   "listed": true
+  },
+  {
+   "qid": "Q85804768",
+   "name": "TKS Finance",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/TKS_Finance",
+   "listed": false
+  },
+  {
+   "qid": "Q108208479",
+   "name": "Tokyo Cement",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "TKYO.N0000"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "LK0165N00007"
+   ],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "https://tokyocement.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tokyo_Cement",
+   "listed": true
+  },
+  {
+   "qid": "Q106609969",
+   "name": "Unilever Sri Lanka",
+   "cc": "lk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "fast-moving consumer goods"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Unilever_Sri_Lanka",
+   "listed": false
+  },
+  {
+   "qid": "Q116275570",
+   "name": "Union Assurance",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Union_Assurance",
+   "listed": false
+  },
+  {
+   "qid": "Q28404615",
+   "name": "Union Bank of Colombo",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Union_Bank_of_Colombo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104412580",
+   "name": "Vallibel One",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://vallibelone.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Vallibel_One",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q21462732",
+   "name": "Vesess",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Colombo",
+   "hq": [
+    6.92667,
+    79.86056
+   ],
+   "website": "http://vesess.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Vesess",
+   "listed": false
+  },
+  {
+   "qid": "Q96414213",
+   "name": "Walker Sons and Company",
+   "cc": "lk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Walker_Sons_and_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q22909695",
+   "name": "Walkers Tours",
+   "cc": "lk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.walkerstours.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Walkers_Tours",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q71391792",
+   "name": "WindForce",
+   "cc": "lk",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Colombo Stock Exchange",
+     "ticker": "WIND.N0000"
+    }
+   ],
+   "industries": [
+    "energy industry",
+    "renewable energy"
+   ],
+   "isin": [],
+   "website": "http://www.windforce.lk/",
+   "enwiki": "https://en.wikipedia.org/wiki/WindForce",
+   "listed": true
+  }
+ ]
+}
