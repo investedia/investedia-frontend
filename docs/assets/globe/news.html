@@ -4029,7 +4029,8 @@ void main(){
   base=mix(base,vec3(.012,.013,.017),sea);                                   // oceans almost black
   float cp=cos(phi), sdot=sin(phi)*sun.z+cp*cos(lam-sun.x)*sun.y;          // cos(angle to the sun)
   float dayk=smoothstep(-.07,.16,sdot);
-  vec3 col=base*mix(.34,1.,dayk)*mix(.8,1.,Zd);                          // night side darker but land still readable                           // night side darker, slight limb darkening
+  vec3 col=base*mix(.14,1.15,dayk)*mix(.8,1.,Zd);                        // owner 20 Nov 2026 (B): clear day/night
+  col+=vec3(.05,.045,.04)*smoothstep(.12,0.,abs(sdot))*.6;                 // soft dusk edge
   float L=texture2D(nightT,uv).r; L=pow(max(0.,(L-.09)/.91),1.25);         // city lights only (drops Black Marble's faint ground)
   col+=mix(vec3(1.,.58,.22),vec3(1.,.9,.74),smoothstep(.15,.85,L))*L*1.55*(1.-dayk);  // real night lights: amber/soft orange in the fainter areas, warm white in the brightest cores                                 // tiny ivory points, very little amber; orange stays for data
   float edge=smoothstep(1.,1.-2.2/(g.z*dpr),sqrt(r2));                     // 1-2 device pixel antialiased rim
