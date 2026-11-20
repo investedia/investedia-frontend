@@ -26,15 +26,15 @@ void main(){
   // Investedia grade (owner 20 Nov 2026): satellite detail, black-and-orange identity. No blue oceans, no green land.
   vec3 day=texture2D(dayT,uv).rgb; float lum=dot(day,vec3(.299,.587,.114));
   float sea=smoothstep(.04,.16,day.b-day.r)*(1.-smoothstep(.28,.45,lum));  // Blue Marble oceans are dark blue: detect them
-  float tone=.05+.22*smoothstep(.04,.72,lum);                                // monochrome: charcoal to cool grey, terrain kept as light/dark texture (owner 20 Nov 2026: no sepia)
+  float tone=.06+.17*pow(smoothstep(.04,.8,lum),.85);  /* softer contrast (deserts calmer) */                                // monochrome: charcoal to cool grey, terrain kept as light/dark texture (owner 20 Nov 2026: no sepia)
   vec3 nat=day/max(lum,.04);                                                 // the real colour of this spot, without its brightness
   vec3 base=vec3(tone)*mix(vec3(1.),nat,.18)*vec3(1.01,1.,.975);              // owner 20 Nov 2026: dark neutral land with a trace of natural colour and warmth (not sepia, not flat grey)
   base=mix(base,vec3(.012,.013,.017),sea);                                   // oceans almost black
   float cp=cos(phi), sdot=sin(phi)*sun.z+cp*cos(lam-sun.x)*sun.y;          // cos(angle to the sun)
   float dayk=smoothstep(-.07,.16,sdot);
   vec3 col=base*mix(.34,1.,dayk)*mix(.8,1.,Zd);                          // night side darker but land still readable                           // night side darker, slight limb darkening
-  float L=texture2D(nightT,uv).r; L=pow(max(0.,(L-.10)/.90),1.35);         // city lights only (drops Black Marble's faint ground)
-  col+=mix(vec3(1.,.58,.22),vec3(1.,.9,.74),smoothstep(.15,.85,L))*L*1.25*(1.-dayk);  // real night lights: amber/soft orange in the fainter areas, warm white in the brightest cores                                 // tiny ivory points, very little amber; orange stays for data
+  float L=texture2D(nightT,uv).r; L=pow(max(0.,(L-.09)/.91),1.25);         // city lights only (drops Black Marble's faint ground)
+  col+=mix(vec3(1.,.58,.22),vec3(1.,.9,.74),smoothstep(.15,.85,L))*L*1.55*(1.-dayk);  // real night lights: amber/soft orange in the fainter areas, warm white in the brightest cores                                 // tiny ivory points, very little amber; orange stays for data
   float edge=smoothstep(1.,1.-2.2/(g.z*dpr),sqrt(r2));                     // 1-2 device pixel antialiased rim
   gl_FragColor=vec4(col*edge,edge);
 }`;
