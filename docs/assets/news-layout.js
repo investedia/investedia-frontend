@@ -35,7 +35,7 @@
  .compact-country:before{content:'';position:absolute;left:0;top:0;bottom:0;width:var(--sh);background:linear-gradient(90deg,rgba(255,122,26,.16),rgba(255,122,26,.04));border-radius:10px;z-index:0}.compact-country>*{position:relative;z-index:1}
  .compact-country small{font:600 12.5px 'Geist Mono',ui-monospace,monospace!important;color:#ff9d5c!important}.compact-country:hover{background:rgba(255,255,255,.04)}
  html:has(#ddrow .dd-menu:not([hidden])) .gp-ctl,html:has(.tf-dd.open) .gp-ctl{display:none!important}
- #sideSec{display:grid!important;grid-template-columns:1fr 1fr;gap:8px;padding:14px!important}
+ #sideSec:not([hidden]){display:grid!important;grid-template-columns:1fr 1fr;gap:8px;padding:14px!important}
  #sideSec .sd-h{grid-column:1/-1;margin-bottom:2px}
  #sideSec .gf-sector.expanded{grid-column:1/-1}
  #sideSec .sd-r{display:grid!important;grid-template-columns:1fr auto;grid-template-areas:"n i" "p p" "c c" "b b";align-items:center;gap:2px;width:100%;padding:10px 11px!important;border-radius:12px;background:#111114;border:1px solid #1d1d21;text-align:left;cursor:pointer}
