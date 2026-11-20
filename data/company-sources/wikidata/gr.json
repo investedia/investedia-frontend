@@ -1,0 +1,4097 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "GR",
+ "count": 193,
+ "companies": [
+  {
+   "qid": "Q54670624",
+   "name": "Abea",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.abea.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/ABEA",
+   "listed": false
+  },
+  {
+   "qid": "Q18161611",
+   "name": "ADMIE",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.admie.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/ADMIE",
+   "logo_file": "Logo admie 2020.png",
+   "listed": false
+  },
+  {
+   "qid": "Q380580",
+   "name": "Aegean Airlines",
+   "cc": "gr",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext Athens",
+     "ticker": "AEGN"
+    },
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": "0OHY"
+    }
+   ],
+   "industries": [
+    "air transport"
+   ],
+   "isin": [
+    "GRS495003006"
+   ],
+   "hq_city": "Greece",
+   "hq": [
+    38.5,
+    23.0
+   ],
+   "website": "http://www.aegeanair.com",
+   "lei": "213800VI8OH5EJM18L21",
+   "enwiki": "https://en.wikipedia.org/wiki/Aegean_Airlines",
+   "logo_file": "Aegean Airlines logo light-on-dark.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q18691964",
+   "name": "Aegean Motorway",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "auxiliary land transport services"
+   ],
+   "isin": [],
+   "hq_city": "Moschochori",
+   "hq": [
+    39.49813,
+    22.55845
+   ],
+   "website": "https://www.aegeanmotorway.gr/",
+   "logo_file": "Αυτοκινητόδρομος Αιγαίου (logo).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28146598",
+   "name": "Aegean Oil S.A.",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "website": "https://aegeanoil.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aegean_Oil",
+   "logo_file": "Aegean-Oil-logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q4687856",
+   "name": "Aeolian Investment Fund S.A.",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext Athens",
+     "ticker": "AIOLC"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.aeolian.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/Aeolian_Investment_Fund_S.A.",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12872999",
+   "name": "Agrotikes Synetairistikes Ekdoseis",
+   "cc": "gr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Thessaloniki",
+   "hq": [
+    40.64028,
+    22.93556
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12720157",
+   "name": "Aktor Concessions",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q30643907",
+   "name": "Aktor Group",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Aktor_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4721807",
+   "name": "Alfa-Beta Vassilopoulos",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "supermarket"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.ab.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Alpha-Beta_Vasilopoulos",
+   "logo_file": "Alfa-Beta Vassilopoulos logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2007823",
+   "name": "Allwyn Greece",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext Athens",
+     "ticker": "OPAP"
+    },
+    {
+     "exchange": "OTC Markets Group",
+     "ticker": "GOFPY"
+    }
+   ],
+   "industries": [
+    "gambling"
+   ],
+   "isin": [
+    "GRS419003009"
+   ],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.allwyn.gr",
+   "lei": "213800M4NRGFJCI34834",
+   "enwiki": "https://en.wikipedia.org/wiki/OPAP",
+   "logo_file": "OPAP logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q747394",
+   "name": "Alpha Bank",
+   "cc": "gr",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext Athens",
+     "ticker": "ALPHA"
+    },
+    {
+     "exchange": "OTC Markets Group",
+     "ticker": "ALBKY"
+    }
+   ],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [
+    "GRS015003007",
+    "US02071M4087",
+    "US02071M5076",
+    "US02071M6066",
+    "US02071M7056"
+   ],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.alpha.gr/",
+   "lei": "213800DBQIB6VBNU5C64",
+   "enwiki": "https://en.wikipedia.org/wiki/Alpha_Bank",
+   "logo_file": "AlphaBank logo 2026.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q131675360",
+   "name": "Alter Ego Media",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext Athens",
+     "ticker": "AEM"
+    }
+   ],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "website": "https://www.alteregomedia.org",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q28215480",
+   "name": "ALUMIL Aluminium Industry S.A",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kilkis",
+   "hq": [
+    40.9954,
+    22.8765
+   ],
+   "website": "http://www.alumil.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Alumil",
+   "logo_file": "Alumil logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q295671",
+   "name": "ANEK Lines",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "water transport"
+   ],
+   "isin": [],
+   "hq_city": "Chania",
+   "hq": [
+    35.51667,
+    24.01667
+   ],
+   "website": "http://www.anek.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/ANEK_Lines",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18715507",
+   "name": "Anosi",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chalandri",
+   "hq": [
+    38.01667,
+    23.8
+   ],
+   "website": "https://web.archive.org/web/20160304102722/http://www.anosi.gr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q298848",
+   "name": "ATEbank",
+   "cc": "gr",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.atebank.gr/ENGLISH/",
+   "enwiki": "https://en.wikipedia.org/wiki/Agricultural_Bank_of_Greece",
+   "logo_file": "ATEbank wordmark.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4034524",
+   "name": "Athenian Brewery",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.athenianbrewery.gr",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141627886",
+   "name": "Athens Urban Transport Organisation",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.oasa.gr/",
+   "logo_file": "Transport for athens oasa logo 01.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3910901",
+   "name": "Athens-Macedonian News Agency",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "news agency"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.ana-mpa.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/Athens-Macedonian_News_Agency",
+   "logo_file": "LogoANA-MPA.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4818342",
+   "name": "Attica Group",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "freight transport",
+    "passenger transport"
+   ],
+   "isin": [
+    "GRS144003001"
+   ],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.attica-group.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Attica_Group",
+   "logo_file": "Attica group logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12053073",
+   "name": "AutoDiana",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/AutoDiana",
+   "listed": false
+  },
+  {
+   "qid": "Q1676222",
+   "name": "Avax Group",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "GRS213213002"
+   ],
+   "hq_city": "Marousi",
+   "hq": [
+    38.05,
+    23.8
+   ],
+   "website": "https://avax.gr/",
+   "lei": "213800ZU3OTKF9M41394",
+   "enwiki": "https://en.wikipedia.org/wiki/Avax_Group",
+   "logo_file": "Όμιλος ΑΒΑΞ.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q19903165",
+   "name": "Avin International S.A.",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Marousi",
+   "hq": [
+    38.05,
+    23.8
+   ],
+   "website": "http://www.avin.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Avin_International",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24175501",
+   "name": "bahoe books",
+   "cc": "gr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vienna",
+   "hq": [
+    48.20833,
+    16.3725
+   ],
+   "website": "https://www.bahoebooks.net/",
+   "logo_file": "Bahoe books.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16987270",
+   "name": "Bally's Intralot",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext Athens",
+     "ticker": "INLOT"
+    }
+   ],
+   "industries": [
+    "gambling industry",
+    "lottery"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.intralot.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Bally%27s_Intralot",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q107564667",
+   "name": "Banque de Salonique",
+   "cc": "gr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Salonica",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65042044",
+   "name": "Barbastathis",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Barbastathis",
+   "listed": false
+  },
+  {
+   "qid": "Q895282",
+   "name": "Boutari",
+   "cc": "gr",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.boutari.gr",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1051889",
+   "name": "Cavino",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Aigio",
+   "hq": [
+    38.25056,
+    22.08111
+   ],
+   "website": "http://www.cavino.gr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6686948",
+   "name": "Celestyal",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "cruise"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.celestyal.com/",
+   "lei": "549300UCL9HIVTYTQX26",
+   "enwiki": "https://en.wikipedia.org/wiki/Celestyal_Cruises",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5062736",
+   "name": "Centric Multimedia",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.centric.gr/default.asp?pid=76&la=2",
+   "enwiki": "https://en.wikipedia.org/wiki/Centric_Holdings",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30284653",
+   "name": "Chimar Hellas",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.chimarhellas.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Chimar_Hellas",
+   "logo_file": "LOGO CHIMAR HELLAS.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9189808",
+   "name": "Chipita",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.chipita.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Chipita",
+   "logo_file": "Chipita logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5114278",
+   "name": "Chropei",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Chropei",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5157254",
+   "name": "Compupress",
+   "cc": "gr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Compupress",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1127504",
+   "name": "Consolidated Contractors Company",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.ccc.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Consolidated_Contractors_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1136433",
+   "name": "Costamare",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "CMRE"
+    }
+   ],
+   "industries": [
+    "water transport"
+   ],
+   "isin": [
+    "MHY1771G1026"
+   ],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.costamare.com/",
+   "lei": "5299003L6NPTZ25LN818",
+   "enwiki": "https://en.wikipedia.org/wiki/Costamare",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6506241",
+   "name": "CPB Bank",
+   "cc": "gr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/CPB_Bank",
+   "listed": false
+  },
+  {
+   "qid": "Q13628140",
+   "name": "CrediaBank",
+   "cc": "gr",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.atticabank.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/CrediaBank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141610146",
+   "name": "Creta Cargo Lines",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "shipping line"
+   ],
+   "isin": [],
+   "website": "https://ccl.gr/",
+   "listed": false
+  },
+  {
+   "qid": "Q110500286",
+   "name": "delivery.gr",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "online food ordering"
+   ],
+   "isin": [],
+   "hq_city": "Patras",
+   "hq": [
+    38.24638,
+    21.73491
+   ],
+   "website": "https://www.delivery.gr/",
+   "logo_file": "Delivery-Logo-2021.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18983309",
+   "name": "Delta Dairy S.A.",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Agios Stefanos",
+   "hq": [
+    38.14071,
+    23.85853
+   ],
+   "website": "https://www.delta.gr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q73172280",
+   "name": "Delta Tankers",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "oil tanker"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.deltatankers.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Delta_Tankers",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4036873",
+   "name": "DESFA",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Chalandri",
+   "hq": [
+    38.01667,
+    23.8
+   ],
+   "website": "http://www.desfa.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/DESFA",
+   "logo_file": "DESFA.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5271073",
+   "name": "Diana",
+   "cc": "gr",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Diana_(agricultural_machinery)",
+   "listed": false
+  },
+  {
+   "qid": "Q16011711",
+   "name": "Dimosia Tileorasi",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.hprt.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Dimosia_Tileorasi",
+   "logo_file": "ΔΤ.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1589089",
+   "name": "Domaine Hatzimichalis",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kifisia",
+   "hq": [
+    38.08333,
+    23.81667
+   ],
+   "website": "http://www.hatzimichalis.gr/",
+   "listed": false
+  },
+  {
+   "qid": "Q541568",
+   "name": "EAS",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Ymittos",
+   "hq": [
+    37.95333,
+    23.74889
+   ],
+   "website": "https://www.eas.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hellenic_Defence_Systems",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5322580",
+   "name": "EBIAM",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/EBIAM",
+   "listed": false
+  },
+  {
+   "qid": "Q5333322",
+   "name": "Econ group",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Econ_group_(Greece)",
+   "listed": false
+  },
+  {
+   "qid": "Q18712202",
+   "name": "Editions Musica Ferrum",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Editions_Musica_Ferrum",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12876541",
+   "name": "ELAIS",
+   "cc": "gr",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5358613",
+   "name": "Eleusis Shipyards",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "shipbuilding"
+   ],
+   "isin": [],
+   "hq_city": "Elefsina",
+   "hq": [
+    38.04139,
+    23.54528
+   ],
+   "website": "http://www.elefsis-shipyards.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/Elefsis_Shipyards",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12876543",
+   "name": "Elinoil Hellenic Petroleum Company S.A.",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext Athens",
+     "ticker": "ELIN"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.elin.gr/",
+   "lei": "635400XINPMOREM6Y125",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4072287",
+   "name": "Elliniko Metro",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "construction",
+    "passenger transport",
+    "rail transport",
+    "urban and suburban passenger land transport"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.emetro.gr/?lang=en",
+   "enwiki": "https://en.wikipedia.org/wiki/Elliniko_Metro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55610870",
+   "name": "Energean Plc",
+   "cc": "gr",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": "ENOG"
+    },
+    {
+     "exchange": "Tel Aviv Stock Exchange",
+     "ticker": null
+    },
+    {
+     "exchange": "Tel Aviv Stock Exchange",
+     "ticker": "ENOG"
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "GB00BG12Y042"
+   ],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.energean.com",
+   "lei": "549300RVMKU0CYUZBB05",
+   "enwiki": "https://en.wikipedia.org/wiki/Energean",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q30254528",
+   "name": "EPSILONNET (Greece)",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Thessaloniki",
+   "hq": [
+    40.64028,
+    22.93556
+   ],
+   "website": "https://www.epsilonnet.gr/?lang=en",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31283952",
+   "name": "ETEKA",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://eteka.com.gr",
+   "listed": false
+  },
+  {
+   "qid": "Q951850",
+   "name": "Eurobank",
+   "cc": "gr",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext Athens",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [
+    "GRS323003012"
+   ],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.eurobank.gr",
+   "lei": "JEUVK5RWVJEN8W0C9M24",
+   "enwiki": "https://en.wikipedia.org/wiki/Eurobank_Ergasias",
+   "logo_file": "Eurobank logo 2021.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q842108",
+   "name": "Euronext",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext Lisbon",
+     "ticker": "ENXP"
+    },
+    {
+     "exchange": "Euronext Paris",
+     "ticker": "ENX"
+    },
+    {
+     "exchange": "OTC Markets Group",
+     "ticker": "EUXTF"
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [
+    "NL0006294274"
+   ],
+   "hq_city": "place des Reflets",
+   "hq": [
+    48.8905,
+    2.24656
+   ],
+   "website": "https://www.euronext.com/",
+   "lei": "724500QJ4QSZ3H9QU415",
+   "enwiki": "https://en.wikipedia.org/wiki/Euronext",
+   "logo_file": "New Euronext logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q25400876",
+   "name": "European Seaways",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "shipping line"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.europeanseaways.com",
+   "enwiki": "https://en.wikipedia.org/wiki/A-Ships_Management",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5418218",
+   "name": "Evga S.A.",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.evga.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/Evga_S.A",
+   "logo_file": "EVGA (logo).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15919663",
+   "name": "EYATH",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.eyath.gr",
+   "listed": false
+  },
+  {
+   "qid": "Q15088495",
+   "name": "EYDAP",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "water collection, treatment and supply"
+   ],
+   "isin": [],
+   "hq_city": "Galatsi",
+   "hq": [
+    38.01667,
+    23.75
+   ],
+   "website": "https://www.eydap.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/EYDAP",
+   "logo_file": "Eydap logo 250.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q842584",
+   "name": "Fage",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Metamorfosi",
+   "hq": [
+    38.05,
+    23.75
+   ],
+   "website": "https://home.fage",
+   "enwiki": "https://en.wikipedia.org/wiki/Fage",
+   "logo_file": "Fage logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q57832897",
+   "name": "Fast Ferries (Greece)",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Fast_Ferries_(Greece)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1435535",
+   "name": "Folli Follie",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "GRS287003016"
+   ],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.ffgroup.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Folli_Follie",
+   "logo_file": "Folli Follie Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q131887542",
+   "name": "Gaia Epicheirein",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "agronomy"
+   ],
+   "isin": [],
+   "hq_city": "Piraeus",
+   "hq": [
+    37.943,
+    23.64694
+   ],
+   "website": "http://www.c-gaia.gr",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5518063",
+   "name": "Galaxias",
+   "cc": "gr",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://5ae.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Galaxias_(supermarkets)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3100734",
+   "name": "Geniki Bank",
+   "cc": "gr",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.geniki.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Geniki_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1502636",
+   "name": "Gentilini",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cephalonia",
+   "hq": [
+    38.265,
+    20.5525
+   ],
+   "website": "http://www.gentilini.gr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9267542",
+   "name": "Germanos",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.germanos.gr",
+   "logo_file": "Germanos logo (Greek) 2005.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5551982",
+   "name": "Germanos Group",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.germanos.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/Germanos_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96418483",
+   "name": "Globe One Digital",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "advertising",
+    "digital marketing",
+    "performance-based advertising",
+    "web development"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.globeonedigital.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Globe_One_Digital",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q373038",
+   "name": "Goody's",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food service"
+   ],
+   "isin": [],
+   "hq_city": "Athens International Airport \"Eleftherios Venizelos\"",
+   "hq": [
+    37.93639,
+    23.94444
+   ],
+   "website": "http://www.goodys.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Goody%27s_Burger_House",
+   "logo_file": "Goody's Burger House logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55612967",
+   "name": "Grecotel",
+   "cc": "gr",
+   "types": [
+    "Q1631129"
+   ],
+   "listings": [],
+   "industries": [
+    "hospitality industry"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Grecotel",
+   "listed": false
+  },
+  {
+   "qid": "Q1785588",
+   "name": "Greek Wine Cellars",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Markopoulo Mesogaias",
+   "hq": [
+    37.88333,
+    23.93333
+   ],
+   "website": "http://www.greek-wine-cellars.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Greek_Wine_Cellars",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q62273834",
+   "name": "Gregory's",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "gastronomy"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.gregorys.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Gregory%27s_(food_company)",
+   "logo_file": "Γρηγόρης (logo).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16983090",
+   "name": "Haitoglou Bros",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food processing"
+   ],
+   "isin": [],
+   "hq_city": "Kalochori",
+   "hq": [
+    40.64093,
+    22.85781
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Haitoglou_Bros",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q838397",
+   "name": "Hellenic Aerospace Industry",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tanagra",
+   "hq": [
+    38.32738,
+    23.53655
+   ],
+   "website": "http://www.haicorp.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Hellenic_Aerospace_Industry",
+   "logo_file": "Hellenic Aerospace logo design.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3051445",
+   "name": "Hellenic Arms Industry",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Defense"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.eas.gr/ebo/default.asp",
+   "enwiki": "https://en.wikipedia.org/wiki/Hellenic_Arms_Industry",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136486223",
+   "name": "Hellenic Development Bank",
+   "cc": "gr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "banking"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://hdb.gr/",
+   "logo_file": "Ελληνική Αναπτυξιακή Τράπεζα.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5707214",
+   "name": "Hellenic Duty Free Shops",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Agios Stefanos",
+   "hq": [
+    38.14071,
+    23.85853
+   ],
+   "website": "https://www.dutyfreeshops.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hellenic_Duty_Free_Shops",
+   "logo_file": "HDFS.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18349009",
+   "name": "Hellenic Electricity Distribution Network Operator",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.deddie.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/Hellenic_Electricity_Distribution_Network_Operator",
+   "listed": false
+  },
+  {
+   "qid": "Q19903317",
+   "name": "Hellenic Financial Stability Fund",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.hfsf.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hellenic_Financial_Stability_Fund",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1275135",
+   "name": "Hellenic Post",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.elta.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hellenic_Post",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118178032",
+   "name": "Hellenic Public Properties",
+   "cc": "gr",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://hppc.gr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5707296",
+   "name": "Hellenic Register of Shipping",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Piraeus",
+   "hq": [
+    37.943,
+    23.64694
+   ],
+   "website": "http://www.hrs.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hellenic_Register_of_Shipping",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3129859",
+   "name": "Hellenic Seaways",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "water transport"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.hellenicseaways.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hellenic_Seaways",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1325914",
+   "name": "Hellenic Shipyards Co.",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "shipbuilding"
+   ],
+   "isin": [],
+   "hq_city": "Skaramangas",
+   "hq": [
+    38.01,
+    23.6
+   ],
+   "website": "http://www.hellenic-shipyards.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hellenic_Shipyards_Co.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q903198",
+   "name": "HELLENiQ ENERGY",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext Athens",
+     "ticker": "ELPE"
+    }
+   ],
+   "industries": [
+    "extraction of petroleum",
+    "oil refining",
+    "power engineering"
+   ],
+   "isin": [
+    "GRS298343005"
+   ],
+   "hq_city": "Marousi",
+   "hq": [
+    38.05,
+    23.8
+   ],
+   "website": "https://www.helpe.gr",
+   "lei": "213800YUBJMZYR1SNG35",
+   "enwiki": "https://en.wikipedia.org/wiki/HelleniQ_Energy",
+   "logo_file": "HelleniQ Energy logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16983893",
+   "name": "Heracles General Cement Co.",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.lafarge.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/Heracles_General_Cement",
+   "listed": false
+  },
+  {
+   "qid": "Q1602750",
+   "name": "HRADF",
+   "cc": "gr",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "asset management"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.hradf.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hellenic_Republic_Asset_Development_Fund",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5968361",
+   "name": "IANOS",
+   "cc": "gr",
+   "types": [
+    "Q2085381",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Thessaloniki",
+   "hq": [
+    40.64028,
+    22.93556
+   ],
+   "website": "https://www.ianos.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/IANOS",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27791829",
+   "name": "Ianos publisher",
+   "cc": "gr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.ianos.gr/",
+   "listed": false
+  },
+  {
+   "qid": "Q122879149",
+   "name": "Ikaros Publishing",
+   "cc": "gr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.ikarosbooks.gr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27235656",
+   "name": "Interamerican",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://interamerican.gr",
+   "logo_file": "Interamerican (logo).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1671550",
+   "name": "Intracom",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [
+    "GRS087103008"
+   ],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.intracom.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Intracom_Holdings",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12876807",
+   "name": "Iolcos Publishers",
+   "cc": "gr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.iolcos.gr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12878142",
+   "name": "Izola",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.gedsa.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Izola_(appliances)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3562323",
+   "name": "Jumbo",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "GRS282183003"
+   ],
+   "hq_city": "Moschato",
+   "hq": [
+    37.9534,
+    23.6818
+   ],
+   "website": "https://www.e-jumbo.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Jumbo_S.A.",
+   "logo_file": "Jumbo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q131470273",
+   "name": "Kaktos Publications",
+   "cc": "gr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.kaktos.gr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97040571",
+   "name": "Kaoussis",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Egaleo",
+   "hq": [
+    37.9902,
+    23.68
+   ],
+   "website": "http://www.kaoussis.gr/ipiresies.html",
+   "logo_file": "Καούσης.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q126771959",
+   "name": "Kastaniotis Editions",
+   "cc": "gr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.kastaniotis.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137887933",
+   "name": "Kazantzakis Publications",
+   "cc": "gr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.kazantzakispublications.org/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16331089",
+   "name": "Kedros",
+   "cc": "gr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.kedros.gr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6414500",
+   "name": "Kioleides",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.kioleides.com/templates/main/main.php?languageID=1",
+   "enwiki": "https://en.wikipedia.org/wiki/Kioleides",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15823781",
+   "name": "Kleemann Group",
+   "cc": "gr",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "GRS324253004"
+   ],
+   "hq_city": "Kilkis Municipality",
+   "hq": [
+    41.04139,
+    22.90111
+   ],
+   "website": "https://kleemannlifts.com/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1605453",
+   "name": "Korres",
+   "cc": "gr",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "GRS494003007"
+   ],
+   "hq_city": "Metamorfosi",
+   "hq": [
+    38.05,
+    23.75
+   ],
+   "website": "https://www.korres.com",
+   "lei": "2138001MLH1KP6Q2Y726",
+   "enwiki": "https://en.wikipedia.org/wiki/Korres",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q56702335",
+   "name": "Kostoulas Recycling",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "waste management"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.hellenic-recycling.gr",
+   "logo_file": "Recycling Kostoulas.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17050427",
+   "name": "Kotsovolos",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.kotsovolos.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kotsovolos",
+   "logo_file": "Kotsovolos logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11750844",
+   "name": "Koukou Roukou",
+   "cc": "gr",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1391110",
+   "name": "KTEL",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://ktelbus.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/KTEL_(Greece)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1407461",
+   "name": "KYKNOS S.A.",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Greece",
+   "hq": [
+    38.5,
+    23.0
+   ],
+   "website": "https://kyknoscanning.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Kyknos_S.A.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q68693765",
+   "name": "Lacta",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.lacta.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Lacta_(Greek_company)",
+   "listed": false
+  },
+  {
+   "qid": "Q107444864",
+   "name": "Lamda Development",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.lamdadev.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12071506",
+   "name": "LAVA Mining & Quarrying Co",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.lava.gr/en/home",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12877510",
+   "name": "Macedonian Thrace Brewery",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Komotini",
+   "hq": [
+    41.11667,
+    25.4
+   ],
+   "website": "https://www.verginabeer.com",
+   "lei": "2138007NMAX2LCGJSQ47",
+   "enwiki": "https://en.wikipedia.org/wiki/Macedonian_Thrace_Brewery",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7073092",
+   "name": "Magenta TV (Greece)",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.magentatv.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/Magenta_TV_(Greece)",
+   "logo_file": "Magenta TV Logo 2024.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141700532",
+   "name": "Magic Sea Ferries",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Piraeus",
+   "hq": [
+    37.943,
+    23.64694
+   ],
+   "website": "https://magicseaferries.gr/en/",
+   "listed": false
+  },
+  {
+   "qid": "Q16329060",
+   "name": "Mamos Beer",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Patras",
+   "hq": [
+    38.24638,
+    21.73491
+   ],
+   "website": "https://www.mamos.gr",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q650036",
+   "name": "Marfin Investment Group",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "holding company"
+   ],
+   "isin": [
+    "GRS314003005"
+   ],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.migholdingssa.com",
+   "lei": "213800Q5O2WIDKF6SZ42",
+   "enwiki": "https://en.wikipedia.org/wiki/MIG_Holdings",
+   "logo_file": "Marfin Investment Group.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q123161956",
+   "name": "Maritech Group",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://maritechgroup.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6783887",
+   "name": "Masoutis",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Thessaloniki",
+   "hq": [
+    40.64028,
+    22.93556
+   ],
+   "website": "https://eshop.masoutis.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/Masoutis",
+   "logo_file": "Μασούτης (logo).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q753068",
+   "name": "Metaxa",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.metaxa.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Metaxa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1605646",
+   "name": "Metlen Energy & Metals",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext Athens",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [
+    "GRS393503008"
+   ],
+   "hq_city": "Marousi",
+   "hq": [
+    38.05,
+    23.8
+   ],
+   "website": "https://www.metlengroup.com",
+   "lei": "213800KT8MEUJEJ2KW41",
+   "enwiki": "https://en.wikipedia.org/wiki/Metlen_Energy_%26_Metals",
+   "logo_file": "Metlen Energy & Metals (logo).svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2616604",
+   "name": "Mevgal",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Koufalia",
+   "hq": [
+    40.77917,
+    22.57667
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Mevgal",
+   "logo_file": "MEVGAL LOGO (DESCRIPTOR).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1759533",
+   "name": "Minoan Lines",
+   "cc": "gr",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "transport"
+   ],
+   "isin": [],
+   "hq_city": "Heraklion",
+   "hq": [
+    35.34028,
+    25.13444
+   ],
+   "website": "http://www.minoan.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Minoan_Lines",
+   "logo_file": "Minoan Lines 1.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6869321",
+   "name": "Minos Wines",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Peza",
+   "hq": [
+    35.21778,
+    25.19278
+   ],
+   "website": "http://www.minoswines.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/Minos_Wines",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6716651",
+   "name": "MLS Multimedia",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Thessaloniki",
+   "hq": [
+    40.64028,
+    22.93556
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/MLS_Innovation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61060851",
+   "name": "Moreas",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "auxiliary land transport services"
+   ],
+   "isin": [],
+   "hq_city": "Nestani",
+   "hq": [
+    37.61388,
+    22.4661
+   ],
+   "website": "https://www.moreas.com.gr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6917998",
+   "name": "Motoemil",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Thessaloniki",
+   "hq": [
+    40.64028,
+    22.93556
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Motoemil",
+   "listed": false
+  },
+  {
+   "qid": "Q6918149",
+   "name": "Motor Oil Hellas",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext Athens",
+     "ticker": "MOH"
+    },
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": "0MQT"
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "GRS426003000"
+   ],
+   "hq_city": "Marousi",
+   "hq": [
+    38.05,
+    23.8
+   ],
+   "website": "https://www.moh.gr/en/",
+   "lei": "213800U3Y9UL7Y4QVM11",
+   "enwiki": "https://en.wikipedia.org/wiki/Motor_Oil_Hellas",
+   "logo_file": "Motoroil hellas logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1816028",
+   "name": "National Bank of Greece",
+   "cc": "gr",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext Athens",
+     "ticker": "ETE"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "NBG"
+    }
+   ],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [
+    "GRS003003019"
+   ],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.nbg.gr/",
+   "lei": "5UMCZOEYKCVFAW8ZLO05",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Bank_of_Greece",
+   "logo_file": "NationalBankGreece wordmark 2024.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q19935974",
+   "name": "National Bank of Greece Cultural Foundation",
+   "cc": "gr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.miet.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cultural_Foundation_of_the_National_Bank_(Greece)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137716728",
+   "name": "Nea Attiki Odos",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "auxiliary land transport services"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.naodos.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nea_Attiki_Odos",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16329893",
+   "name": "Nea Odos",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "auxiliary land transport services"
+   ],
+   "isin": [],
+   "hq_city": "Nea Erythraia",
+   "hq": [
+    38.10133,
+    23.82103
+   ],
+   "website": "https://www.neaodos.gr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17104766",
+   "name": "New TT Hellenic Postbank",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/New_TT_Hellenic_Postbank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116735894",
+   "name": "Nicourt",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "logo_file": "Nicourt Logo 01.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q141497935",
+   "name": "NN Hellas",
+   "cc": "gr",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance"
+   ],
+   "isin": [],
+   "hq_city": "Kallithea",
+   "hq": [
+    37.95,
+    23.7
+   ],
+   "website": "https://www.nnhellas.gr/",
+   "listed": false
+  },
+  {
+   "qid": "Q7063871",
+   "name": "Nounou",
+   "cc": "gr",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy industry"
+   ],
+   "isin": [],
+   "website": "https://www.frieslandcampina.com/brands/noynoy/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nounou",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1608689",
+   "name": "Nova Greece",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Pallini",
+   "hq": [
+    38.0025,
+    23.87389
+   ],
+   "website": "https://www.nova.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nova_(Greece)",
+   "logo_file": "Forthnet2017 Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q389418",
+   "name": "Olympia Odos",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "auxiliary land transport services"
+   ],
+   "isin": [],
+   "hq_city": "Chalandri",
+   "hq": [
+    38.01667,
+    23.8
+   ],
+   "website": "https://www.olympiaodos.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Olympia_Odos",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1291644",
+   "name": "Olympic Maritime",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7091156",
+   "name": "On Telecoms",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/On_Telecoms",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6060759",
+   "name": "Optima bank",
+   "cc": "gr",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.optimabank.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/Optima_bank",
+   "logo_file": "Optima Bank (Greece) logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7072950",
+   "name": "ORT",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Pýrgos",
+   "hq": [
+    37.673,
+    21.4395
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/ORT_(TV_channel)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12882400",
+   "name": "Ouzo Barbayanni",
+   "cc": "gr",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Plomari",
+   "hq": [
+    38.976,
+    26.3698
+   ],
+   "website": "https://www.barbayanni-ouzo.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q85791476",
+   "name": "Ouzo Plomari",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "spirits industry"
+   ],
+   "isin": [],
+   "hq_city": "Plomari",
+   "hq": [
+    38.976,
+    26.3698
+   ],
+   "website": "https://www.ouzoplomari.gr/bg/plomari",
+   "enwiki": "https://en.wikipedia.org/wiki/Ouzo_Plomari",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17013411",
+   "name": "Papadopoulos",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Tavros",
+   "hq": [
+    37.9704,
+    23.6942
+   ],
+   "website": "http://papadopoulou.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Papadopoulos_S.A.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18692081",
+   "name": "Papadopoulos Publishing",
+   "cc": "gr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.epbooks.gr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16331094",
+   "name": "Patakis Publishers",
+   "cc": "gr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.patakis.gr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2096606",
+   "name": "Peiraiki-Patraiki",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Peiraiki-Patraiki",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3312",
+   "name": "Piraeus Bank",
+   "cc": "gr",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "OTC Markets Group",
+     "ticker": "PIRBF"
+    }
+   ],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.piraeusbank.gr/",
+   "lei": "213800OYHR1MPQ5VJL60",
+   "enwiki": "https://en.wikipedia.org/wiki/Piraeus_Bank",
+   "logo_file": "Piraeus Bank 2024 logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q628644",
+   "name": "Pitsos",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "home appliance"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.pitsos.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/Pitsos",
+   "logo_file": "Pitsos logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7200794",
+   "name": "Plaisio",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.plaisio.gr",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7238416",
+   "name": "Prapopoulos Bros s.a.",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.prapopoulos.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/Prapopoulos_Bros_s.a.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17076380",
+   "name": "Profile Software",
+   "cc": "gr",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext Athens",
+     "ticker": "PROF"
+    }
+   ],
+   "industries": [
+    "information technology"
+   ],
+   "isin": [
+    "GRS472003011"
+   ],
+   "hq_city": "Andrea Syngrou Avenue",
+   "website": "https://www.profilesw.com/",
+   "lei": "21380051TUVZ3KYK5G44",
+   "enwiki": "https://en.wikipedia.org/wiki/Profile_Systems_and_Software",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q22952859",
+   "name": "Protergia",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.protergia.gr/",
+   "lei": "213800DHU6PT1H6NEO59",
+   "enwiki": "https://en.wikipedia.org/wiki/Protergia",
+   "listed": false
+  },
+  {
+   "qid": "Q2113716",
+   "name": "Proton Bank",
+   "cc": "gr",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.protonbank.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Proton_Bank",
+   "logo_file": "ProtonBankLogo.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7255775",
+   "name": "Psichogios Publications",
+   "cc": "gr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Psichogios_Publications",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q326345",
+   "name": "Public Power Corporation SA",
+   "cc": "gr",
+   "types": [
+    "Q270791",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext Athens",
+     "ticker": "PPC"
+    }
+   ],
+   "industries": [
+    "energy industry",
+    "mining"
+   ],
+   "isin": [
+    "GRS434003000"
+   ],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.dei.gr/en",
+   "lei": "213800T9Y5XCOVRZ4Y57",
+   "enwiki": "https://en.wikipedia.org/wiki/Public_Power_Corporation",
+   "logo_file": "ΔΕΗ.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3566083",
+   "name": "Pyrkal",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Defense"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.eas.gr/pyrkal/index.htm",
+   "enwiki": "https://en.wikipedia.org/wiki/Pyrkal",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7366968",
+   "name": "Ros",
+   "cc": "gr",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Ros_(vehicles)",
+   "listed": false
+  },
+  {
+   "qid": "Q16737228",
+   "name": "S&B Industrial Minerals",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Attica",
+   "hq": [
+    38.0,
+    23.7
+   ],
+   "website": "http://www.sandb.gr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2220179",
+   "name": "Sanacorp Pharmahandel",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Planegg",
+   "hq": [
+    48.10472,
+    11.43056
+   ],
+   "website": "http://www.sanacorp.de/",
+   "logo_file": "Sanacorp Logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141699312",
+   "name": "Saos Ferries",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Alexandroupolis",
+   "hq": [
+    40.85,
+    25.86667
+   ],
+   "website": "https://saos.gr/en/",
+   "listed": false
+  },
+  {
+   "qid": "Q7421942",
+   "name": "Saracakis",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.saracakis.gr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141665484",
+   "name": "Saronic Ferries",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Piraeus",
+   "hq": [
+    37.943,
+    23.64694
+   ],
+   "website": "https://www.sf.gr/en",
+   "listed": false
+  },
+  {
+   "qid": "Q55195542",
+   "name": "Shakespearikon",
+   "cc": "gr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Thessaloniki",
+   "hq": [
+    40.64028,
+    22.93556
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30284956",
+   "name": "SingularLogic",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kifisia",
+   "hq": [
+    38.08333,
+    23.81667
+   ],
+   "website": "https://www.singularlogic.eu/",
+   "logo_file": "SingularLogic logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139411453",
+   "name": "SKAG",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing",
+    "papermaking"
+   ],
+   "isin": [],
+   "website": "https://www.skag.gr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7533773",
+   "name": "Skai Group",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Piraeus",
+   "hq": [
+    37.943,
+    23.64694
+   ],
+   "website": "http://www.skai.gr/skai-group/",
+   "enwiki": "https://en.wikipedia.org/wiki/Skai_Group",
+   "logo_file": "Skai-logo-new.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7536037",
+   "name": "Sklavenitis",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Peristeri",
+   "hq": [
+    38.01667,
+    23.68333
+   ],
+   "website": "https://www.sklavenitis.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/Sklavenitis",
+   "logo_file": "Sklavenitis Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18691850",
+   "name": "Skroutz",
+   "cc": "gr",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.skroutz.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/Skroutz",
+   "logo_file": "Skroutz-logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113614068",
+   "name": "Society for Epeirotic Studies",
+   "cc": "gr",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ioannina",
+   "hq": [
+    39.66361,
+    20.85222
+   ],
+   "website": "https://www.ehm.gr",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q206678",
+   "name": "Telekom (Greece)",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext Athens",
+     "ticker": "HTO"
+    },
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": "OTES"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "OTE"
+    }
+   ],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [
+    "GRS260333000"
+   ],
+   "hq_city": "Marousi",
+   "hq": [
+    38.05,
+    23.8
+   ],
+   "website": "http://www.ote.gr",
+   "lei": "ELPUFM0XZRZO4LFXW404",
+   "enwiki": "https://en.wikipedia.org/wiki/OTE_Group",
+   "logo_file": "Telekom GR logo 2026.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q21810652",
+   "name": "Terna Energy",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.terna-energy.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Terna_Energy",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q838387",
+   "name": "Titan Cement",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "cement"
+   ],
+   "isin": [
+    "GRS074084005"
+   ],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.titan.gr/",
+   "lei": "213800OREKC9BL58G144",
+   "enwiki": "https://en.wikipedia.org/wiki/Titan_Cement",
+   "logo_file": "Titan.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q505615",
+   "name": "Trans Adriatic Pipeline",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baar",
+   "hq": [
+    47.19556,
+    8.52639
+   ],
+   "website": "http://www.tap-ag.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Trans_Adriatic_Pipeline",
+   "listed": false
+  },
+  {
+   "qid": "Q1460263",
+   "name": "Tsantali",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Agios Pavlos",
+   "hq": [
+    40.34167,
+    23.06167
+   ],
+   "website": "http://www.tsantali.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tsantali",
+   "listed": false
+  },
+  {
+   "qid": "Q109331636",
+   "name": "Urban Road Transport SA",
+   "cc": "gr",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Agios Ioannis Renti",
+   "hq": [
+    37.96667,
+    23.66667
+   ],
+   "website": "https://www.osy.gr/",
+   "listed": false
+  },
+  {
+   "qid": "Q92208398",
+   "name": "Vakalo Art & Design College",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://vakalo.gr",
+   "logo_file": "Vakalo College logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7919334",
+   "name": "Velti",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile marketing"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.velti.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Velti",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4009757",
+   "name": "Ventouris Ferries",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Piraeus",
+   "hq": [
+    37.943,
+    23.64694
+   ],
+   "website": "http://www.ventouris.gr",
+   "enwiki": "https://en.wikipedia.org/wiki/Ventouris_Ferries",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17102414",
+   "name": "Vianex",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "http://www.vianex.gr/Default.aspx?ID=43",
+   "enwiki": "https://en.wikipedia.org/wiki/Vianex_S.A.",
+   "logo_file": "VianexLogoWiki.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2527380",
+   "name": "Viohalco",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext Athens",
+     "ticker": "BIO"
+    },
+    {
+     "exchange": "Euronext Brussels",
+     "ticker": "VIO"
+    }
+   ],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [
+    "BE0974271034"
+   ],
+   "hq_city": "Brussels metropolitan area",
+   "hq": [
+    50.84667,
+    4.3525
+   ],
+   "website": "https://www.viohalco.com/",
+   "lei": "549300U0BOLVY36TGJ31",
+   "enwiki": "https://en.wikipedia.org/wiki/Viohalco",
+   "logo_file": "Viohalco logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q836549",
+   "name": "Vivartia",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food service"
+   ],
+   "isin": [],
+   "hq_city": "Marousi",
+   "hq": [
+    38.05,
+    23.8
+   ],
+   "website": "http://www.vivartia.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Vivartia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2529841",
+   "name": "Vodafone Greece",
+   "cc": "gr",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Chalandri",
+   "hq": [
+    38.01667,
+    23.8
+   ],
+   "website": "https://www.vodafone.gr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Vodafone_Greece",
+   "logo_file": "Vodafone logo 2017.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1241776",
+   "name": "Xenia",
+   "cc": "gr",
+   "types": [
+    "Q1631129"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Xenia_(hotel)",
+   "logo_file": "Xenia-logo-1.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q58319012",
+   "name": "Zante Ferries",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Zante_Ferries",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8075185",
+   "name": "ZuluTrade",
+   "cc": "gr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services",
+    "fintech"
+   ],
+   "isin": [],
+   "hq_city": "Athens",
+   "hq": [
+    37.98417,
+    23.72806
+   ],
+   "website": "https://www.zulutrade.com",
+   "enwiki": "https://en.wikipedia.org/wiki/ZuluTrade",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

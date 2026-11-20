@@ -1,0 +1,1394 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "AM",
+ "count": 68,
+ "companies": [
+  {
+   "qid": "Q55602923",
+   "name": "ACBA Bank",
+   "cc": "am",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://www.acba.am/",
+   "enwiki": "https://en.wikipedia.org/wiki/Acba_Bank",
+   "logo_file": "Acba-bank-logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21658135",
+   "name": "Almastprof",
+   "cc": "am",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Armenia Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://almast.am",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4742492",
+   "name": "Ameriabank",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Armenia",
+   "hq": [
+    40.38333,
+    44.95
+   ],
+   "website": "https://ameriabank.am",
+   "enwiki": "https://en.wikipedia.org/wiki/Ameriabank",
+   "logo_file": "Armenia Bank building during night.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q34837683",
+   "name": "Antares",
+   "cc": "am",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://antares.am",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q685705",
+   "name": "Ararat",
+   "cc": "am",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.ybc.am/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ararat_(brandy)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4784263",
+   "name": "Ararat Cement",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ararat",
+   "hq": [
+    39.80944,
+    44.71444
+   ],
+   "website": "https://araratcement.am",
+   "enwiki": "https://en.wikipedia.org/wiki/Ararat_Cement",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4787755",
+   "name": "Ardshinbank",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://ardshinbank.am",
+   "enwiki": "https://en.wikipedia.org/wiki/Ardshinbank",
+   "logo_file": "Ardshinbank Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118330187",
+   "name": "Arevik",
+   "cc": "am",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://arevik.am",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60609529",
+   "name": "Armeconombank",
+   "cc": "am",
+   "types": [
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://aeb.am",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4034382",
+   "name": "Armenian Card",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://arca.am",
+   "enwiki": "https://en.wikipedia.org/wiki/Armenian_Card",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124405912",
+   "name": "Armenian Encyclopedia Publishing House",
+   "cc": "am",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Armenian_Encyclopedia_Publishing_House",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138269427",
+   "name": "ArmenTel",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q688486",
+   "name": "Arminco",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "internet service provider"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Arminco",
+   "logo_file": "Arminco logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4792453",
+   "name": "ArmSwissBank",
+   "cc": "am",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://armswissbank.am",
+   "enwiki": "https://en.wikipedia.org/wiki/ArmSwissBank",
+   "logo_file": "Armswiss.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16370800",
+   "name": "Artiktuf",
+   "cc": "am",
+   "types": [
+    "Q270791",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Artik",
+   "hq": [
+    40.61667,
+    43.95
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4829529",
+   "name": "Avshar Wine Factory",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "winemaking"
+   ],
+   "isin": [],
+   "hq_city": "Avshar",
+   "hq": [
+    39.85389,
+    44.68083
+   ],
+   "website": "http://www.avshar-wine.am/",
+   "enwiki": "https://en.wikipedia.org/wiki/Avshar_Wine_Factory",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13050639",
+   "name": "Ayastan",
+   "cc": "am",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q517156",
+   "name": "Be2",
+   "cc": "am",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Internet",
+    "Internet dating industry"
+   ],
+   "isin": [],
+   "hq_city": "Zurich",
+   "hq": [
+    47.37444,
+    8.54111
+   ],
+   "website": "http://www.be2.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Be2",
+   "logo_file": "Be2-logo-300px.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q126897103",
+   "name": "Cigaronne",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "tobacco industry"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://cigaronne.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116032580",
+   "name": "Converse Bank",
+   "cc": "am",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://conversebank.am",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123504990",
+   "name": "Docus",
+   "cc": "am",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Wilmington",
+   "hq": [
+    39.74833,
+    -75.55139
+   ],
+   "website": "https://docus.ai/",
+   "logo_file": "Docus Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q117840019",
+   "name": "EasyPay",
+   "cc": "am",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://easypay.am",
+   "logo_file": "Easypay logo AM.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24025106",
+   "name": "Etchmiadzin Paper Factory",
+   "cc": "am",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "pulp and paper industry"
+   ],
+   "isin": [],
+   "hq_city": "Vagharshapat",
+   "hq": [
+    40.17278,
+    44.2925
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Etchmiadzin_Paper_Factory",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17765349",
+   "name": "Evocabank",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://www.evoca.am",
+   "enwiki": "https://en.wikipedia.org/wiki/Evocabank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141255559",
+   "name": "Firebird AI",
+   "cc": "am",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "artificial intelligence"
+   ],
+   "isin": [],
+   "website": "https://www.firebird.ai/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q688936",
+   "name": "Gazprom Armenia",
+   "cc": "am",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://armenia-am.gazprom.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Gazprom_Armenia",
+   "logo_file": "Headquarters of ArmRosGazprom.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q121157611",
+   "name": "Gitutyun (publishing)",
+   "cc": "am",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138667393",
+   "name": "Globbing",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://am.globbing.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5513947",
+   "name": "GNC-Alfa",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/GNC-Alfa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q63441388",
+   "name": "Grand Candy",
+   "cc": "am",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://www.grandcandy.am/en/home.html",
+   "logo_file": "Grand candy.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3128876",
+   "name": "HayPost",
+   "cc": "am",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://www.haypost.am/",
+   "enwiki": "https://en.wikipedia.org/wiki/HayPost",
+   "logo_file": "HayPost logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19604320",
+   "name": "IDBank CJSC",
+   "cc": "am",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://idbank.am",
+   "listed": false
+  },
+  {
+   "qid": "Q13052991",
+   "name": "Idram",
+   "cc": "am",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://www.idram.am/",
+   "listed": false
+  },
+  {
+   "qid": "Q28136220",
+   "name": "Ijevan Wine-Brandy Factory",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "winemaking"
+   ],
+   "isin": [],
+   "hq_city": "Ijevan",
+   "hq": [
+    40.87556,
+    45.14917
+   ],
+   "website": "https://www.ijevangroup.am/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ijevan_Wine-Brandy_Factory",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55614443",
+   "name": "Inecobank",
+   "cc": "am",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://www.inecobank.am",
+   "enwiki": "https://en.wikipedia.org/wiki/InecoBank",
+   "logo_file": "Inecobank CJSC Official Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25484893",
+   "name": "Kanaker Aluminum Plant",
+   "cc": "am",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aluminium industry"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16568567",
+   "name": "Karabakh Telecom",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "internet service provider",
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Khankendi",
+   "hq": [
+    39.81528,
+    46.75194
+   ],
+   "website": "http://www.karabakhtelecom.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6433898",
+   "name": "Kotayk Brewery",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abovyan",
+   "hq": [
+    40.26741,
+    44.62656
+   ],
+   "website": "https://www.multigroup.am",
+   "enwiki": "https://en.wikipedia.org/wiki/Kotayk_Brewery",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28136273",
+   "name": "MAP Wine and Brandy Factory",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lenughi",
+   "hq": [
+    40.12389,
+    43.96528
+   ],
+   "website": "http://www.map.am/",
+   "enwiki": "https://en.wikipedia.org/wiki/MAP_Wine_and_Brandy_Factory",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6716052",
+   "name": "MIKA Cement",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Hrazdan",
+   "hq": [
+    40.5,
+    44.76667
+   ],
+   "website": "http://www.cement.am/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hrazdan_Cement",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q120800061",
+   "name": "Newmag",
+   "cc": "am",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://newmag.am/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107140362",
+   "name": "Onex",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://onex.am/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134311278",
+   "name": "Printinfo",
+   "cc": "am",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://www.printinfo.am/index.html",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28136295",
+   "name": "Proshyan Brandy Factory",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "alcohol industry"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://proshyan.am/",
+   "enwiki": "https://en.wikipedia.org/wiki/Proshyan_Brandy_Factory",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48988035",
+   "name": "Publiq",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "media company"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://publiq.network/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7277994",
+   "name": "Rusal Armenal",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aluminium industry"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Rusal_Armenal",
+   "listed": false
+  },
+  {
+   "qid": "Q120014587",
+   "name": "Sargis Khachents",
+   "cc": "am",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7390175",
+   "name": "SHARM Holding",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://sharmholding.am",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20795233",
+   "name": "South Caucasus Railway",
+   "cc": "am",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://www.railway.am/",
+   "enwiki": "https://en.wikipedia.org/wiki/South_Caucasus_Railway",
+   "logo_file": "South Caucasus Railway logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q117840236",
+   "name": "Telcell",
+   "cc": "am",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [
+    {
+     "exchange": "Armenia Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://telcell.am",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q487164",
+   "name": "Telecom Armenia",
+   "cc": "am",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Armenia Stock Exchange",
+     "ticker": "AMTL"
+    }
+   ],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://telecomarmenia.am",
+   "enwiki": "https://en.wikipedia.org/wiki/Telecom_Armenia",
+   "logo_file": "Telecom Armenia.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q119050498",
+   "name": "Tigran Mets Publishing House",
+   "cc": "am",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://tigran-mets.am/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22909449",
+   "name": "TotoGaming",
+   "cc": "am",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "Gaming"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://www.totogaming.am",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13054189",
+   "name": "Ucom",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://www.ucom.am/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ucom",
+   "logo_file": "Ucom Armenia Logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116033349",
+   "name": "Unibank",
+   "cc": "am",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://unibank.am",
+   "enwiki": "https://en.wikipedia.org/wiki/Unibank_(Armenia)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28136284",
+   "name": "Vedi Alco Winery",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry",
+    "winemaking"
+   ],
+   "isin": [],
+   "hq_city": "Ginevet",
+   "hq": [
+    39.9,
+    44.63333
+   ],
+   "website": "https://vedi-alco.am",
+   "enwiki": "https://en.wikipedia.org/wiki/Vedi_Alco_Winery",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q119972006",
+   "name": "VEON Armenia",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107229111",
+   "name": "Viasphere Technopark",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "technology industry"
+   ],
+   "isin": [],
+   "hq_city": "Arshakunyats Avenue",
+   "hq": [
+    40.1669,
+    44.5058
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16486896",
+   "name": "Viva Armenia",
+   "cc": "am",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "cellular network",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Armenia",
+   "hq": [
+    40.38333,
+    44.95
+   ],
+   "website": "https://www.viva.am/",
+   "logo_file": "Viva Armenia logo.webp",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28136242",
+   "name": "Voskevaz Winery",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Voskevaz",
+   "hq": [
+    40.27583,
+    44.29861
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85983660",
+   "name": "VTB",
+   "cc": "am",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://www.vtb.am",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1687645",
+   "name": "Yerevan Ararat Wine Factory",
+   "cc": "am",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "winemaking"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://brandy.am",
+   "enwiki": "https://en.wikipedia.org/wiki/Yerevan_Ararat_Brandy_Factory",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1974145",
+   "name": "Yerevan Brandy Company",
+   "cc": "am",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://araratbrandy.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Yerevan_Brandy_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55663505",
+   "name": "Yerevan City",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Armenia",
+   "hq": [
+    40.38333,
+    44.95
+   ],
+   "website": "https://www.yerevan-city.am/",
+   "logo_file": "Yerevan City logo low-res.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8052576",
+   "name": "Yerevan Computer Research and Development Institute",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://mergelyan.am",
+   "enwiki": "https://en.wikipedia.org/wiki/Yerevan_Computer_Research_and_Development_Institute",
+   "logo_file": "Севан (Ереванский НИИ Математических машин) 1967-1990.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21658193",
+   "name": "Yerevan Jewellery Plant",
+   "cc": "am",
+   "types": [
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Armenia Stock Exchange",
+     "ticker": "EVG1"
+    }
+   ],
+   "industries": [
+    "jewelry industry"
+   ],
+   "isin": [],
+   "website": "http://yerjewel.com/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q25486433",
+   "name": "Zangak",
+   "cc": "am",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yerevan",
+   "hq": [
+    40.18139,
+    44.51444
+   ],
+   "website": "https://zangak.am",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q476296",
+   "name": "Zangezur Copper and Molybdenum Combine",
+   "cc": "am",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Qajaran",
+   "hq": [
+    39.15111,
+    46.16
+   ],
+   "website": "http://zcmc.am/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zangezur_Copper_and_Molybdenum_Combine",
+   "listed": false
+  }
+ ]
+}

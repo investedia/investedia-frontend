@@ -1,0 +1,1696 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "AZ",
+ "count": 82,
+ "companies": [
+  {
+   "qid": "Q55702037",
+   "name": "\"Elm\"",
+   "cc": "az",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://science.gov.az/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60522038",
+   "name": "ABAD public legal entity",
+   "cc": "az",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://abad.gov.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/ABAD_(statutory_corporation)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4033236",
+   "name": "Access Bank",
+   "cc": "az",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "http://www.accessbank.az/en",
+   "enwiki": "https://en.wikipedia.org/wiki/AccessBank_Azerbaijan",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131785147",
+   "name": "AFB Bank",
+   "cc": "az",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "website": "https://afb.az",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16824549",
+   "name": "Akkord Industry Construction Investment Corporation",
+   "cc": "az",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "construction",
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "website": "http://akkord.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/Akkord_Industry_Construction_Investment_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97224746",
+   "name": "Araz Supermarket",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://www.arazmarket.az/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q10955785",
+   "name": "Avia-agregat (Baku)",
+   "cc": "az",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aircraft industry"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://mdi.gov.az/ru/uchrezhdeniya-4/zavod-avia-agregat-23",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115766014",
+   "name": "Avrora Qrup",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "http://avrora.az/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110543268",
+   "name": "AzDimension",
+   "cc": "az",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "game"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://azdimension.az/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12836440",
+   "name": "Azerbaijan Caspian Shipping Company",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "freight transport"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://www.asco.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/Azerbaijan_Caspian_Shipping_Company",
+   "logo_file": "ASCO Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16416961",
+   "name": "Azerbaijan Industry Bank",
+   "cc": "az",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "website": "https://www.asb.az/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97221950",
+   "name": "Azerbaijan Investment Company",
+   "cc": "az",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "investment"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "http://aic.az",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1960184",
+   "name": "Azerbaijan Press Agency",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://apa.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/Azerbaijani_Press_Agency",
+   "logo_file": "Apa.az logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4679348",
+   "name": "Azerbaijan Publishing House",
+   "cc": "az",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Azernashr",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q617956",
+   "name": "Azerbaijan Railways",
+   "cc": "az",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "rail and rope guided transport"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://www.ady.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/Azerbaijan_Railways",
+   "logo_file": "Azerbaycan Demir Yollari logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2639931",
+   "name": "Azercell",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://www.azercell.com/az/",
+   "enwiki": "https://en.wikipedia.org/wiki/Azercell",
+   "logo_file": "Azercell logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12836929",
+   "name": "Azercosmos",
+   "cc": "az",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "space industry",
+    "telecommunications company"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://azercosmos.az",
+   "enwiki": "https://en.wikipedia.org/wiki/Azercosmos",
+   "logo_file": "Azercosmos logo 2021.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4832456",
+   "name": "Azerenerji",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Hasan bey Zardabi Avenue",
+   "website": "http://www.azerenerji.gov.az/index.php?lang=en",
+   "enwiki": "https://en.wikipedia.org/wiki/Azerenerji",
+   "logo_file": "AzerEnerji Loqosu.png",
+   "founded": null,
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q17005152",
+   "name": "AzeriCard",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Azerbaijan",
+   "hq": [
+    40.3,
+    47.7
+   ],
+   "website": "https://www.azericard.com/ru",
+   "enwiki": "https://en.wikipedia.org/wiki/AzeriCard",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12836321",
+   "name": "Azeurotel",
+   "cc": "az",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134699479",
+   "name": "AzOil",
+   "cc": "az",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "construction industry",
+    "natural gas",
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Sumgayit Chemical Industrial Park",
+   "lei": "789000TZGA7P2TU3FX81",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4034661",
+   "name": "Azpetrol",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "http://www.azpetrol.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Azpetrol",
+   "logo_file": "Azpetrol loqo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3207159",
+   "name": "AzSamand",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Shamakhi",
+   "hq": [
+    40.63389,
+    48.63917
+   ],
+   "website": "http://www.evsengroup.az/en/azsamand.php",
+   "enwiki": "https://en.wikipedia.org/wiki/AzSamand",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16416758",
+   "name": "Azərbaycan Meliorasiya və Su Təsərrüfatı ASC",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.mst.gov.az",
+   "enwiki": "https://en.wikipedia.org/wiki/Azerbaijan_Amelioration_and_Water_Farm_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2660860",
+   "name": "Azərpoçt",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://www.azerpost.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/Az%C9%99rpo%C3%A7t",
+   "logo_file": "Logo of Azerpost.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1984981",
+   "name": "Bakcell",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Azerbaijan",
+   "hq": [
+    40.3,
+    47.7
+   ],
+   "website": "http://www.bakcell.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bakcell",
+   "logo_file": "BKC Logo Icon.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113830288",
+   "name": "Baku Electronics",
+   "cc": "az",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "consumer electronics industry",
+    "electronics",
+    "retail",
+    "transport"
+   ],
+   "isin": [],
+   "hq_city": "Azerbaijan",
+   "hq": [
+    40.3,
+    47.7
+   ],
+   "website": "https://www.bakuelectronics.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/Baku_Electronics",
+   "logo_file": "Baku Electronics.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q141808680",
+   "name": "Baku Media Center",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "film industry"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://bakumediacenter.az",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q213271",
+   "name": "Baku Metro",
+   "cc": "az",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://metro.gov.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/Baku_Metro",
+   "logo_file": "Baku Subway logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134693466",
+   "name": "Baku Petroleum Machine-Building Plant",
+   "cc": "az",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "Natural gas industry in Azerbaijan",
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Zabrat",
+   "hq": [
+    40.47827,
+    49.94911
+   ],
+   "website": "https://bakneftmash.az/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108940206",
+   "name": "Baku Shipyard",
+   "cc": "az",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "freight transport",
+    "shipbuilding"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://bakushipyard.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Baku_Shipyard",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4288376",
+   "name": "Bank ABB",
+   "cc": "az",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://abb-bank.az/en/ferdi",
+   "enwiki": "https://en.wikipedia.org/wiki/International_Bank_of_Azerbaijan",
+   "logo_file": "ABB Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97228618",
+   "name": "Bank BTB",
+   "cc": "az",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial service activities, except insurance and pension funding"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://www.btb.az/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12837401",
+   "name": "Bank Eurasia",
+   "cc": "az",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "banking",
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://bankavrasiya.az",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4034837",
+   "name": "Bank of Baku",
+   "cc": "az",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Azerbaijan",
+   "hq": [
+    40.3,
+    47.7
+   ],
+   "website": "http://www.bankofbaku.com",
+   "logo_file": "Bank of Baku logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4034838",
+   "name": "Bank Respublika",
+   "cc": "az",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://bankrespublika.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Respublika",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5049114",
+   "name": "Caspian International Petroleum Company",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Caspian_International_Petroleum_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135906277",
+   "name": "Category:Building of the textile factory of Taghiyev",
+   "cc": "az",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "clothing industry",
+    "textile industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16249319",
+   "name": "CaTel",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "http://www.catel.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/Caspian_American_Telecom",
+   "listed": false
+  },
+  {
+   "qid": "Q5252755",
+   "name": "DekaBank",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "http://www.dekabank.az/?/",
+   "enwiki": "https://en.wikipedia.org/wiki/DekaBank_(Azerbaijan)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12839044",
+   "name": "E-Government Portal",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.e-gov.az",
+   "listed": false
+  },
+  {
+   "qid": "Q25545704",
+   "name": "Elm ve Tehsil",
+   "cc": "az",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Muslim Magomaev street",
+   "hq": [
+    40.36629,
+    49.83406
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123051566",
+   "name": "Expressbank",
+   "cc": "az",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "banking",
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://www.expressbank.az",
+   "logo_file": "Expressbanklogotip.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2084484",
+   "name": "Ganja Auto Plant",
+   "cc": "az",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Ganja",
+   "hq": [
+    40.68278,
+    46.36056
+   ],
+   "website": "http://ganjaauto.gov.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ganja_Auto_Plant",
+   "logo_file": "Logo of the Ganja Automobile Plant.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q100289439",
+   "name": "High Technology Park",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://ytp.az",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108324658",
+   "name": "Irshad",
+   "cc": "az",
+   "types": [
+    "Q431289",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "consumer electronics industry",
+    "electronics",
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://irshad.az/",
+   "logo_file": "Irshad logo (3).png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6366720",
+   "name": "Kapital Bank",
+   "cc": "az",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Azerbaijan",
+   "hq": [
+    40.3,
+    47.7
+   ],
+   "website": "http://www.kapitalbank.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kapital_Bank",
+   "logo_file": "Kapital Bank logo 2025.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141808681",
+   "name": "Kristal Baku",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://kristal.az",
+   "listed": false
+  },
+  {
+   "qid": "Q111271602",
+   "name": "Leobank",
+   "cc": "az",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://www.leobank.az/az",
+   "logo_file": "Logo of Leobank.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138024100",
+   "name": "MS Oil",
+   "cc": "az",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "natural gas",
+    "petroleum"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "http://msdis.az",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3179765",
+   "name": "Nakhchivan Automobile Plant",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Nakhchivan",
+   "hq": [
+    39.20889,
+    45.41222
+   ],
+   "website": "http://naz.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nakhchivan_Automobile_Plant",
+   "logo_file": "Nakhchivan Automobile Plant has become the eighth Official Supporter of Baku 2015 1(1) (2).jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2640427",
+   "name": "Nar",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "http://www.nar.az",
+   "enwiki": "https://en.wikipedia.org/wiki/Nar_(company)",
+   "logo_file": "Nar-new-logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12843426",
+   "name": "Nurlan",
+   "cc": "az",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Muslim Magomaev street",
+   "hq": [
+    40.36629,
+    49.83406
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20727841",
+   "name": "PASHA Bank",
+   "cc": "az",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "http://www.pashabank.ge",
+   "logo_file": "PASHA Bank Georgia logo (English).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13476354",
+   "name": "PASHA Holding",
+   "cc": "az",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "bank",
+    "construction",
+    "financial services",
+    "insurance",
+    "technology"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "http://www.pasha-holding.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/PASHA_Holding",
+   "logo_file": "PH aze.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25536780",
+   "name": "Qanun",
+   "cc": "az",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yasamal raion",
+   "hq": [
+    40.37972,
+    49.80722
+   ],
+   "website": "http://www.qanun.az/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20583050",
+   "name": "Qazax Cement Factory",
+   "cc": "az",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q31309776",
+   "name": "Qedim Qala",
+   "cc": "az",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "http://qedimqala.az/index.php",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16416150",
+   "name": "Rabita Bank",
+   "cc": "az",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "banking in Azerbaijan"
+   ],
+   "isin": [],
+   "hq_city": "28 May Street",
+   "hq": [
+    40.3792,
+    49.8581
+   ],
+   "website": "https://www.rabitabank.com/?hl=az/",
+   "logo_file": "Rabitəbankın loqosu.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20742288",
+   "name": "Report Information Agency",
+   "cc": "az",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "http://report.az/en/",
+   "logo_file": "Report News Agency.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31298359",
+   "name": "Research Center of \"Azerbaijan National Encyclopaedia\"",
+   "cc": "az",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "http://ame-merkez.gov.az/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131718351",
+   "name": "Savalan",
+   "cc": "az",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "furniture"
+   ],
+   "isin": [],
+   "hq_city": "Keşlə",
+   "hq": [
+    40.39645,
+    49.89599
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135538724",
+   "name": "Savalan Wine Factory",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Qabala",
+   "hq": [
+    40.98139,
+    47.84583
+   ],
+   "website": "https://savalan.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/Savalan_Wine_Factory",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31295616",
+   "name": "Siemens brothers copper-smelting plant",
+   "cc": "az",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mining of metal ores"
+   ],
+   "isin": [],
+   "hq_city": "Gadabay",
+   "hq": [
+    40.56556,
+    45.81611
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Siemens_brothers_copper-smelting_plant",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56085340",
+   "name": "SOCAR Gas Processing Plant",
+   "cc": "az",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/SOCAR_Gas_Processing_Plant",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18670978",
+   "name": "State Fund for Development of IT",
+   "cc": "az",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "http://www.ictfund.gov.az",
+   "enwiki": "https://en.wikipedia.org/wiki/State_Fund_for_Development_of_IT",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1622293",
+   "name": "State Oil Company of Azerbaijan Republic",
+   "cc": "az",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://socar.az/az/home",
+   "lei": "2549002HARR1VE257O76",
+   "enwiki": "https://en.wikipedia.org/wiki/SOCAR",
+   "logo_file": "Logo of SOCAR.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4146910",
+   "name": "State Oil Fund of Azerbaijan",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://www.oilfund.az",
+   "enwiki": "https://en.wikipedia.org/wiki/State_Oil_Fund_of_Azerbaijan",
+   "logo_file": "State Oil Fund of Azerbaijan logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141323739",
+   "name": "Tamstore",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Azerbaijan",
+   "hq": [
+    40.3,
+    47.7
+   ],
+   "website": "https://www.tamstore.az/az",
+   "logo_file": "Tamstore loqotip.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110101193",
+   "name": "TEAS Press",
+   "cc": "az",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "book publishing"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "http://www.teaspress.az",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16417547",
+   "name": "Texnika Bank",
+   "cc": "az",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18211166",
+   "name": "Topaz",
+   "cc": "az",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "gambling"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "http://www.topaz.az",
+   "enwiki": "https://en.wikipedia.org/wiki/Topaz_(bookmaker)",
+   "logo_file": "Topazlogo.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12251183",
+   "name": "Trend News Agency",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://www.trend.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/Trend_News_Agency",
+   "logo_file": "Trend News Agency logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7853691",
+   "name": "Turan Information Agency",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "news agency"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "http://www.turan.az",
+   "enwiki": "https://en.wikipedia.org/wiki/Turan_Information_Agency",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65279422",
+   "name": "TuranBank",
+   "cc": "az",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "banking",
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://turanbank.az/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12846840",
+   "name": "Təhsil nəşriyyatı",
+   "cc": "az",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4052388",
+   "name": "Unibank",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "http://www.unibank.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/Unibank_(Azerbaijan)",
+   "logo_file": "Unibank Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25542791",
+   "name": "Veyseloglu Group of Companies",
+   "cc": "az",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economic production",
+    "industrial manufacturing",
+    "logistics",
+    "retail",
+    "trade"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "http://www.veyseloglu.az",
+   "enwiki": "https://en.wikipedia.org/wiki/Veyseloglu_Group_of_Companies",
+   "logo_file": "Veyseloglu logo AZ.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q105710535",
+   "name": "WorldTelecom",
+   "cc": "az",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electronics"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://w-t.az/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12847458",
+   "name": "XalqBank",
+   "cc": "az",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "website": "https://www.xalqbank.az",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q12847882",
+   "name": "Yapi Kredi Bank Azerbaijan",
+   "cc": "az",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "banking",
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Baku",
+   "hq": [
+    40.36666,
+    49.83518
+   ],
+   "website": "https://www.yapikredi.com.az/",
+   "enwiki": "https://en.wikipedia.org/wiki/Yapi_Kredi_Bank_Azerbaijan",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q109096315",
+   "name": "Yelo Bank",
+   "cc": "az",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "banking",
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://www.yelo.az/",
+   "founded": null,
+   "listed": true
+  }
+ ]
+}

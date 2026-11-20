@@ -1,0 +1,968 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "GE",
+ "count": 51,
+ "companies": [
+  {
+   "qid": "Q64080034",
+   "name": "Algani",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "http://algani.ge/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107750529",
+   "name": "Alt-Info",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Alt-Info",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16365077",
+   "name": "Archi Group",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "real estate development"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "https://archi.ge/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Archi_Group",
+   "logo_file": "Archi logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55653978",
+   "name": "Aversi",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "https://www.aversi.ge",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4840513",
+   "name": "Badagoni",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "wine industry"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "https://badagoni.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Badagoni",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12081275",
+   "name": "Bakhmaro",
+   "cc": "ge",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chokhatauri",
+   "hq": [
+    42.01889,
+    42.23944
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q2469733",
+   "name": "Bank of Georgia",
+   "cc": "ge",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Georgian Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "https://bankofgeorgia.ge",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Georgia",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16365625",
+   "name": "Basisbank",
+   "cc": "ge",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://bb.ge",
+   "listed": false
+  },
+  {
+   "qid": "Q25541238",
+   "name": "Cartu Bank",
+   "cc": "ge",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://cartubank.ge",
+   "listed": false
+  },
+  {
+   "qid": "Q5054299",
+   "name": "Caucasus Online",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "http://www.co.ge/",
+   "enwiki": "https://en.wikipedia.org/wiki/Caucasus_Online",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4044421",
+   "name": "Cellfie Mobile",
+   "cc": "ge",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "https://cellfie.ge/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125957178",
+   "name": "Crystalbet",
+   "cc": "ge",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Crystalbet.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123483280",
+   "name": "Diogene Publishers",
+   "cc": "ge",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://diogene.ge/ka",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25540512",
+   "name": "Dugladze Wine Company",
+   "cc": "ge",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "alcohol industry"
+   ],
+   "isin": [],
+   "hq_city": "Orkhevi",
+   "hq": [
+    41.69416,
+    44.92537
+   ],
+   "website": "https://dwc.ge/en/home",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16368697",
+   "name": "Elf Publishing",
+   "cc": "ge",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4038791",
+   "name": "Fix Price",
+   "cc": "ge",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Astana International Exchange",
+     "ticker": "FIXP.Y"
+    },
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": "FIXP"
+    },
+    {
+     "exchange": "Moscow Exchange",
+     "ticker": "FIXP"
+    }
+   ],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Kazakhstan",
+   "hq": [
+    48.0,
+    68.0
+   ],
+   "website": "https://fix-price.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Fix_Price",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4034694",
+   "name": "Galt & Taggart",
+   "cc": "ge",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "https://galtandtaggart.com/en",
+   "enwiki": "https://en.wikipedia.org/wiki/Galt_%26_Taggart",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16366609",
+   "name": "Ganatleba",
+   "cc": "ge",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3646611",
+   "name": "Geocell",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "https://geocell.ge/en",
+   "enwiki": "https://en.wikipedia.org/wiki/Geocell",
+   "logo_file": "Geocell logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17067547",
+   "name": "Georgian Co-Investment Fund",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "http://www.gcfund.ge",
+   "enwiki": "https://en.wikipedia.org/wiki/Georgian_Co-Investment_Fund",
+   "logo_file": "GCF logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5548032",
+   "name": "Georgian Manganese",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "manganese mining"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "https://www.gm.ge/",
+   "enwiki": "https://en.wikipedia.org/wiki/Georgian_Manganese_LLC",
+   "listed": false
+  },
+  {
+   "qid": "Q115880",
+   "name": "Georgian Railway",
+   "cc": "ge",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "https://www.railway.ge/",
+   "enwiki": "https://en.wikipedia.org/wiki/Georgian_Railway",
+   "logo_file": "Georgian Railways logo (2016-present).svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5548051",
+   "name": "Georgian Steel",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Rustavi",
+   "hq": [
+    41.54361,
+    45.01167
+   ],
+   "website": "https://www.rustavisteel.ge/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rustavi_Steel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136784191",
+   "name": "GM Pharma",
+   "cc": "ge",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "https://gmpharma.com",
+   "logo_file": "GM Pharma ლოგო.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q105117526",
+   "name": "Helios Energy Georgia",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Helios-logo.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q125758779",
+   "name": "Indigo",
+   "cc": "ge",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://indigo.com.ge/",
+   "listed": false
+  },
+  {
+   "qid": "Q123485044",
+   "name": "Intelekti Publishing",
+   "cc": "ge",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://intelekti.ge",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16377042",
+   "name": "Irakli Abashidze Main Scientific Editorial Board of the Georgian Encyclopedia",
+   "cc": "ge",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://georgianencyclopedia.ge",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17060777",
+   "name": "JSC RMG Copper",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "http://www.richmetalsgroup.com",
+   "enwiki": "https://en.wikipedia.org/wiki/JSC_RMG_Copper",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123485052",
+   "name": "Klio Publishing House",
+   "cc": "ge",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://klio.ge",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6541585",
+   "name": "Liberty Bank",
+   "cc": "ge",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "https://libertybank.ge",
+   "enwiki": "https://en.wikipedia.org/wiki/Liberty_Bank_(Georgia)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6732495",
+   "name": "MagtiCom",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "http://www.magticom.ge/",
+   "enwiki": "https://en.wikipedia.org/wiki/MagtiCom",
+   "logo_file": "Magti- 2020-logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24687660",
+   "name": "Main Channel",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "http://mtavari.tv/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mtavari_Arkhi",
+   "listed": false
+  },
+  {
+   "qid": "Q99850395",
+   "name": "Meama",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://meama.ge",
+   "listed": false
+  },
+  {
+   "qid": "Q89207915",
+   "name": "Milton group",
+   "cc": "ge",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Milton_group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4334017",
+   "name": "Mtatsminda (publisher)",
+   "cc": "ge",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "https://mtatsminda.net/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2063796",
+   "name": "Nabeglavi",
+   "cc": "ge",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.nabeghlavi.ge/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nabeghlavi",
+   "listed": false
+  },
+  {
+   "qid": "Q2001669",
+   "name": "National Bank of the Republic of Abkhazia",
+   "cc": "ge",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sokhumi",
+   "hq": [
+    43.00361,
+    41.01917
+   ],
+   "website": "https://www.nb-ra.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Bank_of_the_Republic_of_Abkhazia",
+   "logo_file": "National Bank of the Republic of Abkhazia logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116181535",
+   "name": "Palitra L",
+   "cc": "ge",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "https://www.palitral.ge/",
+   "listed": false
+  },
+  {
+   "qid": "Q122763256",
+   "name": "ProCredit Bank",
+   "cc": "ge",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://procreditbank.ge",
+   "logo_file": "Logo ProCredit Bank.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q140634848",
+   "name": "RKENA",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48778782",
+   "name": "Sarajishvili",
+   "cc": "ge",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "http://www.sarajishvili.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Sarajishvili",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12869269",
+   "name": "Siesta Books",
+   "cc": "ge",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18274252",
+   "name": "STC Delta",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "defence industry"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "https://delta.gov.ge",
+   "enwiki": "https://en.wikipedia.org/wiki/STC_Delta",
+   "logo_file": "DELTA NEW LOGO.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2620975",
+   "name": "TBC Bank",
+   "cc": "ge",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "https://www.valuto.ge",
+   "enwiki": "https://en.wikipedia.org/wiki/TBC_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61354702",
+   "name": "Tbilisi Transport Company",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "passenger transport"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "https://ttc.com.ge/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2899649",
+   "name": "Telasi",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "http://www.telasi.ge/en",
+   "enwiki": "https://en.wikipedia.org/wiki/Telasi",
+   "listed": false
+  },
+  {
+   "qid": "Q130220168",
+   "name": "unipay",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://unipay.com",
+   "logo_file": "UniPAYlogo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113381618",
+   "name": "WhiteBIT",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://whitebit.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/WhiteBIT_(company)",
+   "logo_file": "WhiteBIT official logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8027737",
+   "name": "Wissol",
+   "cc": "ge",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Tbilisi",
+   "hq": [
+    41.7225,
+    44.7925
+   ],
+   "website": "http://wissol.ge",
+   "enwiki": "https://en.wikipedia.org/wiki/Wissol_Petroleum",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16369632",
+   "name": "Zestaponi Ferroalloy Factory",
+   "cc": "ge",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  }
+ ]
+}
