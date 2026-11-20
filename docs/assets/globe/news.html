@@ -4019,13 +4019,17 @@ void main(){
   float X=d.x,Y=-d.y,Zd=sqrt(1.-r2),c0=cos(rot.y),s0=sin(rot.y);
   float sp=c0*Y+s0*Zd, phi=asin(clamp(sp,-1.,1.)), cpcd=-s0*Y+c0*Zd, lam=rot.x+atan(X,cpcd);
   vec2 uv=vec2(fract((lam+PI)/(2.*PI)),(PI*.5-phi)/PI);
+  // Investedia grade (owner 20 Nov 2026): satellite detail, black-and-orange identity. No blue oceans, no green land.
   vec3 day=texture2D(dayT,uv).rgb; float lum=dot(day,vec3(.299,.587,.114));
-  vec3 base=mix(vec3(lum),day,.62)*.46;                                   // muted, darker satellite colour
+  float sea=smoothstep(.04,.16,day.b-day.r)*(1.-smoothstep(.28,.45,lum));  // Blue Marble oceans are dark blue: detect them
+  float tone=.055+.2*smoothstep(.05,.7,lum);                               // charcoal range, terrain kept as light/dark texture
+  vec3 base=vec3(tone)*vec3(1.,.985,.96);                                    // neutral graphite, a hint warm
+  base=mix(base,vec3(.012,.013,.017),sea);                                   // oceans almost black
   float cp=cos(phi), sdot=sin(phi)*sun.z+cp*cos(lam-sun.x)*sun.y;          // cos(angle to the sun)
   float dayk=smoothstep(-.07,.16,sdot);
-  vec3 col=base*mix(.13,1.,dayk)*mix(.78,1.,Zd);                           // night side darker, slight limb darkening
+  vec3 col=base*mix(.34,1.,dayk)*mix(.8,1.,Zd);                          // night side darker but land still readable                           // night side darker, slight limb darkening
   float L=texture2D(nightT,uv).r; L=pow(max(0.,(L-.10)/.90),1.35);         // city lights only (drops Black Marble's faint ground)
-  col+=vec3(1.,.72,.38)*L*1.7*(1.-dayk);
+  col+=vec3(1.,.86,.64)*L*1.15*(1.-dayk);                                 // warm white / muted amber, below the orange markers
   float edge=smoothstep(1.,1.-2.2/(g.z*dpr),sqrt(r2));                     // 1-2 device pixel antialiased rim
   gl_FragColor=vec4(col*edge,edge);
 }`;
