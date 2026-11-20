@@ -1778,7 +1778,7 @@ function paintSheet(h, rest) {  // rest = a resting position (also re-pads the a
 }
 let cyT = 0, W = 0, H = 0, R0 = 0, R = 0, cx = 0, cy = 0, Z = 1, Zt = 1, lon0 = -15, lat0 = 24, ZMAX = 6, globeBox = { left: 0, top: 0, right: 0, bottom: 0 };
 function size() {
-  const dpr = Math.min(2, devicePixelRatio || 1); W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  const dpr = Math.min(3, devicePixelRatio || 1); W = innerWidth; /* owner 20 Nov 2026: full density on 3x phones (was capped at 2) */ H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   // Measure the real controls: the drawing area stays clear of every panel and filter.
   if (EMBED) { const q = new URLSearchParams(location.search); cx = W * (+q.get('cx') || .5); cyT = H * (+q.get('cy') || .5); R0 = Math.min(W, H) * (+q.get('r') || .42); globeBox = { left: 0, top: 0, right: W, bottom: H }; }
   else if (phone()) {
@@ -2948,6 +2948,7 @@ function frame(t) {
   ctx.fillStyle = at; ctx.beginPath(); ctx.arc(cx, cy, R * 1.22, 0, 7); ctx.fill();
   const sg = ctx.createRadialGradient(cx - R * .4, cy - R * .45, R * .05, cx, cy, R); sg.addColorStop(0, GB.s0); sg.addColorStop(1, GB.s1);
   ctx.fillStyle = sg; ctx.beginPath(); ctx.arc(cx, cy, R, 0, 7); ctx.fill(); ctx.strokeStyle = `rgba(${GB.rimRGB},${GB.rim})`; ctx.lineWidth = GB.rimW; ctx.shadowColor = `rgba(${GB.glow})`; ctx.shadowBlur = GB.blur; ctx.stroke(); ctx.shadowBlur = 0;
+  ctx.shadowBlur = 0; const EGL = window.EarthGL && EarthGL.draw(ctx, W, H, cx, cy, R, lon0, lat0, sunPoint(Date.now()));  // NASA satellite Earth (owner 20 Nov 2026); false = previous 2D globe
   ctx.save(); ctx.beginPath(); ctx.arc(cx, cy, R, 0, 7); ctx.clip();
   // faint latitude / longitude lines
   if (GB.grid > 0 && Z < 2.6) { ctx.beginPath(); for (let lo = -180; lo < 180; lo += 30) { let pen = false; for (let la = -80; la <= 80; la += 4) { const [x, y, z] = proj(la * rad, lo * rad); if (z <= 0) { pen = false; continue; } pen ? ctx.lineTo(x, y) : ctx.moveTo(x, y); pen = true; } }
@@ -2962,12 +2963,12 @@ function frame(t) {
   }
   const la = Math.min(.07, .012 + (Z - 1) * .02) + GB.land;
   const map = Z >= 1.8 ? countries : overview;
-  ctx.beginPath(); for (const c of map) for (const rr of c.rr) ringPath(rr, true); ctx.fillStyle = `rgba(255,255,255,${la})`; ctx.fill('evenodd');
-  drawDayNight(map);  // real-time sunlight and night with night lights, above the land so night land is darker, the same in News, Markets and Projects (owner 20 Nov 2026)
+  if (!EGL) { ctx.beginPath(); for (const c of map) for (const rr of c.rr) ringPath(rr, true); ctx.fillStyle = `rgba(255,255,255,${la})`; ctx.fill('evenodd');
+  drawDayNight(map); }  // real-time sunlight and night with night lights, above the land so night land is darker, the same in News, Markets and Projects (owner 20 Nov 2026)
   if (!EMBED && MKTON) { const n = nightPath(); ctx.save(); ctx.strokeStyle = 'rgba(255,160,100,.22)'; ctx.lineWidth = 1; ctx.stroke(n.path); ctx.restore(); }  // Market hours layer: the day/night line (the shade itself is drawn by drawDayNight)
   const impactFocus = sel || arcHover?.article || (hoverC && drawn.find(d => d.key === hoverC)?.list.length === 1 ? drawn.find(d => d.key === hoverC).list[0] : null);
   // countries with news in the current filters get a soft orange tint
-  for (const c of map) { const n = activity[c.name]; if (n) countryShape(c, `rgba(255,122,26,${(.035 + .025 * Math.min(4, n)).toFixed(3)})`)  /* owner 20 Nov 2026: orange zones back (news countries) */; }
+  for (const c of map) { const n = activity[c.name]; if (n) EGL ? countryShape(c, `rgba(255,122,26,${(.012 + .006 * Math.min(4, n)).toFixed(3)})`, `rgba(255,122,26,${(.1 + .035 * Math.min(4, n)).toFixed(3)})`, .7) : countryShape(c, `rgba(255,122,26,${(.035 + .025 * Math.min(4, n)).toFixed(3)})`)  /* owner 20 Nov 2026: orange zones back (news countries) */; }
   ctx.beginPath(); for (const c of map) for (const rr of c.rr) ringPath(rr, false); ctx.strokeStyle = `rgba(255,255,255,${Math.min(.2, .07 + (Z - 1) * .04) + GB.line})`; ctx.lineWidth = .7; ctx.stroke();
   for (const { impact, country } of impactTargets(impactFocus)) countryShape(country, `rgba(${IMPACT_COLOR[impact.direction]},.10)`);
   if (hoverCountry && hoverCountry !== selCountry) countryShape(hoverCountry, 'rgba(255,255,255,.05)', 'rgba(255,255,255,.35)');
@@ -3226,6 +3227,7 @@ setInterval(() => { if (view.k === 'top' && (panelTab === 'markets' || panelTab 
 /* PANELS */
 /* BRIEFING */
 /* DASHBOARD */
+/* EARTHGL */
 requestAnimationFrame(frame);
 </script>
 <script id="pj-search-js">/* owner 17 Nov 2026: phone full-screen project search (countries, projects with pictures, companies) */
