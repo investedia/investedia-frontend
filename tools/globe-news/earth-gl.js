@@ -32,7 +32,7 @@ void main(){
   float inD=dk*smoothstep(0.,.04,min(duv.x,1.-duv.x))*smoothstep(0.,.04,min(duv.y,1.-duv.y));
   if(inD>0.){ day=mix(day,texture2D(dDay,duv).rgb,inD); }
   float lum=dot(day,vec3(.299,.587,.114));
-  float sea=smoothstep(.04,.16,day.b-day.r)*(1.-smoothstep(.28,.45,lum));  // Blue Marble oceans are dark blue: detect them
+  float sea=smoothstep(.02,.09,day.b-day.r)*(1.-smoothstep(.28,.45,lum));  // full-strength ocean mask so zoomed-in and global oceans match  // Blue Marble oceans are dark blue: detect them
   float tone=.06+.17*pow(smoothstep(.04,.8,lum),.85);  /* softer contrast (deserts calmer) */                                // monochrome: charcoal to cool grey, terrain kept as light/dark texture (owner 20 Nov 2026: no sepia)
   vec3 nat=day/max(lum,.04);                                                 // the real colour of this spot, without its brightness
   vec3 base=vec3(tone)*mix(vec3(1.),nat,.18)*vec3(1.01,1.,.975);              // owner 20 Nov 2026: dark neutral land with a trace of natural colour and warmth (not sepia, not flat grey)
@@ -44,7 +44,9 @@ void main(){
   // built-up areas (owner 21 Nov 2026): NASA/Landsat man-made impervious surface, 30 m (light blue = sparse ... dark blue = dense)
   vec4 im=inD>0.?texture2D(dImp,duv):vec4(0.); float dens=im.a*clamp(1.15-im.r*1.35,.22,1.);   // rural 0 · suburban ~.3 · urban core ~1
   base=mix(base,(vec3(.2,.192,.178)+vec3(.26,.24,.205)*dens*dens)*(.85+.3*lum/max(.1,lum+.05)),smoothstep(.0,.1,dens)*inD*(1.-sea));  // stronger: city cores clearly lighter than suburbs, suburbs than countryside; Landsat texture kept inside  // denser = lighter warm grey; roads and urban fabric appear
-  base=mix(base,vec3(.012,.013,.017),sea);                                   // oceans almost black
+  if(inD>0.){ vec3 g0=texture2D(dayT,uv).rgb; float l0=dot(g0,vec3(.299,.587,.114));      // global sea mask too: Landsat has no data / grey water offshore
+    sea=max(sea,max(smoothstep(.04,.16,g0.b-g0.r)*(1.-smoothstep(.28,.45,l0))*smoothstep(.0,.03,.06-im.a),inD*(1.-smoothstep(.0,.03,lum)))); }
+  base=mix(base,vec3(.038,.038,.048),sea);                                   // oceans almost black
   float cp=cos(phi), sdot=sin(phi)*sun.z+cp*cos(lam-sun.x)*sun.y;          // cos(angle to the sun)
   float dayk=smoothstep(-.07,.16,sdot);
   vec3 col=base*mix(.14,1.15,dayk)*mix(.8,1.,Zd);                        // owner 20 Nov 2026 (B): clear day/night
@@ -108,7 +110,8 @@ void main(){
     if (bb[0] < -180 || bb[2] > 180) { const s = bb[0] < -180 ? -180 - bb[0] : 180 - bb[2]; bb[0] += s; bb[2] += s; }  // keep inside the map (no wrap-around request)
     const cur = D.bb, inside = cur && bb[0] >= cur[0] && bb[2] <= cur[2] && bb[1] >= cur[1] && bb[3] <= cur[3] && (bb[2] - bb[0]) > (cur[2] - cur[0]) * .45;
     if (inside) return;
-    clearTimeout(D.timer); D.timer = setTimeout(() => request(bb.map(v => Math.round(v * 100) / 100)), 380);  // only once the camera settles
+    const k = bb.map(v => Math.round(v * 4) / 4).join();   // restart the wait only when the view really moved (not every frame)
+    if (k !== D.planKey) { D.planKey = k; clearTimeout(D.timer); D.timer = setTimeout(() => request(bb.map(v => Math.round(v * 100) / 100)), 380); }  // fetch once the camera settles
   };
   // draw the Earth into the page's 2D canvas (same projection numbers as proj() in page.html)
   // city names when zoomed in (Natural Earth, public domain): small, grey, below the orange markers; more cities the closer you get
@@ -121,6 +124,7 @@ void main(){
     for (const [n, la, lo, pop] of CITIES) {
       if (pop < minPop) continue; const ph = la * r, d = lo * r - lon0 * r, cp = Math.cos(ph), z = s0 * Math.sin(ph) + c0 * cp * Math.cos(d); if (z < .2) continue;
       const x = cx + R * cp * Math.sin(d), y = cy - R * (c0 * Math.sin(ph) - s0 * cp * Math.cos(d)); if (x < 0 || y < 0 || x > W || y > H) continue;
+      if ((window.__markPts || []).some(m => (m[0] - x) ** 2 + (m[1] - y) ** 2 < 34 * 34)) continue;  // an orange marker is here: its own label wins
       const w = ctx.measureText(n).width, box = [x - 4, y - 8, x + 10 + w, y + 8]; if (placed.some(b => !(box[2] < b[0] || box[0] > b[2] || box[3] < b[1] || box[1] > b[3]))) continue; placed.push(box);
       ctx.globalAlpha = a * (pop >= 1e6 ? .95 : .75); ctx.fillStyle = 'rgba(232,230,226,.9)'; ctx.beginPath(); ctx.arc(x, y, pop >= 1e6 ? 2.4 : 1.8, 0, 7); ctx.fill();
       ctx.fillStyle = 'rgba(0,0,0,.55)'; ctx.fillText(n, x + 7, y + 1); ctx.fillStyle = 'rgba(226,224,220,.92)'; ctx.fillText(n, x + 6, y);

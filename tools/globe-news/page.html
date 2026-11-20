@@ -2978,6 +2978,7 @@ function frame(t) {
   if (selCountry) countryShape(selCountry, 'rgba(255,122,26,.10)', 'rgba(255,122,26,.75)', 1.2);
   ctx.restore();
 
+  if (PROJ.on || MARKET.on) window.__markPts = [];
   if (PROJ.on) { drawProj(); ctx.restore(); requestAnimationFrame(frame); return; }
   if (MARKET.on) { if (!(window.InvCompanies && InvCompanies.active())) drawMarketMode(); if (!(window.InvCompanies && InvCompanies.active())) drawMarketsOverlay(t); if (window.InvCompanies) InvCompanies.draw(t); ctx.restore(); requestAnimationFrame(frame); return; }
 
@@ -3016,6 +3017,7 @@ function frame(t) {
   // Reuse the sorted list/count metadata, bounded to this frame's clusters, so a busy
   // place does not rescan thousands of article ids/coordinates on every animation tick.
   const nextClusters = new Map();
+  window.__markPts = [];  // EarthGL city names skip places that already carry an orange news label (filled below; used next frame)
   drawn = cl.map(c => {
     const membership = c.m.map(v => v.g.index).join(); let data = clusterLists.get(membership);
     if (!data) {
@@ -3046,7 +3048,7 @@ function frame(t) {
     if (n > 1) { const bx = d.x + 9, by = d.y - 9; ctx.fillStyle = DAY ? 'rgba(36,58,100,.92)' : `rgba(14,14,16,${.92 * e})`; ctx.strokeStyle = DAY ? 'rgba(255,255,255,.95)' : `rgba(255,122,26,${.7 * a})`; ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(bx, by, 8, 0, 7); ctx.fill(); ctx.stroke(); ctx.fillStyle = `rgba(255,255,255,${a})`; ctx.font = '500 9.5px "Inter",sans-serif'; ctx.textAlign = 'center'; ctx.fillText(n, bx, by + .5); ctx.textAlign = 'left'; }
     // a small label only for the few flagged articles
     if (s.flag && d.z > .35 && (n === 1 || d.same)) {
-      const lx = d.x + (n > 1 ? 21 : 12), al = a * Math.min(1, (d.z - .35) * 4);
+      const lx = d.x + (n > 1 ? 21 : 12), al = a * Math.min(1, (d.z - .35) * 4); window.__markPts.push([d.x, d.y]);
       ctx.font = '650 9px Inter,sans-serif'; ctx.fillStyle = `rgba(255,140,50,${al})`; ctx.fillText(FLAG[s.flag].toUpperCase(), lx, d.y - 6);
       ctx.font = '500 11.5px Inter,sans-serif'; ctx.fillStyle = DAY ? `rgba(24,24,28,${.88 * al})` : `rgba(255,255,255,${.92 * al})`; ctx.fillText(s.location.place.split(',')[0], lx, d.y + 7);
     }
