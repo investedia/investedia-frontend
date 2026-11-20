@@ -2936,6 +2936,8 @@ function frame(t) {
   if (fly) { spin = null; const k = Math.min(1, (t - fly.t0) / fly.dur), e = ease(k); lon0 = fly.from[0] + fly.dl * e; lat0 = fly.from[1] + (fly.la - fly.from[1]) * e; Zt = fly.from[2] + (fly.z - fly.from[2]) * e; if (k >= 1) fly = null; }
   else if (spin) { lon0 += spin.vx * dt; lat0 = Math.max(-70, Math.min(70, lat0 + spin.vy * dt)); const f = Math.exp(-dt / 380); spin.vx *= f; spin.vy *= f; if (Math.hypot(spin.vx, spin.vy) < .004) spin = null; }  // friction: glides to a stop in about a second
   else if (!drag && !pinch && !reduce && !sel && !selCountry && !hoverC && !hoverCountry && view.k === 'top' && F.region === 'global' && Zt < 1.05 && !zoomAnchor) lon0 -= dt * .0022;
+  ZMAX = window.EarthGL && EarthGL.ready && R0 > 0 ? Math.max(6, Math.min(W, H) * .5 / Math.sin(1.5 * rad) / R0) : 6;  // Phase 1 (owner 21 Nov 2026): with the satellite Earth, zoom to regional/metro level (~3° across), never street level
+  if (Zt > ZMAX) Zt = ZMAX;
   Z += (Zt - Z) * (reduce ? 1 : .26); if (Math.abs(Zt - Z) < .0001) Z = Zt; R = R0 * Z;
   lon0 = ((lon0 + 540) % 360) - 180; cy += (cyT - cy) * (reduce ? 1 : .12);
   keepZoomAnchor(); if (Z === Zt) zoomAnchor = null;
@@ -2976,6 +2978,7 @@ function frame(t) {
   if (selCountry) countryShape(selCountry, 'rgba(255,122,26,.10)', 'rgba(255,122,26,.75)', 1.2);
   ctx.restore();
 
+  if (PROJ.on || MARKET.on) window.__markPts = [];
   if (PROJ.on) { drawProj(); ctx.restore(); requestAnimationFrame(frame); return; }
   if (MARKET.on) { if (!(window.InvCompanies && InvCompanies.active())) drawMarketMode(); if (!(window.InvCompanies && InvCompanies.active())) drawMarketsOverlay(t); if (window.InvCompanies) InvCompanies.draw(t); ctx.restore(); requestAnimationFrame(frame); return; }
 
@@ -3014,6 +3017,7 @@ function frame(t) {
   // Reuse the sorted list/count metadata, bounded to this frame's clusters, so a busy
   // place does not rescan thousands of article ids/coordinates on every animation tick.
   const nextClusters = new Map();
+  window.__markPts = [];  // EarthGL city names skip places that already carry an orange news label (filled below; used next frame)
   drawn = cl.map(c => {
     const membership = c.m.map(v => v.g.index).join(); let data = clusterLists.get(membership);
     if (!data) {
@@ -3044,7 +3048,7 @@ function frame(t) {
     if (n > 1) { const bx = d.x + 9, by = d.y - 9; ctx.fillStyle = DAY ? 'rgba(36,58,100,.92)' : `rgba(14,14,16,${.92 * e})`; ctx.strokeStyle = DAY ? 'rgba(255,255,255,.95)' : `rgba(255,122,26,${.7 * a})`; ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(bx, by, 8, 0, 7); ctx.fill(); ctx.stroke(); ctx.fillStyle = `rgba(255,255,255,${a})`; ctx.font = '500 9.5px "Inter",sans-serif'; ctx.textAlign = 'center'; ctx.fillText(n, bx, by + .5); ctx.textAlign = 'left'; }
     // a small label only for the few flagged articles
     if (s.flag && d.z > .35 && (n === 1 || d.same)) {
-      const lx = d.x + (n > 1 ? 21 : 12), al = a * Math.min(1, (d.z - .35) * 4);
+      const lx = d.x + (n > 1 ? 21 : 12), al = a * Math.min(1, (d.z - .35) * 4); window.__markPts.push([d.x, d.y]);
       ctx.font = '650 9px Inter,sans-serif'; ctx.fillStyle = `rgba(255,140,50,${al})`; ctx.fillText(FLAG[s.flag].toUpperCase(), lx, d.y - 6);
       ctx.font = '500 11.5px Inter,sans-serif'; ctx.fillStyle = DAY ? `rgba(24,24,28,${.88 * al})` : `rgba(255,255,255,${.92 * al})`; ctx.fillText(s.location.place.split(',')[0], lx, d.y + 7);
     }
