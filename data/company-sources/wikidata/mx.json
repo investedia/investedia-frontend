@@ -1,0 +1,5961 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "MX",
+ "count": 302,
+ "companies": [
+  {
+   "qid": "Q127043299",
+   "name": "3 Hermanos",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://3hermanos.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tres_Hermanos",
+   "logo_file": "3 Hermanos logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q16487355",
+   "name": "Administradora Coahuilense de Infraestructura y Transporte Aéreo",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aviation"
+   ],
+   "isin": [],
+   "hq_city": "Saltillo",
+   "hq": [
+    25.42306,
+    -100.99194
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Administradora_Coahuilense_de_Infraestructura_y_Transporte_A%C3%A9reo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q381563",
+   "name": "Aeroméxico",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aircraft industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://aeromexico.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aerom%C3%A9xico",
+   "logo_file": "Aeroméxico wordmark.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17479873",
+   "name": "Aeroméxico Rewards",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Aerom%C3%A9xico_Rewards",
+   "logo_file": "AMR logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q429380",
+   "name": "Aeropuertos y Servicios Auxiliares",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aviation"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.asa.gob.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aeropuertos_y_Servicios_Auxiliares",
+   "logo_file": "Asa logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60825526",
+   "name": "Afirme",
+   "cc": "mx",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "https://www.afirme.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12176488",
+   "name": "Aguila Ammunition",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.aguilaammo.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aguila_Ammunition",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4694857",
+   "name": "Ah Cacao Real Chocolate",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Playa del Carmen",
+   "hq": [
+    20.62814,
+    -87.0755
+   ],
+   "website": "http://www.ahcacao.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ah_Cacao_Real_Chocolate",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5665942",
+   "name": "Alestra",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "IT service management"
+   ],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://www.alestra.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Alestra",
+   "logo_file": "AlestraMX.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q917701",
+   "name": "ALFA Group",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Madrid Stock Exchange",
+     "ticker": "XALFA"
+    },
+    {
+     "exchange": "Mexican Stock Exchange",
+     "ticker": "ALFAA"
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "MXP000511016"
+   ],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "https://www.alfa.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/ALFA_(Mexico)",
+   "logo_file": "ALFA logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4734781",
+   "name": "Alpek",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "OTC Markets Group",
+     "ticker": "ALPKF"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "MX01AL0C0004"
+   ],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://www.alpek.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Alpek",
+   "logo_file": "Alpek Logo1.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4735783",
+   "name": "Alsea",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "OTC Markets Group",
+     "ticker": "ALSSF"
+    }
+   ],
+   "industries": [
+    "restaurant"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.alsea.com.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Alsea_(company)",
+   "logo_file": "Alsea logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6051516",
+   "name": "Alsuper",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chihuahua City",
+   "hq": [
+    28.63694,
+    -106.07694
+   ],
+   "website": "https://alsuper.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4736968",
+   "name": "Altos Hornos de México",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Monclova",
+   "hq": [
+    26.90111,
+    -101.41722
+   ],
+   "website": "http://www.ahmsa.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Altos_Hornos_de_M%C3%A9xico",
+   "logo_file": "Ahmsa-logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4745968",
+   "name": "Ameyal",
+   "cc": "mx",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Ameyal",
+   "listed": false
+  },
+  {
+   "qid": "Q482267",
+   "name": "América Móvil",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Madrid Stock Exchange",
+     "ticker": "XAMXL"
+    },
+    {
+     "exchange": "Mexican Stock Exchange",
+     "ticker": "AMX"
+    },
+    {
+     "exchange": "Nasdaq",
+     "ticker": "AMOV"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "AMOV"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "AMX"
+    }
+   ],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [
+    "MXP001691213",
+    "US02390A1016"
+   ],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.americamovil.com/amx/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Am%C3%A9rica_M%C3%B3vil",
+   "logo_file": "Logo de América Móvil.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q18221226",
+   "name": "Art Sound México",
+   "cc": "mx",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "film"
+   ],
+   "isin": [],
+   "website": "http://www.Doblajistaslatinos.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q604034",
+   "name": "Atletica",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zapopan",
+   "hq": [
+    20.72083,
+    -103.39111
+   ],
+   "website": "http://www.atletica.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Atletica",
+   "logo_file": "Logo Atlética.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4822661",
+   "name": "Aurrerá",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Aurrer%C3%A1",
+   "logo_file": "Aurrera logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5712397",
+   "name": "Autobuses Estrella Roja",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Heroica Puebla de Zaragoza",
+   "hq": [
+    19.05139,
+    -98.21778
+   ],
+   "website": "https://www.estrellaroja.com.mx/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q515411",
+   "name": "Autobuses Unidos",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.autobusesau.com.mx",
+   "logo_file": "Logo AU.gif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2874823",
+   "name": "Axtel",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology"
+   ],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://www.axtelcorp.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Axtel",
+   "logo_file": "AxtelCorp Op1.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27830263",
+   "name": "Ayco",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tultitlán de Mariano Escobedo",
+   "hq": [
+    19.645,
+    -99.16944
+   ],
+   "website": "http://www.ayco.com.mx",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4838903",
+   "name": "Bachoco",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "IBA"
+    }
+   ],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico",
+   "hq": [
+    23.0,
+    -102.0
+   ],
+   "website": "http://www.bachoco.com.mx/",
+   "lei": "254900CZQ27EMGKCHG63",
+   "enwiki": "https://en.wikipedia.org/wiki/Bachoco",
+   "logo_file": "Logo de Bachoco.svg",
+   "listed": true
+  },
+  {
+   "qid": "Q23460955",
+   "name": "Baja Brewing Company",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "San José del Cabo",
+   "hq": [
+    23.06167,
+    -109.71139
+   ],
+   "website": "https://www.bajabrewingcompany.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Baja_Brewing_Company",
+   "logo_file": "Baja logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97182150",
+   "name": "Baja Ferries",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "La Paz",
+   "hq": [
+    24.14861,
+    -110.30667
+   ],
+   "website": "https://www.bajaferries.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Baja_Ferries",
+   "listed": false
+  },
+  {
+   "qid": "Q5718183",
+   "name": "BanBajío",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "León Municipality",
+   "hq": [
+    21.11972,
+    -101.68056
+   ],
+   "website": "https://www.bb.com.mx/",
+   "lei": "4469000001BD95FFLY16",
+   "enwiki": "https://en.wikipedia.org/wiki/BanBaj%C3%ADo",
+   "logo_file": "BanBajío Logotipo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854076",
+   "name": "Banco Azteca",
+   "cc": "mx",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.bancoazteca.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Azteca",
+   "logo_file": "Logo de Banco Azteca.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115798871",
+   "name": "Banco Central Mexicano",
+   "cc": "mx",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5719137",
+   "name": "Banco del Bienestar",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.gob.mx/bancodelbienestar",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_del_Bienestar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2885364",
+   "name": "Banco Multiva",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.multiva.com.mx/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114148558",
+   "name": "Banco Nacional de Crédito Agrícola",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114148567",
+   "name": "Banco Nacional de Crédito Ejidal",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2646652",
+   "name": "Banco Nacional de México",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.banamex.com/",
+   "logo_file": "Banamex.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24655074",
+   "name": "Banco Nacional del Ejército, Fuerza Aérea y Armada, S.N.C.",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.gob.mx/banjercito",
+   "logo_file": "Logo de Banjercito.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854136",
+   "name": "Bancomext",
+   "cc": "mx",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.bancomext.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bancomext",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q806208",
+   "name": "Bank of Mexico",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.banxico.org.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Mexico",
+   "logo_file": "Logobm.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2882874",
+   "name": "Banobras",
+   "cc": "mx",
+   "types": [
+    "Q22687",
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://www.gob.mx/banobras",
+   "enwiki": "https://en.wikipedia.org/wiki/Banobras",
+   "logo_file": "Logo de Banobras.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q806914",
+   "name": "Banorte",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "OTC Markets Group",
+     "ticker": "GBOOF"
+    }
+   ],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [
+    "MXP370711014"
+   ],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "https://investors.banorte.com/en",
+   "lei": "5493002C56S2RYRKJ580",
+   "enwiki": "https://en.wikipedia.org/wiki/Banorte",
+   "logo_file": "Banorte.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4853573",
+   "name": "BanRegio",
+   "cc": "mx",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://www.banregio.com",
+   "lei": "54930088R4YQVV0P9F21",
+   "enwiki": "https://en.wikipedia.org/wiki/BanRegio",
+   "logo_file": "Banregio.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5719140",
+   "name": "Bansí",
+   "cc": "mx",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Guadalajara",
+   "hq": [
+    20.67639,
+    -103.34222
+   ],
+   "website": "https://www.bansi.com.mx/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4859834",
+   "name": "Barcel",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lerma Municipality",
+   "hq": [
+    19.33,
+    -99.47
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Barcel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4913950",
+   "name": "Binbit",
+   "cc": "mx",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Mobile entertainment"
+   ],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://www.binbitgroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Binbit",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17622888",
+   "name": "Bio Pappel",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Mexican Stock Exchange",
+     "ticker": "PAPPEL"
+    },
+    {
+     "exchange": "Nasdaq",
+     "ticker": "CDURQ"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.biopappel.com/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q55605529",
+   "name": "Bital",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Bital",
+   "listed": false
+  },
+  {
+   "qid": "Q76761850",
+   "name": "Bitso",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "http://www.bitso.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4922846",
+   "name": "Blackfire Exploration",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Blackfire_Exploration",
+   "listed": false
+  },
+  {
+   "qid": "Q4836064",
+   "name": "BMW Mexico",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Toluca de Lerdo",
+   "hq": [
+    19.29222,
+    -99.65389
+   ],
+   "website": "http://www.bmw.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/BMW_Mexico",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5715748",
+   "name": "BNKR Arquitectura",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.bunkerarquitectura.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3365858",
+   "name": "Bodega Aurrera",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.bodegaaurrera.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bodega_Aurrer%C3%A1",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4947983",
+   "name": "Boston Medical Group",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Madrid",
+   "hq": [
+    40.41694,
+    -3.70333
+   ],
+   "website": "http://www.bostonmedicalgroup.es/",
+   "enwiki": "https://en.wikipedia.org/wiki/Boston_Medical_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q701338",
+   "name": "C&A",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Düsseldorf",
+   "hq": [
+    51.22556,
+    6.77667
+   ],
+   "website": "https://www.c-and-a.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/C%26A",
+   "logo_file": "C&A logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5015708",
+   "name": "Cablemás",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://cablemas.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Cablem%C3%A1s",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124018318",
+   "name": "CAFFENIO",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/CAFFENIO",
+   "listed": false
+  },
+  {
+   "qid": "Q5739148",
+   "name": "Café Punta del Cielo",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://puntadelcielo.com.mx/",
+   "logo_file": "Taza de Café.JPG",
+   "listed": false
+  },
+  {
+   "qid": "Q123289906",
+   "name": "Café Treve",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5021355",
+   "name": "Calimax",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "supermarket"
+   ],
+   "isin": [],
+   "website": "http://www.calimax.com.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Calimax",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5026777",
+   "name": "Camino Real Hotels",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.caminoreal.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Camino_Real_Hotels",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q117706368",
+   "name": "Canadian Pacific Kansas City",
+   "cc": "mx",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "CP"
+    },
+    {
+     "exchange": "Toronto Stock Exchange",
+     "ticker": "CP"
+    }
+   ],
+   "industries": [
+    "logistics",
+    "transport industry"
+   ],
+   "isin": [
+    "CA13645T1003"
+   ],
+   "hq_city": "Calgary",
+   "hq": [
+    51.0475,
+    -114.0625
+   ],
+   "website": "https://www.cpkcr.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Canadian_Pacific_Kansas_City",
+   "logo_file": "CPKC Wordmark.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q20053137",
+   "name": "CanZion Group LP",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "phonographic industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/CanZion_Group_LP",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5748770",
+   "name": "Carabela",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Naucalpan",
+   "hq": [
+    19.47,
+    -99.29
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q17108693",
+   "name": "Casa Aramara",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.casaaramara.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Casa_Aramara",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q576490",
+   "name": "Casas GEO",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.corporaciongeo.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Casas_GEO",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1053348",
+   "name": "Cemex",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "CX"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "LR"
+    }
+   ],
+   "industries": [
+    "construction materials industry"
+   ],
+   "isin": [
+    "MXP225611567",
+    "US1512908898"
+   ],
+   "hq_city": "San Pedro Garza García",
+   "hq": [
+    25.6643,
+    -100.4023
+   ],
+   "website": "http://www.cemex.com/",
+   "lei": "549300JHGUF0VVA38719",
+   "enwiki": "https://en.wikipedia.org/wiki/Cemex",
+   "logo_file": "Cemex logo 2023.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q59133735",
+   "name": "Centro Cultural Coreano",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Korean_Cultural_Center,_Mexico_City",
+   "logo_file": "Korean cultural center new logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q5761912",
+   "name": "Centro de Investigaciones y Estudios Superiores en Antropología Social",
+   "cc": "mx",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.ciesas.edu.mx/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q50377046",
+   "name": "Centro Nacional de Investigación, Documentación e Información Musical «Carlos Chávez»",
+   "cc": "mx",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://cenidim.inba.gob.mx/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5763579",
+   "name": "Cervecería Moctezuma",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Orizaba",
+   "hq": [
+    18.85,
+    -97.1
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30918904",
+   "name": "Charly",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Charly_(brand)",
+   "logo_file": "Charly logo.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q28155510",
+   "name": "Cielito Querido Café",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "gastronomy"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Cielito_Querido_Caf%C3%A9",
+   "logo_file": "Cielito Querido Café.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107638515",
+   "name": "Cinebox",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "entertainment industry"
+   ],
+   "isin": [],
+   "hq_city": "Veracruz",
+   "hq": [
+    19.19028,
+    -96.15333
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q5769671",
+   "name": "Cinematográfica Interamericana",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "film"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1092492",
+   "name": "Cineteca Nacional",
+   "cc": "mx",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.cinetecanacional.net/",
+   "logo_file": "Cineteca Nacional logotipo SVG.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q136658768",
+   "name": "Clandestino FC",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "https://www.clandestinofc.mx/",
+   "listed": false
+  },
+  {
+   "qid": "Q2919781",
+   "name": "Claro TV",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Rio de Janeiro",
+   "hq": [
+    -22.91111,
+    -43.20556
+   ],
+   "website": "http://www.claro.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Claro_TV",
+   "logo_file": "Claro TV wordmark.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q111670025",
+   "name": "Clip",
+   "cc": "mx",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://clip.mx",
+   "logo_file": "Logo de Clip.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1114680",
+   "name": "Comisión Federal de Electricidad",
+   "cc": "mx",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power generation, transmission and distribution"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.cfe.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Comisi%C3%B3n_Federal_de_Electricidad",
+   "logo_file": "Comisión Federal de Electricidad (logo) .svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2990370",
+   "name": "Compartamos Banco ICR",
+   "cc": "mx",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.compartamos.com.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Compartamos_Banco",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106390792",
+   "name": "Cooperation Manufacturing Plant Aguascalientes",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Aguascalientes",
+   "hq": [
+    22.05,
+    -102.3
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Cooperation_Manufacturing_Plant_Aguascalientes",
+   "logo_file": "Compas aguas calientes logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5058673",
+   "name": "Cooperativa La Cruz Azul",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.cementocruzazul.com.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Cooperativa_La_Cruz_Azul",
+   "logo_file": "Logo de la Cooperativa La Cruz Azul.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2497795",
+   "name": "Coppel",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Culiacán",
+   "hq": [
+    24.79028,
+    -107.38778
+   ],
+   "website": "http://www.coppel.com.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Coppel",
+   "logo_file": "Coppel 2025.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61501534",
+   "name": "Cuauhtemoc Brewery",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "brewery"
+   ],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "logo_file": "Logo Cerveceria Cuauhtemoc.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5191899",
+   "name": "Cuautitlán Assembly",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Cuautitlán Izcalli",
+   "hq": [
+    19.64388,
+    -99.21598
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Cuautitl%C3%A1n_Assembly",
+   "logo_file": "Ford logo flat.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5014680",
+   "name": "CUDI",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/CUDI",
+   "listed": false
+  },
+  {
+   "qid": "Q5737720",
+   "name": "CYDSA",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://www.cydsa.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q126282419",
+   "name": "Distroller",
+   "cc": "mx",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Distroller",
+   "listed": false
+  },
+  {
+   "qid": "Q30242775",
+   "name": "Ediciones Arlequín",
+   "cc": "mx",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zapopan",
+   "hq": [
+    20.72083,
+    -103.39111
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5835176",
+   "name": "Ediciones Era",
+   "cc": "mx",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.edicionesera.com.mx/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5818645",
+   "name": "Ediciones Grijalbo",
+   "cc": "mx",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico",
+   "hq": [
+    23.0,
+    -102.0
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130287426",
+   "name": "EjeCentral",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.ejecentral.com.mx/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5822376",
+   "name": "El Manantial S.A. de C.V.",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.tonicol.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q121734306",
+   "name": "El Yucateco",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.elyucateco.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/El_Yucateco",
+   "listed": false
+  },
+  {
+   "qid": "Q590897",
+   "name": "Empresas ICA",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "ICA"
+    }
+   ],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.ica.com.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Empresas_ICA",
+   "logo_file": "Empresas ICA logo.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16564015",
+   "name": "Especialidades Cerveceras",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Apodaca",
+   "hq": [
+    25.78167,
+    -100.18861
+   ],
+   "logo_file": "Logotipo Especialidades Cerveceras.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108185876",
+   "name": "Estafeta Mexicana",
+   "cc": "mx",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Cuauhtémoc",
+   "hq": [
+    19.44306,
+    -99.14472
+   ],
+   "website": "https://estafeta.com/",
+   "logo_file": "Logo de Estafeta.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5987390",
+   "name": "Estrella de Oro",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.estrelladeoro.com.mx/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17631764",
+   "name": "Eutelsat Americas",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "logo_file": "Logo Eutelsat.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5855855",
+   "name": "Famosa",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "product packaging industry"
+   ],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://www.famosa.com.mx/indexesp.html",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5435609",
+   "name": "Farmacias Guadalajara",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Guadalajara",
+   "hq": [
+    20.67639,
+    -103.34222
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Farmacias_Guadalajara",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1435628",
+   "name": "FEMSA",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "FMX"
+    },
+    {
+     "exchange": "S&P/BMV IPC",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [
+    "MXP320321310"
+   ],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://femsa.com/",
+   "lei": "549300A8MDWDJNMLV153",
+   "enwiki": "https://en.wikipedia.org/wiki/FEMSA",
+   "logo_file": "FEMSA Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q106768679",
+   "name": "Ferca records",
+   "cc": "mx",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mazatlán",
+   "hq": [
+    23.21667,
+    -106.40833
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3069734",
+   "name": "Ferrocarriles Nacionales de México",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Ferrocarriles_Nacionales_de_M%C3%A9xico",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5447318",
+   "name": "Fiesta Inn",
+   "cc": "mx",
+   "types": [
+    "Q1631129"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.fiestainn.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Fiesta_Inn",
+   "listed": false
+  },
+  {
+   "qid": "Q749474",
+   "name": "Financial Group Banamex",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.banamex.com/es/conoce_banamex/quienes_somos/grupo_financiero_banamex.htm",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Financiero_Banamex",
+   "logo_file": "Banamex.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137730322",
+   "name": "Fintual",
+   "cc": "mx",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services",
+    "fintech"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://fintual.mx/",
+   "logo_file": "Logo de Fintual.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3031850",
+   "name": "Fondo de Cultura Económica",
+   "cc": "mx",
+   "types": [
+    "Q2085381",
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.fondodeculturaeconomica.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Fondo_de_Cultura_Econ%C3%B3mica",
+   "logo_file": "LogotipoFCE228.gif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5500443",
+   "name": "FreedomPop",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Los Angeles",
+   "hq": [
+    34.05223,
+    -118.24368
+   ],
+   "website": "https://freedompop.com",
+   "enwiki": "https://en.wikipedia.org/wiki/FreedomPop",
+   "logo_file": "FreedomPop-Logo-Blue.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48785202",
+   "name": "Freightliner-Daimler México",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.freightliner.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Freightliner-Daimler_M%C3%A9xico",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5869223",
+   "name": "Freixenet de México",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5872045",
+   "name": "Fábrica de Chocolates la Azteca",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5520129",
+   "name": "Gamesa",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Coquimatlán Municipality",
+   "hq": [
+    19.18333,
+    -103.93333
+   ],
+   "website": "http://www.gamesa.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Gamesa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25400597",
+   "name": "Garcis",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.garcis.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Garcis",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5876989",
+   "name": "General Motors de México",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.gm.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/General_Motors_de_M%C3%A9xico",
+   "logo_file": "General Motors (2021).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3100803",
+   "name": "Genomma Lab Internacional",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Genomma_Lab_Internacional",
+   "logo_file": "Genomma Lab Internacional.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5879372",
+   "name": "Gicsa",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5584727",
+   "name": "Gorditas Doña Tota",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ciudad Victoria",
+   "hq": [
+    23.73611,
+    -99.14611
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q2855873",
+   "name": "Group Lala",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Mexican Stock Exchange",
+     "ticker": "LALA B"
+    }
+   ],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [
+    "MX01LA040003"
+   ],
+   "hq_city": "Gómez Palacio",
+   "hq": [
+    25.5725,
+    -103.4945
+   ],
+   "website": "http://www.lala.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Lala",
+   "logo_file": "Logo de Grupo Lala.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q17058108",
+   "name": "Gruma",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://www.gruma.com",
+   "listed": false
+  },
+  {
+   "qid": "Q5886021",
+   "name": "Grupo ACIR",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.grupoacir.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_ACIR",
+   "logo_file": "Grupo ACIR.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17633354",
+   "name": "Grupo ACIR Querétaro",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q17071934",
+   "name": "Grupo Aeroméxico",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "US40054J1097"
+   ],
+   "website": "https://www.aeromexico.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Aerom%C3%A9xico",
+   "listed": true
+  },
+  {
+   "qid": "Q5612176",
+   "name": "Grupo Aeroportuario Centro Norte",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq",
+     "ticker": "OMAB"
+    }
+   ],
+   "industries": [
+    "aviation"
+   ],
+   "isin": [
+    "MX01OM000018",
+    "US4005011022"
+   ],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://www.oma.aero",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Aeroportuario_Centro_Norte",
+   "logo_file": "Oma logo.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5612177",
+   "name": "Grupo Aeroportuario del Pacífico",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "PAC"
+    }
+   ],
+   "industries": [
+    "aviation"
+   ],
+   "isin": [],
+   "hq_city": "Guadalajara",
+   "hq": [
+    20.67639,
+    -103.34222
+   ],
+   "website": "http://aeropuertosgap.com.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Aeroportuario_del_Pac%C3%ADfico",
+   "logo_file": "Grupo Aeroportuario del Pacífico logo.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5886031",
+   "name": "Grupo Aeroportuario del Valle de México",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q17067129",
+   "name": "Grupo Anderson's",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Anderson%27s",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6440633",
+   "name": "Grupo BAL",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.bal.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_BAL",
+   "listed": false
+  },
+  {
+   "qid": "Q16572768",
+   "name": "Grupo Bepensa",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mérida",
+   "hq": [
+    20.97,
+    -89.62
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q775031",
+   "name": "Grupo Bimbo",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "OTC Markets Group",
+     "ticker": "BMBOY"
+    }
+   ],
+   "industries": [
+    "food processing"
+   ],
+   "isin": [
+    "MXP495211262"
+   ],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.grupobimbo.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Bimbo",
+   "logo_file": "Logo Grupo BIMBO.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5016358",
+   "name": "Grupo Cadena",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tijuana",
+   "hq": [
+    32.53645,
+    -117.03715
+   ],
+   "website": "http://www.cadenanoticias.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Cadena",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5549508",
+   "name": "Grupo CIE",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.cie-mexico.com.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_CIE",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q119144321",
+   "name": "Grupo Editorial Miguel Ángel Porrúa",
+   "cc": "mx",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Editorial_Miguel_%C3%81ngel_Porr%C3%BAa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1142753",
+   "name": "Grupo Elektra",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "MX01EL000003"
+   ],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.grupoelektra.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Elektra",
+   "logo_file": "Grupo Elektra logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5612214",
+   "name": "Grupo Famsa",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "https://www.famsa.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Famsa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5886180",
+   "name": "Grupo Financiero Multiva",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5612239",
+   "name": "Grupo Firmas Globales",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "media industry"
+   ],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://www.multimedios.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Multimedios",
+   "logo_file": "Multimedios Television.png",
+   "listed": false
+  },
+  {
+   "qid": "Q11682223",
+   "name": "Grupo Gigante",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.gigante.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Gigante",
+   "logo_file": "Grupo Gigante logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21010074",
+   "name": "Grupo Habita",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "lodging"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.grupohabita.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Habita",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18644215",
+   "name": "Grupo Herdez",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://grupoherdez.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Herdez",
+   "logo_file": "Herdez logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5886240",
+   "name": "Grupo Imagen",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://imagen.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Imagen",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5886244",
+   "name": "Grupo Imber",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Guadalajara",
+   "hq": [
+    20.67639,
+    -103.34222
+   ],
+   "website": "http://www.imber.com.mx/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q521673",
+   "name": "Grupo Modelo",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.grupomodelo.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Modelo",
+   "logo_file": "Logo gm home.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114443601",
+   "name": "Grupo Mundo Maya",
+   "cc": "mx",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://grupoolmecamayamexica.com.mx/",
+   "listed": false
+  },
+  {
+   "qid": "Q9026411",
+   "name": "Grupo MVS mi vrga",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.mvs.com",
+   "enwiki": "https://en.wikipedia.org/wiki/MVS_Comunicaciones",
+   "logo_file": "Logo de Grupo MVS.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q623591",
+   "name": "Grupo México",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "OTC Markets Group",
+     "ticker": "GMBXF"
+    }
+   ],
+   "industries": [
+    "mining"
+   ],
+   "isin": [
+    "MXP370841019"
+   ],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.gmexico.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_M%C3%A9xico",
+   "logo_file": "Logo de Grupo México.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q110574208",
+   "name": "Grupo Nacional Provincial",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.gnp.com.mx/",
+   "listed": false
+  },
+  {
+   "qid": "Q5886363",
+   "name": "Grupo Pachuca",
+   "cc": "mx",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5612245",
+   "name": "Grupo Posadas",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.posadas.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Posadas",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5886408",
+   "name": "Grupo Radio Centro",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Mexican Stock Exchange",
+     "ticker": null
+    },
+    {
+     "exchange": "Nasdaq",
+     "ticker": "GRDCY"
+    }
+   ],
+   "industries": [
+    "broadcasting"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://radiocentro.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Radio_Centro",
+   "logo_file": "Logo Radio Centro.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3209285",
+   "name": "Grupo Reforma",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "journalism"
+   ],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://www.reforma.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Reforma",
+   "logo_file": "Logo REFORMA (México).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109619977",
+   "name": "Grupo Rotoplas",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Rotoplas",
+   "listed": false
+  },
+  {
+   "qid": "Q5612254",
+   "name": "Grupo Salinas",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://gruposalinas.com/es",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Salinas",
+   "logo_file": "Logotipo de Grupo Salinas.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q47099",
+   "name": "Grupo Televisa",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Mexican Stock Exchange",
+     "ticker": "TLEVISA"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "TV"
+    }
+   ],
+   "industries": [
+    "film industry",
+    "mass media",
+    "television"
+   ],
+   "isin": [
+    "MXP4987V1378"
+   ],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.televisa.com/",
+   "lei": "549300O4AF0C816ILN62",
+   "enwiki": "https://en.wikipedia.org/wiki/Televisa",
+   "logo_file": "Logo de Grupo Televisa.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5886157",
+   "name": "Grupo Vazol",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://grupoempresarialangeles.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Vazol",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5612263",
+   "name": "Grupo Vidanta",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nuevo Nayarit",
+   "hq": [
+    20.702,
+    -105.2895
+   ],
+   "website": "http://www.grupovidanta.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Vidanta",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5612255",
+   "name": "GT Global",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "plastic",
+    "service",
+    "soft drink",
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Tampico",
+   "hq": [
+    22.2372,
+    -97.87
+   ],
+   "website": "http://www.gtglobal.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Tampico",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5623157",
+   "name": "Guía Roji",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Gu%C3%ADa_Roji",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5655160",
+   "name": "Hard Candy Fitness",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "United States",
+   "hq": [
+    39.82818,
+    -98.5795
+   ],
+   "website": "http://www.hardcandyfitness.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Hard_Candy_Fitness",
+   "listed": false
+  },
+  {
+   "qid": "Q1056430",
+   "name": "HEINEKEN Mexico",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://www.heinekenmexico.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cuauht%C3%A9moc_Moctezuma_Brewery",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59202186",
+   "name": "Helados Holanda",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.heladosholanda.com.mx/home.html",
+   "logo_file": "Holanda.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30637740",
+   "name": "Hotelito Desconocido",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "ecotourism"
+   ],
+   "isin": [],
+   "hq_city": "Tomatlán Municipality",
+   "hq": [
+    19.93333,
+    -105.08333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Hotelito_Desconocido",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5635881",
+   "name": "HSBC Mexico",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "HSBC Tower",
+   "hq": [
+    19.4278,
+    -99.1686
+   ],
+   "website": "http://www.hsbc.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/HSBC_M%C3%A9xico",
+   "logo_file": "HSBC.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113997878",
+   "name": "Hydra Technologies",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "website": "http://www.hydra-technologies.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hydra_Technologies",
+   "listed": false
+  },
+  {
+   "qid": "Q5954183",
+   "name": "Hydra Technologies",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Jalisco",
+   "hq": [
+    20.67639,
+    -103.34583
+   ],
+   "website": "http://www.hydra-technologies.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q6142853",
+   "name": "Hylsa",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://www.hylsaternium.com.mx",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2880934",
+   "name": "ICR AT&T México",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.att.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/AT%26T_Latin_America",
+   "logo_file": "AT&T logo 2016.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q731123",
+   "name": "ICR Inbursa",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "OTC Markets Group",
+     "ticker": "GPFOF"
+    }
+   ],
+   "industries": [
+    "finance"
+   ],
+   "isin": [
+    "MXP370641013"
+   ],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.inbursa.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Inbursa",
+   "logo_file": "Logo de Inbursa.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5914649",
+   "name": "Impulsora del Desarrollo Económico de América Latina",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q138708404",
+   "name": "Industrias Cabañas",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Xochitepec Municipality",
+   "hq": [
+    18.78083,
+    -99.23139
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Industrias_Caba%C3%B1as",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3150581",
+   "name": "Industrias CH",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.industriasch.com.mx/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5915728",
+   "name": "Infinitum",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.telmex.com.mx",
+   "logo_file": "Infinitum logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5916125",
+   "name": "Ingenio Tres Valles",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q123691843",
+   "name": "Innovasport",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "San Pedro Garza García",
+   "hq": [
+    25.6643,
+    -100.4023
+   ],
+   "website": "https://www.innovasport.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Innovasport_and_Innvictus",
+   "listed": false
+  },
+  {
+   "qid": "Q30915645",
+   "name": "Intercam Banco",
+   "cc": "mx",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://ieb.com.mx",
+   "listed": false
+  },
+  {
+   "qid": "Q29739",
+   "name": "International",
+   "cc": "mx",
+   "types": [
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "NAV"
+    }
+   ],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [
+    "US63934E1082"
+   ],
+   "hq_city": "Lisle",
+   "hq": [
+    41.7925,
+    -88.0883
+   ],
+   "website": "https://www.international.com/",
+   "lei": "WNDD3CRVXJGC8I7GX671",
+   "enwiki": "https://en.wikipedia.org/wiki/International_Motors",
+   "logo_file": "International Motors Logo, October 2024.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5812112",
+   "name": "Intertrack",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "film"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.Doblajistaslatinos.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2839834",
+   "name": "iShopMixup",
+   "cc": "mx",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/IShopMixup",
+   "logo_file": "IShopMixup logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6093543",
+   "name": "Italika",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Toluca de Lerdo",
+   "hq": [
+    19.29222,
+    -99.65389
+   ],
+   "website": "http://italika.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Italika",
+   "logo_file": "Italika.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5923622",
+   "name": "Ixe",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11680385",
+   "name": "Izzi",
+   "cc": "mx",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.izzi.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Izzi_Telecom",
+   "logo_file": "Logo Izzi.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3369963",
+   "name": "Jarritos",
+   "cc": "mx",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Guadalajara",
+   "hq": [
+    20.67639,
+    -103.34222
+   ],
+   "website": "https://jarritos.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Jarritos",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5932261",
+   "name": "Joaquín Mortiz",
+   "cc": "mx",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Joaqu%C3%ADn_Mortiz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3810670",
+   "name": "Joya",
+   "cc": "mx",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Joya_(drink)",
+   "listed": false
+  },
+  {
+   "qid": "Q3375400",
+   "name": "Jumex",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ecatepec de Morelos Municipality",
+   "hq": [
+    19.56667,
+    -99.04
+   ],
+   "website": "http://www.grupojumex.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Jumex",
+   "logo_file": "Grupo Jumex logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q102291616",
+   "name": "Kaoz Lucha Libre",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110938496",
+   "name": "Kavak",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry",
+    "e-commerce"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.kavak.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kavak_(company)",
+   "logo_file": "Logo de Kavak.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6395613",
+   "name": "Keuka",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "sportswear"
+   ],
+   "isin": [],
+   "hq_city": "Celaya",
+   "hq": [
+    20.52889,
+    -100.815
+   ],
+   "website": "http://www.keuka.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Keuka_(brand)",
+   "logo_file": "Keuka Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6409886",
+   "name": "Kimberly-Clark de México",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.kimberly-clark.com.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Kimberly-Clark_de_M%C3%A9xico",
+   "logo_file": "Kimberly-Clark logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6414506",
+   "name": "Kion de Mexico",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aviation"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.kion.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kion_de_Mexico",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19691975",
+   "name": "Kurazai Motorcycles",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16587311",
+   "name": "La Borde Vieille",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Languedoc-Roussillon",
+   "hq": [
+    43.66667,
+    3.16667
+   ],
+   "website": "http://www.labordevieille.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q26765126",
+   "name": "La Comer",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.lacomer.com.mx/comercialMexicana/Inmobiliaria/inmobiliaria/plantilla_index.html",
+   "enwiki": "https://en.wikipedia.org/wiki/La_Comer",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6461999",
+   "name": "La Costeña",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ecatepec de Morelos Municipality",
+   "hq": [
+    19.56667,
+    -99.04
+   ],
+   "website": "http://www.lacostena.com.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/La_Coste%C3%B1a_(food_company)",
+   "logo_file": "Isologo de La Costeña®.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16587483",
+   "name": "La Fábrica Textil de Los Ángeles",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q11121253",
+   "name": "La Redonda",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ezequiel Montes",
+   "hq": [
+    20.66583,
+    -99.89806
+   ],
+   "website": "http://www.laredonda.com.mx/",
+   "logo_file": "BarrilEntrada.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q266556",
+   "name": "Lanix",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Hermosillo",
+   "hq": [
+    29.075,
+    -110.95833
+   ],
+   "website": "https://lanix.com/mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Lanix",
+   "logo_file": "Lanix-logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61890241",
+   "name": "Las Estrellas Internacional",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.lasestrellas.tv",
+   "logo_file": "Las Estrellas logo (2016).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q981374",
+   "name": "Librería Porrúa",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "book industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://porrua.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Librer%C3%ADa_Porr%C3%BAa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5976339",
+   "name": "Lili Ledy",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q17620099",
+   "name": "Linio",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.linio.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Linio",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113632490",
+   "name": "LitioMX",
+   "cc": "mx",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/LitioMX",
+   "listed": false
+  },
+  {
+   "qid": "Q123965382",
+   "name": "Liverpool",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.liverpool.com.mx/tienda/home",
+   "enwiki": "https://en.wikipedia.org/wiki/Liverpool_(department_store)",
+   "logo_file": "Liverpool logo 2023.png",
+   "listed": false
+  },
+  {
+   "qid": "Q106369984",
+   "name": "Lizos Music",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mazatlán",
+   "hq": [
+    23.21667,
+    -106.40833
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17620243",
+   "name": "Logistics Mexico",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q104216684",
+   "name": "Lucha Libre Femenil",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Lucha_Libre_Femenil",
+   "listed": false
+  },
+  {
+   "qid": "Q9025671",
+   "name": "Luz y Fuerza del Centro",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Luz_y_Fuerza_del_Centro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q50936919",
+   "name": "M4TEL",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.m4tel.com",
+   "enwiki": "https://en.wikipedia.org/wiki/M4Tel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6721379",
+   "name": "Mabe",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.mabe.cc",
+   "enwiki": "https://en.wikipedia.org/wiki/Mabe_(company)",
+   "logo_file": "Logotipo Mabe.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125946171",
+   "name": "Massive Caller",
+   "cc": "mx",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "https://www.massivecaller.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6008960",
+   "name": "Meebox",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Guadalajara",
+   "hq": [
+    20.67639,
+    -103.34222
+   ],
+   "website": "http://www.meebox.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Meebox",
+   "logo_file": "Meebox-logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6808160",
+   "name": "Megacable",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Guadalajara",
+   "hq": [
+    20.67639,
+    -103.34222
+   ],
+   "website": "http://www.megacable.com.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Megacable",
+   "logo_file": "Megacable logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6818138",
+   "name": "Mercedes-Benz Mexico",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.mercedes-benz.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mercedes-Benz_Mexico",
+   "logo_file": "Mercedes-Benz Logo 2010.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6825758",
+   "name": "Mexican Coke",
+   "cc": "mx",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Mexican_Coke",
+   "listed": false
+  },
+  {
+   "qid": "Q28407922",
+   "name": "Mexican Southern Railroad",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Mexican_Southern_Railroad",
+   "listed": false
+  },
+  {
+   "qid": "Q891559",
+   "name": "Mexican Stock Exchange",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "MX01BM1B0000"
+   ],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.bmv.com.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Mexican_Stock_Exchange",
+   "logo_file": "Logo de la BMV.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q111945854",
+   "name": "Mighty Animation",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Guadalajara",
+   "hq": [
+    20.67639,
+    -103.34222
+   ],
+   "website": "https://mighty.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mighty_Animation",
+   "listed": false
+  },
+  {
+   "qid": "Q6864249",
+   "name": "Minera San Xavier",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Cerro de San Pedro Municipality",
+   "hq": [
+    22.21667,
+    -100.78333
+   ],
+   "website": "http://msx.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Minera_San_Xavier",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138011342",
+   "name": "MiRA",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://mira.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/MiRA_(real_estate_company)",
+   "listed": false
+  },
+  {
+   "qid": "Q6024506",
+   "name": "Morton's Auction House",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q2065136",
+   "name": "Moto Islo",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Saltillo",
+   "hq": [
+    25.42306,
+    -100.99194
+   ],
+   "website": "http://www.islo.com.mx/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6025457",
+   "name": "Movistar México",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.movistar.com.mx/",
+   "logo_file": "Movistar isotype 2020.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6943626",
+   "name": "Mut-vitz",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Mut-vitz",
+   "listed": false
+  },
+  {
+   "qid": "Q1959798",
+   "name": "NASCAR Mexico",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.nascarmexico.com",
+   "enwiki": "https://en.wikipedia.org/wiki/NASCAR_Mexico",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6041655",
+   "name": "Nextel México",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q9050548",
+   "name": "Noiselab, S.A. de C.V.",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "music industry",
+    "phonographic industry"
+   ],
+   "isin": [],
+   "hq_city": "Condesa",
+   "hq": [
+    19.4125,
+    -99.1694
+   ],
+   "website": "http://www.noiselab.com",
+   "listed": false
+  },
+  {
+   "qid": "Q1146555",
+   "name": "Ocean Star Cruises",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "cruise"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.oceanstar.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ocean_Star_Cruises",
+   "logo_file": "Ocean Star Cruises Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114664046",
+   "name": "Orlegi",
+   "cc": "mx",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.orlegi-sports.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17118857",
+   "name": "Paletería La Michoacana",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://lamichoacanaweb.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/La_Michoacana_(ice_cream)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7141857",
+   "name": "Pascual Boing",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.pascual.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pascual_Boing",
+   "listed": false
+  },
+  {
+   "qid": "Q871308",
+   "name": "Pemex",
+   "cc": "mx",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "extraction of crude petroleum and natural gas",
+    "oil refining",
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.pemex.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Pemex",
+   "logo_file": "Logo de Petróleos Mexicanos (2019).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16618159",
+   "name": "Perfect Choice",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7195474",
+   "name": "Pineda Covalín",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.pinedacovalin.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Pineda_Covalin",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17280695",
+   "name": "PJP4",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Reynosa",
+   "hq": [
+    26.09222,
+    -98.27778
+   ],
+   "website": "http://www.pjp4.com",
+   "enwiki": "https://en.wikipedia.org/wiki/PJP4",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q26758095",
+   "name": "Politec",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6055473",
+   "name": "PREDISA",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7247861",
+   "name": "Productos Mendoza",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Xochimilco",
+   "hq": [
+    19.24758,
+    -99.09822
+   ],
+   "website": "http://www.productosmendoza.com/web/index.php?lang=1&changeLang=1&producto=&c=",
+   "enwiki": "https://en.wikipedia.org/wiki/Productos_Mendoza",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q62399024",
+   "name": "Queer Destinations",
+   "cc": "mx",
+   "types": [
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "LGBT tourism",
+    "hospitality industry",
+    "technology industry",
+    "tourism industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://queerdestinations.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Queer_Destinations",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q36879490",
+   "name": "Rappi",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "https://www.rappi.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rappi",
+   "logo_file": "Rappi logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7387069",
+   "name": "S-Mart",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Ciudad Juárez",
+   "hq": [
+    31.6685,
+    -106.42
+   ],
+   "website": "http://www.s-martmx.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/S-Mart",
+   "logo_file": "Smart imagen.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q7396446",
+   "name": "Sabritas",
+   "cc": "mx",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.sabritas.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sabritas",
+   "logo_file": "Logos Sabritas Sol 2021.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1415922",
+   "name": "Sauza Tequila",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Guadalajara",
+   "hq": [
+    20.67639,
+    -103.34222
+   ],
+   "website": "https://www.sauzatequila.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sauza_Tequila",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q953932",
+   "name": "Sears Mexico",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.sears.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sears_Mexico",
+   "logo_file": "Searsmexicologo.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q6123073",
+   "name": "Seccionamarilla",
+   "cc": "mx",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "advertising industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.aceleradordigitaldenegocios.com.mx/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7446417",
+   "name": "Seguros Azteca",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Seguros_Azteca",
+   "listed": false
+  },
+  {
+   "qid": "Q7449251",
+   "name": "Semex",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tijuana",
+   "hq": [
+    32.53645,
+    -117.03715
+   ],
+   "website": "http://www.sharp.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/SEMEX",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7451435",
+   "name": "Senzao",
+   "cc": "mx",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Senzao",
+   "listed": false
+  },
+  {
+   "qid": "Q66143130",
+   "name": "Servicios de Agua y Drenaje de Monterrey",
+   "cc": "mx",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "water management"
+   ],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "https://web.sadm.gob.mx/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7512267",
+   "name": "Sigma Alimentos",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://www.sigma-alimentos.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sigma_Alimentos",
+   "logo_file": "Sigma Alimentos logotipo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3323885",
+   "name": "Sky México",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.sky.com.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Sky_M%C3%A9xico",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6130898",
+   "name": "Sociedad Financiera de Objeto Limitado",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q15650860",
+   "name": "Sociedad Mexicana de Cactología",
+   "cc": "mx",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.mexican.cactus-society.org/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7554165",
+   "name": "Softtek",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology consulting",
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://softtek.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Softtek",
+   "logo_file": "Softtek.gif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6132613",
+   "name": "Sosa Texcoco",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q21010246",
+   "name": "Squad",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "video game industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://squad.com.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Squad_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5829102",
+   "name": "Steren",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.steren.com.mx",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7621806",
+   "name": "Strategic Marine",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "shipbuilding"
+   ],
+   "isin": [],
+   "hq_city": "Henderson",
+   "hq": [
+    -32.169,
+    115.781
+   ],
+   "website": "http://www.strategicmarine.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137070534",
+   "name": "Sugar Foods Corporation",
+   "cc": "mx",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "New York City",
+   "hq": [
+    40.71278,
+    -74.00611
+   ],
+   "website": "https://www.sugarfoods.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sugar_Foods_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6135762",
+   "name": "Superama",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110702340",
+   "name": "Sushi Roll",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "restaurant"
+   ],
+   "isin": [],
+   "hq_city": "Benito Juárez",
+   "hq": [
+    19.24056,
+    -99.09278
+   ],
+   "website": "https://sushiroll.com.mx/",
+   "logo_file": "Sushi Roll Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3376620",
+   "name": "Tajín",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.tajin.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Taj%C3%ADn_seasoning",
+   "logo_file": "Logo Tajín.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6138296",
+   "name": "Taller Acústico S.C.",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3517255",
+   "name": "Telcel",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.telcel.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Telcel",
+   "logo_file": "Telcel logo 2022.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7696109",
+   "name": "Telecosmo",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Telecosmo",
+   "listed": false
+  },
+  {
+   "qid": "Q6025474",
+   "name": "Telefónica México",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.telefonica.com.mx/",
+   "logo_file": "Telefónica 2021 logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7696918",
+   "name": "Televisa Deportes",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Televisa_Deportes",
+   "logo_file": "Televisa Deportes logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q9085582",
+   "name": "Televisa Internacional",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://televisa-networks.com",
+   "logo_file": "Televisa Internacional.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3517416",
+   "name": "Telnor",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Baja California",
+   "hq": [
+    29.95,
+    -115.11667
+   ],
+   "website": "https://www.telnor.com/home",
+   "enwiki": "https://en.wikipedia.org/wiki/Telnor",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1688011",
+   "name": "Tequila Herradura",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Amatitán Municipality",
+   "hq": [
+    20.85,
+    -103.71667
+   ],
+   "website": "http://www.herradura.com/Default.aspx",
+   "enwiki": "https://en.wikipedia.org/wiki/Tequila_Herradura",
+   "logo_file": "ArteBarricas201201 35.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130475957",
+   "name": "The Palace Company",
+   "cc": "mx",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "hospitality industry"
+   ],
+   "isin": [],
+   "hq_city": "Mérida",
+   "hq": [
+    20.97,
+    -89.62
+   ],
+   "website": "https://www.thepalacecompany.com/",
+   "logo_file": "TPC Logo.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q4567149",
+   "name": "Tijuana Beer",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tijuana",
+   "hq": [
+    32.53645,
+    -117.03715
+   ],
+   "website": "http://www.tjbeer.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tijuana_Beer",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7670843",
+   "name": "TNCA",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/TNCA",
+   "listed": false
+  },
+  {
+   "qid": "Q48835586",
+   "name": "Toks",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.toks.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Toks",
+   "logo_file": "Toks logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q7824950",
+   "name": "Topo Chico",
+   "cc": "mx",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "website": "http://www.topochico.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Topo_Chico",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7826080",
+   "name": "Tornel",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Tornel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6151102",
+   "name": "Totalplay",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.totalplay.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Totalplay",
+   "logo_file": "Totalplay.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6151263",
+   "name": "Towers Entertainment",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.towers-entertainment.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9089355",
+   "name": "TracFone WirelessICR",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "mobile virtual network operator",
+    "prepaid mobile phone",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Miami",
+   "hq": [
+    25.77417,
+    -80.19361
+   ],
+   "website": "http://www.tracfone.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Verizon_Value",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141636931",
+   "name": "Transportación Marítima de California",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "La Paz",
+   "hq": [
+    24.14861,
+    -110.30667
+   ],
+   "website": "https://ferrytmc.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q5637853",
+   "name": "Transportes del Nazas",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Gómez Palacio",
+   "hq": [
+    25.5725,
+    -103.4945
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Transportes_del_Nazas",
+   "logo_file": "TNazas54.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q7835317",
+   "name": "Transportes Moctezuma de la Laguna",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Gómez Palacio",
+   "hq": [
+    25.5725,
+    -103.4945
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Transportes_Moctezuma_de_la_Laguna",
+   "logo_file": "TMoctezumaU2.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q1281055",
+   "name": "TV Azteca",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Madrid Stock Exchange",
+     "ticker": "XTZA"
+    },
+    {
+     "exchange": "Mexican Stock Exchange",
+     "ticker": "AZTECA"
+    }
+   ],
+   "industries": [
+    "mass media",
+    "television"
+   ],
+   "isin": [
+    "MX01AZ060013"
+   ],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.tvazteca.com/",
+   "lei": "549300H2ZXE4KL0NUV88",
+   "enwiki": "https://en.wikipedia.org/wiki/TV_Azteca",
+   "logo_file": "Logotipo de TV Azteca.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6137663",
+   "name": "TV Rey",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.tvrey.com.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/TV_Rey",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116925845",
+   "name": "TYASA",
+   "cc": "mx",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://tyasa.com/",
+   "logo_file": "Logo TYASA.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q7884173",
+   "name": "Unefón ICR",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.unefon.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Unef%C3%B3n",
+   "logo_file": "LogoUnefon.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7894010",
+   "name": "Universal Lucha Libre",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Universal_Lucha_Libre",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18360632",
+   "name": "Universidad Autónoma del Estado de México",
+   "cc": "mx",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rectorate of the Autonomous University of Mexico State",
+   "hq": [
+    19.28568,
+    -99.65362
+   ],
+   "website": "http://www.uaemex.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Autonomous_University_of_Mexico_State",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6156347",
+   "name": "Universidad Autónoma Metropolitana Unidad Xochimilco",
+   "cc": "mx",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.xoc.uam.mx",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7900558",
+   "name": "Uriarte Talavera",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Heroica Puebla de Zaragoza",
+   "hq": [
+    19.05139,
+    -98.21778
+   ],
+   "website": "http://www.uriartetalavera.com.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Uriarte_Talavera",
+   "listed": false
+  },
+  {
+   "qid": "Q6159355",
+   "name": "Valores Industriales",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Monterrey",
+   "hq": [
+    25.68444,
+    -100.31806
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q7926542",
+   "name": "Victoria",
+   "cc": "mx",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Victoria_(drink)",
+   "listed": false
+  },
+  {
+   "qid": "Q48783378",
+   "name": "Vips",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.vips.com.mx",
+   "enwiki": "https://en.wikipedia.org/wiki/Vips_(Mexican_restaurant)",
+   "logo_file": "VIPS Logo Mexico 01.2024.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1361085",
+   "name": "Volkswagen de México",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Heroica Puebla de Zaragoza",
+   "hq": [
+    19.05139,
+    -98.21778
+   ],
+   "website": "https://www.vw.com.mx/es.html",
+   "enwiki": "https://en.wikipedia.org/wiki/Volkswagen_de_M%C3%A9xico",
+   "logo_file": "Volkswagen logo 2019.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6166095",
+   "name": "Waldo's",
+   "cc": "mx",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tijuana",
+   "hq": [
+    32.53645,
+    -117.03715
+   ],
+   "website": "https://waldos.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Waldo%27s",
+   "logo_file": "Waldos logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1064887",
+   "name": "Walmart de México y Centroamérica",
+   "cc": "mx",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "OTC Markets Group",
+     "ticker": "WMMVF"
+    }
+   ],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "MXP810081010"
+   ],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://www.walmex.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Walmart_de_M%C3%A9xico_y_Centroam%C3%A9rica",
+   "logo_file": "Logo de Walmart Mexico y Centroamerica.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6166147",
+   "name": "Walmart Mexico",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.walmartmexico.com.mx/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3570026",
+   "name": "World Wrestling Association",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tijuana",
+   "hq": [
+    32.53645,
+    -117.03715
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/World_Wrestling_Association",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q630244",
+   "name": "Xtreme Fighters Latino",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.xflmagazine.mx",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8054788",
+   "name": "Yoli",
+   "cc": "mx",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Yoli",
+   "listed": false
+  },
+  {
+   "qid": "Q17274895",
+   "name": "Yumeki Entertainment Agency",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q48783023",
+   "name": "Zacua",
+   "cc": "mx",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Puebla de Zaragoza",
+   "website": "https://zacua.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Zacua",
+   "logo_file": "Zacua Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6171720",
+   "name": "Zonda Telecom",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electronics"
+   ],
+   "isin": [],
+   "hq_city": "Guadalajara",
+   "hq": [
+    20.67639,
+    -103.34222
+   ],
+   "website": "http://www.zondatelecom.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zonda_Telecom",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8076952",
+   "name": "Ánima Estudios",
+   "cc": "mx",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "film industry"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "http://www.animaestudios.com",
+   "enwiki": "https://en.wikipedia.org/wiki/%C3%81nima_(company)",
+   "logo_file": "Anima-estudios-logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6174645",
+   "name": "Ómnibus Cristóbal Colón",
+   "cc": "mx",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

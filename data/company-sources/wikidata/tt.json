@@ -1,0 +1,244 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "TT",
+ "count": 11,
+ "companies": [
+  {
+   "qid": "Q4930970",
+   "name": "bmobile",
+   "cc": "tt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Port of Spain",
+   "hq": [
+    10.66667,
+    -61.51667
+   ],
+   "website": "http://bmobile.co.tt/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bmobile",
+   "logo_file": "Bmobile.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5015637",
+   "name": "Cable Company of Trinidad and Tobago",
+   "cc": "tt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Cable_Company_of_Trinidad_and_Tobago",
+   "listed": false
+  },
+  {
+   "qid": "Q5452734",
+   "name": "First Citizens Bank",
+   "cc": "tt",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Port of Spain",
+   "hq": [
+    10.66667,
+    -61.51667
+   ],
+   "website": "https://www.firstcitizenstt.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/First_Citizens_Bank_(Trinidad_and_Tobago)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5614065",
+   "name": "Guardian Media Limited",
+   "cc": "tt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Port of Spain",
+   "hq": [
+    10.66667,
+    -61.51667
+   ],
+   "website": "http://corp.guardian.co.tt/",
+   "enwiki": "https://en.wikipedia.org/wiki/Guardian_Media_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5914657",
+   "name": "House of Angostura",
+   "cc": "tt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "distilling, rectifying and blending of spirits"
+   ],
+   "isin": [],
+   "hq_city": "Port of Spain",
+   "hq": [
+    10.66667,
+    -61.51667
+   ],
+   "website": "http://www.angostura.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/House_of_Angostura",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6972856",
+   "name": "National Gas Company of Trinidad and Tobago",
+   "cc": "tt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Couva",
+   "hq": [
+    10.41667,
+    -61.45
+   ],
+   "website": "https://ngc.co.tt/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Gas_Company_of_Trinidad_and_Tobago",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7314386",
+   "name": "Republic Bank",
+   "cc": "tt",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Port of Spain",
+   "hq": [
+    10.66667,
+    -61.51667
+   ],
+   "website": "http://www.republictt.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Republic_Bank",
+   "logo_file": "Logo of Republic Bank of Trinidad and Tobago.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7373792",
+   "name": "Royal Bank of Trinidad and Tobago",
+   "cc": "tt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Port of Spain",
+   "hq": [
+    10.66667,
+    -61.51667
+   ],
+   "website": "http://www.rbtt.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Royal_Bank_of_Trinidad_and_Tobago",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7695867",
+   "name": "Telecommunications Services of Trinidad and Tobago",
+   "cc": "tt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Port of Spain",
+   "hq": [
+    10.66667,
+    -61.51667
+   ],
+   "website": "http://www.tstt.co.tt/",
+   "enwiki": "https://en.wikipedia.org/wiki/Telecommunications_Services_of_Trinidad_and_Tobago",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7842382",
+   "name": "Trinidad & Tobago National Petroleum Marketing Company Limited",
+   "cc": "tt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Sea Lots",
+   "hq": [
+    10.6441,
+    -61.5025
+   ],
+   "website": "https://www.np.co.tt/",
+   "enwiki": "https://en.wikipedia.org/wiki/Trinidad_%26_Tobago_National_Petroleum_Marketing_Company_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17036008",
+   "name": "Trinidad Government Railway",
+   "cc": "tt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Trinidad_Government_Railway",
+   "listed": false
+  }
+ ]
+}

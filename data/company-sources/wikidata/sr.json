@@ -1,0 +1,772 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "SR",
+ "count": 42,
+ "companies": [
+  {
+   "qid": "Q118516970",
+   "name": "Assuria",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance"
+   ],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "https://assuria.sr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97361260",
+   "name": "Bedrijf Geneesmiddelen Voorziening Suriname",
+   "cc": "sr",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "http://www.bgvs-suriname.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q52286557",
+   "name": "Bruynzeel Suriname",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "http://bruynzee.sr.net/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118516984",
+   "name": "Consolidated Industries Corporation",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "detergent",
+    "laundry detergent"
+   ],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "https://cicsur.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118770939",
+   "name": "Coöperatieve Spaar- en Kredietbank Godo",
+   "cc": "sr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "https://www.godo.sr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5244764",
+   "name": "De Surinaamsche Bank",
+   "cc": "sr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "finance",
+    "financial service activities, except insurance and pension funding"
+   ],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "http://www.dsbbank.sr/",
+   "enwiki": "https://en.wikipedia.org/wiki/De_Surinaamsche_Bank",
+   "logo_file": "Surinaamsche bank building Paramaribo.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118732691",
+   "name": "Elgawa",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "building services engineering"
+   ],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "https://www.elgawa.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15159998",
+   "name": "FinaBank",
+   "cc": "sr",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "https://www.finabanknv.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98767334",
+   "name": "Gemeenschappelijke Plantaardige Oliën en Vetten Bedrijven",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q64457718",
+   "name": "Grassalco",
+   "cc": "sr",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.grassalco.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118522945",
+   "name": "Hakrinbank",
+   "cc": "sr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "https://www.hakrinbank.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q112245322",
+   "name": "Intermed Group of Companies",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "http://intermedcaribe.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98768976",
+   "name": "Landbouw Maatschappij Patamacca",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98767331",
+   "name": "Landbouw Maatschappij Victoria",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q101064466",
+   "name": "Melkcentrale Paramaribo",
+   "cc": "sr",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q65939254",
+   "name": "METS Travel & Tours",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "https://mets.sr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q99229594",
+   "name": "Multipurpose Corantijnproject",
+   "cc": "sr",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nickerie District",
+   "hq": [
+    5.76722,
+    -56.87028
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q119040233",
+   "name": "Nationale Ontwikkelingsbank",
+   "cc": "sr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "banking in Suriname"
+   ],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "https://www.nobsuriname.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55185147",
+   "name": "Rapar Broadcasting Network",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Rapar_Broadcasting_Network",
+   "listed": false
+  },
+  {
+   "qid": "Q65666173",
+   "name": "SAIL NV",
+   "cc": "sr",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q119040204",
+   "name": "Self Reliance",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance"
+   ],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "https://self-reliance.sr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19991005",
+   "name": "Staatsolie Maatschappij Suriname",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "website": "http://www.staatsolie.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Staatsolie_Maatschappij_Suriname",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q99469808",
+   "name": "Stichting Agrarische Kernbedrijven Nickerie",
+   "cc": "sr",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q99469807",
+   "name": "Stichting Agrarische Ontwikkeling Coronie",
+   "cc": "sr",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q2130339",
+   "name": "Stichting Machinale Landbouw",
+   "cc": "sr",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Wageningen",
+   "hq": [
+    5.76889,
+    -56.68639
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q2323204",
+   "name": "Suralco",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q19963689",
+   "name": "Surgold",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q118738412",
+   "name": "Surichange Bank",
+   "cc": "sr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "http://www.surichange.nl/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7646301",
+   "name": "Surinaamse Brouwerij",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Surinaamse_Brouwerij",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98730813",
+   "name": "Surinaamse Garnalenvangst Maatschappij",
+   "cc": "sr",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "روبيان"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q50038123",
+   "name": "Surinaamse Postspaarbank",
+   "cc": "sr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "https://spsbbank.sr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98128967",
+   "name": "Suriname National Training Authority",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "https://www.suriname-nta.org",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q99469812",
+   "name": "Surzwam",
+   "cc": "sr",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q430086",
+   "name": "Telesur",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "https://www.telesur.sr/",
+   "enwiki": "https://en.wikipedia.org/wiki/Telesur_(Suriname)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q70601169",
+   "name": "Torarica Group",
+   "cc": "sr",
+   "types": [
+    "Q1631129"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kleine Waterstraat",
+   "hq": [
+    5.82785,
+    -55.14806
+   ],
+   "website": "https://www.torarica.com/nl/welcome/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q112246037",
+   "name": "Trustbank Amanah",
+   "cc": "sr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "https://www.trustbankamanah.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55503894",
+   "name": "United",
+   "cc": "sr",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "business-to-business",
+    "journalism"
+   ],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "http://unitednews.sr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118731545",
+   "name": "Varossieau Suriname",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "paint"
+   ],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "https://www.varossieau-paints.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118496291",
+   "name": "Verenigde Surinaamse Holdingmij",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "https://vshunited.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q99469816",
+   "name": "Vereniging van Economisten in Suriname",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.ves.sr/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118744130",
+   "name": "Volkscredietbank",
+   "cc": "sr",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "https://www.vcbbank.sr",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118724774",
+   "name": "VSH Foods",
+   "cc": "sr",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Paramaribo",
+   "hq": [
+    5.86667,
+    -55.16667
+   ],
+   "website": "https://www.vshfoods.com",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}
