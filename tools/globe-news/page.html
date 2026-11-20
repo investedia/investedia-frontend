@@ -1626,6 +1626,31 @@ function nightPath() {
   const path = new Path2D(); path.moveTo(pts[0][0], pts[0][1]); for (const q of pts) path.lineTo(q[0], q[1]); path.closePath();
   return { path, wholeDisc: inside !== nightCentre };
 }
+// Day / night (owner 20 Nov 2026): the sun lights the side of the Earth where it is day right now; the night side is darker
+// and its cities glow (cities over 300,000 people, Natural Earth, public domain; size by population, so every region is shown fairly).
+let CITY_LIGHTS = [];
+fetch('city-lights.json').then(r => r.ok ? r.json() : []).then(d => { CITY_LIGHTS = Array.isArray(d) ? d : []; }).catch(() => {});
+const CITY_GLOW = (() => { const c = document.createElement('canvas'); c.width = c.height = 64; const g = c.getContext('2d'), gr = g.createRadialGradient(32, 32, 0, 32, 32, 32);
+  gr.addColorStop(0, 'rgba(255,224,170,1)'); gr.addColorStop(.18, 'rgba(255,170,80,.75)'); gr.addColorStop(.5, 'rgba(255,125,35,.22)'); gr.addColorStop(1, 'rgba(255,110,20,0)'); g.fillStyle = gr; g.fillRect(0, 0, 64, 64); return c; })();
+function drawDayNight() {
+  const sp = sunPoint(Date.now()), sx = Math.cos(sp.la) * Math.cos(sp.lo), sy = Math.cos(sp.la) * Math.sin(sp.lo), sz = Math.sin(sp.la);
+  const [px, py, pz] = proj(sp.la, sp.lo), dx = px - cx, dy = py - cy, l = Math.hypot(dx, dy) || 1;
+  const gx = pz > 0 ? px : cx + dx / l * R * 1.05, gy = pz > 0 ? py : cy + dy / l * R * 1.05;
+  const g = ctx.createRadialGradient(gx, gy, 0, gx, gy, R * 1.6); g.addColorStop(0, `rgba(235,225,215,${pz > 0 ? .16 : .07})`); g.addColorStop(.55, `rgba(220,215,210,${pz > 0 ? .06 : .03})`); g.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = g; ctx.fillRect(cx - R, cy - R, R * 2, R * 2);
+  const n = nightPath(); ctx.save(); ctx.fillStyle = 'rgba(0,0,4,.5)';  // soft edge from three wide translucent strokes (a blur filter cost ~20% frame rate)
+  if (n.wholeDisc) { const all = new Path2D(); all.arc(cx, cy, R * 1.1, 0, 7); all.addPath(n.path); ctx.fill(all, 'evenodd'); } else ctx.fill(n.path);
+  ctx.strokeStyle = 'rgba(0,0,4,.09)'; for (const w of [R / 9, R / 16, R / 32]) { ctx.lineWidth = w; ctx.stroke(n.path); } ctx.restore();
+  if (!CITY_LIGHTS.length) return;
+  const base = Math.max(1.2, Math.min(4, R / 200)); ctx.save(); ctx.globalCompositeOperation = 'lighter';
+  const minPop = Z < 1.6 ? 75e4 : Z < 2.6 ? 4e5 : 0;  // zoomed out, small cities are too small to see: skip them (frame rate)
+  for (const [la2, lo2, pop] of CITY_LIGHTS) {
+    if (pop < minPop) continue; const la = la2 * rad, lo = lo2 * rad, nf = -(Math.cos(la) * Math.cos(lo) * sx + Math.cos(la) * Math.sin(lo) * sy + Math.sin(la) * sz); if (nf < -.08) continue;
+    const [x, y, z] = proj(la, lo); if (z <= .02) continue;
+    const a = Math.min(1, (nf + .08) / .25) * Math.min(1, z * 2.5), r = base * (.7 + Math.log10(pop / 3e5) * 1.1) * 3.2; ctx.globalAlpha = a * .9; ctx.drawImage(CITY_GLOW, x - r, y - r, r * 2, r * 2);
+  }
+  ctx.restore();
+}
 let exHits = [], upHits = [], upLabels = [];
 function drawUpcoming() {
   upHits = []; upLabels = []; const seen = {}, placed = [];
@@ -2919,7 +2944,8 @@ function frame(t) {
     for (const [phi, lam] of pts) { const [x, y, z] = proj(phi, lam); if (z <= 0) continue; const a = Math.min(1, (.08 + z * .42) * da * GB.dot); buckets[Math.min(B - 1, Math.floor(a * B))].push(x - ds / 2, y - ds / 2); }
     for (let i = 0; i < B; i++) { const q = buckets[i]; if (!q.length) continue; ctx.fillStyle = `rgba(${GB.rgb},${((i + .5) / B).toFixed(3)})`; ctx.beginPath(); for (let j = 0; j < q.length; j += 2) ctx.rect(q[j], q[j + 1], ds, ds); ctx.fill(); }
   }
-  if (!EMBED && MKTON) { const n = nightPath(); ctx.save(); ctx.fillStyle = 'rgba(2,2,5,.46)'; if (n.wholeDisc) { const all = new Path2D(); all.arc(cx, cy, R, 0, 7); all.addPath(n.path); ctx.fill(all, 'evenodd'); } else ctx.fill(n.path); ctx.strokeStyle = 'rgba(255,160,100,.22)'; ctx.lineWidth = 1; ctx.stroke(n.path); ctx.restore(); }
+  drawDayNight();  // real-time sunlight and night with city lights, the same in News, Markets and Projects (owner 20 Nov 2026)
+  if (!EMBED && MKTON) { const n = nightPath(); ctx.save(); ctx.strokeStyle = 'rgba(255,160,100,.22)'; ctx.lineWidth = 1; ctx.stroke(n.path); ctx.restore(); }  // Market hours layer: the day/night line (the shade itself is drawn by drawDayNight)
   const la = Math.min(.07, .012 + (Z - 1) * .02) + GB.land;
   const map = Z >= 1.8 ? countries : overview;
   ctx.beginPath(); for (const c of map) for (const rr of c.rr) ringPath(rr, true); ctx.fillStyle = `rgba(255,255,255,${la})`; ctx.fill('evenodd');
