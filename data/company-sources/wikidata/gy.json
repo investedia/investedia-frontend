@@ -1,0 +1,49 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "GY",
+ "count": 2,
+ "companies": [
+  {
+   "qid": "Q5622747",
+   "name": "Guyana Sugar Corporation",
+   "cc": "gy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Skeldon",
+   "hq": [
+    5.88333,
+    -57.13333
+   ],
+   "website": "http://www.guysuco.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Guyana_Sugar_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6974339",
+   "name": "National Milling Company of Guyana",
+   "cc": "gy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Georgetown",
+   "hq": [
+    6.80583,
+    -58.15083
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/National_Milling_Company_of_Guyana",
+   "listed": false
+  }
+ ]
+}

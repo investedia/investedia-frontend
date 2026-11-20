@@ -1,0 +1,4454 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "CL",
+ "count": 214,
+ "companies": [
+  {
+   "qid": "Q95053659",
+   "name": "abc SA",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "department store"
+   ],
+   "isin": [],
+   "website": "https://www.abc.cl/",
+   "logo_file": "Logotipo abc 2025.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2917936",
+   "name": "Abcdin",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.abcdin.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Abcdin",
+   "logo_file": "Abcdin logo 2019.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19414339",
+   "name": "Aeropuertos Andinos del Perú",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.aap.com.pe/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4651363",
+   "name": "AES Andes",
+   "cc": "cl",
+   "types": [
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "AESGENER"
+    }
+   ],
+   "industries": [
+    "energy company"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.aesandes.com/es",
+   "enwiki": "https://en.wikipedia.org/wiki/AES_Andes",
+   "logo_file": "AES Andes logo.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q98453949",
+   "name": "AFP Capital",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.afpcapital.cl",
+   "logo_file": "Logo afp capital.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5653612",
+   "name": "AFP Modelo",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q120711",
+   "name": "Agrosuper",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Rancagua",
+   "hq": [
+    -34.16539,
+    -70.73981
+   ],
+   "website": "http://www.agrosuper.cl",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8076584",
+   "name": "Aguas Andinas",
+   "cc": "cl",
+   "types": [
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "AGUAS"
+    }
+   ],
+   "industries": [
+    "water collection, treatment and supply"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Aguas_Andinas",
+   "listed": true
+  },
+  {
+   "qid": "Q5660335",
+   "name": "Aguas del Valle",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Valparaíso",
+   "hq": [
+    -33.04611,
+    -71.61972
+   ],
+   "website": "http://www.aguasdelvalle.cl/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4733771",
+   "name": "Almendral S.A.",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.almendral.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Almendral_S.A.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19790837",
+   "name": "Altia",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology consulting"
+   ],
+   "isin": [],
+   "hq_city": "A Coruña",
+   "hq": [
+    43.37126,
+    -8.4188
+   ],
+   "website": "http://www.altia.es",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q571092",
+   "name": "AntarChile",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "ANTARCHILE"
+    }
+   ],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [
+    "CLP0362E1386"
+   ],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.antarchile.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/AntarChile",
+   "logo_file": "AntarChile Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q585150",
+   "name": "Antofagasta plc",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": "ANTO"
+    }
+   ],
+   "industries": [
+    "mining"
+   ],
+   "isin": [
+    "GB0000456144"
+   ],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "https://www.antofagasta.co.uk/",
+   "lei": "213800MY6QVH4FVLD628",
+   "enwiki": "https://en.wikipedia.org/wiki/Antofagasta_plc",
+   "logo_file": "Antofagasta logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q82115",
+   "name": "Arauco",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://arauco.com/europe/?r=1",
+   "lei": "549300QEKV8G0AMNQD28",
+   "enwiki": "https://en.wikipedia.org/wiki/Celulosa_Arauco_y_Constituci%C3%B3n",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4804169",
+   "name": "Asenav",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "shipbuilding"
+   ],
+   "isin": [],
+   "hq_city": "Chile",
+   "hq": [
+    -33.0,
+    -71.0
+   ],
+   "website": "http://www.asenav.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Asenav",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5710898",
+   "name": "Atlas",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "logo_file": "Financiera Atlas.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5717863",
+   "name": "Banco BICE",
+   "cc": "cl",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.bice.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_BICE",
+   "logo_file": "Logo Banco BICE-300dpi.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104104394",
+   "name": "Banco Consorcio",
+   "cc": "cl",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.bancoconsorcio.cl",
+   "listed": false
+  },
+  {
+   "qid": "Q2882085",
+   "name": "Banco de Chile",
+   "cc": "cl",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "BCH"
+    },
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "CHILE"
+    }
+   ],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.bancochile.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_de_Chile",
+   "logo_file": "Banco de Chile Logotipo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5717915",
+   "name": "Banco Edwards Citi",
+   "cc": "cl",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q56559796",
+   "name": "Banco Hipotecario de Chile",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "logo_file": "Banco Hipotecario de Chile.png",
+   "listed": false
+  },
+  {
+   "qid": "Q56605586",
+   "name": "Banco Internacional",
+   "cc": "cl",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.internacional.cl/",
+   "logo_file": "Banco internacional.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2423252",
+   "name": "Banco Itaú Corpbanca",
+   "cc": "cl",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "ITCL"
+    },
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://ww2.itau.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ita%C3%BA_(Chile)",
+   "logo_file": "Itaú Unibanco logo 2023.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4854107",
+   "name": "Banco Paris",
+   "cc": "cl",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Paris",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854112",
+   "name": "Banco Ripley",
+   "cc": "cl",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.bancoripley.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Ripley",
+   "logo_file": "Logo Ripley banco 2.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1094313",
+   "name": "Banco Santander-Chile",
+   "cc": "cl",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "BSAC"
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.santander.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Santander_Chile",
+   "logo_file": "Banco Santander Logotipo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q104020185",
+   "name": "Banco Security",
+   "cc": "cl",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Las Condes",
+   "hq": [
+    -33.41667,
+    -70.58333
+   ],
+   "logo_file": "Logo empresa banco security.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2882083",
+   "name": "Bank of Credit and Investments",
+   "cc": "cl",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "BCI"
+    }
+   ],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Las Condes",
+   "hq": [
+    -33.41667,
+    -70.58333
+   ],
+   "website": "http://www.bci.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_de_Cr%C3%A9dito_e_Inversiones",
+   "logo_file": "Bci Logotype.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2838746",
+   "name": "Bank of London and South America",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial service activities, except insurance and pension funding"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_London_and_South_America",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4856834",
+   "name": "Banmédica",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "health"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.empresasbanmedica.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Banm%C3%A9dica",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5725209",
+   "name": "Bellavista Oveja Tome",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tomé",
+   "hq": [
+    -36.6171,
+    -72.9575
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18643871",
+   "name": "Betazeta",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.betazeta.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114411133",
+   "name": "Betterfly",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Betterfly Earth sin sello sin fondo SVG.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28057105",
+   "name": "Caffarena",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "logo_file": "Caffarena-logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118342924",
+   "name": "Caja Nacional de Empleados Públicos y Periodistas",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5739672",
+   "name": "Calaf (company)",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Talca",
+   "hq": [
+    -35.42694,
+    -71.66556
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5019846",
+   "name": "Calichera",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "investment"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Calichera",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5741804",
+   "name": "Cambiaso Hermanos",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.cambiaso.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cambiaso_Hermanos",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2930951",
+   "name": "CAP S.A.",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "CAP"
+    }
+   ],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.cap.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/CAP_S.A.",
+   "logo_file": "CAP S.A.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5753336",
+   "name": "Carozzi",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "San Bernardo",
+   "hq": [
+    -33.6,
+    -70.71667
+   ],
+   "website": "http://www.carozzicorp.com",
+   "logo_file": "Carozzi Corp 2016.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q96374545",
+   "name": "Catalonia",
+   "cc": "cl",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.catalonia.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Catalonia_(publisher)",
+   "logo_file": "Logo-editorial-catalonia-rojo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5779692",
+   "name": "CCNI",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Valparaíso",
+   "hq": [
+    -33.04611,
+    -71.61972
+   ],
+   "website": "http://www.ccni.cl",
+   "logo_file": "Ccni.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2990393",
+   "name": "CCU",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "ccu"
+    }
+   ],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [
+    "US2044291043"
+   ],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.ccu.cl",
+   "lei": "529900BJW9B0O6LI2R39",
+   "enwiki": "https://en.wikipedia.org/wiki/Compa%C3%B1%C3%ADa_de_las_Cervecer%C3%ADas_Unidas",
+   "logo_file": "CCU logo (2018).svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1053372",
+   "name": "Cencosud",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": null
+    },
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "CENCOSUD"
+    }
+   ],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "CL0000000100"
+   ],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.cencosud.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cencosud",
+   "logo_file": "Cencosud-2014.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5737093",
+   "name": "CGE Distribución",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "CGE.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q137886473",
+   "name": "Chilean Calcutta Company",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q6410383",
+   "name": "Chilefilms",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "television"
+   ],
+   "isin": [],
+   "website": "https://www.chilefilms.cl",
+   "logo_file": "Chilefilms.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q120969879",
+   "name": "Chilexpress",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.chilexpress.cl/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q64429889",
+   "name": "Chilolac",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Ancud",
+   "hq": [
+    -41.8682,
+    -73.8287
+   ],
+   "website": "http://www.chilolac.cl/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5769680",
+   "name": "Cineplanet",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.cineplanet.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cineplanet",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3052066",
+   "name": "Coca-Cola Andina",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "ANDINA"
+    },
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "ANDINA"
+    }
+   ],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.koandina.com/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q100972227",
+   "name": "Coca-Cola Embonor",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.embonor.cl/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1105695",
+   "name": "Codelco",
+   "cc": "cl",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.codelco.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Codelco",
+   "logo_file": "Codelco logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2982375",
+   "name": "Colbun S.A.",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "COLBUN"
+    }
+   ],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [
+    "CLP3615W1037"
+   ],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.colbun.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Colb%C3%BAn_S.A.",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5167868",
+   "name": "Colun",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "La Unión",
+   "hq": [
+    -40.2952,
+    -73.0822
+   ],
+   "website": "http://www.colun.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cooperativa_Agr%C3%ADcola_y_Lechera_de_La_Uni%C3%B3n_Limitada",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2990390",
+   "name": "Compañia General de Electricidad",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.cge.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Compa%C3%B1ia_General_de_Electricidad",
+   "logo_file": "Logocge.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5779685",
+   "name": "Compañía Chilena de Comunicaciones",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.cooperativa.cl/noticias/site/edic/base/port/home_modulo_informacion_corporativa.html",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108302164",
+   "name": "Compañía de Tracción y Alumbrado de Santiago",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118342687",
+   "name": "Compañía Huanchaca de Bolivia",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Mining of other non-ferrous metal ores"
+   ],
+   "isin": [],
+   "hq_city": "Valparaíso",
+   "hq": [
+    -33.04611,
+    -71.61972
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Compa%C3%B1%C3%ADa_Minera_Huanchaca",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5779709",
+   "name": "Compañía Minera del Pacífico",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "La Serena",
+   "hq": [
+    -29.9027,
+    -71.252
+   ],
+   "website": "http://www.capmineria.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Compa%C3%B1%C3%ADa_Minera_del_Pac%C3%ADfico",
+   "listed": false
+  },
+  {
+   "qid": "Q5156176",
+   "name": "Compañía Minera San Esteban Primera",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "copper",
+    "metal"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Compa%C3%B1%C3%ADa_Minera_San_Esteban_Primera",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2888815",
+   "name": "Compañía Nacional de Fuerza Eléctrica",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q183454",
+   "name": "Compañía Sud Americana de Vapores S.A.",
+   "cc": "cl",
+   "types": [
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "VAPORES"
+    }
+   ],
+   "industries": [
+    "transport"
+   ],
+   "isin": [
+    "CLP3064M1019"
+   ],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.csav.com",
+   "enwiki": "https://en.wikipedia.org/wiki/CSAV",
+   "logo_file": "CSAV Logo.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5156396",
+   "name": "Complejo Forestal y Maderero Panguipulli",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Complejo_Forestal_y_Maderero_Panguipulli",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1123957",
+   "name": "Concha y Toro",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "vco"
+    },
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "CONCHATORO"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Pirque",
+   "hq": [
+    -33.6352,
+    -70.5729
+   ],
+   "website": "http://www.conchaytoro.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Concha_y_Toro",
+   "logo_file": "Logo Concha y Toro.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q124630813",
+   "name": "Confites Forno",
+   "cc": "cl",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5167867",
+   "name": "Cooperativa Agrícola Pisquera Elqui Limitada",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.cooperativacapel.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Cooperativa_Capel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131986681",
+   "name": "Cooperativa Eléctrica Charrúa Ltda.",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Monte Águila",
+   "hq": [
+    -37.0879,
+    -72.4385
+   ],
+   "website": "https://www.coelcha.cl/",
+   "logo_file": "COELCHA logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1130956",
+   "name": "Copec",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "COPEC"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Las Condes",
+   "hq": [
+    -33.41667,
+    -70.58333
+   ],
+   "website": "https://ww2.copec.cl/",
+   "logo_file": "Copec Logo 2023.svg",
+   "listed": true
+  },
+  {
+   "qid": "Q5168546",
+   "name": "Copesa",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Las Condes",
+   "hq": [
+    -33.41667,
+    -70.58333
+   ],
+   "website": "http://www.grupocopesa.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Copesa",
+   "logo_file": "Grupo Copesa.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16491546",
+   "name": "Corpesca",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "fishing industry"
+   ],
+   "isin": [],
+   "hq_city": "Avenida El Golf",
+   "hq": [
+    -33.41522,
+    -70.59197
+   ],
+   "website": "http://www.corpesca.cl/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5788977",
+   "name": "Corporación del Cobre (Chile)",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5172893",
+   "name": "Correos de Chile",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Q5740441",
+   "hq": [
+    -33.43975,
+    -70.67499
+   ],
+   "website": "https://www.correos.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Correos_de_Chile",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23809797",
+   "name": "Costa",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.mercadocarozzi.cl/marcas/costa.html/index.php",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5788971",
+   "name": "COVENSA",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of fertilisers and nitrogen compounds"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/COVENSA",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5315358",
+   "name": "Dunkelvolk",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.dunkelvolk.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Dunkelvolk",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5331091",
+   "name": "Easy",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.easy.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Easy_(store)",
+   "logo_file": "Easy-Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q120673684",
+   "name": "Ecocitex",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "recycling",
+    "textile industry"
+   ],
+   "isin": [],
+   "website": "https://www.ecocitex.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ecocitex",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5817927",
+   "name": "Ediciones UDP",
+   "cc": "cl",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://ediciones.udp.cl/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5818658",
+   "name": "Editorial Jurídica de Chile",
+   "cc": "cl",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.editorialjuridica.cl",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19788728",
+   "name": "Editorial Nascimento",
+   "cc": "cl",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Editorial_Nascimento",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q10981248",
+   "name": "Editorial Universitaria",
+   "cc": "cl",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.universitaria.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Editorial_Universitaria",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6152120",
+   "name": "EFE Central",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.efe.cl/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q679910",
+   "name": "Empresa de los Ferrocarriles del Estado",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.45,
+    -70.66667
+   ],
+   "website": "https://www.efe.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Empresa_de_los_Ferrocarriles_del_Estado",
+   "logo_file": "Logo EFE.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q101210380",
+   "name": "Empresa de Servicios Sanitarios del Bio-Bío",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.essbio.cl/",
+   "listed": false
+  },
+  {
+   "qid": "Q106827285",
+   "name": "Empresa del Ferrocarril Urbano de Santiago",
+   "cc": "cl",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5818735",
+   "name": "Empresa Editora Zig-Zag",
+   "cc": "cl",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1339423",
+   "name": "Empresa Nacional del Petróleo",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Las Condes",
+   "hq": [
+    -33.41667,
+    -70.58333
+   ],
+   "website": "http://www.enap.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Empresa_Nacional_del_Petr%C3%B3leo",
+   "logo_file": "ENAP-CABECERA.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1142823",
+   "name": "Empresas CMPC",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Pulp and Paper"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.cmpc.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Empresas_CMPC",
+   "logo_file": "Logo-cmpc.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q11681461",
+   "name": "Empresas Copec",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.empresascopec.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Empresas_Copec",
+   "logo_file": "Empresas Copec 2020.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5561204",
+   "name": "Empresas EMEL",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "listed": true
+  },
+  {
+   "qid": "Q1275307",
+   "name": "ENAER",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "El Bosque Airport",
+   "hq": [
+    -33.56083,
+    -70.6875
+   ],
+   "website": "http://www.enaer.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/ENAER",
+   "logo_file": "Logo-enaer.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5831735",
+   "name": "ENAMI",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/ENAMI_(Chile)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5816171",
+   "name": "ENAP Refinerías",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Concón",
+   "hq": [
+    -32.91667,
+    -71.51667
+   ],
+   "website": "http://www.enap.cl",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q918206",
+   "name": "Enel Américas",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "ENI"
+    },
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "ENELCHILE"
+    }
+   ],
+   "industries": [
+    "utility"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.enelamericas.com",
+   "lei": "549300LKH11TFCJLZK20",
+   "enwiki": "https://en.wikipedia.org/wiki/Enel_Am%C3%A9ricas",
+   "logo_file": "Enel Group logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q65478176",
+   "name": "Enel Chile",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.enel.cl",
+   "lei": "549300YM5CWCAUVOPB53",
+   "logo_file": "Enel Group logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q5779688",
+   "name": "Enel Distribución Chile",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.enel.cl/",
+   "logo_file": "Enel Group logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3053992",
+   "name": "Enel Generación Chile",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "EOC"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "EOCC"
+    },
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "ENELGXCH"
+    }
+   ],
+   "industries": [
+    "public utility"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.enel.cl/",
+   "lei": "549300PVHXUFEIE6LY50",
+   "enwiki": "https://en.wikipedia.org/wiki/Enel_Generaci%C3%B3n_Chile",
+   "logo_file": "Enel Group logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q450420",
+   "name": "Entel Chile",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "ENTEL"
+    }
+   ],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.entel.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Entel_(Chile)",
+   "logo_file": "EntelChile Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5834190",
+   "name": "Entel Phone",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.entel.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Entel_Phone",
+   "logo_file": "EntelChile Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5849958",
+   "name": "Esval",
+   "cc": "cl",
+   "types": [
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.esval.cl/",
+   "logo_file": "Esval Logotipo.svg",
+   "listed": true
+  },
+  {
+   "qid": "Q5853551",
+   "name": "Express de Santiago Uno",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Estación Central",
+   "hq": [
+    -33.45194,
+    -70.67889
+   ],
+   "website": "http://www.alsaciaexpress.cl/",
+   "logo_file": "Logo Express de Santiago Uno S.A.png",
+   "listed": false
+  },
+  {
+   "qid": "Q5135229",
+   "name": "Falabella",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "FALABELLA"
+    }
+   ],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.falabella.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Falabella_(retail_store)",
+   "logo_file": "Falabella.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q948202",
+   "name": "FAMAE",
+   "cc": "cl",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.famae.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/FAMAE",
+   "logo_file": "Logo Famae.gif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5856069",
+   "name": "Farmacias Ahumada",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.farmaciasahumada.cl",
+   "logo_file": "Farmacias Ahumada Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5856071",
+   "name": "Farmacias Cruz Verde",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.cruzverde.cl",
+   "logo_file": "Logotipo Cruz Verde.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3272934",
+   "name": "Ferreyros",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.ferreyros.com.pe",
+   "enwiki": "https://en.wikipedia.org/wiki/Ferreyros",
+   "logo_file": "Ferreycorplogo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2878320",
+   "name": "Ferronor",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.ferronor.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ferronor",
+   "logo_file": "Ferronor chile logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137730322",
+   "name": "Fintual",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services",
+    "fintech"
+   ],
+   "isin": [],
+   "hq_city": "Mexico City",
+   "hq": [
+    19.35377,
+    -99.13589
+   ],
+   "website": "https://fintual.mx/",
+   "logo_file": "Logo de Fintual.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5863829",
+   "name": "Forestal Mininco",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Forestal_Mininco",
+   "listed": false
+  },
+  {
+   "qid": "Q5526274",
+   "name": "GasAndes Pipeline",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/GasAndes_Pipeline",
+   "listed": false
+  },
+  {
+   "qid": "Q5872788",
+   "name": "Gasco",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "liquified petroleum gas"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.gasco.cl/",
+   "logo_file": "Logo Gasco.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16571026",
+   "name": "General Motors de Chile",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.chevrolet.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/General_Motors_de_Chile",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q117466751",
+   "name": "Global66",
+   "cc": "cl",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://global66.com/co",
+   "logo_file": "Logo Global66.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16471828",
+   "name": "Group-IB",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "computer security",
+    "cybersecurity",
+    "digital security"
+   ],
+   "isin": [],
+   "hq_city": "Singapore",
+   "hq": [
+    1.3,
+    103.8
+   ],
+   "website": "https://www.group-ib.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Group-IB",
+   "logo_file": "Group-IB logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5886095",
+   "name": "Grupo CGE",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5875410",
+   "name": "Hochschild Mining",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [
+    "GB00B1FW5029"
+   ],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "http://www.hochschildmining.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Hochschild_Mining",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5572779",
+   "name": "HQI Transelec",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.transelec.cl",
+   "listed": false
+  },
+  {
+   "qid": "Q5635854",
+   "name": "HSBC Bank Chile",
+   "cc": "cl",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://hsbc.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/HSBC_Bank_Chile",
+   "logo_file": "HSBC logo (2018).svg",
+   "listed": false
+  },
+  {
+   "qid": "Q4144463",
+   "name": "IANSA",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "IANSA"
+    }
+   ],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.iansa.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/IANSA_(company)",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q123766168",
+   "name": "Idea-Tec",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://idea-tec.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Idea-Tec",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6046580",
+   "name": "Intercorp Financial Services",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Panama City",
+   "hq": [
+    8.97111,
+    -79.53472
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Intercorp_Financial_Services",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5404826",
+   "name": "Inversiones Alsacia",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Huechuraba",
+   "hq": [
+    -33.35,
+    -70.66667
+   ],
+   "website": "http://www.alsaciaexpress.cl/",
+   "logo_file": "Logo Inversiones Alsacia S.A.png",
+   "listed": false
+  },
+  {
+   "qid": "Q124838993",
+   "name": "Invertido Ediciones",
+   "cc": "cl",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30919288",
+   "name": "IRT",
+   "cc": "cl",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6310864",
+   "name": "Jumbo",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.jumbo.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Jumbo_(hypermarket)",
+   "logo_file": "Logo Jumbo Cencosud.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6458603",
+   "name": "Keymarket",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Concepción",
+   "hq": [
+    -36.82694,
+    -73.05028
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q94673715",
+   "name": "Klap",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.45,
+    -70.66667
+   ],
+   "website": "https://www.klap.cl/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q680485",
+   "name": "Kunstmann",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "brewery"
+   ],
+   "isin": [],
+   "hq_city": "Torobayo",
+   "hq": [
+    -39.8325,
+    -73.2678
+   ],
+   "website": "http://www.cerveza-kunstmann.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Kunstmann",
+   "logo_file": "Logo Kunstmann.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3053377",
+   "name": "La Polar",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "NUEVAPOLAR"
+    }
+   ],
+   "industries": [
+    "department store"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.lapolar.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/La_Polar",
+   "logo_file": "La Polar 2021.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q649178",
+   "name": "LATAM Airlines",
+   "cc": "cl",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Frankfurt Stock Exchange",
+     "ticker": "LFL"
+    },
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "LAN"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "US5017231003"
+   ],
+   "hq_city": "Las Condes",
+   "hq": [
+    -33.41667,
+    -70.58333
+   ],
+   "website": "http://www.latam.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/LATAM_Airlines",
+   "logo_file": "Latam-logo -v (Indigo).svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1321868",
+   "name": "LATAM Airlines Group",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "LAN"
+    }
+   ],
+   "industries": [
+    "aircraft industry"
+   ],
+   "isin": [
+    "CL0000000423"
+   ],
+   "hq_city": "Las Condes",
+   "hq": [
+    -33.41667,
+    -70.58333
+   ],
+   "website": "http://www.latamairlinesgroup.net/",
+   "lei": "549300HX3UUDPEFTG707",
+   "enwiki": "https://en.wikipedia.org/wiki/LATAM_Airlines_Group",
+   "logo_file": "Latam-logo -v (Indigo).svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16589609",
+   "name": "Late! Chile",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.late.cl",
+   "listed": false
+  },
+  {
+   "qid": "Q28858795",
+   "name": "Lemontech",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q17385208",
+   "name": "LOM Ediciones",
+   "cc": "cl",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://lom.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/LOM_Ediciones",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5978524",
+   "name": "Loma's Sport",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.lomas.pe/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6706549",
+   "name": "Luz del Sur",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.luzdelsur.com.pe",
+   "enwiki": "https://en.wikipedia.org/wiki/Luz_del_Sur",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6726816",
+   "name": "Madeco",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "investment"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.madeco.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Madeco",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q9283482",
+   "name": "Mariategui JLT",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.jltperu.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mari%C3%A1tegui_JLT",
+   "logo_file": "Mariategui jlt logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q3297271",
+   "name": "Masisa",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq",
+     "ticker": "MYSZY"
+    },
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "MASISA"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.masisa.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Masisa",
+   "logo_file": "Masisa logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q104814825",
+   "name": "Mass",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "https://www.tiendasmass.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mass_(supermarket)",
+   "logo_file": "Tiendas Mass logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12636711",
+   "name": "Merkosurci",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "international trade"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q6011678",
+   "name": "Metalpar",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Maipú",
+   "hq": [
+    -33.51667,
+    -70.76667
+   ],
+   "website": "http://www.metalpar.cl",
+   "logo_file": "Metalpar Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5736011",
+   "name": "Metbus",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.45,
+    -70.66667
+   ],
+   "website": "http://www.metbus.cl/",
+   "logo_file": "Logo empresa METBUS.png",
+   "listed": false
+  },
+  {
+   "qid": "Q16606694",
+   "name": "Metro Regional de Valparaíso S.A.",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Viña del Mar",
+   "hq": [
+    -33.0245,
+    -71.5518
+   ],
+   "website": "https://www.metro-valparaiso.cl",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6011991",
+   "name": "Metro S.A.",
+   "cc": "cl",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.metro.cl",
+   "logo_file": "Metro de Santiago Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6012053",
+   "name": "Metrogas",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.metrogas.cl/",
+   "logo_file": "Logo Metrogas 2025.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5252344",
+   "name": "Miguel Torres Chile",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Miguel_Torres_Chile",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q588433",
+   "name": "Minera Escondida",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Las Condes",
+   "hq": [
+    -33.41667,
+    -70.58333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Minera_Escondida",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3517294",
+   "name": "Movistar Chile",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Torre Telefónica Chile",
+   "hq": [
+    -33.437,
+    -70.6324
+   ],
+   "website": "http://www.movistar.cl/",
+   "logo_file": "Movistar isotype 2020.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125698710",
+   "name": "Mundo",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "logo_file": "Mundo Chile - logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q47494453",
+   "name": "Muricy",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "São Paulo",
+   "hq": [
+    -23.55039,
+    -46.63395
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Muricy_(retail_store)",
+   "logo_file": "Muricy.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6982470",
+   "name": "Navimag",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "water transport"
+   ],
+   "isin": [],
+   "hq_city": "Puerto Montt",
+   "hq": [
+    -41.4718,
+    -72.9396
+   ],
+   "website": "https://www.navimag.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Navimag",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5779769",
+   "name": "Nitrates and Railway Company of Antofagasta",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q101609467",
+   "name": "NotCo",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.notco.com/",
+   "logo_file": "NotCo logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137706563",
+   "name": "NovaAndino Litio",
+   "cc": "cl",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Nova_Andino_Litio",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6049096",
+   "name": "Oechsle",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.oechsle.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Oechsle_(retail_chain)",
+   "logo_file": "Logo de Oechsle.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6047736",
+   "name": "OK Market",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://okmarket.cl",
+   "logo_file": "Logo OK Market.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7103682",
+   "name": "Oro Blanco",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "holding company"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Oro_Blanco",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3366007",
+   "name": "Parque Arauco S.A.",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "PARAUCO"
+    }
+   ],
+   "industries": [
+    "shopping mall"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.parquearauco.cl/",
+   "lei": "2549001WW2PV1Y0UEU97",
+   "enwiki": "https://en.wikipedia.org/wiki/Parque_Arauco_S.A.",
+   "logo_file": "Logo Parque Arauco.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7194238",
+   "name": "Pilmaiquén S.A.",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Pilmaiqu%C3%A9n_S.A.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6087413",
+   "name": "Productos Fernández S.A.",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Talca",
+   "hq": [
+    -35.42694,
+    -71.66556
+   ],
+   "logo_file": "Logo PF Alimentos Web Mesa de trabajo 1.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q127432631",
+   "name": "Pronto Copec",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://prontocopec.cl/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7252351",
+   "name": "Provida",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "pvd"
+    }
+   ],
+   "industries": [
+    "pension"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.provida.cl/",
+   "lei": "549300FK7HEJO33J5N35",
+   "enwiki": "https://en.wikipedia.org/wiki/Provida",
+   "logo_file": "Logotipo AFP ProVida.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6092702",
+   "name": "Pullman Bus",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "intercity bus service",
+    "land transport"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.pullman.cl",
+   "logo_file": "Pullman Bus.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24879276",
+   "name": "Pullmar Sur",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q24727664",
+   "name": "Puntoticket",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.puntoticket.com/",
+   "logo_file": "Logo puntoticket.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6095481",
+   "name": "Quiñenco",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "holding company"
+   ],
+   "isin": [],
+   "hq_city": "Las Condes",
+   "hq": [
+    -33.41667,
+    -70.58333
+   ],
+   "website": "http://www.quinenco.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Qui%C3%B1enco",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q36879490",
+   "name": "Rappi",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "https://www.rappi.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rappi",
+   "logo_file": "Rappi logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6160471",
+   "name": "Redbus Urbano",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Huechuraba",
+   "hq": [
+    -33.35,
+    -70.66667
+   ],
+   "website": "http://www.redbusurbano.cl/",
+   "logo_file": "Logo Redbus Urbano S.A.png",
+   "listed": false
+  },
+  {
+   "qid": "Q3433040",
+   "name": "Ripley S.A.",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "RIPLEY"
+    }
+   ],
+   "industries": [
+    "financial services",
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.ripley.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Ripley_S.A.",
+   "logo_file": "Logo Ripley.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q22811634",
+   "name": "Rosen",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Huechuraba",
+   "hq": [
+    -33.35,
+    -70.66667
+   ],
+   "website": "https://www.rosen.cl/",
+   "logo_file": "Logorosen3.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2877054",
+   "name": "Salcobrand",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry",
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://salcobrand.cl/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6117399",
+   "name": "Salo",
+   "cc": "cl",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7421002",
+   "name": "Sapolio",
+   "cc": "cl",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Sapolio",
+   "listed": false
+  },
+  {
+   "qid": "Q124513639",
+   "name": "Schwager Energy S.A.",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Coronel",
+   "hq": [
+    -37.01667,
+    -73.13333
+   ],
+   "website": "https://www.schwager.cl/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5715611",
+   "name": "Scotiabank Azul",
+   "cc": "cl",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://bbva.cl/",
+   "listed": false
+  },
+  {
+   "qid": "Q6122562",
+   "name": "Scotiabank Chile",
+   "cc": "cl",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.scotiabankchile.cl/",
+   "logo_file": "Logo Scotiabank (Kanada).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6126135",
+   "name": "Servicio de Trenes Regionales Terra S.A.",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.45,
+    -70.66667
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6127448",
+   "name": "Siderúrgica Huachipato",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3483510",
+   "name": "Sigdo Koppers",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.sigdokoppers.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Sigdo_Koppers",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6130890",
+   "name": "Sociedad Explotadora de Tierra del Fuego",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "animal production"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Sociedad_Explotadora_de_Tierra_del_Fuego",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24879279",
+   "name": "Sociedad Industrial de Aysén",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3067064",
+   "name": "Sociedad Química y Minera de Chile",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "SQM"
+    },
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "SQM"
+    }
+   ],
+   "industries": [
+    "industrial chemistry",
+    "mining"
+   ],
+   "isin": [
+    "US8336351056"
+   ],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.sqm.com/",
+   "lei": "TJ88LXZZW5PWIN93ZC81",
+   "enwiki": "https://en.wikipedia.org/wiki/Sociedad_Qu%C3%ADmica_y_Minera",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6131097",
+   "name": "Sociedades Mineras Mixtas",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16677462",
+   "name": "Sonda",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "computer science"
+   ],
+   "isin": [],
+   "website": "http://www.sonda.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7563212",
+   "name": "Soprole",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.soprole.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Soprole",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7602463",
+   "name": "Start-Up Chile",
+   "cc": "cl",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://startupchile.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/Start-Up_Chile",
+   "logo_file": "Logo Start-Up Chile by Corfo-01.png",
+   "listed": false
+  },
+  {
+   "qid": "Q5718188",
+   "name": "State Bank of Chile",
+   "cc": "cl",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.bancoestado.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_del_Estado_de_Chile",
+   "logo_file": "Logo BancoEstado.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6116305",
+   "name": "STP Santiago",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.45,
+    -70.66667
+   ],
+   "website": "http://www.stpsantiago.cl/",
+   "logo_file": "LOGO STP SANTIAGO (2019).png",
+   "listed": false
+  },
+  {
+   "qid": "Q5494410",
+   "name": "Subus Chile",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Huechuraba",
+   "hq": [
+    -33.35,
+    -70.66667
+   ],
+   "website": "http://www.subuschile.cl/",
+   "logo_file": "Logo SUBUS CHILE.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7643967",
+   "name": "Supermercados Peruanos",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "San Borja",
+   "hq": [
+    -12.09755,
+    -76.99521
+   ],
+   "website": "http://www.supermercadosperuanos.com.pe/web/qsomos-grupo",
+   "enwiki": "https://en.wikipedia.org/wiki/Supermercados_Peruanos",
+   "logo_file": "Supermercados Peruanos logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107610095",
+   "name": "Tabali Winery",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "winemaking"
+   ],
+   "isin": [],
+   "website": "https://www.tabali.com",
+   "listed": false
+  },
+  {
+   "qid": "Q106768488",
+   "name": "Taltal Railway",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Taltal_Railway",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9085569",
+   "name": "Teletrak",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Chile",
+   "hq": [
+    -33.0,
+    -71.0
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q597933",
+   "name": "Televisión Nacional de Chile",
+   "cc": "cl",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Providencia",
+   "hq": [
+    -33.43333,
+    -70.61667
+   ],
+   "website": "http://www.tvn.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Televisi%C3%B3n_Nacional_de_Chile",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16679230",
+   "name": "Televisión Nacional de Chile",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Providencia",
+   "hq": [
+    -33.43333,
+    -70.61667
+   ],
+   "website": "http://www.tvn.cl",
+   "listed": false
+  },
+  {
+   "qid": "Q6146592",
+   "name": "Tiendas Peruanas",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7828510",
+   "name": "Tottus",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.tottus.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tottus",
+   "logo_file": "Logotipo Tottus.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q50327141",
+   "name": "Training Deportes",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Recoleta",
+   "hq": [
+    -33.41667,
+    -70.65
+   ],
+   "logo_file": "TrainingPro.png",
+   "listed": false
+  },
+  {
+   "qid": "Q7833807",
+   "name": "Transbordadora Austral Broom S.A.",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.tabsa.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Transbordadora_Austral_Broom_S.A.",
+   "listed": false
+  },
+  {
+   "qid": "Q6153855",
+   "name": "Turbus",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "intercity bus service",
+    "land transport",
+    "public transport bus service"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.turbus.cl",
+   "logo_file": "TurBus.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9081296",
+   "name": "TV RED",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Punta Arenas",
+   "hq": [
+    -53.1625,
+    -70.90806
+   ],
+   "website": "http://www.tvred.cl",
+   "logo_file": "LOGO TVRED.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20022218",
+   "name": "Undurraga Winery",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "winemaking"
+   ],
+   "isin": [],
+   "hq_city": "Talagante",
+   "hq": [
+    -33.66667,
+    -70.93333
+   ],
+   "website": "https://www.undurraga.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Vi%C3%B1a_Undurraga",
+   "logo_file": "LogoUndurraga.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6156244",
+   "name": "Unimarc",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.unimarc.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Unimarc",
+   "logo_file": "Unimarc logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16644830",
+   "name": "Uqbar Editores",
+   "cc": "cl",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.uqbareditores.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Uqbar_Editores",
+   "logo_file": "Uqbar.jpeg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7933965",
+   "name": "Virgin Mobile Chile",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "http://www.virginmobile.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Virgin_Mobile_Chile",
+   "logo_file": "Virgin Mobile Chile.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6164429",
+   "name": "Viña Lapostolle",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Vi%C3%B1a_Lapostolle",
+   "listed": false
+  },
+  {
+   "qid": "Q5555336",
+   "name": "Viña San Pedro",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Molina City",
+   "hq": [
+    -35.11306,
+    -71.30556
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q102799315",
+   "name": "Viña Viu Manent",
+   "cc": "cl",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Vi%C3%B1a_Viu_Manent",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9092202",
+   "name": "VTR",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "http://www.vtr.com",
+   "enwiki": "https://en.wikipedia.org/wiki/VTR_(telecom_company)",
+   "logo_file": "VTRlogo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7963716",
+   "name": "Walon Sport",
+   "cc": "cl",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lima",
+   "hq": [
+    -12.06,
+    -77.0375
+   ],
+   "website": "http://www.walon.com.pe/",
+   "enwiki": "https://en.wikipedia.org/wiki/Walon_Sport",
+   "logo_file": "Walon Sport.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q52664392",
+   "name": "Wind Energy Solutions",
+   "cc": "cl",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Opmeer",
+   "hq": [
+    52.7033,
+    4.9444
+   ],
+   "website": "http://www.windenergysolutions.nl",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4121265",
+   "name": "Zona Franca of Iquique",
+   "cc": "cl",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.zofri.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Free_Zone_of_Iquique",
+   "founded": null,
+   "listed": true
+  }
+ ]
+}

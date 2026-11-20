@@ -1,0 +1,6642 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "AR",
+ "count": 331,
+ "companies": [
+  {
+   "qid": "Q5649638",
+   "name": "100 Bares",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4638513",
+   "name": "47 Street",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.47street.com.ar/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56317549",
+   "name": "6th Mountain Shooters Company",
+   "cc": "ar",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Primeros Pinos Army Barracks",
+   "enwiki": "https://en.wikipedia.org/wiki/6th_Mountain_Cazadores_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108367045",
+   "name": "Aceitera General Deheza",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "General Deheza",
+   "hq": [
+    -32.75639,
+    -63.78889
+   ],
+   "website": "https://www.agd.com.ar/",
+   "logo_file": "Logo AGD.webp",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12382431",
+   "name": "Acindar",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Villa Constitución",
+   "hq": [
+    -33.23333,
+    -60.33333
+   ],
+   "website": "http://www.acindar.com.ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Acindar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q101429880",
+   "name": "Adecoagro",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "AGRO"
+    }
+   ],
+   "industries": [
+    "agribusiness",
+    "dairy industry"
+   ],
+   "isin": [],
+   "website": "https://www.adecoagro.com/",
+   "logo_file": "Logo Adecoagro.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4033469",
+   "name": "AeroDreams",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.aerodreams-uav.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/AeroDreams",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4694124",
+   "name": "Agrinar",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agricultural machinery industry"
+   ],
+   "isin": [],
+   "hq_city": "Granadero Baigorria",
+   "hq": [
+    -32.85,
+    -60.7
+   ],
+   "website": "http://www.agrinar.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Agrinar",
+   "logo_file": "Agrinar company logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5660245",
+   "name": "Agua y Energía Eléctrica",
+   "cc": "ar",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "logo_file": "Agua y Energía Eléctrica.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5660248",
+   "name": "Agua y Saneamientos Argentinos",
+   "cc": "ar",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "San Nicolás, Buenos Aires",
+   "hq": [
+    -34.60528,
+    -58.37583
+   ],
+   "website": "https://www.aysa.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Agua_y_Saneamientos_Argentinos",
+   "logo_file": "Aysa logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q117886296",
+   "name": "Aguas Rionegrinas",
+   "cc": "ar",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "public service"
+   ],
+   "isin": [],
+   "hq_city": "Viedma",
+   "hq": [
+    -40.8,
+    -63.0
+   ],
+   "website": "https://aguasrionegrinas.com/",
+   "logo_file": "Aguas Rionegrinas Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7600476",
+   "name": "Alot (store)",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.staples.com.ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Alot_(store)",
+   "logo_file": "Officenet Argentina Logo in 2008.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4734761",
+   "name": "Alpargatas Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "footwear industry",
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Alpargatas_Argentina",
+   "logo_file": "Alpargatas-logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2840527",
+   "name": "Aluar",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.aluar.com.ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Aluar",
+   "logo_file": "Logo Aluar.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5675044",
+   "name": "Andes Energía",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4763687",
+   "name": "Anglo-South American Bank",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial service activities, except insurance and pension funding"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Anglo-South_American_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131308915",
+   "name": "Arcadium Lithium",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Australian Securities Exchange",
+     "ticker": "LTM"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "ALTM"
+    }
+   ],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "website": "https://arcadiumlithium.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Arcadium_Lithium",
+   "listed": true
+  },
+  {
+   "qid": "Q5703690",
+   "name": "Argentine Southern Land Company",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "animal husbandry",
+    "raising of other cattle and buffaloes"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q6388292",
+   "name": "Aries Cinematográfica Argentina",
+   "cc": "ar",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4795497",
+   "name": "Aroma Café",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "cafeteria"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.aromaa.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/The_Aroma_Cafe",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18485368",
+   "name": "Arremate",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q17709270",
+   "name": "ARSAT",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Benavídez",
+   "hq": [
+    -34.4094,
+    -58.5428
+   ],
+   "website": "https://www.arsat.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/ARSAT",
+   "logo_file": "Logo arsat.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5692058",
+   "name": "Arte Radiotelevisivo Argentino",
+   "cc": "ar",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://artear.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Artear",
+   "logo_file": "Artear nuevo logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4654053",
+   "name": "ASA Aluminium Body",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "San Isidro",
+   "hq": [
+    -34.46667,
+    -58.51667
+   ],
+   "website": "http://www.nestorsalerno.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/ASA_Aluminium_Body",
+   "logo_file": "Nestor salerno logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21001766",
+   "name": "Asociación Casa Editora Sudamericana",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Florida Oeste",
+   "hq": [
+    -34.5381,
+    -58.5139
+   ],
+   "website": "https://www.argentina.editorialaces.com/",
+   "logo_file": "Logo ACES.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6389322",
+   "name": "Associated Argentine Artists",
+   "cc": "ar",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Associated_Argentine_Artists",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16489074",
+   "name": "Astilleros Alianza",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "shipbuilding company"
+   ],
+   "isin": [],
+   "hq_city": "Dock Sud",
+   "hq": [
+    -34.64167,
+    -58.34778
+   ],
+   "logo_file": "Alianza25.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104783548",
+   "name": "Astilleros y Fábricas Navales del Estado",
+   "cc": "ar",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18416039",
+   "name": "AUBASA",
+   "cc": "ar",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "construction industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://aubasa.com.ar/",
+   "logo_file": "Aubasa logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17002032",
+   "name": "Aves Argentinas-Asociación Ornitológica del Plata",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.avesargentinas.org.ar/12/index.php",
+   "enwiki": "https://en.wikipedia.org/wiki/Aves_Argentinas-Asociaci%C3%B3n_Ornitol%C3%B3gica_del_Plata",
+   "listed": false
+  },
+  {
+   "qid": "Q107407410",
+   "name": "Bagley Argentina S.A.",
+   "cc": "ar",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "website": "https://bagley.com.ar/Default.aspx",
+   "enwiki": "https://en.wikipedia.org/wiki/Bagley_(company)",
+   "logo_file": "Bagley argentina logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854067",
+   "name": "Banco Alas",
+   "cc": "ar",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Alas",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4854086",
+   "name": "Banco Credicoop",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.bancocredicoop.coop/modules/home/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Credicoop",
+   "logo_file": "Logo Banco Credicoop.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5718100",
+   "name": "Banco de Italia y Río de la Plata",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131195889",
+   "name": "Banco de Valores",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Isologo-valo-area-de-proteccion.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q6392928",
+   "name": "Banco Español del Río de la Plata",
+   "cc": "ar",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Espa%C3%B1ol_del_R%C3%ADo_de_la_Plata",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2882071",
+   "name": "Banco Hipotecario",
+   "cc": "ar",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.hipotecario.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Hipotecario",
+   "logo_file": "Logo Banco Hipotecario.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3385268",
+   "name": "Banco Santander Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.santander.com.ar/banco/online/personas",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Santander_Argentina",
+   "logo_file": "Banco Santander Logotipo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125132818",
+   "name": "Banco Santiago del Estero",
+   "cc": "ar",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Santiago del Estero",
+   "hq": [
+    -27.78444,
+    -64.26694
+   ],
+   "website": "https://www.bse.com.ar",
+   "lei": "579100GDDGGEGJGIE042",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Santiago_del_Estero",
+   "logo_file": "Logo BSE.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4854829",
+   "name": "Banelco",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.banelco.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banelco",
+   "logo_file": "Banelco logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17623653",
+   "name": "Bank of Entre Rios",
+   "cc": "ar",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Paraná",
+   "hq": [
+    -31.73306,
+    -60.52972
+   ],
+   "website": "http://www.nuevobersa.com.ar/Pages/",
+   "logo_file": "Banco Entre Rios.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4856204",
+   "name": "Bank of the City of Buenos Aires",
+   "cc": "ar",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.bancociudad.com.ar/institucional/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_the_City_of_Buenos_Aires",
+   "logo_file": "Logo Banco Ciudad.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4856209",
+   "name": "Bank of the Province of Buenos Aires",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "La Plata",
+   "hq": [
+    -34.93333,
+    -57.95
+   ],
+   "website": "https://www.bancoprovincia.com.ar/web",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_the_Province_of_Buenos_Aires",
+   "logo_file": "Banco Provincia (Bs.As., 2021).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5718071",
+   "name": "Bank of the Province of Córdoba",
+   "cc": "ar",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Córdoba",
+   "hq": [
+    -31.41667,
+    -64.18333
+   ],
+   "website": "https://www.bancor.com.ar/",
+   "logo_file": "Bancor 2026.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q100233006",
+   "name": "Bank of the Province of Neuquén",
+   "cc": "ar",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Neuquén",
+   "hq": [
+    -38.95183,
+    -68.05919
+   ],
+   "website": "https://www.bpn.com.ar/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2876788",
+   "name": "BBVA Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "BFR"
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [
+    "ARP125991090"
+   ],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.bbva.com.ar",
+   "lei": "579100KKDBKJFDKKD024",
+   "enwiki": "https://en.wikipedia.org/wiki/BBVA_Argentina",
+   "logo_file": "BBVA 2019.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q56423846",
+   "name": "Beatriz Viterbo Editora",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rosario",
+   "hq": [
+    -32.9575,
+    -60.63944
+   ],
+   "website": "https://beatrizviterboeditora.com.ar/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20018339",
+   "name": "Berisso Railway",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4035048",
+   "name": "Bersa",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Ramos Mejía",
+   "hq": [
+    -34.65,
+    -58.56667
+   ],
+   "website": "http://www.bersa.com.ar/index-en.html",
+   "enwiki": "https://en.wikipedia.org/wiki/Bersa",
+   "logo_file": "Bersa logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5715664",
+   "name": "BGH",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://bgh.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/BGH_(company)",
+   "logo_file": "Logo de BGH.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16489444",
+   "name": "BIND Group",
+   "cc": "ar",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.bind.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/BIND_Group",
+   "logo_file": "Logo-banco-industrial-arg.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q69661954",
+   "name": "Bioceres",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.bioceres.com.ar",
+   "listed": false
+  },
+  {
+   "qid": "Q5729945",
+   "name": "Blanquiceleste",
+   "cc": "ar",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Blanquiceleste",
+   "listed": false
+  },
+  {
+   "qid": "Q105094172",
+   "name": "Bolsas y Mercados Argentinos",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Bolsas y Mercados Argentinos",
+     "ticker": "BYMA"
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.byma.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Byma",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4035420",
+   "name": "Bridas Corporation",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Bridas_Corporation",
+   "logo_file": "Bridas corporation logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85749233",
+   "name": "Brubank",
+   "cc": "ar",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://brubank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Brubank",
+   "logo_file": "Brubank logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q1830779",
+   "name": "Buby",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Buby_toys",
+   "listed": false
+  },
+  {
+   "qid": "Q6010442",
+   "name": "Buenos Aires Central Market",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tapiales",
+   "hq": [
+    -34.7058,
+    -58.5047
+   ],
+   "website": "http://www.mercadocentral.gob.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Buenos_Aires_Central_Market",
+   "listed": false
+  },
+  {
+   "qid": "Q5735625",
+   "name": "Bunge Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness",
+    "energy industry",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.bungeargentina.com/sp/index.asp",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5737779",
+   "name": "Cabal",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.cabal.coop/",
+   "listed": false
+  },
+  {
+   "qid": "Q16540032",
+   "name": "Cafe Martínez",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.cafemartinez.com/",
+   "logo_file": "Cafe Martinez Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5739389",
+   "name": "Caja nacional de ahorro postal",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "logo_file": "CNHP logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5020295",
+   "name": "California Burrito Co.",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fast food"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/California_Burrito_Co.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96374332",
+   "name": "Camuzzi Gas",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "Buenos Aires Stock Exchange",
+     "ticker": "CGPA2"
+    }
+   ],
+   "industries": [
+    "service"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.camuzzigas.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Camuzzi_Gas",
+   "logo_file": "Camuzzi-Gas Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q115799934",
+   "name": "Capture Bizarre",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "social media"
+   ],
+   "isin": [],
+   "hq_city": "Villa Regina",
+   "hq": [
+    -39.1,
+    -67.06667
+   ],
+   "website": "https://capturebizarre.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Capture_Bizarre",
+   "logo_file": "Logo Mesa de trabajo 1.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135390032",
+   "name": "Carrefour Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires Province",
+   "hq": [
+    -37.0,
+    -60.0
+   ],
+   "website": "https://www.carrefour.com.ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Carrefour_Argentina",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28135797",
+   "name": "CBSé",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.cbse.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/CBS%C3%A9",
+   "logo_file": "Cbse company logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5786331",
+   "name": "CEAMSE",
+   "cc": "ar",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "waste management"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.ceamse.gov.ar/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1053372",
+   "name": "Cencosud",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": null
+    },
+    {
+     "exchange": "Santiago Stock Exchange",
+     "ticker": "CENCOSUD"
+    }
+   ],
+   "industries": [
+    "retail"
+   ],
+   "isin": [
+    "CL0000000100"
+   ],
+   "hq_city": "Las Condes",
+   "hq": [
+    -33.41667,
+    -70.58333
+   ],
+   "website": "http://www.cencosud.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cencosud",
+   "logo_file": "Cencosud-2014.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q51883310",
+   "name": "Cervecería y Maltería Quilmes",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "hq_city": "Quilmes",
+   "hq": [
+    -34.71667,
+    -58.26667
+   ],
+   "website": "https://www.cerveceriaymalteriaquilmes.com/",
+   "logo_file": "Cerveceria quilmes textlogo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6409512",
+   "name": "Cerveza Patagonia",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.cervezapatagonia.com.ar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5068281",
+   "name": "Chakana wines",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Argentina",
+   "hq": [
+    -34.0,
+    -64.0
+   ],
+   "website": "http://www.chakanawines.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Chakana_wines",
+   "logo_file": "Bodega Chakana noche.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q108190515",
+   "name": "Chocolate Águila",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Barracas",
+   "hq": [
+    -34.65,
+    -58.38333
+   ],
+   "website": "https://chocolateaguila.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Chocolate_Aguila",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2582477",
+   "name": "Cicaré Helicópteros",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Saladillo",
+   "hq": [
+    -35.63333,
+    -59.76667
+   ],
+   "website": "http://www.cicare.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cicar%C3%A9",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q591866",
+   "name": "Citibank Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.argentina.citibank.com/ARGCB/JPS/portal/Index.do",
+   "enwiki": "https://en.wikipedia.org/wiki/Citibank_Argentina",
+   "logo_file": "Citi logo March 2023.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5771250",
+   "name": "Claro Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.claro.com.ar/",
+   "logo_file": "Claro.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5127722",
+   "name": "Claro Argentina, Paraguay and Uruguay",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Claro_Argentina,_Paraguay_and_Uruguay",
+   "listed": false
+  },
+  {
+   "qid": "Q5013026",
+   "name": "CMT Brasil",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141242428",
+   "name": "Cocos",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://cocos.capital/",
+   "logo_file": "Logo Cocos.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q120492051",
+   "name": "Columbia Bank",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5717905",
+   "name": "Comafi Bank",
+   "cc": "ar",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.comafi.com.ar/",
+   "logo_file": "Logo Oficial Banco Comafi.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5872822",
+   "name": "Compañia General de Obras Públicas",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "logo_file": "Geope-000.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98112872",
+   "name": "Compañía Administradora del Mercado Mayorista Eléctrico Sociedad Anónima",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.cammesa.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Compa%C3%B1%C3%ADa_Administradora_del_Mercado_Mayorista_El%C3%A9ctrico_Sociedad_An%C3%B3nima",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1121343",
+   "name": "Compañía Argentina para Proyectos y Realizaciones Industriales – Fuldner y Cía",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5780301",
+   "name": "Comte",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q2497795",
+   "name": "Coppel",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Culiacán",
+   "hq": [
+    24.79028,
+    -107.38778
+   ],
+   "website": "https://www.coppel.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Coppel",
+   "logo_file": "Coppel 2025.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21512347",
+   "name": "Corporación América",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.corporacionamerica.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q4036566",
+   "name": "Correo Oficial de la República Argentina",
+   "cc": "ar",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires Central Post Office",
+   "hq": [
+    -34.60333,
+    -58.36944
+   ],
+   "website": "https://www.correoargentino.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Correo_Argentino",
+   "logo_file": "Correo Argentino Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22131873",
+   "name": "Corven",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry",
+    "motorcycle industry"
+   ],
+   "isin": [],
+   "hq_city": "Venado Tuerto",
+   "hq": [
+    -33.75,
+    -61.96667
+   ],
+   "website": "http://www.corvenmotos.com/",
+   "logo_file": "Logo corven.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5175411",
+   "name": "Coto supermarkets",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.coto.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Coto_Supermarkets",
+   "logo_file": "Logo Supermercado Coto.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106642733",
+   "name": "Cresud",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "US2264061068"
+   ],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.cresud.com.ar/",
+   "listed": true
+  },
+  {
+   "qid": "Q1140147",
+   "name": "Cris Morena Group",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "media industry",
+    "phonographic industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.crismorenagroup.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cris_Morena_Group",
+   "logo_file": "Logo-cris morena group.webp",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5190326",
+   "name": "Cruz del Sur pipeline",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Montevideo",
+   "hq": [
+    -34.90592,
+    -56.19131
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Cruz_del_Sur_pipeline",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5794808",
+   "name": "Cunnington",
+   "cc": "ar",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Pilar",
+   "hq": [
+    -34.45875,
+    -58.91419
+   ],
+   "website": "http://www.cunnington.com.ar/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116507946",
+   "name": "Czerweny computers",
+   "cc": "ar",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Czerweny_Electr%C3%B3nica",
+   "listed": false
+  },
+  {
+   "qid": "Q19620880",
+   "name": "Dejesu Records",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5474829",
+   "name": "Delmar",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.delmarshoes.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6216567",
+   "name": "Despegar",
+   "cc": "ar",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "DESP"
+    }
+   ],
+   "industries": [
+    "tourism industry"
+   ],
+   "isin": [],
+   "hq_city": "São Paulo",
+   "hq": [
+    -23.55039,
+    -46.63395
+   ],
+   "website": "http://www.despegar.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Despegar",
+   "logo_file": "Despegar.com logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q19705703",
+   "name": "Diamond Films",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "film distributor"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.diamondfilms.com.br/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106755846",
+   "name": "DINFIA",
+   "cc": "ar",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "aircraft industry"
+   ],
+   "isin": [],
+   "hq_city": "Córdoba",
+   "hq": [
+    -31.41667,
+    -64.18333
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5797164",
+   "name": "DRB Dribbling",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.dribbling.com.ar/",
+   "listed": false
+  },
+  {
+   "qid": "Q5331091",
+   "name": "Easy",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "http://www.easy.cl",
+   "enwiki": "https://en.wikipedia.org/wiki/Easy_(store)",
+   "logo_file": "Easy-Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5817099",
+   "name": "Ecogas",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.ecogas.com.ar/",
+   "listed": false
+  },
+  {
+   "qid": "Q2843192",
+   "name": "Edenor S.A.",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "EDN"
+    }
+   ],
+   "industries": [
+    "public utility"
+   ],
+   "isin": [
+    "US29244A1025"
+   ],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.edenor.com/",
+   "lei": "254900JU7TV6VS9GRW29",
+   "enwiki": "https://en.wikipedia.org/wiki/Edenor",
+   "logo_file": "Edenor-Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5337059",
+   "name": "Edesur",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "public utility"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.edesur.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Edesur",
+   "logo_file": "Edesur logo22.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12256470",
+   "name": "Ediciones de la Flor",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Ediciones_de_la_Flor",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25509186",
+   "name": "Ediciones Galicia",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Ediciones Galicia del Centro Gallego de Buenos Aires.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q95150",
+   "name": "Ediciones Minotauro",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Barcelona",
+   "hq": [
+    41.3825,
+    2.17694
+   ],
+   "website": "https://www.planetadelibros.com/editorial/minotauro/21",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5817898",
+   "name": "Ediciones Paidós",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Barcelona",
+   "hq": [
+    41.3825,
+    2.17694
+   ],
+   "website": "https://planeta.es/es/sello/ediciones-paidos",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116222536",
+   "name": "Ediciones Tirso",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16941718",
+   "name": "Editorial Argenta",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "website": "http://www.editorialargenta.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5338727",
+   "name": "Editorial Atlántida",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://atlantida.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Editorial_Atl%C3%A1ntida",
+   "logo_file": "Editorial atlantida argentina logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31282968",
+   "name": "Editorial Citania",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19434164",
+   "name": "Editorial Claridad",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "logo_file": "Nuveas Rimas - Los Poetas vol. 9 (page 3 crop).jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65160419",
+   "name": "Editorial de la Universidad Nacional de La Plata",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "La Plata",
+   "hq": [
+    -34.93333,
+    -57.95
+   ],
+   "website": "https://www.editorial.unlp.edu.ar/",
+   "listed": false
+  },
+  {
+   "qid": "Q5818632",
+   "name": "Editorial Frontera",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Editorial_Frontera",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4355026",
+   "name": "Editorial Ivrea",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.editorialivrea.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Editorial_Ivrea",
+   "logo_file": "Ivrea Editorial.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60596842",
+   "name": "Editorial Kapelusz",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q91581731",
+   "name": "Editorial Nova",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6426445",
+   "name": "Editorial Perfil S.A.",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.perfil.com/",
+   "logo_file": "Perfil editorial logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30162092",
+   "name": "Elektro",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Publicidad de trenes Elektro.png",
+   "listed": false
+  },
+  {
+   "qid": "Q1333254",
+   "name": "Eloísa Cartonera",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.eloisacartonera.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Elo%C3%ADsa_Cartonera",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3820907",
+   "name": "Emecé Editores",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.planeta.es/en/emec%C3%A9-editores-argentina",
+   "enwiki": "https://en.wikipedia.org/wiki/Emec%C3%A9_Editores",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19902982",
+   "name": "Emepa Group",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "transport industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://grupoemepa.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Emepa_Group",
+   "logo_file": "Grupo emepa logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q116687516",
+   "name": "Emova",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "website": "https://emova.com.ar/",
+   "logo_file": "Emova Full logo.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q3030794",
+   "name": "Energía Argentina",
+   "cc": "ar",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.energia-argentina.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Energ%C3%ADa_Argentina",
+   "logo_file": "Energía Argentina logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q117811087",
+   "name": "Ente Provincial de Agua y Saneamiento",
+   "cc": "ar",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "public service"
+   ],
+   "isin": [],
+   "hq_city": "Neuquén",
+   "hq": [
+    -38.95183,
+    -68.05919
+   ],
+   "website": "http://www.epas.gov.ar/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5834173",
+   "name": "Ente Provincial de Energía del Neuquén",
+   "cc": "ar",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "public utility"
+   ],
+   "isin": [],
+   "hq_city": "Neuquén",
+   "hq": [
+    -38.95183,
+    -68.05919
+   ],
+   "website": "https://www.epen.gov.ar/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5323742",
+   "name": "ENTel",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/ENTel",
+   "logo_file": "ENTel Argentina - Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5831749",
+   "name": "EPEC",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Córdoba",
+   "hq": [
+    -31.41667,
+    -64.18333
+   ],
+   "website": "https://epec.com.ar",
+   "logo_file": "Epec cba logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5399993",
+   "name": "Establecimiento Las Marías",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Gobernador Virasoro",
+   "hq": [
+    -28.05,
+    -56.03333
+   ],
+   "website": "https://www.lasmarias.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Establecimiento_Las_Mar%C3%ADas",
+   "listed": false
+  },
+  {
+   "qid": "Q5849870",
+   "name": "Estudios San Miguel",
+   "cc": "ar",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "film production"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Estudios_San_Miguel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q51768314",
+   "name": "Exo S.A",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://exo.com.ar/",
+   "logo_file": "EXO S.A.png",
+   "listed": false
+  },
+  {
+   "qid": "Q106776389",
+   "name": "Fabricaciones Militares",
+   "cc": "ar",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.fm.gob.ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Fabricaciones_Militares",
+   "logo_file": "Logo Fabricaciones Militares Sociedad del Estado.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5856076",
+   "name": "Farmacity",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.farmacity.com/",
+   "logo_file": "Farmacity logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48783784",
+   "name": "Fate",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry",
+    "manufacture of rubber tyres and tubes; retreading and rebuilding of rubber tyres"
+   ],
+   "isin": [],
+   "hq_city": "San Fernando",
+   "hq": [
+    -34.44069,
+    -58.55748
+   ],
+   "website": "https://fate.com.ar/",
+   "logo_file": "Fate16.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6435165",
+   "name": "Felfort",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Logo de Felfort.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q967334",
+   "name": "Ferrocarril de San Cristóbal a Tucumán",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Santa Fe Province",
+   "hq": [
+    -33.72278,
+    -62.24611
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Ferrocarril_de_San_Crist%C3%B3bal_a_Tucum%C3%A1n",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19619342",
+   "name": "Ferrocarriles Argentinos SA",
+   "cc": "ar",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "transport industry"
+   ],
+   "isin": [],
+   "hq_city": "Constitución train station",
+   "hq": [
+    -34.62778,
+    -58.38131
+   ],
+   "website": "https://www.argentina.gob.ar/transporte/fase",
+   "enwiki": "https://en.wikipedia.org/wiki/Nuevos_Ferrocarriles_Argentinos",
+   "logo_file": "LogoFASA2.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5445420",
+   "name": "Ferrocarriles Mediterráneos",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Córdoba",
+   "hq": [
+    -31.41667,
+    -64.18333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Ferrocarriles_Mediterr%C3%A1neos",
+   "logo_file": "Fc mediterraneos logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1125533",
+   "name": "Ferrovías S.A.C.",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail infrastructure",
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.ferrovias.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ferrov%C3%ADas",
+   "logo_file": "Ferrovias arg logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5446396",
+   "name": "Fibertel telefónica telecom",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Avenida Alicia Moreau de Justo",
+   "hq": [
+    -34.61103,
+    -58.36629
+   ],
+   "website": "https://www.cablevisionfibertel.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Fibertel",
+   "logo_file": "Fibertel.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140065751",
+   "name": "Filadd",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "educational technology"
+   ],
+   "isin": [],
+   "hq_city": "Córdoba",
+   "hq": [
+    -31.41667,
+    -64.18333
+   ],
+   "website": "https://filadd.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1436915",
+   "name": "Ford Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "General Pacheco",
+   "hq": [
+    -34.45,
+    -58.65
+   ],
+   "website": "https://www.ford.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ford_Motor_Argentina",
+   "logo_file": "Ford logo flat.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5401467",
+   "name": "Frávega",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Balvanera",
+   "hq": [
+    -34.6105,
+    -58.3976
+   ],
+   "website": "https://www.fravega.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5511381",
+   "name": "Fábrica de Armas Halcón",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/F%C3%A1brica_de_Armas_Halc%C3%B3n",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5717952",
+   "name": "Galicia Bank",
+   "cc": "ar",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Torre Galicia Central",
+   "hq": [
+    -34.60569,
+    -58.37264
+   ],
+   "website": "https://www.galicia.ar/personas",
+   "logo_file": "Banco-Galicia Logo 2024.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3118234",
+   "name": "Galicia Financial Group",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq",
+     "ticker": "GGAL"
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [
+    "US3999091008"
+   ],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.gfgsa.com/es",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Financiero_Galicia",
+   "logo_file": "Grupo Financiero Galicia.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5875270",
+   "name": "Garbarino",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Munro",
+   "hq": [
+    -34.53333,
+    -58.51667
+   ],
+   "website": "https://www.garbarino.com",
+   "logo_file": "Perfil-g-sola.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5526274",
+   "name": "GasAndes Pipeline",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/GasAndes_Pipeline",
+   "listed": false
+  },
+  {
+   "qid": "Q5877762",
+   "name": "Georgalos",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Río Segundo",
+   "hq": [
+    -31.65015,
+    -63.91162
+   ],
+   "website": "http://www.georgalos.com.ar/",
+   "logo_file": "Logo de Georgalos.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5570946",
+   "name": "Globant",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "GLOB"
+    }
+   ],
+   "industries": [
+    "software development"
+   ],
+   "isin": [
+    "LU0974299876"
+   ],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.globant.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Globant",
+   "logo_file": "Globant Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5883770",
+   "name": "Gourmet Musical Ediciones",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q135436072",
+   "name": "Graffigna Winery",
+   "cc": "ar",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Graffigna_Winery",
+   "listed": false
+  },
+  {
+   "qid": "Q100562601",
+   "name": "Granix",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Florida Oeste",
+   "hq": [
+    -34.5381,
+    -58.5139
+   ],
+   "website": "https://granix.com.ar/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5885724",
+   "name": "Grido Helado",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy industry"
+   ],
+   "isin": [],
+   "website": "https://argentina.gridohelado.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grido_Helado",
+   "logo_file": "Grido logo21.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16572675",
+   "name": "Grimoldi",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q9091048",
+   "name": "Grupo América",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Mendoza",
+   "hq": [
+    -32.88972,
+    -68.84444
+   ],
+   "website": "https://www.grupoamerica.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Am%C3%A9rica",
+   "logo_file": "Grupoamerica.logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q380022",
+   "name": "Grupo Arcor",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agribusiness",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Arroyito",
+   "hq": [
+    -31.41667,
+    -63.05
+   ],
+   "website": "https://www.arcor.com/ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Arcor",
+   "logo_file": "Grupo arcor logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136086845",
+   "name": "Grupo Boing",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "broadcasting",
+    "mass media",
+    "radio"
+   ],
+   "isin": [],
+   "hq_city": "Rosario",
+   "website": "https://grupoboing.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16572779",
+   "name": "Grupo ERSA",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Corrientes",
+   "hq": [
+    -27.48333,
+    -58.81667
+   ],
+   "website": "http://www.ersaonline.com.ar/",
+   "logo_file": "ERSA logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5478553",
+   "name": "Grupo Indalo",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "construction",
+    "economic production",
+    "energy",
+    "mass media",
+    "mining",
+    "service sector",
+    "sport"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.grupoindalo.com.ar/",
+   "logo_file": "Grupo Indalo (logo).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q29388093",
+   "name": "Grupo Octubre",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "audiovisual production",
+    "education",
+    "mass media",
+    "service sector"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://mediakit.octubre.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Octubre",
+   "logo_file": "Grupo Octubre logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5551262",
+   "name": "Grupo Servicios Junín",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q141823630",
+   "name": "Grupo Simpa",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "motorcycle industry",
+    "plastics industry",
+    "wholesale"
+   ],
+   "isin": [],
+   "hq_city": "Villa Adelina",
+   "hq": [
+    -34.5175,
+    -58.5475
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Simpa",
+   "listed": false
+  },
+  {
+   "qid": "Q124623558",
+   "name": "Grupo Televisión Litoral",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "audiovisual production",
+    "radio receiver",
+    "television"
+   ],
+   "isin": [],
+   "hq_city": "Rosario",
+   "hq": [
+    -32.9575,
+    -60.63944
+   ],
+   "website": "https://grupotelevisionlitoral.com.ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Grupo_Televisi%C3%B3n_Litoral",
+   "logo_file": "LogoTVL.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1748412",
+   "name": "Harrods Buenos Aires",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Harrods_Buenos_Aires",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2900869",
+   "name": "Havanna Argentina",
+   "cc": "ar",
+   "types": [
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Buenos Aires Stock Exchange",
+     "ticker": "HAVA"
+    }
+   ],
+   "industries": [
+    "confectionery industry",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Mar del Plata",
+   "hq": [
+    -38.0,
+    -57.55
+   ],
+   "website": "https://www.havanna.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Havanna_(Argentine_company)",
+   "logo_file": "Havanna logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q117811168",
+   "name": "Hidrocarburos del Neuquén S. A.",
+   "cc": "ar",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "public service"
+   ],
+   "isin": [],
+   "hq_city": "Neuquén",
+   "hq": [
+    -38.95183,
+    -68.05919
+   ],
+   "website": "https://www.hidenesa.com.ar/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5968352",
+   "name": "IAME Rastrojero Conosur",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/IAME_Rastrojero_Conosur",
+   "listed": false
+  },
+  {
+   "qid": "Q123366807",
+   "name": "ICBC Argentina",
+   "cc": "ar",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.icbc.com.ar/personas",
+   "enwiki": "https://en.wikipedia.org/wiki/ICBC_Argentina",
+   "logo_file": "ICBC China logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17994943",
+   "name": "IMPA",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Almagro",
+   "hq": [
+    -34.6,
+    -58.41667
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q752556",
+   "name": "INVAP",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bariloche",
+   "hq": [
+    -41.15,
+    -71.3
+   ],
+   "website": "http://www.invap.com.ar/es/",
+   "enwiki": "https://en.wikipedia.org/wiki/INVAP",
+   "logo_file": "Logo INVAP.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6060469",
+   "name": "Inversiones y Representaciones Sociedad Anónima",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "IRS"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.irsa.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Inversiones_y_Representaciones_Sociedad_An%C3%B3nima",
+   "logo_file": "IrsaLogo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6292756",
+   "name": "José Luis Díaz Sonido para Cine, TV y Publicidad",
+   "cc": "ar",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "film industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Jos%C3%A9_Luis_D%C3%ADaz_Sonido_para_Cine,_TV_y_Publicidad",
+   "listed": false
+  },
+  {
+   "qid": "Q6310864",
+   "name": "Jumbo",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Santiago",
+   "hq": [
+    -33.4375,
+    -70.65
+   ],
+   "website": "https://www.jumbo.cl/",
+   "enwiki": "https://en.wikipedia.org/wiki/Jumbo_(hypermarket)",
+   "logo_file": "Logo Jumbo Cencosud.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16255508",
+   "name": "Kambras",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Kambras",
+   "listed": false
+  },
+  {
+   "qid": "Q6378568",
+   "name": "Katz Editores",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.katzeditores.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Katz_Editores",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16586141",
+   "name": "KDY",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Quilmes",
+   "hq": [
+    -34.71667,
+    -58.26667
+   ],
+   "logo_file": "KDY-Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16995645",
+   "name": "Kibon",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.kibon.com.br/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kibon",
+   "logo_file": "Kibon.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q25110336",
+   "name": "Kikai Labs",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "3D printing"
+   ],
+   "isin": [],
+   "website": "http://kikailabs.com.ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Kikai_Labs",
+   "listed": false
+  },
+  {
+   "qid": "Q5960558",
+   "name": "Kosiuko",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fashion"
+   ],
+   "isin": [],
+   "hq_city": "Martínez",
+   "hq": [
+    -34.49222,
+    -58.50889
+   ],
+   "website": "http://www.kosiuko.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6135985",
+   "name": "La Anónima",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Ituzaingó",
+   "hq": [
+    -34.65822,
+    -58.66721
+   ],
+   "website": "https://www.laanonima.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/La_Anonima",
+   "logo_file": "La anonima logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q42328526",
+   "name": "La Corte",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "television"
+   ],
+   "isin": [],
+   "website": "http://www.la-corte.com.ar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6463374",
+   "name": "La Ley",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/La_Ley_(publisher)",
+   "listed": false
+  },
+  {
+   "qid": "Q1798938",
+   "name": "La Martina",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.lamartina.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/La_Martina",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6465242",
+   "name": "La Serenísima",
+   "cc": "ar",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy industry"
+   ],
+   "isin": [],
+   "hq_city": "General Rodríguez",
+   "hq": [
+    -34.61667,
+    -58.95
+   ],
+   "website": "https://www.laserenisima.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/La_Seren%C3%ADsima",
+   "logo_file": "La Serenisima logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24879286",
+   "name": "Laboratorios Bagó",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.bago.com.ar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5970782",
+   "name": "Las Tres Niñas",
+   "cc": "ar",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3228811",
+   "name": "Ledesma S.A.A.I.",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.ledesma.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ledesma_S.A.A.I.",
+   "logo_file": "Ledesma argentina textlogo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q122878412",
+   "name": "Libreria Argentina",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Libreria_Argentina",
+   "listed": false
+  },
+  {
+   "qid": "Q5975004",
+   "name": "Libros del Zorzal",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://delzorzal.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123680356",
+   "name": "Liso",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q17076849",
+   "name": "Litoral Gas",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.litoralgas.com.ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Litoral_Gas",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20719021",
+   "name": "Loco Rabia",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.locorabia.com.ar/",
+   "listed": false
+  },
+  {
+   "qid": "Q6669086",
+   "name": "Loma Negra",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "LOMA"
+    }
+   ],
+   "industries": [
+    "construction industry"
+   ],
+   "isin": [
+    "US54150E1047"
+   ],
+   "website": "https://www.lomanegra.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Loma_Negra",
+   "logo_file": "Lomanegra company logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q134780356",
+   "name": "London Supply Group",
+   "cc": "ar",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/London_Supply_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q645290",
+   "name": "Líneas Aéreas del Estado (LADE)",
+   "cc": "ar",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Comodoro Rivadavia",
+   "hq": [
+    -45.86667,
+    -67.5
+   ],
+   "website": "https://lade.faa.mil.ar",
+   "enwiki": "https://en.wikipedia.org/wiki/LADE",
+   "logo_file": "Lade argentina logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98344859",
+   "name": "mAbxience",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmacy"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q2335199",
+   "name": "Macro Bank",
+   "cc": "ar",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "BMA"
+    }
+   ],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [
+    "US05961W1053"
+   ],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.macro.com.ar/home-page",
+   "lei": "579100KKDKKIFEBKK040",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Macro",
+   "logo_file": "Banco Macro 2025.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q121037131",
+   "name": "Marilú",
+   "cc": "ar",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Maril%C3%BA_(doll)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q100562100",
+   "name": "Marolio",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "La Reja",
+   "hq": [
+    -34.63944,
+    -58.82833
+   ],
+   "website": "http://www.marolio.com.ar/",
+   "listed": false
+  },
+  {
+   "qid": "Q61446199",
+   "name": "Maverick Motorcycle",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "San Juan",
+   "hq": [
+    -31.5375,
+    -68.53639
+   ],
+   "website": "http://www.maverick.com.ar/web/publico/institucional.php#Empresa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q101116080",
+   "name": "MD Marketing Digital",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.mdmarketingdigital.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q129811753",
+   "name": "Medifé",
+   "cc": "ar",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Medif%C3%A9",
+   "listed": false
+  },
+  {
+   "qid": "Q950419",
+   "name": "Mercado Libre",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq",
+     "ticker": "MELI"
+    }
+   ],
+   "industries": [
+    "e-commerce"
+   ],
+   "isin": [
+    "US58733R1023"
+   ],
+   "hq_city": "Saavedra",
+   "hq": [
+    -34.55,
+    -58.48333
+   ],
+   "website": "https://www.mercadolibre.com/",
+   "lei": "549300DKPDN9M5S8GB14",
+   "enwiki": "https://en.wikipedia.org/wiki/MercadoLibre",
+   "logo_file": "Mercado Libre wordmark (Spanish version).svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q23043017",
+   "name": "Mercedes-Benz Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Munro",
+   "hq": [
+    -34.53333,
+    -58.51667
+   ],
+   "website": "https://www.mercedes-benz.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mercedes-Benz_Argentina",
+   "logo_file": "Mercedes-Benz Logo 2010.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9032080",
+   "name": "MetroGAS S.A.",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "product distribution"
+   ],
+   "isin": [],
+   "hq_city": "Barracas",
+   "hq": [
+    -34.65,
+    -58.38333
+   ],
+   "website": "http://www.metrogas.com.ar",
+   "logo_file": "Metrogas logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q388593",
+   "name": "Metrovías",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.metrovias.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Metrov%C3%ADas",
+   "logo_file": "Metrovias logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6016461",
+   "name": "Milkaut",
+   "cc": "ar",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy industry"
+   ],
+   "isin": [],
+   "hq_city": "Franck",
+   "hq": [
+    -31.58644,
+    -60.93644
+   ],
+   "logo_file": "Logo Milkaut 100 Años.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6016937",
+   "name": "Minera Alumbrera",
+   "cc": "ar",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q6873213",
+   "name": "Mirgor",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "technology industry"
+   ],
+   "isin": [],
+   "hq_city": "Río Grande",
+   "hq": [
+    -53.78333,
+    -67.7
+   ],
+   "website": "https://mirgor.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mirgor",
+   "logo_file": "Mirgor company logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3319521",
+   "name": "Molinos Río de la Plata",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Buenos Aires Stock Exchange",
+     "ticker": "MOLI"
+    }
+   ],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.molinos.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Molinos_R%C3%ADo_de_la_Plata",
+   "logo_file": "Molinos rp logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6021713",
+   "name": "Monedero",
+   "cc": "ar",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q6024270",
+   "name": "Morixe",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Buenos Aires Stock Exchange",
+     "ticker": "MORI"
+    }
+   ],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "website": "https://morixe.com.ar/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16609167",
+   "name": "Mostaza",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fast food"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.mostazaweb.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mostaza",
+   "logo_file": "Mostaza restaurant logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2418109",
+   "name": "Moto Gelis",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Florida",
+   "hq": [
+    -34.51667,
+    -58.5
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6918058",
+   "name": "Motomel",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "motorcycle"
+   ],
+   "isin": [],
+   "hq_city": "San Nicolás de los Arroyos",
+   "hq": [
+    -33.33333,
+    -60.21667
+   ],
+   "website": "http://www.motomel.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Motomel",
+   "logo_file": "Principal azul-fondo blanco logo 2023.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24960915",
+   "name": "Movimiento de Ocupantes e Inquilinos",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q6140523",
+   "name": "Movistar Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.movistar.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Movistar_Argentina",
+   "logo_file": "Movistar isotype 2025.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q949376",
+   "name": "Muky",
+   "cc": "ar",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "game industry"
+   ],
+   "isin": [],
+   "hq_city": "Gualeguay",
+   "hq": [
+    -33.15,
+    -59.31667
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Muky",
+   "logo_file": "Muky autitos logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6026119",
+   "name": "Multicanal",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Multicanal_(Argentina)",
+   "logo_file": "Multicanal logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6034719",
+   "name": "Musimundo",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.musimundo.com/",
+   "logo_file": "Musimundo (2).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17709609",
+   "name": "Nahuelsat",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q14155681",
+   "name": "Nanque",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "sports industry",
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Banfield",
+   "hq": [
+    -34.75,
+    -58.38333
+   ],
+   "website": "https://nanque.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nanque",
+   "logo_file": "Nanque Nuevo Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124313742",
+   "name": "Naranja X",
+   "cc": "ar",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [
+    "AR0501573346"
+   ],
+   "hq_city": "Córdoba",
+   "hq": [
+    -31.41667,
+    -64.18333
+   ],
+   "website": "https://www.naranjax.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Naranja_X",
+   "logo_file": "Naranja X.png",
+   "listed": true
+  },
+  {
+   "qid": "Q6041259",
+   "name": "Neumáticos de Avanzada",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Córdoba",
+   "hq": [
+    -31.41667,
+    -64.18333
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6046871",
+   "name": "New Bank of Santa Fe",
+   "cc": "ar",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Santa Fe",
+   "hq": [
+    -31.63333,
+    -60.7
+   ],
+   "website": "http://www.bancobsf.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Santa_Fe",
+   "logo_file": "Banco Santa Fe Logotipo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6041649",
+   "name": "Nextel Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://servicioderadio.fibercorp.com.ar/",
+   "logo_file": "Nextel Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55604622",
+   "name": "Noblex Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "consumer electronics industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.noblex.com.ar/",
+   "logo_file": "Noblex.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4045496",
+   "name": "Nostromo Defensa",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Córdoba",
+   "hq": [
+    -31.41667,
+    -64.18333
+   ],
+   "website": "https://nostromo-group.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nostromo_Defensa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q71788285",
+   "name": "Nucleoeléctrica Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://na-sa.com.ar/",
+   "listed": false
+  },
+  {
+   "qid": "Q130337189",
+   "name": "Nuvemshop",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce",
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.nuvemshop.com.br/",
+   "logo_file": "Logo Tiendanube 2025.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5172887",
+   "name": "OCA",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.oca.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Correo_OCA",
+   "logo_file": "OCA logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q128313703",
+   "name": "Olan",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "sportswear"
+   ],
+   "isin": [],
+   "hq_city": "Quilmes",
+   "hq": [
+    -34.71667,
+    -58.26667
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q7086939",
+   "name": "Olinto Gallo Workshops",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Olinto_Gallo_Workshops",
+   "listed": false
+  },
+  {
+   "qid": "Q136151038",
+   "name": "On City",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce",
+    "online marketplace"
+   ],
+   "isin": [],
+   "hq_city": "Santa Fe Province",
+   "hq": [
+    -33.72278,
+    -62.24611
+   ],
+   "website": "https://www.oncity.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6054138",
+   "name": "Ossira",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "website": "http://www.ossira.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30904406",
+   "name": "Paladini Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Villa Gobernador Gálvez",
+   "hq": [
+    -33.02508,
+    -60.63374
+   ],
+   "website": "http://www.paladini.com",
+   "logo_file": "Logotipo de Paladini.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2838738",
+   "name": "Pampa Energía",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "pam"
+    }
+   ],
+   "industries": [
+    "energy supply"
+   ],
+   "isin": [
+    "ARP432631215",
+    "US6976602077"
+   ],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.pampaenergia.com/",
+   "lei": "254900QNIK0CVURGML24",
+   "enwiki": "https://en.wikipedia.org/wiki/Pampa_Energ%C3%ADa",
+   "logo_file": "Pampa energia arg logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q27778993",
+   "name": "Pan American Energy",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "USE7S78BAB82"
+   ],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.pan-energy.com",
+   "lei": "529900QG9TOWTXWOBF90",
+   "logo_file": "Pan American Energy logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q278857",
+   "name": "Papel Prensa",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.papelprensa.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Papel_Prensa",
+   "logo_file": "Logo de Papelprensa s.a.gif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5573519",
+   "name": "Paso de los Toros",
+   "cc": "ar",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Paso_de_los_Toros_(drink)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2882078",
+   "name": "Patagonia Bank",
+   "cc": "ar",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Buenos Aires Stock Exchange",
+     "ticker": null
+    },
+    {
+     "exchange": "São Paulo Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.bancopatagonia.com.ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Banco_Patagonia",
+   "logo_file": "Logo Banco Patagonia.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7144163",
+   "name": "Patagonik Film Group",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "cinematography"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.patagonik.com.ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Patagonik_Film_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3377614",
+   "name": "Petrobras Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "PZE"
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.petrobras.com.ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Petrobras_Argentina",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5490813",
+   "name": "Petroquímica Comodoro Rivadavia",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Comodoro Rivadavia",
+   "hq": [
+    -45.86667,
+    -67.5
+   ],
+   "website": "http://www.pcrsa.com.ar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16619293",
+   "name": "Pixart",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "software development"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Pixart",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2884160",
+   "name": "Pluspetrol",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.pluspetrol.net/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16622360",
+   "name": "Productora Cinematográfica General Belgrano",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97947684",
+   "name": "Proyecto Petrel S.A.",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "aviation"
+   ],
+   "isin": [],
+   "hq_city": "Mercedes",
+   "hq": [
+    -34.65,
+    -59.43333
+   ],
+   "website": "https://en.avionespetrel.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6089606",
+   "name": "Prüne",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "website": "http://www.prune.com.ar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q26794783",
+   "name": "Pur Sang vehicles",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Paraná",
+   "hq": [
+    -31.73306,
+    -60.52972
+   ],
+   "website": "https://www.pursangweb.com.ar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6100413",
+   "name": "Rapipago",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.rapipago.com.ar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q36879490",
+   "name": "Rappi",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bogotá",
+   "hq": [
+    4.60971,
+    -74.08175
+   ],
+   "website": "https://www.rappi.com.mx/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rappi",
+   "logo_file": "Rappi logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q10358460",
+   "name": "Refinor",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.refinor.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7276644",
+   "name": "RGB Entertainment",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "television production"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.rgbentertainment.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/RGB_Entertainment",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25303210",
+   "name": "Ripio",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "cryptocurrency"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Ripio",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q33121608",
+   "name": "Roemmers Laboratories (Argentina)",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Olivos",
+   "hq": [
+    -34.5,
+    -58.48333
+   ],
+   "website": "http://www.roemmers.com.ar/en/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9322755",
+   "name": "Rosamonte",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Apóstoles",
+   "hq": [
+    -27.91667,
+    -55.76667
+   ],
+   "website": "https://www.rosamonte.com.ar",
+   "logo_file": "Rosamonte logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2510184",
+   "name": "Rufa",
+   "cc": "ar",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q9073285",
+   "name": "SanCor",
+   "cc": "ar",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sunchales",
+   "hq": [
+    -30.94417,
+    -61.56139
+   ],
+   "website": "http://www.sancor.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/SanCor",
+   "logo_file": "Sancor coop logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6120733",
+   "name": "Santamarina e Hijos",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Avenida Rivadavia",
+   "hq": [
+    -34.6094,
+    -58.39556
+   ],
+   "website": "http://www.santamarina.com.ar",
+   "logo_file": "Santamarina logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9072292",
+   "name": "SAREM",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.sarem.org.ar/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113624168",
+   "name": "Sero Electric",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.seroelectric.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sero_electric",
+   "logo_file": "Seroelectric.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9076921",
+   "name": "Siam",
+   "cc": "ar",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "metalworking"
+   ],
+   "isin": [],
+   "hq_city": "Piñeiro, Buenos Aires",
+   "hq": [
+    -34.66972,
+    -58.38861
+   ],
+   "website": "https://siam.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Siam_Di_Tella",
+   "logo_file": "Siam argentina logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6127359",
+   "name": "Siambretta scooters",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q24879285",
+   "name": "SIDE Estudios Argentinos (Firm)",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9072334",
+   "name": "Sideco",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.sideco.com.ar",
+   "listed": false
+  },
+  {
+   "qid": "Q6128174",
+   "name": "Siglo XXI",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Siglo_XXI_(publisher)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7512944",
+   "name": "Signia",
+   "cc": "ar",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "sports industry",
+    "textile industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Signia_(sportswear)",
+   "logo_file": "Signialogonuevo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7551880",
+   "name": "Sociedad Comercial del Plata",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "investment"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.scp.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sociedad_Comercial_del_Plata",
+   "logo_file": "Sociedad Comercial del Plata logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20983592",
+   "name": "Sociedad de Transporte Mendoza",
+   "cc": "ar",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "transport industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Sociedad_de_Transporte_Mendoza",
+   "logo_file": "Sociedad transp mendoza logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7559000",
+   "name": "Solvay Indupa",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.solvayindupa.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Solvay_Indupa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6131995",
+   "name": "SOMISA",
+   "cc": "ar",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6132326",
+   "name": "Sonotex",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7577582",
+   "name": "Spinlock SRL",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://spinlock.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Spinlock_SRL",
+   "logo_file": "Spinlock Isologotipo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16635965",
+   "name": "Sport Lyon",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "sportswear"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113328933",
+   "name": "Stellantis Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "آيل بالومار",
+   "hq": [
+    -34.6263,
+    -58.593
+   ],
+   "website": "https://www.media.stellantis.com/ar-es/",
+   "enwiki": "https://en.wikipedia.org/wiki/Stellantis_Argentina",
+   "logo_file": "Stellantis.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q830552",
+   "name": "Subterráneos de Buenos Aires Sociedad del Estado",
+   "cc": "ar",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport",
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "logo_file": "Subte-logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5818714",
+   "name": "Sudamericana",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.penguinrandomhousegrupoeditorial.com/sello/sudamericana//",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6135978",
+   "name": "Supermercados Disco",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Córdoba",
+   "hq": [
+    -31.41667,
+    -64.18333
+   ],
+   "website": "https://www.disco.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Disco_(supermarket_chain)",
+   "logo_file": "Disco-Supermarket-Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16636822",
+   "name": "Supermercados Norte",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Norte.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5718035",
+   "name": "Supervielle",
+   "cc": "ar",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [
+    "US40054A1088"
+   ],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.supervielle.com.ar/",
+   "logo_file": "Supervielle logo14.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6116330",
+   "name": "SUR líneas aéreas",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30304321",
+   "name": "Sutton Dabbah Group",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "perfumery"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2037048",
+   "name": "Techint",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "metallurgy"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.techint.com/es",
+   "enwiki": "https://en.wikipedia.org/wiki/Techint",
+   "logo_file": "Techint Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3516995",
+   "name": "Tecnoplant",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19903692",
+   "name": "TecnoTren",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport industry"
+   ],
+   "isin": [],
+   "hq_city": "El Talar",
+   "hq": [
+    -34.4719,
+    -58.655
+   ],
+   "website": "http://tecnotren.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/TecnoTren",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136035543",
+   "name": "Telearte",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "communications media",
+    "radio receiver",
+    "television"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://web.archive.org/web/20240105074348/https://www.estopaso.com.ar/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5647403",
+   "name": "Telecentro",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "San Justo",
+   "hq": [
+    -34.68333,
+    -58.55
+   ],
+   "website": "http://www.telecentro.com.ar/",
+   "logo_file": "TeleCentro (Argentina).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1544312",
+   "name": "Telecom Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Buenos Aires Stock Exchange",
+     "ticker": "TECO2"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "TEO"
+    }
+   ],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [
+    "ARP9028N1016",
+    "US8792732096"
+   ],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.telecom.com.ar/",
+   "lei": "549300MKPIRSJD8SB782",
+   "enwiki": "https://en.wikipedia.org/wiki/Telecom_Argentina",
+   "logo_file": "Personal logo 2021.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q918208",
+   "name": "Ternium",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "TX"
+    }
+   ],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [
+    "US8808901081"
+   ],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://ternium.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Ternium",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q108197751",
+   "name": "Terrabusi",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "General Pacheco",
+   "hq": [
+    -34.45,
+    -58.65
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Terrabusi",
+   "logo_file": "Terrabusi simple logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q14928314",
+   "name": "The Walt Disney Company Latin America",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "media conglomerate"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://disneylatino.com",
+   "enwiki": "https://en.wikipedia.org/wiki/The_Walt_Disney_Company_Latin_America",
+   "logo_file": "The Walt Disney Company Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3525943",
+   "name": "Three Melons",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "video game industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.threemelons.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2749140",
+   "name": "Topper",
+   "cc": "ar",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "sports industry",
+    "textile industry"
+   ],
+   "isin": [],
+   "website": "https://www.topper.com.br/",
+   "enwiki": "https://en.wikipedia.org/wiki/Topper_(brand)",
+   "logo_file": "Topper wordmark.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9088773",
+   "name": "Torneos",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "hq_city": "Monserrat",
+   "hq": [
+    -34.6125,
+    -58.38333
+   ],
+   "website": "https://www.torneos.com/es/",
+   "enwiki": "https://en.wikipedia.org/wiki/Torneos_y_Competencias",
+   "logo_file": "Logo TORNEOS 2018.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5818307",
+   "name": "Tornquist Building",
+   "cc": "ar",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q17631962",
+   "name": "Trams in Buenos Aires",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Trams_in_Buenos_Aires",
+   "listed": false
+  },
+  {
+   "qid": "Q3537471",
+   "name": "Transener",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public utility"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.transener.com.ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Transener",
+   "logo_file": "Transener logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85872314",
+   "name": "Transport Safety Board",
+   "cc": "ar",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://so.jst.gob.ar/idiomasJST/",
+   "enwiki": "https://en.wikipedia.org/wiki/Junta_de_Seguridad_en_el_Transporte",
+   "listed": false
+  },
+  {
+   "qid": "Q106410457",
+   "name": "Transportadora de Gas del Norte",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.tgn.com.ar/",
+   "listed": false
+  },
+  {
+   "qid": "Q2449642",
+   "name": "Transportadora de Gas del Sur",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "TGS"
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "US8938702045"
+   ],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.tgs.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Transportadora_de_Gas_del_Sur",
+   "logo_file": "Logo de Transportadora de Gas del Sur.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q18416742",
+   "name": "Transporte Mariano Moreno",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://transportemmoreno.com.ar/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6152105",
+   "name": "Tren cartonero",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5478368",
+   "name": "Tren Patagónico",
+   "cc": "ar",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "website": "https://trenpatagonicosa.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Servicios_Ferroviarios_Patag%C3%B3nico",
+   "logo_file": "Tren patagonico arg logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18170721",
+   "name": "Trenes Argentinos",
+   "cc": "ar",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.argentina.gob.ar/transporte/trenes",
+   "enwiki": "https://en.wikipedia.org/wiki/Trenes_Argentinos",
+   "logo_file": "Trenes Argentinos.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98852541",
+   "name": "Trenes Argentinos Capital Humano",
+   "cc": "ar",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.argentina.gob.ar/transporte/trenes-argentinos-capital-humano",
+   "logo_file": "Trenes Argentinos Capital Humano.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5657839",
+   "name": "Trenes Argentinos Infraestructura",
+   "cc": "ar",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.argentina.gob.ar/transporte/trenes-argentinos-infraestructura",
+   "enwiki": "https://en.wikipedia.org/wiki/Trenes_Argentinos_Infraestructura",
+   "logo_file": "Trenes Argentinos Infraestructura.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6116255",
+   "name": "Trenes Argentinos Operaciones",
+   "cc": "ar",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.argentina.gob.ar/transporte/trenes-argentinos",
+   "enwiki": "https://en.wikipedia.org/wiki/Trenes_Argentinos_Operaciones",
+   "logo_file": "Trenes Argentinos Operaciones.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7841387",
+   "name": "Trident Music",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "music industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.tridentmusic.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3697071",
+   "name": "Tulio Crespi S.A.",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Balcarce",
+   "hq": [
+    -37.84641,
+    -58.25563
+   ],
+   "website": "http://www.tuliocrespi.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Crespi_Automotive",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q43579727",
+   "name": "Ualá",
+   "cc": "ar",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.uala.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ual%C3%A1",
+   "logo_file": "Logotipo de Ualá.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28059707",
+   "name": "Ugarte",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Mataderos",
+   "hq": [
+    -34.66667,
+    -58.5
+   ],
+   "website": "http://www.autobusugarte.com.ar",
+   "logo_file": "Logo ugarte 222.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7883673",
+   "name": "Underground contenidos",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "television"
+   ],
+   "isin": [],
+   "hq_city": "Palermo",
+   "hq": [
+    -34.58889,
+    -58.43056
+   ],
+   "website": "http://capit.org.ar/portfolio/underground-s-a/",
+   "enwiki": "https://en.wikipedia.org/wiki/Underground_Producciones",
+   "logo_file": "Logo under 2014.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4052408",
+   "name": "Unitán",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "quebracho tree"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.unitan.net",
+   "enwiki": "https://en.wikipedia.org/wiki/Unit%C3%A1n",
+   "listed": false
+  },
+  {
+   "qid": "Q5861480",
+   "name": "Usine Fiat Córdoba",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5858167",
+   "name": "Vea Supermarkets",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mendoza",
+   "hq": [
+    -32.88972,
+    -68.84444
+   ],
+   "website": "https://supermercadosvea.com.ar/",
+   "logo_file": "Logo Vea Cencosud.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20983518",
+   "name": "VENG",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://veng.com.ar/",
+   "logo_file": "Veng vector.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7936349",
+   "name": "Visión Ovni",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Argentina",
+   "hq": [
+    -34.0,
+    -64.0
+   ],
+   "website": "http://www.visonovni.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Visi%C3%B3n_Ovni",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7942103",
+   "name": "Vostu",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.vostu.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Vostu",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17633390",
+   "name": "Vía Bariloche S.A.",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "transport industry"
+   ],
+   "isin": [],
+   "hq_city": "Ingeniero Pablo Nogués",
+   "hq": [
+    -34.479,
+    -58.702
+   ],
+   "website": "http://www.viabariloche.com.ar/",
+   "logo_file": "LOGO VIA BARILOCHE.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7855938",
+   "name": "Warner Bros. Discovery Argentina",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "entertainment industry"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.latamwbd.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Warner_Bros._Discovery_Argentina",
+   "logo_file": "Warner Bros. Discovery.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1119804",
+   "name": "Werthein Group",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "investment"
+   ],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.grupowerthein.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Werthein_Group",
+   "logo_file": "Grupo-Werthein-01.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q76823349",
+   "name": "Yacimientos Carboníferos Río Turbio",
+   "cc": "ar",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "coal industry"
+   ],
+   "isin": [],
+   "hq_city": "Río Turbio",
+   "hq": [
+    -51.53611,
+    -72.33611
+   ],
+   "website": "https://www.ycrt.gob.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Yacimientos_Carbon%C3%ADferos_R%C3%ADo_Turbio",
+   "logo_file": "YCRT logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6169620",
+   "name": "Yacimientos Mineros Agua de Dionisio",
+   "cc": "ar",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q2006989",
+   "name": "YPF",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Buenos Aires Stock Exchange",
+     "ticker": "YPFD"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "YPF"
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "US9842451000"
+   ],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "https://www.ypf.com/english/Paginas/Home.aspx",
+   "lei": "5493003N7447U18U5U53",
+   "enwiki": "https://en.wikipedia.org/wiki/YPF",
+   "logo_file": "Logo de YPF.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q146784",
+   "name": "Zanella",
+   "cc": "ar",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires Province",
+   "hq": [
+    -37.0,
+    -60.0
+   ],
+   "website": "http://www.zanella.com.ar/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zanella",
+   "logo_file": "Zanella.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6381632",
+   "name": "Álcalis de la Patagonia",
+   "cc": "ar",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q19494414",
+   "name": "Ángel Estrada y Cía. Editores",
+   "cc": "ar",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Buenos Aires",
+   "hq": [
+    -34.59972,
+    -58.38194
+   ],
+   "website": "http://www.angelestrada.com.ar",
+   "logo_file": "Logo Estrada.jpg",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}
