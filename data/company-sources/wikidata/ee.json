@@ -1,0 +1,7485 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "EE",
+ "count": 462,
+ "companies": [
+  {
+   "qid": "Q4039028",
+   "name": "7P Nordic",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.fromdistance.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31274548",
+   "name": ";paranoia",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://paranoia.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q278905",
+   "name": "A. Le Coq",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "website": "https://www.alecoq.ee/",
+   "lei": "485100JG0TYMCVEPMU59",
+   "enwiki": "https://en.wikipedia.org/wiki/A._Le_Coq",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12357984",
+   "name": "A.L.A.R.A.",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://alara.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61390629",
+   "name": "Aale Käsitöö",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "website": "https://aale.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31272426",
+   "name": "Aasta Raamat",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61404800",
+   "name": "ABB",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Jüri",
+   "hq": [
+    59.35472,
+    24.89472
+   ],
+   "website": "https://new.abb.com/ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61404806",
+   "name": "ABC Supermarkets AS",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23042801",
+   "name": "Academic Co-operative Society of Tartu",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q124761947",
+   "name": "ACE Logistics Group AS",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Lehmja",
+   "hq": [
+    59.36861,
+    24.86861
+   ],
+   "website": "https://www.acegroup.ee/",
+   "logo_file": "ACE Logistics Group AS logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2824126",
+   "name": "Adcash",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.adcash.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Adcash",
+   "logo_file": "Adcash.pdf",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107058208",
+   "name": "Admirals",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://admiralmarkets.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Admirals_(company)",
+   "logo_file": "Admirals.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97347247",
+   "name": "AEGAON",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://aegaon.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22158472",
+   "name": "Aerosport OÜ",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Keila",
+   "hq": [
+    59.30861,
+    24.4225
+   ],
+   "website": "http://www.aerosport.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aerosport_OY",
+   "listed": false
+  },
+  {
+   "qid": "Q16410105",
+   "name": "Aleksandra",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61393909",
+   "name": "Alexandra Film",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://alexandrafilm.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4721301",
+   "name": "Alexela",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.alexela.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Alexela",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20529782",
+   "name": "Alexela Oil",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.alexela.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23042821",
+   "name": "Allikukivi broadcloth factory",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Allikukivi",
+   "hq": [
+    58.15,
+    25.01472
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12360489",
+   "name": "Alma Career Estonia OÜ",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q137939542",
+   "name": "Alps2Alps OÜ",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q31271908",
+   "name": "Amserv Auto AS",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q31276838",
+   "name": "Anne Soojus",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61404820",
+   "name": "Anora Estonia AS",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q65264141",
+   "name": "Apollo Group",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q65260082",
+   "name": "Apollo Kino OÜ",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q2562442",
+   "name": "Aqris",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "software development"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.aqris.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Aqris",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114887008",
+   "name": "Aquaphor",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sillamäe",
+   "hq": [
+    59.39306,
+    27.77417
+   ],
+   "website": "https://aquaphor.com/",
+   "lei": "984500560TCAE368FC32",
+   "logo_file": "Aquaphor logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16410559",
+   "name": "Argo",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61397874",
+   "name": "Ars",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "art industry"
+   ],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116057112",
+   "name": "ARTSTAC Art Gallery",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://artstac.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21715997",
+   "name": "Aru Grupp",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Hulja",
+   "hq": [
+    59.35444,
+    26.21472
+   ],
+   "website": "https://www.arugrupp.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12358004",
+   "name": "AS Eesti Helkama-Auto",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12363028",
+   "name": "AS GoBus",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://gobus.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q97224735",
+   "name": "AS LTH-Baas",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Lth-baas-logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q12358011",
+   "name": "AS Maag Dairy",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q14918185",
+   "name": "AS Pärnu Sadam",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16412119",
+   "name": "AS Saarte Liinid",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12358024",
+   "name": "AS Tallinna Lennujaam",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.tallinn-airport.ee",
+   "listed": false
+  },
+  {
+   "qid": "Q31276835",
+   "name": "AS Tartu Keskkatlamaja",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q21715979",
+   "name": "AS Temptrans",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Maardu",
+   "hq": [
+    59.47806,
+    25.01611
+   ],
+   "website": "https://www.temptrans.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q12358031",
+   "name": "AS Äripäev",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q15113597",
+   "name": "Asper Biogene",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "biotechnology industry"
+   ],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61388820",
+   "name": "Astri",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16412940",
+   "name": "Aswega",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "instrumentation engineering"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12358030",
+   "name": "ATKO",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://atko.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q16410763",
+   "name": "Atria Eesti",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "website": "https://atria.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61388219",
+   "name": "Audentes",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://audentes.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Audentes",
+   "listed": false
+  },
+  {
+   "qid": "Q126917415",
+   "name": "Audru Fur farm",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q123975349",
+   "name": "Avenarius",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118119522",
+   "name": "AVH Group",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4655224",
+   "name": "AYR",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.kauritmoto.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/AYR_(sidecarcross)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137560182",
+   "name": "AZTEX",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce",
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Lüganuse",
+   "hq": [
+    59.37861,
+    27.03806
+   ],
+   "website": "https://aztex.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21716097",
+   "name": "Balbiino",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.balbiino.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12360181",
+   "name": "Baltic Computer Systems",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61393915",
+   "name": "Baltic Film Production",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://bfp.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11853862",
+   "name": "Baltic Scandinavian Lines",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q119657603",
+   "name": "Baltic Shuttle",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18622932",
+   "name": "Baltic Workboats",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "shipbuilding"
+   ],
+   "isin": [],
+   "hq_city": "Nasva",
+   "hq": [
+    58.22833,
+    22.38472
+   ],
+   "website": "https://bwb.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Baltic_Workboats",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q622824",
+   "name": "Baltika Group",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "wholesale"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.baltikagroup.com",
+   "lei": "48510000I3W254YEMG75",
+   "enwiki": "https://en.wikipedia.org/wiki/Baltika_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139943834",
+   "name": "Bamboo Group",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q128140222",
+   "name": "Barrus",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61404808",
+   "name": "Bauroc",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Andja",
+   "hq": [
+    59.45556,
+    26.45222
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q4033472",
+   "name": "Bauroc International AS",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q62562792",
+   "name": "BENU",
+   "cc": "ee",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmacy"
+   ],
+   "isin": [],
+   "website": "https://www.benu.eu",
+   "logo_file": "BENU Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17509792",
+   "name": "Big Data Scoring",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Big_Data_Scoring",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q859572",
+   "name": "Bigbank",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "website": "http://www.bigbank.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Bigbank",
+   "logo_file": "Bigbank-dark@2x.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108805780",
+   "name": "Binaryx",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.binaryx.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3440720",
+   "name": "BLRT Grupp",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.blrt.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/BLRT_Grupp",
+   "logo_file": "Logo BLRT Grupp.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23134124",
+   "name": "Blue Diamond Vodka",
+   "cc": "ee",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.bluediamondvodka.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Blue_Diamond_Vodka",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20529164",
+   "name": "Bolt",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "food delivery",
+    "information technology",
+    "transport"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://bolt.eu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bolt_(company)",
+   "logo_file": "Bolt Technology logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61403023",
+   "name": "Bolševik",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "linen industry"
+   ],
+   "isin": [],
+   "hq_city": "Mõisaküla",
+   "hq": [
+    58.09028,
+    25.18306
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19979575",
+   "name": "Bondora",
+   "cc": "ee",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.bondora.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61393920",
+   "name": "Catapult Films",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q136955107",
+   "name": "Change",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q85752196",
+   "name": "Chocolala",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "confectionery"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://chocolala.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Chocolala",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61391782",
+   "name": "Cinamon",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://cinamonkino.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q20529279",
+   "name": "Circle K Estonia",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q65262842",
+   "name": "Cleveron",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Viljandi",
+   "hq": [
+    58.36333,
+    25.59556
+   ],
+   "website": "https://www.cleveron.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Cleveron",
+   "logo_file": "Cleveron.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116629987",
+   "name": "Clevon AS",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://clevon.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q108649720",
+   "name": "Click and Grow",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://eu.clickandgrow.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Click_and_Grow",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11691273",
+   "name": "Coal Terminal Trans",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12358001",
+   "name": "Coca-Cola HBC Eesti",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124296489",
+   "name": "Connected Baltics",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Connected_Baltics",
+   "listed": false
+  },
+  {
+   "qid": "Q97286231",
+   "name": "Connecto Estonia",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.connecto.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q12361460",
+   "name": "Coop Eesti",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.coop.ee/",
+   "logo_file": "Coop eesti logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q11220382",
+   "name": "Coop Pank",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.cooppank.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Coop_Pank",
+   "logo_file": "Coop Pank logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25514612",
+   "name": "Corelli Music",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.corelli.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97285954",
+   "name": "Crowdestate",
+   "cc": "ee",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "crowdfunding"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61393922",
+   "name": "Cumulus Project",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16413264",
+   "name": "CV Keskus OÜ",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Internet"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.cvkeskus.ee",
+   "logo_file": "CVKeskus.ee-logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q46370048",
+   "name": "Cybernetica",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://cyber.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cybernetica_(Estonian_company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97223105",
+   "name": "CybExer Technologies",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "computer security"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://cybexer.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/CybExer_Technologies",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65261936",
+   "name": "Delfi Meedia",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.ekspressmeedia.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Delfi_Meedia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12360806",
+   "name": "Desintegraator",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110724973",
+   "name": "Diamond Sky",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://diamond-sky.aero",
+   "enwiki": "https://en.wikipedia.org/wiki/Diamond_Sky",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116140744",
+   "name": "Duo Media Networks",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20529614",
+   "name": "Dünamo",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "sports industry"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/D%C3%BCnamo_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q10690269",
+   "name": "E-Arsenal",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/E-Arsenal",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61403062",
+   "name": "E-Betoonelement",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vatsla",
+   "hq": [
+    59.39944,
+    24.49278
+   ],
+   "website": "https://betoonelement.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31277794",
+   "name": "E-Piim",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Järva-Jaani",
+   "hq": [
+    59.03889,
+    25.88083
+   ],
+   "website": "https://www.epiim.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16410771",
+   "name": "E. O. Map",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "website": "https://eomap.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61403066",
+   "name": "E.O.S.",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q27237741",
+   "name": "Edisoft",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2382935",
+   "name": "Eesti Ajalehed",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.lehed.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Eesti_Ajalehed",
+   "listed": false
+  },
+  {
+   "qid": "Q16409118",
+   "name": "Eesti Dolomiit",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1295560",
+   "name": "Eesti Energia",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry",
+    "energy supply"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.enefit.ee/",
+   "lei": "5493005044RTLQ5RZU70",
+   "enwiki": "https://en.wikipedia.org/wiki/Eesti_Energia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111752744",
+   "name": "Eesti Energia Õlitööstus AS",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Auvere",
+   "hq": [
+    59.3425,
+    27.9375
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q16410775",
+   "name": "Eesti Fosforiit",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16409387",
+   "name": "Eesti Joonisfilm",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "film industry"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.joonisfilm.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Eesti_Joonisfilm",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18623047",
+   "name": "Eesti Kalatööstus",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fishing industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12361283",
+   "name": "Eesti Kütus",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12361306",
+   "name": "Eesti Maapank",
+   "cc": "ee",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q57665822",
+   "name": "Eesti Maapank",
+   "cc": "ee",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12361391",
+   "name": "Eesti Näitused",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q282457",
+   "name": "Eesti Post",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.post.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Omniva",
+   "logo_file": "Omniva lockup horizontal orange.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16413178",
+   "name": "Eesti Raamat",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.eestiraamat.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Eesti_Raamat",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65258796",
+   "name": "Eesti Riigimetsad",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16410786",
+   "name": "Eesti Viljasalv",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://eviljasalv.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132776645",
+   "name": "Ekassir",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61397641",
+   "name": "EKE Elektroonika",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q11000563",
+   "name": "Ekspress Grupp",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.egrupp.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ekspress_Grupp",
+   "logo_file": "Ekspress Grupp logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97286256",
+   "name": "Elektrilevi",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.elektrilevi.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q16411263",
+   "name": "Elektrum",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Other retail sale not in stores, stalls or markets",
+    "Trade of gas through mains",
+    "trade of electricity"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.elektrum.ee",
+   "listed": false
+  },
+  {
+   "qid": "Q2077935",
+   "name": "Elenger",
+   "cc": "ee",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://elenger.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Elenger",
+   "logo_file": "Elenger Positive 200.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5359452",
+   "name": "Elering",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.elering.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Elering",
+   "logo_file": "Elering logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134437025",
+   "name": "Eleving Group",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "LU2818110020"
+   ],
+   "website": "https://www.eleving.com/",
+   "listed": true
+  },
+  {
+   "qid": "Q30291130",
+   "name": "ELIKO Comptence Centre in ICT and Electronics",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.eliko.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3738130",
+   "name": "Elion Enterprises Limited",
+   "cc": "ee",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.elion.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Elion_Enterprises_Limited",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31271765",
+   "name": "Elisa Eesti",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "data transmission"
+   ],
+   "isin": [],
+   "website": "https://www.elisa.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16411316",
+   "name": "Elmatar",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61391652",
+   "name": "ELVESO",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Jüri",
+   "hq": [
+    59.35472,
+    24.89472
+   ],
+   "website": "http://elveso.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5323641",
+   "name": "EMT",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.emt.ee/en/avaleht",
+   "enwiki": "https://en.wikipedia.org/wiki/EMT_(mobile_operator)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61388733",
+   "name": "EMV",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q55285976",
+   "name": "Enefit",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.enefit.ee",
+   "lei": "485100EAUB2D0VTK1R43",
+   "enwiki": "https://en.wikipedia.org/wiki/Enefit_Green",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q851567",
+   "name": "Enefit Kaevandused AS",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fuel energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Jõhvi",
+   "hq": [
+    59.3575,
+    27.41222
+   ],
+   "website": "https://www.energia.ee/et/organisatsioon/kaevandused",
+   "enwiki": "https://en.wikipedia.org/wiki/Enefit_Kaevandused",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20529481",
+   "name": "Enefit Outotec Technology",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q108169051",
+   "name": "Enefit Power AS",
+   "cc": "ee",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Auvere",
+   "hq": [
+    59.3425,
+    27.9375
+   ],
+   "website": "https://www.energia.ee/en/ettevottest/kontaktid?communication-contacts=meediakontaktid&companies-contact=suurenergeetika",
+   "listed": false
+  },
+  {
+   "qid": "Q5347150",
+   "name": "Enefit Solutions AS",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "engineering"
+   ],
+   "isin": [],
+   "hq_city": "Jõhvi",
+   "hq": [
+    59.3575,
+    27.41222
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Enefit_Solutions",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12362133",
+   "name": "Englo OÜ",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q31277856",
+   "name": "Enjoy Entertainment",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.enjoy.ee/et",
+   "listed": false
+  },
+  {
+   "qid": "Q16408591",
+   "name": "ERGO Insurance SE",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.ergo.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q61404828",
+   "name": "Ernst & Young Baltic",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q5395458",
+   "name": "Erply",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "San Francisco",
+   "hq": [
+    37.775,
+    -122.41944
+   ],
+   "website": "http://www.erply.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Erply",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q112960378",
+   "name": "Estel",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q136980975",
+   "name": "Estelon",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://estelon.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q61402882",
+   "name": "Estonia Spa Hotels",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q20529217",
+   "name": "Estonian Academy Publishers",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://kirj.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q522812",
+   "name": "Estonian Air Navigation Services",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aviation"
+   ],
+   "isin": [],
+   "hq_city": "Rae",
+   "hq": [
+    59.38056,
+    24.89111
+   ],
+   "website": "http://www.eans.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Estonian_Air_Navigation_Services",
+   "logo_file": "EANS2016.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31271840",
+   "name": "Estonian Cell",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kunda",
+   "hq": [
+    59.50083,
+    26.5275
+   ],
+   "website": "https://www.estoniancell.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q31272892",
+   "name": "Estonian Communist Party Central Committee Publishing House",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q20530744",
+   "name": "Estonian Digital Book Centre",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.edrk.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16409468",
+   "name": "Estonian Environmental Research Center",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.klab.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q16410332",
+   "name": "Estonian ICT Demo Center",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "information and communications technology"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.e-estonia.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/E-Estonia_Briefing_Centre",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12361478",
+   "name": "Estonian Industrial Design",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16409865",
+   "name": "Estonian Land Development Project",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31272587",
+   "name": "Estonian Literary Museum Scholarly Press",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q25517563",
+   "name": "Estonian Lloyd",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12361231",
+   "name": "Estonian Map Centre",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61397894",
+   "name": "Estonian Nature Tours",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Lihula",
+   "hq": [
+    58.68778,
+    23.83417
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q5401631",
+   "name": "Estonian Record Productions",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.erpmusic.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Estonian_Record_Productions",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3733483",
+   "name": "Estonian Shipping Company",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "freight transport"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.eml.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Estonian_Shipping_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113577075",
+   "name": "Estonian Stockpiling Agency",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q20529587",
+   "name": "Estoplast",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61402874",
+   "name": "Estron",
+   "cc": "ee",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electronics"
+   ],
+   "isin": [],
+   "hq_city": "Kiiu",
+   "hq": [
+    59.44889,
+    25.39083
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65264311",
+   "name": "Estviking",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65264313",
+   "name": "Eugesta Eesti",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12361008",
+   "name": "EVR Infra",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31272359",
+   "name": "Faatum",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q124155973",
+   "name": "Fausto Capital",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q111683481",
+   "name": "Fermi Energia",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://fermi.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61393992",
+   "name": "Film Audio",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://filmaudio.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q61393942",
+   "name": "Filmimees",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q31273705",
+   "name": "Fortum Tartu",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "energy supply"
+   ],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "website": "http://www.fortumtartu.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15113520",
+   "name": "Fortumo",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile payment"
+   ],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "website": "http://www.fortumo.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Fortumo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16408937",
+   "name": "Forum Cinemas",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.forumcinemas.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139377100",
+   "name": "Frankenburg Technologies",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://frankenburg.tech/",
+   "enwiki": "https://en.wikipedia.org/wiki/Frankenburg_Technologies",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108114305",
+   "name": "Freen OÜ",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5509680",
+   "name": "Furniture Brands International",
+   "cc": "ee",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Furniture_Brands_International",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12362817",
+   "name": "G. Scheel & Co",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12362818",
+   "name": "G4S Eesti",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://g4s.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31271847",
+   "name": "Galerii-G",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.galeriig.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61393997",
+   "name": "Gaviafilm",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q63986372",
+   "name": "Graanul Invest",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing",
+    "wood pellet"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.graanulinvest.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Graanul_Invest",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18624782",
+   "name": "Grenader",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12371309",
+   "name": "Grossi supermarkets",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61397994",
+   "name": "Guardtime",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16409096",
+   "name": "Gustav Pihlakas publishing house",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q112107586",
+   "name": "Hacken",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://hacken.io/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q63992629",
+   "name": "Hansa Shipping",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "water transport"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.hansashipping.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hansa_Shipping",
+   "logo_file": "Hansa Shipping AS.pdf",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20504330",
+   "name": "Hansab",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.hansab.ee",
+   "logo_file": "Hansab logo.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q12363396",
+   "name": "Hansabuss",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Other business support service activities n.e.c.",
+    "maintenance and repair of motor vehicles",
+    "other passenger land transport n.e.c.",
+    "renting and leasing of trucks",
+    "urban and suburban passenger land transport"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://hansabuss.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q12363401",
+   "name": "HANZA Mechanics Tartu",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16412939",
+   "name": "Harju Bank",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1976140",
+   "name": "Harju Elekter",
+   "cc": "ee",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "EE3100004250"
+   ],
+   "hq_city": "Keila",
+   "hq": [
+    59.30861,
+    24.4225
+   ],
+   "website": "http://harjuelekter.ee/et",
+   "lei": "5299009GM96I0NYKWS93",
+   "enwiki": "https://en.wikipedia.org/wiki/Harju_Elekter",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q31272477",
+   "name": "Harjumaa Ühinenud Meedia",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48999938",
+   "name": "Helmes",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.helmes.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12358006",
+   "name": "Hiiu Kalur",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fishery"
+   ],
+   "isin": [],
+   "hq_city": "Kärdla",
+   "hq": [
+    58.99444,
+    22.75
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116291228",
+   "name": "Holm Bank AS",
+   "cc": "ee",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.holmbank.ee",
+   "listed": false
+  },
+  {
+   "qid": "Q10299755",
+   "name": "Icosagen",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "website": "http://www.icosagen.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Icosagen_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61393999",
+   "name": "Ikoon",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16410351",
+   "name": "Ilmamaa",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12364418",
+   "name": "Ilmarine AS",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12364437",
+   "name": "Ilukirjandus ja Kunst, RK",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61397913",
+   "name": "Inbank",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://inbank.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Inbank",
+   "logo_file": "Inbank logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25517692",
+   "name": "Infortar",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61403056",
+   "name": "Infotark",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61401314",
+   "name": "Inglikala Grupp",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13634893",
+   "name": "IZALL.COM",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://izall.com",
+   "listed": false
+  },
+  {
+   "qid": "Q31276951",
+   "name": "Ji",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q65260476",
+   "name": "JOIK",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Estonia",
+   "hq": [
+    59.0,
+    26.0
+   ],
+   "website": "https://joik.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q17634312",
+   "name": "Järvevana AS",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16409015",
+   "name": "Kabala wool mill – museum",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16409073",
+   "name": "Kadrina Health Centre",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kadrina",
+   "hq": [
+    59.34167,
+    26.13083
+   ],
+   "website": "https://kadrinatk.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q56399827",
+   "name": "Kane’s Soda Pop",
+   "cc": "ee",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20529580",
+   "name": "Kantar Emor",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12366684",
+   "name": "Kawe",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q25508065",
+   "name": "Kehra pulp and paper mill",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kehra",
+   "hq": [
+    59.33694,
+    25.32833
+   ],
+   "website": "https://www.horizon.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Kehra_pulp_and_paper_mill",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16410238",
+   "name": "Kihnu Veeteed",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "water transport"
+   ],
+   "isin": [],
+   "hq_city": "Sääre",
+   "hq": [
+    58.15167,
+    23.98306
+   ],
+   "website": "https://veeteed.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Kihnu_Veeteed",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20529159",
+   "name": "Kinnisvarabüroo Uus Maa",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61394017",
+   "name": "Kinoport Film",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q124369295",
+   "name": "Klick Eesti",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.klick.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137767588",
+   "name": "Kodu",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q120801063",
+   "name": "KOLK Brewery",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Alliku",
+   "hq": [
+    59.35583,
+    24.55611
+   ],
+   "website": "https://kolkbeer.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q12367403",
+   "name": "Koolibri",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18623139",
+   "name": "Kooperaator",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61394021",
+   "name": "Kopli Kinokompanii",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.kinokompanii.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61397680",
+   "name": "Kotryna",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q97224114",
+   "name": "KPD",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q97286318",
+   "name": "KPG Kaubanduse OÜ",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12367551",
+   "name": "Krisostomus Bookshop",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q16411482",
+   "name": "Kristal's string instruments workshop",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61394031",
+   "name": "Kultusfilm",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q31272799",
+   "name": "Kultuurileht Foundation",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q31280679",
+   "name": "Kuma",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12358007",
+   "name": "Kunda Nordic Tsement, AS",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18623168",
+   "name": "Külvaja",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61388964",
+   "name": "Lasering",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61394032",
+   "name": "Lege Artis Film",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12368455",
+   "name": "Leibur",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bakery industry"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.leibur.ee/",
+   "logo_file": "Leibur logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12368660",
+   "name": "Levira",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q116140376",
+   "name": "LHV Asset Management",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q65256025",
+   "name": "LHV Group",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "lei": "529900JG015JC10LED24",
+   "logo_file": "Lhv-logo 2.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q12664045",
+   "name": "LHV Pank",
+   "cc": "ee",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq Tallinn AS",
+     "ticker": "LHV1T"
+    }
+   ],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.lhv.ee/",
+   "lei": "529900GJOSVHI055QR67",
+   "enwiki": "https://en.wikipedia.org/wiki/LHV_Pank",
+   "logo_file": "Lhv-logo 2.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3744067",
+   "name": "Linda Line",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.lindaliini.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Linda_Line",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3436176",
+   "name": "Liviko",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://liviko.eu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Liviko",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25514664",
+   "name": "Liwathon E.O.S.",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://liwathoneos.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Liwathon_E.O.S.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65264607",
+   "name": "Lugu-Loo",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q28966957",
+   "name": "Luminor Bank",
+   "cc": "ee",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.luminor.ee",
+   "lei": "213800JD2L89GGG7LF07",
+   "enwiki": "https://en.wikipedia.org/wiki/Luminor_Bank",
+   "logo_file": "Luminor logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11123739",
+   "name": "Luterma",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12369156",
+   "name": "LuxExpress",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.luxexpress.eu",
+   "enwiki": "https://en.wikipedia.org/wiki/Lux_Express",
+   "logo_file": "Lux Express.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q128047765",
+   "name": "Läänela",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16411138",
+   "name": "Maarjamaa",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q110269372",
+   "name": "Made In Baltics",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "MadeInBaltics.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q65122009",
+   "name": "Magnetic MRO",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://magneticmro.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Magnetic_MRO",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96391853",
+   "name": "Manoir Energy",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fuel energy industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Manoir_Energy",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30890974",
+   "name": "Marat",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "clothing industry"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://marat.ee/",
+   "logo_file": "Marat logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130225260",
+   "name": "Marimo",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "clothing industry"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://marimofashion.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q54861865",
+   "name": "Martinson Trigon Venture Partners",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65259187",
+   "name": "Maurus",
+   "cc": "ee",
+   "types": [
+    "Q2085381",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://kirjastusmaurus.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15833213",
+   "name": "Maxima Estonia",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.maxima.ee/",
+   "logo_file": "Maxima logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q97225096",
+   "name": "Meelejahutaja",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4044031",
+   "name": "Merko Ehitus",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.merko.ee/ru/",
+   "enwiki": "https://en.wikipedia.org/wiki/Merko_Ehitus",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q42900926",
+   "name": "Metrosert",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q17075471",
+   "name": "Michael Pärt Musik",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.paert.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Michael_P%C3%A4rt_Musik",
+   "listed": false
+  },
+  {
+   "qid": "Q61403235",
+   "name": "Milestone Media",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q65262297",
+   "name": "Milrem Robotics",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://milremrobotics.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Milrem_Robotics",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61394041",
+   "name": "Minor Film",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60836226",
+   "name": "Mistra-Autex",
+   "cc": "ee",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6716743",
+   "name": "MMA Raju",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "website": "http://mma.ee/en",
+   "enwiki": "https://en.wikipedia.org/wiki/MMA_Raju",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138330401",
+   "name": "Montonio Finance",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25918652",
+   "name": "MRP Linna Liinid",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12368973",
+   "name": "MTÜ Loodusajakiri",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61394057",
+   "name": "Multi Film",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://multifilm.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61394061",
+   "name": "Myth Film",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11884014",
+   "name": "Narva Line",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q10595138",
+   "name": "Navirail",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://navirail.com/aboutus/aboutus-2",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3313452",
+   "name": "Nelja Energia",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Nelja_Energia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q64821642",
+   "name": "Netaman Shipyard",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18107621",
+   "name": "NG Investeeringud",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.nginvest.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/NG_Investeeringud",
+   "listed": false
+  },
+  {
+   "qid": "Q137767575",
+   "name": "Ni-Wi",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q11991586",
+   "name": "Nitrofert",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Kohtla-Järve",
+   "hq": [
+    59.4,
+    27.28333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Nitrofert",
+   "listed": false
+  },
+  {
+   "qid": "Q108828364",
+   "name": "Nobe Cars",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q65254908",
+   "name": "Nobel Digital",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.nobeldigital.ee",
+   "listed": false
+  },
+  {
+   "qid": "Q7050468",
+   "name": "Norby Telecom",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.norby.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11117373",
+   "name": "Nordecon",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.nordecon.com",
+   "lei": "48510000D8HSLK854I81",
+   "enwiki": "https://en.wikipedia.org/wiki/Nordecon",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12358025",
+   "name": "Nordic Fibreboard",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "building material"
+   ],
+   "isin": [],
+   "website": "https://www.nordicfibreboard.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Nordic_Fibreboard",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21406312",
+   "name": "Nordica",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aviation"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.nordica.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nordica_(airline)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12358016",
+   "name": "Norma",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.norma.ee/index.php?lang=eng",
+   "enwiki": "https://en.wikipedia.org/wiki/Norma_(Estonian_company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65264726",
+   "name": "Nornberg & Co",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3742753",
+   "name": "Nortal",
+   "cc": "ee",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.nortal.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nortal",
+   "logo_file": "Nortal logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7515458",
+   "name": "NPM Silmet OÜ",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "non-ferrous metal"
+   ],
+   "isin": [],
+   "hq_city": "Sillamäe",
+   "hq": [
+    59.39306,
+    27.77417
+   ],
+   "website": "http://www.neomaterials.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Silmet",
+   "listed": false
+  },
+  {
+   "qid": "Q65264731",
+   "name": "Näo Kirik",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12358013",
+   "name": "O-I Production Estonia",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q31280676",
+   "name": "Odamees",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.odamees.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16931205",
+   "name": "Olerex",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "website": "https://olerex.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Olerex",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12371433",
+   "name": "Olion",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q11150186",
+   "name": "Olympic Casino",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "gambling industry"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.olympic-casino.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Olympic_Entertainment_Group",
+   "logo_file": "Olympic-Casino.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31277800",
+   "name": "Optimera Estonia AS",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q116129607",
+   "name": "Optiva Bank",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q65263469",
+   "name": "Osakond",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://osakond.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65264764",
+   "name": "Overall Eesti",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12371853",
+   "name": "Pakker Avio",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ülenurme",
+   "hq": [
+    58.31611,
+    26.72139
+   ],
+   "website": "https://www.pakkeravio.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12371931",
+   "name": "Panaviatic",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.panaviatic.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137767591",
+   "name": "PEO-LEO",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61388932",
+   "name": "Perona",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61388620",
+   "name": "Pilgrim",
+   "cc": "ee",
+   "types": [
+    "Q2085381",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16412877",
+   "name": "Pixner OÜ",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q980219",
+   "name": "Port of Tallinn",
+   "cc": "ee",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.ts.ee",
+   "lei": "25490093MDYISEP1Y539",
+   "enwiki": "https://en.wikipedia.org/wiki/Port_of_Tallinn",
+   "logo_file": "Tallinna Sadam Logo Port of Tallinn 10 August 2015.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12358002",
+   "name": "Postimees Group",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "website": "https://www.postimeesgrupp.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Postimees_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q97286421",
+   "name": "Postimees Kirjastus",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q20564449",
+   "name": "PRFoods",
+   "cc": "ee",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq Tallinn AS",
+     "ticker": "PRF1T"
+    }
+   ],
+   "industries": [
+    "fishing industry",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.prfoods.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/PRFoods",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q65255383",
+   "name": "Prisma Peremarket",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61394066",
+   "name": "Profilm",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7258107",
+   "name": "Publishing House ERSEN",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.ersen.eu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Publishing_House_ERSEN",
+   "listed": false
+  },
+  {
+   "qid": "Q65264821",
+   "name": "Päike & Pilv",
+   "cc": "ee",
+   "types": [
+    "Q2085381",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Saue",
+   "hq": [
+    59.32306,
+    24.56222
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16411446",
+   "name": "Põltsamaa Felix",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.felix.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61397004",
+   "name": "Q Film",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12373272",
+   "name": "Quum",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce"
+   ],
+   "isin": [],
+   "website": "https://www.quum.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65244272",
+   "name": "R. Rathke",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61403048",
+   "name": "Raasiku Elekter",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Raasiku",
+   "hq": [
+    59.3675,
+    25.17889
+   ],
+   "website": "https://rer.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7278874",
+   "name": "RaceTech",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.racetech.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q123965504",
+   "name": "Rahva Raamatu Kirjastus",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q65261108",
+   "name": "Rakett OÜ",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7018774",
+   "name": "Rakvere Lihakombinaat",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food processing"
+   ],
+   "isin": [],
+   "hq_city": "Roodevälja",
+   "hq": [
+    59.3725,
+    26.38556
+   ],
+   "website": "http://www.rlk.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Rakvere_Lihakombinaat",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31278163",
+   "name": "Rand & Tuulberg",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "construction industry"
+   ],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "website": "https://randtuulberg.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61394089",
+   "name": "Rao Heidmetsa Filmistuudio",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123975128",
+   "name": "Raudhammas",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://raudhammas.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q18393582",
+   "name": "Raudwara",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16412241",
+   "name": "Raven OÜ",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12373712",
+   "name": "Reach-U",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q134479254",
+   "name": "Ready Player Me",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Ready_Player_Me",
+   "listed": false
+  },
+  {
+   "qid": "Q61394092",
+   "name": "Reede",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q28920883",
+   "name": "Regio",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "website": "http://www.regio.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2147105",
+   "name": "Rexer",
+   "cc": "ee",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.rexer.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q64698538",
+   "name": "RIA.com Marketplaces",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://ria.company",
+   "logo_file": "Ria.com logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q61388732",
+   "name": "Rimi Eesti Food",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12374233",
+   "name": "Roosta Holiday Village",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "hospitality industry"
+   ],
+   "isin": [],
+   "hq_city": "Elbiku",
+   "hq": [
+    59.16694,
+    23.52889
+   ],
+   "website": "https://roosta.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7371659",
+   "name": "Rove Digital",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Rove_Digital",
+   "listed": false
+  },
+  {
+   "qid": "Q25516986",
+   "name": "Ruudu Produtsendid",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://ruut.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16411854",
+   "name": "Rõika-Meleski mirror factory",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "glass production"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61394096",
+   "name": "Rühm Pluss Null",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124123136",
+   "name": "Saara Kirjastus",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Türi",
+   "hq": [
+    58.80944,
+    25.42917
+   ],
+   "website": "https://saara.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12371735",
+   "name": "Saare Dolomiit-Väokivi",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.revalstone.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Saare_Dolomiit-V%C3%A4okivi",
+   "listed": false
+  },
+  {
+   "qid": "Q7395693",
+   "name": "Saaremaa Shipping Company",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "water transport"
+   ],
+   "isin": [],
+   "hq_city": "Kuressaare",
+   "hq": [
+    58.25333,
+    22.48611
+   ],
+   "website": "http://www.tuulelaevad.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Saaremaa_Shipping_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16412114",
+   "name": "Saarte Elektrivõrgud",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13518286",
+   "name": "Saarte Investeering",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Saarte_Investeering",
+   "listed": false
+  },
+  {
+   "qid": "Q61394098",
+   "name": "Sabat Film",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1851509",
+   "name": "Saku Brewery",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Saku",
+   "hq": [
+    59.29806,
+    24.66639
+   ],
+   "website": "http://www.saku.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Saku_Brewery",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12374647",
+   "name": "Salvest",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "website": "https://www.salvest.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85857941",
+   "name": "Salvo",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12374698",
+   "name": "Sangar",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "clothing industry"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2205755",
+   "name": "SEB Pank",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.seb.ee/",
+   "lei": "549300ND1MQ8SNNYMJ22",
+   "enwiki": "https://en.wikipedia.org/wiki/SEB_Pank",
+   "logo_file": "SEB logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61393994",
+   "name": "SEE",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3771177",
+   "name": "Selver",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.selver.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Selver",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124459484",
+   "name": "Semetron",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.semetron.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17435059",
+   "name": "Setomaa Tourist Farm",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kalatsova",
+   "hq": [
+    57.73972,
+    27.41722
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Setomaa_Tourist_Farm",
+   "listed": false
+  },
+  {
+   "qid": "Q64821653",
+   "name": "Showstoppers OÜ",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61394100",
+   "name": "Silmviburlane",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12000481",
+   "name": "Silvano Fashion Group",
+   "cc": "ee",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq Tallinn AS",
+     "ticker": "SFG1T"
+    },
+    {
+     "exchange": "Warsaw Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "clothing industry"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.silvanofashion.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Silvano_Fashion_Group",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q25517941",
+   "name": "SK ID Solutions AS",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.sk.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q30267311",
+   "name": "Skeleton Technologies",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.skeletontech.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Skeleton_Technologies",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65255526",
+   "name": "Skinest Energia",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy production"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q127417960",
+   "name": "Skinest Grupp",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.skinest.eu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97231446",
+   "name": "Skinest Rail",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7537412",
+   "name": "Sky Media Group",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://skymedia.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sky_Media_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7543889",
+   "name": "SmartPosti",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.smartposti.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/SmartPOST",
+   "logo_file": "Smartpost Itella pakimajake.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20529228",
+   "name": "SP Muusikaprojekt",
+   "cc": "ee",
+   "types": [
+    "Q2085381",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Jälgimäe",
+   "hq": [
+    59.31972,
+    24.60222
+   ],
+   "website": "https://estonianmusic.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19876525",
+   "name": "Spicetone",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "consumer electronics industry"
+   ],
+   "isin": [],
+   "website": "http://www.spicetone.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Spicetone",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3736719",
+   "name": "Starman",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "cable television"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.starman.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/AS_Starman",
+   "logo_file": "Starman logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61393869",
+   "name": "Startup Hub",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "STARTUp HUB.png",
+   "listed": false
+  },
+  {
+   "qid": "Q12375369",
+   "name": "Stokker",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q61397031",
+   "name": "Stora Enso Timber",
+   "cc": "ee",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q65263723",
+   "name": "Studium",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61394111",
+   "name": "Stuudio Navona",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7394861",
+   "name": "STV AS",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "cable television"
+   ],
+   "isin": [],
+   "website": "http://www.stv.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61394117",
+   "name": "Suhkur Film",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q136824108",
+   "name": "SuperAlko",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://viinarannasta.ee",
+   "listed": false
+  },
+  {
+   "qid": "Q20530148",
+   "name": "Suva",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://suva.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123272258",
+   "name": "Swedbank Estonia",
+   "cc": "ee",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q61394121",
+   "name": "Taiga Film",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1536909",
+   "name": "Tallink",
+   "cc": "ee",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "water transport"
+   ],
+   "isin": [
+    "EE3100004466"
+   ],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.tallink.com/",
+   "lei": "529900QRMWAKKR3L9W75",
+   "enwiki": "https://en.wikipedia.org/wiki/Tallink",
+   "logo_file": "Tallink logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q18689590",
+   "name": "Tallink Hotels",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12376112",
+   "name": "Tallink Takso",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q116056885",
+   "name": "Tallinn Bank",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12376253",
+   "name": "Tallinn Business Bank",
+   "cc": "ee",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.tbb.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/TBB_Pank",
+   "listed": false
+  },
+  {
+   "qid": "Q31276994",
+   "name": "Tallinn University of Technology Press",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q18625992",
+   "name": "Tallinn University Press",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.tlu.ee/kirjastus",
+   "listed": false
+  },
+  {
+   "qid": "Q12376139",
+   "name": "Tallinna Farmaatsiatehase AS",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "lei": "485100X55SS49BMVCI25",
+   "listed": false
+  },
+  {
+   "qid": "Q55673245",
+   "name": "Tallinna Kaubamaja Group",
+   "cc": "ee",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "holding company"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.tkmgroup.ee",
+   "lei": "529900785KF1K0EEW940",
+   "enwiki": "https://en.wikipedia.org/wiki/Tallinna_Kaubamaja_Group",
+   "logo_file": "Tallinna Kaubamaja Grupp logo.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q12371047",
+   "name": "Tallinna Portselan-Tööstus N. Langebraun",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12005126",
+   "name": "Tallinna Vesi",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://tallinnavesi.ee/",
+   "lei": "5493000M6TVS2X0KWC97",
+   "enwiki": "https://en.wikipedia.org/wiki/Tallinna_Vesi",
+   "listed": false
+  },
+  {
+   "qid": "Q109974823",
+   "name": "Tanker Brewery",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Jüri",
+   "hq": [
+    59.35472,
+    24.89472
+   ],
+   "website": "https://tanker.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Tanker_Brewery",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18626201",
+   "name": "Tartu Mill",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "website": "http://tartumill.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tartu_Mill",
+   "listed": false
+  },
+  {
+   "qid": "Q25511431",
+   "name": "Tartu Widget Factory",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tartu",
+   "hq": [
+    58.38,
+    26.7225
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q7689088",
+   "name": "Tavid AS",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://tavid.ee/",
+   "lei": "315700RI07ES08Z1EI40",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25517603",
+   "name": "TBD Pharmatech",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106426697",
+   "name": "Tele2 Eesti",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Tele2_Eesti",
+   "listed": false
+  },
+  {
+   "qid": "Q1295663",
+   "name": "Telia Eesti",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [
+    "EE3100007220"
+   ],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.telia.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Telia_Eesti",
+   "logo_file": "Telia logo 2022.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q20740122",
+   "name": "Telset AS",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q20529414",
+   "name": "Tere AS",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy industry"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.tere.eu",
+   "listed": false
+  },
+  {
+   "qid": "Q61403082",
+   "name": "Terve Pere Apteek",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61394120",
+   "name": "Testfilm",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125699737",
+   "name": "Threod Systems AS",
+   "cc": "ee",
+   "types": [
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "defence industry"
+   ],
+   "isin": [],
+   "hq_city": "Lubja",
+   "hq": [
+    59.5175,
+    24.84667
+   ],
+   "website": "https://threod.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q12377003",
+   "name": "Tiritamm",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61393307",
+   "name": "TKM KING",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q107611654",
+   "name": "Tohi Distillery",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kohila",
+   "hq": [
+    59.1675,
+    24.75028
+   ],
+   "website": "https://tohigin.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q7820797",
+   "name": "Tondi Elektroonika",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "electronics industry"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.tondi.ee/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tondi_Elektroonika",
+   "logo_file": "Таллинский электротехнический завод им. Пегельмана, 1970-1992.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20504050",
+   "name": "TonyBet",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Gaming"
+   ],
+   "isin": [],
+   "website": "https://tonybet.com",
+   "enwiki": "https://en.wikipedia.org/wiki/TonyBet",
+   "logo_file": "Tonybet black.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q9360035",
+   "name": "Tootsi Turvas",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tootsi",
+   "hq": [
+    57.77889,
+    27.11833
+   ],
+   "website": "http://www.tootsiturvas.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q20529664",
+   "name": "Top Marine OÜ",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18626489",
+   "name": "Tori Stud Farm",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tori",
+   "hq": [
+    58.48139,
+    24.81167
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q138499160",
+   "name": "Touchlane",
+   "cc": "ee",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://touchlane.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61394124",
+   "name": "Traumfabrik",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16930478",
+   "name": "TravelSim",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/TravelSim",
+   "listed": false
+  },
+  {
+   "qid": "Q12377236",
+   "name": "Trigon Wealth Management",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12358029",
+   "name": "Trio LSL",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61394115",
+   "name": "Tristan",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q24545427",
+   "name": "Trubetsky Pictures",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "film industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q31273033",
+   "name": "TS Laevad",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "water transport"
+   ],
+   "isin": [],
+   "website": "https://www.praamid.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/TS_Laevad",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25245526",
+   "name": "TUGE Energia",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "wind power industry"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://tuge.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/TUGE_Energia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61394128",
+   "name": "Tugev Tuul Film",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61394130",
+   "name": "Tuisk Film Production",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12358028",
+   "name": "Tulika Grupp",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://tulika.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q12358027",
+   "name": "Tulika Takso",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q65261362",
+   "name": "Turbliss",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61403557",
+   "name": "Turu-uuringute AS",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://turu-uuringute.eu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20530089",
+   "name": "Tuum",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.tuum.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3546443",
+   "name": "Tänapäev",
+   "cc": "ee",
+   "types": [
+    "Q2085381",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.tnp.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/T%C3%A4nap%C3%A4ev",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61401317",
+   "name": "U.L.A. Jazz",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61394129",
+   "name": "Ugri Film",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16412953",
+   "name": "Unifiedpost AS",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.unifiedpost.com/en/countries/estonia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q42307381",
+   "name": "Unique Hotels",
+   "cc": "ee",
+   "types": [
+    "Q1631129"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.uhotelsgroup.com",
+   "listed": false
+  },
+  {
+   "qid": "Q97286460",
+   "name": "USS Security Eesti AS",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q25517910",
+   "name": "Utilitas",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.utilitas.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Utilitas_(company)",
+   "listed": false
+  },
+  {
+   "qid": "Q61388436",
+   "name": "Vagabund",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12378124",
+   "name": "Valgus",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://www.kirjastusvalgus.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/Valgus_(publisher)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12378139",
+   "name": "Valio Eesti",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3554854",
+   "name": "Varrak",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.varrak.ee",
+   "enwiki": "https://en.wikipedia.org/wiki/Varrak",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12378292",
+   "name": "Varrak (1919)",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65256461",
+   "name": "Veriff",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "technology industry"
+   ],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://veriff.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Veriff",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61394139",
+   "name": "Videomeedia",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q31274360",
+   "name": "Vihur",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20530427",
+   "name": "Viking Window",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.viking.ee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3313991",
+   "name": "Viru Keemia Grupp",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "oil shale industry"
+   ],
+   "isin": [],
+   "hq_city": "Kohtla-Järve",
+   "hq": [
+    59.4,
+    27.28333
+   ],
+   "website": "http://www.vkg.ee/eng",
+   "enwiki": "https://en.wikipedia.org/wiki/Viru_Keemia_Grupp",
+   "listed": false
+  },
+  {
+   "qid": "Q7907126",
+   "name": "VKG Elektrivõrgud",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Narva",
+   "hq": [
+    59.37917,
+    28.20056
+   ],
+   "website": "https://vkgev.ee/",
+   "enwiki": "https://en.wikipedia.org/wiki/VKG_Elektriv%C3%B5rgud",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97286466",
+   "name": "Väike Vanker",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q97222481",
+   "name": "Välgi metsad",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61403009",
+   "name": "Vändra Glassworks",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q61397616",
+   "name": "Värska Original",
+   "cc": "ee",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12379034",
+   "name": "Värska Vesi",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Värska",
+   "hq": [
+    57.95889,
+    27.63139
+   ],
+   "website": "https://varskavesi.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18627080",
+   "name": "Võhma meat plant",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "meat industry"
+   ],
+   "isin": [],
+   "hq_city": "Võhma",
+   "hq": [
+    58.62917,
+    25.55778
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12358026",
+   "name": "Võru Juust",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12361857",
+   "name": "W.EG. EESTI OÜ",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.weg.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31278217",
+   "name": "Wendre",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q31273699",
+   "name": "YIT Ehitus",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q484778",
+   "name": "ZeroTurnaround",
+   "cc": "ee",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "http://zeroturnaround.com",
+   "enwiki": "https://en.wikipedia.org/wiki/ZeroTurnaround",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31271982",
+   "name": "Õ-Fraktsioon",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61401316",
+   "name": "Ö Stuudio",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.ostuudio.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61389658",
+   "name": "Ökosil",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://ecosil.ee/",
+   "listed": false
+  },
+  {
+   "qid": "Q12379527",
+   "name": "Ühinenud Ajakirjad",
+   "cc": "ee",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tallinn",
+   "hq": [
+    59.43722,
+    24.745
+   ],
+   "website": "https://www.ajakirjad.ee/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31272412",
+   "name": "Ühinenud Ajalehed",
+   "cc": "ee",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  }
+ ]
+}

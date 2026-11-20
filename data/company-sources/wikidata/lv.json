@@ -1,0 +1,4533 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "LV",
+ "count": 207,
+ "companies": [
+  {
+   "qid": "Q27055988",
+   "name": "1A.lv",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce"
+   ],
+   "isin": [],
+   "website": "http://1a.lv",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16359849",
+   "name": "4finance",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial leasing",
+    "other credit granting"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://4finance.com/company/",
+   "lei": "213800YCHHN4TW6P4B93",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104429624",
+   "name": "A.C.B.",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Construction of bridges and tunnels",
+    "Construction of railways and underground railways",
+    "construction of residential and non-residential buildings",
+    "construction of roads and motorways"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "lei": "213800DMAUKVGRKU4G89",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3602209",
+   "name": "Aerodium",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "entertainment"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://aerodium.technology/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aerodium",
+   "logo_file": "Aerodium logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85739923",
+   "name": "Aerodium Sigulda",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.aerodium.lv",
+   "enwiki": "https://en.wikipedia.org/wiki/Aerodium_Sigulda",
+   "listed": false
+  },
+  {
+   "qid": "Q16350366",
+   "name": "Agrofirma Tērvete",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry",
+    "brewing industry",
+    "dairy farming",
+    "food service",
+    "horse breeding"
+   ],
+   "isin": [],
+   "hq_city": "Kroņauce",
+   "hq": [
+    56.51278,
+    23.33722
+   ],
+   "website": "http://en.tervete.lv",
+   "logo_file": "JSC \"Agrofirma Tērvete\" logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104427909",
+   "name": "Akvedukts",
+   "cc": "lv",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "water supply",
+    "wholesale"
+   ],
+   "isin": [],
+   "hq_city": "Krustkalni",
+   "hq": [
+    56.89111,
+    24.1325
+   ],
+   "website": "https://akvedukts.lv",
+   "lei": "4851000D4PCES75L1M90",
+   "logo_file": "Akvedukts AS logotips.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q127432955",
+   "name": "All Media Latvia",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "television programming and broadcasting"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "lei": "254900S3F1J74PM55N67",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q50378996",
+   "name": "Amber Beverage Group",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "lei": "894500N1WITB1AKEPD14",
+   "listed": false
+  },
+  {
+   "qid": "Q3133469",
+   "name": "Amber Latvijas balzams",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "distilling, rectifying and blending of spirits",
+    "manufacture of beverages"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.balzams.lv/en/",
+   "lei": "097900BGLZ0000056644",
+   "enwiki": "https://en.wikipedia.org/wiki/Latvijas_Balzams",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96047373",
+   "name": "Amic Energy",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vienna",
+   "hq": [
+    48.20833,
+    16.3725
+   ],
+   "website": "http://amicenergy.at",
+   "enwiki": "https://en.wikipedia.org/wiki/Amic_Energy",
+   "logo_file": "Amic Energy logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q52316921",
+   "name": "AS Akciju komercbanka Dālderis",
+   "cc": "lv",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4394571",
+   "name": "AS Rīgas elektromašīnbūves rūpnīca",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.rer.lv",
+   "lei": "25340065CF9HB5QZ3Z81",
+   "logo_file": "RER (Riga).gif",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q122696098",
+   "name": "Astarte-Nafta",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail sale of automotive fuel in specialised stores"
+   ],
+   "isin": [],
+   "hq_city": "Dobele",
+   "hq": [
+    56.62583,
+    23.28111
+   ],
+   "website": "https://astarte.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16822050",
+   "name": "Augstsprieguma tīkls",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.ast.lv/",
+   "enwiki": "https://en.wikipedia.org/wiki/Augstsprieguma_t%C4%ABkls",
+   "logo_file": "Ast-logo-rgb.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q790302",
+   "name": "Ave Line",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.aveline.lv/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ave_Line",
+   "logo_file": "AVE LINE LOGO DE.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104429443",
+   "name": "Balcia Insurance SE",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "life insurance",
+    "non-life insurance"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.balcia.com/",
+   "lei": "315700MAQ69RR5OG1912",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20558687",
+   "name": "Balta",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "life insurance",
+    "non-life insurance"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "lei": "25940034Z0RI47GCPC59",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4852695",
+   "name": "Baltic Coal Terminal",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ventspils",
+   "hq": [
+    57.38972,
+    21.56444
+   ],
+   "website": "http://www.balticcoal.lv",
+   "enwiki": "https://en.wikipedia.org/wiki/Baltic_Coal_Terminal",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q52317094",
+   "name": "Baltic International Bank",
+   "cc": "lv",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Other financial service activities, except insurance and pension funding n.e.c.",
+    "other monetary intermediation"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "lei": "213800U3Y2TMRMKLNE90",
+   "enwiki": "https://en.wikipedia.org/wiki/Baltic_International_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30263655",
+   "name": "Baltic Psychology and Management University College",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.psy.lv/index.php",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61121615",
+   "name": "Balticom",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://balticom.lv/",
+   "logo_file": "Balticom logo 2018. - .. gadā.png",
+   "listed": false
+  },
+  {
+   "qid": "Q687709",
+   "name": "Bank of Latvia",
+   "cc": "lv",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.bank.lv/",
+   "lei": "H0HWWEVOF2OSX76KYU55",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Latvia",
+   "logo_file": "Latvijas Banka logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4077336",
+   "name": "Banka Baltija",
+   "cc": "lv",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Banka_Baltija",
+   "logo_file": "BankaBaltijaLogo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4034923",
+   "name": "Bauskas alus",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Īslīce Parish",
+   "hq": [
+    56.33093,
+    24.11441
+   ],
+   "website": "http://www.bauskasalus.lv",
+   "enwiki": "https://en.wikipedia.org/wiki/Bauskas_alus",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q62562792",
+   "name": "BENU",
+   "cc": "lv",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmacy"
+   ],
+   "isin": [],
+   "website": "https://www.benu.eu",
+   "logo_file": "BENU Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25387176",
+   "name": "Biosan",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of other special-purpose machinery n.e.c.",
+    "other retail sale of new goods in specialised stores"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://biosan.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q89915656",
+   "name": "Bite Latvija",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Wireless telecommunications activities",
+    "other telecommunications activities"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.bite.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18121568",
+   "name": "BluOr Bank",
+   "cc": "lv",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Other activities auxiliary to financial services, except insurance and pension funding",
+    "Other financial service activities, except insurance and pension funding n.e.c.",
+    "administration of financial markets",
+    "financial leasing",
+    "fund management activities",
+    "other credit granting",
+    "other monetary intermediation",
+    "security and commodity contracts brokerage"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.bluorbank.lv/",
+   "lei": "54930080G2M7EJ097A27",
+   "enwiki": "https://en.wikipedia.org/wiki/BluOr_Bank_AS",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24038988",
+   "name": "BTA Baltic Insurance Company",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Other financial service activities, except insurance and pension funding",
+    "activities of insurance agents and brokers",
+    "life insurance",
+    "non-life insurance",
+    "other activities auxiliary to insurance and pension funding"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.bta.lv",
+   "lei": "3157002Q3I11LG1R1C12",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q95402400",
+   "name": "Celu buves firma BINDERS",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction of roads and motorways"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://binders.lv/",
+   "lei": "485100KK3K70B1FGMG94",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q87703011",
+   "name": "Centrālā laboratorija",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "general medical practice activities",
+    "other human health activities"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.laboratorija.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21086548",
+   "name": "Cido Grupa",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of soft drinks; production of mineral waters and other bottled waters"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "lei": "52990046M7I2PXGILX93",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27055921",
+   "name": "Circle K Latvia",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail sale of automotive fuel in specialised stores"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.circlek.lv",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q14239556",
+   "name": "Citadele banka",
+   "cc": "lv",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Other financial service activities, except insurance and pension funding",
+    "central banking",
+    "financial leasing",
+    "other credit granting",
+    "other monetary intermediation",
+    "security and commodity contracts brokerage"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.citadele.lv/",
+   "lei": "2138009Y59EAR7H1UO97",
+   "enwiki": "https://en.wikipedia.org/wiki/Citadele_Banka",
+   "logo_file": "Citadele logo RGB.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5134411",
+   "name": "Clique",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "vodka"
+   ],
+   "isin": [],
+   "website": "http://www.cliquevodka.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Clique_(vodka)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5136713",
+   "name": "Clusterpoint",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "http://www.clusterpoint.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Clusterpoint",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16908978",
+   "name": "Commercialization Reactor",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q30206893",
+   "name": "Compensa Vienna Insurance Group ADB Latvijas filiāle",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "life insurance",
+    "non-life insurance"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.compensa.lv/",
+   "lei": "5299004M3VEI7YA7QZ81",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28058285",
+   "name": "Conexus Baltic Grid",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "gas industry"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.conexus.lv/",
+   "lei": "485100YDVP9E8GT6PJ90",
+   "enwiki": "https://en.wikipedia.org/wiki/Conexus_Baltic_Grid",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97317290",
+   "name": "CrossChem",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of fertilisers and nitrogen compounds",
+    "Manufacture of other chemical products n.e.c.",
+    "Other retail sale in non-specialised stores",
+    "Wholesale of agricultural machinery, equipment and supplies",
+    "Wholesale of chemical products",
+    "Wholesale of other machinery and equipment",
+    "maintenance and repair of motor vehicles",
+    "other retail sale of new goods in specialised stores",
+    "renting and operating of own or leased real estate"
+   ],
+   "isin": [],
+   "hq_city": "Olaine Parish",
+   "hq": [
+    56.79604,
+    23.94915
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97230381",
+   "name": "Cēsis clinic",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4036833",
+   "name": "Cēsu Alus",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of cider and other fruit wines",
+    "Manufacture of other non-distilled fermented beverages",
+    "beverage industry",
+    "brewing industry",
+    "manufacture of beverages"
+   ],
+   "isin": [],
+   "hq_city": "Cēsis",
+   "hq": [
+    57.31306,
+    25.27472
+   ],
+   "website": "http://www.cesualus.lv",
+   "enwiki": "https://en.wikipedia.org/wiki/C%C4%93su_Alus",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4155236",
+   "name": "Daugavpils Locomotive Repair Plant",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq Riga",
+     "ticker": "LOK1R"
+    }
+   ],
+   "industries": [
+    "manufacture of railway locomotives and rolling stock",
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Daugavpils",
+   "hq": [
+    55.87139,
+    26.51611
+   ],
+   "website": "https://www.dlrr.eu/",
+   "lei": "097900BHBZ0000065239",
+   "enwiki": "https://en.wikipedia.org/wiki/Daugavpils_Locomotive_Repair_Plant",
+   "logo_file": "Logo-dlrz.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q127002195",
+   "name": "Daugavpils psychiatric hospital",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals"
+   ],
+   "isin": [],
+   "hq_city": "Daugavpils",
+   "hq": [
+    55.87139,
+    26.51611
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97317292",
+   "name": "Daugavpils reģionālā slimnīca",
+   "cc": "lv",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "hospitals and rehabilitation"
+   ],
+   "isin": [],
+   "hq_city": "Daugavpils",
+   "hq": [
+    55.87139,
+    26.51611
+   ],
+   "website": "https://slimnica.daugavpils.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16354234",
+   "name": "Daugavpils Shot Factory",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Daugavpils",
+   "hq": [
+    55.87139,
+    26.51611
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q4036868",
+   "name": "DEAC",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.deac.eu/ru/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104428858",
+   "name": "DelfinGroup",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq Riga",
+     "ticker": "DGR1R"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.delfingroup.lv/",
+   "lei": "2138002PKHUJIMVMYB13",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q65588459",
+   "name": "Depo DIY",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Other retail sale in non-specialised stores",
+    "Retail sale of hardware, paints and glass in specialised stores"
+   ],
+   "isin": [],
+   "hq_city": "Dreiliņi",
+   "hq": [
+    56.9375,
+    24.24583
+   ],
+   "website": "https://depo-diy.by/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65297342",
+   "name": "Discover Car Hire",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Web portals",
+    "car rental company",
+    "computer programming activities",
+    "other reservation service and related activities"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.discovercars.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/DiscoverCars.com",
+   "logo_file": "DiscoverCarscom-company-logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q90023731",
+   "name": "Dobele and their neibourhood hospital",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "hospitals and rehabilitation"
+   ],
+   "isin": [],
+   "hq_city": "Dobele",
+   "hq": [
+    56.62583,
+    23.28111
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24175265",
+   "name": "Dobeles dzirnavnieks",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of grain mill products",
+    "manufacture of bread; manufacture of fresh pastry goods and cakes"
+   ],
+   "isin": [],
+   "hq_city": "Dobele",
+   "hq": [
+    56.62583,
+    23.28111
+   ],
+   "website": "https://dzirnavnieks.lv/",
+   "lei": "391200F7N0U9Q7191R41",
+   "enwiki": "https://en.wikipedia.org/wiki/Dobeles_dzirnavnieks",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5288794",
+   "name": "Dokumeds, SIA",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "other professional, scientific and technical activities n.e.c.",
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.dokumeds.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Dokumeds",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4165843",
+   "name": "Dominante Park",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Other financial service activities, except insurance and pension funding n.e.c.",
+    "renting and operating of own or leased real estate"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5299679",
+   "name": "Double Coffee",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.doublecoffee.lv/",
+   "enwiki": "https://en.wikipedia.org/wiki/Double_Coffee",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16833682",
+   "name": "Drive eO",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Ogre Municipality",
+   "hq": [
+    56.84611,
+    25.0525
+   ],
+   "website": "http://www.driveeo.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Drive_eO",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15806753",
+   "name": "Drogas",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail sale of cosmetic and toilet articles in specialised stores"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.drogas.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q87002156",
+   "name": "E. Gulbja Laboratorija",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "general medical practice activities",
+    "medical test"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.egl.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4037918",
+   "name": "Ecolines",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "transport"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://ecolines.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ecolines",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27950240",
+   "name": "Electronic communications",
+   "cc": "lv",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Data processing, hosting and related activities",
+    "other professional, scientific and technical activities n.e.c.",
+    "other telecommunications activities",
+    "technical testing and analysis"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://vases.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134437025",
+   "name": "Eleving Group",
+   "cc": "lv",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "LU2818110020"
+   ],
+   "website": "https://www.eleving.com/",
+   "listed": true
+  },
+  {
+   "qid": "Q5364357",
+   "name": "Elko Grupa",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Wholesale of computers, computer peripheral equipment and software",
+    "Wholesale of electrical household appliances",
+    "Wholesale of information and communication equipment"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.elko.lv/",
+   "lei": "549300TNFQRZUIMUKG02",
+   "enwiki": "https://en.wikipedia.org/wiki/Elko_Grupa",
+   "logo_file": "ELKO-logo 140px.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125753763",
+   "name": "Energolukss",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Wholesale of other machinery and equipment",
+    "electrical installation",
+    "manufacture of electronic components",
+    "wholesale of electronic and telecommunications equipment and parts"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5423244",
+   "name": "EzerNet",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Liepāja",
+   "hq": [
+    56.50833,
+    21.01111
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/EzerNet",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65297361",
+   "name": "Forevers",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "processing and preserving of meat, except of poultry meat",
+    "production of meat and poultry meat products"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.forevers.lv/",
+   "lei": "8945004TU6LJOQ0M8F27",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6113154",
+   "name": "Forticom",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Latvia",
+   "hq": [
+    57.0,
+    25.0
+   ],
+   "website": "http://forticom.net",
+   "enwiki": "https://en.wikipedia.org/wiki/Forticom",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27969679",
+   "name": "Galerija Azur",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q20560990",
+   "name": "Galvenā enciklopēdiju redakcija",
+   "cc": "lv",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q20561175",
+   "name": "Grand Credit",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "lei": "254900G15YF9QDBVVO59",
+   "listed": false
+  },
+  {
+   "qid": "Q2071602",
+   "name": "Grindeks",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq Riga",
+     "ticker": "GRD1R"
+    }
+   ],
+   "industries": [
+    "Wholesale of chemical products",
+    "Wholesale of pharmaceutical goods",
+    "contract manufacturing organization",
+    "manufacture of basic pharmaceutical products",
+    "manufacture of chemicals and chemical products",
+    "manufacture of pharmaceutical preparations",
+    "research and development",
+    "wholesale trade, except of motor vehicles and motorcycles"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.grindeks.com/",
+   "lei": "5299006DWR32NKWM1O86",
+   "enwiki": "https://en.wikipedia.org/wiki/Grindeks",
+   "logo_file": "Логотип Grindex.gif",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q124259182",
+   "name": "H.A. Brieger",
+   "cc": "lv",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "cosmetics industry"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://dzintars.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25933155",
+   "name": "HansaMatrix",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq Riga",
+     "ticker": "HMX1R"
+    }
+   ],
+   "industries": [
+    "electronics industry"
+   ],
+   "isin": [],
+   "hq_city": "Mārupe",
+   "hq": [
+    56.90694,
+    24.0575
+   ],
+   "website": "http://www.hansamatrix.com/",
+   "lei": "529900S1YDO0MHC8K318",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q86002376",
+   "name": "Helmes Latvia",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Other information technology and computer service activities",
+    "computer programming activities"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20565545",
+   "name": "Hospital of Traumatology and Orthopaedics",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "hospitals and rehabilitation"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.tos.lv",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16357744",
+   "name": "Hromets",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16357748",
+   "name": "Hromets poligrāfija",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q85769207",
+   "name": "Inch2",
+   "cc": "lv",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "fashion"
+   ],
+   "isin": [],
+   "website": "https://www.inch2.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Inch2",
+   "listed": false
+  },
+  {
+   "qid": "Q16351775",
+   "name": "Industra Bank",
+   "cc": "lv",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "activities of holding companies",
+    "financial service activities, except insurance and pension funding",
+    "insurance, reinsurance and pension funding, except compulsory social security",
+    "other credit granting",
+    "other monetary intermediation",
+    "pension funding",
+    "trusts, funds and similar financial entities"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://industra.finance/",
+   "lei": "213800M5SZU3KLAROZ16",
+   "enwiki": "https://en.wikipedia.org/wiki/Industra_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111009828",
+   "name": "Infogram SIA",
+   "cc": "lv",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20575734",
+   "name": "Interbaltija",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4048666",
+   "name": "International Congress of Photogrammetry",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Luxembourg",
+   "hq": [
+    49.61139,
+    6.13
+   ],
+   "website": "http://www.spi-group.com/front-page-ru/view?set_language=ru",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q126202602",
+   "name": "Irlavas Sarkanā Krusta slimnīca",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "general medical practice activities",
+    "hospitals and rehabilitation",
+    "specialist medical practice activities"
+   ],
+   "isin": [],
+   "hq_city": "Irlava",
+   "hq": [
+    56.87556,
+    22.99361
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97441436",
+   "name": "Jelgava city hospital",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "hospitals and rehabilitation",
+    "regulation of the activities of providing health care, education, cultural services and other social services, excluding social security"
+   ],
+   "isin": [],
+   "hq_city": "Jelgava",
+   "hq": [
+    56.65222,
+    23.72444
+   ],
+   "website": "http://www.jpslimnica.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20562149",
+   "name": "Jelgava Sugar factory",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Jelgava",
+   "hq": [
+    56.65222,
+    23.72444
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q50378985",
+   "name": "Jumava",
+   "cc": "lv",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.jumava.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4041942",
+   "name": "Just5",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.just5.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Just5",
+   "logo_file": "Just5-logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4041752",
+   "name": "JZ Microphones",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/JZ_Microphones",
+   "logo_file": "Juriszarinsmicrophones.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16359139",
+   "name": "Jāņa Rozes",
+   "cc": "lv",
+   "types": [
+    "Q2085381",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.janisroze.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20402089",
+   "name": "Jāņa sēta",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "book publishing",
+    "cartography",
+    "geographic information system"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.kartes.lv",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16359243",
+   "name": "Jēkabpils regional hospital",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "general medical practice activities",
+    "hospitals and rehabilitation",
+    "specialist medical practice activities"
+   ],
+   "isin": [],
+   "hq_city": "Jēkabpils",
+   "hq": [
+    56.4975,
+    25.86639
+   ],
+   "website": "https://jrslimnica.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97231245",
+   "name": "Jūrmalas slimnīca",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "hospitals and rehabilitation"
+   ],
+   "isin": [],
+   "hq_city": "Jūrmala",
+   "hq": [
+    56.9665,
+    23.72211
+   ],
+   "website": "http://www.jurmalasslimnica.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85860860",
+   "name": "Kandava radio plant",
+   "cc": "lv",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "КандавскийЛого.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56399827",
+   "name": "Kane’s Soda Pop",
+   "cc": "lv",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104426987",
+   "name": "Karavela",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "legal and accounting activities",
+    "processing and preserving of fish, crustaceans and molluscs"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.kaija.lv/",
+   "lei": "254900W0PXTRTZMP1K28",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q99395784",
+   "name": "Kreiss",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "freight transport by road",
+    "maintenance and repair of motor vehicles"
+   ],
+   "isin": [],
+   "hq_city": "Mārupe",
+   "hq": [
+    56.90694,
+    24.0575
+   ],
+   "website": "https://www.kreiss.lv/en",
+   "lei": "549300OFBLHY2EDODL51",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20804015",
+   "name": "Kronus",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of wooden containers",
+    "sawmilling and planing of wood"
+   ],
+   "isin": [],
+   "hq_city": "Ulbroka",
+   "hq": [
+    56.94083,
+    24.28611
+   ],
+   "website": "https://www.kronus.eu/lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107481520",
+   "name": "Kuldīgas slimnīca",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "hospitals and rehabilitation"
+   ],
+   "isin": [],
+   "hq_city": "Kuldīga",
+   "hq": [
+    56.96722,
+    21.97
+   ],
+   "website": "https://www.kuldigasslimnica.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16361125",
+   "name": "Latpass Airlines",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q3736450",
+   "name": "Latvenergo",
+   "cc": "lv",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Computer facilities management activities",
+    "Renting and leasing of motor vehicles",
+    "electric power production",
+    "other manufacturing n.e.c.",
+    "renting and operating of own or leased real estate",
+    "technical testing and analysis",
+    "telecommunications industry",
+    "trade of electricity"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://latvenergo.lv/",
+   "lei": "213800DJRB539Q1EMW75",
+   "enwiki": "https://en.wikipedia.org/wiki/Latvenergo",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116265936",
+   "name": "Latvia State Radio and Television Center",
+   "cc": "lv",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "internet service provider",
+    "web hosting service",
+    "wireless telecommunications activities"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.lvrtc.lv/",
+   "enwiki": "https://en.wikipedia.org/wiki/Latvian_State_Radio_and_Television_Centre",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q52316936",
+   "name": "Latvian Industrial Bank",
+   "cc": "lv",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Latvian_Industrial_Bank",
+   "listed": false
+  },
+  {
+   "qid": "Q4993620",
+   "name": "Latvian Mobile Telephone",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "other telecommunications activities",
+    "telecommunications industry",
+    "wireless telecommunications activities"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.lmt.lv/",
+   "enwiki": "https://en.wikipedia.org/wiki/LMT_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q555773",
+   "name": "Latvian National Opera and Ballet",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "creative, artistic and performing activities",
+    "operation of arts facilities",
+    "operation of historical sites and buildings and similar visitor attractions",
+    "other amusement and recreation activities",
+    "performing arts"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.opera.lv/",
+   "enwiki": "https://en.wikipedia.org/wiki/Latvian_National_Opera",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16361525",
+   "name": "Latvian Ornithological Society",
+   "cc": "lv",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "activities of other membership organisations n.e.c.",
+    "activities of professional membership organisations"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.lob.lv",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q327094",
+   "name": "Latvian Railways",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "Service activities incidental to land transportation"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://ldz.lv",
+   "enwiki": "https://en.wikipedia.org/wiki/Latvian_Railways",
+   "logo_file": "LDz logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6497410",
+   "name": "Latvian Shipping Company",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "freight transport"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.lk.lv",
+   "lei": "48510000VYR04HZGC213",
+   "enwiki": "https://en.wikipedia.org/wiki/Latvian_Shipping_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16458129",
+   "name": "Latvijas Finieris",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Agents involved in the sale of timber and building materials",
+    "Manufacture of veneer sheets and wood-based panels",
+    "Wholesale of wood, construction materials and sanitary equipment",
+    "manufacture of glues",
+    "manufacture of metal structures and parts of structures",
+    "sawmilling and planing of wood"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.finieris.com/en/",
+   "lei": "4851000NJ8O90MDGXG16",
+   "enwiki": "https://en.wikipedia.org/wiki/Latvijas_Finieris",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q506656",
+   "name": "Latvijas Gāze",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Distribution of gaseous fuels through mains",
+    "Other education n.e.c.",
+    "Other retail sale not in stores, stalls or markets",
+    "Trade of gas through mains",
+    "Wholesale of solid, liquid and gaseous fuels and related products",
+    "civil engineering",
+    "construction of residential and non-residential buildings",
+    "development of building projects",
+    "electric power distribution",
+    "electric power production",
+    "engineering company",
+    "freight transport by road",
+    "manufacture of gas",
+    "other construction installation",
+    "other human health activities",
+    "other passenger land transport n.e.c.",
+    "other retail sale of new goods in specialised stores",
+    "other specialised construction activities n.e.c.",
+    "plumbing, heat and air conditioning installation",
+    "retail sale of automotive fuel in specialised stores",
+    "steam and air conditioning supply",
+    "trade of electricity",
+    "transmission of electricity",
+    "transport via pipeline",
+    "warehousing and storage"
+   ],
+   "isin": [
+    "LV0000100899"
+   ],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://lg.lv/majoklim",
+   "lei": "097900BGMO0000055872",
+   "enwiki": "https://en.wikipedia.org/wiki/Latvijas_G%C4%81ze",
+   "logo_file": "Latvijas Gāze 2022 logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16361365",
+   "name": "Latvijas Kredītbanka",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2984071",
+   "name": "Latvijas Krājbanka",
+   "cc": "lv",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.lkb.lv",
+   "enwiki": "https://en.wikipedia.org/wiki/Latvijas_Kr%C4%81jbanka",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21011161",
+   "name": "Latvijas kuģniecība",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q20563085",
+   "name": "Latvijas Loto",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "gambling and betting activities"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1807088",
+   "name": "Latvijas Pasts",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "Other financial service activities, except insurance and pension funding n.e.c.",
+    "Retail trade not in stores, stalls or markets",
+    "other monetary intermediation",
+    "postal activities under universal service obligation",
+    "postal and courier activities",
+    "publishing industry"
+   ],
+   "isin": [],
+   "hq_city": "Mārupe Parish",
+   "hq": [
+    56.90694,
+    24.05833
+   ],
+   "website": "https://www.pasts.lv/",
+   "enwiki": "https://en.wikipedia.org/wiki/Latvijas_Pasts",
+   "logo_file": "Latvijas Pasts (2025).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1807092",
+   "name": "Latvijas Radio",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "Other education n.e.c.",
+    "advertising",
+    "other telecommunications activities",
+    "radio broadcasting",
+    "sound recording and music publishing activities"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.latvijasradio.lv",
+   "enwiki": "https://en.wikipedia.org/wiki/Latvijas_Radio",
+   "logo_file": "Latvijas Radio Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125420619",
+   "name": "Latvijas Valsts ceļi",
+   "cc": "lv",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "activities of other membership organisations n.e.c.",
+    "construction of roads and motorways",
+    "regulation of and contribution to more efficient operation of businesses"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.lvceli.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8413552",
+   "name": "Latvijas valsts meži",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "forestry"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.lvm.lv",
+   "enwiki": "https://en.wikipedia.org/wiki/Latvijas_valsts_me%C5%BEi",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27056014",
+   "name": "Latvijas Vēstnesis",
+   "cc": "lv",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q97231849",
+   "name": "LAUMA FABRICS",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Liepāja",
+   "hq": [
+    56.50833,
+    21.01111
+   ],
+   "lei": "9845004C736BPB9D4264",
+   "listed": false
+  },
+  {
+   "qid": "Q1618438",
+   "name": "Lido",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "restaurants and mobile food service activities"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.lido.lv",
+   "lei": "549300RCKD18PS6LDJ64",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20563391",
+   "name": "Liepājas cukurfabrika",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1788139",
+   "name": "Liepājas tramvajs",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "transport"
+   ],
+   "isin": [],
+   "hq_city": "Liepāja",
+   "hq": [
+    56.50833,
+    21.01111
+   ],
+   "website": "http://www.liepajas-tramvajs.lv",
+   "enwiki": "https://en.wikipedia.org/wiki/Trams_in_Liep%C4%81ja",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124760987",
+   "name": "Light Guide Optics International",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of electric motors, generators and transformers",
+    "manufacture of fibre optic cables"
+   ],
+   "isin": [],
+   "hq_city": "Līvāni",
+   "hq": [
+    56.35389,
+    26.17611
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q316777",
+   "name": "Livu Akvaparks",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "operation of sports facilities",
+    "other amusement and recreation activities"
+   ],
+   "isin": [],
+   "hq_city": "Jūrmala",
+   "hq": [
+    56.9665,
+    23.72211
+   ],
+   "website": "https://www.akvaparks.lv/",
+   "enwiki": "https://en.wikipedia.org/wiki/Livu_Akvaparks",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104429626",
+   "name": "LPB Bank",
+   "cc": "lv",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Activities auxiliary to financial services, except insurance and pension funding",
+    "Other activities auxiliary to financial services, except insurance and pension funding",
+    "Other financial service activities, except insurance and pension funding",
+    "Other financial service activities, except insurance and pension funding n.e.c.",
+    "activities auxiliary to financial services and insurance activities",
+    "administration of financial markets",
+    "financial leasing",
+    "financial services",
+    "other credit granting",
+    "other monetary intermediation",
+    "security and commodity contracts brokerage",
+    "trusts, funds and similar financial entities"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://lpb.lv/",
+   "lei": "259400YE9CCQBVY41L71",
+   "enwiki": "https://en.wikipedia.org/wiki/Magnetiq_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104438531",
+   "name": "Luminor Bank",
+   "cc": "lv",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.luminor.lv",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4048640",
+   "name": "Maag Latvija",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Wholesale of meat and meat products",
+    "processing and preserving of meat, except of poultry meat",
+    "production of meat and poultry meat products"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://miesnieks.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6726489",
+   "name": "MADARA Cosmetics",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Wholesale of perfume and cosmetics",
+    "manufacture of perfumes and toilet preparations",
+    "manufacture of soap and detergents, cleaning and polishing preparations",
+    "retail sale of cosmetic and toilet articles in specialised stores"
+   ],
+   "isin": [],
+   "hq_city": "Mārupe",
+   "hq": [
+    56.90694,
+    24.0575
+   ],
+   "website": "https://www.madaracosmetics.com",
+   "lei": "48510000NFH7BLQEYU67",
+   "enwiki": "https://en.wikipedia.org/wiki/Madara_Cosmetics",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97231998",
+   "name": "Madona hospital",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "hospitals and rehabilitation"
+   ],
+   "isin": [],
+   "hq_city": "Madona",
+   "hq": [
+    56.85417,
+    26.22056
+   ],
+   "website": "https://www.madonasslimnica.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97232038",
+   "name": "Mapon",
+   "cc": "lv",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Retail trade of motor vehicle parts and accessories",
+    "Web portals"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6765780",
+   "name": "Maritime Administration of Latvia",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "Service activities incidental to water transportation",
+    "sea and coastal freight water transport",
+    "sea and coastal passenger water transport"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.lja.lv/",
+   "enwiki": "https://en.wikipedia.org/wiki/Maritime_Administration_of_Latvia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15833214",
+   "name": "Maxima Latvia",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail",
+    "retail sale in non-specialised stores with food, beverages or tobacco predominating",
+    "supermarket chain"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.maxima.lv/",
+   "logo_file": "Maxima logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16363314",
+   "name": "Mego",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "activities of head offices",
+    "activities of holding companies",
+    "retail sale in non-specialised stores with food, beverages or tobacco predominating"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.mego.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q913580",
+   "name": "MikroTik",
+   "cc": "lv",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Other information technology and computer service activities",
+    "manufacture of communication equipment"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://mikrotik.com",
+   "enwiki": "https://en.wikipedia.org/wiki/MikroTik",
+   "logo_file": "MikroTik Logo (2022).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65921529",
+   "name": "Mintos Holdings",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "activities of holding companies"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "lei": "4851006434KD18TF7C88",
+   "enwiki": "https://en.wikipedia.org/wiki/Mintos",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16361282",
+   "name": "Nasdaq CSD SE",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "administration of financial markets",
+    "security and commodity contracts brokerage"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://nasdaqcsd.com/",
+   "lei": "485100001PLJJ09NZT59",
+   "enwiki": "https://en.wikipedia.org/wiki/Nasdaq_CSD",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1624698",
+   "name": "Nasdaq Riga",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "administration of financial markets",
+    "security and commodity contracts brokerage"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://nasdaqbaltic.com/lv/par-mums/nasdaq-riga/",
+   "lei": "549300YRBS4XYCVIH803",
+   "enwiki": "https://en.wikipedia.org/wiki/Nasdaq_Riga",
+   "logo_file": "Nasdaq blue black transparent backgr.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97232624",
+   "name": "National Center for Mental Health",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "hospitals and rehabilitation"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.rpnc.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109012724",
+   "name": "National rehabilitation center Vaivari",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "specialist medical practice activities"
+   ],
+   "isin": [],
+   "hq_city": "Jūrmala",
+   "hq": [
+    56.9665,
+    23.72211
+   ],
+   "website": "https://www.nrcvaivari.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30212561",
+   "name": "Neputns",
+   "cc": "lv",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97317367",
+   "name": "North Kurland Regional hospital",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "hospitals and rehabilitation"
+   ],
+   "isin": [],
+   "hq_city": "Ventspils",
+   "hq": [
+    57.38972,
+    21.56444
+   ],
+   "website": "http://www.ziemelkurzemesslimnica.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97232228",
+   "name": "Ogres rajona slimnīca",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "hospitals and rehabilitation"
+   ],
+   "isin": [],
+   "hq_city": "Ogre",
+   "hq": [
+    56.81694,
+    24.60472
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7083044",
+   "name": "Olpha",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq Riga",
+     "ticker": "OLF1R"
+    }
+   ],
+   "industries": [
+    "manufacture of basic pharmaceutical products",
+    "manufacture of other inorganic basic chemicals",
+    "manufacture of pharmaceutical preparations"
+   ],
+   "isin": [],
+   "hq_city": "Olaine",
+   "hq": [
+    56.78444,
+    23.93694
+   ],
+   "website": "http://olainfarm.lv",
+   "lei": "213800WCG52W62ENOP27",
+   "enwiki": "https://en.wikipedia.org/wiki/Olpha",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q95400796",
+   "name": "Optibet",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "gambling and betting activities",
+    "online gambling",
+    "sports betting"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.optibet.lv/en/",
+   "lei": "5493006RLUBCNZY7GZ83",
+   "logo_file": "Optibet Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4049929",
+   "name": "Orkla Foods Latvija",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of soft drinks; production of mineral waters and other bottled waters",
+    "manufacture of condiments and seasonings",
+    "manufacture of fruit and vegetable juice",
+    "other processing and preserving of fruit and vegetables"
+   ],
+   "isin": [],
+   "hq_city": "Spilve",
+   "hq": [
+    56.96417,
+    23.9625
+   ],
+   "website": "https://www.spilva.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20563907",
+   "name": "Orkla Latvija",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of bakery and farinaceous products",
+    "manufacture of bread; manufacture of fresh pastry goods and cakes",
+    "manufacture of rusks and biscuits; manufacture of preserved pastry goods and cakes",
+    "processing and preserving of potatoes",
+    "wholesale of sugar and chocolate and sugar confectionery"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7142587",
+   "name": "Pasažieru vilciens",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "Cargo handling",
+    "Service activities incidental to land transportation",
+    "other passenger land transport n.e.c.",
+    "passenger rail transport, interurban",
+    "warehousing and storage"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.vivi.lv",
+   "enwiki": "https://en.wikipedia.org/wiki/Vivi_(rail_transit)",
+   "logo_file": "Vivi Latvia (2023).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30612100",
+   "name": "PATA",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "Wholesale of wood, construction materials and sanitary equipment",
+    "lumbering",
+    "silviculture and other forestry activities",
+    "support services to forestry"
+   ],
+   "isin": [],
+   "hq_city": "Inčukalns",
+   "hq": [
+    57.09639,
+    24.6875
+   ],
+   "website": "https://pata.lv/",
+   "lei": "529900P4UITGHCIHXR72",
+   "enwiki": "https://en.wikipedia.org/wiki/PATA_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2034327",
+   "name": "Pauls Stradins Clinical University Hospital",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "hospitals and rehabilitation"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.stradini.lv",
+   "enwiki": "https://en.wikipedia.org/wiki/Pauls_Stradi%C5%86%C5%A1_Clinical_University_Hospital",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4045485",
+   "name": "PNB Banka",
+   "cc": "lv",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "Activities auxiliary to financial services, except insurance and pension funding",
+    "Other activities auxiliary to financial services, except insurance and pension funding",
+    "Other financial service activities, except insurance and pension funding n.e.c.",
+    "financial leasing",
+    "other credit granting",
+    "other monetary intermediation",
+    "security and commodity contracts brokerage",
+    "trusts, funds and similar financial entities"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://pnbbanka.eu/",
+   "lei": "549300J6I0BUEY33QO16",
+   "enwiki": "https://en.wikipedia.org/wiki/PNB_Banka",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4371584",
+   "name": "Polaris",
+   "cc": "lv",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22666341",
+   "name": "Preiļu siers",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Operation of dairies and cheese making",
+    "Wholesale of dairy products, eggs and edible oils and fats",
+    "other retail sale of food in specialised stores",
+    "retail sale in non-specialised stores"
+   ],
+   "isin": [],
+   "hq_city": "Preiļi",
+   "hq": [
+    56.29417,
+    26.72472
+   ],
+   "lei": "984500761OFEWB6A7E87",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q298400",
+   "name": "PrivatBank",
+   "cc": "lv",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.privatbank.lv/",
+   "lei": "213800S3PME328HYZ792",
+   "enwiki": "https://en.wikipedia.org/wiki/PrivatBank_(Latvia)",
+   "logo_file": "PrivatBank-corporate-logo-latina.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4047652",
+   "name": "Puratos Latvia",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "other processing and preserving of fruit and vegetables",
+    "processing and preserving of fruit and vegetables"
+   ],
+   "isin": [],
+   "hq_city": "Pūre",
+   "hq": [
+    57.03583,
+    22.90694
+   ],
+   "website": "https://purefood.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16360669",
+   "name": "Quadrat",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3744542",
+   "name": "Radiotehnika RRR",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.rrr.lv",
+   "lei": "48510000PIT2XZ7X9Y86",
+   "logo_file": "Radiotehnika Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21014205",
+   "name": "REF Holdings",
+   "cc": "lv",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Hong Kong Stock Exchange",
+     "ticker": "1631"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "lei": "254900SIOZ3DCYR70E48",
+   "listed": true
+  },
+  {
+   "qid": "Q17308599",
+   "name": "Reverta",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "activities of collection agencies and credit bureaus",
+    "buying and selling of own real estate",
+    "renting and operating of own or leased real estate"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.reverta.lv/",
+   "lei": "097900BHBR0000064855",
+   "enwiki": "https://en.wikipedia.org/wiki/Reverta",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4048312",
+   "name": "Rietumu Banka",
+   "cc": "lv",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Accounting, bookkeeping and auditing activities; tax consultancy",
+    "Other activities auxiliary to financial services, except insurance and pension funding",
+    "Other financial service activities, except insurance and pension funding n.e.c.",
+    "administration of financial markets",
+    "buying and selling of own real estate",
+    "financial leasing",
+    "fund management activities",
+    "legal activities",
+    "other credit granting",
+    "other monetary intermediation",
+    "renting and operating of own or leased real estate",
+    "security and commodity contracts brokerage",
+    "trusts, funds and similar financial entities"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.rietumu.lv",
+   "lei": "2138007F5HA5FFJROB80",
+   "enwiki": "https://en.wikipedia.org/wiki/Rietumu_Banka",
+   "logo_file": "RietumuLogo 01.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16351399",
+   "name": "Riga 1st hospital",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "general medical practice activities",
+    "hospitals and rehabilitation"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.1slimnica.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4394570",
+   "name": "Riga Circus",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "operation of arts facilities",
+    "performing arts"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://cirks.lv/",
+   "enwiki": "https://en.wikipedia.org/wiki/Riga_Circus",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20404308",
+   "name": "Riga East University Hospital",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "hospitals and rehabilitation"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.aslimnica.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20564732",
+   "name": "Riga Maternity hospital",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.rdn.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27987988",
+   "name": "Riga Shipyard",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "building of ships and floating structures",
+    "renting and operating of own or leased real estate"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.riga-shipyard.com",
+   "lei": "48510000DWP0BMQCTM64",
+   "enwiki": "https://en.wikipedia.org/wiki/Riga_Shipyard",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7486990",
+   "name": "Rija Films",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.rijafilms.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3741108",
+   "name": "Rimi Baltic",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "activities of head offices",
+    "retail sale in non-specialised stores with food, beverages or tobacco predominating"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.rimi.lv/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rimi_Baltic",
+   "logo_file": "Rimi Baltic Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4394523",
+   "name": "RISEBA University of Business, Arts and Technology",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "technical and vocational secondary education",
+    "tertiary education"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.riseba.lv",
+   "enwiki": "https://en.wikipedia.org/wiki/RISEBA_University_of_Business,_Arts_and_Technology",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27055983",
+   "name": "Road Traffic Safety Directorate",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "public order and safety activities",
+    "technical testing and analysis"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.csdd.lv",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20564651",
+   "name": "Rēzekne hospital",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "hospitals and rehabilitation"
+   ],
+   "isin": [],
+   "hq_city": "Rēzekne",
+   "hq": [
+    56.50667,
+    27.33083
+   ],
+   "website": "https://rslimnica.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16351218",
+   "name": "Rēzeknes Piena konservu kombināts",
+   "cc": "lv",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.rpkk.ucoz.lv",
+   "listed": false
+  },
+  {
+   "qid": "Q4048643",
+   "name": "Rīgas piena kombināts",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Operation of dairies and cheese making",
+    "manufacture of dairy products"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://foodunion.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2280274",
+   "name": "Rīgas satiksme",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of other builders' carpentry and joinery",
+    "Treatment and coating of metals; machining",
+    "electric power distribution",
+    "electric power production",
+    "urban and suburban passenger land transport"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.rigassatiksme.lv",
+   "enwiki": "https://en.wikipedia.org/wiki/R%C4%ABgas_Satiksme",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21011154",
+   "name": "Sadales tīkls",
+   "cc": "lv",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Construction of utility projects for electricity and telecommunications",
+    "Other education n.e.c.",
+    "electric power distribution",
+    "electrical installation",
+    "sawmilling and planing of wood",
+    "transmission of electricity"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.sadalestikls.lv/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sadales_t%C4%ABkls",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7388547",
+   "name": "SAF Tehnika",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "OMX AB",
+     "ticker": "SAF1R"
+    }
+   ],
+   "industries": [
+    "Manufacture of instruments and appliances for measuring, testing and navigation",
+    "Other retail sale not in stores, stalls or markets",
+    "Wholesale of computers, computer peripheral equipment and software",
+    "business and other management consultancy activities",
+    "computer programming activities",
+    "manufacture of communication equipment",
+    "technical testing and analysis",
+    "wholesale of electronic and telecommunications equipment and parts"
+   ],
+   "isin": [
+    "LV0000101129"
+   ],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.saftehnika.com",
+   "lei": "48510000F6NVA4T63P67",
+   "enwiki": "https://en.wikipedia.org/wiki/SAF_Tehnika",
+   "logo_file": "SAF Tehnika logo.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q21778955",
+   "name": "Savienotās dzirnavas",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7389564",
+   "name": "SEB banka",
+   "cc": "lv",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Other activities auxiliary to financial services, except insurance and pension funding",
+    "Other financial service activities, except insurance and pension funding n.e.c.",
+    "activities of holding companies",
+    "activities of insurance agents and brokers",
+    "administration of financial markets",
+    "financial leasing",
+    "other activities auxiliary to insurance and pension funding",
+    "other credit granting",
+    "other monetary intermediation",
+    "risk and damage evaluation",
+    "security and commodity contracts brokerage"
+   ],
+   "isin": [],
+   "hq_city": "Valdlauči",
+   "hq": [
+    56.90389,
+    24.14917
+   ],
+   "website": "https://www.seb.lv/",
+   "lei": "549300YW95G1VBBGGV07",
+   "enwiki": "https://en.wikipedia.org/wiki/SEB_banka",
+   "logo_file": "SEB logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22689201",
+   "name": "Seesam Insurance AS Latvijas filiāle",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.seesam.lv",
+   "listed": false
+  },
+  {
+   "qid": "Q7453060",
+   "name": "Sereal",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.sereal.eu",
+   "enwiki": "https://en.wikipedia.org/wiki/Sereal",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61122036",
+   "name": "SIA Aerones Engineering",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://aerones.com/lv/",
+   "listed": false
+  },
+  {
+   "qid": "Q12103619",
+   "name": "Signet Bank",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Other financial service activities, except insurance and pension funding n.e.c.",
+    "administration of financial markets",
+    "central banking",
+    "financial leasing",
+    "fund management activities",
+    "other monetary intermediation",
+    "security and commodity contracts brokerage",
+    "trusts, funds and similar financial entities"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://signetbank.com/",
+   "lei": "2534005A84927EKSR789",
+   "enwiki": "https://en.wikipedia.org/wiki/Signet_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16352441",
+   "name": "Skandi Motors",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q20405119",
+   "name": "Slimnīca Ģintermuiža",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "hospitals and rehabilitation"
+   ],
+   "isin": [],
+   "hq_city": "Jelgava",
+   "hq": [
+    56.65222,
+    23.72444
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16355300",
+   "name": "State Real Estate",
+   "cc": "lv",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Real estate activities on a fee or contract basis",
+    "Real estate agencies",
+    "buying and selling of own real estate",
+    "real estate activities",
+    "renting and operating of own or leased real estate"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.vni.lv/",
+   "lei": "2549002SRN4MYJ15G677",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q404542",
+   "name": "Tet",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "Wired telecommunications activities"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.tet.lv/",
+   "lei": "213800HNB8DBFIACDP23",
+   "enwiki": "https://en.wikipedia.org/wiki/Tet_(company)",
+   "logo_file": "Lattelecom logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q26216441",
+   "name": "Tilde",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.tilde.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q7844643",
+   "name": "Trivest",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.trivest.com",
+   "lei": "549300L6JVCPDL6FK602",
+   "enwiki": "https://en.wikipedia.org/wiki/Trivest",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124691428",
+   "name": "Tukuma Piens",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Operation of dairies and cheese making"
+   ],
+   "isin": [],
+   "hq_city": "Tukums",
+   "hq": [
+    56.96879,
+    23.15352
+   ],
+   "website": "https://baltais.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107481519",
+   "name": "Tukums hospital",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "hospitals and rehabilitation"
+   ],
+   "isin": [],
+   "hq_city": "Tukums",
+   "hq": [
+    56.96879,
+    23.15352
+   ],
+   "website": "https://tukslim.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q126975125",
+   "name": "Union Aviation",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "agents involved in the sale of machinery, industrial equipment, ships and aircraft",
+    "passenger air transport"
+   ],
+   "isin": [],
+   "hq_city": "Mārupe Parish",
+   "hq": [
+    56.90694,
+    24.05833
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16353601",
+   "name": "University Children's Hospital",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "human health activities"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.bkus.lv/",
+   "enwiki": "https://en.wikipedia.org/wiki/B%C4%93rnu_Kl%C4%ABnisk%C4%81_Universit%C4%81tes_Slimn%C4%ABca",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q498407",
+   "name": "University of Latvia",
+   "cc": "lv",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://www.lu.lv/",
+   "enwiki": "https://en.wikipedia.org/wiki/University_of_Latvia",
+   "logo_file": "LU logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125583415",
+   "name": "Užavas alus",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Q24013755",
+   "hq": [
+    57.20361,
+    21.44472
+   ],
+   "website": "https://uzavasalus.eu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16355253",
+   "name": "Valmieras mēbeles",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q25035930",
+   "name": "Valmieras stikla šķiedra",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of glass fibres",
+    "manufacture of man-made fibres"
+   ],
+   "isin": [],
+   "hq_city": "Valmiera",
+   "hq": [
+    57.53806,
+    25.42306
+   ],
+   "website": "https://www.valmiera-glass.com",
+   "lei": "5493006XWNR6BLL15O35",
+   "enwiki": "https://en.wikipedia.org/wiki/Valmiera_Fibreglass",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97233836",
+   "name": "Valters Dakša",
+   "cc": "lv",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7912661",
+   "name": "Valters un Rapa",
+   "cc": "lv",
+   "types": [
+    "Q2085381",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "http://www.valtersunrapa.lv",
+   "enwiki": "https://en.wikipedia.org/wiki/Valters_un_Rapa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116871240",
+   "name": "VeAn Tattoo",
+   "cc": "lv",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://vean-tattoo.com/",
+   "logo_file": "Vean tattoo.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q20566296",
+   "name": "Verems",
+   "cc": "lv",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of veneer sheets and wood-based panels",
+    "sawmilling and planing of wood"
+   ],
+   "isin": [],
+   "hq_city": "Lejas Ančupāni",
+   "hq": [
+    56.54111,
+    27.34806
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21663885",
+   "name": "Viada Baltija",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Management of real estate on a fee or contract basis",
+    "Sale of motor vehicle parts and accessories",
+    "business and other management consultancy activities",
+    "renting and operating of own or leased real estate",
+    "retail sale of automotive fuel in specialised stores",
+    "warehousing and storage"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16355762",
+   "name": "Vidzemes slimnīca",
+   "cc": "lv",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "activity of hospitals",
+    "hospitals and rehabilitation"
+   ],
+   "isin": [],
+   "hq_city": "Valmiera",
+   "hq": [
+    57.53806,
+    25.42306
+   ],
+   "website": "http://www.vidzemesslimnica.lv/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q50378789",
+   "name": "Virši-A",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Wholesale of solid, liquid and gaseous fuels and related products",
+    "retail sale of automotive fuel in specialised stores"
+   ],
+   "isin": [],
+   "hq_city": "Aizkraukle",
+   "hq": [
+    56.60083,
+    25.255
+   ],
+   "website": "https://www.virsi.lv/",
+   "lei": "213800DMDEDIDNEAOR80",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20566364",
+   "name": "Visma Enterprise",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "computer consultancy activities",
+    "computer programming activities"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125960941",
+   "name": "Vorwarts Pharma",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Wholesale of other food, including fish, crustaceans and molluscs",
+    "Wholesale of pharmaceutical goods"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24175280",
+   "name": "West Kredit",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services institution"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q52317091",
+   "name": "Zemes banka",
+   "cc": "lv",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q20572952",
+   "name": "Zvaigzne ABC",
+   "cc": "lv",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16357351",
+   "name": "Ērenpreiss Bicycles",
+   "cc": "lv",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Riga",
+   "hq": [
+    56.9475,
+    24.10694
+   ],
+   "website": "https://erenpreiss.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/%C4%92renpreiss_Bicycles",
+   "logo_file": "Erenpreiss logo.jpg",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

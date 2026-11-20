@@ -1,0 +1,924 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "AL",
+ "count": 45,
+ "companies": [
+  {
+   "qid": "Q30605515",
+   "name": "Albanian Electricity Distribution Operator",
+   "cc": "al",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "trade of electricity"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Operatori_i_Shp%C3%ABrndarjes_s%C3%AB_Energjis%C3%AB_Elektrike",
+   "logo_file": "Operatori i Shpërndarjes së Energjisë Elektrike logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q1651252",
+   "name": "Albanian Power Corporation",
+   "cc": "al",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy supply"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "http://www.kesh.com.al/",
+   "enwiki": "https://en.wikipedia.org/wiki/Albanian_Power_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13036888",
+   "name": "Albas",
+   "cc": "al",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "http://www.albas-shb.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30637537",
+   "name": "Albcontrol",
+   "cc": "al",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "https://www.albcontrol.al/",
+   "enwiki": "https://en.wikipedia.org/wiki/Albcontrol",
+   "logo_file": "Albcontrol.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q126890020",
+   "name": "Albgaz",
+   "cc": "al",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "https://albgaz.al/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21022622",
+   "name": "Albpetrol",
+   "cc": "al",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Patos",
+   "hq": [
+    40.6841,
+    19.6194
+   ],
+   "website": "http://www.albpetrol.al",
+   "enwiki": "https://en.wikipedia.org/wiki/Albpetrol",
+   "logo_file": "Albpetrol.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130494270",
+   "name": "Albrail",
+   "cc": "al",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "https://albrail.al/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q294355",
+   "name": "ALBtelecom",
+   "cc": "al",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "http://www.albtelecom.al/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/ALBtelecom",
+   "logo_file": "Albtelecom.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3338481",
+   "name": "ALBtelecom Mobile",
+   "cc": "al",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "http://www.eaglemobile.al/",
+   "enwiki": "https://en.wikipedia.org/wiki/ALBtelecom_Mobile",
+   "logo_file": "Albtelecom.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30602369",
+   "name": "American Bank of Investments",
+   "cc": "al",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "https://abi.al/",
+   "enwiki": "https://en.wikipedia.org/wiki/American_Bank_of_Investments_(Albania)",
+   "listed": false
+  },
+  {
+   "qid": "Q16349813",
+   "name": "Balfin Group",
+   "cc": "al",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "http://www.balfin.al/",
+   "enwiki": "https://en.wikipedia.org/wiki/Balfin_Group",
+   "logo_file": "Balfin logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q806702",
+   "name": "Banka Kombëtare Tregtare",
+   "cc": "al",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "http://www.bkt.com.al/",
+   "enwiki": "https://en.wikipedia.org/wiki/Banka_Komb%C3%ABtare_Tregtare",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4856269",
+   "name": "Bankers Petroleum",
+   "cc": "al",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Toronto Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Calgary",
+   "hq": [
+    51.0475,
+    -114.0625
+   ],
+   "website": "http://www.bankerspetroleum.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bankers_Petroleum_Albania",
+   "listed": true
+  },
+  {
+   "qid": "Q30324731",
+   "name": "Birra Kaon",
+   "cc": "al",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Birra_Kaon",
+   "listed": false
+  },
+  {
+   "qid": "Q865835",
+   "name": "Birra Korça",
+   "cc": "al",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Korçë",
+   "hq": [
+    40.61667,
+    20.76667
+   ],
+   "website": "http://www.birrakorca.com.al",
+   "enwiki": "https://en.wikipedia.org/wiki/Birra_Kor%C3%A7a",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3696429",
+   "name": "CRAI",
+   "cc": "al",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mass-market retailing"
+   ],
+   "isin": [],
+   "hq_city": "Milan",
+   "hq": [
+    45.46694,
+    9.19
+   ],
+   "website": "http://www.crai-supermercati.it",
+   "enwiki": "https://en.wikipedia.org/wiki/CRAI",
+   "logo_file": "CRAI logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q10985730",
+   "name": "Credins Bank",
+   "cc": "al",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "http://bankacredins.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Credins_Bank",
+   "logo_file": "Credins Bank.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1206957",
+   "name": "Devoll Hydropower",
+   "cc": "al",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Gramsh",
+   "hq": [
+    40.86667,
+    20.18333
+   ],
+   "website": "http://www.dhp.al",
+   "enwiki": "https://en.wikipedia.org/wiki/Devoll_Hydro_Power_Plant",
+   "listed": false
+  },
+  {
+   "qid": "Q30605668",
+   "name": "Energy Regulatory Authority",
+   "cc": "al",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Energy_Regulatory_Authority_(Albania)",
+   "listed": false
+  },
+  {
+   "qid": "Q5444350",
+   "name": "Ferlut",
+   "cc": "al",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "urban and regional transportation"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Ferlut",
+   "listed": false
+  },
+  {
+   "qid": "Q48989674",
+   "name": "INSIG",
+   "cc": "al",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://www.insig.com.al/",
+   "enwiki": "https://en.wikipedia.org/wiki/INSIG_(insurance_company)",
+   "logo_file": "Insig.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6057456",
+   "name": "Intesa Sanpaolo Bank Albania",
+   "cc": "al",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.intesasanpaolobank.al",
+   "enwiki": "https://en.wikipedia.org/wiki/Intesa_Sanpaolo_Bank_(Albania)",
+   "logo_file": "Intesa Sanpaolo - logo (Italy, 2007-).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123238025",
+   "name": "Kastrati Group",
+   "cc": "al",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://kastrati.al/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kastrati_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q131735664",
+   "name": "KAYO",
+   "cc": "al",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "https://kayo.al",
+   "enwiki": "https://en.wikipedia.org/wiki/KAYO_(Albania)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136098312",
+   "name": "Lori Caffe",
+   "cc": "al",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "coffee industry"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "https://loricaffe.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6715341",
+   "name": "MEICO",
+   "cc": "al",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/MEICO",
+   "listed": false
+  },
+  {
+   "qid": "Q89207915",
+   "name": "Milton group",
+   "cc": "al",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Milton_group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16356569",
+   "name": "Naim Frashëri Publishing House",
+   "cc": "al",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Naim_Frash%C3%ABri_Publishing_House",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7095081",
+   "name": "Onufri Publishing House",
+   "cc": "al",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "http://www.onufri.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Onufri_Publishing_House",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30605616",
+   "name": "Operatori i Sistemit te Transmetimit",
+   "cc": "al",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "https://www.ost.al/",
+   "enwiki": "https://en.wikipedia.org/wiki/Transmission_System_Operator_(Albania)",
+   "logo_file": "Operatori i Sistemit të Transmetimit.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q127530648",
+   "name": "Pika pa sipërfaqe",
+   "cc": "al",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "https://pikapasiperfaqe.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Pika_pa_sip%C3%ABrfaqe_Publishing_House",
+   "logo_file": "LOGO-pika.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7205602",
+   "name": "Plus Communication",
+   "cc": "al",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "http://www.plus.al/",
+   "enwiki": "https://en.wikipedia.org/wiki/Plus_Communication",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1334419",
+   "name": "Posta Shqiptare",
+   "cc": "al",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "https://www.postashqiptare.al",
+   "enwiki": "https://en.wikipedia.org/wiki/Posta_Shqiptare",
+   "logo_file": "Posta Shqiptare.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1570206",
+   "name": "Qendra Tregtare Univers",
+   "cc": "al",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "https://www.qtu.al/",
+   "logo_file": "Qendra Tregtare Univers Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2127541",
+   "name": "Raiffeisen Albania",
+   "cc": "al",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "http://www.raiffeisen.al/",
+   "enwiki": "https://en.wikipedia.org/wiki/Raiffeisen_(Albania)",
+   "logo_file": "Raiffeisen Bank 2023 logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13045624",
+   "name": "Shtëpia Botuese e Librit Universitar",
+   "cc": "al",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q131824419",
+   "name": "TIMAK",
+   "cc": "al",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry",
+    "military vehicle industry"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "https://www.timak.com",
+   "enwiki": "https://en.wikipedia.org/wiki/TIMAK_(Albania)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7809112",
+   "name": "Tirana Bank",
+   "cc": "al",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "http://www.tiranabank.al/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tirana_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16359809",
+   "name": "Top Media Group",
+   "cc": "al",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mass media"
+   ],
+   "isin": [],
+   "website": "https://tickets.top-media.al/",
+   "enwiki": "https://en.wikipedia.org/wiki/Top_Media_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q505615",
+   "name": "Trans Adriatic Pipeline",
+   "cc": "al",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baar",
+   "hq": [
+    47.19556,
+    8.52639
+   ],
+   "website": "http://www.tap-ag.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Trans_Adriatic_Pipeline",
+   "listed": false
+  },
+  {
+   "qid": "Q2453450",
+   "name": "Tring",
+   "cc": "al",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.tring.al/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tring_(media_company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13047173",
+   "name": "Union Bank",
+   "cc": "al",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "http://www.unionbank.al/",
+   "enwiki": "https://en.wikipedia.org/wiki/Union_Bank_(Albania)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30632728",
+   "name": "United Bank of Albania",
+   "cc": "al",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "http://www.uba.com.al/",
+   "enwiki": "https://en.wikipedia.org/wiki/United_Bank_of_Albania",
+   "listed": false
+  },
+  {
+   "qid": "Q16360691",
+   "name": "VEFA Holding",
+   "cc": "al",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7939279",
+   "name": "Vodafone Albania",
+   "cc": "al",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tirana",
+   "hq": [
+    41.32833,
+    19.81806
+   ],
+   "website": "https://www.vodafone.al/",
+   "lei": "2138009VR2ZATPS69V91",
+   "enwiki": "https://en.wikipedia.org/wiki/Vodafone_Albania",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

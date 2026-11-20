@@ -1,0 +1,4820 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "LT",
+ "count": 245,
+ "companies": [
+  {
+   "qid": "Q137690961",
+   "name": "AAI Labs",
+   "cc": "lt",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "artificial intelligence"
+   ],
+   "isin": [],
+   "website": "https://www.aai-labs.com/lt/home",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15781177",
+   "name": "ACC Distribution",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.accdistribution.eu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1670375",
+   "name": "Achema Group",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.achemosgrupe.lt/index-en.html",
+   "lei": "2594009C1DDAZTJRDE32",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q287704",
+   "name": "Achema, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Jonava",
+   "hq": [
+    55.07222,
+    24.28056
+   ],
+   "website": "http://www.achema.com/",
+   "lei": "48510000H7Q0IVTMK386",
+   "enwiki": "https://en.wikipedia.org/wiki/Achema",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q288505",
+   "name": "Acme Group",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.acme.lt/index_en.html",
+   "logo_file": "Logo acme.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61386408",
+   "name": "Aero details repairing, UAB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/JETMS",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q397302",
+   "name": "Agrochema, UAB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "agricultural chemistry",
+    "agriculture"
+   ],
+   "isin": [],
+   "website": "http://www.agrochema.lt/",
+   "lei": "2594005M6BYG2OJTT215",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13519357",
+   "name": "Agrokoncerno Group",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "agriculture"
+   ],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.agrokoncernas.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12647261",
+   "name": "Akmenės cementas, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Naujoji Akmenė",
+   "hq": [
+    56.31667,
+    22.88333
+   ],
+   "lei": "549300PNKQ2BHZ2TI065",
+   "enwiki": "https://en.wikipedia.org/wiki/Akmen%C4%97s_cementas",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15781954",
+   "name": "Akropolis Group",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1974967",
+   "name": "Alita, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "alcohol industry"
+   ],
+   "isin": [],
+   "hq_city": "Alytus",
+   "hq": [
+    54.4,
+    24.05
+   ],
+   "lei": "485100GIGG6KFQFHIV51",
+   "enwiki": "https://en.wikipedia.org/wiki/Alita_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18421733",
+   "name": "Amber Grid, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.ambergrid.lt",
+   "lei": "097900BGMP0000061061",
+   "enwiki": "https://en.wikipedia.org/wiki/Amber_Grid",
+   "logo_file": "Amber Grid logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96047373",
+   "name": "Amic Energy",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vienna",
+   "hq": [
+    48.20833,
+    16.3725
+   ],
+   "website": "http://amicenergy.at",
+   "enwiki": "https://en.wikipedia.org/wiki/Amic_Energy",
+   "logo_file": "Amic Energy logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3644220",
+   "name": "Anykščių vynas",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Anykščiai",
+   "hq": [
+    55.53444,
+    25.10722
+   ],
+   "website": "http://www.anvynas.lt/en/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1974912",
+   "name": "Apranga, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "clothing industry",
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.Apranga.lt",
+   "lei": "529900XX7EU9F4GJTY86",
+   "enwiki": "https://en.wikipedia.org/wiki/Apranga_Group",
+   "logo_file": "Apranga Group Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12646865",
+   "name": "ARVI",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Marijampolė",
+   "hq": [
+    54.55667,
+    23.35444
+   ],
+   "website": "http://www.arvi.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13577441",
+   "name": "Audimas, AB",
+   "cc": "lt",
+   "types": [
+    "Q431289",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "clothing industry",
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.e-audimas.lt",
+   "lei": "254900H308V8V2IFAL98",
+   "enwiki": "https://en.wikipedia.org/wiki/Audimas",
+   "logo_file": "Audimas logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2827260",
+   "name": "AUGA group, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.auga.lt/",
+   "lei": "48510000P2S3LHJPX414",
+   "enwiki": "https://en.wikipedia.org/wiki/Auga_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131825113",
+   "name": "AviaAM Leasing Service Centre, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [
+    {
+     "exchange": "Warsaw Stock Exchange",
+     "ticker": "AAL"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/AviaAM",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q25494893",
+   "name": "Aviabaltika",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aircraft industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4034825",
+   "name": "BAA Training, UAB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aviation"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.baatraining.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/BAA_Training_Aviation_Academy",
+   "logo_file": "BAA Training Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4852708",
+   "name": "Baltic Ground Services, UAB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.bgs.aero/",
+   "logo_file": "Baltic Ground Services logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12650201",
+   "name": "Baltijos baldų grupė",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12650204",
+   "name": "Baltijos chemijos grupė",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q805723",
+   "name": "Baltijos laivų statykla, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "shipbuilding"
+   ],
+   "isin": [],
+   "hq_city": "Klaipėda",
+   "hq": [
+    55.7125,
+    21.135
+   ],
+   "website": "https://wsy.lt/",
+   "enwiki": "https://en.wikipedia.org/wiki/BLRT_Western_Shipyard",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4853004",
+   "name": "Baltos lankos",
+   "cc": "lt",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.baltoslankos.lt/",
+   "enwiki": "https://en.wikipedia.org/wiki/Baltos_lankos",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q130312811",
+   "name": "Basketball Holding Company, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Basketball_Holding_Company",
+   "logo_file": "BHC-Digital-Black.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61386562",
+   "name": "Bega",
+   "cc": "lt",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Klaipėda",
+   "hq": [
+    55.7125,
+    21.135
+   ],
+   "website": "https://www.bega.lt/",
+   "listed": false
+  },
+  {
+   "qid": "Q62562792",
+   "name": "BENU",
+   "cc": "lt",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmacy"
+   ],
+   "isin": [],
+   "website": "https://www.benu.eu",
+   "logo_file": "BENU Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15784956",
+   "name": "BIOVELA Group",
+   "cc": "lt",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dūkštos",
+   "hq": [
+    54.8219,
+    24.9689
+   ],
+   "website": "https://www.biovela.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16445927",
+   "name": "Biržų Alus",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Biržai",
+   "hq": [
+    56.2,
+    24.75
+   ],
+   "website": "https://birzualus.lt/en/",
+   "listed": false
+  },
+  {
+   "qid": "Q796010",
+   "name": "BITĖ Group",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://www.bitegroup.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bit%C4%97_Group",
+   "logo_file": "Bitė Group logotipas.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15856906",
+   "name": "Bitė Lietuva",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://www.bite.lt/",
+   "logo_file": "BITĖ Group Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12650206",
+   "name": "BMI Executive Institute, VšĮ",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.bmi.lt/",
+   "listed": false
+  },
+  {
+   "qid": "Q16352333",
+   "name": "BMS Megapolis",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4978749",
+   "name": "Bruklinas",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Bruklinas",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111979143",
+   "name": "CarVertical",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.carvertical.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/CarVertical",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12651928",
+   "name": "Cgates",
+   "cc": "lt",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.cgates.lt/",
+   "logo_file": "1200x1200-logo-cgates.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2514507",
+   "name": "City Service",
+   "cc": "lt",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "LT0000127375"
+   ],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.cityservice.lt/",
+   "enwiki": "https://en.wikipedia.org/wiki/City_Service",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q59783892",
+   "name": "CityBee",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15803848",
+   "name": "Copy1",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.copy1.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15803899",
+   "name": "Corpus A",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.corpusa.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139759766",
+   "name": "Coveron",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Coveron",
+   "listed": false
+  },
+  {
+   "qid": "Q289686",
+   "name": "Dujotekana",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.dujotekana.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4155626",
+   "name": "Dvarčionių keramika",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.keramika.lt/",
+   "lei": "8945008QJZYPEL4FOX47",
+   "enwiki": "https://en.wikipedia.org/wiki/Dvar%C4%8Dioni%C5%B3_keramika",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31199122",
+   "name": "Ecoservice",
+   "cc": "lt",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "waste management industry"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15857468",
+   "name": "Ekskomisarų biuras",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.ekskomisaru-biuras.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5350587",
+   "name": "Ekspla",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.ekspla.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ekspla",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134437025",
+   "name": "Eleving Group",
+   "cc": "lt",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "LU2818110020"
+   ],
+   "website": "https://www.eleving.com/",
+   "listed": true
+  },
+  {
+   "qid": "Q4037795",
+   "name": "ELTA",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "news agency"
+   ],
+   "isin": [],
+   "website": "http://www.elta.lt",
+   "enwiki": "https://en.wikipedia.org/wiki/ELTA",
+   "logo_file": "ELTA logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22691779",
+   "name": "Energijos skirstymo operatorius, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "LT0000130023"
+   ],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://eso.lt",
+   "lei": "549300TRRTXNI6N05T95",
+   "enwiki": "https://en.wikipedia.org/wiki/Energijos_skirstymo_operatorius",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q25517942",
+   "name": "Estina",
+   "cc": "lt",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116736450",
+   "name": "Estoty Mobile Game Studio",
+   "cc": "lt",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "video game industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Estoty",
+   "listed": false
+  },
+  {
+   "qid": "Q15808776",
+   "name": "Eugesta",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "trade"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.eugesta.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q267205",
+   "name": "Euroapotheca",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://www.euroapotheca.lt",
+   "lei": "2549002QKVQJMRIBUQ31",
+   "enwiki": "https://en.wikipedia.org/wiki/Euroapotheca",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15808849",
+   "name": "Eurokos",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.eurokos.lt",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25494217",
+   "name": "Fire-Prevention and Rescue Department",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://pagd.lrv.lt",
+   "listed": false
+  },
+  {
+   "qid": "Q2524941",
+   "name": "FL Technics, UAB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace industry"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.fltechnics.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/FL_Technics",
+   "logo_file": "FLTechnics logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16450886",
+   "name": "Forum Cinemas",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15857801",
+   "name": "Gintarinė vaistinė",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "https://www.gintarine.lt",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12655582",
+   "name": "Giraitės ginkluotės gamykla, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Giraitė",
+   "hq": [
+    54.27389,
+    24.65889
+   ],
+   "website": "http://www.ggg-ammo.lt",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1527119",
+   "name": "Girteka Logistics",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.girteka.lt/",
+   "enwiki": "https://en.wikipedia.org/wiki/Girteka",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12655783",
+   "name": "Grafobal Vilnius, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1974994",
+   "name": "Grigeo Group, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "pulp and paper industry"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.grigiskes.lt/",
+   "enwiki": "https://en.wikipedia.org/wiki/Grigeo_AB",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18737281",
+   "name": "Grigeo Klaipėda, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Klaipėda",
+   "hq": [
+    55.7125,
+    21.135
+   ],
+   "website": "http://www.grigeo.lt/",
+   "lei": "64880O4VY4HF60K96D17",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18737280",
+   "name": "Grąžtai, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25382849",
+   "name": "Headex",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "staffing industry"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.Headex.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1555403",
+   "name": "Hisk, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "construction industry"
+   ],
+   "isin": [],
+   "hq_city": "Panevėžys",
+   "hq": [
+    55.725,
+    24.36389
+   ],
+   "website": "http://paneveziokeliai.hosting2.5ci.lt/Default.aspx?Lang=EN",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12656512",
+   "name": "Homo liber",
+   "cc": "lt",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.homoliber.lt",
+   "listed": false
+  },
+  {
+   "qid": "Q1165475",
+   "name": "Hospital of Lithuanian University of Health Sciences Kaunas Clinics",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.kaunoklinikos.lt/kk/en-GB/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kaunas_Clinics",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55613975",
+   "name": "Hostinger",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Internet industry",
+    "e-commerce",
+    "web hosting service"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://www.hostinger.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Hostinger",
+   "logo_file": "Hostinger logo horizontal.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1653259",
+   "name": "ICOR, UAB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.icor.lt/",
+   "lei": "894500MEYTBGUJC77X56",
+   "enwiki": "https://en.wikipedia.org/wiki/UAB_ICOR",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q847687",
+   "name": "Ignalina Nuclear Power Plant",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.iae.lt/",
+   "lei": "5299006RIS8AA9YNFX54",
+   "enwiki": "https://en.wikipedia.org/wiki/Ignalina_Nuclear_Power_Plant",
+   "logo_file": "Ignalinos atominės elektrinės logotipas (lt).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q583822",
+   "name": "Ignitis",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq Vilnius, AB",
+     "ticker": "IGN1L"
+    }
+   ],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [
+    "LT0000115768"
+   ],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://ignitisgrupe.lt/",
+   "lei": "5493005RZJHJT5PNHY10",
+   "enwiki": "https://en.wikipedia.org/wiki/Ignitis",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q24346241",
+   "name": "Ignitis gamyba",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://ignitisgamyba.lt",
+   "listed": false
+  },
+  {
+   "qid": "Q1653981",
+   "name": "IKI",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://iki.lt",
+   "enwiki": "https://en.wikipedia.org/wiki/IKI_Lietuva",
+   "logo_file": "IKI-logotipas.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16442795",
+   "name": "Institute of Aerial Geodesy",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.agi.lt/",
+   "listed": false
+  },
+  {
+   "qid": "Q1671651",
+   "name": "Invalda INVL, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "LT0000102279"
+   ],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.invalda.lt/en",
+   "lei": "52990001IQUJ710GHH43",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4022551",
+   "name": "Jonatex",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Jonava",
+   "hq": [
+    55.07222,
+    24.28056
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q1957823",
+   "name": "Jonavos baldų kombinatas",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q16453827",
+   "name": "Jonavos grūdai, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Jonava",
+   "hq": [
+    55.07222,
+    24.28056
+   ],
+   "lei": "98450097D1M4AD101B24",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16453847",
+   "name": "Jonavos šilumos tinklai",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Jonava",
+   "hq": [
+    55.07222,
+    24.28056
+   ],
+   "website": "http://www.jonavosst.lt/",
+   "lei": "8945008L5ZQU28KNSH86",
+   "listed": false
+  },
+  {
+   "qid": "Q19926555",
+   "name": "Kalnapilio-Tauro grupė, UAB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry",
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Panevėžys",
+   "hq": [
+    55.725,
+    24.36389
+   ],
+   "website": "https://www.kalnapilis.lt/",
+   "listed": false
+  },
+  {
+   "qid": "Q56399827",
+   "name": "Kane’s Soda Pop",
+   "cc": "lt",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3193532",
+   "name": "Karo Aviacijos Tiekimo Skyrius",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Karo_aviacijos_tiekimo_skyrius",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31198667",
+   "name": "Kaunas Cogeneration Power Plant",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "https://kkj.lt/",
+   "lei": "894500NPB2A02GQ25U83",
+   "listed": false
+  },
+  {
+   "qid": "Q65259564",
+   "name": "Kaunas County Police Headquarters",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas City Municipality",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12660050",
+   "name": "Kaunas Waters",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q17322790",
+   "name": "Kauno baldai, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.kaunobaldai.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4042107",
+   "name": "Kauno energija, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.kaunoenergija.lt/",
+   "lei": "529900RB20XIQK6NOQ50",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1737139",
+   "name": "Kauno grūdai, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.kauno-grudai.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4042105",
+   "name": "Kauno tiekimas",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q16455775",
+   "name": "Kauno tiltai, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "lei": "097900BFJW0000033567",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12662012",
+   "name": "Kedbusas",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Kėdainiai District Municipality",
+   "hq": [
+    55.315,
+    23.95194
+   ],
+   "website": "http://www.kedbusas.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q51137075",
+   "name": "Kelių priežiūra, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.keliuprieziura.lt/",
+   "lei": "5299003X5P4FPLTKQ172",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15115933",
+   "name": "KG Group",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.kauno-grudai.lt/",
+   "logo_file": "Kauno grudai 2007-06-05.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60745244",
+   "name": "Kietaviškių gausa",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.kietaviskiu.lt/en",
+   "enwiki": "https://en.wikipedia.org/wiki/Kietavi%C5%A1ki%C5%B3_gausa",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q50287785",
+   "name": "King of Kings",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "kickboxing",
+    "sports marketing"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://kokfights.com",
+   "enwiki": "https://en.wikipedia.org/wiki/King_of_Kings_(kickboxing)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4042249",
+   "name": "Klaipėdos Baldai, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Klaipėda",
+   "hq": [
+    55.7125,
+    21.135
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1353596",
+   "name": "Klaipėdos Jūrų Krovinių Kompanija, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Klaipėda",
+   "hq": [
+    55.7125,
+    21.135
+   ],
+   "website": "https://www.klasco.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17576883",
+   "name": "Klaipėdos Mediena, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Klaipėda",
+   "hq": [
+    55.7125,
+    21.135
+   ],
+   "website": "http://www.mediena.lt/lt/grupes-imones/klaipedos-mediena/",
+   "lei": "4851001HWO27EDR81366",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20503957",
+   "name": "Klaipėdos Pienas, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Klaipėda",
+   "hq": [
+    55.7125,
+    21.135
+   ],
+   "website": "http://www.klpienas.lt",
+   "lei": "98450003FBF2DBDH6C90",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16456494",
+   "name": "Klaipėdos Smeltė, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Klaipėda",
+   "hq": [
+    55.7125,
+    21.135
+   ],
+   "website": "https://www.smelte.lt/",
+   "lei": "529900KPFJ9T4FWEGF75",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12660826",
+   "name": "Klaipėdos Vanduo, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Klaipėda",
+   "hq": [
+    55.7125,
+    21.135
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4042253",
+   "name": "KN Energies, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq Vilnius, AB",
+     "ticker": "KNF1L"
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Klaipėda",
+   "hq": [
+    55.7125,
+    21.135
+   ],
+   "website": "https://knenergies.lt/en/",
+   "lei": "529900MTLT34HRR1LT15",
+   "enwiki": "https://en.wikipedia.org/wiki/KN_Energies",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q25499051",
+   "name": "Kongsberg NanoAvionics",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "space industry"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://nanoavionics.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/NanoAvionics",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15824397",
+   "name": "Krekenavos agrofirma",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kėdainiai District Municipality",
+   "hq": [
+    55.315,
+    23.95194
+   ],
+   "website": "http://www.krekenavos.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115870498",
+   "name": "LBCOIN",
+   "cc": "lt",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/LBCoin",
+   "listed": false
+  },
+  {
+   "qid": "Q16458667",
+   "name": "Lietkabelis, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Panevėžys",
+   "hq": [
+    55.725,
+    24.36389
+   ],
+   "website": "http://www.lietkabelis.lt",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20504457",
+   "name": "Lietuviškas midus",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12663295",
+   "name": "Lietuvos draudimas",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.ldr.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1543499",
+   "name": "Lietuvos Dujos",
+   "cc": "lt",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "energy supply"
+   ],
+   "isin": [
+    "LT0000116220"
+   ],
+   "hq_city": "Naujamiestis eldership",
+   "hq": [
+    54.67972,
+    25.26889
+   ],
+   "website": "http://www.dujos.lt",
+   "enwiki": "https://en.wikipedia.org/wiki/Lietuvos_Dujos",
+   "logo_file": "Lietuvos dujos (logo).JPG",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q164914",
+   "name": "Lietuvos geležinkeliai, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.litrail.lt/",
+   "lei": "64882P5H19BP1JMC6216",
+   "enwiki": "https://en.wikipedia.org/wiki/Lithuanian_Railways",
+   "logo_file": "L logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17577349",
+   "name": "Lietuvos oro uostai, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://www.ltou.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q175964",
+   "name": "Lietuvos paštas, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://www.post.lt/en/",
+   "lei": "98450048CED1FEB7FP14",
+   "enwiki": "https://en.wikipedia.org/wiki/Lietuvos_pa%C5%A1tas",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16458954",
+   "name": "Lietuvos radijo ir televizijos centras, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "data transmission"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.lrtc.lt/",
+   "lei": "894500JK9EQU4HAWS380",
+   "enwiki": "https://en.wikipedia.org/wiki/SC_Lithuanian_Radio_and_Television_Centre",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q898775",
+   "name": "Lifosa, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [
+    "LT0000116691"
+   ],
+   "hq_city": "Kėdainiai",
+   "hq": [
+    55.28333,
+    23.96667
+   ],
+   "website": "http://www.lifosa.com",
+   "lei": "52990098NB0UDARBKK26",
+   "enwiki": "https://en.wikipedia.org/wiki/Lifosa",
+   "logo_file": "Lifosa DJI 0059.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2833599",
+   "name": "Limarko laivininkystės kompanija, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Klaipėda",
+   "hq": [
+    55.7125,
+    21.135
+   ],
+   "website": "http://www.limarko.lt/shipping.php?en=start",
+   "lei": "984500A136124F6D4F68",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13519377",
+   "name": "Linas Agro, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "agriculture"
+   ],
+   "isin": [
+    "LT0000128092"
+   ],
+   "hq_city": "Panevėžys",
+   "hq": [
+    55.725,
+    24.36389
+   ],
+   "website": "http://www.linasagro.lt/",
+   "lei": "529900UB9QON717IL030",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q24260325",
+   "name": "LiTak-Tak",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q17323401",
+   "name": "Liteksas, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5217854",
+   "name": "Litgrid, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [
+    "LT0000128415"
+   ],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.litgrid.eu/",
+   "lei": "529900CTIUKTEFNNH157",
+   "enwiki": "https://en.wikipedia.org/wiki/Litgrid",
+   "logo_file": "Litgrid Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q11246105",
+   "name": "Lithuania Bushido Federation",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "kickboxing",
+    "mixed martial arts",
+    "promoter",
+    "sports marketing"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.bushido.lt",
+   "enwiki": "https://en.wikipedia.org/wiki/Lithuania_Bushido_Federation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16458816",
+   "name": "Lithuanian Central Credit Union",
+   "cc": "lt",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "lei": "2138009QCHFQV9RC4R40",
+   "listed": false
+  },
+  {
+   "qid": "Q12663272",
+   "name": "Lithuanian Central Securities Deposit",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1864971",
+   "name": "Lithuanian Employment Service",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.uzt.lt",
+   "enwiki": "https://en.wikipedia.org/wiki/Public_Employment_Service_(Lithuania)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12648269",
+   "name": "Lithuanian Library Press",
+   "cc": "lt",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q2092640",
+   "name": "Lithuanian University of Health Sciences",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "https://lsmu.lt/",
+   "enwiki": "https://en.wikipedia.org/wiki/Lithuanian_University_of_Health_Sciences",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16459229",
+   "name": "Lituania",
+   "cc": "lt",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12655272",
+   "name": "Lotos Geonafta, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Gargždai",
+   "hq": [
+    55.7,
+    21.4
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110088008",
+   "name": "LTG Cargo, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://ltgcargo.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108691899",
+   "name": "LTG Infra, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://ltginfra.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1798390",
+   "name": "LTk Capital",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.ltkcapital.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12663942",
+   "name": "Lukoil Baltija",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Mažeikiai",
+   "hq": [
+    56.31111,
+    22.33611
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Lukoil_Baltija",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12664029",
+   "name": "Lytagra, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.lytagra.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1881222",
+   "name": "Maxima Grupė, UAB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://www.maximagrupe.eu",
+   "lei": "259400Z5DFISQ00QN727",
+   "enwiki": "https://en.wikipedia.org/wiki/Maxima_Group",
+   "logo_file": "Maxima logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15833227",
+   "name": "MG Baltic Media",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.mgbaltic.lt/lt/apie-mus/struktura/mg-baltic-investment/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1881431",
+   "name": "MG grupė",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.mgbaltic.lt",
+   "logo_file": "Mg Baltic Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6864405",
+   "name": "Mineraliniai vandenys",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q15835501",
+   "name": "Mondelez Lietuva Production",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.mondelezinternational.lt/",
+   "logo_file": "Kraft Foods Lietuva.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131144030",
+   "name": "Monimoto",
+   "cc": "lt",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "electronics industry"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://monimoto.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Monimoto",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1247342",
+   "name": "Mykolas Romeris University",
+   "cc": "lt",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://www.mruni.eu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mykolas_Romeris_University",
+   "logo_file": "MRU-logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q600958",
+   "name": "Nasdaq Vilnius, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://www.nasdaqbaltic.com",
+   "lei": "549300JGFH6L45DLE408",
+   "enwiki": "https://en.wikipedia.org/wiki/Nasdaq_Vilnius",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15715370",
+   "name": "Neaustinių medžiagų fabrikas, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Šiauliai",
+   "hq": [
+    55.92806,
+    23.31667
+   ],
+   "website": "http://www.neaustines.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15867413",
+   "name": "Nemuno vaistinė",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "https://www.camelia.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q14762537",
+   "name": "Neo Group",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Klaipėda District Municipality",
+   "hq": [
+    55.7,
+    21.4
+   ],
+   "lei": "254900SX4N53V1C9L217",
+   "listed": false
+  },
+  {
+   "qid": "Q20504232",
+   "name": "Neringa",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Neringa_(production_association)",
+   "listed": false
+  },
+  {
+   "qid": "Q20504261",
+   "name": "Nieko rimto",
+   "cc": "lt",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.niekorimto.lt",
+   "listed": false
+  },
+  {
+   "qid": "Q97216189",
+   "name": "Nordic Sugar Kėdainiai, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kėdainiai",
+   "hq": [
+    55.28333,
+    23.96667
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48816099",
+   "name": "NordVPN",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "software development"
+   ],
+   "isin": [],
+   "website": "https://nordvpn.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/NordVPN",
+   "logo_file": "NordVPN logo (2025).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1998983",
+   "name": "Norfa",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://www.norfa.lt/",
+   "enwiki": "https://en.wikipedia.org/wiki/Norfa",
+   "logo_file": "Norfa Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25499288",
+   "name": "Northway Biotech",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "biotechnology industry",
+    "medical biotechnology industry"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.northwaybiotech.com/",
+   "lei": "2549000T1V25Q4EWR551",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12667050",
+   "name": "Novaturas, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "https://www.novaturasgroup.com",
+   "lei": "097900BGCW0000042109",
+   "enwiki": "https://en.wikipedia.org/wiki/Novaturas",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7080132",
+   "name": "Ogmios Centras, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "real property"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.ogmios.lt/index.php?lang=2",
+   "lei": "984500E84B9FBC6D7O44",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q950584",
+   "name": "Orlen Lietuva, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Juodeikiai",
+   "hq": [
+    56.381,
+    22.173
+   ],
+   "website": "http://www.orlenlietuva.lt",
+   "enwiki": "https://en.wikipedia.org/wiki/Orlen_Lietuva",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110612892",
+   "name": "Oxylabs",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "Internet industry"
+   ],
+   "isin": [],
+   "hq_city": "Lithuania",
+   "hq": [
+    55.2,
+    24.0
+   ],
+   "website": "https://oxylabs.io/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4046386",
+   "name": "Panevėžio Statybos Trestas, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "construction industry"
+   ],
+   "isin": [
+    "LT0000101446"
+   ],
+   "hq_city": "Panevėžys",
+   "hq": [
+    55.725,
+    24.36389
+   ],
+   "website": "http://www.pst.lt",
+   "lei": "529900O0VPCGEWIDCX35",
+   "logo_file": "Panevėžio statybos trestas logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q17126839",
+   "name": "Panevėžio stiklas, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Panevėžys",
+   "hq": [
+    55.725,
+    24.36389
+   ],
+   "lei": "984500AEE0A878510873",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16469123",
+   "name": "Paysera",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "logo_file": "Paysera logo 2022.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2092661",
+   "name": "Pieno žvaigždės, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.pienas.lt/",
+   "lei": "529900R9OPI0FLJO5U85",
+   "enwiki": "https://en.wikipedia.org/wiki/Pieno_%C5%BEvaig%C5%BEd%C4%97s",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25494489",
+   "name": "Pontem",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q4047311",
+   "name": "Pramprojektas",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.pramprojektas.lt/index_en.php",
+   "listed": false
+  },
+  {
+   "qid": "Q25494285",
+   "name": "Regitra, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13504978",
+   "name": "Reitan Convenience Lithuania",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://reitan.lt/",
+   "logo_file": "Lietuvos spauda1.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15126047",
+   "name": "Republic Klaipeda Hospital",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.rkligonine.lt/en",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15842478",
+   "name": "Rimi Lietuva",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail sale in non-specialised stores with food, beverages or tobacco predominating"
+   ],
+   "isin": [],
+   "hq_city": "Naujamiestis eldership",
+   "hq": [
+    54.67972,
+    25.26889
+   ],
+   "website": "http://www.rimi.lt",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15842626",
+   "name": "RIVONA",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.rivonarivona.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2162597",
+   "name": "Rokiškio Sūris, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "LT0000100372"
+   ],
+   "hq_city": "Rokiškis",
+   "hq": [
+    55.96667,
+    25.58333
+   ],
+   "website": "http://www.rsuris.lt/",
+   "lei": "48510000PW42N5W74S87",
+   "enwiki": "https://en.wikipedia.org/wiki/Roki%C5%A1kio_s%C5%ABris",
+   "logo_file": "Rokiškio sūris logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2178358",
+   "name": "Rytų skirstomieji tinklai",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.rst.lt/en/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16471785",
+   "name": "Rūta",
+   "cc": "lt",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q15843970",
+   "name": "Sanitex",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.Sanitex.eu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131861232",
+   "name": "Santonika",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2205100",
+   "name": "SBA",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.sba.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7433624",
+   "name": "Science and Encyclopaedia Publishing Centre",
+   "cc": "lt",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://melc.lnb.lt/lt/",
+   "enwiki": "https://en.wikipedia.org/wiki/Science_and_Encyclopaedia_Publishing_Centre",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110553131",
+   "name": "SCT Lubricants",
+   "cc": "lt",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Klaipėda",
+   "hq": [
+    55.7125,
+    21.135
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/SCT_Lubricants",
+   "logo_file": "Logo sct lubricants.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7389567",
+   "name": "SEB bankas, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "LT0000402083"
+   ],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.seb.lt",
+   "lei": "549300SBPFE9JX7N8J82",
+   "enwiki": "https://en.wikipedia.org/wiki/SEB_bankas",
+   "logo_file": "SEB logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16472365",
+   "name": "Sigma",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q15847758",
+   "name": "Skuba",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive services industry"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.Skuba.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4049662",
+   "name": "Snaigė",
+   "cc": "lt",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "LT0000109274"
+   ],
+   "hq_city": "Alytus",
+   "hq": [
+    54.4,
+    24.05
+   ],
+   "website": "http://www.snaige.lt",
+   "lei": "48510000RTKGDN3E5X15",
+   "enwiki": "https://en.wikipedia.org/wiki/Snaig%C4%97",
+   "logo_file": "Snaige logo.JPG",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q17521036",
+   "name": "Sparta, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://sparta.lt/",
+   "lei": "6488Q594EF5Q038LIX15",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12673545",
+   "name": "Spindulys",
+   "cc": "lt",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q31198337",
+   "name": "Sportland",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q15867634",
+   "name": "State Enterprise Centre of Registers",
+   "cc": "lt",
+   "types": [
+    "Q270791",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://www.registrucentras.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56294369",
+   "name": "State Forest Enterprise",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://vmu.lt/",
+   "lei": "485100L40GNB02XWXU78",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13473517",
+   "name": "State Tax Inspectorate of Lithuania",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://www.vmi.lt/",
+   "lei": "984500T29648Q1D67B95",
+   "enwiki": "https://en.wikipedia.org/wiki/State_Tax_Inspectorate",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1974932",
+   "name": "Stumbras",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "spirits industry"
+   ],
+   "isin": [
+    "LT0000119430"
+   ],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.stumbras.lt/",
+   "lei": "485100IYH1DML7UC5951",
+   "enwiki": "https://en.wikipedia.org/wiki/Stumbras",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q114661529",
+   "name": "Supermetrics",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "data management",
+    "digital marketing",
+    "software engineering"
+   ],
+   "isin": [],
+   "hq_city": "Kluuvi",
+   "hq": [
+    60.17375,
+    24.94215
+   ],
+   "website": "https://supermetrics.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Supermetrics",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17521037",
+   "name": "Swedbank AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.swedbank.lt",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q393371",
+   "name": "Synergium",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.synergium.eu",
+   "listed": false
+  },
+  {
+   "qid": "Q16857407",
+   "name": "Tamro, UAB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.tamro.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7692392",
+   "name": "Technika",
+   "cc": "lt",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Technika_(publisher)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q494274",
+   "name": "Telia Lietuva, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [
+    "LT0000123911"
+   ],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://www.telia.lt/",
+   "lei": "5299007A0LO7C2YYI075",
+   "enwiki": "https://en.wikipedia.org/wiki/Telia_Lietuva",
+   "logo_file": "Omnitel Lithuania logo.gif",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q62067717",
+   "name": "Teltonika",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://teltonika-iot-group.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Teltonika",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30338585",
+   "name": "Thermo Fisher Scientific Baltics, UAB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of other chemical products n.e.c.",
+    "biotechnology industry"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Fermentas",
+   "logo_file": "Thermo Fisher Scientific logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q83472435",
+   "name": "TrueConf",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Moscow",
+   "hq": [
+    55.75056,
+    37.6175
+   ],
+   "website": "http://trueconf.com/",
+   "logo_file": "Логотип TrueConf.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q47499312",
+   "name": "TV3 Group",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://tv3group.eu",
+   "enwiki": "https://en.wikipedia.org/wiki/TV3_Group_(Baltics)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16303091",
+   "name": "UAB Kauno autobusai",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.kaunoautobusai.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q287810",
+   "name": "UAB Rūta",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3547120",
+   "name": "UAB Sportine aviacija",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://lak.lt",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16474550",
+   "name": "UniCredit Bank Lithuania",
+   "cc": "lt",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1916303",
+   "name": "Urbo bankas",
+   "cc": "lt",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://urbo.lt/",
+   "enwiki": "https://en.wikipedia.org/wiki/Urbo_Bankas",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55636414",
+   "name": "URMAS",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/URMAS",
+   "listed": false
+  },
+  {
+   "qid": "Q12676301",
+   "name": "Vakarų laivų gamykla, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "shipbuilding"
+   ],
+   "isin": [],
+   "hq_city": "Klaipėda",
+   "hq": [
+    55.7125,
+    21.135
+   ],
+   "website": "http://www.wsy.lt",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1643927",
+   "name": "Vakarų Lietuvos pramonės ir finansų korporacija",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Klaipėda",
+   "hq": [
+    55.7125,
+    21.135
+   ],
+   "website": "http://www.vlpfk.lt",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1299606",
+   "name": "Vakarų medienos grupė",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Klaipėda",
+   "hq": [
+    55.7125,
+    21.135
+   ],
+   "website": "http://www.mediena.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116871240",
+   "name": "VeAn Tattoo",
+   "cc": "lt",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://vean-tattoo.com/",
+   "logo_file": "Vean tattoo.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q25500350",
+   "name": "Venta",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "semiconductor industry"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.vvp-uab.lt",
+   "logo_file": "Вента Вильнюс, заводское клеймо 1966-1997.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12676954",
+   "name": "VERSUS AUREUS",
+   "cc": "lt",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q131825088",
+   "name": "Via Lietuva",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://vialietuva.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56295457",
+   "name": "Viada LT",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.viada.lt/",
+   "lei": "4851001HAUS08LNEXI12",
+   "listed": false
+  },
+  {
+   "qid": "Q65260258",
+   "name": "Vidaus vandens kelių direkcija, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2524181",
+   "name": "Vikonda grupė, UAB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kėdainiai",
+   "hq": [
+    55.28333,
+    23.96667
+   ],
+   "website": "http://www.vikonda.lt/",
+   "lei": "894500SEJ5XQGNXFUC39",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16476273",
+   "name": "Vilkma, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ukmergė",
+   "hq": [
+    55.25,
+    24.76667
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4052700",
+   "name": "Vilkyškių Pieninė, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilkyškiai",
+   "hq": [
+    55.1194,
+    22.1306
+   ],
+   "website": "http://www.vilkyskiu.lt/",
+   "lei": "5299005NNDRP09PFOY81",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20504518",
+   "name": "Vilma",
+   "cc": "lt",
+   "types": [
+    "Q431289",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "consumer electronics industry",
+    "defence industry"
+   ],
+   "isin": [],
+   "logo_file": "Vilma logo narrow.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4052698",
+   "name": "Vilniaus baldai, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.vilniausbaldai.lt/",
+   "lei": "529900MJDB8L13ZF6G26",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4052699",
+   "name": "Vilniaus degtinė",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.degtine.lt/index.php",
+   "lei": "097900BFKJ0000034930",
+   "listed": false
+  },
+  {
+   "qid": "Q17493386",
+   "name": "Vilniaus duona",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "bakery industry"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.vilniausduona.lt",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q14956897",
+   "name": "Vilniaus klinikinė ligoninė",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2526285",
+   "name": "Vilniaus paukštynas, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rudamina",
+   "hq": [
+    54.28833,
+    23.45167
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1460895",
+   "name": "Vilniaus prekyba",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.vilniausprekyba.eu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Vilniaus_prekyba",
+   "logo_file": "Vilniaus prekyba.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12677579",
+   "name": "Vilniaus skaičiavimo mašinų gamykla",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Vilnius_Computer_Factory",
+   "listed": false
+  },
+  {
+   "qid": "Q15852944",
+   "name": "Vilniaus vandenys",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "water supply"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "http://www.vv.lt/",
+   "logo_file": "VV pagrindinis.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1424990",
+   "name": "Vilniaus viešasis transportas",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://www.vilniausviesasistransportas.lt/",
+   "logo_file": "VVT logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q18029208",
+   "name": "Vilniaus šilumos tinklai, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q105972811",
+   "name": "Vilnius Goldsmiths' Workshop",
+   "cc": "lt",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "goldsmith"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Vilnius_Goldsmiths%27_Workshop",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q658192",
+   "name": "Vilnius University",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://www.vu.lt/",
+   "enwiki": "https://en.wikipedia.org/wiki/Vilnius_University",
+   "logo_file": "VU-logotype.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1774578",
+   "name": "Vilnius University Hospital Santaros Klinikos",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.santa.lt/",
+   "enwiki": "https://en.wikipedia.org/wiki/Vilnius_University_Hospital_Santaros_Clinics",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11935495",
+   "name": "Vinted",
+   "cc": "lt",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.vinted.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Vinted",
+   "logo_file": "Vinted Logo 2018.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25382855",
+   "name": "Vitaresta",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.valymopaslaugos.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2529264",
+   "name": "Vičiūnai Group",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.viciunaigroup.eu/",
+   "logo_file": "Vičiūnai (Konzern) logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22694447",
+   "name": "Vlantana",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Klaipėda District Municipality",
+   "hq": [
+    55.7,
+    21.4
+   ],
+   "website": "http://www.vlantana.eu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12678128",
+   "name": "Volfas Engelman",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "alcohol industry",
+    "beverage industry",
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "website": "http://www.volfasengelman.lt/",
+   "enwiki": "https://en.wikipedia.org/wiki/Volfas_Engelman",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15781175",
+   "name": "VST",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1756541",
+   "name": "Vytautas Magnus University",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.vdu.lt",
+   "enwiki": "https://en.wikipedia.org/wiki/Vytautas_Magnus_University",
+   "logo_file": "VMU emblem.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q119659108",
+   "name": "Whatagraph",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "marketing",
+    "reporting",
+    "transfer"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://whatagraph.com/",
+   "logo_file": "Whatagraph logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113381618",
+   "name": "WhiteBIT",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://whitebit.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/WhiteBIT_(company)",
+   "logo_file": "WhiteBIT official logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113540977",
+   "name": "ZEN.com",
+   "cc": "lt",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "website": "https://www.zen.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/ZEN.com",
+   "listed": false
+  },
+  {
+   "qid": "Q18030150",
+   "name": "Šatrija, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Raseiniai",
+   "hq": [
+    55.36667,
+    23.11667
+   ],
+   "website": "http://satrija.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q391518",
+   "name": "Šiaulių bankas, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Šiauliai",
+   "hq": [
+    55.92806,
+    23.31667
+   ],
+   "website": "https://www.artea.lt/",
+   "lei": "549300TK038P6EV4YU51",
+   "enwiki": "https://en.wikipedia.org/wiki/Artea_Bank",
+   "logo_file": "Artea Bank Logo 2025.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16478114",
+   "name": "Šiaulių energija, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Šiauliai",
+   "hq": [
+    55.92806,
+    23.31667
+   ],
+   "website": "http://www.senergija.lt/",
+   "lei": "875500YDW2YOALV5TN86",
+   "logo_file": "2006 04 12Šiauliųenergija.JPG",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15856231",
+   "name": "Šilutės baldai, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Šilutė",
+   "hq": [
+    55.35,
+    21.48333
+   ],
+   "website": "http://www.kaunobaldai.lt/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2607444",
+   "name": "Švyturys-Utenos alus, UAB",
+   "cc": "lt",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry",
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Vilnius",
+   "hq": [
+    54.68722,
+    25.28
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/%C5%A0vyturys-Utenos_alus",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q393784",
+   "name": "Žemaitijos Pienas, AB",
+   "cc": "lt",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "LT0000121865"
+   ],
+   "hq_city": "Telšiai",
+   "hq": [
+    55.98333,
+    22.25
+   ],
+   "website": "https://www.zpienas.lt/",
+   "lei": "5299005U9E85Y55OHK45",
+   "enwiki": "https://en.wikipedia.org/wiki/%C5%BDemaitijos_pienas",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q112177251",
+   "name": "Žemės bankas",
+   "cc": "lt",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Kaunas",
+   "hq": [
+    54.9,
+    23.93333
+   ],
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

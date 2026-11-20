@@ -1,0 +1,497 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "MK",
+ "count": 26,
+ "companies": [
+  {
+   "qid": "Q16547863",
+   "name": "Aktiva",
+   "cc": "mk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Štip",
+   "hq": [
+    41.73583,
+    22.19139
+   ],
+   "website": "http://www.aktiva.com.mk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aktiva",
+   "logo_file": "Aktiva engineering.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q83537",
+   "name": "Alkaloid",
+   "cc": "mk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical company"
+   ],
+   "isin": [
+    "MKALKA101011"
+   ],
+   "hq_city": "Skopje",
+   "hq": [
+    41.99611,
+    21.43167
+   ],
+   "website": "http://www.alkaloid.com.mk",
+   "enwiki": "https://en.wikipedia.org/wiki/Alkaloid_(company)",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2837368",
+   "name": "Alkaloid Skopje",
+   "cc": "mk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Ǵorče Petrov Municipality",
+   "hq": [
+    42.00746,
+    21.36523
+   ],
+   "website": "http://www.alkaloid.com.mk/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25552651",
+   "name": "Ars Lamina",
+   "cc": "mk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q122775553",
+   "name": "Cytrox",
+   "cc": "mk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "cyber intelligence",
+    "cyberwarfare"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Cytrox",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110757687",
+   "name": "EACOM",
+   "cc": "mk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "civil engineering",
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Tetovo",
+   "hq": [
+    42.01028,
+    20.97139
+   ],
+   "website": "https://eacom.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Eurovia_DOOEL",
+   "logo_file": "Eurovia.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12906280",
+   "name": "ECM",
+   "cc": "mk",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity generation"
+   ],
+   "isin": [],
+   "website": "https://www.esm.com.mk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Elektrani_na_Severna_Makedonija",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20567520",
+   "name": "Eurostandard Banka",
+   "cc": "mk",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5424495",
+   "name": "FAS Sanos",
+   "cc": "mk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Skopje",
+   "hq": [
+    41.99611,
+    21.43167
+   ],
+   "website": "http://www.sanos.com.mk//",
+   "enwiki": "https://en.wikipedia.org/wiki/FAS_Sanos",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3127176",
+   "name": "Franck d.d.",
+   "cc": "mk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Zagreb",
+   "hq": [
+    45.81306,
+    15.97722
+   ],
+   "website": "http://www.franck.hr",
+   "enwiki": "https://en.wikipedia.org/wiki/Franck_(company)",
+   "logo_file": "Mali logo Franck.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65296228",
+   "name": "Kam Market",
+   "cc": "mk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food retail sector",
+    "retail chain"
+   ],
+   "isin": [],
+   "website": "https://kam.com.mk",
+   "enwiki": "https://en.wikipedia.org/wiki/Kam_Market_(supermarket)",
+   "listed": false
+  },
+  {
+   "qid": "Q548463",
+   "name": "Komercijalna banka Skopje",
+   "cc": "mk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Skopje",
+   "hq": [
+    41.99611,
+    21.43167
+   ],
+   "website": "http://www.kb.com.mk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Komercijalna_banka_Skopje",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11230793",
+   "name": "M2 Production",
+   "cc": "mk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3406435",
+   "name": "Makfax",
+   "cc": "mk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "news agency"
+   ],
+   "isin": [],
+   "hq_city": "Skopje",
+   "hq": [
+    41.99611,
+    21.43167
+   ],
+   "website": "http://www.makfax.mk",
+   "enwiki": "https://en.wikipedia.org/wiki/Makfax",
+   "logo_file": "Makfax-logo-res.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1886438",
+   "name": "Makpetrol",
+   "cc": "mk",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "MKMPTS101014"
+   ],
+   "hq_city": "Skopje",
+   "hq": [
+    41.99611,
+    21.43167
+   ],
+   "website": "https://www.makpetrol.com.mk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Makpetrol",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q55622643",
+   "name": "Media Print Makedonija",
+   "cc": "mk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Media_Print_Makedonija",
+   "listed": false
+  },
+  {
+   "qid": "Q12908211",
+   "name": "MEPSO",
+   "cc": "mk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Skopje",
+   "hq": [
+    41.99611,
+    21.43167
+   ],
+   "website": "http://mepso.com.mk/",
+   "enwiki": "https://en.wikipedia.org/wiki/MEPSO",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q89207915",
+   "name": "Milton group",
+   "cc": "mk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Milton_group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20566771",
+   "name": "NLB Banka Skopje",
+   "cc": "mk",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Skopje",
+   "hq": [
+    41.99611,
+    21.43167
+   ],
+   "website": "https://nlb.mk/",
+   "logo_file": "Nova Ljubljanska banka logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q12909388",
+   "name": "Ohridska Banka",
+   "cc": "mk",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q20567486",
+   "name": "ProCredit Bank",
+   "cc": "mk",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.pcb.mk/",
+   "logo_file": "Logo ProCredit Bank.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q25552524",
+   "name": "Prosvetno Delo",
+   "cc": "mk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://prosvetnodelo.com.mk/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3416390",
+   "name": "Rade Končar Skopje",
+   "cc": "mk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Skopje",
+   "hq": [
+    41.99611,
+    21.43167
+   ],
+   "website": "http://www.radekoncar.com.mk/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3499764",
+   "name": "Stopanska Banka a.d. Bitola",
+   "cc": "mk",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bitola",
+   "hq": [
+    41.03194,
+    21.33472
+   ],
+   "website": "https://www.stbbt.mk",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61120864",
+   "name": "Vitaminka",
+   "cc": "mk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Prilep",
+   "hq": [
+    41.34639,
+    21.55417
+   ],
+   "website": "https://vitaminka.company/",
+   "enwiki": "https://en.wikipedia.org/wiki/Vitaminka",
+   "listed": false
+  },
+  {
+   "qid": "Q23661700",
+   "name": "Zumpres",
+   "cc": "mk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Skopje",
+   "hq": [
+    41.99611,
+    21.43167
+   ],
+   "listed": false
+  }
+ ]
+}
