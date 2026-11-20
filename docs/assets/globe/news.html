@@ -2998,7 +2998,7 @@ function countryShape(c, fill, stroke, lw = 1) {
   ctx.beginPath(); for (const rr of c.rr) ringPath(rr, false); ctx.strokeStyle = stroke; ctx.lineWidth = lw; ctx.stroke();
 }
 // globe look: neutral grey sphere, brighter than before, with a strong orange outline
-const GB0 = { s0: '#26262c', s1: '#101014', atm: .14, atmRGB: '255,122,26', dot: 0, rgb: '161,161,170', land: .075, line: .07, grid: .5, rim: .9, rimRGB: '180,136,109', rimW: 1.8, glow: '255,122,26,.42', blur: 16 };  // default: graphite rim with orange glow
+const GB0 = { s0: '#26262c', s1: '#101014', atm: .14, atmRGB: '255,122,26', dot: 0, rgb: '161,161,170', land: .075, line: .07, grid: 0, rim: .9, rimRGB: '180,136,109', rimW: 1.8, glow: '255,122,26,.42', blur: 16 };  // default: graphite rim with orange glow
 // ?gb=A|B|C previews outline options (temporary, for choosing a look)
 const GB = Object.assign({}, GB0, ({
   A: { rim: .9, rimRGB: '232,232,238', rimW: 1.6, glow: '255,255,255,.28', blur: 10, atm: .10, atmRGB: '215,215,225' },
@@ -3093,7 +3093,7 @@ function frame(t) {
   ctx.fillStyle = sg; ctx.beginPath(); ctx.arc(cx, cy, R, 0, 7); ctx.fill(); ctx.strokeStyle = `rgba(${GB.rimRGB},${GB.rim})`; ctx.lineWidth = GB.rimW; ctx.shadowColor = `rgba(${GB.glow})`; ctx.shadowBlur = GB.blur; ctx.stroke(); ctx.shadowBlur = 0;
   ctx.save(); ctx.beginPath(); ctx.arc(cx, cy, R, 0, 7); ctx.clip();
   // faint latitude / longitude lines
-  if (Z < 2.6) { ctx.beginPath(); for (let lo = -180; lo < 180; lo += 30) { let pen = false; for (let la = -80; la <= 80; la += 4) { const [x, y, z] = proj(la * rad, lo * rad); if (z <= 0) { pen = false; continue; } pen ? ctx.lineTo(x, y) : ctx.moveTo(x, y); pen = true; } }
+  if (GB.grid > 0 && Z < 2.6) { ctx.beginPath(); for (let lo = -180; lo < 180; lo += 30) { let pen = false; for (let la = -80; la <= 80; la += 4) { const [x, y, z] = proj(la * rad, lo * rad); if (z <= 0) { pen = false; continue; } pen ? ctx.lineTo(x, y) : ctx.moveTo(x, y); pen = true; } }
     for (let la = -60; la <= 60; la += 30) { let pen = false; for (let lo = -180; lo <= 180; lo += 4) { const [x, y, z] = proj(la * rad, lo * rad); if (z <= 0) { pen = false; continue; } pen ? ctx.lineTo(x, y) : ctx.moveTo(x, y); pen = true; } }
     ctx.strokeStyle = `rgba(255,255,255,${(.045 * GB.grid * (1 - (Z - 1) / 1.6)).toFixed(3)})`; ctx.lineWidth = .6; ctx.stroke(); }
   // land: dots fade out as you zoom in, country shapes take over
