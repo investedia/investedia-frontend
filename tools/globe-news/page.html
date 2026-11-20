@@ -1629,10 +1629,11 @@ function nightPath() {
 // Day / night (owner 20 Nov 2026, "B refined"): the sun lights the side of the Earth where it is day right now (land subtly lit);
 // the night side is darker and shows real night-time illumination as fine warm-white points (NASA Black Marble, public domain).
 // Visual language: white/gold points = real lights at night; orange = Investedia data (markers, connections). Lights stay below the data.
-let NIGHT_LIGHTS = null;
+let NIGHT_LIGHTS = null, LIGHT_LAYER = null;
 fetch('night-lights.json').then(r => r.ok ? r.json() : null).then(d => { if (!Array.isArray(d)) return;  // pre-compute 3D unit vectors once: no trigonometry per point per frame
   const n = d.length / 3, v = new Float32Array(n * 3), k = new Uint8Array(n);
-  for (let i = 0; i < n; i++) { const la = d[i * 3] / 20 * rad, lo = d[i * 3 + 1] / 20 * rad, cp = Math.cos(la); v[i * 3] = cp * Math.cos(lo); v[i * 3 + 1] = cp * Math.sin(lo); v[i * 3 + 2] = Math.sin(la); k[i] = d[i * 3 + 2]; }
+  let seed = 7; const jit = () => ((seed = (seed * 16807) % 2147483647) / 2147483647 - .5) * .1;  // fixed random offset within each 0.1° cell: hides the data grid
+  for (let i = 0; i < n; i++) { const la = (d[i * 3] / 20 + jit()) * rad, lo = (d[i * 3 + 1] / 20 + jit()) * rad, cp = Math.cos(la); v[i * 3] = cp * Math.cos(lo); v[i * 3 + 1] = cp * Math.sin(lo); v[i * 3 + 2] = Math.sin(la); k[i] = d[i * 3 + 2]; }
   // zoomed-out level of detail: one point per 0.3° cell, keeping the brightest (same look at globe size, a fraction of the points)
   const cell = new Map(); for (let i = 0; i < n; i++) { const key = Math.floor(d[i * 3] / 6) * 4000 + Math.floor(d[i * 3 + 1] / 6); const o = cell.get(key); if (o === undefined || k[o] < k[i]) cell.set(key, i); }
   const m = cell.size, cv = new Float32Array(m * 3), ck = new Uint8Array(m); let j = 0; for (const i of cell.values()) { cv[j * 3] = v[i * 3]; cv[j * 3 + 1] = v[i * 3 + 1]; cv[j * 3 + 2] = v[i * 3 + 2]; ck[j++] = k[i]; }
@@ -1657,7 +1658,14 @@ function drawDayNight(map) {
     const cd = ux * cl + uy * sl, z = s0 * uz + c0 * cd; if (z <= .02) continue;  // same projection as proj(), without trig
     BK[k].push(cx + R * (uy * cl - ux * sl), cy - R * (c0 * uz - s0 * cd));
   }
-  for (let k = 0; k < 4; k++) { const q = BK[k]; if (!q.length) continue; ctx.fillStyle = `rgba(${LC[k]},${AL[k]})`; ctx.beginPath(); for (let j = 0; j < q.length; j += 2) ctx.rect(q[j] - ds / 2, q[j + 1] - ds / 2, ds, ds); ctx.fill(); }
+  // soft lights (owner 20 Nov 2026: squares looked low quality). Fast path: draw the points at half the resolution on a hidden layer,
+  // then scale that layer up with smoothing: each point becomes a small soft round glow and neighbours melt together, for the cost of one image.
+  const f = 1 / 2, LW = Math.ceil(W * f), LH = Math.ceil(H * f);
+  if (!LIGHT_LAYER) LIGHT_LAYER = document.createElement('canvas');
+  if (LIGHT_LAYER.width !== LW || LIGHT_LAYER.height !== LH) { LIGHT_LAYER.width = LW; LIGHT_LAYER.height = LH; }
+  const lc = LIGHT_LAYER.getContext('2d'); lc.clearRect(0, 0, LW, LH); const psz = Math.max(.8, ds * f);
+  for (let k = 0; k < 4; k++) { const q = BK[k]; if (!q.length) continue; lc.fillStyle = `rgba(${LC[k]},${(AL[k] * .85).toFixed(3)})`; lc.beginPath(); for (let j = 0; j < q.length; j += 2) lc.rect(q[j] * f - psz / 2, q[j + 1] * f - psz / 2, psz, psz); lc.fill(); }
+  ctx.save(); ctx.globalCompositeOperation = 'lighter'; ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high'; ctx.drawImage(LIGHT_LAYER, 0, 0, LW / f, LH / f); ctx.restore();
 }
 let exHits = [], upHits = [], upLabels = [];
 function drawUpcoming() {
