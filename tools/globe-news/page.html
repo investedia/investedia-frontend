@@ -1626,30 +1626,40 @@ function nightPath() {
   const path = new Path2D(); path.moveTo(pts[0][0], pts[0][1]); for (const q of pts) path.lineTo(q[0], q[1]); path.closePath();
   return { path, wholeDisc: inside !== nightCentre };
 }
-// Day / night (owner 20 Nov 2026): the sun lights the side of the Earth where it is day right now; the night side is darker
-// and its cities glow (cities over 300,000 people, Natural Earth, public domain; size by population, so every region is shown fairly).
-let CITY_LIGHTS = [];
-fetch('city-lights.json').then(r => r.ok ? r.json() : []).then(d => { CITY_LIGHTS = Array.isArray(d) ? d : []; }).catch(() => {});
-const CITY_GLOW = (() => { const c = document.createElement('canvas'); c.width = c.height = 64; const g = c.getContext('2d'), gr = g.createRadialGradient(32, 32, 0, 32, 32, 32);
-  gr.addColorStop(0, 'rgba(255,224,170,1)'); gr.addColorStop(.18, 'rgba(255,170,80,.75)'); gr.addColorStop(.5, 'rgba(255,125,35,.22)'); gr.addColorStop(1, 'rgba(255,110,20,0)'); g.fillStyle = gr; g.fillRect(0, 0, 64, 64); return c; })();
-function drawDayNight() {
+// Day / night (owner 20 Nov 2026, "B refined"): the sun lights the side of the Earth where it is day right now (land subtly lit);
+// the night side is darker and shows real night-time illumination as fine warm-white points (NASA Black Marble, public domain).
+// Visual language: white/gold points = real lights at night; orange = Investedia data (markers, connections). Lights stay below the data.
+let NIGHT_LIGHTS = null;
+fetch('night-lights.json').then(r => r.ok ? r.json() : null).then(d => { if (!Array.isArray(d)) return;  // pre-compute 3D unit vectors once: no trigonometry per point per frame
+  const n = d.length / 3, v = new Float32Array(n * 3), k = new Uint8Array(n);
+  for (let i = 0; i < n; i++) { const la = d[i * 3] / 20 * rad, lo = d[i * 3 + 1] / 20 * rad, cp = Math.cos(la); v[i * 3] = cp * Math.cos(lo); v[i * 3 + 1] = cp * Math.sin(lo); v[i * 3 + 2] = Math.sin(la); k[i] = d[i * 3 + 2]; }
+  // zoomed-out level of detail: one point per 0.3° cell, keeping the brightest (same look at globe size, a fraction of the points)
+  const cell = new Map(); for (let i = 0; i < n; i++) { const key = Math.floor(d[i * 3] / 6) * 4000 + Math.floor(d[i * 3 + 1] / 6); const o = cell.get(key); if (o === undefined || k[o] < k[i]) cell.set(key, i); }
+  const m = cell.size, cv = new Float32Array(m * 3), ck = new Uint8Array(m); let j = 0; for (const i of cell.values()) { cv[j * 3] = v[i * 3]; cv[j * 3 + 1] = v[i * 3 + 1]; cv[j * 3 + 2] = v[i * 3 + 2]; ck[j++] = k[i]; }
+  NIGHT_LIGHTS = { full: { v, k, n }, coarse: { v: cv, k: ck, n: m } }; }).catch(() => {});
+function drawDayNight(map) {
   const sp = sunPoint(Date.now()), sx = Math.cos(sp.la) * Math.cos(sp.lo), sy = Math.cos(sp.la) * Math.sin(sp.lo), sz = Math.sin(sp.la);
+  // daytime: land a little lighter, plus a faint neutral light around the point under the sun (no blue, no strong glow)
+  // (land is drawn a little lighter overall, GB.land; the night layer below darkens the night half, so day land reads as lit)
   const [px, py, pz] = proj(sp.la, sp.lo), dx = px - cx, dy = py - cy, l = Math.hypot(dx, dy) || 1;
   const gx = pz > 0 ? px : cx + dx / l * R * 1.05, gy = pz > 0 ? py : cy + dy / l * R * 1.05;
-  const g = ctx.createRadialGradient(gx, gy, 0, gx, gy, R * 1.6); g.addColorStop(0, `rgba(235,225,215,${pz > 0 ? .16 : .07})`); g.addColorStop(.55, `rgba(220,215,210,${pz > 0 ? .06 : .03})`); g.addColorStop(1, 'rgba(0,0,0,0)');
+  const g = ctx.createRadialGradient(gx, gy, 0, gx, gy, R * 1.6); g.addColorStop(0, `rgba(205,210,220,${pz > 0 ? .08 : .035})`); g.addColorStop(1, 'rgba(0,0,0,0)');
   ctx.fillStyle = g; ctx.fillRect(cx - R, cy - R, R * 2, R * 2);
-  const n = nightPath(); ctx.save(); ctx.fillStyle = 'rgba(0,0,4,.5)';  // soft edge from three wide translucent strokes (a blur filter cost ~20% frame rate)
+  // night side: darker, soft edge (three wide translucent strokes; a blur filter cost ~20% frame rate)
+  const n = nightPath(); ctx.save(); ctx.fillStyle = 'rgba(0,0,4,.55)';
   if (n.wholeDisc) { const all = new Path2D(); all.arc(cx, cy, R * 1.1, 0, 7); all.addPath(n.path); ctx.fill(all, 'evenodd'); } else ctx.fill(n.path);
   ctx.strokeStyle = 'rgba(0,0,4,.09)'; for (const w of [R / 9, R / 16, R / 32]) { ctx.lineWidth = w; ctx.stroke(n.path); } ctx.restore();
-  if (!CITY_LIGHTS.length) return;
-  const base = Math.max(1.2, Math.min(4, R / 200)); ctx.save(); ctx.globalCompositeOperation = 'lighter';
-  const minPop = Z < 1.6 ? 75e4 : Z < 2.6 ? 4e5 : 0;  // zoomed out, small cities are too small to see: skip them (frame rate)
-  for (const [la2, lo2, pop] of CITY_LIGHTS) {
-    if (pop < minPop) continue; const la = la2 * rad, lo = lo2 * rad, nf = -(Math.cos(la) * Math.cos(lo) * sx + Math.cos(la) * Math.sin(lo) * sy + Math.sin(la) * sz); if (nf < -.08) continue;
-    const [x, y, z] = proj(la, lo); if (z <= .02) continue;
-    const a = Math.min(1, (nf + .08) / .25) * Math.min(1, z * 2.5), r = base * (.7 + Math.log10(pop / 3e5) * 1.1) * 3.2; ctx.globalAlpha = a * .9; ctx.drawImage(CITY_GLOW, x - r, y - r, r * 2, r * 2);
+  if (!NIGHT_LIGHTS) return; const LT = Z < 1.8 ? NIGHT_LIGHTS.coarse : NIGHT_LIGHTS.full;
+  // fine points in 4 brightness steps; the brightest steps are toned down most, so dense regions (Japan, China, Europe) stay calm
+  const ds = Math.max(.8, Math.min(1.6, R / 300)), BK = [[], [], [], []], AL = [.1, .16, .24, .34], skip0 = Z < 1.15;
+  const c0 = Math.cos(lat0 * rad), s0 = Math.sin(lat0 * rad), cl = Math.cos(lon0 * rad), sl = Math.sin(lon0 * rad), V = LT.v, K = LT.k;
+  for (let i = 0; i < LT.n; i++) {
+    const k = K[i]; if (skip0 && k === 0) continue;  // faintest step is invisible at full-globe size: skip it (frame rate)
+    const ux = V[i * 3], uy = V[i * 3 + 1], uz = V[i * 3 + 2]; if (ux * sx + uy * sy + uz * sz > .05) continue;  // day side: no lights
+    const cd = ux * cl + uy * sl, z = s0 * uz + c0 * cd; if (z <= .02) continue;  // same projection as proj(), without trig
+    BK[k].push(cx + R * (uy * cl - ux * sl), cy - R * (c0 * uz - s0 * cd));
   }
-  ctx.restore();
+  for (let k = 0; k < 4; k++) { const q = BK[k]; if (!q.length) continue; ctx.fillStyle = `rgba(255,240,215,${AL[k]})`; ctx.beginPath(); for (let j = 0; j < q.length; j += 2) ctx.rect(q[j] - ds / 2, q[j + 1] - ds / 2, ds, ds); ctx.fill(); }
 }
 let exHits = [], upHits = [], upLabels = [];
 function drawUpcoming() {
@@ -2839,7 +2849,7 @@ function countryShape(c, fill, stroke, lw = 1) {
   ctx.beginPath(); for (const rr of c.rr) ringPath(rr, false); ctx.strokeStyle = stroke; ctx.lineWidth = lw; ctx.stroke();
 }
 // globe look: neutral grey sphere, brighter than before, with a strong orange outline
-const GB0 = { s0: '#26262c', s1: '#101014', atm: .14, atmRGB: '255,122,26', dot: 0, rgb: '161,161,170', land: .075, line: .07, grid: 0, rim: .9, rimRGB: '180,136,109', rimW: 1.8, glow: '255,122,26,.42', blur: 16 };  // default: graphite rim with orange glow
+const GB0 = { s0: '#26262c', s1: '#101014', atm: .05, atmRGB: '255,122,26', dot: 0, rgb: '161,161,170', land: .11, line: .07, grid: 0, rim: .9, rimRGB: '180,136,109', rimW: 1.6, glow: '255,122,26,.16', blur: 12 };  // default (owner 20 Nov 2026: softer orange glow; orange is for data): graphite rim with orange glow
 // ?gb=A|B|C previews outline options (temporary, for choosing a look)
 const GB = Object.assign({}, GB0, ({
   A: { rim: .9, rimRGB: '232,232,238', rimW: 1.6, glow: '255,255,255,.28', blur: 10, atm: .10, atmRGB: '215,215,225' },
@@ -2944,14 +2954,14 @@ function frame(t) {
     for (const [phi, lam] of pts) { const [x, y, z] = proj(phi, lam); if (z <= 0) continue; const a = Math.min(1, (.08 + z * .42) * da * GB.dot); buckets[Math.min(B - 1, Math.floor(a * B))].push(x - ds / 2, y - ds / 2); }
     for (let i = 0; i < B; i++) { const q = buckets[i]; if (!q.length) continue; ctx.fillStyle = `rgba(${GB.rgb},${((i + .5) / B).toFixed(3)})`; ctx.beginPath(); for (let j = 0; j < q.length; j += 2) ctx.rect(q[j], q[j + 1], ds, ds); ctx.fill(); }
   }
-  drawDayNight();  // real-time sunlight and night with city lights, the same in News, Markets and Projects (owner 20 Nov 2026)
-  if (!EMBED && MKTON) { const n = nightPath(); ctx.save(); ctx.strokeStyle = 'rgba(255,160,100,.22)'; ctx.lineWidth = 1; ctx.stroke(n.path); ctx.restore(); }  // Market hours layer: the day/night line (the shade itself is drawn by drawDayNight)
   const la = Math.min(.07, .012 + (Z - 1) * .02) + GB.land;
   const map = Z >= 1.8 ? countries : overview;
   ctx.beginPath(); for (const c of map) for (const rr of c.rr) ringPath(rr, true); ctx.fillStyle = `rgba(255,255,255,${la})`; ctx.fill('evenodd');
+  drawDayNight(map);  // real-time sunlight and night with night lights, above the land so night land is darker, the same in News, Markets and Projects (owner 20 Nov 2026)
+  if (!EMBED && MKTON) { const n = nightPath(); ctx.save(); ctx.strokeStyle = 'rgba(255,160,100,.22)'; ctx.lineWidth = 1; ctx.stroke(n.path); ctx.restore(); }  // Market hours layer: the day/night line (the shade itself is drawn by drawDayNight)
   const impactFocus = sel || arcHover?.article || (hoverC && drawn.find(d => d.key === hoverC)?.list.length === 1 ? drawn.find(d => d.key === hoverC).list[0] : null);
   // countries with news in the current filters get a soft orange tint
-  for (const c of map) { const n = activity[c.name]; if (n) countryShape(c, `rgba(255,122,26,${(.035 + .025 * Math.min(4, n)).toFixed(3)})`); }
+  for (const c of map) { const n = activity[c.name]; if (n) countryShape(c, `rgba(150,162,182,${(.02 + .012 * Math.min(4, n)).toFixed(3)})`)  /* owner 20 Nov 2026: slate, not brown */; }
   ctx.beginPath(); for (const c of map) for (const rr of c.rr) ringPath(rr, false); ctx.strokeStyle = `rgba(255,255,255,${Math.min(.2, .07 + (Z - 1) * .04) + GB.line})`; ctx.lineWidth = .7; ctx.stroke();
   for (const { impact, country } of impactTargets(impactFocus)) countryShape(country, `rgba(${IMPACT_COLOR[impact.direction]},.10)`);
   if (hoverCountry && hoverCountry !== selCountry) countryShape(hoverCountry, 'rgba(255,255,255,.05)', 'rgba(255,255,255,.35)');
