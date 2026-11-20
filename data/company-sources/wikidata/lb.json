@@ -1,0 +1,1285 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "LB",
+ "count": 74,
+ "companies": [
+  {
+   "qid": "Q116920822",
+   "name": "Academia International",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q42332439",
+   "name": "Al Rayan Institution",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q20391680",
+   "name": "Al-Madina Bank (Scandal)",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Al-Madina_Bank_scandal",
+   "listed": false
+  },
+  {
+   "qid": "Q12193673",
+   "name": "Al-Maktabah Al-ʿAṣriyyah",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "http://www.alassrya.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q42332465",
+   "name": "al-mktb al-islāmī",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "logo_file": "شعار المكتب الإسلامي.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4721811",
+   "name": "Alfa",
+   "cc": "lb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Lebanon",
+   "hq": [
+    33.83333,
+    35.76667
+   ],
+   "website": "https://www.alfa.com.lb/",
+   "enwiki": "https://en.wikipedia.org/wiki/Alfa_(Lebanon)",
+   "logo_file": "Logo text Alfa Telecom (Lebanon).png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15869618",
+   "name": "Alrifai",
+   "cc": "lb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Alrifai",
+   "logo_file": "Al Rifai logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110449930",
+   "name": "Arab Encyclopedia House",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "https://arabenchouse.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12187191",
+   "name": "Arab Scientific Publishers",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.asp.com.lb/",
+   "listed": false
+  },
+  {
+   "qid": "Q4839754",
+   "name": "Backstage Production",
+   "cc": "lb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "http://www.backstageproduction.me",
+   "enwiki": "https://en.wikipedia.org/wiki/Backstage_Production",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16496470",
+   "name": "Banco Jacob E. Safra",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4855900",
+   "name": "Bank Audi",
+   "cc": "lb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "http://www.bankaudigroup.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Audi",
+   "logo_file": "Bank Audi logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20391714",
+   "name": "Bank of Beirut and the Arab Countries",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.bbacbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Beirut_and_the_Arab_Countries",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20391629",
+   "name": "Bankmed",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.bankmed.com.lb/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bankmed",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16531294",
+   "name": "Banque de Syrie et du Liban",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "http://www.bslbank.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_de_Syrie_et_du_Liban",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20397857",
+   "name": "Banque Libano-Française S.A.L.",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "website": "http://www.eblf.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Banque_Libano-Fran%C3%A7aise_S.A.L.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20391850",
+   "name": "Banque Misr Liban",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.bml.com.lb/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17019776",
+   "name": "BLC bank",
+   "cc": "lb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "website": "http://www.blcbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/BLC_Bank",
+   "logo_file": "Boxlogo.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q20391833",
+   "name": "BLOM Bank",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "banking"
+   ],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "https://www.blombank.com/english/home",
+   "enwiki": "https://en.wikipedia.org/wiki/BLOM_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18386118",
+   "name": "Byblos bank",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "https://www.byblosbank.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Byblos_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12242302",
+   "name": "Centre for Arab Unity Studies",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "http://www.caus.org.lb",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5120860",
+   "name": "Cinemoz",
+   "cc": "lb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "http://www.cinemoz.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20391555",
+   "name": "Credit Libanais",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.creditlibanais.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Credit_Libanais",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5197792",
+   "name": "Cyberia",
+   "cc": "lb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "https://www.cyberia.net.lb/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cyberia_(ISP)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125496162",
+   "name": "Dar al Jadeed",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Dar_al_Jadeed",
+   "listed": false
+  },
+  {
+   "qid": "Q12211253",
+   "name": "Dar al-Gharb al-Islami",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "دار الغرب الإسلامي.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3015909",
+   "name": "Dar Al-Handasah",
+   "cc": "lb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "architecture",
+    "civil engineering"
+   ],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "http://www.dargroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sidara_(company)",
+   "logo_file": "DarLogo2016.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31838812",
+   "name": "Dar Al-Kotob Al-Ilmiyah",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "http://www.al-ilmiyah.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Dar_Al-Kotob_Al-Ilmiyah",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16121363",
+   "name": "Dar Al-Marefah Printing & Publishing",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "https://www.marefah.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12211255",
+   "name": "Dar Alfarabi",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "http://dar-alfarabi.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q12211250",
+   "name": "Dar El-Ilm Lilmalayin",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "http://malayin.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12211270",
+   "name": "Dar El-Machreq Publishers",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ashrafieh",
+   "hq": [
+    33.88756,
+    35.52076
+   ],
+   "website": "https://www.darelmachreq.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q40380767",
+   "name": "Dar Ibn Hazm for Printing, Publishing and Distribution",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "https://www.daribnhazm.com/index.aspx",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q64729624",
+   "name": "Dar Sader",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Dar_Sader",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28715294",
+   "name": "Difaf Editions",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q42332140",
+   "name": "Dār al-Bashāʼir al-Islāmīyah",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "https://www.dar-albashaer.com/index_responsive.aspx",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12211262",
+   "name": "Dār al-Kitāb al-Lubnānī",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q130320238",
+   "name": "Dār al-Luʼluʼah",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12211280",
+   "name": "Dār Al-Nahḍah Al-ʻArabīyah",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q20405305",
+   "name": "dār al-ʾādāb llnšr wāltūzīʿ",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12211247",
+   "name": "Dār al-Ṣayyād",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Hazmiyeh (Mineh-Danniyeh)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20391798",
+   "name": "Federal Bank of Lebanon",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.fbl.com.lb/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20412352",
+   "name": "Fenicia Bank",
+   "cc": "lb",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.feniciabank.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25452673",
+   "name": "Hachette Antoine",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q2917333",
+   "name": "Institute for Palestine Studies",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.palestine-studies.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/Institute_for_Palestine_Studies",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20391694",
+   "name": "Intercontinental Bank of Lebanon (IBL)",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.ibl.com.lb/",
+   "enwiki": "https://en.wikipedia.org/wiki/Intercontinental_Bank_of_Lebanon",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22248677",
+   "name": "Karateco",
+   "cc": "lb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q20707940",
+   "name": "Lebanese Swiss Bank",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "website": "http://www.lebaneseswissbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Lebanese_Swiss_Bank",
+   "logo_file": "LSB Logo vertical.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20391817",
+   "name": "LGB BANK",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.lgbbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Lebanon_and_Gulf_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20391644",
+   "name": "MEAB bank",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial economics"
+   ],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "http://www.meabank.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q859510",
+   "name": "Middle East Airlines - Air Liban",
+   "cc": "lb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "https://www.mea.com.lb/",
+   "enwiki": "https://en.wikipedia.org/wiki/Middle_East_Airlines",
+   "logo_file": "Logo Middle East Airlines (Lebanon).jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115286541",
+   "name": "Muassat Alintishar Alarabi",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "http://alintishar.alkashkoul.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q29513896",
+   "name": "Muʼassasat al-Risālah",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "http://www.resalah.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7144361",
+   "name": "Patchi",
+   "cc": "lb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "http://www.patchi.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Patchi",
+   "logo_file": "Patchi-Logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48988828",
+   "name": "PSLab Sal",
+   "cc": "lb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "lighting designer"
+   ],
+   "isin": [],
+   "hq_city": "Mar Mikhaël",
+   "hq": [
+    33.89944,
+    35.52472
+   ],
+   "website": "https://pslab.lighting/",
+   "enwiki": "https://en.wikipedia.org/wiki/PSLab",
+   "listed": false
+  },
+  {
+   "qid": "Q18393666",
+   "name": "RaëdAbillama Architects",
+   "cc": "lb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "architecture"
+   ],
+   "isin": [],
+   "hq_city": "Lebanon",
+   "hq": [
+    33.83333,
+    35.76667
+   ],
+   "website": "http://www.raarchitects.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Ra%C3%ABd_Abillama_Architects",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7370229",
+   "name": "Rotana Hotels",
+   "cc": "lb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abu Dhabi",
+   "hq": [
+    24.45111,
+    54.39694
+   ],
+   "website": "https://www.rotana.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rotana_Hotels",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7532706",
+   "name": "Six Degrees",
+   "cc": "lb",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Six_Degrees_(beverage)",
+   "listed": false
+  },
+  {
+   "qid": "Q105687832",
+   "name": "Société Générale de Banque au Liban",
+   "cc": "lb",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.sgbl.com.lb",
+   "enwiki": "https://en.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_G%C3%A9n%C3%A9rale_de_Banque_au_Liban",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28219848",
+   "name": "Tabbah",
+   "cc": "lb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Tabbah",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6930429",
+   "name": "touch",
+   "cc": "lb",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Lebanon",
+   "hq": [
+    33.83333,
+    35.76667
+   ],
+   "website": "http://www.touch.com.lb/",
+   "enwiki": "https://en.wikipedia.org/wiki/Touch_(Lebanon)",
+   "logo_file": "Logo wordmark Touch (Lebanon).png",
+   "listed": false
+  },
+  {
+   "qid": "Q39047344",
+   "name": "Électricité du Liban",
+   "cc": "lb",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Beirut",
+   "hq": [
+    33.88694,
+    35.51306
+   ],
+   "website": "http://www.edl.gov.lb/",
+   "enwiki": "https://en.wikipedia.org/wiki/%C3%89lectricit%C3%A9_du_Liban",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20397815",
+   "name": "البنك التجاري للشرق الأدنى",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.necbbank.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60572465",
+   "name": "المطبوعات المصورة",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q20391594",
+   "name": "بنك الاعتماد المتحد",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q20391611",
+   "name": "بنك الاعتماد الوطني",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.bcnlb.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20391662",
+   "name": "بنك الصناعة والعمل",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.bitbank.com.lb/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20391730",
+   "name": "بنك بيمو",
+   "cc": "lb",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.bemobank.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q100258922",
+   "name": "دار البيروني للنشر والتوزيع",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12211222",
+   "name": "دار الحدائق",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12211251",
+   "name": "دار العلوم",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12211304",
+   "name": "دار مدارك للنشر",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q111141314",
+   "name": "منشورات غادة السمان",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q111141313",
+   "name": "منشورات نزار قباني",
+   "cc": "lb",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  }
+ ]
+}

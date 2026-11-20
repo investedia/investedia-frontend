@@ -1,0 +1,681 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "JO",
+ "count": 35,
+ "companies": [
+  {
+   "qid": "Q22906263",
+   "name": "Airport International Group",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.aig.aero/",
+   "enwiki": "https://en.wikipedia.org/wiki/Airport_International_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q4704878",
+   "name": "Al Tazaj",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "quick service restaurant sector"
+   ],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "website": "http://taza.com.sa/",
+   "enwiki": "https://en.wikipedia.org/wiki/Al_Tazaj",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19872190",
+   "name": "American Center of Oriental Research",
+   "cc": "jo",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Alexandria",
+   "hq": [
+    38.80472,
+    -77.04722
+   ],
+   "website": "http://acorjordan.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/American_Center_of_Research",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2122308",
+   "name": "Amman Stock Exchange",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "website": "https://www.exchange.jo",
+   "enwiki": "https://en.wikipedia.org/wiki/Amman_Stock_Exchange",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q607381",
+   "name": "Aqaba Railway Corporation",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Jordan",
+   "hq": [
+    31.2,
+    36.5
+   ],
+   "website": "https://www.arcjo.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aqaba_Railway_Corporation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2629881",
+   "name": "Arab Bank",
+   "cc": "jo",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "website": "http://www.arabbank.com/ar",
+   "enwiki": "https://en.wikipedia.org/wiki/Arab_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4783232",
+   "name": "Arab Potash",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "website": "http://www.arabpotash.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Arab_Potash",
+   "logo_file": "Arab Potash Company logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4120390",
+   "name": "Aramex",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics",
+    "transport"
+   ],
+   "isin": [],
+   "hq_city": "Dubai",
+   "hq": [
+    25.26972,
+    55.30944
+   ],
+   "website": "https://www.aramex.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Aramex",
+   "logo_file": "Aramex logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20391572",
+   "name": "Bank al Etihad",
+   "cc": "jo",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4115798",
+   "name": "Bank of Jordan",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "website": "http://bankofjordan.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Jordan",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5221865",
+   "name": "Dar Al Khaleej",
+   "cc": "jo",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Amman Governorate",
+   "hq": [
+    31.94972,
+    35.93278
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Dar_Al_Khaleej",
+   "listed": false
+  },
+  {
+   "qid": "Q22948783",
+   "name": "Dead Sea 1618",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "table salt"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16155789",
+   "name": "Desert Force Championship",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "website": "http://www.mbc.net/ar/programs/desert-force.html",
+   "enwiki": "https://en.wikipedia.org/wiki/Desert_Force_Championship",
+   "logo_file": "Desert Force Championship Logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5425835",
+   "name": "Fine",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q100742874",
+   "name": "Fine Hygienic Holding",
+   "cc": "jo",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.finehh.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Fine_Hygienic_Holding",
+   "logo_file": "Fine hygienic holding logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12199335",
+   "name": "Housing Bank",
+   "cc": "jo",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.hbtf.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12184637",
+   "name": "Jordan Commercial Bank",
+   "cc": "jo",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.jcbank.com.jo/ar/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4117642",
+   "name": "Jordan Design and Development Bureau",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Jordan_Design_and_Development_Bureau",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12184636",
+   "name": "Jordan Islamic Bank",
+   "cc": "jo",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.jordanislamicbank.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6276679",
+   "name": "Jordan Kuwait Bank",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "website": "http://www.jordan-kuwait-bank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Jordan_Kuwait_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6276880",
+   "name": "Jordan Petroleum Refinery Company",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum product"
+   ],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "website": "http://www.jopetrol.com.jo/",
+   "enwiki": "https://en.wikipedia.org/wiki/Jordan_Petroleum_Refinery_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6277050",
+   "name": "Jordan Telecom Group",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "website": "http://www.orange.jo/",
+   "enwiki": "https://en.wikipedia.org/wiki/Jordan_Telecom_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22948824",
+   "name": "King Hussein Business Park",
+   "cc": "jo",
+   "types": [
+    "Q161726"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.businesspark-jo.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/King_Hussein_Business_Park",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19604446",
+   "name": "Manaseer Group",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "website": "http://www.manaseergroup.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Manaseer_Group",
+   "logo_file": "Manaseer Group Logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7099654",
+   "name": "Orange Jordan",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Internet industry",
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "website": "http://www.orange.jo/",
+   "enwiki": "https://en.wikipedia.org/wiki/Orange_Jordan",
+   "logo_file": "Orange logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12407281",
+   "name": "Palestine Potash Limited",
+   "cc": "jo",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of fertilisers and nitrogen compounds"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7370229",
+   "name": "Rotana Hotels",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abu Dhabi",
+   "hq": [
+    24.45111,
+    54.39694
+   ],
+   "website": "https://www.rotana.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rotana_Hotels",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138486466",
+   "name": "Shukr",
+   "cc": "jo",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "fashion"
+   ],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "website": "https://shukrclothing.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Shukr_(brand)",
+   "logo_file": "Shukr wordmark.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96406127",
+   "name": "Sowt",
+   "cc": "jo",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Sowt_(podcasting)",
+   "logo_file": "Sowt Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q820715",
+   "name": "Talal Abu-Ghazaleh Organization",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "website": "http://www.Tagorg.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Talal_Abu-Ghazaleh_Organization",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7690639",
+   "name": "Tche Tche",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "café"
+   ],
+   "isin": [],
+   "hq_city": "Abu Dhabi",
+   "hq": [
+    24.45111,
+    54.39694
+   ],
+   "website": "http://www.tchetchecafe.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Tche_Tche",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7881727",
+   "name": "Umniah",
+   "cc": "jo",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "website": "http://www.umniah.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Umniah",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111915142",
+   "name": "Zain Jordan",
+   "cc": "jo",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.jo.zain.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zain_Jordan",
+   "listed": false
+  },
+  {
+   "qid": "Q117784039",
+   "name": "دائرة المطبوعات والنشر (الأردن)",
+   "cc": "jo",
+   "types": [
+    "Q2085381",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12242260",
+   "name": "مركز الكتاب الأكاديمي",
+   "cc": "jo",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Amman",
+   "hq": [
+    31.93098,
+    35.92608
+   ],
+   "listed": false
+  }
+ ]
+}

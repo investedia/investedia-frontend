@@ -1,0 +1,1305 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "IQ",
+ "count": 82,
+ "companies": [
+  {
+   "qid": "Q115345380",
+   "name": "al-Qabidh Islamic Bank for finance",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q113495292",
+   "name": "Al-Thakera Publishing House",
+   "cc": "iq",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Al-Thakera_Publishing_House",
+   "listed": false
+  },
+  {
+   "qid": "Q139971276",
+   "name": "Arab Bank Iraq",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "website": "https://www.arabbankiraq.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Arab_Bank_Iraq",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85680842",
+   "name": "Ashur International Bank",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "website": "https://www.ashurbank.iq",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4120421",
+   "name": "AsiaCell",
+   "cc": "iq",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Iraq Stock Exchange",
+     "ticker": "TASC"
+    }
+   ],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [
+    "IQ000A1J4EL6"
+   ],
+   "hq_city": "Sulaymaniyah",
+   "hq": [
+    35.55,
+    45.43333
+   ],
+   "website": "https://www.asiacell.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Asiacell",
+   "logo_file": "Asiacell Arabic Logo.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4841819",
+   "name": "Baghdad Soft Drinks Co",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Baghdad_Soft_Drinks_Co",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115345283",
+   "name": "bank",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q123705330",
+   "name": "Basrah Gas Company",
+   "cc": "iq",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "natural gas"
+   ],
+   "isin": [],
+   "hq_city": "Basra",
+   "hq": [
+    30.515,
+    47.81
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131824210",
+   "name": "Biscolata",
+   "cc": "iq",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1778674",
+   "name": "Central Bank of Iraq",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "website": "http://www.cbi.iq",
+   "enwiki": "https://en.wikipedia.org/wiki/Central_Bank_of_Iraq",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124302761",
+   "name": "Cihan Bank",
+   "cc": "iq",
+   "types": [
+    "Q22687",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16973270",
+   "name": "Dar al-Hikma",
+   "cc": "iq",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Dar_al-Hikma_(Iraqi_publishing_house)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115286984",
+   "name": "Dar Sutur",
+   "cc": "iq",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "website": "https://darstoor.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134996081",
+   "name": "Development Fund",
+   "cc": "iq",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "website": "https://ifd.gov.iq/",
+   "enwiki": "https://en.wikipedia.org/wiki/Development_Fund_(Iraq)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115869208",
+   "name": "Dār al-Madá lil-Ṭibāʻah wa-al-Nashr wa-al-Tawzīʻ",
+   "cc": "iq",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134067820",
+   "name": "Erbil International Stock Market",
+   "cc": "iq",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Erbil",
+   "hq": [
+    36.19111,
+    44.00944
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q5531784",
+   "name": "General Company for Ports of Iraq",
+   "cc": "iq",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "transport industry"
+   ],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "website": "https://www.scp.gov.iq/",
+   "enwiki": "https://en.wikipedia.org/wiki/State_Company_for_Iraqi_Ports",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q108934212",
+   "name": "International Islamic Bank",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "website": "https://imtb.iq/",
+   "logo_file": "BAPP 2021-04-05 شعار المصرف الدولي الاسلامي.png",
+   "listed": false
+  },
+  {
+   "qid": "Q123367270",
+   "name": "IQ Group",
+   "cc": "iq",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/IQ_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q1672424",
+   "name": "Iraq National Oil Company",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Iraq_National_Oil_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1369913",
+   "name": "Iraq Stock Exchange",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "website": "https://bnotaheasal.net",
+   "enwiki": "https://en.wikipedia.org/wiki/Iraq_Stock_Exchange",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q853937",
+   "name": "Iraqi Airways",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "website": "http://www.iraqiairways.com.iq",
+   "enwiki": "https://en.wikipedia.org/wiki/Iraqi_Airways",
+   "logo_file": "Iraqi Airways Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q383471",
+   "name": "Iraqi Oil Tankers Company",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Basra",
+   "hq": [
+    30.515,
+    47.81
+   ],
+   "website": "http://www.iotc-basra.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Iraqi_Oil_Tankers_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q4118955",
+   "name": "Iraqi Telecommunications and Post Company",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Iraqi_Telecommunications_and_Post_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12224587",
+   "name": "Iraqna",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q60775486",
+   "name": "Islamic Cooperation Investment Bank",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://icb-fi.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Islamic_Cooperation_Investment_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123975351",
+   "name": "kimadia",
+   "cc": "iq",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "website": "https://kimadia.gov.iq/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6432127",
+   "name": "Korek Telecom",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Erbil",
+   "hq": [
+    36.19111,
+    44.00944
+   ],
+   "website": "https://www.korektele.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Korek_Telecom",
+   "logo_file": "Korek Telecom Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1450490",
+   "name": "Koya University",
+   "cc": "iq",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Erbil",
+   "hq": [
+    36.19111,
+    44.00944
+   ],
+   "website": "http://www.koyauniversity.org",
+   "enwiki": "https://en.wikipedia.org/wiki/Koya_University",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56377114",
+   "name": "Midland Refineries Company",
+   "cc": "iq",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "oil refining"
+   ],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "logo_file": "شعار شركة مصافي الوسط (1).png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6887350",
+   "name": "Mobitel",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "http://www.mobi-tel.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mobitel_(Iraq-Kurdistan)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q117288647",
+   "name": "Muhandis General Company",
+   "cc": "iq",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4118837",
+   "name": "Rasheed Bank",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "website": "http://rasheedbank.gov.iq",
+   "enwiki": "https://en.wikipedia.org/wiki/Rasheed_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7370229",
+   "name": "Rotana Hotels",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Abu Dhabi",
+   "hq": [
+    24.45111,
+    54.39694
+   ],
+   "website": "https://www.rotana.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rotana_Hotels",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q569217",
+   "name": "State Organization for Marketing of Oil",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "website": "http://somooil.gov.iq",
+   "enwiki": "https://en.wikipedia.org/wiki/State_Oil_Marketing_Organisation",
+   "listed": false
+  },
+  {
+   "qid": "Q100150535",
+   "name": "The General House of Cultural Affairs",
+   "cc": "iq",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.darculture.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q8064821",
+   "name": "Zain Iraq",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113459255",
+   "name": "الشركة العامة لتعبئة وخدمات الغاز",
+   "cc": "iq",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "liquified petroleum gas"
+   ],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q114651766",
+   "name": "الشركة العامة لتوزيع كهرباء الجنوب",
+   "cc": "iq",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "electrical energy"
+   ],
+   "isin": [],
+   "hq_city": "Basra",
+   "hq": [
+    30.515,
+    47.81
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q50932974",
+   "name": "الشركة العامة لصناعة الأدوية والمستلزمات الطبية (نينوى)",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Nineveh",
+   "hq": [
+    36.36667,
+    43.15
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q109258714",
+   "name": "الشركة العامة للحديد والصلب",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Basra",
+   "hq": [
+    30.515,
+    47.81
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125494826",
+   "name": "المصرف التجاري العراقي",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494829",
+   "name": "المصرف المتحد للاستثمار",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494809",
+   "name": "المصرف الوطني الإسلامي",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q121536764",
+   "name": "شركة تعليب كربلاء",
+   "cc": "iq",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "canning"
+   ],
+   "isin": [],
+   "hq_city": "Karbala",
+   "hq": [
+    32.61667,
+    44.03333
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12234973",
+   "name": "كعك السيد",
+   "cc": "iq",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494820",
+   "name": "مصرف آسيا العراق الإسلامي للاستثمار والتمويل",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494824",
+   "name": "مصرف أمين العراق الإسلامي للاستثمار والتمويل",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494823",
+   "name": "مصرف أور الإسلامي للاستثمار",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q110613714",
+   "name": "مصرف إيلاف الإسلامي",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125494840",
+   "name": "مصرف اربيل للاستثمار والتمويل",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494838",
+   "name": "مصرف الأقليم التجاري للاستثمار والتمويل",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494830",
+   "name": "مصرف الائتمان العراقي",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494835",
+   "name": "مصرف الاتحاد العراقي",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494828",
+   "name": "مصرف الاستثمار العراقي",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494831",
+   "name": "مصرف الاقتصاد للاستثمار والتمويل",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494841",
+   "name": "مصرف التنمية الدولي للاستثمار والتمويل",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494817",
+   "name": "مصرف الثقة الدولي الإسلامي",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q110613781",
+   "name": "مصرف الجنوب الإسلامي",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125494818",
+   "name": "مصرف الراجح الإسلامي للاستثمار والتمويل",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494827",
+   "name": "مصرف الشرق الأوسط العراقي للاستثمار",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494834",
+   "name": "مصرف الشمال للتمويل والاستثمار",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494822",
+   "name": "مصرف الطيف الإسلامي للاستثمار والتمويل",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q110613821",
+   "name": "مصرف العالم الإسلامي",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125494825",
+   "name": "مصرف العراق الأول الإسلامي للاستثمار والتمويل",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q110613859",
+   "name": "مصرف العربية الإسلامي",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125494819",
+   "name": "مصرف القرطاس الإسلامي للاستثمار والتمويل",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q110613882",
+   "name": "مصرف المستشار الإسلامي للاستثمار والتمويل",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125494821",
+   "name": "مصرف المشرق العربي الإسلامي للاستثمار",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494836",
+   "name": "مصرف المنصور للاستثمار",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494833",
+   "name": "مصرف الموصل للتنمية والاستثمار",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494811",
+   "name": "مصرف الناسك الإسلامي للاستثمار والتمويل",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q110613939",
+   "name": "مصرف النهرين الإسلامي العراقي",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Baghdad",
+   "hq": [
+    33.31528,
+    44.36611
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125494839",
+   "name": "مصرف الهدى",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494813",
+   "name": "مصرف الوفاق الإسلامي للاستثمار والتمويل",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494842",
+   "name": "مصرف حمورابي التجاري",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494810",
+   "name": "مصرف دجلة والفرات للتنمية والاستثمار",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494816",
+   "name": "مصرف زين العراق الإسلامي للاستثمار والتمويل",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494832",
+   "name": "مصرف سومر التجاري",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494837",
+   "name": "مصرف عبر العراق",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q125494815",
+   "name": "مصرف نور العراق الإسلامي للاستثمار والتمويل",
+   "cc": "iq",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12243595",
+   "name": "مطبعة دار الجاحظ",
+   "cc": "iq",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  }
+ ]
+}

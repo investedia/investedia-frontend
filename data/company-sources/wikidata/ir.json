@@ -1,0 +1,4151 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "IR",
+ "count": 185,
+ "companies": [
+  {
+   "qid": "Q4661075",
+   "name": "Aabsal",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.aabsalco.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Aabsal",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q105044119",
+   "name": "Abr Arvan",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "cloud computing",
+    "information technology"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.arvancloud.ir",
+   "enwiki": "https://en.wikipedia.org/wiki/Abr_Arvan",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4746777",
+   "name": "Amir Kabir Publishers",
+   "cc": "ir",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://amirkabirpub.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Amir_Kabir_Publishers",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5862675",
+   "name": "Ansar Bank",
+   "cc": "ir",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.ansarbank.com",
+   "listed": false
+  },
+  {
+   "qid": "Q4770525",
+   "name": "Ansariyan Publications",
+   "cc": "ir",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Qom",
+   "hq": [
+    34.64,
+    50.87639
+   ],
+   "website": "http://www.ansariyan.org",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56357225",
+   "name": "Arj",
+   "cc": "ir",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://arjgroup.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/ARJ_Home_Appliances_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4802714",
+   "name": "AryoGen",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.aryogen.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/AryoGen",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q15707803",
+   "name": "Asia Tech",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.asiatech.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Asiatech_Data_Transmission",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139602709",
+   "name": "AVA Airlines",
+   "cc": "ir",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://avaair.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/AVA_Airlines",
+   "logo_file": "Ava airline.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97304994",
+   "name": "Ava Salamat Helicopter Company",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "health service"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.heliava.ir/",
+   "listed": false
+  },
+  {
+   "qid": "Q34235729",
+   "name": "Avatech",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://avatech.ir/en/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4832257",
+   "name": "Azarab Industries Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "biomedical engineering",
+    "electrical engineering",
+    "power plant technology",
+    "powertrain technology"
+   ],
+   "isin": [
+    "IRO1AZAB0006"
+   ],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.azarab.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/AzarAb_Industries",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4842644",
+   "name": "Bahman Group",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "holding company"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.bahmangroup.com/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bahman_Group",
+   "logo_file": "Bahman Group Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5942230",
+   "name": "Bank Day",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://bank-day.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Day",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4855942",
+   "name": "Bank Maskan",
+   "cc": "ir",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Bank Maskan Central Building",
+   "hq": [
+    35.68931,
+    51.41969
+   ],
+   "website": "https://www.bank-maskan.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Maskan",
+   "logo_file": "Bank maskan.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4855944",
+   "name": "Bank Mellat",
+   "cc": "ir",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial sector",
+    "financial services",
+    "insurance industry",
+    "retail banking"
+   ],
+   "isin": [],
+   "hq_city": "Mellat Bank Central Building",
+   "hq": [
+    35.70653,
+    51.42078
+   ],
+   "website": "https://bankmellat.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Mellat",
+   "logo_file": "Bank Mellat Logo2.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q806640",
+   "name": "Bank Melli Iran",
+   "cc": "ir",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://bmi.ir",
+   "lei": "549300DK3GGPVDIPPV39",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Melli_Iran",
+   "logo_file": "BmiBank Melli Iran-hor.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q806659",
+   "name": "Bank of Industry and Mine",
+   "cc": "ir",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial sector"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.bim.ir",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Industry_and_Mine",
+   "logo_file": "Sanatvamadan-logo-LimooGraphic.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4855962",
+   "name": "Bank Pasargad",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://en.bpi.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Pasargad",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2882608",
+   "name": "Bank Saderat Iran",
+   "cc": "ir",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Sepehr Tower",
+   "hq": [
+    35.70617,
+    51.42731
+   ],
+   "website": "https://www.bsi.ir",
+   "lei": "549300KBNGV4NYY3GE68",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Saderat_Iran",
+   "logo_file": "Bank Saderat Iran logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q2882624",
+   "name": "Bank Sepah",
+   "cc": "ir",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Bank Sepah Central Building (Abbas Abad)",
+   "hq": [
+    35.74617,
+    51.4205
+   ],
+   "website": "https://www.ebanksepah.ir/",
+   "lei": "549300FFC0ZUJKJ8GZ78",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Sepah",
+   "logo_file": "BankSepah Logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4880982",
+   "name": "Behran Oil Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.behranoil.co/",
+   "enwiki": "https://en.wikipedia.org/wiki/Behran_Oil_Company",
+   "logo_file": "Logo Behran Oil Company (Iran).png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4930366",
+   "name": "Bluehost",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Internet industry",
+    "web hosting service"
+   ],
+   "isin": [],
+   "hq_city": "Provo",
+   "hq": [
+    40.23389,
+    -111.65861
+   ],
+   "website": "http://bluehost.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bluehost",
+   "logo_file": "Bluehost logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q47010672",
+   "name": "Bushehr Petrochemical Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5059946",
+   "name": "Center for the Great Islamic Encyclopedia",
+   "cc": "ir",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.cgie.org.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Center_for_the_Great_Islamic_Encyclopedia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21546594",
+   "name": "Center of Publication of Holy Quran of Islamic Republic of Iran",
+   "cc": "ir",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5066486",
+   "name": "Chadormalu Mining and Industrial Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "mining industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.chadormalu.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Chadormalu_Mining_and_Industrial_Company",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5138856",
+   "name": "Cobel Darou",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "list of pharmaceutical companies"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.cobeldarou.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Cobel_Darou",
+   "logo_file": "Cobel Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5684450",
+   "name": "Cooperative Development Bank",
+   "cc": "ir",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.ttbank.ir/",
+   "listed": false
+  },
+  {
+   "qid": "Q5944445",
+   "name": "Damdaran Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://damdaran.ir/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q10843479",
+   "name": "Darou Pakhsh",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.dpholding.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Darou_Pakhsh",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q29513098",
+   "name": "Darugar",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "fast-moving consumer goods",
+    "personal care product"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://kafsa.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5711025",
+   "name": "Defense Industries Organization",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://mod.gov.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Defense_Industries_Organization",
+   "logo_file": "SASAD.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5204857",
+   "name": "DESA",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "heavy industry",
+    "mechanical device"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.desa.ir",
+   "enwiki": "https://en.wikipedia.org/wiki/DESA_company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5678438",
+   "name": "Digikala",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce",
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.digikala.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Digikala",
+   "logo_file": "Digikala-logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141866881",
+   "name": "Doctoreto",
+   "cc": "ir",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "health care"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.doctoreto.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111516624",
+   "name": "Dotin",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.dotin.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Dotin",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5323768",
+   "name": "EN Bank",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.enbank.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/EN_Bank",
+   "logo_file": "EnbankNewLog-100x18.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q63185728",
+   "name": "Enteshar Publication",
+   "cc": "ir",
+   "types": [
+    "Q2085381",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Enteshar Publication Building",
+   "hq": [
+    35.6915,
+    51.42842
+   ],
+   "website": "https://www.entesharco.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q61060051",
+   "name": "Esam",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "auction",
+    "e-commerce",
+    "marketplace"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://esamfashion.ir",
+   "logo_file": "Esam logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5397664",
+   "name": "Esfahan Steel Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry",
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Isfahan",
+   "hq": [
+    32.6525,
+    51.67472
+   ],
+   "website": "http://www.esfahansteel.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Esfahan_Steel_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5834052",
+   "name": "Export Development Bank of Iran",
+   "cc": "ir",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.edbi.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Export_Development_Bank_of_Iran",
+   "logo_file": "EDBI LOGO(FA EN)s.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5421463",
+   "name": "ExpoTV",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://irexpotv.com",
+   "enwiki": "https://en.wikipedia.org/wiki/ExpoTV",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31072230",
+   "name": "Fanup",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.fanap.ir",
+   "enwiki": "https://en.wikipedia.org/wiki/Pasargad_Arian_Communication_and_Information_Technology_Co",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61356650",
+   "name": "Filimo",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "streaming media"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.filimo.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Filimo",
+   "logo_file": "Filimo logo (en) 2025.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108897704",
+   "name": "Findatour.co",
+   "cc": "ir",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "tourism industry",
+    "website"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.findatour.co/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q60741329",
+   "name": "Future Bank",
+   "cc": "ir",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Manama",
+   "hq": [
+    26.21667,
+    50.58333
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Future_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5960143",
+   "name": "Gachsaran Oil and Gas Production Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Gachsaran County",
+   "hq": [
+    30.33333,
+    50.75
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q10860253",
+   "name": "Ghavamin Bank",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://www.ghbi.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ghavamin_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5580358",
+   "name": "Goldstone Tires",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing",
+    "tire manufacturer"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://goldstoneir.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Goldstone_Tires",
+   "listed": false
+  },
+  {
+   "qid": "Q5580952",
+   "name": "Golrang Industrial Group",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "personal care product"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.golrang.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Golrang_Industrial_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5629457",
+   "name": "HEPCO",
+   "cc": "ir",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "vehicle industry"
+   ],
+   "isin": [],
+   "hq_city": "Arak",
+   "hq": [
+    34.095,
+    49.69806
+   ],
+   "website": "http://hepcoir.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/HEPCO",
+   "logo_file": "Logo of HEPCO Heavy Industries.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q19744239",
+   "name": "Hiweb",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.hiweb.ir/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q10326524",
+   "name": "Homa Hotel Group",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "hospitality",
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.homahotels.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Homa_Hotel_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6027592",
+   "name": "Industrial Development and Renovation Organization of Iran",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "conglomerate"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.idro.org/",
+   "enwiki": "https://en.wikipedia.org/wiki/IDRO_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5673867",
+   "name": "Intishārāt-i Rawzanah",
+   "cc": "ir",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://rowzanehnashr.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q6066718",
+   "name": "Iran Aircraft Manufacturing Industrial Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aircraft industry",
+    "defence industry"
+   ],
+   "isin": [],
+   "hq_city": "Isfahan",
+   "hq": [
+    32.6525,
+    51.67472
+   ],
+   "website": "http://www.hesa.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Iran_Aircraft_Manufacturing_Industries_Corporation",
+   "logo_file": "HESA company.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17174732",
+   "name": "Iran Behnoush Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "beverage industry",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q17006344",
+   "name": "Iran Central Asset Management Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://english.sukuk.ir",
+   "enwiki": "https://en.wikipedia.org/wiki/Iran_Central_Asset_Management_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6066767",
+   "name": "Iran Combine Manufacturing Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of machinery and equipment"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.irancombine.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Iran_Combine_Manufacturing_Company",
+   "logo_file": "ICMCO logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20967713",
+   "name": "Iran Dairy Industries Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://pegah.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Iran_Dairy_Industries_Co.",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6066785",
+   "name": "Iran Electronics Industries",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry",
+    "electronics industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Iran_Electronics_Industries",
+   "logo_file": "SAIran.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61064259",
+   "name": "Iran Energy Exchange",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": "انرژی"
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.iee.ir/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6529146",
+   "name": "Iran International Exhibitions Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.iranfair.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Iran_International_Exhibitions_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1343045",
+   "name": "Iran Khodro",
+   "cc": "ir",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.ikcopress.ir/fa",
+   "enwiki": "https://en.wikipedia.org/wiki/Iran_Khodro",
+   "logo_file": "Iran Khodro symbol.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6066811",
+   "name": "Iran Khodro Diesel",
+   "cc": "ir",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "automotive industry",
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.ikco.ir",
+   "enwiki": "https://en.wikipedia.org/wiki/Iran_Khodro_Diesel",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q20110604",
+   "name": "Iran Marine Fund",
+   "cc": "ir",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.imf.ir/en/index.html",
+   "enwiki": "https://en.wikipedia.org/wiki/Iran_Marine_Fund",
+   "listed": false
+  },
+  {
+   "qid": "Q5931445",
+   "name": "Iran Merchant Bank",
+   "cc": "ir",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q111609737",
+   "name": "Iran Mojavez",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://iranmojavez.com",
+   "logo_file": "IRANMOJAVEZ-LOGO-2022VERSION-0۳.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6066851",
+   "name": "Iran Post",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.post.ir",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Post_Company_of_the_Islamic_Republic_of_Iran",
+   "listed": true
+  },
+  {
+   "qid": "Q28564684",
+   "name": "Iran Road Maintenance & Transportation Organization",
+   "cc": "ir",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "roadway"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.rmto.ir/en",
+   "enwiki": "https://en.wikipedia.org/wiki/Iran_Road_Maintenance_%26_Transportation_Organization",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6066862",
+   "name": "Iran Shipbuilding & Offshore Industries Complex",
+   "cc": "ir",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "shipbuilding"
+   ],
+   "isin": [],
+   "hq_city": "Bandar Abbas",
+   "hq": [
+    27.18639,
+    56.28083
+   ],
+   "website": "http://www.isoico.co",
+   "enwiki": "https://en.wikipedia.org/wiki/Iran_Shipbuilding_%26_Offshore_Industries_Complex",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q25426071",
+   "name": "Iran Tractor Foundry Company",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.itf.ir/",
+   "logo_file": "آرم شرکت ریخته گری تراکتورسازی ایران.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q44027",
+   "name": "Iran Tractor Manufacturing Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of machinery and equipment",
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Tabriz",
+   "hq": [
+    38.07389,
+    46.29611
+   ],
+   "website": "http://www.itmco.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Iran_Tractor_Manufacturing_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5936377",
+   "name": "Iran Transfo",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Zanjan",
+   "hq": [
+    36.66667,
+    48.48333
+   ],
+   "website": "http://www.iran-transfo.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5769854",
+   "name": "Iran University Press",
+   "cc": "ir",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q27188019",
+   "name": "Iran Water Resources Management Company",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "water collection, treatment and supply",
+    "water management"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://wrm.ir/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5934423",
+   "name": "Iran Zamin Bank",
+   "cc": "ir",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.izbank.ir/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6067206",
+   "name": "Iranian Aluminium Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "aluminium industry"
+   ],
+   "isin": [],
+   "hq_city": "Arak",
+   "hq": [
+    34.095,
+    49.69806
+   ],
+   "website": "http://www.iralco.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Iranian_Aluminium_Company",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6067310",
+   "name": "Iranian Offshore Engineering and Construction Company",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.ioec.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Iranian_Offshore_Engineering_and_Construction_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q11683622",
+   "name": "Iranian Tobacco Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "tobacco industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.irtobacco.com/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q123663204",
+   "name": "Iranians' Bank",
+   "cc": "ir",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Iranians%27_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q649695",
+   "name": "Islamic Republic News Agency",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "media industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://en.irna.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Islamic_Republic_News_Agency",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5832653",
+   "name": "Istak Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.istak.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13564794",
+   "name": "Jaber Ebne Hayyan Pharmaceutical Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.jaber-pharma.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Jaber_Ebne_Hayyan_Pharmaceutical_Company",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q3192149",
+   "name": "Kalleh Dairy",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "dairy",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Amol",
+   "hq": [
+    36.46972,
+    52.35083
+   ],
+   "website": "http://www.kalleh.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Kalleh_Dairy",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q56356497",
+   "name": "Kayhan Institute",
+   "cc": "ir",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5950750",
+   "name": "Kerman Medical University",
+   "cc": "ir",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://en.kmu.ac.ir/Default10.aspx?Id=55",
+   "enwiki": "https://en.wikipedia.org/wiki/Kerman_University_of_Medical_Sciences",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6395007",
+   "name": "Keshavarzi Bank",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.bki.ir/en",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Keshavarzi_Iran",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q26433855",
+   "name": "Khorasan steel",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry",
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Mashhad",
+   "hq": [
+    36.29749,
+    59.60592
+   ],
+   "website": "http://www.khorasansteel.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Khorasan_Steel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24662819",
+   "name": "Khouzestan Oxin Steel Company",
+   "cc": "ir",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Khouzestan_Oxin_Steel_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q5955063",
+   "name": "Khouzestan Steel Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Ahvaz",
+   "hq": [
+    31.31889,
+    48.68417
+   ],
+   "website": "https://www.ksc.ir/en/home/",
+   "enwiki": "https://en.wikipedia.org/wiki/Khouzestan_Steel_Company",
+   "logo_file": "KSCLOGO.png",
+   "listed": false
+  },
+  {
+   "qid": "Q6416495",
+   "name": "Kish Khodro",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.kishkhodro.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kish_Khodro",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q64808965",
+   "name": "Kosar Credit Institution",
+   "cc": "ir",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.kosarfci.ir",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16047893",
+   "name": "Lajvar Industrial Group",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "crane"
+   ],
+   "isin": [],
+   "hq_city": "Masumiyeh Rural District",
+   "hq": [
+    34.11667,
+    49.86667
+   ],
+   "website": "http://www.lajvar.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Lajvar_Industrial_Group",
+   "logo_file": "Logo lajvar.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5717889",
+   "name": "Loan and Discount Bank of Persia",
+   "cc": "ir",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Loan_and_Discount_Bank_of_Persia",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6667397",
+   "name": "Loghman Pharmaceuticals",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.loghmanpharma.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Loghman_Pharmaceuticals",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6723598",
+   "name": "Machine Sazi Arak",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction",
+    "metallurgy",
+    "power plant technology",
+    "powertrain technology"
+   ],
+   "isin": [
+    "IRO1MARK0001"
+   ],
+   "hq_city": "Arak County",
+   "hq": [
+    34.13333,
+    49.8
+   ],
+   "website": "http://www.msa.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Machine_Sazi_Arak",
+   "logo_file": "MSA logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5946098",
+   "name": "Mahram Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://mahramco.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6714424",
+   "name": "MAPNA",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "biomedical engineering",
+    "electrical engineering",
+    "power plant technology",
+    "powertrain technology"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.mapnagroup.com",
+   "enwiki": "https://en.wikipedia.org/wiki/MAPNA_Group",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q85977100",
+   "name": "Mazandaran textile factories",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "weaving"
+   ],
+   "isin": [],
+   "hq_city": "Qaem Shahr County",
+   "hq": [
+    36.46667,
+    52.86667
+   ],
+   "website": "http://nassaji1.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5942921",
+   "name": "Mehr Economics Bank",
+   "cc": "ir",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "website": "http://mebank.ir/",
+   "listed": false
+  },
+  {
+   "qid": "Q22080892",
+   "name": "Mellat Investment Bank",
+   "cc": "ir",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.mellatib.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mellat_Investment_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5954274",
+   "name": "Melli Shoe",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "shoe"
+   ],
+   "isin": [],
+   "website": "http://mellishoeco.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6819959",
+   "name": "Merooj",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "fashion accessory"
+   ],
+   "isin": [],
+   "hq_city": "Andimeshk",
+   "hq": [
+    32.47195,
+    48.3467
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Merooj",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q10862583",
+   "name": "Middle East bank",
+   "cc": "ir",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Middle_East_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5862987",
+   "name": "Mihan Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy industry",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.mihan-dairy.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5937821",
+   "name": "Minoo Industrial Group",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.minoogroup.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3090716",
+   "name": "Mobarakeh Steel Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "iron and steel industry",
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Isfahan",
+   "hq": [
+    32.6525,
+    51.67472
+   ],
+   "website": "http://www.mobarakeh-steel.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mobarakeh_Steel_Company",
+   "logo_file": "Foolad Mobarakeh7.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q10843470",
+   "name": "Mobile Telecommunication Company of Iran",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.mci.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mobile_Communications_of_Iran",
+   "logo_file": "MCI logo (2025).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20109839",
+   "name": "Mobin Energy Persian Gulf",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.mobinec.ir/",
+   "listed": false
+  },
+  {
+   "qid": "Q6561387",
+   "name": "Mobin Net",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.mobinnet.ir",
+   "enwiki": "https://en.wikipedia.org/wiki/Mobinnet",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97219940",
+   "name": "Momtaz Matches",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "chipboard",
+    "match"
+   ],
+   "isin": [],
+   "hq_city": "Tabriz",
+   "hq": [
+    38.07389,
+    46.29611
+   ],
+   "website": "http://setarehmomtaz.ir/#wz-section-wzs66/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5853798",
+   "name": "Morvarid publication",
+   "cc": "ir",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://morvarid.pub/",
+   "logo_file": "Morvarid Publication (Logo).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q10296776",
+   "name": "MTN Irancell",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.irancell.ir/en",
+   "enwiki": "https://en.wikipedia.org/wiki/MTN_Irancell",
+   "logo_file": "MTN Irancell Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q85976019",
+   "name": "Namava",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "streaming media"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://namava.ir",
+   "enwiki": "https://en.wikipedia.org/wiki/Namava",
+   "logo_file": "Namava logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q593733",
+   "name": "National Iranian Oil Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://en.nioc.ir/Portal/Home/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Iranian_Oil_Company",
+   "logo_file": "Flag of the National Iranian Oil Company.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q747391",
+   "name": "National Iranian Petrochemical Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.nipc.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Petrochemical_Company",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6973855",
+   "name": "National Iranian Tanker Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "petroleum industry",
+    "water transport"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.nioc.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/National_Iranian_Tanker_Company",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q119807594",
+   "name": "Nayiri",
+   "cc": "ir",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q18354245",
+   "name": "Noor Ophthalmology Complex",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "health care industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://noorvision.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Noor_Ophthalmology_Complex",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7055158",
+   "name": "North Drilling",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.ndco.ir",
+   "enwiki": "https://en.wikipedia.org/wiki/North_Drilling",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7079652",
+   "name": "Offset Press Inc.",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "book industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.offset.ir/EN/aboutus_en.html",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5904942",
+   "name": "Pak Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://pakdairy.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28712870",
+   "name": "Paksan Company",
+   "cc": "ir",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "personal care product"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.paxanco.com/",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16047691",
+   "name": "Pars Aluminum Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5704403",
+   "name": "Pars Electric",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "home appliance"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.parselectric.ir/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28027658",
+   "name": "Pars Khazar",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "home appliance"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.parskhazar.com/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pars_Khazar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q721373",
+   "name": "Pars Oil Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.parsoilco.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Pars_Oil",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q6628966",
+   "name": "Pars Online",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.parsonline.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pars_Online",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2410404",
+   "name": "Parsian Bank",
+   "cc": "ir",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://parsian-bank.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Parsian_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7170191",
+   "name": "Persia International Bank",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "http://www.persiabank.co.uk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Persia_International_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16047854",
+   "name": "Persian Gulf Petrochemical Industries",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry",
+    "petrochemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Mahshahr",
+   "hq": [
+    30.55667,
+    49.18861
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Persian_Gulf_Petrochemical_Industries",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7178852",
+   "name": "Petroiran",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.petroiran.com",
+   "enwiki": "https://en.wikipedia.org/wiki/PetroIran",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7233625",
+   "name": "Post Bank of Iran",
+   "cc": "ir",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [
+    "IRO1BPST0007"
+   ],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.postbank.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Post_Bank_of_Iran",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q18327813",
+   "name": "Qarz Al-Hasanah - Mehr Iran Bank",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.qmb.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Qarz_Al-Hasaneh_Mehr_Iran_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q140315297",
+   "name": "Qom Province Industrial Estates Company",
+   "cc": "ir",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q56356793",
+   "name": "Rahni Bank Iran",
+   "cc": "ir",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7307083",
+   "name": "Refah Bank",
+   "cc": "ir",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": "ورفاه"
+    }
+   ],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.refah-bank.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Refah_Bank",
+   "logo_file": "لوگو جدید بانک رفاه کارگران.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q123987076",
+   "name": "Resalat Bank",
+   "cc": "ir",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.rqbank.ir/",
+   "listed": false
+  },
+  {
+   "qid": "Q5954236",
+   "name": "RighTel Communications",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.rightel.ir",
+   "enwiki": "https://en.wikipedia.org/wiki/Rightel",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135350496",
+   "name": "Russo-Iranian Bank",
+   "cc": "ir",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Russo-Iranian_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65199642",
+   "name": "Saba Idea",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.sabaidea.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7399412",
+   "name": "Sahab Geographic and Drafting Institute",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "cartography"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.sahabmap.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sahab_Geographic_and_Drafting_Institute",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116234",
+   "name": "Saipa",
+   "cc": "ir",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.saipacorp.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/SAIPA",
+   "logo_file": "Saipa Logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7402476",
+   "name": "Saipa Diesel",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "automotive industry",
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.saipadiesel.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Saipa_Diesel",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q4117676",
+   "name": "Saman Bank",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.sb24.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Saman_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7424291",
+   "name": "Sarmayeh Bank",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://sbank.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sarmayeh_Bank",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q20890579",
+   "name": "Sepahan Oil Company (SOC)",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.sepahanoil.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sepahan_Oil_Company",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5962994",
+   "name": "Setad",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Execution_of_Imam_Khomeini%27s_Order",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65332831",
+   "name": "Shahid Bagheri Industrial Group",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "defence industry"
+   ],
+   "isin": [],
+   "hq_city": "Pasdaran",
+   "hq": [
+    35.77333,
+    51.47028
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q5941033",
+   "name": "Shahr Bank",
+   "cc": "ir",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Shahr Bank Central Building",
+   "hq": [
+    35.70103,
+    51.41872
+   ],
+   "website": "http://en.shahr-bank.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Shahr",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q25424040",
+   "name": "Shahrestan Adab",
+   "cc": "ir",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Shahrestan_Adab",
+   "listed": false
+  },
+  {
+   "qid": "Q7462298",
+   "name": "Shahrvand Chain Stores Inc.",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.shahrvand.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Shahrvand_Chain_Stores_Inc.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16047493",
+   "name": "Shaparak (company)",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "online banking"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.shaparak.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Shaparak_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6445552",
+   "name": "Shatel",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.shatel.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Shatel",
+   "logo_file": "Shatel Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5862430",
+   "name": "Shirin Asal Food Industrial Group",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "chocolaterie",
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Tabriz",
+   "hq": [
+    38.07389,
+    46.29611
+   ],
+   "website": "http://www.shirinasal.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Shirin_Asal_Food_Industrial_Group",
+   "logo_file": "Shirinasal.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q10860246",
+   "name": "Sina Bank",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.sinabank.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sina_Bank",
+   "logo_file": "Sina Bank Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q27465471",
+   "name": "Snapp",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology",
+    "taxi service"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.snapp.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Snapp!",
+   "logo_file": "Snapp logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20109567",
+   "name": "Snowa",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "home appliance industry"
+   ],
+   "isin": [],
+   "hq_city": "Murcheh Khvort Industrial Town",
+   "hq": [
+    33.05139,
+    51.5025
+   ],
+   "website": "http://www.snowa.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Snowa",
+   "logo_file": "Snowa.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q43380155",
+   "name": "Solico Group",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dubai",
+   "hq": [
+    25.26972,
+    55.30944
+   ],
+   "website": "http://www.solico-group.com/index.php",
+   "logo_file": "Solico group logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98079442",
+   "name": "Solomon Carpet",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "carpet",
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Isfahan",
+   "hq": [
+    32.6525,
+    51.67472
+   ],
+   "website": "https://www.solomon-carpet.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Solomon_Carpet",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5728694",
+   "name": "Sunich",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.sunich.org",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5961325",
+   "name": "System Group",
+   "cc": "ir",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "software development"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.systemgroup.net/en",
+   "enwiki": "https://en.wikipedia.org/wiki/System_Group",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5730379",
+   "name": "Tabriz Oil Refinery Company",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "website": "https://www.tzorc.ir/",
+   "logo_file": "لوگو پالایش نفت تبریز.webp",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7679591",
+   "name": "Taliya",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Taliya_Communications",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56360030",
+   "name": "TAPSI",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "carpooling",
+    "ridesharing company"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Tapsi_(ridehailing)",
+   "logo_file": "Tapsi logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q5719483",
+   "name": "Tavakoli Matches",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tabriz",
+   "hq": [
+    38.07389,
+    46.29611
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q47168670",
+   "name": "TDH Home Entertainment",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q86753635",
+   "name": "Tehran and Suburbs Bus Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Tehran_and_Suburbs_Bus_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108393577",
+   "name": "Tehran Real Estate Consultants",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q56364195",
+   "name": "Tehran Wagon Manufacturing Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.tehranwagon.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7695198",
+   "name": "Tejarat Bank",
+   "cc": "ir",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.tejaratbank.ir/",
+   "lei": "5493007MJ3BLX55XSZ63",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_Tejarat",
+   "logo_file": "Tejarat Bank Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5935929",
+   "name": "Telecommunication Infrastructure Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "TIC Central Building (Tehran)",
+   "hq": [
+    35.73883,
+    51.44697
+   ],
+   "website": "http://www.tic.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Telecommunication_Infrastructure_Company",
+   "logo_file": "Telecommunication Infrastructure Company.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7814685",
+   "name": "Tolypers",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "fast-moving consumer goods",
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.tolypers.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tolypers",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5961680",
+   "name": "Tourism Bank",
+   "cc": "ir",
+   "types": [
+    "Q22687",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "financial services",
+    "tourism"
+   ],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "https://www.tourismbank.ir/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tourism_Bank",
+   "logo_file": "Rar bgardeshgari.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1333381",
+   "name": "Wagon Pars",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail industry",
+    "rail vehicle manufacturer"
+   ],
+   "isin": [],
+   "hq_city": "Arak County",
+   "hq": [
+    34.13333,
+    49.8
+   ],
+   "website": "https://mapnawagonpars.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Wagon_Pars",
+   "logo_file": "Logo wagonpars.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7345330",
+   "name": "Yazd Tire",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing",
+    "tire manufacturer"
+   ],
+   "isin": [],
+   "hq_city": "Yazd",
+   "hq": [
+    31.89722,
+    54.3675
+   ],
+   "website": "http://www.yric.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Yazd_Tire",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5954141",
+   "name": "Zahra Rosewater Company",
+   "cc": "ir",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "bottled water industry"
+   ],
+   "isin": [],
+   "hq_city": "Zahra Rosewater Central Building",
+   "hq": [
+    30.28386,
+    57.07497
+   ],
+   "website": "http://zahrarosewater.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8065966",
+   "name": "Zamyad Co.",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.zamyad.co.ir/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zamyad_Co.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q461631",
+   "name": "إيران للطيران",
+   "cc": "ir",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Tehran Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Tehran",
+   "hq": [
+    35.68889,
+    51.38972
+   ],
+   "website": "http://www.iranair.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Iran_Air",
+   "logo_file": "Iran Air logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q136505764",
+   "name": "شرکت سیمان داراب",
+   "cc": "ir",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "cement plant"
+   ],
+   "isin": [],
+   "hq_city": "Darab County",
+   "hq": [
+    28.56667,
+    54.95
+   ],
+   "website": "https://darabcement.ir/?Page=Home",
+   "listed": false
+  },
+  {
+   "qid": "Q5942085",
+   "name": "منشورات المدرسة",
+   "cc": "ir",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12199358",
+   "name": "ميد بنك",
+   "cc": "ir",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q126361931",
+   "name": "َAburaihan Pharmaceutical Co",
+   "cc": "ir",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "website": "http://aburaihan.com/",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}
