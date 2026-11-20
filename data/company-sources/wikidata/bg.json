@@ -1,0 +1,4305 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "BG",
+ "count": 215,
+ "companies": [
+  {
+   "qid": "Q1941592",
+   "name": "A1 Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.a1.bg/",
+   "enwiki": "https://en.wikipedia.org/wiki/A1_Bulgaria",
+   "logo_file": "A1 red logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139822499",
+   "name": "ACM",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Wholesale of chemical products"
+   ],
+   "isin": [],
+   "hq_city": "Montana",
+   "hq": [
+    43.40549,
+    23.22424
+   ],
+   "website": "https://acm-montana.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98168348",
+   "name": "Adecco Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Business Park Sofia",
+   "hq": [
+    42.62556,
+    23.37583
+   ],
+   "website": "https://adeccobulgaria.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12271721",
+   "name": "ADM Razgrad",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Razgrad",
+   "hq": [
+    43.54089,
+    26.52882
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137673218",
+   "name": "AdNow",
+   "cc": "bg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Plovdiv",
+   "hq": [
+    42.14209,
+    24.74145
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/AdNow",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135876957",
+   "name": "Alcomet",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Aluminium production"
+   ],
+   "isin": [],
+   "hq_city": "Shumen",
+   "hq": [
+    43.27459,
+    26.93486
+   ],
+   "website": "https://www.alcomet.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4720583",
+   "name": "Alexandra Audio",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://www.alaudio.bg",
+   "enwiki": "https://en.wikipedia.org/wiki/Alexandra_Audio",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125546321",
+   "name": "Alianz Bank Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "other monetary intermediation"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.allianz.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18689581",
+   "name": "Alna Tour",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "travel agency"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12272216",
+   "name": "Anubis",
+   "cc": "bg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.anubis.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q126689597",
+   "name": "Arkomat - Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of other parts and accessories for motor vehicles"
+   ],
+   "isin": [],
+   "hq_city": "Kazanlak",
+   "hq": [
+    42.61875,
+    25.39324
+   ],
+   "website": "https://www.arkomatbulgaria.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12272336",
+   "name": "Arkus",
+   "cc": "bg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "defence industry"
+   ],
+   "isin": [],
+   "hq_city": "Lyaskovets",
+   "hq": [
+    43.10807,
+    25.71321
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4803605",
+   "name": "Asarel Medet",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Mining of other non-ferrous metal ores"
+   ],
+   "isin": [],
+   "hq_city": "Panagyurishte",
+   "hq": [
+    42.50262,
+    24.18024
+   ],
+   "website": "https://www.asarel.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Asarel_Medet",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135616521",
+   "name": "Avon Cosmetics Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail sale of cosmetic and toilet articles in specialised stores"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.avon.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106920470",
+   "name": "Balkancar",
+   "cc": "bg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133461937",
+   "name": "Balkanpharma Dupnitsa",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Fabrication de préparations pharmaceutiques"
+   ],
+   "isin": [],
+   "hq_city": "Dupnitsa",
+   "hq": [
+    42.26496,
+    23.11853
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4851114",
+   "name": "Balkantourist",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://www.balkantourist.bg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Balkantourist",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q62562792",
+   "name": "BENU",
+   "cc": "bg",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmacy"
+   ],
+   "isin": [],
+   "website": "https://www.benu.eu",
+   "logo_file": "BENU Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60665946",
+   "name": "Billa Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.billa.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131904259",
+   "name": "Biovet",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of basic pharmaceutical products"
+   ],
+   "isin": [],
+   "hq_city": "Peshtera",
+   "hq": [
+    42.03398,
+    24.30252
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137329087",
+   "name": "BMF Port Burgas",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Cargo handling"
+   ],
+   "isin": [],
+   "hq_city": "Burgas",
+   "hq": [
+    42.50297,
+    27.47018
+   ],
+   "website": "https://bmfportburgas.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139564632",
+   "name": "Boni",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "processing and preserving of meat, except of poultry meat"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://www.boniholding.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12270595",
+   "name": "Box TV",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://box-tv.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4836353",
+   "name": "BREN",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://www.bren.bg",
+   "enwiki": "https://en.wikipedia.org/wiki/BREN",
+   "logo_file": "BREN header.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q115966701",
+   "name": "Brikel",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Galabovo",
+   "hq": [
+    42.14288,
+    25.87524
+   ],
+   "website": "https://www.brikel-bg.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25476246",
+   "name": "BULATSA",
+   "cc": "bg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/BULATSA",
+   "listed": false
+  },
+  {
+   "qid": "Q4996150",
+   "name": "Bulgargaz",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Trade of gas through mains"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://www.bulgargaz.bg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bulgargaz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18464804",
+   "name": "Bulgaria Sat",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.bulgariasat.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q12274176",
+   "name": "Bulgaria Оn Аir",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.bgonair.bg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bulgaria_ON_AIR",
+   "logo_file": "Bulgaria On Air TV logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4996202",
+   "name": "Bulgarian Energy Holding",
+   "cc": "bg",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "activities of holding companies"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.bgenh.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bulgarian_Energy_Holding",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4996211",
+   "name": "Bulgarian Mint",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of jewellery and related articles"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://mint.bg",
+   "enwiki": "https://en.wikipedia.org/wiki/Bulgarian_Mint",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2880826",
+   "name": "Bulgarian Posts",
+   "cc": "bg",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.bgpost.bg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bulgarian_Posts",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q804928",
+   "name": "Bulgarian Railway Company A.D.",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://www.brc-bg.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Bulgarian_Railway_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108851955",
+   "name": "Bulgarian-American Credit Bank",
+   "cc": "bg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "other monetary intermediation"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.bacb.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1001902",
+   "name": "Bulgartabac",
+   "cc": "bg",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://www.bulgartabac.bg",
+   "enwiki": "https://en.wikipedia.org/wiki/Bulgartabac",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4996377",
+   "name": "Bulgartransgaz",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "transport via pipeline"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.bulgartransgaz.bg/bg",
+   "enwiki": "https://en.wikipedia.org/wiki/Bulgartransgaz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141413092",
+   "name": "Bulsafil",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "preparation and spinning of textile fibres"
+   ],
+   "isin": [],
+   "hq_city": "Plovdiv",
+   "hq": [
+    42.14209,
+    24.74145
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20500594",
+   "name": "Bulvest 2000",
+   "cc": "bg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://bulvest.com/bg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125292653",
+   "name": "By Far",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/By_Far",
+   "listed": false
+  },
+  {
+   "qid": "Q2944755",
+   "name": "Central Cooperative Bank",
+   "cc": "bg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.ccbank.bg/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Central_Cooperative_Bank",
+   "logo_file": "Ccblogo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16956439",
+   "name": "Centralna energoremontna baza",
+   "cc": "bg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://cerb.bg",
+   "enwiki": "https://en.wikipedia.org/wiki/Central_Energy_Repair_Base_(Bulgaria)",
+   "logo_file": "Цербгруп.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12293689",
+   "name": "Ciela",
+   "cc": "bg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2188613",
+   "name": "CMB.TECH",
+   "cc": "bg",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Euronext",
+     "ticker": "CMBT"
+    },
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "CMBT"
+    }
+   ],
+   "industries": [
+    "petroleum transport",
+    "water transport"
+   ],
+   "isin": [],
+   "hq_city": "Aalst",
+   "hq": [
+    50.93833,
+    4.03917
+   ],
+   "website": "https://www.euronav.com/",
+   "lei": "549300D80RYON74MEJ03",
+   "enwiki": "https://en.wikipedia.org/wiki/CMB.TECH",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q135001412",
+   "name": "Coca-Cola HBC Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of soft drinks; production of mineral waters and other bottled waters"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://bg.coca-colahellenic.com/",
+   "logo_file": "Logo Coca-Cola Hbc.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140471223",
+   "name": "Cocosolis",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "cosmetics industry"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://cocosolis.com/de/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cocosolis",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12283369",
+   "name": "Colibri publishing house",
+   "cc": "bg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.colibri.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135951708",
+   "name": "Concentrix Services Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Activities of call centres"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139540154",
+   "name": "Concierge Unique",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Luxury travel brand",
+    "hospitality industry",
+    "tourism",
+    "vacation rental",
+    "yacht charter"
+   ],
+   "isin": [],
+   "hq_city": "Blagoevgrad",
+   "hq": [
+    42.01194,
+    23.08972
+   ],
+   "website": "https://conciergeunique.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Concierge_Unique",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q53858169",
+   "name": "Cooolbox",
+   "cc": "bg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Plovdiv",
+   "hq": [
+    42.14209,
+    24.74145
+   ],
+   "website": "https://www.cooolbox.bg",
+   "enwiki": "https://en.wikipedia.org/wiki/Cooolbox",
+   "logo_file": "Cooolbox.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139822616",
+   "name": "Cross",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of bicycles and invalid carriages"
+   ],
+   "isin": [],
+   "hq_city": "Montana",
+   "hq": [
+    43.40549,
+    23.22424
+   ],
+   "website": "https://crosscycle.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q19704233",
+   "name": "Daisy Technology",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "logo_file": "Daisy logoH.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136435414",
+   "name": "Diana",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Wholesale trade of motor vehicle parts and accessories"
+   ],
+   "isin": [],
+   "hq_city": "Blagoevgrad",
+   "hq": [
+    42.01194,
+    23.08972
+   ],
+   "website": "https://diana-ltd.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131136895",
+   "name": "Dimitrov",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of other outerwear"
+   ],
+   "isin": [],
+   "hq_city": "Pleven",
+   "hq": [
+    43.41319,
+    24.61692
+   ],
+   "website": "http://dimitrov-factory.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139823060",
+   "name": "DS Smith Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of corrugated paper and paperboard and of containers of paper and paperboard"
+   ],
+   "isin": [],
+   "hq_city": "Pazardzhik",
+   "hq": [
+    42.19348,
+    24.33275
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5206146",
+   "name": "DSK Bank",
+   "cc": "bg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.dskbank.bg/",
+   "enwiki": "https://en.wikipedia.org/wiki/DSK_Bank",
+   "logo_file": "DSK Bank logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132717302",
+   "name": "Dunarit",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Fabrication d'armes et de munitions"
+   ],
+   "isin": [],
+   "hq_city": "Ruse",
+   "hq": [
+    43.84453,
+    25.95391
+   ],
+   "website": "https://www.dunarit.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5206996",
+   "name": "DZI",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.dzi.bg",
+   "enwiki": "https://en.wikipedia.org/wiki/DZI_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q122204100",
+   "name": "E. Miroglio",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "weaving of textiles"
+   ],
+   "isin": [],
+   "hq_city": "Sliven",
+   "hq": [
+    42.67815,
+    26.32596
+   ],
+   "website": "http://www.emiroglio.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111762111",
+   "name": "EasyCredit",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "other credit granting"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.easycredit.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12279603",
+   "name": "Econt",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ruse",
+   "hq": [
+    43.84453,
+    25.95391
+   ],
+   "website": "https://www.econt.com/",
+   "logo_file": "EcontLogo1.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5348116",
+   "name": "Egmont Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://egmontbulgaria.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Egmont_Bulgaria",
+   "listed": false
+  },
+  {
+   "qid": "Q12279631",
+   "name": "Elatzite-Med",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Mining of other non-ferrous metal ores"
+   ],
+   "isin": [],
+   "hq_city": "Mirkovo",
+   "hq": [
+    42.69763,
+    23.99202
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12279650",
+   "name": "Electricity System Operator",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power transmission"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.eso.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61140077",
+   "name": "Elektrohold Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q130214480",
+   "name": "Elektrorazpredelenie Yug",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power distribution"
+   ],
+   "isin": [],
+   "hq_city": "Plovdiv",
+   "hq": [
+    42.14209,
+    24.74145
+   ],
+   "website": "https://www.elyug.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104831094",
+   "name": "Elektrorazpredelitelni mrezhi Zapad",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://ermzapad.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q102126460",
+   "name": "EnduroSat",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "aerospace engineering"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.endurosat.com",
+   "enwiki": "https://en.wikipedia.org/wiki/EnduroSat",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137371440",
+   "name": "Energo-Pro Prodazhbi",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "trade of electricity"
+   ],
+   "isin": [],
+   "hq_city": "Varna",
+   "hq": [
+    43.21137,
+    27.91108
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q81813762",
+   "name": "Enterprise Services Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Business Park Sofia",
+   "hq": [
+    42.62556,
+    23.37583
+   ],
+   "logo_file": "DXC Technology logo (pre-2021).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5384771",
+   "name": "ERA",
+   "cc": "bg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://www.erabooks.net/",
+   "enwiki": "https://en.wikipedia.org/wiki/Era_(publisher)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135000931",
+   "name": "Euro Games Technology",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of games and toys"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.egt.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20498243",
+   "name": "EVN",
+   "cc": "bg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.evn.bg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139997536",
+   "name": "EVN Bulgaria Elektrosnabdyavane",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "trade of electricity"
+   ],
+   "isin": [],
+   "hq_city": "Plovdiv",
+   "hq": [
+    42.14209,
+    24.74145
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136995252",
+   "name": "Evrotrust",
+   "cc": "bg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "Computer facilities management activities"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://evrotrust.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Evrotrust",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61140834",
+   "name": "Fantastico",
+   "cc": "bg",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "retail sale in non-specialised stores with food, beverages or tobacco predominating"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.fantastico.bg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Fantastico_(supermarket_chain)",
+   "logo_file": "Fantastico Modern Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3367065",
+   "name": "First Investment Bank",
+   "cc": "bg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "other monetary intermediation"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.fibank.bg/en",
+   "enwiki": "https://en.wikipedia.org/wiki/First_Investment_Bank",
+   "logo_file": "First Investment Bank logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131135072",
+   "name": "Foundever Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Activities of call centres"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138299107",
+   "name": "Fraport Twin Star Airport Management",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Service activities incidental to air transportation"
+   ],
+   "isin": [],
+   "hq_city": "Varna",
+   "hq": [
+    43.21137,
+    27.91108
+   ],
+   "website": "https://www.fraport-bulgaria.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134931930",
+   "name": "G. M.",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of other organic basic chemicals"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://www.gm-bg.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138686005",
+   "name": "GAIANA Book and Art",
+   "cc": "bg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ruse",
+   "hq": [
+    43.84453,
+    25.95391
+   ],
+   "website": "https://gaiana-books.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5586669",
+   "name": "Gorna Arda Hydro Power Plant",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Gorna_Arda_Hydro_Power_Plant",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134620644",
+   "name": "Gotmar",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of plastic packing goods"
+   ],
+   "isin": [],
+   "hq_city": "Saedinenie",
+   "hq": [
+    42.27458,
+    24.54651
+   ],
+   "website": "https://www.gotmar.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59659281",
+   "name": "Gradus",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Stara Zagora",
+   "hq": [
+    42.42567,
+    25.6346
+   ],
+   "website": "http://gradus.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5592480",
+   "name": "Graffitti Studio",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://www.graffittistudio.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Graffiti_Studio",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135617073",
+   "name": "Grammer",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of other parts and accessories for motor vehicles"
+   ],
+   "isin": [],
+   "hq_city": "Trudovets",
+   "hq": [
+    42.91453,
+    23.83737
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134607852",
+   "name": "Hamberger Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of builders' ware of plastic"
+   ],
+   "isin": [],
+   "hq_city": "Sevlievo",
+   "hq": [
+    43.02074,
+    25.09447
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140620397",
+   "name": "Hanon Systems Plovdiv",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of other pumps and compressors"
+   ],
+   "isin": [],
+   "hq_city": "Stryama",
+   "hq": [
+    42.26074,
+    24.88191
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138602321",
+   "name": "Heidelberg Materials Devnya",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of cement"
+   ],
+   "isin": [],
+   "hq_city": "Devnya",
+   "hq": [
+    43.21803,
+    27.55802
+   ],
+   "website": "https://www.devnyacement.bg/",
+   "logo_file": "HeidelbergCement 2022 logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q50939904",
+   "name": "Hemus (publishing house)",
+   "cc": "bg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Hemus_(publishing_house)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135224469",
+   "name": "Hewlett-Packard Global Delivery Bulgaria Center",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Other information technology and computer service activities"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140367603",
+   "name": "Hus",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Fabrication de tubes, tuyaux, profilés creux et accessoires correspondants en acier"
+   ],
+   "isin": [],
+   "hq_city": "Plovdiv",
+   "hq": [
+    42.14209,
+    24.74145
+   ],
+   "website": "https://www.husltd.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124476959",
+   "name": "IBM Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Other information technology and computer service activities"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "logo_file": "IBM logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q76942736",
+   "name": "Ideal Standard - Vidima",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sevlievo",
+   "hq": [
+    43.02074,
+    25.09447
+   ],
+   "website": "https://www.idealstandard.bg/",
+   "logo_file": "Ideal Standard International.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139255191",
+   "name": "iGaming.com",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "affiliate marketing",
+    "online gambling"
+   ],
+   "isin": [],
+   "hq_city": "Vahrn",
+   "hq": [
+    46.74039,
+    11.63457
+   ],
+   "website": "https://igaming.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135001694",
+   "name": "Ingram Micro",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Other business support service activities n.e.c."
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "logo_file": "Ingram Micro logo new.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23048801",
+   "name": "Insa Oil",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of refined petroleum products"
+   ],
+   "isin": [],
+   "hq_city": "Rakovski",
+   "hq": [
+    42.28839,
+    24.96548
+   ],
+   "website": "https://www.insaoil.bg/bg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124329437",
+   "name": "Integrated Micro-Electronics Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Botevgrad",
+   "hq": [
+    42.90728,
+    23.79366
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138298850",
+   "name": "Intercom Group",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Wholesale of metals and metal ores"
+   ],
+   "isin": [],
+   "hq_city": "Varna",
+   "hq": [
+    43.21137,
+    27.91108
+   ],
+   "website": "https://intercomgroup.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q93449648",
+   "name": "International Asset Bank",
+   "cc": "bg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "other monetary intermediation"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.iabank.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110583516",
+   "name": "Investbank",
+   "cc": "bg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "other monetary intermediation"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://ibank.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12282497",
+   "name": "Kamenitza",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Plovdiv",
+   "hq": [
+    42.14209,
+    24.74145
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Kamenitza",
+   "logo_file": "Kamenitza logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135849785",
+   "name": "Kaolin",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "operation of gravel and sand pits; mining of clays and kaolin"
+   ],
+   "isin": [],
+   "hq_city": "Senovo",
+   "hq": [
+    43.64802,
+    26.36155
+   ],
+   "website": "https://www.kaolin.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q94675",
+   "name": "Karlsberg Bulgaria AD",
+   "cc": "bg",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "brewing industry"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "lei": "549300MM93X5THV8K719",
+   "enwiki": "https://en.wikipedia.org/wiki/Karlsberg_Bulgaria_AD",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60236401",
+   "name": "Kaufland Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail sale in non-specialised stores with food, beverages or tobacco predominating"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.kaufland.bg/",
+   "logo_file": "KL standard pos frei S sRGB.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q113350243",
+   "name": "KBC Bank Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "website": "https://www.kbcbank.bg/bg/individualni-klienti/",
+   "enwiki": "https://en.wikipedia.org/wiki/KBC_Bank_Bulgaria",
+   "logo_file": "Cvv.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3197219",
+   "name": "Kintex",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "service sector"
+   ],
+   "isin": [],
+   "website": "https://kintex.bg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kintex_(Bulgaria)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136339385",
+   "name": "Kremak",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "private security activities"
+   ],
+   "isin": [],
+   "hq_city": "Stara Zagora",
+   "hq": [
+    42.42567,
+    25.6346
+   ],
+   "website": "https://kremak.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18584605",
+   "name": "Kremona",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136799142",
+   "name": "Kronospan Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of veneer sheets and wood-based panels"
+   ],
+   "isin": [],
+   "hq_city": "Burgas",
+   "hq": [
+    42.50297,
+    27.47018
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141638271",
+   "name": "KT International",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "tobacco industry"
+   ],
+   "isin": [],
+   "hq_city": "Plovdiv",
+   "hq": [
+    42.14209,
+    24.74145
+   ],
+   "website": "https://ktinternational.eu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55577224",
+   "name": "Legia",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Rakovski",
+   "hq": [
+    42.28839,
+    24.96548
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q138501807",
+   "name": "Letera",
+   "cc": "bg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Plovdiv",
+   "hq": [
+    42.14209,
+    24.74145
+   ],
+   "website": "https://www.lettera.bg/bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108169047",
+   "name": "Lidl Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail sale in non-specialised stores with food, beverages or tobacco predominating"
+   ],
+   "isin": [],
+   "hq_city": "Ravno pole",
+   "hq": [
+    42.66639,
+    23.52637
+   ],
+   "website": "https://lidl.bg",
+   "logo_file": "Lidl-Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124423478",
+   "name": "Liebherr - Hausgeraete Marica",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Radinovo",
+   "hq": [
+    42.19362,
+    24.63857
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q138606663",
+   "name": "Locus Publishing",
+   "cc": "bg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://locus-publishing.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133895159",
+   "name": "Lufthasa Technik Sofia",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "repair and maintenance of aircraft and spacecraft"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q901440",
+   "name": "LUKOIL Neftochim Burgas",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of refined petroleum products"
+   ],
+   "isin": [],
+   "hq_city": "Burgas",
+   "hq": [
+    42.50297,
+    27.47018
+   ],
+   "website": "http://neftochim.lukoil.com/ru",
+   "enwiki": "https://en.wikipedia.org/wiki/Lukoil_Neftohim_Burgas",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12285111",
+   "name": "Lukoil-Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "Wholesale of solid, liquid and gaseous fuels and related products"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://lukoil.bg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12285491",
+   "name": "M+S Hydraulic",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of fluid power equipment"
+   ],
+   "isin": [],
+   "hq_city": "Kazanlak",
+   "hq": [
+    42.61875,
+    25.39324
+   ],
+   "website": "https://www.ms-hydraulic.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12295921",
+   "name": "Maritsa East 2 TPP",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kovachevo",
+   "hq": [
+    42.23936,
+    26.07003
+   ],
+   "website": "http://www.tpp2.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q111850935",
+   "name": "Metro Cash & Carry Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.metro.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6850191",
+   "name": "Mikro'67",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Razgrad",
+   "hq": [
+    43.54089,
+    26.52882
+   ],
+   "website": "http://www.mikro67.com/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mikro%2767",
+   "listed": false
+  },
+  {
+   "qid": "Q12286816",
+   "name": "Mini Maritsa Iztok",
+   "cc": "bg",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "extraction de lignite"
+   ],
+   "isin": [],
+   "hq_city": "Radnevo",
+   "hq": [
+    42.29146,
+    25.93676
+   ],
+   "website": "http://www.marica-iztok.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q124663607",
+   "name": "Miramar film",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "motion picture, video and television programme production activities"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.miramarfilm.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6716408",
+   "name": "MKB Unionbank",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://www.unionbank.bg/",
+   "enwiki": "https://en.wikipedia.org/wiki/MKB_Unionbank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12289109",
+   "name": "Municipal Bank",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "other monetary intermediation"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.municipalbank.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27669963",
+   "name": "Narodna Kultura",
+   "cc": "bg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "logo_file": "Narodna-kulrura-logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16955362",
+   "name": "Navigation Maritime Bulgare",
+   "cc": "bg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "freight transport"
+   ],
+   "isin": [],
+   "hq_city": "Varna",
+   "hq": [
+    43.21137,
+    27.91108
+   ],
+   "website": "https://www.navbul.com/bg/",
+   "lei": "984500D3A1EF2A8C5A91",
+   "enwiki": "https://en.wikipedia.org/wiki/Navibulgar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12287911",
+   "name": "NEK EAD",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "trade of electricity"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.nek.bg",
+   "enwiki": "https://en.wikipedia.org/wiki/NEK_EAD",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135616987",
+   "name": "Neochim",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of fertilisers and nitrogen compounds"
+   ],
+   "isin": [],
+   "hq_city": "Dimitrovgrad",
+   "hq": [
+    42.05741,
+    25.58617
+   ],
+   "website": "https://www.neochim.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q98225196",
+   "name": "neosat",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.neosat.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Neosat",
+   "listed": false
+  },
+  {
+   "qid": "Q133864786",
+   "name": "Nestlé Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of cocoa, chocolate and sugar confectionery"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.nestle.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12288203",
+   "name": "Net Info AD",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135224111",
+   "name": "Nursan Otomotiv",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of electrical and electronic equipment for motor vehicles"
+   ],
+   "isin": [],
+   "hq_city": "Lyulyakovo",
+   "hq": [
+    42.87346,
+    27.07886
+   ],
+   "website": "https://www.nursanbulgaria.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q66477410",
+   "name": "Ocean Fisheries - Burgas",
+   "cc": "bg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Burgas",
+   "hq": [
+    42.50297,
+    27.47018
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Ocean_Fisheries_-_Burgas",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139997158",
+   "name": "Oliva",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of oils and fats"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7095072",
+   "name": "Ontotext",
+   "cc": "bg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "Semantic Web",
+    "graph database",
+    "knowledge graph",
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.ontotext.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Ontotext",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21400653",
+   "name": "Optix JSC",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Panagyurishte",
+   "hq": [
+    42.50262,
+    24.18024
+   ],
+   "website": "http://www.optixco.com/en/",
+   "listed": false
+  },
+  {
+   "qid": "Q12289125",
+   "name": "Overgas",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://www.overgas.bg/index.jsp",
+   "enwiki": "https://en.wikipedia.org/wiki/Overgas",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131599121",
+   "name": "Palfinger Produktionstechnik Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of fluid power equipment"
+   ],
+   "isin": [],
+   "hq_city": "Cherven bryag",
+   "hq": [
+    43.28063,
+    24.0833
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q24315",
+   "name": "Petrol AD",
+   "cc": "bg",
+   "types": [
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "retail sale of automotive fuel in specialised stores"
+   ],
+   "isin": [],
+   "hq_city": "Lovech",
+   "hq": [
+    43.13478,
+    24.71154
+   ],
+   "website": "https://www.petrol.bg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Petrol_AD",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q137371643",
+   "name": "Pharmnet",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Wholesale of pharmaceutical goods"
+   ],
+   "isin": [],
+   "hq_city": "Varna",
+   "hq": [
+    43.21137,
+    27.91108
+   ],
+   "website": "http://www.pharmnet.bg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125123748",
+   "name": "PIMK",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "freight transport by road and removal services"
+   ],
+   "isin": [],
+   "hq_city": "Markovo",
+   "hq": [
+    42.07029,
+    24.70509
+   ],
+   "website": "http://www.pimk-bg.eu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116833082",
+   "name": "Pirin-Tex",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "clothing industry"
+   ],
+   "isin": [],
+   "hq_city": "Gotse Delchev",
+   "hq": [
+    41.57368,
+    23.72908
+   ],
+   "website": "https://www.pirintex.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q134373647",
+   "name": "Plastchim - T",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of plastic plates, sheets, tubes and profiles"
+   ],
+   "isin": [],
+   "hq_city": "Tervel",
+   "hq": [
+    43.74858,
+    27.40648
+   ],
+   "website": "https://plastchim-t.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12290850",
+   "name": "Pleiad books",
+   "cc": "bg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.pleiadbooks.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2100057",
+   "name": "Pobeda",
+   "cc": "bg",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Burgas",
+   "hq": [
+    42.50297,
+    27.47018
+   ],
+   "website": "http://www.pobeda.bg",
+   "logo_file": "Pobeda Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139555636",
+   "name": "Polycomp",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Wholesale of computers, computer peripheral equipment and software"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://polycomp.bg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7234083",
+   "name": "Postbank",
+   "cc": "bg",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.postbank.bg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Bulgarian_Postbank",
+   "logo_file": "Postbank Bulgaria logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7236796",
+   "name": "Powernet",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://www.powernet.bg/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Powernet",
+   "logo_file": "Powernet logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136339973",
+   "name": "Praktiker Retail",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Retail sale of hardware, paints and glass in specialised stores"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://praktiker.bg/",
+   "logo_file": "Praktiker-logo-bg-2018.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7241651",
+   "name": "Pressclub Information Agency",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "news media"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://pianews.eu",
+   "enwiki": "https://en.wikipedia.org/wiki/Pressclub_Information_Agency",
+   "logo_file": "PIA Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7245881",
+   "name": "Prista Oil",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Ruse",
+   "hq": [
+    43.84453,
+    25.95391
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q122763238",
+   "name": "ProCredit Bank",
+   "cc": "bg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.procreditbank.bg/",
+   "logo_file": "Logo ProCredit Bank.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q19704377",
+   "name": "Prof. Marin Drinov Academic Publishing House",
+   "cc": "bg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q136645229",
+   "name": "Promet Stiil",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of basic iron and steel and of ferro-alloys"
+   ],
+   "isin": [],
+   "hq_city": "Debelt",
+   "hq": [
+    42.40212,
+    27.26037
+   ],
+   "website": "https://promet.metinvestholding.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7251125",
+   "name": "Prosveta Publishing House",
+   "cc": "bg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.prosveta.bg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Prosveta_Publishing_House",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131360207",
+   "name": "Register.bg",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q130214231",
+   "name": "ResultsCX Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Activities of call centres"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://resultscx.com/locations/bulgaria/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12292363",
+   "name": "RIVA",
+   "cc": "bg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.rivapublishers.com/",
+   "logo_file": "Riva2.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137886635",
+   "name": "Scalefocus",
+   "cc": "bg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "IT outsourcing industry",
+    "IT service",
+    "software engineering"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65224484",
+   "name": "SDI broker",
+   "cc": "bg",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.sdi.bg/",
+   "logo_file": "SDI Logo .png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3304193",
+   "name": "Selsun Blue",
+   "cc": "bg",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://advantis.bg",
+   "enwiki": "https://en.wikipedia.org/wiki/Selsun_Blue",
+   "listed": false
+  },
+  {
+   "qid": "Q25485094",
+   "name": "Sensata Technologies Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136644197",
+   "name": "Sevan",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Wholesale of grain, unmanufactured tobacco, seeds and animal feeds"
+   ],
+   "isin": [],
+   "hq_city": "Burgas",
+   "hq": [
+    42.50297,
+    27.47018
+   ],
+   "website": "https://sevan-bg.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7390285",
+   "name": "SIC",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Security_Insurance_Company",
+   "listed": false
+  },
+  {
+   "qid": "Q127615793",
+   "name": "SKF Bearings Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of bearings, gears, gearing and driving elements"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139540140",
+   "name": "Smart Organic",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of rusks and biscuits; manufacture of preserved pastry goods and cakes"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://smartorganic.eu/",
+   "logo_file": "Smart Organic logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141370981",
+   "name": "Socotab",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "tobacco industry"
+   ],
+   "isin": [],
+   "hq_city": "Radinovo",
+   "hq": [
+    42.19362,
+    24.63857
+   ],
+   "website": "http://www.socotab.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q234707",
+   "name": "Sofia Metro",
+   "cc": "bg",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.metropolitan.bg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Sofia_Metro",
+   "logo_file": "Sofia Metro Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133289514",
+   "name": "Sofiyska Voda",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "water collection, treatment and supply"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.sofiyskavoda.bg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12294143",
+   "name": "Solvay Sodi",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of other inorganic basic chemicals"
+   ],
+   "isin": [],
+   "hq_city": "Devnya",
+   "hq": [
+    43.21803,
+    27.55802
+   ],
+   "website": "https://www.solvay.com/bg/bulgaria/solvay-sodi",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30269298",
+   "name": "Sopharma",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://www.sopharma.bg/",
+   "logo_file": "Sopharma logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61851525",
+   "name": "SOT 161",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.sot.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131904817",
+   "name": "Speedy",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "other postal and courier activities"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.speedy.bg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136339460",
+   "name": "Standard Profil Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of other rubber products"
+   ],
+   "isin": [],
+   "hq_city": "Stara Zagora",
+   "hq": [
+    42.42567,
+    25.6346
+   ],
+   "website": "https://www.standardprofil.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135394408",
+   "name": "STARH",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "architectural activity"
+   ],
+   "isin": [],
+   "hq_city": "Varna",
+   "hq": [
+    43.21137,
+    27.91108
+   ],
+   "website": "https://www.starh.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q59579012",
+   "name": "State Company Radioactive Waste",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://dprao.bg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125216928",
+   "name": "State Consolidation Company",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "activities of holding companies"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://stateconsolidationcompany.bg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q133885711",
+   "name": "Stomana-Industry",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of basic iron and steel and of ferro-alloys"
+   ],
+   "isin": [],
+   "hq_city": "Pernik",
+   "hq": [
+    42.59983,
+    23.03081
+   ],
+   "website": "https://stomana.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q139564430",
+   "name": "Sun Foods",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of oils and fats"
+   ],
+   "isin": [],
+   "hq_city": "Balchik",
+   "hq": [
+    43.41017,
+    28.16615
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135849947",
+   "name": "Sunfoods Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "restaurants and mobile food service activities (NACE 56.1)"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://mcdonalds.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11304944",
+   "name": "Sunny Music",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q138865230",
+   "name": "Sviloza",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of pulp"
+   ],
+   "isin": [],
+   "hq_city": "Svishtov",
+   "hq": [
+    43.6113,
+    25.3569
+   ],
+   "website": "https://svilosa.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q64033983",
+   "name": "T Market",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail sale in non-specialised stores with food, beverages or tobacco predominating"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://tmarket.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30632901",
+   "name": "TBI Bank",
+   "cc": "bg",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://tbibank.bg",
+   "enwiki": "https://en.wikipedia.org/wiki/TBI_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q122244348",
+   "name": "Teklas - Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of other rubber products"
+   ],
+   "isin": [],
+   "hq_city": "Kardzhali",
+   "hq": [
+    41.64472,
+    25.37497
+   ],
+   "website": "https://teklas.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q125499812",
+   "name": "Telematic Interactive Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "gambling and betting activities"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://telematic.bg/",
+   "logo_file": "Telematic Interactive Bulgaria official logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106633046",
+   "name": "Telus International Europe",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q123066852",
+   "name": "Tesy",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Shumen",
+   "hq": [
+    43.27459,
+    26.93486
+   ],
+   "website": "https://tesy.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7708347",
+   "name": "Teximbank",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bank"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://www.teximbank.bg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Texim_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7809764",
+   "name": "Titan Machinery",
+   "cc": "bg",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq",
+     "ticker": "TITN"
+    }
+   ],
+   "industries": [
+    "agricultural technology",
+    "construction machinery industry"
+   ],
+   "isin": [
+    "US88830R1014"
+   ],
+   "hq_city": "West Fargo",
+   "hq": [
+    46.87167,
+    -96.895
+   ],
+   "website": "https://titanmachinery.ro",
+   "lei": "549300835ZM8G0BT5C94",
+   "enwiki": "https://en.wikipedia.org/wiki/Titan_Machinery",
+   "logo_file": "Titan-Machinery-Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q139997434",
+   "name": "Tobacco Trade",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Wholesale of tobacco products"
+   ],
+   "isin": [],
+   "hq_city": "Plovdiv",
+   "hq": [
+    42.14209,
+    24.74145
+   ],
+   "website": "http://tobaccotrade.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16957723",
+   "name": "Toplofikatsiya Ruse",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity generation"
+   ],
+   "isin": [],
+   "hq_city": "Ruse",
+   "hq": [
+    43.84453,
+    25.95391
+   ],
+   "website": "https://www.toplo-ruse.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Toplofikatsiya_Ruse",
+   "listed": false
+  },
+  {
+   "qid": "Q61116364",
+   "name": "Toplofikatsiya Sofia",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "steam and air conditioning supply"
+   ],
+   "isin": [],
+   "website": "https://www.toplo.bg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Toplofikatsiya_Sofia",
+   "listed": false
+  },
+  {
+   "qid": "Q12296848",
+   "name": "Tramkar",
+   "cc": "bg",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "rail vehicle manufacturer"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Tramkar",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7283808",
+   "name": "UBB*",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.kbcbank.bg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7884635",
+   "name": "UniCredit Bulbank",
+   "cc": "bg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "banking"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.unicreditbulbank.bg",
+   "enwiki": "https://en.wikipedia.org/wiki/UniCredit_Bulbank",
+   "logo_file": "Unicredit Bulbank logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7887555",
+   "name": "United Bulgarian Bank",
+   "cc": "bg",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.ubb.bg",
+   "enwiki": "https://en.wikipedia.org/wiki/United_Bulgarian_Bank",
+   "logo_file": "ОББ logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12274482",
+   "name": "Vakon",
+   "cc": "bg",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://www.vakon.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28110744",
+   "name": "Veleganov",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Plovdiv",
+   "hq": [
+    42.14209,
+    24.74145
+   ],
+   "website": "http://veleganov.com/site/bell.php?lang=bg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25476661",
+   "name": "VIP Security",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3656036",
+   "name": "VIS",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Vasil_Iliev_Security",
+   "listed": false
+  },
+  {
+   "qid": "Q7937522",
+   "name": "Vivacom",
+   "cc": "bg",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "wireless telecommunications activities"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.vivacom.bg",
+   "enwiki": "https://en.wikipedia.org/wiki/Vivacom",
+   "logo_file": "Vivacom logo 2021.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7907322",
+   "name": "VMZ Sopot",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "hq_city": "Sopot",
+   "hq": [
+    42.65391,
+    24.75502
+   ],
+   "website": "http://vmz.bg/bg/index.htm",
+   "enwiki": "https://en.wikipedia.org/wiki/VMZ_Sopot",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q64785053",
+   "name": "Vodosnabdyavane i kanalizatsiya - Vidin",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Vidin",
+   "hq": [
+    43.98869,
+    22.87406
+   ],
+   "website": "https://vik-vidin.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61140282",
+   "name": "Winbet",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://winbet.bg/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q8042487",
+   "name": "XS Software",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "video game development"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "http://xs-software.com",
+   "enwiki": "https://en.wikipedia.org/wiki/XS_Software",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131129878",
+   "name": "Yana",
+   "cc": "bg",
+   "types": [
+    "Q431289",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of other knitted and crocheted apparel"
+   ],
+   "isin": [],
+   "hq_city": "Burgas",
+   "hq": [
+    42.50297,
+    27.47018
+   ],
+   "website": "https://shop.yanabg.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q60153300",
+   "name": "Yazaki Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Yambol",
+   "hq": [
+    42.48242,
+    26.50375
+   ],
+   "logo_file": "Yazaki company logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q14915070",
+   "name": "Yettel Bulgaria",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Sofia",
+   "hq": [
+    42.69789,
+    23.32173
+   ],
+   "website": "https://www.yettel.bg/",
+   "enwiki": "https://en.wikipedia.org/wiki/Yettel_Bulgaria",
+   "logo_file": "Yettellimelogo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141638521",
+   "name": "Yuriy Gagarin",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of other articles of paper and paperboard"
+   ],
+   "isin": [],
+   "hq_city": "Plovdiv",
+   "hq": [
+    42.14209,
+    24.74145
+   ],
+   "website": "https://gagarin.eu",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q78142706",
+   "name": "Zadarma",
+   "cc": "bg",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Voice over IP",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "https://zadarma.com/en/",
+   "logo_file": "White-logo background 02.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135224198",
+   "name": "Zalli",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of underwear"
+   ],
+   "isin": [],
+   "hq_city": "Gabrovo",
+   "hq": [
+    42.87424,
+    25.31784
+   ],
+   "website": "https://www.zalli.bg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18584288",
+   "name": "КЦМ",
+   "cc": "bg",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Lead, zinc and tin production"
+   ],
+   "isin": [],
+   "hq_city": "Plovdiv",
+   "hq": [
+    42.14209,
+    24.74145
+   ],
+   "website": "https://kcm.bg/",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

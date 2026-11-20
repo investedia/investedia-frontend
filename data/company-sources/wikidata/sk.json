@@ -1,0 +1,3622 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "SK",
+ "count": 176,
+ "companies": [
+  {
+   "qid": "Q67197464",
+   "name": "101 Drogerie",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "drugstore"
+   ],
+   "isin": [],
+   "hq_city": "Senica",
+   "hq": [
+    48.68056,
+    17.36667
+   ],
+   "website": "https://101drogerie.sk/",
+   "logo_file": "101 Drogerie.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7237158",
+   "name": "365.bank",
+   "cc": "sk",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://365.bank/",
+   "lei": "315700PLTAXHBHZP5J02",
+   "enwiki": "https://en.wikipedia.org/wiki/365.bank",
+   "logo_file": "365.bank.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q21198091",
+   "name": "4ka",
+   "cc": "sk",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.4ka.sk/",
+   "logo_file": "4ka.png",
+   "listed": false
+  },
+  {
+   "qid": "Q42419868",
+   "name": "Agentúra pre riadenie dlhu a likvidity",
+   "cc": "sk",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "lei": "097900BHK00000087656",
+   "listed": false
+  },
+  {
+   "qid": "Q21598617",
+   "name": "Agrokomplex Nitra",
+   "cc": "sk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q3496545",
+   "name": "Air – Transport Europe",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Poprad",
+   "hq": [
+    49.05,
+    20.3
+   ],
+   "website": "http://www.ate.sk/",
+   "lei": "097900BGE00000045797",
+   "enwiki": "https://en.wikipedia.org/wiki/Air_%E2%80%93_Transport_Europe",
+   "logo_file": "Air Transport Europe Tupolev Tu-154M Osokin-1.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12762161",
+   "name": "Allianz - Slovenská poisťovňa",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "lei": "31570020000000001632",
+   "listed": false
+  },
+  {
+   "qid": "Q30297477",
+   "name": "ANTIK Telecom",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Košice",
+   "hq": [
+    48.71667,
+    21.25
+   ],
+   "website": "https://www.antik.sk/",
+   "logo_file": "Antik Telecom Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q142139",
+   "name": "Apollo",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of refined petroleum products"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q77876360",
+   "name": "Arca Investments",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.arcacapital.com/",
+   "lei": "315700JFNESZ07SBPK56",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12761997",
+   "name": "Armed Forces Academy",
+   "cc": "sk",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Demänová",
+   "hq": [
+    49.06291,
+    19.57573
+   ],
+   "website": "http://www.aos.sk/",
+   "lei": "097900BIKP0000174545",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q14687188",
+   "name": "Arriva Nitra",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "transport industry"
+   ],
+   "isin": [],
+   "hq_city": "Nitra",
+   "hq": [
+    48.31472,
+    18.0875
+   ],
+   "website": "https://arriva.sk/nitra/",
+   "listed": false
+  },
+  {
+   "qid": "Q16861704",
+   "name": "Arriva Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "passenger transport"
+   ],
+   "isin": [],
+   "hq_city": "Nitra",
+   "hq": [
+    48.31472,
+    18.0875
+   ],
+   "website": "https://arriva.sk/",
+   "listed": false
+  },
+  {
+   "qid": "Q61951398",
+   "name": "Artis Omnis",
+   "cc": "sk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://artisomnis.sk",
+   "listed": false
+  },
+  {
+   "qid": "Q48987803",
+   "name": "ATAK",
+   "cc": "sk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/ATAK_Sportswear",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12766203",
+   "name": "Benestra",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "lei": "097900BFCD0000009628",
+   "listed": false
+  },
+  {
+   "qid": "Q62562792",
+   "name": "BENU",
+   "cc": "sk",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmacy"
+   ],
+   "isin": [],
+   "website": "https://www.benu.eu",
+   "logo_file": "BENU Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12763237",
+   "name": "Biotika",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Banská Bystrica",
+   "hq": [
+    48.73528,
+    19.14528
+   ],
+   "website": "http://www.biotika.sk/",
+   "lei": "097900BGMP0000060091",
+   "logo_file": "Biotika.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q74603",
+   "name": "Bratislava Stock Exchange",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.bsse.sk",
+   "lei": "097900BIIX0000168239",
+   "enwiki": "https://en.wikipedia.org/wiki/Bratislava_Stock_Exchange",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q77749701",
+   "name": "Budamar Logistics",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.budamar.sk/",
+   "lei": "315700AKEDLU2D7JUY70",
+   "listed": false
+  },
+  {
+   "qid": "Q111194516",
+   "name": "Bytový podnik mesta Košice",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Košice",
+   "hq": [
+    48.71667,
+    21.25
+   ],
+   "website": "https://www.bpmk.sk/",
+   "logo_file": "Bytový podnik mesta Košice.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7537935",
+   "name": "Canal+ CZ/SK",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Luxembourg",
+   "hq": [
+    49.61139,
+    6.13
+   ],
+   "website": "https://nabidka.canalplus.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Canal%2B_CZ/SK",
+   "logo_file": "Logo Canal+ 1995.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18006764",
+   "name": "Central Union of Jewish Religious Communities in the Slovak Republic",
+   "cc": "sk",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://zidianaslovensku.sk",
+   "lei": "097900BIDM0000109082",
+   "listed": false
+  },
+  {
+   "qid": "Q5065603",
+   "name": "Cestné a Stavebné Mechanizmy Tisovec",
+   "cc": "sk",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dubnica nad Váhom",
+   "hq": [
+    48.9575,
+    18.16583
+   ],
+   "website": "http://www.ztsspecial.sk/",
+   "listed": false
+  },
+  {
+   "qid": "Q5153151",
+   "name": "Commodity Exchange Bratislava",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "http://www.kbb.sk",
+   "enwiki": "https://en.wikipedia.org/wiki/Commodity_Exchange_Bratislava",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q41629254",
+   "name": "COOP Jednota Slovensko",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.coop.sk/",
+   "enwiki": "https://en.wikipedia.org/wiki/COOP_Jednota",
+   "logo_file": "COOP Jednota Slovensko.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q77876025",
+   "name": "Dan - Slovakia Agrar",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "فيلكي ميدار",
+   "hq": [
+    47.85,
+    17.76667
+   ],
+   "lei": "315700D65L312F7KM744",
+   "listed": false
+  },
+  {
+   "qid": "Q24352512",
+   "name": "Datalan (Slovakia)",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.datalan.sk/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11774311",
+   "name": "Datart",
+   "cc": "sk",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.datart.cz",
+   "logo_file": "Datart - logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104776297",
+   "name": "Dedoles",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "clothing industry"
+   ],
+   "isin": [],
+   "hq_city": "Pezinok",
+   "hq": [
+    48.29194,
+    17.26611
+   ],
+   "website": "https://www.dedoles.sk/",
+   "logo_file": "Dedoles.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q104764187",
+   "name": "Deutsche Telekom IT Solutions Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "information and communications technology"
+   ],
+   "isin": [],
+   "hq_city": "Košice",
+   "hq": [
+    48.71667,
+    21.25
+   ],
+   "website": "https://www.deutschetelekomitsolutions.sk/",
+   "logo_file": "Telekom Logo 2013.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111599525",
+   "name": "DMD GROUP, a.s.",
+   "cc": "sk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Dubnica nad Váhom",
+   "hq": [
+    48.9575,
+    18.16583
+   ],
+   "website": "https://www.dmdgroup.sk/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5297357",
+   "name": "Doprastav",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.doprastav.sk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Doprastav",
+   "logo_file": "Doprastav logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q685601",
+   "name": "Dopravný podnik Bratislava",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "passenger transport"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "http://www.dpb.sk",
+   "enwiki": "https://en.wikipedia.org/wiki/Dopravn%C3%BD_podnik_Bratislava",
+   "logo_file": "DPB Logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13407156",
+   "name": "Dopravný podnik mesta Banská Bystrica",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "passenger transport"
+   ],
+   "isin": [],
+   "hq_city": "Banská Bystrica",
+   "hq": [
+    48.73528,
+    19.14528
+   ],
+   "website": "https://www.dpbb.sk/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2265496",
+   "name": "Dopravný podnik mesta Košice",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "passenger transport"
+   ],
+   "isin": [],
+   "hq_city": "Košice",
+   "hq": [
+    48.71667,
+    21.25
+   ],
+   "website": "https://www.dpmk.sk/",
+   "logo_file": "DPMK Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110270814",
+   "name": "Dopravný podnik mesta Martin",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "passenger transport"
+   ],
+   "isin": [],
+   "hq_city": "Martin",
+   "hq": [
+    49.06361,
+    18.92139
+   ],
+   "website": "https://www.dpmmartin.sk/index",
+   "listed": false
+  },
+  {
+   "qid": "Q13407157",
+   "name": "Dopravný podnik mesta Žiliny",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "transport industry"
+   ],
+   "isin": [],
+   "hq_city": "Žilina",
+   "hq": [
+    49.21667,
+    18.73333
+   ],
+   "website": "https://www.dpmz.sk/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18249619",
+   "name": "Dopravoprojekt",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q12765011",
+   "name": "Duslo",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Šaľa",
+   "hq": [
+    48.15,
+    17.88333
+   ],
+   "website": "https://www.duslo.sk/",
+   "lei": "31570020000000004542",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16520438",
+   "name": "East Slovak Water Company",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Košice",
+   "hq": [
+    48.71667,
+    21.25
+   ],
+   "website": "https://www.vodarne.eu/",
+   "lei": "213800KZBUKL7G5OPF59",
+   "logo_file": "Východoslovenská vodárenská spoločnosť Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12765224",
+   "name": "Ekumenická rada cirkví v SR",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "lei": "097900CAHC0000244855",
+   "listed": false
+  },
+  {
+   "qid": "Q1368761",
+   "name": "Energetika Slovensko",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry",
+    "gas industry"
+   ],
+   "isin": [],
+   "hq_city": "Košice",
+   "hq": [
+    48.71667,
+    21.25
+   ],
+   "website": "https://www.vse.sk/",
+   "lei": "097900BIBR0000116697",
+   "enwiki": "https://en.wikipedia.org/wiki/V%C3%BDchodoslovensk%C3%A1_energetika",
+   "logo_file": "Východoslovenská energetika logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q817209",
+   "name": "ESET",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.eset.com/",
+   "lei": "3157000BLLYH4H1SOJ29",
+   "enwiki": "https://en.wikipedia.org/wiki/ESET",
+   "logo_file": "ESET logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13408640",
+   "name": "eurobus",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "transport industry"
+   ],
+   "isin": [],
+   "hq_city": "Košice",
+   "hq": [
+    48.71667,
+    21.25
+   ],
+   "website": "https://www.eurobus.sk/",
+   "logo_file": "Eurobus Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13408692",
+   "name": "Eustream",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "http://www.eustream.sk",
+   "lei": "31570020000000003378",
+   "listed": false
+  },
+  {
+   "qid": "Q96136571",
+   "name": "Finax o.c.p.",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "lei": "097900BIBX0000131438",
+   "listed": false
+  },
+  {
+   "qid": "Q13222317",
+   "name": "First horse railway in Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q120967877",
+   "name": "Gardeon",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96130384",
+   "name": "Gevorkyan",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "powder metallurgy"
+   ],
+   "isin": [
+    "SK1000025322"
+   ],
+   "hq_city": "Vlkanová",
+   "hq": [
+    48.66944,
+    19.14722
+   ],
+   "website": "https://gevorkyan.eu/en/",
+   "lei": "097900BFM30000040096",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5513369",
+   "name": "GGB Bearing Technology",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "industrial manufacturing"
+   ],
+   "isin": [],
+   "hq_city": "Thorofare",
+   "hq": [
+    37.11056,
+    -76.565
+   ],
+   "website": "https://www.ggbearings.com/en",
+   "enwiki": "https://en.wikipedia.org/wiki/GGB_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13672744",
+   "name": "Go2Sky",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://go2sky.aero/",
+   "lei": "097900BFJD0000027417",
+   "enwiki": "https://en.wikipedia.org/wiki/Go2Sky",
+   "logo_file": "Go2sky logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65084832",
+   "name": "Grand Power",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "arms industry"
+   ],
+   "isin": [],
+   "hq_city": "Slovenská Ľupča",
+   "hq": [
+    48.7655,
+    19.2758
+   ],
+   "website": "https://grandpower.eu",
+   "enwiki": "https://en.wikipedia.org/wiki/Grand_Power",
+   "logo_file": "GP logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96140700",
+   "name": "GymBeam",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Košice",
+   "hq": [
+    48.71667,
+    21.25
+   ],
+   "website": "https://gymbeam.com/",
+   "lei": "097900CAEI0000234332",
+   "enwiki": "https://en.wikipedia.org/wiki/GymBeam",
+   "logo_file": "GymBeam.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16335856",
+   "name": "HB Reavis Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q871438",
+   "name": "Hungarian Social and Cultural Association of Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://csemadok.sk/",
+   "enwiki": "https://en.wikipedia.org/wiki/CSEMADOK",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27869492",
+   "name": "Indulona",
+   "cc": "sk",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "cosmetology"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q102542242",
+   "name": "Ingka Centres Slovensko",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "lei": "213800ZJQFPXALU81B49",
+   "enwiki": "https://en.wikipedia.org/wiki/INGKA_Centres",
+   "listed": false
+  },
+  {
+   "qid": "Q25441778",
+   "name": "InLogic Software",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "video game industry"
+   ],
+   "isin": [],
+   "hq_city": "Banská Bystrica",
+   "hq": [
+    48.73528,
+    19.14528
+   ],
+   "website": "http://www.inlogic.sk",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4241634",
+   "name": "Integrated Transport System in the Bratislava Region",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.idsbk.sk",
+   "listed": false
+  },
+  {
+   "qid": "Q24237205",
+   "name": "Istrochem",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q20440003",
+   "name": "Kalligram",
+   "cc": "sk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q11738674",
+   "name": "Kelly's Bicycles",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.kellys-bicycles.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1333043",
+   "name": "Kia Motors Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automobile manufacturer"
+   ],
+   "isin": [],
+   "hq_city": "Teplička nad Váhom",
+   "hq": [
+    49.22389,
+    18.79917
+   ],
+   "website": "http://www.kia.sk/index.php",
+   "lei": "097900BILI0000178136",
+   "logo_file": "KIA MOTORS Slovakia.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116493917",
+   "name": "Kia Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q121259885",
+   "name": "Kickresume",
+   "cc": "sk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://kickresume.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12768763",
+   "name": "Kinex Bearings",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bytča",
+   "hq": [
+    49.22278,
+    18.55806
+   ],
+   "lei": "097900BHKR0000084484",
+   "listed": false
+  },
+  {
+   "qid": "Q13425071",
+   "name": "Kolégium Antona Neuwirtha",
+   "cc": "sk",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ivanka pri Dunaji",
+   "hq": [
+    48.18333,
+    17.26667
+   ],
+   "website": "http://www.kolegium.org/",
+   "lei": "097900BHM30000112525",
+   "listed": false
+  },
+  {
+   "qid": "Q96129040",
+   "name": "KOMUNÁLNA poisťovňa",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance industry"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.kpas.sk/",
+   "lei": "097900BFDR0000022084",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q121259890",
+   "name": "Kondela",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "website": "https://www.kondela.cz/",
+   "logo_file": "Logo Kondela.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q77083433",
+   "name": "Konstrukta Defence",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ilava",
+   "hq": [
+    48.99944,
+    18.23611
+   ],
+   "website": "https://kotadef.sk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Kon%C5%A1trukta_%E2%80%93_Defence",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96129857",
+   "name": "KOSIT",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Košice",
+   "hq": [
+    48.71667,
+    21.25
+   ],
+   "website": "https://www.kosit.sk/",
+   "lei": "097900BFHQ0000030469",
+   "logo_file": "Kosit Košice.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96136548",
+   "name": "Košice heating plant",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Košice",
+   "hq": [
+    48.71667,
+    21.25
+   ],
+   "website": "http://teko.sk",
+   "lei": "097900BIBW0000129838",
+   "logo_file": "Tepláreň Košice logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12763574",
+   "name": "Kúpele Brusno",
+   "cc": "sk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12770292",
+   "name": "LESY Slovenskej republiky",
+   "cc": "sk",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "forestry"
+   ],
+   "isin": [],
+   "hq_city": "Banská Bystrica",
+   "hq": [
+    48.73528,
+    19.14528
+   ],
+   "website": "http://www.lesy.sk/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12770300",
+   "name": "Letové prevádzkové služby Slovenskej republiky",
+   "cc": "sk",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q116871093",
+   "name": "Lviv Croissants",
+   "cc": "sk",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://lviv-croissants.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Lviv_Croissants",
+   "logo_file": "Моту.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q15089074",
+   "name": "Martinus",
+   "cc": "sk",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Martin",
+   "hq": [
+    49.06361,
+    18.92139
+   ],
+   "website": "https://www.martinus.sk/",
+   "listed": false
+  },
+  {
+   "qid": "Q12770687",
+   "name": "METRO Cash & Carry Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Ivanka pri Dunaji",
+   "hq": [
+    48.18333,
+    17.26667
+   ],
+   "website": "https://www.metro.sk/",
+   "lei": "3157007OFE3NBJ9D4G85",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20937930",
+   "name": "Minerfin",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "http://www.minerfin.sk/",
+   "lei": "097900BJMQ0000221776",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108169341",
+   "name": "Mobis Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Gbeľany",
+   "hq": [
+    49.21389,
+    18.84722
+   ],
+   "lei": "254900USP7N509Y86B85",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12771915",
+   "name": "Mondi SCP",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ružomberok",
+   "hq": [
+    49.07861,
+    19.30833
+   ],
+   "website": "http://www.mondigroup.com/sk/desktopdefault.aspx/tabid-511/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116817206",
+   "name": "msg life Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://msg-life.sk/",
+   "lei": "529900L74PJ5IDZ7DT05",
+   "logo_file": "Msg systems Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30297569",
+   "name": "MSM Group",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "defence industry"
+   ],
+   "isin": [],
+   "hq_city": "Dubnica nad Váhom",
+   "hq": [
+    48.9575,
+    18.16583
+   ],
+   "website": "http://www.msm.sk/en/",
+   "lei": "097900BFHY0000030077",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q114425580",
+   "name": "Muziker.com",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "e-commerce",
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.muziker.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12772537",
+   "name": "N I K É",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.nike.sk/",
+   "lei": "315700FZQCGHRNB72207",
+   "enwiki": "https://en.wikipedia.org/wiki/Nik%C3%A9_(bookmaker)",
+   "logo_file": "Niké logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12772242",
+   "name": "NAFTA",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "extraction of crude petroleum and natural gas",
+    "gas industry",
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.nafta.sk/en",
+   "lei": "31570020000000004736",
+   "listed": false
+  },
+  {
+   "qid": "Q105096571",
+   "name": "Ness Košice",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "information technology"
+   ],
+   "isin": [],
+   "hq_city": "Košice",
+   "hq": [
+    48.71667,
+    21.25
+   ],
+   "website": "https://www.ness.com/kosice/",
+   "logo_file": "Ness Košice logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2437491",
+   "name": "News Agency of the Slovak Republic",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "news agency"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "http://www.tasr.sk",
+   "enwiki": "https://en.wikipedia.org/wiki/News_Agency_of_the_Slovak_Republic",
+   "logo_file": "TASR logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96139768",
+   "name": "News and Media Holding",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "lei": "097900BJIG0000206752",
+   "listed": false
+  },
+  {
+   "qid": "Q2092134",
+   "name": "Nippon Steel Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "iron and steel industry"
+   ],
+   "isin": [],
+   "hq_city": "Košice",
+   "hq": [
+    48.71667,
+    21.25
+   ],
+   "website": "https://www.sk.nipponsteel.com/en/",
+   "lei": "DLW6DM0GV5KUNK1CX084",
+   "enwiki": "https://en.wikipedia.org/wiki/Nippon_Steel_Slovakia",
+   "logo_file": "Nippon Steel Slovakia logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97311199",
+   "name": "Novesta",
+   "cc": "sk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q12772718",
+   "name": "Národná diaľničná spoločnosť",
+   "cc": "sk",
+   "types": [
+    "Q270791",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public service",
+    "road construction"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://ndsas.sk/",
+   "lei": "097900BIBS0000114708",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1159252",
+   "name": "O2 Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "retail",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.o2.sk",
+   "enwiki": "https://en.wikipedia.org/wiki/O2_Slovakia",
+   "logo_file": "O2 Logo 2024.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q14788907",
+   "name": "OMS Lighting",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "lighting"
+   ],
+   "isin": [],
+   "hq_city": "Senica",
+   "hq": [
+    48.68056,
+    17.36667
+   ],
+   "website": "http://www.omslighting.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/OMS_Lighting",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3198815",
+   "name": "Orange Slovensko",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "retail",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.orange.sk",
+   "enwiki": "https://en.wikipedia.org/wiki/Orange_Slovensko",
+   "logo_file": "Orange logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20439720",
+   "name": "OÁZIS",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://oazis.hu",
+   "listed": false
+  },
+  {
+   "qid": "Q1228010",
+   "name": "Pakši",
+   "cc": "sk",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "passenger transport"
+   ],
+   "isin": [],
+   "website": "http://paksi.szm.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12774628",
+   "name": "Penta Bank",
+   "cc": "sk",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.pentabank.sk/",
+   "lei": "31570020000000004154",
+   "logo_file": "Penta Bank logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q38655175",
+   "name": "Petit Press",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.petitpress.sk/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107723323",
+   "name": "PLANEO Elektro",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.planeo.cz/",
+   "logo_file": "Planeo Elektro.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55281156",
+   "name": "Postoj",
+   "cc": "sk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.postoj.sk",
+   "listed": false
+  },
+  {
+   "qid": "Q13538473",
+   "name": "Považské strojárne",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Považská Bystrica",
+   "hq": [
+    49.11667,
+    18.45
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q30297535",
+   "name": "PPS Group",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Detva",
+   "hq": [
+    48.56116,
+    19.41878
+   ],
+   "website": "http://www.ppsgroup.sk/",
+   "lei": "097900BJLH0000216641",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61355663",
+   "name": "Provident Financial",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q29054618",
+   "name": "Prvá stavebná sporiteľňa",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.pss.sk/",
+   "lei": "097900BEF50000000569",
+   "listed": false
+  },
+  {
+   "qid": "Q107986402",
+   "name": "Raiffeisen banka",
+   "cc": "sk",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.raiffeisen.sk/",
+   "logo_file": "Raiffeisen Bank 2023 logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q77877491",
+   "name": "Railtrans International",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "rail freight transport"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.railtrans.eu/",
+   "lei": "31570019HPAZVQH9LW90",
+   "listed": false
+  },
+  {
+   "qid": "Q7314955",
+   "name": "Resco",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "http://www.resco.net/",
+   "lei": "097900BFHJ0000030230",
+   "enwiki": "https://en.wikipedia.org/wiki/Resco",
+   "logo_file": "Resco-net-technology-on-the-move.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q41535842",
+   "name": "Ringier Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.ringier.sk/",
+   "listed": false
+  },
+  {
+   "qid": "Q3502503",
+   "name": "Saint Adalbert Association",
+   "cc": "sk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Trnava",
+   "hq": [
+    48.37775,
+    17.58621
+   ],
+   "website": "https://www.ssv.sk/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q69999346",
+   "name": "SATUR",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "tourism industry"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.satur.sk/",
+   "lei": "097900BGB00000041059",
+   "logo_file": "Satur-logo-2020.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132452285",
+   "name": "Severoslovenské vodárne a kanalizácie",
+   "cc": "sk",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "wastewater treatment",
+    "water distribution system"
+   ],
+   "isin": [],
+   "hq_city": "Žilina",
+   "hq": [
+    49.21667,
+    18.73333
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q19602696",
+   "name": "SkyToll",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q13539080",
+   "name": "Slovak Lines",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.slovaklines.sk/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/Slovak_Lines",
+   "listed": false
+  },
+  {
+   "qid": "Q1289498",
+   "name": "Slovak News Agency",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.sita.sk/",
+   "logo_file": "SITA logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q540733",
+   "name": "Slovak Telekom",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.telekom.sk/",
+   "lei": "213800YZUFO288ITHS60",
+   "enwiki": "https://en.wikipedia.org/wiki/Slovak_Telekom",
+   "logo_file": "Slovak Telekom Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1668416",
+   "name": "Slovak University of Agriculture",
+   "cc": "sk",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nitra",
+   "hq": [
+    48.31472,
+    18.0875
+   ],
+   "website": "http://www.uniag.sk/",
+   "lei": "097900BIGZ0000161451",
+   "enwiki": "https://en.wikipedia.org/wiki/Slovak_University_of_Agriculture",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q37813811",
+   "name": "Slovak Water Management Enterprise",
+   "cc": "sk",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Banská Štiavnica",
+   "hq": [
+    48.45861,
+    18.89306
+   ],
+   "website": "https://www.svp.sk/",
+   "listed": false
+  },
+  {
+   "qid": "Q59271157",
+   "name": "Slovaktual",
+   "cc": "sk",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Pravenec",
+   "hq": [
+    48.85528,
+    18.64944
+   ],
+   "website": "https://www.slovaktual.sk/",
+   "logo_file": "Slovaktual.png",
+   "listed": false
+  },
+  {
+   "qid": "Q7541681",
+   "name": "Slovalco",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "aluminium industry"
+   ],
+   "isin": [],
+   "hq_city": "Žiar nad Hronom",
+   "hq": [
+    48.59194,
+    18.85333
+   ],
+   "website": "http://www.slovalco.sk/",
+   "lei": "097900BEHZ0000001466",
+   "enwiki": "https://en.wikipedia.org/wiki/Slovalco",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12776243",
+   "name": "Slovenská autobusová doprava Trenčín",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "passenger transport"
+   ],
+   "isin": [],
+   "hq_city": "Trenčín",
+   "hq": [
+    48.89417,
+    18.04056
+   ],
+   "website": "https://www.sadtn.sk/",
+   "listed": false
+  },
+  {
+   "qid": "Q12776241",
+   "name": "Slovenská autobusová doprava Žilina",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport bus service"
+   ],
+   "isin": [],
+   "hq_city": "Žilina",
+   "hq": [
+    49.21667,
+    18.73333
+   ],
+   "website": "https://www.sadza.sk",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12776245",
+   "name": "Slovenská elektrizačná prenosová sústava",
+   "cc": "sk",
+   "types": [
+    "Q270791",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.sepsas.sk/",
+   "lei": "315700MJNYLDPRH74W32",
+   "enwiki": "https://en.wikipedia.org/wiki/Slovensk%C3%A1_elektriza%C4%8Dn%C3%A1_prenosov%C3%A1_s%C3%BAstava",
+   "logo_file": "SEPS Slovakia logo Slovak Transmission Operator logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12776232",
+   "name": "Slovenská Grafia",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.grafia.sk/",
+   "lei": "315700XF7E462DRL2946",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1191849",
+   "name": "Slovenská pošta",
+   "cc": "sk",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [
+    "mail"
+   ],
+   "isin": [],
+   "hq_city": "Banská Bystrica",
+   "hq": [
+    48.73528,
+    19.14528
+   ],
+   "website": "https://www.posta.sk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Slovensk%C3%A1_po%C5%A1ta",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7541907",
+   "name": "Slovenská sporiteľňa",
+   "cc": "sk",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.slsp.sk/en/personal",
+   "lei": "549300S2T3FWVVXWJI89",
+   "enwiki": "https://en.wikipedia.org/wiki/Slovensk%C3%A1_Sporite%C4%BE%C5%88a",
+   "logo_file": "Slovenska-sporitelna-logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96139252",
+   "name": "Slovenská výtvarná únia",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "lei": "097900BILQ0000178423",
+   "listed": false
+  },
+  {
+   "qid": "Q7541906",
+   "name": "Slovenská záručná a rozvojová banka",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "lei": "097900BFEJ0000024657",
+   "enwiki": "https://en.wikipedia.org/wiki/Slovak_Guarantee_and_Development_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12054860",
+   "name": "Slovenská železničná dopravná spoločnosť",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.szds.sk/",
+   "listed": false
+  },
+  {
+   "qid": "Q3559219",
+   "name": "Slovenské elektrárne",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.seas.sk/",
+   "lei": "549300U97W9KLUG0V074",
+   "enwiki": "https://en.wikipedia.org/wiki/Slovensk%C3%A9_elektr%C3%A1rne",
+   "logo_file": "Slovenské elektrárne.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q57303636",
+   "name": "Slovenské liečebné kúpele Piešťany",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Piešťany",
+   "hq": [
+    48.58333,
+    17.83333
+   ],
+   "lei": "097900CAKA0000097169",
+   "listed": false
+  },
+  {
+   "qid": "Q836281",
+   "name": "Slovenský plynárenský priemysel",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry",
+    "gas industry"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "http://www.spp.sk/",
+   "lei": "529900BJGD0X650NVB68",
+   "enwiki": "https://en.wikipedia.org/wiki/Slovensk%C3%BD_plyn%C3%A1rensk%C3%BD_priemysel",
+   "logo_file": "SPP logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1587563",
+   "name": "Slovnaft",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [
+    "CS0009004452"
+   ],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://slovnaft.sk/",
+   "lei": "213800SQ8HA3IZPO1G03",
+   "enwiki": "https://en.wikipedia.org/wiki/Slovnaft",
+   "logo_file": "Словнафт.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1327113",
+   "name": "Smartwings Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "lei": "097900BICW0000136869",
+   "enwiki": "https://en.wikipedia.org/wiki/Smartwings_Slovakia",
+   "logo_file": "Smartwings logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12775716",
+   "name": "SPP – distribúcia",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "http://www.spp-distribucia.sk/",
+   "lei": "213800AGL5LRVQNANS48",
+   "listed": false
+  },
+  {
+   "qid": "Q16517209",
+   "name": "ST. NICOLAUS",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Liptovský Mikuláš",
+   "hq": [
+    49.08111,
+    19.61806
+   ],
+   "lei": "3157003YN22BM87RL916",
+   "listed": false
+  },
+  {
+   "qid": "Q3552624",
+   "name": "Stellantis Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Trnava",
+   "hq": [
+    48.37775,
+    17.58621
+   ],
+   "website": "https://www.stellantis-slovakia.sk/",
+   "lei": "549300ZWJO84JL32RD62",
+   "enwiki": "https://en.wikipedia.org/wiki/Stellantis_Trnava_Plant",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16517554",
+   "name": "Stredoslovenská energetika",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "electricity supply company"
+   ],
+   "isin": [],
+   "hq_city": "Žilina",
+   "hq": [
+    49.21667,
+    18.73333
+   ],
+   "website": "https://www.sse.sk/",
+   "lei": "3157007B7A52MYN9TV39",
+   "enwiki": "https://en.wikipedia.org/wiki/Stredoslovensk%C3%A1_energetika",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13404010",
+   "name": "SWAN",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.swan.sk/",
+   "logo_file": "SWAN logo fullHD.pdf",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3979061",
+   "name": "Sygic",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.sygic.com",
+   "lei": "315700433AZC4BUWZ130",
+   "enwiki": "https://en.wikipedia.org/wiki/Sygic",
+   "logo_file": "Sygic logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1718069",
+   "name": "Tatra banka",
+   "cc": "sk",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.tatrabanka.sk/sk/personal/",
+   "lei": "3157002JBFAI478MD587",
+   "enwiki": "https://en.wikipedia.org/wiki/Tatra_Banka",
+   "logo_file": "Tatra banka logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15138276",
+   "name": "Tatran",
+   "cc": "sk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.slovtatran.sk/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16518120",
+   "name": "Tatravagónka",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Poprad",
+   "hq": [
+    49.05,
+    20.3
+   ],
+   "website": "http://www.tatravagonka.com",
+   "lei": "097900BIGI0000159665",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15966341",
+   "name": "Tatry Mountain Resorts",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Bratislava Stock Exchange",
+     "ticker": null
+    },
+    {
+     "exchange": "Prague Stock Exchange",
+     "ticker": null
+    },
+    {
+     "exchange": "Warsaw Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "SK1120010287"
+   ],
+   "hq_city": "Demänovská Dolina",
+   "hq": [
+    48.97028,
+    19.58194
+   ],
+   "website": "https://www.tmr.sk/",
+   "lei": "315700YHD1JR6VB1BA90",
+   "logo_file": "TMR logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q131823720",
+   "name": "Tesco mobile",
+   "cc": "sk",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://tescomobile.sk/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5123488",
+   "name": "The School of Management",
+   "cc": "sk",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Trenčín",
+   "hq": [
+    48.89417,
+    18.04056
+   ],
+   "website": "http://www.vsm.sk/en/",
+   "lei": "097900BEMQ0000006507",
+   "enwiki": "https://en.wikipedia.org/wiki/City_University_of_Seattle_in_Slovakia_(Vysok%C3%A1_%C5%A1kola_mana%C5%BEmentu)",
+   "listed": false
+  },
+  {
+   "qid": "Q12777543",
+   "name": "Ticketportal SK",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12777553",
+   "name": "TIPOS, národná lotériová spoločnosť",
+   "cc": "sk",
+   "types": [
+    "Q270791",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "lei": "097900BHML0000100392",
+   "listed": false
+  },
+  {
+   "qid": "Q15534035",
+   "name": "Tranoscius",
+   "cc": "sk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q4051712",
+   "name": "Transpetrol AS",
+   "cc": "sk",
+   "types": [
+    "Q270791",
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://en.transpetrol.sk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Transpetrol_AS",
+   "logo_file": "Transpetrol.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q63139142",
+   "name": "Turancar",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "transport industry"
+   ],
+   "isin": [],
+   "hq_city": "Nitra",
+   "hq": [
+    48.31472,
+    18.0875
+   ],
+   "website": "https://www.turancar.sk/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108126892",
+   "name": "UGO",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Krnov",
+   "hq": [
+    50.08967,
+    17.70391
+   ],
+   "website": "https://ugo.cz/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65249879",
+   "name": "UniCredit Bank Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "lei": "549300DTJ6YJGU3F5136",
+   "logo_file": "UniCredit Bank - LOGO.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q23015247",
+   "name": "Union poisťovňa",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.union.sk/",
+   "lei": "097900BFCN0000010981",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q42712112",
+   "name": "Union zdravotná poisťovňa",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.union.sk/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96140807",
+   "name": "vacuumlabs",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "lei": "097900CAFU0000238835",
+   "listed": false
+  },
+  {
+   "qid": "Q18250053",
+   "name": "VEDA",
+   "cc": "sk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://veda.sav.sk/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96131499",
+   "name": "VIPO",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Partizánske",
+   "hq": [
+    48.63333,
+    18.36667
+   ],
+   "lei": "097900BGMP0000061158",
+   "listed": false
+  },
+  {
+   "qid": "Q2532301",
+   "name": "Volkswagen Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://sk.volkswagen.sk/sk.html",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30285573",
+   "name": "Vuje (Slovakia)",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Trnava",
+   "hq": [
+    48.37775,
+    17.58621
+   ],
+   "website": "http://www.vuje.sk/en/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140068725",
+   "name": "Vydavateľstvo LÚČ",
+   "cc": "sk",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.luc.sk/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12778978",
+   "name": "Váhostav",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction industry"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q96136456",
+   "name": "Východoslovenská distribučná",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "hq_city": "Košice",
+   "hq": [
+    48.71667,
+    21.25
+   ],
+   "website": "https://www.vsds.sk/edso/domov",
+   "lei": "097900BIBM0000116748",
+   "logo_file": "Východoslovenská distribučná logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12778981",
+   "name": "Všeobecná úverová banka",
+   "cc": "sk",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.vub.sk",
+   "lei": "549300JB1P61FUTPEZ75",
+   "enwiki": "https://en.wikipedia.org/wiki/V%C5%A1eobecn%C3%A1_%C3%9Averov%C3%A1_Banka",
+   "logo_file": "VUB.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15139027",
+   "name": "Websupport",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "http://www.websupport.cz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16618290",
+   "name": "ZTS Martin",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Martin",
+   "hq": [
+    49.06361,
+    18.92139
+   ],
+   "logo_file": "ZTS Martin logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q246921",
+   "name": "Západoslovenská energetika",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public utility"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.zse.sk",
+   "lei": "315700FA4G1UK2XEQF20",
+   "enwiki": "https://en.wikipedia.org/wiki/Z%C3%A1padoslovensk%C3%A1_energetika",
+   "logo_file": "Západoslovenská energetika logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q105480893",
+   "name": "Závody 29. augusta",
+   "cc": "sk",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Partizánske",
+   "hq": [
+    48.63333,
+    18.36667
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1042747",
+   "name": "Šariš Brewery",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "فيلكي شاريش",
+   "hq": [
+    49.03833,
+    21.19167
+   ],
+   "website": "http://www.srdcomvychodniar.sk/",
+   "enwiki": "https://en.wikipedia.org/wiki/%C5%A0ari%C5%A1_Brewery",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15980348",
+   "name": "Ševt",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.sevt.sk/",
+   "logo_file": "Logo sevt.png",
+   "listed": false
+  },
+  {
+   "qid": "Q12781940",
+   "name": "Železiarne Podbrezová",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Manufacture of basic iron and steel and of ferro-alloys",
+    "metal industry"
+   ],
+   "isin": [],
+   "hq_city": "Podbrezová",
+   "hq": [
+    48.81028,
+    19.53889
+   ],
+   "website": "https://www.zelpo.sk",
+   "lei": "315700HVO0BL9BGJ4920",
+   "enwiki": "https://en.wikipedia.org/wiki/%C5%BDeleziarne_Podbrezov%C3%A1",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q393549",
+   "name": "Železničná spoločnosť Cargo Slovakia",
+   "cc": "sk",
+   "types": [
+    "Q270791",
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "rail freight transport"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "http://www.zscargo.sk/",
+   "lei": "097900BFB40000009256",
+   "enwiki": "https://en.wikipedia.org/wiki/%C5%BDelezni%C4%8Dn%C3%A1_spolo%C4%8Dnos%C5%A5_Cargo_Slovakia",
+   "logo_file": "ZSSK Cargo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q393557",
+   "name": "Železničná spoločnosť Slovensko",
+   "cc": "sk",
+   "types": [
+    "Q270791",
+    "Q4830453",
+    "Q6881511",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "passenger transport",
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Bratislava",
+   "hq": [
+    48.1517,
+    17.10931
+   ],
+   "website": "https://www.zssk.sk/",
+   "enwiki": "https://en.wikipedia.org/wiki/%C5%BDelezni%C4%8Dn%C3%A1_spolo%C4%8Dnos%C5%A5_Slovensko",
+   "logo_file": "Železničná spoločnosť Slovensko logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q77877230",
+   "name": "ŽOS Vrútky",
+   "cc": "sk",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of machinery and equipment"
+   ],
+   "isin": [],
+   "hq_city": "فورتكي",
+   "hq": [
+    49.11167,
+    18.92361
+   ],
+   "website": "https://www.zos-vrutky.sk/",
+   "lei": "315700X40GNCOUWJYR00",
+   "listed": false
+  },
+  {
+   "qid": "Q127258016",
+   "name": "ŽOS Zvolen",
+   "cc": "sk",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "manufacture of machinery and equipment"
+   ],
+   "isin": [],
+   "hq_city": "Zvolen",
+   "hq": [
+    48.57825,
+    19.12471
+   ],
+   "website": "http://www.zoszv.sk/",
+   "lei": "315700OVVDW5PAJ8QX20",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}

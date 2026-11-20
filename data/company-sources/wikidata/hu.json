@@ -1,0 +1,4522 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "HU",
+ "count": 239,
+ "companies": [
+  {
+   "qid": "Q56275694",
+   "name": "2Rule",
+   "cc": "hu",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://2rule.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/2Rule",
+   "listed": false
+  },
+  {
+   "qid": "Q108940967",
+   "name": "4iG",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q783794",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Budapest Stock Exchange",
+     "ticker": "4IG"
+    }
+   ],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.4ig.hu/",
+   "lei": "529900Z0H3HIEFLKSP77",
+   "enwiki": "https://en.wikipedia.org/wiki/4iG",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q131470354",
+   "name": "4th of December Wire Factory",
+   "cc": "hu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Miskolc",
+   "hq": [
+    48.1,
+    20.78333
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q28857407",
+   "name": "A-Company Filmed Entertainment",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "film industry"
+   ],
+   "isin": [],
+   "hq_city": "Berlin",
+   "hq": [
+    52.51667,
+    13.38333
+   ],
+   "website": "http://www.a-company-film.com",
+   "enwiki": "https://en.wikipedia.org/wiki/A-Company_Filmed_Entertainment",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q479079",
+   "name": "Ab Ovo",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q481733",
+   "name": "Accordia Kiadó",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65149717",
+   "name": "AD Plastik",
+   "cc": "hu",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Zagreb Stock Exchange",
+     "ticker": "ADPL"
+    }
+   ],
+   "industries": [
+    "automotive industry",
+    "fabrication d'autres équipements automobiles"
+   ],
+   "isin": [
+    "HRADPLRA0006"
+   ],
+   "hq_city": "Solin",
+   "hq": [
+    43.53167,
+    16.49472
+   ],
+   "website": "https://www.adplastik.hr/",
+   "enwiki": "https://en.wikipedia.org/wiki/AD_Plastik",
+   "listed": true
+  },
+  {
+   "qid": "Q16518983",
+   "name": "Adolf Deichsel's Steel Wire Factory",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Miskolc",
+   "hq": [
+    48.1,
+    20.78333
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q554529",
+   "name": "Ajka Alumina Plant",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ajka",
+   "hq": [
+    47.10056,
+    17.55222
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61299364",
+   "name": "Aldi Magyarország",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "trade"
+   ],
+   "isin": [],
+   "hq_city": "Biatorbágy",
+   "hq": [
+    47.47417,
+    18.82361
+   ],
+   "website": "https://www.aldi.hu/",
+   "logo_file": "Aldi Süd 2017 logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q55067263",
+   "name": "Alfa Busz",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Székesfehérvár",
+   "hq": [
+    47.19102,
+    18.41081
+   ],
+   "website": "http://www.alfabusz.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q651569",
+   "name": "Alkaloida Chemical Company",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q5089936",
+   "name": "AMC Networks International Central Europe",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.amcnetworks.com/amcni",
+   "enwiki": "https://en.wikipedia.org/wiki/AMC_Networks_International_Central_and_Northern_Europe",
+   "logo_file": "AMC Networks International.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12813588",
+   "name": "Animus Kiadó",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.animus.hu/",
+   "listed": false
+  },
+  {
+   "qid": "Q9162479",
+   "name": "ARC buses in Hungary",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Szigethalom",
+   "hq": [
+    47.32278,
+    19.01278
+   ],
+   "website": "http://autorad.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56415347",
+   "name": "Arcanum Adatbázis",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.arcanum.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Arcanum_(company)",
+   "logo_file": "Arcanum logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q30263078",
+   "name": "Argumentum Kiadó (Hungary)",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.argumentum.net/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q780101",
+   "name": "Athenaeum Nyomda",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q780370",
+   "name": "Atlantic Press Kiadó",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.atlanticpress.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q84668943",
+   "name": "Auchan Magyarország Kft.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q781027",
+   "name": "Audi Hungaria",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "automotive industry"
+   ],
+   "isin": [],
+   "hq_city": "Győr",
+   "hq": [
+    47.68417,
+    17.63444
+   ],
+   "website": "https://audi.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Audi_Hungaria",
+   "logo_file": "Audi-Logo 2016.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16516319",
+   "name": "AXA Bank Hungary",
+   "cc": "hu",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q794939",
+   "name": "B&B Hotels",
+   "cc": "hu",
+   "types": [
+    "Q1631129",
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "hotel"
+   ],
+   "isin": [],
+   "website": "https://www.hotel-bb.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/B%26B_Hotels",
+   "logo_file": "B&B Hotels Logo (New).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4034810",
+   "name": "Balabit",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "computer network",
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.balabit.com",
+   "logo_file": "Balabit logo 01.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131762633",
+   "name": "Balaton",
+   "cc": "hu",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q36048688",
+   "name": "Balatonboglári Borgazdasági Ltd.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "winemaking"
+   ],
+   "isin": [],
+   "hq_city": "Balatonboglár",
+   "hq": [
+    46.77856,
+    17.65494
+   ],
+   "website": "http://bb.hu",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q526171",
+   "name": "Beholder Kft.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.beholder.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Beholder_Kft.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q62562792",
+   "name": "BENU",
+   "cc": "hu",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmacy"
+   ],
+   "isin": [],
+   "website": "https://www.benu.eu",
+   "logo_file": "BENU Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136875399",
+   "name": "BIF Nyrt.",
+   "cc": "hu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "HU0000007446"
+   ],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://bif.hu/",
+   "listed": true
+  },
+  {
+   "qid": "Q111051661",
+   "name": "Biogal Pharmaceutical",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q745664",
+   "name": "BKV",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.bkv.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Budapesti_K%C3%B6zleked%C3%A9si_Zrt.",
+   "logo_file": "Bkv.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61116076",
+   "name": "Bonbonetti Choco",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1502941",
+   "name": "Borsod Brewery",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Bőcs",
+   "hq": [
+    48.04316,
+    20.96427
+   ],
+   "website": "http://www.borsodisorgyar.hu/hu-hu",
+   "enwiki": "https://en.wikipedia.org/wiki/Borsod_Brewery",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4946671",
+   "name": "BorsodChem",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Kazincbarcika",
+   "hq": [
+    48.25306,
+    20.64556
+   ],
+   "website": "http://www.borsodchem-group.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/BorsodChem",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97196031",
+   "name": "BRG",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications engineering"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q118725712",
+   "name": "Budapest Water Works",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.vizmuvek.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q856905",
+   "name": "CadLine",
+   "cc": "hu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16518381",
+   "name": "Cartographia",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://cartographia.hu",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28723010",
+   "name": "Case Solvers",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Case_Solvers",
+   "listed": false
+  },
+  {
+   "qid": "Q25452293",
+   "name": "Central Eastern European Gas Exchange Ltd",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.ceegex.com",
+   "listed": false
+  },
+  {
+   "qid": "Q59347449",
+   "name": "Central European Press and Media Foundation",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Balatonföldvár",
+   "hq": [
+    46.85469,
+    17.88797
+   ],
+   "website": "https://cepmf.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Central_European_Press_and_Media_Foundation",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56378879",
+   "name": "Central Médiacsoport Zrt.",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://centralmediacsoport.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q839566",
+   "name": "CIB Bank",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.cib.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/CIB_Bank",
+   "logo_file": "CIB Bank logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q869231",
+   "name": "Corvina Kiadó",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.corvinakiado.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132573113",
+   "name": "Corvinus International Investment Ltd.",
+   "cc": "hu",
+   "types": [
+    "Q270791",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.corvinus.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Corvinus_International_Investment_Ltd.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q126363633",
+   "name": "CORWELL Ltd.",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dunakeszi",
+   "hq": [
+    47.62972,
+    19.13806
+   ],
+   "website": "https://www.corwell.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q122775553",
+   "name": "Cytrox",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "cyber intelligence",
+    "cyberwarfare"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Cytrox",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q722516",
+   "name": "Danubius Hotels Group",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "hospitality industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.danubiushotels.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Danubius_Hotels_Group",
+   "logo_file": "Danubius Hotels Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q901908",
+   "name": "Danuvia",
+   "cc": "hu",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "motorcycle industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q65218311",
+   "name": "Das WeltAuto (Hungary)",
+   "cc": "hu",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Hungary",
+   "hq": [
+    47.0,
+    19.0
+   ],
+   "website": "https://www.dasweltauto.hu/",
+   "listed": false
+  },
+  {
+   "qid": "Q55639530",
+   "name": "Diego (store)",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Dabas",
+   "hq": [
+    47.18333,
+    19.31667
+   ],
+   "website": "https://diego.ro/",
+   "enwiki": "https://en.wikipedia.org/wiki/Diego_(store)",
+   "logo_file": "Diego logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q905304",
+   "name": "Digic Pictures",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.digicpictures.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Digic_Pictures",
+   "logo_file": "Digic Pictures Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140082116",
+   "name": "Digital Civil Circles",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest District XIII",
+   "hq": [
+    47.5364,
+    19.0719
+   ],
+   "website": "https://dpkor.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q900888",
+   "name": "DMSONE",
+   "cc": "hu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://dmsone.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q140069588",
+   "name": "Dorko",
+   "cc": "hu",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "fashion"
+   ],
+   "isin": [],
+   "website": "https://dorko.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q909185",
+   "name": "Dorog Power Plant",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q130488689",
+   "name": "Duna Aszfalt",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "construction"
+   ],
+   "isin": [],
+   "website": "https://www.dunagroup.hu/",
+   "listed": false
+  },
+  {
+   "qid": "Q115167185",
+   "name": "Duna House",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://dh.hu/",
+   "lei": "529900H88CH9J67U0764",
+   "listed": false
+  },
+  {
+   "qid": "Q834350",
+   "name": "Dunakeszi Járműjavító",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rolling stock industry"
+   ],
+   "isin": [],
+   "hq_city": "Dunakeszi",
+   "hq": [
+    47.62972,
+    19.13806
+   ],
+   "website": "https://www.djj.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q911325",
+   "name": "Dunaújváros Iron and Steel Plant",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Dunaújváros",
+   "hq": [
+    46.98333,
+    18.91667
+   ],
+   "website": "http://www.isd-dunaferr.hu/en",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q987323",
+   "name": "E.ON Hungária",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.eon.hu/",
+   "logo_file": "EON Hungária logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q56411802",
+   "name": "Editio Musica Budapest",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.emb.hu",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q976053",
+   "name": "Egis Pharmaceuticals",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.egis.hu/",
+   "logo_file": "Logo of EGIS.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q48605734",
+   "name": "Egyesült Vegyiművek",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "chemical industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest District XVII",
+   "hq": [
+    47.48028,
+    19.26667
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q988738",
+   "name": "EKM factory, Budapest",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q20439183",
+   "name": "Electric Supply of Northern Hungary",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Miskolc",
+   "hq": [
+    48.1,
+    20.78333
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q851145",
+   "name": "ELMŰ",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "ELMŰ head office",
+   "hq": [
+    47.52415,
+    19.06292
+   ],
+   "website": "https://elmu.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q987379",
+   "name": "ELTE Origo Language Center",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest District VIII",
+   "hq": [
+    47.48919,
+    19.07012
+   ],
+   "website": "https://www.onyc.hu",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5371050",
+   "name": "Emfesz",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.emfesz.hu",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q987400",
+   "name": "ERBE",
+   "cc": "hu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy industry"
+   ],
+   "isin": [],
+   "website": "http://www.erbe.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15543364",
+   "name": "Erste Bank Hungary",
+   "cc": "hu",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Europe Tower",
+   "hq": [
+    47.53694,
+    19.06028
+   ],
+   "website": "https://erstebank.hu/",
+   "logo_file": "Erste Logo 2023.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q991252",
+   "name": "Escalion",
+   "cc": "hu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q221877",
+   "name": "Eurocom",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "freight transport"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q27914719",
+   "name": "ExperiDance Production",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65218688",
+   "name": "Fashion Street, Budapest",
+   "cc": "hu",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://fashionstreet.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56360726",
+   "name": "Felföldi Édességgyártó Kft.",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Debrecen",
+   "hq": [
+    47.53,
+    21.63917
+   ],
+   "website": "http://www.felfoldi.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1001144",
+   "name": "FiberNet",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q119149757",
+   "name": "FKF Private Ltd.",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.fkf.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1003020",
+   "name": "Fornetti",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food retail sector",
+    "gastronomy"
+   ],
+   "isin": [],
+   "website": "https://www.fornetti.hu",
+   "enwiki": "https://en.wikipedia.org/wiki/Fornetti",
+   "logo_file": "Logo-2014-kicsi.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1003577",
+   "name": "Franklin Irodalmi és Nyomdai Rt.",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q110625531",
+   "name": "Fővárosi Csatornázási Művek",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.fcsm.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1008060",
+   "name": "Ganz Transelektro",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "machine factory"
+   ],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q25457431",
+   "name": "Ganz Villamossági Művek",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q630125",
+   "name": "Gedeon Richter Ltd.",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Budapest Stock Exchange",
+     "ticker": "HU0000123096"
+    }
+   ],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [
+    "HU0000123096"
+   ],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.richter.hu/en/Pages/CEOWelcome.aspx#about",
+   "enwiki": "https://en.wikipedia.org/wiki/Gedeon_Richter_(company)",
+   "logo_file": "RG logo 2 ENG.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q16519988",
+   "name": "Generali Biztosító",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q71819175",
+   "name": "Gentherm Hungary Kft.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Pilisszentiván",
+   "hq": [
+    47.61667,
+    18.9
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q101552347",
+   "name": "Gizella Mill",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "milling industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q1011822",
+   "name": "Gondolat Publishing",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.gondolatkiado.hu/",
+   "listed": false
+  },
+  {
+   "qid": "Q1027786",
+   "name": "Graboplast Zrt.",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Győr",
+   "hq": [
+    47.68417,
+    17.63444
+   ],
+   "website": "https://graboplast.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5598065",
+   "name": "Gravity R&D",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "software industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://gravityrd.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Gravity_R%26D",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15411559",
+   "name": "Gránit Bank",
+   "cc": "hu",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://granitbank.hu/",
+   "listed": false
+  },
+  {
+   "qid": "Q5625687",
+   "name": "Győri Keksz",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Székesfehérvár",
+   "hq": [
+    47.19102,
+    18.41081
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Gy%C5%91ri_Keksz",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1161952",
+   "name": "Helikon Kiadó",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://helikon.libricsoport.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107464321",
+   "name": "Hell Energy Hungary",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.hellenergy.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q653530",
+   "name": "Herend Porcelain Manufactory",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Herend",
+   "hq": [
+    47.1325,
+    17.75111
+   ],
+   "website": "http://herend.com/hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Herend_Porcelain_Manufactory",
+   "logo_file": "Herend logo 1.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1036441",
+   "name": "Hilltop Neszmély",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "winemaking"
+   ],
+   "isin": [],
+   "website": "http://www.hilltop.hu",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q464983",
+   "name": "History of metallury in Diósgyőr",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q97918934",
+   "name": "HMR Music Kft.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.hammerworld.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20439705",
+   "name": "Hofherr-Schrantz-Clayton-Shuttleworth Magyar Gépgyári Művek Rt.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111422737",
+   "name": "Hungarian Central Mutual Credit Institute",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q31092305",
+   "name": "Hungarian Geological Society",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://foldtan.hu/hu",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15283333",
+   "name": "Hungarian Investment Promotion Agency",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "investment"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://hipa.hu",
+   "listed": false
+  },
+  {
+   "qid": "Q1162434",
+   "name": "Hungarian Mobile Network Operators",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1162170",
+   "name": "Hungarian Optical Works",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "light industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q22909085",
+   "name": "Hungarian Power Exchange",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.hupx.hu",
+   "enwiki": "https://en.wikipedia.org/wiki/HUPX_Hungarian_Power_Exchange",
+   "logo_file": "HUPX logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q140429728",
+   "name": "Hungarian Radio and Television",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "broadcasting"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Hungarian_Radio_and_Television",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q111423047",
+   "name": "Hungarian Royal Postal Savings Bank",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Hungarian_Postal_Savings_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131198927",
+   "name": "Hungarian Water Technology Corporation",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.hunwatertech.com/index.php/en/",
+   "listed": false
+  },
+  {
+   "qid": "Q31093213",
+   "name": "Hungaropharma",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q56191944",
+   "name": "Hungerit",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Szentes",
+   "hq": [
+    46.65194,
+    20.25722
+   ],
+   "website": "http://www.hungerit.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1095846",
+   "name": "Időkép",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1059894",
+   "name": "IFUA Horváth & Partners",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "consulting"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.horvath-partners.com/hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56420858",
+   "name": "Index.hu Zrt.",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "logo_file": "Index (internet news portal) logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20072277",
+   "name": "Innomed Medical",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.innomed.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q629555",
+   "name": "International Training Center for Bankers",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/International_Training_Center_for_Bankers",
+   "listed": false
+  },
+  {
+   "qid": "Q1060591",
+   "name": "IQ Press Lapkiadó Kft.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q7389447",
+   "name": "Iyuno Hungary",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://iyuno.com/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6393834",
+   "name": "K&H Bank",
+   "cc": "hu",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.kh.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/K%26H_Bank",
+   "logo_file": "K&H logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3192859",
+   "name": "Kaposvári Közlekedési Zrt.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kaposvár",
+   "hq": [
+    46.36667,
+    17.78333
+   ],
+   "website": "https://www.kaposbusz.hu/",
+   "listed": false
+  },
+  {
+   "qid": "Q1107154",
+   "name": "Keravill",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q226001",
+   "name": "Key-Soft",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.ks.hu/",
+   "lei": "213800C4SW6CHEFZ3P89",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1108706",
+   "name": "Kincsem Park",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Kincsem_Park",
+   "listed": false
+  },
+  {
+   "qid": "Q61962258",
+   "name": "Kispest Textile Factory",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1008053",
+   "name": "KMGY",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest District XIII",
+   "hq": [
+    47.5364,
+    19.0719
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1114277",
+   "name": "Kner Nyomda",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Gyoma",
+   "hq": [
+    46.93372,
+    20.82759
+   ],
+   "website": "https://gyomaikner.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1118698",
+   "name": "Kopint-Tárki Institute for Economic Research",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.kopint-tarki.hu/",
+   "listed": false
+  },
+  {
+   "qid": "Q1119450",
+   "name": "Kossuth Publishing House",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65216223",
+   "name": "Kékkúti Ásványvíz Zrt.",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "beverage industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.kekkuti.hu",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108750712",
+   "name": "közért",
+   "cc": "hu",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "food trade"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q874315",
+   "name": "Leder und Schuh",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "Retail sale of footwear and leather goods in specialised stores",
+    "consumer products distribution",
+    "manufacture of footwear",
+    "manufacture of leather and related products",
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Graz",
+   "hq": [
+    47.07083,
+    15.43861
+   ],
+   "website": "http://www.lsag.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Leder_und_Schuh",
+   "logo_file": "Leder und Schuh Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1129890",
+   "name": "Libri Publishing Hungary",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://libri-kiado.hu",
+   "enwiki": "https://en.wikipedia.org/wiki/Libri_Publishing_Hungary",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q72265571",
+   "name": "Lidl Magyarország",
+   "cc": "hu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Hungary",
+   "hq": [
+    47.0,
+    19.0
+   ],
+   "website": "https://www.lidl.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116172835",
+   "name": "Lightware Visual Engineering Plc.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Lightware",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17379757",
+   "name": "MagNet Bank",
+   "cc": "hu",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.netbank.hu/en/",
+   "enwiki": "https://en.wikipedia.org/wiki/MagNet_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1161799",
+   "name": "Magvető",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.magveto.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Magvet%C5%91",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q145614",
+   "name": "Magyar Posta",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "logistics"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.posta.hu/",
+   "lei": "213800RME8DSSB1XGC68",
+   "enwiki": "https://en.wikipedia.org/wiki/Magyar_Posta",
+   "logo_file": "Magyar Posta logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q585461",
+   "name": "Magyar Pénzverő Zrt.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "metal industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://penzvero.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Hungarian_Mint",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1162222",
+   "name": "Magyar Selyemipar Vállalat",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q262381",
+   "name": "Magyar Suzuki",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "automobile manufacturer"
+   ],
+   "isin": [],
+   "hq_city": "Esztergom",
+   "hq": [
+    47.78556,
+    18.74028
+   ],
+   "website": "http://www.suzuki.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Magyar_Suzuki",
+   "logo_file": "Suzuki logo 2025 (vertical).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25456093",
+   "name": "Magyar Szénbányászati Tröszt",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q458944",
+   "name": "Magyar Telekom",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Budapest Stock Exchange",
+     "ticker": "HU0000073507"
+    }
+   ],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [
+    "HU0000073507"
+   ],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.telekom.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Magyar_Telekom",
+   "logo_file": "Deutsche Telekom 2022.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1163336",
+   "name": "MAHART",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://mahartpassnave.hu/",
+   "logo_file": "MAHART–PassNave logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q909261",
+   "name": "MAL Hungarian Aluminium",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mining"
+   ],
+   "isin": [],
+   "hq_city": "Ajka",
+   "hq": [
+    47.10056,
+    17.55222
+   ],
+   "website": "http://www.mal.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/MAL_Hungarian_Aluminium",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q776153",
+   "name": "Mangafan",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://mangafan.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mangafan",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q109355620",
+   "name": "Masterplast",
+   "cc": "hu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.masterplast.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q88272702",
+   "name": "MAVIR",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electric power industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.mavir.hu/",
+   "listed": false
+  },
+  {
+   "qid": "Q124547528",
+   "name": "MBH Bank",
+   "cc": "hu",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.mbhbank.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/MBH_Bank",
+   "logo_file": "MBH Bank Logo 2023.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q20439248",
+   "name": "Mediaworks Hungary",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://mediaworks.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56410307",
+   "name": "Medicare Hungary",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://medicare-group.hu",
+   "lei": "54930048861OFO3L4G97",
+   "listed": false
+  },
+  {
+   "qid": "Q1175750",
+   "name": "Melléktermék- és Hulladékhasznosító Vállalat",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1176002",
+   "name": "Mercedes-Benz Manufacturing Hungary",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q18810187",
+   "name": "MET Group",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/MET_Group",
+   "listed": false
+  },
+  {
+   "qid": "Q6715640",
+   "name": "MFS 2000 Inc",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Sirok",
+   "hq": [
+    47.93111,
+    20.19694
+   ],
+   "website": "https://www.ruag.com/en",
+   "enwiki": "https://en.wikipedia.org/wiki/MFS_2000_Inc",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1177596",
+   "name": "Mirelite",
+   "cc": "hu",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "website": "http://www.mirelite.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16909040",
+   "name": "Miskolci Gőztéglagyár",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Miskolc",
+   "hq": [
+    48.1,
+    20.78333
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16913652",
+   "name": "Miskolci Textilipari Rt.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "hq_city": "Miskolc",
+   "hq": [
+    48.1,
+    20.78333
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q97191066",
+   "name": "Mogul Kiadó",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://mogulkiado.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q549181",
+   "name": "MOL Group",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Budapest Stock Exchange",
+     "ticker": null
+    },
+    {
+     "exchange": "Luxembourg Stock Exchange",
+     "ticker": null
+    },
+    {
+     "exchange": "Warsaw Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "energy industry",
+    "petroleum industry"
+   ],
+   "isin": [
+    "HU0000068952"
+   ],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://molgroup.info/en",
+   "enwiki": "https://en.wikipedia.org/wiki/MOL_(company)",
+   "logo_file": "MOL Group.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q84496224",
+   "name": "MOL Limo",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "carsharing"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://mollimo.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q18711934",
+   "name": "MOL Petroleum Chemistry PLC",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "petrochemistry"
+   ],
+   "isin": [],
+   "hq_city": "Tiszaújváros",
+   "hq": [
+    47.92278,
+    21.05194
+   ],
+   "website": "https://mol.hu/hu/molrol/a-mol-petrolkemiarol/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108169065",
+   "name": "MVM CEEnergy Zrt.",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.ceenergy.hu",
+   "lei": "529900DA44GKVNZBRY65",
+   "listed": false
+  },
+  {
+   "qid": "Q1162287",
+   "name": "MVM Group",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest District III",
+   "hq": [
+    47.56667,
+    19.03333
+   ],
+   "website": "http://www.mvm.hu",
+   "enwiki": "https://en.wikipedia.org/wiki/MVM_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1958759",
+   "name": "Müller",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Ulm",
+   "hq": [
+    48.39861,
+    9.99111
+   ],
+   "website": "https://www.mueller.hr/",
+   "lei": "529900VVXGAWG6MCDO69",
+   "enwiki": "https://en.wikipedia.org/wiki/M%C3%BCller_(store)",
+   "logo_file": "Logo Drogerie Mueller.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q23819531",
+   "name": "Műszer Automatika Limited",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budaörs",
+   "hq": [
+    47.46056,
+    18.95778
+   ],
+   "website": "http://www.muszerautomatika.hu/landing/hu.html",
+   "logo_file": "Muszer Automatika logo.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q16522091",
+   "name": "Napkút Kiadó",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q141917829",
+   "name": "National Innovation Agency",
+   "cc": "hu",
+   "types": [
+    "Q270791"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://niu.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108169094",
+   "name": "Nemzeti Útdíjfizetési Szolgáltató",
+   "cc": "hu",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2923665",
+   "name": "Nova",
+   "cc": "hu",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q141599992",
+   "name": "Omorovicza",
+   "cc": "hu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q131329001",
+   "name": "One Hungary",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "website": "https://www.one.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/One_Hungary",
+   "logo_file": "ONE2025 logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q46959978",
+   "name": "Opus Global",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Budapest Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "asset management"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://opusglobal.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Opus_Global",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1225482",
+   "name": "Orion Electronics",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "consumer electronics industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://orionelec.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Orion_Electronics",
+   "logo_file": "New-store-1642143937.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q912778",
+   "name": "OTP Bank",
+   "cc": "hu",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Budapest Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services"
+   ],
+   "isin": [
+    "HU0000061726"
+   ],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.otpbank.hu/portal/en/retail",
+   "lei": "529900W3MOO00A18X956",
+   "enwiki": "https://en.wikipedia.org/wiki/OTP_Bank",
+   "logo_file": "Otp bank Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q20439720",
+   "name": "OÁZIS",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://oazis.hu",
+   "listed": false
+  },
+  {
+   "qid": "Q7131573",
+   "name": "Panrusgáz",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.panrusgaz.hu/en/ceginf.htm",
+   "enwiki": "https://en.wikipedia.org/wiki/Panrusg%C3%A1z",
+   "listed": false
+  },
+  {
+   "qid": "Q20439913",
+   "name": "Pemu Plastics Plc.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Solymár",
+   "hq": [
+    47.591,
+    18.929
+   ],
+   "website": "http://www.pemu.hu/",
+   "listed": false
+  },
+  {
+   "qid": "Q1233417",
+   "name": "Pesti Magyar Kereskedelmi Bank",
+   "cc": "hu",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Hungarian_Commercial_Bank_of_Pest",
+   "logo_file": "Pesti Magyar Kereskedelmi Bank szabadalomlevelének címlapja.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q832075",
+   "name": "Pick Szeged",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "meat industry"
+   ],
+   "isin": [],
+   "hq_city": "Szeged",
+   "hq": [
+    46.25,
+    20.16667
+   ],
+   "website": "http://www.pick.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Pick_Szeged",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q15569665",
+   "name": "Postabank",
+   "cc": "hu",
+   "types": [
+    "Q22687",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1227521",
+   "name": "PPCnetwork",
+   "cc": "hu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "online advertising"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q132497443",
+   "name": "Profession.hu",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "Internet"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.profession.hu/",
+   "logo_file": "Profession.hu Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1241536",
+   "name": "Puli Space Technologies",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mechanical engineering"
+   ],
+   "isin": [],
+   "website": "http://www.pulispace.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Puli_Space_Technologies",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25457773",
+   "name": "Pécs Organ Manufactory",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Pécs",
+   "hq": [
+    46.07083,
+    18.23306
+   ],
+   "website": "https://www.pomorgona.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/P%C3%A9cs_Organ_Manufactory",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q181697",
+   "name": "Raaberbahn",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "rail transport"
+   ],
+   "isin": [],
+   "hq_city": "Sopron",
+   "hq": [
+    47.68333,
+    16.58333
+   ],
+   "website": "https://www.gysev.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Raaberbahn",
+   "logo_file": "GYSEV logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16522506",
+   "name": "Raiffeisen Bank Hungary",
+   "cc": "hu",
+   "types": [
+    "Q22687"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking",
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.raiffeisen.hu/",
+   "logo_file": "Raiffeisen Bank 2023 logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q655587",
+   "name": "Rail Cargo Hungaria",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "logo_file": "Logo Rail Cargo Hungaria ÖBB (2015).svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q100741414",
+   "name": "Reál Hungária Élelmiszer Kereskedelmi Kft.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Biatorbágy",
+   "hq": [
+    47.47417,
+    18.82361
+   ],
+   "website": "https://real.hu/",
+   "logo_file": "Reál Hungary Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56422072",
+   "name": "Ringier Axel Springer Magyarország Kft.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.ringieraxelspringer.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q108169064",
+   "name": "Robert Bosch Elektronika Gyártó Kft.",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Hatvan",
+   "hq": [
+    47.66806,
+    19.66972
+   ],
+   "website": "https://www.bosch.hu/vallalatunk/a-bosch-magyarorszagon/hatvan/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1243934",
+   "name": "RTL Saleshouse",
+   "cc": "hu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "advertising industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://r-time.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q47043",
+   "name": "Rubik's Cube",
+   "cc": "hu",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://rubiks.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Rubik%27s_Cube",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1183666",
+   "name": "Rába Járműipari Holding Nyrt.",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Budapest Stock Exchange",
+     "ticker": "RABA"
+    }
+   ],
+   "industries": [
+    "automotive industry",
+    "rolling stock industry"
+   ],
+   "isin": [],
+   "hq_city": "Győr",
+   "hq": [
+    47.68417,
+    17.63444
+   ],
+   "website": "https://raba.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/R%C3%A1ba_(company)",
+   "logo_file": "Rába (Fahrzeughersteller) logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q116760752",
+   "name": "Samsung SDI Hungary",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Göd",
+   "hq": [
+    47.69056,
+    19.13444
+   ],
+   "website": "https://samsungsdi.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q112049927",
+   "name": "Sberbank Magyarország",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "economics of banking"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "lei": "529900E3CDUZL6H6GX76",
+   "logo_file": "Sberbank logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q1286016",
+   "name": "Schenk",
+   "cc": "hu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q89184937",
+   "name": "Scitec",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "food industry"
+   ],
+   "isin": [],
+   "hq_city": "Dunakeszi",
+   "hq": [
+    47.62972,
+    19.13806
+   ],
+   "website": "http://www.scitec.hu",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q504576",
+   "name": "Semic Interprint",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Semic_Interprint",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q136873025",
+   "name": "Shopper Park Plus",
+   "cc": "hu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "HU0000192786"
+   ],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://shopperparkplus.hu/en/home/",
+   "listed": true
+  },
+  {
+   "qid": "Q1288865",
+   "name": "Singer and Wolfner",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Singer_and_Wolfner",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q120174535",
+   "name": "SK On Hungary Ltd.",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "battery industry"
+   ],
+   "isin": [],
+   "hq_city": "Komárom",
+   "hq": [
+    47.74,
+    18.12167
+   ],
+   "website": "https://skonhungary.com/",
+   "logo_file": "SK logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q823430",
+   "name": "Smartwings Hungary",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.smartwings.com/hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Smartwings_Hungary",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q61927663",
+   "name": "SPAR Magyarország Kft.",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Hungary",
+   "hq": [
+    47.0,
+    19.0
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q1296453",
+   "name": "St. Stephen Association",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest District V",
+   "hq": [
+    47.5,
+    19.05
+   ],
+   "website": "http://szit.katolikus.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q220874",
+   "name": "State Printing Company",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Budapest Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "HU0000093257"
+   ],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://www.any.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/ANY_Security_Printing_Company",
+   "logo_file": "Allami Nyomda logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q25459542",
+   "name": "state stud-farm estate of Mezőhegyes",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Mezőhegyes",
+   "hq": [
+    46.315,
+    20.81778
+   ],
+   "listed": false
+  },
+  {
+   "qid": "Q1034373",
+   "name": "Sugar factory Hatvan",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "sugar refinery"
+   ],
+   "isin": [],
+   "hq_city": "Hatvan",
+   "hq": [
+    47.66806,
+    19.66972
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1215568",
+   "name": "Sunlight Publishing",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.napvilagkiado.hu/",
+   "listed": false
+  },
+  {
+   "qid": "Q1295391",
+   "name": "Szeged Transport Ltd.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "public transport"
+   ],
+   "isin": [],
+   "hq_city": "Szeged",
+   "hq": [
+    46.25,
+    20.16667
+   ],
+   "website": "http://szkt.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Szeged_Transport_Ltd.",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7664603",
+   "name": "Szerencsejáték Zrt.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "entertainment"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.szerencsejatek.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13993839",
+   "name": "Sólyom Hungarian Airways",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/S%C3%B3lyom_Hungarian_Airways",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q12355765",
+   "name": "Tankönyvkiadó",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65218848",
+   "name": "Tesco-Global Zrt.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Budaörs",
+   "hq": [
+    47.46056,
+    18.95778
+   ],
+   "website": "https://tesco.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q13496045",
+   "name": "Tibi atya",
+   "cc": "hu",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1315732",
+   "name": "TIGÁZ",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1321339",
+   "name": "Tinta Publishing",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Kiskőrös",
+   "hq": [
+    46.62028,
+    19.28361
+   ],
+   "website": "http://www.tintakiado.hu/",
+   "listed": false
+  },
+  {
+   "qid": "Q25459999",
+   "name": "Tipton Eyeworks",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q1321504",
+   "name": "Tisza Volán",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Szeged",
+   "hq": [
+    46.25,
+    20.16667
+   ],
+   "website": "http://www.tiszavolan.hu",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7108966",
+   "name": "Toti Sport",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Toti_Sport",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1323677",
+   "name": "Trapper",
+   "cc": "hu",
+   "types": [
+    "Q431289"
+   ],
+   "listings": [],
+   "industries": [
+    "textile industry"
+   ],
+   "isin": [],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q689510",
+   "name": "Tungsram",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://tungsram.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/Tungsram",
+   "logo_file": "Tungsram logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1325946",
+   "name": "Typotex Publishing",
+   "cc": "hu",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.typotex.hu/",
+   "listed": false
+  },
+  {
+   "qid": "Q268304",
+   "name": "Törley",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "alcohol industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.torley.hu",
+   "enwiki": "https://en.wikipedia.org/wiki/T%C3%B6rley",
+   "logo_file": "Torley-Logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q25457480",
+   "name": "United Bulb and Electricity Co.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "electrical industry",
+    "manufacture of electric lighting equipment"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/United_Incandescent_Lamp_and_Electricity_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q116871240",
+   "name": "VeAn Tattoo",
+   "cc": "hu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://vean-tattoo.com/",
+   "logo_file": "Vean tattoo.jpg",
+   "listed": false
+  },
+  {
+   "qid": "Q718097",
+   "name": "Videoton",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Székesfehérvár",
+   "hq": [
+    47.19102,
+    18.41081
+   ],
+   "website": "https://videoton.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Videoton_(company)",
+   "logo_file": "Videoton logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16857868",
+   "name": "Waberer's International Nyrt",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance",
+    "logistics"
+   ],
+   "isin": [
+    "HU0000120720"
+   ],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "http://www.waberers.com/",
+   "logo_file": "Waberers nyrt logo.png",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q7855894",
+   "name": "Warner Bros. Discovery Hungary",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Warner_Bros._Discovery_Hungary",
+   "logo_file": "Warner Bros. Discovery Printable Logo 2022.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q65218886",
+   "name": "Webasto Hungária",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q112061838",
+   "name": "Wienerberger Hungary",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "construction industry"
+   ],
+   "isin": [],
+   "website": "https://www.wienerberger.hu/",
+   "listed": false
+  },
+  {
+   "qid": "Q335147",
+   "name": "Wizz Air",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [
+    "JE00BN574F90"
+   ],
+   "hq_city": "Budapest Ferenc Liszt International Airport",
+   "hq": [
+    47.43944,
+    19.26194
+   ],
+   "website": "https://wizzair.com",
+   "lei": "2138009T2NNSGWRB3902",
+   "enwiki": "https://en.wikipedia.org/wiki/Wizz_Air",
+   "logo_file": "Wizz Air logo 2015.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q117787643",
+   "name": "Wizz Air Hungary",
+   "cc": "hu",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "listed": false
+  },
+  {
+   "qid": "Q105676163",
+   "name": "Xeropan",
+   "cc": "hu",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.xeropan.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Xeropan",
+   "logo_file": "Xeropan logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q105467105",
+   "name": "XXXLutz Lakberendezési Kft.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budaörs",
+   "hq": [
+    47.46056,
+    18.95778
+   ],
+   "website": "https://www.xxxlutz.hu/",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q268578",
+   "name": "Yettel Hungary",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Törökbálint",
+   "hq": [
+    47.43556,
+    18.91556
+   ],
+   "website": "https://www.yettel.hu",
+   "enwiki": "https://en.wikipedia.org/wiki/Yettel_Hungary",
+   "logo_file": "Yettel wordmark logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q58476293",
+   "name": "Zsolnay Porcelánmanufaktúra Zrt.",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Pécs",
+   "hq": [
+    46.07083,
+    18.23306
+   ],
+   "website": "http://www.zsolnay.hu",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q56648140",
+   "name": "Zwack",
+   "cc": "hu",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [
+    "HU0000074844"
+   ],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "website": "https://zwackunicum.hu/",
+   "enwiki": "https://en.wikipedia.org/wiki/Zwack",
+   "logo_file": "Zwack bottle.jpg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q135972990",
+   "name": "Értéksziget",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "health care industry"
+   ],
+   "isin": [],
+   "hq_city": "Budapest District XIII",
+   "hq": [
+    47.5364,
+    19.0719
+   ],
+   "website": "https://www.erteksziget.hu",
+   "enwiki": "https://en.wikipedia.org/wiki/%C3%89rt%C3%A9ksziget",
+   "logo_file": "Erteksziget-logo-registered-mark.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1471517",
+   "name": "Írók Boltja",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "bookselling"
+   ],
+   "isin": [],
+   "hq_city": "Budapest",
+   "hq": [
+    47.49833,
+    19.04083
+   ],
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q989054",
+   "name": "Újpesti Cérnagyár",
+   "cc": "hu",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Budapest District IV",
+   "hq": [
+    47.56667,
+    19.08333
+   ],
+   "website": "http://wcs.oisz.hu/45319/",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}
