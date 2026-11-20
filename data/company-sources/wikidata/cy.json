@@ -1,0 +1,980 @@
+{
+ "schema": "investedia.company-source/v1",
+ "source": "Wikidata",
+ "licence": "CC0 1.0",
+ "source_url": "https://www.wikidata.org/",
+ "checked_at": "2026-11-20",
+ "country": "CY",
+ "count": 43,
+ "companies": [
+  {
+   "qid": "Q126242196",
+   "name": "AlphaMega",
+   "cc": "cy",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "retail"
+   ],
+   "isin": [],
+   "hq_city": "Nicosia",
+   "hq": [
+    35.1725,
+    33.365
+   ],
+   "website": "https://www.alphamega.com.cy/",
+   "logo_file": "Alphamega logo-01.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q4793424",
+   "name": "Armida Publications",
+   "cc": "cy",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Armida_Publications",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q137162596",
+   "name": "Axi",
+   "cc": "cy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "Sydney",
+   "hq": [
+    -33.86778,
+    151.21
+   ],
+   "website": "https://www.axi.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q806678",
+   "name": "Bank of Cyprus",
+   "cc": "cy",
+   "types": [
+    "Q22687",
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Cyprus Stock Exchange",
+     "ticker": "BOCY"
+    },
+    {
+     "exchange": "Euronext Athens",
+     "ticker": "BOC"
+    }
+   ],
+   "industries": [
+    "economics of banking",
+    "financial sector",
+    "financial services",
+    "insurance industry"
+   ],
+   "isin": [
+    "CY0000100111"
+   ],
+   "hq_city": "Nicosia",
+   "hq": [
+    35.1725,
+    33.365
+   ],
+   "website": "http://www.bankofcyprus.com",
+   "lei": "PQ0RAP85KK9Z75ONZW93",
+   "enwiki": "https://en.wikipedia.org/wiki/Bank_of_Cyprus",
+   "logo_file": "BOC logo EN.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q19912790",
+   "name": "Burisma Holdings",
+   "cc": "cy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Limassol",
+   "hq": [
+    34.675,
+    33.04429
+   ],
+   "website": "https://web.archive.org/web/20171206172327/http://burisma-group.com/uk/",
+   "enwiki": "https://en.wikipedia.org/wiki/Burisma",
+   "logo_file": "Burisma logo with full name.svg",
+   "listed": false
+  },
+  {
+   "qid": "Q665870",
+   "name": "Centalion",
+   "cc": "cy",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "energy sector"
+   ],
+   "isin": [],
+   "hq_city": "Geneva",
+   "hq": [
+    46.2,
+    6.15
+   ],
+   "website": "https://centalion.com/",
+   "lei": "549300OEZB4GETCGFX34",
+   "enwiki": "https://en.wikipedia.org/wiki/Centalion",
+   "logo_file": "Gunvor Group logo.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q135835581",
+   "name": "cTrader",
+   "cc": "cy",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "technology industry"
+   ],
+   "isin": [],
+   "hq_city": "Limassol",
+   "hq": [
+    34.675,
+    33.04429
+   ],
+   "website": "https://ctrader.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/CTrader",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5200451",
+   "name": "Cyprus Development Bank",
+   "cc": "cy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "finance"
+   ],
+   "isin": [],
+   "hq_city": "Nicosia",
+   "hq": [
+    35.1725,
+    33.365
+   ],
+   "website": "http://www.cdb.com.cy/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cyprus_Development_Bank",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2888321",
+   "name": "Cyprus Stock Exchange",
+   "cc": "cy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nicosia",
+   "hq": [
+    35.1725,
+    33.365
+   ],
+   "website": "https://www.cse.com.cy",
+   "lei": "213800U9YG19GFXT3S09",
+   "enwiki": "https://en.wikipedia.org/wiki/Cyprus_Stock_Exchange",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q3565273",
+   "name": "Cyta",
+   "cc": "cy",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Nicosia",
+   "hq": [
+    35.1725,
+    33.365
+   ],
+   "website": "http://www.cyta.com.cy/",
+   "enwiki": "https://en.wikipedia.org/wiki/Cyta",
+   "logo_file": "Cytamobile-Vodafone logo.jpg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5357793",
+   "name": "Electricity Authority of Cyprus",
+   "cc": "cy",
+   "types": [
+    "Q270791",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nicosia",
+   "hq": [
+    35.1725,
+    33.365
+   ],
+   "website": "https://www.eac.com.cy/",
+   "enwiki": "https://en.wikipedia.org/wiki/Electricity_Authority_of_Cyprus",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q28471454",
+   "name": "Emma Capital",
+   "cc": "cy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nicosia",
+   "hq": [
+    35.1725,
+    33.365
+   ],
+   "website": "http://www.emmacapital.cz",
+   "lei": "213800HSCWVL4275P781",
+   "enwiki": "https://en.wikipedia.org/wiki/Emma_Capital",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106823386",
+   "name": "Epic Cyprus",
+   "cc": "cy",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Nicosia",
+   "hq": [
+    35.1725,
+    33.365
+   ],
+   "website": "https://www.epic.com.cy/",
+   "enwiki": "https://en.wikipedia.org/wiki/Epic_(telecommunications)",
+   "logo_file": "Epic logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q5324516",
+   "name": "eToro",
+   "cc": "cy",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq",
+     "ticker": "ETOR"
+    }
+   ],
+   "industries": [
+    "financial services",
+    "information technology"
+   ],
+   "isin": [
+    "VGG320891077"
+   ],
+   "hq_city": "Tel Aviv",
+   "hq": [
+    32.08,
+    34.78
+   ],
+   "website": "https://www.etoro.com/",
+   "enwiki": "https://en.wikipedia.org/wiki/EToro",
+   "logo_file": "EToro Logo 2026.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q1418943",
+   "name": "Fireglow Games",
+   "cc": "cy",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "video game industry"
+   ],
+   "isin": [],
+   "website": "http://www.fireglowgames.com",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q529157",
+   "name": "Frontline",
+   "cc": "cy",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "New York Stock Exchange",
+     "ticker": "FRO"
+    },
+    {
+     "exchange": "Oslo Stock Exchange",
+     "ticker": "FRO"
+    }
+   ],
+   "industries": [
+    "shipping"
+   ],
+   "isin": [
+    "CY0200352116"
+   ],
+   "hq_city": "Limassol",
+   "hq": [
+    34.675,
+    33.04429
+   ],
+   "website": "https://www.frontlineplc.cy",
+   "lei": "5493004BCIKYU1YL3H63",
+   "enwiki": "https://en.wikipedia.org/wiki/Frontline_Ltd.",
+   "logo_file": "Frontline Logo.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q5511172",
+   "name": "FxPro",
+   "cc": "cy",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "financial services"
+   ],
+   "isin": [],
+   "hq_city": "London",
+   "hq": [
+    51.50722,
+    -0.1275
+   ],
+   "website": "https://www.fxpro.com",
+   "enwiki": "https://en.wikipedia.org/wiki/FxPro",
+   "logo_file": "FxPro General Logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q141708809",
+   "name": "GDEV Inc.",
+   "cc": "cy",
+   "types": [
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq",
+     "ticker": "GDEV"
+    }
+   ],
+   "industries": [
+    "video game industry"
+   ],
+   "isin": [
+    "VGG6529J1003"
+   ],
+   "hq_city": "Limassol",
+   "hq": [
+    34.675,
+    33.04429
+   ],
+   "website": "https://www.gdev.inc",
+   "enwiki": "https://en.wikipedia.org/wiki/GDEV",
+   "listed": true
+  },
+  {
+   "qid": "Q113642487",
+   "name": "GetTransfer",
+   "cc": "cy",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "transport"
+   ],
+   "isin": [],
+   "hq_city": "Larnaca",
+   "hq": [
+    34.91667,
+    33.63333
+   ],
+   "website": "https://gettransfer.com/",
+   "logo_file": "GetTransfer Logo.png",
+   "listed": false
+  },
+  {
+   "qid": "Q20851913",
+   "name": "J&T Private Equity Group",
+   "cc": "cy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nicosia",
+   "hq": [
+    35.1725,
+    33.365
+   ],
+   "lei": "315700M63ZCX8HBZ2962",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6348553",
+   "name": "Kaisis Motor Company",
+   "cc": "cy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nicosia",
+   "hq": [
+    35.1725,
+    33.365
+   ],
+   "enwiki": "https://en.wikipedia.org/wiki/Kaisis_Motor_Company",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6328576",
+   "name": "KEO",
+   "cc": "cy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.keogroup.com",
+   "enwiki": "https://en.wikipedia.org/wiki/KEO_(beer)",
+   "listed": false
+  },
+  {
+   "qid": "Q6430705",
+   "name": "Koop Dairy",
+   "cc": "cy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Ortakioï",
+   "hq": [
+    35.20153,
+    33.33669
+   ],
+   "website": "http://www.koopsut.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Koop_Dairy",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6438971",
+   "name": "Kronospan",
+   "cc": "cy",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "wood"
+   ],
+   "isin": [],
+   "hq_city": "Nicosia",
+   "hq": [
+    35.1725,
+    33.365
+   ],
+   "website": "http://www.kronospan-worldwide.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Kronospan",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6658247",
+   "name": "Livermore Investment Group",
+   "cc": "cy",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": null
+    }
+   ],
+   "industries": [],
+   "isin": [],
+   "website": "http://www.livermore-inv.com",
+   "enwiki": "https://en.wikipedia.org/wiki/Livermore_Investment_Group",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q100744454",
+   "name": "Mediacube",
+   "cc": "cy",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://mediacube.network/",
+   "enwiki": "https://en.wikipedia.org/wiki/Mediacube",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q16951250",
+   "name": "Medochemie",
+   "cc": "cy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "pharmaceutical industry"
+   ],
+   "isin": [],
+   "hq_city": "Limassol",
+   "hq": [
+    34.675,
+    33.04429
+   ],
+   "website": "http://www.medochemie.com/",
+   "lei": "213800WU888VFLD17S96",
+   "enwiki": "https://en.wikipedia.org/wiki/Medochemie",
+   "logo_file": "Medochemie.svg",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q89207915",
+   "name": "Milton group",
+   "cc": "cy",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "enwiki": "https://en.wikipedia.org/wiki/Milton_group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q6918893",
+   "name": "Moufflon Publications",
+   "cc": "cy",
+   "types": [
+    "Q2085381"
+   ],
+   "listings": [],
+   "industries": [
+    "publishing"
+   ],
+   "isin": [],
+   "hq_city": "Nicosia",
+   "hq": [
+    35.1725,
+    33.365
+   ],
+   "website": "https://moufflon.com.cy/",
+   "enwiki": "https://en.wikipedia.org/wiki/Moufflon_Publications",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q106776298",
+   "name": "Muse Group",
+   "cc": "cy",
+   "types": [
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [
+    "music education",
+    "software development"
+   ],
+   "isin": [],
+   "hq_city": "Limassol",
+   "hq": [
+    34.675,
+    33.04429
+   ],
+   "website": "https://mu.se/",
+   "enwiki": "https://en.wikipedia.org/wiki/Muse_Group",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7063871",
+   "name": "Nounou",
+   "cc": "cy",
+   "types": [
+    "Q431289",
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "dairy industry"
+   ],
+   "isin": [],
+   "website": "https://www.frieslandcampina.com/brands/noynoy/",
+   "enwiki": "https://en.wikipedia.org/wiki/Nounou",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q2013404",
+   "name": "Ocean Rig",
+   "cc": "cy",
+   "types": [
+    "Q4830453",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Nasdaq",
+     "ticker": "ORIG"
+    }
+   ],
+   "industries": [
+    "oil platform"
+   ],
+   "isin": [],
+   "hq_city": "Stavanger",
+   "hq": [
+    58.97,
+    5.73139
+   ],
+   "website": "http://www.ocean-rig.com/",
+   "lei": "5493004IUZY0KS3K0W93",
+   "enwiki": "https://en.wikipedia.org/wiki/Ocean_Rig",
+   "logo_file": "Logo Ocean Rig.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q14404498",
+   "name": "OPAP Cyprus",
+   "cc": "cy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nicosia",
+   "hq": [
+    35.1725,
+    33.365
+   ],
+   "lei": "213800DIL3P5I2KTDR74",
+   "listed": false
+  },
+  {
+   "qid": "Q7243224",
+   "name": "PrimeTel",
+   "cc": "cy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "mobile phone industry",
+    "telecommunications industry"
+   ],
+   "isin": [],
+   "hq_city": "Cyprus",
+   "hq": [
+    35.0,
+    33.0
+   ],
+   "website": "http://www.primetel.com.cy/",
+   "enwiki": "https://en.wikipedia.org/wiki/PrimeTel",
+   "logo_file": "Primetel-logo.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q65122080",
+   "name": "RoboMarkets",
+   "cc": "cy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Limassol",
+   "hq": [
+    34.675,
+    33.04429
+   ],
+   "website": "https://www.robomarkets.com/",
+   "lei": "213800DNRKVK9S3ASC71",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q17013948",
+   "name": "Satmaiden007",
+   "cc": "cy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "petroleum industry"
+   ],
+   "isin": [],
+   "hq_city": "Larnaca",
+   "hq": [
+    34.91667,
+    33.63333
+   ],
+   "website": "http://www.petrolina.com.cy/",
+   "enwiki": "https://en.wikipedia.org/wiki/Petrolina_(company)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q7561207",
+   "name": "Songa Offshore SE",
+   "cc": "cy",
+   "types": [
+    "Q4830453",
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "Oslo Stock Exchange",
+     "ticker": "SONG"
+    }
+   ],
+   "industries": [
+    "offshore drilling"
+   ],
+   "isin": [],
+   "hq_city": "Limassol",
+   "hq": [
+    34.675,
+    33.04429
+   ],
+   "website": "http://www.songaoffshore.com",
+   "lei": "549300VRLIQWWFVU9M66",
+   "enwiki": "https://en.wikipedia.org/wiki/Songa_Offshore",
+   "logo_file": "Logo Songa Offshore.svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q18210502",
+   "name": "TeleTrade Group",
+   "cc": "cy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Nicosia",
+   "hq": [
+    35.1725,
+    33.365
+   ],
+   "website": "https://www.teletrade.eu/",
+   "logo_file": "TeleTrade logo-ES.png",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q27346604",
+   "name": "Toonbox",
+   "cc": "cy",
+   "types": [
+    "Q4830453",
+    "Q6881511"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "hq_city": "Moscow",
+   "hq": [
+    55.75056,
+    37.6175
+   ],
+   "website": "http://toonbox.info",
+   "enwiki": "https://en.wikipedia.org/wiki/Toonbox",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q107024989",
+   "name": "Trade360",
+   "cc": "cy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [],
+   "isin": [],
+   "website": "https://www.trade360.com/",
+   "listed": false
+  },
+  {
+   "qid": "Q7893996",
+   "name": "Universal Life",
+   "cc": "cy",
+   "types": [
+    "Q4830453"
+   ],
+   "listings": [],
+   "industries": [
+    "insurance"
+   ],
+   "isin": [],
+   "hq_city": "Nicosia",
+   "hq": [
+    35.1725,
+    33.365
+   ],
+   "website": "https://www.universallife.com.cy/",
+   "enwiki": "https://en.wikipedia.org/wiki/Universal_Life_(Cyprus)",
+   "founded": null,
+   "listed": false
+  },
+  {
+   "qid": "Q1885456",
+   "name": "VK",
+   "cc": "cy",
+   "types": [
+    "Q6881511",
+    "Q891723"
+   ],
+   "listings": [
+    {
+     "exchange": "London Stock Exchange",
+     "ticker": "MAIL"
+    },
+    {
+     "exchange": "Moscow Exchange",
+     "ticker": "MAIL"
+    }
+   ],
+   "industries": [
+    "investment",
+    "technology company"
+   ],
+   "isin": [
+    "US5603172082"
+   ],
+   "hq_city": "Moscow",
+   "hq": [
+    55.75056,
+    37.6175
+   ],
+   "website": "https://vk.company",
+   "lei": "2138009IXUP41SPL5B50",
+   "enwiki": "https://en.wikipedia.org/wiki/VK_(company)",
+   "logo_file": "VK Compact Logo (2021-present).svg",
+   "founded": null,
+   "listed": true
+  },
+  {
+   "qid": "Q20501916",
+   "name": "Young Engineers",
+   "cc": "cy",
+   "types": [
+    "Q783794"
+   ],
+   "listings": [],
+   "industries": [
+    "education",
+    "franchising"
+   ],
+   "isin": [],
+   "hq_city": "Cyprus",
+   "hq": [
+    35.0,
+    33.0
+   ],
+   "website": "https://youngengineers.org/",
+   "founded": null,
+   "listed": false
+  }
+ ]
+}
