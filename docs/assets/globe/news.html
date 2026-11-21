@@ -4064,7 +4064,7 @@ void main(){
   col+=vec3(.05,.045,.04)*smoothstep(.12,0.,abs(sdot))*.6;                 // soft dusk edge
   float L=texture2D(nightT,uv).r; L=pow(max(0.,(L-.09)/.91),1.25);
   float core=smoothstep(.15,.85,L);
-  if(inD>0.){ float x=max(0.,(texture2D(dNight,duv).r-.3)/.7), x3=pow(x,1.5); float Ld=.55*x3/(x3+.25);   // compressed highs: no white hotspots, detail kept
+  if(inD>0.){ float x=max(0.,(texture2D(dNight,duv).r-.4)/.6), x3=pow(x,1.6); float Ld=.4*x3/(x3+.3);  /* owner 21 Nov 2026: calmer zoomed-in lights, only real built-up cores */   // compressed highs: no white hotspots, detail kept
     L=mix(L,Ld,inD); core=mix(core,smoothstep(.5,1.,x),inD); }                                        // only the densest cores turn warm white  // NASA VIIRS 500 m metro lights (calmer curve: this layer is brighter)         // city lights only (drops Black Marble's faint ground)
   col+=mix(vec3(1.,.6,.26),vec3(1.,.9,.76),core)*L*1.55*(1.-dayk);  // real night lights: amber/soft orange in the fainter areas, warm white in the brightest cores                                 // tiny ivory points, very little amber; orange stays for data
   if(lt>.5){  // light theme (owner 21 Nov 2026): soft grey-blue oceans, light warm-grey land with the same terrain, gentle night side, faint lights
@@ -4176,17 +4176,17 @@ void main(){
   let CITIES = null; fetch(`${BASE}cities.json`).then(r => r.ok ? r.json() : null).then(d => { CITIES = d; }).catch(() => {});
   const labels = (ctx, W, H, cx, cy, R, lon0, lat0) => {
     const D3 = E.detail, a = D3.want * (D3.bb ? D3.fade : 0); if (!CITIES || a < .05) return;
-    const rad = Math.asin(Math.min(1, Math.max(W, H) * .5 / R)) * 180 / Math.PI, minPop = rad > 30 ? 2e6 : rad > 15 ? 6e5 : rad > 8 ? 2.5e5 : 1e5;
+    const rad = Math.asin(Math.min(1, Math.max(W, H) * .5 / R)) * 180 / Math.PI, minPop = rad > 30 ? 5e6 : rad > 15 ? 2e6 : rad > 8 ? 8e5 : 4e5;  /* owner 21 Nov 2026: fewer names */
     const r = Math.PI / 180, c0 = Math.cos(lat0 * r), s0 = Math.sin(lat0 * r), placed = [];
     ctx.save(); ctx.font = '500 12px Inter,system-ui,sans-serif'; ctx.textBaseline = 'middle';
     for (const [n, la, lo, pop] of CITIES) {
       if (pop < minPop) continue; const ph = la * r, d = lo * r - lon0 * r, cp = Math.cos(ph), z = s0 * Math.sin(ph) + c0 * cp * Math.cos(d); if (z < .2) continue;
       const x = cx + R * cp * Math.sin(d), y = cy - R * (c0 * Math.sin(ph) - s0 * cp * Math.cos(d)); if (x < 0 || y < 0 || x > W || y > H) continue;
       if ((window.__markPts || []).some(m => (m[0] - x) ** 2 + (m[1] - y) ** 2 < 34 * 34)) continue;  // an orange marker is here: its own label wins
-      const w = ctx.measureText(n).width, box = [x - 4, y - 8, x + 10 + w, y + 8]; if (placed.some(b => !(box[2] < b[0] || box[0] > b[2] || box[3] < b[1] || box[1] > b[3]))) continue; placed.push(box);
+      const w = ctx.measureText(n).width, box = [x - 34, y - 30, x + 40 + w, y + 30]; if (placed.some(b => !(box[2] < b[0] || box[0] > b[2] || box[3] < b[1] || box[1] > b[3]))) continue; placed.push(box);
       ctx.globalAlpha = a * (pop >= 1e6 ? .95 : .75); ctx.fillStyle = 'rgba(232,230,226,.9)'; ctx.beginPath(); ctx.arc(x, y, pop >= 1e6 ? 2.4 : 1.8, 0, 7); ctx.fill();
       const big = pop >= 1e6; ctx.font = (big ? '600 13px' : '500 11.5px') + ' Inter,system-ui,sans-serif'; const tw = ctx.measureText(n).width; ctx.fillStyle = 'rgba(10,10,12,.72)'; ctx.beginPath(); ctx.roundRect(x + 3, y - 9, tw + 10, 18, 5); ctx.fill(); ctx.strokeStyle = 'rgba(255,255,255,.1)'; ctx.lineWidth = 1; ctx.stroke(); ctx.fillStyle = big ? '#fff' : 'rgba(226,224,220,.95)'; ctx.fillText(n, x + 8, y + .5);  /* readable label (owner 21 Nov 2026) */
-      if (placed.length > 40) break;
+      if (placed.length > 14) break;
     }
     ctx.restore();
   };
@@ -4201,7 +4201,7 @@ void main(){
       if (pop < ((la > 47 && lo < -50) || (la > 48 && lo > 30) || (la < -10 && lo > 110) || (la < 16 && la > -36 && lo > -20 && lo < 52) ? 1e5 : 3e5)) continue;  /* sparse regions (Canada, Russia, Australia, Africa): towns over 100k too */ const ph = la * r, l2 = lo * r, cp = Math.cos(ph), nf = -(cp * Math.cos(l2) * sx + cp * Math.sin(l2) * sy + Math.sin(ph) * sz); if (nf < .02) continue;
       const d = l2 - lon0 * r, z = s0 * Math.sin(ph) + c0 * cp * Math.cos(d); if (z < .05) continue;
       const x = cx + R * cp * Math.sin(d), y = cy - R * (c0 * Math.sin(ph) - s0 * cp * Math.cos(d)), rr = b * (1.2 + Math.log10(pop / 3e5) * 1.3) * 2.4;
-      ctx.globalAlpha = Math.min(1, nf * 4) * Math.min(1, z * 3) * .35; ctx.drawImage(GLOW, x - rr, y - rr, rr * 2, rr * 2);
+      ctx.globalAlpha = Math.min(1, nf * 4) * Math.min(1, z * 3) * .3 * (1 - E.detail.want * .85 * (E.detail.set && E.detail.set.total ? Math.min(1, E.detail.set.loaded / E.detail.set.total) : 0)); ctx.drawImage(GLOW, x - rr, y - rr, rr * 2, rr * 2);
     }
     ctx.restore();
   };
