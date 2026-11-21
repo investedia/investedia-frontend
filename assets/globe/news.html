@@ -918,6 +918,9 @@ html.proj-mode .pjs{left:378px!important}}
 @media(min-width:761px){html.proj-mode .pj-f{display:grid!important;grid-template-columns:1fr 1fr;gap:6px}html.proj-mode .pj-f>*{width:100%;max-width:none!important;min-width:0}html.proj-mode .pj-f select{max-width:none!important;width:100%}}
 @media(max-width:760px){html.proj-mode :is(#project-topbar,#project-mode-subtitle){display:none!important}html.proj-mode .top{display:flex!important}html.proj-mode .top :is(.m-actions,#sbox,#cats,#ddrow,.globe-privacy,.demo,.m-time){display:none!important}}
 
+/* Phone: the whole project card scrolls as one (owner 21 Nov: buttons stayed pinned while the text scrolled under them) */
+@media(max-width:760px){html.proj-mode .pj{overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}html.proj-mode .pj .pjd{flex:none;overflow:visible;min-height:auto}html.proj-mode .pj .pjh{flex:none}html.proj-mode .pj .pjb{flex:none;padding-bottom:16px}}
+
 </style>
 <script src="../locale.js"></script>
 <style id="pj-pics">/* owner 17 Nov 2026: project pictures visible while scrolling */.pj-pick>img,.pj-pick .pji{width:104px!important;height:84px!important;border-radius:12px!important;object-fit:cover;flex:none}.pj-pick{grid-template-columns:104px minmax(0,1fr)!important;gap:12px!important;align-items:start}.pj-satthumb{filter:brightness(1.12) contrast(1.08) saturate(1.1)}@media(max-width:760px){.pj-pick{grid-template-columns:92px minmax(0,1fr)!important}.pj-pick>img,.pj-pick .pji{width:92px!important;height:76px!important}}</style>
