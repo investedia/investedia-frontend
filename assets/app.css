@@ -1544,3 +1544,9 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .notif-dd .al-meter{height:5px}
 .notif-dd a.al-pro{text-decoration:none}.notif-dd a.al-pro:hover{color:var(--fg);border-color:var(--fg-2)}
 .notif-dd a.al-pro{display:inline-block!important;min-height:0!important;min-width:0!important;height:auto!important;padding:0 6px!important;line-height:17px!important}
+/* owner 21 Nov 2026: no plain orange buttons. Main actions use the soft orange style (tinted + outlined); other buttons unchanged. */
+.btn-primary,.hn-open,.pp-form button,.hn-btn.hn-pri,.sp-b.p,.pr-btn.pr-b2,.ap-btn.p{background:rgba(255,122,26,.12)!important;color:#ff9a4d!important;border:1px solid rgba(255,122,26,.45)!important;box-shadow:none!important}
+.btn-primary:hover,.hn-open:hover,.pp-form button:hover,.hn-btn.hn-pri:hover,.sp-b.p:hover,.pr-btn.pr-b2:hover,.ap-btn.p:hover{background:rgba(255,122,26,.2)!important;border-color:rgba(255,122,26,.65)!important;color:#ffb27a!important}
+:root[data-theme=light] .btn-primary,:root[data-theme=light] .hn-open,:root[data-theme=light] .pp-form button,:root[data-theme=light] .hn-btn.hn-pri,:root[data-theme=light] .sp-b.p,:root[data-theme=light] .pr-btn.pr-b2,:root[data-theme=light] .ap-btn.p{background:rgba(255,122,26,.08)!important;color:#c2510a!important;border-color:rgba(234,88,12,.45)!important}
+/* owner 21 Nov 2026: a few key sign-up buttons stay solid orange */
+.hdr-signup,.hdr-signup:hover,.auth-go,.auth-go:hover,.hn-btn.hn-pri,.hn-btn.hn-pri:hover,:root[data-theme=light] .hdr-signup,:root[data-theme=light] .auth-go,:root[data-theme=light] .hn-btn.hn-pri{background:var(--accent,#ff7a1a)!important;color:#120800!important;border-color:var(--accent,#ff7a1a)!important}
