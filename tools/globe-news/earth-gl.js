@@ -18,7 +18,7 @@
   const DER = !!gl.getExtension('OES_standard_derivatives');
   const FS = (DER ? '#extension GL_OES_standard_derivatives : enable\n#define DER 1\n' : '') + `precision highp float;
 uniform sampler2D dayT,nightT,dDay,dRel,dNight,dImp;uniform vec2 res;uniform vec3 g;uniform vec2 rot;uniform vec3 sun;uniform float dpr;
-uniform vec4 dbb;uniform float dk;uniform float lt;   // Phase 1 regional detail: bounding box (lon0,lat0,lon1,lat1 in radians) and fade-in
+uniform vec4 dbb;uniform float dk;uniform float lt;uniform float zw;   // Phase 1 regional detail: bounding box (lon0,lat0,lon1,lat1 in radians) and fade-in
 const float PI=3.14159265;
 #ifndef LT0
 #define LT0 .44
@@ -62,8 +62,11 @@ void main(){
   float dayk=smoothstep(-.07,.16,sdot);
   vec3 col=base*mix(.22,1.15,dayk)*mix(.8,1.,Zd);                        // owner 20 Nov 2026 (B): clear day/night
   col+=vec3(.05,.045,.04)*smoothstep(.12,0.,abs(sdot))*.6;                 // soft dusk edge
-  float L=texture2D(nightT,uv).r; L=pow(max(0.,(L-.09)/.91),1.25);
+  float L0=texture2D(nightT,uv).r; float L=pow(max(0.,(L0-.09)/.91),1.25);
   float core=smoothstep(.15,.85,L);
+  /* owner 22 Nov 2026 (zoom pop): as you zoom in, the global lights move gradually to the same calm curve the sharp tiles use,
+     so the tiles only add sharpness when they arrive, not a jump in brightness */
+  { float xg=max(0.,(L0-.3)/.7), xg3=pow(xg,1.6); L=mix(L,.4*xg3/(xg3+.3),zw); core=mix(core,smoothstep(.5,1.,xg),zw); }
   vec4 nd4=texture2D(dNight,duv); if(inD>0.&&nd4.a>0.){ float x=max(0.,(nd4.r-.4)/.6), x3=pow(x,1.6); float Ld=.4*x3/(x3+.3);  /* owner 21 Nov 2026: calmer zoomed-in lights, only real built-up cores */   // compressed highs: no white hotspots, detail kept
     L=mix(L,Ld,inD*nd4.a); core=mix(core,smoothstep(.5,1.,x),inD*nd4.a); }                                        // only the densest cores turn warm white  // NASA VIIRS 500 m metro lights (calmer curve: this layer is brighter)         // city lights only (drops Black Marble's faint ground)
   col+=mix(vec3(1.,.6,.26),vec3(1.,.9,.76),core)*L*1.55*(1.-dayk);  // real night lights: amber/soft orange in the fainter areas, warm white in the brightest cores                                 // tiny ivory points, very little amber; orange stays for data
@@ -79,7 +82,7 @@ void main(){
   gl.useProgram(pr);
   const buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
   const ap = gl.getAttribLocation(pr, 'p'); gl.enableVertexAttribArray(ap); gl.vertexAttribPointer(ap, 2, gl.FLOAT, false, 0, 0);
-  const U = n => gl.getUniformLocation(pr, n), u = { res: U('res'), g: U('g'), rot: U('rot'), sun: U('sun'), dpr: U('dpr'), dbb: U('dbb'), dk: U('dk'), lt: U('lt') };
+  const U = n => gl.getUniformLocation(pr, n), u = { res: U('res'), g: U('g'), rot: U('rot'), sun: U('sun'), dpr: U('dpr'), dbb: U('dbb'), dk: U('dk'), lt: U('lt'), zw: U('zw') };
   gl.uniform1i(U('dayT'), 0); gl.uniform1i(U('nightT'), 1); gl.uniform1i(U('dDay'), 2); gl.uniform1i(U('dRel'), 3); gl.uniform1i(U('dNight'), 4); gl.uniform1i(U('dImp'), 5);
   const aniso = gl.getExtension('EXT_texture_filter_anisotropic') || gl.getExtension('WEBKIT_EXT_texture_filter_anisotropic');
   const tex = [gl.createTexture(), gl.createTexture()], have = [0, 0];
@@ -124,7 +127,7 @@ void main(){
     const f = gl.RGBA; gl.texImage2D(gl.TEXTURE_2D, 0, f, f, gl.UNSIGNED_BYTE, src);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE); };
-  const MAXC = phone ? 2048 : 4096;
+  const MAXC = phone ? 1536 : 4096;  /* owner 22 Nov 2026: phones stuttered uploading 4 x 2048 px images while zooming */
   const request = (bb, zDay) => {
     const key = bb.join() + '|' + zDay; if (key === D.key) return; D.key = key; D.last = performance.now();
     const wide = bb[2] - bb[0] > 25, layers = LAY.map((L, i) => i === 0 && wide ? BM : L);
@@ -149,9 +152,9 @@ void main(){
   };
   const tick = () => {  // called every frame: swap in the new view when most tiles are in, then keep updating it as the rest arrive
     const s = D.set; if (!s) return;
-    if (!s.swapped && s.loaded > 0  /* owner 21 Nov 2026: show tiles as soon as they arrive; missing ones show the global image underneath (alpha) */) {
+    if (!s.swapped && s.loaded > 0 && performance.now() - (D.moved || 0) > 160  /* owner 21 Nov 2026: show tiles as soon as they arrive; missing ones show the global image underneath (alpha) */) {
       s.swapped = true; D.tSharp = performance.now(); const had = !!D.bb; s.layers.forEach((l, i) => { setTex(i, l.cv); l.dirty = false; }); D.bb = s.bb; D.deg = s.bb[2] - s.bb[0]; D.z = s.zDay; if (!had) D.fade = 0;
-    } else if (s.swapped && performance.now() - (s.tu || 0) > 120) { s.tu = performance.now(); s.layers.forEach((l, i) => { if (l.dirty) { setTex(i, l.cv); l.dirty = false; } }); }  // re-upload at most ~8 times a second
+    } else if (s.swapped && performance.now() - (s.tu || 0) > 120 && performance.now() - (D.moved || 0) > 160) {  /* only when the camera rests: uploads freeze the frame */ s.tu = performance.now(); s.layers.forEach((l, i) => { if (l.dirty) { setTex(i, l.cv); l.dirty = false; } }); }  // re-upload at most ~8 times a second
   };
   /* Owner 21 Nov 2026 (load ahead): once a view has loaded, quietly fetch the next, sharper level for the middle of the screen
      (day + city lights) so zooming in further is instant from the browser cache. At most 24 tiles, only when the tab is visible. */
@@ -165,6 +168,7 @@ void main(){
     });
   };
   const plan = (W, H, R, lon0, lat0) => {
+    const cam = R.toFixed(1) + ',' + lon0.toFixed(3) + ',' + lat0.toFixed(3); if (cam !== D.cam) { D.cam = cam; D.moved = performance.now(); }
     const rad = Math.asin(Math.min(1, Math.max(W, H) * .5 / R)) * 180 / Math.PI;  // angular radius of what is on screen
     D.want = Math.max(0, Math.min(1, (58 - rad) / 20));                               // fades in from ~58° to ~38° on screen (country-level zoom); full Earth unchanged
     if (D.want <= 0) return;
@@ -236,7 +240,7 @@ void main(){
     gl.uniform3f(u.sun, sp.lo, Math.cos(sp.la), Math.sin(sp.la));
     plan(W, H, R, lon0, lat0); tick(); const D2 = E.detail; const now = performance.now(); if (D2.bb) D2.fade = Math.min(1, D2.fade + Math.min(.5, (now - (D2.tf || now)) / 300)); D2.tf = now;  /* glow hand-over: one smooth fade, never reset by new tiles during a zoom (owner 21 Nov 2026: zoom flickered) */ D2.gk = (D2.gk || 0) + (((D2.bb && D2.fade >= 1) ? 1 : 0) - (D2.gk || 0)) * Math.min(1, (now - (D2.tg || now)) / 600); D2.tg = now;  // ~0.3 s fade-in, whatever the frame rate
     const k = D2.bb ? D2.want * D2.fade : 0, r = Math.PI / 180, b = D2.bb || [0, 0, 1, 1];
-    gl.uniform1f(u.dk, k); gl.uniform1f(u.lt, document.documentElement.dataset.theme === 'light' ? 1 : 0); gl.uniform4f(u.dbb, b[0] * r, b[1] * r, b[2] * r, b[3] * r);
+    gl.uniform1f(u.dk, k); gl.uniform1f(u.zw, D2.want || 0); gl.uniform1f(u.lt, document.documentElement.dataset.theme === 'light' ? 1 : 0); gl.uniform4f(u.dbb, b[0] * r, b[1] * r, b[2] * r, b[3] * r);
     for (let i = 0; i < 4; i++) { gl.activeTexture(gl.TEXTURE2 + i); gl.bindTexture(gl.TEXTURE_2D, dtex[i]); }
     gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, tex[0]); gl.activeTexture(gl.TEXTURE1); gl.bindTexture(gl.TEXTURE_2D, tex[1]);
     gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
