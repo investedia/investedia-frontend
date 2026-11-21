@@ -95,12 +95,21 @@ void main(){
     img.onload = () => { if (have[i] < tier) upload(i, img, tier); if (tier === 4 && wantTier === 8 && E.ready && !load.hi) { load.hi = 1; setTimeout(() => load(8), 400); } };
     img.src = `${BASE}earth-${k}-${tier}k.jpg`; });
   load(4);
+  /* Owner 21 Nov 2026: sharper city lights from the start. Phones also get the 8K night image (lights only, light on memory);
+     big desktops get a 16K night image. Both come from NASA VIIRS Black Marble, the same source as the zoom tiles. */
+  const night = tier => { const img = new Image(); img.decoding = 'async'; img.crossOrigin = 'anonymous';
+    img.onload = () => { if (have[1] < tier) upload(1, img, tier); if (tier === 8 && big >= 16384 && !phone && (navigator.deviceMemory || 8) >= 8) setTimeout(() => night(16), 600); };
+    img.src = `${BASE}earth-night-${tier}k.jpg`; };
+  const nightWait = () => E.ready ? setTimeout(() => night(big >= 8192 ? 8 : 4), wantTier === 8 ? 1500 : 300) : setTimeout(nightWait, 250);
+  if (big >= 8192) nightWait();
   // Phase 1 regional detail (owner 21 Nov 2026). Regional and metro level only: the request never asks for finer than 500 m per pixel
   // (the night-light source resolution), so close zoom stays soft and honest instead of blocky. Source: NASA GIBS (public domain).
   // Fast loading (owner 21 Nov 2026): NASA's pre-made WMTS tiles (served from NASA's CDN, ~0.3 s each, all in parallel) instead of
   // WMS images rendered on request (1-3 s). Tiles are fetched while zooming (throttled, not only after the camera stops), painted into
   // one canvas per layer as they arrive, and the sharp view swaps in as soon as most of it is ready. The busiest news cities are preloaded.
-  const WMTS = 'https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/';
+  const NASA = 'https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/';
+  /* Owner 21 Nov 2026: tiles come through our own Cloudflare cache (investedia.com/gibs/...), NASA directly as fallback */
+  const WMTS = /(^|\.)investedia\.com$/.test(location.hostname) ? '/gibs/' : NASA;
   const LAY = [  // [name, time, matrix set, ext, max level]
     ['Landsat_WELD_CorrectedReflectance_TrueColor_Global_Annual', '2000-12-01', '31.25m', 'jpg', 10],
     ['ASTER_GDEM_Greyscale_Shaded_Relief', 'default', '31.25m', 'jpg', 10],
@@ -132,7 +141,7 @@ void main(){
         set.total++; const im = new Image(); im.crossOrigin = 'anonymous'; im.decoding = 'async';
         im.onload = () => { if (D.set !== set) return; const lon = c * d - 180, lat = 90 - r * d;
           g.drawImage(im, (lon - bb[0]) * ppd, (bb[3] - lat) * ppd, d * ppd, d * ppd); lay.dirty = true; set.loaded++; };
-        im.onerror = () => { if (D.set === set) set.loaded++; };
+        im.onerror = () => { if (im.src.indexOf(NASA) < 0 && WMTS !== NASA) { im.src = NASA + im.src.split('/gibs/')[1]; return; } if (D.set === set) set.loaded++; };
         im.src = turl(L, z, r, c);
       }
     });
