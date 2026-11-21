@@ -109,7 +109,29 @@ const coStart = () => {
       const seen = new Set(), L = [...live, ...sh.flatMap(o => [...syms].flatMap(t => (o && o[t]) || []).map(r => ({ id: r[0], h: r[1], t: r[2], src: r[3] })))]
         .filter(x => !seen.has(x.id) && seen.add(x.id)).sort((p, q) => Date.parse(q.t) - Date.parse(p.t)).slice(0, 8);
       const el = root.querySelector('#co2-news'); if (el && L.length) el.outerHTML = sec('In the news', `Investedia articles that name ${esc(c.name)}.`, artList(L));
+      if (main) alertCard(L[0]);
     });
+    /* owner 21 Nov 2026 (design C): email alerts card that shows what the email looks like. Uses the existing watchlist alerts (email when a followed name is in the news). */
+    function alertCard(top) {
+      const it = { kind: 'asset', src: 'site', s: main.s }, W = window.INVWATCH, PK = 'inv-pending-watch';
+      const mv = a && Number.isFinite(a.d) ? `<span class="co2-am ${cl(a.d)}">${esc(main.s)} ${sgn(a.d)} today</span>` : '';
+      const box = document.createElement('section'); box.className = 'sec co2-sec';
+      const paint = () => { const on = W && W.has(it);
+        box.innerHTML = `<div class="card co2-alert"><h3>${on ? `You get ${esc(c.name)} alerts` : `Get emails like this for ${esc(c.name)}`}</h3>
+          ${top ? `<div class="co2-mail"><div class="co2-mf"><b>Investedia</b><span>when it happens</span></div><div class="co2-mh">${esc(c.name)} in the news: ${esc(top.h)}</div>${mv}</div>` : ''}
+          ${on ? `<p class="co2-fine">${esc(c.name)} is in your watchlist. Manage alerts from the bell or <a href="watchlist.html">your watchlist</a>.</p>`
+            : `<form class="co2-af" novalidate>${W && W.user ? '' : '<input type="email" placeholder="you@email.com" autocomplete="email" aria-label="Email address">'}<button type="submit" class="co2-ab">Get alerts</button></form><p class="co2-fine">${W && W.user ? 'Adds ' + esc(c.name) + ' to your watchlist.' : 'Free account · unsubscribe any time'}</p>`}</div>`;
+        const f = box.querySelector('form'); if (f) f.onsubmit = e => { e.preventDefault();
+          if (W && W.user) { if (!W.has(it)) W.toggle(it); return; }
+          const em = (f.querySelector('input') || {}).value || '';
+          try { localStorage.setItem(PK, JSON.stringify(it)); } catch {}
+          if (window.openAuth) { openAuth('up'); const i = document.querySelector('.auth-f input[name=email]'); if (i && em) { i.value = em; i.dispatchEvent(new Event('input', { bubbles: true })); } } }; };
+      if (W) W.on(() => { let pk = null; try { pk = JSON.parse(localStorage.getItem(PK) || 'null'); } catch {}
+        if (W.user && pk && pk.s === it.s) { try { localStorage.removeItem(PK); } catch {} if (!W.has(it)) W.toggle(it); } paint(); });
+      paint();
+      const at = root.querySelector('.co2-news') ? root.querySelector('.co2-news').closest('section') : root.querySelector('#co2-news');
+      if (at) at.after(box); else root.querySelector('.co-main').appendChild(box);
+    }
   }
 };
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', coStart); else coStart();  // page scripts load before the page body
