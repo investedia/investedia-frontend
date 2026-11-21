@@ -58,7 +58,7 @@
         S.list.push({ slug: 'wd-' + w.q, name: w.n, short: w.n, country: w.c || '', region: w.r || '', sym: '', ex: '', tracked: false, syms: [], wd: true,
           sector: w.s || w.i || '', desc: w.d || '', descAI: !!w.da, web: w.w || '', listed: !!w.l,
           hq: { hq_city: w.city || '', hq_lat: w.la, hq_lon: w.lo, qid: w.q, source_url: 'https://www.wikidata.org/wiki/' + w.q, checked_at: '2026-11-20' },
-          badge: null, logo: okImg && (w.lg ? 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(w.lg) + '?width=96' : (w.ic && /^https:\/\//.test(w.ic) ? w.ic : null)) : null });
+          badge: null, logo: okImg && (w.lg ? 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(w.lg) + '?width=96' : (w.ic && /^https:\/\//.test(w.ic) ? w.ic : null)) });
       }
     }).then(() => {
     S.list.sort((a, b) => (b.tracked - a.tracked) || (!!(b.badge || b.logo) - !!(a.badge || a.logo)) || a.name.localeCompare(b.name));
