@@ -56,7 +56,7 @@
       for (const w of wd?.companies || []) {
         if (qs.has(w.q) || nm.has(String(w.n).toLowerCase())) continue;
         S.list.push({ slug: 'wd-' + w.q, name: w.n, short: w.n, country: w.c || '', region: w.r || '', sym: '', ex: '', tracked: false, syms: [], wd: true,
-          sector: w.s || w.i || '', desc: w.d || '', web: w.w || '', listed: !!w.l,
+          sector: w.s || w.i || '', desc: w.d || '', descAI: !!w.da, web: w.w || '', listed: !!w.l,
           hq: { hq_city: w.city || '', hq_lat: w.la, hq_lon: w.lo, qid: w.q, source_url: 'https://www.wikidata.org/wiki/' + w.q, checked_at: '2026-11-20' },
           badge: null, logo: okImg && w.lg ? 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(w.lg) + '?width=96' : null });
       }
@@ -96,7 +96,7 @@
       const c = S.sel;
       return `<div class="co-wrap"><button type="button" class="co-back" data-co-back>‹ ${S.country ? esc(S.country) + ' · ' : ''}${filtered().length} companies</button>
         <div class="co-card">${badgeHTML(c)}<div><h3>${esc(c.name)}</h3><div class="co-kv"><div><small>Headquarters</small><b>${esc(c.hq.hq_city)}, ${esc(c.country)}</b></div>${c.wd ? `<div><small>Sector</small><b>${esc(c.sector || '—')}</b></div>` : `<div><small>Listed on</small><b>${esc(c.ex || '')} · ${esc(c.sym.replace(/^[A-Z]+:/, ''))}</b></div>`}<div><small>Region</small><b>${esc(c.region || '')}</b></div></div>
-        ${c.wd && c.desc ? `<p class="co-d" style="margin:8px 0 0;color:#c8c8cf;font-size:13.5px">${esc(c.desc.charAt(0).toUpperCase() + c.desc.slice(1))}.</p>` : ''}<p class="co-note">${c.wd ? 'Facts' : 'HQ source'}: <a href="${esc(c.hq.source_url)}" target="_blank" rel="noopener" style="color:inherit">${/gleif/.test(c.hq.method || '') ? 'GLEIF LEI register (CC0)' : 'Wikidata (CC0)'}</a>, checked ${esc(c.hq.checked_at)}.</p></div>
+        ${c.wd && c.desc ? `<p class="co-d" style="margin:8px 0 0;color:#c8c8cf;font-size:13.5px">${esc(c.desc.charAt(0).toUpperCase() + c.desc.slice(1))}.${c.descAI ? ' <small style="color:#6e6e76">· written with AI</small>' : ''}</p>` : ''}<p class="co-note">${c.wd ? 'Facts' : 'HQ source'}: <a href="${esc(c.hq.source_url)}" target="_blank" rel="noopener" style="color:inherit">${/gleif/.test(c.hq.method || '') ? 'GLEIF LEI register (CC0)' : 'Wikidata (CC0)'}</a>, checked ${esc(c.hq.checked_at)}.</p></div>
         <div class="co-act">${c.wd ? (c.web ? `<a class="co-btn p" href="${esc(c.web)}" target="_blank" rel="noopener">Company website</a>` : '') : `<a class="co-btn p" href="${esc(ROOT)}${c.tracked ? 'asset.html?s=' + encodeURIComponent(c.sym) : 'companies/' + encodeURIComponent(c.slug)}" target="_top">Company page</a>`}<a class="co-btn" href="${esc(ROOT)}news.html?q=${encodeURIComponent(c.short)}" target="_top">Articles about ${esc(c.short)}</a></div></div></div>`;
     }
     const L = filtered();
