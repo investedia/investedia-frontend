@@ -1974,7 +1974,7 @@ function endPointer(e) {
   touches.delete(e.pointerId);
   if (pinch) { if (touches.size < 2) { pinch = null; gestureLock(false); } drag = null; return; }
   if (drag && !drag.moved && e.type === 'pointerup') tap(e.clientX, e.clientY, e.pointerType !== 'mouse');
-  if (drag && drag.moved && e.type === 'pointerup' && e.pointerType === 'touch' && !reduce && performance.now() - drag.t < 90 && Math.hypot(drag.vx, drag.vy) > .005) spin = { vx: Math.max(-.6, Math.min(.6, drag.vx)), vy: Math.max(-.3, Math.min(.3, drag.vy)) };
+  if (drag && drag.moved && e.type === 'pointerup' && e.pointerType === 'touch' && !reduce && performance.now() - drag.t < 90 && Math.hypot(drag.vx, drag.vy) > .005) spin = { vx: Math.max(-.6 / Z, Math.min(.6 / Z, drag.vx)), vy: Math.max(-.3 / Z, Math.min(.3 / Z, drag.vy)) };  /* owner 21 Nov 2026: glide limit scales with zoom (zoomed in, a flick flung you across the globe) */
   drag = null; cv.classList.remove('drag');
 }
 cv.addEventListener('pointerup', endPointer); cv.addEventListener('pointercancel', endPointer);
