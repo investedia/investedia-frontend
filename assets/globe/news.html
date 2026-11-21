@@ -4201,7 +4201,7 @@ void main(){
       if (pop < ((la > 47 && lo < -50) || (la > 48 && lo > 30) || (la < -10 && lo > 110) || (la < 16 && la > -36 && lo > -20 && lo < 52) ? 1e5 : 3e5)) continue;  /* sparse regions (Canada, Russia, Australia, Africa): towns over 100k too */ const ph = la * r, l2 = lo * r, cp = Math.cos(ph), nf = -(cp * Math.cos(l2) * sx + cp * Math.sin(l2) * sy + Math.sin(ph) * sz); if (nf < .02) continue;
       const d = l2 - lon0 * r, z = s0 * Math.sin(ph) + c0 * cp * Math.cos(d); if (z < .05) continue;
       const x = cx + R * cp * Math.sin(d), y = cy - R * (c0 * Math.sin(ph) - s0 * cp * Math.cos(d)), rr = b * (1.2 + Math.log10(pop / 3e5) * 1.3) * 2.4;
-      ctx.globalAlpha = Math.min(1, nf * 4) * Math.min(1, z * 3) * .3 * (1 - E.detail.want * .85 * (E.detail.set && E.detail.set.total ? Math.min(1, E.detail.set.loaded / E.detail.set.total) : 0)); ctx.drawImage(GLOW, x - rr, y - rr, rr * 2, rr * 2);
+      ctx.globalAlpha = Math.min(1, nf * 4) * Math.min(1, z * 3) * .3 * (1 - E.detail.want * .85 * (E.detail.gk || 0)); ctx.drawImage(GLOW, x - rr, y - rr, rr * 2, rr * 2);
     }
     ctx.restore();
   };
@@ -4212,7 +4212,7 @@ void main(){
     gl.viewport(0, 0, w, h); gl.clearColor(0, 0, 0, 0); gl.clear(gl.COLOR_BUFFER_BIT);
     gl.uniform2f(u.res, w, h); gl.uniform3f(u.g, cx, cy, R); gl.uniform2f(u.rot, lon0 * Math.PI / 180, lat0 * Math.PI / 180); gl.uniform1f(u.dpr, dpr);
     gl.uniform3f(u.sun, sp.lo, Math.cos(sp.la), Math.sin(sp.la));
-    plan(W, H, R, lon0, lat0); tick(); const D2 = E.detail; const now = performance.now(); if (D2.bb) D2.fade = Math.min(1, D2.fade + Math.min(.5, (now - (D2.tf || now)) / 300)); D2.tf = now;  // ~0.3 s fade-in, whatever the frame rate
+    plan(W, H, R, lon0, lat0); tick(); const D2 = E.detail; const now = performance.now(); if (D2.bb) D2.fade = Math.min(1, D2.fade + Math.min(.5, (now - (D2.tf || now)) / 300)); D2.tf = now;  /* glow hand-over: one smooth fade, never reset by new tiles during a zoom (owner 21 Nov 2026: zoom flickered) */ D2.gk = (D2.gk || 0) + (((D2.bb && D2.fade >= 1) ? 1 : 0) - (D2.gk || 0)) * Math.min(1, (now - (D2.tg || now)) / 600); D2.tg = now;  // ~0.3 s fade-in, whatever the frame rate
     const k = D2.bb ? D2.want * D2.fade : 0, r = Math.PI / 180, b = D2.bb || [0, 0, 1, 1];
     gl.uniform1f(u.dk, k); gl.uniform1f(u.lt, document.documentElement.dataset.theme === 'light' ? 1 : 0); gl.uniform4f(u.dbb, b[0] * r, b[1] * r, b[2] * r, b[3] * r);
     for (let i = 0; i < 4; i++) { gl.activeTexture(gl.TEXTURE2 + i); gl.bindTexture(gl.TEXTURE_2D, dtex[i]); }
