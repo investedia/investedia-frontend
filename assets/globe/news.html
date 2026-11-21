@@ -2591,7 +2591,8 @@ function renderAct(){
  const L=$('lcol')?.getBoundingClientRect(),P=panel.getBoundingClientRect();el.style.left=((L?.right||24)+24)+'px';el.style.right=(innerWidth-P.left+24)+'px';
  const tm=t=>{const d=new Date(t),hm=d.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});return Math.abs(Date.now()-d)<864e5&&d.getDate()===new Date().getDate()?hm:d.toLocaleDateString([], {day:'numeric',month:'short'})+' '+hm;},badge=$('badge')?.textContent||'';
  let cards='',right='';
- if(actTab==='co'){cards=window.InvCompanies?InvCompanies.panelHTML():'';right='<span>Head offices from Wikidata and GLEIF</span>';}
+ if(actTab==='bf'){right='<span>Spoken summary</span>';cards=window.InvBriefing?InvBriefing.stripHTML():'';}
+ else if(actTab==='co'){cards=window.InvCompanies?InvCompanies.panelHTML():'';right='<span>Head offices from Wikidata and GLEIF</span>';}
  else if(actTab==='pf'){cards='';right=wlHold().length&&wlView==='home'?`<span class="pf-bs" style="display:flex;gap:6px">${wlBtns}</span>`:'';}
  else if(actTab==='la'){
   const G=actLatest();right=`<span><i></i>${esc(badge.replace(/^News /,'')||'Updated')}</span><a href="../../news.html">View all →</a>`;
@@ -2603,10 +2604,11 @@ function renderAct(){
   cards=ev.length?ev.map(e=>{const d=new Date(e.at);return `<a class="act-k" href="../../calendar.html"><div class="act-m"><b>${d.toLocaleDateString([], {weekday:'short'})} ${tm(d)}</b>${esc(e.country||e.c)}${e.src?' · '+esc(e.src):''}</div><div class="act-t">${esc(e.t)}</div><div class="act-f"><span class="hi">● High impact</span></div></a>`}).join(''):'<div class="act-e">No scheduled high-impact releases for this region in our calendar. Coverage is limited to major currencies for now.</div>';
  }
  el.classList.toggle('pf',actTab==='pf');
- el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Upcoming</button><button type="button" role="tab" aria-selected="${actTab==='pf'}" data-at="pf">My watchlist</button><span class="act-r">${right}</span></div>${actTab==='pf'?wlHTML():`<div class="act-c${actTab==='co'?' co-c':''}">${cards}</div>`}`;
+ el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Upcoming</button><button type="button" role="tab" aria-selected="${actTab==='pf'}" data-at="pf">My watchlist</button>${window.InvBriefing?`<button type="button" role="tab" aria-selected="${actTab==='bf'}" data-at="bf">${InvBriefing.tabHTML()}</button>`:''}<span class="act-r">${right}</span></div>${actTab==='pf'?wlHTML():`<div class="act-c${actTab==='co'?' co-c':''}">${cards}</div>`}`;
  if(actTab==='pf')wlBind(el);
  document.documentElement.style.setProperty('--acth',el.offsetHeight+'px');
  el.querySelectorAll('[data-at]').forEach(b=>b.onclick=()=>{actTab=b.dataset.at;renderAct();});
+ if(window.InvBriefing){InvBriefing.bind(el);if(!el._bfsub)el._bfsub=InvBriefing.onChange(()=>{if(el.hidden)return;const t=el.querySelector('[data-at="bf"]');if(t)t.innerHTML=InvBriefing.tabHTML();if(actTab==='bf')InvBriefing.paint(el.querySelector('.act-c'));});}
  el.querySelectorAll('[data-act]').forEach(b=>b.onclick=()=>{const g=el._groups[+b.dataset.act];if(g)openStory(g.top);});
 }
 addEventListener('resize',()=>renderAct());
@@ -3587,10 +3589,12 @@ function mkdRender(){
   if(window.mkWlQ!=null){const q=mkWlQ.trim().toLowerCase(),R=q?wlUniverse().filter(a=>a.s.toLowerCase().startsWith(q)||String(a.n||'').toLowerCase().includes(q)).slice(0,7):[];
    cards=`<div class="mkd-c mkd-add"><input id="mk-wl-q" placeholder="Company, index, commodity or crypto" value="${esc(mkWlQ)}" autocomplete="off"><div class="f">${have.size>=WL_FREE?`Free shows ${WL_FREE} on the globe · <b>PRO</b> unlimited`:`${have.size} of ${WL_FREE} on the globe · Free`}</div></div>`+(R.length?R.map(a=>`<button type="button" class="mkd-c" data-wl-add="${esc(a.s)}"${have.has(a.s.toUpperCase())?' disabled':''}><div class="m"><b>${esc(a.s)}</b> ${esc(a.k?nm(a.k):'')}</div><div class="t">${esc(a.n||a.s)}</div><div class="f">${have.has(a.s.toUpperCase())?'In your watchlist':'＋ Add to watchlist'}</div></button>`).join(''):`<p class="mkd-e">${q?'No match in our market list.':'Type a name or ticker.'}</p>`);}
   else cards=H.length?H.map(h=>{const a=MKT.by?.[h.s];return `<div class="mkd-c"><div class="m"><b>${esc(h.s)}</b> ${esc(h.n)}<button type="button" class="mkd-x" data-wl-del="${esc(h.s)}" aria-label="Remove ${esc(h.n)}">×</button></div><div class="t" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:16px">${a&&Number.isFinite(a.p)?esc(money(a)):'No price'} ${a&&Number.isFinite(a.d)?pctPill(a.d):''}</div><div class="f">${a&&a.k?esc(nm(a.k))+' · ':''}${isFinite(asof)?'as of '+new Date(asof).toLocaleDateString([], {day:'numeric',month:'short'}):'last close'}</div></div>`;}).join(''):'<button type="button" class="mkd-c mkd-empty" data-wl-open><div class="t">＋ Add your first company or asset</div><div class="f">Prices from our last market update</div></button>';
+ }else if(mkTab==='bf'){cards=window.InvBriefing?InvBriefing.stripHTML():'';
  }else if(mkTab==='co'){cards=window.InvCompanies?InvCompanies.panelHTML():'';
  }else cards=next.length?next.map(e=>`<a class="mkd-c" href="../../calendar.html"><div class="m"><b>${when(e.at)}</b> ${esc(e.country||'US')}</div><div class="t">${esc(e.t)}</div><div class="f">● High impact · ${esc(e.src||'official')}</div></a>`).join(''):'<p class="mkd-e">No scheduled releases in our calendar.</p>';
- mkA.innerHTML=`<div class="mkd-th"><button type="button" data-mt="act" aria-selected="${mkTab==='act'}">Market activity</button><button type="button" data-mt="up" aria-selected="${mkTab==='up'}">Upcoming</button><button type="button" data-mt="wl" aria-selected="${mkTab==='wl'}">My watchlist</button><button type="button" data-mt="co" aria-selected="${mkTab==='co'}">Companies</button><em>${mkTab==='co'?'Head offices from Wikidata and GLEIF':mkTab==='wl'?`<button type="button" class="mkd-addb" data-wl-open>${window.mkWlQ!=null?'Done':'＋ Add'}</button> Prices from our last market update, not live`:(d1?'ECB '+fmtD(d1)+' · ':'')+'sessions now'}</em></div><div class="mkd-cs${mkTab==='wl'?' wl':''}">${cards}</div>`;
+ mkA.innerHTML=`<div class="mkd-th"><button type="button" data-mt="act" aria-selected="${mkTab==='act'}">Market activity</button><button type="button" data-mt="up" aria-selected="${mkTab==='up'}">Upcoming</button><button type="button" data-mt="wl" aria-selected="${mkTab==='wl'}">My watchlist</button>${window.InvBriefing?`<button type="button" data-mt="bf" aria-selected="${mkTab==='bf'}">${InvBriefing.tabHTML()}</button>`:''}<button type="button" data-mt="co" aria-selected="${mkTab==='co'}">Companies</button><em>${mkTab==='bf'?'Spoken summary':mkTab==='co'?'Head offices from Wikidata and GLEIF':mkTab==='wl'?`<button type="button" class="mkd-addb" data-wl-open>${window.mkWlQ!=null?'Done':'＋ Add'}</button> Prices from our last market update, not live`:(d1?'ECB '+fmtD(d1)+' · ':'')+'sessions now'}</em></div><div class="mkd-cs${mkTab==='wl'?' wl':''}${mkTab==='bf'?' bf':''}">${cards}</div>`;
  mkA.classList.toggle('co-on',mkTab==='co');
+ if(window.InvBriefing){InvBriefing.bind(mkA);if(!mkA._bfsub)mkA._bfsub=InvBriefing.onChange(()=>{if(mkA.hidden)return;const t=mkA.querySelector('[data-mt="bf"]');if(t)t.innerHTML=InvBriefing.tabHTML();if(mkTab==='bf')InvBriefing.paint(mkA.querySelector('.mkd-cs'));});}
  mkA.querySelectorAll('[data-mt]').forEach(b=>b.onclick=()=>{mkTab=b.dataset.mt;mkdRender();});
  mkA.querySelectorAll('[data-wl-open]').forEach(b=>b.onclick=()=>{window.mkWlQ=window.mkWlQ!=null&&b.classList.contains('mkd-addb')?null:'';mkdRender();mkA.querySelector('#mk-wl-q')?.focus();});
  const wq=mkA.querySelector('#mk-wl-q');if(wq)wq.oninput=()=>{window.mkWlQ=wq.value;const pos=wq.selectionStart;mkdRender();const n=mkA.querySelector('#mk-wl-q');if(n){n.focus();n.setSelectionRange(pos,pos);}};
@@ -3732,15 +3736,27 @@ function mkUnusual(){
  .bf-row{display:flex;align-items:center;gap:10px}
  .bf-ib,.bf-pp,.bf-tr{transition:background .15s,transform .15s}.bf-pp:active,.bf-ib:active{transform:scale(.92)}
  .bf-row .bf-ic{width:30px;height:30px;flex:none}
- .bf-cap{flex:1;min-width:0}.bf-cap small{display:block;color:#8a8a92;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
+ .bf-cap{flex:1;min-width:0}.bf-cap small{display:block;color:var(--fg-3,#8a8a92);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
  .bf-cap p{margin:0;color:#f4f4f5;font:500 14.5px/1.45 Inter,system-ui,sans-serif;letter-spacing:-.005em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
  .bf-ib{width:36px;height:36px;border-radius:50%;border:1px solid #2a2a2f;background:#141417;color:#d4d4d8;display:flex;align-items:center;justify-content:center;cursor:pointer;flex:none;font-size:13px}
  .bf-ib:hover{background:#1f1f24;border-color:#3a3a40;color:#fff}.bf-card .bf-x.bf-ib{border-color:transparent;background:transparent;color:#8a8a92;font-size:0}.bf-row .bf-pp{width:42px;height:42px;margin-left:0;background:#ff7a1a;box-shadow:0 0 0 4px #ff7a1a22}.bf-row .bf-pp svg path,.bf-row .bf-pp svg rect{fill:#111}
  .bf-bar{height:2px;background:#232327;border-radius:2px;margin-top:9px;overflow:hidden}.bf-bar i{display:block;height:100%;background:#ff7a1a;transition:width .4s}
- .bf-tr{border:1px solid #2a2a2f;border-radius:999px;background:#141417;color:#d4d4d8;font:500 12.5px Inter,system-ui,sans-serif;padding:0 14px;height:36px;cursor:pointer;flex:none}.bf-tr.on{border-color:#5a3214;color:#ff9d5c}
+ .bf-tr{border:1px solid var(--line,#2a2a2f);border-radius:999px;background:var(--panel,#141417);color:var(--fg-2,#d4d4d8);font:500 12.5px Inter,system-ui,sans-serif;padding:0 14px;height:36px;cursor:pointer;flex:none}.bf-tr.on{border-color:#5a3214;color:#ff9d5c}
  .bf-card .bf-list{max-height:min(34vh,260px);margin-top:8px}.bf-card .bf-b{font-size:13.5px;padding:8px 10px;margin:6px 0}
  .bf-card .bf-ctl{margin-top:6px}.bf-card .bf-note{font-size:11px;margin-top:6px}
 
+ /* Briefing tab in the activity strips (owner 17 Nov 2026): ring logo, Briefing / playing / Briefed */
+ .bfs-tab{display:inline-flex;align-items:center;gap:6px}.bfs-tab svg{flex:none}.bfs-tab .bf-eq{height:10px}
+ .bfs{--fg:#f4f4f5;--fg-2:#d4d4d8;--fg-3:#8a8a92;--panel:#141417;--line:#2a2a2f;display:flex;flex-direction:column;gap:8px;padding:8px;background:#141417;border-radius:12px}.bfs-r{display:flex;align-items:center;gap:12px}
+ .bfs-ic{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#1d130b;box-shadow:0 0 0 4px #ff7a1a14;flex:none}
+ .bfs-t{flex:1;min-width:0}.bfs-t small{display:block;color:var(--fg-3,#8a8a92);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
+ .bfs-t p{margin:0;color:var(--fg,#f4f4f5);font:500 14px/1.4 Inter,system-ui,sans-serif;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+ .bfs-pp{width:38px;height:38px;border-radius:50%;border:0;background:#ff7a1a;display:flex;align-items:center;justify-content:center;cursor:pointer;flex:none;box-shadow:0 0 0 4px #ff7a1a22}
+ .bfs-pp:focus-visible,.bfs-tr:focus-visible{outline:2px solid #ff9d55;outline-offset:2px}
+ .bfs-tr{border:1px solid var(--line,#2a2a2f);border-radius:999px;background:var(--panel,#141417);color:var(--fg-2,#d4d4d8);font:500 12.5px Inter,system-ui,sans-serif;padding:0 14px;height:34px;cursor:pointer;flex:none}.bfs-tr:hover{border-color:#3a3a40;color:#fff}
+ .bfs-bar{height:2px;background:#232327;border-radius:2px;overflow:hidden}.bfs-bar i{display:block;height:100%;background:#ff7a1a;transition:width .4s}
+ .act-c:has(>.bfs),.mkd-cs.bf{display:block!important;overflow:visible}
+ .bfs-n,.bfs-e{margin:0;color:var(--fg-3,#77777f);font-size:11px}.bfs-e{font-size:12.5px;padding:8px 0}
  .bf-tc{position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:4}
  .bf-stack{position:fixed;z-index:59;display:flex;flex-direction:column;gap:8px;width:min(420px,calc(100vw - 24px));opacity:0;transform:translateY(8px);transition:opacity .35s ease,transform .35s ease;pointer-events:none}
  .bf-stack.on{opacity:1;transform:none;pointer-events:auto}
@@ -3862,7 +3878,7 @@ function mkUnusual(){
   const b=document.querySelector('.brand')?.getBoundingClientRect(),phone=matchMedia('(max-width:760px)').matches;
   if(phone){const m=document.querySelector('.m-actions')?.getBoundingClientRect();btn.style.top=((m?.top||12))+'px';btn.style.left='';btn.style.right=((m?innerWidth-m.left:12)+8)+'px';}
   else{const q=(document.getElementById('sbox')||document.getElementById('q'))?.getBoundingClientRect();btn.style.right='';btn.style.top=((q&&q.top>0?q.top:(b?.bottom||60)+10))+'px';btn.style.left=((q&&q.right>0?q.right:(b?.right||400))+24)+'px';}
-  card.style.top='';card.style.left='';if(!phone){const lb=[...document.querySelectorAll('button,a')].find(e=>/^Latest activity$/.test(e.textContent.trim()));const bar=lb&&lb.closest('div[class]')?.parentElement?.getBoundingClientRect();card.style.setProperty('--bf-bottom',((bar&&bar.top>innerHeight*.5?innerHeight-bar.top:96)+14)+'px');}}
+  card.style.top='';card.style.left='';if(!phone){const lb=[...document.querySelectorAll('button,a')].find(e=>/^(Latest|Market) activity$/.test(e.textContent.trim())&&e.getClientRects().length);/* News or Markets strip, whichever is showing */const bar=lb&&lb.closest('div[class]')?.parentElement?.getBoundingClientRect();card.style.setProperty('--bf-bottom',((bar&&bar.top>innerHeight*.5?innerHeight-bar.top:96)+14)+'px');}}
  let tr=false;
  // ---- Player position and seeking (owner 17 Nov 2026): tap or drag the timeline to go back or forward; phone uses the player card (option C).
  const mPhone=()=>matchMedia('(max-width:760px)').matches;
@@ -3928,6 +3944,35 @@ function mkUnusual(){
  const ready=setInterval(()=>{if(typeof MKT!=='undefined'&&MKT.all&&MKT.all.length&&typeof stories!=='undefined'){clearInterval(ready);build();paintBtn();}},500);
  setInterval(()=>{if(!playing&&CH.length)paintBtn();},5000);
  setInterval(()=>{if(playing&&!card.hidden){const b=card.querySelector('.bf-bar i');if(b){const at=REC?Math.round(AU.currentTime*14):CH.slice(0,cur).reduce((x,c)=>x+c.t.length,0);b.style.width=Math.min(100,Math.round(at/(total()||1)*100))+'%';}}},1000);
+ // Owner 17 Nov 2026: Briefing tab in the Markets and News activity strips (next to Upcoming and My watchlist).
+ // One player only: the strips render from this API and every control goes through the same speak/pause/resume as the card.
+ const subs=new Set();let lastS='';
+ const api={
+  state:()=>({ready:CH.length>0,playing,done:!!done(),cur,n:CH.length,text:CH[cur]?.t||CH[0]?.t||'',head:CH[0]?.h||'Briefing',progress:REC?(dur()?Math.min(1,AU.currentTime/dur()):0):(CH.length?cur/CH.length:0),recorded:!!REC}),
+  play(){if(!CH.length)build();card.hidden=false;if(!playing&&!resume())speak(done()?0:cur>=CH.length-1?0:cur);paintBtn();paintCard();},
+  pause(){if(playing)pauseOnly();},
+  transcript(){if(!CH.length)build();card.hidden=false;tr=true;paintCard();paintBtn();},
+  onChange(f){subs.add(f);return()=>subs.delete(f);},
+  tabHTML(){const S=api.state();return `<span class="bfs-tab">${S.done&&!S.playing?TICK14:RING14}${S.playing?'Briefing <i class="bf-eq"><b></b><b></b><b></b></i>':S.done?'Briefed':'Briefing'}</span>`;},
+  stripHTML(){const S=api.state(),e=t=>String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+   if(!S.ready)return '<div class="bfs"><p class="bfs-e">Briefing is preparing from today\'s market data…</p></div>';
+   return `<div class="bfs"><div class="bfs-r"><span class="bfs-ic">${S.done&&!S.playing?DONE:RING}</span><div class="bfs-t"><small>${e(S.head)} · ${S.playing?'playing':S.done?'✓ Briefed':S.cur?'paused':'ready'}</small><p>${e(S.text)}</p></div>
+    <button type="button" class="bfs-pp" data-bfs="${S.playing?'pause':'play'}" aria-label="${S.playing?'Pause':'Play'} Briefing">${S.playing?PAUSE:PLAY}</button><button type="button" class="bfs-tr" data-bfs="tr">Transcript</button></div>
+    <div class="bfs-bar"><i style="width:${Math.round(S.progress*100)}%"></i></div><p class="bfs-n">Spoken summary of data on this page. Not investment advice.</p></div>`;},
+  // update in place so buttons are not replaced while someone is clicking them; rebuild only when the mode changes
+  paint(c){if(!c)return;const S=api.state(),mode=`${S.ready}|${S.playing}|${S.done}`,b=c.querySelector('.bfs');
+   if(!b||c.dataset.bfsMode!==mode){c.innerHTML=api.stripHTML();c.dataset.bfsMode=mode;return;}
+   if(c.dataset.bfsMode===undefined)c.dataset.bfsMode=mode;
+   const p=b.querySelector('.bfs-t p'),sm=b.querySelector('.bfs-t small'),bar=b.querySelector('.bfs-bar i');
+   if(p&&p.textContent!==S.text)p.textContent=S.text;const st=`${S.head} · ${S.playing?'playing':S.done?'✓ Briefed':S.cur?'paused':'ready'}`;if(sm&&sm.textContent!==st)sm.textContent=st;if(bar)bar.style.width=Math.round(S.progress*100)+'%';},
+  bind(el){if(el._bfs)return;el._bfs=1;el.addEventListener('click',ev=>{const k=ev.target.closest('[data-bfs]')?.dataset.bfs;if(!k)return;ev.stopPropagation();k==='play'?api.play():k==='pause'?api.pause():api.transcript();});}
+ };
+ const RING14='<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#ff7a1a" stroke-width="2"/></svg>';
+ const TICK14='<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#8a8a92" stroke-width="2"/><path d="m8 12.2 2.6 2.6L16 9.4" fill="none" stroke="#ececef" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+ setInterval(()=>{const s=JSON.stringify(api.state());if(s!==lastS){lastS=s;subs.forEach(f=>{try{f(api.state());}catch{}});}},400);
+ window.InvBriefing=api;
+ // the strips render before this file runs: draw them again so the Briefing tab appears
+ setTimeout(()=>{try{if(typeof mkdRender==='function'&&document.documentElement.classList.contains('mkd-on'))mkdRender();}catch{}try{if(typeof renderAct==='function')renderAct();}catch{}},0);
 })();
 
 // One dashboard (owner 18 Nov 2026): on PC every mode (News, Markets, Projects) shares the same frame.

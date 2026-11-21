@@ -2551,7 +2551,8 @@ function renderAct(){
  const L=$('lcol')?.getBoundingClientRect(),P=panel.getBoundingClientRect();el.style.left=((L?.right||24)+24)+'px';el.style.right=(innerWidth-P.left+24)+'px';
  const tm=t=>{const d=new Date(t),hm=d.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});return Math.abs(Date.now()-d)<864e5&&d.getDate()===new Date().getDate()?hm:d.toLocaleDateString([], {day:'numeric',month:'short'})+' '+hm;},badge=$('badge')?.textContent||'';
  let cards='',right='';
- if(actTab==='co'){cards=window.InvCompanies?InvCompanies.panelHTML():'';right='<span>Head offices from Wikidata and GLEIF</span>';}
+ if(actTab==='bf'){right='<span>Spoken summary</span>';cards=window.InvBriefing?InvBriefing.stripHTML():'';}
+ else if(actTab==='co'){cards=window.InvCompanies?InvCompanies.panelHTML():'';right='<span>Head offices from Wikidata and GLEIF</span>';}
  else if(actTab==='pf'){cards='';right=wlHold().length&&wlView==='home'?`<span class="pf-bs" style="display:flex;gap:6px">${wlBtns}</span>`:'';}
  else if(actTab==='la'){
   const G=actLatest();right=`<span><i></i>${esc(badge.replace(/^News /,'')||'Updated')}</span><a href="../../news.html">View all →</a>`;
@@ -2563,10 +2564,11 @@ function renderAct(){
   cards=ev.length?ev.map(e=>{const d=new Date(e.at);return `<a class="act-k" href="../../calendar.html"><div class="act-m"><b>${d.toLocaleDateString([], {weekday:'short'})} ${tm(d)}</b>${esc(e.country||e.c)}${e.src?' · '+esc(e.src):''}</div><div class="act-t">${esc(e.t)}</div><div class="act-f"><span class="hi">● High impact</span></div></a>`}).join(''):'<div class="act-e">No scheduled high-impact releases for this region in our calendar. Coverage is limited to major currencies for now.</div>';
  }
  el.classList.toggle('pf',actTab==='pf');
- el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Upcoming</button><button type="button" role="tab" aria-selected="${actTab==='pf'}" data-at="pf">My watchlist</button><span class="act-r">${right}</span></div>${actTab==='pf'?wlHTML():`<div class="act-c${actTab==='co'?' co-c':''}">${cards}</div>`}`;
+ el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Upcoming</button><button type="button" role="tab" aria-selected="${actTab==='pf'}" data-at="pf">My watchlist</button>${window.InvBriefing?`<button type="button" role="tab" aria-selected="${actTab==='bf'}" data-at="bf">${InvBriefing.tabHTML()}</button>`:''}<span class="act-r">${right}</span></div>${actTab==='pf'?wlHTML():`<div class="act-c${actTab==='co'?' co-c':''}">${cards}</div>`}`;
  if(actTab==='pf')wlBind(el);
  document.documentElement.style.setProperty('--acth',el.offsetHeight+'px');
  el.querySelectorAll('[data-at]').forEach(b=>b.onclick=()=>{actTab=b.dataset.at;renderAct();});
+ if(window.InvBriefing){InvBriefing.bind(el);if(!el._bfsub)el._bfsub=InvBriefing.onChange(()=>{if(el.hidden)return;const t=el.querySelector('[data-at="bf"]');if(t)t.innerHTML=InvBriefing.tabHTML();if(actTab==='bf')InvBriefing.paint(el.querySelector('.act-c'));});}
  el.querySelectorAll('[data-act]').forEach(b=>b.onclick=()=>{const g=el._groups[+b.dataset.act];if(g)openStory(g.top);});
 }
 addEventListener('resize',()=>renderAct());
