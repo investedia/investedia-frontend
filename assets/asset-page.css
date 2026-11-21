@@ -166,10 +166,10 @@ html,body{overflow-x:clip}.ap{max-width:100%;overflow-x:clip}
 @media(max-width:760px){.pa-h{align-items:flex-start}.pa-h small .ap-co-slot{flex-basis:100%}}
 .pa-12m{margin-top:16px;padding-top:14px;border-top:1px solid var(--line,#222)}.pa-12m small{display:block;color:var(--fg-3,#8a8a92);font-size:12px;margin-bottom:6px}.pa-12m svg{width:100%;height:90px;display:block}.pa-12m-ax{display:flex;justify-content:space-between;color:var(--fg-3,#8a8a92);font-size:11.5px;margin-top:4px}
 /* Pop-up header (15 Nov 2026): Watch in the top bar beside "Open full page"; name and tags never covered */
-.pa-watch-top{position:absolute;top:14px;z-index:3;height:40px;border-radius:999px!important;padding:0 14px!important}
+.pa-watch-top{position:fixed;top:14px;z-index:3;height:40px;border-radius:999px!important;padding:0 14px!important;background:rgba(30,30,34,.72)!important;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
 .pa-has-topwatch .pa-h{padding-right:0;padding-top:46px}
 .pa-h small{row-gap:6px}.pa-hn h1{overflow-wrap:anywhere}
-@media(max-width:600px){.pa-watch-top{width:40px!important;min-width:0!important;max-width:40px;padding:0!important;justify-content:center;flex:none}.pa-watch-top span{display:none}.pa-has-topwatch .pa-h{padding-top:54px}}
+@media(max-width:600px){.pa-watch-top{width:40px!important;min-width:0!important;max-width:40px;padding:0!important;justify-content:center;flex:none}.pa-watch-top span{display:none}.pa-watch-top{gap:0!important}.pa-watch-top svg{margin:0!important;display:block}.pa-has-topwatch .pa-h{padding-top:54px}}
 /* Header line (15 Nov 2026): sector as plain text after the type, no pill, so nothing overlaps the name line */
 .pa-h small .pa-tag{border:0;padding:0;border-radius:0;font-size:inherit;color:var(--fg-3)}
 .pa-h small .pa-tag::before{content:'·';margin-right:8px}
