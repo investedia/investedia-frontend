@@ -40,15 +40,15 @@ function thumb(s) {
 const row = s => `<a class="hn-row hn-news-card" href="${url(s)}"><span class="hn-source">${esc((s.source?.name || 'N').slice(0,2).toUpperCase())}</span><span><h4>${esc(s.headline)}</h4>${impactChips(s)}<span class="hn-meta">${esc(s.source?.name || '')} · ${ago(s.published_at)}</span></span></a>`;
 function impactChips(s) {
   const rows = (Array.isArray(s.impacts) ? s.impacts : []).filter(i => i && typeof i.name === 'string' && ['up', 'down', 'mixed', 'unclear'].includes(i.direction) && Object.values(ISO).includes(i.country)).slice(0, 2);
-  const arrow = { up: '↑', down: '↓', mixed: '↔', unclear: '↔' };
+  const arrow = { up: '↑', down: '↓', mixed: '↔︎', unclear: '↔︎' };
   return rows.length ? `<div class="hn-ents hn-impacts" aria-label="AI-assisted analysis">${rows.map(i => `<span class="hn-ent"><img src="assets/globe/flags/${i.country.toLowerCase()}.svg" alt="" ${hideBad}><span class="hn-impact-${i.direction}">${arrow[i.direction]}</span>${esc(i.name)}</span>`).join('')}</div>` : '';
 }
 // "Why it moved": real price moves next to what the article implies. Numbers come from assets/globe/markets.json only.
 let MARKETS = [];
 const mkOf = i => i && MARKETS.find(a => a.s === i.ticker || a.site === i.ticker);
 const primary = s => { for (const i of Array.isArray(s.impacts) ? s.impacts : []) { const a = mkOf(i); if (a && Number.isFinite(a.d)) return { a, i }; } return null; };
-const pctPill = v => `<span class="hn-pct ${v > 0 ? 'up' : v < 0 ? 'down' : 'flat'}">${v > 0 ? '↑' : v < 0 ? '↓' : '↔'} ${Math.abs(v).toFixed(2)}%</span>`;
-const IMPLIES = { up: '↑ up', down: '↓ down', mixed: '↔ mixed', unclear: 'unclear' };
+const pctPill = v => `<span class="hn-pct ${v > 0 ? 'up' : v < 0 ? 'down' : 'flat'}">${v > 0 ? '↑' : v < 0 ? '↓' : '↔︎'} ${Math.abs(v).toFixed(2)}%</span>`;
+const IMPLIES = { up: '↑ up', down: '↓ down', mixed: '↔︎ mixed', unclear: 'unclear' };
 const implies = i => `<span class="hn-impl">Article implies ${IMPLIES[i.direction] || 'unclear'}</span>`;
 const sign = v => (v > 0 ? '+' : '') + v.toFixed(2) + '%';
 function spark(a, mark, up) {
@@ -61,7 +61,7 @@ const markIndex = (s, a, asof) => { const days = Math.max(0, (Date.parse(asof) -
 // Since-the-news card (chart option B) when we recorded prices after the article; otherwise the older today / 7-day view.
 const sinceOf = (s, m) => { if (!m || !window.SinceNews || !TRACK || !TRACK.s) return ''; const series = TRACK.s[m.a.s], st = SinceNews.compute(Date.parse(s.published_at), series, Date.now()).state; return st === 'ok' ? SinceNews.card({ story: s, impact: m.i, asset: m.a, series, now: Date.now() }) : ''; };
 const whyFeatured = (s, asof) => { const m = primary(s), t = s.why_moved || s.summary;
-  const since = sinceOf(s, m), body = since || (m ? `<div class="hn-wrow"><div class="hn-wbig"><span class="hn-wl">${esc(m.a.n)} · today</span><strong class="${m.a.d > 0 ? 'up' : m.a.d < 0 ? 'down' : 'flat'}">${m.a.d > 0 ? '↑' : m.a.d < 0 ? '↓' : '↔'} ${Math.abs(m.a.d).toFixed(2)}%</strong><span class="hn-wl">7 days ${sign(m.a.w)}</span></div><div class="hn-wchart">${spark(m.a, markIndex(s, m.a, asof), m.a.w >= 0)}<div class="hn-wcap"><span>22 sessions ago</span><span class="hn-wmk">● article published</span><span>now</span></div></div></div>` : '');
+  const since = sinceOf(s, m), body = since || (m ? `<div class="hn-wrow"><div class="hn-wbig"><span class="hn-wl">${esc(m.a.n)} · today</span><strong class="${m.a.d > 0 ? 'up' : m.a.d < 0 ? 'down' : 'flat'}">${m.a.d > 0 ? '↑' : m.a.d < 0 ? '↓' : '↔︎'} ${Math.abs(m.a.d).toFixed(2)}%</strong><span class="hn-wl">7 days ${sign(m.a.w)}</span></div><div class="hn-wchart">${spark(m.a, markIndex(s, m.a, asof), m.a.w >= 0)}<div class="hn-wcap"><span>22 sessions ago</span><span class="hn-wmk">● article published</span><span>now</span></div></div></div>` : '');
   return `<a class="hn-wf" href="${url(s)}"><div class="hn-wtop">${tags(s)}${m ? implies(m.i) : ''}</div><h3>${esc(s.headline)}</h3><p>${esc(t)}</p>${body}${impactChips(s)}</a>`; };
 const whySmall = s => { const m = primary(s); return `<a class="hn-wc" href="${url(s)}"><div class="hn-wtop">${tags(s)}</div><h4>${esc(s.headline)}</h4>${m ? `<div class="hn-wasset"><b>${esc(m.a.n)}</b>${pctPill(m.a.d)}${implies(m.i)}</div>` : ''}${impactChips(s)}</a>`; };
 const whySection = (list, asof) => list.length ? whyFeatured(list[0], asof) + `<div class="hn-wside">${list.slice(1, 3).map(whySmall).join('')}</div>` : '';
@@ -82,7 +82,7 @@ const freshAgo = t => { const m = Math.max(0, Math.round((Date.now() - Date.pars
 const updatedText = t => 'Updated ' + freshAgo(t);
 
 // "Articles the market confirmed" (homepage): only calls the market bore out are featured; every other call is one click away on implications.html.
-const sgn = v => (v > 0 ? '↑ ' : v < 0 ? '↓ ' : '↔ ') + Math.abs(v).toFixed(2) + '%';
+const sgn = v => (v > 0 ? '↑ ' : v < 0 ? '↓ ' : '↔︎ ') + Math.abs(v).toFixed(2) + '%';
 const confirmedChip = c => `<span class="hn-conf">✓ Said ${c.dir} · went ${c.dir}</span>`;
 function confirmedFeatured(c) {
   const s = c.story, card = window.SinceNews ? SinceNews.card({ story: s, impact: c.impact, asset: c.asset, series: c.series, now: Date.now() }) : '';

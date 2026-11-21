@@ -8,7 +8,7 @@
   const nf = v => v == null || !isFinite(v) ? '—' : v.toLocaleString('en-US', { maximumFractionDigits: Math.abs(v) >= 1000 ? 2 : Math.abs(v) >= 1 ? 2 : 4, minimumFractionDigits: Math.abs(v) >= 1 ? 2 : 4 });
   const fmt = v => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(Math.abs(v) >= 10 ? 1 : 2) + '%';
   const cls = v => v > 0.005 ? 'u' : v < -0.005 ? 'd' : 'o';
-  const arrow = v => v > 0.005 ? '↑' : v < -0.005 ? '↓' : '↔';
+  const arrow = v => v > 0.005 ? '↑' : v < -0.005 ? '↓' : '↔︎';
   const col = v => v > 0.005 ? '#34d399' : v < -0.005 ? '#f87171' : '#8b8b94';
   const tint = v => v > 0.005 ? `rgba(52,211,153,${Math.min(.6, .12 + Math.abs(v) * .09).toFixed(2)})` : v < -0.005 ? `rgba(248,113,113,${Math.min(.6, .12 + Math.abs(v) * .09).toFixed(2)})` : 'rgba(255,255,255,.07)';
   const pc = (a, b) => b ? (a / b - 1) * 100 : 0;

@@ -28,9 +28,9 @@
   }
   const bars=n=>`<span class="cal-bars ${({3:'h',2:'m',1:'l'})[n]||''}" role="img" aria-label="${({3:'High',2:'Medium',1:'Low'})[n]||'No'} impact">${[1,2,3].map(i=>`<i class="${i<=n?'on':''}"></i>`).join('')}</span>`;
   const num=s=>{const m=String(s).replace(/,/g,'').match(/[-+]?\d*\.?\d+/);return m?Number(m[0]):NaN;};
-  const arrow=e=>{const a=num(e.actual),f=num(e.fc);return Number.isFinite(a)&&Number.isFinite(f)?a>f?'↑ ':a<f?'↓ ':'↔ ':'';};
+  const arrow=e=>{const a=num(e.actual),f=num(e.fc);return Number.isFinite(a)&&Number.isFinite(f)?a>f?'↑ ':a<f?'↓ ':'↔︎ ':'';};
   const clock=(e,d)=>e.dateOnly?esc(e.when||'All day'):d.toLocaleTimeString(undefined,{hour:'2-digit',minute:'2-digit'});
-  const pct=v=>`<span class="cal-pct ${v>0?'up':v<0?'down':'flat'}">${v>0?'↑':v<0?'↓':'↔'} ${Math.abs(v).toFixed(2)}%</span>`;
+  const pct=v=>`<span class="cal-pct ${v>0?'up':v<0?'down':'flat'}">${v>0?'↑':v<0?'↓':'↔︎'} ${Math.abs(v).toFixed(2)}%</span>`;
   const left=ms=>{const m=Math.max(0,Math.ceil(ms/60000));const d=Math.floor(m/1440),h=Math.floor(m%1440/60);return d?`in ${d} d ${h} h`:h?`in ${h} h ${m%60} min`:m?`in ${m} min`:'now';};
   function paint(){controls();const [start,end]=bounds(), watch=window.INVWATCH?.all()||[], currencies=new Set(watch.flatMap(w=>{const a=markets.find(a=>a.s===w.s);return a?[a.cur,...(a.t==='fx'?a.s.match(/[A-Z]{3}/g)||[]:[])]:[];}));
     list=rows.filter(e=>{const t=new Date(e.at),region=regions[e.c]?e.c:'other';return t>=start&&t<end&&selected('type',e.type)&&(e.type==='earnings'||selected('impact',String(e.imp)))&&(!state.region||selected('region',region))&&(!state.q||e.t.toLocaleLowerCase().includes(state.q.toLocaleLowerCase()))&&(state.mine!=='1'||!!window.invUser&&currencies.has(e.c));}).sort((a,b)=>Date.parse(a.at)-Date.parse(b.at));
