@@ -6,3 +6,4 @@
 .consent-card :focus-visible{outline:3px solid #FF7A1A;outline-offset:3px}.consent-card summary{min-height:44px;display:flex;align-items:center}
 
 @media(pointer:coarse){.consent-card a{display:inline-flex;align-items:center;min-height:44px}}
+/* owner 21 Nov 2026: soft orange, both choices equally prominent */.consent-actions button{background:rgba(255,122,26,.12)!important;color:#ff9a4d!important;border:1px solid rgba(255,122,26,.45)!important;box-shadow:none!important}
