@@ -3410,6 +3410,15 @@ newsReady = window.InvNewsSource.load(NEWS_URL)
     openCountry(byName[q.get('country')]);
     if (!MARKET.on && q.get('win') && WINS.some(w=>w[0]===q.get('win'))) setTimeout(async()=>{await setWin(q.get('win'));if(q.get('country-tab')==='news')countryTab='news';render();},0);
   }
+  { /* map snippet for article pages with no picture (owner 21 Nov 2026): ?embed=1&at=lat,lon&z=N holds the view on that place, at night */
+    const at = (q.get('at') || '').split(',').map(Number);
+    if (at.length === 2 && at.every(Number.isFinite)) {
+      document.documentElement.classList.add('snap');
+      const sp = sunPoint, t = new Date(); t.setUTCHours(((21 - Math.round(at[1] / 15)) % 24 + 24) % 24, 0, 0, 0); const ms = t.getTime(); sunPoint = () => sp(ms);
+      const go = () => { spin = null; fly = null; lat0 = at[0]; lon0 = at[1]; Zt = Math.min(+q.get('z') || 20, ZMAX); };
+      go(); [400, 1200, 2500, 5000, 9000].forEach(d => setTimeout(go, d));
+    }
+  }
 }).catch(() => { pbody.innerHTML = '<div class="empty">News could not be loaded. Please refresh the page.</div>'; });
 setInterval(() => { if (view.k === 'top' && (panelTab === 'markets' || panelTab === 'upcoming') && F.lens === 'all') render(); }, 60000);
 // P4: an optional layer on the existing renderer. News drawing and camera mechanics stay intact.
