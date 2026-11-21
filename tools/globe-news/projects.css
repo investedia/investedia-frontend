@@ -33,3 +33,17 @@ html.proj-mode .pjs{left:378px!important}}
 @media(min-width:761px){html.proj-mode .pj .pjb{padding:12px 0 4px;background:none}html.proj-mode .pjb button{background:transparent!important;color:var(--fg)!important;border:1px solid var(--line-2,#2a2a2f)!important}}
 @media(min-width:761px){html.proj-mode .pj-f{display:grid!important;grid-template-columns:1fr 1fr;gap:6px}html.proj-mode .pj-f>*{width:100%;max-width:none!important;min-width:0}html.proj-mode .pj-f select{max-width:none!important;width:100%}}
 @media(max-width:760px){html.proj-mode :is(#project-topbar,#project-mode-subtitle){display:none!important}html.proj-mode .top{display:flex!important}html.proj-mode .top :is(.m-actions,#sbox,#cats,#ddrow,.globe-privacy,.demo,.m-time){display:none!important}}
+
+/* Phone: the whole project card scrolls as one (owner 21 Nov: buttons stayed pinned while the text scrolled under them) */
+@media(max-width:760px){html.proj-mode .pj{overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}html.proj-mode .pj .pjd{flex:none;overflow:visible;min-height:auto}html.proj-mode .pj .pjh{flex:none}html.proj-mode .pj .pjb{flex:none;padding-bottom:16px}}
+
+/* Company button: one line (ticker, name cut with …, drawn arrow, no emoji) */
+.pjb .pj-listed{display:flex!important;align-items:center;gap:8px;min-width:0;min-height:44px;height:auto;padding:0 12px;border-radius:11px;white-space:nowrap;overflow:hidden}
+.pjb .pj-listed b{font-weight:700;flex:none}.pjb .pj-listed span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;color:#ececef;font-weight:500}.pjb .pj-listed svg{flex:none;width:14px;height:14px}
+.pjb .pj-listed{grid-column:1/-1}
+
+/* Back button (owner 21 Nov): a real button, pinned to the top of the card while it scrolls */
+.pj-backbar{display:none}
+@media(max-width:760px){html.proj-mode.proj-detail-open .pj-backbar{display:flex;position:sticky;top:0;z-index:5;padding:10px 12px;background:linear-gradient(var(--panel,#0f0f12) 70%,transparent)}
+html.proj-mode .pj-backbar .pj-back{display:inline-flex!important;align-items:center;gap:4px;min-height:44px;padding:0 16px 0 10px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:#f4f4f5;font:600 14px Inter,sans-serif;cursor:pointer;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+html.proj-mode .pj-backbar .pj-back:active{transform:scale(.96);background:rgba(255,255,255,.14)}}
