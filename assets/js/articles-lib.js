@@ -9,11 +9,17 @@ function initArticles() {
   const fmt = n => n.toLocaleString('en-US'), nice = c => CAT[c] || (c ? c[0].toUpperCase() + c.slice(1) : 'News');
   const link = r => 'story.html?id=' + encodeURIComponent(r.id);
   const img = r => r.i ? 'assets/globe/' + r.i : null;
-  let meta, all = null, live = [];
+  let meta, live = [], renderId = 0;
+  const downloads = new Map();
   const state = () => { const u = new URLSearchParams(location.search); return { page: Math.max(1, parseInt(u.get('page')) || 1), cat: u.get('cat') || '', date: u.get('date') || '', reg: u.get('reg') || '', q: (u.get('q') || '').trim(), sort: u.get('sort') || 'new' }; };
   const href = (s, ch) => { const n = { ...s, ...ch }, u = new URLSearchParams(); if (n.page > 1) u.set('page', n.page); for (const k of ['cat', 'date', 'reg', 'q']) if (n[k]) u.set(k, n[k]); if (n.sort !== 'new') u.set('sort', n.sort); const q = u.toString(); return (location.pathname.split('/').pop() || 'news.html') + (q ? '?' + q : '') + (document.querySelector('.al-onnews') ? '#all' : ''); };
   const go = (ch, push = true) => { const url = href(state(), { page: 1, ...ch }); if (push) history.pushState(null, '', url); else history.replaceState(null, '', url); render(); };
-  const get = f => fetch(BASE + f, { cache: 'no-cache' }).then(r => { if (!r.ok) throw Error(f); return r.json(); });
+  const get = f => {
+    if (!downloads.has(f)) downloads.set(f, fetch(BASE + f, { cache: 'no-cache' })
+      .then(r => { if (!r.ok) throw Error(f); return r.json(); })
+      .catch(error => { downloads.delete(f); throw error; }));
+    return downloads.get(f);
+  };
   const day = t => new Date(t).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', ...(new Date(t).getFullYear() !== new Date().getFullYear() ? { year: 'numeric' } : {}) });
   const time = t => new Date(t).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
   const row = r => `<a class="al-row${img(r) ? '' : ' noimg'}" href="${link(r)}">${img(r) ? `<img src="${esc(img(r))}" alt="" loading="lazy" onerror="this.remove();this.parentNode&&this.parentNode.classList.add('noimg')">` : ''}<div><div class="al-ct">${esc(nice(r.c))} · ${time(r.t)}</div><h3>${esc(r.h)}</h3><div class="al-sr">${esc(r.s || '')}${r.n ? ' · ' + esc(r.n) : ''}${r.k > 1 ? ' · ' + r.k + ' sources' : ''}</div></div></a>`;
@@ -28,7 +34,7 @@ function initArticles() {
   async function rows(s) {
     const filtered = s.cat || s.date || s.reg || s.q || s.sort !== 'new';
     if (!filtered) { const r = await get('page-' + Math.min(s.page, meta.pages) + '.json'); return { list: s.page === 1 ? [...live, ...r] : r, total: meta.total + live.length }; }
-    all = all || await get('all.json');
+    const all = await get('all.json');
     const now = Date.now(), win = { '1d': 864e5, '7d': 7 * 864e5, '30d': 30 * 864e5 }[s.date], q = s.q.toLowerCase();
     let L = [...live, ...all].filter(r => (!s.cat || r.c === s.cat) && (!s.reg || r.g === s.reg) && (!win || now - Date.parse(r.t) <= win) && (!q || (r.h + ' ' + (r.s || '') + ' ' + (r.n || '')).toLowerCase().includes(q)));
     if (s.sort === 'old') L = L.reverse(); else if (s.sort === 'src') L = [...L].sort((a, b) => b.k - a.k || (a.t < b.t ? 1 : -1));
@@ -43,12 +49,13 @@ function initArticles() {
     return out + a(Math.min(pages, s.page + 1), '›', s.page === pages ? ' aria-disabled="true" aria-label="Next page"' : ' aria-label="Next page"');
   }
   async function render() {
-    const s = state(); options(s);
-    let res; try { res = await rows(s); } catch { $('al-list').innerHTML = '<p class="al-empty">Articles could not load. Please try again.</p>'; return; }
+    const id = ++renderId, s = state(); options(s);
+    let res; try { res = await rows(s); } catch { if (id === renderId) $('al-list').innerHTML = '<p class="al-empty">Articles could not load. Please try again.</p>'; return; }
+    if (id !== renderId) return;
     const pages = Math.max(1, Math.ceil(res.total / meta.per_page)); let list = res.list, lead = '';
     if (s.page === 1 && !s.q && !document.querySelector('.al-onnews')) { const i = list.findIndex(img); if (i >= 0) { const r = list[i]; list = list.filter((_, k) => k !== i);
       lead = `<a class="al-lead" href="${link(r)}"><img src="${esc(img(r))}" alt=""><div><div class="al-ct">${esc(nice(r.c))} · ${day(r.t)} ${time(r.t)}</div><h2>${esc(r.h)}</h2><p id="al-lead-sum"></p><div class="al-sr">${esc(r.s || '')}${r.n ? ' · ' + esc(r.n) : ''}</div></div></a>`;
-      fetch('assets/globe/library/' + encodeURIComponent(r.id) + '.json').then(x => x.ok ? x.json() : fetch('assets/globe/library-days/' + String(r.t).slice(0, 10) + '.json').then(y => y.ok ? y.json() : {}).then(b => b[r.id] || null)).then(d => { const p = $('al-lead-sum'); if (p && d?.summary) p.textContent = d.summary; }).catch(() => {}); } }
+      fetch('assets/globe/library/' + encodeURIComponent(r.id) + '.json').then(x => x.ok ? x.json() : fetch('assets/globe/library-days/' + String(r.t).slice(0, 10) + '.json').then(y => y.ok ? y.json() : {}).then(b => b[r.id] || null)).then(d => { const p = $('al-lead-sum'); if (id === renderId && p && d?.summary) p.textContent = d.summary; }).catch(() => {}); } }
     $('al-lead').innerHTML = lead;
     const from = res.total ? (s.page - 1) * meta.per_page + 1 : 0;
     $('al-count').textContent = res.total ? `Showing ${fmt(from)}–${fmt(Math.min(res.total, s.page * meta.per_page))} of ${fmt(res.total)}` : '';
@@ -67,7 +74,7 @@ function initArticles() {
   $('al-done').addEventListener('click', () => { $('al-side').classList.remove('open'); $('al-fbtn').setAttribute('aria-expanded', 'false'); scrollTo({ top: 0 }); });
   addEventListener('popstate', render);
   get('meta.json').then(async m => {
-    meta = m; const sub = `${fmt(m.total)} articles from ${fmt(m.sources)} sources since ${new Date(m.first).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}`;
+    meta = m;
     // newest articles that arrived after the last site build come from the live feed, without duplicates
     try { const n = await fetch('assets/globe/news-live.json', { cache: 'no-cache' }).then(r => r.json()); const first = (await get('page-1.json'))[0];
       live = (n.stories || []).filter(x => first && x.published_at > first.t).map(x => ({ id: x.id, h: x.headline, c: x.category, t: x.published_at, s: x.source?.name, n: x.location?.country, g: x.location?.region, k: (x.sources || []).length || 1, i: x.image?.file })); } catch {}
@@ -79,7 +86,7 @@ function initArticles() {
         for (const r of extra) if (!have.has(r.id) && !pageIds.has(r.id) && (!first || r.t > first.t)) { live.push(r); have.add(r.id); }
         live.sort((a, b) => (a.t < b.t ? 1 : -1)); } } catch {}
     const subN = m.total + live.length; const sub2 = `${fmt(subN)} articles from ${fmt(m.sources)} sources since ${new Date(m.first).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}`;
-    $('al-sub').textContent = sub2; $('al-sub2').textContent = sub2; render(); return; $('al-sub2').textContent = sub; render();
+    $('al-sub').textContent = sub2; $('al-sub2').textContent = sub2; render();
   }).catch(() => { $('al-sub').textContent = 'Articles could not load.'; });
 }
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initArticles); else initArticles();
