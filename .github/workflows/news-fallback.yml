@@ -1,0 +1,31 @@
+# Keeps the globe's saved news files (used only when the live /v1/news request fails) fresh. Owner approved 21 Nov 2026.
+name: Globe fallback news refresh
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'  # every 6 hours
+permissions:
+  contents: write
+concurrency:
+  group: news-fallback
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch news from the Investedia API (keeps the previous files on a bad answer)
+        run: python scripts/update_news_fallback.py
+      - name: Commit the news files only
+        run: |
+          F="assets/globe/news-live.json docs/assets/globe/news-live.json assets/globe/news-48h.json docs/assets/globe/news-48h.json"
+          if git diff --quiet -- $F; then echo "No change"; exit 0; fi
+          if [ -n "$(git status --porcelain | grep -v 'assets/globe/news-live.json\|assets/globe/news-48h.json')" ]; then echo "::error::Unexpected changes; refusing to commit"; exit 1; fi
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add $F
+          git commit -m "Data: globe fallback news $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep 5; done; exit 1
