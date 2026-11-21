@@ -66,10 +66,6 @@ void main(){
   if(inD>0.){ float x=max(0.,(texture2D(dNight,duv).r-.3)/.7), x3=pow(x,1.5); float Ld=.55*x3/(x3+.25);   // compressed highs: no white hotspots, detail kept
     L=mix(L,Ld,inD); core=mix(core,smoothstep(.5,1.,x),inD); }                                        // only the densest cores turn warm white  // NASA VIIRS 500 m metro lights (calmer curve: this layer is brighter)         // city lights only (drops Black Marble's faint ground)
   col+=mix(vec3(1.,.6,.26),vec3(1.,.9,.76),core)*L*1.55*(1.-dayk);  // real night lights: amber/soft orange in the fainter areas, warm white in the brightest cores                                 // tiny ivory points, very little amber; orange stays for data
-  { float cityD=smoothstep(.06,.5,texture2D(nightT,uv).r); if(inD>0.) cityD=max(cityD,smoothstep(.0,.6,dens));  // daytime D2 (owner 21 Nov 2026): faint grey terrain, cities glow softly amber; night unchanged
-    vec3 dl=mix(vec3(.09,.09,.10)+vec3(.05)*smoothstep(.1,.6,lum),vec3(.024,.026,.032),sea);
-    dl+=vec3(1.,.62,.3)*cityD*.16*(1.-sea);
-    col=mix(col,dl*mix(.8,1.,Zd),dayk); }
   if(lt>.5){  // light theme (owner 21 Nov 2026): soft grey-blue oceans, light warm-grey land with the same terrain, gentle night side, faint lights
     float t2=LT0+LT1*smoothstep(.03,.75,lum); vec3 land=vec3(t2)*vec3(1.,.995,.985);
     vec3 lc=mix(land,vec3(LSEA),sea); lc*=mix(1.,.58+.84*rel,inD*(1.-sea)); lc=mix(lc,vec3(.50,.49,.47)+vec3(.1)*(1.-dens),smoothstep(.32,.75,dens)*inD*.85*(1.-sea));  /* light mode: built-up areas as concrete grey, denser = darker (owner 21 Nov 2026) */
