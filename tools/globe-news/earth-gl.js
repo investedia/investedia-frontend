@@ -153,6 +153,17 @@ void main(){
       s.swapped = true; D.tSharp = performance.now(); const had = !!D.bb; s.layers.forEach((l, i) => { setTex(i, l.cv); l.dirty = false; }); D.bb = s.bb; D.deg = s.bb[2] - s.bb[0]; D.z = s.zDay; if (!had) D.fade = 0;
     } else if (s.swapped && performance.now() - (s.tu || 0) > 120) { s.tu = performance.now(); s.layers.forEach((l, i) => { if (l.dirty) { setTex(i, l.cv); l.dirty = false; } }); }  // re-upload at most ~8 times a second
   };
+  /* Owner 21 Nov 2026 (load ahead): once a view has loaded, quietly fetch the next, sharper level for the middle of the screen
+     (day + city lights) so zooming in further is instant from the browser cache. At most 24 tiles, only when the tab is visible. */
+  const ahead = (bb, zDay) => {
+    if (document.hidden || zDay >= (phone ? 9 : 10)) return;
+    const cx = (bb[0] + bb[2]) / 2, cy = (bb[1] + bb[3]) / 2, hx = (bb[2] - bb[0]) / 4, hy = (bb[3] - bb[1]) / 4, wide = bb[2] - bb[0] > 25;
+    let n = 0;
+    [[wide ? BM : LAY[0], Math.min(wide ? 6 : 10, zDay + 1)], [LAY[2], Math.min(6, zDay + 1)]].forEach(([L, z]) => {
+      const d = tdeg(z), c0 = Math.floor((cx - hx + 180) / d), c1 = Math.floor((cx + hx + 180) / d), r0 = Math.floor((90 - cy - hy) / d), r1 = Math.floor((90 - cy + hy) / d);
+      for (let r = Math.max(0, r0); r <= r1; r++) for (let c = Math.max(0, c0); c <= c1; c++) { if (n++ >= 24) return; const im = new Image(); im.crossOrigin = 'anonymous'; im.src = turl(L, z, r, c); }
+    });
+  };
   const plan = (W, H, R, lon0, lat0) => {
     const rad = Math.asin(Math.min(1, Math.max(W, H) * .5 / R)) * 180 / Math.PI;  // angular radius of what is on screen
     D.want = Math.max(0, Math.min(1, (58 - rad) / 20));                               // fades in from ~58° to ~38° on screen (country-level zoom); full Earth unchanged
@@ -165,8 +176,10 @@ void main(){
     const cur = D.set ? D.set.bb : null, inside = cur && bb[0] >= cur[0] && bb[2] <= cur[2] && bb[1] >= cur[1] && bb[3] <= cur[3] && (bb[2] - bb[0]) > (cur[2] - cur[0]) * .45 && D.set.zDay >= zDay;
     if (inside) return;
     const snap = tdeg(zDay), sb = [Math.floor(bb[0] / snap) * snap, Math.floor(bb[1] / snap) * snap, Math.ceil(bb[2] / snap) * snap, Math.ceil(bb[3] / snap) * snap].map(v => +v.toFixed(5));
-    const go = () => request(sb, zDay);
-    clearTimeout(D.timer); if (performance.now() - D.last > 220) go(); else D.timer = setTimeout(go, 220);  // while zooming: at most every 0.22 s
+    const go = () => { request(sb, zDay); clearTimeout(D.pre); D.pre = setTimeout(() => ahead(sb, zDay), 450); };
+    /* Owner 21 Nov 2026 (smoother zoom): wait until the camera rests for 0.14 s before swapping in new detail, so tiles do not
+       change mid-gesture; a long zoom still refreshes at least every 0.7 s */
+    clearTimeout(D.timer); if (performance.now() - D.last > 700) go(); else D.timer = setTimeout(go, 140);
   };
   // preload the busiest news places at the level a full zoom would use, so zooming there is instant (from the browser cache)
   const preload = () => {
