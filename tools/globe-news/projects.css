@@ -36,3 +36,8 @@ html.proj-mode .pjs{left:378px!important}}
 
 /* Phone: the whole project card scrolls as one (owner 21 Nov: buttons stayed pinned while the text scrolled under them) */
 @media(max-width:760px){html.proj-mode .pj{overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}html.proj-mode .pj .pjd{flex:none;overflow:visible;min-height:auto}html.proj-mode .pj .pjh{flex:none}html.proj-mode .pj .pjb{flex:none;padding-bottom:16px}}
+
+/* Company button: one line (ticker, name cut with …, drawn arrow, no emoji) */
+.pjb .pj-listed{display:flex!important;align-items:center;gap:8px;min-width:0;min-height:44px;height:auto;padding:0 12px;border-radius:11px;white-space:nowrap;overflow:hidden}
+.pjb .pj-listed b{font-weight:700;flex:none}.pjb .pj-listed span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;color:#ececef;font-weight:500}.pjb .pj-listed svg{flex:none;width:14px;height:14px}
+.pjb .pj-listed{grid-column:1/-1}
