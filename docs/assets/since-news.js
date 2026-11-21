@@ -5,7 +5,7 @@
   const MIN = 60000, HR = 3600000, BEFORE = 3 * HR, LATE = 90 * MIN, FLAT = 0.3;
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const hhmm = ms => { const d = new Date(ms); return String(d.getUTCHours()).padStart(2, '0') + ':' + String(d.getUTCMinutes()).padStart(2, '0'); };
-  const arrow = v => v > 0 ? '↑' : v < 0 ? '↓' : '↔';
+  const arrow = v => v > 0 ? '↑' : v < 0 ? '↓' : '↔︎';
   const cls = v => v > 0 ? 'up' : v < 0 ? 'dn' : 'flat';
   const pct = v => Math.abs(v).toFixed(v !== 0 && Math.abs(v) < 0.1 ? 2 : 2) + '%';
   function span(ms) {

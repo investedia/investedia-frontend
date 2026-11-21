@@ -98,7 +98,7 @@
  const stack=document.createElement('div');stack.className='bf-stack';document.body.append(stack);
  let T=null,tRaf=0;
  const locOf=sym=>{const h=HQS&&HQS[sym];if(h&&Number.isFinite(h.hq_lat))return {lat:h.hq_lat,lon:h.hq_lon,label:`${h.company_label||sym} · ${h.hq_city} HQ`};const a=MKT.by?.[sym];return a&&Number.isFinite(a.la)?{lat:a.la,lon:a.lo,label:a.n||sym}:null;};
- const pill=(v)=>`<span class="bf-mv ${v>0?'u':v<0?'d':''}">${v>0?'↑':v<0?'↓':'↔'} ${Math.abs(v).toFixed(2)}%</span>`;
+ const pill=(v)=>`<span class="bf-mv ${v>0?'u':v<0?'d':''}">${v>0?'↑':v<0?'↓':'↔︎'} ${Math.abs(v).toFixed(2)}%</span>`;
  function tour(c){
   if(!c){T=null;stack.innerHTML='';stack.classList.remove('on');document.documentElement.classList.remove('bf-touring');if(tRaf)cancelAnimationFrame(tRaf);tRaf=0;tx.clearRect(0,0,tc.width,tc.height);return;}
   document.documentElement.classList.add('bf-touring');
@@ -121,7 +121,7 @@
   tx.setTransform(dpr,0,0,dpr,0,0);tx.clearRect(0,0,innerWidth,innerHeight);
   const k=Math.min(1,(performance.now()-T.t0-500)/1400),e=k<0?0:1-Math.pow(1-k,3);
   // Pill label: each part measured in the font it is drawn in; flips to the left of the point when it would leave the screen.
-  const label=(x,y,t,v)=>{const vt=Number.isFinite(v)?`${v>0?'↑':v<0?'↓':'↔'} ${Math.abs(v).toFixed(2)}%`:'';
+  const label=(x,y,t,v)=>{const vt=Number.isFinite(v)?`${v>0?'↑':v<0?'↓':'↔︎'} ${Math.abs(v).toFixed(2)}%`:'';
    tx.font='500 12.5px Inter,sans-serif';let tw=tx.measureText(t).width;tx.font='600 12.5px Inter,sans-serif';const vw=vt?tx.measureText(vt).width:0;
    const gap=vt?10:0,pad=12,maxW=innerWidth-24;if(tw+gap+vw+pad*2>maxW){tw=Math.max(40,maxW-gap-vw-pad*2);}
    const w=tw+gap+vw+pad*2;let L=x+10;if(L+w>innerWidth-12){if(x-10-w>=12)L=x-10-w;else{L=Math.max(12,Math.min(innerWidth-12-w,x-w/2));y-=30;}}  // neither side fits: above the point
