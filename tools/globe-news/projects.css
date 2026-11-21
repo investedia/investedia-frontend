@@ -47,3 +47,6 @@ html.proj-mode .pjs{left:378px!important}}
 @media(max-width:760px){html.proj-mode.proj-detail-open .pj-backbar{display:flex;position:sticky;top:0;z-index:5;padding:10px 12px;background:linear-gradient(var(--panel,#0f0f12) 70%,transparent)}
 html.proj-mode .pj-backbar .pj-back{display:inline-flex!important;align-items:center;gap:4px;min-height:44px;padding:0 16px 0 10px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:#f4f4f5;font:600 14px Inter,sans-serif;cursor:pointer;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
 html.proj-mode .pj-backbar .pj-back:active{transform:scale(.96);background:rgba(255,255,255,.14)}}
+
+/* Follow: yellow star once followed; button stays white (owner 21 Nov) */
+button[data-pw][aria-pressed=true] svg path{fill:#FFC700!important;stroke:#FFC700!important}
