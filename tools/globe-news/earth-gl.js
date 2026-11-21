@@ -89,7 +89,7 @@ void main(){
     gl.generateMipmap(gl.TEXTURE_2D); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR_MIPMAP_LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.REPEAT); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
     if (aniso) gl.texParameterf(gl.TEXTURE_2D, aniso.TEXTURE_MAX_ANISOTROPY_EXT, Math.min(8, gl.getParameter(aniso.MAX_TEXTURE_MAX_ANISOTROPY_EXT)));
-    have[i] = tier; E.tier = Math.min(have[0], have[1]); E.ready = have[0] > 0 && have[1] > 0;
+    (E.gimg = E.gimg || [])[i] = img; have[i] = tier; E.tier = Math.min(have[0], have[1]); E.ready = have[0] > 0 && have[1] > 0;
   };
   const load = tier => ['day', 'night'].forEach((k, i) => { const img = new Image(); img.decoding = 'async'; img.crossOrigin = 'anonymous';
     img.onload = () => { if (have[i] < tier) upload(i, img, tier); if (tier === 4 && wantTier === 8 && E.ready && !load.hi) { load.hi = 1; setTimeout(() => load(8), 400); } };
@@ -126,6 +126,9 @@ void main(){
       const ppd = Math.min(512 / d, MAXC / (bb[2] - bb[0]), MAXC / (bb[3] - bb[1]));  // canvas pixels per degree (capped)
       const cv2 = document.createElement('canvas'); cv2.width = Math.max(1, Math.round((bb[2] - bb[0]) * ppd)); cv2.height = Math.max(1, Math.round((bb[3] - bb[1]) * ppd));
       const g = cv2.getContext('2d'), lay = { cv: cv2, dirty: false };
+      { const gi = E.gimg && E.gimg[i === 2 ? 1 : 0], k = cv2.width / (bb[2] - bb[0]);  // start from the global image (day/night) so missing tiles never show as black
+        if ((i === 0 || i === 2) && gi && gi.width) { const sx = gi.width / 360, sy = gi.height / 180; g.drawImage(gi, (bb[0] + 180) * sx, (90 - bb[3]) * sy, (bb[2] - bb[0]) * sx, (bb[3] - bb[1]) * sy, 0, 0, cv2.width, cv2.height); }
+        else if (i === 1) { g.fillStyle = '#808080'; g.fillRect(0, 0, cv2.width, cv2.height); } }
       set.layers[i] = lay;
       for (let r = r0; r <= r1; r++) for (let c = c0; c <= c1; c++) {
         if (r < 0 || c < 0 || c >= 360 / d || r >= Math.ceil(180 / d)) continue;
@@ -140,7 +143,7 @@ void main(){
   };
   const tick = () => {  // called every frame: swap in the new view when most tiles are in, then keep updating it as the rest arrive
     const s = D.set; if (!s) return;
-    if (!s.swapped && (s.loaded >= s.total * .75 || performance.now() - s.t0 > 1200) && s.loaded > 0) {
+    if (!s.swapped && (s.loaded >= s.total * .95 || (performance.now() - s.t0 > 5000 && s.loaded >= s.total * .6)) && s.loaded > 0  /* owner 21 Nov 2026: no half-loaded swaps (black patches) */) {
       s.swapped = true; D.tSharp = performance.now(); const had = !!D.bb; s.layers.forEach((l, i) => { setTex(i, l.cv); l.dirty = false; }); D.bb = s.bb; D.deg = s.bb[2] - s.bb[0]; D.z = s.zDay; if (!had) D.fade = 0;
     } else if (s.swapped) s.layers.forEach((l, i) => { if (l.dirty) { setTex(i, l.cv); l.dirty = false; } });
   };
