@@ -55,14 +55,17 @@
     // design A (11 Nov 2026): equal cards, ticker + one-line name, big move, filled chart, and the newest linked article as the reason
     const nm = x => String(x || '').toLowerCase().replace(/\b(inc|corp|corporation|group|plc|ltd|co|sa|ag|nv|holdings?)\b|[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
     const about = (st, a) => reactions(st).some(r => r.a && r.a.s === a.s) || [...(st.impacts || []).map(i => i.name), ...(st.entities || []).map(e => e.name)].some(n => n && nm(n) === nm(a.n));
-    const why = a => S.stories.filter(st => about(st, a)).sort((x, y) => Date.parse(y.published_at) - Date.parse(x.published_at))[0];
+    const newest = [...S.stories].sort((x, y) => Date.parse(y.published_at) - Date.parse(x.published_at));
+    const why = a => newest.find(st => about(st, a));
     const tick = a => String(a.s).replace(/[=^].*$/, '').replace(/-USD$/, '');
     $('nf-strip').innerHTML = L.map(a => { const w = why(a); return `<div class="nf-t" role="group" aria-label="${esc(a.n)}"><button type="button" class="nf-tb" data-s="${esc(a.s)}"><span class="nf-tk">${aIcon(a)}<b>${esc(tick(a))}</b></span><span class="nf-tn">${esc(a.n)}</span><span class="mono ${cls(a.d)}">${fmt(a.d)}</span>${area(series(a, 'd'), 200, 40, col(a.d))}</button>${w ? `<a class="nf-why" href="story.html?id=${encodeURIComponent(w.id)}" title="${esc(w.headline)}">${esc(w.headline)}</a>` : '<span class="nf-why none">No linked article in this window</span>'}</div>`; }).join('');
   }
   function draw() {
     const cut = Date.now() - WIN.find(w => w[0] === S.win)[2] * 864e5, q = S.q.trim().toLowerCase();
     let L = S.stories.filter(s => Date.parse(s.published_at) >= cut && hit(s, q));
-    L = S.sort === 'big' ? L.sort((a, b) => biggest(b) - biggest(a) || Date.parse(b.published_at) - Date.parse(a.published_at)) : L.sort((a, b) => Date.parse(b.published_at) - Date.parse(a.published_at));
+    L = S.sort === 'big' ? L.map(s => ({ s, time: Date.parse(s.published_at), reaction: biggest(s) }))
+      .sort((a, b) => b.reaction - a.reaction || b.time - a.time).map(entry => entry.s)
+      : L.sort((a, b) => Date.parse(b.published_at) - Date.parse(a.published_at));
     $('nf-list').innerHTML = L.slice(0, S.shown).map(s => { const th = thumbOf(s), rx = reactions(s); return `<article class="nf-ev"><div class="l"><span class="nf-source-circle">${esc((s.source?.name || 'N').slice(0,2).toUpperCase())}</span><span class="nf-eb">${esc(CATN[s.category] || '')} · ${esc((s.location?.place || '').split(',')[0])} · ${ago(s.published_at)}</span><h3><a href="story.html?id=${encodeURIComponent(s.id)}">${esc(s.headline)}</a></h3><p>${esc(s.why || s.summary || '')}</p>${th ? `<div class="ph" style="background-image:url('${th}')"></div>` : ''}</div><div class="r"><div class="nf-rh"><span class="nf-eb">What moved</span></div>${rx.length ? rx.map(rxRow).join('') : '<p class="nf-quiet0">This article does not name a company or asset yet.</p>'}${(() => { const h = homeIndex(s); return h && !rx.some(r => r.a === h) ? `<div class="nf-alsow"><span class="nf-eb">Also watching</span>${watchRow(h)}</div>` : ''; })()}${relBlock(s)}<a class="nf-more2" href="story.html?id=${encodeURIComponent(s.id)}">See the full chain →</a></div></article>`; }).join('') || '<div class="nf-none">No articles match. Try a wider window or another search.</div>';
     $('nf-more').hidden = L.length <= S.shown;
     document.querySelectorAll('#nf-win button').forEach(b => b.setAttribute('aria-pressed', b.dataset.k === S.win));
