@@ -10,6 +10,7 @@
   const gl = cv.getContext('webgl', { alpha: true, premultipliedAlpha: true, antialias: false, preserveDrawingBuffer: true });
   const E = window.EarthGL = { ready: false, tier: 0, dpr: 1, ms: 0 };
   if (!gl) return;
+  cv.addEventListener('webglcontextlost', e => { e.preventDefault(); E.ready = false; E.lost = true; });  // iPhone can drop the GPU context under memory pressure: fall back to the 2D globe instead of a blank one
   const big = Math.min(gl.getParameter(gl.MAX_TEXTURE_SIZE), 16384);
   const phone = matchMedia('(max-width: 760px)').matches || /iPhone|Android.+Mobile/.test(navigator.userAgent);
   const wantTier = big >= 8192 && !phone ? 8 : 4;  // phones: 4K (about 1.3 MB); desktops: 4K first, then 8K (about 4.4 MB)
