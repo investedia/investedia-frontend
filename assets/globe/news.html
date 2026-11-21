@@ -4015,28 +4015,38 @@ function mkUnusual(){
   const phone = matchMedia('(max-width: 760px)').matches || /iPhone|Android.+Mobile/.test(navigator.userAgent);
   const wantTier = big >= 8192 && !phone ? 8 : 4;  // phones: 4K (about 1.3 MB); desktops: 4K first, then 8K (about 4.4 MB)
   const VS = 'attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}';
-  const FS = `precision highp float;
+  const DER = !!gl.getExtension('OES_standard_derivatives');
+  const FS = (DER ? '#extension GL_OES_standard_derivatives : enable\n#define DER 1\n' : '') + `precision highp float;
 uniform sampler2D dayT,nightT,dDay,dRel,dNight,dImp;uniform vec2 res;uniform vec3 g;uniform vec2 rot;uniform vec3 sun;uniform float dpr;
 uniform vec4 dbb;uniform float dk;uniform float lt;   // Phase 1 regional detail: bounding box (lon0,lat0,lon1,lat1 in radians) and fade-in
 const float PI=3.14159265;
+#ifndef LT0
+#define LT0 .58
+#define LT1 .34
+#define LSEA .82,.84,.87
+#endif
 void main(){
   vec2 px=vec2(gl_FragCoord.x,res.y-gl_FragCoord.y)/dpr;
   vec2 d=(px-g.xy)/g.z; float r2=dot(d,d); if(r2>1.){gl_FragColor=vec4(0.);return;}
   float X=d.x,Y=-d.y,Zd=sqrt(1.-r2),c0=cos(rot.y),s0=sin(rot.y);
   float sp=c0*Y+s0*Zd, phi=asin(clamp(sp,-1.,1.)), cpcd=-s0*Y+c0*Zd, lam=rot.x+atan(X,cpcd);
-  vec2 uv=vec2((lam+PI)/(2.*PI),(PI*.5-phi)/PI);  // no fract(): textures repeat, and fract's jump at 180° made a visible line (wrong mipmap) down the Pacific
+  float ua=(lam+PI)/(2.*PI);
+  #ifdef DER
+  float u1=fract(ua), u2=fract(ua+.5)-.5; ua = fwidth(u1) <= fwidth(u2)+1e-6 ? u1 : u2;  // pick the copy of x with no jump here: no seam at 180° or over the poles
+  #endif
+  vec2 uv=vec2(ua,(PI*.5-phi)/PI);  // no fract(): textures repeat, and fract's jump at 180° made a visible line (wrong mipmap) down the Pacific
   // Investedia grade (owner 20 Nov 2026): satellite detail, black-and-orange identity. No blue oceans, no green land.
-  vec3 day=texture2D(dayT,uv).rgb;
+  vec3 day=texture2D(dayT,uv).rgb; float gl0=dot(day,vec3(.299,.587,.114)); float sea=smoothstep(.02,.09,day.b-day.r)*(1.-smoothstep(.28,.45,gl0));  // ocean from the global image: flat, no tile blocks
   // Phase 1 (owner 21 Nov 2026): when zoomed in, a sharper NASA image of just the area on screen replaces the global one, faded at its edges
   float lw=lam; if(lw<dbb.x-PI) lw+=2.*PI; if(lw>dbb.z+PI) lw-=2.*PI;
   vec2 duv=vec2((lw-dbb.x)/(dbb.z-dbb.x),(dbb.w-phi)/(dbb.w-dbb.y));
   float inD=dk*smoothstep(0.,.04,min(duv.x,1.-duv.x))*smoothstep(0.,.04,min(duv.y,1.-duv.y));
-  if(inD>0.){ day=mix(day,texture2D(dDay,duv).rgb,inD); }
+  if(inD>0.){ day=mix(day,texture2D(dDay,duv).rgb,inD*(1.-sea)); }
   float lum=dot(day,vec3(.299,.587,.114));
-  float sea=smoothstep(.02,.09,day.b-day.r)*(1.-smoothstep(.28,.45,lum));  // full-strength ocean mask so zoomed-in and global oceans match  // Blue Marble oceans are dark blue: detect them
+  // (sea computed above)  // full-strength ocean mask so zoomed-in and global oceans match  // Blue Marble oceans are dark blue: detect them
   float tone=.06+.17*pow(smoothstep(.04,.8,lum),.85);  /* softer contrast (deserts calmer) */                                // monochrome: charcoal to cool grey, terrain kept as light/dark texture (owner 20 Nov 2026: no sepia)
   vec3 nat=day/max(lum,.04);                                                 // the real colour of this spot, without its brightness
-  vec3 base=vec3(tone)*mix(vec3(1.),nat,.18)*vec3(1.01,1.,.975);              // owner 20 Nov 2026: dark neutral land with a trace of natural colour and warmth (not sepia, not flat grey)
+  vec3 base=vec3(tone)*vec3(1.,.995,.985);  // owner 21 Nov 2026: no colour (no green), neutral grey              // owner 20 Nov 2026: dark neutral land with a trace of natural colour and warmth (not sepia, not flat grey)
   float rel=inD>0.?texture2D(dRel,duv).r:.5;                                  // NASA ASTER elevation relief (light from the north-west)
   // relief (owner 21 Nov 2026): directional light from the north-west; lit slopes a touch warm, shaded slopes cool and deep; flat land stays calm
   float sh=rel-.5, mtn=smoothstep(.03,.2,abs(sh));
@@ -4045,7 +4055,7 @@ void main(){
   // built-up areas (owner 21 Nov 2026): NASA/Landsat man-made impervious surface, 30 m (light blue = sparse ... dark blue = dense)
   vec4 im=inD>0.?texture2D(dImp,duv):vec4(0.); float dens=im.a*clamp(1.15-im.r*1.35,.22,1.);   // rural 0 · suburban ~.3 · urban core ~1
   base=mix(base,(vec3(.2,.192,.178)+vec3(.26,.24,.205)*dens*dens)*(.85+.3*lum/max(.1,lum+.05)),smoothstep(.0,.1,dens)*inD*(1.-sea));  // stronger: city cores clearly lighter than suburbs, suburbs than countryside; Landsat texture kept inside  // denser = lighter warm grey; roads and urban fabric appear
-  if(inD>0.){ vec3 g0=texture2D(dayT,uv).rgb; float l0=dot(g0,vec3(.299,.587,.114));      // global sea mask too: Landsat has no data / grey water offshore
+  if(false){ vec3 g0=texture2D(dayT,uv).rgb; float l0=dot(g0,vec3(.299,.587,.114));      // global sea mask too: Landsat has no data / grey water offshore
     sea=max(sea,max(smoothstep(.04,.16,g0.b-g0.r)*(1.-smoothstep(.28,.45,l0))*smoothstep(.0,.03,.06-im.a),inD*(1.-smoothstep(.0,.03,lum)))); }
   base=mix(base,vec3(.038,.038,.048),sea);                                   // oceans almost black
   float cp=cos(phi), sdot=sin(phi)*sun.z+cp*cos(lam-sun.x)*sun.y;          // cos(angle to the sun)
@@ -4058,8 +4068,8 @@ void main(){
     L=mix(L,Ld,inD); core=mix(core,smoothstep(.5,1.,x),inD); }                                        // only the densest cores turn warm white  // NASA VIIRS 500 m metro lights (calmer curve: this layer is brighter)         // city lights only (drops Black Marble's faint ground)
   col+=mix(vec3(1.,.6,.26),vec3(1.,.9,.76),core)*L*1.55*(1.-dayk);  // real night lights: amber/soft orange in the fainter areas, warm white in the brightest cores                                 // tiny ivory points, very little amber; orange stays for data
   if(lt>.5){  // light theme (owner 21 Nov 2026): soft grey-blue oceans, light warm-grey land with the same terrain, gentle night side, faint lights
-    float t2=.58+.34*smoothstep(.03,.75,lum); vec3 land=vec3(t2)*mix(vec3(1.),nat,.22)*vec3(1.,.99,.97);
-    vec3 lc=mix(land,vec3(.80,.85,.91),sea); lc*=mix(1.,.58+.84*rel,inD*(1.-sea)); lc=mix(lc,vec3(.70,.68,.65),smoothstep(.0,.1,dens)*inD*.5*(1.-sea));
+    float t2=LT0+LT1*smoothstep(.03,.75,lum); vec3 land=vec3(t2)*vec3(1.,.995,.985);
+    vec3 lc=mix(land,vec3(LSEA),sea); lc*=mix(1.,.58+.84*rel,inD*(1.-sea)); lc=mix(lc,vec3(.50,.49,.47)+vec3(.1)*(1.-dens),smoothstep(.32,.75,dens)*inD*.85*(1.-sea));  /* light mode: built-up areas as concrete grey, denser = darker (owner 21 Nov 2026) */
     col=lc*mix(.72,1.,dayk)*mix(.9,1.,Zd)+mix(vec3(1.,.6,.26),vec3(1.,.85,.6),core)*L*.5*(1.-dayk); }
   float edge=smoothstep(1.,1.-2.2/(g.z*dpr),sqrt(r2));                     // 1-2 device pixel antialiased rim
   gl_FragColor=vec4(col*edge,edge);
