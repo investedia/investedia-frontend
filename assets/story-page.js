@@ -17,7 +17,9 @@
   const fillMore = (s, all) => { /* owner 21 Nov 2026, options 2 and 3: related markets from the country, World Bank context, more from the country */
     const c = s.location && s.location.country, cc = ISO[c]; if (!c) return;
     const have = new Set((s.impacts || []).map(i => String(i.ticker || '').toUpperCase()));
-    const same = all.filter(x => x.id !== s.id && x.location && x.location.country === c).sort((a, b) => Date.parse(b.published_at) - Date.parse(a.published_at)).slice(0, 3);
+    const pub = Date.parse(s.published_at), old = Date.now() - pub > 3 * 864e5; /* old (backfilled) article: more from the country around its own date, not today */
+    const near = old ? Promise.all([-1, 0, 1].map(k => fetch('assets/globe/library-days/' + new Date(pub + k * 864e5).toISOString().slice(0, 10) + '.json').then(r => r.ok ? r.json() : {}).catch(() => ({})))).then(bs => bs.flatMap(o => Object.values(o))) : Promise.resolve(all);
+    near.then(pool => { const same = pool.filter(x => x.id !== s.id && x.location && x.location.country === c).sort((a, b) => old ? Math.abs(Date.parse(a.published_at) - pub) - Math.abs(Date.parse(b.published_at) - pub) : Date.parse(b.published_at) - Date.parse(a.published_at)).slice(0, 3);
     Promise.all([fetch('assets/globe/markets.json').then(r => r.json()).catch(() => ({ assets: [] })), fetch('assets/globe/economy.json').then(r => r.json()).catch(() => ({}))]).then(([m, e]) => {
       const mk = (m.assets || []).filter(a => (a.k === c || a.k === nm(c)) && typeof a.d === 'number' && !have.has(String(a.s).toUpperCase())).sort((a, b) => (b.g === 'Index') - (a.g === 'Index') || (a.t === 'fx') - (b.t === 'fx')).slice(0, 3);
       const ec = (e.countries || {})[cc] || {}, v = k => { const x = ec[k]; return Array.isArray(x) && Array.isArray(x[0]) ? x[x.length - 1] : x; };
@@ -27,9 +29,9 @@
       if (mk.length) h += `<h3>Related markets</h3><p class="sp-ms">${esc(nm(c))} · today's moves</p><div class="sp-card sp-mk">${mk.map(a => `<div class="r"><span><b>${esc(a.n)}</b><small>${esc(a.g === 'Index' ? (a.c ? a.c + ' · ' : '') + 'stock index' : a.t === 'fx' ? 'Currency · ' + (a.inv ? 'against the US dollar' : '') : a.t === 'cmd' ? 'Commodity' : a.g || '')}</small></span><span class="v ${a.d > 0 ? 'u' : a.d < 0 ? 'd' : ''}">${a.t === 'fx' ? a.p.toLocaleString('en-GB', { maximumFractionDigits: 2 }) + ' · ' : ''}${pct(a.d)}</span></div>`).join('')}</div>`;
       if (kp.length || same.length) h += `<h3>Context: ${esc(nm(c))}</h3>`;
       if (kp.length) h += `<p class="sp-ms">World Bank${yr ? ', ' + yr : ''}</p><div class="sp-kp">${kp.map(([k, l, f]) => `<div><b>${f(v(k)[1])}</b><small>${l}</small></div>`).join('')}</div>`;
-      if (same.length) h += `<div class="sp-card sp-rl"><div class="t">More from ${esc(nm(c))}</div>${same.map(x => `<a href="${link(x)}">${esc(x.headline)}<small>${esc(CAT[x.category] || '')} · ${ago(x.published_at)}</small></a>`).join('')}</div>`;
+      if (same.length) h += `<div class="sp-card sp-rl"><div class="t">More from ${esc(nm(c))}${old ? ' around then' : ''}</div>${same.map(x => `<a href="${link(x)}">${esc(x.headline)}<small>${esc(CAT[x.category] || '')} · ${old ? new Date(x.published_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : ago(x.published_at)}</small></a>`).join('')}</div>`;
       if (h) document.querySelectorAll('.sp-more').forEach(el => { el.innerHTML = h; el.hidden = false; });
-    });
+    }); });
   };
   loadNews().then(async d => {
     const all = d.stories; let s = all.find(x => x.id === id);
