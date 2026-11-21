@@ -118,6 +118,7 @@
   }
   // Owner (15 Nov 2026): in the pop-up, Watch sits in the top bar next to "Open full page".
   const placeWatch = () => { const b = document.getElementById('ap-watch'); if (!b || !EMB) return; let w = 128; try { const f = parent.document.querySelector('.pk-full'); if (f) w = f.offsetWidth; } catch {} b.classList.add('pa-watch-top'); b.style.right = (62 + w + 8) + 'px'; document.documentElement.classList.add('pa-has-topwatch'); };
+  try { parent.document.fonts?.ready.then(placeWatch); parent.addEventListener("resize", placeWatch); } catch {}
   const paintWatch = () => { const b = document.getElementById('ap-watch'); placeWatch(); if (!b || !window.INVWATCH) return; const on = INVWATCH.has({ kind: 'asset', src: 'site', s: S.a.s }); b.setAttribute('aria-pressed', on); b.querySelector('span').textContent = on ? 'Watching' : 'Watch'; };
   // TradingView symbol for the free chart widget; null = no valid mapping, the button is hidden
   const TV = { '^GSPC': 'FOREXCOM:SPXUSD', '^IXIC': 'NASDAQ:IXIC', '^NDX': 'NASDAQ:NDX', '^DJI': 'TVC:DJI', '^RUT': 'TVC:RUT', '^VIX': 'TVC:VIX', '^FTSE': 'TVC:UKX', '^GDAXI': 'XETR:DAX', '^FCHI': 'TVC:CAC40', '^STOXX50E': 'TVC:SX5E', '^N225': 'TVC:NI225', '^HSI': 'TVC:HSI', 'GC=F': 'OANDA:XAUUSD', 'SI=F': 'OANDA:XAGUSD', 'PL=F': 'OANDA:XPTUSD', 'HG=F': 'COMEX:HG1!', 'CL=F': 'TVC:USOIL', 'BZ=F': 'TVC:UKOIL', 'NG=F': 'NYMEX:NG1!', 'ZW=F': 'CBOT:ZW1!', 'ZC=F': 'CBOT:ZC1!', 'ZS=F': 'CBOT:ZS1!', 'KC=F': 'ICEUS:KC1!', 'SB=F': 'ICEUS:SB1!', 'CC=F': 'ICEUS:CC1!', 'CT=F': 'ICEUS:CT1!' };
