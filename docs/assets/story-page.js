@@ -46,7 +46,7 @@
     const imp = s.impacts || [], e0 = imp[0], follow = (s.entities?.[0]?.name) || (e0 && e0.name) || nm(s.location.country);
     const photo = s.image ? `<div class="sp-im"><img class="ph" src="assets/globe/${esc(s.image.file)}" alt="${esc(s.image.alt || '')}"><span class="cr">${s.image.kind === 'place' ? 'Photo' : 'Illustration'} · ${esc(s.image.credit || '')} · ${esc(s.image.source || '')}</span></div>` : snip(s);
     root.innerHTML = `<a class="sp-back" href="news.html">← News</a>
-    <div class="sp-pg"><div><div class="sp-m">${fl(ISO[s.location.country])}<b>${esc(s.location.place.split(',')[0])}</b><span>· ${esc(CAT[s.category] || '')} · ${ago(s.published_at)}</span></div><h1>${esc(s.headline)}</h1><button type="button" class="sp-share" id="sp-share">Share</button>${photo}<p class="sp-sum">${esc(s.summary)}</p>${s.image ? '' : '<div class="sp-more m" hidden></div>'}
+    <div class="sp-pg"><div><div class="sp-m">${fl(ISO[s.location.country])}<b>${esc(s.location.place.split(',')[0])}</b><span>· ${esc(CAT[s.category] || '')} · ${ago(s.published_at)}</span></div><h1>${esc(s.headline)}</h1><button type="button" class="sp-share" id="sp-share">Share</button>${photo}<p class="sp-sum">${esc(s.summary)}</p><div class="sp-more m" hidden></div>
     <section class="sp-sec mi" id="sp-mi"><h2>Market implications</h2><p>What changed, which assets are exposed, and what investors are watching.</p>
      <div class="mi-seg" role="tablist" aria-label="Section"><button type="button" role="tab" data-p="event" aria-selected="false">Event</button><button type="button" role="tab" data-p="why" aria-selected="false">Rationale</button><button type="button" role="tab" data-p="exp" aria-selected="true">Exposure${imp.length ? ' · ' + Math.min(imp.length, 6) : ''}</button></div>
      <div class="mi-p mi-event" data-p="event"><span class="mi-eb">Event</span><p>${esc(s.summary)}</p></div>
@@ -56,7 +56,7 @@
     <section class="sp-sec pr-sec" id="sp-px" hidden></section>
     ${thread.length > 1 ? `<section class="sp-sec"><h2>How this article developed</h2><p>Reports on the same thread, oldest first.</p><div class="sp-tl">${thread.map((x, n) => `<div class="sp-ev${x.id === s.id ? ' now' : ''}"><div class="d">${new Date(x.published_at).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })} · ${new Date(x.published_at).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })}</div><a href="${link(x)}">${esc(x.headline)}</a><p>${esc(x.summary)}</p>${(x.impacts || []).length ? `<div class="eff">${x.impacts.slice(0, 3).map(i => `<span>${ic(i)}${esc(i.name)} ${arr(i.direction)}</span>`).join('')}</div>` : ''}</div>`).join('')}</div></section>` : ''}
     <div class="sp-src"><span>Source: ${(s.sources || [s.source]).slice(0, 3).map(x => x ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a>` : '').join(', ')}</span><span><a href="assets/globe/news.html?story=${encodeURIComponent(s.id)}">Open on the globe →</a></span></div></div>
-    <aside class="sp-side">${s.image ? '' : '<div class="sp-more d" hidden></div>'}<div class="sp-card"><h3>What you can do next</h3>
+    <aside class="sp-side"><div class="sp-more d" hidden></div><div class="sp-card"><h3>What you can do next</h3>
       <div class="sp-act"><span class="ic">◉</span><span><b>Follow ${esc(follow)}</b><small>Keep an eye on new articles that touch it</small></span><button class="sp-b p" type="button" id="sp-f"></button></div>
       <div class="sp-act"><span class="ic">☰</span><span><b>Add to my morning briefing</b><small>This thread, summarised each morning</small></span><button class="sp-b" type="button" data-auth="up">Add</button></div>
       <div class="sp-act"><span class="ic">?</span><span><b>Market primers</b><small>Transmission channels from news to prices</small></span><a class="sp-b" href="education.html">Read</a></div></div>
@@ -76,7 +76,7 @@
         break;
       }
     });
-    if (!s.image) fillMore(s, all);
+    fillMore(s, all); /* owner 21 Nov 2026: every article gets related markets and country context */
     const px = document.getElementById('sp-px'); if (px && window.PriceRail) PriceRail.mount(px, s);
     const sh = document.getElementById('sp-share'); if (sh) sh.onclick = () => window.ShareLink && ShareLink.share(s.id, s.headline, sh);
     const b = document.getElementById('sp-f'), paint = () => { const on = followed().includes(follow); b.textContent = on ? 'Following' : 'Follow'; b.classList.toggle('on', on); b.classList.toggle('p', !on); };
