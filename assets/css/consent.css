@@ -6,3 +6,4 @@
 .consent-card :focus-visible{outline:3px solid #FF7A1A;outline-offset:3px}.consent-card summary{min-height:44px;display:flex;align-items:center}
 
 @media(pointer:coarse){.consent-card a{display:inline-flex;align-items:center;min-height:44px}}
+/* owner 21 Nov 2026: no plain orange buttons; both choices stay equally prominent */.consent-actions button{background:#f4f4f5!important;color:#0b0b0d!important;border-color:#f4f4f5!important;box-shadow:none!important}
