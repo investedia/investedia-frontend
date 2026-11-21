@@ -46,7 +46,7 @@
     const pool = (day.length ? day : S.stories).map(s => ({ s, sc: (s.importance || 1) * 10 + (s.market_moving ? 8 : 0) + reactions(s).filter(r => r.a).length * 3 + (Date.parse(s.published_at) - Date.now()) / 36e5 })).sort((a, b) => b.sc - a.sc);
     const s = pool[0] && pool[0].s; if (!s) { $('nf-hero').innerHTML = ''; return; }
     const th = thumbOf(s), e = (s.entities || []).find(company);
-    const chips = reactions(s).map(({ i, a }) => a ? `<span class="nf-chip">${aIcon(a)}<b>${esc(a.n)}</b>${arrow(i.direction)}<span class="mono ${cls(move(a, 'd'))}">${fmt(move(a, 'd'))}</span></span>` : `<span class="nf-chip">${iIcon(i)}<b>${esc(i.name)}</b>${arrow(i.direction)}</span>`).join('');
+    const chips = reactions(s).map(({ i, a }) => a ? `<span class="nf-chip">${aIcon(a)}<b>${esc(a.n)}</b><span class="mono ${cls(move(a, 'd'))}">${fmt(move(a, 'd'))}</span></span>` : `<span class="nf-chip">${iIcon(i)}<b>${esc(i.name)}</b>${arrow(i.direction)}</span>`).join('');
     $('nf-hero').innerHTML = `<a class="nf-hero" href="story.html?id=${encodeURIComponent(s.id)}"><div class="im"${th ? ` style="background-image:url('${th}')" role="img" aria-label="${esc(s.image?.alt || 'Illustrative topic photograph')}"` : ''}>${th ? `<span class="nf-photo-credit">Illustration · ${esc(s.image?.credit || s.image?.source || 'Pixabay')}</span>` : ''}${e ? `<img class="nb-lg" src="${logoSrc(e)}" alt="" onerror="this.remove()">` : ''}</div><div class="tx"><span class="nf-eb">Article of the day · ${esc(CATN[s.category] || '')} · ${ago(s.published_at)}</span><h2>${esc(s.headline)}</h2><p>${esc(s.why || s.summary || '')}</p><div class="nf-chips">${chips}</div><span class="nf-go">Read the article →</span></div></a>`;
   }
   function strip() {

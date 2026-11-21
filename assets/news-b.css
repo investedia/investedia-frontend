@@ -48,3 +48,9 @@
  .nb3-rail .nf-why{display:none}
 }
 @media(max-width:900px){.nb3 .al-chips{justify-content:flex-start!important;flex-wrap:nowrap!important}}
+
+/* owner 21 Nov 2026: rail numbers were faded/clipped by the strip's edge mask; Inter numbers; rows line up without an icon */
+.nb3-rail .nf-strip{-webkit-mask-image:none!important;mask-image:none!important}
+.nb3-rail .nf-tk{min-width:26px;justify-content:center}
+.nb3-rail .nf-tb .mono,.nf-chip .mono{font-family:Inter,system-ui,sans-serif!important;font-variant-numeric:tabular-nums;font-weight:600;letter-spacing:0!important}
+.nb3-rail .nf-tb .mono{font-size:13.5px!important}
