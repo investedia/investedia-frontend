@@ -22,7 +22,7 @@ const coStart = () => {
   if (!root) return;
   const get = u => fetch(u).then(r => r.ok ? r.json() : null).catch(() => null);
   const ago = t => { const m = Math.max(1, Math.round((Date.now() - Date.parse(t)) / 6e4)); return m < 60 ? `${m} min ago` : m < 1440 ? `${Math.round(m / 60)} h ago` : `${Math.round(m / 1440)} d ago`; };
-  const pct = d => Number.isFinite(d) ? `<span class="pct ${d > 0 ? 'up' : d < 0 ? 'down' : 'flat'}">${d > 0 ? '↑' : d < 0 ? '↓' : '↔'} ${Math.abs(d).toFixed(2)}%</span>` : '';
+  const pct = d => Number.isFinite(d) ? `<span class="pct ${d > 0 ? 'up' : d < 0 ? 'down' : 'flat'}">${d > 0 ? '↑' : d < 0 ? '↓' : '↔︎'} ${Math.abs(d).toFixed(2)}%</span>` : '';
   const money = (p, cur) => { if(window.InvPrefs){const text=InvPrefs.fmt(p,{cur:cur||'USD',t:'stocks'});return !cur||cur==='USD'?`<span data-usd-value="${p}" data-usd-kind="price">${text}</span>`:text;}try{return new Intl.NumberFormat(undefined,{style:'currency',currency:cur||'USD',maximumFractionDigits:p<10?3:2}).format(p);}catch{return String(p);} };
   const logo = c => c.logo ? `<img class="co-logo" src="${esc(c.logo)}" alt="" loading="lazy">` : `<span class="co-logo co-mono">${esc(c.name[0])}</span>`;
   const slug = (location.pathname.match(/companies\/([a-z0-9-]+)/) || [])[1] || new URLSearchParams(location.search).get('c');

@@ -1243,7 +1243,7 @@ async function loadHistory(window) {
 }
 // Analysis is optional. Malformed fields never affect the original reporting.
 const IMPACT_COLOR = { up: '34,197,94', down: '240,68,68', mixed: '161,161,170', unclear: '161,161,170' };
-const IMPACT_ARROW = { up: '↑', down: '↓', mixed: '↔', unclear: '↔' };
+const IMPACT_ARROW = { up: '↑', down: '↓', mixed: '↔︎', unclear: '↔︎' };
 function impactsOf(s) {
   return (Array.isArray(s?.impacts) ? s.impacts : []).filter(i => i && ['country', 'company', 'asset', 'sector'].includes(i.kind) && typeof i.name === 'string' && typeof i.why === 'string' && Object.values(ISO).includes(i.country) && IMPACT_COLOR[i.direction]).slice(0, 4);
 }
@@ -1273,8 +1273,8 @@ function assetForImpact(i) {
   const p = MKT.by[r.px] || MKT.np[r.px] || {};
   return MKT.reg[r.id] = { ...p, s: r.px || r.id, id: r.id, n: r.n, la: r.la, lo: r.lo, t: T_OF[r.c] || 'stocks', c: r.c, site: r.site || p.site };
 }
-const movePill = a => !Number.isFinite(a?.d) ? '' : a && a.u === 'bp' ? `<span class="pct ${a.d > 0 ? 'up' : a.d < 0 ? 'down' : 'flat'}">${a.d > 0 ? '↑' : a.d < 0 ? '↓' : '↔'} ${Math.abs(a.d).toFixed(1)} bp</span>` : pctPill(a.d);
-const pctPill = v => !Number.isFinite(v) ? '' : `<span class="pct ${v > 0 ? 'up' : v < 0 ? 'down' : 'flat'}">${v > 0 ? '↑' : v < 0 ? '↓' : '↔'} ${Math.abs(v).toFixed(2)}%</span>`;
+const movePill = a => !Number.isFinite(a?.d) ? '' : a && a.u === 'bp' ? `<span class="pct ${a.d > 0 ? 'up' : a.d < 0 ? 'down' : 'flat'}">${a.d > 0 ? '↑' : a.d < 0 ? '↓' : '↔︎'} ${Math.abs(a.d).toFixed(1)} bp</span>` : pctPill(a.d);
+const pctPill = v => !Number.isFinite(v) ? '' : `<span class="pct ${v > 0 ? 'up' : v < 0 ? 'down' : 'flat'}">${v > 0 ? '↑' : v < 0 ? '↓' : '↔︎'} ${Math.abs(v).toFixed(2)}%</span>`;
 const dirWord = v => v > 0 ? 'up' : v < 0 ? 'down' : 'flat';
 function money(a) { if (!Number.isFinite(a?.p)) return '—'; if (a.u === 'bp') return Number(a.p).toFixed(2) + '%'; try { return new Intl.NumberFormat(undefined, { style: 'currency', currency: a.cur || 'USD', maximumFractionDigits: a.p < 10 ? 3 : 2 }).format(a.p); } catch { return String(a.p); } }
 function sparkSvg(sp, col) {
@@ -1289,7 +1289,7 @@ const REL_LABEL = { direct: 'Direct impact', acquisition: 'Acquisition', 'supply
 function hoverCardHTML(edge) {
   const rows = impactsOf(edge.article).map(i => ({ i, a: assetForImpact(i) })).filter(x => x.a && Number.isFinite(x.a.d)).sort((a, b) => (b.i === edge.impact) - (a.i === edge.impact)).slice(0, 3);
   return `<div class="eyebrow">${rows.length ? `Affected assets · ${rows.length}` : `Connection · ${esc(edge.conn ? edge.conn.dest.name : edge.asset.n)}`}</div><h3>${esc(edge.article.headline)}</h3><div class="meta">${esc(edge.article.source?.name || '')}${edge.article.location?.place ? ' · ' + esc(edge.article.location.place.split(',')[0]) : ''} · ${ago(edge.article.t)}</div>`
-    + rows.map(({ i, a }) => `<div class="hv-row"><div class="hv-top">${impactVisual(i)}<div class="hv-name"><b>${esc(a.n)}</b><span>${esc(a.s.replace(/-USD$/, ''))} · ${esc(money(a))}</span></div><div class="hv-pct">${movePill(a)}<small>7 days ${a.w > 0 ? '+' : ''}${Number.isFinite(a.w) ? a.w.toFixed(a.u === 'bp' ? 1 : 2) : '—'}${a.u === 'bp' ? ' bp' : '%'}</small></div></div><div class="hv-impl">Article implies <b class="${i.direction === 'up' ? 'up' : i.direction === 'down' ? 'down' : 'flat'}">${IMPACT_ARROW[i.direction]} ${i.direction === 'mixed' || i.direction === 'unclear' ? i.direction : i.direction}</b> · price today <b class="${dirWord(a.d)}">${a.d > 0 ? '↑ up' : a.d < 0 ? '↓ down' : '↔ flat'}</b></div>${sparkSvg(a.sp, a.d >= 0 ? '#34d399' : '#f87171')}`).join('')
+    + rows.map(({ i, a }) => `<div class="hv-row"><div class="hv-top">${impactVisual(i)}<div class="hv-name"><b>${esc(a.n)}</b><span>${esc(a.s.replace(/-USD$/, ''))} · ${esc(money(a))}</span></div><div class="hv-pct">${movePill(a)}<small>7 days ${a.w > 0 ? '+' : ''}${Number.isFinite(a.w) ? a.w.toFixed(a.u === 'bp' ? 1 : 2) : '—'}${a.u === 'bp' ? ' bp' : '%'}</small></div></div><div class="hv-impl">Article implies <b class="${i.direction === 'up' ? 'up' : i.direction === 'down' ? 'down' : 'flat'}">${IMPACT_ARROW[i.direction]} ${i.direction === 'mixed' || i.direction === 'unclear' ? i.direction : i.direction}</b> · price today <b class="${dirWord(a.d)}">${a.d > 0 ? '↑ up' : a.d < 0 ? '↓ down' : '↔︎ flat'}</b></div>${sparkSvg(a.sp, a.d >= 0 ? '#34d399' : '#f87171')}`).join('')
     + (edge.conn ? `<p class="hv-rel"><b>${esc(REL_LABEL[edge.conn.type] || edge.conn.type)}</b> · ${edge.conn.tier === 1 ? 'direct' : 'secondary'} · confidence ${Math.round(edge.conn.confidence * 100)}%</p><p class="hv-why">${esc(edge.conn.explanation)}</p>` : '')
     + `<p class="hv-why">${esc(String(edge.impact.why || '').slice(0, 170))}</p>`;
 }
@@ -1481,7 +1481,7 @@ function drawConnections(t, focus, country) {
     if (EMBED || !sel) return;
     const seen = points.filter(p => p[2] && p[0] > globeBox.left + 34 && p[0] < globeBox.right - 34 && p[1] > globeBox.top + 30 && p[1] < globeBox.bottom - 30);
     if (seen.length < 3) return;
-    const m = seen[sel2 ? seen.length - 1 : Math.floor(seen.length / 2)], d = a.d, nm = a.n.length > 17 ? a.n.slice(0, 16) + '…' : a.n, pt = Number.isFinite(d) ? `${d > 0 ? '↑' : d < 0 ? '↓' : '↔'} ${a.u === 'bp' ? Math.abs(d).toFixed(1) + ' bp' : Math.abs(d).toFixed(2) + '%'}` : '↔';
+    const m = seen[sel2 ? seen.length - 1 : Math.floor(seen.length / 2)], d = a.d, nm = a.n.length > 17 ? a.n.slice(0, 16) + '…' : a.n, pt = Number.isFinite(d) ? `${d > 0 ? '↑' : d < 0 ? '↓' : '↔︎'} ${a.u === 'bp' ? Math.abs(d).toFixed(1) + ' bp' : Math.abs(d).toFixed(2) + '%'}` : '↔︎';
     ctx.font = '650 12px Inter,sans-serif'; const w1 = ctx.measureText(nm).width, w2 = ctx.measureText(pt).width, W = w1 + w2 + 32, H = 26; let x = m[0] - W / 2, y = m[1] - H / 2;
     for (let n = 0; n < 8 && pillRects.some(r => x < r.x + r.w + 4 && x + W + 4 > r.x && y < r.y + r.h + 4 && y + H + 4 > r.y); n++) y += H + 4;
     pillRects.push({ x, y, w: W, h: H, nm, pt, w1, d, asset: a, edge: { ...e, asset: a, points, pill: { x, y, w: W, h: H } } });
@@ -3059,7 +3059,7 @@ function frame(t) {
   if (placeCounts()) zoomCounts();
   // connection pills (asset + real % move) are drawn last so map markers never cover them
   ctx.textBaseline='alphabetic';
-  for(const {x,y,w:W,h:H,nm,pt,w1,d} of pillRects){ctx.fillStyle='rgba(16,16,19,.94)';ctx.strokeStyle='rgba(255,255,255,.2)';ctx.lineWidth=1;ctx.beginPath();ctx.roundRect(x,y,W,H,13);ctx.fill();ctx.stroke();ctx.textAlign='left';ctx.font='650 12px Inter,sans-serif';ctx.fillStyle='#fff';ctx.fillText(nm,x+12,y+17);ctx.fillStyle=!Number.isFinite(d)||d===0?'#c4c4cc':d>0?'#5df08a':'#ff8a82';ctx.font='700 12px Inter,sans-serif';ctx.fillText(pt,x+12+w1+8,y+17);}
+  for(const {x,y,w:W,h:H,nm,pt,w1,d} of pillRects){ctx.fillStyle='rgba(16,16,19,.94)';ctx.strokeStyle='rgba(255,255,255,.2)';ctx.lineWidth=1;ctx.beginPath();ctx.roundRect(x,y,W,H,13);ctx.fill();ctx.stroke();ctx.textAlign='left';ctx.font='650 12px Inter,sans-serif';ctx.fillStyle='#fff';ctx.fillText(nm,x+12,y+17);ctx.fillStyle=!Number.isFinite(d)||d===0?'#8b8b94':d>0?'#5df08a':'#ff8a82';ctx.font='700 12px Inter,sans-serif';ctx.fillText(pt,x+12+w1+8,y+17);}
   if (!EMBED && MKTON) drawExchanges(t); else exHits = [];
   if (!EMBED && UPON) drawUpcoming(); else upHits = [];
   drawUserLoc(t);

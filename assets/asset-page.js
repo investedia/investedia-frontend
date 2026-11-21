@@ -6,7 +6,7 @@
   const nf = v => v == null || !isFinite(v) ? '—' : v.toLocaleString('en-US', { maximumFractionDigits: Math.abs(v) >= 1 ? 2 : 4, minimumFractionDigits: Math.abs(v) >= 1 ? 2 : 4 });
   const money = v => window.InvPrefs ? InvPrefs.fmt(v, S.a) : nf(v);
   const fmt = v => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(Math.abs(v) >= 10 ? 1 : 2) + '%';
-  const cls = v => v > 0.005 ? 'u' : v < -0.005 ? 'd' : 'o', arrow = v => v > 0.005 ? '↑' : v < -0.005 ? '↓' : '↔', col = v => v > 0.005 ? '#34d399' : v < -0.005 ? '#f87171' : '#8b8b94';
+  const cls = v => v > 0.005 ? 'u' : v < -0.005 ? 'd' : 'o', arrow = v => v > 0.005 ? '↑' : v < -0.005 ? '↓' : '↔︎', col = v => v > 0.005 ? '#34d399' : v < -0.005 ? '#f87171' : '#8b8b94';
   const pc = (a, b) => b ? (a / b - 1) * 100 : 0;
   const S = { win: 'd', a: null, intra: {}, live: null, hist: null };
   const std = sp => { const r = (sp || []).slice(-22).map((x, i, v) => i ? (x / v[i - 1] - 1) * 100 : null).slice(1); if (r.length < 8) return null; const m = r.reduce((t, x) => t + x, 0) / r.length; return Math.sqrt(r.reduce((t, x) => t + (x - m) ** 2, 0) / r.length); };
@@ -37,7 +37,7 @@
   const pinGlyph = x => { const dir = x.i.direction;
     if (IC === '2') return PAPER_IC;
     if (IC === '3') return `<b>${esc((x.s.source?.name || 'N').replace(/[^A-Za-z0-9 ]/g, '').split(/\s+/).filter(Boolean).map(w => w[0]).join('').slice(0, 2).toUpperCase() || 'N')}</b>`;
-    if (IC === '4') return `<b>${dir === 'up' ? '↑' : dir === 'down' ? '↓' : '↔'}</b>`;
+    if (IC === '4') return `<b>${dir === 'up' ? '↑' : dir === 'down' ? '↓' : '↔︎'}</b>`;
     if (IC === '5') return `<b>${x.num}</b>`;
     return NEWS_IC; };
   function pins(a, rel, v, L0, rr) {
