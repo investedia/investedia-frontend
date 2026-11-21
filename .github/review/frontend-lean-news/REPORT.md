@@ -1,6 +1,6 @@
 # Frontend news cleanup
 
-Local branch: `codex/frontend-lean-news`. Comparison: `b9c94e078` (includes the latest news-rail fix).
+Local branch: `codex/frontend-lean-news`. Comparison after conflict resolution: `a19f1f8b2` (current main, including button and company-page updates).
 
 The article library reuses pending and completed downloads, retries failed downloads, and ignores outdated results and lead summaries after a newer selection. Removed unreachable rendering code. The movers rail sorts articles once, then stops at the first matching article. Biggest-reaction sorting calculates each article's reaction once rather than inside every comparison.
 
@@ -29,3 +29,9 @@ Existing edits to `scripts/serve.py` and `docs/assets/runtime-config.js` are pre
 Pre-existing build limitation: plain `python build.py --publish-assets` failed on Windows CP1252 decoding. Explicit UTF-8 resolves it without changing build code. Initial new browser-test failures were test-harness issues, corrected before the final passing run. The baseline browser run also reproduced the stale-filter response problem fixed here.
 
 No deployment, push, auth changes or backend changes. This is a targeted news-path cleanup, not a rewrite of the entire frontend. External API availability and real-world network speed were not tested.
+
+## PR conflict resolution
+
+Updated PR #218 with current main in an isolated worktree. All 1,870 conflicts were generated HTML or service-worker cache versions; the source code merged cleanly. Rebuilt the pages and retained incoming article data and company ticker indexes byte for byte. The original checkout and its local server/runtime edits were untouched.
+
+Revalidation: 19 Node checks, 11 targeted Python checks, the UTF-8 build and browser comparisons at 1440 px and 390 px passed. Screenshots and results are refreshed against current main. No PR merge or deployment was performed.
