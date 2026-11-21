@@ -201,6 +201,12 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
   #hnPop.hn-pop a:nth-of-type(n+6){display:inline-flex!important}
 }
 </style>
+<style id="hn-globe-fade">/* phones (owner 21 Nov 2026): the globe area fades into the page at its edges, so a zoomed-in map never shows as a hard square */
+@media (max-width:900px){#hnGlobe{-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%),linear-gradient(180deg,transparent 0,#000 12%,#000 88%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%),linear-gradient(180deg,transparent 0,#000 12%,#000 88%,transparent 100%);mask-composite:intersect}}
+</style>
+<style id="hn-globe-fade-pc">/* PC light theme (owner 21 Nov 2026): globe area fades softly into the page instead of a visible rectangle */
+@media (min-width:901px){:root[data-theme="light"] #hnGlobe{-webkit-mask-image:radial-gradient(ellipse 60% 62% at 50% 50%,#000 70%,transparent 100%);mask-image:radial-gradient(ellipse 60% 62% at 50% 50%,#000 70%,transparent 100%)}}
+</style>
 <style id="hn-glass-header">/* PC homepage (owner 21 Nov 2026, option B): the globe runs up behind a frosted-glass header; glass search bar. Phones unchanged. */
 @media (min-width:901px){
   body[data-page=home] .hdr{position:fixed!important;left:0;right:0;top:0;background:linear-gradient(180deg,rgba(8,9,12,.7),rgba(8,9,12,0))!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;border-bottom:0!important;box-shadow:none!important}  /* option C: no bar, soft fade */
