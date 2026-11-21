@@ -3140,7 +3140,7 @@ function frame(t) {
   else if (!drag && !pinch && !reduce && !sel && !selCountry && !hoverC && !hoverCountry && view.k === 'top' && F.region === 'global' && Zt < 1.05 && !zoomAnchor) lon0 -= dt * .0022;
   ZMAX = window.EarthGL && EarthGL.ready && R0 > 0 ? Math.max(6, Math.min(W, H) * .5 / Math.sin(1.5 * rad) / R0) : 6;  // Phase 1 (owner 21 Nov 2026): with the satellite Earth, zoom to regional/metro level (~3° across), never street level
   if (Zt > ZMAX) Zt = ZMAX;
-  Z += (Zt - Z) * (reduce ? 1 : .26); if (Math.abs(Zt - Z) < .0001) Z = Zt; R = R0 * Z;
+  { const k = reduce ? 1 : 1 - Math.exp(-Math.min(100, dt) / 60); Z = Math.exp(Math.log(Z) + (Math.log(Zt) - Math.log(Z)) * k); } if (Math.abs(Zt - Z) < .0001) Z = Zt;  /* owner 21 Nov 2026: smooth zoom, same speed at any frame rate, even steps in or out */ R = R0 * Z;
   lon0 = ((lon0 + 540) % 360) - 180; cy += (cyT - cy) * (reduce ? 1 : .12);
   keepZoomAnchor(); if (Z === Zt) zoomAnchor = null;
   if (play) { const k = Math.min(1, (t - play.t0) / play.dur); play.cur = play.start + (T0 - play.start) * k; refresh(); if (k >= 1) { play = null; refresh(); } }
@@ -4224,6 +4224,17 @@ void main(){
       s.swapped = true; D.tSharp = performance.now(); const had = !!D.bb; s.layers.forEach((l, i) => { setTex(i, l.cv); l.dirty = false; }); D.bb = s.bb; D.deg = s.bb[2] - s.bb[0]; D.z = s.zDay; if (!had) D.fade = 0;
     } else if (s.swapped && performance.now() - (s.tu || 0) > 120) { s.tu = performance.now(); s.layers.forEach((l, i) => { if (l.dirty) { setTex(i, l.cv); l.dirty = false; } }); }  // re-upload at most ~8 times a second
   };
+  /* Owner 21 Nov 2026 (load ahead): once a view has loaded, quietly fetch the next, sharper level for the middle of the screen
+     (day + city lights) so zooming in further is instant from the browser cache. At most 24 tiles, only when the tab is visible. */
+  const ahead = (bb, zDay) => {
+    if (document.hidden || zDay >= (phone ? 9 : 10)) return;
+    const cx = (bb[0] + bb[2]) / 2, cy = (bb[1] + bb[3]) / 2, hx = (bb[2] - bb[0]) / 4, hy = (bb[3] - bb[1]) / 4, wide = bb[2] - bb[0] > 25;
+    let n = 0;
+    [[wide ? BM : LAY[0], Math.min(wide ? 6 : 10, zDay + 1)], [LAY[2], Math.min(6, zDay + 1)]].forEach(([L, z]) => {
+      const d = tdeg(z), c0 = Math.floor((cx - hx + 180) / d), c1 = Math.floor((cx + hx + 180) / d), r0 = Math.floor((90 - cy - hy) / d), r1 = Math.floor((90 - cy + hy) / d);
+      for (let r = Math.max(0, r0); r <= r1; r++) for (let c = Math.max(0, c0); c <= c1; c++) { if (n++ >= 24) return; const im = new Image(); im.crossOrigin = 'anonymous'; im.src = turl(L, z, r, c); }
+    });
+  };
   const plan = (W, H, R, lon0, lat0) => {
     const rad = Math.asin(Math.min(1, Math.max(W, H) * .5 / R)) * 180 / Math.PI;  // angular radius of what is on screen
     D.want = Math.max(0, Math.min(1, (58 - rad) / 20));                               // fades in from ~58° to ~38° on screen (country-level zoom); full Earth unchanged
@@ -4236,8 +4247,10 @@ void main(){
     const cur = D.set ? D.set.bb : null, inside = cur && bb[0] >= cur[0] && bb[2] <= cur[2] && bb[1] >= cur[1] && bb[3] <= cur[3] && (bb[2] - bb[0]) > (cur[2] - cur[0]) * .45 && D.set.zDay >= zDay;
     if (inside) return;
     const snap = tdeg(zDay), sb = [Math.floor(bb[0] / snap) * snap, Math.floor(bb[1] / snap) * snap, Math.ceil(bb[2] / snap) * snap, Math.ceil(bb[3] / snap) * snap].map(v => +v.toFixed(5));
-    const go = () => request(sb, zDay);
-    clearTimeout(D.timer); if (performance.now() - D.last > 220) go(); else D.timer = setTimeout(go, 220);  // while zooming: at most every 0.22 s
+    const go = () => { request(sb, zDay); clearTimeout(D.pre); D.pre = setTimeout(() => ahead(sb, zDay), 450); };
+    /* Owner 21 Nov 2026 (smoother zoom): wait until the camera rests for 0.14 s before swapping in new detail, so tiles do not
+       change mid-gesture; a long zoom still refreshes at least every 0.7 s */
+    clearTimeout(D.timer); if (performance.now() - D.last > 700) go(); else D.timer = setTimeout(go, 140);
   };
   // preload the busiest news places at the level a full zoom would use, so zooming there is instant (from the browser cache)
   const preload = () => {
