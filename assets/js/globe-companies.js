@@ -56,7 +56,7 @@
       for (const w of wd?.companies || []) {
         if (qs.has(w.q) || nm.has(String(w.n).toLowerCase())) continue;
         S.list.push({ slug: 'wd-' + w.q, name: w.n, short: w.n, country: w.c || '', region: w.r || '', sym: '', ex: '', tracked: false, syms: [], wd: true,
-          sector: w.s || w.i || '', desc: w.d || '', web: w.w || '', listed: !!w.l,
+          sector: w.s || w.i || '', desc: w.d || '', descAI: !!w.da, web: w.w || '', listed: !!w.l,
           hq: { hq_city: w.city || '', hq_lat: w.la, hq_lon: w.lo, qid: w.q, source_url: 'https://www.wikidata.org/wiki/' + w.q, checked_at: '2026-11-20' },
           badge: null, logo: okImg && w.lg ? 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(w.lg) + '?width=96' : null });
       }
