@@ -41,13 +41,13 @@ void main(){
   float lw=lam; if(lw<dbb.x-PI) lw+=2.*PI; if(lw>dbb.z+PI) lw-=2.*PI;
   vec2 duv=vec2((lw-dbb.x)/(dbb.z-dbb.x),(dbb.w-phi)/(dbb.w-dbb.y));
   float inD=dk*smoothstep(0.,.04,min(duv.x,1.-duv.x))*smoothstep(0.,.04,min(duv.y,1.-duv.y));
-  if(inD>0.){ day=mix(day,texture2D(dDay,duv).rgb,inD*(1.-sea)); }
+  if(inD>0.){ vec4 dd=texture2D(dDay,duv); day=mix(day,dd.rgb,inD*(1.-sea)*dd.a); }  // .a = this tile has arrived (else the global image shows: no black gaps)
   float lum=dot(day,vec3(.299,.587,.114));
   // (sea computed above)  // full-strength ocean mask so zoomed-in and global oceans match  // Blue Marble oceans are dark blue: detect them
   float tone=.06+.17*pow(smoothstep(.04,.8,lum),.85);  /* softer contrast (deserts calmer) */                                // monochrome: charcoal to cool grey, terrain kept as light/dark texture (owner 20 Nov 2026: no sepia)
   vec3 nat=day/max(lum,.04);                                                 // the real colour of this spot, without its brightness
   vec3 base=vec3(tone)*vec3(1.,.995,.985);  // owner 21 Nov 2026: no colour (no green), neutral grey              // owner 20 Nov 2026: dark neutral land with a trace of natural colour and warmth (not sepia, not flat grey)
-  float rel=inD>0.?texture2D(dRel,duv).r:.5;                                  // NASA ASTER elevation relief (light from the north-west)
+  vec4 rr4=inD>0.?texture2D(dRel,duv):vec4(.5,.5,.5,0.); float rel=mix(.5,rr4.r,rr4.a);                                  // NASA ASTER elevation relief (light from the north-west)
   // relief (owner 21 Nov 2026): directional light from the north-west; lit slopes a touch warm, shaded slopes cool and deep; flat land stays calm
   float sh=rel-.5, mtn=smoothstep(.03,.2,abs(sh));
   vec3 relk=vec3(1.)+vec3(1.25,1.18,1.08)*max(sh,0.)*1.6*mtn+vec3(1.0,1.04,1.12)*min(sh,0.)*1.75*mtn;
@@ -64,8 +64,8 @@ void main(){
   col+=vec3(.05,.045,.04)*smoothstep(.12,0.,abs(sdot))*.6;                 // soft dusk edge
   float L=texture2D(nightT,uv).r; L=pow(max(0.,(L-.09)/.91),1.25);
   float core=smoothstep(.15,.85,L);
-  if(inD>0.){ float x=max(0.,(texture2D(dNight,duv).r-.4)/.6), x3=pow(x,1.6); float Ld=.4*x3/(x3+.3);  /* owner 21 Nov 2026: calmer zoomed-in lights, only real built-up cores */   // compressed highs: no white hotspots, detail kept
-    L=mix(L,Ld,inD); core=mix(core,smoothstep(.5,1.,x),inD); }                                        // only the densest cores turn warm white  // NASA VIIRS 500 m metro lights (calmer curve: this layer is brighter)         // city lights only (drops Black Marble's faint ground)
+  vec4 nd4=texture2D(dNight,duv); if(inD>0.&&nd4.a>0.){ float x=max(0.,(nd4.r-.4)/.6), x3=pow(x,1.6); float Ld=.4*x3/(x3+.3);  /* owner 21 Nov 2026: calmer zoomed-in lights, only real built-up cores */   // compressed highs: no white hotspots, detail kept
+    L=mix(L,Ld,inD*nd4.a); core=mix(core,smoothstep(.5,1.,x),inD*nd4.a); }                                        // only the densest cores turn warm white  // NASA VIIRS 500 m metro lights (calmer curve: this layer is brighter)         // city lights only (drops Black Marble's faint ground)
   col+=mix(vec3(1.,.6,.26),vec3(1.,.9,.76),core)*L*1.55*(1.-dayk);  // real night lights: amber/soft orange in the fainter areas, warm white in the brightest cores                                 // tiny ivory points, very little amber; orange stays for data
   if(lt>.5){  // light theme (owner 21 Nov 2026): soft grey-blue oceans, light warm-grey land with the same terrain, gentle night side, faint lights
     float t2=LT0+LT1*smoothstep(.03,.75,lum); vec3 land=vec3(t2)*vec3(1.,.995,.985);
@@ -112,7 +112,7 @@ void main(){
   const dtex = [gl.createTexture(), gl.createTexture(), gl.createTexture(), gl.createTexture()];
   const D = E.detail = { bb: null, deg: 999, fade: 0, want: 0, timer: 0, key: '', last: 0, set: null, z: 0 };
   const setTex = (i, src) => { gl.activeTexture(gl.TEXTURE2 + i); gl.bindTexture(gl.TEXTURE_2D, dtex[i]); gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
-    const f = i === 3 ? gl.RGBA : i ? gl.LUMINANCE : gl.RGB; gl.texImage2D(gl.TEXTURE_2D, 0, f, f, gl.UNSIGNED_BYTE, src);
+    const f = gl.RGBA; gl.texImage2D(gl.TEXTURE_2D, 0, f, f, gl.UNSIGNED_BYTE, src);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE); };
   const MAXC = phone ? 2048 : 4096;
@@ -126,9 +126,6 @@ void main(){
       const ppd = Math.min(512 / d, MAXC / (bb[2] - bb[0]), MAXC / (bb[3] - bb[1]));  // canvas pixels per degree (capped)
       const cv2 = document.createElement('canvas'); cv2.width = Math.max(1, Math.round((bb[2] - bb[0]) * ppd)); cv2.height = Math.max(1, Math.round((bb[3] - bb[1]) * ppd));
       const g = cv2.getContext('2d'), lay = { cv: cv2, dirty: false };
-      { const gi = E.gimg && E.gimg[i === 2 ? 1 : 0], k = cv2.width / (bb[2] - bb[0]);  // start from the global image (day/night) so missing tiles never show as black
-        if ((i === 0 || i === 2) && gi && gi.width) { const sx = gi.width / 360, sy = gi.height / 180; g.drawImage(gi, (bb[0] + 180) * sx, (90 - bb[3]) * sy, (bb[2] - bb[0]) * sx, (bb[3] - bb[1]) * sy, 0, 0, cv2.width, cv2.height); }
-        else if (i === 1) { g.fillStyle = '#808080'; g.fillRect(0, 0, cv2.width, cv2.height); } }
       set.layers[i] = lay;
       for (let r = r0; r <= r1; r++) for (let c = c0; c <= c1; c++) {
         if (r < 0 || c < 0 || c >= 360 / d || r >= Math.ceil(180 / d)) continue;
@@ -143,9 +140,9 @@ void main(){
   };
   const tick = () => {  // called every frame: swap in the new view when most tiles are in, then keep updating it as the rest arrive
     const s = D.set; if (!s) return;
-    if (!s.swapped && (s.loaded >= s.total * .95 || (performance.now() - s.t0 > 5000 && s.loaded >= s.total * .6)) && s.loaded > 0  /* owner 21 Nov 2026: no half-loaded swaps (black patches) */) {
+    if (!s.swapped && s.loaded > 0  /* owner 21 Nov 2026: show tiles as soon as they arrive; missing ones show the global image underneath (alpha) */) {
       s.swapped = true; D.tSharp = performance.now(); const had = !!D.bb; s.layers.forEach((l, i) => { setTex(i, l.cv); l.dirty = false; }); D.bb = s.bb; D.deg = s.bb[2] - s.bb[0]; D.z = s.zDay; if (!had) D.fade = 0;
-    } else if (s.swapped) s.layers.forEach((l, i) => { if (l.dirty) { setTex(i, l.cv); l.dirty = false; } });
+    } else if (s.swapped && performance.now() - (s.tu || 0) > 120) { s.tu = performance.now(); s.layers.forEach((l, i) => { if (l.dirty) { setTex(i, l.cv); l.dirty = false; } }); }  // re-upload at most ~8 times a second
   };
   const plan = (W, H, R, lon0, lat0) => {
     const rad = Math.asin(Math.min(1, Math.max(W, H) * .5 / R)) * 180 / Math.PI;  // angular radius of what is on screen
