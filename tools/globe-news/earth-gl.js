@@ -16,14 +16,14 @@
   const VS = 'attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}';
   const FS = `precision highp float;
 uniform sampler2D dayT,nightT,dDay,dRel,dNight,dImp;uniform vec2 res;uniform vec3 g;uniform vec2 rot;uniform vec3 sun;uniform float dpr;
-uniform vec4 dbb;uniform float dk;   // Phase 1 regional detail: bounding box (lon0,lat0,lon1,lat1 in radians) and fade-in
+uniform vec4 dbb;uniform float dk;uniform float lt;   // Phase 1 regional detail: bounding box (lon0,lat0,lon1,lat1 in radians) and fade-in
 const float PI=3.14159265;
 void main(){
   vec2 px=vec2(gl_FragCoord.x,res.y-gl_FragCoord.y)/dpr;
   vec2 d=(px-g.xy)/g.z; float r2=dot(d,d); if(r2>1.){gl_FragColor=vec4(0.);return;}
   float X=d.x,Y=-d.y,Zd=sqrt(1.-r2),c0=cos(rot.y),s0=sin(rot.y);
   float sp=c0*Y+s0*Zd, phi=asin(clamp(sp,-1.,1.)), cpcd=-s0*Y+c0*Zd, lam=rot.x+atan(X,cpcd);
-  vec2 uv=vec2(fract((lam+PI)/(2.*PI)),(PI*.5-phi)/PI);
+  vec2 uv=vec2((lam+PI)/(2.*PI),(PI*.5-phi)/PI);  // no fract(): textures repeat, and fract's jump at 180° made a visible line (wrong mipmap) down the Pacific
   // Investedia grade (owner 20 Nov 2026): satellite detail, black-and-orange identity. No blue oceans, no green land.
   vec3 day=texture2D(dayT,uv).rgb;
   // Phase 1 (owner 21 Nov 2026): when zoomed in, a sharper NASA image of just the area on screen replaces the global one, faded at its edges
@@ -49,13 +49,17 @@ void main(){
   base=mix(base,vec3(.038,.038,.048),sea);                                   // oceans almost black
   float cp=cos(phi), sdot=sin(phi)*sun.z+cp*cos(lam-sun.x)*sun.y;          // cos(angle to the sun)
   float dayk=smoothstep(-.07,.16,sdot);
-  vec3 col=base*mix(.14,1.15,dayk)*mix(.8,1.,Zd);                        // owner 20 Nov 2026 (B): clear day/night
+  vec3 col=base*mix(.22,1.15,dayk)*mix(.8,1.,Zd);                        // owner 20 Nov 2026 (B): clear day/night
   col+=vec3(.05,.045,.04)*smoothstep(.12,0.,abs(sdot))*.6;                 // soft dusk edge
   float L=texture2D(nightT,uv).r; L=pow(max(0.,(L-.09)/.91),1.25);
   float core=smoothstep(.15,.85,L);
   if(inD>0.){ float x=max(0.,(texture2D(dNight,duv).r-.3)/.7), x3=pow(x,1.5); float Ld=.55*x3/(x3+.25);   // compressed highs: no white hotspots, detail kept
     L=mix(L,Ld,inD); core=mix(core,smoothstep(.5,1.,x),inD); }                                        // only the densest cores turn warm white  // NASA VIIRS 500 m metro lights (calmer curve: this layer is brighter)         // city lights only (drops Black Marble's faint ground)
   col+=mix(vec3(1.,.6,.26),vec3(1.,.9,.76),core)*L*1.55*(1.-dayk);  // real night lights: amber/soft orange in the fainter areas, warm white in the brightest cores                                 // tiny ivory points, very little amber; orange stays for data
+  if(lt>.5){  // light theme (owner 21 Nov 2026): soft grey-blue oceans, light warm-grey land with the same terrain, gentle night side, faint lights
+    float t2=.58+.34*smoothstep(.03,.75,lum); vec3 land=vec3(t2)*mix(vec3(1.),nat,.22)*vec3(1.,.99,.97);
+    vec3 lc=mix(land,vec3(.80,.85,.91),sea); lc*=mix(1.,.58+.84*rel,inD*(1.-sea)); lc=mix(lc,vec3(.70,.68,.65),smoothstep(.0,.1,dens)*inD*.5*(1.-sea));
+    col=lc*mix(.72,1.,dayk)*mix(.9,1.,Zd)+mix(vec3(1.,.6,.26),vec3(1.,.85,.6),core)*L*.5*(1.-dayk); }
   float edge=smoothstep(1.,1.-2.2/(g.z*dpr),sqrt(r2));                     // 1-2 device pixel antialiased rim
   gl_FragColor=vec4(col*edge,edge);
 }`;
@@ -64,7 +68,7 @@ void main(){
   gl.useProgram(pr);
   const buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
   const ap = gl.getAttribLocation(pr, 'p'); gl.enableVertexAttribArray(ap); gl.vertexAttribPointer(ap, 2, gl.FLOAT, false, 0, 0);
-  const U = n => gl.getUniformLocation(pr, n), u = { res: U('res'), g: U('g'), rot: U('rot'), sun: U('sun'), dpr: U('dpr'), dbb: U('dbb'), dk: U('dk') };
+  const U = n => gl.getUniformLocation(pr, n), u = { res: U('res'), g: U('g'), rot: U('rot'), sun: U('sun'), dpr: U('dpr'), dbb: U('dbb'), dk: U('dk'), lt: U('lt') };
   gl.uniform1i(U('dayT'), 0); gl.uniform1i(U('nightT'), 1); gl.uniform1i(U('dDay'), 2); gl.uniform1i(U('dRel'), 3); gl.uniform1i(U('dNight'), 4); gl.uniform1i(U('dImp'), 5);
   const aniso = gl.getExtension('EXT_texture_filter_anisotropic') || gl.getExtension('WEBKIT_EXT_texture_filter_anisotropic');
   const tex = [gl.createTexture(), gl.createTexture()], have = [0, 0];
@@ -170,7 +174,7 @@ void main(){
       if ((window.__markPts || []).some(m => (m[0] - x) ** 2 + (m[1] - y) ** 2 < 34 * 34)) continue;  // an orange marker is here: its own label wins
       const w = ctx.measureText(n).width, box = [x - 4, y - 8, x + 10 + w, y + 8]; if (placed.some(b => !(box[2] < b[0] || box[0] > b[2] || box[3] < b[1] || box[1] > b[3]))) continue; placed.push(box);
       ctx.globalAlpha = a * (pop >= 1e6 ? .95 : .75); ctx.fillStyle = 'rgba(232,230,226,.9)'; ctx.beginPath(); ctx.arc(x, y, pop >= 1e6 ? 2.4 : 1.8, 0, 7); ctx.fill();
-      ctx.fillStyle = 'rgba(0,0,0,.55)'; ctx.fillText(n, x + 7, y + 1); ctx.fillStyle = 'rgba(226,224,220,.92)'; ctx.fillText(n, x + 6, y);
+      const big = pop >= 1e6; ctx.font = (big ? '600 13px' : '500 11.5px') + ' Inter,system-ui,sans-serif'; const tw = ctx.measureText(n).width; ctx.fillStyle = 'rgba(10,10,12,.72)'; ctx.beginPath(); ctx.roundRect(x + 3, y - 9, tw + 10, 18, 5); ctx.fill(); ctx.strokeStyle = 'rgba(255,255,255,.1)'; ctx.lineWidth = 1; ctx.stroke(); ctx.fillStyle = big ? '#fff' : 'rgba(226,224,220,.95)'; ctx.fillText(n, x + 8, y + .5);  /* readable label (owner 21 Nov 2026) */
       if (placed.length > 40) break;
     }
     ctx.restore();
@@ -183,7 +187,7 @@ void main(){
     if (!CITIES) return; const r = Math.PI / 180, c0 = Math.cos(lat0 * r), s0 = Math.sin(lat0 * r), sx = Math.cos(sp.la) * Math.cos(sp.lo), sy = Math.cos(sp.la) * Math.sin(sp.lo), sz = Math.sin(sp.la), b = Math.max(.8, Math.min(2.2, R / 260));
     ctx.save(); ctx.globalCompositeOperation = 'lighter';
     for (const [, la, lo, pop] of CITIES) {
-      if (pop < 3e5) continue; const ph = la * r, l2 = lo * r, cp = Math.cos(ph), nf = -(cp * Math.cos(l2) * sx + cp * Math.sin(l2) * sy + Math.sin(ph) * sz); if (nf < .02) continue;
+      if (pop < ((la > 47 && lo < -50) || (la > 48 && lo > 30) || (la < -10 && lo > 110) || (la < 16 && la > -36 && lo > -20 && lo < 52) ? 1e5 : 3e5)) continue;  /* sparse regions (Canada, Russia, Australia, Africa): towns over 100k too */ const ph = la * r, l2 = lo * r, cp = Math.cos(ph), nf = -(cp * Math.cos(l2) * sx + cp * Math.sin(l2) * sy + Math.sin(ph) * sz); if (nf < .02) continue;
       const d = l2 - lon0 * r, z = s0 * Math.sin(ph) + c0 * cp * Math.cos(d); if (z < .05) continue;
       const x = cx + R * cp * Math.sin(d), y = cy - R * (c0 * Math.sin(ph) - s0 * cp * Math.cos(d)), rr = b * (1.2 + Math.log10(pop / 3e5) * 1.3) * 2.4;
       ctx.globalAlpha = Math.min(1, nf * 4) * Math.min(1, z * 3) * .35; ctx.drawImage(GLOW, x - rr, y - rr, rr * 2, rr * 2);
@@ -199,7 +203,7 @@ void main(){
     gl.uniform3f(u.sun, sp.lo, Math.cos(sp.la), Math.sin(sp.la));
     plan(W, H, R, lon0, lat0); tick(); const D2 = E.detail; const now = performance.now(); if (D2.bb) D2.fade = Math.min(1, D2.fade + Math.min(.5, (now - (D2.tf || now)) / 300)); D2.tf = now;  // ~0.3 s fade-in, whatever the frame rate
     const k = D2.bb ? D2.want * D2.fade : 0, r = Math.PI / 180, b = D2.bb || [0, 0, 1, 1];
-    gl.uniform1f(u.dk, k); gl.uniform4f(u.dbb, b[0] * r, b[1] * r, b[2] * r, b[3] * r);
+    gl.uniform1f(u.dk, k); gl.uniform1f(u.lt, document.documentElement.dataset.theme === 'light' ? 1 : 0); gl.uniform4f(u.dbb, b[0] * r, b[1] * r, b[2] * r, b[3] * r);
     for (let i = 0; i < 4; i++) { gl.activeTexture(gl.TEXTURE2 + i); gl.bindTexture(gl.TEXTURE_2D, dtex[i]); }
     gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, tex[0]); gl.activeTexture(gl.TEXTURE1); gl.bindTexture(gl.TEXTURE_2D, tex[1]);
     gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
