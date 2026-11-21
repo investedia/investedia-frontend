@@ -170,7 +170,7 @@ void main(){
       if ((window.__markPts || []).some(m => (m[0] - x) ** 2 + (m[1] - y) ** 2 < 34 * 34)) continue;  // an orange marker is here: its own label wins
       const w = ctx.measureText(n).width, box = [x - 4, y - 8, x + 10 + w, y + 8]; if (placed.some(b => !(box[2] < b[0] || box[0] > b[2] || box[3] < b[1] || box[1] > b[3]))) continue; placed.push(box);
       ctx.globalAlpha = a * (pop >= 1e6 ? .95 : .75); ctx.fillStyle = 'rgba(232,230,226,.9)'; ctx.beginPath(); ctx.arc(x, y, pop >= 1e6 ? 2.4 : 1.8, 0, 7); ctx.fill();
-      const big = pop >= 1e6; ctx.font = (big ? '600 13px' : '500 11.5px') + ' Inter,system-ui,sans-serif'; const tw = ctx.measureText(n).width; ctx.fillStyle = 'rgba(10,10,12,.72)'; ctx.beginPath(); ctx.roundRect(x + 3, y - 9, tw + 10, 18, 5); ctx.fill(); ctx.strokeStyle = 'rgba(255,255,255,.1)'; ctx.lineWidth = 1; ctx.stroke(); ctx.fillStyle = big ? '#fff' : 'rgba(226,224,220,.95)'; ctx.fillText(n, x + 8, y + .5);  // readable label (owner 21 Nov 2026)
+      const big = pop >= 1e6; ctx.font = (big ? '600 13px' : '500 11.5px') + ' Inter,system-ui,sans-serif'; const tw = ctx.measureText(n).width; ctx.fillStyle = 'rgba(10,10,12,.72)'; ctx.beginPath(); ctx.roundRect(x + 3, y - 9, tw + 10, 18, 5); ctx.fill(); ctx.strokeStyle = 'rgba(255,255,255,.1)'; ctx.lineWidth = 1; ctx.stroke(); ctx.fillStyle = big ? '#fff' : 'rgba(226,224,220,.95)'; ctx.fillText(n, x + 8, y + .5);  /* readable label (owner 21 Nov 2026) */
       if (placed.length > 40) break;
     }
     ctx.restore();
@@ -183,7 +183,7 @@ void main(){
     if (!CITIES) return; const r = Math.PI / 180, c0 = Math.cos(lat0 * r), s0 = Math.sin(lat0 * r), sx = Math.cos(sp.la) * Math.cos(sp.lo), sy = Math.cos(sp.la) * Math.sin(sp.lo), sz = Math.sin(sp.la), b = Math.max(.8, Math.min(2.2, R / 260));
     ctx.save(); ctx.globalCompositeOperation = 'lighter';
     for (const [, la, lo, pop] of CITIES) {
-      if (pop < ((la > 47 && lo < -50) || (la > 48 && lo > 30) || (la < -10 && lo > 110) || (la < 16 && la > -36 && lo > -20 && lo < 52) ? 1e5 : 3e5)) continue;  // sparse regions (Canada, Russia, Australia, Africa): towns over 100k too const ph = la * r, l2 = lo * r, cp = Math.cos(ph), nf = -(cp * Math.cos(l2) * sx + cp * Math.sin(l2) * sy + Math.sin(ph) * sz); if (nf < .02) continue;
+      if (pop < ((la > 47 && lo < -50) || (la > 48 && lo > 30) || (la < -10 && lo > 110) || (la < 16 && la > -36 && lo > -20 && lo < 52) ? 1e5 : 3e5)) continue;  /* sparse regions (Canada, Russia, Australia, Africa): towns over 100k too */ const ph = la * r, l2 = lo * r, cp = Math.cos(ph), nf = -(cp * Math.cos(l2) * sx + cp * Math.sin(l2) * sy + Math.sin(ph) * sz); if (nf < .02) continue;
       const d = l2 - lon0 * r, z = s0 * Math.sin(ph) + c0 * cp * Math.cos(d); if (z < .05) continue;
       const x = cx + R * cp * Math.sin(d), y = cy - R * (c0 * Math.sin(ph) - s0 * cp * Math.cos(d)), rr = b * (1.2 + Math.log10(pop / 3e5) * 1.3) * 2.4;
       ctx.globalAlpha = Math.min(1, nf * 4) * Math.min(1, z * 3) * .35; ctx.drawImage(GLOW, x - rr, y - rr, rr * 2, rr * 2);
