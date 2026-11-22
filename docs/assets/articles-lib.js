@@ -8,7 +8,13 @@ function initArticles() {
   const DATES = [['', 'Any time'], ['1d', 'Today'], ['7d', 'Last 7 days'], ['30d', 'Last 30 days']];
   const fmt = n => n.toLocaleString('en-US'), nice = c => CAT[c] || (c ? c[0].toUpperCase() + c.slice(1) : 'News');
   const link = r => 'story.html?id=' + encodeURIComponent(r.id);
-  const img = r => r.i ? 'assets/globe/' + r.i : null;
+  const img = r => r.i ? 'assets/globe/' + r.i : null
+  // Owner 22 Nov 2026: articles without a photo show a night map of where it happened (NASA VIIRS Black Marble, via our tile cache)
+  const GIBS = /(^|\.)investedia\.com$/.test(location.hostname) ? '/gibs/' : 'https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/';
+  const night = r => { if (typeof r.la !== 'number' || typeof r.lo !== 'number') return '';
+    const d = 9, c = Math.floor((r.lo + 180) / d), w = Math.floor((90 - r.la) / d), fx = (r.lo + 180) / d - c, fy = (90 - r.la) / d - w, S = 4;
+    const q = f => Math.max(0, Math.min(1, (f * S - .5) / (S - 1))), px = q(fx), py = q(fy), pin = (f, k) => ((f * S - k * (S - 1)) * 100).toFixed(1);
+    return `<span class="al-night"><span class="m" style="background-image:url('${GIBS}VIIRS_Black_Marble/default/2012-01-01/500m/5/${w}/${c}.png');background-position:${(px * 100).toFixed(1)}% ${(py * 100).toFixed(1)}%"></span><i style="left:${pin(fx, px)}%;top:${pin(fy, py)}%"></i>${r.p ? `<b>${esc(r.p)}</b>` : ''}</span>`; };;
   let meta, live = [], renderId = 0;
   const downloads = new Map();
   const state = () => { const u = new URLSearchParams(location.search); return { page: Math.max(1, parseInt(u.get('page')) || 1), cat: u.get('cat') || '', date: u.get('date') || '', reg: u.get('reg') || '', q: (u.get('q') || '').trim(), sort: u.get('sort') || 'new' }; };
@@ -22,7 +28,7 @@ function initArticles() {
   };
   const day = t => new Date(t).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', ...(new Date(t).getFullYear() !== new Date().getFullYear() ? { year: 'numeric' } : {}) });
   const time = t => new Date(t).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
-  const row = r => `<a class="al-row${img(r) ? '' : ' noimg'}" href="${link(r)}">${img(r) ? `<img src="${esc(img(r))}" alt="" loading="lazy" onerror="this.remove();this.parentNode&&this.parentNode.classList.add('noimg')">` : ''}<div><div class="al-ct">${esc(nice(r.c))} · ${time(r.t)}</div><h3>${esc(r.h)}</h3><div class="al-sr">${esc(r.s || '')}${r.n ? ' · ' + esc(r.n) : ''}${r.k > 1 ? ' · ' + r.k + ' sources' : ''}</div></div></a>`;
+  const row = r => `<a class="al-row${img(r) || night(r) ? '' : ' noimg'}" href="${link(r)}">${img(r) ? `<img src="${esc(img(r))}" alt="" loading="lazy" onerror="this.remove();this.parentNode&&this.parentNode.classList.add('noimg')">` : night(r)}<div><div class="al-ct">${esc(nice(r.c))} · ${time(r.t)}</div><h3>${esc(r.h)}</h3><div class="al-sr">${esc(r.s || '')}${r.n ? ' · ' + esc(r.n) : ''}${r.k > 1 ? ' · ' + r.k + ' sources' : ''}</div></div></a>`;
   function options(s) {
     const opt = (key, val, label, count) => `<button type="button" data-k="${key}" data-v="${esc(val)}" aria-pressed="${s[key] === val}"><i></i>${esc(label)}${count != null ? `<small>${fmt(count)}</small>` : ''}</button>`;
     $('al-cat').innerHTML = opt('cat', '', 'All', meta.total) + Object.entries(meta.categories).map(([c, n]) => opt('cat', c, nice(c), n)).join('');

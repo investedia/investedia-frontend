@@ -12,6 +12,9 @@ def row(d):
     r = {'id': d['id'], 'h': d['headline'], 'c': d.get('category') or 'news', 't': d['published_at'],
          's': src.get('name'), 'n': loc.get('country'), 'g': loc.get('region'), 'k': len(d.get('sources') or []) or 1}
     if img.get('file'): r['i'] = img['file']
+    # owner 22 Nov 2026: place + rounded position, for the night-map tile on articles without a photo
+    if loc.get('place'): r['p'] = str(loc['place']).split(',')[0][:40]
+    if isinstance(loc.get('lat'), (int, float)) and isinstance(loc.get('lon'), (int, float)): r['la'], r['lo'] = round(loc['lat'], 2), round(loc['lon'], 2)
     return r
 
 def roll(days=10):
