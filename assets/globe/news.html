@@ -3220,7 +3220,7 @@ function frame(t) {
   ZMAX = window.EarthGL && EarthGL.ready && R0 > 0 ? Math.max(6, Math.min(W, H) * .5 / Math.sin(1.5 * rad) / R0) : 6;  // Phase 1 (owner 21 Nov 2026): with the satellite Earth, zoom to regional/metro level (~3° across), never street level
   if (HOME_ROUND) ZMAX = Math.min(ZMAX, 1.6);  /* owner 22 Nov 2026 (option A): the home page globe always stays a round globe; tap a place to zoom on the full globe */
   if (Zt > ZMAX) Zt = ZMAX;
-  { const k = reduce ? 1 : 1 - Math.exp(-Math.min(100, dt) / 60); Z = Math.exp(Math.log(Z) + (Math.log(Zt) - Math.log(Z)) * k); } if (Math.abs(Zt - Z) < .0001) Z = Zt;  /* owner 21 Nov 2026: smooth zoom, same speed at any frame rate, even steps in or out */ R = R0 * Z;
+  { const k = reduce || pinch ? 1 : 1 - Math.exp(-Math.min(100, dt) / 60); Z = Math.exp(Math.log(Z) + (Math.log(Zt) - Math.log(Z)) * k); } if (Math.abs(Zt - Z) < .0001) Z = Zt;  /* owner 21 Nov 2026: smooth zoom, same speed at any frame rate, even steps in or out; 22 Nov 2026: a pinch follows the fingers 1:1 (no easing lag) */ R = R0 * Z;
   lon0 = ((lon0 + 540) % 360) - 180; cy += (cyT - cy) * (reduce ? 1 : .12);
   keepZoomAnchor(); if (Z === Zt) zoomAnchor = null;
   if (play) { const k = Math.min(1, (t - play.t0) / play.dur); play.cur = play.start + (T0 - play.start) * k; refresh(); if (k >= 1) { play = null; refresh(); } }
@@ -4294,9 +4294,19 @@ void main(){
   const dtex = [gl.createTexture(), gl.createTexture(), gl.createTexture(), gl.createTexture()];
   const D = E.detail = { bb: null, deg: 999, fade: 0, want: 0, timer: 0, key: '', last: 0, set: null, z: 0 };
   const setTex = (i, src) => { gl.activeTexture(gl.TEXTURE2 + i); gl.bindTexture(gl.TEXTURE_2D, dtex[i]); gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
-    const f = gl.RGBA; gl.texImage2D(gl.TEXTURE_2D, 0, f, f, gl.UNSIGNED_BYTE, src);
-    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    const f = gl.RGBA; gl.texImage2D(gl.TEXTURE_2D, 0, f, f, gl.UNSIGNED_BYTE, src); gl.generateMipmap(gl.TEXTURE_2D);
+    /* owner 22 Nov 2026: detail canvases are power-of-two sized, so they get mipmaps: no shimmer when zooming back out */
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR_MIPMAP_LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    if (aniso) gl.texParameterf(gl.TEXTURE_2D, aniso.TEXTURE_MAX_ANISOTROPY_EXT, Math.min(8, gl.getParameter(aniso.MAX_TEXTURE_MAX_ANISOTROPY_EXT)));
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE); };
+  /* owner 22 Nov 2026 (no zoom hitches): a tile that arrives after the swap is uploaded on its own (a small patch), not the whole canvas */
+  const scratch = document.createElement('canvas'), sg = scratch.getContext('2d');
+  const subTex = (i, lay, r) => { const w = r[2] - r[0], h = r[3] - r[1]; if (w <= 0 || h <= 0) return;
+    if (scratch.width < w || scratch.height < h) { scratch.width = Math.max(scratch.width, w); scratch.height = Math.max(scratch.height, h); }
+    sg.clearRect(0, 0, w, h); sg.drawImage(lay.cv, r[0], r[1], w, h, 0, 0, w, h);
+    gl.activeTexture(gl.TEXTURE2 + i); gl.bindTexture(gl.TEXTURE_2D, dtex[i]); gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
+    gl.texSubImage2D(gl.TEXTURE_2D, 0, r[0], r[1], gl.RGBA, gl.UNSIGNED_BYTE, sg.getImageData(0, 0, w, h)); };
+  const pot = n => 2 ** Math.round(Math.log2(Math.max(1, n)));  // nearest power of two
   const MAXC = phone ? 1536 : 4096;  /* owner 22 Nov 2026: phones stuttered uploading 4 x 2048 px images while zooming */
   const request = (bb, zDay) => {
     const key = bb.join() + '|' + zDay; if (key === D.key) return; D.key = key; D.last = performance.now();
@@ -4306,14 +4316,16 @@ void main(){
       const z = Math.min(L[4], i === 2 || L === BM ? Math.min(6, zDay) : zDay), d = tdeg(z);
       const c0 = Math.floor((bb[0] + 180) / d), c1 = Math.floor((bb[2] + 180 - 1e-9) / d), r0 = Math.floor((90 - bb[3]) / d), r1 = Math.floor((90 - bb[1] - 1e-9) / d);
       const ppd = Math.min(512 / d, MAXC / (bb[2] - bb[0]), MAXC / (bb[3] - bb[1]));  // canvas pixels per degree (capped)
-      const cv2 = document.createElement('canvas'); cv2.width = Math.max(1, Math.round((bb[2] - bb[0]) * ppd)); cv2.height = Math.max(1, Math.round((bb[3] - bb[1]) * ppd));
-      const g = cv2.getContext('2d'), lay = { cv: cv2, dirty: false };
+      const cv2 = document.createElement('canvas'); cv2.width = Math.min(MAXC, pot((bb[2] - bb[0]) * ppd)); cv2.height = Math.min(MAXC, pot((bb[3] - bb[1]) * ppd));
+      const px = cv2.width / (bb[2] - bb[0]), py = cv2.height / (bb[3] - bb[1]);  // power-of-two canvas: x and y scale separately (the shader maps the box to 0..1)
+      const g = cv2.getContext('2d', { willReadFrequently: true }), lay = { cv: cv2, dirty: false, rects: [] };
       set.layers[i] = lay;
       for (let r = r0; r <= r1; r++) for (let c = c0; c <= c1; c++) {
         if (r < 0 || c < 0 || c >= 360 / d || r >= Math.ceil(180 / d)) continue;
         set.total++; const im = new Image(); im.crossOrigin = 'anonymous'; im.decoding = 'async';
         im.onload = () => { if (D.set !== set) return; const lon = c * d - 180, lat = 90 - r * d;
-          g.drawImage(im, (lon - bb[0]) * ppd, (bb[3] - lat) * ppd, d * ppd, d * ppd); lay.dirty = true; set.loaded++; };
+          const x = (lon - bb[0]) * px, y = (bb[3] - lat) * py; g.drawImage(im, x, y, d * px, d * py);
+          lay.rects.push([Math.max(0, Math.floor(x)), Math.max(0, Math.floor(y)), Math.min(cv2.width, Math.ceil(x + d * px)), Math.min(cv2.height, Math.ceil(y + d * py))]); lay.dirty = true; set.loaded++; };
         im.onerror = () => { if (im.src.indexOf(NASA) < 0 && WMTS !== NASA) { im.src = NASA + im.src.split('/gibs/')[1]; return; } if (D.set === set) set.loaded++; };
         im.src = turl(L, z, r, c);
       }
@@ -4322,9 +4334,12 @@ void main(){
   };
   const tick = () => {  // called every frame: swap in the new view when most tiles are in, then keep updating it as the rest arrive
     const s = D.set; if (!s) return;
-    if (!s.swapped && s.loaded > 0 && performance.now() - (D.moved || 0) > 160  /* owner 21 Nov 2026: show tiles as soon as they arrive; missing ones show the global image underneath (alpha) */) {
-      s.swapped = true; D.tSharp = performance.now(); const had = !!D.bb; s.layers.forEach((l, i) => { setTex(i, l.cv); l.dirty = false; }); D.bb = s.bb; D.deg = s.bb[2] - s.bb[0]; D.z = s.zDay; if (!had) D.fade = 0;
-    } else if (s.swapped && performance.now() - (s.tu || 0) > 120 && performance.now() - (D.moved || 0) > 160) {  /* only when the camera rests: uploads freeze the frame */ s.tu = performance.now(); s.layers.forEach((l, i) => { if (l.dirty) { setTex(i, l.cv); l.dirty = false; } }); }  // re-upload at most ~8 times a second
+    if (!s.swapped && s.loaded > 0 && performance.now() - (D.moved || 0) > 80  /* owner 21 Nov 2026: show tiles as soon as they arrive; missing ones show the global image underneath (alpha) */) {
+      s.swapped = true; D.tSharp = performance.now(); const had = !!D.bb; s.layers.forEach((l, i) => { setTex(i, l.cv); l.dirty = false; l.rects.length = 0; }); D.bb = s.bb; D.deg = s.bb[2] - s.bb[0]; D.z = s.zDay; if (!had) D.fade = 0;
+    } else if (s.swapped) {  /* owner 22 Nov 2026: late tiles go up as small patches, a few per frame, even mid-zoom (was: whole canvases, only at rest) */
+      let n = phone ? 2 : 4; s.layers.forEach((l, i) => { if (!l.dirty || n <= 0) return; while (n > 0 && l.rects.length) { subTex(i, l, l.rects.shift()); n--; }
+        if (!l.rects.length) l.dirty = false; gl.activeTexture(gl.TEXTURE2 + i); gl.bindTexture(gl.TEXTURE_2D, dtex[i]); gl.generateMipmap(gl.TEXTURE_2D); });
+    }
   };
   /* Owner 21 Nov 2026 (load ahead): once a view has loaded, quietly fetch the next, sharper level for the middle of the screen
      (day + city lights) so zooming in further is instant from the browser cache. At most 24 tiles, only when the tab is visible. */
@@ -4346,7 +4361,7 @@ void main(){
     const hw = Math.min(170, half / cl), bb = [lon0 - hw, la0, lon0 + hw, la1];
     if (bb[0] < -180 || bb[2] > 180) { const s = bb[0] < -180 ? -180 - bb[0] : 180 - bb[2]; bb[0] += s; bb[2] += s; }  // keep inside the map
     // level so one tile pixel is about one screen pixel (never finer than Landsat level 10, ~30-60 m)
-    const degPerPx = (bb[3] - bb[1]) / (H * Math.min(2, devicePixelRatio || 1)), zDay = Math.max(2, Math.min(phone ? 9 : 10, Math.ceil(Math.log2(288 / 512 / degPerPx))));
+    const degPerPx = (bb[3] - bb[1]) / (H * Math.min(3, devicePixelRatio || 1) /* owner 22 Nov 2026: same density cap as the renderer, so 3x phones get full-sharpness tiles */), zDay = Math.max(2, Math.min(phone ? 9 : 10, Math.ceil(Math.log2(288 / 512 / degPerPx))));
     const cur = D.set ? D.set.bb : null, inside = cur && bb[0] >= cur[0] && bb[2] <= cur[2] && bb[1] >= cur[1] && bb[3] <= cur[3] && (bb[2] - bb[0]) > (cur[2] - cur[0]) * .45 && D.set.zDay >= zDay;
     if (inside) return;
     const snap = tdeg(zDay), sb = [Math.floor(bb[0] / snap) * snap, Math.floor(bb[1] / snap) * snap, Math.ceil(bb[2] / snap) * snap, Math.ceil(bb[3] / snap) * snap].map(v => +v.toFixed(5));

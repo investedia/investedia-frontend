@@ -71,9 +71,9 @@ $('asof').textContent = `World markets · ${MK.length} assets · ${new Set(MK.fi
 
 // ---------- globe ----------
 const cv = $('cv'), ctx = cv.getContext('2d'), stage = $('stage');
-let W = 0, H = 0, R = 0, R0 = 0, cx = 0, cy = 0, fly = null, ping = null, Z = 1;
+let W = 0, H = 0, R = 0, R0 = 0, cx = 0, cy = 0, fly = null, ping = null, Z = 1, Zt = 1, lastT = 0;
 // Zoom (globe page only; the homepage hero keeps scrolling the page): wheel, pinch, double-tap, +/- buttons
-const HERO = QP.get('mode') === 'hero', ZMAX = 3, setZ = z => { Z = Math.max(1, Math.min(ZMAX, z)); if (!fly) R = R0 * Z; };
+const HERO = QP.get('mode') === 'hero', ZMAX = 3, setZ = z => { Zt = Math.max(1, Math.min(ZMAX, z)); if (reduce || pinch) { Z = Zt; if (!fly) R = R0 * Z; } };  // owner 22 Nov 2026: wheel/buttons ease smoothly; a pinch follows the fingers
 // Homepage embeds can size and place the globe: ?rs= radius as a share of width, ?cyf= / ?cxf= centre as a share of height / width
 const qn = k => QP.has(k) ? +QP.get(k) : null;
 function size() { const dpr = Math.min(2, devicePixelRatio || 1); W = stage.clientWidth; H = stage.clientHeight; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); R = qn('rs') ? W * qn('rs') : Math.min(W, H) * .4; R0 = R; R = R0 * Z; cx = qn('cxf') != null ? W * qn('cxf') : W / 2; cy = qn('cyf') != null ? H * qn('cyf') : H / 2 + 10; }
@@ -85,14 +85,14 @@ function proj(phi, lam, h = 1) { const c0 = Math.cos(lat0 * rad), s0 = Math.sin(
 const touches = new Map(); let pinch = null;
 const pdist = () => { const [a, b] = [...touches.values()]; return Math.hypot(a.x - b.x, a.y - b.y); };
 if (!HERO) {
-  cv.addEventListener('wheel', e => { e.preventDefault(); target = null; setZ(Z * Math.exp(-e.deltaY * .0015)); }, { passive: false });
-  cv.addEventListener('dblclick', () => { target = null; setZ(Z < ZMAX ? Z * 1.8 : 1); });
-  cv.addEventListener('pointerdown', e => { touches.set(e.pointerId, { x: e.clientX, y: e.clientY }); if (touches.size === 2) { pinch = { d: pdist(), z: Z }; dragging = null; } });
+  cv.addEventListener('wheel', e => { e.preventDefault(); target = null; setZ(Zt * Math.exp(-e.deltaY * .0015)); }, { passive: false });
+  cv.addEventListener('dblclick', () => { target = null; setZ(Zt < ZMAX ? Zt * 1.8 : 1); });
+  cv.addEventListener('pointerdown', e => { touches.set(e.pointerId, { x: e.clientX, y: e.clientY }); if (touches.size === 2) { pinch = { d: pdist(), z: Zt }; dragging = null; } });
   cv.addEventListener('pointermove', e => { if (!touches.has(e.pointerId)) return; touches.set(e.pointerId, { x: e.clientX, y: e.clientY }); if (pinch && touches.size === 2) setZ(pinch.z * pdist() / pinch.d); });
   const endT = e => { touches.delete(e.pointerId); if (touches.size < 2) pinch = null; };
   cv.addEventListener('pointerup', endT); cv.addEventListener('pointercancel', endT);
   const zb = document.createElement('div'); zb.className = 'zoom'; zb.innerHTML = '<button type="button" aria-label="Zoom in">+</button><button type="button" aria-label="Zoom out">−</button>';
-  zb.children[0].onclick = () => { target = null; setZ(Z * 1.6); }; zb.children[1].onclick = () => { target = null; setZ(Z / 1.6); }; stage.appendChild(zb);
+  zb.children[0].onclick = () => { target = null; setZ(Zt * 1.6); }; zb.children[1].onclick = () => { target = null; setZ(Zt / 1.6); }; stage.appendChild(zb);
 }
 cv.addEventListener('pointerdown', e => { if (pinch) return; dragging = { x: e.clientX, y: e.clientY, lon: lon0, lat: lat0, moved: false }; cv.setPointerCapture(e.pointerId); target = null; });
 cv.addEventListener('pointermove', e => { const r = cv.getBoundingClientRect();
@@ -104,10 +104,11 @@ const openKeys = () => new Set([...wins].map(w => w.key));
 function frame(t) {
   // Fly-to: ease across the shortest way round, pulling back a little mid-flight, then ping the place
   if (!target) fly = null;
+  { const dt = Math.min(100, t - (lastT || t)); lastT = t; if (!target && Z !== Zt) { Z = Math.exp(Math.log(Z) + (Math.log(Zt) - Math.log(Z)) * (1 - Math.exp(-dt / 60))); if (Math.abs(Zt - Z) < .0001) Z = Zt; R = R0 * Z; } }
   if (target) { if (!fly || fly.to !== target) fly = { to: target, from: [lon0, lat0], dl: ((target[0] - lon0 + 540) % 360) - 180, t0: t, z0: Z, z1: HERO ? Z : Math.max(Z, 2.2), dur: reduce ? 1 : 700 + Math.min(700, Math.abs(((target[0] - lon0 + 540) % 360) - 180) * 4) };
     const k = Math.min(1, (t - fly.t0) / fly.dur), e = k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
     lon0 = fly.from[0] + fly.dl * e; lat0 = fly.from[1] + (target[1] - fly.from[1]) * e; Z = fly.z0 + (fly.z1 - fly.z0) * e; R = R0 * Z * (1 - .08 * Math.sin(Math.PI * k) * Math.min(1, Math.abs(fly.dl) / 60));
-    if (k >= 1) { target = null; fly = null; R = R0 * Z; if (ping) ping.t0 = t; } }
+    if (k >= 1) { target = null; fly = null; Zt = Z; R = R0 * Z; if (ping) ping.t0 = t; } }
   else if (!dragging && !reduce && !wins.size && Z === 1) lon0 -= T.speed * .03;
   lon0 = ((lon0 + 540) % 360) - 180;
   ctx.clearRect(0, 0, W, H);
