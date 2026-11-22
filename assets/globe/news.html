@@ -3257,7 +3257,8 @@ function frame(t) {
   ctx.beginPath(); for (const c of map) for (const rr of c.rr) ringPath(rr, false); ctx.strokeStyle = `rgba(255,255,255,${Math.min(.2, .07 + (Z - 1) * .04) + GB.line})`; ctx.lineWidth = .7; ctx.stroke();
   for (const { impact, country } of impactTargets(impactFocus)) countryShape(country, `rgba(${IMPACT_COLOR[impact.direction]},.10)`);
   if (hoverCountry && hoverCountry !== selCountry) countryShape(hoverCountry, 'rgba(255,255,255,.05)', 'rgba(255,255,255,.35)');
-  if (selCountry) countryShape(selCountry, 'rgba(255,122,26,.10)', 'rgba(255,122,26,.75)', 1.2);
+  if (selCountry) { const zf = (window.EarthGL && EarthGL.detail) ? 1 - Math.min(1, EarthGL.detail.want || 0) : 1;  // owner 22 Nov 2026: zoomed in, the country fill covered the whole screen; keep only the outline
+    countryShape(selCountry, `rgba(255,122,26,${(.10 * zf).toFixed(3)})`, 'rgba(255,122,26,.75)', 1.2); }
   ctx.restore();
 
   if (PROJ.on || MARKET.on) window.__markPts = [];
@@ -4235,7 +4236,7 @@ void main(){
   /* owner 22 Nov 2026: news places light up as the city itself when zoomed in (instead of a big orange dot) */
   if(inD>0.){ float hk=0.; vec3 P=vec3(cos(phi)*cos(lam),cos(phi)*sin(lam),sin(phi));
     for(int i=0;i<24;i++){ vec3 h=hot[i]; if(h.z<=0.) continue; vec3 Q=vec3(cos(h.y)*cos(h.x),cos(h.y)*sin(h.x),sin(h.y)); float ang=acos(clamp(dot(P,Q),-1.,1.)); hk=max(hk,h.z*(1.-smoothstep(.002,.0075,ang))); }
-    float urb=smoothstep(.04,.3,dens); col=mix(col,col*.6,hk*inD*(1.-sea)); col+=vec3(1.,.38,.05)*hk*(.22+.55*urb)*inD*(1.-sea); }  /* orange city glow on top of the lights (same hue as the lights, so it is added, not blended) */
+    float urb=smoothstep(.04,.3,dens); col=mix(col,col*.7,hk*urb*inD*(1.-sea)); col+=vec3(1.,.38,.05)*hk*.6*urb*inD*(1.-sea); }  /* built-up areas only (owner 22 Nov: close in, countryside turned orange too) */  /* orange city glow on top of the lights (same hue as the lights, so it is added, not blended) */
   if(lt>.5){  // light theme (owner 21 Nov 2026): soft grey-blue oceans, light warm-grey land with the same terrain, gentle night side, faint lights
     float t2=LT0+LT1*smoothstep(.03,.75,lum); vec3 land=vec3(t2)*vec3(1.,.995,.985);
     vec3 lc=mix(land,vec3(LSEA),sea); lc*=mix(1.,.58+.84*rel,inD*(1.-sea)); lc=mix(lc,vec3(.50,.49,.47)+vec3(.1)*(1.-dens),smoothstep(.32,.75,dens)*inD*.85*(1.-sea));  /* light mode: built-up areas as concrete grey, denser = darker (owner 21 Nov 2026) */
