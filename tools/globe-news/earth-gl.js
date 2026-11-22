@@ -18,7 +18,7 @@
   const DER = !!gl.getExtension('OES_standard_derivatives');
   const FS = (DER ? '#extension GL_OES_standard_derivatives : enable\n#define DER 1\n' : '') + `precision highp float;
 uniform sampler2D dayT,nightT,dDay,dRel,dNight,dImp;uniform vec2 res;uniform vec3 g;uniform vec2 rot;uniform vec3 sun;uniform float dpr;
-uniform vec4 dbb;uniform float dk;uniform float lt;uniform float zw;   // Phase 1 regional detail: bounding box (lon0,lat0,lon1,lat1 in radians) and fade-in
+uniform vec4 dbb;uniform float dk;uniform float lt;uniform float zw;uniform vec3 hot[24];   // Phase 1 regional detail: bounding box (lon0,lat0,lon1,lat1 in radians) and fade-in
 const float PI=3.14159265;
 #ifndef LT0
 #define LT0 .44
@@ -75,6 +75,10 @@ void main(){
   { vec2 o=vec2(.006,.006*(dbb.z-dbb.x)/max(1e-4,dbb.w-dbb.y)); float sd=0.; for(int i=-2;i<=2;i++) for(int j=-2;j<=2;j++){ vec4 q=texture2D(dImp,duv+vec2(float(i),float(j))*o); sd+=q.a*clamp(1.15-q.r*1.35,.22,1.); } sd/=25.;  /* smoothed: only large built-up areas get an edge, not every village */
     float dc=smoothstep(.36,.46,sd); float w=fwidth(dc); float edge=1.-smoothstep(0.,max(w*1.6,1e-4),abs(dc-.5)); col=mix(col,vec3(1.,.48,.1),edge*inD*(1.-sea)*mix(.22,.55,dayk)); }
   #endif
+  /* owner 22 Nov 2026: news places light up as the city itself when zoomed in (instead of a big orange dot) */
+  if(inD>0.){ float hk=0.; vec3 P=vec3(cos(phi)*cos(lam),cos(phi)*sin(lam),sin(phi));
+    for(int i=0;i<24;i++){ vec3 h=hot[i]; if(h.z<=0.) continue; vec3 Q=vec3(cos(h.y)*cos(h.x),cos(h.y)*sin(h.x),sin(h.y)); float ang=acos(clamp(dot(P,Q),-1.,1.)); hk=max(hk,h.z*(1.-smoothstep(.002,.0075,ang))); }
+    float urb=smoothstep(.04,.3,dens); col=mix(col,col*.6,hk*inD*(1.-sea)); col+=vec3(1.,.38,.05)*hk*(.22+.55*urb)*inD*(1.-sea); }  /* orange city glow on top of the lights (same hue as the lights, so it is added, not blended) */
   if(lt>.5){  // light theme (owner 21 Nov 2026): soft grey-blue oceans, light warm-grey land with the same terrain, gentle night side, faint lights
     float t2=LT0+LT1*smoothstep(.03,.75,lum); vec3 land=vec3(t2)*vec3(1.,.995,.985);
     vec3 lc=mix(land,vec3(LSEA),sea); lc*=mix(1.,.58+.84*rel,inD*(1.-sea)); lc=mix(lc,vec3(.50,.49,.47)+vec3(.1)*(1.-dens),smoothstep(.32,.75,dens)*inD*.85*(1.-sea));  /* light mode: built-up areas as concrete grey, denser = darker (owner 21 Nov 2026) */
@@ -87,7 +91,7 @@ void main(){
   gl.useProgram(pr);
   const buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
   const ap = gl.getAttribLocation(pr, 'p'); gl.enableVertexAttribArray(ap); gl.vertexAttribPointer(ap, 2, gl.FLOAT, false, 0, 0);
-  const U = n => gl.getUniformLocation(pr, n), u = { res: U('res'), g: U('g'), rot: U('rot'), sun: U('sun'), dpr: U('dpr'), dbb: U('dbb'), dk: U('dk'), lt: U('lt'), zw: U('zw') };
+  const U = n => gl.getUniformLocation(pr, n), u = { res: U('res'), g: U('g'), rot: U('rot'), sun: U('sun'), dpr: U('dpr'), dbb: U('dbb'), dk: U('dk'), lt: U('lt'), zw: U('zw'), hot: U('hot') };
   gl.uniform1i(U('dayT'), 0); gl.uniform1i(U('nightT'), 1); gl.uniform1i(U('dDay'), 2); gl.uniform1i(U('dRel'), 3); gl.uniform1i(U('dNight'), 4); gl.uniform1i(U('dImp'), 5);
   const aniso = gl.getExtension('EXT_texture_filter_anisotropic') || gl.getExtension('WEBKIT_EXT_texture_filter_anisotropic');
   const tex = [gl.createTexture(), gl.createTexture()], have = [0, 0];
@@ -245,7 +249,7 @@ void main(){
     gl.uniform3f(u.sun, sp.lo, Math.cos(sp.la), Math.sin(sp.la));
     plan(W, H, R, lon0, lat0); tick(); const D2 = E.detail; const now = performance.now(); if (D2.bb) D2.fade = Math.min(1, D2.fade + Math.min(.5, (now - (D2.tf || now)) / 300)); D2.tf = now;  /* glow hand-over: one smooth fade, never reset by new tiles during a zoom (owner 21 Nov 2026: zoom flickered) */ D2.gk = (D2.gk || 0) + (((D2.bb && D2.fade >= 1) ? 1 : 0) - (D2.gk || 0)) * Math.min(1, (now - (D2.tg || now)) / 600); D2.tg = now;  // ~0.3 s fade-in, whatever the frame rate
     const k = D2.bb ? D2.want * D2.fade : 0, r = Math.PI / 180, b = D2.bb || [0, 0, 1, 1];
-    gl.uniform1f(u.dk, k); gl.uniform1f(u.zw, D2.want || 0); gl.uniform1f(u.lt, document.documentElement.dataset.theme === 'light' ? 1 : 0); gl.uniform4f(u.dbb, b[0] * r, b[1] * r, b[2] * r, b[3] * r);
+    gl.uniform1f(u.dk, k); gl.uniform1f(u.zw, D2.want || 0); { const H = new Float32Array(72), src = window.__hotPts || []; for (let i = 0; i < Math.min(24, src.length); i++) { H[i * 3] = src[i][0] * Math.PI / 180; H[i * 3 + 1] = src[i][1] * Math.PI / 180; H[i * 3 + 2] = src[i][2]; } gl.uniform3fv(u.hot, H); } gl.uniform1f(u.lt, document.documentElement.dataset.theme === 'light' ? 1 : 0); gl.uniform4f(u.dbb, b[0] * r, b[1] * r, b[2] * r, b[3] * r);
     for (let i = 0; i < 4; i++) { gl.activeTexture(gl.TEXTURE2 + i); gl.bindTexture(gl.TEXTURE_2D, dtex[i]); }
     gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, tex[0]); gl.activeTexture(gl.TEXTURE1); gl.bindTexture(gl.TEXTURE_2D, tex[1]);
     gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
