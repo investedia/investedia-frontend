@@ -4307,7 +4307,9 @@ void main(){
     gl.activeTexture(gl.TEXTURE2 + i); gl.bindTexture(gl.TEXTURE_2D, dtex[i]); gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
     gl.texSubImage2D(gl.TEXTURE_2D, 0, r[0], r[1], gl.RGBA, gl.UNSIGNED_BYTE, sg.getImageData(0, 0, w, h)); };
   const pot = n => 2 ** Math.round(Math.log2(Math.max(1, n)));  // nearest power of two
-  const MAXC = phone ? 1536 : 4096;  /* owner 22 Nov 2026: phones stuttered uploading 4 x 2048 px images while zooming */
+  /* owner 22 Nov 2026: phones 2048 (stutter fixed by per-tile uploads); big, high-density desktop screens (≥3000 device px, ≥8 GB) 8192, others 4096 */
+  const scrPx = Math.max(screen.width, screen.height) * (devicePixelRatio || 1);
+  const MAXC = phone ? 2048 : Math.min(big, scrPx >= 3000 && (navigator.deviceMemory || 8) >= 8 ? 8192 : 4096);
   const request = (bb, zDay) => {
     const key = bb.join() + '|' + zDay; if (key === D.key) return; D.key = key; D.last = performance.now();
     const wide = bb[2] - bb[0] > 25, layers = LAY.map((L, i) => i === 0 && wide ? BM : L);
