@@ -1378,6 +1378,7 @@ let network = [], arcHits = [], arcHover = null, pillRects = [];
 // Default: main lines + only the strongest ripple. Clicking an event or an asset reveals the rest; unrelated lines fade to ~15 %.
 // All lines are orange/amber; green and red appear only in price labels and cards.
 const QS = new URLSearchParams(location.search);
+const HOME_ROUND = EMBED && !QS.has('at');
 let SECTORON = QS.get('sector') === '1', STORYON = QS.get('story') === '1';
 const MAIN = '255,122,26', RIPPLE = '255,150,64', SECTOR = '255,190,110';
 // Evidence-based connections (tools/globe-news/connections.py -> connections.json): every line has an event id, origin, destination,
@@ -3170,6 +3171,7 @@ function frame(t) {
   else if (spin) { lon0 += spin.vx * dt; lat0 = Math.max(-70, Math.min(70, lat0 + spin.vy * dt)); const f = Math.exp(-dt / 380); spin.vx *= f; spin.vy *= f; if (Math.hypot(spin.vx, spin.vy) < .004) spin = null; }  // friction: glides to a stop in about a second
   else if (!drag && !pinch && !reduce && !sel && !selCountry && !hoverC && !hoverCountry && view.k === 'top' && F.region === 'global' && Zt < 1.05 && !zoomAnchor) lon0 -= dt * .0022;
   ZMAX = window.EarthGL && EarthGL.ready && R0 > 0 ? Math.max(6, Math.min(W, H) * .5 / Math.sin(1.5 * rad) / R0) : 6;  // Phase 1 (owner 21 Nov 2026): with the satellite Earth, zoom to regional/metro level (~3° across), never street level
+  if (HOME_ROUND) ZMAX = Math.min(ZMAX, 1.6);  /* owner 22 Nov 2026 (option A): the home page globe always stays a round globe; tap a place to zoom on the full globe */
   if (Zt > ZMAX) Zt = ZMAX;
   { const k = reduce ? 1 : 1 - Math.exp(-Math.min(100, dt) / 60); Z = Math.exp(Math.log(Z) + (Math.log(Zt) - Math.log(Z)) * k); } if (Math.abs(Zt - Z) < .0001) Z = Zt;  /* owner 21 Nov 2026: smooth zoom, same speed at any frame rate, even steps in or out */ R = R0 * Z;
   lon0 = ((lon0 + 540) % 360) - 180; cy += (cyT - cy) * (reduce ? 1 : .12);
