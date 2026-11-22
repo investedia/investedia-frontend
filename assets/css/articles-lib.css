@@ -19,3 +19,7 @@
  .al-chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:12px -16px 0;padding:0 16px}.al-chips button{flex:none;border:1px solid var(--line);border-radius:999px;background:none;color:var(--fg-2,#a1a1aa);font:500 13px Inter,sans-serif;padding:6px 12px}.al-chips button[aria-pressed=true]{color:var(--accent,#ff7a1a);border-color:var(--accent,#ff7a1a)}
  .al-lead h2{font-size:19px}.al-lead img{aspect-ratio:16/9}.al-row{grid-template-columns:90px minmax(0,1fr);gap:12px}.al-row h3{font-size:14.5px}.al-pg .far{display:none}}
 .al-done{display:none}@media(max-width:900px){.al-done{display:block;width:100%;margin-top:20px;padding:12px;border:0;border-radius:12px;background:var(--accent,#ff7a1a);color:#111;font:600 15px Inter,sans-serif}}
+/* Owner 22 Nov 2026: night-map tile for articles without a photo */
+.al-night{position:relative;display:block;width:100%;aspect-ratio:4/3;border-radius:8px;overflow:hidden;background:#05060a}.al-night .m{position:absolute;inset:0;background-size:400% 400%;background-repeat:no-repeat;filter:grayscale(1) sepia(1) saturate(2.6) hue-rotate(-12deg) brightness(.95) contrast(1.15)}
+.al-night i{position:absolute;width:10px;height:10px;margin:-5px;border-radius:50%;background:#ff7a1a;box-shadow:0 0 0 4px rgba(255,122,26,.28),0 0 14px #ff7a1a;filter:none}
+.al-night b{position:absolute;left:6px;bottom:6px;max-width:calc(100% - 12px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:600 10.5px Inter,sans-serif;color:#fff;background:rgba(0,0,0,.6);padding:2px 6px;border-radius:999px}
