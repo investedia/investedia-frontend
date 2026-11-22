@@ -4128,7 +4128,7 @@ void main(){
   base*=mix(vec3(1.),max(relk,vec3(.18)),inD*(1.-sea));
   // built-up areas (owner 21 Nov 2026): NASA/Landsat man-made impervious surface, 30 m (light blue = sparse ... dark blue = dense)
   vec4 im=inD>0.?texture2D(dImp,duv):vec4(0.); float dens=im.a*clamp(1.15-im.r*1.35,.22,1.);   // rural 0 · suburban ~.3 · urban core ~1
-  base=mix(base,(vec3(.2,.192,.178)+vec3(.26,.24,.205)*dens*dens)*(.85+.3*lum/max(.1,lum+.05)),smoothstep(.0,.1,dens)*inD*(1.-sea));  // stronger: city cores clearly lighter than suburbs, suburbs than countryside; Landsat texture kept inside  // denser = lighter warm grey; roads and urban fabric appear
+  base=mix(base,(vec3(.24,.232,.218)+vec3(.30,.285,.25)*dens*dens)*(.85+.3*lum/max(.1,lum+.05)),smoothstep(.0,.1,dens)*inD*(1.-sea));  /* owner 22 Nov 2026 (B): built-up areas read as light concrete grey by day */  // stronger: city cores clearly lighter than suburbs, suburbs than countryside; Landsat texture kept inside  // denser = lighter warm grey; roads and urban fabric appear
   if(false){ vec3 g0=texture2D(dayT,uv).rgb; float l0=dot(g0,vec3(.299,.587,.114));      // global sea mask too: Landsat has no data / grey water offshore
     sea=max(sea,max(smoothstep(.04,.16,g0.b-g0.r)*(1.-smoothstep(.28,.45,l0))*smoothstep(.0,.03,.06-im.a),inD*(1.-smoothstep(.0,.03,lum)))); }
   base=mix(base,vec3(.038,.038,.048),sea);                                   // oceans almost black
@@ -4144,6 +4144,11 @@ void main(){
   vec4 nd4=texture2D(dNight,duv); if(inD>0.&&nd4.a>0.){ float x=max(0.,(nd4.r-.4)/.6), x3=pow(x,1.6); float Ld=.4*x3/(x3+.3);  /* owner 21 Nov 2026: calmer zoomed-in lights, only real built-up cores */   // compressed highs: no white hotspots, detail kept
     L=mix(L,Ld,inD*nd4.a); core=mix(core,smoothstep(.5,1.,x),inD*nd4.a); }                                        // only the densest cores turn warm white  // NASA VIIRS 500 m metro lights (calmer curve: this layer is brighter)         // city lights only (drops Black Marble's faint ground)
   col+=mix(vec3(1.,.6,.26),vec3(1.,.9,.76),core)*L*1.55*(1.-dayk);  // real night lights: amber/soft orange in the fainter areas, warm white in the brightest cores                                 // tiny ivory points, very little amber; orange stays for data
+  /* owner 22 Nov 2026 (B, city footprint): thin orange outline where the built-up area ends (main urban areas only); faint at night */
+  #ifdef DER
+  { vec2 o=vec2(.006,.006*(dbb.z-dbb.x)/max(1e-4,dbb.w-dbb.y)); float sd=0.; for(int i=-2;i<=2;i++) for(int j=-2;j<=2;j++){ vec4 q=texture2D(dImp,duv+vec2(float(i),float(j))*o); sd+=q.a*clamp(1.15-q.r*1.35,.22,1.); } sd/=25.;  /* smoothed: only large built-up areas get an edge, not every village */
+    float dc=smoothstep(.36,.46,sd); float w=fwidth(dc); float edge=1.-smoothstep(0.,max(w*1.6,1e-4),abs(dc-.5)); col=mix(col,vec3(1.,.48,.1),edge*inD*(1.-sea)*mix(.22,.55,dayk)); }
+  #endif
   if(lt>.5){  // light theme (owner 21 Nov 2026): soft grey-blue oceans, light warm-grey land with the same terrain, gentle night side, faint lights
     float t2=LT0+LT1*smoothstep(.03,.75,lum); vec3 land=vec3(t2)*vec3(1.,.995,.985);
     vec3 lc=mix(land,vec3(LSEA),sea); lc*=mix(1.,.58+.84*rel,inD*(1.-sea)); lc=mix(lc,vec3(.50,.49,.47)+vec3(.1)*(1.-dens),smoothstep(.32,.75,dens)*inD*.85*(1.-sea));  /* light mode: built-up areas as concrete grey, denser = darker (owner 21 Nov 2026) */
