@@ -3169,7 +3169,7 @@ function frame(t) {
   if (modeSpin) { const k = Math.min(1, (t - modeSpin.t0) / modeSpin.dur), inc = -(modeSpin.deg || 360) * spinEase(k) - modeSpin.done; modeSpin.done += inc; lon0 += inc; if (k >= 1) modeSpin = null; }
   if (fly) { spin = null; const k = Math.min(1, (t - fly.t0) / fly.dur), e = ease(k); lon0 = fly.from[0] + fly.dl * e; lat0 = fly.from[1] + (fly.la - fly.from[1]) * e; Zt = fly.from[2] + (fly.z - fly.from[2]) * e; if (k >= 1) fly = null; }
   else if (spin) { lon0 += spin.vx * dt; lat0 = Math.max(-70, Math.min(70, lat0 + spin.vy * dt)); const f = Math.exp(-dt / 380); spin.vx *= f; spin.vy *= f; if (Math.hypot(spin.vx, spin.vy) < .004) spin = null; }  // friction: glides to a stop in about a second
-  else if (!drag && !pinch && !reduce && !sel && !selCountry && !hoverC && !hoverCountry && view.k === 'top' && F.region === 'global' && Zt < 1.05 && !zoomAnchor) lon0 -= dt * .0022;
+  else if (!drag && !pinch && !reduce && !sel && !selCountry && !hoverC && !hoverCountry && view.k === 'top' && F.region === 'global' && (Zt < 1.05 || HOME_ROUND) && (!zoomAnchor || HOME_ROUND)) lon0 -= dt * .0022 / (HOME_ROUND ? Math.max(1, Z) : 1);  /* owner 22 Nov 2026: home globe keeps turning while zoomed in (a bit slower) */
   ZMAX = window.EarthGL && EarthGL.ready && R0 > 0 ? Math.max(6, Math.min(W, H) * .5 / Math.sin(1.5 * rad) / R0) : 6;  // Phase 1 (owner 21 Nov 2026): with the satellite Earth, zoom to regional/metro level (~3° across), never street level
   if (HOME_ROUND) ZMAX = Math.min(ZMAX, 1.6);  /* owner 22 Nov 2026 (option A): the home page globe always stays a round globe; tap a place to zoom on the full globe */
   if (Zt > ZMAX) Zt = ZMAX;
