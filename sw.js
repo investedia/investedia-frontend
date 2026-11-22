@@ -1,6 +1,6 @@
 // Investedia app: offline support and instant repeat visits.
 // Pages and market data: network first, saved copy when offline. Code, images, fonts: saved copy first, refreshed in the background.
-const VERSION = 'd7bd6d51f7', CACHE = 'inv-' + VERSION;
+const VERSION = '2ba805af08', CACHE = 'inv-' + VERSION;
 // Clean URLs: the host now redirects /page.html to /page (308). A redirected response must never be cached or served for a
 // navigation (Safari refuses it: "Response served by service worker has redirections"), so only final URLs are listed here.
 const CORE = ['/', '/dashboard', '/markets', '/watchlist', 'assets/app.css', 'assets/ui.js', 'assets/mock.js', 'assets/quotes.js', 'assets/profiles.js', 'assets/favicon.svg', 'assets/app/icon-192.png'];
@@ -12,12 +12,13 @@ const isData = u => /\/assets\/(quotes\.js|intraday\.json|news\.js|hist\/|news\/
 async function networkFirst(req, fallback) {
   const c = await caches.open(CACHE);
   try {
-    const r = await fetch(req, { cache: 'no-cache' });
+    let r; try { r = await fetch(req, { cache: 'no-cache' }); } catch { await new Promise(t => setTimeout(t, 600)); r = await fetch(req, { cache: 'no-cache' }); }  // one retry: a short mobile network drop should not show an offline copy
     if (r.redirected) return req.mode === 'navigate' ? Response.redirect(r.url, 302) : r;  // let the browser follow it; never cache it
     if (r.ok) c.put(req, r.clone()); return r;
   }
   catch {
-    const hit = (await c.match(req, { ignoreSearch: true })) || (fallback && await c.match(fallback));
+    // Never put the homepage inside an embedded frame (owner 22 Nov 2026: the homepage globe showed a second copy of the homepage)
+    const hit = (await c.match(req, { ignoreSearch: true })) || (fallback && req.destination !== 'iframe' && req.destination !== 'frame' && await c.match(fallback));
     return hit && !hit.redirected ? hit : Response.error();
   }
 }
