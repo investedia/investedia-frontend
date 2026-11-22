@@ -325,6 +325,8 @@ h1 span{color:var(--fg-3)}
 .hover.on{opacity:1;transform:none}
 /* market impact names are buttons (fly to HQ) */.im-name{all:unset;cursor:pointer;display:flex;justify-content:space-between;gap:8px;width:100%;box-sizing:border-box}.im-name:focus-visible{outline:2px solid #FF7A1A;outline-offset:2px;border-radius:6px}
 .gf-no-image{display:grid!important;place-items:center;font-size:9px;letter-spacing:.04em;text-transform:uppercase;color:var(--fg-2);background:linear-gradient(160deg,#1d1d20,#0b0b0d);text-align:center;overflow:hidden}
+.sum-hl .hl-n{color:#ff9d5c;font-weight:650}html[data-theme=light] .sum-hl .hl-n{color:#b45309}
+.sofar{position:relative;margin:4px 0 6px 6px;padding-left:18px;border-left:1.5px solid var(--line,#2e2e33)}.sf-i{all:unset;display:block;position:relative;margin:0 0 14px;cursor:pointer}.sf-i::before{content:'';position:absolute;left:-24.5px;top:4px;width:10px;height:10px;border-radius:50%;background:#3a3a40;border:2px solid var(--panel,#121214)}.sf-i.now{cursor:default}.sf-i.now::before{background:#ff7a1a}.sf-i small{display:block;color:var(--fg-2);font-size:11.5px}.sf-i span{display:block;font-size:13.5px;line-height:1.4;margin-top:2px}.sf-i.now span{font-weight:600}.sf-i:not(.now):hover span{color:#ff9d5c}
 .hover.pin{pointer-events:auto;cursor:pointer}.embed .hover{background:rgba(14,14,17,.97)!important;-webkit-backdrop-filter:none;backdrop-filter:none}
 .hover.brief{width:340px;display:block;padding:16px}.brief-head{display:flex;align-items:center;gap:10px;padding-bottom:10px}.brief-head .flag{width:22px;height:16px;border-radius:2px;object-fit:cover}.brief-head h3{margin:0;font-size:16px}.brief-head span{margin-left:auto;font-size:12px;color:var(--fg-3)}
 .brief-line{padding:9px 0;border-top:1px solid var(--line);font-size:13px;line-height:1.35;font-weight:650}.brief-index{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:6px;padding-top:10px;font-size:12.5px;color:var(--fg-3)}.brief-next{margin-top:8px;font-size:12px;color:var(--fg-3)}.brief-next b{color:var(--fg);font-weight:650}
@@ -2260,6 +2262,18 @@ const layoutObserver = new ResizeObserver(() => { if (!sheetGesture) size(); });
 document.fonts.ready.then(size);
 function go(v, push = true) { panel.hidden = false; if(phone()&&phoneView==='globe')phoneView='news'; if (push && view.k !== v.k || push && view.id !== v.id) hist.push(view); view = v; render(); pbody.scrollTop = 0; if (phone()) setSheet('peek'); }
 function back() { view = hist.pop() || { k: 'top' }; if (view.k === 'top') { sel = null; selCountry = null; } else if (view.k === 'country') { sel = null; selCountry = byName[view.id]; } else if (view.k === 'article') { sel = byId[view.id]; } render(); }
+// Article panel (owner 22 Nov 2026, option A): key numbers highlighted inside the summary (years, %, money, counts with units).
+function hlNums(t) { return t.replace(/(?:[$€£¥]\s?)?\b\d[\d,.]*(?:\s?(?:%|percent|bn|billion|million|trillion|bp|basis points))?(?!\w)/gi, m => /^\d{1,2}$/.test(m.trim()) ? m : `<b class="hl-n">${m}</b>`); }
+// "The story so far": earlier loaded articles about the same subject (same country, at least two shared headline keywords), oldest first.
+const SO_STOP = new Set('the a an of to in on for and or with by from as at is are be after over into its their new says amid us u.s'.split(' '));
+const kw = h => new Set(String(h).toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter(w => w.length > 3 && !SO_STOP.has(w)));
+function soFarHTML(s) {
+  const k = kw(s.headline), same = (window.stories || stories || []).filter(x => x.id !== s.id && x.location && x.location.country === s.location.country && x.t < s.t && [...kw(x.headline)].filter(w => k.has(w)).length >= 2)
+    .sort((a, b) => b.t - a.t).slice(0, 3).reverse();
+  if (!same.length) return '';
+  const day = t => new Date(t).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+  return `<div class="sec-h">The story so far</div><div class="sofar">${same.map(x => `<button type="button" class="sf-i" data-story="${esc(x.id)}"><small>${day(x.t)} · ${esc(x.source?.name || '')}</small><span>${esc(x.headline)}</span></button>`).join('')}<div class="sf-i now"><small>${day(s.t)} · ${esc(s.source?.name || '')}</small><span>${esc(s.headline)}</span></div></div>`;
+}
 function openStory(s) {
   if (EMBED) { top.location.href = '/globe.html?story=' + encodeURIComponent(s.id); return; }
   sel = s; selCountry = byName[s.location.country] || null; go({ k: 'article', id: s.id });
@@ -2731,9 +2745,10 @@ function render() {
       <div class="story-heading"><div class="eyebrow">${s.flag ? `<span class="tag">${FLAG[s.flag]}</span>` : ''}${esc(CAT[s.category])}</div>
       <h2>${esc(s.headline)}</h2>
       <div class="meta"><b>${esc(s.location.place)}</b>, <a href="#" data-country="${esc(s.location.country)}" style="color:inherit">${esc(nm(s.location.country))}</a> · ${ago(s.t)} · <button type="button" class="share-link" data-share="${esc(s.id)}">Share</button>${s.demo ? '<span class="dtag">DEMO</span>' : ''}</div></div>
-      ${s.summary ? `<div class="sec-h" style="margin-top:0">Investedia summary</div><p>${esc(s.summary)}</p>` : '<p class="empty">No Investedia summary is available for this article. Read the original source below.</p>'}
+      ${s.summary ? `<div class="sec-h" style="margin-top:0">Investedia summary</div><p class="sum-hl">${hlNums(esc(s.summary))}</p>` : '<p class="empty">No Investedia summary is available for this article. Read the original source below.</p>'}
       ${s.why ? `<div class="why"><div class="eyebrow">Why this matters</div><p>${esc(s.why)}</p></div>` : ''}
       ${impactHTML(s)}
+      ${soFarHTML(s)}
       ${s.entities.length ? `<div class="sec-h">Companies & assets involved</div><div class="ents">${s.entities.map(x => entityChip(x, s.location.country)).join('')}</div>` : ''}
       ${ch.length ? `<div class="sec-h">How it connects</div><div class="chain">${ch.map((c, i) => `${i ? '<span class="ar"></span>' : ''}<button data-story="${c.id}" class="${c.id === s.id ? 'cur' : ''}"><span class="n">${i + 1}</span><span>${esc(c.location.place)} · ${esc(c.headline)}</span></button>`).join('')}</div>` : ''}
       <div class="src"><div class="meta">${(s.sources || []).length > 1 ? 'Sources' : 'Source'}<br><b>${s.source?.name ? esc(s.source.name) : 'Demo content · no original article'}</b>${(s.sources || []).length > 1 ? ` <span>+ ${s.sources.slice(1, 4).map(x => `<a href="${esc(x.url)}" target="_blank" rel="noopener" style="color:inherit">${esc(x.name)}</a>`).join(', ')}</span>` : ''}</div>${s.source?.url ? `<a class="read" style="opacity:1;cursor:pointer;display:inline-grid;place-items:center;text-decoration:none" href="${esc(s.source.url)}" target="_blank" rel="noopener">Read article ↗</a>` : '<button class="read" title="Available when live sources are connected" disabled>Read article ↗</button>'}</div>${noteHTML()}</div>`;
