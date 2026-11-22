@@ -135,15 +135,16 @@ function mkdRender(){
  const pc=x=>x==null?'<span class="mu">—</span>':`<span class="${x>0?'u':x<0?'d':''}">${x>0?'+':x<0?'−':''}${Math.abs(x).toFixed(2)}%</span>`;
  const openN=S.filter(x=>x.st.open).length,mArts=stories.filter(st=>matchNoLens(st)&&['markets','companies','economy','commodities'].includes(st.category));
  const RG=[['Americas',['na','latam'],['BRL','MXN','CAD']],['Europe',['eu'],['GBP','EUR','CHF','SEK','NOK','PLN','CZK','HUF','DKK']],['Asia-Pacific',['asia','oc'],['JPY','CNY','KRW','INR','AUD','IDR','SGD','HKD','THB','PHP','MYR','NZD']],['Africa & Middle East',['af','me'],['ZAR','ILS','TRY']]];
- const regRows=RG.map(([n,rs,cs])=>{const L=all.filter(x=>cs.includes(x.c)).sort((a,b)=>a.d1-b.d1),cnt=mArts.filter(st=>rs.includes(st.location?.region)).length;return `<div class="mkd-rg"><span>${n}</span><small>${cnt} art.</small><span>${L.length?esc(L[L.length-1].c)+' '+pc(L[L.length-1].d1):'—'}</span><span>${L.length?esc(L[0].c)+' '+pc(L[0].d1):'—'}</span></div>`;}).join('');
+ const regRows=RG.map(([n,rs,cs])=>{const L=all.filter(x=>cs.includes(x.c)).sort((a,b)=>a.d1-b.d1),cnt=mArts.filter(st=>rs.includes(st.location?.region)).length;return `<div class="mkd-rg" role="button" tabindex="0" data-rg="${rs[0]}" title="Show ${esc(n)} on the globe"><span>${n}</span><small>${cnt} art.</small><span>${L.length?esc(L[L.length-1].c)+' '+pc(L[L.length-1].d1):'—'}</span><span>${L.length?esc(L[0].c)+' '+pc(L[0].d1):'—'}</span></div>`;}).join('');
  const th=(k,l)=>`<button type="button" data-fs="${k}" class="${sk===k?'on':''}">${l}${sk===k?' ↓':''}</button>`;
  mkO.innerHTML=`<h3>Markets overview</h3>${mkFavouritesHTML()}<p class="mkd-n" style="margin:0 0 10px">Pick a country on the globe for its detail.</p>
  <div class="mkd-kp"><div><b>${openN}/${S.length}</b><small>Exchanges open</small></div><div><b>${all.length}</b><small>Currencies (ECB)</small></div><div><b>${mArts.length}</b><small>Market articles ${F.win.toUpperCase()}</small></div><div><b>${next[0]?new Date(next[0].at).toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}):'—'}</b><small>Next release</small></div></div>
  <h4>In the news more than usual <span>48h vs own 30-day average</span></h4>${mkUnusual()}
  <p class="mkd-n">Articles about each country in the last 48 hours, compared with its usual 48 hours over the previous 4 weeks. Countries need at least 3 articles. From Investedia's article index.</p>
  <h4 style="margin-top:14px">By region <span>articles · best · worst vs USD, 1D</span></h4>${regRows}
- <h4 style="margin-top:14px">Next releases <span>official · US only</span></h4>${next.length?next.slice(0,3).map(e=>`<div class="mkd-mc"><span>${esc(e.t)}</span><small>${when(e.at)}</small></div>`).join(''):'<p class="mkd-e">No upcoming releases in our calendar.</p>'}
+ <h4 style="margin-top:14px">Next releases <span>official · US only</span></h4>${next.length?next.slice(0,3).map(e=>`<div class="mkd-mc" role="button" tabindex="0" data-rg="na" title="Show on the globe"><span>${esc(e.t)}</span><small>${when(e.at)}</small></div>`).join(''):'<p class="mkd-e">No upcoming releases in our calendar.</p>'}
  <p class="mkd-n" style="margin-top:10px">Sources: ECB · exchange-calendars · BLS/BEA/Fed via our calendar · Investedia articles. Not investment advice.</p>`;
+ mkO.querySelectorAll('[data-rg]').forEach(el=>{const go=()=>{const r=REGIONS.find(x=>x[0]===el.dataset.rg);if(r)flyTo(r[2],r[3],r[4]);};el.onclick=go;el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}};});
  mkO.querySelectorAll('[data-fs]').forEach(b=>b.onclick=()=>{MARKET.fxSort=b.dataset.fs;mkdRender();});
  mkO.querySelectorAll('[data-unu]').forEach(b=>b.onclick=()=>marketSelect(b.dataset.unu));
  
