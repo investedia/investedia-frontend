@@ -12,12 +12,13 @@ const isData = u => /\/assets\/(quotes\.js|intraday\.json|news\.js|hist\/|news\/
 async function networkFirst(req, fallback) {
   const c = await caches.open(CACHE);
   try {
-    const r = await fetch(req, { cache: 'no-cache' });
+    let r; try { r = await fetch(req, { cache: 'no-cache' }); } catch { await new Promise(t => setTimeout(t, 600)); r = await fetch(req, { cache: 'no-cache' }); }  // one retry: a short mobile network drop should not show an offline copy
     if (r.redirected) return req.mode === 'navigate' ? Response.redirect(r.url, 302) : r;  // let the browser follow it; never cache it
     if (r.ok) c.put(req, r.clone()); return r;
   }
   catch {
-    const hit = (await c.match(req, { ignoreSearch: true })) || (fallback && await c.match(fallback));
+    // Never put the homepage inside an embedded frame (owner 22 Nov 2026: the homepage globe showed a second copy of the homepage)
+    const hit = (await c.match(req, { ignoreSearch: true })) || (fallback && req.destination !== 'iframe' && req.destination !== 'frame' && await c.match(fallback));
     return hit && !hit.redirected ? hit : Response.error();
   }
 }
