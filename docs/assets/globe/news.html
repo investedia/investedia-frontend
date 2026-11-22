@@ -2149,7 +2149,7 @@ function tap(x, y, touch) {
   tapEdge=null;
 
   const d = pick(x, y, touch ? 26 : 16);
-  if (d) { hideHover(); if (d.list.length === 1) return openStory(d.list[0]); if (d.same || Z >= ZMAX - .2) return openPlace(d.list); return flyTo(d.lo, d.la, Math.min(ZMAX, Z * 2.2)); }
+  if (d) { hideHover(); if (d.list.length === 1) return openStory(d.list[0]); if (EMBED) return openPlace(d.list); if (d.same || Z >= ZMAX - .2) return openPlace(d.list); return flyTo(d.lo, d.la, Math.min(ZMAX, Z * 2.2)); }
   const g = inv(x, y), c = g && countryAt(g[0], g[1]);
   // PC: clicking empty space keeps the dashboard; it only closes an open detail view (back to the overview). Phone keeps closing the sheet.
   if (!c && !EMBED) { if (phone()) { dismissPanel(); return; } hideHover(); if (view.k !== 'top') { hist = []; sel = null; selCountry = null; view = { k: 'top' }; panel.hidden = false; render(); } return; }
@@ -2279,7 +2279,7 @@ document.fonts.ready.then(size);
 function go(v, push = true) { panel.hidden = false; if(phone()&&phoneView==='globe')phoneView='news'; if (push && view.k !== v.k || push && view.id !== v.id) hist.push(view); view = v; render(); pbody.scrollTop = 0; if (phone()) setSheet('peek'); }
 function back() { view = hist.pop() || { k: 'top' }; if (view.k === 'top') { sel = null; selCountry = null; } else if (view.k === 'country') { sel = null; selCountry = byName[view.id]; } else if (view.k === 'article') { sel = byId[view.id]; } render(); }
 function openStory(s) {
-  if (EMBED) { top.location.href = '/assets/globe/news.html?story=' + encodeURIComponent(s.id); return; }
+  if (EMBED) { top.location.href = '/globe.html?story=' + encodeURIComponent(s.id); return; }
   sel = s; selCountry = byName[s.location.country] || null; go({ k: 'article', id: s.id });
   if (phone()) { flyTo(s.location.lon, s.location.lat, 3.6); return; }
   const ch = chainOf(s);
@@ -2288,14 +2288,14 @@ function openStory(s) {
 }
 function openCountry(c) {
   if (MARKET.on) return marketSelect(c.name,new URLSearchParams(location.search).get('exchange'));
-  if (EMBED) { top.location.href = '/assets/globe/news.html?country=' + encodeURIComponent(c.name); return; }
+  if (EMBED) { top.location.href = '/globe.html?country=' + encodeURIComponent(c.name); return; }
   const wasClosed = sheetState === 'closed'; countryTab = 'overview';
   sel = null; selCountry = c; go({ k: 'country', id: c.name });
   if (phone() && wasClosed) placeSheet('open', Math.min(SHEET_MAX(), H * .62));
   const span = Math.max((c.b[2] - c.b[0]) * Math.cos(c.c[1] * rad), c.b[3] - c.b[1]);
   flyTo(c.c[0], c.c[1], Math.max(1.4, Math.min(4.6, 46 / Math.max(span, 1))));
 }
-function openPlace(list) { sel = null; selCountry = byName[list[0].location.country] || null; go({ k: 'place', ids: list.map(s => s.id), id: list.map(s => s.id).join() }); flyTo(list[0].location.lon, list[0].location.lat, Math.max(Z, 3)); }
+function openPlace(list) { if (EMBED) { top.location.href = '/globe.html?place=' + encodeURIComponent(list.map(s => s.id).join(',')); return; }  /* owner 22 Nov 2026: a place clicked on the home globe opens it on the full globe */ sel = null; selCountry = byName[list[0].location.country] || null; go({ k: 'place', ids: list.map(s => s.id), id: list.map(s => s.id).join() }); flyTo(list[0].location.lon, list[0].location.lat, Math.max(Z, 3)); }
 pbody.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.matches('[data-asset]'))e.target.click();});
 pbody.addEventListener('pointerover',e=>{const b=e.target.closest('[data-story]');if(b)arcHover={article:byId[b.dataset.story]};});
 pbody.addEventListener('pointerleave',()=>{arcHover=null;});
@@ -3454,6 +3454,8 @@ newsReady = window.InvNewsSource.load(NEWS_URL)
   refresh();
   const q = new URLSearchParams(location.search);
   const lq = q.get('lens'); if (lq && LENSES.some(l => l[0] === lq)) { F.lens = lq; press($('cats'), lq); refresh(); }
+  const qp = (q.get('place') || '').split(',').map(i => byId[i]).filter(Boolean);
+  if (qp.length > 1) openPlace(qp); else if (qp.length === 1) openStory(qp[0]); else
   if (q.get('story') && byId[q.get('story')]) openStory(byId[q.get('story')]);
   else if (q.get('country') && byName[q.get('country')]) {
     openCountry(byName[q.get('country')]);
