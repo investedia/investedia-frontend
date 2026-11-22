@@ -3042,7 +3042,8 @@ function frame(t) {
   ctx.beginPath(); for (const c of map) for (const rr of c.rr) ringPath(rr, false); ctx.strokeStyle = `rgba(255,255,255,${Math.min(.2, .07 + (Z - 1) * .04) + GB.line})`; ctx.lineWidth = .7; ctx.stroke();
   for (const { impact, country } of impactTargets(impactFocus)) countryShape(country, `rgba(${IMPACT_COLOR[impact.direction]},.10)`);
   if (hoverCountry && hoverCountry !== selCountry) countryShape(hoverCountry, 'rgba(255,255,255,.05)', 'rgba(255,255,255,.35)');
-  if (selCountry) countryShape(selCountry, 'rgba(255,122,26,.10)', 'rgba(255,122,26,.75)', 1.2);
+  if (selCountry) { const zf = (window.EarthGL && EarthGL.detail) ? 1 - Math.min(1, EarthGL.detail.want || 0) : 1;  // owner 22 Nov 2026: zoomed in, the country fill covered the whole screen; keep only the outline
+    countryShape(selCountry, `rgba(255,122,26,${(.10 * zf).toFixed(3)})`, 'rgba(255,122,26,.75)', 1.2); }
   ctx.restore();
 
   if (PROJ.on || MARKET.on) window.__markPts = [];
@@ -3126,7 +3127,10 @@ function frame(t) {
   if (placeCounts()) zoomCounts();
   // connection pills (asset + real % move) are drawn last so map markers never cover them
   ctx.textBaseline='alphabetic';
-  for(const {x,y,w:W,h:H,nm,pt,w1,d} of pillRects){ctx.fillStyle='rgba(16,16,19,.94)';ctx.strokeStyle='rgba(255,255,255,.2)';ctx.lineWidth=1;ctx.beginPath();ctx.roundRect(x,y,W,H,13);ctx.fill();ctx.stroke();ctx.textAlign='left';ctx.font='650 12px Inter,sans-serif';ctx.fillStyle='#fff';ctx.fillText(nm,x+12,y+17);ctx.fillStyle=!Number.isFinite(d)||d===0?'#8b8b94':d>0?'#5df08a':'#ff8a82';ctx.font='700 12px Inter,sans-serif';ctx.fillText(pt,x+12+w1+8,y+17);}
+  /* owner 22 Nov 2026 (smoother): price pills fade in when they appear instead of popping */
+  const pNow=performance.now(),pSeen=window.__pillSeen||(window.__pillSeen=new Map()),pLive=new Set();
+  for(const {x,y,w:W,h:H,nm,pt,w1,d} of pillRects){pLive.add(nm);if(!pSeen.has(nm))pSeen.set(nm,pNow);ctx.globalAlpha=Math.min(1,(pNow-pSeen.get(nm))/280);ctx.fillStyle='rgba(16,16,19,.94)';ctx.strokeStyle='rgba(255,255,255,.2)';ctx.lineWidth=1;ctx.beginPath();ctx.roundRect(x,y,W,H,13);ctx.fill();ctx.stroke();ctx.textAlign='left';ctx.font='650 12px Inter,sans-serif';ctx.fillStyle='#fff';ctx.fillText(nm,x+12,y+17);ctx.fillStyle=!Number.isFinite(d)||d===0?'#8b8b94':d>0?'#5df08a':'#ff8a82';ctx.font='700 12px Inter,sans-serif';ctx.fillText(pt,x+12+w1+8,y+17);}
+  ctx.globalAlpha=1;for(const k of [...pSeen.keys()])if(!pLive.has(k)&&pNow-pSeen.get(k)>0)pSeen.delete(k);
   if (!EMBED && MKTON) drawExchanges(t); else exHits = [];
   if (!EMBED && UPON) drawUpcoming(); else upHits = [];
   drawUserLoc(t);
