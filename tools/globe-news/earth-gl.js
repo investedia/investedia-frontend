@@ -213,16 +213,19 @@ void main(){
     const D3 = E.detail, a = D3.want * (D3.bb ? D3.fade : 0); if (!CITIES || a < .05) return;
     const rad = Math.asin(Math.min(1, Math.max(W, H) * .5 / R)) * 180 / Math.PI, minPop = rad > 30 ? 5e6 : rad > 15 ? 2e6 : rad > 8 ? 8e5 : 4e5;  /* owner 21 Nov 2026: fewer names */
     const r = Math.PI / 180, c0 = Math.cos(lat0 * r), s0 = Math.sin(lat0 * r), placed = [];
+    const now = performance.now(), seen = E.labSeen || (E.labSeen = new Map()), live = new Set();  /* owner 22 Nov 2026: city names fade in instead of popping */
     ctx.save(); ctx.font = '500 12px Inter,system-ui,sans-serif'; ctx.textBaseline = 'middle';
     for (const [n, la, lo, pop] of CITIES) {
       if (pop < minPop) continue; const ph = la * r, d = lo * r - lon0 * r, cp = Math.cos(ph), z = s0 * Math.sin(ph) + c0 * cp * Math.cos(d); if (z < .2) continue;
       const x = cx + R * cp * Math.sin(d), y = cy - R * (c0 * Math.sin(ph) - s0 * cp * Math.cos(d)); if (x < 0 || y < 0 || x > W || y > H) continue;
       if ((window.__markPts || []).some(m => (m[0] - x) ** 2 + (m[1] - y) ** 2 < 34 * 34)) continue;  // an orange marker is here: its own label wins
       const w = ctx.measureText(n).width, box = [x - 34, y - 30, x + 40 + w, y + 30]; if (placed.some(b => !(box[2] < b[0] || box[0] > b[2] || box[3] < b[1] || box[1] > b[3]))) continue; placed.push(box);
-      ctx.globalAlpha = a * (pop >= 1e6 ? .95 : .75); ctx.fillStyle = 'rgba(232,230,226,.9)'; ctx.beginPath(); ctx.arc(x, y, pop >= 1e6 ? 2.4 : 1.8, 0, 7); ctx.fill();
+      live.add(n); if (!seen.has(n)) seen.set(n, now); const fa = Math.min(1, (now - seen.get(n)) / 300);
+      ctx.globalAlpha = a * fa * (pop >= 1e6 ? .95 : .75); ctx.fillStyle = 'rgba(232,230,226,.9)'; ctx.beginPath(); ctx.arc(x, y, pop >= 1e6 ? 2.4 : 1.8, 0, 7); ctx.fill();
       const big = pop >= 1e6; ctx.font = (big ? '600 13px' : '500 11.5px') + ' Inter,system-ui,sans-serif'; const tw = ctx.measureText(n).width; ctx.fillStyle = 'rgba(10,10,12,.72)'; ctx.beginPath(); ctx.roundRect(x + 3, y - 9, tw + 10, 18, 5); ctx.fill(); ctx.strokeStyle = 'rgba(255,255,255,.1)'; ctx.lineWidth = 1; ctx.stroke(); ctx.fillStyle = big ? '#fff' : 'rgba(226,224,220,.95)'; ctx.fillText(n, x + 8, y + .5);  /* readable label (owner 21 Nov 2026) */
       if (placed.length > 14) break;
     }
+    for (const k of [...seen.keys()]) if (!live.has(k)) seen.delete(k);
     ctx.restore();
   };
   // city glow (owner 21 Nov 2026, option C): a soft warm glow at every city over 300,000 people on the night side (Natural Earth population),
