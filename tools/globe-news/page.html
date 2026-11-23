@@ -2275,7 +2275,7 @@ function soFarHTML(s) {
   return `<div class="sec-h">The story so far</div><div class="sofar">${same.map(x => `<button type="button" class="sf-i" data-story="${esc(x.id)}"><small>${day(x.t)} · ${esc(x.source?.name || '')}</small><span>${esc(x.headline)}</span></button>`).join('')}<div class="sf-i now"><small>${day(s.t)} · ${esc(s.source?.name || '')}</small><span>${esc(s.headline)}</span></div></div>`;
 }
 function openStory(s) {
-  if (EMBED) { top.location.href = '/globe.html?story=' + encodeURIComponent(s.id); return; }
+  if (EMBED) { top.location.href = '/assets/globe/news.html?story=' + encodeURIComponent(s.id); return; }
   sel = s; selCountry = byName[s.location.country] || null; go({ k: 'article', id: s.id });
   if (phone()) { flyTo(s.location.lon, s.location.lat, 3.6); return; }
   const ch = chainOf(s);
@@ -2284,14 +2284,14 @@ function openStory(s) {
 }
 function openCountry(c) {
   if (MARKET.on) return marketSelect(c.name,new URLSearchParams(location.search).get('exchange'));
-  if (EMBED) { top.location.href = '/globe.html?country=' + encodeURIComponent(c.name); return; }
+  if (EMBED) { top.location.href = '/assets/globe/news.html?country=' + encodeURIComponent(c.name); return; }
   const wasClosed = sheetState === 'closed'; countryTab = 'overview';
   sel = null; selCountry = c; go({ k: 'country', id: c.name });
   if (phone() && wasClosed) placeSheet('open', Math.min(SHEET_MAX(), H * .62));
   const span = Math.max((c.b[2] - c.b[0]) * Math.cos(c.c[1] * rad), c.b[3] - c.b[1]);
   flyTo(c.c[0], c.c[1], Math.max(1.4, Math.min(4.6, 46 / Math.max(span, 1))));
 }
-function openPlace(list) { if (EMBED) { top.location.href = '/globe.html?place=' + encodeURIComponent(list.map(s => s.id).join(',')); return; }  /* owner 22 Nov 2026: a place clicked on the home globe opens it on the full globe */ sel = null; selCountry = byName[list[0].location.country] || null; go({ k: 'place', ids: list.map(s => s.id), id: list.map(s => s.id).join() }); flyTo(list[0].location.lon, list[0].location.lat, Math.max(Z, 3)); }
+function openPlace(list) { if (EMBED) { top.location.href = '/assets/globe/news.html?place=' + encodeURIComponent(list.map(s => s.id).join(',')); return; }  /* owner 22 Nov 2026: a place clicked on the home globe opens it on the full globe */ sel = null; selCountry = byName[list[0].location.country] || null; go({ k: 'place', ids: list.map(s => s.id), id: list.map(s => s.id).join() }); flyTo(list[0].location.lon, list[0].location.lat, Math.max(Z, 3)); }
 pbody.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.matches('[data-asset]'))e.target.click();});
 pbody.addEventListener('pointerover',e=>{const b=e.target.closest('[data-story]');if(b)arcHover={article:byId[b.dataset.story]};});
 pbody.addEventListener('pointerleave',()=>{arcHover=null;});
