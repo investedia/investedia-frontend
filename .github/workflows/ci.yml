@@ -19,3 +19,7 @@ jobs:
           python-version: '3.12'
       - run: python build.py
       - run: python -m unittest discover -s tests -p 'test_*.py'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test tests/article-r2-reader.test.mjs

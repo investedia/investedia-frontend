@@ -37,7 +37,7 @@ jobs:
           tar -cf - \
             --exclude='./.git' --exclude='./.github' --exclude='./site' \
             --exclude='./docs' --exclude='./tests' --exclude='./tools' --exclude='./src' \
-            --exclude='./scripts' --exclude='./config' --exclude='./graphify-out' \
+            --exclude='./scripts' --exclude='./config' --exclude='./graphify-out' --exclude='./functions' \
             --exclude='*.md' --exclude='*.py' --exclude='./package.json' \
             --exclude='./.gitignore' --exclude='./.nojekyll' . | tar -xf - -C site
           files=$(find site -type f | wc -l)
