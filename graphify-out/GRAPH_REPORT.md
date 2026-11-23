@@ -1,9 +1,9 @@
 # Graph Report - investedia-article-reader-yb3uvkhd  (2026-11-23)
 
 ## Corpus Check
-- 24258 files · ~15,904,103 words
+- 24258 files · ~15,904,274 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 99 file(s) not represented in the graph (top: .css 83, (none) 8, .woff2 4)
+- Unclassified: 100 file(s) not represented in the graph (top: .css 83, (none) 9, .woff2 4)
 
 ## Summary
 - 2344 nodes · 4159 edges · 233 communities (134 shown, 99 thin omitted)
@@ -11,7 +11,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e441dbfc`
+- Built from commit: `a8fc18e9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -57,7 +57,7 @@
 - js/live-data.js
 - js/locale.js
 - redesign.spec.mjs
-- PublicConfigurationTest
+- change_pass
 - EconomyHistoryTests
 - js/peek.js
 - js/since-news.js
@@ -111,7 +111,7 @@
 - build_company_badges.py
 - P19 · B1, B2, B6 only · existing interface retained
 - gem_satellite.py
-- change_pass
+- PublicConfigurationTest
 - assets/calls-ui.js
 - assets/news-feed.js
 - assets/prefs.js
@@ -199,8 +199,8 @@
 2. `base` - 42 edges
 3. `fixtureExternal()` - 39 edges
 4. `viewport()` - 33 edges
-5. `widths` - 21 edges
-6. `projRender()` - 21 edges
+5. `projRender()` - 21 edges
+6. `widths` - 21 edges
 7. `render()` - 15 edges
 8. `build()` - 15 edges
 9. `render()` - 15 edges
@@ -374,6 +374,10 @@ Nodes (7): apply(), element(), language(), schedule(), setLanguage(), start(), t
 ### Community 40 - "redesign.spec.mjs"
 Cohesion: 0.32
 Nodes (5): iso, mk(), priced, results, usable()
+
+### Community 41 - "change_pass"
+Cohesion: 0.29
+Nodes (8): before_pass(), grab(), work(), change_pass(), crop(), edges(), ok(), work()
 
 ### Community 43 - "js/peek.js"
 Cohesion: 0.67
@@ -550,10 +554,6 @@ Nodes (9): Asked, not used, Build-report table / coverage, Built / mockup table,
 ### Community 106 - "gem_satellite.py"
 Cohesion: 0.29
 Nodes (5): clear(), detail_check(), main(), search(), tile()
-
-### Community 107 - "change_pass"
-Cohesion: 0.29
-Nodes (8): before_pass(), grab(), work(), change_pass(), crop(), edges(), ok(), work()
 
 ### Community 108 - "assets/calls-ui.js"
 Cohesion: 0.31
@@ -765,17 +765,17 @@ Nodes (3): Files, Projects dashboard — review, Validation
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `ico()` connect `script.js` to `docs/assets/home-news.js`?**
-  _High betweenness centrality (0.038) - this node is a cross-community bridge._
+- **Why does `frame()` connect `script.js` to `browser-support.mjs`?**
+  _High betweenness centrality (0.024) - this node is a cross-community bridge._
 - **Should `script.js` be split into smaller, more focused modules?**
   _Cohesion score 0.05487269534679543 - nodes in this community are weakly interconnected._
-- **Why does `frame()` connect `script.js` to `browser-support.mjs`?**
-  _High betweenness centrality (0.033) - this node is a cross-community bridge._
+- **Why does `ico()` connect `script.js` to `docs/assets/home-news.js`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Should `js/home-news.js` be split into smaller, more focused modules?**
   _Cohesion score 0.0880503144654088 - nodes in this community are weakly interconnected._
+- **Why does `projRender()` connect `projects-mode.js` to `script.js`?**
+  _High betweenness centrality (0.016) - this node is a cross-community bridge._
 - **Should `build_market_focus.py` be split into smaller, more focused modules?**
   _Cohesion score 0.14393939393939395 - nodes in this community are weakly interconnected._
 - **Should `fixtureExternal` be split into smaller, more focused modules?**
   _Cohesion score 0.08021390374331551 - nodes in this community are weakly interconnected._
-- **Should `economy-history` be split into smaller, more focused modules?**
-  _Cohesion score 0.06006006006006006 - nodes in this community are weakly interconnected._

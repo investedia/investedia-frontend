@@ -9,14 +9,15 @@ function context(path = article.id + ".json", method = "GET") {
   const calls = [];
   const result = { request: new Request("https://investedia.com/assets/globe/library/" + path, { method }), params: { path },
     env: { ARTICLE_STORE: { get: async key => { calls.push(["get", key]); return { body, httpEtag: '"saved-article"' }; },
-      head: async key => { calls.push(["head", key]); return { httpEtag: '"saved-article"' }; } } },
+      head: async key => { calls.push(["head", key]); return { httpEtag: '"saved-article"' }; } },
+      ASSETS: { fetch: async input => { calls.push(["index"]); assert.equal(new URL(input.url).pathname, "/assets/globe/library-days/ids.json"); return Response.json({}); } } },
     next: async () => { calls.push(["fallback"]); return new Response("static fallback", { status: 404 }); }, calls };
   return result;
 }
 test("old article URL returns exact saved bytes from the published prefix only", async () => {
   const ctx = context(); const response = await onRequest(ctx);
   assert.equal(await response.text(), body);
-  assert.deepEqual(ctx.calls, [["fallback"], ["get", `published/library/articles/${article.id}.json`]]);
+  assert.deepEqual(ctx.calls, [["fallback"], ["index"], ["get", `published/library/articles/${article.id}.json`]]);
   assert.equal(response.headers.get("Content-Type"), "application/json; charset=utf-8");
   assert.equal(response.headers.get("X-Content-Type-Options"), "nosniff");
   assert.equal(response.headers.get("ETag"), '"saved-article"');
@@ -24,7 +25,7 @@ test("old article URL returns exact saved bytes from the published prefix only",
 test("HEAD reads metadata and never fetches an article body", async () => {
   const ctx = context(article.id + ".json", "HEAD"); const response = await onRequest(ctx);
   assert.equal(await response.text(), "");
-  assert.deepEqual(ctx.calls, [["fallback"], ["head", `published/library/articles/${article.id}.json`]]);
+  assert.deepEqual(ctx.calls, [["fallback"], ["index"], ["head", `published/library/articles/${article.id}.json`]]);
 });
 test("unbound, missing and unavailable storage retain the existing static article", async () => {
   const absent = context(); absent.env = {};
@@ -58,4 +59,21 @@ test("Pages catch-all array parameters resolve only a single approved article fi
   assert.equal(await (await onRequest(ctx)).text(), body);
   const nested = context(); nested.params.path = ["trial", article.id + ".json"];
   await onRequest(nested); assert.deepEqual(nested.calls, [["fallback"]]);
+});
+
+test("articles retained in static day bundles never reach R2", async () => {
+  const ctx = context();
+  ctx.env.ASSETS.fetch = async () => { ctx.calls.push(["index"]); return Response.json({ [article.id]: article.published_at.slice(0, 10) }); };
+  const response = await onRequest(ctx);
+  assert.equal(response.status, 404); assert.equal(await response.text(), "static fallback");
+  assert.deepEqual(ctx.calls, [["fallback"], ["index"]]);
+});
+test("unavailable or malformed static bundle index fails closed", async () => {
+  for (const index of [new Response("unavailable", { status: 500 }), new Response("invalid JSON"), Response.json([])]) {
+    const ctx = context();
+    ctx.env.ASSETS.fetch = async () => { ctx.calls.push(["index"]); return index; };
+    const response = await onRequest(ctx);
+    assert.equal(response.status, 404); assert.equal(await response.text(), "static fallback");
+    assert.deepEqual(ctx.calls, [["fallback"], ["index"]]);
+  }
 });

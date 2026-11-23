@@ -5,6 +5,13 @@ export async function onRequest(context) {
   const match = /^([A-Za-z0-9_-]{4,80})\.json$/.exec(path);
   const fallback = await context.next();
   if (fallback.status !== 404 || !["GET", "HEAD"].includes(request.method) || !match || !env.ARTICLE_STORE) return fallback;
+  // Bundled static articles keep their existing loader path and original contents.
+  try {
+    const index = await env.ASSETS.fetch(new Request(new URL("/assets/globe/library-days/ids.json", request.url)));
+    if (!index.ok) return fallback;
+    const ids = await index.json();
+    if (!ids || typeof ids !== "object" || Array.isArray(ids) || Object.hasOwn(ids, match[1])) return fallback;
+  } catch { return fallback; }
   let saved;
   try {
     const key = `published/library/articles/${match[1]}.json`;
