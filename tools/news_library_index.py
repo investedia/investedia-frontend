@@ -3,7 +3,7 @@ browser never loads thousands of articles. Written on every site build (and to t
   library-index/meta.json    totals, category and region counts, first date, page count
   library-index/page-N.json  24 rows per page (all articles, newest first)
   library-index/all.json     compact rows for search and filters, loaded only when a filter is used"""
-import json, pathlib, shutil
+import hashlib, json, pathlib, shutil
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 PER = 24
 
@@ -69,6 +69,8 @@ def write():
     pages = max(1, -(-len(rows) // PER))
     meta = {'total': len(rows), 'sources': len({(r['s'] or '').strip().lower() for r in rows if r['s']}), 'first': rows[-1]['t'] if rows else None,
             'per_page': PER, 'pages': pages, 'categories': dict(sorted(cats.items(), key=lambda x: -x[1])), 'regions': regs}
+    # Cloudflare listings may replace this exact static catalog, never a newer archive.
+    meta['catalog_sha256'] = hashlib.sha256(json.dumps(rows, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
     # summaries only for the lead article candidates on page 1 (keeps files small)
     for base in ('assets/globe', 'docs/assets/globe'):
         out = ROOT / base / 'library-index'
