@@ -47,6 +47,9 @@ jobs:
           test "$big" -eq 0
           test -f site/index.html
 
+      - name: Fingerprint the collected article catalog for Cloudflare readers
+        run: python3 tools/news_library_index.py --fingerprint site
+
       - name: Write the public live settings (live news, prices, login)
         env:
           INV_API_BASE_URL: https://api.investedia.com
