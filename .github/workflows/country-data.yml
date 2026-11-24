@@ -18,7 +18,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   ecb:
-    if: github.event.schedule != '12 6 * * 0' && !inputs.economy_history
+    if: (github.event.schedule != '12 6 * * 0' && !inputs.economy_history) && (github.event_name != 'schedule' || vars.CLOUDFLARE_FX_ENABLED != 'true')
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -38,7 +38,7 @@ jobs:
           git push origin HEAD:main
 
   economy-history:
-    if: github.event.schedule == '12 6 * * 0' || inputs.economy_history
+    if: (github.event.schedule == '12 6 * * 0' || inputs.economy_history) && (github.event_name != 'schedule' || vars.CLOUDFLARE_ECONOMY_HISTORY_ENABLED != 'true')
     permissions:
       contents: read
     runs-on: ubuntu-latest
