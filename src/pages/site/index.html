@@ -365,7 +365,7 @@ const glide = () => { if (holdY != null) return; if (!isPhone()) { hnGlobe.style
 if (!matchMedia('(prefers-reduced-motion: reduce)').matches) addEventListener('scroll', () => requestAnimationFrame(glide), { passive: true });
 fitTitle(); addEventListener('resize', fitTitle); document.fonts && document.fonts.ready.then(fitTitle);
 // Live numbers under the name: counted from the same feed and project data the page already shows.
-function countTo(el, v) { if (!el || !Number.isFinite(v)) return; const fmt = n => { n = Math.round(n); if (n < 1000) return String(n); const k = n / 1000; return (k >= 10 ? Math.floor(k) : Math.floor(k * 10) / 10) + 'k+'; };  // owner 24 Nov 2026: 64k+, 10k+, 2.7k+
+function countTo(el, v) { if (!el || !Number.isFinite(v)) return; const fmt = n => { n = Math.round(n); if (n < 1000) return String(n); const k = n / 1000; return (k >= 10 ? Math.floor(k) : Math.floor(k * 10) / 10) + 'K+'; };  // owner 24 Nov 2026: 64K+, 10K+, 2.7K+ (capital K)
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = fmt(v); return; }
   // Starts from the number on screen, and a newer count replaces a running one (no flicker between the two).
   const from = +(el.dataset.shown || 0), t0 = performance.now(), id = (el._count = (el._count || 0) + 1), f = t => { if (el._count !== id) return; const k = Math.min(1, (t - t0) / 1400), e = 1 - Math.pow(1 - k, 3), n = from + (v - from) * e; el.dataset.shown = n; el.textContent = fmt(n); if (k < 1) requestAnimationFrame(f); }; requestAnimationFrame(f); }
