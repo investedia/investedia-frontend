@@ -14,7 +14,10 @@ def write():
         if name: sources.add(name.strip().lower())
     try: projects = len(json.loads((ROOT / 'assets/globe/projects.json').read_text())['projects'])
     except Exception: projects = None
-    out = json.dumps({'articles': arts, 'sources': len(sources), 'projects': projects}, separators=(',', ':'))
+    # companies the site recognises (Wikidata list behind the company pages and news tagging); owner 24 Nov 2026
+    try: companies = len(json.loads((ROOT / 'assets/globe/companies-wd.json').read_text(encoding='utf-8'))['companies'])
+    except Exception: companies = None
+    out = json.dumps({'articles': arts, 'sources': len(sources), 'projects': projects, 'companies': companies}, separators=(',', ':'))
     for d in ('assets/globe', 'docs/assets/globe'):
         p = ROOT / d / 'site-stats.json'
         if p.parent.is_dir() and (not p.exists() or p.read_text() != out): p.write_text(out)
