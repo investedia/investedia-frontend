@@ -42,6 +42,19 @@ def roll(days=10):
                 (ROOT / base / 'library' / f'{i}.json').unlink(missing_ok=True)
     return sum(len(v) for v in moved.values())
 
+def fingerprint(root):
+    """Bind the collected deployment to its exact existing catalog; do not rebuild articles."""
+    index = root / 'assets/globe/library-index'
+    raw = (index / 'all.json').read_bytes()
+    rows = json.loads(raw)
+    meta = json.loads((index / 'meta.json').read_text(encoding='utf-8'))
+    if not isinstance(rows, list) or not isinstance(meta, dict) or meta.get('total') != len(rows):
+        raise ValueError('Collected catalog and metadata do not match')
+    meta['catalog_sha256'] = hashlib.sha256(raw).hexdigest()
+    (index / 'meta.json').write_text(json.dumps(meta, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    return meta
+
+
 def write():
     rows = []
     by = {}  # owner 21 Nov 2026: company pages list every article that names one of the company's tickers, back to 2022
@@ -89,5 +102,9 @@ def write():
 
 if __name__ == '__main__':
     import sys
-    if '--roll' in sys.argv: print('rolled', roll(int(sys.argv[sys.argv.index('--roll') + 1])), 'articles into day files')
-    m = write(); print(m['total'], 'articles,', m['pages'], 'pages')
+    if '--fingerprint' in sys.argv:
+        m = fingerprint(pathlib.Path(sys.argv[sys.argv.index('--fingerprint') + 1]))
+        print('Collected catalog fingerprint:', m['catalog_sha256'])
+    else:
+        if '--roll' in sys.argv: print('rolled', roll(int(sys.argv[sys.argv.index('--roll') + 1])), 'articles into day files')
+        m = write(); print(m['total'], 'articles,', m['pages'], 'pages')

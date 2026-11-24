@@ -1,4 +1,4 @@
-import hashlib, importlib.util, json, pathlib, tempfile, unittest
+import hashlib, importlib.util, json, pathlib, tempfile, unittest, subprocess, sys
 from unittest.mock import patch
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 IDX = ROOT / 'assets/globe/library-index'
@@ -33,5 +33,26 @@ class NewsLibraryIndex(unittest.TestCase):
             self.assertEqual((root / 'docs/assets/globe/library-index/all.json').read_bytes(), raw)
             self.assertEqual(json.loads(raw)[0]['t'], article['published_at'])
             self.assertEqual(json.loads((root / 'docs/assets/globe/library-index/meta.json').read_bytes()), meta)
+
+    def test_collected_deployment_is_stamped_without_rebuilding_or_changing_article_bytes(self):
+        article = json.loads((ROOT / 'assets/globe/news-live.json').read_text(encoding='utf-8'))['stories'][0]
+        raw = json.dumps([article], ensure_ascii=False).encode()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = pathlib.Path(tmp); index = root / 'assets/globe/library-index'; index.mkdir(parents=True)
+            (index / 'all.json').write_bytes(raw)
+            meta = {'total': 1, 'first': article['published_at'], 'retained': 'unchanged'}
+            (index / 'meta.json').write_text(json.dumps(meta), encoding='utf-8')
+            result = subprocess.run([sys.executable, str(ROOT / 'tools/news_library_index.py'), '--fingerprint', str(root)],
+                                    capture_output=True, text=True, check=True)
+            self.assertIn('Collected catalog fingerprint:', result.stdout)
+            stamped = json.loads((index / 'meta.json').read_text(encoding='utf-8'))
+            self.assertEqual(stamped, {**meta, 'catalog_sha256': hashlib.sha256(raw).hexdigest()})
+            self.assertEqual((index / 'all.json').read_bytes(), raw)
+            self.assertEqual(sorted(p.name for p in index.iterdir()), ['all.json', 'meta.json'])
+            bad = {**meta, 'total': 2}; previous = json.dumps(bad)
+            (index / 'meta.json').write_text(previous, encoding='utf-8')
+            result = subprocess.run([sys.executable, str(ROOT / 'tools/news_library_index.py'), '--fingerprint', str(root)], capture_output=True)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertEqual((index / 'meta.json').read_text(encoding='utf-8'), previous)
 
 if __name__ == '__main__': unittest.main()
