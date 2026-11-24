@@ -279,7 +279,8 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
 // two lines exactly: shrink the title until the longer line fits next to the globe (PC) or the screen (phone)
 function fitTitle() { const h = hnTitle, lim = innerWidth > 900 ? 540 : Math.min(document.documentElement.clientWidth, innerWidth) - 48;
   for (let f = 60; f >= 22; f--) { h.style.fontSize = f + 'px'; if (Math.max(...[...h.children].map(c => c.offsetWidth)) <= lim) break; } }
-const isPhone = () => innerWidth <= 900;
+/* owner 24 Nov 2026: a real phone always counts as a phone, even while an in-app browser briefly reports a desktop width */
+const isPhone = () => innerWidth <= 900 || (matchMedia('(pointer: coarse)').matches && Math.min(screen.width, screen.height) <= 600);
 document.querySelector('.hn-hero').classList.add('hv-a');
 // phone: the globe is centred exactly in the free space between the search bar and the news ticker (side to side and top to bottom), a little smaller than the screen width
 function globeParams() {
@@ -337,6 +338,8 @@ const sendPlace=()=>{const q=new URLSearchParams(globeParams()),k=q.toString();i
 addEventListener('resize',()=>{clearTimeout(placeTimer);placeTimer=setTimeout(sendPlace,150);});
 hnGlobe.addEventListener('load',()=>{placeSent='';sendPlace();[300,1000,2500].forEach(t=>setTimeout(sendPlace,t));});
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(sendPlace);
+/* also when the text above the globe changes height (popular searches, numbers, headline arriving) */
+if(window.ResizeObserver){const ro=new ResizeObserver(()=>{clearTimeout(placeTimer);placeTimer=setTimeout(sendPlace,100);});['.hn-hero','.hn-search','.hn-pop','.hn-tick'].forEach(q=>{const el=document.querySelector(q);if(el)ro.observe(el);});}
 
 // Start the globe right away (it used to wait for web fonts, which delayed it); re-measure the text it avoids once fonts arrive.
 placeGlobe();
