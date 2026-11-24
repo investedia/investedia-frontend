@@ -16,3 +16,8 @@ These values reach the public browser configuration. No Gemini, Cloudflare, inge
 Missing API URL keeps today's empty-URL/static fallback. Missing analytics defaults to false. If either Supabase value is absent, accounts remain unconfigured and a warning names the missing pair without printing values. With all variables absent, the published configuration retains today's safe static defaults. Local `scripts/serve.py` still uses ignored local public configuration for local development.
 
 The owner reports the existing Supabase Site URL and redirect allowlist are already configured. This change does not edit Supabase or DNS. Runtime public config changes require a separately approved Pages rebuild; news articles subsequently update through the Worker API without per-article builds.
+
+
+The existing `ARTICLE_STORE` private R2 binding also supports exactly `/assets/globe/markets.json` and `/assets/globe/fx-ecb.json`. Their readers retain the deployed static file when R2 is absent, invalid, equal-dated or older; market universes must match the deployed static universe. Only complete checksummed `published/data/` objects written by the backend's separately enabled data publisher are eligible. GET preserves every byte and source date; HEAD has matching headers and no body. Private trial/state paths are never routed. Missing storage needs no owner action while static fallback is intended. No data schedules change in this frontend patch.
+
+The exact `/assets/globe/site-stats.json` route forwards to the existing guarded article-total reader; the earlier extensionless route remains available.
