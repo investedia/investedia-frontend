@@ -330,6 +330,13 @@ document.querySelector('.hn-modes').onclick=e=>{const b=e.target.closest('[data-
 const GLOBE_PAGE = /(^|\.)investedia\.com$|\.pages\.dev$/.test(location.hostname) ? 'news' : 'news.html';
 const placeGlobe = () => { syncHomeMode();hnGlobe.src = 'assets/globe/' + GLOBE_PAGE + '?embed=1&v=p4-markets-1&' + globeParams()+(homeGlobeMode!=='news'?'&mode='+homeGlobeMode:''); };
 addEventListener('resize',()=>{syncHomeMode();sendGlobeMode();});
+/* owner 24 Nov 2026: the globe's place is measured when the page opens; in-app browsers (links from other apps) first report a desktop width,
+   so re-measure once the page settles and on every size change, and move the globe there (no reload) */
+let placeSent='',placeTimer=0;
+const sendPlace=()=>{const q=new URLSearchParams(globeParams()),k=q.toString();if(k===placeSent||!hnGlobe.contentWindow)return;placeSent=k;hnGlobe.contentWindow.postMessage({type:'inv-place',cx:+q.get('cx'),cy:+q.get('cy'),r:+q.get('r')},location.origin);};
+addEventListener('resize',()=>{clearTimeout(placeTimer);placeTimer=setTimeout(sendPlace,150);});
+hnGlobe.addEventListener('load',()=>{placeSent='';sendPlace();[300,1000,2500].forEach(t=>setTimeout(sendPlace,t));});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(sendPlace);
 
 // Start the globe right away (it used to wait for web fonts, which delayed it); re-measure the text it avoids once fonts arrive.
 placeGlobe();

@@ -1812,10 +1812,14 @@ function paintSheet(h, rest) {  // rest = a resting position (also re-pads the a
   if (rest) { panel.style.setProperty('--sheet-pad', drop); panel.style.setProperty('--sheet-visible', h + 'px'); panel.style.setProperty('--sheet-offset', (H * .92 - h) + 'px'); }
 }
 let cyT = 0, W = 0, H = 0, R0 = 0, R = 0, cx = 0, cy = 0, Z = 1, Zt = 1, lon0 = -15, lat0 = 24, ZMAX = 6, globeBox = { left: 0, top: 0, right: 0, bottom: 0 };
+/* owner 24 Nov 2026: the homepage re-measures where the globe sits once the page settles (in-app browsers first report a desktop width,
+   which put the globe on the left, half off screen) and sends the new place here instead of reloading the globe */
+addEventListener('message', e => { if (e.origin !== location.origin || !e.data || e.data.type !== 'inv-place') return; const p = e.data;
+  if (![p.cx, p.cy, p.r].every(Number.isFinite)) return; window.EMBED_PLACE = { cx: p.cx, cy: p.cy, r: p.r }; size(); R = R0 * Z; });
 function size() {
   const dpr = Math.min(3, devicePixelRatio || 1); W = innerWidth; /* owner 20 Nov 2026: full density on 3x phones (was capped at 2) */ H = innerHeight; { const cw = Math.round(W * dpr), ch = Math.round(H * dpr); if (cv.width !== cw || cv.height !== ch) { cv.width = cw; cv.height = ch; } } ctx.setTransform(dpr, 0, 0, dpr, 0, 0);  /* owner 21 Nov 2026: resizing the canvas wipes it, and iOS pauses redraws while scrolling: only resize when the size really changed */
   // Measure the real controls: the drawing area stays clear of every panel and filter.
-  if (EMBED) { const q = new URLSearchParams(location.search); cx = W * (+q.get('cx') || .5); cyT = H * (+q.get('cy') || .5); R0 = Math.min(W, H) * (+q.get('r') || .42); globeBox = { left: 0, top: 0, right: W, bottom: H }; }
+  if (EMBED) { const q = new URLSearchParams(location.search), pl = window.EMBED_PLACE || { cx: +q.get('cx'), cy: +q.get('cy'), r: +q.get('r') }; cx = W * (pl.cx || .5); cyT = H * (pl.cy || .5); R0 = Math.min(W, H) * (pl.r || .42); globeBox = { left: 0, top: 0, right: W, bottom: H }; }
   else if (phone()) {
     phoneMapTop = document.documentElement.classList.contains('proj-mode') ? 72 : document.querySelector('.top').getBoundingClientRect().bottom + 12;
     // Size against the unobstructed map, never against the sheet's remaining space.
