@@ -1544,3 +1544,11 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .notif-dd .al-meter{height:5px}
 .notif-dd a.al-pro{text-decoration:none}.notif-dd a.al-pro:hover{color:var(--fg);border-color:var(--fg-2)}
 .notif-dd a.al-pro{display:inline-block!important;min-height:0!important;min-width:0!important;height:auto!important;padding:0 6px!important;line-height:17px!important}
+
+/* owner 24 Nov 2026 (option 4B): header links show a short orange underline on hover instead of the grey pill */
+.nav>li.nav-pill{display:none!important}
+.nav-link{position:relative}
+.nav-link:hover,.nav-link[aria-expanded="true"]{background:none!important;color:var(--fg)}
+.nav-link::after{content:"";position:absolute;left:10px;right:10px;bottom:3px;height:2px;border-radius:2px;background:#FF7A1A;transform:scaleX(0);transition:transform .2s ease}
+.nav-link:hover::after,.nav-link[aria-expanded="true"]::after{transform:scaleX(1)}
+@media (prefers-reduced-motion:reduce){.nav-link::after{transition:none}}

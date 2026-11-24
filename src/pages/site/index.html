@@ -148,6 +148,8 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
 @media (min-width:901px){.hn-copy .hn{margin-left:max(52%,calc(50vw + 20px));max-width:600px;padding-right:32px}
  .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(10,10,11,.85) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}
  :root[data-theme="light"] .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(247,247,248,.82) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}}
+/* owner 24 Nov 2026 (option 1B): numbers in three equal centred columns under the headline */
+@media (min-width:901px){.hn-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;width:min(560px,100%);max-width:none}.hn-facts>div{text-align:center}}
 @media (max-width:900px){.hn-facts{width:100%;gap:10px 32px}.hn-facts b{font-size:21px}.hn-facts span{font-size:11.5px}}
 /* Homepage starfield: stars sit behind the globe only (left part of the hero) */
 #hnStars{position:absolute;left:0;top:0;width:52%;height:100%;z-index:0;pointer-events:none}
@@ -243,7 +245,7 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
     <div class="hn-pop" id="hnPop" aria-label="Popular searches"><span class="hn-pop-l">Popular searches</span></div>
   </div></div>
   <div class="hn-ctl" role="group" aria-label="Globe controls">
-    <div class="hn-modes" role="group" aria-label="Globe mode"><button type="button" data-globe-mode="news" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2.5"/><path d="M8 9h8M8 12.5h8M8 16h5"/></svg><span>News</span></button><button type="button" data-globe-mode="markets" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4v16M12 7v12M18 3v14"/><rect x="4.5" y="8" width="3" height="7" rx=".6"/><rect x="10.5" y="10" width="3" height="5" rx=".6"/><rect x="16.5" y="6" width="3" height="7" rx=".6"/></svg><span>Markets</span></button><button type="button" class="hn-proj" data-globe-mode="projects" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V9l6-4 6 4v11M10 20v-5h4v5"/></svg><span>Projects</span></button></div>
+    <div class="hn-modes" role="group" aria-label="Globe mode"><button type="button" data-globe-mode="news" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2"/><path d="M8.5 8.5a5 5 0 0 0 0 7M15.5 8.5a5 5 0 0 1 0 7M5.6 5.6a9 9 0 0 0 0 12.8M18.4 5.6a9 9 0 0 1 0 12.8"/></svg><span>News</span></button><button type="button" data-globe-mode="markets" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4v16M12 7v12M18 3v14"/><rect x="4.5" y="8" width="3" height="7" rx=".6"/><rect x="10.5" y="10" width="3" height="5" rx=".6"/><rect x="16.5" y="6" width="3" height="7" rx=".6"/></svg><span>Markets</span></button><button type="button" class="hn-proj" data-globe-mode="projects" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V9l6-4 6 4v11M10 20v-5h4v5"/></svg><span>Projects</span></button></div>
     <div class="hn-tick"><div class="hn" id="hnTick"></div></div>
     <a class="hn-open" href="/globe" aria-label="Open the globe"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg><span class="t">Open globe</span></a>
   </div>
