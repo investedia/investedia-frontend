@@ -112,7 +112,7 @@
 
   // ---------- brand ----------
   const mark = `<svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" fill="#000"/><path d="M0 31 11 24.5l7 4.5 10-10 12 6.5V40H0z" fill="#1e1e21"/><path d="M0 28 11 21.5l7 4.5 10-10 12 6.5" fill="none" stroke="#FF7A1A" stroke-width="4"/></svg>`;
-  const brand = `<a class="brand notranslate" translate="no" href="index.html" aria-label="Investedia home">${mark}<b>Invested<span class="i">i</span>a</b></a>`;
+  const brand = `<a class="brand notranslate" translate="no" href="index.html" aria-label="Investedia home"><b>Invested<span class="i">i</span>a</b></a>`;
 
   // ---------- header ----------
   // Mega-menu content per market category: link columns + popular assets
