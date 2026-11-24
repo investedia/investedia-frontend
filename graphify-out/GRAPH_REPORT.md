@@ -1,17 +1,17 @@
-# Graph Report - investedia-index-deploy-fix-ry0sf8ho  (2026-11-24)
+# Graph Report - investedia-data-readers-20261124  (2026-11-24)
 
 ## Corpus Check
-- 12315 files · ~7,825,840 words
+- 12816 files · ~7,904,621 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 65 file(s) not represented in the graph (top: .css 55, (none) 6, .woff2 2)
 
 ## Summary
-- 1970 nodes · 3562 edges · 187 communities (109 shown, 78 thin omitted)
+- 1982 nodes · 3582 edges · 187 communities (109 shown, 78 thin omitted)
 - Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 269 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6b5d2d00`
+- Built from commit: `f2b5010d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -19,20 +19,20 @@
 - script.js
 - js/home-news.js
 - connections-live.mjs
-- fixtureExternal
+- globe-dropdowns.spec.mjs
 - economy-history
-- test_market_overview_evidence.py
+- build_market_focus.py
 - js/ui.js
 - market-mode.js
 - browser-support.mjs
 - ref_node_fs
-- corporate_significance
+- art
 - home.js
 - projects-mode.js
 - market-focus-preview.js
 - projects-data.yml
 - connections.py
-- ref_node_test
+- ref_node_assert
 - Projects source and refresh
 - make_briefing.py
 - pathlib
@@ -57,7 +57,7 @@
 - js/live-data.js
 - js/locale.js
 - redesign.spec.mjs
-- change_pass
+- p4-markets-globe.spec.mjs
 - EconomyHistoryTests
 - js/peek.js
 - js/since-news.js
@@ -69,9 +69,9 @@
 - assets/ui.js
 - article-index-r2-reader.test.mjs
 - SecondPass
-- indices-commodities.spec.mjs
+- markets.json.js
 - build_company_hq.py
-- library-index/[[path]].js
+- site-stats.js
 - coStart
 - js/connections-source.js
 - js/mock.js
@@ -89,14 +89,14 @@
 - second_pass.py
 - datetime
 - p0b-history-connections.spec.mjs
-- test_market_focus_relevance.py
+- test_market_overview.py
 - markets-data.yml
 - news-fallback.yml
 - briefing.js
 - gleif_pass.py
 - assets/markets-heat.js
 - boot
-- build_market_focus.py
+- hashlib
 - PublicConfigurationTest
 - CompanyHQTests
 - assets/globe-companies.js
@@ -110,7 +110,7 @@
 - since-news.spec.mjs
 - build_company_badges.py
 - P19 · B1, B2, B6 only · existing interface retained
-- cleanup-review.spec.mjs
+- globe-select.spec.mjs
 - NewsLibraryIndex
 - assets/calls-ui.js
 - assets/news-feed.js
@@ -208,17 +208,17 @@ Nodes (49): ago(), card(), CAT, company(), confirmedChip(), confirmedFeatured(),
 Cohesion: 0.33
 Nodes (4): out, reports, ROOT, saved
 
-### Community 3 - "fixtureExternal"
-Cohesion: 0.08
-Nodes (17): fixtureExternal(), viewport(), ctx(), CAPS, markets, results, WATCH, pages (+9 more)
+### Community 3 - "globe-dropdowns.spec.mjs"
+Cohesion: 0.33
+Nodes (4): CAPS, markets, results, WATCH
 
 ### Community 4 - "economy-history"
 Cohesion: 0.06
 Nodes (36): concurrency, cancel-in-progress, group, if, runs-on, steps, timeout-minutes, default (+28 more)
 
-### Community 5 - "test_market_overview_evidence.py"
-Cohesion: 0.20
-Nodes (9): art(), Physical, Relevance, load(), main(), geo_allowed(), market_relevance(), _named() (+1 more)
+### Community 5 - "build_market_focus.py"
+Cohesion: 0.14
+Nodes (13): art(), Physical, Relevance, category(), project(), rank(), reserve_corporate_slot(), load() (+5 more)
 
 ### Community 6 - "js/ui.js"
 Cohesion: 0.07
@@ -229,16 +229,16 @@ Cohesion: 0.13
 Nodes (33): drawMarketMode(), MARKET, marketClose(), marketControl, marketCountry(), marketInit(), marketNotifyPanel(), marketNum() (+25 more)
 
 ### Community 8 - "browser-support.mjs"
-Cohesion: 0.09
-Nodes (15): rows, base, chromium, launch(), widths, rows, out, results (+7 more)
+Cohesion: 0.07
+Nodes (25): rows, base, chromium, fixtureExternal(), launch(), viewport(), widths, ctx() (+17 more)
 
 ### Community 9 - "ref_node_fs"
 Cohesion: 0.10
-Nodes (14): pages, requested, serious, details, optional, pages, requested, economy (+6 more)
+Nodes (13): pages, requested, serious, results, routes, details, optional, pages (+5 more)
 
-### Community 10 - "corporate_significance"
-Cohesion: 0.18
-Nodes (5): art(), CorporateSlotTests, OverviewTests, corporate_significance(), overview_rank()
+### Community 10 - "art"
+Cohesion: 0.21
+Nodes (3): art(), CorporateSlotTests, OverviewTests
 
 ### Community 11 - "home.js"
 Cohesion: 0.21
@@ -260,12 +260,12 @@ Nodes (21): concurrency, cancel-in-progress, group, jobs, refresh, name, on, wor
 Cohesion: 0.15
 Nodes (7): build(), generate(), check(), numbers(), km(), load(), main()
 
-### Community 16 - "ref_node_test"
+### Community 16 - "ref_node_assert"
 Cohesion: 0.07
-Nodes (13): body, response(), rows, setup(), source, s, s, saved (+5 more)
+Nodes (17): body, response(), rows, setup(), source, s, s, ctx (+9 more)
 
 ### Community 18 - "make_briefing.py"
-Cohesion: 0.17
+Cohesion: 0.18
 Nodes (6): run(), chapters(), duration(), main(), speak(), ssml()
 
 ### Community 19 - "pathlib"
@@ -301,8 +301,8 @@ Cohesion: 0.19
 Nodes (15): add(), cells(), fetch(), get(), parse_brvm(), parse_gh(), parse_ke(), add() (+7 more)
 
 ### Community 27 - "json"
-Cohesion: 0.08
-Nodes (19): fetch_yahoo(), listing(), main(), source_symbol(), fetch(), main(), img(), main() (+11 more)
+Cohesion: 0.11
+Nodes (14): fetch_yahoo(), listing(), main(), source_symbol(), fetch(), main(), img(), main() (+6 more)
 
 ### Community 28 - "markets-m1.spec.mjs"
 Cohesion: 0.15
@@ -348,9 +348,9 @@ Nodes (7): apply(), element(), language(), schedule(), setLanguage(), start(), t
 Cohesion: 0.32
 Nodes (5): iso, mk(), priced, results, usable()
 
-### Community 41 - "change_pass"
-Cohesion: 0.29
-Nodes (8): before_pass(), grab(), work(), change_pass(), crop(), edges(), ok(), work()
+### Community 41 - "p4-markets-globe.spec.mjs"
+Cohesion: 0.22
+Nodes (4): economy, registry, results, root
 
 ### Community 43 - "js/peek.js"
 Cohesion: 0.67
@@ -385,19 +385,19 @@ Cohesion: 0.07
 Nodes (16): assetTable(), closeDrawer(), csChoose(), csClose(), csLabel(), csOpen(), csPlace(), enhanceSelect() (+8 more)
 
 ### Community 51 - "article-index-r2-reader.test.mjs"
-Cohesion: 0.33
-Nodes (5): all, fixture(), meta, real, sha()
+Cohesion: 0.22
+Nodes (8): all, fixture(), meta, real, sha(), fixture(), records, sha()
 
-### Community 53 - "indices-commodities.spec.mjs"
-Cohesion: 0.33
-Nodes (3): GROUPS, markets, results
+### Community 53 - "markets.json.js"
+Cohesion: 0.48
+Nodes (5): onRequest(), FILES, onRequest(), readSnapshot(), stamp()
 
 ### Community 54 - "build_company_hq.py"
 Cohesion: 0.11
 Nodes (18): binding(), fixture(), fetch(), HQCityResolutionTests, active_rows(), annotate_review(), check_reference_rows(), collect() (+10 more)
 
-### Community 55 - "library-index/[[path]].js"
-Cohesion: 0.73
+### Community 55 - "site-stats.js"
+Cohesion: 0.62
 Nodes (4): indexHeaders(), onRequest(), publishedIndex(), onRequest()
 
 ### Community 57 - "js/connections-source.js"
@@ -441,12 +441,12 @@ Cohesion: 0.13
 Nodes (17): chunks(), current(), decide(), same_name(), entities(), get(), item_rows(), main() (+9 more)
 
 ### Community 83 - "datetime"
-Cohesion: 0.25
+Cohesion: 0.19
 Nodes (7): art(), T, build(), first_sentence(), similar(), week(), write()
 
-### Community 85 - "test_market_focus_relevance.py"
-Cohesion: 0.18
-Nodes (5): CountryRankTests, RelevanceTests, company_relevance(), country_rank(), named()
+### Community 85 - "test_market_overview.py"
+Cohesion: 0.16
+Nodes (7): CountryRankTests, RelevanceTests, company_relevance(), corporate_significance(), country_rank(), named(), overview_rank()
 
 ### Community 86 - "markets-data.yml"
 Cohesion: 0.10
@@ -461,8 +461,8 @@ Cohesion: 0.23
 Nodes (15): build(), draw(), mCard(), paintBtn(), paintCard(), pause(), pauseOnly(), place() (+7 more)
 
 ### Community 89 - "gleif_pass.py"
-Cohesion: 0.19
-Nodes (11): by_isin(), candidates(), decide(), fold(), geonames(), get_json(), located(), main() (+3 more)
+Cohesion: 0.09
+Nodes (24): before_pass(), grab(), work(), change_pass(), crop(), edges(), ok(), work() (+16 more)
 
 ### Community 90 - "assets/markets-heat.js"
 Cohesion: 0.21
@@ -472,9 +472,9 @@ Nodes (16): commodities(), connect(), crypto(), disconnect(), draw(), flush(), f
 Cohesion: 0.18
 Nodes (13): html(), mark(), results(), boot(), card(), load(), render(), row() (+5 more)
 
-### Community 92 - "build_market_focus.py"
-Cohesion: 0.12
-Nodes (11): build(), category(), project(), rank(), reserve_corporate_slot(), build(), fetch(), fingerprint() (+3 more)
+### Community 92 - "hashlib"
+Cohesion: 0.13
+Nodes (9): convert(), km(), build(), build(), fetch(), fingerprint(), roll(), row() (+1 more)
 
 ### Community 95 - "assets/globe-companies.js"
 Cohesion: 0.28
@@ -485,8 +485,8 @@ Cohesion: 0.28
 Nodes (10): active(), badgeHTML(), draw(), filtered(), floatCard(), img(), panelHTML(), refresh() (+2 more)
 
 ### Community 97 - "argparse"
-Cohesion: 0.15
-Nodes (7): main(), prepare(), main(), materialise(), parse(), convert(), km()
+Cohesion: 0.23
+Nodes (5): main(), prepare(), main(), materialise(), parse()
 
 ### Community 99 - "assets/economy-charts.js"
 Cohesion: 0.42
@@ -638,17 +638,17 @@ Nodes (3): Files, Projects dashboard — review, Validation
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `frame()` connect `script.js` to `browser-support.mjs`?**
-  _High betweenness centrality (0.029) - this node is a cross-community bridge._
+- **Why does `frame()` connect `script.js` to `globe-select.spec.mjs`?**
+  _High betweenness centrality (0.030) - this node is a cross-community bridge._
 - **Should `script.js` be split into smaller, more focused modules?**
   _Cohesion score 0.05487269534679543 - nodes in this community are weakly interconnected._
-- **Why does `projRender()` connect `projects-mode.js` to `script.js`?**
-  _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **Should `js/home-news.js` be split into smaller, more focused modules?**
   _Cohesion score 0.0880503144654088 - nodes in this community are weakly interconnected._
-- **Should `fixtureExternal` be split into smaller, more focused modules?**
-  _Cohesion score 0.08266129032258064 - nodes in this community are weakly interconnected._
 - **Should `economy-history` be split into smaller, more focused modules?**
   _Cohesion score 0.06006006006006006 - nodes in this community are weakly interconnected._
+- **Should `build_market_focus.py` be split into smaller, more focused modules?**
+  _Cohesion score 0.14393939393939395 - nodes in this community are weakly interconnected._
 - **Should `js/ui.js` be split into smaller, more focused modules?**
   _Cohesion score 0.07301587301587302 - nodes in this community are weakly interconnected._
+- **Should `market-mode.js` be split into smaller, more focused modules?**
+  _Cohesion score 0.13015873015873017 - nodes in this community are weakly interconnected._
