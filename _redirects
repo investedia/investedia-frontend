@@ -7,3 +7,7 @@
 /call.html /news 302
 /ai-insights /news 301
 /ai-insights.html /news 301
+
+# Clean globe address (owner, 24 Nov 2026)
+/globe/ /globe 301
+/globe /assets/globe/news 200
