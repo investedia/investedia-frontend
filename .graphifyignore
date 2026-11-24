@@ -1,1 +1,5 @@
 .local/**
+
+# Generated mirrors and company pages repeat the source pages.
+docs/**
+companies/**
