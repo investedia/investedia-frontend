@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script>/* clean address investedia.com/globe serves this page: keep relative links working */if(/^\/globe\/?$/.test(location.pathname))document.write('<base href="/assets/globe/">')</script>
 <link rel="stylesheet" href="../economy-charts.css">
 <script src="../economy-charts.js"></script>
 <script src="../news-filters.js"></script>
@@ -1831,7 +1832,7 @@ function drawMarketsOverlay(t) {
 const exPick = (x, y) => exHits.find(h => x >= h.x && x <= h.x + h.w && y >= h.y && y <= h.y + h.h);
 
 // ===== Filters =====
-const F = { country:'', from:'', to:'', cat: 'all', lens: 'all', region: 'global', win: '48h',  // homepage and Globe page open on the last 48 hours
+const F = { country:'', from:'', to:'', cat: 'all', lens: 'all', region: 'global', win: '24h',  // owner 24 Nov: homepage and Globe page open on the last 24 hours (fewer lines)
   mine: new URLSearchParams(location.search).get('mine') === '1' }; let play = null;
 const winMin = () => (WINS.find(w => w[0] === F.win) || [F.win, '', 2880])[2];  // '48h' is the homepage-only window (no button)
 const inTime = s => play ? s.t >= play.start && s.t <= play.cur : (!s.historical || winMin() > 2880) && T0 - s.t <= winMin() * 60000;
@@ -3230,7 +3231,17 @@ function drawStars(now) {
   }
 }
 let last = performance.now();
+/* owner 24 Nov 2026: pause the globe when it is off screen or nobody has touched it for a while (smoother site, less battery).
+   Any touch, mouse, key, wheel or message wakes it at once; flights, glides and zoom animations always finish first. */
+const IDLE_MS = 30000; let lastInput = performance.now(), onScreen = true, asleep = false;
+const globeWake = () => { lastInput = performance.now(); if (asleep) { asleep = false; last = performance.now(); } };
+window.__globeWake = globeWake;
+for (const ev of ['pointerdown', 'pointermove', 'wheel', 'keydown', 'touchstart', 'message', 'resize', 'focus']) addEventListener(ev, globeWake, { capture: true, passive: true });
+document.addEventListener('visibilitychange', globeWake);
+try { new IntersectionObserver(es => { onScreen = es.some(e => e.isIntersecting); if (onScreen) globeWake(); }).observe(cv); } catch (e) {}
+const globeBusy = () => !!(fly || spin || modeSpin || drag || pinch || Math.abs(Zt - Z) > .0001);
 function frame(t) {
+  if (!globeBusy() && (document.hidden || !onScreen || t - lastInput > IDLE_MS)) { asleep = true; requestAnimationFrame(frame); return; }
   const dt = Math.min(50, t - last); last = t;
   if (modeSpin) { const k = Math.min(1, (t - modeSpin.t0) / modeSpin.dur), inc = -(modeSpin.deg || 360) * spinEase(k) - modeSpin.done; modeSpin.done += inc; lon0 += inc; if (k >= 1) modeSpin = null; }
   if (fly) { spin = null; const k = Math.min(1, (t - fly.t0) / fly.dur), e = ease(k); lon0 = fly.from[0] + fly.dl * e; lat0 = fly.from[1] + (fly.la - fly.from[1]) * e; Zt = fly.from[2] + (fly.z - fly.from[2]) * e; if (k >= 1) fly = null; }
@@ -3420,7 +3431,7 @@ $('fsheet').querySelector('.fs-head').addEventListener('pointerup',e=>{if(filter
 $('fsheet').querySelector('.fs-head').style.touchAction='none';
 $('m-filters').onclick = openFilters; $('fs-close').onclick = () => closeFilters(); $('fsback').onclick = () => closeFilters(); $('fs-show').onclick = () => closeFilters();
 $('m-search').onclick = () => { if (window.InvPeek) InvPeek.search(); else qi.focus(); };
-$('fs-reset').onclick = () => { F.mine = false;F.country=F.from=F.to='';for (const [box, k] of [[$('cats'), 'all'], [$('regions'), 'global'], [$('wins'), '48h']]) box.querySelector(`[data-k="${k}"]`).click(); };
+$('fs-reset').onclick = () => { F.mine = false;F.country=F.from=F.to='';for (const [box, k] of [[$('cats'), 'all'], [$('regions'), 'global'], [$('wins'), '24h']]) box.querySelector(`[data-k="${k}"]`).click(); };
 $('fsheet').addEventListener('keydown', e => {
   if (e.key === 'Escape') { e.stopPropagation(); closeFilters(); return; }
   if (e.key !== 'Tab') return;
@@ -3430,7 +3441,7 @@ $('fsheet').addEventListener('keydown', e => {
   else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
 });
 function updateFiltersUI() {
-  const n = (F.lens !== 'all') + (F.region !== 'global') + (F.win !== '48h') + !!F.country + !!F.from + !!F.to, c = $('m-fcount');
+  const n = (F.lens !== 'all') + (F.region !== 'global') + (F.win !== '24h') + !!F.country + !!F.from + !!F.to, c = $('m-fcount');
   c.hidden = !n; c.textContent = n; $('m-filters').setAttribute('aria-label', n ? `Filters, ${n} active` : 'Filters');
   $('fs-show').textContent = `Show ${shown.length} ${shown.length === 1 ? 'article' : 'articles'}`;
 }
@@ -3518,7 +3529,7 @@ placeFilters(phone()); addEventListener('resize', () => placeFilters(phone()));
 // ===== Start =====
 let LIVE = null;
 const load = u => fetch(u, { cache: 'no-cache' }).then(r => { if (!r.ok) throw 0; return r.json(); });
-newsReady = window.InvNewsSource.load(NEWS_URL)
+newsReady = window.InvNewsSource.load(NEWS_URL).finally(() => window.__globeWake && window.__globeWake())
   // homepage globe: the live file holds only the newest articles, so add the archive's articles from the last 48 hours
   .then(raw => raw.demo ? raw : load('news-48h.json').catch(() => load('news-archive.json')).then(a => { const have = new Set(raw.stories.map(s => s.id)), cut = Date.now() - 48 * 3600e3;
     return { ...raw, stories: raw.stories.concat((a.stories || []).filter(s => !have.has(s.id) && Date.parse(s.published_at) >= cut)) }; }).catch(() => raw))
