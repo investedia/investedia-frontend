@@ -10,3 +10,4 @@ qa/
 .DS_Store
 
 .local/
+.wrangler/
