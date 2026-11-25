@@ -39,7 +39,8 @@
   const related = s => { const keys = new Set((s.impacts || []).map(i => (i.ticker || i.name || '').toLowerCase())); return S.stories.filter(o => o.id !== s.id && Date.now() - Date.parse(o.published_at) < 30 * 864e5 && ((o.impacts || []).some(i => keys.has((i.ticker || i.name || '').toLowerCase())) || (o.location?.country && o.location.country === s.location?.country && (o.category === s.category)))).sort((x, y) => Date.parse(y.published_at) - Date.parse(x.published_at)).slice(0, 2); };
   const relBlock = s => { const L = related(s); return L.length ? `<div class="nf-alsow"><span class="nf-eb">Related news</span>${L.map(o => `<a class="nf-rel" href="story.html?id=${encodeURIComponent(o.id)}"><span>${esc(o.headline)}</span><small>${ago(o.published_at)}</small></a>`).join('')}</div>` : ''; };
   const watchRow = (a) => { const m = move(a, S.win); return `<div class="nf-rx" data-s="${esc(a.s)}" role="button" tabindex="0"><span>${aIcon(a)}</span><span class="nf-nmw"><b>${esc(a.n)}</b><small class="nf-why">Home market for this article</small></span><span></span>${line(series(a, S.win), 60, 20, col(m))}<span class="mono nf-mv ${cls(m)}">${fmt(m)}<small>${S.win === 'd' ? '24h' : S.win === 'w' ? 'week' : 'month'}</small></span></div>`; };
-  const thumbOf = s => s.image ? `assets/globe/${esc(s.image.file)}` : '';
+  const withPhoto = s => { if (s && !s.image && window.TopicPhoto) s.image = TopicPhoto.pick(s.id, [s.headline, s.summary].join(' '), s.category); return s; }; // owner 24 Nov 2026: topic photo, not the globe
+  const thumbOf = s => (withPhoto(s), s.image) ? `assets/globe/${esc(s.image.file)}` : '';
   const hit = (s, q) => !q || [s.headline, s.summary, ...(s.entities || []).map(e => e.name), ...(s.impacts || []).map(i => i.name), s.location?.country, s.location?.place].some(t => String(t || '').toLowerCase().includes(q));
   function hero() {
     const day = S.stories.filter(s => Date.now() - Date.parse(s.published_at) < 36 * 36e5);
