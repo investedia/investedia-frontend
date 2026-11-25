@@ -44,6 +44,7 @@
     const thread = [s, ...rel].sort((a, b) => Date.parse(a.published_at) - Date.parse(b.published_at)).slice(-6);
     const others = i => all.filter(x => x.id !== s.id && (x.impacts || []).some(z => z.name === i.name)).slice(0, 2).map(x => ({ x, z: x.impacts.find(z => z.name === i.name) }));
     const imp = s.impacts || [], e0 = imp[0], follow = (s.entities?.[0]?.name) || (e0 && e0.name) || nm(s.location.country);
+    if (!s.image && window.TopicPhoto) s.image = TopicPhoto.pick(s.id, [s.headline, s.summary].join(' '), s.category); // owner 24 Nov 2026: topic photo, not the globe
     const photo = s.image ? `<div class="sp-im"><img class="ph" src="assets/globe/${esc(s.image.file)}" alt="${esc(s.image.alt || '')}"><span class="cr">${s.image.kind === 'place' ? 'Photo' : 'Illustration'} · ${esc(s.image.credit || '')} · ${esc(s.image.source || '')}</span></div>` : snip(s);
     root.innerHTML = `<a class="sp-back" href="news.html">← News</a>
     <div class="sp-pg"><div><div class="sp-m">${fl(ISO[s.location.country])}<b>${esc(s.location.place.split(',')[0])}</b><span>· ${esc(CAT[s.category] || '')} · ${ago(s.published_at)}</span></div><h1>${esc(s.headline)}</h1><button type="button" class="sp-share" id="sp-share">Share</button>${photo}<p class="sp-sum">${esc(s.summary)}</p><div class="sp-more m" hidden></div>

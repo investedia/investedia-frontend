@@ -8,7 +8,7 @@ function initArticles() {
   const DATES = [['', 'Any time'], ['1d', 'Today'], ['7d', 'Last 7 days'], ['30d', 'Last 30 days']];
   const fmt = n => n.toLocaleString('en-US'), nice = c => CAT[c] || (c ? c[0].toUpperCase() + c.slice(1) : 'News');
   const link = r => 'story.html?id=' + encodeURIComponent(r.id);
-  const img = r => r.i ? 'assets/globe/' + r.i : null
+  const img = r => { if (!r.i && window.TopicPhoto) { const p = TopicPhoto.pick(r.id, r.h, r.c); if (p) r.i = p.file; } return r.i ? 'assets/globe/' + r.i : null; } // owner 24 Nov 2026: topic photo instead of the night map
   // Owner 22 Nov 2026: articles without a photo show a night map of where it happened (NASA VIIRS Black Marble, via our tile cache)
   const GIBS = /(^|\.)investedia\.com$/.test(location.hostname) ? '/gibs/' : 'https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/';
   const night = r => { if (typeof r.la !== 'number' || typeof r.lo !== 'number') return '';
