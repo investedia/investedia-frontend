@@ -29,11 +29,6 @@ export async function onRequestGet(context) {
   const title = clip(s.headline, 110), desc = clip(s.summary || s.why || '', 200) || 'What happened, why it matters, and which markets it moves.';
   let img = s.image && s.image.file ? s.image.file : (pickTopicPhoto(s.id, [s.headline, s.summary].join(' '), s.category) || {}).file;
   let image = img ? SITE + '/assets/globe/' + img.replace(/^\/+/, '') : SITE + '/assets/og-default.png';
-  // Owner 25 Nov 2026 (option B1): prefer the branded copy with the small logo, made by tools/make-og-branded.py.
-  if (img) {
-    const og = '/assets/og/' + img.split('/').pop().replace(/\.[a-z]+$/i, '') + '.jpg';
-    try { const r = await fetch(new URL(og, url.origin), { method: 'HEAD', cf: { cacheTtl: 3600 } }); if (r.ok && (r.headers.get('Content-Type') || '').startsWith('image/')) image = SITE + og; } catch {}
-  }
   const link = SITE + '/story?id=' + encodeURIComponent(id);
   const set = v => ({ element(e) { e.setAttribute('content', v); } });
   const res = new HTMLRewriter()
