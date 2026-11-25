@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t==='system'?(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'):t}catch(e){}</script><style>html{background:#0a0a0b}html[data-theme=light]{background:#fff}</style>
-<script src="assets/fetch-share.js?v=441a7fac9f"></script>
-<link rel="stylesheet" href="assets/consent.css?v=441a7fac9f">
-<script src="assets/consent.js?v=441a7fac9f"></script>
+<script src="assets/fetch-share.js?v=330d1be4ef"></script>
+<link rel="stylesheet" href="assets/consent.css?v=330d1be4ef">
+<script src="assets/consent.js?v=330d1be4ef"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Investedia Library · Learn to invest</title>
 <meta name="description" content="The Investedia Library, powered by Guidify: courses by level with certificates, step-by-step tutorials and a plain-English glossary.">
@@ -26,8 +26,8 @@
 <meta name="twitter:image" content="https://www.investedia.com/assets/og-default.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.investedia.com/#org","name":"Investedia","url":"https://www.investedia.com/","logo":"https://www.investedia.com/assets/app/icon-512.png","sameAs":["https://www.linkedin.com/company/investedia/","https://x.com/investedia","https://www.youtube.com/@investedia","https://www.instagram.com/investedia/"]},{"@type":"WebSite","@id":"https://www.investedia.com/#site","name":"Investedia","alternateName":"Investedia.com","url":"https://www.investedia.com/","publisher":{"@id":"https://www.investedia.com/#org"}}]}</script>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/app.css?v=441a7fac9f">
-<link rel="stylesheet" href="assets/skin.css?v=441a7fac9f">
+<link rel="stylesheet" href="assets/app.css?v=330d1be4ef">
+<link rel="stylesheet" href="assets/skin.css?v=330d1be4ef">
 <link rel="apple-touch-icon" href="assets/app/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -50,21 +50,21 @@
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <script src="assets/quotes.js"></script>
 <script src="assets/news.js"></script>
-<script src="assets/mock.js?v=441a7fac9f"></script>
-<link rel="stylesheet" href="assets/news-menu.css?v=441a7fac9f">
-<script src="assets/runtime-config.js?v=441a7fac9f"></script>
-<script src="assets/live-config.js?v=441a7fac9f"></script>
-<script src="assets/live-data.js?v=441a7fac9f" defer></script>
-<script src="assets/news-source.js?v=441a7fac9f"></script>
-<script src="assets/prefs.js?v=441a7fac9f"></script>
-<script src="assets/peek.js?v=441a7fac9f"></script>
-<script src="assets/sectors.js?v=441a7fac9f"></script>
-<script src="assets/news-menu.js?v=441a7fac9f"></script>
-<script src="assets/locale.js?v=441a7fac9f"></script>
-<script src="assets/ui.js?v=441a7fac9f"></script>
-<script src="assets/push-alerts.js?v=441a7fac9f" defer></script>
-<script src="assets/news-alerts.js?v=441a7fac9f" defer></script>
-<script src="assets/learn.js?v=441a7fac9f"></script>
+<script src="assets/mock.js?v=330d1be4ef"></script>
+<link rel="stylesheet" href="assets/news-menu.css?v=330d1be4ef">
+<script src="assets/runtime-config.js?v=330d1be4ef"></script>
+<script src="assets/live-config.js?v=330d1be4ef"></script>
+<script src="assets/live-data.js?v=330d1be4ef" defer></script>
+<script src="assets/news-source.js?v=330d1be4ef"></script>
+<script src="assets/prefs.js?v=330d1be4ef"></script>
+<script src="assets/peek.js?v=330d1be4ef"></script>
+<script src="assets/sectors.js?v=330d1be4ef"></script>
+<script src="assets/news-menu.js?v=330d1be4ef"></script>
+<script src="assets/locale.js?v=330d1be4ef"></script>
+<script src="assets/ui.js?v=330d1be4ef"></script>
+<script src="assets/push-alerts.js?v=330d1be4ef" defer></script>
+<script src="assets/news-alerts.js?v=330d1be4ef" defer></script>
+<script src="assets/learn.js?v=330d1be4ef"></script>
 <main class="wrap" id="main-content" tabindex="-1">
 <style>
 /* Investedia Library (owner 25 Nov 2026): levels first, search in the catalogue, certificates per level. Courses by Guidify. Numbers in Inter. */
@@ -223,14 +223,30 @@ q.oninput = () => {
 document.getElementById('clear').onclick = () => { q.value = ''; q.oninput(); q.focus(); };
 addEventListener('keydown', e => { if (e.key === '/' && document.activeElement !== q && !/input|textarea/i.test(document.activeElement.tagName)) { e.preventDefault(); q.focus(); } });
 // full certificate previews: same structure, own colour, motif and emblem per level
-const IC = { beg: '<path d="M12 21v-8"/><path d="M12 13c0-4 3-6 7-6 0 4-3 6-7 6z"/><path d="M12 15c0-3-2.4-5-6-5 0 3 2.4 5 6 5z"/>', mid: '<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/>', exp: '<path d="M3 20 10 7l4 7 2-3 5 9z"/><path d="M8.5 10.5 10 12l1.5-1.5"/>' };
+const IC = { beg: '<path d="M12 21v-8"/><path d="M12 13c0-4 3-6 7-6 0 4-3 6-7 6z"/><path d="M12 15c0-3-2.4-5-6-5 0 3 2.4 5 6 5z"/>', mid: '<path d="M3 20h18"/><path d="M4 16l5-5 4 3 6-7"/><circle cx="9" cy="11" r="1.2"/><circle cx="13" cy="14" r="1.2"/><path d="M16 7h3v3"/>', exp: '<path d="M3 20 10 7l4 7 2-3 5 9z"/><path d="M8.5 10.5 10 12l1.5-1.5"/>' };
 function motif(k) {
   let d = '';
-  if (k === 'beg') { for (let y = 0; y < 707; y += 22) for (let x = 560; x < 1000; x += 22) { const r = Math.hypot(x - 930, y - 640); if (r < 420) d += `<circle cx="${x}" cy="${y}" r="${(1.6 * (1 - r / 420) + .4).toFixed(2)}" fill="#0a0a0b" opacity="${(.22 * (1 - r / 420) + .03).toFixed(3)}"/>`; } }
+  // shared dotted globe (same projection as the homepage globe)
+  const ROT = -.2; const globe = (cx, cy, R, col, op0, op1, step) => { let g = ''; const t = .4; for (let la = -80; la <= 80; la += step) for (let lo = -180; lo < 180; lo += step) { const ph = la * Math.PI / 180, lm = lo * Math.PI / 180 + ROT, x = Math.cos(ph) * Math.sin(lm), y0 = Math.sin(ph), z0 = Math.cos(ph) * Math.cos(lm), y = y0 * Math.cos(t) - z0 * Math.sin(t), z = y0 * Math.sin(t) + z0 * Math.cos(t); if (z > 0) g += `<circle cx="${(cx + R * x).toFixed(1)}" cy="${(cy - R * y).toFixed(1)}" r="${(1 + z * .5).toFixed(2)}" fill="${col}" opacity="${(op0 + z * op1).toFixed(3)}"/>`; } return g + `<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="${col}" stroke-opacity="${op0 + .04}"/>`; };
+  if (k === 'beg') d = globe(880, 580, 320, '#0a0a0b', .05, .2, 6);
   else if (k === 'mid') { for (let i = 0; i < 16; i++) { let p = ''; for (let x = 420; x <= 1000; x += 10) { const y = 150 + i * 28 + Math.sin(x / 90 + i * .5) * 22 + Math.cos(x / 47 + i) * 8; p += (x === 420 ? 'M' : 'L') + x + ' ' + y.toFixed(1); } d += `<path d="${p}" fill="none" stroke="#fff" stroke-opacity="${(.04 + .05 * Math.sin(i / 2) ** 2).toFixed(3)}" stroke-width="1.1"/>`; } }
-  else { const cx = 880, cy = 560, R = 330, t = .4; for (let la = -80; la <= 80; la += 6) for (let lo = -180; lo < 180; lo += 6) { const ph = la * Math.PI / 180, lm = lo * Math.PI / 180 + .6, x = Math.cos(ph) * Math.sin(lm), y0 = Math.sin(ph), z0 = Math.cos(ph) * Math.cos(lm), y = y0 * Math.cos(t) - z0 * Math.sin(t), z = y0 * Math.sin(t) + z0 * Math.cos(t); if (z > 0) d += `<circle cx="${(cx + R * x).toFixed(1)}" cy="${(cy - R * y).toFixed(1)}" r="1.1" fill="#fff" opacity="${(.05 + z * .16).toFixed(2)}"/>`; }
-    d += `<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="#fff" stroke-opacity=".08"/>`;
-    for (const [a, b, c, e] of [[740, 440, 860, 330], [860, 330, 960, 420], [740, 440, 800, 560]]) d += `<path d="M${a} ${b} Q${(a + c) / 2} ${Math.min(b, e) - 60} ${c} ${e}" fill="none" stroke="#FF7A1A" stroke-opacity=".55" stroke-width="1.4"/><circle cx="${c}" cy="${e}" r="3.5" fill="#FF7A1A"/><circle cx="${a}" cy="${b}" r="3.5" fill="#FF7A1A"/>`; }
+  else {
+    const cx = 830, cy = 380, R = 225, t = .35;
+    d = globe(cx, cy, R, '#fff', .04, .15, 6);
+    const v = (la, lo) => { const ph = la * Math.PI / 180, lm = lo * Math.PI / 180; return [Math.cos(ph) * Math.sin(lm), Math.sin(ph), Math.cos(ph) * Math.cos(lm)]; };
+    const pr = ([x, y0, z0], h = 1) => { const c = Math.cos(ROT), s0 = Math.sin(ROT), xr = x * c + z0 * s0, zr = -x * s0 + z0 * c; const y = y0 * Math.cos(t) - zr * Math.sin(t), z = y0 * Math.sin(t) + zr * Math.cos(t); return [cx + R * h * xr, cy - R * h * y, z]; };
+    const C = { lon: [51.5, -.1], fra: [50.1, 8.7], lag: [6.5, 3.4], dxb: [25.2, 55.3], jnb: [-26.2, 28], nbo: [-1.3, 36.8], cai: [30, 31.2] };
+    const arcs = [['lon', 'lag'], ['fra', 'dxb'], ['lag', 'jnb'], ['cai', 'nbo'], ['lon', 'cai'], ['dxb', 'nbo']];
+    d += '<defs><linearGradient id="xg" x1="0" x2="1"><stop offset="0" stop-color="#FF7A1A" stop-opacity=".25"/><stop offset=".5" stop-color="#FF9A4D" stop-opacity="1"/><stop offset="1" stop-color="#FF7A1A" stop-opacity=".25"/></linearGradient></defs>';
+    for (const [a, b] of arcs) {
+      const A = v(...C[a]), B = v(...C[b]), dot = A[0] * B[0] + A[1] * B[1] + A[2] * B[2], w = Math.acos(Math.min(1, dot)); let pts = [];
+      for (let i = 0; i <= 48; i++) { const f = i / 48, s1 = Math.sin((1 - f) * w) / Math.sin(w), s2 = Math.sin(f * w) / Math.sin(w), P = [A[0] * s1 + B[0] * s2, A[1] * s1 + B[1] * s2, A[2] * s1 + B[2] * s2], h = 1 + .2 * w * Math.sin(Math.PI * f); pts.push(pr(P, h)); }
+      if (pts.some(q => q[2] < -.05)) continue;
+      const path = 'M' + pts.map(q => q[0].toFixed(1) + ' ' + q[1].toFixed(1)).join(' L');
+      d += `<path d="${path}" fill="none" stroke="#FF7A1A" stroke-opacity=".18" stroke-width="5" stroke-linecap="round"/><path d="${path}" fill="none" stroke="url(#xg)" stroke-width="1.6" stroke-linecap="round"/>`;
+    }
+    for (const key of Object.keys(C)) { const q = pr(v(...C[key])); if (q[2] > 0) d += `<circle cx="${q[0].toFixed(1)}" cy="${q[1].toFixed(1)}" r="9" fill="#FF7A1A" opacity=".14"/><circle cx="${q[0].toFixed(1)}" cy="${q[1].toFixed(1)}" r="3.4" fill="#FF7A1A"/>`; }
+  }
   return `<svg class="motif" viewBox="0 0 1000 707" aria-hidden="true">${d}</svg>`;
 }
 function emblem(k) { const n = { beg: 1, mid: 2, exp: 3 }[k], col = k === 'beg' ? '#0a0a0b' : k === 'mid' ? '#fff' : '#FF7A1A'; let r = ''; for (let i = 0; i < n; i++) r += `<circle cx="46" cy="46" r="${42 - i * 7}" fill="none" stroke="${col}" stroke-width="1.4"/>`; return `<svg class="emb" viewBox="0 0 92 92" aria-hidden="true">${r}<svg x="34" y="34" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="${col}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${IC[k]}</svg></svg>`; }
