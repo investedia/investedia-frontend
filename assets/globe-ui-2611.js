@@ -3,13 +3,12 @@
 //    longer shows twice (panel + "Sector overview +" chip).
 //  - Top articles: pin, minimise and close share one tidy button row.
 //  - Briefing: never on the Markets globe (no top-right button, no strip tab), so Markets overview moves up.
-//    News keeps it in ONE place: the strip tab (default) or the top-right button (?bf=top).
-//  - Search bar: glass styles to choose from (?sb=a|b|c; preview only until the owner picks one).
+//    News keeps it in the strip tab only (owner, 25 Nov 2026).
+//  - Search bar: frosted glass (owner picked option A).
 (() => {
-  const H = document.documentElement, Q = new URLSearchParams(location.search);
-  const pick = (k, ok, d) => { const v = Q.get(k); if (ok.includes(v)) { try { localStorage.setItem('inv-ui-' + k, v); } catch {} return v; } try { const s = localStorage.getItem('inv-ui-' + k); if (ok.includes(s)) return s; } catch {} return d; };
-  const bf = pick('bf', ['tab', 'top'], 'tab'), sb = pick('sb', ['a', 'b', 'c', 'off'], 'off');
-  H.classList.toggle('bf-top', bf === 'top'); if (sb !== 'off') H.dataset.sb = sb;
+  const H = document.documentElement;
+  const bf = 'tab';  // owner 25 Nov 2026: Briefing lives in the News strip tab only
+  H.classList.toggle('bf-top', bf === 'top'); H.dataset.sb = 'a';  // owner 25 Nov 2026: frosted glass (option A)
   const css = document.createElement('style');
   css.textContent = `
 @media(min-width:1180px){
@@ -35,12 +34,8 @@
  html:not(.side-on) .gp-ctl:has([aria-label="Pin Top articles"]){display:none!important}
  /* Search bar glass styles (preview) */
  html[data-sb] #sbox{-webkit-backdrop-filter:blur(20px) saturate(160%);backdrop-filter:blur(20px) saturate(160%);transition:border-color .2s,box-shadow .2s,background .2s}
- html[data-sb=a] #sbox{background:rgba(255,255,255,.07)!important;border:1px solid rgba(255,255,255,.14)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 8px 30px rgba(0,0,0,.35)!important}
- html[data-sb=a] #sbox:focus-within{background:rgba(255,255,255,.1)!important;border-color:rgba(255,255,255,.28)!important}
- html[data-sb=b] #sbox{background:rgba(16,16,20,.42)!important;border:1px solid rgba(255,255,255,.08)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.06)!important}
- html[data-sb=b] #sbox:focus-within{border-color:rgba(255,122,26,.6)!important;box-shadow:0 0 0 4px rgba(255,122,26,.14),inset 0 1px 0 rgba(255,255,255,.06)!important}
- html[data-sb=c] #sbox{border-radius:999px!important;background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.03))!important;border:1px solid rgba(255,255,255,.16)!important;box-shadow:inset 0 1px 1px rgba(255,255,255,.25),inset 0 -1px 1px rgba(0,0,0,.3),0 10px 34px rgba(0,0,0,.45)!important;-webkit-backdrop-filter:blur(28px) saturate(180%);backdrop-filter:blur(28px) saturate(180%)}
- html[data-sb=c] #sbox:focus-within{border-color:rgba(255,157,92,.55)!important}
+ html[data-sb=a] #sbox{background:rgba(255,255,255,.08)!important;border:1px solid rgba(255,255,255,.16)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 8px 30px rgba(0,0,0,.35)!important}
+ html[data-sb=a] #sbox:focus-within{background:rgba(255,255,255,.12)!important;border-color:rgba(255,255,255,.3)!important}
 }`;
   document.head.append(css);
   setTimeout(() => dispatchEvent(new Event('resize')), 0);  // strips re-render with the chosen Briefing place
