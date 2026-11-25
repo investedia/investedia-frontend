@@ -201,9 +201,8 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
   #hnPop.hn-pop a img,#hnPop.hn-pop a svg,#hnPop.hn-pop a>span:first-child{width:22px!important;height:22px!important}
   #hnPop.hn-pop a:nth-of-type(n+6){display:inline-flex!important}
 }
-.hn-gby{display:none}
-@media (max-width:600px){.hn-gby{order:1;display:flex;align-items:center;justify-content:center;gap:7px;margin:0 0 10px;font:500 13px Inter,sans-serif;color:var(--fg-3,#8e8e96)}.hn-gby img{height:16px;width:auto}
-:root[data-theme="light"] .hn-gby img{filter:invert(1)}}  /* owner 25 Nov 2026: phone credit line */
+/* owner 25 Nov 2026: smaller popular-search chips on phone */
+@media (max-width:600px){#hnPop.hn-pop a{height:34px!important;min-height:0!important;padding:0 11px 0 5px!important;font-size:13px!important;gap:6px!important}#hnPop.hn-pop a img,#hnPop.hn-pop a svg,#hnPop.hn-pop a>span:first-child{width:20px!important;height:20px!important}#hnPop .hn-pop-l{font-size:12.5px!important}}
 </style>
 <style id="hn-globe-fade">/* phones (owner 21 Nov 2026): the globe area fades into the page at its edges, so a zoomed-in map never shows as a hard square */
 @media (max-width:900px){#hnGlobe{-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%),linear-gradient(180deg,transparent 0,#000 12%,#000 88%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%),linear-gradient(180deg,transparent 0,#000 12%,#000 88%,transparent 100%);mask-composite:intersect}}
@@ -241,7 +240,6 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
   <div class="hn-copy"><div class="hn">
     <span class="hn-live" id="hnLive"><i></i>Live</span>
     <p class="hn-kicker">Live globe · financial news</p>
-    <p class="hn-gby" aria-label="Brought to you by Guidify">Brought to you by <img src="assets/img/guidify-white.png" alt="Guidify"></p>
     <h1 class="hn-title hn-e" id="hnTitle"><b style="white-space:normal;width:auto">Global Investment<br>Market Intelligence</b></h1>
     <div class="hn-facts" id="hnFacts"><div><b data-stat="articles">—</b><span>articles</span></div><div><b data-stat="companies">—</b><span>companies</span></div><div><b data-stat="projects">—</b><span>projects</span></div></div>
     <a class="hn-search" href="/globe"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Search assets, countries &amp; articles</a>
