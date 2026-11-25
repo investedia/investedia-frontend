@@ -1558,3 +1558,7 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .hdr .dd-more .mm-foot{grid-column:1/-1}
 .hdr .dd-more .mm-ic{color:var(--fg-2)!important;background:none!important;border:0!important}
 .drawer .mm-ic{color:var(--fg-2)!important}
+/* owner 25 Nov 2026: current page uses the same small white dot as hover (no orange); More menu opens right under More */
+.nav-link[aria-current="page"]::after{left:50%!important;right:auto!important;width:4px!important;height:4px!important;margin-left:-2px;bottom:1px!important;border-radius:50%!important;background:var(--fg)!important;opacity:1!important}
+.hdr .nav>li{position:relative}
+.hdr .dd-more{position:absolute!important;top:calc(100% + 10px)!important;left:-14px!important;right:auto!important}
