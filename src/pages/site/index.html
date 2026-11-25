@@ -383,6 +383,9 @@ addEventListener('resize', () => { for (const [k, v] of Object.entries(homeStats
 const homeStats = {}; function showStats(c) { if (!c) return; for (const k of ['articles', 'companies', 'projects']) if (Number.isFinite(c[k]) && c[k] > (homeStats[k] || 0)) { homeStats[k] = c[k]; const el = document.querySelector('[data-stat=' + k + ']'), v = c[k]; globeShownP.then(() => countTo(el, v)); } }
 const pullStats = () => fetch('assets/globe/site-stats.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(showStats).catch(() => {});
 pullStats(); setInterval(() => { if (!document.hidden) pullStats(); }, 300000);  // owner 25 Nov 2026: numbers keep updating live
+/* owner 25 Nov 2026: click a number to replay a smooth count from the round thousand below it */
+document.querySelectorAll('#hnFacts [data-stat]').forEach(el => { const box = el.parentElement; box.style.cursor = 'pointer'; box.title = 'Replay';
+  box.addEventListener('click', () => { const v = homeStats[el.dataset.stat]; if (!Number.isFinite(v)) return; el._count = (el._count || 0) + 1; el.dataset.shown = Math.floor(v / 1000) * 1000; countTo(el, v); }); });
 // The globe loads first: the article sections below it (and their photos) start once the globe has drawn,
 // or after 2.5 s, or as soon as the visitor scrolls, so they do not compete with it for bandwidth.
 const globeFirst = new Promise(go => { addEventListener('message', e => { if (e.origin === location.origin && e.data?.inv === 'globe-drawn') go(); }); hnGlobe.addEventListener('load', go); setTimeout(go, 2500); addEventListener('scroll', go, { once: true, passive: true }); });
