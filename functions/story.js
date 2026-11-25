@@ -28,7 +28,10 @@ export async function onRequestGet(context) {
   if (!s) return page;
   const title = clip(s.headline, 110), desc = clip(s.summary || s.why || '', 200) || 'What happened, why it matters, and which markets it moves.';
   let img = s.image && s.image.file ? s.image.file : (pickTopicPhoto(s.id, [s.headline, s.summary].join(' '), s.category) || {}).file;
-  let image = img ? SITE + '/assets/globe/' + img.replace(/^\/+/, '') : SITE + '/assets/og-default.png';
+  const clean = img ? img.replace(/^\/+/, '') : '';
+  // Topic photos go through /og/ (functions/og), which adds the small logo (owner's option B1).
+  const image = !clean ? SITE + '/assets/og-default.png'
+    : /^photos\/[^/]+$/.test(clean) ? SITE + '/og/' + clean.slice(7) : SITE + '/assets/globe/' + clean;
   const link = SITE + '/story?id=' + encodeURIComponent(id);
   const set = v => ({ element(e) { e.setAttribute('content', v); } });
   const res = new HTMLRewriter()
