@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t==='system'?(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'):t}catch(e){}</script><style>html{background:#0a0a0b}html[data-theme=light]{background:#fff}</style>
-<script src="assets/fetch-share.js?v=33c7986b55"></script>
-<link rel="stylesheet" href="assets/consent.css?v=33c7986b55">
-<script src="assets/consent.js?v=33c7986b55"></script>
+<script src="assets/fetch-share.js?v=4c550ae9ac"></script>
+<link rel="stylesheet" href="assets/consent.css?v=4c550ae9ac">
+<script src="assets/consent.js?v=4c550ae9ac"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Investedia Library · Learn to invest</title>
 <meta name="description" content="The Investedia Library, powered by Guidify: courses by level with certificates, step-by-step tutorials and a plain-English glossary.">
@@ -26,8 +26,8 @@
 <meta name="twitter:image" content="https://www.investedia.com/assets/og-default.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.investedia.com/#org","name":"Investedia","url":"https://www.investedia.com/","logo":"https://www.investedia.com/assets/app/icon-512.png","sameAs":["https://www.linkedin.com/company/investedia/","https://x.com/investedia","https://www.youtube.com/@investedia","https://www.instagram.com/investedia/"]},{"@type":"WebSite","@id":"https://www.investedia.com/#site","name":"Investedia","alternateName":"Investedia.com","url":"https://www.investedia.com/","publisher":{"@id":"https://www.investedia.com/#org"}}]}</script>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/app.css?v=33c7986b55">
-<link rel="stylesheet" href="assets/skin.css?v=33c7986b55">
+<link rel="stylesheet" href="assets/app.css?v=4c550ae9ac">
+<link rel="stylesheet" href="assets/skin.css?v=4c550ae9ac">
 <link rel="apple-touch-icon" href="assets/app/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -50,21 +50,21 @@
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <script src="assets/quotes.js"></script>
 <script src="assets/news.js"></script>
-<script src="assets/mock.js?v=33c7986b55"></script>
-<link rel="stylesheet" href="assets/news-menu.css?v=33c7986b55">
-<script src="assets/runtime-config.js?v=33c7986b55"></script>
-<script src="assets/live-config.js?v=33c7986b55"></script>
-<script src="assets/live-data.js?v=33c7986b55" defer></script>
-<script src="assets/news-source.js?v=33c7986b55"></script>
-<script src="assets/prefs.js?v=33c7986b55"></script>
-<script src="assets/peek.js?v=33c7986b55"></script>
-<script src="assets/sectors.js?v=33c7986b55"></script>
-<script src="assets/news-menu.js?v=33c7986b55"></script>
-<script src="assets/locale.js?v=33c7986b55"></script>
-<script src="assets/ui.js?v=33c7986b55"></script>
-<script src="assets/push-alerts.js?v=33c7986b55" defer></script>
-<script src="assets/news-alerts.js?v=33c7986b55" defer></script>
-<script src="assets/learn.js?v=33c7986b55"></script>
+<script src="assets/mock.js?v=4c550ae9ac"></script>
+<link rel="stylesheet" href="assets/news-menu.css?v=4c550ae9ac">
+<script src="assets/runtime-config.js?v=4c550ae9ac"></script>
+<script src="assets/live-config.js?v=4c550ae9ac"></script>
+<script src="assets/live-data.js?v=4c550ae9ac" defer></script>
+<script src="assets/news-source.js?v=4c550ae9ac"></script>
+<script src="assets/prefs.js?v=4c550ae9ac"></script>
+<script src="assets/peek.js?v=4c550ae9ac"></script>
+<script src="assets/sectors.js?v=4c550ae9ac"></script>
+<script src="assets/news-menu.js?v=4c550ae9ac"></script>
+<script src="assets/locale.js?v=4c550ae9ac"></script>
+<script src="assets/ui.js?v=4c550ae9ac"></script>
+<script src="assets/push-alerts.js?v=4c550ae9ac" defer></script>
+<script src="assets/news-alerts.js?v=4c550ae9ac" defer></script>
+<script src="assets/learn.js?v=4c550ae9ac"></script>
 <main class="wrap" id="main-content" tabindex="-1">
 <style>
 /* Investedia Library (owner 25 Nov 2026): levels first, search in the catalogue, certificates per level. Courses by Guidify. Numbers in Inter. */
@@ -244,10 +244,10 @@ function motif(k) {
       for (let y = Math.min(o, c); y <= Math.max(o, c); y += 2.6) for (const dx of [-6, 0, 6]) d += dot(x + dx, b + y * s, 1.8, '#fff', up ? .75 : .34); }); }
   else { d = base('#fff', .4, true);
     const v3 = ([la, lo]) => { const a = la * Math.PI / 180, b = lo * Math.PI / 180; return [Math.cos(a) * Math.cos(b), Math.cos(a) * Math.sin(b), Math.sin(a)]; }, back = ([x, y, z]) => [Math.asin(z) * 180 / Math.PI, Math.atan2(y, x) * 180 / Math.PI];
-    const arc = (A, B) => { const a = v3(A), b = v3(B), w = Math.acos(a[0] * b[0] + a[1] * b[1] + a[2] * b[2]), o = []; for (let i = 0; i <= 80; i++) { const f = i / 80, s1 = Math.sin((1 - f) * w) / Math.sin(w), s2 = Math.sin(f * w) / Math.sin(w), [la, lo] = back([a[0] * s1 + b[0] * s2, a[1] * s1 + b[1] * s2, a[2] * s1 + b[2] * s2]); o.push(P(la, lo, 1 + .25 * w * Math.sin(Math.PI * f) / Math.PI)); } return 'M' + o.map(q => q[0].toFixed(1) + ' ' + q[1].toFixed(1)).join(' L'); };
-    for (const [A, an, B, bn] of [[[40.7, -74], 'New York', [51.5, -.1], 'London'], [[-23.5, -46.6], 'São Paulo', [6.5, 3.4], 'Lagos'], [[30, 31.2], 'Cairo', [-26.2, 28], 'Johannesburg']]) {
-      d += `<path d="${arc(A, B)}" fill="none" stroke="#FF7A1A" stroke-width="1.8" stroke-linecap="round"/>`;
-      for (const [c, n] of [[A, an], [B, bn]]) { const q = P(...c); d += dot(q[0], q[1], 3.6, '#FF7A1A', 1) + `<text x="${(q[0] + 8).toFixed(1)}" y="${(q[1] + 4).toFixed(1)}" font-family="Inter,sans-serif" font-size="11" font-weight="500" fill="#d4d4d8">${n}</text>`; } } }
+    const arc = (A, B) => { const a = v3(A), b = v3(B), w = Math.acos(a[0] * b[0] + a[1] * b[1] + a[2] * b[2]), o = []; for (let i = 0; i <= 80; i++) { const f = i / 80, s1 = Math.sin((1 - f) * w) / Math.sin(w), s2 = Math.sin(f * w) / Math.sin(w), [la, lo] = back([a[0] * s1 + b[0] * s2, a[1] * s1 + b[1] * s2, a[2] * s1 + b[2] * s2]); o.push(P(la, lo, 1 + .32 * w * Math.sin(Math.PI * f) / Math.PI)); } return 'M' + o.map(q => q[0].toFixed(1) + ' ' + q[1].toFixed(1)).join(' L'); };
+    // homepage-style connections: thin orange arcs that lift off the globe in different directions, no labels
+    const R = [[[51.5, -.1], [40.7, -74]], [[48.9, 2.3], [-23.5, -46.6]], [[50.1, 8.7], [25.2, 55.3]], [[41.9, 12.5], [-26.2, 28]], [[40.4, -3.7], [6.5, 3.4]], [[52.5, 13.4], [55.8, 37.6]], [[19.4, -99.1], [40.7, -74]], [[30, 31.2], [-1.3, 36.8]]];
+    for (const [A, B] of R) { d += `<path d="${arc(A, B)}" fill="none" stroke="#FF7A1A" stroke-opacity=".85" stroke-width="1.4" stroke-linecap="round"/>`; for (const c of [A, B]) { const q = P(...c); d += dot(q[0], q[1], 6, '#FF7A1A', .18) + dot(q[0], q[1], 2.6, '#FF7A1A', 1); } } }
   return `<svg class="motif" viewBox="0 0 1000 707" aria-hidden="true">${d}</svg>`;
 }
 function emblem(k) { const n = { beg: 1, mid: 2, exp: 3 }[k], col = k === 'beg' ? '#0a0a0b' : k === 'mid' ? '#fff' : '#FF7A1A'; let r = ''; for (let i = 0; i < n; i++) r += `<circle cx="46" cy="46" r="${42 - i * 7}" fill="none" stroke="${col}" stroke-width="1.4"/>`; return `<svg class="emb" viewBox="0 0 92 92" aria-hidden="true">${r}<svg x="34" y="34" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="${col}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${IC[k]}</svg></svg>`; }
