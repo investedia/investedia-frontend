@@ -2829,6 +2829,11 @@ function drawProj(){
  const visible=InvProjectsCluster.project(PROJ.vis||[],{lon:lon0,lat:lat0,cx,cy,radius:R,width:W,height:H});
  // Owner choice (11 Nov 2026): every project is its own dot, no grouping.
  const singles=visible.map(n=>({p:n.p,x:n.x,y:n.y}));
+// Company lines (owner, 25 Nov 2026): every verified project-to-company link is drawn at once, lines only, no labels.
+// The selected project's links are brighter.
+ for(const p of PROJ.vis||[]){if(!p.invest)continue;const a={phi:p.lat*rad,lam:p.lon*rad},sel=p.id===PROJ.sel;
+  for(const e of p.invest.exposures||[]){if(!e.hq)continue;const b={phi:e.hq.lat*rad,lam:e.hq.lon*rad};
+   if(sel)strokeArc(arcPts(a,b,48),'255,122,26',.9,1.6,true,null);else strokeArc(arcPts(a,b,40),'255,122,26',.42,1,false,null);}}
  const co=[],boxes=[],batch={};for(const n of singles){if(n.p.energy&&!n.p.featured&&n.p.id!==PROJ.sel){(batch[n.p.energy]||(batch[n.p.energy]=[])).push(n);}}
  for(const [k,ns] of Object.entries(batch)){ctx.beginPath();for(const {x,y,p} of ns){const r=p.capacity?.value>=1000?2.6:p.capacity?.value>=300?2:1.5;ctx.moveTo(x+r,y);ctx.arc(x,y,r,0,7);PROJ.hits.push({x,y,id:p.id});}ctx.fillStyle='#ff7a1a';ctx.fill();}
  for(const {p,x,y,group} of singles){if(p.energy&&!p.featured&&p.id!==PROJ.sel)continue;const selected=p.id===PROJ.sel,r=selected?5.5:p.featured?4:2.5;ctx.beginPath();ctx.arc(x,y,r*2.6,0,7);ctx.fillStyle=selected?'rgba(255,122,26,.25)':'rgba(255,122,26,.08)';ctx.fill();ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fillStyle='#ff7a1a';ctx.fill();PROJ.hits.push({x,y,id:p.id,group});
