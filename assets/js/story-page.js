@@ -47,7 +47,7 @@
     if (!s.image && window.TopicPhoto) s.image = TopicPhoto.pick(s.id, [s.headline, s.summary].join(' '), s.category); // owner 24 Nov 2026: topic photo, not the globe
     const photo = s.image ? `<div class="sp-im"><img class="ph" src="assets/globe/${esc(s.image.file)}" alt="${esc(s.image.alt || '')}"><span class="cr">${s.image.kind === 'place' ? 'Photo' : 'Illustration'} · ${esc(s.image.credit || '')} · ${esc(s.image.source || '')}</span></div>` : snip(s);
     root.innerHTML = `<a class="sp-back" href="news.html">← News</a>
-    <div class="sp-pg"><div><div class="sp-m">${fl(ISO[s.location.country])}<b>${esc(s.location.place.split(',')[0])}</b><span>· ${esc(CAT[s.category] || '')} · ${ago(s.published_at)}</span></div><h1>${esc(s.headline)}</h1><button type="button" class="sp-share" id="sp-share">Share</button>${photo}<p class="sp-sum">${esc(s.summary)}</p><div class="sp-more m" hidden></div>
+    <div class="sp-pg"><div><div class="sp-m">${fl(ISO[s.location.country])}<b>${esc(s.location.place.split(',')[0])}</b><span>· ${esc(CAT[s.category] || '')} · ${ago(s.published_at)}</span></div><h1>${esc(s.headline)}</h1><div id="sp-share"></div>${photo}<p class="sp-sum">${esc(s.summary)}</p><div class="sp-more m" hidden></div>
     <section class="sp-sec mi" id="sp-mi"><h2>Market implications</h2><p>What changed, which assets are exposed, and what investors are watching.</p>
      <div class="mi-seg" role="tablist" aria-label="Section"><button type="button" role="tab" data-p="event" aria-selected="false">Event</button><button type="button" role="tab" data-p="why" aria-selected="false">Rationale</button><button type="button" role="tab" data-p="exp" aria-selected="true">Exposure${imp.length ? ' · ' + Math.min(imp.length, 6) : ''}</button></div>
      <div class="mi-p mi-event" data-p="event"><span class="mi-eb">Event</span><p>${esc(s.summary)}</p></div>
@@ -79,7 +79,7 @@
     });
     fillMore(s, all); /* owner 21 Nov 2026: every article gets related markets and country context */
     const px = document.getElementById('sp-px'); if (px && window.PriceRail) PriceRail.mount(px, s);
-    const sh = document.getElementById('sp-share'); if (sh) sh.onclick = () => window.ShareLink && ShareLink.share(s.id, s.headline, sh);
+    const sh = document.getElementById('sp-share'); if (sh && window.ShareBar) ShareBar.mount(sh, s); // owner 25 Nov 2026: design C share bar
     const b = document.getElementById('sp-f'), paint = () => { const on = followed().includes(follow); b.textContent = on ? 'Following' : 'Follow'; b.classList.toggle('on', on); b.classList.toggle('p', !on); };
     paint(); b.onclick = () => { toggle(follow); paint(); };
   }).catch(() => { root.innerHTML = '<div class="sp-none">News could not load. Please refresh.</div>'; });
