@@ -42,7 +42,8 @@ function initArticles() {
     // owner 25 Nov 2026: only the first 100 page files are deployed (Cloudflare's 20,000-file limit); deeper pages come from all.json
     if (!filtered) { const r = await get('page-' + Math.min(s.page, meta.pages) + '.json').catch(() => null);
       if (Array.isArray(r)) return { list: s.page === 1 ? [...live, ...r] : r, total: meta.total + live.length }; }
-    const all = await get('all.json');
+    // owner 25 Nov 2026: the catalog comes in parts (all-1.json …) so no file passes Cloudflare's 25 MB limit
+    const all = meta.all_parts ? (await Promise.all(Array.from({ length: meta.all_parts }, (_, k) => get('all-' + (k + 1) + '.json')))).flat() : await get('all.json');
     const now = Date.now(), win = { '1d': 864e5, '7d': 7 * 864e5, '30d': 30 * 864e5 }[s.date], q = s.q.toLowerCase();
     let L = [...live, ...all].filter(r => (!s.cat || r.c === s.cat) && (!s.reg || r.g === s.reg) && (!win || now - Date.parse(r.t) <= win) && (!q || (r.h + ' ' + (r.s || '') + ' ' + (r.n || '')).toLowerCase().includes(q)));
     if (s.sort === 'old') L = L.reverse(); else if (s.sort === 'src') L = [...L].sort((a, b) => b.k - a.k || (a.t < b.t ? 1 : -1));

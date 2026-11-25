@@ -7,6 +7,8 @@ import hashlib, json, pathlib, shutil
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 PER = 24
 
+PART = 15000  # rows per all-N.json part
+
 def row(d):
     loc, src, img = d.get('location') or {}, d.get('source') or {}, d.get('image') or {}
     r = {'id': d['id'], 'h': d['headline'], 'c': d.get('category') or 'news', 't': d['published_at'],
@@ -81,7 +83,7 @@ def write():
         if r['g']: regs[r['g']] = regs.get(r['g'], 0) + 1
     pages = max(1, -(-len(rows) // PER))
     meta = {'total': len(rows), 'sources': len({(r['s'] or '').strip().lower() for r in rows if r['s']}), 'first': rows[-1]['t'] if rows else None,
-            'per_page': PER, 'pages': pages, 'categories': dict(sorted(cats.items(), key=lambda x: -x[1])), 'regions': regs}
+            'per_page': PER, 'pages': pages, 'all_parts': max(1, -(-len(rows) // PART)), 'categories': dict(sorted(cats.items(), key=lambda x: -x[1])), 'regions': regs}
     # Cloudflare listings may replace this exact static catalog, never a newer archive.
     meta['catalog_sha256'] = hashlib.sha256(json.dumps(rows, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
     # summaries only for the lead article candidates on page 1 (keeps files small)
@@ -93,6 +95,9 @@ def write():
         dump = lambda name, obj: (out / name).write_text(json.dumps(obj, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
         dump('meta.json', meta)
         dump('all.json', rows)
+        # owner 25 Nov 2026: all.json passed 21 MB (Cloudflare's per-file limit is 25 MB). The site reads these parts; all.json stays
+        # in the repository for the catalog fingerprint and the Cloudflare readers, and is left out of the deploy.
+        for k in range(meta['all_parts']): dump(f'all-{k + 1}.json', rows[k * PART:(k + 1) * PART])
         for p in range(pages): dump(f'page-{p + 1}.json', rows[p * PER:(p + 1) * PER])
         shards = {}
         for t, L in by.items():
