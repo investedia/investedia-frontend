@@ -1544,3 +1544,21 @@ body:has(.drawer.open) #hdr-login{visibility:hidden}
 .notif-dd .al-meter{height:5px}
 .notif-dd a.al-pro{text-decoration:none}.notif-dd a.al-pro:hover{color:var(--fg);border-color:var(--fg-2)}
 .notif-dd a.al-pro{display:inline-block!important;min-height:0!important;min-width:0!important;height:auto!important;padding:0 6px!important;line-height:17px!important}
+
+/* owner 25 Nov 2026 (menu option C): header links show a small white dot under the hovered/open link (no orange, no grey pill) */
+.nav>li.nav-pill{display:none!important}
+.nav-link{position:relative}
+.nav-link:hover,.nav-link[aria-expanded="true"]{background:none!important;color:var(--fg)}
+.nav-link::after{content:"";position:absolute;left:50%;bottom:1px;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:var(--fg);opacity:0;transition:opacity .15s ease}
+.nav-link:hover::after,.nav-link[aria-expanded="true"]::after{opacity:1}
+.nav-link .chev{display:none}
+/* More menu: two compact columns (Explore, Trust) */
+.hdr .dd-more{width:min(560px,calc(100vw - 24px))!important;grid-template-columns:1fr 1fr!important;grid-template-rows:auto!important;left:auto!important;right:max(12px,calc(50vw - 420px))!important}
+.hdr .dd-more>section:nth-of-type(n){grid-column:auto!important;grid-row:auto!important;margin-top:0!important}
+.hdr .dd-more .mm-foot{grid-column:1/-1}
+.hdr .dd-more .mm-ic{color:var(--fg-2)!important;background:none!important;border:0!important}
+.drawer .mm-ic{color:var(--fg-2)!important}
+/* owner 25 Nov 2026: current page uses the same small white dot as hover (no orange); More menu opens right under More */
+.nav-link[aria-current="page"]::after{left:50%!important;right:auto!important;width:4px!important;height:4px!important;margin-left:-2px;bottom:1px!important;border-radius:50%!important;background:var(--fg)!important;opacity:1!important}
+.hdr .nav>li{position:relative}
+.hdr .dd-more{position:absolute!important;top:calc(100% + 10px)!important;left:-14px!important;right:auto!important}
