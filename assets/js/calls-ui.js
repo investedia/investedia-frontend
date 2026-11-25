@@ -119,7 +119,7 @@
       ['Call result', c.end ? `${resBox(c, true)} <span class="muted">measured ${esc(when(c.end[0] * MIN))}</span>` : c.res === 'pending' ? esc(due(c)) : esc(c.why || '—')], ['Result', badge(c)],
       ['Model', `Investedia Prediction Model · <span class="muted">${esc(ENGINE(c.ver))}</span>`], c.fam ? ['Event type', esc(FAM[c.fam] || c.fam)] : null];
     return `<div class="cx-detail"><div class="cx-dh">${logo(c)}<span class="cx-tk">${esc(tk(c))}</span>${badge(c)}</div>
-      <h2>${c.url ? `<a href="${esc(c.url)}" rel="noopener" target="_blank">${esc(c.h)} ↗</a>` : `<a href="story.html?id=${encodeURIComponent(c.id)}">${esc(c.h)}</a>`}</h2>
+      <h2>${c.url ? `<a href="${esc(c.url)}" rel="noopener" target="_blank">${esc(c.h)} ↗</a>` : `<a href="story?id=${encodeURIComponent(c.id)}">${esc(c.h)}</a>`}</h2>
       ${c.src ? `<p class="cx-fine" style="margin:-8px 0 12px">${esc(c.src)}</p>` : ''}
       <div class="cx-bigchart">${chart(c, { w: 720, h: 280, big: true })}${c.path ? `<p class="cx-fine">Price path: ${esc(c.path.src === 'exchange bars' ? 'traded prices from the asset’s own exchange session (5-minute bars, thinned to 30 minutes), stored when the call was judged' : 'prices recorded by Investedia’s price robot so far; the full path is stored when the call is judged')}. Nothing is interpolated.</p>` : ''}</div>
       <dl class="cx-dl">${rows.filter(Boolean).map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>

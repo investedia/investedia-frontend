@@ -144,7 +144,7 @@ body[data-page=home] main.wrap{max-width:none;padding:0}
 .hn-kicker{margin:14px 0 0;color:var(--accent,#ff7a1a);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
 .hn-title.hn-e{margin:10px 0 22px}.hn-title.hn-e b{font-size:clamp(36px,4.44vw,64px);letter-spacing:-.04em;line-height:1}
 .hn-facts{display:flex;flex-wrap:wrap;gap:12px 56px;justify-content:start;margin:0 0 24px;max-width:560px}
-.hn-facts div{padding:0}.hn-facts b{display:block;font-size:clamp(22px,2vw,28px);font-weight:700;letter-spacing:-.03em;color:var(--fg);font-feature-settings:"tnum"}.hn-facts span{color:var(--fg-3,#8e8e96);font-size:13px}
+.hn-facts div{padding:0;cursor:pointer;-webkit-tap-highlight-color:transparent;border-radius:8px}.hn-facts div:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.hn-facts b{display:block;font-size:clamp(22px,2vw,28px);font-weight:700;letter-spacing:-.03em;color:var(--fg);font-feature-settings:"tnum"}.hn-facts span{color:var(--fg-3,#8e8e96);font-size:13px}
 @media (min-width:901px){.hn-copy .hn{margin-left:max(52%,calc(50vw + 20px));max-width:600px;padding-right:32px}
  .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(10,10,11,.85) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}
  :root[data-theme="light"] .hn-hero::after{background:linear-gradient(270deg,var(--bg) 0%,rgba(247,247,248,.82) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)}}
@@ -366,18 +366,26 @@ const glide = () => { if (holdY != null) return; if (!isPhone()) { hnGlobe.style
 if (!matchMedia('(prefers-reduced-motion: reduce)').matches) addEventListener('scroll', () => requestAnimationFrame(glide), { passive: true });
 fitTitle(); addEventListener('resize', fitTitle); document.fonts && document.fonts.ready.then(fitTitle);
 // Live numbers under the name: counted from the same feed and project data the page already shows.
-function countTo(el, v) { if (!el || !Number.isFinite(v)) return; const fmt = n => { n = Math.round(n); if (n < 1000 || innerWidth > 900) return n.toLocaleString('en-US');  /* owner 24 Nov 2026: PC shows the full number, phone the short K+ form */ const k = n / 1000; return (k >= 10 ? Math.floor(k) : Math.floor(k * 10) / 10) + 'K+'; };  // owner 24 Nov 2026: 64K+, 10K+, 2.7K+ (capital K)
+/* owner 25 Nov 2026: phone shows 75K+ (no decimals); tap a number to see it in full with commas (75,837). It stays full while scrolling and
+   on later visits in this tab, and keeps counting live. PC always shows the full number. */
+const statFull = new Set((() => { try { return JSON.parse(sessionStorage.getItem('inv-stat-full') || '[]'); } catch { return []; } })());
+const statFmt = (n, k) => { n = Math.round(n); if (n < 1000 || innerWidth > 900 || statFull.has(k)) return n.toLocaleString('en-US'); return Math.floor(n / 1000) + 'K+'; };
+document.querySelectorAll('#hnFacts [data-stat]').forEach(el => { const box = el.parentElement, k = el.dataset.stat; box.setAttribute('role', 'button'); box.tabIndex = 0;
+  const flip = () => { statFull.has(k) ? statFull.delete(k) : statFull.add(k); try { sessionStorage.setItem('inv-stat-full', JSON.stringify([...statFull])); } catch {} box.classList.toggle('full', statFull.has(k)); if (homeStats[k]) el.textContent = statFmt(homeStats[k], k); box.setAttribute('aria-label', (homeStats[k] ? Math.round(homeStats[k]).toLocaleString('en-US') + ' ' : '') + k); };
+  box.addEventListener('click', flip); box.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); flip(); } }); box.classList.toggle('full', statFull.has(k)); });
+function countTo(el, v) { if (!el || !Number.isFinite(v)) return; const key = el.dataset.stat, fmt = n => statFmt(n, key);
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = fmt(v); return; }
   // Starts from the number on screen, and a newer count replaces a running one (no flicker between the two).
   const from = +(el.dataset.shown || 0), t0 = performance.now(), id = (el._count = (el._count || 0) + 1), f = t => { if (el._count !== id) return; const k = Math.min(1, (t - t0) / 1400), e = 1 - Math.pow(1 - k, 3), n = from + (v - from) * e; el.dataset.shown = n; el.textContent = fmt(n); if (k < 1) requestAnimationFrame(f); }; requestAnimationFrame(f); }
 // Totals: the news service sends the robot's live counts with every hourly update; the file built with the site is the fallback.
 // Each number shows the larger of the two, so it never jumps backwards.
-addEventListener('resize', () => { for (const [k, v] of Object.entries(homeStats)) { const el = document.querySelector('[data-stat=' + k + ']'); if (el && !el._counting) el.textContent = Math.round(v) < 1000 || innerWidth > 900 ? Math.round(v).toLocaleString('en-US') : (v / 1000 >= 10 ? Math.floor(v / 1000) : Math.floor(v / 100) / 10) + 'K+'; } });
-const homeStats = {};
-/* owner 25 Nov 2026: click a number to replay a smooth count from the round thousand below it (e.g. 63,000 → 63,357) */
+addEventListener('resize', () => { for (const [k, v] of Object.entries(homeStats)) { const el = document.querySelector('[data-stat=' + k + ']'); if (el && !el._counting) el.textContent = statFmt(v, k); } });
+const homeStats = {}; function showStats(c) { if (!c) return; for (const k of ['articles', 'companies', 'projects']) if (Number.isFinite(c[k]) && c[k] > (homeStats[k] || 0)) { homeStats[k] = c[k]; const el = document.querySelector('[data-stat=' + k + ']'), v = c[k]; globeShownP.then(() => countTo(el, v)); } }
+const pullStats = () => fetch('assets/globe/site-stats.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(showStats).catch(() => {});
+pullStats(); setInterval(() => { if (!document.hidden) pullStats(); }, 300000);  // owner 25 Nov 2026: numbers keep updating live
+/* owner 25 Nov 2026: click a number to replay a smooth count from the round thousand below it */
 document.querySelectorAll('#hnFacts [data-stat]').forEach(el => { const box = el.parentElement; box.style.cursor = 'pointer'; box.title = 'Replay';
-  box.addEventListener('click', () => { const v = homeStats[el.dataset.stat]; if (!Number.isFinite(v)) return; el._count = (el._count || 0) + 1; el.dataset.shown = Math.floor(v / 1000) * 1000; countTo(el, v); }); }); function showStats(c) { if (!c) return; for (const k of ['articles', 'companies', 'projects']) if (Number.isFinite(c[k]) && c[k] > (homeStats[k] || 0)) { homeStats[k] = c[k]; const el = document.querySelector('[data-stat=' + k + ']'), v = c[k]; globeShownP.then(() => countTo(el, v)); } }
-fetch('assets/globe/site-stats.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(showStats).catch(() => {});
+  box.addEventListener('click', () => { const v = homeStats[el.dataset.stat]; if (!Number.isFinite(v)) return; el._count = (el._count || 0) + 1; el.dataset.shown = Math.floor(v / 1000) * 1000; countTo(el, v); }); });
 // The globe loads first: the article sections below it (and their photos) start once the globe has drawn,
 // or after 2.5 s, or as soon as the visitor scrolls, so they do not compete with it for bandwidth.
 const globeFirst = new Promise(go => { addEventListener('message', e => { if (e.origin === location.origin && e.data?.inv === 'globe-drawn') go(); }); hnGlobe.addEventListener('load', go); setTimeout(go, 2500); addEventListener('scroll', go, { once: true, passive: true }); });

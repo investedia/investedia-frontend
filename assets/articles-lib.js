@@ -7,7 +7,7 @@ function initArticles() {
   const REG = { na: 'North America', latam: 'Latin America', eu: 'Europe', af: 'Africa', me: 'Middle East', asia: 'Asia', oc: 'Oceania' };
   const DATES = [['', 'Any time'], ['1d', 'Today'], ['7d', 'Last 7 days'], ['30d', 'Last 30 days']];
   const fmt = n => n.toLocaleString('en-US'), nice = c => CAT[c] || (c ? c[0].toUpperCase() + c.slice(1) : 'News');
-  const link = r => 'story.html?id=' + encodeURIComponent(r.id);
+  const link = r => 'story?id=' + encodeURIComponent(r.id);
   const img = r => { if (!r.i && window.TopicPhoto) { const p = TopicPhoto.pick(r.id, r.h, r.c); if (p) r.i = p.file; } return r.i ? 'assets/globe/' + r.i : null; } // owner 24 Nov 2026: topic photo instead of the night map
   // Owner 22 Nov 2026: articles without a photo show a night map of where it happened (NASA VIIRS Black Marble, via our tile cache)
   const GIBS = /(^|\.)investedia\.com$/.test(location.hostname) ? '/gibs/' : 'https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/';
@@ -39,8 +39,11 @@ function initArticles() {
   }
   async function rows(s) {
     const filtered = s.cat || s.date || s.reg || s.q || s.sort !== 'new';
-    if (!filtered) { const r = await get('page-' + Math.min(s.page, meta.pages) + '.json'); return { list: s.page === 1 ? [...live, ...r] : r, total: meta.total + live.length }; }
-    const all = await get('all.json');
+    // owner 25 Nov 2026: only the first 100 page files are deployed (Cloudflare's 20,000-file limit); deeper pages come from all.json
+    if (!filtered) { const r = await get('page-' + Math.min(s.page, meta.pages) + '.json').catch(() => null);
+      if (Array.isArray(r)) return { list: s.page === 1 ? [...live, ...r] : r, total: meta.total + live.length }; }
+    // owner 25 Nov 2026: the catalog comes in parts (all-1.json …) so no file passes Cloudflare's 25 MB limit
+    const all = meta.all_parts ? (await Promise.all(Array.from({ length: meta.all_parts }, (_, k) => get('all-' + (k + 1) + '.json')))).flat() : await get('all.json');
     const now = Date.now(), win = { '1d': 864e5, '7d': 7 * 864e5, '30d': 30 * 864e5 }[s.date], q = s.q.toLowerCase();
     let L = [...live, ...all].filter(r => (!s.cat || r.c === s.cat) && (!s.reg || r.g === s.reg) && (!win || now - Date.parse(r.t) <= win) && (!q || (r.h + ' ' + (r.s || '') + ' ' + (r.n || '')).toLowerCase().includes(q)));
     if (s.sort === 'old') L = L.reverse(); else if (s.sort === 'src') L = [...L].sort((a, b) => b.k - a.k || (a.t < b.t ? 1 : -1));

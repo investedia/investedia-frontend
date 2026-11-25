@@ -7,14 +7,16 @@ window.InvCompany = (() => {
     fetch('assets/globe/company-hq.json').then(r => r.ok ? r.json() : null).catch(() => null)]).then(([d, hq]) => {
     // Head office: the sourced HQ file (Wikidata / GLEIF) fills companies whose directory entry has none.
     const H = hq?.companies || {};
-    for (const c of d.companies) { if (!c.hq) { const h = c.listings.map(l => H[l.s]).find(Boolean); if (h) c.hq = h.hq_city + (c.country ? ', ' + c.country : ''); } }
+    for (const c of d.companies) { const h = c.listings.map(l => H[l.s]).find(Boolean); if (h && Number.isFinite(h.hq_lat)) { c.lat = h.hq_lat; c.lon = h.hq_lon; c.city = h.hq_city; } if (!c.hq && h) c.hq = h.hq_city + (c.country ? ', ' + c.country : ''); }
     data = d; for (const c of d.companies) for (const l of c.listings) bySym[l.s.toUpperCase()] = c; return d; });
   const href = c => `companies/${c.slug}`;
+  // owner 25 Nov 2026: globe points for the company globe (head office known only)
+  const points = cos => cos.filter(c => Number.isFinite(c.lat)).map(c => ({ key: c.slug, name: c.name, ticker: (c.listings[0] || {}).s, place: [c.city, c.country].filter(Boolean).join(', '), sector: c.sector || '', lat: c.lat, lon: c.lon, logo: c.logo || '', href: href(c) }));
   const flag = cc => cc ? `<img class="co-flag" src="assets/globe/flags/${esc(cc)}.svg" alt="" width="18" height="13" loading="lazy">` : '';
   const arrow = d => d === 'up' || d > 0 ? '<span class="co-dir up" aria-label="up">↑</span>' : d === 'down' || d < 0 ? '<span class="co-dir down" aria-label="down">↓</span>' : '';
   // The one Company Entity chip used across the site: flag, optional direction, name. The whole chip opens the company page.
   const chip = (c, o = {}) => `<a class="co-chip" href="${href(c)}" title="${esc(c.name)} · company">${flag(c.cc)}${o.dir ? arrow(o.dir) : ''}<span>${esc(o.label || c.name)}</span></a>`;
-  return { load, chip, href, flag, esc, arrow, of: sym => bySym[String(sym || '').toUpperCase()] || null, get data() { return data; } };
+  return { load, chip, href, flag, esc, arrow, points, of: sym => bySym[String(sym || '').toUpperCase()] || null, get data() { return data; } };
 })();
 
 const coStart = () => {
@@ -40,11 +42,17 @@ const coStart = () => {
     const count = (k) => cos.reduce((o, c) => (o[c[k] || ''] = (o[c[k] || ''] || 0) + 1, o), {});
     const opts = (o, all) => `<option value="">${all}</option>` + Object.entries(o).filter(([k]) => k).sort().map(([k, n]) => `<option value="${esc(k)}">${esc(k)} (${n})</option>`).join('') + (o[''] ? `<option value="-">Not classified yet (${o['']})</option>` : '');
     const st = { q: '', country: '', sector: '', letter: '', sort: 'az', n: 48 };
-    root.innerHTML = `<div class="page-head"><div class="crumbs"><a href="index.html">Home</a><span>/</span><a href="markets.html">Markets</a><span>/</span><span>Companies</span></div>
-      <div class="sec-head" style="margin:0"><div><h1>Companies</h1><p class="lede">The businesses behind the stocks. ${cos.length} companies so far; the directory grows as Investedia covers more markets.</p></div></div></div>
+    const secs = Object.entries(count('sector')).filter(([k]) => k).sort((a, b) => b[1] - a[1]).map(([k]) => k);
+    const popular = ['apple', 'nvidia', 'safaricom', 'asml', 'hsbc', 'petrobras'].map(k => cos.find(c => c.slug === k)).filter(Boolean);
+    /* owner 25 Nov 2026: centred title, search with rotating examples, sector buttons and the company globe */
+    root.innerHTML = `<div class="page-head cog-head"><div class="crumbs"><a href="index.html">Home</a><span>/</span><a href="markets.html">Markets</a><span>/</span><span>Companies</span></div>
+      <h1>Companies</h1><p class="lede">The businesses behind the stocks, by sector and by place. ${cos.length} companies so far.</p>
+      <label class="co-search cog-search"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="co-q" type="search" placeholder="Try &quot;Nvidia&quot;" autocomplete="off" aria-label="Search companies or tickers"></label>
+      ${popular.length ? `<p class="cog-pop">Popular: ${popular.map(c => `<a href="${C.href(c)}">${esc(c.name)}</a>`).join('')}</p>` : ''}
+      <div class="cog-secs" id="cog-secs" role="group" aria-label="Sector"><button type="button" data-s="" aria-pressed="true">All</button>${secs.map(k => `<button type="button" data-s="${esc(k)}" aria-pressed="false">${esc(k)}</button>`).join('')}</div>
+      <div class="cog-box" id="cog-box"></div><p class="cog-hint">Drag to turn the globe · hover a logo · click to open the company</p></div>
       ${Object.keys(inNews).length ? `<section class="sec"><div class="sec-head"><div><h2>In the news today</h2><p>Companies named in today’s Investedia articles.</p></div></div><div class="co-row">${cos.filter(c => inNews[c.slug]).sort((a, b) => inNews[b.slug] - inNews[a.slug]).slice(0, 14).map(c => C.chip(c, { label: `${c.name} · ${inNews[c.slug]}` })).join('')}</div></section>` : ''}
       <section class="sec"><div class="co-tools card">
-        <label class="co-search"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="co-q" type="search" placeholder="Search companies or tickers" autocomplete="off" aria-label="Search companies or tickers"></label>
         <select id="co-country" aria-label="Country">${opts(count('country'), 'All countries')}</select>
         <select id="co-sector" aria-label="Sector">${opts(count('sector'), 'All sectors')}</select>
         <select id="co-status" aria-label="Status"><option value="">Public and private</option><option value="pub">Public (${cos.filter(c => c.public).length})</option><option value="priv">Private (${cos.filter(c => !c.public).length})</option></select>
@@ -60,14 +68,20 @@ const coStart = () => {
         && (!st.letter || (st.letter === '#' ? !/[A-Z]/i.test(c.name[0]) : c.name[0].toUpperCase() === st.letter)));
       r = st.sort === 'news' ? r.sort((a, b) => (inNews[b.slug] || 0) - (inNews[a.slug] || 0) || a.name.localeCompare(b.name)) : r.sort((a, b) => a.name.localeCompare(b.name));
       root.querySelector('#co-count').textContent = `${r.length} ${r.length === 1 ? 'company' : 'companies'}`;
-      root.querySelector('#co-grid').innerHTML = r.slice(0, st.n).map(c => `<a class="co-card" href="${C.href(c)}">${logo(c)}<span class="co-card-b"><b>${esc(c.name)}</b><small>${C.flag(c.cc)} ${esc(c.country)}${c.sector ? ' · ' + esc(c.sector) : ''}</small><span class="co-tk">${c.listings.slice(0, 3).map(l => `<i>${esc(l.s)}</i>`).join('')}${inNews[c.slug] ? `<em>In the news · ${inNews[c.slug]}</em>` : ''}</span></span></a>`).join('') || '<p class="co-empty">No companies match these filters.</p>';
+      root.querySelector('#co-grid').innerHTML = r.slice(0, st.n).map(c => `<a class="co-card" href="${C.href(c)}">${logo(c)}<span class="co-card-b"><b>${esc(c.name)}</b><small>${esc([c.city, c.country].filter(Boolean).join(', '))}${c.sector ? ' · ' + esc(c.sector) : ''}</small><span class="co-tk">${c.listings.slice(0, 3).map(l => `<i>${esc(l.s)}</i>`).join('')}${inNews[c.slug] ? `<em>In the news · ${inNews[c.slug]}</em>` : ''}</span></span></a>`).join('') || '<p class="co-empty">No companies match these filters.</p>';
       root.querySelector('#co-more').hidden = r.length <= st.n;
     };
     const on = (id, ev, f) => root.querySelector(id).addEventListener(ev, f);
     on('#co-q', 'input', e => { st.q = e.target.value.trim(); st.n = 48; draw(); });
-    for (const k of ['country', 'sector', 'status', 'sort']) on('#co-' + k, 'change', e => { st[k] = e.target.value; st.n = 48; draw(); });
+    for (const k of ['country', 'status', 'sort']) on('#co-' + k, 'change', e => { st[k] = e.target.value; st.n = 48; draw(); });
     on('#co-letters', 'click', e => { const b = e.target.closest('button'); if (!b) return; st.letter = b.dataset.l; st.n = 48; root.querySelectorAll('#co-letters button').forEach(x => x.setAttribute('aria-pressed', String(x === b))); draw(); });
     on('#co-more', 'click', () => { st.n += 48; draw(); });
+    const globe = window.InvCoGlobe ? InvCoGlobe(root.querySelector('#cog-box'), { items: C.points(cos), lon: 15, lat: 22 }) : null;
+    const setSec = v => { st.sector = v; st.n = 48; root.querySelector('#co-sector').value = v; root.querySelectorAll('#cog-secs button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.s === v))); if (globe) globe.setSector(v); draw(); };
+    on('#cog-secs', 'click', e => { const b = e.target.closest('button'); if (b) setSec(b.dataset.s); });
+    on('#co-sector', 'change', e => setSec(e.target.value === '-' ? '' : e.target.value));
+    const ex = ['Try "Nvidia"', 'Try "Safaricom"', 'Try "HSBC"', 'Try a ticker, e.g. "ASML"', 'Try "Petrobras"'], qi = root.querySelector('#co-q'); let k = 0;
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) setInterval(() => { if (!qi.value && document.activeElement !== qi) qi.placeholder = ex[k = (k + 1) % ex.length]; }, 2800);
     draw();
   }
 
@@ -88,22 +102,24 @@ const coStart = () => {
       return `<svg class="co2-spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="co2g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${col}" stop-opacity=".28"/><stop offset="1" stop-color="${col}" stop-opacity="0"/></linearGradient></defs><path d="${d} L${W} ${H} L0 ${H}Z" fill="url(#co2g)"/><path d="${d}" fill="none" stroke="${col}" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>`; };
     const facts = [['Legal name', c.legal_name !== c.name && c.legal_name], ['Headquarters', c.hq], ['Industry', c.industry], ['Founded', c.founded], ['Listed on', main && main.exchange]].filter(f => f[1]);
     const sec = (h, p, body) => `<section class="sec co2-sec"><div class="sec-head"><div><h2>${h}</h2>${p ? `<p>${p}</p>` : ''}</div></div>${body}</section>`;
-    const artList = L => `<div class="card co2-news">${L.map(x => `<a href="story.html?id=${encodeURIComponent(x.id)}"><b>${esc(x.h)}</b><small>${esc(x.src)}${x.src ? ' · ' : ''}${Date.now() - Date.parse(x.t) < 7 * 864e5 ? ago(x.t) : new Date(x.t).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</small></a>`).join('')}</div>`;
+    const artList = L => `<div class="card co2-news">${L.map(x => `<a href="story?id=${encodeURIComponent(x.id)}"><b>${esc(x.h)}</b><small>${esc(x.src)}${x.src ? ' · ' : ''}${Date.now() - Date.parse(x.t) < 7 * 864e5 ? ago(x.t) : new Date(x.t).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}</small></a>`).join('')}</div>`;
     root.innerHTML = `<div class="page-head co2-head"><div class="crumbs"><a href="index.html">Home</a><span>/</span><a href="companies">Companies</a><span>/</span><span>${esc(c.name)}</span></div>
-      <div class="card co2-hero"><div class="co2-id">${logo(c)}<div><h1>${esc(c.name)}</h1><p class="co2-sub">${main ? `<span class="co2-tk">${esc(main.s)}</span>` : ''}${C.flag(c.cc)} ${esc(c.country)}${c.sector ? ' · ' + esc(c.sector) : ''} · ${c.public ? 'Public company' : 'Private company'}</p></div></div>
+      <div class="card co2-hero"><div class="co2-id">${logo(c)}<div><h1>${esc(c.name)}</h1><p class="co2-sub">${main ? `<span class="co2-tk">${esc(main.s)}</span>` : ''}${esc([c.city, c.country].filter(Boolean).join(', '))}${c.sector ? ' · ' + esc(c.sector) : ''} · ${c.public ? 'Public company' : 'Private company'}</p></div></div>
       ${a ? `<div class="co2-px"><div><b class="co2-p">${money(a.p, a.cur)}</b><span class="co2-mv ${cl(a.d)}">${sgn(a.d)} <small>today</small></span>${Number.isFinite(a.w) ? `<span class="co2-mv ${cl(a.w)}">${sgn(a.w)} <small>week</small></span>` : ''}</div>${spark(a.sp)}</div>` : ''}
       ${main && main.tracked ? `<a class="btn btn-primary co2-cta" href="asset.html?s=${encodeURIComponent(main.s)}">Open ${esc(main.s)} chart →</a>` : ''}</div></div>
       <div class="co-layout"><div class="co-main">
       ${c.description || facts.length || c.website ? sec('About', '', `<div class="card co-pad">${c.description ? `<p class="co-desc">${esc(c.description)}</p>` : ''}${facts.length || c.website ? `<div class="co2-facts">${facts.map(([k, v]) => `<div><span>${k}</span><b>${esc(v)}</b></div>`).join('')}${c.website ? `<div><span>Website</span><b><a href="${esc(c.website)}" rel="noopener nofollow" target="_blank">${esc(c.website.replace(/^https?:\/\//, '').replace(/\/$/, ''))}</a></b></div>` : ''}</div>` : ''}</div>`) : ''}
       <div id="co2-news"></div>
-      ${impl.length ? sec('What our articles said', `How recent news could affect ${esc(c.name)}.`, `<div class="co-impl">${impl.map(({ s, i }) => `<div class="card co-im"><span class="co-im-h">${C.chip(c, { dir: i.direction })}<small>${ago(s.published_at)}</small></span><p>${esc(i.why)}</p><a class="co-im-src" href="story.html?id=${encodeURIComponent(s.id)}">From: ${esc(s.headline)} →</a></div>`).join('')}</div>`) : ''}
+      ${impl.length ? sec('What our articles said', `How recent news could affect ${esc(c.name)}.`, `<div class="co-impl">${impl.map(({ s, i }) => `<div class="card co-im"><span class="co-im-h">${C.chip(c, { dir: i.direction })}<small>${ago(s.published_at)}</small></span><p>${esc(i.why)}</p><a class="co-im-src" href="story?id=${encodeURIComponent(s.id)}">From: ${esc(s.headline)} →</a></div>`).join('')}</div>`) : ''}
       ${c.story.length ? sec('Company story', 'Key moments, from sourced records only.', `<ol class="card co-story">${c.story.map(e => `<li><time>${esc(e.date)}</time><b>${esc(e.title)}</b><span>${esc(e.text)}</span></li>`).join('')}</ol>`) : ''}
       ${c.sources.length ? `<p class="co-sources">Sources: ${c.sources.map(s => `<a href="${esc(s.url)}" rel="noopener nofollow" target="_blank">${esc(s.name)}</a>`).join(' · ')}</p>` : ''}
       </div><aside class="co-side">
+      ${Number.isFinite(c.lat) ? `<section class="card co-pad cog-card"><div class="card-head"><h3>${esc(c.name)} on the globe</h3></div><div class="cog-box cog-small" id="cog-one"></div><p class="cog-hint">${c.sector ? `With other ${esc(c.sector.toLowerCase())} companies · ` : ''}drag to turn</p></section>` : ''}
       ${c.listings.length > 1 ? `<section class="card co-pad"><div class="card-head"><h3>Stocks of ${esc(c.name)}</h3></div>${c.listings.map(l => { const q = px[l.s]; return `<a class="co2-lst" href="asset.html?s=${encodeURIComponent(l.s)}"><span><b>${esc(l.s)}</b><small>${esc(l.exchange)}</small></span>${q ? `<span><b>${money(q.p, q.cur)}</b><small class="${cl(q.d)}">${sgn(q.d)}</small></span>` : '<small>Price not tracked yet</small>'}</a>`; }).join('')}</section>` : ''}
       ${related.length ? `<section class="card co-pad"><div class="card-head"><h3>Similar companies</h3></div><div class="co2-rel">${related.map(x => { const l = x.listings.find(l => px[l.s]), q = l && px[l.s]; return `<a href="${C.href(x)}">${logo(x)}<span><b>${esc(x.name)}</b><small>${l ? esc(l.s) : esc(x.country)}</small></span>${q ? `<small class="${cl(q.d)}">${sgn(q.d)}</small>` : ''}</a>`; }).join('')}</div></section>` : ''}
       <section class="card co-pad"><div class="card-head"><h3>Learn</h3></div>${[['valuation', 'Valuing a company', 'How investors judge what a business is worth.'], ['charts', 'Reading a stock chart', 'Candles, trends and volume.']].map(([id, t, s]) => `<a class="co-art" href="lesson.html?c=${id}"><b>${t}</b><small>${s}</small></a>`).join('')}</section>
       </aside></div><p class="co-disc">Prices may be delayed. Company facts are updated periodically. Not investment advice.</p>`;
+    { const el = root.querySelector('#cog-one'); if (el && window.InvCoGlobe) InvCoGlobe(el, { items: C.points(d.companies.filter(x => x === c || (c.sector && x.sector === c.sector))), focus: c.slug, lon: c.lon, lat: Math.max(-40, Math.min(50, c.lat)) }); }
     /* articles: today's feed plus the archive index by ticker (back to 2022) */
     Promise.all([...new Set([...syms].map(t => /[A-Z]/.test(t[0]) ? t[0] : '_'))].map(k => get('assets/globe/library-index/tick-' + k + '.json'))).then(sh => {
       const seen = new Set(), L = [...live, ...sh.flatMap(o => [...syms].flatMap(t => (o && o[t]) || []).map(r => ({ id: r[0], h: r[1], t: r[2], src: r[3] })))]

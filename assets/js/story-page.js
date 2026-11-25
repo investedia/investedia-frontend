@@ -5,10 +5,7 @@
   const fl = c => c ? `<img class="sp-fl" src="assets/globe/flags/${c.toLowerCase()}.svg" alt="" onerror="this.remove()">` : '';
   const lg = t => window.InvConsent?.allows('images') && t && !/[\^=]/.test(t) ? `<img class="sp-lg" src="https://cdn.brandfetch.io/${/-USD$/.test(t) ? 'crypto/' + encodeURIComponent(t.split('-')[0]) : 'ticker/' + encodeURIComponent(t)}/w/96/h/96/fallback/404?c=${BF}" alt="" onerror="this.remove()">` : '';
   const ic = i => i.kind === 'country' || !i.ticker ? fl(i.country) : lg(i.ticker) || fl(i.country);
-  const link = s => `story.html?id=${encodeURIComponent(s.id)}`;
-  const FKEY = 'inv-follow-items';
-  const followed = () => { try { return JSON.parse(localStorage.getItem(FKEY)) || []; } catch { return []; } };
-  const toggle = n => { const f = followed(), i = f.indexOf(n); i < 0 ? f.push(n) : f.splice(i, 1); try { localStorage.setItem(FKEY, JSON.stringify(f)); } catch {} return i < 0; };
+  const link = s => `story?id=${encodeURIComponent(s.id)}`;
   const snip = s => { const L = s.location || {}; if (!Number.isFinite(L.lat) || !Number.isFinite(L.lon)) return ''; /* owner 21 Nov 2026: no picture -> the place on our own globe, at night */
     const g = 'assets/globe/news.html?story=' + encodeURIComponent(s.id);
     return `<a class="sp-im sp-map" href="${g}" aria-label="Open ${esc(L.place || '')} on the globe"><iframe src="assets/globe/news.html?embed=1&cx=.5&cy=.5&r=.45&z=20&at=${L.lat.toFixed(3)},${L.lon.toFixed(3)}" loading="lazy" tabindex="-1" aria-hidden="true" title=""></iframe><span class="cr tl">${esc([L.place && L.place.split(',')[0], L.country].filter(Boolean).join(', '))} · live globe</span><span class="go">Open on the globe →</span></a>`; };
@@ -43,11 +40,11 @@
     const rel = all.filter(x => x.id !== s.id && ([...(x.entities || []).map(e => e.name), ...(x.impacts || []).map(i => i.name)].some(n => names.has(n))));
     const thread = [s, ...rel].sort((a, b) => Date.parse(a.published_at) - Date.parse(b.published_at)).slice(-6);
     const others = i => all.filter(x => x.id !== s.id && (x.impacts || []).some(z => z.name === i.name)).slice(0, 2).map(x => ({ x, z: x.impacts.find(z => z.name === i.name) }));
-    const imp = s.impacts || [], e0 = imp[0], follow = (s.entities?.[0]?.name) || (e0 && e0.name) || nm(s.location.country);
+    const imp = s.impacts || [], e0 = imp[0];
     if (!s.image && window.TopicPhoto) s.image = TopicPhoto.pick(s.id, [s.headline, s.summary].join(' '), s.category); // owner 24 Nov 2026: topic photo, not the globe
     const photo = s.image ? `<div class="sp-im"><img class="ph" src="assets/globe/${esc(s.image.file)}" alt="${esc(s.image.alt || '')}"><span class="cr">${s.image.kind === 'place' ? 'Photo' : 'Illustration'} · ${esc(s.image.credit || '')} · ${esc(s.image.source || '')}</span></div>` : snip(s);
     root.innerHTML = `<a class="sp-back" href="news.html">← News</a>
-    <div class="sp-pg"><div><div class="sp-m">${fl(ISO[s.location.country])}<b>${esc(s.location.place.split(',')[0])}</b><span>· ${esc(CAT[s.category] || '')} · ${ago(s.published_at)}</span></div><h1>${esc(s.headline)}</h1><button type="button" class="sp-share" id="sp-share">Share</button>${photo}<p class="sp-sum">${esc(s.summary)}</p><div class="sp-more m" hidden></div>
+    <div class="sp-pg"><div><div class="sp-m">${fl(ISO[s.location.country])}<b>${esc(s.location.place.split(',')[0])}</b><span>· ${esc(CAT[s.category] || '')} · ${ago(s.published_at)}</span></div><h1>${esc(s.headline)}</h1><div class="sp-acts"><div id="sp-share"></div><div id="sp-follow" class="fw"></div></div>${photo}<p class="sp-sum">${esc(s.summary)}</p><div class="sp-more m" hidden></div>
     <section class="sp-sec mi" id="sp-mi"><h2>Market implications</h2><p>What changed, which assets are exposed, and what investors are watching.</p>
      <div class="mi-seg" role="tablist" aria-label="Section"><button type="button" role="tab" data-p="event" aria-selected="false">Event</button><button type="button" role="tab" data-p="why" aria-selected="false">Rationale</button><button type="button" role="tab" data-p="exp" aria-selected="true">Exposure${imp.length ? ' · ' + Math.min(imp.length, 6) : ''}</button></div>
      <div class="mi-p mi-event" data-p="event"><span class="mi-eb">Event</span><p>${esc(s.summary)}</p></div>
@@ -57,10 +54,7 @@
     <section class="sp-sec pr-sec" id="sp-px" hidden></section>
     ${thread.length > 1 ? `<section class="sp-sec"><h2>How this article developed</h2><p>Reports on the same thread, oldest first.</p><div class="sp-tl">${thread.map((x, n) => `<div class="sp-ev${x.id === s.id ? ' now' : ''}"><div class="d">${new Date(x.published_at).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })} · ${new Date(x.published_at).toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })}</div><a href="${link(x)}">${esc(x.headline)}</a><p>${esc(x.summary)}</p>${(x.impacts || []).length ? `<div class="eff">${x.impacts.slice(0, 3).map(i => `<span>${ic(i)}${esc(i.name)} ${arr(i.direction)}</span>`).join('')}</div>` : ''}</div>`).join('')}</div></section>` : ''}
     <div class="sp-src"><span>Source: ${(s.sources || [s.source]).slice(0, 3).map(x => x ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a>` : '').join(', ')}</span><span><a href="assets/globe/news.html?story=${encodeURIComponent(s.id)}">Open on the globe →</a></span></div></div>
-    <aside class="sp-side"><div class="sp-more d" hidden></div><div class="sp-card"><h3>What you can do next</h3>
-      <div class="sp-act"><span class="ic">◉</span><span><b>Follow ${esc(follow)}</b><small>Keep an eye on new articles that touch it</small></span><button class="sp-b p" type="button" id="sp-f"></button></div>
-      <div class="sp-act"><span class="ic">☰</span><span><b>Add to my morning briefing</b><small>This thread, summarised each morning</small></span><button class="sp-b" type="button" data-auth="up">Add</button></div>
-      <div class="sp-act"><span class="ic">?</span><span><b>Market primers</b><small>Transmission channels from news to prices</small></span><a class="sp-b" href="education.html">Read</a></div></div>
+    <aside class="sp-side"><div class="sp-more d" hidden></div>
     ${e0 ? `<div class="sp-card"><h3>Two scenarios to watch</h3><div class="sp-sc"><div><b>${arr('up')} If it continues</b>More articles like this keep pushing ${esc(e0.name)} ${e0.direction === 'down' ? 'down' : e0.direction === 'up' ? 'up' : 'both ways'}; watch ${esc((imp[1] || e0).name)} next.</div><div><b>${arr('down')} If it fades</b>The effect on ${esc(e0.name)} usually eases once the news stops repeating.</div></div><p class="sp-note">Scenarios describe what could happen, not what you should do. Investedia is media, not advice: nothing here is a recommendation to buy or sell.</p></div>` : ''}
     <p class="sp-note">Summaries are written with the help of AI from each source's own reporting. Every article links to its source.</p></aside></div>`;
     { const mi = document.getElementById('sp-mi'), show = p => { mi.querySelectorAll('.mi-seg button').forEach(b => b.setAttribute('aria-selected', b.dataset.p === p)); mi.querySelectorAll('.mi-p').forEach(el => el.classList.toggle('on', el.dataset.p === p)); }; show('exp'); mi.querySelector('.mi-seg').onclick = e => { const b = e.target.closest('button'); if (b) show(b.dataset.p); };
@@ -79,8 +73,34 @@
     });
     fillMore(s, all); /* owner 21 Nov 2026: every article gets related markets and country context */
     const px = document.getElementById('sp-px'); if (px && window.PriceRail) PriceRail.mount(px, s);
-    const sh = document.getElementById('sp-share'); if (sh) sh.onclick = () => window.ShareLink && ShareLink.share(s.id, s.headline, sh);
-    const b = document.getElementById('sp-f'), paint = () => { const on = followed().includes(follow); b.textContent = on ? 'Following' : 'Follow'; b.classList.toggle('on', on); b.classList.toggle('p', !on); };
-    paint(); b.onclick = () => { toggle(follow); paint(); };
+    const sh = document.getElementById('sp-share'); if (sh && window.ShareBar) ShareBar.mount(sh, s); // owner 25 Nov 2026: design C share bar
+    mountFollow(document.getElementById('sp-follow'), s, imp); // owner 25 Nov 2026: Follow button under the title, real watchlist
   }).catch(() => { root.innerHTML = '<div class="sp-none">News could not load. Please refresh.</div>'; });
+
+  // Follow button (owner 25 Nov 2026): one tap follows the main company; ▾ also offers the country and its main index.
+  // Uses the real watchlist (INVWATCH, saved to the member's account). Guests get the sign-up popup.
+  function mountFollow(el, s, imp) {
+    if (!el || !window.INVWATCH) { if (el) el.remove(); return; }
+    const pick = [...(s.entities || []), ...imp.filter(i => i.role === 'primary'), ...imp].find(x => x && x.asset && x.asset.site);
+    const country = s.location && s.location.country ? nm(s.location.country) : '';
+    fetch('assets/globe/markets.json').then(r => r.json()).catch(() => ({ assets: [] })).then(m => {
+      const opts = [];
+      if (pick) opts.push({ label: pick.asset.n || pick.name, sub: 'Company or asset', it: { kind: 'asset', src: 'site', s: pick.asset.site } });
+      const known = new Set((m.assets || []).map(a => a.k));
+      if (country && known.has(country)) opts.push({ label: country, sub: 'Every article and market move in ' + country, it: { kind: 'country', k: country } });
+      const ix = (m.assets || []).find(a => a.g === 'Index' && a.k === country && (a.site || a.s) !== (pick && pick.asset.site));
+      if (ix) opts.push({ label: ix.n, sub: 'Main stock index', it: { kind: 'asset', src: 'site', s: ix.site || ix.s } });
+      if (!opts.length) { el.remove(); return; }
+      const main = opts[0], star = on => `<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.8l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z" fill="${on ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>`;
+      el.innerHTML = `<button type="button" class="fw-m"></button>${opts.length > 1 ? '<button type="button" class="fw-x" aria-label="More to follow" aria-expanded="false">▾</button><div class="fw-menu" hidden></div>' : ''}`;
+      const mb = el.querySelector('.fw-m'), xb = el.querySelector('.fw-x'), menu = el.querySelector('.fw-menu');
+      const paint = () => { const on = INVWATCH.has(main.it); mb.classList.toggle('on', on); mb.innerHTML = star(on) + `<span>${on ? 'Following' : 'Follow'} ${esc(main.label)}</span>`;
+        if (menu) menu.innerHTML = opts.map((o, n) => { const f = INVWATCH.has(o.it); return `<button type="button" class="fw-o${f ? ' on' : ''}" data-n="${n}">${star(f)}<span><b>${esc(o.label)}</b><small>${esc(o.sub)}</small></span></button>`; }).join(''); };
+      paint(); INVWATCH.on(paint);
+      mb.onclick = () => { INVWATCH.toggle(main.it); paint(); };
+      if (xb) { xb.onclick = e => { e.stopPropagation(); menu.hidden = !menu.hidden; xb.setAttribute('aria-expanded', !menu.hidden); };
+        menu.onclick = e => { const o = e.target.closest('.fw-o'); if (o) { e.stopPropagation(); INVWATCH.toggle(opts[+o.dataset.n].it); paint(); } };
+        document.addEventListener('click', e => { if (!el.contains(e.target)) { menu.hidden = true; xb.setAttribute('aria-expanded', 'false'); } }); }
+    });
+  }
 })();

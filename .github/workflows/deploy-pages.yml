@@ -40,15 +40,21 @@ jobs:
             --exclude='./scripts' --exclude='./config' --exclude='./graphify-out' --exclude='./functions' \
             --exclude='*.md' --exclude='*.py' --exclude='./package.json' \
             --exclude='./.gitignore' --exclude='./.nojekyll' . | tar -xf - -C site
+          # owner 25 Nov 2026: stay under Cloudflare Pages' 20,000-file limit. Library list pages after 100 are built in the browser from all.json.
+          find site/assets/globe/library-index -name 'page-*.json' | awk -F'page-|\\.json' '$2+0 > 100' | xargs -r rm -f
+          test -f site/index.html
+
+      - name: Fingerprint the collected article catalog for Cloudflare readers
+        run: python3 tools/news_library_index.py --fingerprint site
+
+      - name: Leave the single big catalog file out (the site reads its parts) and check Cloudflare's limits
+        run: |
+          if python3 -c "import json,sys; sys.exit(0 if json.load(open('site/assets/globe/library-index/meta.json')).get('all_parts') else 1)"; then rm -f site/assets/globe/library-index/all.json; fi
           files=$(find site -type f | wc -l)
           big=$(find site -type f -size +25M | wc -l)
           echo "Files: $files  (Cloudflare limit 20000)  Over 25 MB: $big"
           test "$files" -le 20000
           test "$big" -eq 0
-          test -f site/index.html
-
-      - name: Fingerprint the collected article catalog for Cloudflare readers
-        run: python3 tools/news_library_index.py --fingerprint site
 
       - name: Write the public live settings (live news, prices, login)
         env:

@@ -6186,6 +6186,496 @@
    "source": "GLEIF LEI record (CC0) headquarters address; city coordinates GeoNames (CC BY 4.0)",
    "source_url": "https://search.gleif.org/#/record/984500BEE8483EAED424",
    "checked_at": "2026-11-17"
+  },
+  "ABBN.SW": {
+   "hq_city": "Västerås",
+   "hq_lat": 59.6173,
+   "hq_lon": 16.5422,
+   "qid": "Q52825",
+   "company_label": "Abb",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q52825",
+   "checked_at": "2026-11-25"
+  },
+  "ABB.ST": {
+   "hq_city": "Västerås",
+   "hq_lat": 59.6173,
+   "hq_lon": 16.5422,
+   "qid": "Q52825",
+   "company_label": "ABB",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q52825",
+   "checked_at": "2026-11-25"
+  },
+  "ACKB.BR": {
+   "hq_city": "Antwerp",
+   "hq_lat": 51.2211,
+   "hq_lon": 4.3997,
+   "qid": "Q341828",
+   "company_label": "Ackermans V.Haaren",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q341828",
+   "checked_at": "2026-11-25"
+  },
+  "ADVANC.BK": {
+   "hq_city": "Bangkok",
+   "hq_lat": 13.75,
+   "hq_lon": 100.5167,
+   "qid": "Q379592",
+   "company_label": "Advanc_Advanced Info Service",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q379592",
+   "checked_at": "2026-11-25"
+  },
+  "BBAS3.SA": {
+   "hq_city": "Rio de Janeiro",
+   "hq_lat": -22.9111,
+   "hq_lon": -43.2056,
+   "qid": "Q610817",
+   "company_label": "Banco do Brasil",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q610817",
+   "checked_at": "2026-11-25"
+  },
+  "BMA.BA": {
+   "hq_city": "Buenos Aires",
+   "hq_lat": -34.5997,
+   "hq_lon": -58.3819,
+   "qid": "Q2335199",
+   "company_label": "Banco Macro",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2335199",
+   "checked_at": "2026-11-25"
+  },
+  "LUMI.TA": {
+   "hq_city": "Lod",
+   "hq_lat": 31.95,
+   "hq_lon": 34.9,
+   "qid": "Q806641",
+   "company_label": "Bank Leumi",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q806641",
+   "checked_at": "2026-11-25"
+  },
+  "BDMS.BK": {
+   "hq_city": "Bangkok",
+   "hq_lat": 13.75,
+   "hq_lon": 100.5167,
+   "qid": "Q13012598",
+   "company_label": "Bdms_Bangkok Dusit Medical",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q13012598",
+   "checked_at": "2026-11-25"
+  },
+  "CARL-B.CO": {
+   "hq_city": "Copenhagen",
+   "hq_lat": 55.6761,
+   "hq_lon": 12.5689,
+   "qid": "Q113215",
+   "company_label": "Carlsberg",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q113215",
+   "checked_at": "2026-11-25"
+  },
+  "300750.SZ": {
+   "hq_city": "Ningde",
+   "hq_lat": 26.6617,
+   "hq_lon": 119.5228,
+   "qid": "Q18653563",
+   "company_label": "Catl",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q18653563",
+   "checked_at": "2026-11-25"
+  },
+  "CB": {
+   "hq_city": "Warren",
+   "hq_lat": 40.6346,
+   "hq_lon": -74.519,
+   "qid": "Q1089060",
+   "company_label": "Chubb",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1089060",
+   "checked_at": "2026-11-25"
+  },
+  "CBK.DE": {
+   "hq_city": "Commerzbank Tower",
+   "hq_lat": 50.1112,
+   "hq_lon": 8.6744,
+   "qid": "Q157617",
+   "company_label": "Commerzbank",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q157617",
+   "checked_at": "2026-11-25"
+  },
+  "GIVN.SW": {
+   "hq_city": "Vernier",
+   "hq_lat": 46.2,
+   "hq_lon": 6.1,
+   "qid": "Q509544",
+   "company_label": "Givaudan",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q509544",
+   "checked_at": "2026-11-25"
+  },
+  "GGAL.BA": {
+   "hq_city": "Buenos Aires",
+   "hq_lat": -34.5997,
+   "hq_lon": -58.3819,
+   "qid": "Q3118234",
+   "company_label": "Grupo Financiero Galicia",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3118234",
+   "checked_at": "2026-11-25"
+  },
+  "INGA.AS": {
+   "hq_city": "Amsterdam",
+   "hq_lat": 52.3667,
+   "hq_lon": 4.8833,
+   "qid": "Q645708",
+   "company_label": "Ing Groep",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q645708",
+   "checked_at": "2026-11-25"
+  },
+  "KBANK.BK": {
+   "hq_city": "Bangkok",
+   "hq_lat": 13.75,
+   "hq_lon": 100.5167,
+   "qid": "Q276557",
+   "company_label": "Kbank_Kasikornbank",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q276557",
+   "checked_at": "2026-11-25"
+  },
+  "KBC.BR": {
+   "hq_city": "Brussels",
+   "hq_lat": 50.8467,
+   "hq_lon": 4.3517,
+   "qid": "Q29560723",
+   "company_label": "Kbc",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q29560723",
+   "checked_at": "2026-11-25"
+  },
+  "AD.AS": {
+   "hq_city": "Zaandam",
+   "hq_lat": 52.4417,
+   "hq_lon": 4.8422,
+   "qid": "Q20539261",
+   "company_label": "Koninklijke Ahold Delhaize",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q20539261",
+   "checked_at": "2026-11-25"
+  },
+  "KPN.AS": {
+   "hq_city": "Rotterdam",
+   "hq_lat": 51.92,
+   "hq_lon": 4.48,
+   "qid": "Q338633",
+   "company_label": "Kpn Kon",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q338633",
+   "checked_at": "2026-11-25"
+  },
+  "LIN": {
+   "hq_city": "Woking",
+   "hq_lat": 51.3161,
+   "hq_lon": -0.5611,
+   "qid": "Q682759",
+   "company_label": "Linde",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q682759",
+   "checked_at": "2026-11-25"
+  },
+  "LONN.SW": {
+   "hq_city": "Basel",
+   "hq_lat": 47.5581,
+   "hq_lon": 7.5878,
+   "qid": "Q674216",
+   "company_label": "Lonza",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q674216",
+   "checked_at": "2026-11-25"
+  },
+  "012330.KS": {
+   "hq_city": "Seoul",
+   "hq_lat": 37.56,
+   "hq_lon": 126.99,
+   "qid": "Q497534",
+   "company_label": "Mobis",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q497534",
+   "checked_at": "2026-11-25"
+  },
+  "NVO": {
+   "hq_city": "Bagsværd",
+   "hq_lat": 55.76,
+   "hq_lon": 12.455,
+   "qid": "Q818846",
+   "company_label": "Novo Nordisk",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q818846",
+   "checked_at": "2026-11-25"
+  },
+  "O39.SI": {
+   "hq_city": "OCBC Centre",
+   "hq_lat": 1.285,
+   "hq_lon": 103.8491,
+   "qid": "Q2042423",
+   "company_label": "OCBC Bank",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2042423",
+   "checked_at": "2026-11-25"
+  },
+  "601857.SS": {
+   "hq_city": "Dongcheng District",
+   "hq_lat": 39.9272,
+   "hq_lon": 116.4101,
+   "qid": "Q503182",
+   "company_label": "Petrochina",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q503182",
+   "checked_at": "2026-11-25"
+  },
+  "PKO.WA": {
+   "hq_city": "Warsaw",
+   "hq_lat": 52.23,
+   "hq_lon": 21.0111,
+   "qid": "Q578832",
+   "company_label": "PKO Bank Polski",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q578832",
+   "checked_at": "2026-11-25"
+  },
+  "RIO": {
+   "hq_city": "Melbourne",
+   "hq_lat": -37.8142,
+   "hq_lon": 144.9631,
+   "qid": "Q821293",
+   "company_label": "Rio Tinto",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q821293",
+   "checked_at": "2026-11-25"
+  },
+  "RIO.L": {
+   "hq_city": "Melbourne",
+   "hq_lat": -37.8142,
+   "hq_lon": 144.9631,
+   "qid": "Q821293",
+   "company_label": "Rio Tinto",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q821293",
+   "checked_at": "2026-11-25"
+  },
+  "6273.T": {
+   "hq_city": "Tokyo",
+   "hq_lat": 35.6839,
+   "hq_lon": 139.7744,
+   "qid": "Q839552",
+   "company_label": "Smc",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q839552",
+   "checked_at": "2026-11-25"
+  },
+  "4502.T": {
+   "hq_city": "Chūō-ku",
+   "hq_lat": 34.6811,
+   "hq_lon": 135.5097,
+   "qid": "Q899133",
+   "company_label": "Takeda Pharmaceutical",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q899133",
+   "checked_at": "2026-11-25"
+  },
+  "TLS.AX": {
+   "hq_city": "Melbourne",
+   "hq_lat": -37.8142,
+   "hq_lon": 144.9631,
+   "qid": "Q721162",
+   "company_label": "Telstra Fpo [Tls]",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q721162",
+   "checked_at": "2026-11-25"
+  },
+  "TRN.MI": {
+   "hq_city": "Rome",
+   "hq_lat": 41.8931,
+   "hq_lon": 12.4828,
+   "qid": "Q936325",
+   "company_label": "Terna",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q936325",
+   "checked_at": "2026-11-25"
+  },
+  "TXAR.BA": {
+   "hq_city": "Buenos Aires",
+   "hq_lat": -34.5997,
+   "hq_lon": -58.3819,
+   "qid": "Q918208",
+   "company_label": "Ternium Argentina",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q918208",
+   "checked_at": "2026-11-25"
+  },
+  "TEVA": {
+   "hq_city": "Ramat HaHayal",
+   "hq_lat": 32.1153,
+   "hq_lon": 34.8365,
+   "qid": "Q898750",
+   "company_label": "Teva Pharmaceutical",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q898750",
+   "checked_at": "2026-11-25"
+  },
+  "UPM.HE": {
+   "hq_city": "Kaartinkaupunki",
+   "hq_lat": 60.1658,
+   "hq_lon": 24.9501,
+   "qid": "Q1890664",
+   "company_label": "UPM-Kymmene",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q1890664",
+   "checked_at": "2026-11-25"
+  },
+  "VWS.CO": {
+   "hq_city": "Aarhus",
+   "hq_lat": 56.1564,
+   "hq_lon": 10.2097,
+   "qid": "Q868259",
+   "company_label": "Vestas Wind Systems",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q868259",
+   "checked_at": "2026-11-25"
+  },
+  "VWAGY": {
+   "hq_city": "Wolfsburg",
+   "hq_lat": 52.4231,
+   "hq_lon": 10.7872,
+   "qid": "Q156578",
+   "company_label": "Volkswagen",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q156578",
+   "checked_at": "2026-11-25"
+  },
+  "VOLV-B.ST": {
+   "hq_city": "Gothenburg",
+   "hq_lat": 57.7075,
+   "hq_lon": 11.9675,
+   "qid": "Q215293",
+   "company_label": "Volvo",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q215293",
+   "checked_at": "2026-11-25"
+  },
+  "ZURVY": {
+   "hq_city": "Zurich",
+   "hq_lat": 47.3744,
+   "hq_lon": 8.5411,
+   "qid": "Q230426",
+   "company_label": "Zurich Insurance",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q230426",
+   "checked_at": "2026-11-25"
+  },
+  "NGX:CILEASING": {
+   "hq_city": "Abuja",
+   "hq_lat": 9.0556,
+   "hq_lon": 7.4914,
+   "qid": "Q60741684",
+   "company_label": "C & I Leasing",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q60741684",
+   "checked_at": "2026-11-25"
+  },
+  "NGX:ETI": {
+   "hq_city": "Lomé",
+   "hq_lat": 6.13,
+   "hq_lon": 1.2158,
+   "qid": "Q930225",
+   "company_label": "Ecobank Transnational Incorporated",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q930225",
+   "checked_at": "2026-11-25"
+  },
+  "NSE:KPLC": {
+   "hq_city": "Nairobi",
+   "hq_lat": -1.2864,
+   "hq_lon": 36.8172,
+   "qid": "Q6392687",
+   "company_label": "Kenya Power & Lighting",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q6392687",
+   "checked_at": "2026-11-25"
+  },
+  "NSE:NSE": {
+   "hq_city": "Nairobi",
+   "hq_lat": -1.2864,
+   "hq_lon": 36.8172,
+   "qid": "Q2384385",
+   "company_label": "Nairobi Securities Exchange",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2384385",
+   "checked_at": "2026-11-25"
+  },
+  "GSE:ADB": {
+   "hq_city": "Greater Accra Region",
+   "hq_lat": 5.75,
+   "hq_lon": 0.0,
+   "qid": "Q4693885",
+   "company_label": "Agricultural Development Bank",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q4693885",
+   "checked_at": "2026-11-25"
+  },
+  "GSE:EGL": {
+   "hq_city": "Accra",
+   "hq_lat": 5.556,
+   "hq_lon": -0.1969,
+   "qid": "Q5380322",
+   "company_label": "Enterprise Group",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q5380322",
+   "checked_at": "2026-11-25"
+  },
+  "GSE:TOTAL": {
+   "hq_city": "Accra",
+   "hq_lat": 5.556,
+   "hq_lon": -0.1969,
+   "qid": "Q16734183",
+   "company_label": "TotalEnergies Ghana",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q16734183",
+   "checked_at": "2026-11-25"
+  },
+  "BRVM:BOAM": {
+   "hq_city": "Casablanca",
+   "hq_lat": 33.5992,
+   "hq_lon": -7.62,
+   "qid": "Q2300433",
+   "company_label": "Bank of Africa Mali",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q2300433",
+   "checked_at": "2026-11-25"
+  },
+  "BRVM:ETIT": {
+   "hq_city": "Lomé",
+   "hq_lat": 6.13,
+   "hq_lon": 1.2158,
+   "qid": "Q930225",
+   "company_label": "Ecobank Transnational Incorporated Togo",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q930225",
+   "checked_at": "2026-11-25"
+  },
+  "BRVM:SNTS": {
+   "hq_city": "Dakar",
+   "hq_lat": 14.6726,
+   "hq_lon": -17.432,
+   "qid": "Q3490246",
+   "company_label": "Sonatel Senegal",
+   "source": "Wikidata (CC0) headquarters coordinates",
+   "source_url": "https://www.wikidata.org/entity/Q3490246",
+   "checked_at": "2026-11-25"
   }
  },
  "not_matched": [
