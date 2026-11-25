@@ -1,9 +1,9 @@
 """Make 1200x630 share pictures with a small Investedia logo in the top-left.
 Run after adding photos:  python3 tools/make-og-branded.py
-Reads docs/assets/globe/photos/*.jpg, writes docs/assets/og/<same name>.jpg (skips existing)."""
+Reads assets/globe/photos/*.jpg, writes assets/og/<same name>.jpg (skips existing)."""
 import os, sys
 from PIL import Image, ImageDraw
-SRC, DST = 'docs/assets/globe/photos', 'docs/assets/og'
+SRC, DST = 'assets/globe/photos', 'assets/og'
 W, H, SZ, M = 1200, 630, 64, 28
 
 def logo(sz):
