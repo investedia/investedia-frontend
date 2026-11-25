@@ -179,7 +179,7 @@
   ];
   const tools = TOOL_GROUPS.flatMap(g => g[1]);
   const PRO_CTA = false;
-  const morePages = ['education','lesson','screener','calendar','calc','calculator','compare','converter','realestate','real-estate','about','contact','briefings','briefing','movers','projects','track-record','sources','watchlist'];
+  const morePages = ['screener','calendar','calc','calculator','compare','converter','realestate','real-estate','about','contact','briefings','briefing','movers','projects','track-record','sources','watchlist'];
   const themeChoices = () => `<div class="account-theme" role="group" aria-label="Theme"><span>Theme</span>${['light','dark','system'].map(t=>`<button type="button" role="menuitemradio" data-theme-choice="${t}" aria-checked="false">${t[0].toUpperCase()+t.slice(1)}</button>`).join('')}</div>`;
   // More menu (owner 15 Nov 2026, option A): grouped by task, icon + one-line description per link.
   // owner 25 Nov 2026 (option C): two groups, no live-price tools; Learn moved to the header, Markets removed for now
