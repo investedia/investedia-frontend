@@ -5,7 +5,8 @@
   let ids = null;
   const base = () => new URL('assets/share/', document.querySelector('script[src*="share-link.js"]').src.replace(/assets\/share-link\.js.*$/, '')).href;
   async function listed() { if (!ids) { try { ids = new Set(await (await fetch(base() + 'index.json', { cache: 'no-cache' })).json()); } catch { ids = new Set(); } } return ids; }
-  async function urlFor(id) { const root = base().replace(/assets\/share\/$/, ''); return (await listed()).has(id) ? base() + id + '.html' : root + 'story.html?id=' + encodeURIComponent(id); }
+  // Owner 25 Nov 2026: one clean address for every article; the server writes the preview card (functions/story.js).
+  async function urlFor(id) { return 'https://www.investedia.com/story?id=' + encodeURIComponent(id); }
   async function share(id, title, btn) {
     const url = await urlFor(id), label = btn && btn.textContent;
     if (navigator.share) { try { await navigator.share({ title, url }); return; } catch (e) { if (e && e.name === 'AbortError') return; } }

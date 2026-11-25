@@ -5,7 +5,7 @@
   const fl = c => c ? `<img class="sp-fl" src="assets/globe/flags/${c.toLowerCase()}.svg" alt="" onerror="this.remove()">` : '';
   const lg = t => window.InvConsent?.allows('images') && t && !/[\^=]/.test(t) ? `<img class="sp-lg" src="https://cdn.brandfetch.io/${/-USD$/.test(t) ? 'crypto/' + encodeURIComponent(t.split('-')[0]) : 'ticker/' + encodeURIComponent(t)}/w/96/h/96/fallback/404?c=${BF}" alt="" onerror="this.remove()">` : '';
   const ic = i => i.kind === 'country' || !i.ticker ? fl(i.country) : lg(i.ticker) || fl(i.country);
-  const link = s => `story.html?id=${encodeURIComponent(s.id)}`;
+  const link = s => `story?id=${encodeURIComponent(s.id)}`;
   const FKEY = 'inv-follow-items';
   const followed = () => { try { return JSON.parse(localStorage.getItem(FKEY)) || []; } catch { return []; } };
   const toggle = n => { const f = followed(), i = f.indexOf(n); i < 0 ? f.push(n) : f.splice(i, 1); try { localStorage.setItem(FKEY, JSON.stringify(f)); } catch {} return i < 0; };
