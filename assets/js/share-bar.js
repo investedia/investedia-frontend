@@ -49,7 +49,7 @@
     if (window.ShareLink) ShareLink.urlFor(id).then(u => { url = u; }).catch(() => {});
     const B = [['copy', 'Copy link', LINK], ['wa', 'Share on WhatsApp', svg(P.wa)], ['x', 'Share on X', svg(P.x)], ['in', 'Share on LinkedIn', IN], ['tg', 'Share on Telegram', svg(P.tg)], ['mail', 'Share by email', MAIL], ['qr', 'Show QR code', QR]];
     if (navigator.share) B.push(['more', 'More ways to share', MORE]);
-    el.className = 'sb'; el.innerHTML = '<span class="sb-l">Share</span>' + B.map(([k, l, i]) => '<button type="button" class="sb-b sb-' + k + '" data-k="' + k + '" aria-label="' + l + '" title="' + l + '">' + i + '</button>').join('') + '<div class="sb-pop" hidden></div><span class="sb-toast" role="status" aria-live="polite"></span>';
+    el.className = 'sb'; el.innerHTML = '<span class="sb-l">Share</span>' + B.map(([k, l, i]) => '<button type="button" class="sb-b sb-' + k + (/^(wa|tg|qr)$/.test(k) ? ' sb-pc' : '') + '" data-k="' + k + '" aria-label="' + l + '" title="' + l + '">' + i + '</button>').join('') + '<div class="sb-pop" hidden></div><span class="sb-toast" role="status" aria-live="polite"></span>';
     const pop = el.querySelector('.sb-pop'), toast = el.querySelector('.sb-toast');
     const say = t => { toast.textContent = t; toast.classList.add('on'); clearTimeout(say.t); say.t = setTimeout(() => toast.classList.remove('on'), 1800); };
     const open = u => window.open(u, '_blank', 'noopener,width=620,height=560');
