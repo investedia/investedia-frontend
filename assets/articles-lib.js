@@ -39,7 +39,9 @@ function initArticles() {
   }
   async function rows(s) {
     const filtered = s.cat || s.date || s.reg || s.q || s.sort !== 'new';
-    if (!filtered) { const r = await get('page-' + Math.min(s.page, meta.pages) + '.json'); return { list: s.page === 1 ? [...live, ...r] : r, total: meta.total + live.length }; }
+    // owner 25 Nov 2026: only the first 100 page files are deployed (Cloudflare's 20,000-file limit); deeper pages come from all.json
+    if (!filtered) { const r = await get('page-' + Math.min(s.page, meta.pages) + '.json').catch(() => null);
+      if (Array.isArray(r)) return { list: s.page === 1 ? [...live, ...r] : r, total: meta.total + live.length }; }
     const all = await get('all.json');
     const now = Date.now(), win = { '1d': 864e5, '7d': 7 * 864e5, '30d': 30 * 864e5 }[s.date], q = s.q.toLowerCase();
     let L = [...live, ...all].filter(r => (!s.cat || r.c === s.cat) && (!s.reg || r.g === s.reg) && (!win || now - Date.parse(r.t) <= win) && (!q || (r.h + ' ' + (r.s || '') + ' ' + (r.n || '')).toLowerCase().includes(q)));

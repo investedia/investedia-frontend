@@ -40,6 +40,8 @@ jobs:
             --exclude='./scripts' --exclude='./config' --exclude='./graphify-out' --exclude='./functions' \
             --exclude='*.md' --exclude='*.py' --exclude='./package.json' \
             --exclude='./.gitignore' --exclude='./.nojekyll' . | tar -xf - -C site
+          # owner 25 Nov 2026: stay under Cloudflare Pages' 20,000-file limit. Library list pages after 100 are built in the browser from all.json.
+          find site/assets/globe/library-index -name 'page-*.json' | awk -F'page-|\\.json' '$2+0 > 100' | xargs -r rm -f
           files=$(find site -type f | wc -l)
           big=$(find site -type f -size +25M | wc -l)
           echo "Files: $files  (Cloudflare limit 20000)  Over 25 MB: $big"
