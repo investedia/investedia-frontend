@@ -24,6 +24,25 @@
     const s = lw * u;
     return '<svg viewBox="0 0 ' + size + ' ' + size + '" width="' + size + '" height="' + size + '" role="img" aria-label="QR code for this article"><g fill="' + dot + '">' + o.join('') + '</g>' + eyes + '<svg x="' + (size / 2 - s / 2) + '" y="' + (size / 2 - s / 2) + '" width="' + s + '" height="' + s + '" viewBox="0 0 1086 1086">' + logo(light) + '</svg></svg>';
   }
+  // QR as a PNG image (owner 25 Nov 2026): copy it, or send it with the phone share sheet / download it.
+  function qrPng(url) {
+    return new Promise((ok, no) => {
+      const light = isLight(), pad = 48, size = 720, W = size + pad * 2;
+      const img = new Image(); img.onload = () => {
+        const c = document.createElement('canvas'); c.width = W; c.height = W + 70; const x = c.getContext('2d');
+        x.fillStyle = light ? '#fff' : '#0A0A0B'; x.fillRect(0, 0, c.width, c.height); x.drawImage(img, pad, pad, size, size);
+        x.fillStyle = light ? '#111' : '#f2f2f3'; x.font = '600 30px Inter, system-ui, sans-serif'; x.textAlign = 'center'; x.fillText('Scan to read on Investedia', W / 2, W + 30);
+        c.toBlob(b => b ? ok(b) : no(Error('png')), 'image/png'); };
+      img.onerror = no; img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(qrSvg(url, light, size).replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" '));
+    });
+  }
+  async function qrAction(k, url, title, say) {
+    let png; try { png = await qrPng(url); } catch { say('Could not make the image'); return; }
+    if (k === 'copy') { try { await navigator.clipboard.write([new ClipboardItem({ 'image/png': png })]); say('QR code copied'); } catch { say('Copy not supported here, use Download'); } return; }
+    const file = new File([png], 'investedia-qr.png', { type: 'image/png' });
+    if (navigator.canShare && navigator.canShare({ files: [file] })) { try { await navigator.share({ files: [file], title, text: title + ' ' + url }); } catch {} return; }
+    const a = document.createElement('a'); a.href = URL.createObjectURL(png); a.download = 'investedia-qr.png'; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000); say('QR code downloaded');
+  }
   function mount(el, story) {
     if (!el) return;
     const title = story.headline || 'Investedia', id = story.id; let url = location.href;
@@ -36,6 +55,7 @@
     const open = u => window.open(u, '_blank', 'noopener,width=620,height=560');
     const e = encodeURIComponent;
     el.addEventListener('click', async ev => {
+      const q = ev.target.closest('[data-q]'); if (q) { qrAction(q.dataset.q, url, title, say); return; }
       const b = ev.target.closest('.sb-b'); if (!b) return;
       if (window.ShareLink) { try { url = await ShareLink.urlFor(id); } catch {} }
       switch (b.dataset.k) {
@@ -47,7 +67,7 @@
         case 'mail': location.href = 'mailto:?subject=' + e(title) + '&body=' + e(title + '\n\n' + url); break;
         case 'more': try { await navigator.share({ title, url }); } catch {} break;
         case 'qr': if (!pop.hidden) { pop.hidden = true; b.setAttribute('aria-expanded', 'false'); break; }
-          pop.innerHTML = '<div class="sb-qc"><b>Share this article</b>' + qrSvg(url, isLight()) + '<span>Scan to read on your phone</span></div>';
+          pop.innerHTML = '<div class="sb-qc"><b>Share this article</b>' + qrSvg(url, isLight()) + '<span>Scan to read on your phone</span><div class="sb-qa"><button type="button" data-q="copy">Copy QR code</button><button type="button" data-q="send">' + (navigator.canShare ? 'Send QR code' : 'Download') + '</button></div></div>';
           pop.hidden = false; b.setAttribute('aria-expanded', 'true'); break;
       }
     });

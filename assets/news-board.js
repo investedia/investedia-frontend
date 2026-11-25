@@ -10,7 +10,7 @@
   const ico = i => i.kind === 'country' || !i.ticker ? nbFlag(i.country) : nbLogo(i.ticker) || nbFlag(i.country);
   const arr = d => `<span class="nb-dir ${d}">${d === 'up' ? '↑' : d === 'down' ? '↓' : d === 'mixed' ? '↔︎' : '–'}</span>`;
   const net = e => e.u > e.d * 1.5 ? 'up' : e.d > e.u * 1.5 ? 'down' : 'mixed';
-  const link = s => `story.html?id=${encodeURIComponent(s.id)}`;
+  const link = s => `story?id=${encodeURIComponent(s.id)}`;
   const pick = (list, key, label, icon) => {
     const m = new Map();
     for (const s of list) for (const i of s.impacts || []) { const k = key(i); if (!k) continue; const e = m.get(k) || { k, label: label(i), ic: icon(i), u: 0, d: 0, o: 0, t: 0, last: 0, items: [] }; e[i.direction === 'up' ? 'u' : i.direction === 'down' ? 'd' : 'o']++; e.t++; e.last = Math.max(e.last, Date.parse(s.published_at)); e.items.push({ s, i }); if (i.ticker) e.sym = i.ticker; m.set(k, e); }

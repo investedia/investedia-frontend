@@ -34,7 +34,7 @@
   const tone=(a,item)=>{if(item.kind!=='asset')return null;const i=(a.impacts||[]).find(i=>[i.ticker,i.symbol].some(s=>s&&symbol(s)===item.key));return i?i.direction:null;};
   const quote=item=>item.kind==='asset'?st.quotes.find(q=>symbol(q.s)===item.key):null;
   const fdate=t=>new Date(t).toLocaleString('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'});
-  const href=a=>'story.html?id='+encodeURIComponent(a.id);
+  const href=a=>'story?id='+encodeURIComponent(a.id);
   const STAR='<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 3.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 17l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8z"/></svg>';
   const logo=item=>item.kind==='country'?`<span class="wl-lg"><img src="assets/globe/flags/${esc((window.ISO_CC||{})[item.key]||'')}.svg" alt="" onerror="this.parentNode.textContent='${esc(item.name.slice(0,2).toUpperCase())}'"></span>`:(window.AssetIcons&&quote(item)?`<span class="wl-lg">${AssetIcons.icon(quote(item))}</span>`:`<span class="wl-lg wl-mono">${esc(item.key.slice(0,3))}</span>`);
   function stats(item){const arts=st.articles.filter(a=>now()-Date.parse(a.published_at)<=D30&&Date.parse(a.published_at)<=now()&&matches(a,item));const pos=arts.filter(a=>tone(a,item)==='up').length,neg=arts.filter(a=>tone(a,item)==='down').length;return {arts,pos,neg};}
