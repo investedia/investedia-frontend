@@ -30,7 +30,9 @@
  html.dash #panel .sheet-actions{top:15px!important;right:16px!important}
  /* Briefing: Markets never; News in one place */
  html.market-mode .bf-btn,html.mkd-on .bf-btn,html:not(.bf-top) .bf-btn{display:none!important}
- html.mkd-on .mkd-o{top:22px!important}
+ html.mkd-on .pv-o{top:22px!important}
+ /* the Top articles pin/minimise belong to the list, not to an open article */
+ html:not(.side-on) .gp-ctl:has([aria-label="Pin Top articles"]){display:none!important}
  /* Search bar glass styles (preview) */
  html[data-sb] #sbox{-webkit-backdrop-filter:blur(20px) saturate(160%);backdrop-filter:blur(20px) saturate(160%);transition:border-color .2s,box-shadow .2s,background .2s}
  html[data-sb=a] #sbox{background:rgba(255,255,255,.07)!important;border:1px solid rgba(255,255,255,.14)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 8px 30px rgba(0,0,0,.35)!important}
