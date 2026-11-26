@@ -42,7 +42,7 @@
   $('mv-type').onclick = e => { const b = e.target.closest('button'); if (b) { S.type = b.dataset.k; S.shown = 10; draw(); } };
   $('mv-list').addEventListener('click', e => {
     const pin = e.target.closest('.mv-pin');
-    if (pin) { const r = pin.closest('.mv-r'); r.querySelectorAll('.mv-pin').forEach(p => p.classList.toggle('on', p === pin)); const t = r.querySelectorAll('.mv-s')[+pin.dataset.n]; t && t.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); return; }
+    if (pin) { const r = pin.closest('.mv-r'); r.querySelectorAll('.mv-pin').forEach(p => { p.classList.toggle('on', p === pin); p.setAttribute('aria-pressed', p === pin); }); const t = r.querySelectorAll('.mv-s')[+pin.dataset.n]; t && t.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); return; }
     const h = e.target.closest('.mv-h'); if (!h) return;
     const r = h.parentElement, open = !r.classList.contains('open'); r.classList.toggle('open', open); h.setAttribute('aria-expanded', open);
     const d = r.querySelector('.mv-d'); if (open && !d.innerHTML) { const a = S.assets.find(x => x.s === r.dataset.s); d.innerHTML = detail(a, S.win, storiesFor(a, WIN.find(w => w[0] === S.win)[2])); }

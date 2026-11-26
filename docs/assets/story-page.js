@@ -94,7 +94,7 @@
       const main = opts[0], star = on => `<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.8l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z" fill="${on ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>`;
       el.innerHTML = `<button type="button" class="fw-m"></button>${opts.length > 1 ? '<button type="button" class="fw-x" aria-label="More to follow" aria-expanded="false">▾</button><div class="fw-menu" hidden></div>' : ''}`;
       const mb = el.querySelector('.fw-m'), xb = el.querySelector('.fw-x'), menu = el.querySelector('.fw-menu');
-      const paint = () => { const on = INVWATCH.has(main.it); mb.classList.toggle('on', on); mb.innerHTML = star(on) + `<span>${on ? 'Following' : 'Follow'} ${esc(main.label)}</span>`;
+      const paint = () => { const on = INVWATCH.has(main.it); mb.classList.toggle('on', on); mb.setAttribute('aria-pressed', on); mb.innerHTML = star(on) + `<span>${on ? 'Following' : 'Follow'} ${esc(main.label)}</span>`;
         if (menu) menu.innerHTML = opts.map((o, n) => { const f = INVWATCH.has(o.it); return `<button type="button" class="fw-o${f ? ' on' : ''}" data-n="${n}">${star(f)}<span><b>${esc(o.label)}</b><small>${esc(o.sub)}</small></span></button>`; }).join(''); };
       paint(); INVWATCH.on(paint);
       mb.onclick = () => { INVWATCH.toggle(main.it); paint(); };

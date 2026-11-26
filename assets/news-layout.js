@@ -14,7 +14,7 @@
  html.dash.lcol-on #ddrow>#fb-reset{top:10px}
  .nl-ft{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:8px;width:100%;height:46px;cursor:pointer;font:600 15px Inter,sans-serif;color:#ececef;grid-column:1/-1}
  .nl-ft small{font:500 12.5px Inter,sans-serif;color:#8a8a92;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
- .nl-ft i{font-style:normal;color:#8a8a92;font-size:11px;margin-left:auto;margin-right:52px;transition:transform .2s}
+ .nl-ft i{font-style:normal;color:#8a8a92;font-size:12px;margin-left:auto;margin-right:52px;transition:transform .2s}
  html.nl-fopen .nl-ft i{transform:rotate(180deg)}
  html.dash.lcol-on:not(.nl-fopen) #ddrow>.dd,html.dash.lcol-on:not(.nl-fopen) #lcol #layers,html.dash.lcol-on:not(.nl-fopen) #presets{display:none!important}
  html.dash.lcol-on.nl-fopen #ddrow{border-radius:18px 18px 0 0!important;border-bottom:0!important;padding-bottom:10px!important}
@@ -27,13 +27,13 @@
  #regions .reg{grid-template-columns:1fr 64px 44px!important;min-height:34px!important;padding:6px 10px!important;font-size:13px!important;gap:10px!important}
  #regions .reg .rg-sp{display:none!important}
  #regions .reg .rg-name{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
- #regions .reg em{justify-self:end;padding:2px 8px!important;font-size:11.5px!important}
+ #regions .reg em{justify-self:end;padding:2px 8px!important;font-size:12px!important}
  #regions.dd-menu{padding:6px!important}
  html.dash #panel .sheet-actions{top:6px!important;right:12px!important;gap:0!important;background:none!important;border:0!important;padding:0!important;box-shadow:none!important;width:auto!important;height:auto!important}html.dash #panel .sheet-actions #sheet-expand{display:none!important}html.dash #panel #sheet-close{width:26px!important;height:26px!important;border-radius:8px!important;border:1px solid #2c2c31!important;background:#141417!important;font-size:15px!important;line-height:1}
  html.dash #panel .pbody>.eyebrow{display:none}html.dash #panel .pbody h2{margin:0 0 12px!important;line-height:26px!important;padding-top:0!important}html.dash #panel .pbody{padding-top:14px!important}
  .compact-country{position:relative;display:grid!important;grid-template-columns:22px 1fr auto;align-items:center;gap:10px;width:100%;padding:9px 10px!important;border-radius:10px;font:500 14px Inter,sans-serif!important;color:#ececef!important;overflow:hidden}
  .compact-country:before{content:'';position:absolute;left:0;top:0;bottom:0;width:var(--sh);background:linear-gradient(90deg,rgba(255,122,26,.16),rgba(255,122,26,.04));border-radius:10px;z-index:0}.compact-country>*{position:relative;z-index:1}
- .compact-country small{font:600 12.5px 'Geist Mono',ui-monospace,monospace!important;color:#ff9d5c!important}.compact-country:hover{background:rgba(255,255,255,.04)}
+ .compact-country small{font:600 12.5px var(--sans,Inter,system-ui,sans-serif)!important;color:#ff9d5c!important}.compact-country:hover{background:rgba(255,255,255,.04)}
  html:has(#ddrow .dd-menu:not([hidden])) .gp-ctl,html:has(.tf-dd.open) .gp-ctl{display:none!important}
  #sideSec:not([hidden]){display:grid!important;grid-template-columns:1fr 1fr;gap:8px;padding:14px!important}
  #sideSec .sd-h{grid-column:1/-1;margin-bottom:2px}
@@ -43,8 +43,8 @@
  #sideSec .sd-r[aria-pressed=true]{border-color:rgba(255,122,26,.55);background:#16110c}
  #sideSec .sd-r>span:first-child{grid-area:n;font:500 13px Inter,sans-serif;color:#ececef;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
  #sideSec .sd-r>i{grid-area:i;font-style:normal;color:#5c5c64}
- #sideSec .sd-r>em{grid-area:p;font:600 17px 'Geist Mono',ui-monospace,monospace;font-style:normal;margin-top:2px}
- #sideSec .sd-r>small{grid-area:c;color:#77777f;font-size:11px}
+ #sideSec .sd-r>em{grid-area:p;font:600 17px var(--sans,Inter,system-ui,sans-serif);font-style:normal;margin-top:2px}
+ #sideSec .sd-r>small{grid-area:c;color:#77777f;font-size:12px}
  #sideSec .sd-r .gf-sector-bar{grid-area:b;position:static!important;display:block;height:3px;margin-top:6px;border-radius:2px;background:#1d1d21;overflow:hidden}
  #sideSec .sd-r .gf-sector-bar i{display:block;height:100%;background:#FF7A1A}
 }`;
