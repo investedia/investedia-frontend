@@ -598,9 +598,17 @@
 
   // Tabs helper: buttons with data-tab inside a .tabs; calls fn(key)
   function tabs(el, fn) {
-    el.setAttribute('role', 'tablist');
-    el.setAttribute('role','tablist'); el.setAttribute('aria-label',el.id || 'View');
-    el.querySelectorAll('.tab').forEach(b => { b.setAttribute('role', 'tab'); b.onclick = () => { el.querySelectorAll('.tab').forEach(x => x.setAttribute('aria-selected', x === b)); fn(b.dataset.tab); }; });
+    el.setAttribute('role', 'tablist'); if (!el.hasAttribute('aria-label')) el.setAttribute('aria-label', el.id || 'View');
+    const all = () => [...el.querySelectorAll('.tab')];
+    const pick = (b, focus) => { all().forEach(x => { const on = x === b; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; }); if (focus) b.focus(); fn(b.dataset.tab); };
+    const list = all(), cur = list.find(x => x.getAttribute('aria-selected') === 'true' || x.classList.contains('on')) || list[0];
+    list.forEach(b => { b.setAttribute('role', 'tab'); b.tabIndex = b === cur ? 0 : -1; b.onclick = () => pick(b); });
+    // Roving tabindex: arrows/Home/End move between tabs (WAI-ARIA tabs pattern)
+    el.onkeydown = e => {
+      const t = all(), i = t.indexOf(document.activeElement); if (i < 0) return;
+      const j = { ArrowRight: (i + 1) % t.length, ArrowLeft: (i - 1 + t.length) % t.length, Home: 0, End: t.length - 1 }[e.key];
+      if (j === undefined) return; e.preventDefault(); pick(t[j], true);
+    };
   }
 
   // Compact asset row used in lists (movers, related, mentioned)
@@ -613,7 +621,7 @@
   const late = () => document.querySelectorAll('[data-newsletter]').forEach(el => {
     el.innerHTML = `<div class="panel cta-band ai-glow"><div><span class="eyebrow">The Investedia Brief</span><h2 style="margin-top:10px;font-size:26px">Markets in five minutes, every morning.</h2><p class="lede" style="font-size:15px">The moves that matter, the news behind them and one chart worth your time. Free.</p></div>
       <form class="subscribe" onsubmit="event.preventDefault();this.querySelector('button').textContent='Subscribed ✓'"><input class="input" type="email" placeholder="you@email.com" aria-label="Email address" required><button class="btn btn-primary" type="submit">Subscribe</button>
-      <div class="chips" style="display:flex;gap:6px;flex-wrap:wrap;width:100%;margin-top:6px">${['Daily brief', 'Crypto weekly', 'Earnings alerts', 'Real estate monthly'].map((t, i) => `<button type="button" class="chip ${i === 0 ? 'on' : ''}" onclick="this.classList.toggle('on')">${t}</button>`).join('')}</div></form></div>`;
+      <div class="chips" style="display:flex;gap:6px;flex-wrap:wrap;width:100%;margin-top:6px">${['Daily brief', 'Crypto weekly', 'Earnings alerts', 'Real estate monthly'].map((t, i) => `<button type="button" class="chip ${i === 0 ? 'on' : ''}" aria-pressed="${i === 0}" onclick="this.setAttribute('aria-pressed',this.classList.toggle('on'))">${t}</button>`).join('')}</div></form></div>`;
   });
   document.addEventListener('DOMContentLoaded', () => { late(); document.querySelectorAll('[data-icon]').forEach(e => { e.innerHTML = icon(e.dataset.icon); if (!e.classList.contains('dd-ic')) e.classList.add('ic-inline'); }); document.querySelectorAll('[data-search]').forEach(b => b.onclick = openPalette); });
 
@@ -672,7 +680,7 @@
     <h2 id="pop-t" style="margin:10px 0 6px;font-size:24px">Markets in five minutes, every morning.</h2>
     <p class="muted" style="margin:0 0 18px">Join the list for the daily brief: the news that moved markets, in context. Free, unsubscribe anytime.</p>
     <form class="subscribe" id="pop-f"><input class="input" type="email" id="pop-email" placeholder="you@email.com" aria-label="Email address" required><button class="btn btn-primary" type="submit">Join free</button></form>
-    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">${['Daily brief', 'Weekly charts', 'Crypto', 'Product updates'].map((t, i) => `<button type="button" class="chip ${i < 2 ? 'on' : ''}" onclick="this.classList.toggle('on')">${t}</button>`).join('')}</div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">${['Daily brief', 'Weekly charts', 'Crypto', 'Product updates'].map((t, i) => `<button type="button" class="chip ${i < 2 ? 'on' : ''}" aria-pressed="${i < 2}" onclick="this.setAttribute('aria-pressed',this.classList.toggle('on'))">${t}</button>`).join('')}</div>
     <p class="pop-ok up" hidden style="margin:14px 0 0;font-weight:550">You’re on the list. Check your inbox to confirm.</p>
   </div>`;
   const store = (k, v) => { try { return v === undefined ? localStorage.getItem(k) : localStorage.setItem(k, v); } catch { return null; } };

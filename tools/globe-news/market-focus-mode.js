@@ -72,7 +72,7 @@ function drawMarketMode() {
   const boxes=[],overlap=(a,b)=>a.x<b.x+b.w&&a.x+a.w>b.x&&a.y<b.y+b.h&&a.y+a.h>b.y;
   const candidates=Object.entries(MARKET.focus.countries).filter(([,c])=>c.labels.length)
     .sort((a,b)=>b[1].counts.important-a[1].counts.important);
-  ctx.font='500 11px Inter,sans-serif';ctx.textBaseline='middle';
+  ctx.font='500 12px Inter,sans-serif';ctx.textBaseline='middle';
   for(const[iso,c]of candidates){
     if(boxes.length>=(marketPhone()?5:9))break;
     const country=byName[c.name],venue=MARKET.markers.find(m=>m.id===c.exchange);
