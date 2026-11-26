@@ -930,7 +930,7 @@ html.proj-on .pjq-btn{display:flex}}
 <div class="top">
   <div class="brand">
     <a class="wm" href="/">Invested<span class="i">i</span>a</a>
-    <span class="prod gs-old">Globe · News</span><span class="gswitch" id="gswitch" role="group" aria-label="Globe view"><button type="button" data-m="news" aria-pressed="true">News</button><button type="button" data-m="markets" aria-pressed="false">Markets</button><button type="button" data-m="companies" aria-pressed="false">Companies</button><button type="button" data-m="projects" class="gs-pro" aria-pressed="false">Projects</button></span>
+    <span class="prod gs-old">Globe · News</span><span class="gswitch" id="gswitch" role="group" aria-label="Globe view"><button type="button" data-m="news" aria-pressed="true">News</button><button type="button" data-m="markets" aria-pressed="false">Markets</button><button type="button" data-m="projects" class="gs-pro" aria-pressed="false">Projects</button></span>
     <button type="button" class="globe-privacy" data-cookie-settings>Privacy</button>
     <span class="demo" id="badge" title="Concept preview: every article is demo content written to show the design. Not real news.">Concept · demo articles</span>
   </div>
@@ -2633,7 +2633,7 @@ function renderAct(){
   cards=ev.length?ev.map(e=>{const d=new Date(e.at);return `<a class="act-k" href="../../calendar.html"><div class="act-m"><b>${d.toLocaleDateString([], {weekday:'short'})} ${tm(d)}</b>${esc(e.country||e.c)}${e.src?' · '+esc(e.src):''}</div><div class="act-t">${esc(e.t)}</div><div class="act-f"><span class="hi">● High impact</span></div></a>`}).join(''):'<div class="act-e">No scheduled high-impact releases for this region in our calendar. Coverage is limited to major currencies for now.</div>';
  }
  el.classList.toggle('pf',actTab==='pf');
- el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Upcoming</button><button type="button" role="tab" aria-selected="${actTab==='pf'}" data-at="pf">My watchlist</button>${window.InvBriefing?`<button type="button" role="tab" aria-selected="${actTab==='bf'}" data-at="bf">${InvBriefing.tabHTML()}</button>`:''}<span class="act-r">${right}</span></div>${actTab==='pf'?wlHTML():`<div class="act-c${actTab==='co'?' co-c':''}">${cards}</div>`}`;
+ el.innerHTML=`<div class="act-h" role="tablist"><button type="button" role="tab" aria-selected="${actTab==='la'}" data-at="la">Latest activity</button><button type="button" role="tab" aria-selected="${actTab==='cu'}" data-at="cu">Upcoming</button><button type="button" role="tab" aria-selected="${actTab==='pf'}" data-at="pf">My watchlist</button><span class="act-r">${right}</span></div>${actTab==='pf'?wlHTML():`<div class="act-c${actTab==='co'?' co-c':''}">${cards}</div>`}`;
  if(actTab==='pf')wlBind(el);
  document.documentElement.style.setProperty('--acth',el.offsetHeight+'px');
  el.querySelectorAll('[data-at]').forEach(b=>b.onclick=()=>{actTab=b.dataset.at;renderAct();});
@@ -2679,8 +2679,8 @@ function modeSwap(fn, spin = true) {
     setTimeout(() => o.remove(), 650); modeSwap.t = setTimeout(() => h.classList.remove('mswap'), 700);
   }));
 }
-$('gswitch').onclick = e => { const b=e.target.closest('button');if(!b||b.getAttribute('aria-pressed')==='true')return;const leavingProj=PROJ.on;const wasCo=!!window.coModeActive;window.coModeActive=b.dataset.m==='companies';if(wasCo&&b.dataset.m==='markets'){try{mkTab='act'}catch(e){}}document.querySelectorAll('#gswitch button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
-  modeSwap(()=>{if(b.dataset.m==='projects')return projSet(true);const m=b.dataset.m==='companies'?'markets':b.dataset.m;projSet(false,{mode:m});if(typeof marketSetMode==='function')marketSetMode(m);if(b.dataset.m==='companies')window.coModeOpen&&coModeOpen();}, !leavingProj); };  /* owner 25 Nov 2026: Companies view = Markets globe with the companies list and logo pins */
+$('gswitch').onclick = e => { const b=e.target.closest('button');if(!b||b.getAttribute('aria-pressed')==='true')return;const leavingProj=PROJ.on;document.querySelectorAll('#gswitch button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
+  modeSwap(()=>{if(b.dataset.m==='projects')return projSet(true);projSet(false,{mode:b.dataset.m});if(typeof marketSetMode==='function')marketSetMode(b.dataset.m);}, !leavingProj); };
 function sideData() {
   const vis = stories.filter(st => InvNewsFilters.match(st,F)&&inRegion(st.location.region,F.region)&&inTime(st)&&(!F.mine||touchesWatch(st))&&(F.lens==='all'||st.lens.includes(F.lens))), seen = new Map();
   vis.forEach(st => impactsOf(st).forEach(i => { const a = assetForImpact(i); if (!a || typeof a.d !== 'number' || !isFinite(a.d) || Math.abs(a.d) > 25 || a.u === 'bp') return; const k = a.s; const e = seen.get(k) || { a, n: 0, cats: new Set() }; e.n++; e.cats.add(st.category); seen.set(k, e); }));
