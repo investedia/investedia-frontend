@@ -33,7 +33,7 @@ function marketInit(){
   MARKET.articles=[...articles.values()].sort((a,b)=>Date.parse(b.published_at)-Date.parse(a.published_at));MARKET.ready=true;try{mkSessRender();mkdRender()}catch{};if(MARKET.selected){MARKET.selectedVenue=marketVenue(MARKET.selected,MARKET.selectedVenue)?.id||null;marketRender();}
  }).catch(()=>{MARKET.error=true;if(MARKET.selected)marketRender();});return MARKET.promise;
 }
-function marketSetMode(mode){setTimeout(()=>{try{mkSessRender();mkdRender()}catch{}},0);setTimeout(()=>{if(typeof renderSide==='function')renderSide();document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String(document.documentElement.classList.contains('proj-mode')?b.dataset.m==='projects':b.dataset.m==='projects'?false:(b.dataset.m==='markets')===(mode==='markets'))));size();},0);
+function marketSetMode(mode){setTimeout(()=>{try{mkSessRender();mkdRender()}catch{}},0);setTimeout(()=>{if(typeof renderSide==='function')renderSide();document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String(document.documentElement.classList.contains('proj-mode')?b.dataset.m==='projects':b.dataset.m==='projects'?false:mode==='markets'?b.dataset.m===(window.coModeActive?'companies':'markets'):b.dataset.m==='news')));size();},0);
  MARKET.on=mode==='markets';document.documentElement.classList.toggle('market-mode',MARKET.on);const u=new URL(location.href);MARKET.on?u.searchParams.set('mode','markets'):u.searchParams.delete('mode');history.replaceState(null,'',u);marketControl.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.mode==='markets')===MARKET.on)));
  qi.placeholder=MARKET.on?'Search countries, exchanges, indices & companies':'Search assets, countries & articles';if(MARKET.on)marketInit();else marketClose();
 }
@@ -112,6 +112,7 @@ setInterval(()=>{if(MARKET.on)mkSessRender();},60000);addEventListener('resize',
 const mkL=document.createElement('section');mkL.className='mkd-l';mkL.hidden=true;document.body.append(mkL);
 const mkO=document.createElement('aside');mkO.className='mkd-o';mkO.hidden=true;document.body.append(mkO);
 const mkA=document.createElement('section');mkA.className='mkd-a';mkA.hidden=true;document.body.append(mkA);let mkTab='act';
+window.coModeOpen=()=>{window.coModeActive=true;mkTab='co';try{mkdRender()}catch(e){}document.querySelectorAll('#gswitch button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.m==='companies')));};  /* owner 25 Nov 2026: the Companies switch opens this tab */
 const MKD_EX=[['XTKS','Tokyo'],['XHKG','Hong Kong'],['XSHG','Shanghai'],['XNSE','Mumbai'],['XJSE','Johannesburg'],['XLON','London'],['XETR','Frankfurt'],['XNYS','New York'],['XTSE','Toronto'],['BVMF','São Paulo'],['XASX','Sydney']];
 function mkdSpark(v,c){const lo=Math.min(...v),hi=Math.max(...v);return `<svg viewBox="0 0 60 20" width="60" height="20" aria-hidden="true"><polyline points="${v.map((x,i)=>(i*60/(v.length-1)).toFixed(1)+','+(18-(x-lo)/((hi-lo)||1)*16).toFixed(1)).join(' ')}" fill="none" stroke="${c}" stroke-width="1.4"/></svg>`;}
 function mkdRender(){
