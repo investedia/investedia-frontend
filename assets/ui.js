@@ -977,7 +977,7 @@
   csScrim.className = 'csel-scrim'; csScrim.hidden = true;
   let csCur = null, csType = '', csTypeT = 0;
   const csOpts = () => [...csMenu.querySelectorAll('.csel-opt:not([disabled])')];
-  function csLabel(sel) { const l = sel.id && document.querySelector(`label[for="${sel.id}"]`); return sel.getAttribute('aria-label') || (l && l.textContent.trim()) || 'Choose an option'; }
+  function csLabel(sel) { const l = sel.id && document.querySelector(`label[for="${sel.id}"]`); const w = !l && sel.closest('label'), wt = w && [...w.childNodes].filter(x => x.nodeType === 3).map(x => x.textContent).join(' ').trim(); return sel.getAttribute('aria-label') || (l && l.textContent.trim()) || wt || 'Choose an option'; }
   function csClose(keepFocus) {
     if (!csCur) return; const { btn } = csCur; csCur = null;
     btn.setAttribute('aria-expanded', 'false'); csMenu.classList.remove('open'); csScrim.classList.remove('open'); document.documentElement.classList.remove('csel-lock');

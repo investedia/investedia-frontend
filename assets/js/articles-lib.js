@@ -35,7 +35,7 @@ function initArticles() {
     $('al-date').innerHTML = DATES.map(([v, l]) => opt('date', v, l)).join('');
     $('al-reg').innerHTML = opt('reg', '', 'All regions') + Object.entries(REG).filter(([k]) => meta.regions[k]).map(([k, l]) => opt('reg', k, l, meta.regions[k])).join('');
     $('al-chips').innerHTML = [['', 'All', meta.total], ...Object.entries(meta.categories).map(([c, n]) => [c, nice(c), n])].map(([v, l, n]) => `<button type="button" data-k="cat" data-v="${esc(v)}" aria-pressed="${s.cat === v}">${esc(l)} ${fmt(n)}</button>`).join('');
-    if (document.activeElement !== $('al-q')) $('al-q').value = s.q; $('al-sort').value = s.sort;
+    if (document.activeElement !== $('al-q')) $('al-q').value = s.q; $('al-sort').value = s.sort; document.querySelectorAll('.al-seg [data-sort]').forEach(b => b.setAttribute('aria-pressed', b.dataset.sort === s.sort));
   }
   async function rows(s) {
     const filtered = s.cat || s.date || s.reg || s.q || s.sort !== 'new';
@@ -67,7 +67,7 @@ function initArticles() {
       fetch('assets/globe/library/' + encodeURIComponent(r.id) + '.json').then(x => x.ok ? x.json() : fetch('assets/globe/library-days/' + String(r.t).slice(0, 10) + '.json').then(y => y.ok ? y.json() : {}).then(b => b[r.id] || null)).then(d => { const p = $('al-lead-sum'); if (id === renderId && p && d?.summary) p.textContent = d.summary; }).catch(() => {}); } }
     $('al-lead').innerHTML = lead;
     const from = res.total ? (s.page - 1) * meta.per_page + 1 : 0;
-    $('al-count').textContent = res.total ? `Showing ${fmt(from)}–${fmt(Math.min(res.total, s.page * meta.per_page))} of ${fmt(res.total)}` : '';
+    $('al-count').innerHTML = res.total ? `${fmt(res.total)}<span class="al-rng"> · ${fmt(from)}–${fmt(Math.min(res.total, s.page * meta.per_page))}</span>` : '';
     let html = '', d0 = ''; for (const r of list) { const d = day(r.t); if (d !== d0) { html += `<div class="al-day">${d}</div>`; d0 = d; } html += row(r); }
     $('al-list').innerHTML = html || '<p class="al-empty">No articles match these filters.</p>';
     $('al-pg').innerHTML = pager(s, pages);
@@ -79,6 +79,7 @@ function initArticles() {
   });
   let qt; $('al-q').addEventListener('input', e => { clearTimeout(qt); qt = setTimeout(() => go({ q: e.target.value.trim() }, false), 250); });
   $('al-sort').addEventListener('change', e => go({ sort: e.target.value }));
+  document.querySelectorAll('.al-seg [data-sort]').forEach(b => b.addEventListener('click', () => go({ sort: b.dataset.sort })));
   $('al-fbtn').addEventListener('click', () => { const o = $('al-side').classList.toggle('open'); $('al-fbtn').setAttribute('aria-expanded', String(o)); });
   $('al-done').addEventListener('click', () => { $('al-side').classList.remove('open'); $('al-fbtn').setAttribute('aria-expanded', 'false'); scrollTo({ top: 0 }); });
   addEventListener('popstate', render);
