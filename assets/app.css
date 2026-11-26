@@ -1,12 +1,11 @@
 @font-face{font-family:"Inter";src:url("/assets/fonts/inter-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
-@font-face{font-family:"Geist Mono";src:url("/assets/fonts/geist-mono-var.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
 /* Investedia UI — dark terminal-grade layout: dense data tables, hairline borders, one orange accent */
 :root{
   --bg:#0A0A0B;--bg-2:#111113;--card:#171719;--card-hi:#1d1d20;--line:#29292D;--line-soft:#1f1f23;
   --fg:#FFFFFF;--fg-2:#A1A1AA;--fg-3:#8B8B94;
   --accent:#FF7A1A;--accent-hi:#FF9147;--accent-soft:color-mix(in srgb,var(--accent) 12%,transparent);
   --up:#22C55E;--down:#ff7373;--up-soft:rgba(34,197,94,.12);--down-soft:rgba(240,68,68,.12);
-  --sans:"Inter","Geist",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:var(--sans);
   --r:10px;--r-sm:6px;--head:64px;
   color-scheme:dark;
@@ -470,7 +469,7 @@ a.partner-band:hover{border-color:#3a3a40}
 .res-strip:hover .res-track{animation-play-state:paused}
 .res-item{font-size:22px;font-weight:600;letter-spacing:-.02em;color:#6b6b74;white-space:nowrap;transition:color .2s}
 .res-item:hover{color:var(--fg)}
-.res-serif{font-family:Georgia,"Times New Roman",serif;font-weight:700;letter-spacing:-.01em}
+.res-serif{font-family:var(--sans);font-weight:700;letter-spacing:-.01em}
 .res-mono{font-family:var(--mono);font-weight:600;letter-spacing:.04em}
 .res-sep{width:4px;height:4px;border-radius:50%;background:var(--line);flex:none}
 @media (prefers-reduced-motion:reduce){.res-strip{overflow-x:auto}}
@@ -870,7 +869,7 @@ html.csel-lock{overflow:hidden}
 .st-corners-medium :is(.card,.idx,.panel){border-radius:var(--r)!important}.st-corners-medium :is(.dd,.csel-menu,.palette-box){border-radius:14px!important}.st-corners-medium :is(.btn,.input,.select,.csel-btn,.tabs){border-radius:8px!important}.st-corners-medium :is(.tab,.seg-thumb,.h-ic,.range button,.csel-opt){border-radius:6px!important}
 .st-size-compact body{zoom:.93}
 .st-size-large body{zoom:1.07}
-.st-font-geist{--sans:"Geist",system-ui,-apple-system,sans-serif}
+
 .st-font-system{--sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .st-icons-plain .h-ic{background:none;border:0;width:auto;height:auto}
 .st-icons-plain .h-ic svg{width:20px;height:20px}

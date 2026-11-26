@@ -26,7 +26,7 @@
     const fonts = document.getElementById('consent-fonts');
     if (allows('images') && !fonts) {
       const link = document.createElement('link'); link.id = 'consent-fonts'; link.rel = 'stylesheet';
-      link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&family=Geist+Mono:wght@400;500;600&display=swap';
+      link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&display=swap';
       document.head.append(link);
     } else if (!allows('images') && fonts) fonts.remove();
   }
