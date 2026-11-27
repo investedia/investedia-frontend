@@ -1915,7 +1915,7 @@ function size() {
   if (!cy) cy = cyT; R = R0 * Z;
 }
 addEventListener('resize', size);
-window.InvGlobeXY = (la, lo) => proj(la * rad, lo * rad);  // globe app: screen position of a place (owner 27 Nov 2026)
+window.InvGlobeXY = (la, lo) => proj(la * rad, lo * rad); window.InvGlobeLL = (x, y) => inv(x, y);  // globe app: screen position of a place (owner 27 Nov 2026)
 const pts = []; for (let i = 0; i < DOTS.length; i += 2) pts.push([DOTS[i] / 10 * rad, DOTS[i + 1] / 10 * rad]);
 function proj(phi, lam, h = 1) { const c0 = Math.cos(lat0 * rad), s0 = Math.sin(lat0 * rad), d = lam - lon0 * rad, cp = Math.cos(phi); return [cx + R * h * cp * Math.sin(d), cy - R * h * (c0 * Math.sin(phi) - s0 * cp * Math.cos(d)), s0 * Math.sin(phi) + c0 * cp * Math.cos(d)]; }
 function inv(x, y) {
