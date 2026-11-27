@@ -1,0 +1,34 @@
+/* Header V2 on every page (owner 27 Nov 2026): logo alone; nav pill (Globe · News · Learn · Pricing); account pill: search, Log in, Sign up, bell, menu.
+   Settings and theme live in the menu. Phone: one glass pill with Log in, bell and menu. */
+.hdr{background:linear-gradient(180deg,var(--bg) 58%,transparent)!important;border-bottom:0!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+body[data-page=home] .hdr{background:transparent!important}
+.hdr .hdr-settings,.hdr .theme-tgl{display:none!important}
+.hdr .hdr-tools .search-btn{order:0}.hdr .hdr-tools .hdr-login{order:1}.hdr .hdr-tools .hdr-signup{order:2}.hdr .hdr-tools .acct-wrap{order:3}
+.hdr .hdr-tools .notif-wrap:not(.acct-wrap){order:4}.hdr .hdr-tools .menu-toggle,.hdr .hdr-tools .hn-more-nav{order:5}
+.hdr .hdr-signup{background:rgba(44,44,50,.55)!important;color:#fff!important;border:1px solid rgba(255,255,255,.14)!important;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:none!important;border-radius:999px!important}
+.hdr .hdr-login{border-radius:999px!important;border-color:transparent!important;background:transparent!important}
+@media(min-width:761px){
+ .hdr .wrap{position:relative;max-width:none;height:76px;padding:0 28px}
+ .hdr .wrap>.nav{position:absolute;left:50%;transform:translateX(-50%);height:48px;margin:0;padding:0 10px;display:flex;align-items:center;border-radius:999px;background:rgba(18,18,21,.62);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+ .hdr .hdr-tools{height:48px;padding:0 5px 0 10px;gap:6px!important;border-radius:999px;background:rgba(18,18,21,.62);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+ .hdr .hdr-tools .search-btn{width:38px!important;min-width:38px!important;height:38px;min-height:38px;padding:0!important;border-radius:50%!important;border:0!important;background:rgba(255,255,255,.06)!important;justify-content:center}
+ .hdr .hdr-tools .search-btn span{display:none}
+ .hdr .hdr-signup{height:36px;padding:0 16px}
+ .hdr .hn-more-nav{position:static!important;transform:none!important;height:auto!important;padding:0!important;border:0!important;background:none!important;backdrop-filter:none!important;display:flex!important;margin:0;list-style:none}
+ .hdr .hn-more-nav>li{position:relative}
+ .hdr .hn-more-nav .nav-link{width:38px;height:38px;min-height:38px;padding:0;border-radius:50%;display:grid;place-items:center;font-size:0;background:rgba(255,255,255,.06)}
+ .hdr .hn-more-nav .nav-link .chev{display:none}
+ .hdr .hn-more-nav .nav-link::before{content:"";display:block;margin:auto;width:16px;height:12px;background:linear-gradient(currentColor,currentColor) 0 0/100% 1.6px no-repeat,linear-gradient(currentColor,currentColor) 0 50%/100% 1.6px no-repeat,linear-gradient(currentColor,currentColor) 0 100%/100% 1.6px no-repeat}
+ .hdr .hn-more-nav .dd-more{left:auto!important;right:-5px!important}
+}
+@media(max-width:760px){
+ .hdr{padding:10px 12px 0!important}
+ .hdr .wrap{height:52px;padding:0 6px 0 18px;border-radius:999px;background:rgba(16,16,19,.9)!important;border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+ html:not(.is-member) .hdr .hdr-tools .hdr-login{display:inline-flex!important;visibility:visible!important}
+ .hdr .hdr-login{height:34px;min-height:34px;padding:0 14px!important;font-size:13px!important;background:rgba(44,44,50,.55)!important;border:1px solid rgba(255,255,255,.14)!important;color:#fff!important;margin-right:2px}
+ body[data-page=home] .hdr{background:linear-gradient(180deg,var(--bg) 55%,transparent)!important}
+}
+:root[data-theme="light"] .hdr .wrap>.nav,:root[data-theme="light"] .hdr .hdr-tools{background:rgba(255,255,255,.72);border-color:rgba(10,10,11,.08)}
+@media(max-width:760px){:root[data-theme="light"] .hdr .wrap{background:rgba(255,255,255,.9)!important;border-color:rgba(10,10,11,.08)}}
+:root[data-theme="light"] .hdr .hdr-signup,:root[data-theme="light"] .hdr .hdr-login{background:rgba(20,20,24,.86)!important;color:#fff!important}
+@media(min-width:761px){:root[data-theme="light"] .hdr .hdr-login{background:transparent!important;color:var(--fg)!important}}

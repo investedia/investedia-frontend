@@ -304,10 +304,6 @@ body[data-page=home] .hdr .hdr-login{border-radius:999px!important;border-color:
  .resources+.hn-sec{padding-top:22px}
 }
 </style>
-<script>
-// owner 27 Nov 2026 (header V2): on PC the "More" menu moves to the end of the account pill as the menu button (it holds Settings and the theme switch)
-addEventListener('DOMContentLoaded',()=>{const h=document.querySelector('.hdr'),b=h&&h.querySelector('[data-dd="dd-more"]'),tools=h&&h.querySelector('.hdr-tools');if(!b||!tools)return;const ul=document.createElement('ul');ul.className='nav hn-more-nav';ul.appendChild(b.closest('li'));tools.appendChild(ul);b.setAttribute('aria-label','Menu');});
-</script>
 <section class="hn-hero" aria-label="Live news globe">
   <iframe id="hnGlobe" title="Live news globe"></iframe>
   <div class="hn-copy"><div class="hn">
