@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Investedia Globe</title>
+<meta name="description" content="Market activity on one globe: live financial news pinned where it happens.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0A0A0B">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<!-- Globe app (owner 27 Nov 2026). Full screen, no site header. Design B: search, News | Projects, filters,
+     story card on the pin (draggable), latest feed (big moves and big brands first), timeline scrubber,
+     layout menu (screenshot, share, split screens, performance mode). Globes are the existing globe page in embed mode. -->
+<style>
+@font-face{font-family:Inter;src:url(../fonts/inter-var.woff2) format("woff2");font-display:swap}
+:root{--bg:#070708;--p:rgba(18,18,21,.72);--ln:rgba(255,255,255,.1);--ln2:rgba(255,255,255,.16);--tx:#f4f4f5;--t2:#a1a1aa;--t3:#6b6b74;--or:#ff7a1a;--up:#3ccf8e;--dn:#ff5a52}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:var(--bg);color:var(--tx);font:14px/1.4 Inter,system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;overflow:hidden}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+svg.i{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.glass{background:var(--p);backdrop-filter:blur(18px) saturate(1.3);-webkit-backdrop-filter:blur(18px) saturate(1.3);border:1px solid var(--ln)}
+.btn{height:42px;min-width:42px;padding:0 14px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:13.5px}
+.btn.ic{padding:0}
+a.btn{color:var(--tx);text-decoration:none}
+.btn:hover{border-color:var(--ln2)}
+.k{font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--or)}
+.mu{color:var(--t2)}.m3{color:var(--t3)}.up{color:var(--up)}.dn{color:var(--dn)}
+/* screens */
+#screens{position:fixed;inset:0;display:grid;gap:2px;background:#1c1c21}
+#screens.l1{grid-template-columns:1fr}
+#screens.l2{grid-template-columns:1fr 1fr}
+.pane{position:relative;background:var(--bg);overflow:hidden;min-width:0}
+.pane iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.pane.on{outline:1.5px solid rgba(255,255,255,.55);outline-offset:-1.5px}
+.ph{position:absolute;left:12px;bottom:12px;z-index:2;display:flex;gap:6px}
+.ph select{appearance:none;height:30px;padding:0 10px;border-radius:8px;color:var(--tx);font:inherit;font-size:12px;cursor:pointer}
+#screens.l1 .ph{display:none}
+/* top bar */
+#top{position:fixed;left:16px;right:16px;top:14px;z-index:20;display:flex;gap:8px;align-items:center;pointer-events:none}
+#top>*{pointer-events:auto}
+#q{flex:0 1 380px;display:flex;align-items:center;gap:10px;height:42px;padding:0 16px;border-radius:999px;position:relative}
+#q input{flex:1;min-width:0;background:none;border:0;outline:0;color:var(--tx);font:inherit;font-size:14px}
+#q input::placeholder{color:var(--t3)}
+#qr{position:absolute;left:0;right:0;top:48px;border-radius:14px;padding:6px;display:none;max-height:60vh;overflow:auto}
+#qr.on{display:block}
+#qr button{display:block;width:100%;text-align:left;padding:8px 10px;border-radius:9px;font-size:13px}
+#qr button:hover,#qr button.on{background:rgba(255,255,255,.08)}
+.seg{display:flex;padding:4px;border-radius:999px;gap:2px}
+.seg button{height:34px;padding:0 15px;border-radius:999px;font-size:13.5px;color:var(--t2)}
+.seg button[aria-pressed=true]{background:var(--tx);color:#0a0a0a;font-weight:600}
+#chips{position:fixed;left:16px;top:66px;z-index:19;display:flex;gap:6px;flex-wrap:wrap;max-width:calc(100% - 400px)}
+.chip{height:30px;padding:0 12px;border-radius:999px;font-size:12.5px;color:var(--t2)}
+.chip[aria-pressed=true]{background:var(--tx);color:#0a0a0a;font-weight:600;border-color:var(--tx)}
+.sp{flex:1}
+/* layout menu */
+#menu{position:fixed;right:16px;top:62px;z-index:30;width:280px;border-radius:16px;padding:8px;display:none}
+#menu.on{display:block}
+#menu h6{font-size:10.5px;letter-spacing:.12em;color:var(--t3);font-weight:600;padding:8px 10px 4px}
+.mi{display:flex;align-items:center;gap:10px;width:100%;padding:9px 10px;border-radius:9px;font-size:13.5px;text-align:left}
+.mi:hover{background:rgba(255,255,255,.07)}
+.mi small{margin-left:auto;color:var(--t3);font-size:11px}
+.pro{font-size:9.5px;font-weight:700;letter-spacing:.08em;color:var(--or);border:1px solid rgba(255,122,26,.5);border-radius:5px;padding:1px 5px;display:inline-flex;align-items:center;gap:3px}
+.pro svg{width:10px;height:10px}
+.lays{display:flex;gap:6px;padding:4px 10px 8px}
+.lay{width:52px;height:38px;border-radius:7px;border:1px solid var(--ln2);position:relative;display:grid;place-items:center}
+.lay[aria-pressed=true]{border-color:var(--tx);background:rgba(255,255,255,.08)}
+.lay .pro{position:absolute;bottom:-8px;left:50%;transform:translateX(-50%);background:var(--bg)}
+.tg{width:34px;height:20px;border-radius:99px;background:#2c2c32;position:relative;margin-left:auto;flex:none}
+.tg::after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#8a8a92;transition:left .15s}
+.tg.on{background:var(--or)}.tg.on::after{left:16px;background:#fff}
+/* feed */
+#feed{position:fixed;right:16px;top:118px;bottom:112px;width:330px;z-index:15;border-radius:18px;display:flex;flex-direction:column;overflow:hidden}
+#feed header{display:flex;align-items:center;gap:8px;padding:12px 14px 8px}
+#feed header b{font-size:14px}
+.mini{display:flex;padding:3px;border-radius:9px;background:rgba(255,255,255,.06);margin-left:auto}
+.mini button{padding:3px 10px;border-radius:7px;font-size:11.5px;color:var(--t2)}
+.mini button[aria-pressed=true]{background:var(--tx);color:#0a0a0a;font-weight:600}
+#feed .sub{padding:0 14px 6px;font-size:11px;color:var(--t3)}
+#list{overflow:auto;flex:1}
+.it{display:block;width:100%;text-align:left;padding:11px 14px;border-top:1px solid var(--ln)}
+.it:hover{background:rgba(255,255,255,.04)}
+.it .tp{display:flex;justify-content:space-between;font-size:10.5px;color:var(--t3);gap:8px}
+.it .tp b{font-weight:700;letter-spacing:.06em;color:var(--t2);text-transform:uppercase}
+.it .tp .big{color:var(--or)}
+.it h4{font-size:13px;font-weight:550;margin:4px 0 3px;line-height:1.32}
+.it.big h4{font-weight:650}
+.it .mv{font-size:11.5px}
+#feed.cards{top:auto;left:16px;right:16px;bottom:112px;width:auto;height:168px}
+#feed.cards #list{display:flex;gap:10px;overflow-x:auto;padding:0 12px 12px}
+#feed.cards .it{flex:0 0 260px;border:1px solid var(--ln);border-radius:14px}
+/* story card */
+#card{position:fixed;z-index:25;width:320px;border-radius:18px;padding:14px 16px 16px;display:none;box-shadow:0 20px 60px rgba(0,0,0,.55)}
+#card.on{display:block}
+#card .grip{display:block;margin:-6px auto 6px;width:40px;height:14px;cursor:grab;color:var(--t3);text-align:center;font-size:12px;letter-spacing:2px;touch-action:none}
+#card h3{font-size:17px;line-height:1.24;margin:8px 0;font-weight:650;letter-spacing:-.01em}
+#card p{font-size:13px;line-height:1.5;color:var(--t2)}
+#card .why{margin-top:10px;padding:10px 12px;border-radius:12px;border:1px solid var(--ln)}
+#card .row{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-top:1px solid var(--ln);font-size:13px}
+#card .row:first-child{border:0}
+#card .act{display:flex;gap:8px;margin-top:12px}
+#card .act a{flex:1;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;gap:6px;color:#fff;text-decoration:none;font-weight:600;font-size:13.5px;background:rgba(44,44,50,.7);border:1px solid var(--ln2)}
+#card .x{position:absolute;right:10px;top:10px;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;color:var(--t2)}
+#card .src{margin-top:10px;font-size:10.5px;color:var(--t3)}
+#card .nav{display:flex;gap:6px;margin-top:8px}
+#card .nav button{font-size:12px;padding:4px 9px;border-radius:7px;border:1px solid var(--ln)}
+#line{position:fixed;left:0;top:0;width:100vw;height:100vh;z-index:24;pointer-events:none}
+/* timeline */
+#tl{position:fixed;left:16px;right:362px;bottom:16px;z-index:15;border-radius:16px;padding:12px 16px}
+#tl .hd{display:flex;align-items:center;gap:10px;font-size:12px;margin-bottom:10px}
+#tl .hd b{font-size:13px}
+#play{width:30px;height:30px;border-radius:50%;background:var(--tx);color:#0a0a0a;display:grid;place-items:center}
+#play svg{width:13px;height:13px;fill:#0a0a0a;stroke:none}
+#bar{position:relative;flex:1;height:22px;cursor:pointer;touch-action:none}
+#bar .tr{position:absolute;left:0;right:0;top:9px;height:4px;border-radius:2px;background:#2a2a30}
+#bar .free{position:absolute;right:0;top:9px;height:4px;border-radius:2px;background:var(--or)}
+#bar .kn{position:absolute;top:3px;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.5)}
+#tl .lb{display:flex;justify-content:space-between;font-size:10.5px;color:var(--t3);margin-top:4px}
+#toast{position:fixed;left:50%;bottom:130px;transform:translateX(-50%);z-index:40;padding:9px 14px;border-radius:12px;font-size:13px;display:none}
+#toast.on{display:block}
+.na{position:fixed;left:16px;bottom:2px;z-index:14;font-size:9.5px;color:var(--t3)}
+@media (max-width:820px){
+  #q{flex:1}#top .seg{display:none}#chips{top:64px;max-width:none;right:16px;flex-wrap:nowrap;overflow-x:auto}
+  #feed{left:0;right:0;bottom:0;top:auto;width:auto;height:44vh;border-radius:20px 20px 0 0}
+  #feed.cards{left:0;right:0;bottom:0;height:200px}
+  #tl{left:12px;right:12px;bottom:calc(44vh + 8px)}
+  #feed.cards~#tl{bottom:208px}
+  #card{left:0!important;right:0;top:auto!important;bottom:0;width:auto;max-height:62vh;overflow:auto;border-radius:20px 20px 0 0}
+  body.card #feed,body.card #tl{display:none}
+  #card .why{display:none}
+  #mseg{display:flex!important}
+  .na{display:none}
+}
+#mseg{display:none;position:fixed;left:16px;top:104px;z-index:19}
+</style>
+</head>
+<body>
+<div id="screens" class="l1"></div>
+<svg id="line"><line id="ln" stroke="#ff7a1a" stroke-width="1.2" stroke-dasharray="4 4" /><circle id="lp" r="4" fill="#fff"/></svg>
+
+<div id="top">
+  <a class="btn ic glass" id="exit" href="/" aria-label="Exit globe" title="Exit globe"><svg class="i" viewBox="0 0 24 24"><path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4M15 8l4 4-4 4M19 12H9"/></svg></a>
+  <div id="q" class="glass"><svg class="i" viewBox="0 0 24 24" style="color:var(--t3)"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="qi" placeholder="Search news, companies, countries" autocomplete="off" aria-label="Search"><div id="qr" class="glass" role="listbox"></div></div>
+  <div class="seg glass" role="group" aria-label="Globe view"><button data-mode="news" aria-pressed="true">News</button><button data-mode="projects" aria-pressed="false">Projects</button></div>
+  <span class="sp"></span>
+  <button class="btn ic glass" id="menuBtn" aria-label="Layout menu" aria-expanded="false" title="Layout"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="4" width="8" height="16" rx="1.5"/><rect x="13" y="4" width="8" height="7" rx="1.5"/><rect x="13" y="13" width="8" height="7" rx="1.5"/></svg></button>
+</div>
+<div id="mseg" class="seg glass" role="group" aria-label="Globe view (phone)"><button data-mode="news" aria-pressed="true">News</button><button data-mode="projects" aria-pressed="false">Projects</button></div>
+<div id="chips" role="group" aria-label="Category"></div>
+
+<div id="menu" class="glass" role="menu">
+  <h6>LAYOUT</h6>
+  <div class="lays" id="lays"></div>
+  <h6>VIEW</h6>
+  <button class="mi" id="shot" role="menuitem"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13.5" r="3.5"/><path d="M8.5 7l1.5-3h4l1.5 3"/></svg>Screenshot<small>PNG</small></button>
+  <button class="mi" id="share" role="menuitem"><svg class="i" viewBox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v6a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-6"/></svg>Share link<small>copy</small></button>
+  <button class="mi" id="perf" role="menuitemcheckbox"><svg class="i" viewBox="0 0 24 24"><path d="M13 3L5 14h6l-1 7 8-11h-6z"/></svg>Performance mode<i class="tg" id="perfTg"></i></button>
+</div>
+
+<section id="feed" class="glass" aria-label="Latest stories">
+  <header><b>Latest</b><span class="m3" id="cnt" style="font-size:12px"></span><div class="mini" role="group" aria-label="Feed style"><button data-fs="list" aria-pressed="true">List</button><button data-fs="cards" aria-pressed="false">Cards</button></div></header>
+  <div class="sub">Newest first · big moves and big companies on top</div>
+  <div id="list"></div>
+</section>
+
+<section id="tl" class="glass" aria-label="Timeline">
+  <div class="hd"><button id="play" aria-label="Play"><svg viewBox="0 0 24 24"><path d="M7 5v14l11-7z"/></svg></button><b>Timeline</b><span class="mu" id="tlLab"></span><span class="sp"></span><span class="pro" title="Pro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>PRO · back to 2016</span></div>
+  <div id="bar"><i class="tr"></i><i class="free" id="free"></i><i class="kn" id="kn"></i></div>
+  <div class="lb"><span>2016</span><span id="lbMid"></span><span>Now</span></div>
+</section>
+
+<article id="card" class="glass" aria-live="polite">
+  <span class="grip" id="grip" title="Drag">· · ·</span>
+  <button class="x" id="cx" aria-label="Close"><svg class="i" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div id="cb"></div>
+</article>
+<div id="toast" class="glass" role="status"></div>
+<div class="na">Not investment advice · sources on every story</div>
+
+<script>
+(() => {
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+const store = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } };
+const Q = new URLSearchParams(location.search);
+const FREE_SCREENS = 2;       // free plan: up to 2 screens (owner may change to 3)
+const FREE_DAYS = 30;         // free plan timeline: last 30 days
+const S = { stories: [], byId: {}, prices: {}, mode: 'news', cat: 'all', days: 2, sel: null, win: null, layout: 1, perf: store('inv-globe-perf') === '1' || Q.get('perf') === '1' };
+const CATS = [['all', 'All'], ['markets', 'Markets'], ['commodities', 'Commodities'], ['economy', 'Economy'], ['companies', 'Companies'], ['crypto', 'Crypto'], ['geopolitics', 'Geopolitics'], ['technology', 'Technology']];
+const REG = [['global', 'Global', -15, 24, 1], ['na', 'North America', -97, 40, 2], ['latam', 'Latin America', -62, -16, 1.8], ['eu', 'Europe', 10, 50, 2.6], ['me', 'Middle East', 46, 26, 2.8], ['af', 'Africa', 20, 3, 1.8], ['asia', 'Asia', 108, 28, 1.8], ['oc', 'Oceania', 140, -26, 2]];
+const ago = t => { const m = Math.max(0, Math.round((Date.now() - Date.parse(t)) / 6e4)); return m < 60 ? m + 'm' : m < 1440 ? Math.round(m / 60) + 'h' : Math.round(m / 1440) + 'd'; };
+const toast = t => { const e = $('toast'); e.textContent = t; e.classList.add('on'); clearTimeout(toast.t); toast.t = setTimeout(() => e.classList.remove('on'), 2200); };
+
+// ---------- screens (each one is the existing globe page in embed mode) ----------
+function src() { return 'news.html?embed=1&app=1&cx=.5&cy=.5&r=.40' + (S.perf ? '&perf=1' : '') + (S.mode === 'projects' ? '&mode=projects' : ''); }
+function buildScreens() {
+  const box = $('screens'); box.className = 'l' + S.layout; box.innerHTML = '';
+  for (let i = 0; i < S.layout; i++) {
+    const p = document.createElement('div'); p.className = 'pane' + (i === 0 ? ' on' : '');
+    p.innerHTML = `<iframe title="Globe ${i + 1}" src="${src()}"></iframe><div class="ph"><select class="glass" aria-label="Region for screen ${i + 1}">${REG.map(r => `<option value="${r[0]}"${(i === 1 ? 'eu' : 'global') === r[0] ? ' selected' : ''}>${r[1]}</option>`).join('')}</select></div>`;
+    p.addEventListener('pointerdown', () => { document.querySelectorAll('.pane').forEach(x => x.classList.toggle('on', x === p)); });
+    const sel = p.querySelector('select'), fr = p.querySelector('iframe');
+    sel.onchange = () => flyRegion(fr, sel.value);
+    fr.addEventListener('load', () => { if (i === 1) setTimeout(() => flyRegion(fr, 'eu'), 800); });
+    box.appendChild(p);
+  }
+}
+function flyRegion(fr, key) { const r = REG.find(x => x[0] === key); try { fr.contentWindow.flyTo(r[2], r[3], r[4]); } catch (e) {} }
+function frames() { return [...document.querySelectorAll('#screens iframe')]; }
+function setMode(m) {
+  S.mode = m; document.querySelectorAll('[data-mode]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mode === m)));
+  frames().forEach(f => f.contentWindow?.postMessage({ type: 'investedia-mode', mode: m }, location.origin));
+  closeCard();
+}
+
+// ---------- story card on the pin (draggable; a line stays attached to the pin) ----------
+let dragged = null;
+window.InvGlobeApp = {
+  story(s, win) { openStory(s, win); },
+  place(list, win) { if (list && list.length) openStory(list[0], win, list); }
+};
+function priceOf(imp) { const t = imp && (imp.ticker || (imp.asset && imp.asset.px)); return t && S.prices[t] ? S.prices[t] : null; }
+function impactRow(i) {
+  const p = priceOf(i); const dir = i.direction === 'up' ? '▲' : i.direction === 'down' ? '▼' : '•';
+  const cls = i.direction === 'up' ? 'up' : i.direction === 'down' ? 'dn' : 'm3';
+  const v = p && Number.isFinite(p.d) ? `<span class="${p.d >= 0 ? 'up' : 'dn'}">${p.d >= 0 ? '▲ +' : '▼ '}${p.d.toFixed(1)}% today</span>` : `<span class="${cls}">${dir} ${i.direction === 'unclear' ? 'Unclear' : 'Expected'}</span>`;
+  return `<div class="row"><span>${esc(i.name)}</span>${v}</div>`;
+}
+function openStory(s, win, list) {
+  S.sel = s; S.win = win || frames()[0]?.contentWindow; S.list = list || null;
+  const imp = (s.impacts || []).slice(0, 3);
+  $('cb').innerHTML = `<div class="k">${esc(s.category)} · ${esc(s.location?.place || s.location?.country || '')}</div>
+    <h3>${esc(s.headline)}</h3><p>${esc(s.summary || '')}</p>
+    ${s.why ? `<div class="why"><div class="k" style="margin-bottom:4px">Why it matters</div><p style="color:var(--tx)">${esc(s.why)}</p></div>` : ''}
+    ${imp.length ? `<div style="margin-top:10px">${imp.map(impactRow).join('')}</div>` : ''}
+    ${list && list.length > 1 ? `<div class="nav"><button data-n="-1">Previous</button><button data-n="1">Next</button><span class="m3" style="font-size:12px;align-self:center">${list.indexOf(s) + 1} of ${list.length} here</span></div>` : ''}
+    <div class="act"><a href="/story?id=${encodeURIComponent(s.id)}">Open article <svg class="i" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M7 17 17 7M9 7h8v8"/></svg></a></div>
+    <div class="src">${esc(s.source?.name || '')} · ${new Date(s.published_at).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })} · Not investment advice</div>`;
+  $('cb').querySelectorAll('[data-n]').forEach(b => b.onclick = () => { const L = S.list, k = (L.indexOf(S.sel) + +b.dataset.n + L.length) % L.length; openStory(L[k], S.win, L); });
+  $('card').classList.add('on'); document.body.classList.add('card'); dragged = null; track();
+  history.replaceState(null, '', '?story=' + encodeURIComponent(s.id) + (S.layout > 1 ? '&layout=' + S.layout : ''));
+}
+function pinXY() {
+  const s = S.sel, w = S.win; if (!s || !w || !w.InvGlobeXY) return null;
+  const fr = frames().find(f => f.contentWindow === w); if (!fr) return null;
+  const r = fr.getBoundingClientRect(); const p = w.InvGlobeXY(s.location.lat, s.location.lon);
+  if (!p || p[2] <= 0) return null; return { x: r.left + p[0], y: r.top + p[1] };
+}
+function track() {
+  cancelAnimationFrame(track.raf);
+  const c = $('card'); if (!c.classList.contains('on')) { $('line').style.display = 'none'; return; }
+  const p = pinXY(), ph = innerWidth <= 820;
+  if (!dragged) {
+    if (ph) { c.style.left = ''; c.style.top = ''; }
+    else if (p) { const x = Math.min(innerWidth - 700, Math.max(16, p.x - 360)), y = Math.min(innerHeight - c.offsetHeight - 130, Math.max(118, p.y - 60)); c.style.left = x + 'px'; c.style.top = y + 'px'; }
+  }
+  if (p) { const r = c.getBoundingClientRect(), cx = p.x < r.left ? r.left : p.x > r.right ? r.right : r.left + r.width / 2, cy = Math.min(r.bottom, Math.max(r.top, p.y));
+    $('line').style.display = ''; const l = $('ln'); l.setAttribute('x1', p.x); l.setAttribute('y1', p.y); l.setAttribute('x2', cx); l.setAttribute('y2', cy); $('lp').setAttribute('cx', p.x); $('lp').setAttribute('cy', p.y);
+  } else $('line').style.display = 'none';
+  track.raf = requestAnimationFrame(track);
+}
+function closeCard() { document.body.classList.remove('card'); $('card').classList.remove('on'); S.sel = null; $('line').style.display = 'none'; history.replaceState(null, '', location.pathname); }
+$('cx').onclick = closeCard;
+{ const g = $('grip'), c = $('card'); let ox, oy;
+  g.addEventListener('pointerdown', e => { g.setPointerCapture(e.pointerId); const r = c.getBoundingClientRect(); ox = e.clientX - r.left; oy = e.clientY - r.top; dragged = true; });
+  g.addEventListener('pointermove', e => { if (!g.hasPointerCapture(e.pointerId)) return; c.style.left = Math.max(0, Math.min(innerWidth - 60, e.clientX - ox)) + 'px'; c.style.top = Math.max(0, Math.min(innerHeight - 40, e.clientY - oy)) + 'px'; });
+}
+
+// ---------- feed: newest first, but big moves and big companies on top ----------
+const isBig = s => (s.impacts || []).some(i => { const p = priceOf(i); return p && Number.isFinite(p.d) && Math.abs(p.d) >= 3; });  // only a real price move earns the tag
+const brand = s => (s.impacts || []).some(i => i.kind === 'company' && priceOf(i));
+function visible() {
+  const cut = Date.now() - S.days * 864e5;
+  return S.stories.filter(s => (S.cat === 'all' || s.category === S.cat) && Date.parse(s.published_at) >= cut);
+}
+function renderFeed() {
+  const L = visible().map(s => ({ s, b: isBig(s), br: brand(s) })).sort((a, b) => (b.b - a.b) || ((b.s.importance >= 3) - (a.s.importance >= 3)) || (b.br - a.br) || (Date.parse(b.s.published_at) - Date.parse(a.s.published_at)));
+  $('cnt').textContent = L.length + ' stories';
+  $('list').innerHTML = L.slice(0, 80).map(({ s, b }) => { const im = s.impacts || [], i = im.filter(x => priceOf(x) && Number.isFinite(priceOf(x).d)).sort((x, y) => Math.abs(priceOf(y).d) - Math.abs(priceOf(x).d))[0] || im[0], p = priceOf(i);
+    const mv = p && Number.isFinite(p.d) ? `<span class="${p.d >= 0 ? 'up' : 'dn'}">${p.d >= 0 ? '▲ +' : '▼ '}${p.d.toFixed(1)}% · ${esc(i.name)}</span>` : i ? `<span class="m3">${esc(i.name)}</span>` : '';
+    return `<button class="it${b ? ' big' : ''}" data-id="${esc(s.id)}"><div class="tp"><b>${esc(s.category)}${b ? ' <span class="big">· Big move</span>' : ''}</b><span>${esc(s.location?.place || '')} · ${ago(s.published_at)}</span></div><h4>${esc(s.headline)}</h4><div class="mv">${mv}</div></button>`; }).join('') || '<p class="m3" style="padding:14px">No stories in this window.</p>';
+}
+$('list').addEventListener('click', e => { const b = e.target.closest('[data-id]'); if (!b) return; const s = S.byId[b.dataset.id]; const w = document.querySelector('.pane.on iframe')?.contentWindow || frames()[0].contentWindow;
+  try { w.flyTo(s.location.lon, s.location.lat, 2.4); } catch (x) {} openStory(s, w); });
+document.querySelectorAll('[data-fs]').forEach(b => b.onclick = () => { document.querySelectorAll('[data-fs]').forEach(x => x.setAttribute('aria-pressed', String(x === b))); $('feed').classList.toggle('cards', b.dataset.fs === 'cards'); store('inv-app-feed', b.dataset.fs); });
+
+// ---------- filters ----------
+$('chips').innerHTML = CATS.map(([k, t]) => `<button class="chip glass" data-cat="${k}" aria-pressed="${k === 'all'}">${t}</button>`).join('');
+$('chips').onclick = e => { const b = e.target.closest('[data-cat]'); if (!b) return; S.cat = b.dataset.cat; $('chips').querySelectorAll('[data-cat]').forEach(x => x.setAttribute('aria-pressed', String(x === b))); renderFeed(); };
+
+// ---------- search ----------
+$('qi').addEventListener('input', () => { const t = $('qi').value.trim().toLowerCase(), r = $('qr');
+  if (t.length < 2) { r.classList.remove('on'); return; }
+  const hits = S.stories.filter(s => (s.headline + ' ' + (s.location?.country || '') + ' ' + (s.impacts || []).map(i => i.name).join(' ')).toLowerCase().includes(t)).slice(0, 8);
+  r.innerHTML = hits.map(s => `<button data-id="${esc(s.id)}">${esc(s.headline)}<div class="m3" style="font-size:11px">${esc(s.location?.country || '')} · ${ago(s.published_at)}</div></button>`).join('') || '<div class="m3" style="padding:8px 10px;font-size:13px">No matches in the live feed</div>';
+  r.classList.add('on'); });
+$('qr').onclick = e => { const b = e.target.closest('[data-id]'); if (!b) return; $('qr').classList.remove('on'); $('qi').value = ''; const s = S.byId[b.dataset.id], w = frames()[0].contentWindow; try { w.flyTo(s.location.lon, s.location.lat, 2.4); } catch (x) {} openStory(s, w); };
+addEventListener('keydown', e => { if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); $('qi').focus(); } if (e.key === 'Escape') { $('qr').classList.remove('on'); $('menu').classList.remove('on'); } });
+
+// ---------- timeline (free: last 30 days; Pro: back to 2016) ----------
+const T0 = Date.parse('2016-01-01'), span = () => Date.now() - T0;
+function setDays(d) { S.days = Math.max(1, Math.min(FREE_DAYS, Math.round(d))); const pct = 100 - S.days * 864e5 / span() * 100; $('kn').style.left = pct + '%'; $('tlLab').textContent = 'Showing the last ' + (S.days === 1 ? '24 hours' : S.days + ' days'); renderFeed(); }
+$('free').style.width = (FREE_DAYS * 864e5 / span() * 100) + '%';
+$('lbMid').textContent = 'Free: last ' + FREE_DAYS + ' days';
+{ const bar = $('bar'); const at = e => { const r = bar.getBoundingClientRect(), f = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width)), d = (1 - f) * span() / 864e5; if (d > FREE_DAYS) { toast('Older dates are part of Pro'); setDays(FREE_DAYS); } else setDays(d); };
+  bar.addEventListener('pointerdown', e => { bar.setPointerCapture(e.pointerId); at(e); }); bar.addEventListener('pointermove', e => { if (bar.hasPointerCapture(e.pointerId)) at(e); }); }
+$('play').onclick = () => { let d = FREE_DAYS; clearInterval(setDays.p); setDays.p = setInterval(() => { setDays(d); d -= 1; if (d < 1) clearInterval(setDays.p); }, 250); };
+
+// ---------- layout menu: layouts, screenshot, share, performance mode ----------
+$('menuBtn').onclick = e => { e.stopPropagation(); const on = $('menu').classList.toggle('on'); $('menuBtn').setAttribute('aria-expanded', String(on)); };
+document.addEventListener('click', e => { if (!e.target.closest('#menu')) $('menu').classList.remove('on'); if (!e.target.closest('#q')) $('qr').classList.remove('on'); });
+const LAYS = [[1, '<rect x="5" y="5" width="14" height="10" rx="1" fill="none" stroke="currentColor"/>'], [2, '<rect x="3" y="5" width="8" height="10" rx="1" fill="none" stroke="currentColor"/><rect x="13" y="5" width="8" height="10" rx="1" fill="none" stroke="currentColor"/>'], [3, '<rect x="3" y="5" width="10" height="10" rx="1" fill="none" stroke="currentColor"/><rect x="15" y="5" width="6" height="4" rx="1" fill="none" stroke="currentColor"/><rect x="15" y="11" width="6" height="4" rx="1" fill="none" stroke="currentColor"/>'], [4, '<rect x="3" y="4" width="8" height="5" rx="1" fill="none" stroke="currentColor"/><rect x="13" y="4" width="8" height="5" rx="1" fill="none" stroke="currentColor"/><rect x="3" y="11" width="8" height="5" rx="1" fill="none" stroke="currentColor"/><rect x="13" y="11" width="8" height="5" rx="1" fill="none" stroke="currentColor"/>']];
+const lock = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
+function paintLays() { $('lays').innerHTML = LAYS.map(([n, svg]) => `<button class="lay" data-l="${n}" aria-pressed="${n === S.layout}" aria-label="${n} screen${n > 1 ? 's' : ''}"><svg viewBox="0 0 24 20" style="width:30px;height:24px">${svg}</svg>${n > FREE_SCREENS ? `<span class="pro">${lock}PRO</span>` : ''}</button>`).join(''); }
+$('lays').onclick = e => { const b = e.target.closest('[data-l]'); if (!b) return; const n = +b.dataset.l; if (n > FREE_SCREENS) { toast(n + ' screens are part of Pro'); return; } S.layout = n; paintLays(); closeCard(); buildScreens(); };
+$('shot').onclick = async () => {
+  $('menu').classList.remove('on');
+  try {
+    const W = innerWidth, H = innerHeight, c = document.createElement('canvas'), d = Math.min(2, devicePixelRatio || 1); c.width = W * d; c.height = H * d; const x = c.getContext('2d'); x.scale(d, d); x.fillStyle = '#070708'; x.fillRect(0, 0, W, H);
+    for (const f of frames()) { const r = f.getBoundingClientRect(); for (const cv of f.contentDocument.querySelectorAll('canvas')) { const cr = cv.getBoundingClientRect(); if (cr.width > 50) x.drawImage(cv, r.left + cr.left, r.top + cr.top, cr.width, cr.height); } }
+    x.fillStyle = 'rgba(255,255,255,.75)'; x.font = '600 14px Inter, sans-serif'; x.fillText('Investedia · investedia.com', 18, H - 18);
+    const a = document.createElement('a'); a.download = 'investedia-globe.png'; a.href = c.toDataURL('image/png'); a.click(); toast('Screenshot saved');
+  } catch (e) { toast('Screenshot is not available here'); }
+};
+$('share').onclick = async () => { $('menu').classList.remove('on'); try { await navigator.clipboard.writeText(location.href); toast('Link copied'); } catch (e) { toast(location.href); } };
+function paintPerf() { $('perfTg').classList.toggle('on', S.perf); $('perf').setAttribute('aria-checked', String(S.perf)); }
+$('perf').onclick = () => { S.perf = !S.perf; store('inv-globe-perf', S.perf ? '1' : '0'); paintPerf(); closeCard(); buildScreens(); toast(S.perf ? 'Performance mode on' : 'Performance mode off'); };
+document.querySelectorAll('[data-mode]').forEach(b => b.onclick = () => setMode(b.dataset.mode));
+$('exit').onclick = e => { if (document.referrer && new URL(document.referrer).origin === location.origin) { e.preventDefault(); history.back(); } };
+
+// ---------- start ----------
+if (store('inv-app-feed') === 'cards') document.querySelector('[data-fs="cards"]').click();
+S.layout = Math.min(FREE_SCREENS, Math.max(1, +Q.get('layout') || 1)); paintLays(); paintPerf(); buildScreens(); setDays(2);
+Promise.all([fetch('news-live.json', { cache: 'no-cache' }).then(r => r.json()), fetch('news-prices.json', { cache: 'no-cache' }).then(r => r.json()).catch(() => ({ assets: {} }))]).then(([n, p]) => {
+  S.stories = (n.stories || []).filter(s => s.location && Number.isFinite(s.location.lat)); S.byId = Object.fromEntries(S.stories.map(s => [s.id, s]));
+  // only prices from the last 2 days count (the daily file can be stale); fresher moves come from the prices API (delayed, not live)
+  S.prices = (Date.now() - Date.parse(p.asof || 0) < 2 * 864e5) ? (p.assets || {}) : {};
+  renderFeed();
+  Promise.all([fetch(((window.INV_CONFIG && INV_CONFIG.apiBaseUrl) || 'https://api.investedia.com') + '/v1/prices?group=all').then(r => { if (!r.ok) throw 0; return r.json(); }), fetch('price-map.json').then(r => r.json()).catch(() => ({ map: {} }))]).then(([j, pm]) => {
+    const inv = {}; for (const [k, v] of Object.entries(pm.map || {})) inv[v] = k; let n = 0;
+    for (const im of S.stories.flatMap(s => s.impacts || [])) { const t = im.ticker || (im.asset && im.asset.px); if (!t) continue; const v = j.data && (j.data[t] || j.data[inv[t]]); if (Array.isArray(v) && isFinite(v[1]) && Date.now() - (v[2] || 0) < 2 * 864e5) { S.prices[t] = { d: Math.round(v[1] * 100) / 100, p: v[0] }; n++; } }
+    if (n) renderFeed();
+  }).catch(() => {});
+  const id = Q.get('story'); if (id && S.byId[id]) { const f = frames()[0]; const go = () => { try { f.contentWindow.flyTo(S.byId[id].location.lon, S.byId[id].location.lat, 2.4); } catch (e) {} openStory(S.byId[id], f.contentWindow); }; if (f.contentWindow?.InvGlobeXY) go(); else f.addEventListener('load', () => setTimeout(go, 600), { once: true }); }
+}).catch(() => { $('list').innerHTML = '<p class="m3" style="padding:14px">News is loading. Please refresh in a moment.</p>'; });
+})();
+</script>
+</body>
+</html>
