@@ -35,6 +35,7 @@ HEAD = """<!doctype html>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/app.css?v={ver}">
 <link rel="stylesheet" href="assets/skin.css?v={ver}">
+<link rel="stylesheet" href="assets/header-v2.css?v={ver}">
 <link rel="apple-touch-icon" href="assets/app/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="apple-mobile-web-app-capable" content="yes">

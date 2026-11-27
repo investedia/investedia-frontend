@@ -826,6 +826,8 @@
     const sb2 = document.createElement('button'); sb2.type = 'button'; sb2.className = 'btn btn-primary btn-sm hdr-signup guest-only hide-sm'; sb2.textContent = 'Sign up'; sb2.onclick = () => openAuth('up');
     av.closest('.acct-wrap').after(lb); lb.after(sb2); lb.classList.add('guest-only'); av.hidden = true;
   }
+  // header V2 (owner 27 Nov 2026): on PC the 'More' menu becomes the menu button at the end of the account pill (holds Settings and theme)
+  { const mb = hdr.querySelector('[data-dd="dd-more"]'), tools = hdr.querySelector('.hdr-tools'); if (mb && tools) { const ul = document.createElement('ul'); ul.className = 'nav hn-more-nav'; ul.appendChild(mb.closest('li')); tools.appendChild(ul); mb.setAttribute('aria-label', 'Menu'); } }
   window.openAuth = openAuth;
   // ---------- watchlist: assets and whole countries, saved to the member's account (Supabase table "watchlists") ----------
   // A copy stays on the device so stars paint at once; guests who tap a star get the sign-up popup.
