@@ -12,6 +12,12 @@ def write():
         arts += 1
         name = (d.get('source') or {}).get('name')
         if name: sources.add(name.strip().lower())
+    # owner 27 Nov 2026: count the whole news library (library-index/meta.json, published by the backend, ~100K articles back to 2016),
+    # not only the recent article files above; keep the larger of the two
+    try:
+        meta = json.loads((ROOT / 'assets/globe/library-index/meta.json').read_text(encoding='utf-8'))
+        if int(meta.get('total') or 0) > arts: arts = int(meta['total'])
+    except Exception: pass
     try: projects = len(json.loads((ROOT / 'assets/globe/projects.json').read_text())['projects'])
     except Exception: projects = None
     # companies the site recognises (Wikidata list behind the company pages and news tagging); owner 24 Nov 2026
