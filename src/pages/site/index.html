@@ -257,6 +257,10 @@ body[data-page=home] .hdr .hdr-login{border-radius:999px!important;border-color:
  /* hero: text on the left, globe on the right */
  .hn-hero .hn-copy .hn{margin-left:max(64px,calc(50vw - 640px))!important;margin-right:auto!important;max-width:560px!important;padding-right:0!important}
  .hn-hero .hn-ctl{bottom:28px;padding:5px 5px 5px 20px}
+ /* owner 27 Nov 2026: counts back on PC, under popular searches; glass search bar */
+ .hn-hero .hn-copy .hn{display:flex!important;flex-direction:column;align-items:flex-start}
+ .hn-hero .hn-kicker{order:1}.hn-hero .hn-title{order:2}.hn-hero .hn-search{order:3}.hn-hero .hn-pop{order:4}.hn-hero .hn-facts{order:5;margin-top:34px!important}
+ .hn-hero .hn-search{width:min(520px,100%)!important;height:54px!important;border-radius:999px!important;padding:0 22px!important;background:rgba(44,44,50,.35)!important;border:1px solid rgba(255,255,255,.14)!important;backdrop-filter:blur(18px) saturate(1.3)!important;-webkit-backdrop-filter:blur(18px) saturate(1.3)!important}
  .hn-hero .hn-ctl .hn-explore{display:none}
  .hn-hero .hn-ctl .hn-tsl{position:absolute;left:6px;right:6px;bottom:calc(100% + 10px)}
  .hn-hero .hn-ctl .hn-open{width:auto!important;height:40px!important;padding:0 16px!important;gap:8px;display:inline-flex!important;align-items:center}
@@ -264,7 +268,7 @@ body[data-page=home] .hdr .hdr-login{border-radius:999px!important;border-color:
  :root[data-theme="light"] .hn-hero::after{background:linear-gradient(90deg,var(--bg) 0%,rgba(247,247,248,.82) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)!important}
  .hn-hero .hn-ctl .hn-open .t{position:static!important;width:auto!important;height:auto!important;overflow:visible!important;clip:auto!important;color:#fff;font-weight:600;font-size:13.5px}
 }
-.hn-hero .hn-facts,.hn-hero .hn-modes,.hn-hero .hn-mode-row,.hn-hero .hn-map-caption,.hn-hero .hn-live{display:none!important}
+.hn-hero .hn-modes,.hn-hero .hn-mode-row,.hn-hero .hn-map-caption,.hn-hero .hn-live{display:none!important}
 .hn-hero .hn-ctl .hn-open svg,.hn-explore svg{width:17px;height:17px;fill:none;stroke:#fff!important;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
 .hn-tsl{display:flex;justify-content:space-between;align-items:baseline;font:600 10.5px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#FF7A1A}
 .hn-tsl a{color:var(--fg-3);letter-spacing:0;text-transform:none;font-weight:500;font-size:12.5px;text-decoration:none}.hn-tsl a:hover{color:var(--fg)}
@@ -276,6 +280,7 @@ body[data-page=home] .hdr .hdr-login{border-radius:999px!important;border-color:
  body[data-page=home] .hdr .hdr-login{height:34px;min-height:34px;padding:0 14px!important;font-size:13px!important;background:rgba(44,44,50,.55)!important;border:1px solid rgba(255,255,255,.14)!important;color:#fff!important;margin-right:2px}
 }
 @media(max-width:900px){
+ .hn-hero>.hn-facts{order:4;position:relative;z-index:3;display:grid!important;grid-template-columns:repeat(3,1fr);width:auto;margin:34px 16px 6px!important;text-align:center}
  .hn-hero .hn-ctl{grid-template-columns:1fr!important}
  .hn-hero .hn-ctl .hn-explore{grid-row:1;grid-column:1/-1;justify-self:stretch;margin:0 12px}
  .hn-hero .hn-ctl .hn-tsl{grid-row:2;grid-column:1/-1;justify-self:stretch;padding:14px 4px 0}
@@ -288,6 +293,8 @@ body[data-page=home] .hdr .hdr-login{border-radius:999px!important;border-color:
 </style>
 <script>
 // owner 27 Nov 2026 (header V2): on PC the "More" menu moves to the end of the account pill as the menu button (it holds Settings and the theme switch)
+// owner 27 Nov 2026: on phones the counts sit under the globe, Tap to explore and the headline pill, just above the free resources
+addEventListener('DOMContentLoaded',()=>{if(innerWidth<=900){const f=document.getElementById('hnFacts'),hero=document.querySelector('.hn-hero');if(f&&hero)hero.appendChild(f);}});
 addEventListener('DOMContentLoaded',()=>{const h=document.querySelector('.hdr'),b=h&&h.querySelector('[data-dd="dd-more"]'),tools=h&&h.querySelector('.hdr-tools');if(!b||!tools)return;const ul=document.createElement('ul');ul.className='nav hn-more-nav';ul.appendChild(b.closest('li'));tools.appendChild(ul);b.setAttribute('aria-label','Menu');});
 </script>
 <section class="hn-hero" aria-label="Live news globe">

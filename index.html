@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <script>try{var t=localStorage.getItem('inv-theme');if(t)document.documentElement.dataset.theme=t==='system'?(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'):t}catch(e){}</script><style>html{background:#0a0a0b}html[data-theme=light]{background:#fff}</style>
-<script src="assets/fetch-share.js?v=341f05f4c5"></script>
-<link rel="stylesheet" href="assets/consent.css?v=341f05f4c5">
-<script src="assets/consent.js?v=341f05f4c5"></script>
+<script src="assets/fetch-share.js?v=c1bdb84824"></script>
+<link rel="stylesheet" href="assets/consent.css?v=c1bdb84824">
+<script src="assets/consent.js?v=c1bdb84824"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Investedia: Global Market News on a Live Globe</title>
 <meta name="description" content="Investedia is a global investment intelligence platform connecting financial news, market data and economic developments through an interactive world view.">
@@ -26,8 +26,8 @@
 <meta name="twitter:image" content="https://www.investedia.com/assets/og-default.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.investedia.com/#org","name":"Investedia","url":"https://www.investedia.com/","logo":"https://www.investedia.com/assets/app/icon-512.png","sameAs":["https://www.linkedin.com/company/investedia/","https://x.com/investedia","https://www.youtube.com/@investedia","https://www.instagram.com/investedia/"]},{"@type":"WebSite","@id":"https://www.investedia.com/#site","name":"Investedia","alternateName":"Investedia.com","url":"https://www.investedia.com/","publisher":{"@id":"https://www.investedia.com/#org"}}]}</script>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/app.css?v=341f05f4c5">
-<link rel="stylesheet" href="assets/skin.css?v=341f05f4c5">
+<link rel="stylesheet" href="assets/app.css?v=c1bdb84824">
+<link rel="stylesheet" href="assets/skin.css?v=c1bdb84824">
 <link rel="apple-touch-icon" href="assets/app/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -50,23 +50,23 @@
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <script src="assets/quotes.js"></script>
 <script src="assets/news.js"></script>
-<script src="assets/mock.js?v=341f05f4c5"></script>
-<link rel="stylesheet" href="assets/news-menu.css?v=341f05f4c5">
-<script src="assets/runtime-config.js?v=341f05f4c5"></script>
-<script src="assets/live-config.js?v=341f05f4c5"></script>
-<script src="assets/live-data.js?v=341f05f4c5" defer></script>
-<script src="assets/news-source.js?v=341f05f4c5"></script>
-<script src="assets/prefs.js?v=341f05f4c5"></script>
-<script src="assets/peek.js?v=341f05f4c5"></script>
-<script src="assets/sectors.js?v=341f05f4c5"></script>
-<script src="assets/news-menu.js?v=341f05f4c5"></script>
-<script src="assets/locale.js?v=341f05f4c5"></script>
-<script src="assets/ui.js?v=341f05f4c5"></script>
-<script src="assets/push-alerts.js?v=341f05f4c5" defer></script>
-<script src="assets/news-alerts.js?v=341f05f4c5" defer></script>
-<script src="assets/since-news.js?v=341f05f4c5"></script>
-<script src="assets/home-news.js?v=341f05f4c5"></script>
-<script src="assets/live-news.js?v=341f05f4c5"></script>
+<script src="assets/mock.js?v=c1bdb84824"></script>
+<link rel="stylesheet" href="assets/news-menu.css?v=c1bdb84824">
+<script src="assets/runtime-config.js?v=c1bdb84824"></script>
+<script src="assets/live-config.js?v=c1bdb84824"></script>
+<script src="assets/live-data.js?v=c1bdb84824" defer></script>
+<script src="assets/news-source.js?v=c1bdb84824"></script>
+<script src="assets/prefs.js?v=c1bdb84824"></script>
+<script src="assets/peek.js?v=c1bdb84824"></script>
+<script src="assets/sectors.js?v=c1bdb84824"></script>
+<script src="assets/news-menu.js?v=c1bdb84824"></script>
+<script src="assets/locale.js?v=c1bdb84824"></script>
+<script src="assets/ui.js?v=c1bdb84824"></script>
+<script src="assets/push-alerts.js?v=c1bdb84824" defer></script>
+<script src="assets/news-alerts.js?v=c1bdb84824" defer></script>
+<script src="assets/since-news.js?v=c1bdb84824"></script>
+<script src="assets/home-news.js?v=c1bdb84824"></script>
+<script src="assets/live-news.js?v=c1bdb84824"></script>
 <main class="wrap" id="main-content" tabindex="-1">
 <style>
 /* News-first homepage. The globe is the hero; everything below is live news. */
@@ -326,6 +326,10 @@ body[data-page=home] .hdr .hdr-login{border-radius:999px!important;border-color:
  /* hero: text on the left, globe on the right */
  .hn-hero .hn-copy .hn{margin-left:max(64px,calc(50vw - 640px))!important;margin-right:auto!important;max-width:560px!important;padding-right:0!important}
  .hn-hero .hn-ctl{bottom:28px;padding:5px 5px 5px 20px}
+ /* owner 27 Nov 2026: counts back on PC, under popular searches; glass search bar */
+ .hn-hero .hn-copy .hn{display:flex!important;flex-direction:column;align-items:flex-start}
+ .hn-hero .hn-kicker{order:1}.hn-hero .hn-title{order:2}.hn-hero .hn-search{order:3}.hn-hero .hn-pop{order:4}.hn-hero .hn-facts{order:5;margin-top:34px!important}
+ .hn-hero .hn-search{width:min(520px,100%)!important;height:54px!important;border-radius:999px!important;padding:0 22px!important;background:rgba(44,44,50,.35)!important;border:1px solid rgba(255,255,255,.14)!important;backdrop-filter:blur(18px) saturate(1.3)!important;-webkit-backdrop-filter:blur(18px) saturate(1.3)!important}
  .hn-hero .hn-ctl .hn-explore{display:none}
  .hn-hero .hn-ctl .hn-tsl{position:absolute;left:6px;right:6px;bottom:calc(100% + 10px)}
  .hn-hero .hn-ctl .hn-open{width:auto!important;height:40px!important;padding:0 16px!important;gap:8px;display:inline-flex!important;align-items:center}
@@ -333,7 +337,7 @@ body[data-page=home] .hdr .hdr-login{border-radius:999px!important;border-color:
  :root[data-theme="light"] .hn-hero::after{background:linear-gradient(90deg,var(--bg) 0%,rgba(247,247,248,.82) 30%,transparent 56%),linear-gradient(0deg,var(--bg),transparent 22%)!important}
  .hn-hero .hn-ctl .hn-open .t{position:static!important;width:auto!important;height:auto!important;overflow:visible!important;clip:auto!important;color:#fff;font-weight:600;font-size:13.5px}
 }
-.hn-hero .hn-facts,.hn-hero .hn-modes,.hn-hero .hn-mode-row,.hn-hero .hn-map-caption,.hn-hero .hn-live{display:none!important}
+.hn-hero .hn-modes,.hn-hero .hn-mode-row,.hn-hero .hn-map-caption,.hn-hero .hn-live{display:none!important}
 .hn-hero .hn-ctl .hn-open svg,.hn-explore svg{width:17px;height:17px;fill:none;stroke:#fff!important;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
 .hn-tsl{display:flex;justify-content:space-between;align-items:baseline;font:600 10.5px Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#FF7A1A}
 .hn-tsl a{color:var(--fg-3);letter-spacing:0;text-transform:none;font-weight:500;font-size:12.5px;text-decoration:none}.hn-tsl a:hover{color:var(--fg)}
@@ -345,6 +349,7 @@ body[data-page=home] .hdr .hdr-login{border-radius:999px!important;border-color:
  body[data-page=home] .hdr .hdr-login{height:34px;min-height:34px;padding:0 14px!important;font-size:13px!important;background:rgba(44,44,50,.55)!important;border:1px solid rgba(255,255,255,.14)!important;color:#fff!important;margin-right:2px}
 }
 @media(max-width:900px){
+ .hn-hero>.hn-facts{order:4;position:relative;z-index:3;display:grid!important;grid-template-columns:repeat(3,1fr);width:auto;margin:34px 16px 6px!important;text-align:center}
  .hn-hero .hn-ctl{grid-template-columns:1fr!important}
  .hn-hero .hn-ctl .hn-explore{grid-row:1;grid-column:1/-1;justify-self:stretch;margin:0 12px}
  .hn-hero .hn-ctl .hn-tsl{grid-row:2;grid-column:1/-1;justify-self:stretch;padding:14px 4px 0}
@@ -357,6 +362,8 @@ body[data-page=home] .hdr .hdr-login{border-radius:999px!important;border-color:
 </style>
 <script>
 // owner 27 Nov 2026 (header V2): on PC the "More" menu moves to the end of the account pill as the menu button (it holds Settings and the theme switch)
+// owner 27 Nov 2026: on phones the counts sit under the globe, Tap to explore and the headline pill, just above the free resources
+addEventListener('DOMContentLoaded',()=>{if(innerWidth<=900){const f=document.getElementById('hnFacts'),hero=document.querySelector('.hn-hero');if(f&&hero)hero.appendChild(f);}});
 addEventListener('DOMContentLoaded',()=>{const h=document.querySelector('.hdr'),b=h&&h.querySelector('[data-dd="dd-more"]'),tools=h&&h.querySelector('.hdr-tools');if(!b||!tools)return;const ul=document.createElement('ul');ul.className='nav hn-more-nav';ul.appendChild(b.closest('li'));tools.appendChild(ul);b.setAttribute('aria-label','Menu');});
 </script>
 <section class="hn-hero" aria-label="Live news globe">
