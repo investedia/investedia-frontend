@@ -91,6 +91,9 @@ a.btn{color:var(--tx);text-decoration:none}
 /* story card */
 #card{position:fixed;z-index:25;width:320px;border-radius:18px;padding:14px 16px 16px;display:none;box-shadow:0 20px 60px rgba(0,0,0,.55)}
 #card.on{display:block}
+#card.in{animation:cin .32s cubic-bezier(.2,.8,.2,1)}
+@keyframes cin{from{opacity:0;transform:translateY(8px) scale(.985)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){#card.in{animation:none}}
 #card .grip{display:block;margin:-6px auto 6px;width:40px;height:14px;cursor:grab;color:var(--t3);text-align:center;font-size:12px;letter-spacing:2px;touch-action:none}
 #card h3{font-size:17px;line-height:1.24;margin:8px 0;font-weight:650;letter-spacing:-.01em}
 #card p{font-size:13px;line-height:1.5;color:var(--t2)}
@@ -281,7 +284,7 @@ function setMode(m) {
 // ---------- story card on the pin (draggable; a line stays attached to the pin) ----------
 let dragged = null;
 window.InvGlobeApp = {
-  story(s, win) { openStory(s, win); },
+  story(s, win) { focusStory(s, win); openStory(s, win); },
   place(list, win) { if (list && list.length) openStory(list[0], win, list); }
 };
 function priceOf(imp) { const t = imp && (imp.ticker || (imp.asset && imp.asset.px)); return t && S.prices[t] ? S.prices[t] : null; }
@@ -303,7 +306,7 @@ function openStory(s, win, list) {
     <div class="src">${esc(s.source?.name || '')} · ${new Date(s.published_at).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })} · Not investment advice</div>`;
   { const a = $('cb').querySelector('.act'); a.insertAdjacentHTML('beforeend', alertBlock(s).split('<div id="alrt">')[0]); a.insertAdjacentHTML('afterend', '<div id="alrt">' + alertBlock(s).split('<div id="alrt">')[1]); $('abtn').onclick = () => $('alrt').classList.toggle('on'); $('alrt').querySelectorAll('.row button').forEach(b => b.onclick = () => pro('alerts')); }
   $('cb').querySelectorAll('[data-n]').forEach(b => b.onclick = () => { const L = S.list, k = (L.indexOf(S.sel) + +b.dataset.n + L.length) % L.length; openStory(L[k], S.win, L); });
-  $('card').classList.add('on'); document.body.classList.add('card'); dragged = null; track();
+  const cd = $('card'); cd.classList.remove('in'); void cd.offsetWidth; cd.classList.add('on', 'in'); document.body.classList.add('card'); dragged = null; track();
   history.replaceState(null, '', '?story=' + encodeURIComponent(s.id) + (S.layout > 1 ? '&layout=' + S.layout : ''));
 }
 function pinXY() {
@@ -325,7 +328,7 @@ function track() {
   } else $('line').style.display = 'none';
   track.raf = requestAnimationFrame(track);
 }
-function closeCard() { setTimeout(paintMini, 0); document.body.classList.remove('card'); $('card').classList.remove('on'); S.sel = null; $('line').style.display = 'none'; history.replaceState(null, '', location.pathname); }
+function closeCard() { camBack(); setTimeout(paintMini, 0); document.body.classList.remove('card'); $('card').classList.remove('on'); S.sel = null; $('line').style.display = 'none'; history.replaceState(null, '', location.pathname); }
 $('cx').onclick = closeCard;
 { const g = $('grip'), c = $('card'); let ox, oy;
   g.addEventListener('pointerdown', e => { g.setPointerCapture(e.pointerId); const r = c.getBoundingClientRect(); ox = e.clientX - r.left; oy = e.clientY - r.top; dragged = true; });
@@ -347,7 +350,7 @@ function renderFeed() {
     return `<button class="it${b ? ' big' : ''}" data-id="${esc(s.id)}"><div class="tp"><b>${esc(s.category)}${b ? ' <span class="big">· Big move</span>' : ''}</b><span>${esc(s.location?.place || '')} · ${ago(s.published_at)}</span></div><h4>${esc(s.headline)}</h4><div class="mv">${mv}</div></button>`; }).join('') || '<p class="m3" style="padding:14px">No stories in this window.</p>';
 }
 $('list').addEventListener('click', e => { const b = e.target.closest('[data-id]'); if (!b) return; const s = S.byId[b.dataset.id]; const w = document.querySelector('.pane.on iframe')?.contentWindow || frames()[0].contentWindow;
-  try { w.flyTo(s.location.lon, s.location.lat, 2.4); } catch (x) {} openStory(s, w); });
+  focusStory(s, w); openStory(s, w); });
 document.querySelectorAll('[data-fs]').forEach(b => b.onclick = () => { document.querySelectorAll('[data-fs]').forEach(x => x.setAttribute('aria-pressed', String(x === b))); $('feed').classList.toggle('cards', b.dataset.fs === 'cards'); store('inv-app-feed', b.dataset.fs); });
 
 // ---------- filters ----------
@@ -360,8 +363,8 @@ $('qi').addEventListener('input', () => { const t = $('qi').value.trim().toLower
   const hits = S.stories.filter(s => (s.headline + ' ' + (s.location?.country || '') + ' ' + (s.impacts || []).map(i => i.name).join(' ')).toLowerCase().includes(t)).slice(0, 8);
   r.innerHTML = hits.map(s => `<button data-id="${esc(s.id)}">${esc(s.headline)}<div class="m3" style="font-size:11px">${esc(s.location?.country || '')} · ${ago(s.published_at)}</div></button>`).join('') || '<div class="m3" style="padding:8px 10px;font-size:13px">No matches in the live feed</div>';
   r.classList.add('on'); });
-$('qr').onclick = e => { const b = e.target.closest('[data-id]'); if (!b) return; $('qr').classList.remove('on'); $('qi').value = ''; const s = S.byId[b.dataset.id], w = frames()[0].contentWindow; try { w.flyTo(s.location.lon, s.location.lat, 2.4); } catch (x) {} openStory(s, w); };
-addEventListener('keydown', e => { if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); $('qi').focus(); } if (e.key === 'Escape') { $('qr').classList.remove('on'); $('menu').classList.remove('on'); } });
+$('qr').onclick = e => { const b = e.target.closest('[data-id]'); if (!b) return; $('qr').classList.remove('on'); $('qi').value = ''; const s = S.byId[b.dataset.id], w = activeWin(); focusStory(s, w); openStory(s, w); };
+addEventListener('keydown', e => { if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); $('qi').focus(); } if (e.key === 'Escape') { $('qr').classList.remove('on'); $('menu').classList.remove('on'); if ($('card').classList.contains('on') && K.tool === 'cur') closeCard(); } });
 
 // ---------- timeline (free: last 30 days; Pro: back to 2016) ----------
 const T0 = Date.parse('2016-01-01'), span = () => Date.now() - T0;
@@ -497,6 +500,7 @@ $('proX').onclick = () => $('pro').classList.remove('on');
 let BIDX = null; fetch('briefs/index.json').then(r => r.json()).then(d => { BIDX = Object.fromEntries(d.countries.map(c => [c.country, c.cc])); }).catch(() => {});
 const BR = { utt: null, name: '', on: false };
 window.InvGlobeApp.country = async (name, win) => {
+  if (!CAM.prev) { try { const v = win.InvGlobeView(); CAM.prev = { w: win, v }; } catch (e) {} }
   const cc = BIDX && BIDX[name]; if (!cc) { const L = S.stories.filter(s => s.location?.country === name); if (L.length) openStory(L[0], win, L); else toast('No briefing for ' + name + ' yet'); return; }
   let b; try { b = await (await fetch('briefs/' + cc + '.json')).json(); } catch (e) { toast('Briefing unavailable'); return; }
   S.sel = null; $('line').style.display = 'none';
@@ -507,7 +511,7 @@ window.InvGlobeApp.country = async (name, win) => {
     ${(b.lines || []).slice(0, 5).map(l => `<div class="row" style="display:block;font-size:12.5px;line-height:1.45"><a href="/story?id=${encodeURIComponent(l.id)}" style="color:var(--tx);text-decoration:none">${esc(l.x)}</a></div>`).join('')}
     <div class="src">Built from Investedia articles · Not investment advice</div>`;
   $('card').classList.add('on'); document.body.classList.add('card'); dragged = null;
-  const c = $('card'); if (innerWidth > 820) { c.style.left = (innerWidth - 700) + 'px'; c.style.top = '118px'; }
+  const c = $('card'); c.classList.remove('in'); void c.offsetWidth; c.classList.add('in'); if (innerWidth > 820) { c.style.left = '76px'; c.style.top = '118px'; }
   $('bplay').onclick = () => speak(b);
 };
 const PLAY = '<svg viewBox="0 0 24 24" style="width:13px;height:13px;fill:currentColor"><path d="M7 5v14l11-7z"/></svg>', PAUSE = '<svg viewBox="0 0 24 24" style="width:13px;height:13px;fill:currentColor"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>';
@@ -535,7 +539,7 @@ function showProjects() {
   $('list').innerHTML = R.slice(0, 60).map((p, i) => `<button class="wr" data-pk="${esc(p.k)}"><span><span style="color:${(PT[p.t] || [, '#fff'])[1]}">●</span> ${esc(p.n)}<small>${esc(p.c)}</small></span><span>${Math.round(mw(p)).toLocaleString('en-US')} MW</span></button>`).join('') || '<p class="empty">No projects with a known capacity for this type.</p>';
 }
 $('list').addEventListener('click', e => { const b = e.target.closest('[data-pk]'); if (!b) return; openProject(P.all.find(p => p.k === b.dataset.pk)); });
-function openProject(p) { if (!p) return; const w = activeWin(); try { w.flyTo(p.lo, p.la, 2.6); } catch (x) {}
+function openProject(p) { if (!p) return; const w = activeWin(); camIn(w); try { w.flyTo(p.lo, p.la, 3, 1000); } catch (x) {}
   const R = P.all.filter(x => mw(x) && x.validation_status === 'verified').sort((a, b) => mw(b) - mw(a)), rank = R.indexOf(p) + 1, v = mw(p), ty = PT[p.t] || [p.t, '#fff'];
   S.sel = null; $('cb').innerHTML = `<div class="k" style="color:${ty[1]}">${esc(ty[0])} · ${esc(p.c)}</div><h3>${esc(p.n)}</h3>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">${[['Capacity', v ? Math.round(v).toLocaleString('en-US') + ' MW' : 'Not listed'], ['Rank', rank ? '#' + rank + ' of ' + R.length.toLocaleString('en-US') : '—']].map(([a, b]) => `<div style="padding:10px;border:1px solid var(--ln);border-radius:10px"><div class="m3" style="font-size:11px">${a}</div><b>${b}</b></div>`).join('')}</div>
@@ -560,6 +564,13 @@ requestAnimationFrame(projLoop);
 // ---------- alerts (Pro): from the story card, and an area on the map ----------
 function alertBlock(s) { const it = [...new Set([...(s.impacts || []).slice(0, 2).map(i => i.name), s.location?.country, s.category].filter(Boolean))];
   return `<button class="btn glass" id="abtn" style="height:40px;width:44px;padding:0" aria-label="Alerts" title="Alerts">${BELL}</button><div id="alrt"><div class="k" style="margin-bottom:4px">Alert me about</div>${it.map(x => `<div class="row"><span>${esc(x)}</span><button aria-label="Alert for ${esc(x)}"></button></div>`).join('')}<div class="m3" style="font-size:11px;margin-top:6px">Push · email · Pro</div></div>`; }
+
+
+// ---------- camera: remember the view before zooming in, fly back when the card closes ----------
+const CAM = { prev: null };
+function camIn(w) { if (CAM.prev) return; try { CAM.prev = { w, v: w.InvGlobeView() }; } catch (e) {} }
+function camBack() { const p = CAM.prev; CAM.prev = null; if (!p) return; try { p.w.InvGlobeClear(); p.w.flyTo(p.v[0], p.v[1], p.v[2], 900); } catch (e) {} }
+function focusStory(s, w) { camIn(w); try { const v = w.InvGlobeView(); w.InvGlobeSelect(s.id, s.location?.country); w.flyTo(s.location.lon, s.location.lat, Math.max(v[2], 2.4), 1000); } catch (e) {} }
 
 // ---------- start ----------
 if (store('inv-app-feed') === 'cards') document.querySelector('[data-fs="cards"]').click();
