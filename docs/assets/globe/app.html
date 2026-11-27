@@ -150,6 +150,28 @@ a.btn{color:var(--tx);text-decoration:none}
 .wr{display:flex;justify-content:space-between;gap:10px;width:100%;text-align:left;padding:10px 14px;border-top:1px solid var(--ln);font-size:13px}
 .wr small{color:var(--t3);font-size:10.5px;margin-left:4px}
 .empty{padding:16px 14px;color:var(--t3);font-size:13px;line-height:1.5}
+
+/* projects */
+#proj{position:fixed;inset:0;z-index:11;pointer-events:none}
+#proj i{position:absolute;border-radius:50%;pointer-events:auto;cursor:pointer;transform:translate(-50%,-50%)}
+#plegend{position:fixed;left:16px;bottom:112px;z-index:15;border-radius:12px;padding:7px 12px;font-size:12px;display:none;gap:12px}
+body.proj #plegend{display:flex}
+body.proj #chips [data-cat]{display:none}
+#pchips{display:none}
+body.proj #pchips{display:contents}
+/* pro inline card */
+#pro{position:fixed;left:50%;bottom:122px;transform:translateX(-50%);z-index:40;width:min(440px,calc(100% - 24px));border-radius:16px;padding:14px 16px;display:none}
+#pro.on{display:block}
+#pro b{font-size:14px;display:flex;align-items:center;gap:8px}
+#pro p{font-size:12.5px;color:var(--t2);margin:6px 0 10px}
+#pro .a{display:flex;gap:8px}
+#pro .a a{padding:8px 16px;border-radius:999px;background:var(--tx);color:#0a0a0a;font-weight:600;font-size:13px;text-decoration:none}
+#pro .a button{padding:8px 6px;font-size:13px;color:var(--t2)}
+/* alerts on the card */
+#alrt{margin-top:10px;padding:10px 12px;border-radius:12px;border:1px solid var(--ln);display:none}
+#alrt.on{display:block}
+#alrt .row button{width:34px;height:20px;border-radius:99px;background:#2c2c32;position:relative}
+#alrt .row button::after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#8a8a92}
 #toast{position:fixed;left:50%;bottom:130px;transform:translateX(-50%);z-index:40;padding:9px 14px;border-radius:12px;font-size:13px;display:none}
 #toast.on{display:block}
 .na{position:fixed;left:16px;bottom:2px;z-index:14;font-size:9.5px;color:var(--t3)}
@@ -173,9 +195,11 @@ a.btn{color:var(--tx);text-decoration:none}
 <div id="screens" class="l1"></div>
 <svg id="line"><line id="ln" stroke="#ff7a1a" stroke-width="1.2" stroke-dasharray="4 4" /><circle id="lp" r="4" fill="#fff"/></svg>
 
-<svg id="draw"></svg>
+<div id="proj"></div><svg id="draw"></svg>
+<div id="plegend" class="glass"></div>
+<div id="pro" class="glass" role="dialog" aria-label="Pro"><b><svg class="i" viewBox="0 0 24 24" style="width:15px;height:15px;color:var(--or)"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span id="proT"></span></b><p id="proP"></p><div class="a"><a href="/pricing">See Pro</a><button id="proX">Not now</button></div></div>
 <div id="kit" class="glass" role="toolbar" aria-label="Drawing tools"><span class="g" id="kg" title="Drag to move">· · ·</span><button class="t" id="kTool" aria-label="Show or hide tools" title="Tools"><svg class="i" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1.5"/><rect x="14" y="4" width="6" height="6" rx="1.5"/><rect x="4" y="14" width="6" height="6" rx="1.5"/><path d="M17 14v6M14 17h6"/></svg></button><button class="t" data-tool="cur" aria-pressed="true" title="Select"><svg class="i" viewBox="0 0 24 24"><path d="M5 3l14 8-6 2-2 6z"/></svg></button><button class="t" data-tool="dist" data-fly="measure" aria-pressed="false" title="Measure (D)"><svg class="i" viewBox="0 0 24 24"><path d="M4 16L16 4l4 4L8 20z"/><path d="M8 12l2 2M11 9l2 2"/></svg><i class="cr"></i></button><button class="t" data-tool="pen" aria-pressed="false" title="Draw (P)"><svg class="i" viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16z"/></svg></button><button class="t" data-tool="pin" aria-pressed="false" title="Pin a place"><svg class="i" viewBox="0 0 24 24"><path d="M9 4h6l-1 6 3 3H7l3-3z"/><path d="M12 13v8"/></svg></button><button class="t" data-tool="note" aria-pressed="false" title="Add a note"><svg class="i" viewBox="0 0 24 24"><path d="M5 5h14v10h-8l-4 4v-4H5z"/></svg></button><i class="sp2"></i><button class="t" id="kHide" aria-pressed="false" title="Hide drawings"><svg class="i" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button><button class="t" id="kLock" aria-pressed="false" title="Lock drawings"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></button><button class="t" id="kBin" title="Delete all drawings"><svg class="i" viewBox="0 0 24 24"><path d="M5 7h14M9 7V4h6v3M7 7l1 13h8l1-13"/></svg></button></div>
-<div id="fly" class="glass" role="menu"><h6>MEASURE</h6><button class="mi" data-m="dist">Distance<small>D</small></button><button class="mi" data-m="radius">Radius<small>R</small></button></div>
+<div id="fly" class="glass" role="menu"><h6>MEASURE</h6><button class="mi" data-m="dist">Distance<small>D</small></button><button class="mi" data-m="radius">Radius<small>R</small></button><h6>ALERT</h6><button class="mi" data-m="alert">Alert for an area<small>PRO</small></button></div>
 <div id="top">
   <a class="btn ic glass" id="exit" href="/" aria-label="Exit globe" title="Exit globe"><svg class="i" viewBox="0 0 24 24"><path d="M10 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4M15 8l4 4-4 4M19 12H9"/></svg></a>
   <div id="q" class="glass"><svg class="i" viewBox="0 0 24 24" style="color:var(--t3)"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="qi" placeholder="Search news, companies, countries" autocomplete="off" aria-label="Search"><div id="qr" class="glass" role="listbox"></div></div>
@@ -205,7 +229,7 @@ a.btn{color:var(--tx);text-decoration:none}
 </section>
 
 <section id="tl" class="glass" aria-label="Timeline">
-  <div class="hd"><button id="play" aria-label="Play"><svg viewBox="0 0 24 24"><path d="M7 5v14l11-7z"/></svg></button><b>Timeline</b><span class="mu" id="tlLab"></span><span class="sp"></span><span class="pro" title="Pro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>PRO · back to 2016</span></div>
+  <div class="hd"><button id="play" aria-label="Play"><svg viewBox="0 0 24 24"><path d="M7 5v14l11-7z"/></svg></button><b>Timeline</b><span class="mu" id="tlLab"></span><span class="sp"></span><span class="pro" title="Pro" style="cursor:pointer" onclick="document.getElementById('pro').classList.add('on');document.getElementById('proT').textContent='Go further back in time with Pro';document.getElementById('proP').textContent='Free shows the last 30 days. Pro opens every day back to 2016.'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>PRO · back to 2016</span></div>
   <div id="bar"><i class="tr"></i><i class="free" id="free"></i><i class="kn" id="kn"></i></div>
   <div class="lb"><span>2016</span><span id="lbMid"></span><span>Now</span></div>
 </section>
@@ -249,9 +273,9 @@ function buildScreens() {
 function flyRegion(fr, key) { const r = REG.find(x => x[0] === key); try { fr.contentWindow.flyTo(r[2], r[3], r[4]); } catch (e) {} }
 function frames() { return [...document.querySelectorAll('#screens iframe')]; }
 function setMode(m) {
-  S.mode = m; document.querySelectorAll('[data-mode]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mode === m)));
+  S.mode = m; document.body.classList.toggle('proj', m === 'projects'); document.querySelector('#feed .tabs').style.display = m === 'projects' ? 'none' : ''; MINI.style.display = m === 'projects' ? 'none' : ''; document.querySelectorAll('[data-mode]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mode === m)));
   frames().forEach(f => f.contentWindow?.postMessage({ type: 'investedia-mode', mode: m }, location.origin));
-  closeCard();
+  closeCard(); if (m === 'projects') showProjects(); else renderTab();
 }
 
 // ---------- story card on the pin (draggable; a line stays attached to the pin) ----------
@@ -277,6 +301,7 @@ function openStory(s, win, list) {
     ${list && list.length > 1 ? `<div class="nav"><button data-n="-1">Previous</button><button data-n="1">Next</button><span class="m3" style="font-size:12px;align-self:center">${list.indexOf(s) + 1} of ${list.length} here</span></div>` : ''}
     <div class="act"><a href="/story?id=${encodeURIComponent(s.id)}">Open article <svg class="i" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M7 17 17 7M9 7h8v8"/></svg></a></div>
     <div class="src">${esc(s.source?.name || '')} · ${new Date(s.published_at).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })} · Not investment advice</div>`;
+  { const a = $('cb').querySelector('.act'); a.insertAdjacentHTML('beforeend', alertBlock(s).split('<div id="alrt">')[0]); a.insertAdjacentHTML('afterend', '<div id="alrt">' + alertBlock(s).split('<div id="alrt">')[1]); $('abtn').onclick = () => $('alrt').classList.toggle('on'); $('alrt').querySelectorAll('.row button').forEach(b => b.onclick = () => pro('alerts')); }
   $('cb').querySelectorAll('[data-n]').forEach(b => b.onclick = () => { const L = S.list, k = (L.indexOf(S.sel) + +b.dataset.n + L.length) % L.length; openStory(L[k], S.win, L); });
   $('card').classList.add('on'); document.body.classList.add('card'); dragged = null; track();
   history.replaceState(null, '', '?story=' + encodeURIComponent(s.id) + (S.layout > 1 ? '&layout=' + S.layout : ''));
@@ -300,7 +325,7 @@ function track() {
   } else $('line').style.display = 'none';
   track.raf = requestAnimationFrame(track);
 }
-function closeCard() { document.body.classList.remove('card'); $('card').classList.remove('on'); S.sel = null; $('line').style.display = 'none'; history.replaceState(null, '', location.pathname); }
+function closeCard() { setTimeout(paintMini, 0); document.body.classList.remove('card'); $('card').classList.remove('on'); S.sel = null; $('line').style.display = 'none'; history.replaceState(null, '', location.pathname); }
 $('cx').onclick = closeCard;
 { const g = $('grip'), c = $('card'); let ox, oy;
   g.addEventListener('pointerdown', e => { g.setPointerCapture(e.pointerId); const r = c.getBoundingClientRect(); ox = e.clientX - r.left; oy = e.clientY - r.top; dragged = true; });
@@ -343,7 +368,7 @@ const T0 = Date.parse('2016-01-01'), span = () => Date.now() - T0;
 function setDays(d) { S.days = Math.max(1, Math.min(FREE_DAYS, Math.round(d))); const pct = 100 - S.days * 864e5 / span() * 100; $('kn').style.left = pct + '%'; $('tlLab').textContent = 'Showing the last ' + (S.days === 1 ? '24 hours' : S.days + ' days'); if (S.tab === 'latest') renderFeed(); }
 $('free').style.width = (FREE_DAYS * 864e5 / span() * 100) + '%';
 $('lbMid').textContent = 'Free: last ' + FREE_DAYS + ' days';
-{ const bar = $('bar'); const at = e => { const r = bar.getBoundingClientRect(), f = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width)), d = (1 - f) * span() / 864e5; if (d > FREE_DAYS) { toast('Older dates are part of Pro'); setDays(FREE_DAYS); } else setDays(d); };
+{ const bar = $('bar'); const at = e => { const r = bar.getBoundingClientRect(), f = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width)), d = (1 - f) * span() / 864e5; if (d > FREE_DAYS) { pro('time'); setDays(FREE_DAYS); } else setDays(d); };
   bar.addEventListener('pointerdown', e => { bar.setPointerCapture(e.pointerId); at(e); }); bar.addEventListener('pointermove', e => { if (bar.hasPointerCapture(e.pointerId)) at(e); }); }
 $('play').onclick = () => { let d = FREE_DAYS; clearInterval(setDays.p); setDays.p = setInterval(() => { setDays(d); d -= 1; if (d < 1) clearInterval(setDays.p); }, 250); };
 
@@ -353,7 +378,7 @@ document.addEventListener('click', e => { if (!e.target.closest('#menu')) $('men
 const LAYS = [[1, '<rect x="5" y="5" width="14" height="10" rx="1" fill="none" stroke="currentColor"/>'], [2, '<rect x="3" y="5" width="8" height="10" rx="1" fill="none" stroke="currentColor"/><rect x="13" y="5" width="8" height="10" rx="1" fill="none" stroke="currentColor"/>'], [3, '<rect x="3" y="5" width="10" height="10" rx="1" fill="none" stroke="currentColor"/><rect x="15" y="5" width="6" height="4" rx="1" fill="none" stroke="currentColor"/><rect x="15" y="11" width="6" height="4" rx="1" fill="none" stroke="currentColor"/>'], [4, '<rect x="3" y="4" width="8" height="5" rx="1" fill="none" stroke="currentColor"/><rect x="13" y="4" width="8" height="5" rx="1" fill="none" stroke="currentColor"/><rect x="3" y="11" width="8" height="5" rx="1" fill="none" stroke="currentColor"/><rect x="13" y="11" width="8" height="5" rx="1" fill="none" stroke="currentColor"/>']];
 const lock = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
 function paintLays() { $('lays').innerHTML = LAYS.map(([n, svg]) => `<button class="lay" data-l="${n}" aria-pressed="${n === S.layout}" aria-label="${n} screen${n > 1 ? 's' : ''}"><svg viewBox="0 0 24 20" style="width:30px;height:24px">${svg}</svg>${n > FREE_SCREENS ? `<span class="pro">${lock}PRO</span>` : ''}</button>`).join(''); }
-$('lays').onclick = e => { const b = e.target.closest('[data-l]'); if (!b) return; const n = +b.dataset.l; if (n > FREE_SCREENS) { toast(n + ' screens are part of Pro'); return; } S.layout = n; paintLays(); closeCard(); buildScreens(); };
+$('lays').onclick = e => { const b = e.target.closest('[data-l]'); if (!b) return; const n = +b.dataset.l; if (n > FREE_SCREENS) { $('menu').classList.remove('on'); pro('screens'); return; } S.layout = n; paintLays(); closeCard(); buildScreens(); };
 $('shot').onclick = async () => {
   $('menu').classList.remove('on');
   try {
@@ -420,7 +445,7 @@ function setTool(t) { K.tool = t; K.tmp = null; document.querySelectorAll('#kit 
 document.querySelectorAll('#kit [data-tool]').forEach(b => b.onclick = e => { e.stopPropagation(); if (K.lock && b.dataset.tool !== 'cur') { toast('Drawings are locked'); return; }
   if (b.dataset.fly) { const r = b.getBoundingClientRect(), f = $('fly'); f.style.left = (($('kit').classList.contains('h') ? r.left : r.right + 8)) + 'px'; f.style.top = (($('kit').classList.contains('h') ? r.bottom + 8 : r.top)) + 'px'; f.classList.toggle('on'); return; }
   setTool(K.tool === b.dataset.tool ? 'cur' : b.dataset.tool); });
-$('fly').onclick = e => { const b = e.target.closest('[data-m]'); if (!b) return; $('fly').classList.remove('on'); setTool(b.dataset.m); toast(b.dataset.m === 'dist' ? 'Click two places to measure' : 'Click a centre, then the edge'); };
+$('fly').onclick = e => { const b = e.target.closest('[data-m]'); if (!b) return; $('fly').classList.remove('on'); if (b.dataset.m === 'alert') { setTool('radius'); K.alertArea = true; toast('Draw the area: click a centre, then the edge'); return; } setTool(b.dataset.m); toast(b.dataset.m === 'dist' ? 'Click two places to measure' : 'Click a centre, then the edge'); };
 document.addEventListener('click', e => { if (!e.target.closest('#fly,[data-fly]')) $('fly').classList.remove('on'); });
 $('kTool').onclick = () => { const c = $('kit').classList.toggle('col'); store('inv-kit-col', c ? '1' : '0'); };
 $('kHide').onclick = () => { K.hide = !K.hide; $('kHide').setAttribute('aria-pressed', String(K.hide)); };
@@ -433,7 +458,7 @@ function ll(e) { const fr = document.querySelector('.pane.on iframe') || frames(
     if (t === 'pen') { pen = { t: 'pen', pts: [p] }; K.dr.push(pen); d.setPointerCapture(e.pointerId); return; }
     if (t === 'pin') { K.dr.push({ t: 'pin', p }); saveDr(); return; }
     if (t === 'note') { const txt = prompt('Note'); if (txt) { K.dr.push({ t: 'note', p, text: txt.slice(0, 80) }); saveDr(); } return; }
-    if (t === 'dist' || t === 'radius') { if (!K.tmp) K.tmp = { t, a: p }; else { K.dr.push(t === 'dist' ? { t, a: K.tmp.a, b: p } : { t, c: K.tmp.a, km: km(K.tmp.a, p) }); K.tmp = null; saveDr(); } } });
+    if (t === 'dist' || t === 'radius') { if (!K.tmp) K.tmp = { t, a: p }; else { K.dr.push(t === 'dist' ? { t, a: K.tmp.a, b: p } : { t, c: K.tmp.a, km: km(K.tmp.a, p) }); K.tmp = null; saveDr(); if (K.alertArea) { K.alertArea = false; setTool('cur'); pro('alerts'); } } } });
   d.addEventListener('pointermove', e => { if (pen && d.hasPointerCapture(e.pointerId)) { const p = ll(e); if (p) pen.pts.push(p); } else if (K.tmp) K.tmp.cur = ll(e); });
   d.addEventListener('pointerup', () => { if (pen) { pen = null; saveDr(); } }); }
 function drawLoop() {
@@ -461,6 +486,80 @@ setOrient(store('inv-kit-o') === 'h' ? 'h' : 'v'); if (store('inv-kit-col') === 
   g.addEventListener('pointerdown', e => { g.setPointerCapture(e.pointerId); const r = k.getBoundingClientRect(); ox = e.clientX - r.left; oy = e.clientY - r.top; });
   g.addEventListener('pointermove', e => { if (!g.hasPointerCapture(e.pointerId)) return; k.style.left = Math.max(4, Math.min(innerWidth - 50, e.clientX - ox)) + 'px'; k.style.top = Math.max(4, Math.min(innerHeight - 50, e.clientY - oy)) + 'px'; });
   g.addEventListener('pointerup', () => { const r = k.getBoundingClientRect(); let x = r.left, y = r.top; if (x < 40) x = 16; if (innerWidth - r.right < 40) x = innerWidth - r.width - 16; k.style.left = x + 'px'; store('inv-kit-pos', JSON.stringify([x, y])); }); }
+
+
+// ---------- Pro inline card (shown where a limit is reached) ----------
+const PRO = { time: ['Go further back in time with Pro', 'Free shows the last 30 days. Pro opens every day back to 2016.'], screens: ['More screens with Pro', 'Free has up to 2 screens. Pro has up to 6, linked together.'], alerts: ['Alerts are part of Pro', 'Get a push or email when news hits a place, a company or a topic you follow.'], lines: ['Company lines with Pro', 'Pro draws lines from a project to the headquarters of the companies behind it.'] };
+function pro(k) { $('proT').textContent = PRO[k][0]; $('proP').textContent = PRO[k][1]; $('pro').classList.add('on'); }
+$('proX').onclick = () => $('pro').classList.remove('on');
+
+// ---------- country briefings: panel, then mini player (browser voice reads the real weekly briefing) ----------
+let BIDX = null; fetch('briefs/index.json').then(r => r.json()).then(d => { BIDX = Object.fromEntries(d.countries.map(c => [c.country, c.cc])); }).catch(() => {});
+const BR = { utt: null, name: '', on: false };
+window.InvGlobeApp.country = async (name, win) => {
+  const cc = BIDX && BIDX[name]; if (!cc) { const L = S.stories.filter(s => s.location?.country === name); if (L.length) openStory(L[0], win, L); else toast('No briefing for ' + name + ' yet'); return; }
+  let b; try { b = await (await fetch('briefs/' + cc + '.json')).json(); } catch (e) { toast('Briefing unavailable'); return; }
+  S.sel = null; $('line').style.display = 'none';
+  const d = t => new Date(t).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+  $('cb').innerHTML = `<div class="k">Weekly briefing · ${esc(d(b.from))}–${esc(d(b.to))}</div><h3>${esc(b.country)}</h3><p>${b.n} stories from ${b.sources} sources${b.mm ? ' · ' + b.mm + ' market-moving' : ''}</p>
+    <div style="display:flex;align-items:center;gap:10px;margin:12px 0"><button id="bplay" class="btn glass" style="height:36px">${PLAY}Listen</button><span class="m3" style="font-size:11px">Read by your browser's voice</span></div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px">${(b.cats || []).slice(0, 5).map(([c, n]) => `<span class="chip glass" style="height:26px;display:inline-flex;align-items:center">${esc(c)} ${n}</span>`).join('')}</div>
+    ${(b.lines || []).slice(0, 5).map(l => `<div class="row" style="display:block;font-size:12.5px;line-height:1.45"><a href="/story?id=${encodeURIComponent(l.id)}" style="color:var(--tx);text-decoration:none">${esc(l.x)}</a></div>`).join('')}
+    <div class="src">Built from Investedia articles · Not investment advice</div>`;
+  $('card').classList.add('on'); document.body.classList.add('card'); dragged = null;
+  const c = $('card'); if (innerWidth > 820) { c.style.left = (innerWidth - 700) + 'px'; c.style.top = '118px'; }
+  $('bplay').onclick = () => speak(b);
+};
+const PLAY = '<svg viewBox="0 0 24 24" style="width:13px;height:13px;fill:currentColor"><path d="M7 5v14l11-7z"/></svg>', PAUSE = '<svg viewBox="0 0 24 24" style="width:13px;height:13px;fill:currentColor"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>';
+function speak(b) { const sy = window.speechSynthesis; if (!sy) { toast('Audio is not supported in this browser'); return; } sy.cancel();
+  const txt = `${b.country}, weekly briefing. ` + (b.lines || []).slice(0, 6).map(l => l.x).join(' ');
+  const u = new SpeechSynthesisUtterance(txt); u.lang = 'en-US'; u.rate = 1.02; u.onend = () => { BR.on = false; paintMini(); }; BR.utt = u; BR.name = b.country; BR.on = true; sy.speak(u); paintMini(); }
+function paintMini() { let m = $('mini'); if (!m) { m = document.createElement('div'); m.id = 'mini'; m.className = 'glass'; m.style.cssText = 'position:fixed;left:50%;transform:translateX(-50%);bottom:122px;z-index:26;height:44px;border-radius:999px;display:none;align-items:center;gap:10px;padding:0 8px 0 6px;font-size:13px'; document.body.appendChild(m); }
+  m.innerHTML = `<button id="mp" style="width:32px;height:32px;border-radius:50%;background:var(--tx);color:#0a0a0a;display:grid;place-items:center">${speechSynthesis.paused ? PLAY : PAUSE}</button><span>${esc(BR.name)} briefing</span><button id="mx" aria-label="Stop" style="width:28px;height:28px;color:var(--t2)">✕</button>`;
+  m.style.display = BR.on && !$('card').classList.contains('on') ? 'flex' : 'none';
+  $('mp').onclick = () => { speechSynthesis.paused ? speechSynthesis.resume() : speechSynthesis.pause(); paintMini(); }; $('mx').onclick = () => { speechSynthesis.cancel(); BR.on = false; paintMini(); }; }
+setInterval(() => { if (BR.on) paintMini(); }, 600);
+
+// ---------- projects: type chips, ranked list, bubbles sized by megawatts and coloured by type ----------
+const PT = { 'Hydro energy': ['Hydro', '#6aa9ff'], 'Wind energy': ['Wind', '#7dd3a8'], 'Nuclear energy': ['Nuclear', '#c084fc'], 'Solar energy': ['Solar', '#fcd34d'], 'Data centres': ['Data centres', '#f472b6'], 'Real estate': ['Real estate', '#a1a1aa'], 'High-speed rail': ['Rail', '#fb923c'], 'Megaproject': ['Megaproject', '#ffffff'] };
+const P = { all: [], type: 'all' };
+const mw = p => { const c = p.cap; if (!c || !Number.isFinite(c.value)) return null; return c.unit === 'megawatt' ? c.value : c.unit === 'kilowatt' ? c.value / 1000 : null; };
+fetch('projects.json').then(r => r.json()).then(d => { P.all = (d.projects || []).filter(p => Number.isFinite(p.la)); if (S.mode === 'projects') showProjects(); }).catch(() => {});
+$('chips').insertAdjacentHTML('beforeend', '<span id="pchips">' + [['all', 'All'], ...Object.entries(PT).map(([k, v]) => [k, v[1] ? v[0] : k])].map(([k, t]) => `<button class="chip glass" data-pt="${esc(k)}" aria-pressed="${k === 'all'}">${esc(t)}</button>`).join('') + '</span>');
+$('chips').addEventListener('click', e => { const b = e.target.closest('[data-pt]'); if (!b) return; P.type = b.dataset.pt; $('chips').querySelectorAll('[data-pt]').forEach(x => x.setAttribute('aria-pressed', String(x === b))); showProjects(); });
+$('plegend').innerHTML = Object.entries(PT).slice(0, 5).map(([k, v]) => `<span><span style="color:${v[1]}">●</span> ${v[0]}</span>`).join('') + '<span class="m3">Size = megawatts</span>';
+function projList() { return P.all.filter(p => P.type === 'all' || p.t === P.type); }
+function showProjects() {
+  const L = projList(), R = L.filter(p => mw(p) && p.validation_status === 'verified').sort((a, b) => mw(b) - mw(a));
+  $('sub').textContent = L.length.toLocaleString('en-US') + ' projects · largest verified first';
+  $('list').innerHTML = R.slice(0, 60).map((p, i) => `<button class="wr" data-pk="${esc(p.k)}"><span><span style="color:${(PT[p.t] || [, '#fff'])[1]}">●</span> ${esc(p.n)}<small>${esc(p.c)}</small></span><span>${Math.round(mw(p)).toLocaleString('en-US')} MW</span></button>`).join('') || '<p class="empty">No projects with a known capacity for this type.</p>';
+}
+$('list').addEventListener('click', e => { const b = e.target.closest('[data-pk]'); if (!b) return; openProject(P.all.find(p => p.k === b.dataset.pk)); });
+function openProject(p) { if (!p) return; const w = activeWin(); try { w.flyTo(p.lo, p.la, 2.6); } catch (x) {}
+  const R = P.all.filter(x => mw(x) && x.validation_status === 'verified').sort((a, b) => mw(b) - mw(a)), rank = R.indexOf(p) + 1, v = mw(p), ty = PT[p.t] || [p.t, '#fff'];
+  S.sel = null; $('cb').innerHTML = `<div class="k" style="color:${ty[1]}">${esc(ty[0])} · ${esc(p.c)}</div><h3>${esc(p.n)}</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">${[['Capacity', v ? Math.round(v).toLocaleString('en-US') + ' MW' : 'Not listed'], ['Rank', rank ? '#' + rank + ' of ' + R.length.toLocaleString('en-US') : '—']].map(([a, b]) => `<div style="padding:10px;border:1px solid var(--ln);border-radius:10px"><div class="m3" style="font-size:11px">${a}</div><b>${b}</b></div>`).join('')}</div>
+    ${p.validation_status !== 'verified' ? '<p style="margin-top:8px;font-size:11.5px">Not yet verified in our source data.</p>' : ''}
+    <div class="act"><a href="/news?q=${encodeURIComponent(p.n)}">Related news</a><button class="btn glass" id="plines" style="height:40px">Company lines <span class="pro">PRO</span></button></div>
+    <div class="src">Source: <a href="${esc((p.src && p.src[0] && p.src[0].url) || 'https://www.wikidata.org')}" target="_blank" rel="noopener" style="color:inherit">Wikidata</a> · Not investment advice</div>`;
+  $('card').classList.add('on'); document.body.classList.add('card'); dragged = null; const c = $('card'); if (innerWidth > 820) { c.style.left = (innerWidth - 700) + 'px'; c.style.top = '118px'; }
+  $('plines').onclick = () => pro('lines'); }
+function projLoop() {
+  const box = $('proj');
+  if (S.mode !== 'projects') { if (box.childElementCount) box.innerHTML = ''; requestAnimationFrame(projLoop); return; }
+  const fr = document.querySelector('.pane.on iframe') || frames()[0], w = fr && fr.contentWindow;
+  if (!w || !w.InvGlobeXY) { requestAnimationFrame(projLoop); return; }
+  const r = fr.getBoundingClientRect(), L = projList().filter(p => mw(p)).sort((a, b) => mw(b) - mw(a)).slice(0, 400);
+  if (box.childElementCount !== L.length) box.innerHTML = L.map(p => { const c = (PT[p.t] || [, '#fff'])[1], d = Math.max(6, Math.min(46, Math.sqrt(mw(p)) / 3)); return `<i data-pk="${esc(p.k)}" title="${esc(p.n)}" style="width:${d}px;height:${d}px;border:1.5px solid ${c};background:${c}26"></i>`; }).join('');
+  const els = box.children; for (let i = 0; i < L.length; i++) { const v = w.InvGlobeXY(L[i].la, L[i].lo), e = els[i]; if (!e) break; if (!v || v[2] <= 0.05) { e.style.display = 'none'; continue; } e.style.display = ''; e.style.left = (r.left + v[0]) + 'px'; e.style.top = (r.top + v[1]) + 'px'; }
+  requestAnimationFrame(projLoop);
+}
+$('proj').addEventListener('click', e => { const b = e.target.closest('[data-pk]'); if (b) openProject(P.all.find(p => p.k === b.dataset.pk)); });
+requestAnimationFrame(projLoop);
+
+// ---------- alerts (Pro): from the story card, and an area on the map ----------
+function alertBlock(s) { const it = [...new Set([...(s.impacts || []).slice(0, 2).map(i => i.name), s.location?.country, s.category].filter(Boolean))];
+  return `<button class="btn glass" id="abtn" style="height:40px;width:44px;padding:0" aria-label="Alerts" title="Alerts">${BELL}</button><div id="alrt"><div class="k" style="margin-bottom:4px">Alert me about</div>${it.map(x => `<div class="row"><span>${esc(x)}</span><button aria-label="Alert for ${esc(x)}"></button></div>`).join('')}<div class="m3" style="font-size:11px;margin-top:6px">Push · email · Pro</div></div>`; }
 
 // ---------- start ----------
 if (store('inv-app-feed') === 'cards') document.querySelector('[data-fs="cards"]').click();

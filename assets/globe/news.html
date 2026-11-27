@@ -2354,6 +2354,7 @@ function openStory(s) {
   else flyTo(s.location.lon, s.location.lat, Math.max(Z, phone() ? 1.5 : 2.2));
 }
 function openCountry(c) {
+  if (EMBED && parent.InvGlobeApp && parent.InvGlobeApp.country) { parent.InvGlobeApp.country(c.name, window); return; }  // globe app (owner 27 Nov 2026)
   if (MARKET.on) return marketSelect(c.name,new URLSearchParams(location.search).get('exchange'));
   if (EMBED) { top.location.href = '/assets/globe/news.html?country=' + encodeURIComponent(c.name); return; }
   const wasClosed = sheetState === 'closed'; countryTab = 'overview';
