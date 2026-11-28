@@ -635,7 +635,8 @@ Promise.all([fetch('news-live.json', { cache: 'no-cache' }).then(r => r.json()),
     if (n) renderTab();
   }).catch(() => {});
   const cq = Q.get('country'); if (cq) { const f = frames()[0]; const go = () => { try { f.contentWindow.InvGlobeNav.country(cq); } catch (e) {} }; f.contentWindow?.InvGlobeNav ? setTimeout(go, 800) : f.addEventListener('load', () => setTimeout(go, 1200), { once: true }); }
-  const id = Q.get('story'); if (id && S.byId[id]) { const f = frames()[0]; const go = () => { try { f.contentWindow.flyTo(S.byId[id].location.lon, S.byId[id].location.lat, 2.4); } catch (e) {} openStory(S.byId[id], f.contentWindow); }; if (f.contentWindow?.InvGlobeXY) go(); else f.addEventListener('load', () => setTimeout(go, 600), { once: true }); }
+  const id = Q.get('story'); if (id && !S.byId[id]) { location.replace('news.html?story=' + encodeURIComponent(id)); return; }  // older stories: the full globe page has the archive
+  if (id && S.byId[id]) { const f = frames()[0]; const go = () => { focusStory(S.byId[id], f.contentWindow); openStory(S.byId[id], f.contentWindow); }; if (f.contentWindow?.InvGlobeXY) go(); else f.addEventListener('load', () => setTimeout(go, 600), { once: true }); }
 }).catch(() => { $('list').innerHTML = '<p class="m3" style="padding:14px">News is loading. Please refresh in a moment.</p>'; });
 })();
 </script>
