@@ -1400,7 +1400,7 @@ let network = [], arcHits = [], arcHover = null, pillRects = [];
 // Default: main lines + only the strongest ripple. Clicking an event or an asset reveals the rest; unrelated lines fade to ~15 %.
 // All lines are orange/amber; green and red appear only in price labels and cards.
 const QS = new URLSearchParams(location.search);
-const HOME_ROUND = EMBED && !QS.has('at');
+const HOME_ROUND = EMBED && !QS.has('at') && !QS.has('app')  /* globe app (owner 27 Nov 2026) zooms freely */;
 let SECTORON = QS.get('sector') === '1', STORYON = QS.get('story') === '1';
 const MAIN = '255,122,26', RIPPLE = '255,150,64', SECTOR = '255,190,110';
 // Evidence-based connections (tools/globe-news/connections.py -> connections.json): every line has an event id, origin, destination,
@@ -1915,7 +1915,7 @@ function size() {
   if (!cy) cy = cyT; R = R0 * Z;
 }
 addEventListener('resize', size);
-window.InvGlobeXY = (la, lo) => proj(la * rad, lo * rad);  // globe app: screen position of a place (owner 27 Nov 2026)
+window.InvGlobeXY = (la, lo) => proj(la * rad, lo * rad); window.InvGlobeLL = (x, y) => inv(x, y); window.InvGlobeView = () => [lon0, lat0, Z]; window.InvGlobeClear = () => { sel = null; selCountry = null; }; window.InvGlobeSelect = (id, country) => { sel = byId[id] || null; selCountry = byName[country] || null; };  // globe app: screen position of a place (owner 27 Nov 2026)
 const pts = []; for (let i = 0; i < DOTS.length; i += 2) pts.push([DOTS[i] / 10 * rad, DOTS[i + 1] / 10 * rad]);
 function proj(phi, lam, h = 1) { const c0 = Math.cos(lat0 * rad), s0 = Math.sin(lat0 * rad), d = lam - lon0 * rad, cp = Math.cos(phi); return [cx + R * h * cp * Math.sin(d), cy - R * h * (c0 * Math.sin(phi) - s0 * cp * Math.cos(d)), s0 * Math.sin(phi) + c0 * cp * Math.cos(d)]; }
 function inv(x, y) {
@@ -2354,6 +2354,9 @@ function openStory(s) {
   else flyTo(s.location.lon, s.location.lat, Math.max(Z, phone() ? 1.5 : 2.2));
 }
 function openCountry(c) {
+  if (EMBED && parent.InvGlobeApp && parent.InvGlobeApp.country) {  // globe app (owner 27 Nov 2026): highlight the country and fly to it, sized to fit
+    sel = null; selCountry = c; const span = Math.max((c.b[2] - c.b[0]) * Math.cos(c.c[1] * rad), c.b[3] - c.b[1]);
+    flyTo(c.c[0], c.c[1], Math.max(1.6, Math.min(5.5, 70 / Math.max(span, 1))), 1200); parent.InvGlobeApp.country(c.name, window); return; }
   if (MARKET.on) return marketSelect(c.name,new URLSearchParams(location.search).get('exchange'));
   if (EMBED) { top.location.href = '/assets/globe/news.html?country=' + encodeURIComponent(c.name); return; }
   const wasClosed = sheetState === 'closed'; countryTab = 'overview';
