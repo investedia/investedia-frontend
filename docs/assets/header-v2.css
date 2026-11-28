@@ -33,3 +33,13 @@ body[data-page=home] .hdr{background:transparent!important}
 @media(max-width:760px){:root[data-theme="light"] .hdr .wrap{background:rgba(255,255,255,.9)!important;border-color:rgba(10,10,11,.08)}}
 :root[data-theme="light"] .hdr .hdr-signup,:root[data-theme="light"] .hdr .hdr-login{background:rgba(20,20,24,.86)!important;color:#fff!important}
 @media(min-width:761px){:root[data-theme="light"] .hdr .hdr-login{background:transparent!important;color:var(--fg)!important}}
+/* Scroll state C (owner 28 Nov 2026): a full-width frosted bar appears behind the pills once the page scrolls.
+   view-transition-name is removed because it stopped the header from blurring what is behind it (no real glass). */
+.hdr{view-transition-name:none!important;z-index:1000!important;transition:background .25s ease,border-color .25s ease}
+@media(min-width:761px){
+ .hdr.scrolled{background:transparent!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;border-bottom:0!important;box-shadow:none!important}
+ .hdr .wrap{transition:max-width .25s ease,margin .25s ease,background .25s ease,box-shadow .25s ease}
+ .hdr.scrolled .wrap{max-width:1180px!important;width:calc(100% - 48px)!important;margin:10px auto 0!important;height:60px;border-radius:999px;padding:0 14px 0 24px;background:rgba(18,18,22,.8);backdrop-filter:blur(22px) saturate(1.6);-webkit-backdrop-filter:blur(22px) saturate(1.6);border:1px solid rgba(255,255,255,.12);box-shadow:0 10px 40px rgba(0,0,0,.4)}
+ .hdr.scrolled .wrap>.nav,.hdr.scrolled .hdr-tools{background:transparent!important;border-color:transparent!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+ :root[data-theme="light"] .hdr.scrolled .wrap{background:rgba(255,255,255,.8);border-color:rgba(10,10,11,.1);box-shadow:0 10px 30px rgba(0,0,0,.12)}
+}
