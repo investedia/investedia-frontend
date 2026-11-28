@@ -230,6 +230,7 @@ body.proj #pchips{display:contents}
   <h6>VIEW</h6>
   <button class="mi" id="shot" role="menuitem"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13.5" r="3.5"/><path d="M8.5 7l1.5-3h4l1.5 3"/></svg>Screenshot<small>PNG</small></button>
   <button class="mi" id="share" role="menuitem"><svg class="i" viewBox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M5 13v6a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-6"/></svg>Share link<small>copy</small></button>
+  <button class="mi" id="sync" role="menuitemcheckbox"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="6" width="8" height="12" rx="2"/><rect x="13" y="6" width="8" height="12" rx="2"/><path d="M11 12h2"/></svg>Sync screens<i class="tg" id="syncTg"></i></button>
   <h6>TOOLKIT</h6>
   <div class="lays" id="korient"><button class="lay" data-o="v" aria-pressed="true" aria-label="Vertical toolkit" style="width:auto;padding:0 12px;font-size:12px">Vertical</button><button class="lay" data-o="h" aria-pressed="false" aria-label="Horizontal toolkit" style="width:auto;padding:0 12px;font-size:12px">Horizontal</button></div>
   <h6>GLOBE</h6>
@@ -612,11 +613,14 @@ function alertBlock(s) { const it = [...new Set([...(s.impacts || []).slice(0, 2
 const CAM = { prev: null };
 function camIn(w) { if (CAM.prev) return; try { CAM.prev = { w, v: w.InvGlobeView() }; } catch (e) {} }
 function camBack() { const p = CAM.prev; CAM.prev = null; if (!p) return; try { p.w.InvGlobeClear(); p.w.flyTo(p.v[0], p.v[1], p.v[2], 900); } catch (e) {} }
-function focusStory(s, w) { camIn(w); try { const v = w.InvGlobeView(); w.InvGlobeSelect(s.id, s.location?.country); w.flyTo(s.location.lon, s.location.lat, Math.max(v[2], 2.4), 1000); } catch (e) {} }
+function focusStory(s, w) { camIn(w); if (S.sync && S.layout > 1) frames().forEach(f => { const o = f.contentWindow; if (o && o !== w) try { o.InvGlobeSelect(s.id, s.location?.country); o.flyTo(s.location.lon, s.location.lat, Math.max(o.InvGlobeView()[2], 2.4), 1000); } catch (e) {} }); try { const v = w.InvGlobeView(); w.InvGlobeSelect(s.id, s.location?.country); w.flyTo(s.location.lon, s.location.lat, Math.max(v[2], 2.4), 1000); } catch (e) {} }
 
 // phone: tap the sheet handle to expand/collapse the feed; timeline behind a button
 $('feed').addEventListener('click', e => { if (innerWidth > 820) return; const r = $('feed').getBoundingClientRect(); if (e.clientY - r.top < 22) $('feed').classList.toggle('big'); });
 $('tlBtn').onclick = () => document.body.classList.toggle('tl');
+S.sync = store('inv-sync') === '1';
+function paintSync() { $('syncTg').classList.toggle('on', S.sync); $('sync').setAttribute('aria-checked', String(S.sync)); }
+$('sync').onclick = () => { S.sync = !S.sync; store('inv-sync', S.sync ? '1' : '0'); paintSync(); toast(S.sync ? 'Screens follow the selected story' : 'Screens move on their own'); }; paintSync();
 // ---------- start ----------
 if (store('inv-app-feed') === 'cards') document.querySelector('[data-fs="cards"]').click();
 S.layout = Math.min(FREE_SCREENS, Math.max(1, +Q.get('layout') || 1)); paintLays(); paintPerf(); buildScreens(); setDays(2);

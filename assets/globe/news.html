@@ -3295,7 +3295,7 @@ function frame(t) {
   for (const { impact, country } of impactTargets(impactFocus)) countryShape(country, `rgba(${IMPACT_COLOR[impact.direction]},.10)`);
   if (hoverCountry && hoverCountry !== selCountry) countryShape(hoverCountry, 'rgba(255,255,255,.05)', 'rgba(255,255,255,.35)');
   if (selCountry) { const zf = (window.EarthGL && EarthGL.detail) ? 1 - Math.min(1, EarthGL.detail.want || 0) : 1;  // owner 22 Nov 2026: zoomed in, the country fill covered the whole screen; keep only the outline
-    countryShape(selCountry, `rgba(255,122,26,${(.10 * zf).toFixed(3)})`, 'rgba(255,122,26,.75)', 1.2); }
+    countryShape(selCountry, `rgba(255,122,26,${((QS.has('app') ? .16 : .10) * zf).toFixed(3)})`, 'rgba(255,122,26,.75)', QS.has('app') ? 2 : 1.2);  /* globe app: stronger highlight (owner 28 Nov 2026) */ }
   ctx.restore();
 
   if (PROJ.on || MARKET.on) window.__markPts = [];
