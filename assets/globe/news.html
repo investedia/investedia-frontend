@@ -2346,7 +2346,7 @@ function soFarHTML(s) {
 }
 function openStory(s) {
   if (EMBED && parent.InvGlobeApp) { parent.InvGlobeApp.story(s, window); return; }  // globe app (owner 27 Nov 2026)
-  if (EMBED) { top.location.href = '/assets/globe/news.html?story=' + encodeURIComponent(s.id); return; }
+  if (EMBED) { top.location.href = '/globe?story=' + encodeURIComponent(s.id);  /* owner 28 Nov 2026: open the globe app */ return; }
   sel = s; selCountry = byName[s.location.country] || null; go({ k: 'article', id: s.id });
   if (phone()) { flyTo(s.location.lon, s.location.lat, 3.6); return; }
   const ch = chainOf(s);
@@ -2358,7 +2358,7 @@ function openCountry(c) {
     sel = null; selCountry = c; const span = Math.max((c.b[2] - c.b[0]) * Math.cos(c.c[1] * rad), c.b[3] - c.b[1]);
     flyTo(c.c[0], c.c[1], Math.max(1.6, Math.min(5.5, 70 / Math.max(span, 1))), 1200); parent.InvGlobeApp.country(c.name, window); return; }
   if (MARKET.on) return marketSelect(c.name,new URLSearchParams(location.search).get('exchange'));
-  if (EMBED) { top.location.href = '/assets/globe/news.html?country=' + encodeURIComponent(c.name); return; }
+  if (EMBED) { top.location.href = '/globe?country=' + encodeURIComponent(c.name); return; }
   const wasClosed = sheetState === 'closed'; countryTab = 'overview';
   sel = null; selCountry = c; go({ k: 'country', id: c.name });
   if (phone() && wasClosed) placeSheet('open', Math.min(SHEET_MAX(), H * .62));
@@ -3295,7 +3295,7 @@ function frame(t) {
   for (const { impact, country } of impactTargets(impactFocus)) countryShape(country, `rgba(${IMPACT_COLOR[impact.direction]},.10)`);
   if (hoverCountry && hoverCountry !== selCountry) countryShape(hoverCountry, 'rgba(255,255,255,.05)', 'rgba(255,255,255,.35)');
   if (selCountry) { const zf = (window.EarthGL && EarthGL.detail) ? 1 - Math.min(1, EarthGL.detail.want || 0) : 1;  // owner 22 Nov 2026: zoomed in, the country fill covered the whole screen; keep only the outline
-    countryShape(selCountry, `rgba(255,122,26,${(.10 * zf).toFixed(3)})`, 'rgba(255,122,26,.75)', 1.2); }
+    countryShape(selCountry, `rgba(255,122,26,${((QS.has('app') ? .16 : .10) * zf).toFixed(3)})`, 'rgba(255,122,26,.75)', QS.has('app') ? 2 : 1.2);  /* globe app: stronger highlight (owner 28 Nov 2026) */ }
   ctx.restore();
 
   if (PROJ.on || MARKET.on) window.__markPts = [];
