@@ -4,14 +4,21 @@ window.InvCompany = (() => {
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   let data = null, bySym = {};
   const load = () => data ? Promise.resolve(data) : Promise.all([fetch('data/companies.json').then(r => r.json()),
-    fetch('assets/globe/company-hq.json').then(r => r.ok ? r.json() : null).catch(() => null)]).then(([d, hq]) => {
+    fetch('assets/globe/company-hq.json').then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch('data/companies-more.json').then(r => r.ok ? r.json() : null).catch(() => null)]).then(([d, hq, more]) => {
     // Head office: the sourced HQ file (Wikidata / GLEIF) fills companies whose directory entry has none.
     const H = hq?.companies || {};
     for (const c of d.companies) { const h = c.listings.map(l => H[l.s]).find(Boolean); if (h && Number.isFinite(h.hq_lat)) { c.lat = h.hq_lat; c.lon = h.hq_lon; c.city = h.hq_city; } if (!c.hq && h) c.hq = h.hq_city + (c.country ? ', ' + c.country : ''); }
-    data = d; for (const c of d.companies) for (const l of c.listings) bySym[l.s.toUpperCase()] = c; return d; });
-  const href = c => `companies/${c.slug}`;
+    for (const c of d.companies) for (const l of c.listings) bySym[l.s.toUpperCase()] = c;
+    /* owner 25 Nov 2026: ~7,000 more companies (Wikidata + Wikipedia-sourced descriptions). Their bare tickers can collide with other
+       markets (e.g. FOX), so they are not used to match news; their pages open at company?c=<slug> and load details on demand. */
+    const seen = new Set(d.companies.map(c => c.slug));
+    for (const r of more?.companies || []) if (!seen.has(r.slug)) d.companies.push({ slug: r.slug, name: r.name, legal_name: r.name, country: r.country, region: r.region, sector: r.sector,
+      city: r.city, lat: r.lat, lon: r.lon, logo: r.logo, emp: r.emp, public: !!r.tk, more: true, listings: r.tk ? [{ s: r.tk, exchange: '', tracked: false }] : [], story: [], sources: [] });
+    data = d; return d; });
+  const href = c => c.more ? `company?c=${encodeURIComponent(c.slug)}` : `companies/${c.slug}`;
   // owner 25 Nov 2026: globe points for the company globe (head office known only)
-  const points = cos => cos.filter(c => Number.isFinite(c.lat)).map(c => ({ key: c.slug, name: c.name, ticker: (c.listings[0] || {}).s, place: [c.city, c.country].filter(Boolean).join(', '), sector: c.sector || '', lat: c.lat, lon: c.lon, logo: c.logo || '', href: href(c) }));
+  const points = cos => cos.filter(c => Number.isFinite(c.lat)).sort((a, b) => (!!a.more - !!b.more) || ((b.emp || 0) - (a.emp || 0))).slice(0, 900)  /* the biggest 900 stay readable on the globe */.map(c => ({ key: c.slug, name: c.name, ticker: (c.listings[0] || {}).s, place: [c.city, c.country].filter(Boolean).join(', '), sector: c.sector || '', lat: c.lat, lon: c.lon, logo: c.logo || '', href: href(c) }));
   const flag = cc => cc ? `<img class="co-flag" src="assets/globe/flags/${esc(cc)}.svg" alt="" width="18" height="13" loading="lazy">` : '';
   const arrow = d => d === 'up' || d > 0 ? '<span class="co-dir up" aria-label="up">↑</span>' : d === 'down' || d < 0 ? '<span class="co-dir down" aria-label="down">↓</span>' : '';
   // The one Company Entity chip used across the site: flag, optional direction, name. The whole chip opens the company page.
@@ -26,7 +33,8 @@ const coStart = () => {
   const ago = t => { const m = Math.max(1, Math.round((Date.now() - Date.parse(t)) / 6e4)); return m < 60 ? `${m} min ago` : m < 1440 ? `${Math.round(m / 60)} h ago` : `${Math.round(m / 1440)} d ago`; };
   const pct = d => Number.isFinite(d) ? `<span class="pct ${d > 0 ? 'up' : d < 0 ? 'down' : 'flat'}">${d > 0 ? '↑' : d < 0 ? '↓' : '↔︎'} ${Math.abs(d).toFixed(2)}%</span>` : '';
   const money = (p, cur) => { if(window.InvPrefs){const text=InvPrefs.fmt(p,{cur:cur||'USD',t:'stocks'});return !cur||cur==='USD'?`<span data-usd-value="${p}" data-usd-kind="price">${text}</span>`:text;}try{return new Intl.NumberFormat(undefined,{style:'currency',currency:cur||'USD',maximumFractionDigits:p<10?3:2}).format(p);}catch{return String(p);} };
-  const logo = c => c.logo ? `<img class="co-logo" src="${esc(c.logo)}" alt="" loading="lazy">` : `<span class="co-logo co-mono">${esc(c.name[0])}</span>`;
+  // a logo that fails to load (e.g. Wikimedia busy) becomes the letter tile, never a broken-image icon
+  const logo = c => c.logo ? `<img class="co-logo" src="${esc(c.logo)}" alt="" loading="lazy" referrerpolicy="no-referrer" data-l="${esc(c.name[0])}" onerror="this.outerHTML='<span class=&quot;co-logo co-mono&quot;>'+this.dataset.l+'</span>'">` : `<span class="co-logo co-mono">${esc(c.name[0])}</span>`;
   const slug = (location.pathname.match(/companies\/([a-z0-9-]+)/) || [])[1] || new URLSearchParams(location.search).get('c');
   const news = () => Promise.all([get('assets/globe/news-live.json'), get('assets/globe/news-archive.json')]).then(([a, b]) => {
     const seen = new Set(); return [...(a?.stories || []), ...(b?.stories || [])].filter(s => s && !seen.has(s.id) && seen.add(s.id)).sort((x, y) => Date.parse(y.published_at) - Date.parse(x.published_at)); });
@@ -87,12 +95,13 @@ const coStart = () => {
 
   function page(d, m, all) {
     const c = d.companies.find(x => x.slug === slug);
+    if (c && c.more && !c.full) return get('data/companies-more/' + (/[a-z]/.test(c.slug[0]) ? c.slug[0] : '_') + '.json').then(f => { Object.assign(c, (f || {})[c.slug] || {}, { full: true }); page(d, m, all); });
     if (!c) { root.innerHTML = `<div class="page-head"><h1>Company not found</h1><p class="lede"><a href="companies">Browse all companies</a></p></div>`; return; }
     document.title = `${c.name}: company profile · Investedia`;
     /* owner 21 Nov 2026: cleaner company page. Price up top, only facts we have, no empty sections, articles back to 2022 */
     const px = Object.fromEntries((m?.assets || []).map(a => [a.s, a])), syms = new Set(c.listings.map(l => l.s.toUpperCase()));
     const main = c.listings.find(l => l.tracked && px[l.s]) || c.listings.find(l => l.tracked), a = main && px[main.s];
-    const live = all.filter(s => involves(s, syms)).map(s => ({ id: s.id, h: s.headline, t: s.published_at, src: s.source?.name || '' }));
+    const live = c.more ? [] : all.filter(s => involves(s, syms)).map(s => ({ id: s.id, h: s.headline, t: s.published_at, src: s.source?.name || '' }));
     const impl = all.flatMap(s => (s.impacts || []).filter(i => syms.has(String(i.ticker || '').toUpperCase()) && i.why).map(i => ({ s, i }))).slice(0, 4);
     const related = c.sector ? d.companies.filter(x => x !== c && x.sector === c.sector).sort((a, b) => (b.country === c.country) - (a.country === c.country) || a.name.localeCompare(b.name)).slice(0, 8) : [];
     const sgn = v => `${v > 0 ? '+' : v < 0 ? '−' : ''}${Math.abs(v).toFixed(2)}%`, cl = v => v > 0 ? 'up' : v < 0 ? 'down' : 'flat';
@@ -119,9 +128,9 @@ const coStart = () => {
       ${related.length ? `<section class="card co-pad"><div class="card-head"><h3>Similar companies</h3></div><div class="co2-rel">${related.map(x => { const l = x.listings.find(l => px[l.s]), q = l && px[l.s]; return `<a href="${C.href(x)}">${logo(x)}<span><b>${esc(x.name)}</b><small>${l ? esc(l.s) : esc(x.country)}</small></span>${q ? `<small class="${cl(q.d)}">${sgn(q.d)}</small>` : ''}</a>`; }).join('')}</div></section>` : ''}
       <section class="card co-pad"><div class="card-head"><h3>Learn</h3></div>${[['valuation', 'Valuing a company', 'How investors judge what a business is worth.'], ['charts', 'Reading a stock chart', 'Candles, trends and volume.']].map(([id, t, s]) => `<a class="co-art" href="lesson.html?c=${id}"><b>${t}</b><small>${s}</small></a>`).join('')}</section>
       </aside></div><p class="co-disc">Prices may be delayed. Company facts are updated periodically. Not investment advice.</p>`;
-    { const el = root.querySelector('#cog-one'); if (el && window.InvCoGlobe) InvCoGlobe(el, { items: C.points(d.companies.filter(x => x === c || (c.sector && x.sector === c.sector))), focus: c.slug, lon: c.lon, lat: Math.max(-40, Math.min(50, c.lat)) }); }
+    { const el = root.querySelector('#cog-one'); if (el && window.InvCoGlobe) InvCoGlobe(el, { items: C.points(d.companies.filter(x => x !== c && c.sector && x.sector === c.sector)).slice(0, 400).concat(C.points([c])), focus: c.slug, lon: c.lon, lat: Math.max(-40, Math.min(50, c.lat)) }); }
     /* articles: today's feed plus the archive index by ticker (back to 2022) */
-    Promise.all([...new Set([...syms].map(t => /[A-Z]/.test(t[0]) ? t[0] : '_'))].map(k => get('assets/globe/library-index/tick-' + k + '.json'))).then(sh => {
+    Promise.all(c.more ? [] : [...new Set([...syms].map(t => /[A-Z]/.test(t[0]) ? t[0] : '_'))].map(k => get('assets/globe/library-index/tick-' + k + '.json'))).then(sh => {
       const seen = new Set(), L = [...live, ...sh.flatMap(o => [...syms].flatMap(t => (o && o[t]) || []).map(r => ({ id: r[0], h: r[1], t: r[2], src: r[3] })))]
         .filter(x => !seen.has(x.id) && seen.add(x.id)).sort((p, q) => Date.parse(q.t) - Date.parse(p.t)).slice(0, 8);
       const el = root.querySelector('#co2-news'); if (el && L.length) el.outerHTML = sec('In the news', `Investedia articles that name ${esc(c.name)}.`, artList(L));
