@@ -10,4 +10,4 @@
 
 # Clean globe address (owner, 24 Nov 2026)
 /globe/ /globe 301
-/globe /assets/globe/news 200
+/globe /assets/globe/app 302

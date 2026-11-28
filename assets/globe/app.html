@@ -531,33 +531,55 @@ const mw = p => { const c = p.cap; if (!c || !Number.isFinite(c.value)) return n
 fetch('projects.json').then(r => r.json()).then(d => { P.all = (d.projects || []).filter(p => Number.isFinite(p.la)); if (S.mode === 'projects') showProjects(); }).catch(() => {});
 $('chips').insertAdjacentHTML('beforeend', '<span id="pchips">' + [['all', 'All'], ...Object.entries(PT).map(([k, v]) => [k, v[1] ? v[0] : k])].map(([k, t]) => `<button class="chip glass" data-pt="${esc(k)}" aria-pressed="${k === 'all'}">${esc(t)}</button>`).join('') + '</span>');
 $('chips').addEventListener('click', e => { const b = e.target.closest('[data-pt]'); if (!b) return; P.type = b.dataset.pt; $('chips').querySelectorAll('[data-pt]').forEach(x => x.setAttribute('aria-pressed', String(x === b))); showProjects(); });
-$('plegend').innerHTML = Object.entries(PT).slice(0, 5).map(([k, v]) => `<span><span style="color:${v[1]}">●</span> ${v[0]}</span>`).join('') + '<span class="m3">Size = megawatts</span>';
 function projList() { return P.all.filter(p => P.type === 'all' || p.t === P.type); }
 function showProjects() {
   const L = projList(), R = L.filter(p => mw(p) && p.validation_status === 'verified').sort((a, b) => mw(b) - mw(a));
   $('sub').textContent = L.length.toLocaleString('en-US') + ' projects · largest verified first';
-  $('list').innerHTML = R.slice(0, 60).map((p, i) => `<button class="wr" data-pk="${esc(p.k)}"><span><span style="color:${(PT[p.t] || [, '#fff'])[1]}">●</span> ${esc(p.n)}<small>${esc(p.c)}</small></span><span>${Math.round(mw(p)).toLocaleString('en-US')} MW</span></button>`).join('') || '<p class="empty">No projects with a known capacity for this type.</p>';
+  $('list').innerHTML = R.slice(0, 60).map((p, i) => `<button class="wr" data-pk="${esc(p.k)}"><span><svg viewBox="0 0 24 24" style="width:12px;height:12px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;vertical-align:-1px">${PG[p.t] || PG['Megaproject']}</svg> ${esc(p.n)}<small>${esc(p.c)}</small></span><span>${Math.round(mw(p)).toLocaleString('en-US')} MW</span></button>`).join('') || '<p class="empty">No projects with a known capacity for this type.</p>';
 }
 $('list').addEventListener('click', e => { const b = e.target.closest('[data-pk]'); if (!b) return; openProject(P.all.find(p => p.k === b.dataset.pk)); });
 function openProject(p) { if (!p) return; const w = activeWin(); camIn(w); try { w.flyTo(p.lo, p.la, 3, 1000); } catch (x) {}
   const R = P.all.filter(x => mw(x) && x.validation_status === 'verified').sort((a, b) => mw(b) - mw(a)), rank = R.indexOf(p) + 1, v = mw(p), ty = PT[p.t] || [p.t, '#fff'];
-  S.sel = null; $('cb').innerHTML = `<div class="k" style="color:${ty[1]}">${esc(ty[0])} · ${esc(p.c)}</div><h3>${esc(p.n)}</h3>
+  S.sel = null; $('cb').innerHTML = `<div class="k">${esc(ty[0])} · ${esc(p.c)}</div><h3>${esc(p.n)}</h3>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px">${[['Capacity', v ? Math.round(v).toLocaleString('en-US') + ' MW' : 'Not listed'], ['Rank', rank ? '#' + rank + ' of ' + R.length.toLocaleString('en-US') : '—']].map(([a, b]) => `<div style="padding:10px;border:1px solid var(--ln);border-radius:10px"><div class="m3" style="font-size:11px">${a}</div><b>${b}</b></div>`).join('')}</div>
     ${p.validation_status !== 'verified' ? '<p style="margin-top:8px;font-size:11.5px">Not yet verified in our source data.</p>' : ''}
     <div class="act"><a href="/news?q=${encodeURIComponent(p.n)}">Related news</a><button class="btn glass" id="plines" style="height:40px">Company lines <span class="pro">PRO</span></button></div>
     <div class="src">Source: <a href="${esc((p.src && p.src[0] && p.src[0].url) || 'https://www.wikidata.org')}" target="_blank" rel="noopener" style="color:inherit">Wikidata</a> · Not investment advice</div>`;
   $('card').classList.add('on'); document.body.classList.add('card'); dragged = null; const c = $('card'); if (innerWidth > 820) { c.style.left = (innerWidth - 700) + 'px'; c.style.top = '118px'; }
   $('plines').onclick = () => pro('lines'); }
+// A + D (owner 28 Nov 2026): zoomed out = one count badge per country; zoomed in = icon pins (white glyph per type)
+const PG = { 'Hydro energy': '<path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/>', 'Wind energy': '<path d="M12 12v9M12 12L6 8M12 12l6-4M12 12V4"/>', 'Nuclear energy': '<circle cx="12" cy="12" r="2"/><path d="M12 4v4M5 16l3.5-2M19 16l-3.5-2"/>', 'Solar energy': '<circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>', 'Data centres': '<rect x="5" y="4" width="14" height="6" rx="1"/><rect x="5" y="14" width="14" height="6" rx="1"/>', 'Real estate': '<path d="M4 20V9l8-5 8 5v11M9 20v-6h6v6"/>', 'High-speed rail': '<rect x="6" y="3" width="12" height="14" rx="3"/><path d="M8 21l2-4M16 21l-2-4M6 11h12"/>', 'Megaproject': '<path d="M12 3l9 16H3z"/>' };
+$('plegend').innerHTML = ['Hydro energy', 'Wind energy', 'Nuclear energy', 'Solar energy', 'Data centres'].map(k => `<span style="display:flex;gap:5px;align-items:center"><svg viewBox="0 0 24 24" style="width:13px;height:13px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round">${PG[k]}</svg>${PT[k][0]}</span>`).join('') + '<span class="m3">Zoom in for each project</span>';
+const PZ = 2.3; let PMODE = '';
 function projLoop() {
   const box = $('proj');
-  if (S.mode !== 'projects') { if (box.childElementCount) box.innerHTML = ''; requestAnimationFrame(projLoop); return; }
+  if (S.mode !== 'projects') { if (box.childElementCount) { box.innerHTML = ''; PMODE = ''; } requestAnimationFrame(projLoop); return; }
   const fr = document.querySelector('.pane.on iframe') || frames()[0], w = fr && fr.contentWindow;
   if (!w || !w.InvGlobeXY) { requestAnimationFrame(projLoop); return; }
-  const r = fr.getBoundingClientRect(), L = projList().filter(p => mw(p)).sort((a, b) => mw(b) - mw(a)).slice(0, 400);
-  if (box.childElementCount !== L.length) box.innerHTML = L.map(p => { const c = (PT[p.t] || [, '#fff'])[1], d = Math.max(6, Math.min(46, Math.sqrt(mw(p)) / 3)); return `<i data-pk="${esc(p.k)}" title="${esc(p.n)}" style="width:${d}px;height:${d}px;border:1.5px solid ${c};background:${c}26"></i>`; }).join('');
-  const els = box.children; for (let i = 0; i < L.length; i++) { const v = w.InvGlobeXY(L[i].la, L[i].lo), e = els[i]; if (!e) break; if (!v || v[2] <= 0.05) { e.style.display = 'none'; continue; } e.style.display = ''; e.style.left = (r.left + v[0]) + 'px'; e.style.top = (r.top + v[1]) + 'px'; }
+  const r = fr.getBoundingClientRect(), z = w.InvGlobeView()[2], mode = (z < PZ ? 'c' : 'i') + P.type;
+  let L;
+  if (z < PZ) {  // D: count per country, at the average position of its projects
+    const g = {}; for (const p of projList()) { const k = p.c; (g[k] = g[k] || { n: 0, la: 0, lo: 0, c: k }); g[k].n++; g[k].la += p.la; g[k].lo += p.lo; }
+    L = Object.values(g).map(o => ({ c: o.c, n: o.n, la: o.la / o.n, lo: o.lo / o.n })).sort((a, b) => b.n - a.n).slice(0, 120);
+    if (PMODE !== mode) box.innerHTML = L.map(o => `<i data-pc="${esc(o.c)}" title="${esc(o.c)} · ${o.n} projects" style="width:${o.n > 99 ? 34 : 28}px;height:28px;border-radius:999px;display:grid;place-items:center;font:700 11px Inter,sans-serif;color:#fff;background:#18181b;border:1.5px solid rgba(255,255,255,.55)">${o.n}</i>`).join('');
+  } else {  // A: icon pins, largest first
+    L = projList().filter(p => mw(p) || p.t !== 'Hydro energy').sort((a, b) => (mw(b) || 0) - (mw(a) || 0)).slice(0, 500);
+    if (PMODE !== mode) box.innerHTML = L.map(p => `<i data-pk="${esc(p.k)}" title="${esc(p.n)}${mw(p) ? ' · ' + Math.round(mw(p)).toLocaleString('en-US') + ' MW' : ''}" style="width:24px;height:24px;border-radius:7px;display:grid;place-items:center;background:rgba(18,18,21,.88);border:1px solid rgba(255,255,255,.3)"><svg viewBox="0 0 24 24" style="width:13px;height:13px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round">${PG[p.t] || PG['Megaproject']}</svg></i>`).join('');
+  }
+  PMODE = mode;
+  // biggest first; anything that would overlap an already shown marker is hidden (clean, no pile-ups)
+  const els = box.children, gap = z < PZ ? 32 : 26, shown = [];
+  for (let i = 0; i < L.length; i++) { const v = w.InvGlobeXY(L[i].la, L[i].lo), e = els[i]; if (!e) break;
+    if (!v || v[2] <= 0.05) { e.style.display = 'none'; continue; } const x = r.left + v[0], y = r.top + v[1];
+    if (shown.some(q => Math.abs(q[0] - x) < gap && Math.abs(q[1] - y) < gap)) { e.style.display = 'none'; continue; }
+    shown.push([x, y]); e.style.display = ''; e.style.left = x + 'px'; e.style.top = y + 'px'; }
   requestAnimationFrame(projLoop);
 }
+$('proj').addEventListener('click', e => { const c = e.target.closest('[data-pc]'); if (!c) return; const L = projList().filter(p => p.c === c.dataset.pc); const w = activeWin(); camIn(w);
+  const la = L.reduce((a, p) => a + p.la, 0) / L.length, lo = L.reduce((a, p) => a + p.lo, 0) / L.length; try { w.flyTo(lo, la, 3.2, 1100); } catch (x) {}
+  const t = {}; L.forEach(p => t[p.t] = (t[p.t] || 0) + 1);
+  $('cb').innerHTML = `<div class="k">Projects</div><h3>${esc(c.dataset.pc)}</h3><p>${L.length} projects</p><div style="margin-top:8px">${Object.entries(t).sort((a, b) => b[1] - a[1]).map(([k, n]) => `<div class="row"><span>${esc((PT[k] || [k])[0])}</span><span>${n}</span></div>`).join('')}</div><div class="src">Zoom in to see each project · Source: Wikidata</div>`;
+  const cd = $('card'); cd.classList.remove('in'); void cd.offsetWidth; cd.classList.add('on', 'in'); document.body.classList.add('card'); if (innerWidth > 820) { cd.style.left = '76px'; cd.style.top = '118px'; } });
 $('proj').addEventListener('click', e => { const b = e.target.closest('[data-pk]'); if (b) openProject(P.all.find(p => p.k === b.dataset.pk)); });
 requestAnimationFrame(projLoop);
 
@@ -585,6 +607,7 @@ Promise.all([fetch('news-live.json', { cache: 'no-cache' }).then(r => r.json()),
     for (const im of S.stories.flatMap(s => s.impacts || [])) { const t = im.ticker || (im.asset && im.asset.px); if (!t) continue; const v = j.data && (j.data[t] || j.data[inv[t]]); if (Array.isArray(v) && isFinite(v[1]) && Date.now() - (v[2] || 0) < 2 * 864e5) { S.prices[t] = { d: Math.round(v[1] * 100) / 100, p: v[0] }; n++; } }
     if (n) renderTab();
   }).catch(() => {});
+  const cq = Q.get('country'); if (cq) { const f = frames()[0]; const go = () => { try { f.contentWindow.InvGlobeNav.country(cq); } catch (e) {} }; f.contentWindow?.InvGlobeNav ? setTimeout(go, 800) : f.addEventListener('load', () => setTimeout(go, 1200), { once: true }); }
   const id = Q.get('story'); if (id && S.byId[id]) { const f = frames()[0]; const go = () => { try { f.contentWindow.flyTo(S.byId[id].location.lon, S.byId[id].location.lat, 2.4); } catch (e) {} openStory(S.byId[id], f.contentWindow); }; if (f.contentWindow?.InvGlobeXY) go(); else f.addEventListener('load', () => setTimeout(go, 600), { once: true }); }
 }).catch(() => { $('list').innerHTML = '<p class="m3" style="padding:14px">News is loading. Please refresh in a moment.</p>'; });
 })();
