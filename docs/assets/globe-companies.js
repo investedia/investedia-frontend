@@ -6,7 +6,7 @@
 (() => {
   const ROOT = new URL('../../', location.href).href;
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const S = { ready: false, list: [], q: '', country: '', news: false, sel: null, open: false, img: {} };
+  const S = { ready: false, list: [], q: '', country: '', sector: '', news: false, sel: null, open: false, img: {} };
   const MAXPINS = 40;
   const css = document.createElement('style');
   css.textContent = `
@@ -47,10 +47,22 @@
       const h = H[l.s], id = h.qid || h.lei || c.slug; if (seen.has(id)) continue; seen.add(id);  // one entry per company (duplicate directory rows share a Wikidata item or LEI)
       // short name: Wikidata's label, or ours for GLEIF rows (their names are legal names in capitals)
       S.list.push({ slug: c.slug, name: c.name, short: h.qid ? (h.company_label || c.name) : c.name, country: c.country, region: c.region, sym: l.s, ex: l.exchange, tracked: l.tracked !== false,
-        syms: c.listings.map(x => x.s), hq: h, badge: B[c.slug] || null });
+        syms: c.listings.map(x => x.s), hq: h, badge: B[c.slug] || null, sector: c.sector || '', desc: c.description || '', page: 'companies/' + encodeURIComponent(c.slug), logo: c.logo ? ROOT + c.logo : null });
     }
     // owner 20 Nov 2026: more companies per country from Wikidata (CC0); logos are Wikimedia Commons files
-    return fetch(ROOT + 'assets/globe/companies-wd.json').then(r => r.ok ? r.json() : null).catch(() => null).then(wd => {
+    // owner 25 Nov 2026: the reviewed company list (Wikipedia-sourced descriptions, sectors, cities checked) replaces the raw Wikidata list
+    return fetch(ROOT + 'data/companies-more.json').then(r => r.ok ? r.json() : null).catch(() => null).then(more => {
+      if (more?.companies?.length) {
+        const nm = new Set(S.list.map(c => c.name.toLowerCase()));
+        for (const m of more.companies) {
+          if (!Number.isFinite(m.lat) || nm.has(m.name.toLowerCase())) continue;
+          S.list.push({ slug: 'more-' + m.slug, more: m.slug, name: m.name, short: m.name, country: m.country || '', region: m.region || '', sym: m.tk || '', ex: '', tracked: false,
+            syms: m.tk ? [m.tk] : [], wd: true, sector: m.sector || '', desc: '', listed: !!m.tk, emp: m.emp || 0, page: 'company?c=' + encodeURIComponent(m.slug),
+            hq: { hq_city: m.city || '', hq_lat: m.lat, hq_lon: m.lon, source_url: '', checked_at: '2026-11-25' }, badge: null, logo: m.logo || null });
+        }
+        return null;
+      }
+      return fetch(ROOT + 'assets/globe/companies-wd.json').then(r => r.ok ? r.json() : null).catch(() => null); }).then(wd => {
       const qs = new Set(S.list.map(c => c.hq.qid).filter(Boolean)), nm = new Set(S.list.map(c => c.name.toLowerCase()));
       const okImg = !window.InvConsent || window.InvConsent.allows?.('images') !== false;
       for (const w of wd?.companies || []) {
@@ -61,7 +73,7 @@
           badge: null, logo: okImg && w.lg ? 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(w.lg) + '?width=96' : null });
       }
     }).then(() => {
-    S.list.sort((a, b) => (b.tracked - a.tracked) || (!!(b.badge || b.logo) - !!(a.badge || a.logo)) || a.name.localeCompare(b.name));
+    S.list.sort((a, b) => (b.tracked - a.tracked) || ((b.emp || 0) - (a.emp || 0)) || (!!(b.badge || b.logo) - !!(a.badge || a.logo)) || a.name.localeCompare(b.name));  // biggest first
     S.ready = true;
     const want = new URLSearchParams(location.search).get('company');
     if (want) select(want, true); else refresh();
@@ -71,9 +83,10 @@
   const inNews = () => { const set = new Set(); for (const s of (typeof stories !== 'undefined' ? stories : [])) for (const e of s.entities || []) if (e.ticker) set.add(String(e.ticker).toUpperCase()); return set; };
   function filtered() {
     const q = S.q.trim().toLowerCase(), N = S.news ? inNews() : null;
-    return S.list.filter(c => (!S.country || c.country === S.country) && (!q || (c.name + ' ' + c.short + ' ' + c.syms.join(' ') + ' ' + c.hq.hq_city).toLowerCase().includes(q))
+    return S.list.filter(c => (!S.country || c.country === S.country) && (!S.sector || c.sector === S.sector) && (!q || (c.name + ' ' + c.short + ' ' + c.syms.join(' ') + ' ' + c.hq.hq_city).toLowerCase().includes(q))
       && (!N || c.syms.some(s => N.has(s.toUpperCase()) || N.has(s.split('.')[0].toUpperCase()))));
   }
+  const sectors = () => Object.entries(S.list.reduce((m, c) => (c.sector && (m[c.sector] = (m[c.sector] || 0) + 1), m), {})).sort((a, b) => b[1] - a[1]);
   const countries = () => Object.entries(S.list.reduce((m, c) => (m[c.country] = (m[c.country] || 0) + 1, m), {})).sort((a, b) => b[1] - a[1]);
   const find = sym => S.list.find(c => c.syms.includes(sym) || c.slug === sym);
 
@@ -81,7 +94,7 @@
   const tint = c => c.badge?.c || '#9a9aa3';
   function badgeHTML(c) {
     const t = tint(c), bg = `background:linear-gradient(160deg,${t}38,${t}12),#1e1e22;box-shadow:inset 0 0 0 1.5px ${t}99`;
-    return `<span class="co-b" style="${bg}">${c.logo ? `<img src="${esc(c.logo)}" alt="" loading="lazy" style="background:#fff;border-radius:6px;padding:2px">` : c.badge ? `<img src="${esc(ROOT + c.badge.f)}" alt="" loading="lazy">` : esc(c.short[0] || '?')}</span>`;
+    return `<span class="co-b" style="${bg}">${c.logo ? `<img src="${esc(c.logo)}" alt="" loading="lazy">` : c.badge ? `<img src="${esc(ROOT + c.badge.f)}" alt="" loading="lazy">` : esc(c.short[0] || '?')}</span>`;
   }
   function img(c) {
     if (!c.badge && !c.logo) return null;
@@ -93,15 +106,19 @@
   function panelHTML() {
     if (!S.ready) return '<div class="co-empty">Loading companies…</div>';
     if (S.sel) {
-      const c = S.sel;
-      return `<div class="co-wrap"><button type="button" class="co-back" data-co-back>‹ ${S.country ? esc(S.country) + ' · ' : ''}${filtered().length} companies</button>
-        <div class="co-card">${badgeHTML(c)}<div><h3>${esc(c.name)}</h3><div class="co-kv"><div><small>Headquarters</small><b>${esc(c.hq.hq_city)}, ${esc(c.country)}</b></div>${c.wd ? `<div><small>Sector</small><b>${esc(c.sector || '—')}</b></div>` : `<div><small>Listed on</small><b>${esc(c.ex || '')} · ${esc(c.sym.replace(/^[A-Z]+:/, ''))}</b></div>`}<div><small>Region</small><b>${esc(c.region || '')}</b></div></div>
-        ${c.wd && c.desc ? `<p class="co-d" style="margin:8px 0 0;color:#c8c8cf;font-size:13.5px">${esc(c.desc.charAt(0).toUpperCase() + c.desc.slice(1))}.</p>` : ''}<p class="co-note">${c.wd ? 'Facts' : 'HQ source'}: <a href="${esc(c.hq.source_url)}" target="_blank" rel="noopener" style="color:inherit">${/gleif/.test(c.hq.method || '') ? 'GLEIF LEI register (CC0)' : 'Wikidata (CC0)'}</a>, checked ${esc(c.hq.checked_at)}.</p></div>
-        <div class="co-act">${c.wd ? (c.web ? `<a class="co-btn p" href="${esc(c.web)}" target="_blank" rel="noopener">Company website</a>` : '') : `<a class="co-btn p" href="${esc(ROOT)}${c.tracked ? 'asset.html?s=' + encodeURIComponent(c.sym) : 'companies/' + encodeURIComponent(c.slug)}" target="_top">Company page</a>`}<a class="co-btn" href="${esc(ROOT)}news.html?q=${encodeURIComponent(c.short)}" target="_top">Articles about ${esc(c.short)}</a></div></div></div>`;
+      const c = S.sel, d = c.desc ? c.desc.charAt(0).toUpperCase() + c.desc.slice(1) : '';
+      const kv = [['Headquarters', [c.hq.hq_city, c.country].filter(Boolean).join(', ')], ['Sector', c.sector], ['Ticker', (c.sym || '').replace(/^[A-Z]+:/, '')]].filter(x => x[1]);
+      /* owner 25 Nov 2026: click a company on the globe, read the card, open the full company page */
+      return `<div class="co-wrap"><button type="button" class="co-back" data-co-back>‹ ${S.sector ? esc(S.sector) + ' · ' : ''}${S.country ? esc(S.country) + ' · ' : ''}${filtered().length} companies</button>
+        <div class="co-card">${badgeHTML(c)}<div><h3>${esc(c.name)}</h3><div class="co-kv">${kv.map(([k, v]) => `<div><small>${k}</small><b>${esc(v)}</b></div>`).join('')}</div>
+        ${d ? `<p class="co-d" style="margin:8px 0 0;color:#c8c8cf;font-size:13.5px">${esc(d)}${/[.!?]$/.test(d) ? '' : '.'}</p>` : c.more && !c.full ? '<p class="co-d" style="margin:8px 0 0;color:#8e8e96;font-size:13px">Loading…</p>' : ''}
+        <p class="co-note">Sources: Wikipedia and Wikidata. Not investment advice.</p></div>
+        <div class="co-act"><a class="co-btn p" href="${esc(ROOT + c.page)}" target="_top">Open full company page →</a>${c.tracked ? `<a class="co-btn" href="${esc(ROOT)}asset.html?s=${encodeURIComponent(c.sym)}" target="_top">${esc(c.sym)} chart</a>` : ''}${c.web ? `<a class="co-btn" href="${esc(c.web)}" target="_blank" rel="noopener">Website</a>` : ''}</div></div></div>`;
     }
     const L = filtered();
     return `<div class="co-wrap"><div class="co-tools"><input class="co-s" type="search" placeholder="Search ${S.list.length} companies" value="${esc(S.q)}" data-co-q aria-label="Search companies">
       <button type="button" class="co-chip" aria-pressed="${S.news}" data-co-news>In the news</button>
+      <select class="co-chip" data-co-sector aria-label="Sector"><option value="">All sectors</option>${sectors().map(([n, k]) => `<option value="${esc(n)}"${n === S.sector ? ' selected' : ''}>${esc(n)} · ${k}</option>`).join('')}</select>
       <select class="co-chip" data-co-country aria-label="Country"><option value="">All countries</option>${countries().map(([n, k]) => `<option value="${esc(n)}"${n === S.country ? ' selected' : ''}>${esc(n)} · ${k}</option>`).join('')}</select></div>
       ${L.length ? `<div class="co-list">${L.slice(0, 120).map(c => `<button type="button" class="co-i" data-co="${esc(c.slug)}">${badgeHTML(c)}<span style="min-width:0"><b>${esc(c.name)}</b><small>${esc(c.hq.hq_city)} · ${esc(c.wd ? (c.sector || c.country) : c.sym.replace(/^[A-Z]+:/, ''))}</small></span></button>`).join('')}</div>`
         : '<div class="co-empty">No company matches. Companies appear here once their head office is sourced.</div>'}
@@ -129,6 +146,7 @@
   function select(sym, open) {
     const c = typeof sym === 'string' ? find(sym) : sym; if (!c) return false;
     S.sel = c; S.open = true;
+    if (c.more && !c.full) { c.full = true; fetch(ROOT + 'data/companies-more/' + (/[a-z]/.test(c.more[0]) ? c.more[0] : '_') + '.json').then(r => r.ok ? r.json() : null).then(f => { const x = f && f[c.more]; if (x) { c.desc = x.description || ''; c.web = x.website || ''; } if (S.sel === c) refresh(); }).catch(() => {}); }
     if (open) { try { if (!inMarkets()) document.querySelector('#gswitch [data-m=markets]')?.click(); mkTab = 'co'; } catch {} }
     if (isPhone()) { try { setSheet('closed'); } catch {} }
     if (typeof flyTo === 'function') flyTo(c.hq.hq_lon, c.hq.hq_lat - (isPhone() ? 1.2 : 2.2), 5.5);
@@ -140,7 +158,8 @@
     if (e.target.closest('[data-co-list]')) { S.sel = null; refresh(); try { setSheet('full'); } catch {} return; }
     if (e.target.closest('[data-co-news]')) { S.news = !S.news; S.sel = null; refresh(); }
   });
-  document.addEventListener('change', e => { if (e.target.matches('[data-co-country]')) { S.country = e.target.value; S.sel = null; const L = filtered(); refresh(); if (L.length && typeof flyTo === 'function') fitTo(L); } });
+  document.addEventListener('change', e => { if (e.target.matches('[data-co-sector]')) { S.sector = e.target.value; S.sel = null; refresh(); return; }
+    if (e.target.matches('[data-co-country]')) { S.country = e.target.value; S.sel = null; const L = filtered(); refresh(); if (L.length && typeof flyTo === 'function') fitTo(L); } });
   let qt; document.addEventListener('input', e => { if (!e.target.matches('[data-co-q]')) return; S.q = e.target.value; S.sel = null; clearTimeout(qt); qt = setTimeout(() => { const pos = e.target.selectionStart; refresh(); const n = document.querySelector('[data-co-q]'); if (n) { n.focus(); n.setSelectionRange(pos, pos); } }, 180); });
 
   // ---- globe pins: only the current list (or the selected company), spaced out when they overlap ----
@@ -148,7 +167,7 @@
   function draw() {
     if (!S.ready) return;
     S.hits = []; if (!active()) return;
-    const narrowed = S.country || S.q.trim() || S.news;
+    const narrowed = S.country || S.sector || S.q.trim() || S.news;
     const all = filtered(), L = narrowed && all.length <= MAXPINS ? all : [];
     const list = S.sel ? [S.sel, ...L.filter(c => c !== S.sel)] : L;
     const placed = [], pos = [];
