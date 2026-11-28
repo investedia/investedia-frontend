@@ -75,3 +75,10 @@ body[data-page=home] .hdr{background:transparent!important}
 @media(max-width:760px){.drawer-tseg{order:9}.drawer .drawer-cur{padding:0!important}.drawer .search-btn{padding:0 12px!important;gap:10px;display:flex;align-items:center}.drawer .search-btn svg{width:16px;height:16px}
  body:has(.drawer.open) .hdr .hdr-login-m,body:has(.drawer.open) .hdr a[data-auth],body:has(.drawer.open) .hdr button[data-auth]{visibility:hidden}}
 @media(max-width:760px){body:has(.drawer.open) #hdr-login{visibility:hidden!important;opacity:0!important;pointer-events:none}}
+/* Phone menu open: solid header stays on top (close button reachable), menu covers the whole page (owner 28 Nov 2026) */
+@media(max-width:760px){
+ body:has(.drawer.open) .hdr{position:fixed!important;top:0!important;left:0;right:0;transform:none!important;opacity:1!important;visibility:visible!important;z-index:1001!important;background:#0a0a0b!important;padding-top:calc(10px + env(safe-area-inset-top))!important;padding-bottom:10px!important}
+ body:has(.drawer.open) .hdr .wrap{transform:none!important;opacity:1!important}
+ .drawer{position:fixed!important;inset:0!important;z-index:1000!important;padding-top:calc(86px + env(safe-area-inset-top))!important}
+ :root[data-theme="light"] body:has(.drawer.open) .hdr{background:#fff!important}
+}
